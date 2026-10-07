@@ -26,6 +26,9 @@ const server = http.createServer((req, res) => {
   if (reqUrl === '/preview/wortturm' || reqUrl === '/preview/wortturm/' || reqUrl === '/wortturm' || reqUrl === '/wortturm/') {
     reqUrl = '/wortturm.html';
   }
+  if (reqUrl === '/preview/wortcrush' || reqUrl === '/preview/wortcrush/' || reqUrl === '/wortcrush' || reqUrl === '/wortcrush/') {
+    reqUrl = '/wortcrush.html';
+  }
 
   const filePath = path.join(__dirname, reqUrl);
 

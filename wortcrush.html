@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
+  <title>WortCrush · Phá Kính Từ Vựng tiếng Đức (VokabelGo)</title>
+  <link rel="stylesheet" href="wortcrush.css">
+</head>
+<body class="wortcrush-standalone">
+  <div class="wortcrush-app" id="wortcrush-app">
+    <!-- Header with Branding, DISTANZ HUD & Controls -->
+    <header class="wortcrush-header">
+      <div class="brand-section">
+        <span class="brand-badge">VokabelGo Preview</span>
+        <h1 class="brand-title">WortCrush</h1>
+      </div>
+
+      <!-- DISTANZ Progression HUD -->
+      <div class="hud-distanz" id="hud-distanz" title="Số tấm kính đã vượt qua">
+        <span class="hud-distanz-label">DISTANZ</span>
+        <span class="hud-distanz-val" id="hud-distanz-val">0</span>
+      </div>
+
+      <!-- Action Controls: Sound, Pause, End -->
+      <div class="header-actions">
+        <!-- Sound Toggle -->
+        <button class="btn-icon-action" id="btn-sound" type="button" aria-label="Bật/Tắt âm thanh" title="Âm thanh">
+          <svg id="icon-sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
+          <svg id="icon-sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+        </button>
+
+        <!-- Pause Button -->
+        <button class="btn-icon-action" id="btn-pause" type="button" aria-label="Tạm dừng" title="Tạm dừng">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+            <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+          </svg>
+        </button>
+
+        <!-- End Session Button -->
+        <button class="btn-icon-action btn-end-session" id="btn-end" type="button" aria-label="Kết thúc" title="Kết thúc lượt chơi">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Prompt Bar: Vietnamese meaning -->
+    <div class="prompt-bar" id="prompt-bar">
+      <div class="prompt-sub">DỊCH SANG TIẾNG ĐỨC</div>
+      <div class="prompt-vietnamese" id="prompt-vietnamese">“căn hộ”</div>
+    </div>
+
+    <!-- 2.5D Arcade Arena Viewport -->
+    <main class="crush-viewport" id="crush-viewport">
+      <!-- Screen Shake Wrapper -->
+      <div class="shake-layer" id="shake-layer">
+        
+        <!-- 2.5D Corridor / Tunnel Background -->
+        <div class="tunnel-stage" id="tunnel-stage">
+          <!-- Horizon glow / vanishing point -->
+          <div class="horizon-glow"></div>
+          
+          <!-- Receding Perspective Grid -->
+          <div class="tunnel-grid tunnel-floor"></div>
+          <div class="tunnel-grid tunnel-ceiling"></div>
+
+          <!-- Corridor Rings (giving depth) -->
+          <div class="corridor-ring ring-far"></div>
+          <div class="corridor-ring ring-mid"></div>
+          <div class="corridor-ring ring-near"></div>
+          
+          <!-- Motion Speed Streaks (triggered on camera forward push) -->
+          <div class="speed-streaks" id="speed-streaks">
+            <span class="streak s1"></span>
+            <span class="streak s2"></span>
+            <span class="streak s3"></span>
+            <span class="streak s4"></span>
+          </div>
+        </div>
+
+        <!-- Glass Barrier Stage -->
+        <div class="glass-barrier-stage" id="glass-barrier-stage">
+          <!-- Mounting Brackets (top & bottom corners) -->
+          <div class="glass-brackets">
+            <span class="bracket b-tl"></span>
+            <span class="bracket b-tr"></span>
+            <span class="bracket b-bl"></span>
+            <span class="bracket b-br"></span>
+          </div>
+
+          <!-- Glass Container (Active Glass or Spawning Glass) -->
+          <div class="glass-container" id="glass-container">
+            <!-- Glass SVG rendered dynamically by wortcrush.js -->
+          </div>
+
+          <!-- Impact Shockwave Ripple Effect -->
+          <div class="impact-ripple" id="impact-ripple"></div>
+
+          <!-- Shards Container (Populated during shatter animation) -->
+          <div class="shards-container" id="shards-container"></div>
+        </div>
+
+        <!-- Flying Projectile (Energy Orb) -->
+        <div class="projectile-container" id="projectile-container">
+          <div class="projectile-orb" id="projectile-orb">
+            <div class="orb-core"></div>
+            <div class="orb-trail"></div>
+          </div>
+        </div>
+
+        <!-- Floating Feedback Banner (RICHTIG, PERFEKT, FAST, NOCH EINMAL) -->
+        <div class="feedback-banner" id="feedback-banner"></div>
+      </div>
+    </main>
+
+    <!-- Bottom Input & Controls Zone -->
+    <section class="input-zone" id="input-zone">
+      <form class="input-card" id="crush-form" onsubmit="return false;">
+        <div class="input-wrapper">
+          <input 
+            type="text" 
+            class="crush-input" 
+            id="crush-input" 
+            placeholder="Nhập từ tiếng Đức..." 
+            autocomplete="off" 
+            autocorrect="off" 
+            autocapitalize="off" 
+            spellcheck="false"
+            aria-label="Nhập từ tiếng Đức"
+          >
+          <button type="submit" class="btn-crush-submit" id="btn-crush-submit" aria-label="Phá kính (Enter)">
+            <span class="btn-submit-icon">↵</span>
+          </button>
+        </div>
+
+        <!-- Feedback & Guidance Hint -->
+        <div class="input-hint" id="input-hint" aria-live="polite"></div>
+
+        <!-- German Umlaut Quick Toolbar (Accessible for touch & mobile) -->
+        <div class="umlaut-bar" id="umlaut-bar">
+          <button type="button" class="btn-umlaut" data-char="ä">ä</button>
+          <button type="button" class="btn-umlaut" data-char="ö">ö</button>
+          <button type="button" class="btn-umlaut" data-char="ü">ü</button>
+          <button type="button" class="btn-umlaut" data-char="ß">ß</button>
+          <button type="button" class="btn-umlaut" data-char="Ä">Ä</button>
+          <button type="button" class="btn-umlaut" data-char="Ö">Ö</button>
+          <button type="button" class="btn-umlaut" data-char="Ü">Ü</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Pause Modal Overlay -->
+    <div class="modal-overlay" id="pause-modal" style="display: none;">
+      <div class="modal-card">
+        <div class="modal-badge">PAUSE</div>
+        <h2 class="modal-title">Tạm dừng</h2>
+        <div class="modal-stats">
+          DISTANZ: <strong id="pause-distanz-val">0</strong>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-modal-primary" id="btn-resume">
+            Tiếp tục chơi (Weiter)
+          </button>
+          <button type="button" class="btn-modal-secondary" id="btn-pause-end">
+            Kết thúc (Beenden)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Over / End Summary Modal -->
+    <div class="modal-overlay" id="end-modal" style="display: none;">
+      <div class="modal-card">
+        <div class="modal-badge">ERGEBNIS</div>
+        <div class="end-distanz-label">DISTANZ</div>
+        <div class="end-distanz-number" id="end-distanz-val">0</div>
+        <p class="end-distanz-sub" id="end-summary-text">0 Wörter geschafft</p>
+        <div class="modal-actions">
+          <button type="button" class="btn-modal-primary" id="btn-restart">
+            Nochmal spielen
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="wortcrush.js"></script>
+</body>
+</html>

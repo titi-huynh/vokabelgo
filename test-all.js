@@ -13,7 +13,8 @@ const suites = [
   'test-phase4a-schema-acceptance.js',
   'test-phase4b-progress-acceptance.js',
   'test-phase5-listening-acceptance.js',
-  'test-wortturm-evaluator.js'
+  'test-wortturm-evaluator.js',
+  'test-wortcrush-evaluator.js'
 ];
 
 let failedSuites = [];
