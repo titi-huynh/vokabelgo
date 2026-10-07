@@ -23,6 +23,9 @@ const MIME_TYPES = {
 const server = http.createServer((req, res) => {
   let reqUrl = decodeURI(req.url.split('?')[0]);
   if (reqUrl === '/') reqUrl = '/index.html';
+  if (reqUrl === '/preview/wortturm' || reqUrl === '/preview/wortturm/' || reqUrl === '/wortturm' || reqUrl === '/wortturm/') {
+    reqUrl = '/wortturm.html';
+  }
 
   const filePath = path.join(__dirname, reqUrl);
 

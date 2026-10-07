@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Wortturm Prototype · Tháp Từ Vựng tiếng Đức (VokabelGo)</title>
+  <link rel="stylesheet" href="wortturm.css">
+</head>
+<body class="wortturm-standalone">
+  <div class="wortturm-app" id="wortturm-app">
+    <!-- Header with Branding & Height (Höhe) HUD -->
+    <header class="wortturm-header">
+      <div class="brand-section">
+        <span class="brand-badge">VokabelGo Prototype</span>
+        <h1 class="brand-title">Wortturm</h1>
+      </div>
+
+      <!-- Height HUD -->
+      <div class="hud-hoehe" id="hud-hoehe">
+        <span class="hud-hoehe-label">Höhe:</span>
+        <span class="hud-hoehe-val" id="hud-score-val">0</span>
+      </div>
+
+      <!-- Sound Mute/Unmute Button -->
+      <button class="btn-icon-sound" id="btn-mute" type="button" aria-label="Bật/Tắt âm thanh" title="Âm thanh">
+        <svg id="icon-sound-on" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+        </svg>
+        <svg id="icon-sound-off" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <line x1="23" y1="9" x2="17" y2="15"></line>
+          <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+      </button>
+    </header>
+
+    <!-- Vocabulary Prompt Bar -->
+    <div class="prompt-container">
+      <div class="prompt-label">Dịch sang tiếng Đức</div>
+      <div class="prompt-vietnamese" id="prompt-vi">“nhà ga”</div>
+    </div>
+
+    <!-- Tower & Stacking Viewport -->
+    <main class="game-viewport" id="game-viewport">
+      <div class="viewport-decor"></div>
+      
+      <!-- Tower World (Translated up as tower stacks) -->
+      <div class="tower-world" id="tower-world">
+        <!-- Base block and stacked blocks added dynamically by wortturm.js -->
+      </div>
+
+      <!-- Floating Feedback Banner (PERFEKT, RICHTIG, NOCH EINMAL) -->
+      <div class="feedback-overlay" id="feedback-overlay">PERFEKT! ✨</div>
+
+      <!-- Game Over Modal / Overlay -->
+      <div class="game-over-overlay" id="game-over-overlay">
+        <div class="game-over-title">TURM GEFALLEN!</div>
+        <div class="game-over-height">
+          Höhe: <strong id="game-over-height-val">0</strong> Wörter
+        </div>
+        <button type="button" class="btn-restart" id="btn-restart">
+          Nochmal spielen
+        </button>
+      </div>
+    </main>
+
+    <!-- Bottom Input Area -->
+    <section class="input-zone">
+      <form class="input-form" id="input-form" onsubmit="return false;">
+        <input 
+          type="text" 
+          class="wortturm-input" 
+          id="wortturm-input" 
+          placeholder="Nhập từ tiếng Đức..." 
+          autocomplete="off" 
+          autocorrect="off" 
+          autocapitalize="off" 
+          spellcheck="false"
+        >
+        <button type="submit" class="btn-submit" id="btn-submit" aria-label="Thả khối (Enter)">
+          ↵
+        </button>
+      </form>
+      <div class="input-hint" id="input-hint"></div>
+    </section>
+  </div>
+
+  <script src="wortturm.js"></script>
+</body>
+</html>
