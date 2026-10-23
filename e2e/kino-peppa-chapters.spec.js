@@ -177,7 +177,7 @@ test('spoken turns have bilingual subtitles and do not mix old episode boundarie
   await expect(page.locator('#peppaWatchCaption')).toBeVisible();
   await expect(page.locator('#peppaWatchVi')).toContainText('khoai tây');
   await page.setViewportSize({ width: 1280, height: 800 });
-  await page.screenshot({ path: path.join(__dirname, '../review-assets/peppa-synced-subtitles.png') });
+  await page.screenshot({ path: path.join(__dirname, '../test-results/captures/review-assets/peppa-synced-subtitles.png') });
   await page.locator('#kinoFullPlayer').evaluate(video => { video.currentTime = 22.9; });
   await expect(page.locator('#peppaWatchDe')).toHaveText('Oh!');
   await page.locator('#peppaWatchCC').click();
@@ -203,9 +203,9 @@ test('Peppa stays usable on desktop and phone, with a review screenshot', async 
   await page.setViewportSize({ width: 1440, height: 1100 });
   await openOverview(page);
   await page.locator('#kinoPeppaChapters').scrollIntoViewIfNeeded();
-  await page.screenshot({ path: path.join(__dirname, '../review-assets/peppa-five-parts-desktop.png'), fullPage: true });
+  await page.screenshot({ path: path.join(__dirname, '../test-results/captures/review-assets/peppa-five-parts-desktop.png'), fullPage: true });
   await openOverview(page);
-    await page.locator('#kinoPeppaChapters').screenshot({ path: path.join(__dirname, '../review-assets/peppa-five-parts-overview.png') });
+    await page.locator('#kinoPeppaChapters').screenshot({ path: path.join(__dirname, '../test-results/captures/review-assets/peppa-five-parts-overview.png') });
   await page.setViewportSize({ width: 390, height: 844 });
   await expect(page.locator('.peppa-part').last()).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBeTruthy();
@@ -213,7 +213,7 @@ test('Peppa stays usable on desktop and phone, with a review screenshot', async 
   await expect(page.locator('#peppaPartTitle')).toHaveText('Cùng làm tacos');
   await expect(page.locator('#kinoProgressCount')).toContainText('0 / 7 câu');
   await page.locator('#kinoLessonHeader').scrollIntoViewIfNeeded();
-  await page.screenshot({ path: path.join(__dirname, '../review-assets/peppa-five-parts-mobile.png'), fullPage: true });
+  await page.screenshot({ path: path.join(__dirname, '../test-results/captures/review-assets/peppa-five-parts-mobile.png'), fullPage: true });
   await page.locator('#peppaWatch').click();
   await expect(page.locator('#peppaWatchControls')).toBeVisible();
   const controls = await page.locator('#peppaWatchControls').boundingBox();

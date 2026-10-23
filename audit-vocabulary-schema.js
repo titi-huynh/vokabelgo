@@ -170,7 +170,7 @@ function runAudit() {
   }
 
   // Save report JSON
-  const outputPath = path.join(__dirname, 'audit-vocabulary-report.json');
+  const outputPath = process.env.VOKABELGO_AUDIT_REPORT || path.join(__dirname, 'audit-vocabulary-report.json');
   fs.writeFileSync(outputPath, JSON.stringify(report, null, 2), 'utf8');
   console.log(`\n✅ Detailed JSON audit report written to: ${outputPath}\n`);
 

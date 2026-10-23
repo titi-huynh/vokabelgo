@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const { seedStorage } = require('./helpers/storage');
 const { openOverview, openPart } = require('./helpers/kino-navigation');
 const path = require('path');
-const capture = name => path.join(__dirname, '../review-assets', name);
+const capture = name => path.join(__dirname, '../test-results/captures/review-assets', name);
 test.use({ permissions: ['microphone'], launchOptions: { args: ['--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream'] } });
 async function open(page, query = 'pizza') {
   await seedStorage(page, { vokabelgo_kino_reset_done_v2026: 'true' });

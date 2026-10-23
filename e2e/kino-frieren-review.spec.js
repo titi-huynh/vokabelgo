@@ -35,7 +35,7 @@ test('Frieren overview and full-dialogue writing remain usable on a phone', asyn
   await page.locator('#peppaPractice').click();
   await expect(page.locator('#kinoDiktatInput')).toBeVisible();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
-  await page.screenshot({path:path.join(__dirname,'../review-assets/kino-frieren-phone.png'),fullPage:true});
+  await page.screenshot({path:path.join(__dirname,'../test-results/captures/review-assets/kino-frieren-phone.png'),fullPage:true});
 });
 
 test('uncertain transcript review has five source clips and never writes learning progress', async ({page}) => {

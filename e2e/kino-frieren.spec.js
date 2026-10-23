@@ -10,7 +10,7 @@ const stateKey = 'vokabelgo_kino_chapters_v1_frieren_s01e01';
 const peppaSeed = { chapter: 2, mode: 'light', completed: [104701], watched: [0], imported: true, alignmentVersion: 2 };
 const hansSeed = { chapter: 1, mode: 'all', completed: [400108], watched: [0], imported: true, alignmentVersion: 2, contentVersion: 2, practiceModeVersion: 1 };
 const trudesSeed = { chapter: 3, mode: 'all', completed: [600102], watched: [1], imported: true, alignmentVersion: 2, practiceModeVersion: 1 };
-const capture = name => path.join(__dirname, '../review-assets', name);
+const capture = name => path.join(__dirname, '../test-results/captures/review-assets', name);
 
 async function open(page, query = '?kino=frieren') {
   await seedStorage(page, {

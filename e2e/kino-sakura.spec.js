@@ -54,7 +54,7 @@ test('Sakura source captions have exact, complete practice coverage, honest excl
   expect((await range.body()).length).toBe(2048);
   for(let i=1;i<=8;i++) expect((await request.get(`/assets/kino-posters/sakura_s01e01-${i}.jpg`)).ok()).toBeTruthy();
   await page.setViewportSize({width:1440,height:1050});
-  await page.screenshot({path:path.join(__dirname,'../review-assets/kino-sakura-overview-desktop.png'),fullPage:true});
+  await page.screenshot({path:path.join(__dirname,'../test-results/captures/review-assets/kino-sakura-overview-desktop.png'),fullPage:true});
   expect(errors).toEqual([]);
 });
 
@@ -118,7 +118,7 @@ test('Sakura vocabulary, phone viewing and review clips use only Sakura resource
   await page.setViewportSize({width:390,height:844});
   await open(page);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
-  await page.screenshot({path:path.join(__dirname,'../review-assets/kino-sakura-overview-mobile.png'),fullPage:true});
+  await page.screenshot({path:path.join(__dirname,'../test-results/captures/review-assets/kino-sakura-overview-mobile.png'),fullPage:true});
   await page.locator('#kinoMovieVocabBtn').click();
   await expect(page.locator('#deckSelect')).toHaveValue('🎬 Video: Sakura – Das geheimnisvolle Buch');
   const ids=await page.evaluate(()=>filtered.map(c=>c.id));

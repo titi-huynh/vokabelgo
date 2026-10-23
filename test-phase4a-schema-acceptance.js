@@ -295,7 +295,7 @@ check(auditResult !== null && auditResult.totalCards === all.length, 'Audit repo
 check(auditResult.missingIdCount === 0, 'Audit confirms 0 missing IDs');
 check(auditResult.duplicateIdCount === 0, 'Audit confirms 0 duplicate IDs');
 check(auditResult.objectiveTypingEligible + auditResult.objectiveTypingIneligible === auditResult.totalCards, 'Audit invariant: eligible + ineligible === totalCards');
-check(fs.existsSync(path.join(__dirname, 'audit-vocabulary-report.json')), 'audit-vocabulary-report.json successfully written');
+check(fs.existsSync(process.env.VOKABELGO_AUDIT_REPORT || path.join(__dirname, 'audit-vocabulary-report.json')), 'audit-vocabulary-report.json successfully written');
 
 // ------------------------------------------------------------------------------
 // TEST K: Ambiguity & Anomaly Safety Policy

@@ -7,7 +7,7 @@ const path = require('path');
 test.use({ permissions: ['microphone'], launchOptions: { args: ['--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream'] } });
 const stateKey = 'vokabelgo_kino_chapters_v1_we_bare_bears_mall';
 const previousPeppa = { chapter: 2, mode: 'light', completed: [104701], watched: [0], imported: true, alignmentVersion: 2 };
-const capture = name => path.join(__dirname, '../review-assets', name);
+const capture = name => path.join(__dirname, '../test-results/captures/review-assets', name);
 async function open(page, query = '?kino=bears') {
   await seedStorage(page, { vokabelgo_kino_reset_done_v2026: 'true', vokabelgo_kino_peppa_chapters_v1: previousPeppa });
   await page.goto('/' + query);

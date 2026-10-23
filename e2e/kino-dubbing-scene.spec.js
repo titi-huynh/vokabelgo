@@ -215,6 +215,6 @@ test('phone layout, large subtitles, and the desktop studio stay usable', async 
     await expect(page.locator('#kdsCueLabel')).toContainText('Câu 2');
     await page.locator('#kdsPrev').click();
     await page.locator('#kinoDubbingScene').evaluate(d => d.scrollTop = 0);
-    if (width === 390 || width === 1440) await page.screenshot({ path: path.join(__dirname, `../review-assets/kino-dubbing-${width === 390 ? 'mobile' : 'desktop'}.png`) });
+    if (width === 390 || width === 1440) await page.screenshot({ path: path.join(__dirname, `../test-results/captures/review-assets/kino-dubbing-${width === 390 ? 'mobile' : 'desktop'}.png`) });
   }
 });

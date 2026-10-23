@@ -3,10 +3,10 @@ const path = require('path');
 const fs = require('fs');
 
 test('Capture complete 14 screenshots for v0.4 review package', async ({ browser }) => {
-  const videoDir = path.join(__dirname, '../review-assets/video');
+  const videoDir = path.join(__dirname, '../test-results/captures/review-assets/video');
   fs.mkdirSync(videoDir, { recursive: true });
 
-  const artifactDir = 'C:/Users/huynh/.gemini/antigravity/brain/a154fa89-2fbe-4511-9e20-ba75acd3d9d0';
+  const artifactDir = path.join(__dirname, '../test-results/captures');
 
   const context = await browser.newContext({
     viewport: { width: 1280, height: 720 },
@@ -17,7 +17,7 @@ test('Capture complete 14 screenshots for v0.4 review package', async ({ browser
   });
 
   const page = await context.newPage();
-  const outputDir = path.join(__dirname, '../review-assets');
+  const outputDir = path.join(__dirname, '../test-results/captures/review-assets');
   fs.mkdirSync(outputDir, { recursive: true });
 
   const saveShot = async (filename, aliases = []) => {

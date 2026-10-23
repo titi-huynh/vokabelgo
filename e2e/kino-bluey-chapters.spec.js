@@ -89,7 +89,7 @@ for (const movie of movies) {
     await expect(page.locator('#peppaWatchCaption')).toBeHidden();
     await page.locator('#peppaWatchCC').click();
     await page.setViewportSize({ width: 1280, height: 800 });
-    await page.screenshot({ path: path.join(__dirname, `../review-assets/${movie.key}-synced-subtitles.png`) });
+    await page.screenshot({ path: path.join(__dirname, `../test-results/captures/review-assets/${movie.key}-synced-subtitles.png`) });
     await page.locator('#kinoFullPlayer').evaluate(v => { v.currentTime = .5; });
     await expect(page.locator('#peppaWatchCaption')).toBeHidden();
     await page.getByRole('button', { name: '✖️ Quay lại bài học' }).click();
@@ -109,7 +109,7 @@ for (const movie of movies) {
     await openMovie(page, movie);
     await page.setViewportSize({ width: 1440, height: 1000 });
     await openOverview(page);
-    await page.locator('#kinoPeppaChapters').screenshot({ path: path.join(__dirname, `../review-assets/${movie.key}-chapters-overview.png`) });
+    await page.locator('#kinoPeppaChapters').screenshot({ path: path.join(__dirname, `../test-results/captures/review-assets/${movie.key}-chapters-overview.png`) });
     await page.setViewportSize({ width: 390, height: 844 });
     await openPart(page, movie.parts - 1);
     await expect(page.locator('#peppaPartTitle')).toHaveText(movie.titles.at(-1));

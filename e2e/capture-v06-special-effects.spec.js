@@ -4,8 +4,8 @@ const fs = require('fs');
 
 test('Capture all 12 v0.6 Special Card Effects & Game Feel screenshots', async ({ browser }) => {
   test.setTimeout(90000);
-  const artifactDir = 'C:/Users/huynh/.gemini/antigravity/brain/a154fa89-2fbe-4511-9e20-ba75acd3d9d0';
-  const outputDir = path.join(__dirname, '../review-assets');
+  const artifactDir = path.join(__dirname, '../test-results/captures');
+  const outputDir = path.join(__dirname, '../test-results/captures/review-assets');
   fs.mkdirSync(outputDir, { recursive: true });
 
   const saveShot = async (page, filename) => {

@@ -1,13 +1,13 @@
 const { test, expect } = require('@playwright/test');
 const path = require('path');
 
-test.describe('Đấu từ — VokabelGo Preview v0.3 E2E Acceptance Tests', () => {
+test.describe('Đấu từ — VokabelGo v0.6 E2E Acceptance Tests', () => {
 
   test('Route Access: /preview/dau-tu, /dau-tu, /dau-tu.html, and /dau-tu-cards load correctly', async ({ page }) => {
     // 1. Direct html route
     await page.goto('/dau-tu.html');
     await expect(page.locator('.brand')).toContainText('VokabelGo');
-    await expect(page.locator('.brand')).toContainText(/0\.[345]/);
+    await expect(page.locator('.brand')).toContainText(/0\.\d/);
     await expect(page.locator('#deck-adjektive')).toBeVisible();
     await expect(page.locator('#deck-verben')).toBeVisible();
     await expect(page.locator('#mode-practice')).toBeVisible();
@@ -42,7 +42,7 @@ test.describe('Đấu từ — VokabelGo Preview v0.3 E2E Acceptance Tests', () 
     await expect(cardBack).toContainText('ĐẤU TỪ');
 
     // Capture screenshot: 10 representative cards + card back
-    await page.screenshot({ path: path.join(__dirname, '../screenshot_dautu_sample_cards.png'), fullPage: true });
+    await page.screenshot({ path: path.join(__dirname, '../test-results/captures/screenshot_dautu_sample_cards.png'), fullPage: true });
   });
 
   test('Adjektive Gameplay & Desktop Layout (1280x720 / 1440x900)', async ({ page }) => {
@@ -86,7 +86,7 @@ test.describe('Đấu từ — VokabelGo Preview v0.3 E2E Acceptance Tests', () 
     await expect(page.locator('#translation')).toBeVisible();
 
     // Capture screenshot: Adjektive Desktop
-    await page.screenshot({ path: path.join(__dirname, '../screenshot_dautu_adjektive_desktop.png') });
+    await page.screenshot({ path: path.join(__dirname, '../test-results/captures/screenshot_dautu_adjektive_desktop.png') });
   });
 
   test('Verben Gameplay & Separable Verb Highlighting', async ({ page }) => {
@@ -105,7 +105,7 @@ test.describe('Đấu từ — VokabelGo Preview v0.3 E2E Acceptance Tests', () 
     await expect(page.locator('#sentence mark').first()).toBeVisible();
 
     // Capture screenshot: Verben Desktop
-    await page.screenshot({ path: path.join(__dirname, '../screenshot_dautu_verben_desktop.png') });
+    await page.screenshot({ path: path.join(__dirname, '../test-results/captures/screenshot_dautu_verben_desktop.png') });
   });
 
   test('Two-Step Hint Flow & Card Highlight', async ({ page }) => {
@@ -122,7 +122,7 @@ test.describe('Đấu từ — VokabelGo Preview v0.3 E2E Acceptance Tests', () 
     await expect(page.locator('#panel-title')).toContainText('Gợi ý nghĩa');
 
     // Capture screenshot of Step 1 hint modal
-    await page.screenshot({ path: path.join(__dirname, '../screenshot_dautu_hint_twostep.png') });
+    await page.screenshot({ path: path.join(__dirname, '../test-results/captures/screenshot_dautu_hint_twostep.png') });
 
     // Click Step 2: Chỉ một lá phù hợp
     await page.locator('button[data-cmd="hint2"]').click();
@@ -136,12 +136,18 @@ test.describe('Đấu từ — VokabelGo Preview v0.3 E2E Acceptance Tests', () 
     // Use QA hook to fixture a game state where player has GEGENTEIL and Farbenwahl
     await page.evaluate(() => {
       const E = window.DAU_TU_ENGINE;
-      const s = E.createInitialGameState('adjektive', 42, 'player');
-      // Ensure player hand has gegenteil and farbenwahl
-      const gegenteil = s.drawPile.find(c => c.actionType === 'gegenteil') || s.botHand.find(c => c.actionType === 'gegenteil');
-      const farbenwahl = s.drawPile.find(c => c.actionType === 'farbenwahl') || s.botHand.find(c => c.actionType === 'farbenwahl');
-      if (gegenteil) s.playerHand[0] = gegenteil;
-      if (farbenwahl) s.playerHand[1] = farbenwahl;
+      const s = E.createInitialGameState('adjektive', 42, 'player', 4);
+      // Hoán đổi (không sao chép) lá đặc biệt từ chồng rút vào tay người chơi:
+      // engine 0.6 từ chối nước đi nếu một ID lá xuất hiện hai nơi.
+      const swapIn = (pred, handIndex) => {
+        const i = s.drawPile.findIndex(pred);
+        if (i < 0) return;
+        const card = s.drawPile[i];
+        s.drawPile[i] = s.playerHand[handIndex];
+        s.playerHand[handIndex] = card;
+      };
+      swapIn(c => c.actionType === 'gegenteil', 0);
+      swapIn(c => c.actionType === 'farbenwahl', 1);
       window.DAUTU_PREVIEW_QA.load(s);
     });
 
@@ -150,18 +156,34 @@ test.describe('Đấu từ — VokabelGo Preview v0.3 E2E Acceptance Tests', () 
     await gegenteilCard.click();
     await page.locator('#btn-play').click();
 
-    // Verify opposite panel dialog
-    const panel = page.locator('#panel');
-    await expect(panel).toBeVisible();
-    await expect(page.locator('#panel-title')).toContainText('Đảo nghĩa');
-    await expect(page.locator('.flip-preview')).toBeVisible();
+    // Bản 0.6: GEGENTEIL áp dụng ngay (không còn hộp thoại chọn như 0.3) —
+    // thông báo đảo nghĩa hiện ra và lá rời khỏi tay người chơi.
+    await expect(page.locator('#feedback')).toContainText('đảo nghĩa');
+    await expect(page.locator('#hand [data-card-id]')).toHaveCount(4);
 
     // Capture screenshot: GEGENTEIL state
-    await page.screenshot({ path: path.join(__dirname, '../screenshot_dautu_gegenteil.png') });
+    await page.screenshot({ path: path.join(__dirname, '../test-results/captures/screenshot_dautu_gegenteil.png') });
 
-    // Cancel modal
-    await page.locator('button[data-cmd="close"]').click();
-    await expect(panel).not.toBeVisible();
+    // Tình huống 2: Farbenwahl mở bộ chọn màu ngay trên bàn (inline selector)
+    await page.evaluate(() => {
+      const E = window.DAU_TU_ENGINE;
+      const s = E.createInitialGameState('adjektive', 42, 'player', 4);
+      const i = s.drawPile.findIndex(c => c.actionType === 'farbenwahl');
+      if (i >= 0) {
+        const card = s.drawPile[i];
+        s.drawPile[i] = s.playerHand[0];
+        s.playerHand[0] = card;
+      }
+      window.DAUTU_PREVIEW_QA.load(s);
+    });
+
+    await page.locator('#hand [data-card-id]').first().click();
+    await page.locator('#btn-play').click();
+
+    const colorSelector = page.locator('#inline-color-selector');
+    await expect(colorSelector).toBeVisible();
+    await colorSelector.locator('button[data-color]').first().click();
+    await expect(colorSelector).toBeHidden();
   });
 
   test('Game Over Summary Screen & Statistics', async ({ page }) => {
@@ -185,7 +207,7 @@ test.describe('Đấu từ — VokabelGo Preview v0.3 E2E Acceptance Tests', () 
     await expect(page.locator('.result-stats')).toBeVisible();
 
     // Capture screenshot: Game Over
-    await page.screenshot({ path: path.join(__dirname, '../screenshot_dautu_gameover.png') });
+    await page.screenshot({ path: path.join(__dirname, '../test-results/captures/screenshot_dautu_gameover.png') });
   });
 
   test('Mobile Viewport & Touch Ergonomics (390x844 & 360x800)', async ({ page }) => {
@@ -214,7 +236,7 @@ test.describe('Đấu từ — VokabelGo Preview v0.3 E2E Acceptance Tests', () 
     expect(btnDrawBox.height).toBeGreaterThanOrEqual(44);
 
     // Capture screenshot: Mobile gameplay
-    await page.screenshot({ path: path.join(__dirname, '../screenshot_dautu_mobile.png') });
+    await page.screenshot({ path: path.join(__dirname, '../test-results/captures/screenshot_dautu_mobile.png') });
   });
 
   test('Safety, Network & LocalStorage Namespace Isolation', async ({ page }) => {

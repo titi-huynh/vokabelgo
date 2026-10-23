@@ -22,7 +22,7 @@ test('Kino starts with one row of covers and titles; a film opens its own parts'
   }
   const tops = await page.locator('.kino-film-card img').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().top));
   expect(new Set(tops).size).toBe(1);
-  await page.screenshot({ path: path.join(__dirname, '../review-assets/kino-catalog-desktop.png') });
+  await page.screenshot({ path: path.join(__dirname, '../test-results/captures/review-assets/kino-catalog-desktop.png') });
   for (const [key, count] of [['peppa_supermarkt', 5], ['pizzaschwester', 3], ['babysitter', 4], ['hans', 4], ['trudes_fahrstuhl', 5], ['erdmaennchen_nudeltrick', 7], ['erdmaennchen_schmucklose', 7], ['we_bare_bears_mall', 3], ['frieren_s01e01', 7], ['sakura_s01e01', 8]]) {
     await page.locator(`.kino-film-card[data-movie="${key}"]`).click();
     await expect(page.locator('#kinoCatalog')).toBeHidden();
@@ -74,7 +74,7 @@ test('phone gallery scrolls as one row and detail count is visible only after se
   await page.setViewportSize({ width: 390, height: 844 });
   await openCatalog(page);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
-  await page.screenshot({ path: path.join(__dirname, '../review-assets/kino-catalog-mobile.png') });
+  await page.screenshot({ path: path.join(__dirname, '../test-results/captures/review-assets/kino-catalog-mobile.png') });
   await page.locator('.kino-film-card[data-movie="babysitter"]').focus();
   await page.locator('.kino-film-card[data-movie="babysitter"]').press('Enter');
   await expect(page.locator('#kinoCatalogDetailCount')).toBeInViewport();

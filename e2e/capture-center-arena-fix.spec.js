@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 test.describe('Capture Center Arena Polish Review', () => {
-  const artifactDir = 'C:/Users/huynh/.gemini/antigravity/brain/a154fa89-2fbe-4511-9e20-ba75acd3d9d0';
+  const artifactDir = path.join(__dirname, '../test-results/captures');
 
   test('Capture Desktop Clean Center Arena & Transient Toast', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 720 });

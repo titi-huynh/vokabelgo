@@ -9,8 +9,8 @@ const path = require('path');
 
 class CandidateStore {
   constructor(options = {}) {
-    this.candidatesFile = options.candidatesFile || path.resolve(__dirname, '../../data/lexicon/candidates/candidates.json');
-    this.approvedFile = options.approvedFile || path.resolve(__dirname, '../../data/lexicon/approved/approved.json');
+    this.candidatesFile = options.candidatesFile || process.env.VOKABELGO_CANDIDATES_FILE || path.resolve(__dirname, '../../data/lexicon/candidates/candidates.json');
+    this.approvedFile = options.approvedFile || process.env.VOKABELGO_APPROVED_FILE || path.resolve(__dirname, '../../data/lexicon/approved/approved.json');
 
     this.ensureDirs();
     this.load();

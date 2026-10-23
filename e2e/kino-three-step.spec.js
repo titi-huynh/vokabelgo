@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const { seedStorage } = require('./helpers/storage');
 const path = require('path');
-const capture = name => path.join(__dirname, '../review-assets', name);
+const capture = name => path.join(__dirname, '../test-results/captures/review-assets', name);
 async function openCatalog(page) {
   await seedStorage(page, { vokabelgo_kino_reset_done_v2026: 'true' });
   await page.goto('/?hub=kino');

@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const path = require('path');
 
 test.describe('Lexicon Pipeline v0.1 Dev Review & Game Runtime Screenshots', () => {
-  const artifactDir = 'C:/Users/huynh/.gemini/antigravity/brain/a154fa89-2fbe-4511-9e20-ba75acd3d9d0';
+  const artifactDir = path.join(__dirname, '../test-results/captures');
 
   test('Capture 01 - 07: Lexicon Review Workbench', async ({ page }) => {
     await page.setViewportSize({ width: 1366, height: 860 });

@@ -1,7 +1,21 @@
 // test-all.js
 // Runs all acceptance test suites sequentially and exits non-zero if any fails
 const { spawnSync } = require('child_process');
+const fs = require('fs');
+const os = require('os');
 const path = require('path');
+
+// Cách ly dữ liệu: các suite ghi vào BẢN SAO tạm của dữ liệu lexicon thật
+// (và báo cáo audit tạm) thay vì sửa trực tiếp file trong repo.
+const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'vokabelgo-test-'));
+const seedCopy = (rel) => {
+  const dest = path.join(tmpDir, path.basename(rel));
+  fs.copyFileSync(path.join(__dirname, rel), dest);
+  return dest;
+};
+process.env.VOKABELGO_CANDIDATES_FILE = seedCopy('data/lexicon/candidates/candidates.json');
+process.env.VOKABELGO_APPROVED_FILE = seedCopy('data/lexicon/approved/approved.json');
+process.env.VOKABELGO_AUDIT_REPORT = path.join(tmpDir, 'audit-vocabulary-report.json');
 
 const suites = [
   'test-security-auth-acceptance.js',
