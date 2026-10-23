@@ -1,0 +1,155 @@
+{
+  "status": "completed",
+  "agent": "antigravity",
+  "model": "gemini-4-argon-high",
+  "completedAt": "2026-10-23T14:03:30+07:00",
+  "source": {
+    "path": "video/frieren_s01e01.mp4",
+    "durationSeconds": 1559.986009,
+    "fullDurationStr": "26:00",
+    "unchanged": true
+  },
+  "filesCreatedOrUpdated": [
+    "scripts/build-frieren-s01e01.py",
+    "frieren-s01e01-aligned.js",
+    "frieren-s01e01-aligned.json",
+    "frieren-s01e01-lesson.js",
+    "kino-chapter-data.js",
+    "index.html",
+    "scripts/build-kino-posters.cjs",
+    "assets/kino-posters/frieren_s01e01-1.jpg",
+    "assets/kino-posters/frieren_s01e01-2.jpg",
+    "assets/kino-posters/frieren_s01e01-3.jpg",
+    "assets/kino-posters/frieren_s01e01-4.jpg",
+    "assets/kino-posters/frieren_s01e01-5.jpg",
+    "assets/kino-posters/frieren_s01e01-6.jpg",
+    "assets/kino-posters/frieren_s01e01-7.jpg",
+    "qa/kino-alignment/frieren_s01e01/reviewed-lines.tsv",
+    "qa/kino-alignment/frieren_s01e01/reviewed-lines.json",
+    "qa/kino-alignment/frieren_s01e01/practice-groups.json",
+    "qa/kino-alignment/frieren_s01e01/caption-cues.json",
+    "qa/kino-alignment/frieren_s01e01/aligned-utterances-audit.json",
+    "qa/kino-alignment/frieren_s01e01/frieren_s01e01.de.vtt",
+    "qa/kino-alignment/frieren_s01e01/frieren_s01e01.vi.vtt",
+    "qa/kino-alignment/frieren_s01e01/codex-structural-review.json",
+    "e2e/kino-frieren.spec.js",
+    "e2e/kino-catalog.spec.js"
+  ],
+  "counts": {
+    "captionCues": 275,
+    "practiceUnits": 263,
+    "groupedPracticeUnits": 11,
+    "chapters": 7,
+    "focusPicksPerChapter": 7,
+    "vocabularyFlashcards": 24,
+    "postCreditsPreviewUnits": 4,
+    "flaggedReviewNotes": 29
+  },
+  "chapters": [
+    {
+      "part": 1,
+      "title": "Khải hoàn trở về kinh đô",
+      "icon": "🏰",
+      "start": 0,
+      "end": 274.5,
+      "practiceUnits": 27,
+      "captionCues": 28,
+      "picks": [700102, 700104, 700105, 700109, 700118, 700126, 700127],
+      "poster": "assets/kino-posters/frieren_s01e01-1.jpg"
+    },
+    {
+      "part": 2,
+      "title": "Đêm tiệc chia tay và mưa sao băng",
+      "icon": "🌠",
+      "start": 274.5,
+      "end": 440.0,
+      "practiceUnits": 44,
+      "captionCues": 45,
+      "picks": [700131, 700133, 700139, 700148, 700149, 700161, 700167],
+      "poster": "assets/kino-posters/frieren_s01e01-2.jpg"
+    },
+    {
+      "part": 3,
+      "title": "Năm mươi năm trôi qua và cuộc hội ngộ",
+      "icon": "⏳",
+      "start": 440.0,
+      "end": 680.0,
+      "practiceUnits": 43,
+      "captionCues": 43,
+      "picks": [700175, 700176, 700178, 700196, 700197, 700203, 700210],
+      "poster": "assets/kino-posters/frieren_s01e01-3.jpg"
+    },
+    {
+      "part": 4,
+      "title": "Chuyến phiêu lưu cuối cùng của nhóm anh hùng",
+      "icon": "🌌",
+      "start": 680.0,
+      "end": 870.0,
+      "practiceUnits": 28,
+      "captionCues": 32,
+      "picks": [700217, 700220, 700231, 700234, 700238, 700242, 700245],
+      "poster": "assets/kino-posters/frieren_s01e01-4.jpg"
+    },
+    {
+      "part": 5,
+      "title": "Lời tiễn biệt Himmel và nỗi day dứt của Frieren",
+      "icon": "🕯️",
+      "start": 870.0,
+      "end": 1120.0,
+      "practiceUnits": 41,
+      "captionCues": 41,
+      "picks": [700249, 700261, 700264, 700268, 700279, 700281, 700288],
+      "poster": "assets/kino-posters/frieren_s01e01-5.jpg"
+    },
+    {
+      "part": 6,
+      "title": "Gặp gỡ Fern tại nhà Heiter",
+      "icon": "🌲",
+      "start": 1120.0,
+      "end": 1275.0,
+      "practiceUnits": 32,
+      "captionCues": 36,
+      "picks": [700291, 700293, 700294, 700295, 700307, 700319, 700322],
+      "poster": "assets/kino-posters/frieren_s01e01-6.jpg"
+    },
+    {
+      "part": 7,
+      "title": "Cuốn cổ thư của Ewig và người học trò mới",
+      "icon": "📖",
+      "start": 1275.0,
+      "end": 1559.986009,
+      "practiceUnits": 48,
+      "captionCues": 50,
+      "picks": [700330, 700334, 700349, 700353, 700367, 700369, 700375],
+      "poster": "assets/kino-posters/frieren_s01e01-7.jpg"
+    }
+  ],
+  "checksRun": [
+    {
+      "command": "node scripts/audit-frieren-lesson.js",
+      "result": "passed (0 failures)"
+    },
+    {
+      "command": "npx playwright test e2e/kino-frieren.spec.js e2e/kino-catalog.spec.js --config=tmp/kino-local.config.cjs",
+      "result": "7 passed"
+    },
+    {
+      "command": "npx playwright test e2e/kino-hans.spec.js e2e/kino-trudes-tier.spec.js --config=tmp/kino-local.config.cjs",
+      "result": "14 passed"
+    },
+    {
+      "command": "node test-security-auth-acceptance.js",
+      "result": "27 passed, 0 failed"
+    }
+  ],
+  "uncertaintiesAndLimitations": [
+    "All transcript edits, speaker labels, and reconstructions are derived from cross-checking local faster-whisper medium/small passes and video frames; no audio was manually heard by a human listener.",
+    "700168 (314.80-315.02s 'Nein.') and 700290-700292 (1140.24-1146.58s forest monologue) were omitted by the full-file medium pass and recovered from independent small + focused-medium passes.",
+    "700215 (657.14-660.72s): primary medium heard 'ihr', independent small heard 'dir' ('Ich hatte gehofft, dass ich es dir eines Tages zurückgeben könnte.'). Flagged in reviewed-lines.",
+    "700225 (728.24-729.60s 'Tätschel mir nicht so den Kopf.'): phonetic/context reconstruction from garbled ASR ('Tetschel, mir nicht zu den Kopf' / 'Der chillt mir nicht so den Kopf'); flagged as not manually heard.",
+    "700257 (907.44-908.74s 'Nimm das gefälligst ernst, Bischof!'): phonetic/context reconstruction from garbled funeral-crowd ASR ('Nimm das Gefährlichste ernst, Mischung!/Mischer!'); flagged as not manually heard.",
+    "700341-700342 (1336.16-1339.80s): medium heard 'Ich wäre ja auch nicht richtig unsterblich, wäre nur ein kleines bisschen.' while small heard 'Ich will ja auch nicht richtig unsterblich werden, nur ein kleines bisschen.'; flagged in reviewed-lines.",
+    "700372-700375 (1550.12-1559.62s post-credits preview): 700372 ('Wie kommst du mit Fern zurecht?') is a phonetic reconstruction from garbled preview ASR ('Wie kommst du mit Fernseher ein?'); 700373 ('Es wäre eine Schande, wenn du jetzt sterben würdest.') aligns ASR 'Es wäre schade...' with the on-screen German quote at 1554-1556s; 700374 retains spoken 'Das hätte nicht unbedingt Magie sein müssen.' while noting the on-screen Episode 2 title card reads 'Es hätte nicht unbedingt Magie sein müssen ...'."
+  ],
+  "blockers": []
+}

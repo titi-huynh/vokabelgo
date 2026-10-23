@@ -1,0 +1,19 @@
+MÈO CHỢ — NGHIÊN CỨU RIG CUTOUT 2D TRONG BLENDER
+
+ao-co-may-cutout-v01.blend: file Blender thật, camera orthographic cố định,
+ảnh sprite đã pack trong file, các lớp có tên rõ và keyframe có thể chỉnh.
+20 giây, 480 frame ở 24 fps. Mở file trong Blender rồi phát timeline.
+
+Có: bè và phao dao động riêng, thân thở, mắt chớp, đầu nghiêng nhìn,
+đuôi khẽ động, chuồn chuồn bay vào/đậu/rời đi, mắt lim dim và miệng ngáp.
+Mặt dùng các nét/miếng màu 2D, không tạo mõm nổi hoặc má 3D.
+Thân được imagegen sửa để bỏ các tay dính sẵn, dùng hai tay rig riêng.
+
+Đây là bản nghiên cứu rig gốc độc lập. Timeline web tương tác được dựng
+riêng, có cảnh cá cắn câu; không khẳng định các keyframe Blender và web
+trùng hoàn toàn. Hiện .blend chưa chứa cảnh giật cá/giật cá hiếm, hát thành
+tiếng hay hệ thống từ vựng. Bản thử này không có âm thanh.
+
+build-blender.py tái tạo file bằng Blender 5.2.2 LTS đã cài trên máy.
+Đã chạy thực tế và render kiểm tra frame 1, 217, 337 trong review/.
+Các PNG và prompt nguồn ở assets/. Tệp .blend1 là bản sao dự phòng Blender.

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ao Cỏ May · Mèo kéo cá</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="catch-v03/catch.css">
+</head>
+<body>
+  <main class="page">
+    <header><div><p class="eyebrow">MÈO CHỢ · AO CỎ MAY</p><h1>Một mẻ cá nhỏ.</h1></div><span class="edition">Mặt ao · Bản 04</span></header>
+    <section class="scene" aria-label="Mèo Chợ lấy đà kéo cần, câu cá vàng vào sọt rồi quay ra cười">
+      <canvas id="catchScene" width="1672" height="941" aria-hidden="true"></canvas>
+      <div class="scene-caption"><span class="status-dot"></span><span id="phase" role="status">Một góc ao yên bình…</span></div>
+      <p id="loading" role="status">Đang mở một góc ao nhỏ…</p>
+    </section>
+    <div class="controls">
+      <button id="replay" class="primary" type="button">↻ Xem lại mẻ cá</button>
+      <button id="bite" type="button">Cá cắn câu!</button>
+      <button id="pause" type="button">Tạm dừng</button>
+      <label><input id="reduced" type="checkbox"> Giảm chuyển động</label>
+      <output id="time" aria-label="Thời gian">0.0 / 7.6 giây</output>
+    </div>
+    <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+    <label class="scrub-label" for="scrub">Xem chậm từng động tác <input id="scrub" type="range" min="0" max="7.6" step="0.01" value="0"></label>
+    <div class="pose-points" aria-label="Các động tác trong bản mới">
+      <button type="button" data-pose-time="1.72">Lấy đà</button>
+      <button type="button" data-pose-time="2.25">Kéo cần</button>
+      <button type="button" data-pose-time="2.9">Cá bay lên</button>
+      <button type="button" data-pose-time="3.7">Cá vào sọt</button>
+      <button type="button" data-pose-time="5.6">Quay ra cười</button>
+    </div>
+    <p class="note">Nhánh cây, một sợi dây và niềm vui khi được cá. Ao và bè vẫn dập dềnh sau mẻ cá. Chưa có âm thanh. <a href="idle-v02.html">Xem lại cảnh chờ</a></p>
+    <details class="reference">
+      <summary>Video mẫu chị chọn · Xem nhịp câu cá</summary>
+      <p>Clip chị cung cấp để tham khảo nhịp lấy đà, kéo cá và quay ra cười. Đoạn phía trên dùng tạo hình Mèo Chợ của mình.</p>
+      <video id="motionReference" controls muted playsinline preload="metadata" aria-label="Video mẫu mèo câu cá do chị cung cấp"><source src="assets/reference-catfishing.mp4" type="video/mp4"></video>
+      <div class="reference-points" aria-label="Các tư thế trong video mẫu">
+        <button type="button" data-reference-time="0.8">0,8s · Chờ</button>
+        <button type="button" data-reference-time="1.5">1,5s · Lấy đà</button>
+        <button type="button" data-reference-time="2.2">2,2s · Vút cần</button>
+        <button type="button" data-reference-time="3.2">3,2s · Cá vào thùng</button>
+        <button type="button" data-reference-time="4.2">4,2s · Nhìn thùng</button>
+        <button type="button" data-reference-time="5.2">5,2s · Quay ra cười</button>
+      </div>
+    </details>
+  </main>
+  <script src="catch-v03/poses.js"></script>
+  <script src="catch-v03/catch.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-10-23",
+  "method": "Official publisher metadata via YouTube oEmbed; actual local iframe playback state 1 and accessible player UI. No audio or video downloaded.",
+  "languageEvidence": "Official Deutsche Synchro / Deutsch labels. Sony Chainsaw Man trailer and recap are distinct from the separately published OmU versions; official film page links both.",
+  "passed": [
+    {
+      "id": "NpjVT8pA1Zg",
+      "title": "Demon Slayer – Thanh gươm diệt quỷ",
+      "scope": "Mới · Trailer Đức · Sony Pictures · 1:30"
+    },
+    {
+      "id": "wlFjdI8o4UU",
+      "title": "Chainsaw Man – tóm tắt",
+      "scope": "Mới · Tóm tắt tiếng Đức · Sony Pictures · 1:11"
+    },
+    {
+      "id": "vbEOsrs0p5w",
+      "title": "Chainsaw Man – Reze Arc",
+      "scope": "Mới · Trailer Đức · Sony Pictures · 1:07"
+    },
+    {
+      "id": "bXXKSdX7K_k",
+      "title": "Your Name – Tên cậu là gì?",
+      "scope": "Mới · Trailer Đức · LEONINE Studios · 1:32"
+    }
+  ],
+  "failed": [
+    {
+      "id": "m6glWu0SaMM",
+      "title": "Frieren",
+      "code": 150,
+      "reason": "Uploader does not make video available in current country"
+    },
+    {
+      "id": "q2iyJk9cSks",
+      "title": "SPY × FAMILY",
+      "code": 150,
+      "reason": "Uploader does not make video available in current country"
+    },
+    {
+      "id": "x40O_l6Nk3U",
+      "title": "Solo Leveling",
+      "code": 150,
+      "reason": "Uploader does not make video available in current country"
+    },
+    {
+      "id": "lJqEvQcJ_VM",
+      "title": "SPY × FAMILY – trailer dự phòng",
+      "code": 150,
+      "reason": "Uploader does not make video available in current country"
+    },
+    {
+      "id": "8jmWiX9YJGo",
+      "title": "Frieren – tóm tắt Synchro",
+      "code": 150,
+      "reason": "Uploader does not make video available in current country"
+    },
+    {
+      "id": "t3_uYFazKrY",
+      "title": "Frieren – Phantome der Vergangenheit",
+      "code": 150,
+      "reason": "Uploader does not make video available in current country"
+    }
+  ],
+  "excluded": [
+    {
+      "id": "ZUB6jCKxlp4",
+      "reason": "OmU; not German dubbed"
+    }
+  ],
+  "limits": [
+    "These specific videos passed on this machine on the check date; other regions and future availability may differ.",
+    "New entries are trailers or recap, not full episodes.",
+    "No transcript or captions quality audit yet."
+  ],
+  "evidenceFiles": [
+    "modern-first-check.txt",
+    "modern-more-check.txt",
+    "modern-frieren-check.txt",
+    "modern-chainsaw-trailer-check.txt",
+    "modern-chainsaw-recap-check.txt",
+    "modern-yourname-check.txt"
+  ]
+}

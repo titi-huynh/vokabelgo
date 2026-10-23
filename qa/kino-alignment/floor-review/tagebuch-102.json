@@ -1,0 +1,454 @@
+{
+  "docType": "externalVideo",
+  "id": "tagebuch-102",
+  "uuid": "3f31ae8a-f6f2-428b-b25f-4bf0b346ee56",
+  "externalId": "ard-Y3JpZDovL25kci5kZS9kZTZjMDdmNC02MmYzLTQ0ZWEtYmM2Ni0wZGQ0ODA2NDA3YTY",
+  "urlPath": "/die-regeln-von-floor/videos",
+  "validTo": null,
+  "structure": {
+    "site": "kika",
+    "uuid": "1fa02257-e21f-435b-a790-5fbd901213d3",
+    "structureNodePath": "/sendungen/sendereihen/die/die-regeln-von-floor/videos",
+    "alias": ""
+  },
+  "navigation": {
+    "mainNavigation": {
+      "id": "structurenodedocument20728",
+      "url": "https://www.kika.de/ackley/v1/navigations/structurenodedocument20728/main"
+    },
+    "burgerNavigation": {
+      "id": "structurenodedocument20728",
+      "url": "https://www.kika.de/ackley/v1/navigations/structurenodedocument20728/burger"
+    },
+    "footerNavigation": {
+      "id": "structurenodedocument20728",
+      "url": "https://www.kika.de/ackley/v1/navigations/structurenodedocument20728/footer"
+    },
+    "subNavigation": {
+      "id": "structurenodedocument20728",
+      "url": "https://www.kika.de/ackley/v1/navigations/structurenodedocument20728/sub"
+    }
+  },
+  "settings": {
+    "header": {
+      "id": "structurenodedocument20728",
+      "url": "https://www.kika.de/ackley/v1/settings/structurenodedocument20728/header"
+    },
+    "help": null,
+    "staticMetaJson": {
+      "id": "kika-meta100",
+      "url": "https://www.kika.de/ackley/v1/jsons/kika-meta100"
+    },
+    "dynamicMetaDataJson": {
+      "id": "tagebuch-102",
+      "url": "https://www.kika.de/ackley/v1/metadatas/tagebuch-102"
+    },
+    "primaryJsonLd": {
+      "id": "generic-jsonld102",
+      "url": "https://www.kika.de/ackley/v1/jsons/generic-jsonld102"
+    },
+    "secondaryJsonLd": {
+      "id": "tagebuch-102",
+      "url": "https://www.kika.de/ackley/v1/secondaryjsonld/tagebuch-102"
+    },
+    "chatbot": null,
+    "piano": {
+      "id": null,
+      "url": "/resources/js/tracking-piano-prod-latest.js"
+    },
+    "clickOns": {
+      "id": "structurenodedocument20728",
+      "url": "https://www.kika.de/ackley/v1/settings/structurenodedocument20728/clickon"
+    },
+    "banner": {
+      "id": "qr102",
+      "url": "https://www.kika.de/ackley/v1/parentalHints/qr102",
+      "appIds": {
+        "amazon": "B092D9S8B6",
+        "android": "de.kika.kikaplayer",
+        "ios": "1421189758"
+      },
+      "type": "kikaapp",
+      "deeplink": "https://app.kika.de/applink/kikaapp",
+      "deeplinkId": null,
+      "deeplinkDocument": null,
+      "piano": {
+        "at_medium": "kika-web",
+        "at_campaign": null,
+        "at_title": null,
+        "at_location": null,
+        "at_channel": null,
+        "at_campaign_name": null,
+        "at_owner": null
+      },
+      "image": null
+    }
+  },
+  "title": "Tagebuch",
+  "teaserText": "Floor hat ein neues Tagebuch. Kees findet das dumm. Er hat Angst, dass Floor dort Dinge über ihn reinschreibt. Bis Irma ihm ein eigenes Tagebuch schenkt.",
+  "date": "2026-02-11T14:00:00.000+01:00",
+  "endDate": "2026-12-02T20:50:00.000+01:00",
+  "modificationDate": "2026-10-13T15:31:04.191+02:00",
+  "metaKeywords": [
+    "Kinderinhalt",
+    "Die Regeln von Floor",
+    "Tagebuch"
+  ],
+  "categories": {},
+  "description": "Floor hat ein neues Tagebuch. Kees findet das dumm. Er hat Angst, dass Floor dort Dinge über ihn reinschreibt. Er ärgert sich, dass er nicht hineinschauen darf, weil ein Tagebuch privat ist. Als Irma Kees ein Tagebuch schenkt, dreht sich der Spieß aber plötzlich um.",
+  "episodeNumber": "80",
+  "fsk": 0,
+  "ageRating": 0,
+  "ageRatingDescriptors": null,
+  "broadcastAttributes": [
+    "HD",
+    "SechzehnZuNeun",
+    "Stereo",
+    "Untertitel"
+  ],
+  "duration": "00:09:15",
+  "durationInSeconds": 555,
+  "introDurationInSeconds": 20,
+  "outroDurationInSeconds": 0,
+  "introStartInSeconds": 0,
+  "outroStartInSeconds": 0,
+  "transmissionType": "geo",
+  "webOnly": false,
+  "targetAudienceCategory": 10,
+  "language": "de",
+  "offlineAvailable": false,
+  "thresholdDaysUntilOffline": 6,
+  "videoType": "mainContent",
+  "rights": "ARD",
+  "platforms": [
+    "kikaapp",
+    "kikade"
+  ],
+  "season": "5",
+  "hasAssets": true,
+  "hasOriginalVideo": true,
+  "hasAdVideo": false,
+  "hasDgsVideo": false,
+  "hasSubtitle": false,
+  "participationActive": false,
+  "genDate": "2026-10-23T10:07:27.383+02:00",
+  "actors": [
+    {
+      "firstName": "Elisa",
+      "lastName": "Beuger",
+      "role": "Schauspieler/in",
+      "roleTitle": "Irma"
+    },
+    {
+      "firstName": "Ole",
+      "lastName": "Kroes",
+      "role": "Schauspieler/in",
+      "roleTitle": "Kees"
+    },
+    {
+      "firstName": "Bobbie",
+      "lastName": "Mulder",
+      "role": "Schauspieler/in",
+      "roleTitle": "Floor"
+    },
+    {
+      "firstName": "Ferdi",
+      "lastName": "Stofmeel",
+      "role": "Schauspieler/in",
+      "roleTitle": "Jan"
+    },
+    {
+      "firstName": "Romy",
+      "lastName": "Voll",
+      "role": "Schauspieler/in",
+      "roleTitle": "Margreet"
+    },
+    {
+      "firstName": "Dunya",
+      "lastName": "Khayame",
+      "role": "Schauspieler/in",
+      "roleTitle": "Juf Marja"
+    }
+  ],
+  "staff": [
+    {
+      "firstName": "Maurice",
+      "lastName": "Trouwborst",
+      "role": "Regie",
+      "roleTitle": null
+    },
+    {
+      "firstName": "Anne",
+      "lastName": "Barnhoorn",
+      "role": "Autor/in (Drehbuch)",
+      "roleTitle": null
+    },
+    {
+      "firstName": "Don",
+      "lastName": "Duyns",
+      "role": "Autor/in (Drehbuch)",
+      "roleTitle": null
+    },
+    {
+      "firstName": "Marjon",
+      "lastName": "Hoffman",
+      "role": "Autor/in (Drehbuch)",
+      "roleTitle": null
+    },
+    {
+      "firstName": "Lotte",
+      "lastName": "Tabbers",
+      "role": "Autor/in (Drehbuch)",
+      "roleTitle": null
+    },
+    {
+      "firstName": "Maurice",
+      "lastName": "Trouwborst",
+      "role": "Autor/in (Drehbuch)",
+      "roleTitle": null
+    },
+    {
+      "firstName": "Daan",
+      "lastName": "Windhorst",
+      "role": "Autor/in (Drehbuch)",
+      "roleTitle": null
+    },
+    {
+      "firstName": "Luk",
+      "lastName": "van Bemmelen",
+      "role": "Autor/in (Drehbuch)",
+      "roleTitle": null
+    },
+    {
+      "firstName": "Alexander",
+      "lastName": "Reumers",
+      "role": "Musik",
+      "roleTitle": null
+    },
+    {
+      "firstName": "Diderik",
+      "lastName": "Evers",
+      "role": "Kamera",
+      "roleTitle": null
+    },
+    {
+      "firstName": "NL",
+      "lastName": "Film",
+      "role": null,
+      "roleTitle": null
+    },
+    {
+      "firstName": "VPRO",
+      "lastName": "TV",
+      "role": null,
+      "roleTitle": null
+    },
+    {
+      "firstName": null,
+      "lastName": "Filmmore",
+      "role": null,
+      "roleTitle": null
+    }
+  ],
+  "teaserImage": {
+    "id": "floor-bobbi-mulder-und-kees-ole-kroes-fruehstuecken-als-kees-ein-tagebuch-von-irma-geschenkt-bekommt-100",
+    "copyrights": "NL Film",
+    "headline": "Floor (Bobbi Mulder) und Kees (Ole Kroes) frühstücken, als Kees ein Tagebuch von Irma geschenkt bekommt.",
+    "caption": null,
+    "title": "Floor (Bobbi Mulder) und Kees (Ole Kroes) frühstücken, als Kees ein Tagebuch von Irma geschenkt bekommt. | Rechte: NL Film",
+    "alt": "Folge 80 Floor (Bobbi Mulder) und Kees (Ole Kroes) frühstücken, als Kees ein Tagebuch von Irma geschenkt bekommt. © NL Film",
+    "urlScheme": "/die-regeln-von-floor/videos/floor-bobbi-mulder-und-kees-ole-kroes-fruehstuecken-als-kees-ein-tagebuch-von-irma-geschenkt-bekommt-100-resimage_v-**imageVariant**_w-**width**.jpg?version=3129",
+    "urlSchemeExtended": {
+      "scheme": "/die-regeln-von-floor/videos/floor-bobbi-mulder-und-kees-ole-kroes-fruehstuecken-als-kees-ein-tagebuch-von-irma-geschenkt-bekommt-100-resimage_v-**imageVariant**_w-**width**.**format**?version=3129",
+      "format": "jpg"
+    },
+    "imageBrightness": "dark",
+    "backgroundColor": null,
+    "variants": [
+      {
+        "imageType": "cropped",
+        "height": 1080,
+        "width": 1920
+      },
+      {
+        "imageType": "headerLarge",
+        "height": 1080,
+        "width": 1920
+      },
+      {
+        "imageType": "headerSmall",
+        "height": 1080,
+        "width": 1920
+      },
+      {
+        "imageType": "headerWide329",
+        "height": 540,
+        "width": 1920
+      },
+      {
+        "imageType": "ident",
+        "height": 1080,
+        "width": 1080
+      },
+      {
+        "imageType": "landscape249",
+        "height": 720,
+        "width": 1920
+      },
+      {
+        "imageType": "miniKika",
+        "height": 1080,
+        "width": 1920
+      },
+      {
+        "imageType": "opener489",
+        "height": 360,
+        "width": 1920
+      },
+      {
+        "imageType": "original",
+        "height": 1080,
+        "width": 1920
+      },
+      {
+        "imageType": "searchImage",
+        "height": 1080,
+        "width": 1347
+      },
+      {
+        "imageType": "tlarge167",
+        "height": 840,
+        "width": 1920
+      },
+      {
+        "imageType": "tlarge169",
+        "height": 1080,
+        "width": 1920
+      },
+      {
+        "imageType": "tlargeWithLogo169",
+        "height": 1080,
+        "width": 1920
+      },
+      {
+        "imageType": "tportrait89",
+        "height": 1080,
+        "width": 960
+      },
+      {
+        "imageType": "tsmall169",
+        "height": 1080,
+        "width": 1917
+      },
+      {
+        "imageType": "tsquare11",
+        "height": 1080,
+        "width": 1080
+      },
+      {
+        "imageType": "twide329",
+        "height": 540,
+        "width": 1920
+      }
+    ],
+    "structure": {
+      "site": "kika",
+      "uuid": "1fa02257-e21f-435b-a790-5fbd901213d3",
+      "structureNodePath": "/sendungen/sendereihen/die/die-regeln-von-floor/videos",
+      "alias": ""
+    },
+    "online": true
+  },
+  "connectedVideos": [
+    {
+      "docType": null,
+      "id": "tagebuch-102",
+      "uuid": "3f31ae8a-f6f2-428b-b25f-4bf0b346ee56",
+      "externalId": "ard-Y3JpZDovL25kci5kZS9kZTZjMDdmNC02MmYzLTQ0ZWEtYmM2Ni0wZGQ0ODA2NDA3YTY",
+      "urlPath": null,
+      "validTo": null,
+      "structure": {
+        "site": "kika",
+        "uuid": "1fa02257-e21f-435b-a790-5fbd901213d3",
+        "structureNodePath": "/sendungen/sendereihen/die/die-regeln-von-floor/videos",
+        "alias": ""
+      },
+      "navigation": null,
+      "settings": null,
+      "title": null,
+      "teaserText": null,
+      "date": null,
+      "endDate": null,
+      "modificationDate": null,
+      "metaKeywords": null,
+      "categories": null,
+      "description": null,
+      "episodeNumber": null,
+      "fsk": null,
+      "ageRating": null,
+      "ageRatingDescriptors": null,
+      "broadcastAttributes": null,
+      "duration": null,
+      "durationInSeconds": null,
+      "introDurationInSeconds": null,
+      "outroDurationInSeconds": null,
+      "introStartInSeconds": null,
+      "outroStartInSeconds": null,
+      "transmissionType": null,
+      "webOnly": null,
+      "targetAudienceCategory": null,
+      "language": null,
+      "offlineAvailable": null,
+      "thresholdDaysUntilOffline": null,
+      "videoType": "mainContent",
+      "rights": null,
+      "platforms": null,
+      "season": null,
+      "hasAssets": true,
+      "hasOriginalVideo": true,
+      "hasAdVideo": false,
+      "hasDgsVideo": false,
+      "hasSubtitle": false,
+      "participationActive": false,
+      "genDate": null,
+      "actors": null,
+      "staff": null,
+      "teaserImage": null,
+      "connectedVideos": null,
+      "brand": null,
+      "assets": null,
+      "subtitles": null,
+      "structureBrand": null,
+      "brandInfo": null,
+      "plusContent": null,
+      "eventDates": null
+    }
+  ],
+  "brand": {
+    "id": "die-regeln-von-floor-100",
+    "url": "https://www.kika.de/ackley/v1/brands/die-regeln-von-floor-100"
+  },
+  "assets": {
+    "id": "tagebuch-102",
+    "url": "https://www.kika.de/ackley/v1/videos/tagebuch-102/assets"
+  },
+  "subtitles": {
+    "id": "tagebuch-102",
+    "url": "https://www.kika.de/ackley/v1/videos/tagebuch-102/subtitle"
+  },
+  "structureBrand": {
+    "id": "die-regeln-von-floor-100",
+    "urlPath": "/die-regeln-von-floor"
+  },
+  "brandInfo": {
+    "description": "Die zehnjährige Floor hat schon viele peinlichen Situationen erlebt und ist bereit, ihr Wissen mit der Welt zu teilen! Wie gehst du mit einem widerlichen Bruder um? Was machst du, wenn du eine hässliche Jacke als Geschenk bekommst? Was ist der beste Plan, wenn deine beste Freundin an Borkenflechte erkrankt ist und du es auch willst? Und warum ist Karpfenfischen so ein Jungs-Ding? Floor hat die Antworten.",
+    "descriptionTitle": "Darum geht es...",
+    "linkLogo": null,
+    "linkDocument": null
+  },
+  "plusContent": [],
+  "eventDates": {
+    "eventStartDate": null,
+    "eventEndDate": null
+  }
+}

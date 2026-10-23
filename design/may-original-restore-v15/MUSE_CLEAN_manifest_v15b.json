@@ -1,0 +1,73 @@
+{
+  "set": "May_viewer_clean_v15b",
+  "created": "2026-10-23",
+  "scope": "Chi lam sach RIENG nhom hop phim + ke cua v15. Khong sua May/bang/be/ghe/ban/nha/nen.",
+  "method": "Muse Image 1 luot ve sach do phan giai cao dua tren EDIT TARGET original-viewer-stand-v15.png + doi chieu hop vuong trong v13c; nen magenta tron; tach alpha bang keyout.py (PIL/NumPy, despill + co alpha 1px).",
+  "sprite": {
+    "file": "original-viewer-stand-clean-v15b.png",
+    "size": [
+      1728,
+      1344
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "content_bbox_in_sprite": [
+      110,
+      100,
+      1629,
+      1269
+    ],
+    "content_px": [
+      1519,
+      1169
+    ],
+    "sha256": "73f362b3ced09e88b312b28810450892b5cc282e4721dabedbbd9c5b6e3d44cf"
+  },
+  "raw": {
+    "file": "viewer-stand-clean_raw.png",
+    "size": [
+      1728,
+      1344
+    ],
+    "sha256": "235236626078b85b0ba2cab8d285b90ba7cd970d82bfacd0c3ed99c6ecaea161"
+  },
+  "composite": {
+    "canvas": "May_home_original_without_viewer_v15.png (nen B cua v15, giu nguyen)",
+    "placement_bbox_xyxy": [
+      565,
+      798,
+      695,
+      900
+    ],
+    "fitted_px": [
+      130,
+      100
+    ],
+    "paste_xy": [
+      565,
+      800
+    ],
+    "center_x": 630,
+    "feet_y": 900,
+    "output": "May_home_original_viewer_left_clean_v15b.png",
+    "sha256": "aa6b556dd41e1ea1e328f9dafa14c7f6ddf12aca78211a56ec44b894b29c57e0"
+  },
+  "pixel_diff_evidence": {
+    "final_vs_B_outside_placement_bbox": 0,
+    "final_vs_v15A_region_diffs": {
+      "may": 0,
+      "raft_dock": 0,
+      "apple_board": 0,
+      "play_table": 0,
+      "chair_book": 0
+    }
+  },
+  "known_deviations": [
+    "Day la ban VE SACH lai (theo yeu cau phuc hoi do phan giai cao), khong phai pixel trich tu v13c nhu v15; hinh dang/ti le giu sat nhom v15 nhung net ve la net moi sach.",
+    "Tay quay mau nga kem (brief cho phep nga/nau); co hai cham sang nho tren vong ong nhin.",
+    "Mat ke rong hon than hop ~1.5 lan khi do tren pixel noi dung sprite (brief ~1.35); silhouette tong the khi fit vao bbox 130x102 khong doi vi tri/kich thuoc tren canh."
+  ]
+}

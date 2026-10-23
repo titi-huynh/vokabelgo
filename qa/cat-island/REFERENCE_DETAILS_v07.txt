@@ -1,0 +1,25 @@
+Cat Island boat study v07 — 2026-10-18
+
+Scope: new Blender source/model and standalone study viewer only. Existing
+learning game, Wortregen and Fuxie are unchanged in this pass. v06 retained.
+Reference choices and rebuild command: design/cat-island-blender/v07/ART_DIRECTION.txt
+
+Verified:
+- Full Blender build completed with editable BLEND, GLB, two native renders.
+- Final GLB 9,105,636 bytes, 254,549 triangles, 48 material batches;
+  707 editable mesh objects. No external texture dependencies.
+- Native render review corrected a partly embedded life ring, oversized paint
+  chips, flat cheek alignment, and Vietnamese menu/price labels.
+- node --check cat-island-boat-study.js passed.
+- Browser v07 loaded with no captured warnings/errors.
+- Paused same-camera v07/v06 comparison works in both directions.
+- Desktop closeup shows entire ears and scarf; overview shows added equipment.
+- Fresh 390 x 844 viewport frames entire boat and controls; no horizontal
+  document overflow (scrollWidth 375, innerWidth 390).
+- Screenshots under review-assets: cat-island-v07-detailed-boat.png,
+  cat-island-v07-scarf-cat.png, cat-island-v07-mobile.png.
+
+Limits: this remains a visual study, not approved final art. Existing water
+and boat buoyancy animate; character acting and separate cloth/prop animation
+are not added. Desktop viewport emulation is not a physical mobile-device test.
+The detailed asset is larger than v06; no device FPS benchmark is claimed.

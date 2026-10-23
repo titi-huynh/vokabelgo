@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VokabelGo · Chợ Nổi Đảo Mèo (Cat Island Market)</title>
+  <link rel="stylesheet" href="cat-island.css">
+  
+  <!-- Required Vocabulary, Schema & Shared Learning Core Scripts -->
+  <script src="vokabel-cards-data.js"></script>
+  <script src="vocabulary-schema.js"></script>
+  <script src="typing-verification.js"></script>
+  <script src="vendor/ts-fsrs/index.umd.js"></script>
+  <script src="fsrs-srs.js"></script>
+  <script src="learning-session.js"></script>
+  <script src="daily-progress.js"></script>
+  <script src="cat-island-learning.js"></script>
+
+  <!-- Pinned Local ES Module Importmap (No runtime CDN reliance) -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./assets/cat-island/vendor/three.module.js",
+      "three/addons/": "./assets/cat-island/vendor/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <!-- 3D Scene Viewport -->
+    <main id="scene-container" role="region" aria-label="Khu vực chợ nổi 3D">
+      <!-- Top HUD Bar (anchored inside scene viewport to prevent desktop order panel overlap) -->
+      <header class="top-bar">
+        <div class="brand-badge">
+          <span class="brand-icon" aria-hidden="true">🐱🛶</span>
+          <div>
+            <div class="brand-title">Chợ Nổi Đảo Mèo</div>
+          </div>
+          <span class="brand-sub" id="hud-mode-tag">Chợ sớm</span>
+        </div>
+
+        <div class="hud-stats">
+          <div class="stat-pill coins" title="Tiền xu phiên chợ">
+            <span aria-hidden="true">🪙</span>
+            <span id="stat-coins">0</span>
+          </div>
+          <div class="stat-pill" title="Đơn hàng đã giải quyết">
+            <span aria-hidden="true">📦</span>
+            <span id="stat-served">0/12</span>
+          </div>
+          <div class="stat-pill" id="stat-combo-pill" title="Chuỗi phục vụ liên tiếp" style="display:none;">
+            <span aria-hidden="true">🔥</span>
+            <span id="stat-combo">x0</span>
+          </div>
+          <div class="stat-pill rush-timer" id="stat-timer-pill" style="display:none;" title="Thời gian phiên chợ đông">
+            <span aria-hidden="true">⏳</span>
+            <span id="stat-timer">120s</span>
+          </div>
+        </div>
+
+        <div class="top-actions">
+          <button type="button" class="btn-icon" id="btn-sound-toggle" title="Bật hoặc tắt âm thanh" aria-label="Bật hoặc tắt âm thanh">
+            <span id="sound-icon" aria-hidden="true">🔊</span>
+          </button>
+          <button type="button" class="btn-icon" id="btn-pause" title="Tạm dừng phiên chợ" aria-label="Tạm dừng phiên chợ">
+            <span aria-hidden="true">⏸️</span>
+          </button>
+        </div>
+      </header>
+
+      <canvas id="scene-canvas"></canvas>
+      <canvas id="fallback-canvas" style="display:none;"></canvas>
+      <div class="scene-badge" id="scene-status-badge">Bến chợ đã sẵn sàng 🌊</div>
+      
+      <!-- Tutorial Coachmark Bubble -->
+      <div class="coachmark-balloon" id="coachmark" role="status" aria-live="polite" style="display:none;">
+        <span aria-hidden="true">👉</span>
+        <span id="coachmark-text">Nhấp vào thuyền khách để nhận đơn hàng đầu tiên!</span>
+      </div>
+
+      <!-- Accessible Customer Dock Rail (Selector for 2-3 customer boats) -->
+      <div id="customer-dock-rail" class="customer-dock-rail" role="region" aria-label="Danh sách thuyền khách cập bến"></div>
+    </main>
+
+    <!-- Compact Floating Order Panel -->
+    <aside id="order-panel" class="hidden" role="region" aria-label="Đơn hàng của thuyền khách" aria-hidden="true">
+      <div class="order-header">
+        <div class="order-customer-info">
+          <div class="customer-avatar" id="order-avatar" aria-hidden="true">🐱</div>
+          <div class="customer-meta">
+            <h4 id="order-customer-name">Khách Mèo Cam</h4>
+            <span id="order-customer-desc">Ghe tam bản gỗ mít</span>
+          </div>
+        </div>
+        <span class="order-type-badge recall" id="order-type-badge">Gõ từ vựng</span>
+      </div>
+
+      <div class="order-body">
+        <div class="order-prompt" id="order-prompt">Nghĩa tiếng Việt của món đồ:</div>
+        <div class="order-target-word" id="order-target-word">ngôn ngữ cơ thể</div>
+
+        <!-- Cloze sentence box if available -->
+        <div class="order-example-box" id="order-example-box" style="display:none;">
+          <span id="order-example-text"></span>
+        </div>
+
+        <!-- Listening controls -->
+        <div class="listen-row" id="order-listen-row" style="display:none;">
+          <button type="button" class="listen-btn" id="btn-listen-play" aria-label="Nghe lại phát âm tiếng Đức">
+            <span aria-hidden="true">🔊</span>
+            <span>Nghe lại phát âm</span>
+          </button>
+          <button type="button" class="fallback-text-btn" id="btn-listen-fallback">
+            Chuyển sang xem chữ
+          </button>
+        </div>
+
+        <!-- Option Selection Buttons (Meaning / Listen) -->
+        <div class="options-grid" id="order-options-grid" style="display:none;" role="group" aria-label="Các lựa chọn đáp án"></div>
+
+        <!-- Typed Recall Input -->
+        <div class="input-group" id="order-input-group">
+          <label class="sr-only" for="order-input">Nhập từ vựng tiếng Đức</label>
+          <div class="text-input-wrap">
+            <input type="text" id="order-input" class="text-input" placeholder="Nhập từ tiếng Đức kèm mạo từ..." autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Nhập từ tiếng Đức kèm mạo từ">
+          </div>
+          <div class="umlaut-bar" role="group" aria-label="Ký tự đặc biệt tiếng Đức">
+            <button type="button" class="umlaut-btn" data-char="ä" aria-label="Chèn chữ ä">ä</button>
+            <button type="button" class="umlaut-btn" data-char="ö" aria-label="Chèn chữ ö">ö</button>
+            <button type="button" class="umlaut-btn" data-char="ü" aria-label="Chèn chữ ü">ü</button>
+            <button type="button" class="umlaut-btn" data-char="ß" aria-label="Chèn chữ ß">ß</button>
+          </div>
+        </div>
+
+        <!-- Token Arrangement (Order) -->
+        <div id="order-tokens-group" style="display:none;">
+          <div class="tokens-container" id="order-tokens-chosen" role="region" aria-label="Các từ đã chọn theo thứ tự"></div>
+          <div style="font-size: 11px; color: var(--color-text-muted); margin: 6px 0 4px;">Kho từ để chọn:</div>
+          <div class="tokens-pool" id="order-tokens-pool" role="group" aria-label="Kho từ vựng cần xếp"></div>
+        </div>
+
+        <!-- Feedback Box -->
+        <div class="feedback-box" id="order-feedback" role="alert" aria-live="assertive"></div>
+      </div>
+
+      <div class="order-footer">
+        <button type="button" class="btn-secondary" id="btn-order-hint">Gợi ý</button>
+        <button type="button" class="btn-secondary" id="btn-order-skip">Bỏ qua</button>
+        <button type="button" class="btn-primary" id="btn-order-submit">Giao hàng (Enter)</button>
+      </div>
+    </aside>
+
+    <!-- Modal: Title / Start Shift -->
+    <div class="modal-overlay" id="modal-start" role="dialog" aria-modal="true" aria-labelledby="start-modal-title">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 id="start-modal-title">🐱 Bắt Đầu Phiên Chợ Nổi</h2>
+        </div>
+        <div class="modal-body">
+          <p id="profile-summary" style="font-size:13px;color:var(--color-text-muted);margin-bottom:12px;"></p>
+          <div class="form-group">
+            <label class="form-label" for="deck-select">Chọn bộ từ vựng luyện tập:</label>
+            <select id="deck-select" class="form-select" aria-label="Chọn bộ từ vựng"></select>
+            <p id="deck-note" style="font-size:12px;line-height:1.5;color:var(--color-text-muted);margin:8px 0 0;"></p>
+          </div>
+
+          <div class="form-group">
+            <span class="form-label">Chọn nhịp điệu phiên chợ:</span>
+            <div class="mode-selector" role="radiogroup" aria-label="Nhịp điệu phiên chợ">
+              <button type="button" class="mode-card active" data-mode="calm" id="mode-opt-calm" role="radio" aria-checked="true">
+                <span class="mode-card-title"><span aria-hidden="true">🌅</span> Chợ sớm</span>
+                <span class="mode-card-desc">12 đơn hàng thong thả, không áp lực thời gian, không mất vật phẩm.</span>
+              </button>
+              <button type="button" class="mode-card" data-mode="rush" id="mode-opt-rush" role="radio" aria-checked="false">
+                <span class="mode-card-title"><span aria-hidden="true">⚡</span> Chợ đông</span>
+                <span class="mode-card-desc">120 giây nhộn nhịp, tối đa 3 thuyền khách cùng lúc, thử thách phản xạ.</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group" id="group-weak-only" style="display:none;">
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; cursor: pointer;">
+              <input type="checkbox" id="chk-weak-only">
+              <span>Chỉ ôn các từ còn yếu / cần rèn luyện thêm</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <span class="form-label">Trang trí ghe buôn:</span>
+            <div class="cosmetics-row" role="radiogroup" aria-label="Trang trí ghe buôn">
+              <button type="button" class="cosmetic-card active" data-cosmetic="lantern" role="radio" aria-checked="true" aria-label="Lồng đèn Hội An">
+                <span class="cosmetic-icon" aria-hidden="true">🏮</span>
+                <span class="cosmetic-label">Lồng đèn Hội An</span>
+              </button>
+              <button type="button" class="cosmetic-card" data-cosmetic="flags" role="radio" aria-checked="false" aria-label="Cờ đuôi nheo ngũ sắc">
+                <span class="cosmetic-icon" aria-hidden="true">🚩</span>
+                <span class="cosmetic-label">Cờ ngũ sắc</span>
+              </button>
+              <button type="button" class="cosmetic-card" data-cosmetic="lotus" id="cosmetic-card-lotus" role="radio" aria-checked="false" aria-label="Chậu sen nổi ngọc bích">
+                <span class="cosmetic-icon" aria-hidden="true">🪷</span>
+                <span class="cosmetic-label" id="cosmetic-label-lotus">Hoa sen nổi</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Helper Cat Unlock Status -->
+          <div class="helper-cat-banner" id="helper-cat-banner">
+            <span class="avatar" aria-hidden="true">🐾</span>
+            <div class="info">
+              <h4 id="helper-title">Mèo Phụ Việc: Đang học việc</h4>
+              <p id="helper-desc">Hoàn thành 2 phiên chợ trọn vẹn để mở khóa bé mèo phụ việc đóng gói trên quầy!</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-primary" id="btn-start-game" style="flex:1;">
+            Mở Cửa Bến Chợ 🛶
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Story Events -->
+    <div class="modal-overlay hidden" id="modal-event" role="dialog" aria-modal="true" aria-labelledby="event-title" aria-hidden="true">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 id="event-title">Sự Kiện Bến Nước</h2>
+        </div>
+        <div class="modal-body">
+          <div class="event-hero-banner">
+            <div class="event-hero-title" id="event-hero-title">Tàu lái buôn cập mạn!</div>
+            <div class="event-hero-text" id="event-hero-text">Một thuyền buôn lạ vừa ghé sang chào hỏi.</div>
+          </div>
+          <div id="event-route" hidden role="progressbar" aria-label="Tiến độ đuổi kịp thuyền khách" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="height:54px;position:relative;background:#b5e6df;border-radius:14px;margin-bottom:12px;overflow:hidden;">
+            <span aria-hidden="true" style="position:absolute;left:8%;right:8%;top:28px;border-top:2px dashed #509c99;"></span>
+            <span id="event-route-boat" aria-hidden="true" style="position:absolute;top:7px;left:3%;font-size:27px;transition:left .65s ease;">🐱🛶</span>
+            <span aria-hidden="true" style="position:absolute;right:3%;top:8px;font-size:25px;">⛵</span>
+          </div>
+
+          <div class="event-choices-grid" id="event-choices-grid"></div>
+
+          <!-- Event Interactive Mini-Challenge -->
+          <div id="event-challenge-box" style="display:none; flex-direction:column; gap:10px;">
+            <div style="font-size:13px; font-weight:700; color:var(--color-plum);" id="event-challenge-prompt">
+              Trả lời từ vựng để bứt tốc thuyền:
+            </div>
+            <div class="options-grid" id="event-challenge-options" role="group"></div>
+          </div>
+
+          <!-- In-game event feedback (replaces native alerts) -->
+          <div class="feedback-box" id="event-feedback" role="alert" aria-live="assertive"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-secondary" id="btn-event-skip">Bỏ qua sự kiện</button>
+          <button type="button" class="btn-primary" id="btn-event-continue" style="display:none;">Tiếp tục phiên chợ</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: New Knowledge Mini Lesson (Goethe A1 Lesson 6) -->
+    <div class="modal-overlay hidden" id="modal-lesson" role="dialog" aria-modal="true" aria-labelledby="lesson-modal-title" aria-hidden="true">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 id="lesson-modal-title">💡 Khám Phá Từ Vựng Mới</h2>
+        </div>
+        <div class="modal-body">
+          <div class="lesson-card">
+            <span class="lesson-badge">Khám phá ngoài bộ từ đang chọn · Gọi món</span>
+            <p style="font-size: 13px; line-height: 1.5; color: var(--color-plum);">
+              Khi gọi đồ ăn bằng tiếng Đức, bạn có thể gặp câu hỏi muốn mang về hay dùng tại chỗ:
+            </p>
+
+            <div class="lesson-comparison">
+              <button type="button" class="lesson-option-box" id="lesson-box-takeaway" aria-label="Xem cách phát âm và ý nghĩa Zum Mitnehmen">
+                <div class="lesson-option-icon" aria-hidden="true">🛍️</div>
+                <div class="lesson-option-de">Zum Mitnehmen, bitte!</div>
+                <div class="lesson-option-vi">Cho tôi mang về nhé (đóng túi)</div>
+              </button>
+
+              <button type="button" class="lesson-option-box" id="lesson-box-dinein" aria-label="Xem cách phát âm và ý nghĩa Hier essen">
+                <div class="lesson-option-icon" aria-hidden="true">🍽️</div>
+                <div class="lesson-option-de">Hier essen, bitte!</div>
+                <div class="lesson-option-vi">Tôi ăn tại chỗ (bày đĩa)</div>
+              </button>
+            </div>
+
+            <!-- Interactive prompt test -->
+            <div id="lesson-apply-section" style="display:none; flex-direction: column; gap: 8px; margin-top: 6px;">
+              <div style="font-size: 13px; font-weight: 700; color: var(--color-coral);" id="lesson-apply-prompt">
+                Khách mèo nói: "Một phần cá nướng, zum Mitnehmen, bitte!" — Bạn chọn cách phục vụ nào?
+              </div>
+              <div style="display:flex; gap:10px;">
+                <button type="button" class="btn-secondary" id="btn-lesson-pack-takeaway" style="flex:1;">🛍️ Túi mang về</button>
+                <button type="button" class="btn-secondary" id="btn-lesson-pack-dinein" style="flex:1;">🍽️ Đĩa tại chỗ</button>
+              </div>
+              <div class="feedback-box" id="lesson-feedback" role="alert" aria-live="assertive"></div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-top:4px;">
+              <a class="lesson-source-link" href="https://www.goethe.de/resources/files/pdf345/ein-tag-in-berlin_lesson-6_lesson-plan.pdf" target="_blank" rel="noopener noreferrer">
+                Nguồn: Goethe-Institut (Ein Tag in Berlin · Lesson 6)
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-primary" id="btn-lesson-continue">Tôi đã hiểu và tiếp tục</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Pause / Options -->
+    <div class="modal-overlay hidden" id="modal-pause" role="dialog" aria-modal="true" aria-labelledby="pause-modal-title" aria-hidden="true">
+      <div class="modal-card" style="width: 360px;">
+        <div class="modal-header">
+          <h2 id="pause-modal-title">⏸️ Đang Tạm Dừng</h2>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <p style="font-size: 14px; color: var(--color-text-muted);">
+            Toàn bộ đồng hồ, đơn hàng và thuyền khách đã đóng băng. Bạn có thể nghỉ tay một lát!
+          </p>
+        </div>
+        <div class="modal-footer" style="flex-direction: column;">
+          <button type="button" class="btn-primary" id="btn-resume-game" style="width: 100%;">Tiếp tục bán hàng ▶</button>
+          <button type="button" class="btn-secondary" id="btn-quit-to-start" style="width: 100%;">Kết thúc phiên / Đổi chế độ</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Results -->
+    <div class="modal-overlay hidden" id="modal-results" role="dialog" aria-modal="true" aria-labelledby="results-modal-title" aria-hidden="true">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 id="results-modal-title">🎉 Tổng Kết Phiên Chợ</h2>
+        </div>
+        <div class="modal-body">
+          <div class="results-grid">
+            <div class="result-stat-box">
+              <div class="result-stat-val gold" id="res-coins">+0</div>
+              <div class="result-stat-label">Tiền xu thu được</div>
+            </div>
+            <div class="result-stat-box">
+              <div class="result-stat-val" id="res-orders">0</div>
+              <div class="result-stat-label">Đơn hoàn thành</div>
+            </div>
+            <div class="result-stat-box">
+              <div class="result-stat-val" id="res-distinct">0</div>
+              <div class="result-stat-label">Từ vựng đã luyện</div>
+            </div>
+            <div class="result-stat-box">
+              <div class="result-stat-val independent" id="res-independent">0</div>
+              <div class="result-stat-label">Từ tự trả lời đúng</div>
+            </div>
+          </div>
+
+          <div style="font-size: 13px; color: var(--color-text-muted);" id="res-accuracy-line">
+            Độ chính xác lượt đầu: 0% · Hỗ trợ gợi ý: 0 từ
+          </div>
+          <p id="res-best-line" style="font-size: 13px; margin: 10px 0; color: var(--color-text-muted);"></p>
+          <p id="res-save-note" role="status" style="font-size: 13px; color: var(--color-coral);"></p>
+
+          <!-- Weak words needing review list -->
+          <div class="form-group" id="res-weak-group">
+            <span class="form-label">Các từ cần rèn luyện thêm:</span>
+            <div class="weak-words-list" id="res-weak-list">
+              <div class="weak-word-item">
+                <span class="weak-word-term">Tất cả đều làm tốt!</span>
+                <span class="weak-word-meaning">Không có từ yếu phiên này</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Helper Cat Unlock Event Notification -->
+          <div class="helper-cat-banner" id="res-helper-unlock-banner" style="display:none;">
+            <span class="avatar" aria-hidden="true">🎊🐾</span>
+            <div class="info">
+              <h4 style="color:var(--color-success);">CHÚC MỪNG: MÈO PHỤ VIỆC ĐÃ MỞ KHÓA!</h4>
+              <p>Bé mèo tam thể dễ thương giờ sẽ đứng cạnh quầy giúp bạn đóng gói quà tự động.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-secondary" id="btn-res-weak" style="display:none;">Ôn lại từ yếu</button>
+          <button type="button" class="btn-secondary" id="btn-res-change-deck">Đổi bộ từ / chế độ</button>
+          <button type="button" class="btn-primary" id="btn-res-new-shift">Phiên chợ mới 🛶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Game & Scene Modules -->
+  <script type="module" src="cat-island-scene.js"></script>
+  <script type="module" src="cat-island-game.js"></script>
+</body>
+</html>

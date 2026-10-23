@@ -1,0 +1,20 @@
+{
+  "phase": "accepted",
+  "updatedAt": "2026-10-23T19:51:12.6849108+07:00",
+  "key": "we_bare_bears_mall",
+  "alias": "bears",
+  "isExcerpt": true,
+  "duration": 274.041905,
+  "chapters": 3,
+  "captions": 57,
+  "highlights": 21,
+  "flashcards": 18,
+  "unitSuitesPassed": 18,
+  "browserTestsPassed": 9,
+  "runtime": "local",
+  "report": "qa/kino-alignment/we_bare_bears_mall/codex-acceptance.md",
+  "blockers": [],
+  "preview": "http://localhost:3000/?kino=bears",
+  "contentVersion": 2,
+  "secondReviewReport": "qa/kino-alignment/we_bare_bears_mall/codex-second-review.md"
+}

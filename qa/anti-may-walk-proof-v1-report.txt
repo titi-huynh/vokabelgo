@@ -1,0 +1,31 @@
+Mây Walk Proof v1 — Implementation & QA Report (Final Pass)
+===========================================================
+
+1. Proof Files
+--------------
+- design/may-walk-proof-v1/index.html
+- design/may-walk-proof-v1/motion.js
+- design/may-walk-proof-v1/motion.css
+- design/may-walk-proof-v1/motion.test.js
+- qa/anti-may-walk-proof-v1-report.txt
+
+No root files, homepage modules, PNGs, or asset manifests were modified.
+
+2. Final Pass Updates
+---------------------
+- Explicit Measured Manifest Loading:
+  - Loads `/assets/may-home-game/may-walk-directions-v1.json` alongside `/assets/may-home-game/may-walk-directions-v1.png`.
+  - `MayWalkMotion.buildSheetLayoutFromMeasuredManifest(measuredMeta, manifest)` builds `sheetLayout` directly from the 16 measured frame entries (`sx=x, sy=y, sw=w, sh=h, pivotXInCell=anchorX, footYInCell=anchorY`) and applies a single common scale (`scale = targetWorldHeight / referenceHeight = 130 / 278`) across all 16 frames with no second alpha scan, no cell-edge clipping, and no per-frame stretch.
+  - Fails visibly (`assetStatus = 'unavailable'`, controls disabled, friendly notice shown) if the JSON manifest or PNG is missing or malformed, with no silent fallback.
+  - Existing auto-extraction helpers (`extractCellAlphaBounds`, `buildSheetLayoutFromCellBounds`, `analyzeDirectionalSpriteSheet`) and all 8 unit tests remain untouched as optional helpers.
+- Simplified Visible UI:
+  - Title set to `Thử bước đi cùng Mây`.
+  - Removed technical English telemetry (`row/col/coords/state`) from the default UI (`#telemetry-text` is hidden unless `?debug=1` is present).
+  - Simple Vietnamese status messages via `formatSimpleStatusVi`: `Đang đi sang phải`, `Đang đi sang trái`, `Đang đi lên`, `Đang đi xuống`, `Đã dừng`, `Sẵn sàng`.
+  - Friendly missing-asset notice (`Chưa tải được hình bước đi của Mây`) without exposing internal source paths.
+
+3. Verification Results
+-----------------------
+- `node --check design/may-walk-proof-v1/motion.js` -> PASS
+- `node --check design/may-walk-proof-v1/motion.test.js` -> PASS
+- `node --test design/may-walk-proof-v1/motion.test.js` -> 8/8 PASS

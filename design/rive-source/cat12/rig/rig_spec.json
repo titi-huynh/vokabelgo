@@ -1,0 +1,209 @@
+{
+  "project": "VokabelGo",
+  "prototype": "Daily Catch – Cat #12",
+  "version": "0.2-rive-ready",
+  "artboard": {
+    "width": 960,
+    "height": 720,
+    "fps": 60
+  },
+  "hierarchy": {
+    "ROOT": [
+      "RAFT_ROOT",
+      "CAT_ROOT",
+      "FISHING_ROOT",
+      "FISH_ROOT",
+      "FX_ROOT"
+    ],
+    "RAFT_ROOT": [
+      "raft_base",
+      "mast",
+      "sail",
+      "flag",
+      "box",
+      "bucket",
+      "rope"
+    ],
+    "CAT_ROOT": [
+      "body",
+      "tail",
+      "leg_L",
+      "leg_R",
+      "arm_L",
+      "arm_R",
+      "head",
+      "scarf"
+    ],
+    "head": [
+      "ear_L",
+      "ear_R",
+      "EYES_SLOT",
+      "MOUTH_SLOT"
+    ],
+    "FISHING_ROOT": [
+      "rod",
+      "line",
+      "bobber"
+    ],
+    "FISH_ROOT": [
+      "fish_body"
+    ],
+    "FX_ROOT": [
+      "ripple",
+      "splash",
+      "bubble_01",
+      "bubble_02",
+      "bubble_03"
+    ]
+  },
+  "suggested_pivots_normalized": {
+    "head": [
+      0.5,
+      0.82
+    ],
+    "ear_L": [
+      0.72,
+      0.92
+    ],
+    "ear_R": [
+      0.28,
+      0.92
+    ],
+    "body": [
+      0.5,
+      0.5
+    ],
+    "arm_L": [
+      0.5,
+      0.16
+    ],
+    "arm_R": [
+      0.5,
+      0.16
+    ],
+    "leg_L": [
+      0.5,
+      0.2
+    ],
+    "leg_R": [
+      0.5,
+      0.2
+    ],
+    "tail": [
+      0.18,
+      0.75
+    ],
+    "rod": [
+      0.1,
+      0.92
+    ],
+    "bobber": [
+      0.5,
+      0.2
+    ],
+    "fish_body": [
+      0.5,
+      0.5
+    ],
+    "mast": [
+      0.5,
+      0.92
+    ],
+    "sail": [
+      0.15,
+      0.5
+    ],
+    "flag": [
+      0.1,
+      0.5
+    ]
+  },
+  "face_slots": {
+    "eyes": [
+      "eyes_normal",
+      "eyes_happy",
+      "eyes_closed",
+      "eyes_shock",
+      "eyes_determined",
+      "eyes_star"
+    ],
+    "mouth": [
+      "mouth_normal",
+      "mouth_open",
+      "mouth_happy",
+      "mouth_shock",
+      "mouth_sad",
+      "mouth_smile"
+    ]
+  },
+  "state_machine_inputs": {
+    "PLAY_CATCH": "trigger",
+    "RESET": "trigger",
+    "isNewFish": "boolean",
+    "boatTier": "number"
+  },
+  "states": [
+    {
+      "name": "idle",
+      "duration_s": "loop",
+      "notes": "raft bob ±2px equivalent; tail sway; blink every 3–5s; bobber small vertical loop"
+    },
+    {
+      "name": "bite",
+      "duration_s": 0.55,
+      "notes": "bobber dips twice; rod tip twitches; ears react"
+    },
+    {
+      "name": "shock",
+      "duration_s": 0.35,
+      "notes": "head up; ears pop; eyes_shock; body recoil"
+    },
+    {
+      "name": "pull",
+      "duration_s": 0.9,
+      "notes": "body leans back; arms rotate toward chest; rod bends/rotates; line taut"
+    },
+    {
+      "name": "fish_fly",
+      "duration_s": 0.75,
+      "notes": "splash burst; fish follows arc out of water; tail/fish wobble"
+    },
+    {
+      "name": "hug",
+      "duration_s": 0.65,
+      "notes": "fish lands at chest; arms close; eyes_happy; small squash/stretch"
+    },
+    {
+      "name": "celebrate",
+      "duration_s": 1.2,
+      "notes": "cat bounce + tail wag; optional sparkle/confetti handled in web overlay or Rive"
+    }
+  ],
+  "sequence": [
+    "idle",
+    "bite",
+    "shock",
+    "pull",
+    "fish_fly",
+    "hug",
+    "celebrate",
+    "idle"
+  ],
+  "integration_contract": {
+    "web_event": "vokabelgo:daily-goal-complete",
+    "precondition": "VokabelDaily.getCatchStatus() === 'pending'",
+    "on_open": "setCatchStatus('playing')",
+    "on_animation_complete": "setCatchStatus('claimed')",
+    "recovery_rule": "If page reloads while status='playing', treat as pending and replay once, or implement a timeout recovery before integration."
+  },
+  "qc_before_export": [
+    "No rectangular opaque backgrounds",
+    "No visible halos at 1x and 2x scale",
+    "All cat parts align to full_front reference",
+    "Arm/leg/tail pivots placed at joints",
+    "Face slots centered on head",
+    "Rod and line visually connect",
+    "Animation readable at 320px wide",
+    "No animation state exceeds ~5.0s total reward sequence before reward UI appears"
+  ]
+}

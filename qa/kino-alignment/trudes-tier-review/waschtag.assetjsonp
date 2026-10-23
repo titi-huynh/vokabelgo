@@ -1,0 +1,38 @@
+$mediaObject.jsonpHelper.storeAndPlay({
+  "mediaVersion" : "1.4.0",
+  "mediaType" : "vod",
+  "mediaResource" : {
+    "dflt" : {
+      "videoURL" : "//wdradaptiv-vh.akamaihd.net/i/medp/ondemand/weltweit/fsk0/175/1754548/,1754548_58688138,1754548_58688139,1754548_58688140,1754548_58688137,1754548_58688136,.mp4.csmil/master.m3u8?subtitle_identifier=1754548",
+      "slVideoURL" : "//wdradaptiv-vh.akamaihd.net/i/medp/ondemand/weltweit/fsk0/175/1754548/,1754548_58688027,1754548_58688028,1754548_58688029,1754548_58688026,1754548_58688025,.mp4.csmil/master.m3u8?subtitle_identifier=1754548",
+      "adVideoURL" : "//wdradaptiv-vh.akamaihd.net/i/medp/ondemand/weltweit/fsk0/175/1754548/,1754548_58688131,1754548_58688132,1754548_58688133,1754548_58688130,1754548_58688129,.mp4.csmil/master.m3u8?subtitle_identifier=1754548",
+      "mediaFormat" : "hls"
+    },
+    "alt" : {
+      "videoURL" : "//wdr-progressive.ard-mcdn.de/medp/ondemand/weltweit/fsk0/175/1754548/1754548_58688140.mp4",
+      "slVideoURL" : "//wdr-progressive.ard-mcdn.de/medp/ondemand/weltweit/fsk0/175/1754548/1754548_58688029.mp4",
+      "adVideoURL" : "//wdr-progressive.ard-mcdn.de/medp/ondemand/weltweit/fsk0/175/1754548/1754548_58688133.mp4",
+      "mediaFormat" : "mp4"
+    },
+    "previewImage" : "//kinder.wdr.de/tv/die-sendung-mit-der-maus/av/bild-waschtag-100~_v-%%FORMAT%%.jpg",
+    "captionsHash" : {
+      "xml" : "//wdr-progressive.ard-mcdn.de/medp/ondemand/weltweit/fsk0/175/1754548/1754548_58688781.xml",
+      "vtt" : "//wdr-progressive.ard-mcdn.de/medp/ondemand/weltweit/fsk0/175/1754548/1754548_58688783.vtt",
+      "srt" : "//wdr-progressive.ard-mcdn.de/medp/ondemand/weltweit/fsk0/175/1754548/1754548_58688782.srt"
+    },
+    "thumbnailTrack" : {
+      "url" : "//wdr-progressive.ard-mcdn.de/medp/ondemand/weltweit/fsk0/175/1754548/1754548_58688142.vtt"
+    },
+    "duration" : 380
+  },
+  "trackerData" : {
+    "trackerClipId" : "mdb-1754548",
+    "trackerClipCategory" : "WDR",
+    "trackerClipSubcategory" : "Die Sendung mit der Maus (Das Erste)",
+    "trackerClipTitle" : "Waschtag",
+    "trackerClipAirTime" : "14.11.2025 10:40",
+    "trackerClipIsTrailer" : "0",
+    "trackerClipAgfCategory" : "Information",
+    "trackerClipIsWebOnly" : "0"
+  }
+});

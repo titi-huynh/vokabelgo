@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#125B4E">
+  <title>Đấu từ · VokabelGo — Bàn 4 người 0.6</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="dau-tu.css">
+</head>
+<body>
+  <!-- Header bar -->
+  <header class="header">
+    <a class="brand" href="dau-tu.html" aria-label="VokabelGo — Đấu từ">
+      Vokabel<span>Go</span>
+      <small>ĐẤU TỪ <b>0.6</b></small>
+    </a>
+    <span id="game-mode" class="header-mode-tag" hidden></span>
+    <span id="match-rotation-tag" class="header-mode-tag" style="background: rgba(30, 144, 255, 0.2); border: 1px solid rgba(30, 144, 255, 0.4); color: #90caf9;" hidden title="Thông tin vòng lặp từ vựng">Ván #1 · 12 từ mới</span>
+    <span id="bot-count" hidden>5 lá</span>
+    <nav class="header-actions" aria-label="Tùy chọn">
+      <button id="btn-sound" class="icon-btn" aria-label="Bật âm thanh" title="Âm thanh" aria-pressed="true">♪</button>
+      <button id="btn-rules" class="quiet-btn">Luật chơi</button>
+      <button id="btn-exit" class="quiet-btn" hidden>Thoát</button>
+    </nav>
+  </header>
+
+  <!-- Màn hình 1: Thiết lập & Chọn bộ từ -->
+  <main id="setup" class="setup">
+    <div class="intro">
+      <span class="eyebrow">GAME BÀI TỪ VỰNG TIẾNG ĐỨC · BÀN 4 NGƯỜI</span>
+      <h1>Cùng màu. Cùng nghĩa.<br><em>Đánh hết bài để thắng 3 đối thủ.</em></h1>
+      <p>Bàn đấu gồm bạn và ba bot Max, Lena, Mia.<br>Nhận màu bằng thị giác. Đọc từ tiếng Đức theo ngữ cảnh câu thực tế.</p>
+    </div>
+    <div class="deck-options" role="group" aria-label="Chọn bộ từ">
+      <button class="deck-option selected" id="deck-adjektive" data-deck="adjektive" aria-pressed="true">
+        <span class="deck-art" aria-hidden="true"><i>schwer</i><i>schwierig</i></span>
+        <span class="deck-option-title">Tính từ <small>Adjektive</small></span>
+        <span class="deck-option-desc">Độ khó · Giá cả · Âm lượng · Tốc độ</span>
+        <span class="deck-option-foot">12 từ theo ngữ cảnh <b class="choice-check" aria-hidden="true">✓</b></span>
+      </button>
+      <button class="deck-option" id="deck-verben" data-deck="verben" aria-pressed="false">
+        <span class="deck-art verbs" aria-hidden="true"><i>beginnen</i><i>anfangen</i></span>
+        <span class="deck-option-title">Động từ <small>Verben</small></span>
+        <span class="deck-option-desc">Bắt đầu · Mở cửa · Di chuyển</span>
+        <span class="deck-option-foot">Câu chia sẵn, không cần gõ <b class="choice-check" aria-hidden="true">✓</b></span>
+      </button>
+      <button class="deck-option" id="deck-lexicon-expanded" data-deck="lexicon_expanded" aria-pressed="false">
+        <span class="deck-art" aria-hidden="true" style="background: linear-gradient(135deg, #059669, #0D9488); color: #fff;"><i>OpenThesaurus</i><i>Expanded</i></span>
+        <span class="deck-option-title">Kho từ Mở rộng <small>Expanded Lexicon</small></span>
+        <span class="deck-option-desc">Dữ liệu OpenThesaurus đã thẩm định (Section 30)</span>
+        <span class="deck-option-foot">60 lá đã duyệt ngữ cảnh <b class="choice-check" aria-hidden="true">✓</b></span>
+      </button>
+    </div>
+    <div class="mode-options" role="group" aria-label="Cách chơi">
+      <button id="mode-practice" class="mode selected" aria-pressed="true">
+        <strong>Làm quen</strong>
+        <small>Bạn đi trước · Chọn sai được thử lại</small>
+      </button>
+      <button id="mode-classic" class="mode" aria-pressed="false">
+        <strong>Ván thường</strong>
+        <small>Đi trước ngẫu nhiên · Đánh sai rút 1 lá</small>
+      </button>
+    </div>
+    <button id="btn-start" class="primary start-btn">Chơi bàn 4 người bộ Tính từ <span aria-hidden="true">→</span></button>
+    <p class="setup-note">Làm quen: Bạn đi trước. Bộ từ thử nghiệm, nhận diện màu sắc không cần đọc tên màu.</p>
+    <div id="setup-rotation-status" class="setup-rotation-badge" style="margin: 10px 0; font-size: 13px; color: #a7f3d0; background: rgba(16, 185, 129, 0.15); padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(16, 185, 129, 0.3); display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+      <span>🔄 Xoay vòng từ vựng: <b id="rotation-status-text">0% trùng lặp giữa 2 ván liên tiếp</b></span>
+      <button id="btn-reset-vocab-history" type="button" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3); color: #fff; border-radius: 4px; padding: 2px 8px; font-size: 11px; cursor: pointer;">Reset lịch sử</button>
+    </div>
+    <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+      <a class="sample-link" href="dau-tu-cards.html">Xem mẫu lá bài component</a>
+      <a class="sample-link" href="/preview/dau-tu-lexicon-review" target="_blank">Workbench Thẩm định Lexicon ↗</a>
+    </div>
+  </main>
+
+  <!-- Màn hình 2: Bàn đấu 4 người (1 Human + 3 Bots) -->
+  <main id="game" class="game-arena" hidden>
+    <!-- Bàn chơi nỉ xanh ấm (Card Table Surface) -->
+    <div class="table-felt" id="table-felt">
+      
+      <!-- Seat Top: Bot Lena (🦊) -->
+      <section class="seat seat-top" id="seat-bot-top" aria-label="Đối thủ Lena">
+        <div class="seat-badge">
+          <span class="seat-avatar" aria-hidden="true">🦊</span>
+          <div class="seat-info">
+            <strong class="seat-name">Lena</strong>
+            <span class="seat-cards-count" id="bot-top-count">5 lá</span>
+          </div>
+          <span class="seat-noch-eine-badge" id="bot-top-noch-eine" hidden>Noch eine!</span>
+          <span class="seat-thinking" id="bot-top-status" hidden>Lena …</span>
+          <span class="seat-skip-badge" id="bot-top-skip" hidden aria-label="Bị bỏ lượt">🚫</span>
+        </div>
+        <div class="seat-cards seat-cards-horizontal" id="bot-top-cards" aria-hidden="true"></div>
+      </section>
+
+      <!-- Seat Left: Bot Max (🐻) -->
+      <section class="seat seat-left" id="seat-bot-left" aria-label="Đối thủ Max">
+        <div class="seat-badge">
+          <span class="seat-avatar" aria-hidden="true">🐻</span>
+          <div class="seat-info">
+            <strong class="seat-name">Max</strong>
+            <span class="seat-cards-count" id="bot-left-count">5 lá</span>
+          </div>
+          <span class="seat-noch-eine-badge" id="bot-left-noch-eine" hidden>Noch eine!</span>
+          <span class="seat-thinking" id="bot-left-status" hidden>Max …</span>
+          <span class="seat-skip-badge" id="bot-left-skip" hidden aria-label="Bị bỏ lượt">🚫</span>
+        </div>
+        <div class="seat-cards seat-cards-vertical" id="bot-left-cards" aria-hidden="true"></div>
+      </section>
+
+      <!-- Seat Right: Bot Mia (🦉) -->
+      <section class="seat seat-right" id="seat-bot-right" aria-label="Đối thủ Mia">
+        <div class="seat-badge">
+          <span class="seat-avatar" aria-hidden="true">🦉</span>
+          <div class="seat-info">
+            <strong class="seat-name">Mia</strong>
+            <span class="seat-cards-count" id="bot-right-count">5 lá</span>
+          </div>
+          <span class="seat-noch-eine-badge" id="bot-right-noch-eine" hidden>Noch eine!</span>
+          <span class="seat-thinking" id="bot-right-status" hidden>Mia …</span>
+          <span class="seat-skip-badge" id="bot-right-skip" hidden aria-label="Bị bỏ lượt">🚫</span>
+        </div>
+        <div class="seat-cards seat-cards-vertical" id="bot-right-cards" aria-hidden="true"></div>
+      </section>
+
+      <!-- KHU TRUNG TÂM BÀN (Arena Center) -->
+      <div class="center-arena" id="center-arena">
+        <!-- Vòng chỉ hướng nhẹ gọn gàng -->
+        <div class="turn-ring" id="turn-ring" aria-hidden="true"></div>
+
+        <!-- Chồng bài giữa bàn: Draw Pile & Discard Pile -->
+        <div class="piles-container">
+          <!-- Draw pile (Chồng rút) có hiệu ứng độ dày 3D -->
+          <div class="draw-pile-group" id="draw-pile-group" title="Chạm để rút 1 lá" role="button" tabindex="0" aria-label="Chồng bài rút">
+            <div class="card-deck-3d" id="deck-stack">
+              <div class="deck-shadow-layer layer-3"></div>
+              <div class="deck-shadow-layer layer-2"></div>
+              <div class="deck-shadow-layer layer-1"></div>
+              <div class="word-card card-back deck-top-card">
+                <span class="mountain" aria-hidden="true">▲</span>
+                <b>VokabelGo</b>
+                <small>ĐẤU TỪ</small>
+              </div>
+            </div>
+            <span class="draw-count-badge" id="draw-count-badge" aria-label="Số lá còn trong chồng rút">39</span>
+          </div>
+
+          <!-- Discard pile (Chồng đánh / Từ hiện tại) -->
+          <div class="discard-pile-group" id="discard-pile-group">
+            <div class="target-card-slot" id="target-card">
+              <!-- Render lá bài trên cùng bàn đấu (lớn hơn lá bài trên tay) -->
+            </div>
+            <span id="flip-badge" class="flip-badge" hidden>GEGENTEIL · Nghĩa đã đổi</span>
+            <span id="match-feedback-tag" class="match-feedback-tag" hidden>Nối nghĩa ✓</span>
+          </div>
+        </div>
+
+        <!-- Banner phản hồi Wort-Kette giữa bàn đấu -->
+        <div id="wort-kette-banner" class="wort-kette-banner" hidden>
+          <span class="chain-icon">🔗</span>
+          <span id="wort-kette-words" class="chain-words"></span>
+          <span class="chain-badge">WORT-KETTE · +1 nước</span>
+        </div>
+
+        <!-- Bộ chọn màu Farbenwahl trực tiếp giữa bàn (Không ghi chữ tên màu) -->
+        <div class="inline-color-selector" id="inline-color-selector" hidden role="dialog" aria-label="Chọn màu tiếp theo">
+          <span class="color-prompt">Chọn màu:</span>
+          <div class="color-options-row">
+            <button class="color-choice-btn rot" data-color="rot" aria-label="Màu đỏ" title="Màu đỏ"><span aria-hidden="true">♥</span></button>
+            <button class="color-choice-btn blau" data-color="blau" aria-label="Màu xanh dương" title="Màu xanh dương"><span aria-hidden="true">●</span></button>
+            <button class="color-choice-btn gruen" data-color="gruen" aria-label="Màu xanh lá" title="Màu xanh lá"><span aria-hidden="true">▲</span></button>
+            <button class="color-choice-btn gelb" data-color="gelb" aria-label="Màu vàng" title="Màu vàng"><span aria-hidden="true">◆</span></button>
+          </div>
+        </div>
+
+        <!-- Khối câu tiếng Đức học tập (German Sentence Card) -->
+        <div class="table-sentence-card" id="table-sentence-card">
+          <span id="color-badge" hidden aria-hidden="true"></span>
+          <span id="target-word-title" hidden></span>
+          <div class="sentence-content">
+            <p id="sentence" class="german-sentence" lang="de"></p>
+            <p id="translation" class="sentence-translation" hidden></p>
+          </div>
+          <div class="sentence-actions">
+            <button id="btn-translate" class="text-btn mini-btn" aria-label="Xem nghĩa tiếng Việt">Nghĩa</button>
+            <button id="btn-hint" class="text-btn mini-btn hint-btn" aria-label="Mở gợi ý 2 bước">💡 Gợi ý</button>
+          </div>
+        </div>
+
+        <!-- Toast thông báo diễn biến nước đi (Transient game event) -->
+        <div id="game-toast" class="game-toast" hidden role="status" aria-live="polite"></div>
+      </div>
+
+      <!-- Lớp chứa lá bài bay khi animate (Flying cards layer) -->
+      <div id="flying-cards-layer" class="flying-cards-layer" aria-hidden="true"></div>
+
+      <!-- KHU VỰC NGƯỜI CHƠI (Human Seat - Bottom) -->
+      <section class="human-zone" id="human-zone" aria-label="Bài trên tay của bạn">
+        <!-- Thanh trạng thái lượt người chơi (gần sát tay bài) -->
+        <div class="human-status-bar">
+          <div class="human-identity">
+            <span class="seat-avatar" aria-hidden="true">👤</span>
+            <strong>Bạn</strong>
+            <span id="player-count" class="seat-cards-count">5 lá</span>
+            <span id="one-card" class="one-card-badge" hidden>Noch eine! · Còn 1 lá</span>
+          </div>
+          <div id="feedback" class="feedback-banner" hidden role="status" aria-live="polite">
+            Bạn đi trước. Chọn một lá trên tay để bắt đầu.
+          </div>
+          <div class="turn-status-indicator" id="turn-status-indicator">
+            <span class="turn-pulse-dot" aria-hidden="true"></span>
+            <span id="turn-label">Lượt của bạn</span>
+          </div>
+        </div>
+
+        <!-- Tay bài của người chơi (Horizontal fan/spread with touch swipe) -->
+        <div class="hand-container" id="hand-container">
+          <button id="scroll-left" class="hand-nav-btn left" aria-label="Cuộn bài sang trái" hidden>‹</button>
+          <div id="hand" class="player-hand" role="group" aria-label="Chọn lá bài trên tay"></div>
+          <button id="scroll-right" class="hand-nav-btn right" aria-label="Cuộn bài sang phải" hidden>›</button>
+        </div>
+
+        <!-- Dock hành động ngay trên tay bài (Contextual Action Dock) -->
+        <div class="contextual-action-dock" id="contextual-action-dock">
+          <div class="dock-selection-info">
+            <span id="selection-title">Chạm một lá trên tay</span>
+            <button id="btn-info" class="text-btn mini-btn" hidden>Xem nghĩa</button>
+          </div>
+          <div class="dock-buttons">
+            <button id="btn-draw" class="secondary dock-btn">Rút 1 lá</button>
+            <button id="btn-pass" class="secondary dock-btn" hidden>Giữ lá · Hết lượt</button>
+            <button id="btn-play" class="primary dock-btn" disabled>Đánh lá</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Intro Sequence Overlay (Shuffle & Deal) -->
+    <div id="intro-overlay" class="intro-overlay" hidden aria-live="assertive">
+      <div class="intro-card-deck-animation" id="shuffle-animation-box">
+        <div class="shuffle-half half-left"><i></i><i></i><i></i></div>
+        <div class="shuffle-half half-right"><i></i><i></i><i></i></div>
+      </div>
+      <p class="intro-text" id="intro-text">Đang xào bài…</p>
+      <button id="btn-skip-intro" class="skip-intro-btn">Bỏ qua intro ⏭</button>
+    </div>
+  </main>
+
+  <!-- Màn hình 3: Bảng mẫu component lá bài (Gallery) -->
+  <main id="gallery" class="gallery" hidden>
+    <h1>Bộ bài Đấu từ · Bảng mẫu</h1>
+    <p>Cùng component lá bài đang chạy trên bàn đấu 4 người. Kiểm tra tỷ lệ, chữ dài và các lá chức năng.</p>
+    <div id="gallery-cards" class="gallery-cards"></div>
+    <a class="primary" href="dau-tu.html">Về bàn chơi</a>
+  </main>
+
+  <!-- Modal / Dialogs (Luật, GEGENTEIL preview, Chi tiết từ, Kết thúc ván) -->
+  <dialog id="panel" class="panel" aria-labelledby="panel-title">
+    <div class="panel-head">
+      <h2 id="panel-title">Tiêu đề</h2>
+      <button id="panel-close" class="icon-btn" aria-label="Đóng cửa sổ">×</button>
+    </div>
+    <div id="panel-body" class="panel-body"></div>
+  </dialog>
+
+  <!-- Scripts -->
+  <script src="data/lexicon/runtime/dau-tu-runtime-data.js"></script>
+  <script src="src/lexicon/semantic-clusters.js"></script>
+  <script src="src/lexicon/vocabulary-history.js"></script>
+  <script src="src/lexicon/match-deck-builder.js"></script>
+  <script src="dau-tu-data.js"></script>
+  <script src="dau-tu-engine.js"></script>
+  <script src="dau-tu-bot.js"></script>
+  <script src="dau-tu.js"></script>
+</body>
+</html>

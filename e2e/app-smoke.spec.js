@@ -26,6 +26,11 @@ test.describe('E2E Test 1: App Boot & Smoke', () => {
     const primaryCta = page.locator('#todayPrimaryCta');
     await expect(primaryCta).toBeVisible();
 
+    // The home is now the island scene; detailed metrics open from its progress chip.
+    await expect(page.locator('#mayIslandCanvas')).toBeVisible();
+    await page.locator('#mayWorldOverview').click();
+    await expect(page.locator('#mayDailyOverview')).toBeVisible();
+
     // 3. 3 Learning Metrics visible
     const needsReviewVal = page.locator('#todayMetricNeedsReview');
     const learningVal = page.locator('#todayMetricLearning');
@@ -45,6 +50,9 @@ test.describe('E2E Test 1: App Boot & Smoke', () => {
     await expect(secondaryMeta).toBeVisible();
     await expect(page.locator('#todayMetaFishText')).toContainText('chú trong Hồ cá');
     await expect(page.locator('#todayMetaStreakText')).toContainText('ngày học đều');
+
+    await page.locator('#mayOverviewClose').click();
+    await expect(page.locator('#mayDailyOverview')).not.toBeVisible();
 
     // 5. Main 4 Navigation Hubs render
     const navToday = page.locator('[data-nav="today"]');

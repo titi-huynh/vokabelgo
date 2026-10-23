@@ -1,0 +1,4892 @@
+// Complete practice units and short captions from the unchanged local Frieren S01E01 video.
+const FRIEREN_S01E01_CAPTION_CUES = [
+  {
+    "id": 700101,
+    "parentId": 700101,
+    "start": 123.58,
+    "end": 124.06,
+    "speaker": "Himmel",
+    "text": "Frieren?",
+    "vi": "Frieren?"
+  },
+  {
+    "id": 700102,
+    "parentId": 700102,
+    "start": 128.74,
+    "end": 130.16,
+    "speaker": "Himmel",
+    "text": "Seht mal, da ist die Hauptstadt.",
+    "vi": "Nhìn kìa, kinh đô ở đằng kia rồi."
+  },
+  {
+    "id": 700103,
+    "parentId": 700103,
+    "start": 130.66,
+    "end": 133.42,
+    "speaker": "Heiter",
+    "text": "Wir sind die Heldentruppe auf ihrer triumphalen Heimkehr.",
+    "vi": "Chúng ta là nhóm anh hùng trên đường khải hoàn trở về."
+  },
+  {
+    "id": 700104,
+    "parentId": 700104,
+    "start": 133.58,
+    "end": 135.32,
+    "speaker": "Heiter",
+    "text": "Es wird sicher eine große Feier geben.",
+    "vi": "Chắc chắn sẽ có một bữa tiệc lớn."
+  },
+  {
+    "id": 700105,
+    "parentId": 700105,
+    "start": 137.98,
+    "end": 140.2,
+    "speaker": "Eisen",
+    "text": "Wenn wir zurück sind, muss ich mir eine Arbeit suchen.",
+    "vi": "Khi chúng ta trở về, tôi phải tìm một công việc."
+  },
+  {
+    "id": 700106,
+    "parentId": 700106,
+    "start": 140.98,
+    "end": 143.16,
+    "speaker": "Himmel",
+    "text": "Du denkst bereits jetzt über solche Sachen nach?",
+    "vi": "Cậu đã nghĩ đến mấy chuyện như vậy ngay từ bây giờ rồi sao?"
+  },
+  {
+    "id": 700107,
+    "parentId": 700107,
+    "start": 143.64,
+    "end": 144.82,
+    "speaker": "Eisen",
+    "text": "Weil es wichtig ist.",
+    "vi": "Vì chuyện đó quan trọng mà."
+  },
+  {
+    "id": 700108,
+    "parentId": 700108,
+    "start": 145.12,
+    "end": 147.92,
+    "speaker": "Eisen",
+    "text": "Wir haben zwar den Dämonenkönig geschlagen, doch es geht weiter.",
+    "vi": "Tuy chúng ta đã đánh bại Ma Vương, nhưng cuộc sống vẫn tiếp diễn."
+  },
+  {
+    "id": 700109,
+    "parentId": 700109,
+    "start": 148.64,
+    "end": 150.92,
+    "speaker": "Eisen",
+    "text": "Wir haben noch ein langes Leben vor uns.",
+    "vi": "Chúng ta vẫn còn cả một cuộc đời dài phía trước."
+  },
+  {
+    "id": 700110,
+    "parentId": 700110,
+    "start": 152.54,
+    "end": 153.1,
+    "speaker": "Heiter",
+    "text": "Arbeit also.",
+    "vi": "Công việc à."
+  },
+  {
+    "id": 700111,
+    "parentId": 700111,
+    "start": 153.86,
+    "end": 156.14,
+    "speaker": "Heiter",
+    "text": "Also ich würde gerne während der Arbeit trinken können.",
+    "vi": "Vậy thì tôi muốn có thể vừa làm việc vừa uống rượu."
+  },
+  {
+    "id": 700112,
+    "parentId": 700112,
+    "start": 156.34,
+    "end": 157.74,
+    "speaker": "Eisen",
+    "text": "Aber du bist doch ein Kleriker.",
+    "vi": "Nhưng cậu là một giáo sĩ cơ mà."
+  },
+  {
+    "id": 700113,
+    "parentId": 700113,
+    "start": 160.24,
+    "end": 161.92,
+    "speaker": "Frieren",
+    "text": "Ein Leben nach den Abenteuern.",
+    "vi": "Một cuộc sống sau những chuyến phiêu lưu."
+  },
+  {
+    "id": 700114,
+    "parentId": 700114,
+    "start": 164.36,
+    "end": 164.8,
+    "speaker": "Himmel",
+    "text": "Frieren.",
+    "vi": "Frieren."
+  },
+  {
+    "id": 700115,
+    "parentId": 700115,
+    "start": 165.74,
+    "end": 171.52,
+    "speaker": "Himmel",
+    "text": "Der Rest deines Lebens wird sicher sehr viel länger sein, als wir Menschen es uns jemals ausmalen könnten.",
+    "vi": "Phần đời còn lại của cậu chắc chắn sẽ dài hơn rất nhiều so với những gì loài người chúng tớ có thể hình dung."
+  },
+  {
+    "id": 700116,
+    "parentId": 700116,
+    "start": 172.48,
+    "end": 172.92,
+    "speaker": "Frieren",
+    "text": "Ja, wahrscheinlich.",
+    "vi": "Ừ, có lẽ vậy."
+  },
+  {
+    "id": 700117,
+    "parentId": 700117,
+    "start": 210.88,
+    "end": 217.92,
+    "speaker": "König",
+    "text": "Himmel der Held, Eisen der Krieger, Heiter der Kleriker und Frieren die Magierin.",
+    "vi": "Anh hùng Himmel, chiến binh Eisen, giáo sĩ Heiter và pháp sư Frieren."
+  },
+  {
+    "id": 700118,
+    "parentId": 700118,
+    "start": 219.5,
+    "end": 223.98,
+    "speaker": "König",
+    "text": "Ich danke euch, dass ihr auf eurer Reise den Dämonenkönig besiegt habt.",
+    "vi": "Ta cảm ơn các ngươi vì đã đánh bại Ma Vương trong chuyến hành trình của mình."
+  },
+  {
+    "id": 700119,
+    "parentId": 700119,
+    "start": 224.38,
+    "end": 228.06,
+    "speaker": "König",
+    "text": "Damit wird auf der Welt ein Zeitalter des Friedens anbrechen.",
+    "vi": "Nhờ đó, một kỷ nguyên hòa bình sẽ mở ra trên thế giới."
+  },
+  {
+    "id": 700120,
+    "parentId": 700120,
+    "start": 242.86,
+    "end": 246.94,
+    "speaker": "Heiter",
+    "text": "Der König will angeblich Statuen von uns auf dem großen Platz aufstellen.",
+    "vi": "Nghe nói nhà vua muốn dựng tượng của chúng ta ở quảng trường lớn."
+  },
+  {
+    "id": 700121,
+    "parentId": 700121,
+    "start": 247.94,
+    "end": 251.98,
+    "speaker": "Himmel",
+    "text": "Na ja, obwohl ich mir schlecht vorstellen kann, dass sie mein einzigartiges, edles",
+    "vi": "Chà, dù tớ khó mà tưởng tượng được rằng họ có thể khắc họa thật chuẩn"
+  },
+  {
+    "id": 700122,
+    "parentId": 700121,
+    "start": 251.98,
+    "end": 254.1,
+    "speaker": "Himmel",
+    "text": "Antlitz richtig gut nachbilden können.",
+    "vi": "dung mạo cao quý độc nhất vô nhị của tớ."
+  },
+  {
+    "id": 700123,
+    "parentId": 700123,
+    "start": 255.26,
+    "end": 256.72,
+    "speaker": "Frieren",
+    "text": "Wie großzügig von ihm.",
+    "vi": "Ông ấy hào phóng thật đấy."
+  },
+  {
+    "id": 700124,
+    "parentId": 700124,
+    "start": 257.02,
+    "end": 260.26,
+    "speaker": "Frieren",
+    "text": "Er hatte uns nur 10 Kupfermünzen gegeben, als wir aufgebrochen sind.",
+    "vi": "Ông ấy chỉ cho chúng ta đúng 10 đồng xu đồng khi chúng ta lên đường."
+  },
+  {
+    "id": 700125,
+    "parentId": 700125,
+    "start": 261.76,
+    "end": 263.7,
+    "speaker": "Himmel",
+    "text": "Ach, jetzt komm schon, Frieren.",
+    "vi": "Thôi nào, Frieren."
+  },
+  {
+    "id": 700126,
+    "parentId": 700126,
+    "start": 264.22,
+    "end": 266.6,
+    "speaker": "Himmel",
+    "text": "Heute Abend trinken wir so viel wir wollen.",
+    "vi": "Tối nay chúng ta cứ uống thỏa thích."
+  },
+  {
+    "id": 700127,
+    "parentId": 700127,
+    "start": 266.8,
+    "end": 268.5,
+    "speaker": "Himmel",
+    "text": "Mehr brauchen wir doch nicht, oder?",
+    "vi": "Chúng ta đâu cần gì hơn thế, đúng không?"
+  },
+  {
+    "id": 700128,
+    "parentId": 700128,
+    "start": 269.28,
+    "end": 270.72,
+    "speaker": "Frieren",
+    "text": "Oh, du Scheinheiliger!",
+    "vi": "Ồ, đồ đạo đức giả!"
+  },
+  {
+    "id": 700129,
+    "parentId": 700129,
+    "start": 278.34,
+    "end": 280.4,
+    "speaker": "Himmel",
+    "text": "Es ist tatsächlich vorbei.",
+    "vi": "Thực sự kết thúc rồi."
+  },
+  {
+    "id": 700130,
+    "parentId": 700130,
+    "start": 281.2,
+    "end": 282.18,
+    "speaker": "Heiter",
+    "text": "So ist es.",
+    "vi": "Đúng vậy."
+  },
+  {
+    "id": 700131,
+    "parentId": 700131,
+    "start": 283.28,
+    "end": 285.42,
+    "speaker": "Eisen",
+    "text": "Das ist nun das Ende unserer Reise.",
+    "vi": "Đây là điểm kết thúc chuyến hành trình của chúng ta."
+  },
+  {
+    "id": 700132,
+    "parentId": 700132,
+    "start": 286.44,
+    "end": 288.02,
+    "speaker": "Himmel",
+    "text": "Das waren zehn Jahre, oder?",
+    "vi": "Vậy là đã mười năm rồi nhỉ?"
+  },
+  {
+    "id": 700133,
+    "parentId": 700133,
+    "start": 288.7,
+    "end": 290.88,
+    "speaker": "Heiter",
+    "text": "Es ist so viel passiert in dieser Zeit.",
+    "vi": "Đã có biết bao chuyện xảy ra trong khoảng thời gian đó."
+  },
+  {
+    "id": 700134,
+    "parentId": 700134,
+    "start": 292.32,
+    "end": 294.26,
+    "speaker": "Frieren",
+    "text": "An dem Tag unserer Abreise",
+    "vi": "Vào ngày chúng tôi khởi hành,"
+  },
+  {
+    "id": 700135,
+    "parentId": 700134,
+    "start": 294.26,
+    "end": 299.02,
+    "speaker": "Frieren",
+    "text": "wurden Himmel und Eisen fast hingerichtet, weil sie unverschämt zum König waren.",
+    "vi": "Himmel và Eisen suýt nữa bị xử tử vì ăn nói vô lễ với nhà vua."
+  },
+  {
+    "id": 700136,
+    "parentId": 700136,
+    "start": 299.02,
+    "end": 302.1,
+    "speaker": "Frieren",
+    "text": "Ein Fehler, und das wäre das Ende unserer Reise gewesen.",
+    "vi": "Chỉ một sai lầm thôi là chuyến hành trình của chúng tôi đã kết thúc ngay tại đó."
+  },
+  {
+    "id": 700137,
+    "parentId": 700137,
+    "start": 302.84,
+    "end": 306.22,
+    "speaker": "Frieren",
+    "text": "Und Heiter war manchmal so besoffen, dass er zu nichts nutze war.",
+    "vi": "Còn Heiter thì đôi khi say xỉn đến mức chẳng làm được tích sự gì."
+  },
+  {
+    "id": 700138,
+    "parentId": 700138,
+    "start": 310.46,
+    "end": 313.46,
+    "speaker": "Himmel",
+    "text": "Du siehst ja aus wie eine wandelnde Leiche.",
+    "vi": "Trông cậu cứ như một cái xác biết đi vậy."
+  },
+  {
+    "id": 700139,
+    "parentId": 700139,
+    "start": 313.46,
+    "end": 314.44,
+    "speaker": "Himmel",
+    "text": "Alles okay bei dir?",
+    "vi": "Cậu có ổn không đấy?"
+  },
+  {
+    "id": 700140,
+    "parentId": 700140,
+    "start": 314.8,
+    "end": 315.02,
+    "speaker": "Heiter",
+    "text": "Nein.",
+    "vi": "Không."
+  },
+  {
+    "id": 700141,
+    "parentId": 700141,
+    "start": 315.1,
+    "end": 316.78,
+    "speaker": "Eisen",
+    "text": "Woran kann das nur liegen?",
+    "vi": "Rốt cuộc là tại sao chứ?"
+  },
+  {
+    "id": 700142,
+    "parentId": 700142,
+    "start": 316.78,
+    "end": 319.72,
+    "speaker": "Frieren",
+    "text": "Das kam einmal die Woche vor.",
+    "vi": "Chuyện đó xảy ra mỗi tuần một lần."
+  },
+  {
+    "id": 700143,
+    "parentId": 700143,
+    "start": 319.72,
+    "end": 321.84,
+    "speaker": "Frieren",
+    "text": "Ich hingegen war immer vorbildlich.",
+    "vi": "Ngược lại, tôi thì lúc nào cũng gương mẫu."
+  },
+  {
+    "id": 700144,
+    "parentId": 700144,
+    "start": 321.84,
+    "end": 325.7,
+    "speaker": "Himmel",
+    "text": "Wir haben drüber nachgedacht, dich zurückzulassen, als die Mimik dich fressen wollte.",
+    "vi": "Bọn tớ đã nghĩ đến chuyện bỏ cậu lại khi con Mimik định nuốt chửng cậu đấy."
+  },
+  {
+    "id": 700145,
+    "parentId": 700145,
+    "start": 325.96,
+    "end": 328.48,
+    "speaker": "Heiter",
+    "text": "Oh Mann, wir haben ihr doch gesagt, dass das eine Falle sein kann.",
+    "vi": "Trời đất, chúng ta đã bảo cô ấy đó có thể là bẫy rồi mà."
+  },
+  {
+    "id": 700146,
+    "parentId": 700146,
+    "start": 328.6,
+    "end": 330.2,
+    "speaker": "Eisen",
+    "text": "Lassen wir die Elfe doch zurück.",
+    "vi": "Hay là cứ bỏ cô nàng tinh linh này lại đi."
+  },
+  {
+    "id": 700147,
+    "parentId": 700147,
+    "start": 334.54,
+    "end": 338.72,
+    "speaker": "Himmel",
+    "text": "Wir haben 'ne Menge von diesen echt schrecklichen Erinnerungen.",
+    "vi": "Chúng ta có cả đống những kỷ niệm thật sự kinh khủng như thế."
+  },
+  {
+    "id": 700148,
+    "parentId": 700148,
+    "start": 339.84,
+    "end": 341.24,
+    "speaker": "Himmel",
+    "text": "Aber ich hatte Spaß.",
+    "vi": "Nhưng tớ đã rất vui."
+  },
+  {
+    "id": 700149,
+    "parentId": 700149,
+    "start": 342.0,
+    "end": 344.94,
+    "speaker": "Himmel",
+    "text": "Und ich bin froh, dass ich diese Abenteuer mit euch erleben konnte.",
+    "vi": "Và tớ rất mừng vì đã có thể cùng mọi người trải qua những chuyến phiêu lưu này."
+  },
+  {
+    "id": 700150,
+    "parentId": 700150,
+    "start": 345.92,
+    "end": 347.12,
+    "speaker": "Frieren",
+    "text": "Das geht mir genauso.",
+    "vi": "Tôi cũng thấy vậy."
+  },
+  {
+    "id": 700151,
+    "parentId": 700151,
+    "start": 347.8,
+    "end": 349.6,
+    "speaker": "Frieren",
+    "text": "Auch wenn es nur für eine kurze Zeit war.",
+    "vi": "Dù đó chỉ là một khoảng thời gian ngắn ngủi."
+  },
+  {
+    "id": 700152,
+    "parentId": 700152,
+    "start": 350.38,
+    "end": 351.44,
+    "speaker": "Heiter",
+    "text": "Äh, wie war das?",
+    "vi": "Hả, cậu vừa nói sao cơ?"
+  },
+  {
+    "id": 700153,
+    "parentId": 700153,
+    "start": 351.68,
+    "end": 352.9,
+    "speaker": "Eisen",
+    "text": "Was redest du denn da?",
+    "vi": "Cậu đang nói cái gì thế?"
+  },
+  {
+    "id": 700154,
+    "parentId": 700154,
+    "start": 352.9,
+    "end": 354.2,
+    "speaker": "Eisen",
+    "text": "Das waren zehn Jahre.",
+    "vi": "Đó là mười năm trời đấy."
+  },
+  {
+    "id": 700155,
+    "parentId": 700155,
+    "start": 354.56,
+    "end": 357.96,
+    "speaker": "Eisen",
+    "text": "Schau dir Heiter an, er ist inzwischen ein grauer alter Mann geworden.",
+    "vi": "Nhìn Heiter mà xem, giờ cậu ta đã thành một ông già tóc bạc rồi."
+  },
+  {
+    "id": 700156,
+    "parentId": 700156,
+    "start": 358.04,
+    "end": 359.2,
+    "speaker": "Heiter",
+    "text": "Das ist nicht sehr nett.",
+    "vi": "Nói thế chẳng tử tế chút nào."
+  },
+  {
+    "id": 700157,
+    "parentId": 700157,
+    "start": 359.7,
+    "end": 361.0,
+    "speaker": "Frieren",
+    "text": "Das war er doch schon vorher.",
+    "vi": "Trước đó anh ta vốn đã vậy rồi mà."
+  },
+  {
+    "id": 700158,
+    "parentId": 700158,
+    "start": 361.3,
+    "end": 362.72,
+    "speaker": "Heiter",
+    "text": "Das ist auch nicht nett.",
+    "vi": "Câu đó cũng chẳng tử tế đâu."
+  },
+  {
+    "id": 700159,
+    "parentId": 700159,
+    "start": 369.66,
+    "end": 371.08,
+    "speaker": "Himmel",
+    "text": "Ist es nun bald so weit?",
+    "vi": "Sắp đến lúc rồi nhỉ?"
+  },
+  {
+    "id": 700160,
+    "parentId": 700160,
+    "start": 379.18,
+    "end": 381.84,
+    "speaker": "Himmel",
+    "text": "Das ist der Ära-Meteorschauer. Stimmt doch?",
+    "vi": "Đó là trận mưa sao băng Thời Đại. Đúng không?"
+  },
+  {
+    "id": 700161,
+    "parentId": 700161,
+    "start": 382.52,
+    "end": 385.58,
+    "speaker": "Heiter",
+    "text": "Diese Meteore sieht man nur einmal alle 50 Jahre.",
+    "vi": "Những ngôi sao băng này cứ 50 năm mới nhìn thấy được một lần."
+  },
+  {
+    "id": 700162,
+    "parentId": 700162,
+    "start": 386.66,
+    "end": 390.0,
+    "speaker": "Eisen",
+    "text": "Der perfekte Moment, um in eine Ära des Friedens überzugehen.",
+    "vi": "Khoảnh khắc hoàn hảo để bước sang một kỷ nguyên hòa bình."
+  },
+  {
+    "id": 700163,
+    "parentId": 700163,
+    "start": 392.76,
+    "end": 393.52,
+    "speaker": "Frieren",
+    "text": "Wie schön.",
+    "vi": "Đẹp quá."
+  },
+  {
+    "id": 700164,
+    "parentId": 700164,
+    "start": 394.48,
+    "end": 396.5,
+    "speaker": "Frieren",
+    "text": "Hier in der Stadt sieht man sie aber nicht so gut.",
+    "vi": "Nhưng ở trong thành phố thế này thì nhìn không rõ lắm."
+  },
+  {
+    "id": 700165,
+    "parentId": 700165,
+    "start": 396.7,
+    "end": 399.22,
+    "speaker": "Himmel",
+    "text": "Nimm mal Rücksicht, ich versuch das gerade zu genießen.",
+    "vi": "Tâm lý một chút đi, tớ đang cố tận hưởng khoảnh khắc này đấy."
+  },
+  {
+    "id": 700166,
+    "parentId": 700166,
+    "start": 402.06,
+    "end": 403.36,
+    "speaker": "Frieren",
+    "text": "Dann halt nächstes Mal.",
+    "vi": "Vậy thì để lần sau vậy."
+  },
+  {
+    "id": 700167,
+    "parentId": 700167,
+    "start": 404.98,
+    "end": 408.02,
+    "speaker": "Frieren",
+    "text": "Ich kenne einen Platz, wo man sie noch viel klarer sehen kann.",
+    "vi": "Tôi biết một nơi có thể ngắm chúng rõ hơn nhiều."
+  },
+  {
+    "id": 700168,
+    "parentId": 700168,
+    "start": 408.18,
+    "end": 409.42,
+    "speaker": "Frieren",
+    "text": "Zeig ich euch dann in 50 Jahren.",
+    "vi": "50 năm nữa tôi sẽ dẫn mọi người tới đó."
+  },
+  {
+    "id": 700169,
+    "parentId": 700169,
+    "start": 412.94,
+    "end": 413.9,
+    "speaker": "Frieren",
+    "text": "Was denn?",
+    "vi": "Sao thế?"
+  },
+  {
+    "id": 700170,
+    "parentId": 700170,
+    "start": 413.94,
+    "end": 415.46,
+    "speaker": "Himmel",
+    "text": "Ach, es ist nichts.",
+    "vi": "À, không có gì đâu."
+  },
+  {
+    "id": 700171,
+    "parentId": 700171,
+    "start": 416.28,
+    "end": 416.8,
+    "speaker": "Himmel",
+    "text": "Frieren.",
+    "vi": "Frieren."
+  },
+  {
+    "id": 700172,
+    "parentId": 700172,
+    "start": 418.6,
+    "end": 419.88,
+    "speaker": "Himmel",
+    "text": "So machen wir das.",
+    "vi": "Cứ quyết định vậy nhé."
+  },
+  {
+    "id": 700173,
+    "parentId": 700173,
+    "start": 420.46,
+    "end": 421.72,
+    "speaker": "Himmel",
+    "text": "Wir werden sie uns ansehen.",
+    "vi": "Chúng ta sẽ cùng nhau ngắm chúng."
+  },
+  {
+    "id": 700174,
+    "parentId": 700174,
+    "start": 444.32,
+    "end": 446.34,
+    "speaker": "Frieren",
+    "text": "Also, ich muss jetzt gehen.",
+    "vi": "Vậy, giờ tôi phải đi đây."
+  },
+  {
+    "id": 700175,
+    "parentId": 700175,
+    "start": 446.82,
+    "end": 448.48,
+    "speaker": "Himmel",
+    "text": "Was hast du denn von nun an vor?",
+    "vi": "Từ giờ trở đi cậu định làm gì?"
+  },
+  {
+    "id": 700176,
+    "parentId": 700176,
+    "start": 448.88,
+    "end": 451.1,
+    "speaker": "Frieren",
+    "text": "Ich möchte weitere Zaubersprüche erlernen.",
+    "vi": "Tôi muốn học thêm các phép thuật khác."
+  },
+  {
+    "id": 700177,
+    "parentId": 700177,
+    "start": 451.4,
+    "end": 454.5,
+    "speaker": "Frieren",
+    "text": "Dafür werde ich die nächsten 100 Jahre die zentralen Länder bereisen.",
+    "vi": "Để làm việc đó, tôi sẽ đi khắp các vùng đất trung tâm trong 100 năm tới."
+  },
+  {
+    "id": 700178,
+    "parentId": 700178,
+    "start": 455.1,
+    "end": 457.08,
+    "speaker": "Frieren",
+    "text": "Aber ich werde ab und zu mal vorbeischauen.",
+    "vi": "Nhưng thỉnh thoảng tôi sẽ ghé thăm mọi người."
+  },
+  {
+    "id": 700179,
+    "parentId": 700179,
+    "start": 462.32,
+    "end": 464.9,
+    "speaker": "Eisen",
+    "text": "Die Welt der Elfen ist wirklich schwer zu verstehen.",
+    "vi": "Thế giới của tộc tinh linh thật sự khó mà hiểu nổi."
+  },
+  {
+    "id": 700180,
+    "parentId": 700180,
+    "start": 465.08,
+    "end": 467.84,
+    "speaker": "Heiter",
+    "text": "Würde mich echt mal interessieren, wie lange sie schon lebt.",
+    "vi": "Tôi thực sự tò mò không biết cô ấy đã sống bao lâu rồi."
+  },
+  {
+    "id": 700181,
+    "parentId": 700181,
+    "start": 468.6,
+    "end": 472.8,
+    "speaker": "Himmel",
+    "text": "Selbst fünfzig oder hundert Jahre sind für sie wohl nur wie ein kurzer Augenblick.",
+    "vi": "Ngay cả năm mươi hay một trăm năm đối với cậu ấy chắc cũng chỉ như một thoáng chốc."
+  },
+  {
+    "id": 700182,
+    "parentId": 700182,
+    "start": 523.82,
+    "end": 526.22,
+    "speaker": "Händler",
+    "text": "Das Horn eines Schattendrachen?",
+    "vi": "Sừng của rồng bóng tối sao?"
+  },
+  {
+    "id": 700183,
+    "parentId": 700183,
+    "start": 526.46,
+    "end": 527.2,
+    "speaker": "Händler",
+    "text": "Tut mir leid.",
+    "vi": "Tôi rất tiếc."
+  },
+  {
+    "id": 700184,
+    "parentId": 700184,
+    "start": 527.2,
+    "end": 528.74,
+    "speaker": "Händler",
+    "text": "So etwas habe ich hier nicht.",
+    "vi": "Ở đây tôi không có thứ như vậy."
+  },
+  {
+    "id": 700185,
+    "parentId": 700185,
+    "start": 529.06,
+    "end": 532.58,
+    "speaker": "Händler",
+    "text": "Ich habe auch seit ungefähr 30 Jahren keinen Schattendrachen mehr gesehen.",
+    "vi": "Khoảng 30 năm nay tôi cũng không còn thấy con rồng bóng tối nào nữa."
+  },
+  {
+    "id": 700186,
+    "parentId": 700186,
+    "start": 533.26,
+    "end": 535.0,
+    "speaker": "Frieren",
+    "text": "Verstehe, das ist nicht gut.",
+    "vi": "Ra vậy, thế thì gay rồi."
+  },
+  {
+    "id": 700187,
+    "parentId": 700187,
+    "start": 535.22,
+    "end": 536.86,
+    "speaker": "Frieren",
+    "text": "Ich brauche eines für eine Beschwörung.",
+    "vi": "Tôi cần một chiếc để thực hiện phép triệu hồi."
+  },
+  {
+    "id": 700188,
+    "parentId": 700188,
+    "start": 539.82,
+    "end": 542.7,
+    "speaker": "Frieren",
+    "text": "Wir hatten doch eines im Schloss des Dämonenkönigs gefunden.",
+    "vi": "Chẳng phải chúng tôi đã tìm thấy một chiếc trong lâu đài Ma Vương sao."
+  },
+  {
+    "id": 700189,
+    "parentId": 700189,
+    "start": 543.24,
+    "end": 544.86,
+    "speaker": "Frieren",
+    "text": "Ich glaube, ich habe es Himmel gegeben.",
+    "vi": "Hình như tôi đã đưa nó cho Himmel."
+  },
+  {
+    "id": 700190,
+    "parentId": 700190,
+    "start": 545.7,
+    "end": 548.44,
+    "speaker": "Frieren",
+    "text": "Es verströmt irgendwie eine negative Aura.",
+    "vi": "Nó tỏa ra một luồng khí tiêu cực nào đó."
+  },
+  {
+    "id": 700191,
+    "parentId": 700191,
+    "start": 548.48,
+    "end": 550.56,
+    "speaker": "Frieren",
+    "text": "Ist das wirklich nicht gefährlich für Menschen?",
+    "vi": "Thứ này thực sự không nguy hiểm cho con người chứ?"
+  },
+  {
+    "id": 700192,
+    "parentId": 700192,
+    "start": 550.94,
+    "end": 551.88,
+    "speaker": "Frieren",
+    "text": "Das weiß ich nicht.",
+    "vi": "Tôi không biết nữa."
+  },
+  {
+    "id": 700193,
+    "parentId": 700193,
+    "start": 552.2,
+    "end": 553.64,
+    "speaker": "Himmel",
+    "text": "Sie weiß es also nicht.",
+    "vi": "Vậy là cậu ấy cũng không biết."
+  },
+  {
+    "id": 700194,
+    "parentId": 700194,
+    "start": 554.68,
+    "end": 556.88,
+    "speaker": "Frieren",
+    "text": "Bald kommt wieder der Ära-Meteorschauer.",
+    "vi": "Sắp tới lại có mưa sao băng Thời Đại rồi."
+  },
+  {
+    "id": 700195,
+    "parentId": 700195,
+    "start": 557.02,
+    "end": 558.64,
+    "speaker": "Frieren",
+    "text": "Vielleicht sollte ich das Horn bei ihm abholen.",
+    "vi": "Có lẽ tôi nên đến chỗ anh ấy lấy lại chiếc sừng."
+  },
+  {
+    "id": 700196,
+    "parentId": 700196,
+    "start": 565.2,
+    "end": 568.0,
+    "speaker": "Frieren",
+    "text": "Die Stadt hat sich seit dem letzten Mal ganz schön verändert.",
+    "vi": "Thành phố đã thay đổi khá nhiều kể từ lần trước."
+  },
+  {
+    "id": 700197,
+    "parentId": 700197,
+    "start": 582.28,
+    "end": 584.66,
+    "speaker": "Frieren",
+    "text": "Sag mal, hab ich mich etwa verlaufen?",
+    "vi": "Này, chẳng lẽ mình bị lạc rồi sao?"
+  },
+  {
+    "id": 700198,
+    "parentId": 700198,
+    "start": 585.9,
+    "end": 586.46,
+    "speaker": "Himmel",
+    "text": "Frieren?",
+    "vi": "Frieren?"
+  },
+  {
+    "id": 700199,
+    "parentId": 700199,
+    "start": 587.88,
+    "end": 588.72,
+    "speaker": "Frieren",
+    "text": "Himmel!",
+    "vi": "Himmel!"
+  },
+  {
+    "id": 700200,
+    "parentId": 700200,
+    "start": 594.92,
+    "end": 596.7,
+    "speaker": "Frieren",
+    "text": "Du bist alt geworden.",
+    "vi": "Cậu già đi rồi."
+  },
+  {
+    "id": 700201,
+    "parentId": 700201,
+    "start": 596.7,
+    "end": 598.58,
+    "speaker": "Himmel",
+    "text": "Kannst du das nicht netter sagen?",
+    "vi": "Cậu không thể nói nhẹ nhàng hơn được sao?"
+  },
+  {
+    "id": 700202,
+    "parentId": 700202,
+    "start": 600.96,
+    "end": 604.54,
+    "speaker": "Himmel",
+    "text": "Auch im hohen Alter bin ich doch noch ein ganz hübsches Kerlchen.",
+    "vi": "Dù đã cao tuổi nhưng tớ vẫn là một ông lão khá bảnh bao đấy chứ."
+  },
+  {
+    "id": 700203,
+    "parentId": 700203,
+    "start": 606.1,
+    "end": 610.68,
+    "speaker": "Himmel",
+    "text": "Es ist schon 50 Jahre her, du siehst noch genauso aus wie damals.",
+    "vi": "Đã 50 năm trôi qua rồi mà trông cậu vẫn y hệt như ngày ấy."
+  },
+  {
+    "id": 700204,
+    "parentId": 700204,
+    "start": 611.82,
+    "end": 615.2,
+    "speaker": "Himmel",
+    "text": "Ich hab schon befürchtet, dass ich dich nie mehr wiedersehen würde.",
+    "vi": "Tớ đã lo rằng mình sẽ chẳng bao giờ còn được gặp lại cậu nữa."
+  },
+  {
+    "id": 700205,
+    "parentId": 700205,
+    "start": 617.72,
+    "end": 621.36,
+    "speaker": "Himmel",
+    "text": "Der Ära-Meteorschauer, das weckt Erinnerungen.",
+    "vi": "Mưa sao băng Thời Đại, điều đó gợi lại bao kỷ niệm."
+  },
+  {
+    "id": 700206,
+    "parentId": 700206,
+    "start": 621.82,
+    "end": 624.6,
+    "speaker": "Frieren",
+    "text": "Außerdem suche ich noch nach dem, was wir im Schloss gefunden haben.",
+    "vi": "Ngoài ra tôi còn đang tìm thứ mà chúng ta đã nhặt được trong lâu đài."
+  },
+  {
+    "id": 700207,
+    "parentId": 700207,
+    "start": 624.6,
+    "end": 627.02,
+    "speaker": "Himmel",
+    "text": "Du meinst wohl das Horn des Schattendrachen.",
+    "vi": "Ý cậu chắc là chiếc sừng của rồng bóng tối chứ gì."
+  },
+  {
+    "id": 700208,
+    "parentId": 700208,
+    "start": 627.4,
+    "end": 629.6,
+    "speaker": "Himmel",
+    "text": "Ich hab das nicht einen Augenblick vergessen.",
+    "vi": "Tớ chưa từng quên nó dù chỉ một giây."
+  },
+  {
+    "id": 700209,
+    "parentId": 700209,
+    "start": 630.14,
+    "end": 633.76,
+    "speaker": "Himmel",
+    "text": "Denn von meinem Schrank geht seitdem eine düstere Aura aus.",
+    "vi": "Bởi từ đó đến nay, tủ đồ của tớ lúc nào cũng tỏa ra một luồng hắc khí u ám."
+  },
+  {
+    "id": 700210,
+    "parentId": 700210,
+    "start": 634.38,
+    "end": 636.26,
+    "speaker": "Frieren",
+    "text": "Das tut mir wirklich leid.",
+    "vi": "Tôi thực sự xin lỗi."
+  },
+  {
+    "id": 700211,
+    "parentId": 700211,
+    "start": 636.62,
+    "end": 639.82,
+    "speaker": "Frieren",
+    "text": "Du hättest es doch auch einfach in einem Schuppen oder so aufbewahren können.",
+    "vi": "Lẽ ra cậu cứ cất đại nó trong nhà kho hay đâu đó cũng được mà."
+  },
+  {
+    "id": 700212,
+    "parentId": 700212,
+    "start": 642.22,
+    "end": 643.58,
+    "speaker": "Himmel",
+    "text": "Auf gar keinen Fall.",
+    "vi": "Tuyệt đối không đời nào."
+  },
+  {
+    "id": 700213,
+    "parentId": 700213,
+    "start": 647.34,
+    "end": 651.72,
+    "speaker": "Himmel",
+    "text": "Vielleicht hast du es mir übergeben, ohne dir groß Gedanken darüber zu machen.",
+    "vi": "Có lẽ cậu đã giao nó cho tớ mà chẳng suy nghĩ gì nhiều."
+  },
+  {
+    "id": 700214,
+    "parentId": 700214,
+    "start": 651.72,
+    "end": 656.44,
+    "speaker": "Himmel",
+    "text": "Aber für mich war es ein sehr wertvolles Geschenk von einer geliebten Gefährtin.",
+    "vi": "Nhưng đối với tớ, đó là một món quà vô cùng quý giá từ người bạn đồng hành thân yêu."
+  },
+  {
+    "id": 700215,
+    "parentId": 700215,
+    "start": 657.14,
+    "end": 660.72,
+    "speaker": "Himmel",
+    "text": "Ich hatte gehofft, dass ich es dir eines Tages zurückgeben könnte.",
+    "vi": "Tớ đã luôn hy vọng một ngày nào đó có thể trao trả nó lại cho cậu."
+  },
+  {
+    "id": 700216,
+    "parentId": 700216,
+    "start": 669.84,
+    "end": 672.8,
+    "speaker": "Frieren",
+    "text": "Dabei hatte es im Grunde gar keine große Bedeutung.",
+    "vi": "Vậy mà thực ra nó chẳng có ý nghĩa gì to tát cả."
+  },
+  {
+    "id": 700217,
+    "parentId": 700217,
+    "start": 692.64,
+    "end": 694.08,
+    "speaker": "Frieren",
+    "text": "Bist du noch nicht fertig?",
+    "vi": "Cậu vẫn chưa chuẩn bị xong sao?"
+  },
+  {
+    "id": 700218,
+    "parentId": 700218,
+    "start": 694.84,
+    "end": 695.98,
+    "speaker": "Frieren",
+    "text": "Wieso machst du dich so zurecht?",
+    "vi": "Sao cậu lại chải chuốt kỹ thế?"
+  },
+  {
+    "id": 700219,
+    "parentId": 700219,
+    "start": 696.04,
+    "end": 697.12,
+    "speaker": "Frieren",
+    "text": "Du hast doch eine Glatze.",
+    "vi": "Đầu cậu hói rồi cơ mà."
+  },
+  {
+    "id": 700220,
+    "parentId": 700220,
+    "start": 698.58,
+    "end": 701.28,
+    "speaker": "Himmel",
+    "text": "Ein gepflegtes Äußeres ist immer wichtig.",
+    "vi": "Vẻ ngoài chỉn chu lúc nào cũng quan trọng."
+  },
+  {
+    "id": 700221,
+    "parentId": 700221,
+    "start": 708.08,
+    "end": 711.3,
+    "speaker": "Himmel",
+    "text": "Also dann, wollen wir uns den Ära-Meteorschauer ansehen?",
+    "vi": "Vậy thì, chúng ta cùng đi ngắm mưa sao băng Thời Đại chứ?"
+  },
+  {
+    "id": 700222,
+    "parentId": 700222,
+    "start": 719.62,
+    "end": 722.4,
+    "speaker": "Frieren",
+    "text": "Du siehst mittlerweile recht würdevoll aus, Heiter.",
+    "vi": "Giờ trông cậu khá đạo mạo đấy, Heiter."
+  },
+  {
+    "id": 700223,
+    "parentId": 700223,
+    "start": 722.5,
+    "end": 724.54,
+    "speaker": "Heiter",
+    "text": "Ich bin nun der Bischof der Heiligen Stadt.",
+    "vi": "Giờ tôi đã là Giám mục của Thánh Đô rồi."
+  },
+  {
+    "id": 700224,
+    "parentId": 700224,
+    "start": 724.72,
+    "end": 727.24,
+    "speaker": "Heiter",
+    "text": "Du hingegen hast dich überhaupt nicht verändert.",
+    "vi": "Còn cậu thì chẳng thay đổi chút nào cả."
+  },
+  {
+    "id": 700225,
+    "parentId": 700225,
+    "start": 728.24,
+    "end": 729.6,
+    "speaker": "Frieren",
+    "text": "Tätschel mir nicht so den Kopf.",
+    "vi": "Đừng có xoa đầu tôi như thế."
+  },
+  {
+    "id": 700226,
+    "parentId": 700226,
+    "start": 731.48,
+    "end": 733.56,
+    "speaker": "Frieren",
+    "text": "Eisen, du hast dich nicht wirklich verändert.",
+    "vi": "Eisen, cậu thực sự không thay đổi mấy."
+  },
+  {
+    "id": 700227,
+    "parentId": 700227,
+    "start": 734.7,
+    "end": 736.36,
+    "speaker": "Eisen",
+    "text": "Verstehe, wenn du das meinst.",
+    "vi": "Ra vậy, nếu cậu thấy thế."
+  },
+  {
+    "id": 700228,
+    "parentId": 700228,
+    "start": 736.6,
+    "end": 738.22,
+    "speaker": "Frieren",
+    "text": "Wie ich es von einem Zwerg erwarte.",
+    "vi": "Đúng như tôi mong đợi ở người lùn."
+  },
+  {
+    "id": 700229,
+    "parentId": 700229,
+    "start": 738.52,
+    "end": 739.66,
+    "speaker": "Eisen",
+    "text": "Wo ist nun dieser Ort,",
+    "vi": "Vậy nơi đó ở đâu,"
+  },
+  {
+    "id": 700230,
+    "parentId": 700229,
+    "start": 739.66,
+    "end": 741.36,
+    "speaker": "Eisen",
+    "text": "von dem aus wir den Schauer gut sehen?",
+    "vi": "nơi mà chúng ta có thể ngắm rõ mưa sao băng ấy?"
+  },
+  {
+    "id": 700231,
+    "parentId": 700231,
+    "start": 742.5,
+    "end": 744.32,
+    "speaker": "Heiter",
+    "text": "Wollen wir jetzt schon aufbrechen?",
+    "vi": "Chúng ta định khởi hành ngay bây giờ sao?"
+  },
+  {
+    "id": 700232,
+    "parentId": 700232,
+    "start": 744.68,
+    "end": 747.7,
+    "speaker": "Heiter",
+    "text": "Für den Ära-Meteorschauer ist es noch etwas zu früh.",
+    "vi": "Vẫn còn hơi sớm để ngắm mưa sao băng Thời Đại mà."
+  },
+  {
+    "id": 700233,
+    "parentId": 700233,
+    "start": 748.66,
+    "end": 749.32,
+    "speaker": "Frieren",
+    "text": "Das stimmt.",
+    "vi": "Đúng vậy."
+  },
+  {
+    "id": 700234,
+    "parentId": 700234,
+    "start": 749.56,
+    "end": 752.5,
+    "speaker": "Frieren",
+    "text": "Wir brauchen von hier aber ungefähr eine Woche zu Fuß.",
+    "vi": "Nhưng đi bộ từ đây tới đó phải mất khoảng một tuần."
+  },
+  {
+    "id": 700235,
+    "parentId": 700235,
+    "start": 752.88,
+    "end": 754.42,
+    "speaker": "Heiter",
+    "text": "So weit weg ist dieser Ort?",
+    "vi": "Nơi đó ở xa đến vậy sao?"
+  },
+  {
+    "id": 700236,
+    "parentId": 700236,
+    "start": 755.4,
+    "end": 756.38,
+    "speaker": "Heiter",
+    "text": "Meine Güte!",
+    "vi": "Trời đất ơi!"
+  },
+  {
+    "id": 700237,
+    "parentId": 700237,
+    "start": 756.86,
+    "end": 759.02,
+    "speaker": "Heiter",
+    "text": "Sie verlangt sehr viel von uns alten Leuten.",
+    "vi": "Cô ấy đòi hỏi quá nhiều ở mấy ông già chúng ta rồi."
+  },
+  {
+    "id": 700238,
+    "parentId": 700238,
+    "start": 762.1,
+    "end": 763.58,
+    "speaker": "Himmel",
+    "text": "Es ist wie früher.",
+    "vi": "Cứ như ngày xưa vậy."
+  },
+  {
+    "id": 700239,
+    "parentId": 700239,
+    "start": 764.2,
+    "end": 767.78,
+    "speaker": "Himmel",
+    "text": "Diese Reise versetzt mich geradezu in die Zeit von damals zurück.",
+    "vi": "Chuyến đi này thực sự đưa tớ trở về những ngày tháng năm xưa."
+  },
+  {
+    "id": 700240,
+    "parentId": 700240,
+    "start": 772.14,
+    "end": 775.34,
+    "speaker": "Himmel",
+    "text": "Wir haben alle möglichen Orte bereist,",
+    "vi": "Chúng ta đã đi qua đủ mọi miền đất,"
+  },
+  {
+    "id": 700241,
+    "parentId": 700240,
+    "start": 776.44,
+    "end": 781.26,
+    "speaker": "Himmel",
+    "text": "zu der Zeit war alles noch neu, und es schien mir so wundervoll.",
+    "vi": "vào thời điểm đó mọi thứ đều mới mẻ và dường như thật tuyệt diệu đối với tớ."
+  },
+  {
+    "id": 700242,
+    "parentId": 700242,
+    "start": 805.72,
+    "end": 810.62,
+    "speaker": "Himmel",
+    "text": "Ihr seid immer ein wichtiger Teil dieser wunderschönen Erinnerungen gewesen.",
+    "vi": "Các cậu luôn là một phần quan trọng trong những ký ức tươi đẹp ấy."
+  },
+  {
+    "id": 700243,
+    "parentId": 700243,
+    "start": 814.24,
+    "end": 819.08,
+    "speaker": "Himmel",
+    "text": "Weißt du, ich hab sehnsüchtig auf den Tag gewartet, an dem wir alle wieder zusammen",
+    "vi": "Cậu biết không, tớ đã luôn khắc khoải chờ đợi ngày mà tất cả chúng ta lại được"
+  },
+  {
+    "id": 700244,
+    "parentId": 700243,
+    "start": 819.08,
+    "end": 819.66,
+    "speaker": "Himmel",
+    "text": "sein werden.",
+    "vi": "ở bên nhau."
+  },
+  {
+    "id": 700245,
+    "parentId": 700245,
+    "start": 821.0,
+    "end": 822.46,
+    "speaker": "Himmel",
+    "text": "Ich danke dir, Frieren.",
+    "vi": "Cảm ơn cậu, Frieren."
+  },
+  {
+    "id": 700246,
+    "parentId": 700246,
+    "start": 822.46,
+    "end": 825.42,
+    "speaker": "Himmel",
+    "text": "Deinetwegen konnte ich zum Schluss",
+    "vi": "Nhờ có cậu mà vào lúc cuối đời,"
+  },
+  {
+    "id": 700247,
+    "parentId": 700246,
+    "start": 825.42,
+    "end": 828.66,
+    "speaker": "Himmel",
+    "text": "noch ein letztes großes Abenteuer erleben.",
+    "vi": "tớ vẫn có thể trải nghiệm thêm một chuyến phiêu lưu lớn cuối cùng."
+  },
+  {
+    "id": 700248,
+    "parentId": 700248,
+    "start": 852.46,
+    "end": 854.18,
+    "speaker": "Frieren",
+    "text": "Wie schön!",
+    "vi": "Đẹp quá!"
+  },
+  {
+    "id": 700249,
+    "parentId": 700249,
+    "start": 881.26,
+    "end": 885.9,
+    "speaker": "Heiter",
+    "text": "Ich bin mir sicher, dass unser Himmel ein sehr glücklicher Mensch war.",
+    "vi": "Tôi chắc chắn rằng Himmel của chúng ta đã là một người rất hạnh phúc."
+  },
+  {
+    "id": 700250,
+    "parentId": 700250,
+    "start": 886.56,
+    "end": 887.66,
+    "speaker": "Eisen",
+    "text": "Glaubst du wirklich?",
+    "vi": "Cậu thực sự nghĩ vậy sao?"
+  },
+  {
+    "id": 700251,
+    "parentId": 700251,
+    "start": 895.14,
+    "end": 897.86,
+    "speaker": "Trauergast",
+    "text": "War dieses Mädchen da nicht eine Gefährtin von Himmel?",
+    "vi": "Cô gái đằng kia chẳng phải là bạn đồng hành của ngài Himmel sao?"
+  },
+  {
+    "id": 700252,
+    "parentId": 700252,
+    "start": 898.16,
+    "end": 900.22,
+    "speaker": "Trauergast",
+    "text": "Sie sieht kein bisschen traurig aus.",
+    "vi": "Trông cô ta chẳng có chút gì là buồn bã cả."
+  },
+  {
+    "id": 700253,
+    "parentId": 700253,
+    "start": 901.0,
+    "end": 901.78,
+    "speaker": "Trauergast",
+    "text": "Keine Regung.",
+    "vi": "Chẳng mảy may xúc động."
+  },
+  {
+    "id": 700254,
+    "parentId": 700254,
+    "start": 902.06,
+    "end": 902.96,
+    "speaker": "Trauergast",
+    "text": "Wie schrecklich von ihr.",
+    "vi": "Thật quá đáng."
+  },
+  {
+    "id": 700255,
+    "parentId": 700255,
+    "start": 903.72,
+    "end": 904.84,
+    "speaker": "Heiter",
+    "text": "Nun mal langsam.",
+    "vi": "Xin hãy bình tĩnh nào."
+  },
+  {
+    "id": 700256,
+    "parentId": 700256,
+    "start": 905.04,
+    "end": 907.28,
+    "speaker": "Heiter",
+    "text": "Wir sind nämlich auch nicht wirklich traurig.",
+    "vi": "Thực ra chúng tôi cũng không hẳn là buồn bã đâu."
+  },
+  {
+    "id": 700257,
+    "parentId": 700257,
+    "start": 907.44,
+    "end": 908.74,
+    "speaker": "Trauergast",
+    "text": "Nimm das gefälligst ernst, Bischof!",
+    "vi": "Xin hãy nghiêm túc đi, thưa Giám mục!"
+  },
+  {
+    "id": 700258,
+    "parentId": 700258,
+    "start": 909.02,
+    "end": 910.62,
+    "speaker": "Trauergast",
+    "text": "Ihr seid kaltherzige Monster!",
+    "vi": "Các người là lũ quái vật máu lạnh!"
+  },
+  {
+    "id": 700259,
+    "parentId": 700259,
+    "start": 911.34,
+    "end": 912.76,
+    "speaker": "Heiter",
+    "text": "Das ist aber nicht nett.",
+    "vi": "Nói thế thì thật chẳng tử tế chút nào."
+  },
+  {
+    "id": 700260,
+    "parentId": 700260,
+    "start": 938.08,
+    "end": 941.28,
+    "speaker": "Frieren",
+    "text": "Ich... ich weiß wirklich so gut wie nichts über ihn.",
+    "vi": "Tôi... tôi thực sự hầu như chẳng biết gì về anh ấy cả."
+  },
+  {
+    "id": 700261,
+    "parentId": 700261,
+    "start": 952.92,
+    "end": 957.28,
+    "speaker": "Frieren",
+    "text": "Wir sind gerade einmal zehn Jahre miteinander gereist.",
+    "vi": "Chúng tôi mới chỉ cùng nhau đồng hành vỏn vẹn mười năm."
+  },
+  {
+    "id": 700262,
+    "parentId": 700262,
+    "start": 964.78,
+    "end": 969.38,
+    "speaker": "Frieren",
+    "text": "Die menschliche Lebensspanne ist so kurz, das wusste ich doch eigentlich.",
+    "vi": "Tuổi thọ của con người ngắn ngủi đến thế, lẽ ra tôi vốn đã biết điều đó rồi."
+  },
+  {
+    "id": 700263,
+    "parentId": 700263,
+    "start": 970.28,
+    "end": 971.56,
+    "speaker": "Frieren",
+    "text": "Also wieso?",
+    "vi": "Vậy thì tại sao chứ?"
+  },
+  {
+    "id": 700264,
+    "parentId": 700264,
+    "start": 972.18,
+    "end": 975.16,
+    "speaker": "Frieren",
+    "text": "Habe ich nicht versucht, ihn besser kennenzulernen?",
+    "vi": "Tại sao tôi đã không cố gắng tìm hiểu anh ấy nhiều hơn?"
+  },
+  {
+    "id": 700265,
+    "parentId": 700265,
+    "start": 984.24,
+    "end": 986.92,
+    "speaker": "Frieren",
+    "text": "Hör auf, meinen Kopf zu tätscheln.",
+    "vi": "Đừng xoa đầu tôi nữa."
+  },
+  {
+    "id": 700266,
+    "parentId": 700266,
+    "start": 994.94,
+    "end": 997.92,
+    "speaker": "Heiter",
+    "text": "Dann werde ich auch mal in die Heilige Stadt zurückkehren.",
+    "vi": "Vậy tôi cũng xin trở về Thánh Đô đây."
+  },
+  {
+    "id": 700267,
+    "parentId": 700267,
+    "start": 1001.08,
+    "end": 1006.72,
+    "speaker": "Heiter",
+    "text": "Lasst mich euch noch mal genauer ansehen, denn das wird jetzt wohl zum letzten Mal sein.",
+    "vi": "Hãy để tôi ngắm nhìn hai người thật kỹ thêm lần nữa, vì có lẽ đây sẽ là lần cuối cùng rồi."
+  },
+  {
+    "id": 700268,
+    "parentId": 700268,
+    "start": 1007.24,
+    "end": 1008.42,
+    "speaker": "Frieren",
+    "text": "Geht es dir nicht so gut?",
+    "vi": "Cậu thấy trong người không khỏe sao?"
+  },
+  {
+    "id": 700269,
+    "parentId": 700269,
+    "start": 1008.68,
+    "end": 1011.44,
+    "speaker": "Heiter",
+    "text": "Der jahrelange Alkoholkonsum hat seine Folgen.",
+    "vi": "Việc uống rượu suốt bao năm qua đã để lại hậu quả rồi."
+  },
+  {
+    "id": 700270,
+    "parentId": 700270,
+    "start": 1011.54,
+    "end": 1013.0,
+    "speaker": "Eisen",
+    "text": "Das ist die gerechte Strafe.",
+    "vi": "Đó là cái giá thích đáng đấy."
+  },
+  {
+    "id": 700271,
+    "parentId": 700271,
+    "start": 1014.48,
+    "end": 1018.62,
+    "speaker": "Heiter",
+    "text": "Solltet ihr mal in die Heilige Stadt kommen, dann vergießt einen guten Tropfen an meinem Grab.",
+    "vi": "Nếu hai người có dịp ghé qua Thánh Đô, hãy tưới một chén rượu ngon lên mộ tôi nhé."
+  },
+  {
+    "id": 700272,
+    "parentId": 700272,
+    "start": 1021.08,
+    "end": 1023.34,
+    "speaker": "Frieren",
+    "text": "Hast du denn gar keine Angst vor dem Sterben, Heiter?",
+    "vi": "Cậu hoàn toàn không sợ cái chết sao, Heiter?"
+  },
+  {
+    "id": 700273,
+    "parentId": 700273,
+    "start": 1025.2,
+    "end": 1028.66,
+    "speaker": "Heiter",
+    "text": "Ich bin Teil der Heldentruppe, die diese Welt gerettet hat.",
+    "vi": "Tôi là một thành viên của nhóm anh hùng đã giải cứu thế giới này."
+  },
+  {
+    "id": 700274,
+    "parentId": 700274,
+    "start": 1029.9,
+    "end": 1034.24,
+    "speaker": "Heiter",
+    "text": "Nach meinem Tod werde ich im Paradies garantiert im größten Luxus schwelgen.",
+    "vi": "Sau khi qua đời, chắc chắn tôi sẽ được tận hưởng sự xa hoa bậc nhất trên thiên đường."
+  },
+  {
+    "id": 700275,
+    "parentId": 700275,
+    "start": 1034.64,
+    "end": 1037.86,
+    "speaker": "Heiter",
+    "text": "Das ist der Grund, weshalb ich mit euch Seite an Seite gekämpft habe.",
+    "vi": "Đó chính là lý do tôi đã sát cánh chiến đấu cùng mọi người."
+  },
+  {
+    "id": 700276,
+    "parentId": 700276,
+    "start": 1038.04,
+    "end": 1039.36,
+    "speaker": "Frieren",
+    "text": "Oh, du Scheinheiliger.",
+    "vi": "Ồ, đồ đạo đức giả."
+  },
+  {
+    "id": 700277,
+    "parentId": 700277,
+    "start": 1041.54,
+    "end": 1043.34,
+    "speaker": "Heiter",
+    "text": "Ich mach mich mal auf den Weg.",
+    "vi": "Tôi lên đường đây."
+  },
+  {
+    "id": 700278,
+    "parentId": 700278,
+    "start": 1051.3,
+    "end": 1054.78,
+    "speaker": "Frieren",
+    "text": "Na dann, ich sollte auch langsam los.",
+    "vi": "Vậy thôi, tôi cũng nên lên đường dần đây."
+  },
+  {
+    "id": 700279,
+    "parentId": 700279,
+    "start": 1055.64,
+    "end": 1057.68,
+    "speaker": "Eisen",
+    "text": "Willst du auf Reisen weitere Zauber sammeln?",
+    "vi": "Cậu định đi chu du để thu thập thêm phép thuật sao?"
+  },
+  {
+    "id": 700280,
+    "parentId": 700280,
+    "start": 1057.98,
+    "end": 1059.76,
+    "speaker": "Frieren",
+    "text": "Ja, das ist eins meiner Ziele.",
+    "vi": "Ừ, đó là một trong những mục tiêu của tôi."
+  },
+  {
+    "id": 700281,
+    "parentId": 700281,
+    "start": 1060.48,
+    "end": 1063.06,
+    "speaker": "Frieren",
+    "text": "Ich wünsche mir aber auch, mehr über die Menschen zu erfahren.",
+    "vi": "Nhưng tôi cũng mong muốn được tìm hiểu nhiều hơn về con người."
+  },
+  {
+    "id": 700282,
+    "parentId": 700282,
+    "start": 1065.78,
+    "end": 1066.68,
+    "speaker": "Eisen",
+    "text": "Verstehe ich.",
+    "vi": "Tôi hiểu rồi."
+  },
+  {
+    "id": 700283,
+    "parentId": 700283,
+    "start": 1067.58,
+    "end": 1069.8,
+    "speaker": "Frieren",
+    "text": "Ich hätte übrigens noch eine Bitte an dich.",
+    "vi": "Nhân tiện, tôi còn một lời thỉnh cầu muốn nhờ cậu."
+  },
+  {
+    "id": 700284,
+    "parentId": 700284,
+    "start": 1069.8,
+    "end": 1075.1,
+    "speaker": "Frieren",
+    "text": "Da ich ja eine Magierin bin, könnte ich gut einen starken Kämpfer wie dich gebrauchen.",
+    "vi": "Vì tôi là một pháp sư, tôi rất cần một chiến binh mạnh mẽ như cậu đi cùng."
+  },
+  {
+    "id": 700285,
+    "parentId": 700285,
+    "start": 1075.46,
+    "end": 1079.8,
+    "speaker": "Eisen",
+    "text": "Bitte verzeih mir, aber ich bin zu alt, um eine Axt zu schwingen.",
+    "vi": "Xin hãy thứ lỗi cho tôi, nhưng tôi đã quá già để vung rìu rồi."
+  },
+  {
+    "id": 700286,
+    "parentId": 700286,
+    "start": 1083.56,
+    "end": 1085.54,
+    "speaker": "Eisen",
+    "text": "Jetzt mach nicht so ein Gesicht, Frieren.",
+    "vi": "Đừng làm vẻ mặt như thế chứ, Frieren."
+  },
+  {
+    "id": 700287,
+    "parentId": 700287,
+    "start": 1085.98,
+    "end": 1091.22,
+    "speaker": "Eisen",
+    "text": "Selbst wenn die eigenen Kräfte schwinden, hat das Leben noch einige Überraschungen auf Lager.",
+    "vi": "Ngay cả khi sức lực của bản thân suy giảm, cuộc sống vẫn còn cất giấu nhiều điều bất ngờ phía trước."
+  },
+  {
+    "id": 700288,
+    "parentId": 700288,
+    "start": 1093.56,
+    "end": 1096.38,
+    "speaker": "Frieren",
+    "text": "Verstehe. Dann auf Wiedersehen, Eisen.",
+    "vi": "Tôi hiểu rồi. Vậy tạm biệt nhé, Eisen."
+  },
+  {
+    "id": 700289,
+    "parentId": 700289,
+    "start": 1097.46,
+    "end": 1098.66,
+    "speaker": "Eisen",
+    "text": "Ja, bis bald.",
+    "vi": "Ừ, hẹn sớm gặp lại."
+  },
+  {
+    "id": 700290,
+    "parentId": 700290,
+    "start": 1140.24,
+    "end": 1142.32,
+    "speaker": "Frieren",
+    "text": "Schon wieder derselbe Baum.",
+    "vi": "Lại là cái cây đó nữa rồi."
+  },
+  {
+    "id": 700291,
+    "parentId": 700291,
+    "start": 1143.06,
+    "end": 1144.66,
+    "speaker": "Frieren",
+    "text": "Andauernd verlaufe ich mich in diesem Wald.",
+    "vi": "Mình cứ bị lạc mãi trong khu rừng này."
+  },
+  {
+    "id": 700292,
+    "parentId": 700292,
+    "start": 1145.56,
+    "end": 1146.58,
+    "speaker": "Frieren",
+    "text": "Wo bin ich hier?",
+    "vi": "Mình đang ở đâu thế này?"
+  },
+  {
+    "id": 700293,
+    "parentId": 700293,
+    "start": 1150.96,
+    "end": 1152.94,
+    "speaker": "Fern",
+    "text": "Suchen Sie nach etwas?",
+    "vi": "Cô đang tìm thứ gì sao ạ?"
+  },
+  {
+    "id": 700294,
+    "parentId": 700294,
+    "start": 1158.06,
+    "end": 1159.78,
+    "speaker": "Fern",
+    "text": "Kann es sein, dass Sie sich verlaufen haben?",
+    "vi": "Có phải cô bị lạc đường rồi không ạ?"
+  },
+  {
+    "id": 700295,
+    "parentId": 700295,
+    "start": 1160.9,
+    "end": 1164.34,
+    "speaker": "Frieren",
+    "text": "Ich suche eigentlich nur nach dem Haus von jemandem namens Heiter.",
+    "vi": "Thực ra tôi chỉ đang tìm nhà của một người tên là Heiter."
+  },
+  {
+    "id": 700296,
+    "parentId": 700296,
+    "start": 1165.18,
+    "end": 1167.34,
+    "speaker": "Fern",
+    "text": "Ah, dann sind Sie wohl unser Gast.",
+    "vi": "À, vậy chắc cô là vị khách của nhà cháu rồi."
+  },
+  {
+    "id": 700297,
+    "parentId": 700297,
+    "start": 1170.8,
+    "end": 1173.0,
+    "speaker": "Frieren",
+    "text": "Du bist ja immer noch am Leben, Scheinheiliger.",
+    "vi": "Cậu vẫn còn sống cơ đấy, đồ đạo đức giả."
+  },
+  {
+    "id": 700298,
+    "parentId": 700298,
+    "start": 1174.68,
+    "end": 1178.5,
+    "speaker": "Heiter",
+    "text": "Es ist tatsächlich gar nicht so leicht, auf stilvolle Weise zu sterben.",
+    "vi": "Thực sự là chẳng dễ dàng chút nào để qua đời một cách thật phong thái."
+  },
+  {
+    "id": 700299,
+    "parentId": 700299,
+    "start": 1178.84,
+    "end": 1181.46,
+    "speaker": "Frieren",
+    "text": "Ich habe extra Schnaps gekauft, um ihn auf dein Grab zu gießen.",
+    "vi": "Tôi đã cất công mua rượu mạnh để tưới lên mộ cậu đấy."
+  },
+  {
+    "id": 700300,
+    "parentId": 700300,
+    "start": 1181.54,
+    "end": 1182.32,
+    "speaker": "Frieren",
+    "text": "Willst du was davon?",
+    "vi": "Cậu có muốn uống một chút không?"
+  },
+  {
+    "id": 700301,
+    "parentId": 700301,
+    "start": 1182.58,
+    "end": 1184.78,
+    "speaker": "Heiter",
+    "text": "Ich trinke gar keinen Alkohol mehr.",
+    "vi": "Tôi hoàn toàn không uống rượu nữa rồi."
+  },
+  {
+    "id": 700302,
+    "parentId": 700302,
+    "start": 1185.28,
+    "end": 1185.76,
+    "speaker": "Frieren",
+    "text": "Verstehe.",
+    "vi": "Ra vậy."
+  },
+  {
+    "id": 700303,
+    "parentId": 700303,
+    "start": 1186.56,
+    "end": 1189.48,
+    "speaker": "Frieren",
+    "text": "Doch ich denke nicht, dass die Göttin dir verzeihen wird,",
+    "vi": "Nhưng tôi không nghĩ Nữ thần sẽ tha thứ cho cậu đâu,"
+  },
+  {
+    "id": 700304,
+    "parentId": 700303,
+    "start": 1189.48,
+    "end": 1191.54,
+    "speaker": "Frieren",
+    "text": "nur weil du inzwischen tugendhaft lebst.",
+    "vi": "chỉ vì giờ đây cậu đã sống đức hạnh."
+  },
+  {
+    "id": 700305,
+    "parentId": 700305,
+    "start": 1198.76,
+    "end": 1200.5,
+    "speaker": "Heiter",
+    "text": "Ich danke dir, meine Liebe.",
+    "vi": "Cảm ơn cháu nhé, cháu yêu quý."
+  },
+  {
+    "id": 700306,
+    "parentId": 700306,
+    "start": 1205.68,
+    "end": 1206.5,
+    "speaker": "Frieren",
+    "text": "Wer ist sie?",
+    "vi": "Con bé là ai vậy?"
+  },
+  {
+    "id": 700307,
+    "parentId": 700307,
+    "start": 1207.1,
+    "end": 1208.38,
+    "speaker": "Heiter",
+    "text": "Ihr Name ist Fern.",
+    "vi": "Tên con bé là Fern."
+  },
+  {
+    "id": 700308,
+    "parentId": 700308,
+    "start": 1208.92,
+    "end": 1211.72,
+    "speaker": "Heiter",
+    "text": "Sie ist eine Kriegswaise aus den Ländern im Süden.",
+    "vi": "Con bé là một trẻ mồ côi vì chiến tranh đến từ các vùng đất phương Nam."
+  },
+  {
+    "id": 700309,
+    "parentId": 700309,
+    "start": 1213.2,
+    "end": 1214.5,
+    "speaker": "Frieren",
+    "text": "Das sieht dir nicht ähnlich.",
+    "vi": "Chuyện này chẳng giống tính cách của cậu chút nào."
+  },
+  {
+    "id": 700310,
+    "parentId": 700310,
+    "start": 1215.22,
+    "end": 1218.02,
+    "speaker": "Frieren",
+    "text": "Du bist nicht jemand, der anderen uneigennützig hilft.",
+    "vi": "Cậu vốn đâu phải người hay giúp đỡ kẻ khác một cách vô tư."
+  },
+  {
+    "id": 700311,
+    "parentId": 700311,
+    "start": 1218.02,
+    "end": 1220.26,
+    "speaker": "Frieren",
+    "text": "Du bist nicht wie Himmel.",
+    "vi": "Cậu đâu có giống như Himmel."
+  },
+  {
+    "id": 700312,
+    "parentId": 700312,
+    "start": 1222.96,
+    "end": 1225.46,
+    "speaker": "Heiter",
+    "text": "Frieren, warum bist du zu mir gekommen?",
+    "vi": "Frieren này, tại sao cậu lại tìm đến chỗ tôi?"
+  },
+  {
+    "id": 700313,
+    "parentId": 700313,
+    "start": 1225.9,
+    "end": 1228.3,
+    "speaker": "Frieren",
+    "text": "Ich wollte etwas in der Heiligen Stadt kaufen",
+    "vi": "Tôi muốn mua vài thứ ở Thánh Đô,"
+  },
+  {
+    "id": 700314,
+    "parentId": 700313,
+    "start": 1228.3,
+    "end": 1230.08,
+    "speaker": "Frieren",
+    "text": "und ich versuche, wenn möglich,",
+    "vi": "và nếu có thể thì tôi luôn cố gắng"
+  },
+  {
+    "id": 700315,
+    "parentId": 700313,
+    "start": 1230.18,
+    "end": 1232.06,
+    "speaker": "Frieren",
+    "text": "Bekannte an meinen Reisezielen zu treffen.",
+    "vi": "ghé thăm những người quen ở nơi mình đi qua."
+  },
+  {
+    "id": 700316,
+    "parentId": 700316,
+    "start": 1233.66,
+    "end": 1236.26,
+    "speaker": "Frieren",
+    "text": "Außerdem habe ich bei dir noch einige Schulden offen,",
+    "vi": "Ngoài ra tôi vẫn còn nợ cậu vài ân tình"
+  },
+  {
+    "id": 700317,
+    "parentId": 700316,
+    "start": 1236.56,
+    "end": 1238.34,
+    "speaker": "Frieren",
+    "text": "die ich vor deinem Tod begleichen will.",
+    "vi": "mà tôi muốn trả xong trước khi cậu qua đời."
+  },
+  {
+    "id": 700318,
+    "parentId": 700318,
+    "start": 1242.1,
+    "end": 1244.16,
+    "speaker": "Heiter",
+    "text": "Eine Bitte hätte ich schon an dich.",
+    "vi": "Quả thực tôi có một việc muốn nhờ cậu đây."
+  },
+  {
+    "id": 700319,
+    "parentId": 700319,
+    "start": 1245.38,
+    "end": 1247.28,
+    "speaker": "Heiter",
+    "text": "Würdest du einen Lehrling aufnehmen?",
+    "vi": "Cậu có sẵn lòng nhận một học trò không?"
+  },
+  {
+    "id": 700320,
+    "parentId": 700320,
+    "start": 1248.98,
+    "end": 1252.72,
+    "speaker": "Heiter",
+    "text": "Die kleine Fern hat nämlich das Potenzial zur Magierin.",
+    "vi": "Bé Fern đây thực sự có tiềm năng trở thành một pháp sư."
+  },
+  {
+    "id": 700321,
+    "parentId": 700321,
+    "start": 1252.96,
+    "end": 1255.74,
+    "speaker": "Heiter",
+    "text": "Würdest du sie bitte auf deinen Reisen mitnehmen?",
+    "vi": "Cậu làm ơn đưa con bé đi cùng trong những chuyến hành trình của mình được không?"
+  },
+  {
+    "id": 700322,
+    "parentId": 700322,
+    "start": 1259.14,
+    "end": 1262.64,
+    "speaker": "Frieren",
+    "text": "Es tut mir leid, Heiter, aber das kann ich nicht machen.",
+    "vi": "Xin lỗi cậu, Heiter, nhưng tôi không thể làm việc đó được."
+  },
+  {
+    "id": 700323,
+    "parentId": 700323,
+    "start": 1263.2,
+    "end": 1264.28,
+    "speaker": "Frieren",
+    "text": "Sie wäre mir nur im Weg.",
+    "vi": "Con bé sẽ chỉ làm vướng chân tôi thôi."
+  },
+  {
+    "id": 700324,
+    "parentId": 700324,
+    "start": 1265.82,
+    "end": 1269.14,
+    "speaker": "Frieren",
+    "text": "Du weißt doch, wie viele Lehrlinge der Magie in echten Kämpfen sterben.",
+    "vi": "Cậu cũng biết có bao nhiêu học trò pháp thuật đã bỏ mạng trong những trận chiến thực sự mà."
+  },
+  {
+    "id": 700325,
+    "parentId": 700325,
+    "start": 1270.04,
+    "end": 1273.44,
+    "speaker": "Frieren",
+    "text": "Ich möchte kein Kind, das ein Freund mir anvertraut hat, in Gefahr bringen.",
+    "vi": "Tôi không muốn đẩy một đứa trẻ mà bạn mình gửi gắm vào vòng nguy hiểm."
+  },
+  {
+    "id": 700326,
+    "parentId": 700326,
+    "start": 1276.54,
+    "end": 1281.34,
+    "speaker": "Heiter",
+    "text": "Wenn das so ist, dann hätte ich eine andere Bitte an dich.",
+    "vi": "Nếu đã vậy, thì tôi có một lời thỉnh cầu khác muốn nhờ cậu."
+  },
+  {
+    "id": 700327,
+    "parentId": 700327,
+    "start": 1285.96,
+    "end": 1290.4,
+    "speaker": "Heiter",
+    "text": "Ich habe dieses Buch aus dem Grab von Ewig dem Weisen ausgegraben.",
+    "vi": "Tôi đã khai quật cuốn sách này từ lăng mộ của Hiền nhân Ewig."
+  },
+  {
+    "id": 700328,
+    "parentId": 700328,
+    "start": 1290.7,
+    "end": 1297.38,
+    "speaker": "Heiter",
+    "text": "In diesem Buch stehen verloren gegangene Zauber zur Wiederbelebung von Toten und zum Erlangen von Unsterblichkeit.",
+    "vi": "Trong cuốn sách này có ghi chép những phép thuật đã thất truyền để hồi sinh người chết và đạt được sự bất tử."
+  },
+  {
+    "id": 700329,
+    "parentId": 700329,
+    "start": 1297.82,
+    "end": 1301.24,
+    "speaker": "Heiter",
+    "text": "Ich kann mir nicht vorstellen, dass solche Zauber wirklich existieren.",
+    "vi": "Tôi không thể hình dung nổi những phép thuật như thế lại thực sự tồn tại."
+  },
+  {
+    "id": 700330,
+    "parentId": 700330,
+    "start": 1301.24,
+    "end": 1305.12,
+    "speaker": "Heiter",
+    "text": "Um das herauszufinden, möchte ich, dass du dieses Buch entschlüsselst.",
+    "vi": "Để làm rõ điều đó, tôi muốn nhờ cậu giải mã cuốn sách này."
+  },
+  {
+    "id": 700331,
+    "parentId": 700331,
+    "start": 1305.28,
+    "end": 1306.52,
+    "speaker": "Heiter",
+    "text": "Denkst du, du schaffst das?",
+    "vi": "Cậu nghĩ mình làm được chứ?"
+  },
+  {
+    "id": 700332,
+    "parentId": 700332,
+    "start": 1307.08,
+    "end": 1309.14,
+    "speaker": "Frieren",
+    "text": "Es ist in einer geheimen Bilderschrift verfasst.",
+    "vi": "Nó được viết bằng một loại chữ tượng hình bí mật."
+  },
+  {
+    "id": 700333,
+    "parentId": 700333,
+    "start": 1309.46,
+    "end": 1312.02,
+    "speaker": "Frieren",
+    "text": "Die Leute in deinem Zeitalter stehen auf so etwas, oder?",
+    "vi": "Người ở thời đại của cậu rất mê mấy thứ như thế này nhỉ?"
+  },
+  {
+    "id": 700334,
+    "parentId": 700334,
+    "start": 1312.7,
+    "end": 1315.22,
+    "speaker": "Frieren",
+    "text": "Ich werde wohl fünf oder sechs Jahre dafür brauchen.",
+    "vi": "Chắc tôi sẽ cần khoảng năm hoặc sáu năm để giải mã nó."
+  },
+  {
+    "id": 700335,
+    "parentId": 700335,
+    "start": 1315.7,
+    "end": 1317.04,
+    "speaker": "Heiter",
+    "text": "Wenn du das sagst.",
+    "vi": "Nếu cậu đã nói vậy."
+  },
+  {
+    "id": 700336,
+    "parentId": 700336,
+    "start": 1317.84,
+    "end": 1320.46,
+    "speaker": "Frieren",
+    "text": "Aber was willst du mit dem Inhalt dieses Buches anfangen?",
+    "vi": "Nhưng cậu định làm gì với nội dung của cuốn sách này?"
+  },
+  {
+    "id": 700337,
+    "parentId": 700337,
+    "start": 1320.94,
+    "end": 1322.96,
+    "speaker": "Frieren",
+    "text": "Ich dachte immer, du hättest keine Angst vor dem Tod.",
+    "vi": "Tôi cứ tưởng cậu không hề sợ cái chết cơ mà."
+  },
+  {
+    "id": 700338,
+    "parentId": 700338,
+    "start": 1323.62,
+    "end": 1325.44,
+    "speaker": "Heiter",
+    "text": "Es gibt zwei Gründe dafür.",
+    "vi": "Có hai lý do cho việc đó."
+  },
+  {
+    "id": 700339,
+    "parentId": 700339,
+    "start": 1326.42,
+    "end": 1330.6,
+    "speaker": "Heiter",
+    "text": "Erstens habe ich euch damals wohl ein bisschen was vorgemacht.",
+    "vi": "Thứ nhất, hồi đó có lẽ tôi đã làm bộ trước mặt mọi người một chút."
+  },
+  {
+    "id": 700340,
+    "parentId": 700340,
+    "start": 1330.6,
+    "end": 1334.82,
+    "speaker": "Heiter",
+    "text": "Zweitens habe ich jetzt inzwischen mehr Angst vor dem Tod als früher.",
+    "vi": "Thứ hai, giờ đây tôi đã sợ cái chết nhiều hơn trước kia rồi."
+  },
+  {
+    "id": 700341,
+    "parentId": 700341,
+    "start": 1336.16,
+    "end": 1337.6,
+    "speaker": "Heiter",
+    "text": "Ich will ja auch nicht richtig unsterblich",
+    "vi": "Tôi cũng đâu định trở nên bất tử thực sự,"
+  },
+  {
+    "id": 700342,
+    "parentId": 700341,
+    "start": 1338.38,
+    "end": 1339.8,
+    "speaker": "Heiter",
+    "text": "werden, nur ein kleines bisschen.",
+    "vi": "chỉ một chút xíu thôi."
+  },
+  {
+    "id": 700343,
+    "parentId": 700343,
+    "start": 1340.16,
+    "end": 1344.14,
+    "speaker": "Heiter",
+    "text": "Ich möchte auf meine alten Tage noch ein wenig mehr Zeit haben.",
+    "vi": "Ở tuổi xế chiều này, tôi chỉ muốn có thêm một chút thời gian nữa."
+  },
+  {
+    "id": 700344,
+    "parentId": 700344,
+    "start": 1347.76,
+    "end": 1349.9,
+    "speaker": "Heiter",
+    "text": "In den Heiligen Schriften steht außerdem,",
+    "vi": "Hơn nữa, trong Kinh Thánh còn viết rằng"
+  },
+  {
+    "id": 700345,
+    "parentId": 700344,
+    "start": 1350.2,
+    "end": 1352.18,
+    "speaker": "Heiter",
+    "text": "dass man sein Leben gesund führen soll.",
+    "vi": "con người nên sống một cuộc đời lành mạnh."
+  },
+  {
+    "id": 700346,
+    "parentId": 700346,
+    "start": 1352.4,
+    "end": 1355.08,
+    "speaker": "Heiter",
+    "text": "Und ein langes Leben ist der beste Beweis dafür.",
+    "vi": "Và sống trường thọ chính là minh chứng rõ nhất cho điều đó."
+  },
+  {
+    "id": 700347,
+    "parentId": 700347,
+    "start": 1356.28,
+    "end": 1356.88,
+    "speaker": "Frieren",
+    "text": "Scheinheiliger.",
+    "vi": "Đồ đạo đức giả."
+  },
+  {
+    "id": 700348,
+    "parentId": 700348,
+    "start": 1358.86,
+    "end": 1360.06,
+    "speaker": "Heiter",
+    "text": "Eine Frage.",
+    "vi": "Cho tôi hỏi một câu nhé."
+  },
+  {
+    "id": 700349,
+    "parentId": 700349,
+    "start": 1360.74,
+    "end": 1365.94,
+    "speaker": "Heiter",
+    "text": "Könntest du Fern in Magie unterrichten, auch wenn es nur während deiner Pausen sein sollte?",
+    "vi": "Cậu có thể dạy pháp thuật cho Fern, dù chỉ là trong những lúc cậu nghỉ giải lao được không?"
+  },
+  {
+    "id": 700350,
+    "parentId": 700350,
+    "start": 1367.12,
+    "end": 1371.14,
+    "speaker": "Heiter",
+    "text": "Ich selber bin als Kleriker dazu leider nicht in der Lage.",
+    "vi": "Bản thân tôi là một giáo sĩ nên tiếc là không đủ khả năng làm việc đó."
+  },
+  {
+    "id": 700351,
+    "parentId": 700351,
+    "start": 1372.08,
+    "end": 1373.72,
+    "speaker": "Frieren",
+    "text": "Na gut, solange es nur das ist.",
+    "vi": "Được thôi, miễn chỉ có vậy."
+  },
+  {
+    "id": 700352,
+    "parentId": 700352,
+    "start": 1381.94,
+    "end": 1383.26,
+    "speaker": "Frieren",
+    "text": "Da ist sie ja.",
+    "vi": "Con bé ở kia rồi."
+  },
+  {
+    "id": 700353,
+    "parentId": 700353,
+    "start": 1384.1,
+    "end": 1386.6,
+    "speaker": "Frieren",
+    "text": "Es war ganz schön schwierig, dich zu finden.",
+    "vi": "Tìm được em thật chẳng dễ chút nào."
+  },
+  {
+    "id": 700354,
+    "parentId": 700354,
+    "start": 1386.92,
+    "end": 1388.42,
+    "speaker": "Frieren",
+    "text": "Trainierst du denn immer hier im Wald?",
+    "vi": "Em lúc nào cũng tập luyện ở trong rừng này sao?"
+  },
+  {
+    "id": 700355,
+    "parentId": 700355,
+    "start": 1389.04,
+    "end": 1392.42,
+    "speaker": "Fern",
+    "text": "Dann haben sogar Sie Schwierigkeiten damit, mich aufzufinden.",
+    "vi": "Vậy là ngay cả cô cũng gặp khó khăn trong việc tìm ra cháu."
+  },
+  {
+    "id": 700356,
+    "parentId": 700356,
+    "start": 1394.3,
+    "end": 1397.78,
+    "speaker": "Fern",
+    "text": "Heiter sagt mir oft, dass ich eine schwache Präsenz habe.",
+    "vi": "Ngài Heiter thường bảo rằng cháu có sự hiện diện rất mờ nhạt."
+  },
+  {
+    "id": 700357,
+    "parentId": 700357,
+    "start": 1399.94,
+    "end": 1402.16,
+    "speaker": "Fern",
+    "text": "Aber ich finde, das ist eine wunderbare Sache.",
+    "vi": "Nhưng cháu thấy đó lại là một điều tuyệt vời."
+  },
+  {
+    "id": 700358,
+    "parentId": 700358,
+    "start": 1403.96,
+    "end": 1405.1,
+    "speaker": "Frieren",
+    "text": "Ja, das ist es.",
+    "vi": "Ừ, đúng là vậy."
+  },
+  {
+    "id": 700359,
+    "parentId": 700359,
+    "start": 1408.4,
+    "end": 1411.98,
+    "speaker": "Frieren",
+    "text": "Tatsächlich, ihre Magie aufzuspüren, funktioniert so gut wie gar nicht.",
+    "vi": "Quả thực, việc dò tìm ma lực của con bé hầu như chẳng có tác dụng."
+  },
+  {
+    "id": 700360,
+    "parentId": 700360,
+    "start": 1412.46,
+    "end": 1414.42,
+    "speaker": "Frieren",
+    "text": "Sie verfügt über eine hervorragende Magiekontrolle.",
+    "vi": "Con bé sở hữu khả năng kiểm soát ma lực xuất sắc."
+  },
+  {
+    "id": 700361,
+    "parentId": 700361,
+    "start": 1414.42,
+    "end": 1419.88,
+    "speaker": "Frieren",
+    "text": "Wie viel muss sie trainiert haben, um das in ihrem Alter so zu beherrschen?",
+    "vi": "Ở độ tuổi này mà làm chủ được đến mức ấy, không biết con bé đã phải khổ luyện biết bao nhiêu?"
+  },
+  {
+    "id": 700362,
+    "parentId": 700362,
+    "start": 1420.3,
+    "end": 1425.92,
+    "speaker": "Fern",
+    "text": "Heiter hat gesagt, dass ich eine vollwertige Magierin bin, wenn ich diesen Felsen dort durchstoßen kann.",
+    "vi": "Ngài Heiter từng nói rằng cháu sẽ trở thành một pháp sư thực thụ nếu có thể xuyên thủng tảng đá đằng kia."
+  },
+  {
+    "id": 700363,
+    "parentId": 700363,
+    "start": 1426.46,
+    "end": 1435.18,
+    "speaker": "Frieren",
+    "text": "Oh, Heiter versteht zwar Magie, aber es ist eigentlich...",
+    "vi": "Ồ, Heiter tuy cũng hiểu về pháp thuật, nhưng thực ra điều đó..."
+  },
+  {
+    "id": 700364,
+    "parentId": 700364,
+    "start": 1435.76,
+    "end": 1438.46,
+    "speaker": "Fern",
+    "text": "Meine magische Kraft löst sich jedes Mal auf.",
+    "vi": "Ma lực của cháu lần nào cũng bị tan biến mất."
+  },
+  {
+    "id": 700365,
+    "parentId": 700365,
+    "start": 1438.6,
+    "end": 1439.74,
+    "speaker": "Fern",
+    "text": "Ich kann nichts tun.",
+    "vi": "Cháu chẳng làm được gì cả."
+  },
+  {
+    "id": 700366,
+    "parentId": 700366,
+    "start": 1440.7,
+    "end": 1441.74,
+    "speaker": "Frieren",
+    "text": "Oh, ich verstehe.",
+    "vi": "Ồ, tôi hiểu rồi."
+  },
+  {
+    "id": 700367,
+    "parentId": 700367,
+    "start": 1441.74,
+    "end": 1444.92,
+    "speaker": "Fern",
+    "text": "Was kann ich denn nur machen, um besser zu werden?",
+    "vi": "Cháu phải làm gì để tiến bộ hơn đây ạ?"
+  },
+  {
+    "id": 700368,
+    "parentId": 700368,
+    "start": 1446.02,
+    "end": 1448.32,
+    "speaker": "Frieren",
+    "text": "Fern? Darf ich dich vorher etwas fragen?",
+    "vi": "Fern này? Trước đó tôi hỏi em một câu được không?"
+  },
+  {
+    "id": 700369,
+    "parentId": 700369,
+    "start": 1449.76,
+    "end": 1450.5,
+    "speaker": "Frieren",
+    "text": "Liebst du Magie?",
+    "vi": "Em có yêu pháp thuật không?"
+  },
+  {
+    "id": 700370,
+    "parentId": 700370,
+    "start": 1451.6,
+    "end": 1453.58,
+    "speaker": "Fern",
+    "text": "Manchmal mehr, manchmal weniger.",
+    "vi": "Đôi khi nhiều, đôi khi ít ạ."
+  },
+  {
+    "id": 700371,
+    "parentId": 700371,
+    "start": 1456.12,
+    "end": 1457.48,
+    "speaker": "Frieren",
+    "text": "Ganz genauso wie ich.",
+    "vi": "Giống hệt như tôi."
+  },
+  {
+    "id": 700372,
+    "parentId": 700372,
+    "start": 1550.12,
+    "end": 1551.98,
+    "speaker": "Heiter",
+    "text": "Wie kommst du mit Fern zurecht?",
+    "vi": "Cậu với Fern hòa hợp thế nào rồi?"
+  },
+  {
+    "id": 700373,
+    "parentId": 700373,
+    "start": 1554.22,
+    "end": 1556.06,
+    "speaker": "Fern",
+    "text": "Es wäre eine Schande, wenn du jetzt sterben würdest.",
+    "vi": "Sẽ thật đáng tiếc nếu bây giờ ngài qua đời đấy ạ."
+  },
+  {
+    "id": 700374,
+    "parentId": 700374,
+    "start": 1556.08,
+    "end": 1557.84,
+    "speaker": "Frieren",
+    "text": "Das hätte nicht unbedingt Magie sein müssen.",
+    "vi": "Đâu nhất thiết phải là pháp thuật."
+  },
+  {
+    "id": 700375,
+    "parentId": 700375,
+    "start": 1558.04,
+    "end": 1559.62,
+    "speaker": "Heiter",
+    "text": "Aber es lohnt sich, nach denen zu suchen.",
+    "vi": "Nhưng rất đáng để đi tìm chúng đấy."
+  }
+];
+const FRIEREN_S01E01_ALIGNED_UTTERANCES = [
+  {
+    "id": 700101,
+    "parentId": 700101,
+    "start": 123.58,
+    "end": 124.06,
+    "speaker": "Himmel",
+    "text": "Frieren?",
+    "vi": "Frieren?"
+  },
+  {
+    "id": 700102,
+    "parentId": 700102,
+    "start": 128.74,
+    "end": 130.16,
+    "speaker": "Himmel",
+    "text": "Seht mal, da ist die Hauptstadt.",
+    "vi": "Nhìn kìa, kinh đô ở đằng kia rồi."
+  },
+  {
+    "id": 700103,
+    "parentId": 700103,
+    "start": 130.66,
+    "end": 133.42,
+    "speaker": "Heiter",
+    "text": "Wir sind die Heldentruppe auf ihrer triumphalen Heimkehr.",
+    "vi": "Chúng ta là nhóm anh hùng trên đường khải hoàn trở về."
+  },
+  {
+    "id": 700104,
+    "parentId": 700104,
+    "start": 133.58,
+    "end": 135.32,
+    "speaker": "Heiter",
+    "text": "Es wird sicher eine große Feier geben.",
+    "vi": "Chắc chắn sẽ có một bữa tiệc lớn."
+  },
+  {
+    "id": 700105,
+    "parentId": 700105,
+    "start": 137.98,
+    "end": 140.2,
+    "speaker": "Eisen",
+    "text": "Wenn wir zurück sind, muss ich mir eine Arbeit suchen.",
+    "vi": "Khi chúng ta trở về, tôi phải tìm một công việc."
+  },
+  {
+    "id": 700106,
+    "parentId": 700106,
+    "start": 140.98,
+    "end": 143.16,
+    "speaker": "Himmel",
+    "text": "Du denkst bereits jetzt über solche Sachen nach?",
+    "vi": "Cậu đã nghĩ đến mấy chuyện như vậy ngay từ bây giờ rồi sao?"
+  },
+  {
+    "id": 700107,
+    "parentId": 700107,
+    "start": 143.64,
+    "end": 144.82,
+    "speaker": "Eisen",
+    "text": "Weil es wichtig ist.",
+    "vi": "Vì chuyện đó quan trọng mà."
+  },
+  {
+    "id": 700108,
+    "parentId": 700108,
+    "start": 145.12,
+    "end": 147.92,
+    "speaker": "Eisen",
+    "text": "Wir haben zwar den Dämonenkönig geschlagen, doch es geht weiter.",
+    "vi": "Tuy chúng ta đã đánh bại Ma Vương, nhưng cuộc sống vẫn tiếp diễn."
+  },
+  {
+    "id": 700109,
+    "parentId": 700109,
+    "start": 148.64,
+    "end": 150.92,
+    "speaker": "Eisen",
+    "text": "Wir haben noch ein langes Leben vor uns.",
+    "vi": "Chúng ta vẫn còn cả một cuộc đời dài phía trước."
+  },
+  {
+    "id": 700110,
+    "parentId": 700110,
+    "start": 152.54,
+    "end": 153.1,
+    "speaker": "Heiter",
+    "text": "Arbeit also.",
+    "vi": "Công việc à."
+  },
+  {
+    "id": 700111,
+    "parentId": 700111,
+    "start": 153.86,
+    "end": 156.14,
+    "speaker": "Heiter",
+    "text": "Also ich würde gerne während der Arbeit trinken können.",
+    "vi": "Vậy thì tôi muốn có thể vừa làm việc vừa uống rượu."
+  },
+  {
+    "id": 700112,
+    "parentId": 700112,
+    "start": 156.34,
+    "end": 157.74,
+    "speaker": "Eisen",
+    "text": "Aber du bist doch ein Kleriker.",
+    "vi": "Nhưng cậu là một giáo sĩ cơ mà."
+  },
+  {
+    "id": 700113,
+    "parentId": 700113,
+    "start": 160.24,
+    "end": 161.92,
+    "speaker": "Frieren",
+    "text": "Ein Leben nach den Abenteuern.",
+    "vi": "Một cuộc sống sau những chuyến phiêu lưu."
+  },
+  {
+    "id": 700114,
+    "parentId": 700114,
+    "start": 164.36,
+    "end": 164.8,
+    "speaker": "Himmel",
+    "text": "Frieren.",
+    "vi": "Frieren."
+  },
+  {
+    "id": 700115,
+    "parentId": 700115,
+    "start": 165.74,
+    "end": 171.52,
+    "speaker": "Himmel",
+    "text": "Der Rest deines Lebens wird sicher sehr viel länger sein, als wir Menschen es uns jemals ausmalen könnten.",
+    "vi": "Phần đời còn lại của cậu chắc chắn sẽ dài hơn rất nhiều so với những gì loài người chúng tớ có thể hình dung."
+  },
+  {
+    "id": 700116,
+    "parentId": 700116,
+    "start": 172.48,
+    "end": 172.92,
+    "speaker": "Frieren",
+    "text": "Ja, wahrscheinlich.",
+    "vi": "Ừ, có lẽ vậy."
+  },
+  {
+    "id": 700117,
+    "parentId": 700117,
+    "start": 210.88,
+    "end": 217.92,
+    "speaker": "König",
+    "text": "Himmel der Held, Eisen der Krieger, Heiter der Kleriker und Frieren die Magierin.",
+    "vi": "Anh hùng Himmel, chiến binh Eisen, giáo sĩ Heiter và pháp sư Frieren."
+  },
+  {
+    "id": 700118,
+    "parentId": 700118,
+    "start": 219.5,
+    "end": 223.98,
+    "speaker": "König",
+    "text": "Ich danke euch, dass ihr auf eurer Reise den Dämonenkönig besiegt habt.",
+    "vi": "Ta cảm ơn các ngươi vì đã đánh bại Ma Vương trong chuyến hành trình của mình."
+  },
+  {
+    "id": 700119,
+    "parentId": 700119,
+    "start": 224.38,
+    "end": 228.06,
+    "speaker": "König",
+    "text": "Damit wird auf der Welt ein Zeitalter des Friedens anbrechen.",
+    "vi": "Nhờ đó, một kỷ nguyên hòa bình sẽ mở ra trên thế giới."
+  },
+  {
+    "id": 700120,
+    "parentId": 700120,
+    "start": 242.86,
+    "end": 246.94,
+    "speaker": "Heiter",
+    "text": "Der König will angeblich Statuen von uns auf dem großen Platz aufstellen.",
+    "vi": "Nghe nói nhà vua muốn dựng tượng của chúng ta ở quảng trường lớn."
+  },
+  {
+    "id": 700121,
+    "parentId": 700121,
+    "start": 247.94,
+    "end": 254.1,
+    "speaker": "Himmel",
+    "text": "Na ja, obwohl ich mir schlecht vorstellen kann, dass sie mein einzigartiges, edles Antlitz richtig gut nachbilden können.",
+    "vi": "Chà, dù tớ khó mà tưởng tượng được rằng họ có thể khắc họa thật chuẩn dung mạo cao quý độc nhất vô nhị của tớ.",
+    "legacyIds": [
+      700121,
+      700122
+    ]
+  },
+  {
+    "id": 700123,
+    "parentId": 700123,
+    "start": 255.26,
+    "end": 256.72,
+    "speaker": "Frieren",
+    "text": "Wie großzügig von ihm.",
+    "vi": "Ông ấy hào phóng thật đấy."
+  },
+  {
+    "id": 700124,
+    "parentId": 700124,
+    "start": 257.02,
+    "end": 260.26,
+    "speaker": "Frieren",
+    "text": "Er hatte uns nur 10 Kupfermünzen gegeben, als wir aufgebrochen sind.",
+    "vi": "Ông ấy chỉ cho chúng ta đúng 10 đồng xu đồng khi chúng ta lên đường."
+  },
+  {
+    "id": 700125,
+    "parentId": 700125,
+    "start": 261.76,
+    "end": 263.7,
+    "speaker": "Himmel",
+    "text": "Ach, jetzt komm schon, Frieren.",
+    "vi": "Thôi nào, Frieren."
+  },
+  {
+    "id": 700126,
+    "parentId": 700126,
+    "start": 264.22,
+    "end": 266.6,
+    "speaker": "Himmel",
+    "text": "Heute Abend trinken wir so viel wir wollen.",
+    "vi": "Tối nay chúng ta cứ uống thỏa thích."
+  },
+  {
+    "id": 700127,
+    "parentId": 700127,
+    "start": 266.8,
+    "end": 268.5,
+    "speaker": "Himmel",
+    "text": "Mehr brauchen wir doch nicht, oder?",
+    "vi": "Chúng ta đâu cần gì hơn thế, đúng không?"
+  },
+  {
+    "id": 700128,
+    "parentId": 700128,
+    "start": 269.28,
+    "end": 270.72,
+    "speaker": "Frieren",
+    "text": "Oh, du Scheinheiliger!",
+    "vi": "Ồ, đồ đạo đức giả!"
+  },
+  {
+    "id": 700129,
+    "parentId": 700129,
+    "start": 278.34,
+    "end": 280.4,
+    "speaker": "Himmel",
+    "text": "Es ist tatsächlich vorbei.",
+    "vi": "Thực sự kết thúc rồi."
+  },
+  {
+    "id": 700130,
+    "parentId": 700130,
+    "start": 281.2,
+    "end": 282.18,
+    "speaker": "Heiter",
+    "text": "So ist es.",
+    "vi": "Đúng vậy."
+  },
+  {
+    "id": 700131,
+    "parentId": 700131,
+    "start": 283.28,
+    "end": 285.42,
+    "speaker": "Eisen",
+    "text": "Das ist nun das Ende unserer Reise.",
+    "vi": "Đây là điểm kết thúc chuyến hành trình của chúng ta."
+  },
+  {
+    "id": 700132,
+    "parentId": 700132,
+    "start": 286.44,
+    "end": 288.02,
+    "speaker": "Himmel",
+    "text": "Das waren zehn Jahre, oder?",
+    "vi": "Vậy là đã mười năm rồi nhỉ?"
+  },
+  {
+    "id": 700133,
+    "parentId": 700133,
+    "start": 288.7,
+    "end": 290.88,
+    "speaker": "Heiter",
+    "text": "Es ist so viel passiert in dieser Zeit.",
+    "vi": "Đã có biết bao chuyện xảy ra trong khoảng thời gian đó."
+  },
+  {
+    "id": 700134,
+    "parentId": 700134,
+    "start": 292.32,
+    "end": 299.02,
+    "speaker": "Frieren",
+    "text": "An dem Tag unserer Abreise wurden Himmel und Eisen fast hingerichtet, weil sie unverschämt zum König waren.",
+    "vi": "Vào ngày chúng tôi khởi hành, Himmel và Eisen suýt nữa bị xử tử vì ăn nói vô lễ với nhà vua.",
+    "legacyIds": [
+      700134,
+      700135
+    ]
+  },
+  {
+    "id": 700136,
+    "parentId": 700136,
+    "start": 299.02,
+    "end": 302.1,
+    "speaker": "Frieren",
+    "text": "Ein Fehler, und das wäre das Ende unserer Reise gewesen.",
+    "vi": "Chỉ một sai lầm thôi là chuyến hành trình của chúng tôi đã kết thúc ngay tại đó."
+  },
+  {
+    "id": 700137,
+    "parentId": 700137,
+    "start": 302.84,
+    "end": 306.22,
+    "speaker": "Frieren",
+    "text": "Und Heiter war manchmal so besoffen, dass er zu nichts nutze war.",
+    "vi": "Còn Heiter thì đôi khi say xỉn đến mức chẳng làm được tích sự gì."
+  },
+  {
+    "id": 700138,
+    "parentId": 700138,
+    "start": 310.46,
+    "end": 313.46,
+    "speaker": "Himmel",
+    "text": "Du siehst ja aus wie eine wandelnde Leiche.",
+    "vi": "Trông cậu cứ như một cái xác biết đi vậy."
+  },
+  {
+    "id": 700139,
+    "parentId": 700139,
+    "start": 313.46,
+    "end": 314.44,
+    "speaker": "Himmel",
+    "text": "Alles okay bei dir?",
+    "vi": "Cậu có ổn không đấy?"
+  },
+  {
+    "id": 700140,
+    "parentId": 700140,
+    "start": 314.8,
+    "end": 315.02,
+    "speaker": "Heiter",
+    "text": "Nein.",
+    "vi": "Không."
+  },
+  {
+    "id": 700141,
+    "parentId": 700141,
+    "start": 315.1,
+    "end": 316.78,
+    "speaker": "Eisen",
+    "text": "Woran kann das nur liegen?",
+    "vi": "Rốt cuộc là tại sao chứ?"
+  },
+  {
+    "id": 700142,
+    "parentId": 700142,
+    "start": 316.78,
+    "end": 319.72,
+    "speaker": "Frieren",
+    "text": "Das kam einmal die Woche vor.",
+    "vi": "Chuyện đó xảy ra mỗi tuần một lần."
+  },
+  {
+    "id": 700143,
+    "parentId": 700143,
+    "start": 319.72,
+    "end": 321.84,
+    "speaker": "Frieren",
+    "text": "Ich hingegen war immer vorbildlich.",
+    "vi": "Ngược lại, tôi thì lúc nào cũng gương mẫu."
+  },
+  {
+    "id": 700144,
+    "parentId": 700144,
+    "start": 321.84,
+    "end": 325.7,
+    "speaker": "Himmel",
+    "text": "Wir haben drüber nachgedacht, dich zurückzulassen, als die Mimik dich fressen wollte.",
+    "vi": "Bọn tớ đã nghĩ đến chuyện bỏ cậu lại khi con Mimik định nuốt chửng cậu đấy."
+  },
+  {
+    "id": 700145,
+    "parentId": 700145,
+    "start": 325.96,
+    "end": 328.48,
+    "speaker": "Heiter",
+    "text": "Oh Mann, wir haben ihr doch gesagt, dass das eine Falle sein kann.",
+    "vi": "Trời đất, chúng ta đã bảo cô ấy đó có thể là bẫy rồi mà."
+  },
+  {
+    "id": 700146,
+    "parentId": 700146,
+    "start": 328.6,
+    "end": 330.2,
+    "speaker": "Eisen",
+    "text": "Lassen wir die Elfe doch zurück.",
+    "vi": "Hay là cứ bỏ cô nàng tinh linh này lại đi."
+  },
+  {
+    "id": 700147,
+    "parentId": 700147,
+    "start": 334.54,
+    "end": 338.72,
+    "speaker": "Himmel",
+    "text": "Wir haben 'ne Menge von diesen echt schrecklichen Erinnerungen.",
+    "vi": "Chúng ta có cả đống những kỷ niệm thật sự kinh khủng như thế."
+  },
+  {
+    "id": 700148,
+    "parentId": 700148,
+    "start": 339.84,
+    "end": 341.24,
+    "speaker": "Himmel",
+    "text": "Aber ich hatte Spaß.",
+    "vi": "Nhưng tớ đã rất vui."
+  },
+  {
+    "id": 700149,
+    "parentId": 700149,
+    "start": 342.0,
+    "end": 344.94,
+    "speaker": "Himmel",
+    "text": "Und ich bin froh, dass ich diese Abenteuer mit euch erleben konnte.",
+    "vi": "Và tớ rất mừng vì đã có thể cùng mọi người trải qua những chuyến phiêu lưu này."
+  },
+  {
+    "id": 700150,
+    "parentId": 700150,
+    "start": 345.92,
+    "end": 347.12,
+    "speaker": "Frieren",
+    "text": "Das geht mir genauso.",
+    "vi": "Tôi cũng thấy vậy."
+  },
+  {
+    "id": 700151,
+    "parentId": 700151,
+    "start": 347.8,
+    "end": 349.6,
+    "speaker": "Frieren",
+    "text": "Auch wenn es nur für eine kurze Zeit war.",
+    "vi": "Dù đó chỉ là một khoảng thời gian ngắn ngủi."
+  },
+  {
+    "id": 700152,
+    "parentId": 700152,
+    "start": 350.38,
+    "end": 351.44,
+    "speaker": "Heiter",
+    "text": "Äh, wie war das?",
+    "vi": "Hả, cậu vừa nói sao cơ?"
+  },
+  {
+    "id": 700153,
+    "parentId": 700153,
+    "start": 351.68,
+    "end": 352.9,
+    "speaker": "Eisen",
+    "text": "Was redest du denn da?",
+    "vi": "Cậu đang nói cái gì thế?"
+  },
+  {
+    "id": 700154,
+    "parentId": 700154,
+    "start": 352.9,
+    "end": 354.2,
+    "speaker": "Eisen",
+    "text": "Das waren zehn Jahre.",
+    "vi": "Đó là mười năm trời đấy."
+  },
+  {
+    "id": 700155,
+    "parentId": 700155,
+    "start": 354.56,
+    "end": 357.96,
+    "speaker": "Eisen",
+    "text": "Schau dir Heiter an, er ist inzwischen ein grauer alter Mann geworden.",
+    "vi": "Nhìn Heiter mà xem, giờ cậu ta đã thành một ông già tóc bạc rồi."
+  },
+  {
+    "id": 700156,
+    "parentId": 700156,
+    "start": 358.04,
+    "end": 359.2,
+    "speaker": "Heiter",
+    "text": "Das ist nicht sehr nett.",
+    "vi": "Nói thế chẳng tử tế chút nào."
+  },
+  {
+    "id": 700157,
+    "parentId": 700157,
+    "start": 359.7,
+    "end": 361.0,
+    "speaker": "Frieren",
+    "text": "Das war er doch schon vorher.",
+    "vi": "Trước đó anh ta vốn đã vậy rồi mà."
+  },
+  {
+    "id": 700158,
+    "parentId": 700158,
+    "start": 361.3,
+    "end": 362.72,
+    "speaker": "Heiter",
+    "text": "Das ist auch nicht nett.",
+    "vi": "Câu đó cũng chẳng tử tế đâu."
+  },
+  {
+    "id": 700159,
+    "parentId": 700159,
+    "start": 369.66,
+    "end": 371.08,
+    "speaker": "Himmel",
+    "text": "Ist es nun bald so weit?",
+    "vi": "Sắp đến lúc rồi nhỉ?"
+  },
+  {
+    "id": 700160,
+    "parentId": 700160,
+    "start": 379.18,
+    "end": 381.84,
+    "speaker": "Himmel",
+    "text": "Das ist der Ära-Meteorschauer. Stimmt doch?",
+    "vi": "Đó là trận mưa sao băng Thời Đại. Đúng không?"
+  },
+  {
+    "id": 700161,
+    "parentId": 700161,
+    "start": 382.52,
+    "end": 385.58,
+    "speaker": "Heiter",
+    "text": "Diese Meteore sieht man nur einmal alle 50 Jahre.",
+    "vi": "Những ngôi sao băng này cứ 50 năm mới nhìn thấy được một lần."
+  },
+  {
+    "id": 700162,
+    "parentId": 700162,
+    "start": 386.66,
+    "end": 390.0,
+    "speaker": "Eisen",
+    "text": "Der perfekte Moment, um in eine Ära des Friedens überzugehen.",
+    "vi": "Khoảnh khắc hoàn hảo để bước sang một kỷ nguyên hòa bình."
+  },
+  {
+    "id": 700163,
+    "parentId": 700163,
+    "start": 392.76,
+    "end": 393.52,
+    "speaker": "Frieren",
+    "text": "Wie schön.",
+    "vi": "Đẹp quá."
+  },
+  {
+    "id": 700164,
+    "parentId": 700164,
+    "start": 394.48,
+    "end": 396.5,
+    "speaker": "Frieren",
+    "text": "Hier in der Stadt sieht man sie aber nicht so gut.",
+    "vi": "Nhưng ở trong thành phố thế này thì nhìn không rõ lắm."
+  },
+  {
+    "id": 700165,
+    "parentId": 700165,
+    "start": 396.7,
+    "end": 399.22,
+    "speaker": "Himmel",
+    "text": "Nimm mal Rücksicht, ich versuch das gerade zu genießen.",
+    "vi": "Tâm lý một chút đi, tớ đang cố tận hưởng khoảnh khắc này đấy."
+  },
+  {
+    "id": 700166,
+    "parentId": 700166,
+    "start": 402.06,
+    "end": 403.36,
+    "speaker": "Frieren",
+    "text": "Dann halt nächstes Mal.",
+    "vi": "Vậy thì để lần sau vậy."
+  },
+  {
+    "id": 700167,
+    "parentId": 700167,
+    "start": 404.98,
+    "end": 408.02,
+    "speaker": "Frieren",
+    "text": "Ich kenne einen Platz, wo man sie noch viel klarer sehen kann.",
+    "vi": "Tôi biết một nơi có thể ngắm chúng rõ hơn nhiều."
+  },
+  {
+    "id": 700168,
+    "parentId": 700168,
+    "start": 408.18,
+    "end": 409.42,
+    "speaker": "Frieren",
+    "text": "Zeig ich euch dann in 50 Jahren.",
+    "vi": "50 năm nữa tôi sẽ dẫn mọi người tới đó."
+  },
+  {
+    "id": 700169,
+    "parentId": 700169,
+    "start": 412.94,
+    "end": 413.9,
+    "speaker": "Frieren",
+    "text": "Was denn?",
+    "vi": "Sao thế?"
+  },
+  {
+    "id": 700170,
+    "parentId": 700170,
+    "start": 413.94,
+    "end": 415.46,
+    "speaker": "Himmel",
+    "text": "Ach, es ist nichts.",
+    "vi": "À, không có gì đâu."
+  },
+  {
+    "id": 700171,
+    "parentId": 700171,
+    "start": 416.28,
+    "end": 416.8,
+    "speaker": "Himmel",
+    "text": "Frieren.",
+    "vi": "Frieren."
+  },
+  {
+    "id": 700172,
+    "parentId": 700172,
+    "start": 418.6,
+    "end": 419.88,
+    "speaker": "Himmel",
+    "text": "So machen wir das.",
+    "vi": "Cứ quyết định vậy nhé."
+  },
+  {
+    "id": 700173,
+    "parentId": 700173,
+    "start": 420.46,
+    "end": 421.72,
+    "speaker": "Himmel",
+    "text": "Wir werden sie uns ansehen.",
+    "vi": "Chúng ta sẽ cùng nhau ngắm chúng."
+  },
+  {
+    "id": 700174,
+    "parentId": 700174,
+    "start": 444.32,
+    "end": 446.34,
+    "speaker": "Frieren",
+    "text": "Also, ich muss jetzt gehen.",
+    "vi": "Vậy, giờ tôi phải đi đây."
+  },
+  {
+    "id": 700175,
+    "parentId": 700175,
+    "start": 446.82,
+    "end": 448.48,
+    "speaker": "Himmel",
+    "text": "Was hast du denn von nun an vor?",
+    "vi": "Từ giờ trở đi cậu định làm gì?"
+  },
+  {
+    "id": 700176,
+    "parentId": 700176,
+    "start": 448.88,
+    "end": 451.1,
+    "speaker": "Frieren",
+    "text": "Ich möchte weitere Zaubersprüche erlernen.",
+    "vi": "Tôi muốn học thêm các phép thuật khác."
+  },
+  {
+    "id": 700177,
+    "parentId": 700177,
+    "start": 451.4,
+    "end": 454.5,
+    "speaker": "Frieren",
+    "text": "Dafür werde ich die nächsten 100 Jahre die zentralen Länder bereisen.",
+    "vi": "Để làm việc đó, tôi sẽ đi khắp các vùng đất trung tâm trong 100 năm tới."
+  },
+  {
+    "id": 700178,
+    "parentId": 700178,
+    "start": 455.1,
+    "end": 457.08,
+    "speaker": "Frieren",
+    "text": "Aber ich werde ab und zu mal vorbeischauen.",
+    "vi": "Nhưng thỉnh thoảng tôi sẽ ghé thăm mọi người."
+  },
+  {
+    "id": 700179,
+    "parentId": 700179,
+    "start": 462.32,
+    "end": 464.9,
+    "speaker": "Eisen",
+    "text": "Die Welt der Elfen ist wirklich schwer zu verstehen.",
+    "vi": "Thế giới của tộc tinh linh thật sự khó mà hiểu nổi."
+  },
+  {
+    "id": 700180,
+    "parentId": 700180,
+    "start": 465.08,
+    "end": 467.84,
+    "speaker": "Heiter",
+    "text": "Würde mich echt mal interessieren, wie lange sie schon lebt.",
+    "vi": "Tôi thực sự tò mò không biết cô ấy đã sống bao lâu rồi."
+  },
+  {
+    "id": 700181,
+    "parentId": 700181,
+    "start": 468.6,
+    "end": 472.8,
+    "speaker": "Himmel",
+    "text": "Selbst fünfzig oder hundert Jahre sind für sie wohl nur wie ein kurzer Augenblick.",
+    "vi": "Ngay cả năm mươi hay một trăm năm đối với cậu ấy chắc cũng chỉ như một thoáng chốc."
+  },
+  {
+    "id": 700182,
+    "parentId": 700182,
+    "start": 523.82,
+    "end": 526.22,
+    "speaker": "Händler",
+    "text": "Das Horn eines Schattendrachen?",
+    "vi": "Sừng của rồng bóng tối sao?"
+  },
+  {
+    "id": 700183,
+    "parentId": 700183,
+    "start": 526.46,
+    "end": 527.2,
+    "speaker": "Händler",
+    "text": "Tut mir leid.",
+    "vi": "Tôi rất tiếc."
+  },
+  {
+    "id": 700184,
+    "parentId": 700184,
+    "start": 527.2,
+    "end": 528.74,
+    "speaker": "Händler",
+    "text": "So etwas habe ich hier nicht.",
+    "vi": "Ở đây tôi không có thứ như vậy."
+  },
+  {
+    "id": 700185,
+    "parentId": 700185,
+    "start": 529.06,
+    "end": 532.58,
+    "speaker": "Händler",
+    "text": "Ich habe auch seit ungefähr 30 Jahren keinen Schattendrachen mehr gesehen.",
+    "vi": "Khoảng 30 năm nay tôi cũng không còn thấy con rồng bóng tối nào nữa."
+  },
+  {
+    "id": 700186,
+    "parentId": 700186,
+    "start": 533.26,
+    "end": 535.0,
+    "speaker": "Frieren",
+    "text": "Verstehe, das ist nicht gut.",
+    "vi": "Ra vậy, thế thì gay rồi."
+  },
+  {
+    "id": 700187,
+    "parentId": 700187,
+    "start": 535.22,
+    "end": 536.86,
+    "speaker": "Frieren",
+    "text": "Ich brauche eines für eine Beschwörung.",
+    "vi": "Tôi cần một chiếc để thực hiện phép triệu hồi."
+  },
+  {
+    "id": 700188,
+    "parentId": 700188,
+    "start": 539.82,
+    "end": 542.7,
+    "speaker": "Frieren",
+    "text": "Wir hatten doch eines im Schloss des Dämonenkönigs gefunden.",
+    "vi": "Chẳng phải chúng tôi đã tìm thấy một chiếc trong lâu đài Ma Vương sao."
+  },
+  {
+    "id": 700189,
+    "parentId": 700189,
+    "start": 543.24,
+    "end": 544.86,
+    "speaker": "Frieren",
+    "text": "Ich glaube, ich habe es Himmel gegeben.",
+    "vi": "Hình như tôi đã đưa nó cho Himmel."
+  },
+  {
+    "id": 700190,
+    "parentId": 700190,
+    "start": 545.7,
+    "end": 548.44,
+    "speaker": "Frieren",
+    "text": "Es verströmt irgendwie eine negative Aura.",
+    "vi": "Nó tỏa ra một luồng khí tiêu cực nào đó."
+  },
+  {
+    "id": 700191,
+    "parentId": 700191,
+    "start": 548.48,
+    "end": 550.56,
+    "speaker": "Frieren",
+    "text": "Ist das wirklich nicht gefährlich für Menschen?",
+    "vi": "Thứ này thực sự không nguy hiểm cho con người chứ?"
+  },
+  {
+    "id": 700192,
+    "parentId": 700192,
+    "start": 550.94,
+    "end": 551.88,
+    "speaker": "Frieren",
+    "text": "Das weiß ich nicht.",
+    "vi": "Tôi không biết nữa."
+  },
+  {
+    "id": 700193,
+    "parentId": 700193,
+    "start": 552.2,
+    "end": 553.64,
+    "speaker": "Himmel",
+    "text": "Sie weiß es also nicht.",
+    "vi": "Vậy là cậu ấy cũng không biết."
+  },
+  {
+    "id": 700194,
+    "parentId": 700194,
+    "start": 554.68,
+    "end": 556.88,
+    "speaker": "Frieren",
+    "text": "Bald kommt wieder der Ära-Meteorschauer.",
+    "vi": "Sắp tới lại có mưa sao băng Thời Đại rồi."
+  },
+  {
+    "id": 700195,
+    "parentId": 700195,
+    "start": 557.02,
+    "end": 558.64,
+    "speaker": "Frieren",
+    "text": "Vielleicht sollte ich das Horn bei ihm abholen.",
+    "vi": "Có lẽ tôi nên đến chỗ anh ấy lấy lại chiếc sừng."
+  },
+  {
+    "id": 700196,
+    "parentId": 700196,
+    "start": 565.2,
+    "end": 568.0,
+    "speaker": "Frieren",
+    "text": "Die Stadt hat sich seit dem letzten Mal ganz schön verändert.",
+    "vi": "Thành phố đã thay đổi khá nhiều kể từ lần trước."
+  },
+  {
+    "id": 700197,
+    "parentId": 700197,
+    "start": 582.28,
+    "end": 584.66,
+    "speaker": "Frieren",
+    "text": "Sag mal, hab ich mich etwa verlaufen?",
+    "vi": "Này, chẳng lẽ mình bị lạc rồi sao?"
+  },
+  {
+    "id": 700198,
+    "parentId": 700198,
+    "start": 585.9,
+    "end": 586.46,
+    "speaker": "Himmel",
+    "text": "Frieren?",
+    "vi": "Frieren?"
+  },
+  {
+    "id": 700199,
+    "parentId": 700199,
+    "start": 587.88,
+    "end": 588.72,
+    "speaker": "Frieren",
+    "text": "Himmel!",
+    "vi": "Himmel!"
+  },
+  {
+    "id": 700200,
+    "parentId": 700200,
+    "start": 594.92,
+    "end": 596.7,
+    "speaker": "Frieren",
+    "text": "Du bist alt geworden.",
+    "vi": "Cậu già đi rồi."
+  },
+  {
+    "id": 700201,
+    "parentId": 700201,
+    "start": 596.7,
+    "end": 598.58,
+    "speaker": "Himmel",
+    "text": "Kannst du das nicht netter sagen?",
+    "vi": "Cậu không thể nói nhẹ nhàng hơn được sao?"
+  },
+  {
+    "id": 700202,
+    "parentId": 700202,
+    "start": 600.96,
+    "end": 604.54,
+    "speaker": "Himmel",
+    "text": "Auch im hohen Alter bin ich doch noch ein ganz hübsches Kerlchen.",
+    "vi": "Dù đã cao tuổi nhưng tớ vẫn là một ông lão khá bảnh bao đấy chứ."
+  },
+  {
+    "id": 700203,
+    "parentId": 700203,
+    "start": 606.1,
+    "end": 610.68,
+    "speaker": "Himmel",
+    "text": "Es ist schon 50 Jahre her, du siehst noch genauso aus wie damals.",
+    "vi": "Đã 50 năm trôi qua rồi mà trông cậu vẫn y hệt như ngày ấy."
+  },
+  {
+    "id": 700204,
+    "parentId": 700204,
+    "start": 611.82,
+    "end": 615.2,
+    "speaker": "Himmel",
+    "text": "Ich hab schon befürchtet, dass ich dich nie mehr wiedersehen würde.",
+    "vi": "Tớ đã lo rằng mình sẽ chẳng bao giờ còn được gặp lại cậu nữa."
+  },
+  {
+    "id": 700205,
+    "parentId": 700205,
+    "start": 617.72,
+    "end": 621.36,
+    "speaker": "Himmel",
+    "text": "Der Ära-Meteorschauer, das weckt Erinnerungen.",
+    "vi": "Mưa sao băng Thời Đại, điều đó gợi lại bao kỷ niệm."
+  },
+  {
+    "id": 700206,
+    "parentId": 700206,
+    "start": 621.82,
+    "end": 624.6,
+    "speaker": "Frieren",
+    "text": "Außerdem suche ich noch nach dem, was wir im Schloss gefunden haben.",
+    "vi": "Ngoài ra tôi còn đang tìm thứ mà chúng ta đã nhặt được trong lâu đài."
+  },
+  {
+    "id": 700207,
+    "parentId": 700207,
+    "start": 624.6,
+    "end": 627.02,
+    "speaker": "Himmel",
+    "text": "Du meinst wohl das Horn des Schattendrachen.",
+    "vi": "Ý cậu chắc là chiếc sừng của rồng bóng tối chứ gì."
+  },
+  {
+    "id": 700208,
+    "parentId": 700208,
+    "start": 627.4,
+    "end": 629.6,
+    "speaker": "Himmel",
+    "text": "Ich hab das nicht einen Augenblick vergessen.",
+    "vi": "Tớ chưa từng quên nó dù chỉ một giây."
+  },
+  {
+    "id": 700209,
+    "parentId": 700209,
+    "start": 630.14,
+    "end": 633.76,
+    "speaker": "Himmel",
+    "text": "Denn von meinem Schrank geht seitdem eine düstere Aura aus.",
+    "vi": "Bởi từ đó đến nay, tủ đồ của tớ lúc nào cũng tỏa ra một luồng hắc khí u ám."
+  },
+  {
+    "id": 700210,
+    "parentId": 700210,
+    "start": 634.38,
+    "end": 636.26,
+    "speaker": "Frieren",
+    "text": "Das tut mir wirklich leid.",
+    "vi": "Tôi thực sự xin lỗi."
+  },
+  {
+    "id": 700211,
+    "parentId": 700211,
+    "start": 636.62,
+    "end": 639.82,
+    "speaker": "Frieren",
+    "text": "Du hättest es doch auch einfach in einem Schuppen oder so aufbewahren können.",
+    "vi": "Lẽ ra cậu cứ cất đại nó trong nhà kho hay đâu đó cũng được mà."
+  },
+  {
+    "id": 700212,
+    "parentId": 700212,
+    "start": 642.22,
+    "end": 643.58,
+    "speaker": "Himmel",
+    "text": "Auf gar keinen Fall.",
+    "vi": "Tuyệt đối không đời nào."
+  },
+  {
+    "id": 700213,
+    "parentId": 700213,
+    "start": 647.34,
+    "end": 651.72,
+    "speaker": "Himmel",
+    "text": "Vielleicht hast du es mir übergeben, ohne dir groß Gedanken darüber zu machen.",
+    "vi": "Có lẽ cậu đã giao nó cho tớ mà chẳng suy nghĩ gì nhiều."
+  },
+  {
+    "id": 700214,
+    "parentId": 700214,
+    "start": 651.72,
+    "end": 656.44,
+    "speaker": "Himmel",
+    "text": "Aber für mich war es ein sehr wertvolles Geschenk von einer geliebten Gefährtin.",
+    "vi": "Nhưng đối với tớ, đó là một món quà vô cùng quý giá từ người bạn đồng hành thân yêu."
+  },
+  {
+    "id": 700215,
+    "parentId": 700215,
+    "start": 657.14,
+    "end": 660.72,
+    "speaker": "Himmel",
+    "text": "Ich hatte gehofft, dass ich es dir eines Tages zurückgeben könnte.",
+    "vi": "Tớ đã luôn hy vọng một ngày nào đó có thể trao trả nó lại cho cậu."
+  },
+  {
+    "id": 700216,
+    "parentId": 700216,
+    "start": 669.84,
+    "end": 672.8,
+    "speaker": "Frieren",
+    "text": "Dabei hatte es im Grunde gar keine große Bedeutung.",
+    "vi": "Vậy mà thực ra nó chẳng có ý nghĩa gì to tát cả."
+  },
+  {
+    "id": 700217,
+    "parentId": 700217,
+    "start": 692.64,
+    "end": 694.08,
+    "speaker": "Frieren",
+    "text": "Bist du noch nicht fertig?",
+    "vi": "Cậu vẫn chưa chuẩn bị xong sao?"
+  },
+  {
+    "id": 700218,
+    "parentId": 700218,
+    "start": 694.84,
+    "end": 695.98,
+    "speaker": "Frieren",
+    "text": "Wieso machst du dich so zurecht?",
+    "vi": "Sao cậu lại chải chuốt kỹ thế?"
+  },
+  {
+    "id": 700219,
+    "parentId": 700219,
+    "start": 696.04,
+    "end": 697.12,
+    "speaker": "Frieren",
+    "text": "Du hast doch eine Glatze.",
+    "vi": "Đầu cậu hói rồi cơ mà."
+  },
+  {
+    "id": 700220,
+    "parentId": 700220,
+    "start": 698.58,
+    "end": 701.28,
+    "speaker": "Himmel",
+    "text": "Ein gepflegtes Äußeres ist immer wichtig.",
+    "vi": "Vẻ ngoài chỉn chu lúc nào cũng quan trọng."
+  },
+  {
+    "id": 700221,
+    "parentId": 700221,
+    "start": 708.08,
+    "end": 711.3,
+    "speaker": "Himmel",
+    "text": "Also dann, wollen wir uns den Ära-Meteorschauer ansehen?",
+    "vi": "Vậy thì, chúng ta cùng đi ngắm mưa sao băng Thời Đại chứ?"
+  },
+  {
+    "id": 700222,
+    "parentId": 700222,
+    "start": 719.62,
+    "end": 722.4,
+    "speaker": "Frieren",
+    "text": "Du siehst mittlerweile recht würdevoll aus, Heiter.",
+    "vi": "Giờ trông cậu khá đạo mạo đấy, Heiter."
+  },
+  {
+    "id": 700223,
+    "parentId": 700223,
+    "start": 722.5,
+    "end": 724.54,
+    "speaker": "Heiter",
+    "text": "Ich bin nun der Bischof der Heiligen Stadt.",
+    "vi": "Giờ tôi đã là Giám mục của Thánh Đô rồi."
+  },
+  {
+    "id": 700224,
+    "parentId": 700224,
+    "start": 724.72,
+    "end": 727.24,
+    "speaker": "Heiter",
+    "text": "Du hingegen hast dich überhaupt nicht verändert.",
+    "vi": "Còn cậu thì chẳng thay đổi chút nào cả."
+  },
+  {
+    "id": 700225,
+    "parentId": 700225,
+    "start": 728.24,
+    "end": 729.6,
+    "speaker": "Frieren",
+    "text": "Tätschel mir nicht so den Kopf.",
+    "vi": "Đừng có xoa đầu tôi như thế."
+  },
+  {
+    "id": 700226,
+    "parentId": 700226,
+    "start": 731.48,
+    "end": 733.56,
+    "speaker": "Frieren",
+    "text": "Eisen, du hast dich nicht wirklich verändert.",
+    "vi": "Eisen, cậu thực sự không thay đổi mấy."
+  },
+  {
+    "id": 700227,
+    "parentId": 700227,
+    "start": 734.7,
+    "end": 736.36,
+    "speaker": "Eisen",
+    "text": "Verstehe, wenn du das meinst.",
+    "vi": "Ra vậy, nếu cậu thấy thế."
+  },
+  {
+    "id": 700228,
+    "parentId": 700228,
+    "start": 736.6,
+    "end": 738.22,
+    "speaker": "Frieren",
+    "text": "Wie ich es von einem Zwerg erwarte.",
+    "vi": "Đúng như tôi mong đợi ở người lùn."
+  },
+  {
+    "id": 700229,
+    "parentId": 700229,
+    "start": 738.52,
+    "end": 741.36,
+    "speaker": "Eisen",
+    "text": "Wo ist nun dieser Ort, von dem aus wir den Schauer gut sehen?",
+    "vi": "Vậy nơi đó ở đâu, nơi mà chúng ta có thể ngắm rõ mưa sao băng ấy?",
+    "legacyIds": [
+      700229,
+      700230
+    ]
+  },
+  {
+    "id": 700231,
+    "parentId": 700231,
+    "start": 742.5,
+    "end": 744.32,
+    "speaker": "Heiter",
+    "text": "Wollen wir jetzt schon aufbrechen?",
+    "vi": "Chúng ta định khởi hành ngay bây giờ sao?"
+  },
+  {
+    "id": 700232,
+    "parentId": 700232,
+    "start": 744.68,
+    "end": 747.7,
+    "speaker": "Heiter",
+    "text": "Für den Ära-Meteorschauer ist es noch etwas zu früh.",
+    "vi": "Vẫn còn hơi sớm để ngắm mưa sao băng Thời Đại mà."
+  },
+  {
+    "id": 700233,
+    "parentId": 700233,
+    "start": 748.66,
+    "end": 749.32,
+    "speaker": "Frieren",
+    "text": "Das stimmt.",
+    "vi": "Đúng vậy."
+  },
+  {
+    "id": 700234,
+    "parentId": 700234,
+    "start": 749.56,
+    "end": 752.5,
+    "speaker": "Frieren",
+    "text": "Wir brauchen von hier aber ungefähr eine Woche zu Fuß.",
+    "vi": "Nhưng đi bộ từ đây tới đó phải mất khoảng một tuần."
+  },
+  {
+    "id": 700235,
+    "parentId": 700235,
+    "start": 752.88,
+    "end": 754.42,
+    "speaker": "Heiter",
+    "text": "So weit weg ist dieser Ort?",
+    "vi": "Nơi đó ở xa đến vậy sao?"
+  },
+  {
+    "id": 700236,
+    "parentId": 700236,
+    "start": 755.4,
+    "end": 756.38,
+    "speaker": "Heiter",
+    "text": "Meine Güte!",
+    "vi": "Trời đất ơi!"
+  },
+  {
+    "id": 700237,
+    "parentId": 700237,
+    "start": 756.86,
+    "end": 759.02,
+    "speaker": "Heiter",
+    "text": "Sie verlangt sehr viel von uns alten Leuten.",
+    "vi": "Cô ấy đòi hỏi quá nhiều ở mấy ông già chúng ta rồi."
+  },
+  {
+    "id": 700238,
+    "parentId": 700238,
+    "start": 762.1,
+    "end": 763.58,
+    "speaker": "Himmel",
+    "text": "Es ist wie früher.",
+    "vi": "Cứ như ngày xưa vậy."
+  },
+  {
+    "id": 700239,
+    "parentId": 700239,
+    "start": 764.2,
+    "end": 767.78,
+    "speaker": "Himmel",
+    "text": "Diese Reise versetzt mich geradezu in die Zeit von damals zurück.",
+    "vi": "Chuyến đi này thực sự đưa tớ trở về những ngày tháng năm xưa."
+  },
+  {
+    "id": 700240,
+    "parentId": 700240,
+    "start": 772.14,
+    "end": 781.26,
+    "speaker": "Himmel",
+    "text": "Wir haben alle möglichen Orte bereist, zu der Zeit war alles noch neu, und es schien mir so wundervoll.",
+    "vi": "Chúng ta đã đi qua đủ mọi miền đất, vào thời điểm đó mọi thứ đều mới mẻ và dường như thật tuyệt diệu đối với tớ.",
+    "legacyIds": [
+      700240,
+      700241
+    ]
+  },
+  {
+    "id": 700242,
+    "parentId": 700242,
+    "start": 805.72,
+    "end": 810.62,
+    "speaker": "Himmel",
+    "text": "Ihr seid immer ein wichtiger Teil dieser wunderschönen Erinnerungen gewesen.",
+    "vi": "Các cậu luôn là một phần quan trọng trong những ký ức tươi đẹp ấy."
+  },
+  {
+    "id": 700243,
+    "parentId": 700243,
+    "start": 814.24,
+    "end": 819.66,
+    "speaker": "Himmel",
+    "text": "Weißt du, ich hab sehnsüchtig auf den Tag gewartet, an dem wir alle wieder zusammen sein werden.",
+    "vi": "Cậu biết không, tớ đã luôn khắc khoải chờ đợi ngày mà tất cả chúng ta lại được ở bên nhau.",
+    "legacyIds": [
+      700243,
+      700244
+    ]
+  },
+  {
+    "id": 700245,
+    "parentId": 700245,
+    "start": 821.0,
+    "end": 822.46,
+    "speaker": "Himmel",
+    "text": "Ich danke dir, Frieren.",
+    "vi": "Cảm ơn cậu, Frieren."
+  },
+  {
+    "id": 700246,
+    "parentId": 700246,
+    "start": 822.46,
+    "end": 828.66,
+    "speaker": "Himmel",
+    "text": "Deinetwegen konnte ich zum Schluss noch ein letztes großes Abenteuer erleben.",
+    "vi": "Nhờ có cậu mà vào lúc cuối đời, tớ vẫn có thể trải nghiệm thêm một chuyến phiêu lưu lớn cuối cùng.",
+    "legacyIds": [
+      700246,
+      700247
+    ]
+  },
+  {
+    "id": 700248,
+    "parentId": 700248,
+    "start": 852.46,
+    "end": 854.18,
+    "speaker": "Frieren",
+    "text": "Wie schön!",
+    "vi": "Đẹp quá!"
+  },
+  {
+    "id": 700249,
+    "parentId": 700249,
+    "start": 881.26,
+    "end": 885.9,
+    "speaker": "Heiter",
+    "text": "Ich bin mir sicher, dass unser Himmel ein sehr glücklicher Mensch war.",
+    "vi": "Tôi chắc chắn rằng Himmel của chúng ta đã là một người rất hạnh phúc."
+  },
+  {
+    "id": 700250,
+    "parentId": 700250,
+    "start": 886.56,
+    "end": 887.66,
+    "speaker": "Eisen",
+    "text": "Glaubst du wirklich?",
+    "vi": "Cậu thực sự nghĩ vậy sao?"
+  },
+  {
+    "id": 700251,
+    "parentId": 700251,
+    "start": 895.14,
+    "end": 897.86,
+    "speaker": "Trauergast",
+    "text": "War dieses Mädchen da nicht eine Gefährtin von Himmel?",
+    "vi": "Cô gái đằng kia chẳng phải là bạn đồng hành của ngài Himmel sao?"
+  },
+  {
+    "id": 700252,
+    "parentId": 700252,
+    "start": 898.16,
+    "end": 900.22,
+    "speaker": "Trauergast",
+    "text": "Sie sieht kein bisschen traurig aus.",
+    "vi": "Trông cô ta chẳng có chút gì là buồn bã cả."
+  },
+  {
+    "id": 700253,
+    "parentId": 700253,
+    "start": 901.0,
+    "end": 901.78,
+    "speaker": "Trauergast",
+    "text": "Keine Regung.",
+    "vi": "Chẳng mảy may xúc động."
+  },
+  {
+    "id": 700254,
+    "parentId": 700254,
+    "start": 902.06,
+    "end": 902.96,
+    "speaker": "Trauergast",
+    "text": "Wie schrecklich von ihr.",
+    "vi": "Thật quá đáng."
+  },
+  {
+    "id": 700255,
+    "parentId": 700255,
+    "start": 903.72,
+    "end": 904.84,
+    "speaker": "Heiter",
+    "text": "Nun mal langsam.",
+    "vi": "Xin hãy bình tĩnh nào."
+  },
+  {
+    "id": 700256,
+    "parentId": 700256,
+    "start": 905.04,
+    "end": 907.28,
+    "speaker": "Heiter",
+    "text": "Wir sind nämlich auch nicht wirklich traurig.",
+    "vi": "Thực ra chúng tôi cũng không hẳn là buồn bã đâu."
+  },
+  {
+    "id": 700257,
+    "parentId": 700257,
+    "start": 907.44,
+    "end": 908.74,
+    "speaker": "Trauergast",
+    "text": "Nimm das gefälligst ernst, Bischof!",
+    "vi": "Xin hãy nghiêm túc đi, thưa Giám mục!"
+  },
+  {
+    "id": 700258,
+    "parentId": 700258,
+    "start": 909.02,
+    "end": 910.62,
+    "speaker": "Trauergast",
+    "text": "Ihr seid kaltherzige Monster!",
+    "vi": "Các người là lũ quái vật máu lạnh!"
+  },
+  {
+    "id": 700259,
+    "parentId": 700259,
+    "start": 911.34,
+    "end": 912.76,
+    "speaker": "Heiter",
+    "text": "Das ist aber nicht nett.",
+    "vi": "Nói thế thì thật chẳng tử tế chút nào."
+  },
+  {
+    "id": 700260,
+    "parentId": 700260,
+    "start": 938.08,
+    "end": 941.28,
+    "speaker": "Frieren",
+    "text": "Ich... ich weiß wirklich so gut wie nichts über ihn.",
+    "vi": "Tôi... tôi thực sự hầu như chẳng biết gì về anh ấy cả."
+  },
+  {
+    "id": 700261,
+    "parentId": 700261,
+    "start": 952.92,
+    "end": 957.28,
+    "speaker": "Frieren",
+    "text": "Wir sind gerade einmal zehn Jahre miteinander gereist.",
+    "vi": "Chúng tôi mới chỉ cùng nhau đồng hành vỏn vẹn mười năm."
+  },
+  {
+    "id": 700262,
+    "parentId": 700262,
+    "start": 964.78,
+    "end": 969.38,
+    "speaker": "Frieren",
+    "text": "Die menschliche Lebensspanne ist so kurz, das wusste ich doch eigentlich.",
+    "vi": "Tuổi thọ của con người ngắn ngủi đến thế, lẽ ra tôi vốn đã biết điều đó rồi."
+  },
+  {
+    "id": 700263,
+    "parentId": 700263,
+    "start": 970.28,
+    "end": 971.56,
+    "speaker": "Frieren",
+    "text": "Also wieso?",
+    "vi": "Vậy thì tại sao chứ?"
+  },
+  {
+    "id": 700264,
+    "parentId": 700264,
+    "start": 972.18,
+    "end": 975.16,
+    "speaker": "Frieren",
+    "text": "Habe ich nicht versucht, ihn besser kennenzulernen?",
+    "vi": "Tại sao tôi đã không cố gắng tìm hiểu anh ấy nhiều hơn?"
+  },
+  {
+    "id": 700265,
+    "parentId": 700265,
+    "start": 984.24,
+    "end": 986.92,
+    "speaker": "Frieren",
+    "text": "Hör auf, meinen Kopf zu tätscheln.",
+    "vi": "Đừng xoa đầu tôi nữa."
+  },
+  {
+    "id": 700266,
+    "parentId": 700266,
+    "start": 994.94,
+    "end": 997.92,
+    "speaker": "Heiter",
+    "text": "Dann werde ich auch mal in die Heilige Stadt zurückkehren.",
+    "vi": "Vậy tôi cũng xin trở về Thánh Đô đây."
+  },
+  {
+    "id": 700267,
+    "parentId": 700267,
+    "start": 1001.08,
+    "end": 1006.72,
+    "speaker": "Heiter",
+    "text": "Lasst mich euch noch mal genauer ansehen, denn das wird jetzt wohl zum letzten Mal sein.",
+    "vi": "Hãy để tôi ngắm nhìn hai người thật kỹ thêm lần nữa, vì có lẽ đây sẽ là lần cuối cùng rồi."
+  },
+  {
+    "id": 700268,
+    "parentId": 700268,
+    "start": 1007.24,
+    "end": 1008.42,
+    "speaker": "Frieren",
+    "text": "Geht es dir nicht so gut?",
+    "vi": "Cậu thấy trong người không khỏe sao?"
+  },
+  {
+    "id": 700269,
+    "parentId": 700269,
+    "start": 1008.68,
+    "end": 1011.44,
+    "speaker": "Heiter",
+    "text": "Der jahrelange Alkoholkonsum hat seine Folgen.",
+    "vi": "Việc uống rượu suốt bao năm qua đã để lại hậu quả rồi."
+  },
+  {
+    "id": 700270,
+    "parentId": 700270,
+    "start": 1011.54,
+    "end": 1013.0,
+    "speaker": "Eisen",
+    "text": "Das ist die gerechte Strafe.",
+    "vi": "Đó là cái giá thích đáng đấy."
+  },
+  {
+    "id": 700271,
+    "parentId": 700271,
+    "start": 1014.48,
+    "end": 1018.62,
+    "speaker": "Heiter",
+    "text": "Solltet ihr mal in die Heilige Stadt kommen, dann vergießt einen guten Tropfen an meinem Grab.",
+    "vi": "Nếu hai người có dịp ghé qua Thánh Đô, hãy tưới một chén rượu ngon lên mộ tôi nhé."
+  },
+  {
+    "id": 700272,
+    "parentId": 700272,
+    "start": 1021.08,
+    "end": 1023.34,
+    "speaker": "Frieren",
+    "text": "Hast du denn gar keine Angst vor dem Sterben, Heiter?",
+    "vi": "Cậu hoàn toàn không sợ cái chết sao, Heiter?"
+  },
+  {
+    "id": 700273,
+    "parentId": 700273,
+    "start": 1025.2,
+    "end": 1028.66,
+    "speaker": "Heiter",
+    "text": "Ich bin Teil der Heldentruppe, die diese Welt gerettet hat.",
+    "vi": "Tôi là một thành viên của nhóm anh hùng đã giải cứu thế giới này."
+  },
+  {
+    "id": 700274,
+    "parentId": 700274,
+    "start": 1029.9,
+    "end": 1034.24,
+    "speaker": "Heiter",
+    "text": "Nach meinem Tod werde ich im Paradies garantiert im größten Luxus schwelgen.",
+    "vi": "Sau khi qua đời, chắc chắn tôi sẽ được tận hưởng sự xa hoa bậc nhất trên thiên đường."
+  },
+  {
+    "id": 700275,
+    "parentId": 700275,
+    "start": 1034.64,
+    "end": 1037.86,
+    "speaker": "Heiter",
+    "text": "Das ist der Grund, weshalb ich mit euch Seite an Seite gekämpft habe.",
+    "vi": "Đó chính là lý do tôi đã sát cánh chiến đấu cùng mọi người."
+  },
+  {
+    "id": 700276,
+    "parentId": 700276,
+    "start": 1038.04,
+    "end": 1039.36,
+    "speaker": "Frieren",
+    "text": "Oh, du Scheinheiliger.",
+    "vi": "Ồ, đồ đạo đức giả."
+  },
+  {
+    "id": 700277,
+    "parentId": 700277,
+    "start": 1041.54,
+    "end": 1043.34,
+    "speaker": "Heiter",
+    "text": "Ich mach mich mal auf den Weg.",
+    "vi": "Tôi lên đường đây."
+  },
+  {
+    "id": 700278,
+    "parentId": 700278,
+    "start": 1051.3,
+    "end": 1054.78,
+    "speaker": "Frieren",
+    "text": "Na dann, ich sollte auch langsam los.",
+    "vi": "Vậy thôi, tôi cũng nên lên đường dần đây."
+  },
+  {
+    "id": 700279,
+    "parentId": 700279,
+    "start": 1055.64,
+    "end": 1057.68,
+    "speaker": "Eisen",
+    "text": "Willst du auf Reisen weitere Zauber sammeln?",
+    "vi": "Cậu định đi chu du để thu thập thêm phép thuật sao?"
+  },
+  {
+    "id": 700280,
+    "parentId": 700280,
+    "start": 1057.98,
+    "end": 1059.76,
+    "speaker": "Frieren",
+    "text": "Ja, das ist eins meiner Ziele.",
+    "vi": "Ừ, đó là một trong những mục tiêu của tôi."
+  },
+  {
+    "id": 700281,
+    "parentId": 700281,
+    "start": 1060.48,
+    "end": 1063.06,
+    "speaker": "Frieren",
+    "text": "Ich wünsche mir aber auch, mehr über die Menschen zu erfahren.",
+    "vi": "Nhưng tôi cũng mong muốn được tìm hiểu nhiều hơn về con người."
+  },
+  {
+    "id": 700282,
+    "parentId": 700282,
+    "start": 1065.78,
+    "end": 1066.68,
+    "speaker": "Eisen",
+    "text": "Verstehe ich.",
+    "vi": "Tôi hiểu rồi."
+  },
+  {
+    "id": 700283,
+    "parentId": 700283,
+    "start": 1067.58,
+    "end": 1069.8,
+    "speaker": "Frieren",
+    "text": "Ich hätte übrigens noch eine Bitte an dich.",
+    "vi": "Nhân tiện, tôi còn một lời thỉnh cầu muốn nhờ cậu."
+  },
+  {
+    "id": 700284,
+    "parentId": 700284,
+    "start": 1069.8,
+    "end": 1075.1,
+    "speaker": "Frieren",
+    "text": "Da ich ja eine Magierin bin, könnte ich gut einen starken Kämpfer wie dich gebrauchen.",
+    "vi": "Vì tôi là một pháp sư, tôi rất cần một chiến binh mạnh mẽ như cậu đi cùng."
+  },
+  {
+    "id": 700285,
+    "parentId": 700285,
+    "start": 1075.46,
+    "end": 1079.8,
+    "speaker": "Eisen",
+    "text": "Bitte verzeih mir, aber ich bin zu alt, um eine Axt zu schwingen.",
+    "vi": "Xin hãy thứ lỗi cho tôi, nhưng tôi đã quá già để vung rìu rồi."
+  },
+  {
+    "id": 700286,
+    "parentId": 700286,
+    "start": 1083.56,
+    "end": 1085.54,
+    "speaker": "Eisen",
+    "text": "Jetzt mach nicht so ein Gesicht, Frieren.",
+    "vi": "Đừng làm vẻ mặt như thế chứ, Frieren."
+  },
+  {
+    "id": 700287,
+    "parentId": 700287,
+    "start": 1085.98,
+    "end": 1091.22,
+    "speaker": "Eisen",
+    "text": "Selbst wenn die eigenen Kräfte schwinden, hat das Leben noch einige Überraschungen auf Lager.",
+    "vi": "Ngay cả khi sức lực của bản thân suy giảm, cuộc sống vẫn còn cất giấu nhiều điều bất ngờ phía trước."
+  },
+  {
+    "id": 700288,
+    "parentId": 700288,
+    "start": 1093.56,
+    "end": 1096.38,
+    "speaker": "Frieren",
+    "text": "Verstehe. Dann auf Wiedersehen, Eisen.",
+    "vi": "Tôi hiểu rồi. Vậy tạm biệt nhé, Eisen."
+  },
+  {
+    "id": 700289,
+    "parentId": 700289,
+    "start": 1097.46,
+    "end": 1098.66,
+    "speaker": "Eisen",
+    "text": "Ja, bis bald.",
+    "vi": "Ừ, hẹn sớm gặp lại."
+  },
+  {
+    "id": 700290,
+    "parentId": 700290,
+    "start": 1140.24,
+    "end": 1142.32,
+    "speaker": "Frieren",
+    "text": "Schon wieder derselbe Baum.",
+    "vi": "Lại là cái cây đó nữa rồi."
+  },
+  {
+    "id": 700291,
+    "parentId": 700291,
+    "start": 1143.06,
+    "end": 1144.66,
+    "speaker": "Frieren",
+    "text": "Andauernd verlaufe ich mich in diesem Wald.",
+    "vi": "Mình cứ bị lạc mãi trong khu rừng này."
+  },
+  {
+    "id": 700292,
+    "parentId": 700292,
+    "start": 1145.56,
+    "end": 1146.58,
+    "speaker": "Frieren",
+    "text": "Wo bin ich hier?",
+    "vi": "Mình đang ở đâu thế này?"
+  },
+  {
+    "id": 700293,
+    "parentId": 700293,
+    "start": 1150.96,
+    "end": 1152.94,
+    "speaker": "Fern",
+    "text": "Suchen Sie nach etwas?",
+    "vi": "Cô đang tìm thứ gì sao ạ?"
+  },
+  {
+    "id": 700294,
+    "parentId": 700294,
+    "start": 1158.06,
+    "end": 1159.78,
+    "speaker": "Fern",
+    "text": "Kann es sein, dass Sie sich verlaufen haben?",
+    "vi": "Có phải cô bị lạc đường rồi không ạ?"
+  },
+  {
+    "id": 700295,
+    "parentId": 700295,
+    "start": 1160.9,
+    "end": 1164.34,
+    "speaker": "Frieren",
+    "text": "Ich suche eigentlich nur nach dem Haus von jemandem namens Heiter.",
+    "vi": "Thực ra tôi chỉ đang tìm nhà của một người tên là Heiter."
+  },
+  {
+    "id": 700296,
+    "parentId": 700296,
+    "start": 1165.18,
+    "end": 1167.34,
+    "speaker": "Fern",
+    "text": "Ah, dann sind Sie wohl unser Gast.",
+    "vi": "À, vậy chắc cô là vị khách của nhà cháu rồi."
+  },
+  {
+    "id": 700297,
+    "parentId": 700297,
+    "start": 1170.8,
+    "end": 1173.0,
+    "speaker": "Frieren",
+    "text": "Du bist ja immer noch am Leben, Scheinheiliger.",
+    "vi": "Cậu vẫn còn sống cơ đấy, đồ đạo đức giả."
+  },
+  {
+    "id": 700298,
+    "parentId": 700298,
+    "start": 1174.68,
+    "end": 1178.5,
+    "speaker": "Heiter",
+    "text": "Es ist tatsächlich gar nicht so leicht, auf stilvolle Weise zu sterben.",
+    "vi": "Thực sự là chẳng dễ dàng chút nào để qua đời một cách thật phong thái."
+  },
+  {
+    "id": 700299,
+    "parentId": 700299,
+    "start": 1178.84,
+    "end": 1181.46,
+    "speaker": "Frieren",
+    "text": "Ich habe extra Schnaps gekauft, um ihn auf dein Grab zu gießen.",
+    "vi": "Tôi đã cất công mua rượu mạnh để tưới lên mộ cậu đấy."
+  },
+  {
+    "id": 700300,
+    "parentId": 700300,
+    "start": 1181.54,
+    "end": 1182.32,
+    "speaker": "Frieren",
+    "text": "Willst du was davon?",
+    "vi": "Cậu có muốn uống một chút không?"
+  },
+  {
+    "id": 700301,
+    "parentId": 700301,
+    "start": 1182.58,
+    "end": 1184.78,
+    "speaker": "Heiter",
+    "text": "Ich trinke gar keinen Alkohol mehr.",
+    "vi": "Tôi hoàn toàn không uống rượu nữa rồi."
+  },
+  {
+    "id": 700302,
+    "parentId": 700302,
+    "start": 1185.28,
+    "end": 1185.76,
+    "speaker": "Frieren",
+    "text": "Verstehe.",
+    "vi": "Ra vậy."
+  },
+  {
+    "id": 700303,
+    "parentId": 700303,
+    "start": 1186.56,
+    "end": 1191.54,
+    "speaker": "Frieren",
+    "text": "Doch ich denke nicht, dass die Göttin dir verzeihen wird, nur weil du inzwischen tugendhaft lebst.",
+    "vi": "Nhưng tôi không nghĩ Nữ thần sẽ tha thứ cho cậu đâu, chỉ vì giờ đây cậu đã sống đức hạnh.",
+    "legacyIds": [
+      700303,
+      700304
+    ]
+  },
+  {
+    "id": 700305,
+    "parentId": 700305,
+    "start": 1198.76,
+    "end": 1200.5,
+    "speaker": "Heiter",
+    "text": "Ich danke dir, meine Liebe.",
+    "vi": "Cảm ơn cháu nhé, cháu yêu quý."
+  },
+  {
+    "id": 700306,
+    "parentId": 700306,
+    "start": 1205.68,
+    "end": 1206.5,
+    "speaker": "Frieren",
+    "text": "Wer ist sie?",
+    "vi": "Con bé là ai vậy?"
+  },
+  {
+    "id": 700307,
+    "parentId": 700307,
+    "start": 1207.1,
+    "end": 1208.38,
+    "speaker": "Heiter",
+    "text": "Ihr Name ist Fern.",
+    "vi": "Tên con bé là Fern."
+  },
+  {
+    "id": 700308,
+    "parentId": 700308,
+    "start": 1208.92,
+    "end": 1211.72,
+    "speaker": "Heiter",
+    "text": "Sie ist eine Kriegswaise aus den Ländern im Süden.",
+    "vi": "Con bé là một trẻ mồ côi vì chiến tranh đến từ các vùng đất phương Nam."
+  },
+  {
+    "id": 700309,
+    "parentId": 700309,
+    "start": 1213.2,
+    "end": 1214.5,
+    "speaker": "Frieren",
+    "text": "Das sieht dir nicht ähnlich.",
+    "vi": "Chuyện này chẳng giống tính cách của cậu chút nào."
+  },
+  {
+    "id": 700310,
+    "parentId": 700310,
+    "start": 1215.22,
+    "end": 1218.02,
+    "speaker": "Frieren",
+    "text": "Du bist nicht jemand, der anderen uneigennützig hilft.",
+    "vi": "Cậu vốn đâu phải người hay giúp đỡ kẻ khác một cách vô tư."
+  },
+  {
+    "id": 700311,
+    "parentId": 700311,
+    "start": 1218.02,
+    "end": 1220.26,
+    "speaker": "Frieren",
+    "text": "Du bist nicht wie Himmel.",
+    "vi": "Cậu đâu có giống như Himmel."
+  },
+  {
+    "id": 700312,
+    "parentId": 700312,
+    "start": 1222.96,
+    "end": 1225.46,
+    "speaker": "Heiter",
+    "text": "Frieren, warum bist du zu mir gekommen?",
+    "vi": "Frieren này, tại sao cậu lại tìm đến chỗ tôi?"
+  },
+  {
+    "id": 700313,
+    "parentId": 700313,
+    "start": 1225.9,
+    "end": 1232.06,
+    "speaker": "Frieren",
+    "text": "Ich wollte etwas in der Heiligen Stadt kaufen und ich versuche, wenn möglich, Bekannte an meinen Reisezielen zu treffen.",
+    "vi": "Tôi muốn mua vài thứ ở Thánh Đô, và nếu có thể thì tôi luôn cố gắng ghé thăm những người quen ở nơi mình đi qua.",
+    "legacyIds": [
+      700313,
+      700314,
+      700315
+    ]
+  },
+  {
+    "id": 700316,
+    "parentId": 700316,
+    "start": 1233.66,
+    "end": 1238.34,
+    "speaker": "Frieren",
+    "text": "Außerdem habe ich bei dir noch einige Schulden offen, die ich vor deinem Tod begleichen will.",
+    "vi": "Ngoài ra tôi vẫn còn nợ cậu vài ân tình mà tôi muốn trả xong trước khi cậu qua đời.",
+    "legacyIds": [
+      700316,
+      700317
+    ]
+  },
+  {
+    "id": 700318,
+    "parentId": 700318,
+    "start": 1242.1,
+    "end": 1244.16,
+    "speaker": "Heiter",
+    "text": "Eine Bitte hätte ich schon an dich.",
+    "vi": "Quả thực tôi có một việc muốn nhờ cậu đây."
+  },
+  {
+    "id": 700319,
+    "parentId": 700319,
+    "start": 1245.38,
+    "end": 1247.28,
+    "speaker": "Heiter",
+    "text": "Würdest du einen Lehrling aufnehmen?",
+    "vi": "Cậu có sẵn lòng nhận một học trò không?"
+  },
+  {
+    "id": 700320,
+    "parentId": 700320,
+    "start": 1248.98,
+    "end": 1252.72,
+    "speaker": "Heiter",
+    "text": "Die kleine Fern hat nämlich das Potenzial zur Magierin.",
+    "vi": "Bé Fern đây thực sự có tiềm năng trở thành một pháp sư."
+  },
+  {
+    "id": 700321,
+    "parentId": 700321,
+    "start": 1252.96,
+    "end": 1255.74,
+    "speaker": "Heiter",
+    "text": "Würdest du sie bitte auf deinen Reisen mitnehmen?",
+    "vi": "Cậu làm ơn đưa con bé đi cùng trong những chuyến hành trình của mình được không?"
+  },
+  {
+    "id": 700322,
+    "parentId": 700322,
+    "start": 1259.14,
+    "end": 1262.64,
+    "speaker": "Frieren",
+    "text": "Es tut mir leid, Heiter, aber das kann ich nicht machen.",
+    "vi": "Xin lỗi cậu, Heiter, nhưng tôi không thể làm việc đó được."
+  },
+  {
+    "id": 700323,
+    "parentId": 700323,
+    "start": 1263.2,
+    "end": 1264.28,
+    "speaker": "Frieren",
+    "text": "Sie wäre mir nur im Weg.",
+    "vi": "Con bé sẽ chỉ làm vướng chân tôi thôi."
+  },
+  {
+    "id": 700324,
+    "parentId": 700324,
+    "start": 1265.82,
+    "end": 1269.14,
+    "speaker": "Frieren",
+    "text": "Du weißt doch, wie viele Lehrlinge der Magie in echten Kämpfen sterben.",
+    "vi": "Cậu cũng biết có bao nhiêu học trò pháp thuật đã bỏ mạng trong những trận chiến thực sự mà."
+  },
+  {
+    "id": 700325,
+    "parentId": 700325,
+    "start": 1270.04,
+    "end": 1273.44,
+    "speaker": "Frieren",
+    "text": "Ich möchte kein Kind, das ein Freund mir anvertraut hat, in Gefahr bringen.",
+    "vi": "Tôi không muốn đẩy một đứa trẻ mà bạn mình gửi gắm vào vòng nguy hiểm."
+  },
+  {
+    "id": 700326,
+    "parentId": 700326,
+    "start": 1276.54,
+    "end": 1281.34,
+    "speaker": "Heiter",
+    "text": "Wenn das so ist, dann hätte ich eine andere Bitte an dich.",
+    "vi": "Nếu đã vậy, thì tôi có một lời thỉnh cầu khác muốn nhờ cậu."
+  },
+  {
+    "id": 700327,
+    "parentId": 700327,
+    "start": 1285.96,
+    "end": 1290.4,
+    "speaker": "Heiter",
+    "text": "Ich habe dieses Buch aus dem Grab von Ewig dem Weisen ausgegraben.",
+    "vi": "Tôi đã khai quật cuốn sách này từ lăng mộ của Hiền nhân Ewig."
+  },
+  {
+    "id": 700328,
+    "parentId": 700328,
+    "start": 1290.7,
+    "end": 1297.38,
+    "speaker": "Heiter",
+    "text": "In diesem Buch stehen verloren gegangene Zauber zur Wiederbelebung von Toten und zum Erlangen von Unsterblichkeit.",
+    "vi": "Trong cuốn sách này có ghi chép những phép thuật đã thất truyền để hồi sinh người chết và đạt được sự bất tử."
+  },
+  {
+    "id": 700329,
+    "parentId": 700329,
+    "start": 1297.82,
+    "end": 1301.24,
+    "speaker": "Heiter",
+    "text": "Ich kann mir nicht vorstellen, dass solche Zauber wirklich existieren.",
+    "vi": "Tôi không thể hình dung nổi những phép thuật như thế lại thực sự tồn tại."
+  },
+  {
+    "id": 700330,
+    "parentId": 700330,
+    "start": 1301.24,
+    "end": 1305.12,
+    "speaker": "Heiter",
+    "text": "Um das herauszufinden, möchte ich, dass du dieses Buch entschlüsselst.",
+    "vi": "Để làm rõ điều đó, tôi muốn nhờ cậu giải mã cuốn sách này."
+  },
+  {
+    "id": 700331,
+    "parentId": 700331,
+    "start": 1305.28,
+    "end": 1306.52,
+    "speaker": "Heiter",
+    "text": "Denkst du, du schaffst das?",
+    "vi": "Cậu nghĩ mình làm được chứ?"
+  },
+  {
+    "id": 700332,
+    "parentId": 700332,
+    "start": 1307.08,
+    "end": 1309.14,
+    "speaker": "Frieren",
+    "text": "Es ist in einer geheimen Bilderschrift verfasst.",
+    "vi": "Nó được viết bằng một loại chữ tượng hình bí mật."
+  },
+  {
+    "id": 700333,
+    "parentId": 700333,
+    "start": 1309.46,
+    "end": 1312.02,
+    "speaker": "Frieren",
+    "text": "Die Leute in deinem Zeitalter stehen auf so etwas, oder?",
+    "vi": "Người ở thời đại của cậu rất mê mấy thứ như thế này nhỉ?"
+  },
+  {
+    "id": 700334,
+    "parentId": 700334,
+    "start": 1312.7,
+    "end": 1315.22,
+    "speaker": "Frieren",
+    "text": "Ich werde wohl fünf oder sechs Jahre dafür brauchen.",
+    "vi": "Chắc tôi sẽ cần khoảng năm hoặc sáu năm để giải mã nó."
+  },
+  {
+    "id": 700335,
+    "parentId": 700335,
+    "start": 1315.7,
+    "end": 1317.04,
+    "speaker": "Heiter",
+    "text": "Wenn du das sagst.",
+    "vi": "Nếu cậu đã nói vậy."
+  },
+  {
+    "id": 700336,
+    "parentId": 700336,
+    "start": 1317.84,
+    "end": 1320.46,
+    "speaker": "Frieren",
+    "text": "Aber was willst du mit dem Inhalt dieses Buches anfangen?",
+    "vi": "Nhưng cậu định làm gì với nội dung của cuốn sách này?"
+  },
+  {
+    "id": 700337,
+    "parentId": 700337,
+    "start": 1320.94,
+    "end": 1322.96,
+    "speaker": "Frieren",
+    "text": "Ich dachte immer, du hättest keine Angst vor dem Tod.",
+    "vi": "Tôi cứ tưởng cậu không hề sợ cái chết cơ mà."
+  },
+  {
+    "id": 700338,
+    "parentId": 700338,
+    "start": 1323.62,
+    "end": 1325.44,
+    "speaker": "Heiter",
+    "text": "Es gibt zwei Gründe dafür.",
+    "vi": "Có hai lý do cho việc đó."
+  },
+  {
+    "id": 700339,
+    "parentId": 700339,
+    "start": 1326.42,
+    "end": 1330.6,
+    "speaker": "Heiter",
+    "text": "Erstens habe ich euch damals wohl ein bisschen was vorgemacht.",
+    "vi": "Thứ nhất, hồi đó có lẽ tôi đã làm bộ trước mặt mọi người một chút."
+  },
+  {
+    "id": 700340,
+    "parentId": 700340,
+    "start": 1330.6,
+    "end": 1334.82,
+    "speaker": "Heiter",
+    "text": "Zweitens habe ich jetzt inzwischen mehr Angst vor dem Tod als früher.",
+    "vi": "Thứ hai, giờ đây tôi đã sợ cái chết nhiều hơn trước kia rồi."
+  },
+  {
+    "id": 700341,
+    "parentId": 700341,
+    "start": 1336.16,
+    "end": 1339.8,
+    "speaker": "Heiter",
+    "text": "Ich will ja auch nicht richtig unsterblich werden, nur ein kleines bisschen.",
+    "vi": "Tôi cũng đâu định trở nên bất tử thực sự, chỉ một chút xíu thôi.",
+    "legacyIds": [
+      700341,
+      700342
+    ]
+  },
+  {
+    "id": 700343,
+    "parentId": 700343,
+    "start": 1340.16,
+    "end": 1344.14,
+    "speaker": "Heiter",
+    "text": "Ich möchte auf meine alten Tage noch ein wenig mehr Zeit haben.",
+    "vi": "Ở tuổi xế chiều này, tôi chỉ muốn có thêm một chút thời gian nữa."
+  },
+  {
+    "id": 700344,
+    "parentId": 700344,
+    "start": 1347.76,
+    "end": 1352.18,
+    "speaker": "Heiter",
+    "text": "In den Heiligen Schriften steht außerdem, dass man sein Leben gesund führen soll.",
+    "vi": "Hơn nữa, trong Kinh Thánh còn viết rằng con người nên sống một cuộc đời lành mạnh.",
+    "legacyIds": [
+      700344,
+      700345
+    ]
+  },
+  {
+    "id": 700346,
+    "parentId": 700346,
+    "start": 1352.4,
+    "end": 1355.08,
+    "speaker": "Heiter",
+    "text": "Und ein langes Leben ist der beste Beweis dafür.",
+    "vi": "Và sống trường thọ chính là minh chứng rõ nhất cho điều đó."
+  },
+  {
+    "id": 700347,
+    "parentId": 700347,
+    "start": 1356.28,
+    "end": 1356.88,
+    "speaker": "Frieren",
+    "text": "Scheinheiliger.",
+    "vi": "Đồ đạo đức giả."
+  },
+  {
+    "id": 700348,
+    "parentId": 700348,
+    "start": 1358.86,
+    "end": 1360.06,
+    "speaker": "Heiter",
+    "text": "Eine Frage.",
+    "vi": "Cho tôi hỏi một câu nhé."
+  },
+  {
+    "id": 700349,
+    "parentId": 700349,
+    "start": 1360.74,
+    "end": 1365.94,
+    "speaker": "Heiter",
+    "text": "Könntest du Fern in Magie unterrichten, auch wenn es nur während deiner Pausen sein sollte?",
+    "vi": "Cậu có thể dạy pháp thuật cho Fern, dù chỉ là trong những lúc cậu nghỉ giải lao được không?"
+  },
+  {
+    "id": 700350,
+    "parentId": 700350,
+    "start": 1367.12,
+    "end": 1371.14,
+    "speaker": "Heiter",
+    "text": "Ich selber bin als Kleriker dazu leider nicht in der Lage.",
+    "vi": "Bản thân tôi là một giáo sĩ nên tiếc là không đủ khả năng làm việc đó."
+  },
+  {
+    "id": 700351,
+    "parentId": 700351,
+    "start": 1372.08,
+    "end": 1373.72,
+    "speaker": "Frieren",
+    "text": "Na gut, solange es nur das ist.",
+    "vi": "Được thôi, miễn chỉ có vậy."
+  },
+  {
+    "id": 700352,
+    "parentId": 700352,
+    "start": 1381.94,
+    "end": 1383.26,
+    "speaker": "Frieren",
+    "text": "Da ist sie ja.",
+    "vi": "Con bé ở kia rồi."
+  },
+  {
+    "id": 700353,
+    "parentId": 700353,
+    "start": 1384.1,
+    "end": 1386.6,
+    "speaker": "Frieren",
+    "text": "Es war ganz schön schwierig, dich zu finden.",
+    "vi": "Tìm được em thật chẳng dễ chút nào."
+  },
+  {
+    "id": 700354,
+    "parentId": 700354,
+    "start": 1386.92,
+    "end": 1388.42,
+    "speaker": "Frieren",
+    "text": "Trainierst du denn immer hier im Wald?",
+    "vi": "Em lúc nào cũng tập luyện ở trong rừng này sao?"
+  },
+  {
+    "id": 700355,
+    "parentId": 700355,
+    "start": 1389.04,
+    "end": 1392.42,
+    "speaker": "Fern",
+    "text": "Dann haben sogar Sie Schwierigkeiten damit, mich aufzufinden.",
+    "vi": "Vậy là ngay cả cô cũng gặp khó khăn trong việc tìm ra cháu."
+  },
+  {
+    "id": 700356,
+    "parentId": 700356,
+    "start": 1394.3,
+    "end": 1397.78,
+    "speaker": "Fern",
+    "text": "Heiter sagt mir oft, dass ich eine schwache Präsenz habe.",
+    "vi": "Ngài Heiter thường bảo rằng cháu có sự hiện diện rất mờ nhạt."
+  },
+  {
+    "id": 700357,
+    "parentId": 700357,
+    "start": 1399.94,
+    "end": 1402.16,
+    "speaker": "Fern",
+    "text": "Aber ich finde, das ist eine wunderbare Sache.",
+    "vi": "Nhưng cháu thấy đó lại là một điều tuyệt vời."
+  },
+  {
+    "id": 700358,
+    "parentId": 700358,
+    "start": 1403.96,
+    "end": 1405.1,
+    "speaker": "Frieren",
+    "text": "Ja, das ist es.",
+    "vi": "Ừ, đúng là vậy."
+  },
+  {
+    "id": 700359,
+    "parentId": 700359,
+    "start": 1408.4,
+    "end": 1411.98,
+    "speaker": "Frieren",
+    "text": "Tatsächlich, ihre Magie aufzuspüren, funktioniert so gut wie gar nicht.",
+    "vi": "Quả thực, việc dò tìm ma lực của con bé hầu như chẳng có tác dụng."
+  },
+  {
+    "id": 700360,
+    "parentId": 700360,
+    "start": 1412.46,
+    "end": 1414.42,
+    "speaker": "Frieren",
+    "text": "Sie verfügt über eine hervorragende Magiekontrolle.",
+    "vi": "Con bé sở hữu khả năng kiểm soát ma lực xuất sắc."
+  },
+  {
+    "id": 700361,
+    "parentId": 700361,
+    "start": 1414.42,
+    "end": 1419.88,
+    "speaker": "Frieren",
+    "text": "Wie viel muss sie trainiert haben, um das in ihrem Alter so zu beherrschen?",
+    "vi": "Ở độ tuổi này mà làm chủ được đến mức ấy, không biết con bé đã phải khổ luyện biết bao nhiêu?"
+  },
+  {
+    "id": 700362,
+    "parentId": 700362,
+    "start": 1420.3,
+    "end": 1425.92,
+    "speaker": "Fern",
+    "text": "Heiter hat gesagt, dass ich eine vollwertige Magierin bin, wenn ich diesen Felsen dort durchstoßen kann.",
+    "vi": "Ngài Heiter từng nói rằng cháu sẽ trở thành một pháp sư thực thụ nếu có thể xuyên thủng tảng đá đằng kia."
+  },
+  {
+    "id": 700363,
+    "parentId": 700363,
+    "start": 1426.46,
+    "end": 1435.18,
+    "speaker": "Frieren",
+    "text": "Oh, Heiter versteht zwar Magie, aber es ist eigentlich...",
+    "vi": "Ồ, Heiter tuy cũng hiểu về pháp thuật, nhưng thực ra điều đó..."
+  },
+  {
+    "id": 700364,
+    "parentId": 700364,
+    "start": 1435.76,
+    "end": 1438.46,
+    "speaker": "Fern",
+    "text": "Meine magische Kraft löst sich jedes Mal auf.",
+    "vi": "Ma lực của cháu lần nào cũng bị tan biến mất."
+  },
+  {
+    "id": 700365,
+    "parentId": 700365,
+    "start": 1438.6,
+    "end": 1439.74,
+    "speaker": "Fern",
+    "text": "Ich kann nichts tun.",
+    "vi": "Cháu chẳng làm được gì cả."
+  },
+  {
+    "id": 700366,
+    "parentId": 700366,
+    "start": 1440.7,
+    "end": 1441.74,
+    "speaker": "Frieren",
+    "text": "Oh, ich verstehe.",
+    "vi": "Ồ, tôi hiểu rồi."
+  },
+  {
+    "id": 700367,
+    "parentId": 700367,
+    "start": 1441.74,
+    "end": 1444.92,
+    "speaker": "Fern",
+    "text": "Was kann ich denn nur machen, um besser zu werden?",
+    "vi": "Cháu phải làm gì để tiến bộ hơn đây ạ?"
+  },
+  {
+    "id": 700368,
+    "parentId": 700368,
+    "start": 1446.02,
+    "end": 1448.32,
+    "speaker": "Frieren",
+    "text": "Fern? Darf ich dich vorher etwas fragen?",
+    "vi": "Fern này? Trước đó tôi hỏi em một câu được không?"
+  },
+  {
+    "id": 700369,
+    "parentId": 700369,
+    "start": 1449.76,
+    "end": 1450.5,
+    "speaker": "Frieren",
+    "text": "Liebst du Magie?",
+    "vi": "Em có yêu pháp thuật không?"
+  },
+  {
+    "id": 700370,
+    "parentId": 700370,
+    "start": 1451.6,
+    "end": 1453.58,
+    "speaker": "Fern",
+    "text": "Manchmal mehr, manchmal weniger.",
+    "vi": "Đôi khi nhiều, đôi khi ít ạ."
+  },
+  {
+    "id": 700371,
+    "parentId": 700371,
+    "start": 1456.12,
+    "end": 1457.48,
+    "speaker": "Frieren",
+    "text": "Ganz genauso wie ich.",
+    "vi": "Giống hệt như tôi."
+  },
+  {
+    "id": 700372,
+    "parentId": 700372,
+    "start": 1550.12,
+    "end": 1551.98,
+    "speaker": "Heiter",
+    "text": "Wie kommst du mit Fern zurecht?",
+    "vi": "Cậu với Fern hòa hợp thế nào rồi?"
+  },
+  {
+    "id": 700373,
+    "parentId": 700373,
+    "start": 1554.22,
+    "end": 1556.06,
+    "speaker": "Fern",
+    "text": "Es wäre eine Schande, wenn du jetzt sterben würdest.",
+    "vi": "Sẽ thật đáng tiếc nếu bây giờ ngài qua đời đấy ạ."
+  },
+  {
+    "id": 700374,
+    "parentId": 700374,
+    "start": 1556.08,
+    "end": 1557.84,
+    "speaker": "Frieren",
+    "text": "Das hätte nicht unbedingt Magie sein müssen.",
+    "vi": "Đâu nhất thiết phải là pháp thuật."
+  },
+  {
+    "id": 700375,
+    "parentId": 700375,
+    "start": 1558.04,
+    "end": 1559.62,
+    "speaker": "Heiter",
+    "text": "Aber es lohnt sich, nach denen zu suchen.",
+    "vi": "Nhưng rất đáng để đi tìm chúng đấy."
+  }
+];

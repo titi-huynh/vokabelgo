@@ -1,0 +1,18 @@
+Chợ Nổi Đảo Mèo — reviewed playable local prototype, 2026-10-18
+
+Open http://127.0.0.1:3000/cat-island.html with the existing VokabelGo server running. Choose a real deck, open the market and select a customer. Chợ sớm ends after 12 resolved orders (correct or skipped). Chợ đông has 120 seconds of active ordinary play; pauses and story events freeze its clock.
+
+Implemented: original low-poly 3D market based on approved Blender v03, customer boats, package delivery, varied meaning/recall/source-cloze/ordering and optional listening, hints and corrections, combos, merchant/barter/chase/discovery events, local wallet/decor/helper, weak-word replay. Discovery teaches takeaway versus eating on site, then asks for packaging with a changed request.
+
+Learning truth: recognition, cloze, ordering and listening are practice evidence. Objective full typed recall may update the existing scheduler once per day, respecting due dates and active Today targets. Later mistakes can flag review without another scheduling. Assisted answers never count as independent recall. Results distinguish distinct words, independent answers, needed practice and first-attempt accuracy. Discovery phrases are not silently added to the selected deck.
+
+Verification:
+- 19 learning checks, including real FSRS integration: learning-tests.log.
+- 14 tests execute the actual controller with small DOM/scene adapters: runtime-tests.log.
+- All 18 existing project acceptance suites passed: existing-unit-tests.log.
+- CUA browser: complete calm rounds, real rush expiry/restart, pause, wrong/hint/retry, merchant, barter (one deduction and saved unlock), both chase routes, teach/apply/correction, helper and decor persistence. Desktop1280x720 and mobile390x844; forced2D fallback worked. Final3D session had no console errors. Viewport override reset.
+- QA used localhost:3000 separately from normal127.0.0.1:3000 browser storage. Screenshots show the test profile with unlocked helper/decor.
+
+Limits: one curated discovery lesson pack. German audio requires a browser voice and offers text fallback. Saves are local, without cloud sync. This is a playable prototype, with no measured learning-improvement or physical-device performance claim. Fuxie and Wortregen were not changed by this work.
+
+Sources/access limits: IMPLEMENTATION.txt. Native Blender source: design/cat-island-blender/v03/. Entry files: cat-island.html, cat-island.css, cat-island-game.js, cat-island-scene.js, cat-island-learning.js; assets/cat-island/. Tests: test-cat-island-learning.js, qa/cat-island/test-runtime.js.

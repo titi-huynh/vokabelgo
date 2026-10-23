@@ -1,0 +1,82 @@
+.kino-catalog[hidden], .kino-v3-root[hidden] { display: none !important; }
+.kino-catalog { max-width: 1240px; margin: 0 auto; padding: 16px; color: #30412f; scroll-margin-top: 20px; }
+.kino-catalog h1 { margin: 0 0 24px; font-family: var(--font-display); font-size: clamp(30px, 4vw, 40px); line-height: 1.2; }
+.kino-film-row { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 22px; padding: 4px 4px 20px; margin: -4px; list-style: none; overflow-x: auto; scroll-snap-type: x mandatory; }
+.kino-film-row > li { min-width: 0; scroll-snap-align: start; }
+.kino-film-card { display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #30412f; border-radius: 14px; }
+.kino-film-card img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; background: #e8eddf; border: 1px solid #d4ddc9; box-sizing: border-box; }
+.kino-film-card strong { font-size: 18px; line-height: 1.5; font-weight: 600; padding: 0 2px; }
+.kino-film-card:hover img { outline: 2px solid #78925e; outline-offset: 2px; }
+.kino-film-card:hover strong { color: #54733e; }
+.kino-film-card:focus-visible, #kinoCatalogBack:focus-visible { outline: 3px solid #a7732d; outline-offset: 4px; }
+.kino-catalog-back-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px; color: #536d43; }
+#kinoCatalogBack { min-height: 44px; padding: 8px 12px; border: 1px solid #bac9ad; border-radius: 10px; background: #fcfbf6; color: #3e5c32; font-size: 15px; cursor: pointer; }
+#kinoCatalogDetailCount { font-size: 16px; }
+.kino-catalog-back-bar #kinoCatalogDetailCount { margin-left: auto; }
+.kino-movie-overview { display: grid; grid-template-columns: minmax(180px, 300px) minmax(0, 1fr); align-items: center; gap: 26px; padding: 24px; margin: 0 0 22px; background: #fcfbf6; border: 1px solid #d5deca; border-radius: 18px; color: #30412f; }
+#kinoMovieCover { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; }
+#kinoMovieSeries { margin: 0 0 8px; color: #647958; font-size: 13px; letter-spacing: 1px; font-weight: 600; }
+#kinoMovieTitle { margin: 0; font-family: var(--font-display); font-size: clamp(27px, 3vw, 36px); line-height: 1.2; }
+#kinoMovieSummary { margin: 12px 0 18px; color: #5d7151; font-size: 16px; line-height: 1.6; }
+#kinoMovieWatchAction { display: flex; flex-wrap: wrap; gap: 10px; }
+#kinoMovieVocabBtn { padding: 12px 16px; min-height: 48px; border: 1px solid #b7caa3; border-radius: 10px; color: #36552a; background: #edf3e5; font: inherit; cursor: pointer; }
+#kinoMovieVocabBtn[hidden] { display: none; }
+#kinoMovieVocabBtn:focus-visible { outline: 3px solid #a7732d; outline-offset: 3px; }
+#diktatMode.kino-chapters-active #kinoFullMovieBtn { justify-content: center; min-height: 48px; padding: 12px 18px; background: #52723f; border-color: #52723f; color: #fff; font-size: 16px; }
+#diktatMode.kino-chapters-active .kino-v3-top-header { display: none; }
+.kino-chapters-active:not([data-kino-view="detail"]) :is(#kinoMovieOverview, #kinoPeppaChapters) { display: none; }
+.kino-chapters-active:not([data-kino-view="lesson"]) :is(#kinoLessonHeader, #kinoLessonTabs, #kinoLessonPanel) { display: none; }
+.kino-chapters-active[data-kino-view="detail"] .peppa-parts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: visible; padding: 0; margin: 0; gap: 12px; }
+.kino-chapters-active[data-kino-view="detail"] .peppa-part { min-height: 160px; padding: 18px; gap: 8px; flex-basis: auto; border: 1px solid #d4dfc7; background: #fff; box-shadow: none; }
+.kino-chapters-active[data-kino-view="detail"] .peppa-part[aria-pressed="true"] { border: 1px solid #d4dfc7; padding: 18px; background: #fff; }
+.kino-chapters-active[data-kino-view="detail"] .peppa-part:hover { background: #f0f5e9; border-color: #78945e; }
+.kino-chapters-active[data-kino-view="detail"] .peppa-part strong { font-size: 18px; }
+.kino-chapters-active[data-kino-view="detail"] .peppa-part-number { font-size: 13px; }
+.kino-chapters-active[data-kino-view="detail"] .peppa-part-time { font-size: 15px; }
+.kino-part-open { margin-top: 4px; color: #4c703a; font-size: 15px; font-weight: 700; }
+.kino-chapters-active[data-kino-view="detail"] .peppa-part-progress { display: none; }
+.kino-chapters-active[data-kino-view="detail"] .peppa-parts::after { display: none; }
+.kino-chapters-active[data-kino-view="detail"] .peppa-heading .peppa-eyebrow { display: none; }
+.kino-lesson-header { margin: 20px 0; color: #30412f; scroll-margin-top: 16px; }
+.kino-lesson-header h1 { font-family: var(--font-display); font-size: clamp(26px, 3vw, 34px); line-height: 1.25; margin: 6px 0; }
+.kino-lesson-header .peppa-eyebrow { font-size: 13px; line-height: 1.5; }
+.kino-lesson-header #peppaPartGoal { font-size: 16px; color: #607452; }
+.kino-lesson-tabs { display: flex; gap: 6px; padding: 5px; width: fit-content; max-width: 100%; box-sizing: border-box; background: #eaf0e0; border: 1px solid #d2dfc2; border-radius: 12px; margin-bottom: 18px; scroll-margin-top: 12px; }
+.kino-lesson-tabs [role="tab"] { min-height: 44px; padding: 10px 22px; border: 1px solid transparent; border-radius: 8px; background: transparent; color: #5f7352; cursor: pointer; font: inherit; font-size: 16px; font-weight: 600; }
+.kino-lesson-tabs [aria-selected="true"] { background: #fcfbf6; color: #35562a; border-color: #c3d4b0; box-shadow: 0 2px 6px #30412f09; }
+.kino-chapters-active #kinoDiscovery { display: block; width: min(100%, 920px); margin-top: 0; }
+.kino-chapters-active:not([data-kino-activity="discover"]) #kinoDiscovery { display: none; }
+.kino-listen-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; background: #1a211d; color: #c5d0bf; border-top: 1px solid #ffffff12; }
+.kino-listen-footer #kinoDiscoveryNotice { margin: 0; font-size: 14px; color: #b8c5b2; }
+#kinoListenSentences { flex-shrink: 0; min-height: 44px; padding: 10px 14px; background: #30432f; border: 1px solid #63795a; border-radius: 8px; color: #e5efda; font-size: 15px; cursor: pointer; }
+#kinoListenSentences:hover { background: #3b5237; }
+.kino-writing-resume { margin: 0 0 10px; font-size: 14px; color: #5e744f; }
+.kino-writing-resume[hidden] { display: none; }
+#kinoLessonPanel > .peppa-options { margin: 0 0 16px; padding: 10px; border: 1px solid #d9e1ce; border-radius: 10px; background: #f5f7ef; }
+#kinoLessonPanel #peppaFinished { margin: 20px 0; }
+.kino-chapters-active:not([data-kino-activity="write"]) #peppaFinished { display: none; }
+@media (max-width: 800px) {
+  .kino-film-row { grid-auto-columns: min(78vw, 340px); gap: 18px; }
+}
+@media (max-width: 540px) {
+  .kino-catalog { padding: 12px 4px; }
+  .kino-catalog h1 { margin-bottom: 20px; }
+  .kino-film-card strong { font-size: 18px; }
+  .kino-catalog-back-bar { gap: 10px; margin-bottom: 12px; }
+  .kino-catalog-back-bar #kinoCatalogBack { font-size: 14px; padding: 8px; }
+  .kino-catalog-back-bar #kinoCatalogDetailCount { font-size: 14px; white-space: nowrap; }
+  .kino-movie-overview { grid-template-columns: 88px minmax(0, 1fr); align-items: start; gap: 14px; padding: 16px; }
+  #kinoMovieTitle { font-size: 26px; overflow-wrap: anywhere; }
+  #kinoMovieSeries { font-size: 12px; }
+  #kinoMovieCover { margin-top: 3px; }
+  #kinoMovieSummary { font-size: 15px; }
+  #kinoMovieWatchAction { margin-left: -102px; padding-top: 2px; }
+  #diktatMode.kino-chapters-active #kinoFullMovieBtn { width: 100%; padding: 12px; }
+  .kino-chapters-active[data-kino-view="detail"] .peppa-parts { grid-template-columns: 1fr; }
+  .kino-chapters-active[data-kino-view="detail"] .peppa-part { min-height: 144px; }
+  .kino-chapters-active[data-kino-view="detail"] .peppa-part:last-child:nth-child(odd) { grid-column: auto; }
+  .kino-lesson-tabs { width: 100%; gap: 4px; }
+  .kino-lesson-tabs [role="tab"] { flex: 1; padding: 10px 8px; font-size: 16px; }
+  .kino-listen-footer { align-items: flex-start; flex-direction: column; gap: 12px; padding: 16px; }
+  #kinoLessonPanel .kino-practice-heading { margin-top: 12px; }
+}

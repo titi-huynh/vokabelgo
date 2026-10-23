@@ -1,0 +1,192 @@
+{
+  "image": "/assets/may-home-game/may-walk-directions-v1.png",
+  "width": 1254,
+  "height": 1254,
+  "referenceHeight": 278,
+  "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+  ],
+  "columns": 4,
+  "frames": [
+    {
+      "row": 0,
+      "col": 0,
+      "direction": "down",
+      "x": 36,
+      "y": 33,
+      "w": 279,
+      "h": 280,
+      "anchorX": 129.0,
+      "anchorY": 276
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "direction": "down",
+      "x": 350,
+      "y": 35,
+      "w": 275,
+      "h": 277,
+      "anchorX": 126.5,
+      "anchorY": 273
+    },
+    {
+      "row": 0,
+      "col": 2,
+      "direction": "down",
+      "x": 649,
+      "y": 35,
+      "w": 273,
+      "h": 279,
+      "anchorX": 127.0,
+      "anchorY": 275
+    },
+    {
+      "row": 0,
+      "col": 3,
+      "direction": "down",
+      "x": 962,
+      "y": 36,
+      "w": 272,
+      "h": 277,
+      "anchorX": 127.5,
+      "anchorY": 273
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "direction": "right",
+      "x": 37,
+      "y": 336,
+      "w": 258,
+      "h": 280,
+      "anchorX": 158.5,
+      "anchorY": 276
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "direction": "right",
+      "x": 348,
+      "y": 332,
+      "w": 262,
+      "h": 284,
+      "anchorX": 160.5,
+      "anchorY": 280
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "direction": "right",
+      "x": 667,
+      "y": 333,
+      "w": 255,
+      "h": 283,
+      "anchorX": 154.0,
+      "anchorY": 279
+    },
+    {
+      "row": 1,
+      "col": 3,
+      "direction": "right",
+      "x": 979,
+      "y": 333,
+      "w": 256,
+      "h": 283,
+      "anchorX": 156.0,
+      "anchorY": 279
+    },
+    {
+      "row": 2,
+      "col": 0,
+      "direction": "up",
+      "x": 35,
+      "y": 638,
+      "w": 255,
+      "h": 279,
+      "anchorX": 127.5,
+      "anchorY": 275
+    },
+    {
+      "row": 2,
+      "col": 1,
+      "direction": "up",
+      "x": 358,
+      "y": 636,
+      "w": 252,
+      "h": 279,
+      "anchorX": 126.0,
+      "anchorY": 275
+    },
+    {
+      "row": 2,
+      "col": 2,
+      "direction": "up",
+      "x": 664,
+      "y": 638,
+      "w": 252,
+      "h": 279,
+      "anchorX": 126.0,
+      "anchorY": 275
+    },
+    {
+      "row": 2,
+      "col": 3,
+      "direction": "up",
+      "x": 974,
+      "y": 640,
+      "w": 251,
+      "h": 277,
+      "anchorX": 125.5,
+      "anchorY": 273
+    },
+    {
+      "row": 3,
+      "col": 0,
+      "direction": "left",
+      "x": 46,
+      "y": 941,
+      "w": 267,
+      "h": 274,
+      "anchorX": 102.5,
+      "anchorY": 270
+    },
+    {
+      "row": 3,
+      "col": 1,
+      "direction": "left",
+      "x": 359,
+      "y": 941,
+      "w": 258,
+      "h": 274,
+      "anchorX": 101.5,
+      "anchorY": 270
+    },
+    {
+      "row": 3,
+      "col": 2,
+      "direction": "left",
+      "x": 664,
+      "y": 943,
+      "w": 259,
+      "h": 273,
+      "anchorX": 103.5,
+      "anchorY": 269
+    },
+    {
+      "row": 3,
+      "col": 3,
+      "direction": "left",
+      "x": 976,
+      "y": 941,
+      "w": 256,
+      "h": 275,
+      "anchorX": 103.5,
+      "anchorY": 271
+    }
+  ],
+  "notes": "Measured solid-alpha connected component bounds with 3px padding. anchorX from head silhouette center, anchorY bottom contact. Common referenceHeight; no per-frame stretch, no horizontal mirror."
+}

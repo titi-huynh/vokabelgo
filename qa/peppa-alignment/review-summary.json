@@ -1,0 +1,45 @@
+{
+  "movie_sha256": "3068D5AD7FBE520E98CCD2AB779F1B0EC4EA566B55531E429C20F9693BC84B00",
+  "word_reference_match": 0.938,
+  "bilingual_cues": 312,
+  "chapter_boundaries": [
+    177.72,
+    359.56,
+    548.56,
+    727.6
+  ],
+  "original_boundaries": [
+    178.8,
+    357.25,
+    548.95,
+    736.7
+  ],
+  "chapters": [
+    {
+      "start": 0,
+      "end": 177.72,
+      "cues": 57
+    },
+    {
+      "start": 177.72,
+      "end": 359.56,
+      "cues": 81
+    },
+    {
+      "start": 359.56,
+      "end": 548.56,
+      "cues": 59
+    },
+    {
+      "start": 548.56,
+      "end": 727.6,
+      "cues": 59
+    },
+    {
+      "start": 727.6,
+      "end": 919.04,
+      "cues": 56
+    }
+  ],
+  "method": "Local faster-whisper small recognition + known-text cross-attention timing, picture cuts, and reviewed short calls. German text and Vietnamese translations retained from source script; no audio uploaded."
+}

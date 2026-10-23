@@ -13,11 +13,12 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
     });
 
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
 
     // 1. Initial Start Screen verification
     await expect(page.locator('#start-screen')).toBeVisible();
     await expect(page.locator('#start-screen .overlay-title')).toHaveText('Wortregen');
-    await expect(page.locator('#start-screen .overlay-instruction')).toContainText('Gõ trực tiếp các chữ cái vào thẻ trước khi chạm đất!');
+    await expect(page.locator('#start-screen .overlay-instruction')).toContainText('Hứng mưa từ');
     await expect(page.locator('#btn-start')).toBeVisible();
 
     // Verify input dock and submit button are completely removed
@@ -66,11 +67,11 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
     const cleanLetters = firstWordInfo.de.replace(/\s+/g, '');
     expect(firstWordInfo.letterCount).toBe(cleanLetters.length);
 
-    // Verify slot elements in DOM: slot 0 shows first-char hint (subtle amber), remaining slots show '_'
+    // The cue is separate from the input; every answer slot starts empty.
     const cardSlots = wordCard.locator('.char-slot');
     await expect(cardSlots).toHaveCount(cleanLetters.length);
-    await expect(cardSlots.nth(0)).toHaveClass(/first-char-hint/);
-    await expect(cardSlots.nth(0)).toHaveText(cleanLetters[0]);
+    await expect(wordCard.locator('.wr-word-cue')).toContainText('Bắt đầu bằng');
+    await expect(cardSlots.nth(0)).toHaveText('_');
     for (let i = 1; i < cleanLetters.length; i++) {
       await expect(cardSlots.nth(i)).toHaveText('_');
     }
@@ -102,9 +103,9 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
     // 7. Test Backspace:
     // Press backspace to erase slot 0
     await page.keyboard.press('Backspace');
-    // Slot 0 restores the first-character hint!
-    await expect(cardSlots.nth(0)).toHaveClass(/first-char-hint/);
-    await expect(cardSlots.nth(0)).toHaveText(firstChar);
+    // Backspace leaves an empty slot; the cue remains outside the answer.
+    await expect(wordCard.locator('.wr-word-cue')).toContainText('Bắt đầu bằng');
+    await expect(cardSlots.nth(0)).toHaveText('_');
     await expect(cardSlots.nth(0)).not.toHaveClass(/typed/);
     // FIFO Rule: Target remains the current word even when backspaced to 0 letters!
     await expect(wordCard).toHaveClass(/card-target/);
@@ -245,7 +246,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
     // Verify Game Over screen
     await expect(page.locator('#game-over-screen')).toBeVisible();
-    await expect(page.locator('#game-over-screen .overlay-title')).toHaveText('Wortregen beendet!');
+    await expect(page.locator('#game-over-screen .overlay-title')).toHaveText('Một ván rất cố gắng!');
     await expect(page.locator('#summary-missed')).toHaveText('3');
     await expect(page.locator('#summary-score')).not.toHaveText('0');
     await expect(page.locator('#btn-replay')).toBeVisible();
@@ -271,6 +272,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
     // Desktop Viewport (1440 x 900)
     await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.wortregenGame !== undefined);
     await page.click('#btn-start');
     await page.waitForSelector('.word-card');
@@ -285,6 +287,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
     // Mobile Viewport (390 x 844 - iPhone 12/13/14)
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.wortregenGame !== undefined);
 
     // Verify no horizontal overflow in header on 390px
@@ -300,6 +303,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('regression: 2 words touching ground simultaneously when lives === 1 yields lives === 0 and clean single game over', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.wortregenGame !== undefined);
     await page.click('#btn-start');
     await expect(page.locator('#start-screen')).toBeHidden();
@@ -358,6 +362,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Required Test A: Single-key input increases typedCount by exactly 1 with zero duplicate chars', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.wortregenGame !== undefined);
     await page.click('#btn-start');
 
@@ -416,6 +421,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Required Tests B & C: Strict FIFO queue and wrong-target rejection', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.wortregenGame !== undefined);
     await page.click('#btn-start');
 
@@ -470,6 +476,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Required Test D: Transition test - completing A promotes B to target; A grounding promotes B to target', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.wortregenGame !== undefined);
     await page.click('#btn-start');
 
@@ -509,6 +516,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Required Test E: Backspace to 0 preserves target', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.wortregenGame !== undefined);
     await page.click('#btn-start');
 
@@ -553,6 +561,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Required Test F: Timing & fall duration test - calm velocity and no overtaking', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.wortregenGame !== undefined);
     await page.click('#btn-start');
 
@@ -592,6 +601,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Required Test G: German character exact match (a ≠ ä, o ≠ ö, u ≠ ü, s ≠ ß)', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.wortregenGame !== undefined);
 
     const matchResults = await page.evaluate(() => {
@@ -635,6 +645,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
     const page = await context.newPage();
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.wortregenGame !== undefined);
 
     // Start game
@@ -686,6 +697,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Test I1: Wortregen reads cards from VokabelGo real repository (allCards)', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.wortregenGame !== undefined && window.WortregenVocabularyProvider !== undefined);
 
     const check = await page.evaluate(() => {
@@ -721,6 +733,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Test I2: Exclusions (grammar, questions, content, ellipsis are excluded)', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.WortregenVocabularyProvider !== undefined);
 
     const stats = await page.evaluate(() => {
@@ -753,6 +766,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Test I3: Tier classification verification (der Termin -> Tier 1, sich bewerben -> Tier 2)', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.WortregenVocabularyProvider !== undefined);
 
     const tierClassifications = await page.evaluate(() => {
@@ -797,6 +811,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Test I4: Early game priority (first 10 items spawned are 100% Tier 1)', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.WortregenVocabularyProvider !== undefined);
 
     const first10Tiers = await page.evaluate(() => {
@@ -811,6 +826,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Test I5: Later game mix (Tier 2 and Tier 3 appear after item 10)', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.WortregenVocabularyProvider !== undefined);
 
     const queueMix = await page.evaluate(() => {
@@ -834,6 +850,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Test I6: No early repeat (cards do not repeat until pool exhausts)', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.WortregenVocabularyProvider !== undefined);
 
     const uniqueness = await page.evaluate(() => {
@@ -853,6 +870,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Test I7: No duplicate active cards (Target and Waiting never share the same card ID)', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.wortregenGame !== undefined);
 
     await page.click('#btn-start');
@@ -874,6 +892,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Test I8: Duration scaling (phrases fall slower than single lexical items)', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.WortregenVocabularyProvider !== undefined);
 
     const durations = await page.evaluate(() => {
@@ -899,6 +918,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Test I9: User cards (valid user card included, invalid excluded)', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.WortregenVocabularyProvider !== undefined);
 
     const result = await page.evaluate(() => {
@@ -933,6 +953,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
 
   test('Test I10: Deck filter API (buildQueue({ deck }) restricts to matching deck)', async ({ page }) => {
     await page.goto('/wortregen.html');
+    await page.locator('[data-wr-mode="challenge"]').click();
     await page.waitForFunction(() => window.WortregenVocabularyProvider !== undefined);
 
     const deckResult = await page.evaluate(() => {

@@ -1,0 +1,671 @@
+{
+  "errors": [],
+  "mobile": {
+    "viewport": 390,
+    "scrollWidth": 390,
+    "canvas": {
+      "x": 10,
+      "y": 119,
+      "width": 370,
+      "height": 370,
+      "top": 119,
+      "right": 380,
+      "bottom": 489,
+      "left": 10
+    }
+  },
+  "pausedFrameStable": true,
+  "scrubbingDeterministic": true,
+  "reducedMotionHidesCritter": true,
+  "states": [
+    {
+      "seconds": 0,
+      "state": {
+        "time": 0,
+        "mode": "showcase",
+        "isPlaying": false,
+        "reducedMotion": false,
+        "activeCritter": null,
+        "phase": "quiet",
+        "pose": {
+          "raft": {
+            "x": 910,
+            "y": 460,
+            "rot": 0.012
+          },
+          "body": {
+            "scaleX": 1,
+            "scaleY": 1,
+            "rot": 0,
+            "yOffset": 0
+          },
+          "head": {
+            "rot": 0,
+            "yOffset": -0.5841275134629758,
+            "blink": 0,
+            "eyeStyle": "open",
+            "mouth": "neutral"
+          },
+          "tail": {
+            "rot": 0
+          },
+          "armLeft": {
+            "rot": 0
+          },
+          "armRight": {
+            "rot": 0
+          },
+          "rod": {
+            "rot": 0,
+            "bend": 0
+          },
+          "bobber": {
+            "x": 643,
+            "y": 540,
+            "dip": 0
+          },
+          "dragonfly": {
+            "visible": false,
+            "x": -100,
+            "y": -100
+          },
+          "fish": {
+            "visible": false,
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "seconds": 2,
+      "state": {
+        "time": 2,
+        "mode": "showcase",
+        "isPlaying": false,
+        "reducedMotion": false,
+        "activeCritter": null,
+        "phase": "quiet",
+        "pose": {
+          "raft": {
+            "x": 910,
+            "y": 460.4939200282095,
+            "rot": -0.011306668088023898
+          },
+          "body": {
+            "scaleX": 1.0087580708490265,
+            "scaleY": 0.9824838583019468,
+            "rot": 0,
+            "yOffset": 0
+          },
+          "head": {
+            "rot": 0,
+            "yOffset": -1.2099266228748609,
+            "blink": 1,
+            "eyeStyle": "open",
+            "mouth": "neutral"
+          },
+          "tail": {
+            "rot": 0.04639512346393177
+          },
+          "armLeft": {
+            "rot": 0
+          },
+          "armRight": {
+            "rot": 0
+          },
+          "rod": {
+            "rot": 0,
+            "bend": 0
+          },
+          "bobber": {
+            "x": 643,
+            "y": 539.3611472449329,
+            "dip": 0
+          },
+          "dragonfly": {
+            "visible": false,
+            "x": -100,
+            "y": -100
+          },
+          "fish": {
+            "visible": false,
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "seconds": 4,
+      "state": {
+        "time": 4,
+        "mode": "showcase",
+        "isPlaying": false,
+        "reducedMotion": false,
+        "activeCritter": "dragonfly",
+        "phase": "dragonfly_visit",
+        "pose": {
+          "raft": {
+            "x": 910,
+            "y": 459.0220457563038,
+            "rot": 0.009306790542122995
+          },
+          "body": {
+            "scaleX": 0.9959659810575348,
+            "scaleY": 1.0080680378849305,
+            "rot": 0,
+            "yOffset": 0
+          },
+          "head": {
+            "rot": 0,
+            "yOffset": 1.1414268319781615,
+            "blink": 0,
+            "eyeStyle": "open",
+            "mouth": "neutral"
+          },
+          "tail": {
+            "rot": -0.07951091901481377
+          },
+          "armLeft": {
+            "rot": 0
+          },
+          "armRight": {
+            "rot": 0
+          },
+          "rod": {
+            "rot": 0,
+            "bend": 0
+          },
+          "bobber": {
+            "x": 643,
+            "y": 541.2352833778465,
+            "dip": 0
+          },
+          "dragonfly": {
+            "visible": true,
+            "x": 230.47524011936866,
+            "y": 83.52662879947859
+          },
+          "fish": {
+            "visible": false,
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "seconds": 6,
+      "state": {
+        "time": 6,
+        "mode": "showcase",
+        "isPlaying": false,
+        "reducedMotion": false,
+        "activeCritter": "dragonfly",
+        "phase": "dragonfly_visit",
+        "pose": {
+          "raft": {
+            "x": 910,
+            "y": 461.44241469834617,
+            "rot": -0.0062314638494002095
+          },
+          "body": {
+            "scaleX": 0.9931000220014072,
+            "scaleY": 1.0137999559971855,
+            "rot": 0,
+            "yOffset": 0
+          },
+          "head": {
+            "rot": -0.07,
+            "yOffset": 0.6841787109189075,
+            "blink": 0,
+            "eyeStyle": "open",
+            "mouth": "neutral"
+          },
+          "tail": {
+            "rot": 0.08986890108371444
+          },
+          "armLeft": {
+            "rot": 0
+          },
+          "armRight": {
+            "rot": 0
+          },
+          "rod": {
+            "rot": 0,
+            "bend": 0
+          },
+          "bobber": {
+            "x": 643,
+            "y": 538.2503132810161,
+            "dip": 0
+          },
+          "dragonfly": {
+            "visible": true,
+            "x": 606.9817031732915,
+            "y": 236.80640511108535
+          },
+          "fish": {
+            "visible": false,
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "seconds": 8,
+      "state": {
+        "time": 8,
+        "mode": "showcase",
+        "isPlaying": false,
+        "reducedMotion": false,
+        "activeCritter": "dragonfly",
+        "phase": "dragonfly_leave",
+        "pose": {
+          "raft": {
+            "x": 910,
+            "y": 458.12199478699847,
+            "rot": 0.002436058365825005
+          },
+          "body": {
+            "scaleX": 1.0072121893899002,
+            "scaleY": 0.9855756212201997,
+            "rot": 0,
+            "yOffset": 0
+          },
+          "head": {
+            "rot": -0.020000000000000004,
+            "yOffset": -1.45656357013153,
+            "blink": 0,
+            "eyeStyle": "open",
+            "mouth": "neutral"
+          },
+          "tail": {
+            "rot": -0.07450438221770883
+          },
+          "armLeft": {
+            "rot": 0
+          },
+          "armRight": {
+            "rot": 0
+          },
+          "rod": {
+            "rot": 0,
+            "bend": 0
+          },
+          "bobber": {
+            "x": 643,
+            "y": 542.1479045371412,
+            "dip": 0
+          },
+          "dragonfly": {
+            "visible": true,
+            "x": 624.2741322095849,
+            "y": 232.02352273706356
+          },
+          "fish": {
+            "visible": false,
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "seconds": 10,
+      "state": {
+        "time": 10,
+        "mode": "showcase",
+        "isPlaying": false,
+        "reducedMotion": false,
+        "activeCritter": null,
+        "phase": "sleepy_hum",
+        "pose": {
+          "raft": {
+            "x": 910,
+            "y": 462.2760074405499,
+            "rot": 0.0016408466184940032
+          },
+          "body": {
+            "scaleX": 1.003578001148093,
+            "scaleY": 0.9928439977038142,
+            "rot": 0,
+            "yOffset": 0
+          },
+          "head": {
+            "rot": 0.03795938477422345,
+            "yOffset": -0.013276963935611143,
+            "blink": 0,
+            "eyeStyle": "happy",
+            "mouth": "surprised"
+          },
+          "tail": {
+            "rot": 0.0759187695484469
+          },
+          "armLeft": {
+            "rot": 0
+          },
+          "armRight": {
+            "rot": 0
+          },
+          "rod": {
+            "rot": 0,
+            "bend": 0
+          },
+          "bobber": {
+            "x": 643,
+            "y": 537.5965062703011,
+            "dip": 0
+          },
+          "dragonfly": {
+            "visible": false,
+            "x": -100,
+            "y": -100
+          },
+          "fish": {
+            "visible": false,
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "seconds": 12,
+      "state": {
+        "time": 12,
+        "mode": "showcase",
+        "isPlaying": false,
+        "reducedMotion": false,
+        "activeCritter": null,
+        "phase": "bite_warning",
+        "pose": {
+          "raft": {
+            "x": 910,
+            "y": 457.3715446362991,
+            "rot": -0.005528143048936388
+          },
+          "body": {
+            "scaleX": 0.9911397622377607,
+            "scaleY": 1.0177204755244786,
+            "rot": 0,
+            "yOffset": 0
+          },
+          "head": {
+            "rot": 0.03,
+            "yOffset": 1.4626790178069315,
+            "blink": 0,
+            "eyeStyle": "open",
+            "mouth": "surprised"
+          },
+          "tail": {
+            "rot": 0.009697828706949806
+          },
+          "armLeft": {
+            "rot": 0
+          },
+          "armRight": {
+            "rot": 0
+          },
+          "rod": {
+            "rot": 0,
+            "bend": 0
+          },
+          "bobber": {
+            "x": 643,
+            "y": 542.4994822503567,
+            "dip": 0
+          },
+          "dragonfly": {
+            "visible": false,
+            "x": -100,
+            "y": -100
+          },
+          "fish": {
+            "visible": false,
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "seconds": 14,
+      "state": {
+        "time": 14,
+        "mode": "showcase",
+        "isPlaying": false,
+        "reducedMotion": false,
+        "activeCritter": null,
+        "phase": "tug_anticipation",
+        "pose": {
+          "raft": {
+            "x": 910,
+            "y": 462.9282947348762,
+            "rot": 0.00877663314774599
+          },
+          "body": {
+            "scaleX": 1.000503076475479,
+            "scaleY": 0.9989938470490421,
+            "rot": -0.06,
+            "yOffset": 6
+          },
+          "head": {
+            "rot": -0.08,
+            "yOffset": -0.660441594214152,
+            "blink": 0,
+            "eyeStyle": "open",
+            "mouth": "surprised"
+          },
+          "tail": {
+            "rot": -0.05443495401656557
+          },
+          "armLeft": {
+            "rot": 0.08
+          },
+          "armRight": {
+            "rot": 0.08
+          },
+          "rod": {
+            "rot": -0.12,
+            "bend": 10
+          },
+          "bobber": {
+            "x": 643,
+            "y": 553.4242122136386,
+            "dip": 15.85370832799826
+          },
+          "dragonfly": {
+            "visible": false,
+            "x": -100,
+            "y": -100
+          },
+          "fish": {
+            "visible": false,
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "seconds": 16,
+      "state": {
+        "time": 16,
+        "mode": "showcase",
+        "isPlaying": false,
+        "reducedMotion": false,
+        "activeCritter": null,
+        "phase": "catch_pull",
+        "pose": {
+          "raft": {
+            "x": 910,
+            "y": 456.8304757329768,
+            "rot": -0.011010936606382336
+          },
+          "body": {
+            "scaleX": 1.0086285177788579,
+            "scaleY": 0.9827429644422845,
+            "rot": 0.06,
+            "yOffset": 0
+          },
+          "head": {
+            "rot": 0.06,
+            "yOffset": -1.1584757352143993,
+            "blink": 0,
+            "eyeStyle": "happy",
+            "mouth": "open_happy"
+          },
+          "tail": {
+            "rot": 0.08359157106695163
+          },
+          "armLeft": {
+            "rot": 0
+          },
+          "armRight": {
+            "rot": 0
+          },
+          "rod": {
+            "rot": 0.2,
+            "bend": 0
+          },
+          "bobber": {
+            "x": 643,
+            "y": 542.1981826541269,
+            "dip": 0
+          },
+          "dragonfly": {
+            "visible": false,
+            "x": -100,
+            "y": -100
+          },
+          "fish": {
+            "visible": true,
+            "x": 1075,
+            "y": 350
+          }
+        }
+      }
+    },
+    {
+      "seconds": 18,
+      "state": {
+        "time": 18,
+        "mode": "showcase",
+        "isPlaying": false,
+        "reducedMotion": false,
+        "activeCritter": null,
+        "phase": "celebrate",
+        "pose": {
+          "raft": {
+            "x": 910,
+            "y": 463.34731574941577,
+            "rot": 0.011972867776693565
+          },
+          "body": {
+            "scaleX": 0.9955225774881243,
+            "scaleY": 1.008242369704835,
+            "rot": 0.06,
+            "yOffset": 0
+          },
+          "head": {
+            "rot": 0.05301461254502685,
+            "yOffset": 1.1940423312715212,
+            "blink": 0,
+            "eyeStyle": "happy",
+            "mouth": "open_happy"
+          },
+          "tail": {
+            "rot": -0.11804604196009569
+          },
+          "armLeft": {
+            "rot": 0
+          },
+          "armRight": {
+            "rot": 0
+          },
+          "rod": {
+            "rot": 0.2,
+            "bend": 0
+          },
+          "bobber": {
+            "x": 643,
+            "y": 538.179098080421,
+            "dip": 0
+          },
+          "dragonfly": {
+            "visible": false,
+            "x": -100,
+            "y": -100
+          },
+          "fish": {
+            "visible": false,
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "seconds": 19.5,
+      "state": {
+        "time": 19.5,
+        "mode": "showcase",
+        "isPlaying": false,
+        "reducedMotion": false,
+        "activeCritter": null,
+        "phase": "settle",
+        "pose": {
+          "raft": {
+            "x": 910,
+            "y": 457.10173572032966,
+            "rot": -0.006740631310573763
+          },
+          "body": {
+            "scaleX": 1.0026794257883023,
+            "scaleY": 0.9946411484233953,
+            "rot": 0.013333333333333326,
+            "yOffset": 0
+          },
+          "head": {
+            "rot": 0.013333333333333326,
+            "yOffset": -0.9689594150766765,
+            "blink": 0,
+            "eyeStyle": "open",
+            "mouth": "neutral"
+          },
+          "tail": {
+            "rot": 0.01939982835529992
+          },
+          "armLeft": {
+            "rot": 0
+          },
+          "armRight": {
+            "rot": 0
+          },
+          "rod": {
+            "rot": 0.044444444444444425,
+            "bend": 0
+          },
+          "bobber": {
+            "x": 643,
+            "y": 542.4667496886224,
+            "dip": 0
+          },
+          "dragonfly": {
+            "visible": false,
+            "x": -100,
+            "y": -100
+          },
+          "fish": {
+            "visible": false,
+            "x": 0,
+            "y": 0
+          }
+        }
+      }
+    }
+  ]
+}

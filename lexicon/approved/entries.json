@@ -1,0 +1,992 @@
+{
+  "adj_schwer_syn_840": {
+    "entryId": "adj_schwer_syn_840",
+    "lemma": "schwer",
+    "partOfSpeech": "adjective",
+    "senseId": "schwer_syn_840",
+    "senseGlossVi": "schwierig, kompliziert, schwer",
+    "sourceRefs": [
+      {
+        "provider": "openthesaurus",
+        "providerId": "840",
+        "retrievedAt": "2026-10-09T07:26:59.069Z",
+        "sourceUrl": "https://www.openthesaurus.de/synonyme/search?q=schwer",
+        "licenseNote": "Creative Commons Attribution-ShareAlike 4.0 (CC-BY-SA) or GNU LGPL"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:27:26.218Z",
+    "updatedAt": "2026-10-09T07:27:26.220Z"
+  },
+  "adj_schwierig_syn_840": {
+    "entryId": "adj_schwierig_syn_840",
+    "lemma": "schwierig",
+    "partOfSpeech": "adjective",
+    "senseId": "schwierig_syn_840",
+    "senseGlossVi": "schwierig, kompliziert, schwer",
+    "sourceRefs": [
+      {
+        "provider": "openthesaurus",
+        "providerId": "840",
+        "retrievedAt": "2026-10-09T07:26:59.069Z",
+        "licenseNote": "Creative Commons Attribution-ShareAlike 4.0 (CC-BY-SA) or GNU LGPL"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:27:26.220Z",
+    "updatedAt": "2026-10-09T07:27:26.220Z"
+  },
+  "adj_schwer_difficulty": {
+    "entryId": "adj_schwer_difficulty",
+    "lemma": "schwer",
+    "partOfSpeech": "adjective",
+    "senseId": "schwer_difficulty",
+    "senseGlossVi": "khó ↔ dễ",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:27:34.471Z",
+    "updatedAt": "2026-10-09T07:28:27.839Z"
+  },
+  "adj_leicht_difficulty": {
+    "entryId": "adj_leicht_difficulty",
+    "lemma": "leicht",
+    "partOfSpeech": "adjective",
+    "senseId": "leicht_difficulty",
+    "senseGlossVi": "khó ↔ dễ",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:27:34.471Z",
+    "updatedAt": "2026-10-09T07:27:34.471Z"
+  },
+  "adj_schwierig_difficulty": {
+    "entryId": "adj_schwierig_difficulty",
+    "lemma": "schwierig",
+    "partOfSpeech": "adjective",
+    "senseId": "schwierig_difficulty",
+    "senseGlossVi": "khó, phức tạp",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:27.839Z",
+    "updatedAt": "2026-10-09T07:28:27.839Z"
+  },
+  "adj_schwer_difficulty_opp": {
+    "entryId": "adj_schwer_difficulty_opp",
+    "lemma": "schwer",
+    "partOfSpeech": "adjective",
+    "senseId": "schwer_difficulty_opp",
+    "senseGlossVi": "schwer ⇄ leicht",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:27.884Z",
+    "updatedAt": "2026-10-09T07:28:27.884Z"
+  },
+  "adj_leicht_difficulty_opp": {
+    "entryId": "adj_leicht_difficulty_opp",
+    "lemma": "leicht",
+    "partOfSpeech": "adjective",
+    "senseId": "leicht_difficulty_opp",
+    "senseGlossVi": "schwer ⇄ leicht",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:27.884Z",
+    "updatedAt": "2026-10-09T07:28:27.884Z"
+  },
+  "adj_leicht_ease": {
+    "entryId": "adj_leicht_ease",
+    "lemma": "leicht",
+    "partOfSpeech": "adjective",
+    "senseId": "leicht_ease",
+    "senseGlossVi": "dễ, đơn giản",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:27.933Z",
+    "updatedAt": "2026-10-09T07:28:27.933Z"
+  },
+  "adj_einfach_ease": {
+    "entryId": "adj_einfach_ease",
+    "lemma": "einfach",
+    "partOfSpeech": "adjective",
+    "senseId": "einfach_ease",
+    "senseGlossVi": "dễ, đơn giản",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:27.933Z",
+    "updatedAt": "2026-10-09T07:28:27.933Z"
+  },
+  "adj_leicht_ease_opp": {
+    "entryId": "adj_leicht_ease_opp",
+    "lemma": "leicht",
+    "partOfSpeech": "adjective",
+    "senseId": "leicht_ease_opp",
+    "senseGlossVi": "leicht ⇄ schwer",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:27.970Z",
+    "updatedAt": "2026-10-09T07:28:27.970Z"
+  },
+  "adj_schwer_ease_opp": {
+    "entryId": "adj_schwer_ease_opp",
+    "lemma": "schwer",
+    "partOfSpeech": "adjective",
+    "senseId": "schwer_ease_opp",
+    "senseGlossVi": "leicht ⇄ schwer",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:27.970Z",
+    "updatedAt": "2026-10-09T07:28:27.970Z"
+  },
+  "adj_teuer_price_high": {
+    "entryId": "adj_teuer_price_high",
+    "lemma": "teuer",
+    "partOfSpeech": "adjective",
+    "senseId": "teuer_price_high",
+    "senseGlossVi": "đắt, tốn kém",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.007Z",
+    "updatedAt": "2026-10-09T07:28:28.007Z"
+  },
+  "adj_kostspielig_price_high": {
+    "entryId": "adj_kostspielig_price_high",
+    "lemma": "kostspielig",
+    "partOfSpeech": "adjective",
+    "senseId": "kostspielig_price_high",
+    "senseGlossVi": "đắt, tốn kém",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.007Z",
+    "updatedAt": "2026-10-09T07:28:28.007Z"
+  },
+  "adj_teuer_price_high_opp": {
+    "entryId": "adj_teuer_price_high_opp",
+    "lemma": "teuer",
+    "partOfSpeech": "adjective",
+    "senseId": "teuer_price_high_opp",
+    "senseGlossVi": "teuer ⇄ billig",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.042Z",
+    "updatedAt": "2026-10-09T07:28:28.042Z"
+  },
+  "adj_billig_price_high_opp": {
+    "entryId": "adj_billig_price_high_opp",
+    "lemma": "billig",
+    "partOfSpeech": "adjective",
+    "senseId": "billig_price_high_opp",
+    "senseGlossVi": "teuer ⇄ billig",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.042Z",
+    "updatedAt": "2026-10-09T07:28:28.042Z"
+  },
+  "adj_billig_price_low": {
+    "entryId": "adj_billig_price_low",
+    "lemma": "billig",
+    "partOfSpeech": "adjective",
+    "senseId": "billig_price_low",
+    "senseGlossVi": "rẻ, phải chăng",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.081Z",
+    "updatedAt": "2026-10-09T07:28:28.081Z"
+  },
+  "adj_günstig_price_low": {
+    "entryId": "adj_günstig_price_low",
+    "lemma": "günstig",
+    "partOfSpeech": "adjective",
+    "senseId": "günstig_price_low",
+    "senseGlossVi": "rẻ, phải chăng",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.081Z",
+    "updatedAt": "2026-10-09T07:28:28.081Z"
+  },
+  "adj_billig_price_low_opp": {
+    "entryId": "adj_billig_price_low_opp",
+    "lemma": "billig",
+    "partOfSpeech": "adjective",
+    "senseId": "billig_price_low_opp",
+    "senseGlossVi": "billig ⇄ teuer",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.117Z",
+    "updatedAt": "2026-10-09T07:28:28.117Z"
+  },
+  "adj_teuer_price_low_opp": {
+    "entryId": "adj_teuer_price_low_opp",
+    "lemma": "teuer",
+    "partOfSpeech": "adjective",
+    "senseId": "teuer_price_low_opp",
+    "senseGlossVi": "billig ⇄ teuer",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.117Z",
+    "updatedAt": "2026-10-09T07:28:28.117Z"
+  },
+  "adj_leise_sound_quiet": {
+    "entryId": "adj_leise_sound_quiet",
+    "lemma": "leise",
+    "partOfSpeech": "adjective",
+    "senseId": "leise_sound_quiet",
+    "senseGlossVi": "nhỏ tiếng, yên tĩnh",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.152Z",
+    "updatedAt": "2026-10-09T07:28:28.152Z"
+  },
+  "adj_ruhig_sound_quiet": {
+    "entryId": "adj_ruhig_sound_quiet",
+    "lemma": "ruhig",
+    "partOfSpeech": "adjective",
+    "senseId": "ruhig_sound_quiet",
+    "senseGlossVi": "nhỏ tiếng, yên tĩnh",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.152Z",
+    "updatedAt": "2026-10-09T07:28:28.152Z"
+  },
+  "adj_leise_sound_quiet_opp": {
+    "entryId": "adj_leise_sound_quiet_opp",
+    "lemma": "leise",
+    "partOfSpeech": "adjective",
+    "senseId": "leise_sound_quiet_opp",
+    "senseGlossVi": "leise ⇄ laut",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.189Z",
+    "updatedAt": "2026-10-09T07:28:28.189Z"
+  },
+  "adj_laut_sound_quiet_opp": {
+    "entryId": "adj_laut_sound_quiet_opp",
+    "lemma": "laut",
+    "partOfSpeech": "adjective",
+    "senseId": "laut_sound_quiet_opp",
+    "senseGlossVi": "leise ⇄ laut",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.189Z",
+    "updatedAt": "2026-10-09T07:28:28.189Z"
+  },
+  "adj_laut_sound_loud": {
+    "entryId": "adj_laut_sound_loud",
+    "lemma": "laut",
+    "partOfSpeech": "adjective",
+    "senseId": "laut_sound_loud",
+    "senseGlossVi": "to tiếng, ồn ào",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.225Z",
+    "updatedAt": "2026-10-09T07:28:28.225Z"
+  },
+  "adj_lärmend_sound_loud": {
+    "entryId": "adj_lärmend_sound_loud",
+    "lemma": "lärmend",
+    "partOfSpeech": "adjective",
+    "senseId": "lärmend_sound_loud",
+    "senseGlossVi": "to tiếng, ồn ào",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.225Z",
+    "updatedAt": "2026-10-09T07:28:28.225Z"
+  },
+  "adj_laut_sound_loud_opp": {
+    "entryId": "adj_laut_sound_loud_opp",
+    "lemma": "laut",
+    "partOfSpeech": "adjective",
+    "senseId": "laut_sound_loud_opp",
+    "senseGlossVi": "laut ⇄ leise",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.260Z",
+    "updatedAt": "2026-10-09T07:28:28.260Z"
+  },
+  "adj_leise_sound_loud_opp": {
+    "entryId": "adj_leise_sound_loud_opp",
+    "lemma": "leise",
+    "partOfSpeech": "adjective",
+    "senseId": "leise_sound_loud_opp",
+    "senseGlossVi": "laut ⇄ leise",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.260Z",
+    "updatedAt": "2026-10-09T07:28:28.260Z"
+  },
+  "verb_beginnen_timing_start": {
+    "entryId": "verb_beginnen_timing_start",
+    "lemma": "beginnen",
+    "partOfSpeech": "verb",
+    "senseId": "beginnen_timing_start",
+    "senseGlossVi": "bắt đầu",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.296Z",
+    "updatedAt": "2026-10-09T07:28:28.296Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_anfangen_timing_start": {
+    "entryId": "verb_anfangen_timing_start",
+    "lemma": "anfangen",
+    "partOfSpeech": "verb",
+    "senseId": "anfangen_timing_start",
+    "senseGlossVi": "bắt đầu",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.296Z",
+    "updatedAt": "2026-10-09T07:28:28.296Z",
+    "verbMeta": {
+      "separable": true,
+      "prefix": "an",
+      "reflexive": false
+    }
+  },
+  "verb_beginnen_timing_start_opp": {
+    "entryId": "verb_beginnen_timing_start_opp",
+    "lemma": "beginnen",
+    "partOfSpeech": "verb",
+    "senseId": "beginnen_timing_start_opp",
+    "senseGlossVi": "beginnen ⇄ enden",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.331Z",
+    "updatedAt": "2026-10-09T07:28:28.332Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_enden_timing_start_opp": {
+    "entryId": "verb_enden_timing_start_opp",
+    "lemma": "enden",
+    "partOfSpeech": "verb",
+    "senseId": "enden_timing_start_opp",
+    "senseGlossVi": "beginnen ⇄ enden",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.332Z",
+    "updatedAt": "2026-10-09T07:28:28.332Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_enden_timing_end": {
+    "entryId": "verb_enden_timing_end",
+    "lemma": "enden",
+    "partOfSpeech": "verb",
+    "senseId": "enden_timing_end",
+    "senseGlossVi": "kết thúc, dừng lại",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.367Z",
+    "updatedAt": "2026-10-09T07:28:28.367Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_aufhören_timing_end": {
+    "entryId": "verb_aufhören_timing_end",
+    "lemma": "aufhören",
+    "partOfSpeech": "verb",
+    "senseId": "aufhören_timing_end",
+    "senseGlossVi": "kết thúc, dừng lại",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.367Z",
+    "updatedAt": "2026-10-09T07:28:28.367Z",
+    "verbMeta": {
+      "separable": true,
+      "prefix": "auf",
+      "reflexive": false
+    }
+  },
+  "verb_enden_timing_end_opp": {
+    "entryId": "verb_enden_timing_end_opp",
+    "lemma": "enden",
+    "partOfSpeech": "verb",
+    "senseId": "enden_timing_end_opp",
+    "senseGlossVi": "enden ⇄ beginnen",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.402Z",
+    "updatedAt": "2026-10-09T07:28:28.402Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_beginnen_timing_end_opp": {
+    "entryId": "verb_beginnen_timing_end_opp",
+    "lemma": "beginnen",
+    "partOfSpeech": "verb",
+    "senseId": "beginnen_timing_end_opp",
+    "senseGlossVi": "enden ⇄ beginnen",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.402Z",
+    "updatedAt": "2026-10-09T07:28:28.402Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_öffnen_action_open": {
+    "entryId": "verb_öffnen_action_open",
+    "lemma": "öffnen",
+    "partOfSpeech": "verb",
+    "senseId": "öffnen_action_open",
+    "senseGlossVi": "mở cửa",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.437Z",
+    "updatedAt": "2026-10-09T07:28:28.437Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_aufmachen_action_open": {
+    "entryId": "verb_aufmachen_action_open",
+    "lemma": "aufmachen",
+    "partOfSpeech": "verb",
+    "senseId": "aufmachen_action_open",
+    "senseGlossVi": "mở cửa",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.437Z",
+    "updatedAt": "2026-10-09T07:28:28.437Z",
+    "verbMeta": {
+      "separable": true,
+      "prefix": "auf",
+      "reflexive": false
+    }
+  },
+  "verb_öffnen_action_open_opp": {
+    "entryId": "verb_öffnen_action_open_opp",
+    "lemma": "öffnen",
+    "partOfSpeech": "verb",
+    "senseId": "öffnen_action_open_opp",
+    "senseGlossVi": "öffnen ⇄ schließen",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.474Z",
+    "updatedAt": "2026-10-09T07:28:28.474Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_schließen_action_open_opp": {
+    "entryId": "verb_schließen_action_open_opp",
+    "lemma": "schließen",
+    "partOfSpeech": "verb",
+    "senseId": "schließen_action_open_opp",
+    "senseGlossVi": "öffnen ⇄ schließen",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.474Z",
+    "updatedAt": "2026-10-09T07:28:28.474Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_schließen_action_close": {
+    "entryId": "verb_schließen_action_close",
+    "lemma": "schließen",
+    "partOfSpeech": "verb",
+    "senseId": "schließen_action_close",
+    "senseGlossVi": "đóng cửa",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.509Z",
+    "updatedAt": "2026-10-09T07:28:28.509Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_zumachen_action_close": {
+    "entryId": "verb_zumachen_action_close",
+    "lemma": "zumachen",
+    "partOfSpeech": "verb",
+    "senseId": "zumachen_action_close",
+    "senseGlossVi": "đóng cửa",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.509Z",
+    "updatedAt": "2026-10-09T07:28:28.509Z",
+    "verbMeta": {
+      "separable": true,
+      "prefix": "zu",
+      "reflexive": false
+    }
+  },
+  "verb_schließen_action_close_opp": {
+    "entryId": "verb_schließen_action_close_opp",
+    "lemma": "schließen",
+    "partOfSpeech": "verb",
+    "senseId": "schließen_action_close_opp",
+    "senseGlossVi": "schließen ⇄ öffnen",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.545Z",
+    "updatedAt": "2026-10-09T07:28:28.545Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_öffnen_action_close_opp": {
+    "entryId": "verb_öffnen_action_close_opp",
+    "lemma": "öffnen",
+    "partOfSpeech": "verb",
+    "senseId": "öffnen_action_close_opp",
+    "senseGlossVi": "schließen ⇄ öffnen",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.545Z",
+    "updatedAt": "2026-10-09T07:28:28.545Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_sich_beeilen_speed_fast": {
+    "entryId": "verb_sich_beeilen_speed_fast",
+    "lemma": "sich beeilen",
+    "partOfSpeech": "verb",
+    "senseId": "sich beeilen_speed_fast",
+    "senseGlossVi": "vội vã, gấp rút",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.581Z",
+    "updatedAt": "2026-10-09T07:28:28.581Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": true
+    }
+  },
+  "verb_eilen_speed_fast": {
+    "entryId": "verb_eilen_speed_fast",
+    "lemma": "eilen",
+    "partOfSpeech": "verb",
+    "senseId": "eilen_speed_fast",
+    "senseGlossVi": "vội vã, gấp rút",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.581Z",
+    "updatedAt": "2026-10-09T07:28:28.581Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_sich_beeilen_speed_fast_opp": {
+    "entryId": "verb_sich_beeilen_speed_fast_opp",
+    "lemma": "sich beeilen",
+    "partOfSpeech": "verb",
+    "senseId": "sich beeilen_speed_fast_opp",
+    "senseGlossVi": "sich beeilen ⇄ trödeln",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.619Z",
+    "updatedAt": "2026-10-09T07:28:28.619Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": true
+    }
+  },
+  "verb_trödeln_speed_fast_opp": {
+    "entryId": "verb_trödeln_speed_fast_opp",
+    "lemma": "trödeln",
+    "partOfSpeech": "verb",
+    "senseId": "trödeln_speed_fast_opp",
+    "senseGlossVi": "sich beeilen ⇄ trödeln",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.619Z",
+    "updatedAt": "2026-10-09T07:28:28.619Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_trödeln_speed_slow": {
+    "entryId": "verb_trödeln_speed_slow",
+    "lemma": "trödeln",
+    "partOfSpeech": "verb",
+    "senseId": "trödeln_speed_slow",
+    "senseGlossVi": "lề mề, tà tà",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.655Z",
+    "updatedAt": "2026-10-09T07:28:28.655Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_bummeln_speed_slow": {
+    "entryId": "verb_bummeln_speed_slow",
+    "lemma": "bummeln",
+    "partOfSpeech": "verb",
+    "senseId": "bummeln_speed_slow",
+    "senseGlossVi": "lề mề, tà tà",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.655Z",
+    "updatedAt": "2026-10-09T07:28:28.655Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_trödeln_speed_slow_opp": {
+    "entryId": "verb_trödeln_speed_slow_opp",
+    "lemma": "trödeln",
+    "partOfSpeech": "verb",
+    "senseId": "trödeln_speed_slow_opp",
+    "senseGlossVi": "trödeln ⇄ sich beeilen",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.690Z",
+    "updatedAt": "2026-10-09T07:28:28.690Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": false
+    }
+  },
+  "verb_sich_beeilen_speed_slow_opp": {
+    "entryId": "verb_sich_beeilen_speed_slow_opp",
+    "lemma": "sich beeilen",
+    "partOfSpeech": "verb",
+    "senseId": "sich beeilen_speed_slow_opp",
+    "senseGlossVi": "trödeln ⇄ sich beeilen",
+    "sourceRefs": [
+      {
+        "provider": "manual-curation",
+        "sourceUrl": "VokabelGo Expert Deck",
+        "licenseNote": "Curated dataset"
+      }
+    ],
+    "status": "approved",
+    "createdAt": "2026-10-09T07:28:28.690Z",
+    "updatedAt": "2026-10-09T07:28:28.690Z",
+    "verbMeta": {
+      "separable": false,
+      "prefix": null,
+      "reflexive": true
+    }
+  }
+}

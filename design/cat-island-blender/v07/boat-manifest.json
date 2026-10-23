@@ -1,0 +1,53 @@
+{
+  "asset": "HERO_BOAT",
+  "glb_path": "assets/cat-island/hero-boat-v07.glb",
+  "glb_size_bytes": 9105636,
+  "blend_path": "design/cat-island-blender/v07/hero-boat-v07.blend",
+  "renders": {
+    "overview": "design/cat-island-blender/v07/hero-boat-v07-overview.png",
+    "storefront_closeup": "design/cat-island-blender/v07/hero-boat-v07-storefront-closeup.png"
+  },
+  "bounds_blender_z_up": {
+    "min": [
+      -3.3,
+      -1.577,
+      -0.544
+    ],
+    "max": [
+      3.3,
+      1.531,
+      3.257
+    ],
+    "dimensions": [
+      6.6,
+      3.108,
+      3.801
+    ]
+  },
+  "waterplane_z": 0.0,
+  "submerged_hull_bottom_z": -0.544,
+  "deck_z": 0.55,
+  "roof_top_z": 3.257,
+  "triangles": 254549,
+  "editable_mesh_objects_in_blend": 707,
+  "exported_glb_draw_calls": 48,
+  "materials_count": 48,
+  "anchors": {
+    "CounterAnchor": [
+      -0.05,
+      -0.82,
+      1.06
+    ],
+    "BowAnchor": [
+      -3.15,
+      0.0,
+      1.15
+    ],
+    "SternAnchor": [
+      3.15,
+      0.0,
+      1.1
+    ]
+  },
+  "remaining_limits": "Static mesh hierarchy exported with PBR materials; no external texture dependencies."
+}

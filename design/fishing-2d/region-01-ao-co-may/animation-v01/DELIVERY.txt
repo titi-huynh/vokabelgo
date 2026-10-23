@@ -1,0 +1,77 @@
+AO CỎ MAY — BẢN THỬ HOẠT ẢNH 2D v01
+TRẠNG THÁI MỚI: NGƯỜI DÙNG ĐÃ TỪ CHỐI TẠO HÌNH/CHUYỂN ĐỘNG BẢN NÀY.
+Không dùng làm chuẩn. Bản thử thay thế 5s ở ../animation-v02/README.txt.
+Hoàn thành bản thử: 2026-10-21, Asia/Saigon.
+
+XEM KẾT QUẢ
+- Web tương tác: http://127.0.0.1:3011/
+- ao-co-may-showcase-v01.mp4: clip 20 giây xuất từ web, 1280×720,
+  H.264, 24 fps, 480 frame, không âm thanh.
+- ao-co-may-blender-idle-v01.mp4: clip 20 giây từ rig Blender độc lập,
+  1280×720, H.264, 24 fps, 480 frame, không âm thanh.
+- ao-co-may-cutout-v01.blend: nguồn 2D cutout có lớp và keyframe chỉnh
+  được; ảnh đã pack, camera orthographic. Đọc BLENDER-NOTES.txt.
+
+WEB ĐÃ CÓ
+- Mèo kem một bên tai/crown caramel, khăn vàng và tạp dề sage.
+- Bè mộc, sọt tre, cần nhánh cây, lon mồi giun nhỏ, phao và dây câu.
+- Thở/chớp mắt, đuôi khẽ động, mắt nhìn theo và đầu nghiêng; miệng
+  thư giãn/ngáp, ngạc nhiên, cười vui. Bè và phao dao động khác nhịp.
+- Chuồn chuồn bay cong, ghé đầu cần rồi rời đi; cánh chuyển động riêng
+  tương đối với phần thân. Chế độ chờ có ba hướng đến và thời gian nghỉ
+  ngẫu nhiên 20–45 giây hoạt động; lần đầu sớm để xem được bản thử.
+- Show 20 giây: chờ -> chuồn chuồn -> thư giãn/ngáp -> động phao ->
+  lấy đà -> vút cần -> cá bay vào miệng sọt -> cười -> trở về chờ.
+- Vai bám thân, tay bám điểm cầm trên cần khi cần xoay; dây bám đầu cần.
+- Khung điện thoại vuông, cắt bớt nước hai bên để nhìn rõ mèo, không
+  làm méo hình. Mèo/cần/phao/sọt nằm trong phần nhìn thấy.
+- Play/pause, tua timeline, đổi chế độ, gọi chuồn chuồn/cá cắn câu.
+- Tạm dừng khi tab ẩn, tiếp tục khi quay lại nếu trước đó đang phát;
+  không bù dồn sự kiện. Giảm chuyển động ẩn côn trùng/cá bay và dừng
+  chuyển động cơ thể, vẫn thể hiện trạng thái bằng biểu cảm.
+
+ĐÃ KIỂM TRA
+- node --check main.js: qua.
+- verify-preview.cjs: nạp đủ tài sản, không lỗi JS/failed requests,
+  11 mốc timeline; ảnh desktop, mobile 390×844, reduced motion.
+- Canvas lúc pause giữ nguyên checksum; tua sang mốc khác rồi quay
+  lại cho cùng ảnh, không phụ thuộc số lần vẽ. Gợn/bóng cá/tia nước
+  được tính theo thời gian pose, không tiến thêm khi dừng hình.
+- verify-controls.cjs: nút ambient bắt đầu, pause dừng đồng hồ, catch
+  tiếp tục từ trạng thái pause, cá xuất hiện trên cung bay, chuồn chuồn
+  bị hoãn lúc catch, nút showcase phát lại, reduced motion chặn critter.
+- Đã xem trực quan và sửa đầu hở cổ, tay rời thân/cần, thân dính sẵn tay,
+  kích thước đồ mồi, chiều vút cần và khung điện thoại.
+- Blender 5.2.2 LTS chạy thật, render xem frame 1/217/337 và cả 480 frame.
+- FFprobe xác nhận cả hai MP4 dài 20.000 giây, 1280×720, 24 fps, 480
+  frame và chỉ có stream video. Không đánh giá âm thanh vì bản thử im lặng.
+- Bằng chứng: review/verification.json, controls-verification.json,
+  desktop-*.png, mobile.png, reduced-motion.png, encoded-catch-frame.png.
+
+NGUỒN VÀ PHỐI HỢP
+- Antigravity dựng nền tảng controller web/canvas, mặt và timeline.
+  Bàn giao ban đầu giữ ở ANTIGRAVITY-HANDOFF.txt (lịch sử trước sửa cuối).
+- Codex tạo hình bằng built-in image_gen, đóng gói sprite, sửa rig/mặt/
+  nhịp câu/đường bay, làm Blender, kiểm tra và xuất clip cuối.
+- assets/generation-prompts.txt và body-correction-prompt.txt lưu nguyên
+  prompt; PNG sheet/ảnh sửa nguồn giữ lại. package-assets.py chỉ crop
+  cơ học và trim lề alpha, không vẽ bù/inpaint bằng mã.
+- Tham khảo tư liệu giới thiệu game ở reference-notes.txt; không chép
+  asset game và không tuyên bố đã chơi hay khảo sát từng frame trailer.
+
+GIỚI HẠN BẢN THỬ
+- Chưa nối với bài ôn, chấm đáp án, tiến độ học, thưởng cá hay NPC.
+- Chưa có rig tai riêng, tay nghịch nước, ngủ gật dài, đứng kéo cá hiếm,
+  mồi/hook vật lý hoặc âm thanh. Cần hiện xoay như một nhánh cứng, chưa
+  biến dạng uốn theo lực; rodBend trong debug là tham số dành cho bước sau.
+- Bản Blender là nghiên cứu rig idle/chuồn chuồn/ngáp riêng; timeline và
+  tỷ lệ không trùng từng frame với web, chưa chứa cảnh catch. Clip web là
+  kết quả chính để xem nhịp câu; chưa có bộ chuyển tự động Blender -> web.
+- Chưa coi là hoạt ảnh đã được chị duyệt hoặc game học hoàn chỉnh.
+
+CHẠY LẠI WEB
+Từ thư mục dự án: python -m http.server 3011 --bind 127.0.0.1 --directory
+"design/fishing-2d/region-01-ao-co-may/animation-v01"
+Rồi mở http://127.0.0.1:3011/. Server hiện đã được Codex khởi chạy.
+Kiểm tra/xuất clip: node design/fishing-2d/region-01-ao-co-may/animation-v01/verify-preview.cjs --video
+refine-preview.py là patch tích hợp đã chạy một lần, không cần chạy lại.

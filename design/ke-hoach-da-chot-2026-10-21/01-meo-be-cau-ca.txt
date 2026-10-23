@@ -1,0 +1,148 @@
+01 — MÈO TRÊN BÈ: NHÂN VẬT, HOẠT ẢNH VÀ VÒNG HỌC
+Lưu ngày 2026-10-21, theo cuộc trò chuyện đã được chị đồng ý lưu.
+Gốc dự án: C:/Users/huynh/OneDrive/Desktop/flash
+
+A. NHÂN VẬT CHÍNH — NGUỒN TẠO HÌNH ĐÃ CHỐT
+
+Lấy bản phác thảo Mèo Chợ của Đảo Mèo làm mèo chính cho trải nghiệm câu cá.
+Nguồn chuẩn hiện có:
+- design/cat-character-profile-v01/APPROVED_DESIGN.txt
+- design/cat-character-profile-v01/meo-cho-model-sheet.png
+- design/cat-character-profile-v01/meo-cho-expressions.png
+
+Giữ đúng:
+- Mèo kem, mảng caramel ở tai phải của nhân vật và đỉnh đầu, đầu đuôi caramel.
+- Đầu bo hình thang, má bè mềm, thân mũm mĩm, tay chân ngắn và nhìn rõ.
+- Tai tam giác bo, mắt nâu, mũi nhỏ, má hồng phẳng; không có khối mõm/má nổi.
+- Khăn vàng, tạp dề sage ngắn; phụ kiện câu cá có thể thay theo vùng/nâng cấp.
+- Mảng màu luôn theo bên phải của nhân vật, không tùy tiện lật khi đổi góc.
+
+Không lấy mèo 3D/web v07 làm nguồn thay thế bảng phác thảo đã duyệt.
+Bản mèo trắng trên bè trong design/rive-source/cat12/references/approved_concept.png
+là tham khảo bố cục bè/cảnh câu cá; nguồn nhận diện nhân vật mới là Mèo Chợ.
+
+Tính cách: hơi lười, thích nghịch, mê cá, hiền và thích khoe với người chơi.
+Diễn bằng cả mắt, miệng, tai, đuôi, trọng tâm cơ thể, không chỉ thay mặt.
+
+B. HƯỚNG SẢN XUẤT ĐÃ THỐNG NHẤT CHO BẢN THỬ
+
+Ưu tiên 2D tách lớp trong Blender, một góc 3/4 cố định, giữ chất nét và màu
+của phác thảo. Tách đầu, thân, tay, chân, tai, đuôi, khăn, mắt và miệng;
+vẽ bù những phần bị che để cử động không lộ khoảng trống.
+Bè, cần, dây, phao, hộp mồi và sọt là các phần riêng để đổi/nâng cấp.
+
+Blender có thể dùng Grease Pencil hoặc lớp hình có rig tùy kết quả thử.
+Chưa chốt kỹ thuật rig cuối cùng. Chưa mặc định phải dựng nhân vật 3D đầy đủ.
+Đầu ra dự kiến: .blend chỉnh sửa được, video xem thử và chuỗi PNG nền trong
+suốt/sprite phục vụ web. Tệp Blender không phải định dạng chạy trực tiếp trên web.
+
+C. BÈ VÀ DỤNG CỤ BAN ĐẦU
+
+- Vài thanh gỗ không đều buộc dây, một miếng vải gấp để ngồi.
+- Cần câu là nhánh cây cong, còn mẩu cành nhỏ; dây mảnh, nút buộc vụng.
+- Phao bằng nút bần/khúc gỗ nhỏ sơn đỏ, mồi giun đất trong lon cũ.
+- Sọt tre nhỏ đựng cá, chạc gỗ gác cần, chiếc lá mắc ở góc bè.
+- Cảm giác đơn sơ, ấm áp, dễ thương; vật dụng phải đọc được ở kích thước web.
+
+D. BẢNG 8 TƯ THẾ CẦN SẢN XUẤT TRƯỚC
+
+1. Ngồi thả câu, chờ phao.
+2. Hát vu vơ, nhắm mắt và đung đưa đầu/chân.
+3. Cúi xuống đưa tay nghịch nước.
+4. Ngáp rồi ngủ gật, ôm/gác cần an toàn.
+5. Giật mình khi phao chìm, tai hướng về nước.
+6. Ngồi lấy đà giật cần câu cá thường.
+7. Đứng phắt dậy, chống chân kéo cá hiếm.
+8. Quay sang người chơi, cười và khoe thành quả.
+
+Tám tư thế câu cá này chưa được tạo thành bảng hình mới. Các bảng nhân vật
+cũ đã có không đồng nghĩa đã có storyboard câu cá mới.
+
+E. HOẠT ẢNH CHỜ VÀ BIỂU CẢM
+
+Ngồi yên làm nền, xen kẽ các hành động ngắn:
+- Nhìn phao, chỉnh tư thế, đuôi ve vẩy, đung đưa chân.
+- Hát vu vơ; vài nốt nhạc nhỏ nổi lên rồi tan.
+- Gác cần, đưa tay khuấy nước; bị nước bắn thì rụt tay và lau bàn chân.
+- Ngắm bóng mình trong nước, nghiêng đầu rồi chạm thử.
+- Nhìn chuồn chuồn đậu trên cần, mắt dõi theo.
+- Giun thò khỏi hộp; mèo đẩy nắp lại, giun lại hé nắp.
+
+Chuỗi ngủ: ngáp -> cố mở mắt -> gục đầu -> giật mình tỉnh -> ngủ thật.
+Khi ngủ tai cụp, đuôi cuộn, có thể mơ thấy cá và cười nhỏ.
+Khi người học quay lại, mèo hé mắt rồi ngồi thẳng; không trách người học nghỉ.
+Nếu cá cắn lúc ngủ: tai bật lên trước, sau đó mèo choàng tỉnh.
+
+Nhịp hoạt ảnh dựa trên trạng thái tương tác thực tế:
+- Đang nhập đáp án/nghe bài: chuyển động nhỏ, ít gây phân tâm.
+- Ngừng tương tác: mới chuyển sang nghịch nước/ngáp/ngủ.
+- Hát có thể chỉ là hình; âm thanh do người học chọn và nhường bài nghe.
+- Ngưỡng chờ, tần suất ngẫu nhiên và thời lượng chưa chốt, phải thử thực tế.
+
+F. CÂU CÁ THƯỜNG — CHUỖI DIỄN CHÍNH
+
+Phao động -> mèo nhận ra -> nắm cần bằng hai tay -> lấy đà -> vút cần ->
+cá bay theo vòng cung -> rơi vào sọt làm sọt rung -> mèo quay sang người chơi.
+Mắt mở to/tai hướng trước lúc phát hiện, người ngả sau khi kéo, mắt dõi cá,
+kết thúc mắt cong cười và giơ tay/chỉ sọt/gật đầu tự hào/chỉnh khăn.
+Thời lượng gợi ý 3–4 giây, chưa phải yêu cầu hiệu năng đã kiểm chứng.
+
+Biến thể: kéo rất mạnh nhưng cá bé xíu; cá quẫy nước vào mặt; cá nhảy khỏi
+sọt khiến mèo ôm lại rồi lấy lá đậy. Các biến thể diễn không làm mất cá đã nhận.
+
+G. CÂU CÁ HIẾM — CAO TRÀO
+
+1. Gợn nước lớn, bóng cá/chiếc vây xuất hiện, phao chìm mạnh.
+2. Mèo ngồi kéo bằng hai tay, cần cong mà cá chưa lên.
+3. Mèo nhìn cần, mắt tròn, một tai lệch: ngạc nhiên.
+4. Đứng phắt dậy, chân dạng, đuôi duỗi để giữ thăng bằng.
+5. Giằng co, chân trượt một đoạn rồi bám lại.
+6. Ngả người lấy đà, kéo thật mạnh; cá bật khỏi nước.
+7. Cá vào sọt; mèo ngồi phịch, thở phào rồi quay ra cười/khoe.
+8. Có thể định lau trán nhưng tay ướt, đổi sang lau bằng khăn.
+
+Thời lượng gợi ý 6–8 giây; cho học tiếp thuận tiện, không ép xem dài lặp lại.
+Cá hiếm gắn mốc gần hoàn thành bộ từ lớn hoặc tiến bộ trí nhớ qua nhiều buổi.
+Có dấu hiệu báo trước, có lần nhận được bảo đảm ở mốc phù hợp. Phải tách
+“hoàn thành lượt học” với “nhớ vững”; không suy ra thuộc chỉ từ một lần đúng.
+Ngưỡng phần trăm, số lần ôn và lịch bảo đảm chưa chốt.
+
+H. TRẢ LỜI SAI VÀ ĐỒ NHẶT ĐƯỢC
+
+Hướng cập nhật được chị đề xuất sau phần hoạt ảnh: trả lời sai có thể câu lên
+rác/đồ cũ/đồ chơi hỏng và vẫn giữ được món đồ để bán ve chai, sửa hoặc trang trí.
+Mèo ngạc nhiên, tò mò, diễn hài; không giận dữ, không trừ cá cũ hoặc làm mất
+tiến độ vì sai. Từ sai đi vào danh sách cần ôn, có gợi ý và cơ hội sửa.
+Phần thưởng chỉ ghi một lần theo lượt hợp lệ, không nhân thưởng nhờ thử sai lặp.
+Danh sách đồ và cơ chế đổi ở hồ sơ 02. Cách thưởng khi sai rồi sửa đúng cần thử.
+
+I. NÂNG CẤP ĐỒ VÀ BÈ
+
+Mốc gợi ý: đệm ngồi -> sọt/thùng -> mái che -> đèn -> buồm -> bè rộng hơn.
+Cho chọn trang trí; nâng cấp ngoại hình không thay thế lịch ôn hay mua độ thuộc.
+- Có gối: vỗ gối trước khi ngồi.
+- Có mái: nằm duỗi khi nghỉ; có thể kê nồi hứng chỗ dột trong cảnh mưa.
+- Có đèn: bật đèn cho chuyến câu tối.
+- Có sọt tốt: gõ thành sọt để khoe.
+- Có cần mới: thử độ cong, vẫn giữ nhánh cây cũ làm kỷ niệm.
+Đồ từ các vùng và đồ sửa được gắn lên bè, kể lại hành trình của người học.
+Giá, cấp, công thức vật liệu, sức chứa và khả năng mở vùng chưa chốt.
+
+J. VÒNG ÔN ĐẦU BUỔI — Ý TƯỞNG GIỮ LẠI, CHƯA ĐỔI TRANG CHỦ
+
+Vào web -> mèo trên bè -> chọn bộ từ hoặc “Mèo chọn giúp em” -> chuyến câu
+khởi động -> kết quả -> ôn từ yếu -> bán cá/đổi đồ/trang trí.
+Gợi ý 2–4 phút, 5–8 từ; các số này là đề xuất cần thử.
+Có lựa chọn vào học ngay, không bắt khởi động mỗi lần mở web.
+Kết quả ba nhóm: nhớ tốt hôm nay / chưa chắc / cần ôn lại.
+Tách nhớ nghĩa, mạo từ, chính tả, mức trợ giúp; không gộp tất cả thành đã thuộc.
+
+Chị đã nói để tạm hướng này khi chuyển qua bàn Kino. Việc lưu không phải
+xác nhận đã ẩn/xóa Đảo Mèo hoặc thay trang đầu.
+
+K. THỨ TỰ GẦN NHẤT
+
+Bảng 8 tư thế -> demo 2D 15–20 giây:
+ngồi chờ -> hát -> phao chìm -> cá vào sọt -> nhìn người chơi cười.
+Sau khi kiểm tra tạo hình và chuyển động mới mở rộng ngủ, nghịch nước, cá hiếm.
+Đây là kế hoạch sản xuất; chưa có .blend/clip/sprite mới cho chuỗi này.

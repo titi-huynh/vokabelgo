@@ -1,0 +1,25 @@
+
+Running 20 tests using 1 worker
+
+  ok  1 [chromium] › e2e\kino-catalog.spec.js:10:1 › Kino starts with one row of covers and titles; a film opens its own parts (8.5s)
+  ok  2 [chromium] › e2e\kino-catalog.spec.js:41:1 › browser back and forward, reload and direct film links restore the right view (4.0s)
+  ok  3 [chromium] › e2e\kino-catalog.spec.js:73:1 › phone gallery scrolls as one row and detail count is visible only after selecting a film (2.4s)
+  ok  4 [chromium] › e2e\kino-frieren-review.spec.js:5:1 › German number words pass dictation while a different number remains incorrect (2.7s)
+  ok  5 [chromium] › e2e\kino-frieren-review.spec.js:25:1 › Frieren overview and full-dialogue writing remain usable on a phone (2.4s)
+  ok  6 [chromium] › e2e\kino-frieren-review.spec.js:41:1 › uncertain transcript review has five source clips and never writes learning progress (3.2s)
+  ok  7 [chromium] › e2e\kino-light.spec.js:11:1 › catalog and flashcards work without fetching movie subtitles; each selected film loads once (2.6s)
+  ok  8 [chromium] › e2e\kino-light.spec.js:32:1 › a failed subtitle download can be retried without losing the catalog (1.7s)
+  ok  9 [chromium] › e2e\kino-light.spec.js:47:1 › late subtitles cannot reopen a film after Back or replace a newer selection (1.5s)
+  ok 10 [chromium] › e2e\kino-light.spec.js:64:1 › all eight films offer a light source with byte ranges and a working original choice (9.5s)
+  ok 11 [chromium] › e2e\kino-light.spec.js:94:1 › rapid sentence choices keep the last request and stop within 80 ms of its end (3.1s)
+  ok 12 [chromium] › e2e\kino-light.spec.js:123:1 › changing quality during sentence playback still stops at the same sentence (5.6s)
+  ok 13 [chromium] › e2e\kino-peppa-chapters.spec.js:24:1 › five chapters cover the original movie; every light round has seven relevant lines (11.6s)
+  ok 14 [chromium] › e2e\kino-peppa-chapters.spec.js:64:1 › completion and resume stay independent across chapters, preserve the old record, and share completed lines with all mode (4.6s)
+  ok 15 [chromium] › e2e\kino-peppa-chapters.spec.js:87:1 › finishing seven lines offers a stopping point and next chapter; full movie and Bluey still work (7.5s)
+  ok 16 [chromium] › e2e\kino-peppa-chapters.spec.js:116:1 › reset affects only the selected round, and the original media stays in use (4.5s)
+  ok 17 [chromium] › e2e\kino-peppa-chapters.spec.js:137:1 › chapter viewer shows local time, stops naturally, replays this chapter, and restores full-movie controls (3.4s)
+  ok 18 [chromium] › e2e\kino-peppa-chapters.spec.js:158:1 › spoken turns have bilingual subtitles and do not mix old episode boundaries (2.2s)
+  ok 19 [chromium] › e2e\kino-peppa-chapters.spec.js:191:1 › a practice sentence stops at its own aligned end without waiting for the next timeupdate (2.4s)
+  ok 20 [chromium] › e2e\kino-peppa-chapters.spec.js:201:1 › Peppa stays usable on desktop and phone, with a review screenshot (2.8s)
+
+  20 passed (1.5m)

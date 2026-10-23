@@ -1,0 +1,1799 @@
+{
+  "method": "earshot local CPU; classification scores are not percentages of speech removed",
+  "original_first_window": {
+    "start": 0,
+    "end": 10,
+    "speech_score": 0.641,
+    "music_score": 0.579,
+    "lufs": -16.9
+  },
+  "windows": [
+    {
+      "name": "background-first",
+      "summary": "10.00 s busy, 3.9 onsets/s (attack 35 ms, decays in 50 ms). Music (AudioSet Music 0.76). Unvalidated hints - genre: ; mood (wrong for ~1 in 5 tracks in a test): warm and cozy music (z +2.2). Sounds most like: scissors cutting (z +2.4), a music box melody (z +2.2), a finger squeaking on glass (z +2.2) [weak reading]. AudioSet: Music 0.76, Inside, small room 0.10, Hiccup 0.07. peak -13.9 dBFS, -37.6 LUFS, brightness 1.6 kHz, bandwidth 16.3 kHz, noise floor -76 dBFS, side/mid -5 dB.",
+      "data": {
+        "path": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\review-assets\\peppa-uvr-sample\\02-background-uvr.wav",
+        "start": 0,
+        "end": 10,
+        "duration": 10,
+        "measurements": {
+          "duration": 10,
+          "peak_dbfs": -13.9,
+          "true_peak_dbtp": -13.9,
+          "rms_dbfs": -43.1,
+          "lufs": -37.6,
+          "lra_lu": 8.6,
+          "attack_ms": 35,
+          "decay_ms": 50,
+          "brightness_hz": 1649,
+          "bandwidth_hz": 16254,
+          "noise_floor_dbfs": -76.3,
+          "flatness": 0.002,
+          "harmonic_ratio": 0.557,
+          "onset_count": 39,
+          "onsets_per_s": 3.9,
+          "width": "side/mid -5 dB",
+          "digital_silence_frac": 0.002
+        },
+        "shape": "busy, 3.9 onsets/s (attack 35 ms, decays in 50 ms)",
+        "top_tags": [
+          {
+            "term": "scissors cutting",
+            "category": "foley",
+            "z": 2.48,
+            "cosine": 0.147,
+            "verdict": "weak"
+          },
+          {
+            "term": "a music box melody",
+            "category": "chimes",
+            "z": 2.29,
+            "cosine": 0.167,
+            "verdict": "weak"
+          },
+          {
+            "term": "a finger squeaking on glass",
+            "category": "foley",
+            "z": 2.27,
+            "cosine": 0.079,
+            "verdict": "weak"
+          }
+        ],
+        "music_hints": [
+          {
+            "term": "a music box",
+            "category": "instruments",
+            "z": 2.75,
+            "cosine": 0.214
+          },
+          {
+            "term": "pizzicato strings",
+            "category": "instruments",
+            "z": 2.45,
+            "cosine": 0.166
+          },
+          {
+            "term": "warm and cozy music",
+            "category": "music_mood",
+            "z": 2.29,
+            "cosine": 0.206
+          }
+        ],
+        "tags": {
+          "transitions": [
+            {
+              "term": "a quick swipe",
+              "z": 1.66,
+              "cosine": 0.117
+            },
+            {
+              "term": "a reverse cymbal swell",
+              "z": 1.25,
+              "cosine": 0.07
+            },
+            {
+              "term": "a short swish",
+              "z": 0.8,
+              "cosine": 0.073
+            }
+          ],
+          "impacts": [
+            {
+              "term": "a wooden knock",
+              "z": -0.01,
+              "cosine": -0.038
+            },
+            {
+              "term": "a sub bass drop",
+              "z": -0.07,
+              "cosine": -0.037
+            },
+            {
+              "term": "a punchy impact hit",
+              "z": -0.16,
+              "cosine": -0.106
+            }
+          ],
+          "ui": [
+            {
+              "term": "a camera shutter click",
+              "z": 1.1,
+              "cosine": 0.077
+            },
+            {
+              "term": "a button being pressed",
+              "z": 0.81,
+              "cosine": 0.041
+            },
+            {
+              "term": "a mouse click",
+              "z": 0.74,
+              "cosine": 0.046
+            }
+          ],
+          "keyboard": [
+            {
+              "term": "an old typewriter",
+              "z": 0.69,
+              "cosine": 0.017
+            },
+            {
+              "term": "slow typing with separate key presses",
+              "z": 0.47,
+              "cosine": 0.043
+            },
+            {
+              "term": "a laptop keyboard typing",
+              "z": 0.39,
+              "cosine": 0.034
+            }
+          ],
+          "foley": [
+            {
+              "term": "scissors cutting",
+              "z": 2.48,
+              "cosine": 0.147
+            },
+            {
+              "term": "a finger squeaking on glass",
+              "z": 2.27,
+              "cosine": 0.079
+            },
+            {
+              "term": "a squishy wet squelch",
+              "z": 2.03,
+              "cosine": 0.075
+            }
+          ],
+          "water": [
+            {
+              "term": "ice cubes in a glass",
+              "z": 1.58,
+              "cosine": 0.077
+            },
+            {
+              "term": "a liquid bloop",
+              "z": -0.28,
+              "cosine": -0.006
+            },
+            {
+              "term": "bubbles underwater",
+              "z": -0.32,
+              "cosine": -0.064
+            }
+          ],
+          "nature": [
+            {
+              "term": "digging in soil",
+              "z": 1.49,
+              "cosine": 0.008
+            },
+            {
+              "term": "walking through dry leaves",
+              "z": 1.1,
+              "cosine": 0.025
+            },
+            {
+              "term": "a branch snapping",
+              "z": 0.74,
+              "cosine": 0.033
+            }
+          ],
+          "chimes": [
+            {
+              "term": "a music box melody",
+              "z": 2.29,
+              "cosine": 0.167
+            },
+            {
+              "term": "a magic sparkle chime",
+              "z": 1.79,
+              "cosine": 0.148
+            },
+            {
+              "term": "a wine glass ring",
+              "z": 1.39,
+              "cosine": 0.036
+            }
+          ],
+          "ambience": [
+            {
+              "term": "a crackling fire",
+              "z": 0.5,
+              "cosine": 0.03
+            },
+            {
+              "term": "crickets at night",
+              "z": 0.43,
+              "cosine": -0.049
+            },
+            {
+              "term": "a summer meadow with insects",
+              "z": 0.42,
+              "cosine": -0.017
+            }
+          ],
+          "everyday": [
+            {
+              "term": "a cash register",
+              "z": 1.98,
+              "cosine": 0.104
+            },
+            {
+              "term": "a match being struck",
+              "z": 1.73,
+              "cosine": 0.054
+            },
+            {
+              "term": "keys jingling",
+              "z": 1.32,
+              "cosine": 0.045
+            }
+          ],
+          "music_genre": [
+            {
+              "term": "classical string quartet",
+              "z": 2.04,
+              "cosine": 0.102
+            },
+            {
+              "term": "playful children's piano music",
+              "z": 1.45,
+              "cosine": 0.116
+            },
+            {
+              "term": "jazz music",
+              "z": 1.35,
+              "cosine": 0.073
+            }
+          ],
+          "music_mood": [
+            {
+              "term": "warm and cozy music",
+              "z": 2.29,
+              "cosine": 0.206
+            },
+            {
+              "term": "mysterious music",
+              "z": 1.79,
+              "cosine": 0.159
+            },
+            {
+              "term": "sad and melancholic music",
+              "z": 1.6,
+              "cosine": 0.132
+            }
+          ],
+          "instruments": [
+            {
+              "term": "a music box",
+              "z": 2.75,
+              "cosine": 0.214
+            },
+            {
+              "term": "pizzicato strings",
+              "z": 2.45,
+              "cosine": 0.166
+            },
+            {
+              "term": "a celesta",
+              "z": 1.76,
+              "cosine": 0.179
+            }
+          ],
+          "voice": [
+            {
+              "term": "a baby crying",
+              "z": 1.18,
+              "cosine": -0.015
+            },
+            {
+              "term": "a person coughing",
+              "z": 0.6,
+              "cosine": -0.052
+            },
+            {
+              "term": "a person breathing",
+              "z": 0.57,
+              "cosine": -0.027
+            }
+          ],
+          "quality": [
+            {
+              "term": "a bright sound",
+              "z": 1.42,
+              "cosine": 0.106
+            },
+            {
+              "term": "a satisfying sound",
+              "z": 1.21,
+              "cosine": 0.117
+            },
+            {
+              "term": "a tight snappy sound",
+              "z": 0.27,
+              "cosine": 0.006
+            }
+          ],
+          "production": [
+            {
+              "term": "a low quality recording with hiss",
+              "z": 0.83,
+              "cosine": 0
+            },
+            {
+              "term": "a low bitrate mp3 with artifacts",
+              "z": 0.52,
+              "cosine": 0.039
+            },
+            {
+              "term": "a cheap synthesized beep",
+              "z": 0.47,
+              "cosine": -0.021
+            }
+          ]
+        },
+        "audioset": [
+          {
+            "label": "Music",
+            "p": 0.764
+          },
+          {
+            "label": "Inside, small room",
+            "p": 0.097
+          },
+          {
+            "label": "Hiccup",
+            "p": 0.071
+          },
+          {
+            "label": "Speech",
+            "p": 0.058
+          }
+        ],
+        "character": []
+      }
+    },
+    {
+      "name": "original-middle",
+      "summary": "10.00 s busy, 4.7 onsets/s (attack 216 ms, decays in 1493 ms). Music (AudioSet Music 0.63). Unvalidated hints - genre: ; mood (wrong for ~1 in 5 tracks in a test): . Sounds most like: digging in soil (z +3.5), a rubber stretch (z +3.5) [clear reading]. AudioSet: Speech 0.64, Music 0.63, Groan 0.16. peak -4.3 dBFS, -16.7 LUFS, brightness 2.1 kHz, bandwidth 16.3 kHz, noise floor -46 dBFS, side/mid -26 dB.",
+      "data": {
+        "path": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\review-assets\\peppa-uvr-sample\\01-original.wav",
+        "start": 10,
+        "end": 20,
+        "duration": 10,
+        "measurements": {
+          "duration": 10,
+          "peak_dbfs": -4.3,
+          "true_peak_dbtp": -4.3,
+          "rms_dbfs": -20.9,
+          "lufs": -16.7,
+          "lra_lu": 3,
+          "attack_ms": 216,
+          "decay_ms": 1493,
+          "brightness_hz": 2120,
+          "bandwidth_hz": 16254,
+          "noise_floor_dbfs": -45.5,
+          "flatness": 0,
+          "harmonic_ratio": 0.373,
+          "onset_count": 47,
+          "onsets_per_s": 4.7,
+          "width": "side/mid -26 dB",
+          "digital_silence_frac": 0
+        },
+        "shape": "busy, 4.7 onsets/s (attack 216 ms, decays in 1493 ms)",
+        "top_tags": [
+          {
+            "term": "digging in soil",
+            "category": "nature",
+            "z": 3.58,
+            "cosine": 0.059,
+            "verdict": "strong"
+          },
+          {
+            "term": "a rubber stretch",
+            "category": "foley",
+            "z": 3.58,
+            "cosine": 0.116,
+            "verdict": "strong"
+          }
+        ],
+        "music_hints": [
+          {
+            "term": "pizzicato strings",
+            "category": "instruments",
+            "z": 2.65,
+            "cosine": 0.092
+          },
+          {
+            "term": "a music box",
+            "category": "instruments",
+            "z": 2.22,
+            "cosine": 0.093
+          }
+        ],
+        "tags": {
+          "transitions": [
+            {
+              "term": "a tape stop slowing down",
+              "z": 1.95,
+              "cosine": 0.059
+            },
+            {
+              "term": "a reverse cymbal swell",
+              "z": 1.41,
+              "cosine": 0
+            },
+            {
+              "term": "a downlifter falling sweep",
+              "z": 0.4,
+              "cosine": -0.064
+            }
+          ],
+          "impacts": [
+            {
+              "term": "a snare hit",
+              "z": 0.68,
+              "cosine": -0.11
+            },
+            {
+              "term": "a punchy impact hit",
+              "z": 0.63,
+              "cosine": -0.131
+            },
+            {
+              "term": "a body falling on the ground",
+              "z": 0.56,
+              "cosine": -0.103
+            }
+          ],
+          "ui": [
+            {
+              "term": "a phone vibration buzz",
+              "z": 0.9,
+              "cosine": -0.071
+            },
+            {
+              "term": "a camera shutter click",
+              "z": 0.22,
+              "cosine": -0.06
+            },
+            {
+              "term": "an error buzz",
+              "z": -0.07,
+              "cosine": -0.119
+            }
+          ],
+          "keyboard": [
+            {
+              "term": "an old typewriter",
+              "z": -0.08,
+              "cosine": -0.111
+            },
+            {
+              "term": "slow typing with separate key presses",
+              "z": -0.98,
+              "cosine": -0.127
+            },
+            {
+              "term": "a clicky mechanical keyboard",
+              "z": -1.14,
+              "cosine": -0.153
+            }
+          ],
+          "foley": [
+            {
+              "term": "a rubber stretch",
+              "z": 3.58,
+              "cosine": 0.116
+            },
+            {
+              "term": "a squishy wet squelch",
+              "z": 2.77,
+              "cosine": 0.038
+            },
+            {
+              "term": "a balloon squeak",
+              "z": 2.05,
+              "cosine": -0.005
+            }
+          ],
+          "water": [
+            {
+              "term": "bubbles underwater",
+              "z": 2.13,
+              "cosine": 0.018
+            },
+            {
+              "term": "being underwater",
+              "z": 1.46,
+              "cosine": -0.01
+            },
+            {
+              "term": "ice cubes in a glass",
+              "z": 0.99,
+              "cosine": -0.044
+            }
+          ],
+          "nature": [
+            {
+              "term": "digging in soil",
+              "z": 3.58,
+              "cosine": 0.059
+            },
+            {
+              "term": "an apple falling on grass",
+              "z": 1.99,
+              "cosine": 0.013
+            },
+            {
+              "term": "insects buzzing",
+              "z": 1.89,
+              "cosine": 0.003
+            }
+          ],
+          "chimes": [
+            {
+              "term": "a music box melody",
+              "z": 1.88,
+              "cosine": 0.055
+            },
+            {
+              "term": "a sustained glass harp tone",
+              "z": 1.25,
+              "cosine": -0.073
+            },
+            {
+              "term": "a kalimba note",
+              "z": 1.08,
+              "cosine": -0.019
+            }
+          ],
+          "ambience": [
+            {
+              "term": "a summer meadow with insects",
+              "z": 1.54,
+              "cosine": -0.023
+            },
+            {
+              "term": "a crackling fire",
+              "z": 1.18,
+              "cosine": -0.004
+            },
+            {
+              "term": "crickets at night",
+              "z": 0.96,
+              "cosine": -0.092
+            }
+          ],
+          "everyday": [
+            {
+              "term": "a cow mooing",
+              "z": 1.78,
+              "cosine": -0.047
+            },
+            {
+              "term": "a horse neighing",
+              "z": 1.68,
+              "cosine": -0.066
+            },
+            {
+              "term": "a power drill",
+              "z": 1.32,
+              "cosine": -0.057
+            }
+          ],
+          "music_genre": [
+            {
+              "term": "jazz music",
+              "z": 2.14,
+              "cosine": 0.042
+            },
+            {
+              "term": "playful children's piano music",
+              "z": 2,
+              "cosine": 0.069
+            },
+            {
+              "term": "funk music",
+              "z": 1.53,
+              "cosine": 0.031
+            }
+          ],
+          "music_mood": [
+            {
+              "term": "aggressive music",
+              "z": 1.2,
+              "cosine": -0.002
+            },
+            {
+              "term": "playful and quirky music",
+              "z": 0.92,
+              "cosine": 0.022
+            },
+            {
+              "term": "celebratory and joyful music",
+              "z": 0.85,
+              "cosine": -0.029
+            }
+          ],
+          "instruments": [
+            {
+              "term": "pizzicato strings",
+              "z": 2.65,
+              "cosine": 0.092
+            },
+            {
+              "term": "a music box",
+              "z": 2.22,
+              "cosine": 0.093
+            },
+            {
+              "term": "a snare roll",
+              "z": 1.87,
+              "cosine": -0.018
+            }
+          ],
+          "voice": [
+            {
+              "term": "a man shouting",
+              "z": 1.98,
+              "cosine": -0.112
+            },
+            {
+              "term": "a baby crying",
+              "z": 1.58,
+              "cosine": -0.071
+            },
+            {
+              "term": "children laughing",
+              "z": 1.43,
+              "cosine": -0.117
+            }
+          ],
+          "quality": [
+            {
+              "term": "a boomy sound",
+              "z": 1.18,
+              "cosine": 0.005
+            },
+            {
+              "term": "a harsh sound",
+              "z": 0.42,
+              "cosine": -0.071
+            },
+            {
+              "term": "a tight snappy sound",
+              "z": 0.01,
+              "cosine": -0.087
+            }
+          ],
+          "production": [
+            {
+              "term": "a retro video game sound effect",
+              "z": 1.76,
+              "cosine": 0.034
+            },
+            {
+              "term": "an 8-bit sound effect",
+              "z": 1.38,
+              "cosine": 0.004
+            },
+            {
+              "term": "a low quality recording with hiss",
+              "z": 0.5,
+              "cosine": -0.101
+            }
+          ]
+        },
+        "audioset": [
+          {
+            "label": "Speech",
+            "p": 0.643
+          },
+          {
+            "label": "Music",
+            "p": 0.627
+          },
+          {
+            "label": "Groan",
+            "p": 0.164
+          },
+          {
+            "label": "Music for children",
+            "p": 0.105
+          },
+          {
+            "label": "Inside, small room",
+            "p": 0.076
+          }
+        ],
+        "character": []
+      }
+    },
+    {
+      "name": "background-middle",
+      "summary": "10.00 s busy, 4.3 onsets/s (attack 12 ms, decays in 405 ms). Music (AudioSet Music 0.66). Unvalidated hints - genre: jazz music (z +3.0); mood (wrong for ~1 in 5 tracks in a test): . Sounds most like: digging in soil (z +2.8), a cow mooing (z +2.2) [plausible reading]. AudioSet: Music 0.66, Speech 0.17, Inside, small room 0.07. peak -11.3 dBFS, -36.6 LUFS, brightness 2.0 kHz, bandwidth 16.3 kHz, noise floor -68 dBFS, side/mid -10 dB.",
+      "data": {
+        "path": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\review-assets\\peppa-uvr-sample\\02-background-uvr.wav",
+        "start": 10,
+        "end": 20,
+        "duration": 10,
+        "measurements": {
+          "duration": 10,
+          "peak_dbfs": -11.3,
+          "true_peak_dbtp": -11.3,
+          "rms_dbfs": -40.5,
+          "lufs": -36.6,
+          "lra_lu": 13.3,
+          "attack_ms": 12,
+          "decay_ms": 405,
+          "brightness_hz": 1952,
+          "bandwidth_hz": 16254,
+          "noise_floor_dbfs": -67.8,
+          "flatness": 0.001,
+          "harmonic_ratio": 0.194,
+          "onset_count": 43,
+          "onsets_per_s": 4.3,
+          "width": "side/mid -10 dB",
+          "digital_silence_frac": 0.001
+        },
+        "shape": "busy, 4.3 onsets/s (attack 12 ms, decays in 405 ms)",
+        "top_tags": [
+          {
+            "term": "digging in soil",
+            "category": "nature",
+            "z": 2.81,
+            "cosine": 0.095,
+            "verdict": "plausible"
+          },
+          {
+            "term": "a cow mooing",
+            "category": "everyday",
+            "z": 2.24,
+            "cosine": 0.056,
+            "verdict": "weak"
+          }
+        ],
+        "music_hints": [
+          {
+            "term": "brass section",
+            "category": "instruments",
+            "z": 3.89,
+            "cosine": 0.262
+          },
+          {
+            "term": "jazz music",
+            "category": "music_genre",
+            "z": 3.01,
+            "cosine": 0.185
+          }
+        ],
+        "tags": {
+          "transitions": [
+            {
+              "term": "a stick swung fast through the air",
+              "z": 1.78,
+              "cosine": 0.069
+            },
+            {
+              "term": "a reverse cymbal swell",
+              "z": 1.66,
+              "cosine": 0.08
+            },
+            {
+              "term": "cloth whipping through the air",
+              "z": 0.97,
+              "cosine": -0.006
+            }
+          ],
+          "impacts": [
+            {
+              "term": "a big braam",
+              "z": 0.91,
+              "cosine": 0.021
+            },
+            {
+              "term": "a wooden knock",
+              "z": 0.79,
+              "cosine": -0.012
+            },
+            {
+              "term": "a metallic clang",
+              "z": 0.78,
+              "cosine": -0.021
+            }
+          ],
+          "ui": [
+            {
+              "term": "a phone vibration buzz",
+              "z": 0.17,
+              "cosine": -0.079
+            },
+            {
+              "term": "a notification ding",
+              "z": -0.48,
+              "cosine": -0.088
+            },
+            {
+              "term": "a scroll wheel tick",
+              "z": -0.81,
+              "cosine": -0.088
+            }
+          ],
+          "keyboard": [
+            {
+              "term": "an old typewriter",
+              "z": 0.44,
+              "cosine": -0.034
+            },
+            {
+              "term": "slow typing with separate key presses",
+              "z": -0.71,
+              "cosine": -0.086
+            },
+            {
+              "term": "a clicky mechanical keyboard",
+              "z": -1.02,
+              "cosine": -0.127
+            }
+          ],
+          "foley": [
+            {
+              "term": "a rubber stretch",
+              "z": 2.11,
+              "cosine": 0.095
+            },
+            {
+              "term": "a knife chopping on a board",
+              "z": 1.73,
+              "cosine": 0.093
+            },
+            {
+              "term": "a squishy wet squelch",
+              "z": 1.48,
+              "cosine": 0.016
+            }
+          ],
+          "water": [
+            {
+              "term": "being underwater",
+              "z": 0.94,
+              "cosine": 0.009
+            },
+            {
+              "term": "bubbles underwater",
+              "z": 0.38,
+              "cosine": -0.052
+            },
+            {
+              "term": "water splashing",
+              "z": 0.36,
+              "cosine": -0.052
+            }
+          ],
+          "nature": [
+            {
+              "term": "digging in soil",
+              "z": 2.81,
+              "cosine": 0.095
+            },
+            {
+              "term": "a branch snapping",
+              "z": 1.13,
+              "cosine": 0.034
+            },
+            {
+              "term": "a bee flying by",
+              "z": 1.02,
+              "cosine": -0.004
+            }
+          ],
+          "chimes": [
+            {
+              "term": "a sustained glass harp tone",
+              "z": 1.59,
+              "cosine": 0.012
+            },
+            {
+              "term": "a music box melody",
+              "z": 1.22,
+              "cosine": 0.07
+            },
+            {
+              "term": "a celesta note",
+              "z": 0.85,
+              "cosine": 0.063
+            }
+          ],
+          "ambience": [
+            {
+              "term": "a summer meadow with insects",
+              "z": 0.59,
+              "cosine": -0.038
+            },
+            {
+              "term": "crickets at night",
+              "z": 0.32,
+              "cosine": -0.092
+            },
+            {
+              "term": "a busy cafe",
+              "z": 0.25,
+              "cosine": -0.169
+            }
+          ],
+          "everyday": [
+            {
+              "term": "a cow mooing",
+              "z": 2.24,
+              "cosine": 0.056
+            },
+            {
+              "term": "a sword being drawn",
+              "z": 1.82,
+              "cosine": 0.052
+            },
+            {
+              "term": "a horse neighing",
+              "z": 1.69,
+              "cosine": 0
+            }
+          ],
+          "music_genre": [
+            {
+              "term": "jazz music",
+              "z": 3.01,
+              "cosine": 0.185
+            },
+            {
+              "term": "classical string quartet",
+              "z": 2.8,
+              "cosine": 0.15
+            },
+            {
+              "term": "playful children's piano music",
+              "z": 1.28,
+              "cosine": 0.082
+            }
+          ],
+          "music_mood": [
+            {
+              "term": "aggressive music",
+              "z": 1.94,
+              "cosine": 0.115
+            },
+            {
+              "term": "triumphant and heroic music",
+              "z": 1.89,
+              "cosine": 0.101
+            },
+            {
+              "term": "mysterious music",
+              "z": 1.6,
+              "cosine": 0.127
+            }
+          ],
+          "instruments": [
+            {
+              "term": "brass section",
+              "z": 3.89,
+              "cosine": 0.262
+            },
+            {
+              "term": "pizzicato strings",
+              "z": 2.55,
+              "cosine": 0.165
+            },
+            {
+              "term": "orchestral percussion",
+              "z": 2.08,
+              "cosine": 0.145
+            }
+          ],
+          "voice": [
+            {
+              "term": "a baby crying",
+              "z": 1.62,
+              "cosine": -0.004
+            },
+            {
+              "term": "a person coughing",
+              "z": 0.75,
+              "cosine": -0.072
+            },
+            {
+              "term": "a man shouting",
+              "z": 0.72,
+              "cosine": -0.144
+            }
+          ],
+          "quality": [
+            {
+              "term": "a metallic sound",
+              "z": 1.5,
+              "cosine": 0.009
+            },
+            {
+              "term": "a boomy sound",
+              "z": 1.44,
+              "cosine": 0.082
+            },
+            {
+              "term": "a hollow sound",
+              "z": 0.84,
+              "cosine": -0.001
+            }
+          ],
+          "production": [
+            {
+              "term": "a retro video game sound effect",
+              "z": -0.05,
+              "cosine": -0.047
+            },
+            {
+              "term": "a professionally mixed and mastered music track",
+              "z": -0.22,
+              "cosine": 0.074
+            },
+            {
+              "term": "a real recording of a physical object",
+              "z": -0.23,
+              "cosine": -0.039
+            }
+          ]
+        },
+        "audioset": [
+          {
+            "label": "Music",
+            "p": 0.662
+          },
+          {
+            "label": "Speech",
+            "p": 0.169
+          },
+          {
+            "label": "Inside, small room",
+            "p": 0.075
+          }
+        ],
+        "character": []
+      }
+    },
+    {
+      "name": "original-end",
+      "summary": "11.60 s busy, 3.4 onsets/s (attack 0 ms, decays in 668 ms). Music (AudioSet Music 0.72). Unvalidated hints - genre: ; mood (wrong for ~1 in 5 tracks in a test): . Sounds most like: a cow mooing (z +2.1), digging in soil (z +1.9) [weak reading]. AudioSet: Speech 0.94, Music 0.72, Oink 0.38. peak -4.5 dBFS, -17.1 LUFS, brightness 2.6 kHz, bandwidth 16.3 kHz, noise floor -46 dBFS, side/mid -32 dB.",
+      "data": {
+        "path": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\review-assets\\peppa-uvr-sample\\01-original.wav",
+        "start": 20,
+        "end": 31.6,
+        "duration": 11.6,
+        "measurements": {
+          "duration": 11.6,
+          "peak_dbfs": -4.5,
+          "true_peak_dbtp": -4.5,
+          "rms_dbfs": -20.8,
+          "lufs": -17.1,
+          "lra_lu": 1,
+          "attack_ms": 0,
+          "decay_ms": 668,
+          "brightness_hz": 2599,
+          "bandwidth_hz": 16254,
+          "noise_floor_dbfs": -45.8,
+          "flatness": 0.001,
+          "harmonic_ratio": 0.44,
+          "onset_count": 39,
+          "onsets_per_s": 3.36,
+          "width": "side/mid -32 dB",
+          "digital_silence_frac": 0.02
+        },
+        "shape": "busy, 3.4 onsets/s (attack 0 ms, decays in 668 ms)",
+        "top_tags": [
+          {
+            "term": "a cow mooing",
+            "category": "everyday",
+            "z": 2.12,
+            "cosine": -0.009,
+            "verdict": "weak"
+          },
+          {
+            "term": "digging in soil",
+            "category": "nature",
+            "z": 1.94,
+            "cosine": -0.029,
+            "verdict": "no match"
+          }
+        ],
+        "music_hints": [
+          {
+            "term": "a voice-over narration",
+            "category": "voice",
+            "z": 3.01,
+            "cosine": 0.075
+          },
+          {
+            "term": "a vocal chop",
+            "category": "instruments",
+            "z": 2.64,
+            "cosine": 0.152
+          }
+        ],
+        "tags": {
+          "transitions": [
+            {
+              "term": "a reverse cymbal swell",
+              "z": 0.48,
+              "cosine": -0.054
+            },
+            {
+              "term": "a deep cinematic whoosh",
+              "z": 0.18,
+              "cosine": -0.102
+            },
+            {
+              "term": "a fast whoosh",
+              "z": -0.36,
+              "cosine": -0.133
+            }
+          ],
+          "impacts": [
+            {
+              "term": "a punchy impact hit",
+              "z": 1.88,
+              "cosine": -0.036
+            },
+            {
+              "term": "a sub bass drop",
+              "z": 1.19,
+              "cosine": -0.02
+            },
+            {
+              "term": "a cinematic hit with a long tail",
+              "z": 1.12,
+              "cosine": -0.065
+            }
+          ],
+          "ui": [
+            {
+              "term": "a notification ding",
+              "z": 1.24,
+              "cosine": 0.004
+            },
+            {
+              "term": "a success chime",
+              "z": 0.79,
+              "cosine": 0.018
+            },
+            {
+              "term": "a chat message pop",
+              "z": 0.37,
+              "cosine": 0.007
+            }
+          ],
+          "keyboard": [
+            {
+              "term": "a deep thocky mechanical keyboard",
+              "z": -0.55,
+              "cosine": -0.083
+            },
+            {
+              "term": "slow typing with separate key presses",
+              "z": -0.72,
+              "cosine": -0.112
+            },
+            {
+              "term": "an old typewriter",
+              "z": -1.02,
+              "cosine": -0.174
+            }
+          ],
+          "foley": [
+            {
+              "term": "a rubber stretch",
+              "z": 1.81,
+              "cosine": 0.018
+            },
+            {
+              "term": "a mouth pop",
+              "z": 1.72,
+              "cosine": 0.058
+            },
+            {
+              "term": "a finger squeaking on glass",
+              "z": 1.63,
+              "cosine": -0.034
+            }
+          ],
+          "water": [
+            {
+              "term": "ice cubes in a glass",
+              "z": 1.86,
+              "cosine": 0.027
+            },
+            {
+              "term": "bubbles underwater",
+              "z": 1.33,
+              "cosine": -0.022
+            },
+            {
+              "term": "a liquid bloop",
+              "z": 0.87,
+              "cosine": 0.002
+            }
+          ],
+          "nature": [
+            {
+              "term": "digging in soil",
+              "z": 1.94,
+              "cosine": -0.029
+            },
+            {
+              "term": "a horse galloping",
+              "z": 1.22,
+              "cosine": -0.04
+            },
+            {
+              "term": "an apple falling on grass",
+              "z": 0.74,
+              "cosine": -0.059
+            }
+          ],
+          "chimes": [
+            {
+              "term": "a magic sparkle chime",
+              "z": 1.77,
+              "cosine": 0.077
+            },
+            {
+              "term": "a kalimba note",
+              "z": 1.65,
+              "cosine": 0.031
+            },
+            {
+              "term": "a music box melody",
+              "z": 1.6,
+              "cosine": 0.051
+            }
+          ],
+          "ambience": [
+            {
+              "term": "a busy cafe",
+              "z": 1.54,
+              "cosine": -0.114
+            },
+            {
+              "term": "people talking in the background",
+              "z": 0.9,
+              "cosine": -0.172
+            },
+            {
+              "term": "crickets at night",
+              "z": 0.42,
+              "cosine": -0.121
+            }
+          ],
+          "everyday": [
+            {
+              "term": "a cow mooing",
+              "z": 2.12,
+              "cosine": -0.009
+            },
+            {
+              "term": "a horse neighing",
+              "z": 1.82,
+              "cosine": -0.042
+            },
+            {
+              "term": "a heartbeat",
+              "z": 0.92,
+              "cosine": -0.037
+            }
+          ],
+          "music_genre": [
+            {
+              "term": "funk music",
+              "z": 1.72,
+              "cosine": 0.057
+            },
+            {
+              "term": "playful children's piano music",
+              "z": 1.7,
+              "cosine": 0.064
+            },
+            {
+              "term": "jazz music",
+              "z": 1.25,
+              "cosine": -0.004
+            }
+          ],
+          "music_mood": [
+            {
+              "term": "aggressive music",
+              "z": 1.49,
+              "cosine": 0.03
+            },
+            {
+              "term": "playful and quirky music",
+              "z": 1.41,
+              "cosine": 0.064
+            },
+            {
+              "term": "celebratory and joyful music",
+              "z": 1.18,
+              "cosine": 0.003
+            }
+          ],
+          "instruments": [
+            {
+              "term": "a vocal chop",
+              "z": 2.64,
+              "cosine": 0.152
+            },
+            {
+              "term": "pizzicato strings",
+              "z": 2.28,
+              "cosine": 0.086
+            },
+            {
+              "term": "a music box",
+              "z": 1.94,
+              "cosine": 0.091
+            }
+          ],
+          "voice": [
+            {
+              "term": "a voice-over narration",
+              "z": 3.01,
+              "cosine": 0.075
+            },
+            {
+              "term": "a woman speaking",
+              "z": 2.58,
+              "cosine": -0.036
+            },
+            {
+              "term": "people laughing",
+              "z": 2.4,
+              "cosine": -0.074
+            }
+          ],
+          "quality": [
+            {
+              "term": "a boomy sound",
+              "z": 0.59,
+              "cosine": -0.026
+            },
+            {
+              "term": "a satisfying sound",
+              "z": 0.51,
+              "cosine": -0.002
+            },
+            {
+              "term": "a metallic sound",
+              "z": 0.41,
+              "cosine": -0.116
+            }
+          ],
+          "production": [
+            {
+              "term": "an 8-bit sound effect",
+              "z": 0.82,
+              "cosine": -0.023
+            },
+            {
+              "term": "a retro video game sound effect",
+              "z": 0.6,
+              "cosine": -0.034
+            },
+            {
+              "term": "a low bitrate mp3 with artifacts",
+              "z": 0.58,
+              "cosine": -0.028
+            }
+          ]
+        },
+        "audioset": [
+          {
+            "label": "Speech",
+            "p": 0.943
+          },
+          {
+            "label": "Music",
+            "p": 0.719
+          },
+          {
+            "label": "Oink",
+            "p": 0.384
+          },
+          {
+            "label": "Groan",
+            "p": 0.302
+          },
+          {
+            "label": "Grunt",
+            "p": 0.238
+          }
+        ],
+        "character": []
+      }
+    },
+    {
+      "name": "background-end",
+      "summary": "11.60 s busy, 7.1 onsets/s, tonal, pitch ~147 Hz (D3) (attack 142 ms, decays in 1315 ms). Music (AudioSet Music 0.58). Unvalidated hints - genre: classical string quartet (z +2.9); mood (wrong for ~1 in 5 tracks in a test): . Sounds most like: a sword being drawn (z +2.4), a match being struck (z +2.3) [weak reading]. AudioSet: Music 0.58, Musical instrument 0.10, Speech 0.10. peak -27.9 dBFS, -46.3 LUFS, brightness 4.8 kHz, bandwidth 20.5 kHz, noise floor -80 dBFS, side/mid -2 dB.",
+      "data": {
+        "path": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\review-assets\\peppa-uvr-sample\\02-background-uvr.wav",
+        "start": 20,
+        "end": 31.6,
+        "duration": 11.6,
+        "measurements": {
+          "duration": 11.6,
+          "peak_dbfs": -27.9,
+          "true_peak_dbtp": -27.9,
+          "rms_dbfs": -53.3,
+          "lufs": -46.3,
+          "lra_lu": 21.7,
+          "attack_ms": 142,
+          "decay_ms": 1315,
+          "brightness_hz": 4761,
+          "bandwidth_hz": 20480,
+          "noise_floor_dbfs": -79.7,
+          "flatness": 0.002,
+          "harmonic_ratio": 0.806,
+          "f0_hz": 147,
+          "onset_count": 82,
+          "onsets_per_s": 7.07,
+          "width": "side/mid -2 dB",
+          "digital_silence_frac": 0.006
+        },
+        "shape": "busy, 7.1 onsets/s, tonal, pitch ~147 Hz (D3) (attack 142 ms, decays in 1315 ms)",
+        "top_tags": [
+          {
+            "term": "a sword being drawn",
+            "category": "everyday",
+            "z": 2.47,
+            "cosine": 0.196,
+            "verdict": "weak"
+          },
+          {
+            "term": "a match being struck",
+            "category": "everyday",
+            "z": 2.39,
+            "cosine": 0.183,
+            "verdict": "weak"
+          }
+        ],
+        "music_hints": [
+          {
+            "term": "classical string quartet",
+            "category": "music_genre",
+            "z": 2.98,
+            "cosine": 0.247
+          },
+          {
+            "term": "pizzicato strings",
+            "category": "instruments",
+            "z": 2.11,
+            "cosine": 0.229
+          }
+        ],
+        "tags": {
+          "transitions": [
+            {
+              "term": "a quick swipe",
+              "z": 1.78,
+              "cosine": 0.213
+            },
+            {
+              "term": "a tape stop slowing down",
+              "z": 1.76,
+              "cosine": 0.218
+            },
+            {
+              "term": "a reverse cymbal swell",
+              "z": 1.35,
+              "cosine": 0.167
+            }
+          ],
+          "impacts": [
+            {
+              "term": "a sub bass drop",
+              "z": 1.04,
+              "cosine": 0.131
+            },
+            {
+              "term": "a soft thump",
+              "z": 0.94,
+              "cosine": 0.085
+            },
+            {
+              "term": "a low rumble",
+              "z": 0.09,
+              "cosine": 0.046
+            }
+          ],
+          "ui": [
+            {
+              "term": "a camera shutter click",
+              "z": 0.89,
+              "cosine": 0.155
+            },
+            {
+              "term": "a phone vibration buzz",
+              "z": 0.57,
+              "cosine": 0.081
+            },
+            {
+              "term": "a button being pressed",
+              "z": 0.39,
+              "cosine": 0.108
+            }
+          ],
+          "keyboard": [
+            {
+              "term": "an old typewriter",
+              "z": -0.42,
+              "cosine": 0.041
+            },
+            {
+              "term": "a deep thocky mechanical keyboard",
+              "z": -0.83,
+              "cosine": 0.074
+            },
+            {
+              "term": "a laptop keyboard typing",
+              "z": -0.88,
+              "cosine": 0.051
+            }
+          ],
+          "foley": [
+            {
+              "term": "a rubber stretch",
+              "z": 2.22,
+              "cosine": 0.2
+            },
+            {
+              "term": "scissors cutting",
+              "z": 2.18,
+              "cosine": 0.212
+            },
+            {
+              "term": "a zipper",
+              "z": 2.14,
+              "cosine": 0.216
+            }
+          ],
+          "water": [
+            {
+              "term": "water splashing",
+              "z": 0.48,
+              "cosine": 0.087
+            },
+            {
+              "term": "pouring water",
+              "z": 0.11,
+              "cosine": 0.051
+            },
+            {
+              "term": "ice cubes in a glass",
+              "z": -0.15,
+              "cosine": 0.057
+            }
+          ],
+          "nature": [
+            {
+              "term": "a small animal running through grass",
+              "z": 1.46,
+              "cosine": 0.148
+            },
+            {
+              "term": "leaves rustling",
+              "z": 1.31,
+              "cosine": 0.145
+            },
+            {
+              "term": "a bee flying by",
+              "z": 1.3,
+              "cosine": 0.132
+            }
+          ],
+          "chimes": [
+            {
+              "term": "a celesta note",
+              "z": 0.8,
+              "cosine": 0.182
+            },
+            {
+              "term": "a music box melody",
+              "z": 0.74,
+              "cosine": 0.155
+            },
+            {
+              "term": "a sustained glass harp tone",
+              "z": 0.54,
+              "cosine": 0.054
+            }
+          ],
+          "ambience": [
+            {
+              "term": "an office ambience",
+              "z": 1.52,
+              "cosine": 0.1
+            },
+            {
+              "term": "a quiet room at night",
+              "z": 1.23,
+              "cosine": 0.086
+            },
+            {
+              "term": "a busy cafe",
+              "z": 1.14,
+              "cosine": 0.02
+            }
+          ],
+          "everyday": [
+            {
+              "term": "a sword being drawn",
+              "z": 2.47,
+              "cosine": 0.196
+            },
+            {
+              "term": "a match being struck",
+              "z": 2.39,
+              "cosine": 0.183
+            },
+            {
+              "term": "a cash register",
+              "z": 1.55,
+              "cosine": 0.163
+            }
+          ],
+          "music_genre": [
+            {
+              "term": "classical string quartet",
+              "z": 2.98,
+              "cosine": 0.247
+            },
+            {
+              "term": "jazz music",
+              "z": 1.67,
+              "cosine": 0.183
+            },
+            {
+              "term": "drum and bass music",
+              "z": 1.27,
+              "cosine": 0.142
+            }
+          ],
+          "music_mood": [
+            {
+              "term": "warm and cozy music",
+              "z": 1.91,
+              "cosine": 0.267
+            },
+            {
+              "term": "calm and relaxing music",
+              "z": 1.8,
+              "cosine": 0.198
+            },
+            {
+              "term": "mysterious music",
+              "z": 1.46,
+              "cosine": 0.226
+            }
+          ],
+          "instruments": [
+            {
+              "term": "pizzicato strings",
+              "z": 2.11,
+              "cosine": 0.229
+            },
+            {
+              "term": "brass section",
+              "z": 1.96,
+              "cosine": 0.207
+            },
+            {
+              "term": "orchestral percussion",
+              "z": 1.78,
+              "cosine": 0.225
+            }
+          ],
+          "voice": [
+            {
+              "term": "someone whispering",
+              "z": 0.79,
+              "cosine": 0.058
+            },
+            {
+              "term": "a person breathing",
+              "z": 0.52,
+              "cosine": 0.065
+            },
+            {
+              "term": "a man speaking",
+              "z": 0.5,
+              "cosine": -0.029
+            }
+          ],
+          "quality": [
+            {
+              "term": "a boomy sound",
+              "z": 1.41,
+              "cosine": 0.192
+            },
+            {
+              "term": "a bright sound",
+              "z": 1.35,
+              "cosine": 0.192
+            },
+            {
+              "term": "a tight snappy sound",
+              "z": 1.18,
+              "cosine": 0.159
+            }
+          ],
+          "production": [
+            {
+              "term": "silence",
+              "z": 1.27,
+              "cosine": 0.186
+            },
+            {
+              "term": "a low quality recording with hiss",
+              "z": 0.63,
+              "cosine": 0.08
+            },
+            {
+              "term": "a robotic synthetic sound",
+              "z": 0.14,
+              "cosine": 0.163
+            }
+          ]
+        },
+        "audioset": [
+          {
+            "label": "Music",
+            "p": 0.578
+          },
+          {
+            "label": "Musical instrument",
+            "p": 0.1
+          },
+          {
+            "label": "Speech",
+            "p": 0.098
+          },
+          {
+            "label": "Bowed string instrument",
+            "p": 0.069
+          },
+          {
+            "label": "Writing",
+            "p": 0.063
+          }
+        ],
+        "character": []
+      }
+    }
+  ]
+}

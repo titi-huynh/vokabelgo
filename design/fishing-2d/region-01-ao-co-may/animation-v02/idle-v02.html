@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ao Cỏ May · Chờ một chút thôi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header><div><p class="eyebrow">MÈO CHỢ · AO CỎ MAY</p><h1>Chờ một chút thôi.</h1></div><span class="edition">Thử chuyển động · 05 giây</span></header>
+    <section class="scene" aria-label="Mèo ngồi trên bè, chớp mắt và nhìn theo chuồn chuồn">
+      <canvas id="pond" width="1672" height="941" aria-hidden="true"></canvas>
+      <canvas id="actor" width="1672" height="941" aria-hidden="true"></canvas>
+      <canvas id="life" width="1672" height="941" aria-hidden="true"></canvas>
+      <p id="loading" role="status">Đang mở một góc ao nhỏ…</p>
+    </section>
+    <div class="controls">
+      <button id="replay" class="primary" type="button">↻ Xem lại 5 giây</button>
+      <button id="pause" type="button">Tạm dừng</button>
+      <label><input id="reduced" type="checkbox"> Giảm chuyển động</label>
+      <output id="time" aria-label="Thời gian">0.0 / 5.0 giây</output>
+    </div>
+    <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+    <p class="note">Một lần chớp mắt, một vị khách nhỏ ghé ngang. Bản thử dáng ngồi và chuyển động chờ, chưa có âm thanh.</p>
+    <details class="reference">
+      <summary>Video mẫu chị chọn · Xem nhịp câu cá</summary>
+      <p>Clip chị cung cấp, dùng để đối chiếu tư thế và diễn xuất. Đoạn thử phía trên hiện là cảnh chờ.</p>
+      <video id="motionReference" controls muted playsinline preload="metadata" aria-label="Video mẫu mèo câu cá do chị cung cấp"><source src="assets/reference-catfishing.mp4" type="video/mp4"></video>
+      <div class="reference-points" aria-label="Các tư thế trong video mẫu">
+        <button type="button" data-reference-time="0.8">0,8s · Chờ</button>
+        <button type="button" data-reference-time="1.5">1,5s · Lấy đà</button>
+        <button type="button" data-reference-time="2.2">2,2s · Vút cần</button>
+        <button type="button" data-reference-time="3.2">3,2s · Cá vào thùng</button>
+        <button type="button" data-reference-time="4.2">4,2s · Nhìn thùng</button>
+        <button type="button" data-reference-time="5.2">5,2s · Quay ra cười</button>
+      </div>
+    </details>
+  </main>
+  <script src="scene.js"></script>
+</body>
+</html>

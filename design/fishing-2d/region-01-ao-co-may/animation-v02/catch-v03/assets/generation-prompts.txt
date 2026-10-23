@@ -1,0 +1,38 @@
+MÈO CHỢ — KÉO CÁ v03, 2026-10-21
+Mode: built-in image_gen; genuine transparent RGBA; originals copied unchanged.
+No Python image editing. analyze-poses.py only reads pixels for measurements.
+
+ASSET 1: meo-cho-catch-poses.png (1448 × 1086)
+Source: C:/Users/huynh/.codex/generated_images/01a15885-6dbd-7c51-b731-b02420ba1e74/exec-910e7afc-5bce-44eb-8eec-f9bd464dce3e.png
+References: ao-co-may-scene-v02.png (seated pose/style); meo-cho-model-sheet.png (identity).
+Exact prompt:
+Use case: illustration-story.
+Create a production 2D animation key pose sprite sheet of the SAME approved MEO CHO cat in the references, 4 columns by 3 rows, EXACTLY 12 frames in reading order. Genuine transparent background, NO text, no labels, no grid lines. Each frame occupies exactly equal cell, same scale and registration. Frame sheet landscape 4:3. Leave generous transparent padding within every cell, never overlap frames.
+Reference 1 scene is visual style, face, seated proportions; reference 2 model sheet locks identity. Small plump CREAM cat, one caramel patch on its anatomical RIGHT ear/crown (viewer LEFT in front view), opposite ear cream, caramel tail TIP, flat peach blush, dark brown oval eyes, mustard triangular scarf and SAGE GREEN short apron. Use the seated short round body from scene. Fine warm brown outline, simple warm flat colors, subtle painted texture. Keep head width and head/body proportions identical across ALL frames. No forehead stripes. No long limbs or neck.
+Subject ONLY CAT, full body and tail. NO raft, NO fishing rod, NO line, NO fish, NO water, NO basket, NO floor shadow. Cat is seated throughout, soles facing slightly forward, feet and bottom stay planted at same pixel location within every cell. Full short arms connect organically to shoulders. Two paws held together gripping an INVISIBLE fishing rod pointing toward upper left, paws mostly near chest. Artist-authored fluid natural action, never disconnected puppet limbs.
+Twelve sequential key poses:
+1 relaxed sitting, looking slightly left at float, paws at lower left chest.
+2 notices bite: eyes focus lower left, small forward head dip, paws 2px lower.
+3 takes weight: shoulders and torso lean forward slightly, head follows, feet remain planted.
+4 anticipation: deeper small forward crouch, narrowed eyes, short paws firm at chest.
+5 pulls: torso shifts backward 8 degrees, shoulders lift, paws move up to left cheek, eyes squeeze with effort.
+6 strongest pull: leans backward 13 degrees from hips, head tucked, paws at left cheek just below eyes, mouth small effort, short bent arms, tail tip follows behind.
+7 follow through: same back lean eases to 10 degrees, eyes open to follow fish above left, paws still high.
+8 settles: torso returns to 4 degree lean, paws lower to chest, eyes look up right following fish.
+9 recovered seated: paws at chest, head turned 20 degrees to viewer RIGHT to watch fish enter basket, eyes look down right.
+10 slight head dip to right, happy satisfied tiny smile, paws remain gripping at left chest.
+11 head starts turning back toward viewer (10deg), eyes lead, shoulders relaxed.
+12 front-facing happy open-mouth smile at viewer, short paws still around invisible rod at left chest; body/feet remain same seated position as frame 1.
+Make poses gradual and cohesive for animation with no costume, size, or face drift. Keep visible caramel patch on viewer left in every pose; do NOT mirror. All 12 full-body cats have equal bounding scale around 300 px tall within a 512px cell. Ankles/hip anchoring identical. Transparent RGBA.
+
+ASSET 2: golden-carp.png
+Source: C:/Users/huynh/.codex/generated_images/01a15885-6dbd-7c51-b731-b02420ba1e74/exec-46e6975e-7120-4bf4-8766-740da520b143.png
+Reference: ao-co-may-scene-v02.png (style).
+Exact prompt:
+Use case: illustration-story. Asset type: one transparent 2D game sprite. Create a single small cute golden-orange freshwater carp matching the flat warm hand-painted 2D illustration style of the reference scene. Whole body in exact side view, head points RIGHT, happy dark brown eye, small round mouth, golden cream belly, orange fins, forked tail, minimal three overlapping scale marks. Short plump fish silhouette approximately twice as wide as high; one fish only centered, generous transparent padding. Fine warm brown outline, simple limited flat colors with subtle texture. No cat, no rod, no water, no bubbles, no splash, no scenery, no shadow, no letters. Genuine transparent RGBA background.
+
+REUSED SET PROPS
+raft.png, basket.png, bait.png copied unchanged from animation-v01/assets.
+Only these illustrated props are reused; the rejected v01 character rig is not used.
+Original prop source and prompts: ../../../animation-v01/assets/generation-prompts.txt
+Pond: ../assets/pond.png, the existing approved scene layout with actors removed.

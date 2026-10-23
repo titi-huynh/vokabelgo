@@ -1,0 +1,269 @@
+:root {
+  --bg-page: #f5efe2;
+  --panel-bg: #fffdf7;
+  --panel-border: #d9ccb4;
+  --text-main: #3e3227;
+  --text-muted: #6e5d4f;
+  --accent: #3f6f8c;
+  --accent-hover: #335c75;
+  --warn-bg: #fff4e0;
+  --warn-border: #e0b26b;
+  --warn-text: #7a4c14;
+  --ok-bg: #eaf5ec;
+  --ok-border: #8dc298;
+  --ok-text: #255832;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-page);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+}
+
+.proof-shell {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100dvh;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 8px 10px;
+  gap: 8px;
+}
+
+/* Compact top status & control bar outside walking scene */
+.proof-toolbar {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 10px;
+  padding: 6px 10px;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(62, 50, 39, 0.06);
+}
+
+.proof-status-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  min-width: 0;
+}
+
+.proof-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+.status-badge {
+  font-size: 12px;
+  line-height: 1.3;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #f0e8d8;
+  color: var(--text-main);
+  border: 1px solid var(--panel-border);
+}
+
+.status-badge[data-asset-status="ready"] {
+  background: var(--ok-bg);
+  border-color: var(--ok-border);
+  color: var(--ok-text);
+}
+
+.status-badge[data-asset-status="unavailable"],
+.status-badge[data-asset-status="loading"] {
+  background: var(--warn-bg);
+  border-color: var(--warn-border);
+  color: var(--warn-text);
+}
+
+.telemetry-pill {
+  font-size: 11px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color: var(--text-muted);
+  background: #f7f2e7;
+  padding: 2px 6px;
+  border-radius: 5px;
+  border: 1px solid #e5dac6;
+  white-space: nowrap;
+}
+
+.telemetry-pill[hidden] {
+  display: none !important;
+}
+
+.proof-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.control-divider {
+  width: 1px;
+  height: 18px;
+  background: var(--panel-border);
+  margin: 0 2px;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid #c5b49a;
+  background: #fdf9f0;
+  color: var(--text-main);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  line-height: 1.2;
+  transition: background-color 0.12s ease, border-color 0.12s ease;
+}
+
+.btn:hover:not(:disabled) {
+  background: #f2e8d5;
+  border-color: #ab9678;
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(0.5px);
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.btn:disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+}
+
+/* Fitted world viewport - never crops scene or character */
+.stage-viewport {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9dfc9;
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  padding: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.stage-frame {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+  aspect-ratio: 1672 / 941;
+  max-width: calc((100dvh - 125px) * (1672 / 941));
+  background: #e6d7b0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(45, 35, 24, 0.12);
+}
+
+#walk-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* DOM avatar probe synchronized with world coordinates for UI verification */
+.avatar-dom-probe {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+
+/* Subtle non-modal asset notice banner inside corner when directional sheet is not yet generated */
+.asset-notice {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  max-width: min(420px, calc(100% - 20px));
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(255, 252, 244, 0.94);
+  border: 1px solid var(--warn-border);
+  color: var(--warn-text);
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+
+.asset-notice[hidden] {
+  display: none !important;
+}
+
+.ref-thumb {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  object-position: left top;
+  border-radius: 6px;
+  border: 1px solid #d5c5ab;
+  background: #f9f3e6;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 640px) {
+  .proof-shell {
+    padding: 6px;
+    gap: 6px;
+  }
+
+  .proof-toolbar {
+    padding: 6px 8px;
+    gap: 5px;
+  }
+
+  .proof-title {
+    font-size: 12px;
+  }
+
+  .status-badge {
+    font-size: 11px;
+    padding: 2px 6px;
+  }
+
+  .btn {
+    font-size: 11px;
+    padding: 4px 7px;
+  }
+
+  .stage-frame {
+    max-width: 100%;
+  }
+}

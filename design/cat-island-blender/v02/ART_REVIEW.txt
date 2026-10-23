@@ -1,0 +1,193 @@
+================================================================================
+VOKABELGO - ART DIRECTION REVIEW: VIETNAMESE FLOATING CAT MARKET (v02)
+Dự Án: Đảo Mèo - Chợ Nổi Nam Bộ (Mekong Delta Cat Floating Market)
+Workspace: design/cat-island-blender/v02/
+Blender Version: 5.2.2 LTS
+Author: Antigravity AI Pair Programmer
+================================================================================
+
+1. EXECUTIVE SUMMARY & TARGET ART DIRECTION
+--------------------------------------------------------------------------------
+This is a Blender art-direction prototype for VokabelGo's Vietnamese-inspired
+floating cat market. It improves the v01 boat shapes, character readability,
+color separation and counter props. Plants, canopy, basket weaving and water
+remain simplified. This is not finished commercial game art or a tested web asset.
+
+Key Artistic Pillars:
+- Vietnamese-inspired River Motifs: Stylized wooden market boats with
+  traditional painted protective eyes ("Mắt ghe"), tall curved bamboo display pole
+  ("Cây bẹo") with hanging produce, woven bamboo baskets ("Thúng tre / Mẹt tre"),
+  simplified conical-hat-inspired accessories, and tropical fruits (dragonfruit, mangosteen, bananas,
+  watermelon, citrus).
+- Lovable Chibi Feline Proportions: Hero cat Mochi features chubby cheeks, sculpted
+  ears with pink inner cavities, expressive glossy eyes with dual catchlights, a
+  tailored jade apron with recipe tag, and an active serving pose.
+- Cohesive Cozy Game Atmosphere: Warm golden-hour sun, soft sky fill, and gentle
+  river bounce lighting with tactile material separation across weathered teak wood,
+  glazed ceramics, woven bamboo, and matte canvas.
+- Proposed Isometric Composition: Tightened camera framing (orthographic scale 10.6)
+  that centers on the selling boat and customer interaction while preserving
+  navigation lanes and deliberate space for future vocabulary/order cards.
+
+
+2. OFFICIAL RESEARCH SOURCES & OBSERVED PRINCIPLES
+--------------------------------------------------------------------------------
+The following official pages were checked during review. Artistic principles
+below are our interpretation, not statements by their developers or evidence
+that the games were played. Original user images remain the main visual brief.
+
+1. Ooblets (Glumberland)
+   - Official Media & Presskit: https://ooblets.com/media/
+   - Borrowed Principles: Chunky, tactile low-poly geometry with soft bevels;
+     expressive, lovable creature proportions (large heads, chubby lower cheeks,
+     distinct eye catchlights); warm pastel-to-saturated color harmony; playful
+     chunky accessories.
+
+2. Garden Galaxy (Anneka Tran)
+   - Official Steam Store & Media: https://store.steampowered.com/app/1970460/Garden_Galaxy/
+   - Borrowed Principles: Micro-diorama cluster presentation; tactile separation
+     between materials (woven reed, clay, wood, paper); narrative props clustered
+     around gameplay/story focal points rather than dispersed across an empty field.
+
+3. Alba: A Wildlife Adventure (ustwo games)
+   - Official Media Page: https://www.albawildlife.com
+   - Borrowed Principles: Warm coastal/island sunlight with crisp yet soft directional
+     shadows; vibrant Mediterranean/tropical flora clusters; hand-crafted wooden
+     piers with natural plank variations and heavy dock pilings.
+
+4. Spiritfarer (Thunder Lotus Games)
+   - Official Game Page and Gallery: https://thunderlotusgames.com/games/spiritfarer/
+   - Borrowed Principles: Floating community life; multi-tiered boat living with
+     graceful cloth awnings that provide shelter without obscuring character faces;
+     authentic marine lifestyle props (lanterns, teapots, wrapped cargo, paddles).
+
+Additional preliminary direction: Animal Crossing: New Horizons was suggested
+as a visual reference. A specific Nintendo boat-art source was not verified in
+this review, so no detailed source attribution is made here.
+
+
+3. HONEST CRITIQUE OF v01 WEAKNESSES
+--------------------------------------------------------------------------------
+- Generic & Vacant Composition: A giant flat 15x12m turquoise water slab occupied
+  a large part of the frame as empty space, making the main boat feel small,
+  marooned, and lost in an unlit void.
+- Primitive Cat Models: Cats were rigid stacks of primitive spheres with flat bead
+  eyes, cone ears lacking cavities, sunken bodies behind tall benches, and zero active
+  paws or limb posing.
+- Face-Obscuring Flat Hats: Oversized flat disc-like hats completely shadowed and
+  obscured the cat faces and eyes from the isometric camera angle.
+- Unconvincing Boat Geometry: Hulls were straight low-polygon prisms with wire-like
+  gunwales floating disconnected in mid-air on support rings; no internal ribbing,
+  no sheer curve, and no Vietnamese cultural identifiers.
+- Sparse & Repetitive Props: Empty wooden crates, generic yellow spheres for fruits,
+  a bare stick with a ball for the "cây bẹo", and repetitive faceted icosphere blobs
+  for island trees.
+- Flat, Washed-Out Lighting: Ambient-heavy lighting with no golden warmth, no rim
+  separation, and pale materials that made the scene look like cheap pastel plastic.
+
+
+4. CONCRETE BEFORE / AFTER CHANGES (v01 vs v02)
+--------------------------------------------------------------------------------
+A. Main Flagship Boat ("Ghe Bán Hàng Nam Bộ"):
+   - v01: Boxy generic prism with hovering wire rail and straight deck boards.
+   - v02: Custom 7-station lofted Ghe Tam Bản hull with upward flared sheer,
+     beveled teak gunwales, structural internal rib frames (be xuồng), alternating
+     honey/pale wood floorboards, woven rope bumpers (phao chống va), and iconic
+     decorative boat-eye motifs ("Mắt ghe") on the bow. Cultural meaning and
+     historical construction accuracy have not been independently audited.
+
+B. Main Shopkeeper Cat (Mochi):
+   - v01: Sunken spherical torso, tiny bead eyes, flat disc hat hiding the face.
+   - v02: Scaled up to hero proportions (+18%); large rounded head with chubby
+     cheeks; sculpted ears with pink inner cavities and tufts; glossy dark eyes
+     with dual sparkling catchlights; cream coat with marmalade ginger tabby patch;
+     warm coral neckerchief; tailored jade apron with recipe tag; active serving
+     pose holding a fresh dragonfruit towards approaching customers.
+
+C. Cây Bẹo Display Pole:
+   - v01: A bare stick with a single yellow ball.
+   - v02: A tall 3.3m curved bamboo mast with distinct nodes mounted firmly at
+     the bow, suspending realistic produce samples (pineapple with spiky crown,
+     banana bunch, and watermelon) with natural jute twine.
+
+D. Sales Counter & Merchandise:
+   - v01: 3 tiny empty/generic wooden crates on a high flat board.
+   - v02: Open, hollow woven bamboo baskets (Thúng Tre) with thick rims and cane
+     bands, overflowing with distinct tropical fruits:
+     * Basket 1: Vivid magenta dragonfruits (Thanh long) with curling green tips.
+     * Basket 2: Deep purple royal mangosteens (Măng cụt) with green calyxes.
+     * Basket 3: Plump golden citrus/oranges with leaf stems.
+     * Awning Ridge: Hanging ripe bunch of 8 golden bananas.
+     * Rear Cargo: Wooden crate with whole striped watermelon and cut red slice.
+     * Narrative Props: Open guest recipe book on slanted stand, lotus-leaf
+       takeout parcels tied with cross-twine, countertop chalkboard price sign,
+       and a traditional glazed Vietnamese teapot with cups on a bamboo tray.
+
+E. Customer Boats & Characters:
+   - v01: 3 identical tiny boats with identical sitting cats and colliding oars.
+   - v02: 3 completely unique visitor boats and cats:
+     * Cinnamon (Left Sampan): Ginger tabby with Nón Lá tilted back 45° so face
+       and ears are 100% visible; active reaching pose offering a brass coin;
+       cargo of fresh lotus blossoms; paddle stowed cleanly inside the hull.
+     * Pepper (Right Canoe): Cool blue-gray cat wearing a woven straw boater hat;
+       cargo of stacked glazed ceramic water jars (chum sành); paddle stowed.
+     * Lily (Background Sampan): Calico cat relaxing with a pink ear blossom,
+       enjoying fresh young coconut water with a bamboo straw.
+
+F. Island & Learning Pavilion:
+   - v01: Flat sand cylinder with 3 identical icosphere tree blobs.
+   - v02: Multi-tiered riverbank island with warm sand, grassy plateau, and river
+     stones; stilt reading pavilion (Vọng Lâu) with terracotta hip roof, curved
+     brackets, and glowing paper lantern; low study table with open Vietnamese
+     vocabulary scroll, inkstone, and calligraphy brush; authentic banana palm
+     (Cây chuối) with arching broad leaves and purple flower bud; daisy patches.
+
+G. Composition & Lighting:
+   - v01: Wide orthographic scale (17.7), leaving huge empty water slab.
+   - v02: Focused orthographic scale (10.6 for Overview, 5.4 for Close-up) centering
+     on the main boat and customer circle; warm 4.4-strength golden sun, soft sky
+     fill, and river water bounce lighting using Blender's modern AgX color management.
+
+
+5. TECHNICAL SPECIFICATIONS & PRODUCTION METRICS
+--------------------------------------------------------------------------------
+- Native Blend File:
+  design/cat-island-blender/v02/cat-island-floating-market-v02.blend
+- Reproducible Python Script:
+  design/cat-island-blender/v02/build_floating_market_v02.py
+- Primary Render Outputs:
+  * Overview Study: design/cat-island-blender/v02/floating-market-style-study-v02.png (1600x1200)
+  * Close-Up Study: design/cat-island-blender/v02/floating-market-shopkeeper-detail-v02.png (1600x1200)
+  * Pass 1 Archive: design/cat-island-blender/v02/floating-market-style-study-v02-pass1.png
+- Scene Geometry Stats (Evaluated via Blender 5.2.2 LTS Depsgraph):
+  * Total Objects in Scene: 600
+  * Mesh Objects: 552
+  * Base Mesh Polygons (pre-modifier): 20,407
+  * Evaluated Triangles (Blender depsgraph verification): 55,175
+  * Materials in Palette: 46 unique procedural Principled BSDF materials
+  * Active Cameras: 2 (Isometric Market Overview Camera & Shopkeeper Mochi Detail Camera)
+  * Lighting Rig: 3-point cozy setup (Warm Sun + Sky Area Fill + River Bounce Rim)
+
+
+6. KNOWN LIMITATIONS & FUTURE WEB GAME EXPORT ADVICE
+--------------------------------------------------------------------------------
+- Real-Time Web Optimization:
+  The current scene is authored for offline Cycles beauty rendering and art direction
+  evaluation (55,175 evaluated triangles; no browser performance measurement).
+  For future export to WebGL/Three.js/Babylon.js:
+  1. Bake high-frequency bevel normals and ambient occlusion into compact atlases.
+  2. Collapse modifier stacks and reduce circular curve bevel resolutions (e.g.,
+     paddle shafts and gunwales from 24/18 sides to 8/12 sides).
+  3. Combine static boat assemblies into single unified meshes with shared materials
+     to reduce draw calls from ~500 to under 25.
+- Shadow & Ripple Performance:
+  Real-time web shaders should replace procedural Cycles glass/water transmission
+  with a simple stylized planar water shader using scrolling foam/wake textures.
+- Non-Destructive Modularity:
+  All boat assemblies (Main Market Flagship, Cinnamon, Pepper, Lily, Island) are
+  parented to individual root empties with clear transforms, allowing gameplay
+  programmers to reposition, animate, or dock them independently in future stages.
+
+================================================================================
+VERIFICATION STATUS: COMPLETED & VERIFIED
+================================================================================

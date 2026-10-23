@@ -1,6 +1,5 @@
 /**
- * Wortregen V0.1 — Mưa Từ Vựng (VokabelGo Prototype)
- * Isolated Prototype for Gameplay Mechanics Verification
+ * Wortregen — short guided rounds and a two-card arcade challenge.
  */
 
 (function() {
@@ -166,7 +165,7 @@
       this.sound = new SoundEngine();
 
       // State
-      this.state = 'IDLE'; // 'IDLE', 'PLAYING', 'GAME_OVER'
+      this.state = 'IDLE'; // IDLE, PLAYING, PAUSED, REVIEW, GAME_OVER
       this.lives = 3;
       this.score = 0;
       this.combo = 0;
@@ -185,7 +184,207 @@
       this.lastFrameTime = 0;
       this.lastProcessed = { char: '', time: 0, source: '' };
 
+      this.mode = 'practice';
+      this.pendingTimers = new Set();
+      this.sessionGoal = 8;
+      this.spawnedCount = 0;
+      this.resolvedCount = 0;
+      this.assistedCount = 0;
+      this.reviewItems = new Map();
+      this.reviewQueue = null;
+      this.setupExperience();
+
       this.initEvents();
+    }
+
+    // Shared UI for the standalone page and the embedded study mode.
+    setupExperience() {
+      if (!this.appEl) return;
+      this.startScreen.querySelector('.overlay-instruction').textContent = 'Hứng mưa từ, gom một ván vui!';
+      this.startScreen.querySelector('.overlay-tip').textContent = 'Gõ cả từ tiếng Đức, kể cả mạo từ. Tự bỏ qua dấu cách, không cần Enter. Chữ đầu bên cạnh thẻ là gợi ý, em vẫn cần gõ chữ đó.';
+      if (!document.getElementById('wr-mode-options')) {
+        const choices = document.createElement('div');
+        choices.id = 'wr-mode-options';
+        choices.className = 'wr-mode-options';
+        choices.setAttribute('role', 'group');
+        choices.setAttribute('aria-label', 'Chọn cách chơi');
+        choices.innerHTML = '<button type="button" class="wr-mode" data-wr-mode="practice" aria-pressed="true"><strong>🌱 Luyện nhẹ</strong><span>1 thẻ · 8 từ · không mất tim</span></button><button type="button" class="wr-mode" data-wr-mode="challenge" aria-pressed="false"><strong>⚡ Thử thách</strong><span>2 thẻ · 3 tim · săn combo</span></button>';
+        const deckLabel = document.createElement('label');
+        deckLabel.className = 'wr-deck-label';
+        deckLabel.htmlFor = 'wr-deck';
+        deckLabel.textContent = 'Bộ từ muốn luyện';
+        const deckSelect = document.createElement('select');
+        deckSelect.id = 'wr-deck';
+        deckSelect.className = 'wr-deck-select';
+        let decks = [];
+        try { decks = [...new Set(this.vocabProvider.getAllCards().map(card => card.deck).filter(Boolean))]; } catch (_) { /* Start shows the actionable data error. */ }
+        deckSelect.append(new Option('Tất cả bộ từ', ''));
+        decks.forEach(deck => deckSelect.append(new Option(deck, deck)));
+        const selected = document.getElementById('deckSelect')?.value;
+        deckSelect.value = decks.includes(selected) ? selected : decks[0] || '';
+        this.btnStart.before(deckLabel, deckSelect, choices);
+
+        const progress = document.createElement('div');
+        progress.className = 'wr-progress';
+        progress.innerHTML = '<div class="wr-progress-caption"><span id="wr-round-label">🌱 Luyện nhẹ · 8 từ</span><span id="wr-progress-count">0/8</span></div><div id="wr-progress-bar" class="wr-progress-bar" role="progressbar" aria-label="Tiến độ ván luyện" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><span id="wr-progress-fill"></span></div>';
+        this.appEl.querySelector('.wortregen-header').after(progress);
+
+        const controls = document.createElement('div');
+        controls.className = 'wr-controls';
+        controls.innerHTML = '<p id="wr-feedback" role="status" aria-live="polite">Chọn cách chơi rồi bắt đầu nhé.</p><label class="wr-input-label" for="keyboard-capture">⌨ Gõ vào thẻ đang sáng</label><div class="wr-input-row"></div><div class="wr-tools"><div class="wr-letter-keys" role="group" aria-label="Ký tự tiếng Đức"><button type="button" data-wr-char="ä" aria-label="Nhập ä">ä</button><button type="button" data-wr-char="ö" aria-label="Nhập ö">ö</button><button type="button" data-wr-char="ü" aria-label="Nhập ü">ü</button><button type="button" data-wr-char="ß" aria-label="Nhập ß">ß</button></div><button type="button" id="wr-hint">💡 Gợi ý</button><button type="button" id="wr-pause">Ⅱ Tạm dừng</button></div>';
+        controls.querySelector('.wr-input-row').append(this.keyboardCapture);
+        this.keyboardCapture.removeAttribute('aria-hidden');
+        this.keyboardCapture.removeAttribute('tabindex');
+        this.keyboardCapture.setAttribute('aria-label', 'Gõ đáp án tiếng Đức');
+        this.keyboardCapture.placeholder = 'Chạm vào đây để gõ…';
+        this.appEl.querySelector('.game-board').append(controls);
+
+        const interlude = document.createElement('div');
+        interlude.id = 'wr-interlude';
+        interlude.className = 'wr-interlude hidden';
+        interlude.setAttribute('role', 'dialog');
+        interlude.setAttribute('aria-modal', 'true');
+        interlude.setAttribute('aria-labelledby', 'wr-interlude-title');
+        interlude.innerHTML = '<div class="wr-interlude-card"><span id="wr-interlude-icon" aria-hidden="true">🌿</span><h2 id="wr-interlude-title"></h2><p id="wr-review-vi"></p><strong id="wr-review-de" lang="de"></strong><p id="wr-interlude-note"></p><button type="button" id="wr-retry-word" class="btn-primary">Thử lại từ này</button><button type="button" id="wr-continue" class="btn-secondary">Tiếp tục</button></div>';
+        this.appEl.querySelector('.game-board').append(interlude);
+
+        const summary = document.createElement('div');
+        summary.className = 'wr-summary-review';
+        summary.innerHTML = '<p id="wr-summary-note"></p><ul id="wr-review-list"></ul><button type="button" id="wr-review-round" class="btn-secondary hidden">Luyện lại từ cần ôn</button>';
+        this.gameOverScreen.querySelector('.game-over-actions').before(summary);
+        const chooseMode = document.createElement('button');
+        chooseMode.id = 'wr-choose-mode';
+        chooseMode.type = 'button';
+        chooseMode.className = 'btn-secondary';
+        chooseMode.textContent = 'Đổi bộ từ / cách chơi';
+        this.btnGameOverBack.before(chooseMode);
+      }
+      this.feedback = document.getElementById('wr-feedback');
+      this.interlude = document.getElementById('wr-interlude');
+      this.appEl.querySelector('.wr-controls').inert = true;
+      this.updateModeUI();
+      this.renderHUD();
+    }
+
+    updateModeUI() {
+      const practice = this.mode === 'practice';
+      this.appEl.dataset.wrMode = this.mode;
+      this.appEl.querySelectorAll('button[data-wr-mode]').forEach(button => {
+        button.setAttribute('aria-pressed', String(button.dataset.wrMode === this.mode));
+      });
+      this.btnStart.querySelector('span').textContent = practice ? 'Bắt đầu ván nhẹ 🌧️' : 'Vào thử thách ⚡';
+      document.getElementById('wr-hint').classList.toggle('hidden', !practice);
+      this.appEl.querySelector('.ground-threshold').textContent = practice ? 'Chạm đất? Mình cùng ôn lại nhé' : 'Vùng chạm đất';
+      this.renderProgress();
+    }
+
+    renderProgress() {
+      const practice = this.mode === 'practice';
+      document.getElementById('wr-round-label').textContent = practice ? '🌱 Luyện nhẹ · từng từ một' : '⚡ Thử thách · gõ thẻ đang sáng';
+      document.getElementById('wr-progress-count').textContent = practice ? `${this.resolvedCount}/${this.sessionGoal}` : `${this.solvedCount} từ hoàn thành`;
+      const bar = document.getElementById('wr-progress-bar');
+      bar.hidden = !practice;
+      bar.setAttribute('aria-valuemax', String(practice ? this.sessionGoal : 8));
+      bar.setAttribute('aria-valuenow', String(practice ? this.resolvedCount : 0));
+      document.getElementById('wr-progress-fill').style.width = `${Math.min(100, this.resolvedCount / this.sessionGoal * 100)}%`;
+    }
+
+    announce(message, tone = '') {
+      this.feedback.textContent = message;
+      this.feedback.dataset.tone = tone;
+    }
+
+    defer(callback, delay) {
+      const id = setTimeout(() => {
+        this.pendingTimers.delete(id);
+        callback();
+      }, delay);
+      this.pendingTimers.add(id);
+      return id;
+    }
+
+    rememberForReview(word) {
+      this.reviewItems.set(String(word.cardId || word.de), { ...word.source });
+    }
+
+    resumeLoops() {
+      if (this.mode === 'practice' && this.resolvedCount >= this.sessionGoal) {
+        this.gameOver(true);
+        return;
+      }
+      this.state = 'PLAYING';
+      this.appEl.querySelector('.wr-controls').inert = false;
+      this.interlude.classList.add('hidden');
+      this.lastFrameTime = performance.now();
+      this.animFrameId = requestAnimationFrame(this.gameLoop.bind(this));
+      this.scheduleSpawn(350);
+      this.focusKeyboard();
+    }
+
+    pauseGame() {
+      if (this.state !== 'PLAYING') return;
+      if (this.lives <= 0) { this.gameOver(); return; }
+      this.state = 'PAUSED';
+      this.cleanup();
+      this.fallingArea.querySelectorAll('.word-popped, .word-missed, .floating-feedback').forEach(el => el.remove());
+      this.activeWords = this.activeWords.filter(word => {
+        word.innerEl.classList.remove('shake-error');
+        if (!word.isGrounded) return true;
+        word.el.remove();
+        return false;
+      });
+      this.showInterlude('Nghỉ một nhịp nhé', '', '', 'Thẻ đã dừng. Điểm và phần đang gõ vẫn ở đây.', false);
+    }
+
+    showInterlude(title, vi, de, note, retry) {
+      this.appEl.querySelector('.wr-controls').inert = true;
+      document.getElementById('wr-interlude-title').textContent = title;
+      document.getElementById('wr-review-vi').textContent = vi;
+      document.getElementById('wr-review-de').textContent = de;
+      document.getElementById('wr-interlude-note').textContent = note;
+      document.getElementById('wr-interlude-icon').textContent = retry ? '📖' : '🌿';
+      document.getElementById('wr-retry-word').classList.toggle('hidden', !retry);
+      document.getElementById('wr-continue').textContent = retry ? 'Để ôn sau · Từ tiếp theo →' : 'Tiếp tục chơi →';
+      this.interlude.classList.remove('hidden');
+      this.keyboardCapture.blur();
+      document.getElementById(retry ? 'wr-retry-word' : 'wr-continue').focus();
+    }
+
+    continueRound(retry = false) {
+      if (this.state === 'PAUSED') {
+        this.resumeLoops();
+        return;
+      }
+      if (this.state !== 'REVIEW') return;
+      const word = this.activeWords.find(w => w.isGrounded && !w.isDying);
+      if (!word) return;
+      if (retry) {
+        word.isGrounded = false;
+        word.assisted = true;
+        word.y = 8;
+        word.typedCount = 0;
+        word.el.classList.remove('word-grounded-reveal');
+        word.el.querySelector('.word-card-reveal-de')?.remove();
+        word.el.querySelector('.word-card-slots').style.display = '';
+        word.letters.forEach(letter => {
+          letter.slotEl.textContent = '_';
+          letter.slotEl.classList.remove('typed');
+        });
+        word.el.style.transform = `translate3d(${word.x}px, 8px, 0)`;
+      } else {
+        word.el.remove();
+        this.activeWords = this.activeWords.filter(item => item !== word);
+        this.resolvedCount++;
+      }
+      this.interlude.classList.add('hidden');
+      this.renderProgress();
+      if (!retry && this.resolvedCount >= this.sessionGoal) {
+        this.gameOver(true);
+        return;
+      }
+      this.resumeLoops();
+      this.updateCardVisuals();
+      this.announce(retry ? 'Mình vừa xem đáp án. Gõ lại để luyện thêm nhé.' : 'Từ này đã được giữ để ôn lại. Tiếp nào!');
     }
 
     // FIFO Target Helper: Always returns the oldest active, non-grounded, non-dying word
@@ -212,6 +411,7 @@
       this.activeWords.forEach(w => {
         if (w.isDying || w.isGrounded) return;
         if (w === target) {
+          w.el.querySelector('.wr-target-label').textContent = '✎ Đang gõ';
           w.el.classList.add('card-target', 'card-focused');
           w.el.classList.remove('card-waiting');
           w.letters.forEach((l, idx) => {
@@ -222,6 +422,7 @@
             }
           });
         } else {
+          w.el.querySelector('.wr-target-label').textContent = 'Tiếp theo · đang chờ';
           w.el.classList.remove('card-target', 'card-focused');
           w.el.classList.add('card-waiting');
           w.letters.forEach(l => l.slotEl.classList.remove('current'));
@@ -230,6 +431,42 @@
     }
 
     initEvents() {
+      this.appEl.querySelectorAll('button[data-wr-mode]').forEach(button => {
+        button.addEventListener('click', () => {
+          if (this.state !== 'IDLE') return;
+          this.mode = button.dataset.wrMode;
+          this.updateModeUI();
+        });
+      });
+      this.appEl.querySelectorAll('[data-wr-char]').forEach(button => {
+        button.addEventListener('pointerdown', event => event.preventDefault());
+        button.addEventListener('click', () => {
+          if (this.state !== 'PLAYING') return;
+          this.handleCharInput(button.dataset.wrChar, 'letter-button');
+          this.focusKeyboard();
+        });
+      });
+      document.getElementById('wr-pause').addEventListener('click', () => this.pauseGame());
+      document.getElementById('wr-continue').addEventListener('click', () => this.continueRound());
+      document.getElementById('wr-retry-word').addEventListener('click', () => this.continueRound(true));
+      document.getElementById('wr-review-round').addEventListener('click', () => this.startGame({ review: true }));
+      document.getElementById('wr-choose-mode').addEventListener('click', () => {
+        this.resetToIdle();
+        document.getElementById('wr-deck').focus();
+      });
+      document.getElementById('wr-hint').addEventListener('click', () => {
+        if (this.state !== 'PLAYING' || this.mode !== 'practice') return;
+        const word = this.getTargetWord();
+        if (!word) return;
+        word.assisted = true;
+        this.rememberForReview(word);
+        this.fillNextSlot(word);
+        if (!word.isDying) this.announce('Đã mở một chữ. Em gõ tiếp phần còn lại nhé.', 'hint');
+        this.focusKeyboard();
+      });
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) this.pauseGame();
+      });
       // Start & Replay
       if (this.btnStart) {
         this.btnStart.addEventListener('click', () => {
@@ -268,14 +505,27 @@
 
       // Direct Keyboard Input (Desktop & Physical Keyboards)
       window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          if (this.state === 'PLAYING') { e.preventDefault(); this.pauseGame(); return; }
+          if (this.state === 'PAUSED') { e.preventDefault(); this.continueRound(); return; }
+        }
+        if (e.key === 'Tab' && !this.interlude.classList.contains('hidden')) {
+          const buttons = [...this.interlude.querySelectorAll('button')].filter(button => !button.classList.contains('hidden'));
+          if ((e.shiftKey && document.activeElement === buttons[0]) || (!e.shiftKey && document.activeElement === buttons.at(-1))) {
+            e.preventDefault();
+            (e.shiftKey ? buttons.at(-1) : buttons[0]).focus();
+          }
+          return;
+        }
         this.handleKeyDown(e);
       });
 
       // Mobile Virtual Keyboard Capture with strict deduplication against keydown
       if (this.keyboardCapture) {
-        this.keyboardCapture.addEventListener('input', () => {
+        this.keyboardCapture.addEventListener('input', (event) => {
           if (this.state !== 'PLAYING') return;
-          const val = this.keyboardCapture.value;
+          if (event.isComposing) return;
+          const val = this.keyboardCapture.value.normalize('NFC');
           this.keyboardCapture.value = '';
           if (!val) return;
 
@@ -290,6 +540,7 @@
             ) {
               continue;
             }
+            if (/\s/.test(char)) continue;
             this.lastProcessed = { char: char.toLowerCase(), time: now, source: 'capture-input' };
             this.handleCharInput(char, 'capture-input');
           }
@@ -316,7 +567,7 @@
       // Tap / Click anywhere refocuses keyboard capture input
       document.addEventListener('click', (e) => {
         if (this.state === 'PLAYING') {
-          if (!e.target.closest('#btn-mute') && !e.target.closest('#btn-back-to-study') && !e.target.closest('.study-mode-pill')) {
+          if (this.appEl.contains(e.target) && !e.target.closest('button, input, a')) {
             this.focusKeyboard();
           }
         }
@@ -326,9 +577,12 @@
       if (window.visualViewport) {
         const handleResize = () => {
           if (this.appEl && (window.innerWidth <= 600 || (document.body && document.body.classList.contains('wortregen-standalone')))) {
-            this.appEl.style.height = `${window.visualViewport.height}px`;
+            const top = Math.max(0, this.appEl.getBoundingClientRect().top);
+            this.appEl.style.height = `${Math.max(280, window.visualViewport.height - top - 8)}px`;
           }
+          this.resizeBoard();
         };
+        window.addEventListener('resize', handleResize);
         window.visualViewport.addEventListener('resize', handleResize);
         window.visualViewport.addEventListener('scroll', handleResize);
         if (document.body && document.body.classList.contains('wortregen-standalone')) {
@@ -349,15 +603,40 @@
 
     focusKeyboard() {
       if (this.keyboardCapture) {
-        this.keyboardCapture.focus();
+        this.keyboardCapture.value = '';
+        this.keyboardCapture.focus({ preventScroll: true });
       }
+    }
+
+    resizeBoard() {
+      // Preserve elapsed fall progress when a mobile keyboard changes the stage.
+      if (this.fallingArea.clientHeight <= 0) return;
+      this.activeWords.forEach(word => {
+        if (word.isDying || word.isGrounded) return;
+        const bounds = word.el.getBoundingClientRect();
+        const distance = Math.max(1, this.fallingArea.clientHeight - bounds.height - 12);
+        const progress = Math.max(0, Math.min(1, (word.y - 8) / word.travelDistance));
+        word.y = 8 + progress * distance;
+        word.width = bounds.width;
+        word.height = bounds.height;
+        word.travelDistance = distance;
+        word.speed = distance / word.duration;
+        const maxX = Math.max(0, this.fallingArea.clientWidth - bounds.width - 10);
+        word.x = this.mode === 'practice' ? Math.max(0, (this.fallingArea.clientWidth - bounds.width) / 2) : Math.min(word.x, maxX);
+        word.el.style.transform = `translate3d(${word.x}px, ${word.y}px, 0)`;
+      });
+      this.stageHeight = this.fallingArea.clientHeight;
+      this.stageWidth = this.fallingArea.clientWidth;
     }
 
     // -------------------------------------------------------------------------
     // Game Lifecycle
     // -------------------------------------------------------------------------
-    startGame() {
+    startGame({ review = false } = {}) {
       this.cleanup();
+      const reviewCards = review ? [...this.reviewItems.values()] : null;
+      if (reviewCards && reviewCards.length === 0) return;
+      if (review) this.mode = 'practice';
 
       // Check vocabulary provider source (Phase 2)
       if (!this.vocabProvider) {
@@ -365,7 +644,16 @@
         return;
       }
       try {
-        this.vocabProvider.buildQueue();
+        this.vocabProvider.buildQueue({ deck: document.getElementById('wr-deck').value || null });
+        if (this.mode === 'practice' && !reviewCards) {
+          // Shorter answers first, within the learner's chosen topic. This is
+          // input difficulty, not a claim about the word's CEFR or mastery.
+          this.vocabProvider.sessionQueue.sort((a, b) => {
+            const aLength = a.de.replace(/\s/g, '').length;
+            const bLength = b.de.replace(/\s/g, '').length;
+            return Math.floor(aLength / 5) - Math.floor(bLength / 5);
+          });
+        }
       } catch (err) {
         console.error("Vocabulary initialization failed:", err);
         this.showVocabularyError(err.message || "Wortregen vocabulary source unavailable");
@@ -380,6 +668,21 @@
       this.solvedCount = 0;
       this.missedCount = 0;
       this.activeWords = [];
+      this.reviewQueue = reviewCards;
+      this.sessionGoal = this.mode === 'practice' ? Math.min(8, reviewCards ? reviewCards.length : this.vocabProvider.sessionQueue.length) : Infinity;
+      this.spawnedCount = 0;
+      this.resolvedCount = 0;
+      this.assistedCount = 0;
+      this.reviewItems = new Map();
+      this.maxConcurrent = this.mode === 'practice' ? 1 : 2;
+      this.keyboardCapture.disabled = false;
+      this.appEl.querySelector('.wr-controls').inert = false;
+      this.interlude.classList.add('hidden');
+      this.appEl.classList.remove('wr-celebrating');
+      this.updateModeUI();
+      this.startScreen.querySelector('.overlay-instruction').textContent = 'Hứng mưa từ, gom một ván vui!';
+      this.startScreen.querySelector('.overlay-instruction').style.color = '';
+      document.getElementById('vocab-error-banner')?.remove();
 
       // Hide overlays
       this.startScreen.classList.add('hidden');
@@ -390,15 +693,18 @@
 
       // Update HUD
       this.renderHUD();
+      this.announce(this.mode === 'practice' ? 'Gõ cả từ, kể cả chữ đầu được gợi ý. Không cần dấu cách hay Enter.' : 'Chỉ gõ thẻ đang sáng. Thẻ “Tiếp theo” sẽ chờ đến lượt.');
 
-      // Focus invisible input to capture all character inputs (including desktop umlauts & mobile virtual keyboard)
+      // The visible entry point opens mobile keyboards; letters fill the card.
+      if (window.innerWidth <= 600) this.appEl.scrollIntoView({ block: 'start' });
       this.focusKeyboard();
+      window.visualViewport?.dispatchEvent(new Event('resize'));
 
       // Start Loops
       this.lastFrameTime = performance.now();
       this.animFrameId = requestAnimationFrame(this.gameLoop.bind(this));
       this.scheduleSpawn(150); // 1st word spawn (target)
-      setTimeout(() => {
+      this.defer(() => {
         if (this.state === 'PLAYING' && this.activeWords.filter(w => !w.isDying && !w.isGrounded).length < this.maxConcurrent) {
           this.maybeSpawnWord(); // 2nd word spawn (waiting)
         }
@@ -406,13 +712,17 @@
     }
 
     showVocabularyError(msg) {
-      this.state = 'ERROR';
+      this.state = 'IDLE';
       this.cleanup();
+      this.appEl.querySelector('.wr-controls').inert = true;
+      this.interlude.classList.add('hidden');
+      this.keyboardCapture.blur();
+      const message = 'Bộ từ này chưa sẵn sàng để chơi. Hãy chọn bộ khác rồi thử lại nhé.';
       if (this.startScreen) {
         this.startScreen.classList.remove('hidden');
         const descEl = this.startScreen.querySelector('.overlay-instruction');
         if (descEl) {
-          descEl.textContent = `Lỗi dữ liệu: ${msg}`;
+          descEl.textContent = message;
           descEl.style.color = '#ef4444';
         }
       }
@@ -423,24 +733,54 @@
         errBanner.style.cssText = 'position:fixed;top:16px;left:50%;transform:translateX(-50%);background:#ef4444;color:#fff;padding:10px 20px;border-radius:10px;font-weight:700;font-size:14px;z-index:9999;box-shadow:0 6px 18px rgba(0,0,0,0.35);';
         document.body.appendChild(errBanner);
       }
-      errBanner.textContent = msg;
+      errBanner.textContent = message;
     }
 
-    gameOver() {
+    gameOver(completed = false) {
+      if (this.state === 'GAME_OVER') return;
       this.state = 'GAME_OVER';
       this.cleanup();
+      this.interlude.classList.add('hidden');
+      this.keyboardCapture.blur();
+      this.keyboardCapture.disabled = true;
+      this.appEl.querySelector('.wr-controls').inert = true;
 
       // Update Summary Card
       this.summaryScore.textContent = this.score;
       this.summarySolved.textContent = this.solvedCount;
       this.summaryMissed.textContent = this.missedCount;
       this.summaryCombo.textContent = `x${this.maxCombo}`;
+      this.gameOverScreen.querySelector('.overlay-title').textContent = completed ? 'Trọn ván rồi! 🌟' : 'Một ván rất cố gắng!';
+      this.gameOverScreen.querySelector('.overlay-icon').textContent = completed && this.solvedCount > 0 ? '🏆 🌈' : '🌱';
+      this.summarySolved.closest('.stat-item').querySelector('.stat-item-label').textContent = '✨ Từ hoàn thành';
+      this.summaryMissed.closest('.stat-item').querySelector('.stat-item-label').textContent = '📖 Từ đã xem đáp án';
+      document.getElementById('wr-summary-note').textContent = `${this.assistedCount ? `${this.assistedCount} từ hoàn thành có gợi ý/xem đáp án. ` : ''}Đây là lượt luyện có phản hồi từng chữ, chưa phải kiểm tra tự nhớ.`;
+      const list = document.getElementById('wr-review-list');
+      list.replaceChildren();
+      this.reviewItems.forEach(item => {
+        const li = document.createElement('li');
+        const de = document.createElement('strong');
+        de.lang = 'de';
+        de.textContent = item.de;
+        const vi = document.createElement('span');
+        vi.textContent = item.vi;
+        li.append(de, vi);
+        list.append(li);
+      });
+      const reviewButton = document.getElementById('wr-review-round');
+      reviewButton.classList.toggle('hidden', this.reviewItems.size === 0);
+      reviewButton.textContent = `Ôn lại ${this.reviewItems.size} từ cần luyện →`;
+      if (completed && this.solvedCount > 0) this.appEl.classList.add('wr-celebrating');
+      this.renderProgress();
 
       // Show Game Over Screen
       this.gameOverScreen.classList.remove('hidden');
+      (this.reviewItems.size ? reviewButton : this.btnReplay).focus();
     }
 
     cleanup() {
+      this.pendingTimers.forEach(id => clearTimeout(id));
+      this.pendingTimers.clear();
       if (this.animFrameId) {
         cancelAnimationFrame(this.animFrameId);
         this.animFrameId = null;
@@ -453,7 +793,16 @@
 
     resetToIdle() {
       this.cleanup();
+      document.getElementById('vocab-error-banner')?.remove();
       this.state = 'IDLE';
+      this.keyboardCapture.disabled = false;
+      this.appEl.querySelector('.wr-controls').inert = true;
+      this.keyboardCapture.blur();
+      this.interlude.classList.add('hidden');
+      this.appEl.classList.remove('wr-celebrating');
+      this.resolvedCount = 0;
+      this.sessionGoal = 8;
+      this.renderProgress();
       if (this.activeWords && this.activeWords.length) {
         this.activeWords.forEach(w => {
           if (w.el && w.el.parentNode) {
@@ -487,7 +836,7 @@
     scheduleSpawn(delay = 2000) {
       if (this.state !== 'PLAYING') return;
 
-      this.spawnTimer = setTimeout(() => {
+      this.spawnTimer = this.defer(() => {
         if (this.state === 'PLAYING') {
           this.maybeSpawnWord();
           const activeCount = this.activeWords.filter(w => !w.isDying && !w.isGrounded).length;
@@ -498,6 +847,8 @@
     }
 
     maybeSpawnWord() {
+      if (this.state !== 'PLAYING') return;
+      if (this.mode === 'practice' && this.spawnedCount >= this.sessionGoal) return;
       const activeNonDying = this.activeWords.filter(w => !w.isDying && !w.isGrounded);
       if (activeNonDying.length >= this.maxConcurrent) {
         return;
@@ -516,7 +867,7 @@
       // Pick next card from vocabulary provider
       let wordData;
       try {
-        wordData = this.vocabProvider.getNextCard(activeScreenCardIds);
+        wordData = this.reviewQueue ? this.reviewQueue.shift() : this.vocabProvider.getNextCard(activeScreenCardIds);
       } catch (err) {
         console.error("Failed to get next card:", err);
         this.showVocabularyError(err.message || "Wortregen vocabulary source unavailable");
@@ -554,6 +905,8 @@
         }
       }
 
+      if (this.mode === 'practice') spawnX = (areaWidth - cardWidth) / 2;
+
       // Create DOM element with slots
       const cardEl = document.createElement('div');
       cardEl.className = 'word-card';
@@ -571,13 +924,19 @@
       viEl.textContent = wordData.vi;
       innerEl.appendChild(viEl);
 
+      const targetLabel = document.createElement('div');
+      targetLabel.className = 'wr-target-label';
+      innerEl.prepend(targetLabel);
+      const cue = document.createElement('div');
+      cue.className = 'wr-word-cue';
+      cue.textContent = `Bắt đầu bằng “${wordData.de.trim()[0]}” · vẫn cần gõ chữ này`;
+
       const slotsEl = document.createElement('div');
       slotsEl.className = 'word-card-slots';
 
       // Parse letters and words
       const wordParts = wordData.de.trim().split(/\s+/);
       const letters = [];
-      let isFirstChar = true;
 
       wordParts.forEach((part, partIdx) => {
         const partEl = document.createElement('div');
@@ -587,14 +946,7 @@
           const char = part[i];
           const slotEl = document.createElement('span');
           slotEl.className = 'char-slot';
-          // Subtle first-character hint (video reference style)
-          if (isFirstChar) {
-            slotEl.classList.add('first-char-hint');
-            slotEl.textContent = char;
-            isFirstChar = false;
-          } else {
-            slotEl.textContent = '_';
-          }
+          slotEl.textContent = '_';
           slotEl.dataset.char = char;
           partEl.appendChild(slotEl);
 
@@ -610,6 +962,7 @@
       });
 
       innerEl.appendChild(slotsEl);
+      innerEl.appendChild(cue);
       cardEl.appendChild(innerEl);
       this.fallingArea.appendChild(cardEl);
 
@@ -617,6 +970,7 @@
       const rect = cardEl.getBoundingClientRect();
       const actualWidth = rect.width || cardWidth;
       const actualHeight = rect.height || 54;
+      if (this.mode === 'practice') spawnX = Math.max(minX, (areaWidth - actualWidth) / 2);
 
       // Keep inside bounds
       const clampedMaxX = Math.max(minX, areaWidth - actualWidth - 14);
@@ -625,9 +979,10 @@
 
       // Fall Duration: Tier 1 (18.5s - 21.0s), Tier 2 (24.0s - 26.5s), Tier 3 (28.5s)
       let targetDuration = wordData.duration || 18.5;
+      if (this.mode === 'practice') targetDuration *= 1.7;
 
       const areaHeight = this.fallingArea.clientHeight || 560;
-      const totalDistance = Math.max(120, areaHeight - actualHeight - startY - 4);
+      const totalDistance = Math.max(1, areaHeight - actualHeight - startY - 4);
       let cardSpeed = totalDistance / targetDuration;
 
       // Invariant: newer word must NEVER fall faster or overtake older word ahead of it
@@ -643,11 +998,15 @@
         tier: wordData.tier || 1,
         vi: wordData.vi,
         de: wordData.de,
+        source: { ...wordData },
+        assisted: false,
+        wasMissed: false,
         x: spawnX,
         y: startY,
         width: actualWidth,
         height: actualHeight,
         duration: targetDuration,
+        travelDistance: totalDistance,
         speed: cardSpeed,
         el: cardEl,
         innerEl: innerEl,
@@ -659,6 +1018,7 @@
 
       cardEl.style.transform = `translate3d(${wordObj.x}px, ${wordObj.y}px, 0)`;
       this.activeWords.push(wordObj);
+      this.spawnedCount++;
 
       // Update FIFO target highlight and slot states
       this.updateCardVisuals();
@@ -670,16 +1030,25 @@
     gameLoop(timestamp) {
       if (this.state !== 'PLAYING' || this.lives <= 0) return;
 
+      // Resize events and animation frames may arrive in either order. Rebase
+      // geometry before collision checks so opening a keyboard is not a miss.
+      if (this.stageHeight !== this.fallingArea.clientHeight || this.stageWidth !== this.fallingArea.clientWidth || this.activeWords.some(word => !word.isDying && !word.isGrounded && Math.abs(word.el.offsetHeight - word.height) > 1)) {
+        this.resizeBoard();
+      }
+
       const dt = Math.min(0.1, (timestamp - this.lastFrameTime) / 1000);
       this.lastFrameTime = timestamp;
 
       const groundLimit = this.fallingArea.clientHeight;
+      const target = this.getTargetWord();
 
       for (let i = 0; i < this.activeWords.length; i++) {
         if (this.state !== 'PLAYING' || this.lives <= 0) break;
 
         const w = this.activeWords[i];
         if (w.isDying || w.isGrounded) continue;
+        // Waiting cards keep their full fall time until they become the target.
+        if (w !== target) continue;
 
         w.y += w.speed * dt;
 
@@ -722,10 +1091,25 @@
       word.y = Math.max(0, groundLimit - word.height - 4);
       word.el.style.transform = `translate3d(${word.x}px, ${word.y}px, 0)`;
 
+      if (!word.wasMissed) {
+        this.missedCount++;
+        this.rememberForReview(word);
+      }
+      word.wasMissed = true;
+      word.assisted = true;
+      this.combo = 0;
+      if (this.mode === 'practice') {
+        this.state = 'REVIEW';
+        this.cleanup();
+        this.renderHUD();
+        word.el.classList.add('word-grounded-reveal');
+        this.showInterlude('Từ này mình cùng xem lại', word.vi, word.de, 'Không mất tim. Đọc đáp án rồi thử lại, hoặc giữ từ này để ôn sau.', true);
+        return;
+      }
+
       // Penalty (clamped so lives cannot go below 0)
       this.lives = Math.max(0, this.lives - 1);
       this.combo = 0;
-      this.missedCount += 1;
 
       // Audio feedback
       this.sound.playMiss();
@@ -758,11 +1142,11 @@
       const isFatalMiss = this.lives <= 0;
 
       // Pause at bottom for 1.2s so the player can learn the correct answer
-      setTimeout(() => {
+      this.defer(() => {
         word.isDying = true;
         word.el.classList.add('word-missed');
 
-        setTimeout(() => {
+        this.defer(() => {
           if (word.el.parentNode) {
             word.el.remove();
           }
@@ -790,6 +1174,9 @@
     handleKeyDown(e) {
       if (this.state !== 'PLAYING') return;
       if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if (e.isComposing || e.key === 'Dead' || e.key === 'Process') return;
+      const editing = e.target?.closest?.('input, textarea, select, [contenteditable="true"]');
+      if ((editing && editing !== this.keyboardCapture) || e.target?.closest?.('button, a')) return;
 
       if (e.key === 'Backspace') {
         e.preventDefault();
@@ -832,9 +1219,11 @@
 
       if (this.charsMatch(rawChar, nextLetter.char)) {
         this.fillNextSlot(target);
+        if (!target.isDying && this.feedback.dataset.tone === 'retry') this.announce('Đúng chữ rồi! Gõ tiếp phần còn lại nhé.');
       } else {
         // Wrong character typed on target: subtle shake error, NO life lost, NO card switch!
         this.shakeTargetError(target);
+        this.announce('Chữ này chưa khớp. Thử lại nhé — gõ sai không mất tim.', 'retry');
       }
     }
 
@@ -876,13 +1265,7 @@
         const letter = word.letters[word.typedCount];
         letter.slotEl.classList.remove('typed');
 
-        if (word.typedCount === 0) {
-          // Cleared back to slot 0: restore subtle first-char hint
-          letter.slotEl.textContent = letter.char;
-          letter.slotEl.classList.add('first-char-hint');
-        } else {
-          letter.slotEl.textContent = '_';
-        }
+        letter.slotEl.textContent = '_';
 
         this.updateCardVisuals();
       }
@@ -894,12 +1277,13 @@
       inner.classList.remove('shake-error');
       void inner.offsetWidth; // force reflow
       inner.classList.add('shake-error');
-      setTimeout(() => {
+      this.defer(() => {
         inner.classList.remove('shake-error');
       }, 280);
     }
 
     handleCorrectAnswer(word) {
+      if (this.state !== 'PLAYING' || word.isDying) return;
       word.isDying = true;
       const idx = this.activeWords.indexOf(word);
       if (idx !== -1) {
@@ -908,39 +1292,51 @@
 
       // Stats
       const wordLen = word.letters ? word.letters.length : 10;
-      this.score += wordLen * 10;
       this.combo += 1;
+      const multiplier = Math.min(3, 1 + Math.floor((this.combo - 1) / 3));
+      const scoreGain = wordLen * 10 * multiplier;
+      this.score += scoreGain;
       if (this.combo > this.maxCombo) {
         this.maxCombo = this.combo;
       }
       this.solvedCount += 1;
+      this.resolvedCount += 1;
+      if (word.assisted) this.assistedCount++;
 
       // Audio
       this.sound.playCorrect(this.combo);
 
       // Visual Pop Animation
+      word.el.classList.remove('card-target', 'card-focused', 'card-waiting');
       word.el.classList.add('word-popped');
-      setTimeout(() => {
+      this.defer(() => {
         if (word.el.parentNode) {
           word.el.remove();
         }
       }, 360);
 
       // Floating Score Indicator
-      const scoreGain = wordLen * 10;
-      const scoreText = this.combo >= 3 ? `+${scoreGain} (Combo x${this.combo})` : `+${scoreGain}`;
+      const scoreText = multiplier > 1 ? `+${scoreGain} · Thưởng x${multiplier}` : `+${scoreGain}`;
       const scoreClass = this.combo >= 3 ? 'score combo-burst' : 'score';
       this.showFloatingFeedback(word.x + word.width / 2, Math.max(20, word.y), scoreText, scoreClass);
 
       // Update HUD
       this.renderHUD();
+      this.renderProgress();
+      const encouragement = this.combo === 3 ? '🔥 Ba từ liền! Từ tiếp theo được thưởng x2.' : this.combo === 6 ? '🌈 Sáu từ liền! Từ tiếp theo được thưởng x3.' : `Đúng rồi! +${scoreGain} điểm · tiếp nào!`;
+      this.announce(encouragement, 'success');
 
       // FIFO: Next word in queue immediately becomes the active target!
       this.updateCardVisuals();
 
+      if (this.mode === 'practice' && this.resolvedCount >= this.sessionGoal) {
+        this.defer(() => this.gameOver(true), 500);
+        return;
+      }
+
       // Maintain flow: Spawn next word smoothly if board has space
       if (this.activeWords.filter(w => !w.isDying && !w.isGrounded).length < this.maxConcurrent) {
-        setTimeout(() => {
+        this.defer(() => {
           if (this.state === 'PLAYING') {
             this.maybeSpawnWord();
           }
@@ -952,6 +1348,7 @@
     // HUD Rendering
     // -------------------------------------------------------------------------
     renderHUD() {
+      this.hudLives.setAttribute('aria-label', this.mode === 'practice' ? 'Luyện nhẹ không mất tim' : `${this.lives} mạng`);
       // Lives (❤️ ❤️ ❤️)
       const hearts = this.hudLives.querySelectorAll('.hud-heart');
       hearts.forEach((h, idx) => {
@@ -990,7 +1387,7 @@
 
       this.fallingArea.appendChild(fb);
 
-      setTimeout(() => {
+      this.defer(() => {
         if (fb.parentNode) {
           fb.remove();
         }

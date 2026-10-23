@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ao Cỏ May — Hoạt Ảnh 2D Mèo Chợ Câu Cá (v01)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header bar -->
+    <header class="header-bar">
+      <div class="header-title">
+        <h1>Ao Cỏ May</h1>
+        <span class="badge-tag">Bản thử chuyển động</span>
+      </div>
+      <div class="status-info">
+        <div class="status-item">
+          <span id="statusIndicator" class="status-indicator"></span>
+          <span id="statusText">Đang phát (Trình diễn 20s)</span>
+        </div>
+        <div class="status-item">
+          <span id="critterStatus">Sinh vật: Yên tĩnh</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Stage card -->
+    <main class="stage-card">
+      <canvas id="fishingCanvas" width="1672" height="941" role="img" aria-label="Mèo Chợ ngồi bè câu cá trên Ao Cỏ May">Hoạt ảnh mèo câu cá. Các nút bên dưới cho phép tạm dừng hoặc chọn một phản ứng.</canvas>
+      <div id="canvasBanner" class="canvas-overlay-banner">Trình diễn 20 giây</div>
+    </main>
+
+    <!-- Controls panel -->
+    <section class="controls-card" aria-label="Bảng điều khiển hoạt ảnh">
+      <!-- Timeline row -->
+      <div class="timeline-row">
+        <input type="range" id="timelineSlider" aria-label="Vị trí trong đoạn trình diễn" class="timeline-slider" min="0" max="20" step="0.05" value="0">
+        <span id="timeDisplay" class="time-label">0.0s / 20.0s</span>
+      </div>
+
+      <!-- Buttons row -->
+      <div class="buttons-row">
+        <div class="button-group-primary">
+          <button id="btnPlayPause" class="btn btn-primary" title="Phím tắt: Phím cách">
+            <span id="playIcon">⏸</span> <span id="playText">Tạm dừng</span>
+          </button>
+          <button id="btnShowcase" class="btn btn-active" title="Chạy kịch bản 20 giây chuẩn">
+            <span>🎬</span> <span>Trình diễn 20s</span>
+          </button>
+          <button id="btnAmbient" class="btn" title="Chế độ chờ tự nhiên dài 20-45s">
+            <span>🌿</span> <span>Chờ tự nhiên</span>
+          </button>
+        </div>
+
+        <div class="button-group-secondary">
+          <button id="btnDragonfly" class="btn btn-accent" title="Gọi chuồn chuồn ghé ngọn cần">
+            <span>🦗</span> <span>Chuồn chuồn ghé</span>
+          </button>
+          <button id="btnCatch" class="btn btn-accent" title="Kéo cá cắn câu vào sọt">
+            <span>🐟</span> <span>Cá cắn câu</span>
+          </button>
+          <label class="toggle-switch-label" title="Giảm các chuyển động mạnh hoặc nhanh">
+            <input type="checkbox" id="chkReducedMotion">
+            <span>Giảm chuyển động</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer notes -->
+    <footer class="notes-card">
+      <span>Một góc ao yên tĩnh và một người bạn nhỏ đang chờ cá.</span>
+      <span>Thử gọi chuồn chuồn ghé chơi hoặc xem mèo kéo cá vào sọt. Bản thử chưa có âm thanh.</span>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "originalBytes": 242449971,
+  "audioOnlyBytes": 21637704,
+  "audioOnlyReductionPercent": 91.08,
+  "audioBitstreamUnchanged": true,
+  "sampleStart": 1101.6835,
+  "sampleOriginalBytes": 10616862,
+  "sampleTargetSeconds": 60,
+  "variants": [
+    {
+      "file": "sample-720p-crf26.mp4",
+      "size": 7608594,
+      "reductionPercent": 28.33,
+      "settings": {
+        "scale": "960:720",
+        "crf": 26,
+        "preset": "fast",
+        "audio": "copy"
+      }
+    },
+    {
+      "file": "sample-480p-crf24.mp4",
+      "size": 5028614,
+      "reductionPercent": 52.64,
+      "settings": {
+        "scale": "640:480",
+        "crf": 24,
+        "preset": "fast",
+        "audio": "copy"
+      }
+    }
+  ],
+  "limitations": "One 60-second action sample, not a whole-film size guarantee or human audio/visual review. No app source or original video changed."
+}

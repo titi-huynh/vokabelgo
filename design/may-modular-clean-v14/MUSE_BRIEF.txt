@@ -1,0 +1,17 @@
+Toto, chị thấy ảnh bị lem/xước sau nhiều lần edit toàn cảnh và đồng ý DỪNG chuỗi sửa cả ảnh. Cần bộ tài nguyên TÁCH LỚP để Codex ghép bằng code, mỗi vật giữ một file gốc, sau này di chuyển không qua AI nữa. Hãy làm thật bộ May_modular_clean_v14, chưa sửa website.
+
+Nguồn: mở May_home_soul_house_v10.png cho căn nhà/góc nhìn/màu nền còn sạch; mở May_home_red_viewer_v13c.png CHỈ để hiểu hình dáng và bố trí các đồ đã chọn, KHÔNG dùng làm nền tạo nối tiếp. Không cần tạo Mây: Codex đã có sprite độc lập, dùng lại ảnh chuẩn.
+
+A. Một nền May_modular_background_v14.png: dùng v10 làm EDIT đúng MỘT lượt, bỏ mèo giữa sân, bỏ ghế trên đảo phụ trái, bỏ toàn bộ đệm+sách ở hiên. Khôi phục cỏ/sàn ở ba chỗ đó. GIỮ căn nhà kem mái lá, hiên/cửa/rèm/hoa/đèn, cây/bụi/đá, nước mint/bờ đảo, cầu gỗ VÀ GIỎ trên cầu. Không vẽ bảng táo/hộp phim/bàn chơi/bè/ghế/đệm/mèo vào nền. Không thiết kế lại nhà hoặc đổi bố cục. Nền vuông, 1600×1600 hoặc cao hơn nếu công cụ hỗ trợ. Sau bước này nền được đóng băng, không đưa lại qua các lượt edit.
+
+B. Sáu PNG ĐỘC LẬP nền trong suốt thật (alpha), mỗi vật một ảnh/một lượt tạo mới, không cắt đồ lem từ v13c và không ghép bảng sprite có nhãn:
+1 apple-board.png — giá bảng gỗ nhỏ, mặt giấy kem, một quả táo cam đỏ và lá xanh như đã chọn. Nhìn chính diện hơi từ trên, đủ hai chân. Nét nâu sạch, màu phẳng, không bóng nét ma ở mép.
+2 porch-cushion.png — đệm xanh mint bo góc hình thoi nhẹ đúng phối cảnh hiên, MẶT TRỐNG, không sách. Viền sạch, một mảng bóng dịu, không nét xước/kim khâu/vân vải.
+3 vintage-viewer.png — hộp xem phim quay tay đỏ đất, viền kem gọn, ống nhìn tròn bằng đồng có tâm tối, tay quay đồng bên hông. Dáng hộp/bố cục như v13, không TV/máy ảnh/radio. Góc chéo từ trên khớp hiên.
+4 reading-chair.png — chiếc ghế gỗ đệm kem với đúng MỘT quyển sách mở trên ghế, không cây hay sàn.
+5 play-table.png — một bàn tròn gỗ thấp, vài thẻ hình trơn và hai quân gỗ. Không chữ, không bàn thứ hai hoặc nền cỏ.
+6 fishing-raft.png — bè 5–6 thanh tre nhỏ, một cần cành cây có MỘT LÁ đặt trên bè, dây và phao nhỏ đi ra trái/bên dưới, đầy đủ không cắt. Không nước/cầu/giỏ/mèo/tấm ván nối. Nước sẽ là nền riêng.
+
+Phong cách cả sáu: đồ game 2D vẽ tay gọn, đúng thiết kế đã chọn; đường viền nâu mềm rõ đều, đường cong dứt khoát, mảng màu sạch, rất ít nét bên trong, không texture giấy/màu nước/hạt/nét chồng/xước/lem. Không đổi sang render 3D. Ưu tiên 1024px mỗi ảnh hoặc độ phân giải gốc cao tương đương; chừa lề alpha 8–12%, vật đủ lớn để kiểm tra nét. Nền phải thật sự trong suốt bằng kênh alpha; KHÔNG vẽ ô caro vào pixel và gọi là trong suốt. Nếu Muse Image không có alpha trực tiếp thì chỉ dùng cơ chế tách nền thật đang hỗ trợ và báo cách đã làm; nếu không có cách xuất alpha, báo cụ thể, không bịa.
+
+Tổng 7 ảnh, mỗi ảnh tối đa một lượt tạo trước để kiểm tra, không tự thử đi thử lại. Giữ file thô và PNG alpha nếu tách nền có bước riêng. Kiểm tra kích thước/mode/alpha bằng đọc file thật và ghi vào manifest.json, báo nguồn dùng. Gửi từng PNG tải được VÀ ZIP May_modular_clean_v14.zip gồm 7 ảnh + manifest + brief. Không nướng lại sáu món vào nền. Không tạo Mây mới, không video/code/web, không mua gói hoặc đăng công khai. Hãy thực hiện đủ bộ, không chỉ gửi kế hoạch.

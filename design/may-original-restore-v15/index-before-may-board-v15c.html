@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nhà Mây · Giữ đúng bản chị duyệt</title>
+  <link rel="stylesheet" href="preview.css">
+</head>
+<body>
+  <header><a href="/" class="brand">Mây<span>Góc nhà nhỏ, mỗi ngày một điều mới</span></a><span class="edition">Làm sạch hộp phim · v15b</span></header>
+  <main>
+    <section class="world-panel" aria-label="Thế giới Mây">
+      <div class="world-heading"><div><p class="eyebrow">NHÀ CỦA MÂY</p><h1>Góc xem phim mới.</h1></div><button id="reset" type="button">Đặt lại vị trí</button></div>
+      <div class="stage"><canvas id="world" width="1600" height="1600" tabindex="0" aria-label="Bản xem thế giới Mây. Chọn đồ vật rồi kéo hoặc dùng phím mũi tên để di chuyển."></canvas><p id="loading" role="status">Đang mở bộ tài nguyên…</p></div>
+      <div class="world-footer"><span id="status" role="status" aria-live="polite">Có thể kéo hộp phim cùng kệ; các chi tiết khác giữ nguyên.</span><label><input type="checkbox" id="background-only"> Ẩn hộp phim</label></div>
+    </section>
+    <aside aria-label="Kiểm tra nét từng tài nguyên">
+      <p class="eyebrow">ĐỐI CHIẾU BẢN GỐC</p><h2 id="selected-name">Hộp xem phim</h2><p class="intro">Chỉ đổi chỗ hộp phim và thêm kệ thấp. Chọn các chi tiết khác để xem cận nét gốc.</p>
+      <div id="asset-list" class="asset-list" role="group" aria-label="Chọn đồ vật"></div>
+      <div class="detail-heading"><h3>Xem cận nét</h3><div class="zoom-controls" role="group" aria-label="Mức phóng to"><button type="button" data-zoom="1" aria-pressed="true">1×</button><button type="button" data-zoom="2" aria-pressed="false">2×</button><button type="button" data-zoom="4" aria-pressed="false">4×</button></div></div>
+      <div class="detail"><canvas id="detail" width="640" height="480" aria-label="Ảnh phóng to của đồ vật đang chọn trên nền ô vuông kiểm tra độ trong suốt"></canvas></div>
+      <p class="detail-note">Hộp phim là lớp riêng. Các chi tiết khác được xem trực tiếp từ ảnh gốc. <button id="detail-background" type="button">Đổi nền kiểm tra</button></p>
+      <div class="move-controls" role="group" aria-label="Dịch chuyển món đang chọn"><button type="button" data-move="-12,0" aria-label="Dịch sang trái">←</button><button type="button" data-move="0,-12" aria-label="Dịch lên">↑</button><button type="button" data-move="0,12" aria-label="Dịch xuống">↓</button><button type="button" data-move="12,0" aria-label="Dịch sang phải">→</button></div>
+      <div class="note"><strong>Giữ đúng nét chị chọn</strong><p>Bè, Mây, ghế, bảng và bàn giữ nguyên trong cảnh. Chỉ hộp phim cùng kệ có thể di chuyển.</p><p id="asset-facts">Đang kiểm tra PNG…</p></div>
+    </aside>
+  </main>
+  <footer>Đây là bản xem mỹ thuật và bố trí; các góc học chưa kết nối bài học ở bản này.</footer>
+  <script src="preview.js"></script>
+</body>
+</html>

@@ -1,0 +1,549 @@
+{
+  "rel_syn_adj_schwer_syn_840_adj_schwierig_syn_840": {
+    "relationId": "rel_syn_adj_schwer_syn_840_adj_schwierig_syn_840",
+    "type": "synonym",
+    "fromEntryId": "adj_schwer_syn_840",
+    "toEntryId": "adj_schwierig_syn_840",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adj_schwer_syn_840_adj_schwierig_syn_840"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "openthesaurus",
+        "synsetId": 840,
+        "level": "standard"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Approved difficulty relation",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:27:26.220Z",
+    "updatedAt": "2026-10-09T07:27:34.461Z"
+  },
+  "rel_antonym_adj_schwer_difficulty_adj_leicht_difficulty": {
+    "relationId": "rel_antonym_adj_schwer_difficulty_adj_leicht_difficulty",
+    "type": "antonym",
+    "fromEntryId": "adj_schwer_difficulty",
+    "toEntryId": "adj_leicht_difficulty",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adjective_difficulty"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:27:34.471Z",
+    "updatedAt": "2026-10-09T07:27:34.471Z"
+  },
+  "rel_synonym_adj_schwer_difficulty_adj_schwierig_difficulty": {
+    "relationId": "rel_synonym_adj_schwer_difficulty_adj_schwierig_difficulty",
+    "type": "synonym",
+    "fromEntryId": "adj_schwer_difficulty",
+    "toEntryId": "adj_schwierig_difficulty",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adjective_difficulty"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:27.840Z",
+    "updatedAt": "2026-10-09T07:28:27.840Z"
+  },
+  "rel_antonym_adj_schwer_difficulty_opp_adj_leicht_difficulty_opp": {
+    "relationId": "rel_antonym_adj_schwer_difficulty_opp_adj_leicht_difficulty_opp",
+    "type": "antonym",
+    "fromEntryId": "adj_schwer_difficulty_opp",
+    "toEntryId": "adj_leicht_difficulty_opp",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adjective_difficulty_opp"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:27.884Z",
+    "updatedAt": "2026-10-09T07:28:27.884Z"
+  },
+  "rel_synonym_adj_leicht_ease_adj_einfach_ease": {
+    "relationId": "rel_synonym_adj_leicht_ease_adj_einfach_ease",
+    "type": "synonym",
+    "fromEntryId": "adj_leicht_ease",
+    "toEntryId": "adj_einfach_ease",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adjective_ease"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:27.933Z",
+    "updatedAt": "2026-10-09T07:28:27.933Z"
+  },
+  "rel_antonym_adj_leicht_ease_opp_adj_schwer_ease_opp": {
+    "relationId": "rel_antonym_adj_leicht_ease_opp_adj_schwer_ease_opp",
+    "type": "antonym",
+    "fromEntryId": "adj_leicht_ease_opp",
+    "toEntryId": "adj_schwer_ease_opp",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adjective_ease_opp"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:27.970Z",
+    "updatedAt": "2026-10-09T07:28:27.970Z"
+  },
+  "rel_synonym_adj_teuer_price_high_adj_kostspielig_price_high": {
+    "relationId": "rel_synonym_adj_teuer_price_high_adj_kostspielig_price_high",
+    "type": "synonym",
+    "fromEntryId": "adj_teuer_price_high",
+    "toEntryId": "adj_kostspielig_price_high",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adjective_price_high"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.007Z",
+    "updatedAt": "2026-10-09T07:28:28.007Z"
+  },
+  "rel_antonym_adj_teuer_price_high_opp_adj_billig_price_high_opp": {
+    "relationId": "rel_antonym_adj_teuer_price_high_opp_adj_billig_price_high_opp",
+    "type": "antonym",
+    "fromEntryId": "adj_teuer_price_high_opp",
+    "toEntryId": "adj_billig_price_high_opp",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adjective_price_high_opp"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.042Z",
+    "updatedAt": "2026-10-09T07:28:28.042Z"
+  },
+  "rel_synonym_adj_billig_price_low_adj_günstig_price_low": {
+    "relationId": "rel_synonym_adj_billig_price_low_adj_günstig_price_low",
+    "type": "synonym",
+    "fromEntryId": "adj_billig_price_low",
+    "toEntryId": "adj_günstig_price_low",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adjective_price_low"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.081Z",
+    "updatedAt": "2026-10-09T07:28:28.081Z"
+  },
+  "rel_antonym_adj_billig_price_low_opp_adj_teuer_price_low_opp": {
+    "relationId": "rel_antonym_adj_billig_price_low_opp_adj_teuer_price_low_opp",
+    "type": "antonym",
+    "fromEntryId": "adj_billig_price_low_opp",
+    "toEntryId": "adj_teuer_price_low_opp",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adjective_price_low_opp"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.117Z",
+    "updatedAt": "2026-10-09T07:28:28.117Z"
+  },
+  "rel_synonym_adj_leise_sound_quiet_adj_ruhig_sound_quiet": {
+    "relationId": "rel_synonym_adj_leise_sound_quiet_adj_ruhig_sound_quiet",
+    "type": "synonym",
+    "fromEntryId": "adj_leise_sound_quiet",
+    "toEntryId": "adj_ruhig_sound_quiet",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adjective_sound_quiet"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.152Z",
+    "updatedAt": "2026-10-09T07:28:28.152Z"
+  },
+  "rel_antonym_adj_leise_sound_quiet_opp_adj_laut_sound_quiet_opp": {
+    "relationId": "rel_antonym_adj_leise_sound_quiet_opp_adj_laut_sound_quiet_opp",
+    "type": "antonym",
+    "fromEntryId": "adj_leise_sound_quiet_opp",
+    "toEntryId": "adj_laut_sound_quiet_opp",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adjective_sound_quiet_opp"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.189Z",
+    "updatedAt": "2026-10-09T07:28:28.189Z"
+  },
+  "rel_synonym_adj_laut_sound_loud_adj_lärmend_sound_loud": {
+    "relationId": "rel_synonym_adj_laut_sound_loud_adj_lärmend_sound_loud",
+    "type": "synonym",
+    "fromEntryId": "adj_laut_sound_loud",
+    "toEntryId": "adj_lärmend_sound_loud",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adjective_sound_loud"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.225Z",
+    "updatedAt": "2026-10-09T07:28:28.225Z"
+  },
+  "rel_antonym_adj_laut_sound_loud_opp_adj_leise_sound_loud_opp": {
+    "relationId": "rel_antonym_adj_laut_sound_loud_opp_adj_leise_sound_loud_opp",
+    "type": "antonym",
+    "fromEntryId": "adj_laut_sound_loud_opp",
+    "toEntryId": "adj_leise_sound_loud_opp",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_adjective_sound_loud_opp"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.260Z",
+    "updatedAt": "2026-10-09T07:28:28.260Z"
+  },
+  "rel_synonym_verb_beginnen_timing_start_verb_anfangen_timing_start": {
+    "relationId": "rel_synonym_verb_beginnen_timing_start_verb_anfangen_timing_start",
+    "type": "synonym",
+    "fromEntryId": "verb_beginnen_timing_start",
+    "toEntryId": "verb_anfangen_timing_start",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_verb_timing_start"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.296Z",
+    "updatedAt": "2026-10-09T07:28:28.296Z"
+  },
+  "rel_antonym_verb_beginnen_timing_start_opp_verb_enden_timing_start_opp": {
+    "relationId": "rel_antonym_verb_beginnen_timing_start_opp_verb_enden_timing_start_opp",
+    "type": "antonym",
+    "fromEntryId": "verb_beginnen_timing_start_opp",
+    "toEntryId": "verb_enden_timing_start_opp",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_verb_timing_start_opp"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.332Z",
+    "updatedAt": "2026-10-09T07:28:28.332Z"
+  },
+  "rel_synonym_verb_enden_timing_end_verb_aufhören_timing_end": {
+    "relationId": "rel_synonym_verb_enden_timing_end_verb_aufhören_timing_end",
+    "type": "synonym",
+    "fromEntryId": "verb_enden_timing_end",
+    "toEntryId": "verb_aufhören_timing_end",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_verb_timing_end"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.367Z",
+    "updatedAt": "2026-10-09T07:28:28.367Z"
+  },
+  "rel_antonym_verb_enden_timing_end_opp_verb_beginnen_timing_end_opp": {
+    "relationId": "rel_antonym_verb_enden_timing_end_opp_verb_beginnen_timing_end_opp",
+    "type": "antonym",
+    "fromEntryId": "verb_enden_timing_end_opp",
+    "toEntryId": "verb_beginnen_timing_end_opp",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_verb_timing_end_opp"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.402Z",
+    "updatedAt": "2026-10-09T07:28:28.402Z"
+  },
+  "rel_synonym_verb_öffnen_action_open_verb_aufmachen_action_open": {
+    "relationId": "rel_synonym_verb_öffnen_action_open_verb_aufmachen_action_open",
+    "type": "synonym",
+    "fromEntryId": "verb_öffnen_action_open",
+    "toEntryId": "verb_aufmachen_action_open",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_verb_action_open"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.437Z",
+    "updatedAt": "2026-10-09T07:28:28.437Z"
+  },
+  "rel_antonym_verb_öffnen_action_open_opp_verb_schließen_action_open_opp": {
+    "relationId": "rel_antonym_verb_öffnen_action_open_opp_verb_schließen_action_open_opp",
+    "type": "antonym",
+    "fromEntryId": "verb_öffnen_action_open_opp",
+    "toEntryId": "verb_schließen_action_open_opp",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_verb_action_open_opp"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.474Z",
+    "updatedAt": "2026-10-09T07:28:28.474Z"
+  },
+  "rel_synonym_verb_schließen_action_close_verb_zumachen_action_close": {
+    "relationId": "rel_synonym_verb_schließen_action_close_verb_zumachen_action_close",
+    "type": "synonym",
+    "fromEntryId": "verb_schließen_action_close",
+    "toEntryId": "verb_zumachen_action_close",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_verb_action_close"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.509Z",
+    "updatedAt": "2026-10-09T07:28:28.509Z"
+  },
+  "rel_antonym_verb_schließen_action_close_opp_verb_öffnen_action_close_opp": {
+    "relationId": "rel_antonym_verb_schließen_action_close_opp_verb_öffnen_action_close_opp",
+    "type": "antonym",
+    "fromEntryId": "verb_schließen_action_close_opp",
+    "toEntryId": "verb_öffnen_action_close_opp",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_verb_action_close_opp"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.545Z",
+    "updatedAt": "2026-10-09T07:28:28.545Z"
+  },
+  "rel_synonym_verb_sich_beeilen_speed_fast_verb_eilen_speed_fast": {
+    "relationId": "rel_synonym_verb_sich_beeilen_speed_fast_verb_eilen_speed_fast",
+    "type": "synonym",
+    "fromEntryId": "verb_sich_beeilen_speed_fast",
+    "toEntryId": "verb_eilen_speed_fast",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_verb_speed_fast"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.581Z",
+    "updatedAt": "2026-10-09T07:28:28.581Z"
+  },
+  "rel_antonym_verb_sich_beeilen_speed_fast_opp_verb_trödeln_speed_fast_opp": {
+    "relationId": "rel_antonym_verb_sich_beeilen_speed_fast_opp_verb_trödeln_speed_fast_opp",
+    "type": "antonym",
+    "fromEntryId": "verb_sich_beeilen_speed_fast_opp",
+    "toEntryId": "verb_trödeln_speed_fast_opp",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_verb_speed_fast_opp"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.619Z",
+    "updatedAt": "2026-10-09T07:28:28.619Z"
+  },
+  "rel_synonym_verb_trödeln_speed_slow_verb_bummeln_speed_slow": {
+    "relationId": "rel_synonym_verb_trödeln_speed_slow_verb_bummeln_speed_slow",
+    "type": "synonym",
+    "fromEntryId": "verb_trödeln_speed_slow",
+    "toEntryId": "verb_bummeln_speed_slow",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_verb_speed_slow"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.655Z",
+    "updatedAt": "2026-10-09T07:28:28.655Z"
+  },
+  "rel_antonym_verb_trödeln_speed_slow_opp_verb_sich_beeilen_speed_slow_opp": {
+    "relationId": "rel_antonym_verb_trödeln_speed_slow_opp_verb_sich_beeilen_speed_slow_opp",
+    "type": "antonym",
+    "fromEntryId": "verb_trödeln_speed_slow_opp",
+    "toEntryId": "verb_sich_beeilen_speed_slow_opp",
+    "direction": "bidirectional",
+    "contextScope": [
+      "ctx_verb_speed_slow_opp"
+    ],
+    "sourceEvidence": [
+      {
+        "provider": "manual-curation",
+        "note": "Expert vetted pedagogic pair"
+      }
+    ],
+    "reviewStatus": "approved",
+    "reviewNotes": "Tạo và duyệt thủ công",
+    "registerNotes": null,
+    "createdAt": "2026-10-09T07:28:28.690Z",
+    "updatedAt": "2026-10-09T07:28:28.690Z"
+  }
+}

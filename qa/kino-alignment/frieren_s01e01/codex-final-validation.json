@@ -1,0 +1,31 @@
+{
+  "status": "local_preview_functional_checks_passed",
+  "checkedAt": "2026-10-23T14:44:49.9287541+07:00",
+  "captionCues": 275,
+  "practiceUnits": 263,
+  "parts": 7,
+  "vocabularyCards": 24,
+  "e2e": {
+    "startTime": "2026-10-23T07:41:47.664Z",
+    "duration": 108504.21699999999,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "pendingExactWordingReview": [
+    700225,
+    700257,
+    700341,
+    700372,
+    700373
+  ],
+  "reviewPage": "http://localhost:3000/qa/kino-alignment/frieren_s01e01/codex-review-needed.html",
+  "postAntigravityChanges": [
+    "Accepted equivalent standalone German number words and digits in dictation",
+    "Catalog shows Frieren name; suggested level B1-B2 and five pending review units are disclosed",
+    "Selected independently recognized coherent provisional wording for the immortality sentence; retained uncertainty",
+    "Added source-linked review player and mobile/number/progress-isolation tests"
+  ],
+  "limitation": "Functional and coverage checks do not certify exact words or speaker identity. No human has manually listened through and verified every word."
+}

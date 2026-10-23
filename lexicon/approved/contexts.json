@@ -1,0 +1,615 @@
+{
+  "ctx_adj_schwer_syn_840_adj_schwierig_syn_840": {
+    "contextId": "ctx_adj_schwer_syn_840_adj_schwierig_syn_840",
+    "meaning": "schwierig, kompliziert, schwer",
+    "topic": "schwer ↔ schwierig",
+    "variants": {
+      "adj_schwer_syn_840": {
+        "de": "Die Aufgabe ist heute sehr schwer.",
+        "highlight": [
+          "schwer"
+        ],
+        "vi": "Bài tập hôm nay rất schwierig, kompliziert, schwer."
+      },
+      "adj_schwierig_syn_840": {
+        "de": "Die Aufgabe ist heute sehr schwierig.",
+        "highlight": [
+          "schwierig"
+        ],
+        "vi": "Bài tập hôm nay rất schwierig, kompliziert, schwer."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:27:26.220Z",
+    "updatedAt": "2026-10-09T07:27:26.220Z"
+  },
+  "ctx_adjective_difficulty": {
+    "contextId": "ctx_adjective_difficulty",
+    "meaning": "khó ↔ dễ",
+    "topic": "schwer ↔ leicht",
+    "variants": {
+      "adj_schwer_difficulty": {
+        "de": "Die Aufgabe ist heute sehr schwer.",
+        "highlight": [
+          "schwer"
+        ],
+        "vi": "Bài tập hôm nay rất khó."
+      },
+      "adj_leicht_difficulty": {
+        "de": "Die Aufgabe ist leicht.",
+        "highlight": [
+          "leicht"
+        ],
+        "vi": "Bài tập này dễ."
+      },
+      "adj_schwierig_difficulty": {
+        "de": "Die Aufgabe ist heute sehr schwierig.",
+        "highlight": [
+          "schwierig"
+        ],
+        "vi": "Bài tập hôm nay rất phức tạp."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:27:34.471Z",
+    "updatedAt": "2026-10-09T07:28:27.840Z"
+  },
+  "ctx_adjective_difficulty_opp": {
+    "contextId": "ctx_adjective_difficulty_opp",
+    "meaning": "schwer ⇄ leicht",
+    "topic": "schwer ↔ leicht",
+    "variants": {
+      "adj_schwer_difficulty_opp": {
+        "de": "Die Aufgabe ist heute sehr schwer.",
+        "highlight": [
+          "schwer"
+        ],
+        "vi": "Bài tập hôm nay rất khó."
+      },
+      "adj_leicht_difficulty_opp": {
+        "de": "Die Aufgabe ist heute leicht.",
+        "highlight": [
+          "leicht"
+        ],
+        "vi": "Bài tập hôm nay leicht."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:27.884Z",
+    "updatedAt": "2026-10-09T07:28:27.884Z"
+  },
+  "ctx_adjective_ease": {
+    "contextId": "ctx_adjective_ease",
+    "meaning": "dễ, đơn giản",
+    "topic": "leicht ↔ einfach",
+    "variants": {
+      "adj_leicht_ease": {
+        "de": "Die Aufgabe ist heute sehr leicht.",
+        "highlight": [
+          "leicht"
+        ],
+        "vi": "Bài tập hôm nay rất dễ."
+      },
+      "adj_einfach_ease": {
+        "de": "Die Aufgabe ist heute sehr einfach.",
+        "highlight": [
+          "einfach"
+        ],
+        "vi": "Bài tập hôm nay rất đơn giản."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:27.933Z",
+    "updatedAt": "2026-10-09T07:28:27.933Z"
+  },
+  "ctx_adjective_ease_opp": {
+    "contextId": "ctx_adjective_ease_opp",
+    "meaning": "leicht ⇄ schwer",
+    "topic": "leicht ↔ schwer",
+    "variants": {
+      "adj_leicht_ease_opp": {
+        "de": "Die Aufgabe ist heute sehr leicht.",
+        "highlight": [
+          "leicht"
+        ],
+        "vi": "Bài tập hôm nay rất dễ."
+      },
+      "adj_schwer_ease_opp": {
+        "de": "Die Aufgabe ist heute schwer.",
+        "highlight": [
+          "schwer"
+        ],
+        "vi": "Bài tập hôm nay schwer."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:27.970Z",
+    "updatedAt": "2026-10-09T07:28:27.970Z"
+  },
+  "ctx_adjective_price_high": {
+    "contextId": "ctx_adjective_price_high",
+    "meaning": "đắt, tốn kém",
+    "topic": "teuer ↔ kostspielig",
+    "variants": {
+      "adj_teuer_price_high": {
+        "de": "Das Hotel ist heute sehr teuer.",
+        "highlight": [
+          "teuer"
+        ],
+        "vi": "Khách sạn hôm nay giá rất đắt."
+      },
+      "adj_kostspielig_price_high": {
+        "de": "Das Hotel ist heute sehr kostspielig.",
+        "highlight": [
+          "kostspielig"
+        ],
+        "vi": "Khách sạn hôm nay rất tốn kém."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.007Z",
+    "updatedAt": "2026-10-09T07:28:28.007Z"
+  },
+  "ctx_adjective_price_high_opp": {
+    "contextId": "ctx_adjective_price_high_opp",
+    "meaning": "teuer ⇄ billig",
+    "topic": "teuer ↔ billig",
+    "variants": {
+      "adj_teuer_price_high_opp": {
+        "de": "Das Hotel ist heute sehr teuer.",
+        "highlight": [
+          "teuer"
+        ],
+        "vi": "Khách sạn hôm nay giá rất đắt."
+      },
+      "adj_billig_price_high_opp": {
+        "de": "Die Aufgabe ist heute billig.",
+        "highlight": [
+          "billig"
+        ],
+        "vi": "Bài tập hôm nay billig."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.042Z",
+    "updatedAt": "2026-10-09T07:28:28.042Z"
+  },
+  "ctx_adjective_price_low": {
+    "contextId": "ctx_adjective_price_low",
+    "meaning": "rẻ, phải chăng",
+    "topic": "billig ↔ günstig",
+    "variants": {
+      "adj_billig_price_low": {
+        "de": "Das Hotel ist heute sehr billig.",
+        "highlight": [
+          "billig"
+        ],
+        "vi": "Khách sạn hôm nay giá rất rẻ."
+      },
+      "adj_günstig_price_low": {
+        "de": "Das Hotel ist heute sehr günstig.",
+        "highlight": [
+          "günstig"
+        ],
+        "vi": "Khách sạn hôm nay giá rất phải chăng."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.081Z",
+    "updatedAt": "2026-10-09T07:28:28.081Z"
+  },
+  "ctx_adjective_price_low_opp": {
+    "contextId": "ctx_adjective_price_low_opp",
+    "meaning": "billig ⇄ teuer",
+    "topic": "billig ↔ teuer",
+    "variants": {
+      "adj_billig_price_low_opp": {
+        "de": "Das Hotel ist heute sehr billig.",
+        "highlight": [
+          "billig"
+        ],
+        "vi": "Khách sạn hôm nay giá rất rẻ."
+      },
+      "adj_teuer_price_low_opp": {
+        "de": "Die Aufgabe ist heute teuer.",
+        "highlight": [
+          "teuer"
+        ],
+        "vi": "Bài tập hôm nay teuer."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.117Z",
+    "updatedAt": "2026-10-09T07:28:28.117Z"
+  },
+  "ctx_adjective_sound_quiet": {
+    "contextId": "ctx_adjective_sound_quiet",
+    "meaning": "nhỏ tiếng, yên tĩnh",
+    "topic": "leise ↔ ruhig",
+    "variants": {
+      "adj_leise_sound_quiet": {
+        "de": "Die Kinder sind heute sehr leise.",
+        "highlight": [
+          "leise"
+        ],
+        "vi": "Bọn trẻ hôm nay rất yên tĩnh."
+      },
+      "adj_ruhig_sound_quiet": {
+        "de": "Die Kinder sind heute sehr ruhig.",
+        "highlight": [
+          "ruhig"
+        ],
+        "vi": "Bọn trẻ hôm nay rất trầm tĩnh."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.152Z",
+    "updatedAt": "2026-10-09T07:28:28.152Z"
+  },
+  "ctx_adjective_sound_quiet_opp": {
+    "contextId": "ctx_adjective_sound_quiet_opp",
+    "meaning": "leise ⇄ laut",
+    "topic": "leise ↔ laut",
+    "variants": {
+      "adj_leise_sound_quiet_opp": {
+        "de": "Die Kinder sind heute sehr leise.",
+        "highlight": [
+          "leise"
+        ],
+        "vi": "Bọn trẻ hôm nay rất yên tĩnh."
+      },
+      "adj_laut_sound_quiet_opp": {
+        "de": "Die Aufgabe ist heute laut.",
+        "highlight": [
+          "laut"
+        ],
+        "vi": "Bài tập hôm nay laut."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.189Z",
+    "updatedAt": "2026-10-09T07:28:28.189Z"
+  },
+  "ctx_adjective_sound_loud": {
+    "contextId": "ctx_adjective_sound_loud",
+    "meaning": "to tiếng, ồn ào",
+    "topic": "laut ↔ lärmend",
+    "variants": {
+      "adj_laut_sound_loud": {
+        "de": "Die Kinder sind heute sehr laut.",
+        "highlight": [
+          "laut"
+        ],
+        "vi": "Bọn trẻ hôm nay rất ồn ào."
+      },
+      "adj_lärmend_sound_loud": {
+        "de": "Die Kinder sind heute sehr lärmend.",
+        "highlight": [
+          "lärmend"
+        ],
+        "vi": "Bọn trẻ hôm nay làm ầm ĩ náo động."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.225Z",
+    "updatedAt": "2026-10-09T07:28:28.225Z"
+  },
+  "ctx_adjective_sound_loud_opp": {
+    "contextId": "ctx_adjective_sound_loud_opp",
+    "meaning": "laut ⇄ leise",
+    "topic": "laut ↔ leise",
+    "variants": {
+      "adj_laut_sound_loud_opp": {
+        "de": "Die Kinder sind heute sehr laut.",
+        "highlight": [
+          "laut"
+        ],
+        "vi": "Bọn trẻ hôm nay rất ồn ào."
+      },
+      "adj_leise_sound_loud_opp": {
+        "de": "Die Aufgabe ist heute leise.",
+        "highlight": [
+          "leise"
+        ],
+        "vi": "Bài tập hôm nay leise."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.260Z",
+    "updatedAt": "2026-10-09T07:28:28.260Z"
+  },
+  "ctx_verb_timing_start": {
+    "contextId": "ctx_verb_timing_start",
+    "meaning": "bắt đầu",
+    "topic": "beginnen ↔ anfangen",
+    "variants": {
+      "verb_beginnen_timing_start": {
+        "de": "Der Kurs beginnt um acht Uhr.",
+        "highlight": [
+          "beginnt"
+        ],
+        "vi": "Khóa học bắt đầu lúc 8 giờ."
+      },
+      "verb_anfangen_timing_start": {
+        "de": "Der Kurs fängt um acht Uhr an.",
+        "highlight": [
+          "fängt",
+          "an"
+        ],
+        "vi": "Khóa học bắt đầu lúc 8 giờ."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.296Z",
+    "updatedAt": "2026-10-09T07:28:28.296Z"
+  },
+  "ctx_verb_timing_start_opp": {
+    "contextId": "ctx_verb_timing_start_opp",
+    "meaning": "beginnen ⇄ enden",
+    "topic": "beginnen ↔ enden",
+    "variants": {
+      "verb_beginnen_timing_start_opp": {
+        "de": "Der Kurs beginnt um acht Uhr.",
+        "highlight": [
+          "beginnt"
+        ],
+        "vi": "Khóa học bắt đầu lúc 8 giờ."
+      },
+      "verb_enden_timing_start_opp": {
+        "de": "Der Kurs enden.",
+        "highlight": [
+          "enden"
+        ],
+        "vi": "Khóa học enden."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.332Z",
+    "updatedAt": "2026-10-09T07:28:28.332Z"
+  },
+  "ctx_verb_timing_end": {
+    "contextId": "ctx_verb_timing_end",
+    "meaning": "kết thúc, dừng lại",
+    "topic": "enden ↔ aufhören",
+    "variants": {
+      "verb_enden_timing_end": {
+        "de": "Der Kurs endet um zehn Uhr.",
+        "highlight": [
+          "endet"
+        ],
+        "vi": "Khóa học kết thúc lúc 10 giờ."
+      },
+      "verb_aufhören_timing_end": {
+        "de": "Der Kurs hört um zehn Uhr auf.",
+        "highlight": [
+          "hört",
+          "auf"
+        ],
+        "vi": "Khóa học dừng lại lúc 10 giờ."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.367Z",
+    "updatedAt": "2026-10-09T07:28:28.367Z"
+  },
+  "ctx_verb_timing_end_opp": {
+    "contextId": "ctx_verb_timing_end_opp",
+    "meaning": "enden ⇄ beginnen",
+    "topic": "enden ↔ beginnen",
+    "variants": {
+      "verb_enden_timing_end_opp": {
+        "de": "Der Kurs endet um zehn Uhr.",
+        "highlight": [
+          "endet"
+        ],
+        "vi": "Khóa học kết thúc lúc 10 giờ."
+      },
+      "verb_beginnen_timing_end_opp": {
+        "de": "Der Kurs beginnen.",
+        "highlight": [
+          "beginnen"
+        ],
+        "vi": "Khóa học beginnen."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.402Z",
+    "updatedAt": "2026-10-09T07:28:28.402Z"
+  },
+  "ctx_verb_action_open": {
+    "contextId": "ctx_verb_action_open",
+    "meaning": "mở cửa",
+    "topic": "öffnen ↔ aufmachen",
+    "variants": {
+      "verb_öffnen_action_open": {
+        "de": "Ich öffne das Fenster am Morgen.",
+        "highlight": [
+          "öffne"
+        ],
+        "vi": "Tôi mở cửa sổ vào buổi sáng."
+      },
+      "verb_aufmachen_action_open": {
+        "de": "Ich mache das Fenster am Morgen auf.",
+        "highlight": [
+          "mache",
+          "auf"
+        ],
+        "vi": "Tôi mở cửa sổ vào buổi sáng."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.437Z",
+    "updatedAt": "2026-10-09T07:28:28.437Z"
+  },
+  "ctx_verb_action_open_opp": {
+    "contextId": "ctx_verb_action_open_opp",
+    "meaning": "öffnen ⇄ schließen",
+    "topic": "öffnen ↔ schließen",
+    "variants": {
+      "verb_öffnen_action_open_opp": {
+        "de": "Ich öffne das Fenster am Morgen.",
+        "highlight": [
+          "öffne"
+        ],
+        "vi": "Tôi mở cửa sổ vào buổi sáng."
+      },
+      "verb_schließen_action_open_opp": {
+        "de": "Der Kurs schließen.",
+        "highlight": [
+          "schließen"
+        ],
+        "vi": "Khóa học schließen."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.474Z",
+    "updatedAt": "2026-10-09T07:28:28.474Z"
+  },
+  "ctx_verb_action_close": {
+    "contextId": "ctx_verb_action_close",
+    "meaning": "đóng cửa",
+    "topic": "schließen ↔ zumachen",
+    "variants": {
+      "verb_schließen_action_close": {
+        "de": "Ich schließe das Fenster am Abend.",
+        "highlight": [
+          "schließe"
+        ],
+        "vi": "Tôi khép cửa sổ vào buổi tối."
+      },
+      "verb_zumachen_action_close": {
+        "de": "Ich mache das Fenster am Abend zu.",
+        "highlight": [
+          "mache",
+          "zu"
+        ],
+        "vi": "Tôi đóng cửa sổ vào buổi tối."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.509Z",
+    "updatedAt": "2026-10-09T07:28:28.509Z"
+  },
+  "ctx_verb_action_close_opp": {
+    "contextId": "ctx_verb_action_close_opp",
+    "meaning": "schließen ⇄ öffnen",
+    "topic": "schließen ↔ öffnen",
+    "variants": {
+      "verb_schließen_action_close_opp": {
+        "de": "Ich schließe das Fenster am Abend.",
+        "highlight": [
+          "schließe"
+        ],
+        "vi": "Tôi khép cửa sổ vào buổi tối."
+      },
+      "verb_öffnen_action_close_opp": {
+        "de": "Der Kurs öffnen.",
+        "highlight": [
+          "öffnen"
+        ],
+        "vi": "Khóa học öffnen."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.545Z",
+    "updatedAt": "2026-10-09T07:28:28.545Z"
+  },
+  "ctx_verb_speed_fast": {
+    "contextId": "ctx_verb_speed_fast",
+    "meaning": "vội vã, gấp rút",
+    "topic": "sich beeilen ↔ eilen",
+    "variants": {
+      "verb_sich_beeilen_speed_fast": {
+        "de": "Der Student beeilt sich sehr zum Bahnhof.",
+        "highlight": [
+          "beeilt",
+          "sich"
+        ],
+        "vi": "Cậu sinh viên vội vã ra ga."
+      },
+      "verb_eilen_speed_fast": {
+        "de": "Der Student eilt sehr zum Bahnhof.",
+        "highlight": [
+          "eilt"
+        ],
+        "vi": "Cậu sinh viên rảo bước nhanh ra ga."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.581Z",
+    "updatedAt": "2026-10-09T07:28:28.581Z"
+  },
+  "ctx_verb_speed_fast_opp": {
+    "contextId": "ctx_verb_speed_fast_opp",
+    "meaning": "sich beeilen ⇄ trödeln",
+    "topic": "sich beeilen ↔ trödeln",
+    "variants": {
+      "verb_sich_beeilen_speed_fast_opp": {
+        "de": "Der Student beeilt sich sehr zum Bahnhof.",
+        "highlight": [
+          "beeilt",
+          "sich"
+        ],
+        "vi": "Cậu sinh viên vội vã ra ga."
+      },
+      "verb_trödeln_speed_fast_opp": {
+        "de": "Der Kurs trödeln.",
+        "highlight": [
+          "trödeln"
+        ],
+        "vi": "Khóa học trödeln."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.619Z",
+    "updatedAt": "2026-10-09T07:28:28.619Z"
+  },
+  "ctx_verb_speed_slow": {
+    "contextId": "ctx_verb_speed_slow",
+    "meaning": "lề mề, tà tà",
+    "topic": "trödeln ↔ bummeln",
+    "variants": {
+      "verb_trödeln_speed_slow": {
+        "de": "Der Student trödelt heute auf dem Weg.",
+        "highlight": [
+          "trödelt"
+        ],
+        "vi": "Cậu sinh viên hôm nay đi lề mề trên đường."
+      },
+      "verb_bummeln_speed_slow": {
+        "de": "Der Student bummelt heute auf dem Weg.",
+        "highlight": [
+          "bummelt"
+        ],
+        "vi": "Cậu sinh viên hôm nay đi tà tà trên đường."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.655Z",
+    "updatedAt": "2026-10-09T07:28:28.655Z"
+  },
+  "ctx_verb_speed_slow_opp": {
+    "contextId": "ctx_verb_speed_slow_opp",
+    "meaning": "trödeln ⇄ sich beeilen",
+    "topic": "trödeln ↔ sich beeilen",
+    "variants": {
+      "verb_trödeln_speed_slow_opp": {
+        "de": "Der Student trödelt heute auf dem Weg.",
+        "highlight": [
+          "trödelt"
+        ],
+        "vi": "Cậu sinh viên hôm nay đi lề mề trên đường."
+      },
+      "verb_sich_beeilen_speed_slow_opp": {
+        "de": "Der Kurs sich beeilen.",
+        "highlight": [
+          "sich beeilen"
+        ],
+        "vi": "Khóa học sich beeilen."
+      }
+    },
+    "reviewStatus": "approved",
+    "createdAt": "2026-10-09T07:28:28.690Z",
+    "updatedAt": "2026-10-09T07:28:28.690Z"
+  }
+}

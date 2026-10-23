@@ -1,0 +1,138 @@
+{
+  "errors": [],
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390
+  },
+  "pausedStable": true,
+  "seekDeterministic": true,
+  "reducedHidesFlight": true,
+  "states": [
+    {
+      "ready": true,
+      "time": 0,
+      "playing": false,
+      "reduced": false,
+      "pose": {
+        "time": 0,
+        "bob": 0,
+        "roll": 0.00035760479543111017,
+        "breath": 0,
+        "angle": 0,
+        "gaze": 0,
+        "blink": 0,
+        "attention": 0,
+        "fly": false
+      },
+      "method": "registered painting with weighted mesh; native WebGL study, not Rive"
+    },
+    {
+      "ready": true,
+      "time": 0.86,
+      "playing": false,
+      "reduced": false,
+      "pose": {
+        "time": 0.86,
+        "bob": 1.1910931556871869,
+        "roll": 0.0017247934406832248,
+        "breath": 0.45682774455769715,
+        "angle": 0,
+        "gaze": 0,
+        "blink": 1,
+        "attention": 0,
+        "fly": false
+      },
+      "method": "registered painting with weighted mesh; native WebGL study, not Rive"
+    },
+    {
+      "ready": true,
+      "time": 1.5,
+      "playing": false,
+      "reduced": false,
+      "pose": {
+        "time": 1.5,
+        "bob": 1.2839262969984575,
+        "roll": 0.0015672717104080179,
+        "breath": -0.32328188876086017,
+        "angle": 0,
+        "gaze": -0.19556517036235824,
+        "blink": 0,
+        "attention": 0,
+        "fly": true
+      },
+      "method": "registered painting with weighted mesh; native WebGL study, not Rive"
+    },
+    {
+      "ready": true,
+      "time": 2.8,
+      "playing": false,
+      "reduced": false,
+      "pose": {
+        "time": 2.8,
+        "bob": -0.4969681461243152,
+        "roll": -0.0009819083570569431,
+        "breath": 0.37650090826077875,
+        "angle": -0.023,
+        "gaze": -2.15,
+        "blink": 0,
+        "attention": 1,
+        "fly": true
+      },
+      "method": "registered painting with weighted mesh; native WebGL study, not Rive"
+    },
+    {
+      "ready": true,
+      "time": 3.6,
+      "playing": false,
+      "reduced": false,
+      "pose": {
+        "time": 3.6,
+        "bob": -1.3260877884837299,
+        "roll": -0.001799880884371786,
+        "breath": 0.2024685039765729,
+        "angle": -0.023,
+        "gaze": -2.0898,
+        "blink": 0,
+        "attention": 1,
+        "fly": true
+      },
+      "method": "registered painting with weighted mesh; native WebGL study, not Rive"
+    },
+    {
+      "ready": true,
+      "time": 4.4,
+      "playing": false,
+      "reduced": false,
+      "pose": {
+        "time": 4.4,
+        "bob": -0.9241385930037292,
+        "roll": -0.0009469404541768484,
+        "breath": -0.5489147006355494,
+        "angle": 0.010722656250000018,
+        "gaze": 2.1898000000000004,
+        "blink": 0,
+        "attention": 0.3164062499999992,
+        "fly": true
+      },
+      "method": "registered painting with weighted mesh; native WebGL study, not Rive"
+    },
+    {
+      "ready": true,
+      "time": 5,
+      "playing": false,
+      "reduced": false,
+      "pose": {
+        "time": 5,
+        "bob": -3.3065463576978537e-16,
+        "roll": 0.00035760479543111006,
+        "breath": -2.6942229581241775e-16,
+        "angle": 0,
+        "gaze": 0,
+        "blink": 0,
+        "attention": 0,
+        "fly": false
+      },
+      "method": "registered painting with weighted mesh; native WebGL study, not Rive"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "set": "May_viewer_stand_v14b",
+  "created": "2026-10-23",
+  "purpose": "Bo sung ke go thap cho asset vintage-viewer.png (v14). Vi tri moi trong ban ghep do Codex tu dat toa do (ben trai May, lui ve phia nha, duoi ghe doc); ban nay KHONG sua toan canh, nen, 5 mon khac hay May.",
+  "files": [
+    {
+      "file": "vintage-viewer-stand-v14b.png",
+      "width": 1325,
+      "height": 1132,
+      "mode": "RGBA",
+      "bytes": 420774,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "has_real_alpha": true,
+      "role": "Thanh pham nhom hop+ke, alpha that"
+    },
+    {
+      "file": "viewer-stand.png",
+      "width": 1920,
+      "height": 1280,
+      "mode": "RGBA",
+      "bytes": 321152,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "has_real_alpha": true,
+      "role": "Ke go rieng, alpha that"
+    },
+    {
+      "file": "viewer-stand_raw.png",
+      "width": 1920,
+      "height": 1280,
+      "mode": "RGB",
+      "bytes": 315311,
+      "role": "File raw nen magenta cua ke truoc khi tach"
+    }
+  ],
+  "source_viewer": "../vintage-viewer.png (asset thanh pham cua bo May_modular_clean_v14, dung nguyen pixel, khong ve lai)",
+  "stand_source": "Tao moi dung 1 luot Muse Image tren nen magenta #FF00FF, tach alpha bang keyout.py cua bo v14 (PIL/NumPy san co; khong rembg, khong gui du lieu ra ngoai).",
+  "composite_method": "Ghep bang PIL (alpha_composite): cat hop va ke theo khung noi dung (alpha>10); ke duoc phong theo chieu rong toi 1.4 lan chieu rong than hop (818 -> 1145 px); day hop dat len mat ke sao cho phan ke lo ra phia duoi day hop bang 1/3 chieu cao hop (238/714 px); hop ve sau (nam tren ke). Khong sua pixel cua hop.",
+  "measured": {
+    "viewer_bbox_px": [
+      818,
+      714
+    ],
+    "stand_scaled_px": [
+      1145,
+      483
+    ],
+    "stand_width_ratio": 1.4,
+    "stand_below_box_ratio": 0.33,
+    "composite_canvas_px": [
+      1325,
+      1132
+    ]
+  },
+  "notes": [
+    "Khong co nen co/nha/May trong cac file nay; nen trong suot that.",
+    "Ke co 2 chan truoc thay ro va chan sau lo mot phan o phia phai, dung phoi canh nhin tu tren."
+  ]
+}

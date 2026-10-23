@@ -1,0 +1,37 @@
+VokabelGo Cat Island - Implementation Reference & Design Principles
+
+1. Visual Direction & Primary Authority:
+- Primary Source Image: C:/Users/huynh/AppData/Local/Temp/codex-clipboard-8f1431a9-4578-42aa-84b7-21d11dd82adb.png
+- Approved v03 Blender Source:
+  - design/cat-island-blender/v03/cat-island-floating-market-v03.blend
+  - design/cat-island-blender/v03/build_floating_market_v03.py
+  - Render: floating-market-style-study-v03.png
+  - Color Palette: Mauve studio backdrop (#624B69), Translucent turquoise water (#32D2C4 / #20AEA2), Faceted sage riverbed (#A8C59C), Hull dark plum (#2E233A), Golden yellow gunwales (#F5B627), Coral cabin (#E84637), Warm cream roof (#FAF3DE).
+  - Authentic Details: Sales counter on bow deck, bamboo mast (cây bẹo) suspending fruit produce, painted Vietnamese boat eyes ("mắt ghe"), Mochi hero cat on roof, Pepper at bow holding bamboo rod with bobbing lure.
+
+2. Pinterest Reference Research & Access Notes:
+- Reference 1: https://in.pinterest.com/pin/low-poly-artwork-floating-island-with-boats-and-house--783556035167984672/
+  - Credit: Fishing Hut Concept Art by Mehdi R S.
+  - Access: Accessible public pin.
+  - Principle Applied: Clean low-poly faceted diorama cutaway revealing underwater riverbed, pastel environmental balance.
+- Reference 2: https://ca.pinterest.com/pin/artstation-canal-boat--897483031961957297/
+  - Access Limit: HTTP HEAD connectivity returns 200, but browser fetch without login returns HTTP 403 / anti-bot challenge.
+  - Principle Noted from brief / pin title: Canal boat proportions, wooden gunwales, rounded cabins.
+- Reference 3: https://in.pinterest.com/ychhawasaria/game-shop-ui/
+  - Access Limit: HTTP HEAD connectivity returns 200, but full board view requires login / returns HTTP 403 in headless browser.
+  - Principle Noted from brief / pin title: Cozy shop UI hierarchy, cream/paper parchment surfaces, uncluttered card layouts, compact orders panel.
+- Access Notice: We do not claim full visual inspection of references 2 and 3 beyond public metadata. The primary design authority is strictly the user's approved v03 Blender model and primary clipboard image.
+
+3. External Educational Material:
+- Goethe-Institut "Ein Tag in Berlin" Lesson 6 (Take-away vs Eat-in):
+  - URL: https://www.goethe.de/resources/files/pdf345/ein-tag-in-berlin_lesson-6_lesson-plan.pdf
+  - Curated mini-interaction: "Zum Mitnehmen, bitte" (take away, packaged in kraft bag/box) vs "Hier essen, bitte" (eat here, served on plate/tray).
+  - Labeled as optional extension outside selected vocabulary; does not silently add to SRS deck or manufacture mastery claims.
+
+4. Architecture & Validation Summary:
+- Three.js WebGL rendering of exported v03 Blender GLB + customer boats with low-poly chibi cats.
+- Full 2D Canvas fallback if WebGL is unavailable.
+- Responsive docked layout (1280x720 desktop scene left + order panel right; 390px mobile scene top + panel bottom).
+- Web Audio procedural chimes and honest TTS listening with text fallback.
+- Accessible DOM dock rail for keyboard/touch customer switching.
+- Versioned local storage profile: vokabelgo_cat_island_profile_v1.

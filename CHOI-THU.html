@@ -1,0 +1,2306 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#136854">
+  <title>Đấu từ · VokabelGo — Bản thử 0.2</title>
+  <link rel="icon" href="data:,">
+  <style>
+/* Preview 0.2 — isolated, no external fonts or production styles. */
+:root{--ink:#193b34;--muted:#576b63;--paper:#faf8f2;--teal:#136854;--teal-light:#e7f2eb;--line:#d5dfd5;--rot:#bd353f;--blau:#226ca5;--gruen:#287449;--gelb:#b16a07;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--paper);font-synthesis:none}
+*{box-sizing:border-box}body{margin:0}button,a{-webkit-tap-highlight-color:transparent}button,input{font:inherit}button{cursor:pointer}button,a{touch-action:manipulation}button:disabled{cursor:default}button:focus-visible,a:focus-visible{outline:3px solid #126aa2;outline-offset:3px}[hidden]{display:none!important}a{color:inherit}button{color:inherit}.header{height:64px;max-width:1360px;margin:auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:12px}.brand{font-size:23px;font-weight:800;letter-spacing:-.8px;text-decoration:none;display:flex;align-items:center;gap:0}.brand>span{color:var(--teal)}.brand small{font-size:10px;letter-spacing:1.3px;border-left:1px solid var(--line);padding-left:16px;margin-left:16px}.brand small b{font-weight:500;letter-spacing:0}.header-actions{display:flex;align-items:center;gap:5px}.quiet-btn,.icon-btn{border:0;background:none;min-height:44px;border-radius:12px;padding:0 13px;font-size:13px;font-weight:650}.icon-btn{width:44px;padding:0;font-size:22px}.quiet-btn:hover,.icon-btn:hover{background:var(--teal-light)}.primary,.secondary{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;border-radius:12px;font-size:14px;font-weight:750;padding:0 22px;text-decoration:none;border:1px solid transparent}.primary{background:var(--teal);color:white;box-shadow:0 3px 0 #084f3e}.primary:not(:disabled):hover{background:#095441}.primary:disabled{color:#64756d;background:#e2e9e1;box-shadow:none;border-color:#d6dfd5}.secondary{background:white;border:1px solid var(--line)}.secondary:not(:disabled):hover{background:#f0f5ec}.secondary:disabled{opacity:.5}.text-btn{background:none;border:none;padding:8px 4px;font-size:13px;font-weight:650;text-underline-offset:3px;min-height:40px}.text-btn:hover{text-decoration:underline}.text-btn:disabled{opacity:.45;cursor:default}.micro,.eyebrow{font-size:10px;font-weight:750;letter-spacing:1.5px;color:var(--muted)}.count{border-radius:20px;background:#e7ede5;padding:4px 9px;font-size:12px;font-weight:700;white-space:nowrap}
+/* One lightweight choice, not a technical spec on the welcome screen. */
+.setup{max-width:820px;padding:38px 24px 28px;margin:auto;text-align:center}.eyebrow{color:var(--teal)}.intro h1{font-size:clamp(29px,4vw,43px);line-height:1.16;letter-spacing:-1.6px;margin:16px 0}.intro h1 em{font-style:normal;color:var(--teal)}.intro p{font-size:15px;line-height:1.7;color:var(--muted);margin:14px}.deck-options{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:25px}.deck-option{text-align:left;display:flex;flex-direction:column;background:#fffdf8;border:2px solid #dfe5da;border-radius:18px;padding:17px 21px;gap:9px;position:relative}.deck-option.selected{border-color:var(--teal);background:#f0f7ee;box-shadow:0 4px 0 #dfe9da}.deck-option-title{font-size:19px;font-weight:750}.deck-option-title small{font-weight:450;font-size:12px;color:var(--muted);margin-left:4px}.deck-option-desc{font-size:12px;color:var(--muted)}.deck-option-foot{margin-top:4px;font-size:11px;color:var(--muted);display:flex;align-items:center;justify-content:space-between}.choice-check{background:var(--teal);color:white;border-radius:50%;width:19px;height:19px;text-align:center;visibility:hidden}.selected .choice-check{visibility:visible}.deck-art{height:73px;display:flex;gap:6px;margin:0 0 8px 9px}.deck-art i{height:73px;width:64px;border:4px solid var(--rot);background:#fffdf8;border-radius:8px;display:grid;place-items:center;font-style:normal;font-size:11px;font-weight:750;transform:rotate(-10deg)}.deck-art i+i{border-color:var(--blau);transform:rotate(10deg);margin-top:5px}.deck-art.verbs i{border-color:var(--gruen)}.deck-art.verbs i+i{border-color:#dcac4e}.mode-options{display:flex;gap:4px;background:#e9ede4;border-radius:13px;padding:4px;margin:22px auto 17px;max-width:510px}.mode{border:1px solid transparent;border-radius:10px;background:none;flex:1;padding:10px;text-align:left;display:flex;flex-direction:column;gap:3px}.mode strong{font-size:13px}.mode small{font-size:11px;color:var(--muted)}.mode.selected{background:white;border-color:#d7dfd2;box-shadow:0 2px 3px #15392809}.start-btn{width:min(100%,360px);height:52px;font-size:15px}.setup-note{font-size:11px;color:var(--muted);line-height:1.6;margin:15px 0}.sample-link{font-size:11px;text-underline-offset:3px;color:var(--muted)}
+/* The hand and its action bar remain in the viewport at supported sizes. */
+.game{max-width:1040px;width:calc(100% - 40px);height:calc(100dvh - 76px);min-height:575px;margin:0 auto 12px;display:grid;grid-template-rows:50px 58px minmax(150px,1fr) 42px 251px;gap:9px}.opponent{display:flex;align-items:center;justify-content:space-between;gap:10px}.bot-identity{display:flex;align-items:center;gap:9px;font-size:13px}.avatar{display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:#dde8e1;color:var(--teal);font-size:12px;font-weight:800}#bot-backs{display:flex;margin-left:5px}#bot-backs i{width:18px;height:24px;border:1px solid var(--paper);background:#405e54;border-radius:4px;margin-left:-6px;transform:rotate(6deg)}.mode-tag{font-size:11px;color:var(--muted)}.turn-guide{border:1px solid #cbded0;border-radius:14px;display:flex;align-items:center;gap:18px;padding:9px 17px;background:#eaf3e7}.turn-label{font-size:12px;font-weight:750;color:var(--teal);white-space:nowrap}.turn-label:before{content:'';display:inline-block;width:7px;height:7px;background:currentColor;border-radius:50%;margin-right:7px}.turn-guide p{font-size:14px;margin:0;line-height:1.4}.turn-guide.waiting{background:#f0efe9;border-color:#e1e3d8}.turn-guide.waiting .turn-label{color:#6d746c}#one-card{margin-left:auto;font-size:11px;font-weight:750;color:#905910}.table{display:flex;align-items:center;justify-content:center;gap:32px;background:radial-gradient(ellipse at 75% 20%,#edf2e2 0%,transparent 70%),#f2f2e8;border:1px solid #e0e5d6;border-radius:22px;padding:14px 28px;min-height:0}.target-area{text-align:center;display:flex;flex-direction:column;align-items:center;gap:7px;flex-shrink:0}.context{max-width:540px;flex:1;min-width:0}.context-heading{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.color-badge{display:inline-flex;align-items:center;gap:6px;border:1px solid #dce3d2;padding:5px 9px;border-radius:20px;font-size:11px;background:#fffdf8}.flip-badge{color:var(--teal);font-size:10px;font-weight:700}.sentence{font-size:clamp(17px,2vw,25px);font-weight:550;letter-spacing:-.5px;line-height:1.4;margin:16px 0 4px;overflow-wrap:break-word}.sentence mark{padding:1px 3px;border-radius:5px;background:#f4de9d;color:#322f17;font-weight:800;box-decoration-break:clone;-webkit-box-decoration-break:clone}.translation{font-size:12px;line-height:1.45;color:var(--muted);margin:9px 0}.context-actions{display:flex;align-items:center;gap:10px;color:var(--teal)}.context-actions>span{color:#a8b7a9}.feedback{display:flex;align-items:center;gap:8px;line-height:1.35;padding:6px 13px;border-radius:11px;color:var(--muted);font-size:12px;overflow:auto}.feedback[data-tone="success"]{color:#115c48;background:#eaf4e9}.feedback[data-tone="error"]{color:#8d2e36;background:#fcebed}.feedback[data-tone="notice"]{color:#764d11;background:#f7eed8}.hand-zone{display:grid;grid-template-rows:26px 159px 58px;gap:4px;min-width:0}.hand-heading{display:flex;gap:10px;align-items:center;justify-content:space-between;font-size:12px}.hand-heading strong{display:flex;align-items:center;gap:7px}.hand-heading>span{font-size:11px;color:var(--muted);margin-left:auto}.hand-arrows{display:flex;gap:4px}.hand-arrows button{width:28px;height:26px;background:#fffdf8;border:1px solid var(--line);border-radius:6px;font-size:20px}.hand{overflow-x:auto;overflow-y:hidden;display:flex;gap:10px;align-items:flex-start;padding:13px 6px 8px;scroll-padding:20px;scrollbar-width:thin;scrollbar-color:#c9d6c8 transparent;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;min-width:0;scroll-behavior:smooth}.hand:before,.hand:after{content:'';margin:auto}.hand>*{flex:0 0 auto}.hand:focus-visible{outline-offset:-3px}.action-dock{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#faf8f2f2;border-top:1px solid var(--line);padding-top:9px}.selection{display:flex;align-items:center;gap:9px;min-width:0}.selection>span{font-size:13px;font-weight:650}.selection .text-btn{white-space:nowrap;color:var(--teal);font-size:11px}.play-actions{display:flex;gap:8px;align-items:center;flex-shrink:0}.play-actions .primary{min-width:170px}.play-actions .secondary{min-width:108px}.play-actions button{height:46px;min-height:44px}.selection small{font-size:10px;color:var(--muted)}
+/* A physical card is a large, crisp word on an independent color surface. */
+.word-card{--suit:#405b53;--wash:#f6f8f4;width:106px;height:132px;border:2px solid var(--suit);border-radius:12px;background:var(--wash);color:var(--ink);padding:0;display:flex;flex-direction:column;position:relative;box-shadow:0 3px 0 #173b341b;transition:transform .15s,box-shadow .15s;isolation:isolate}.word-card.rot{--suit:var(--rot);--wash:#fff8f6}.word-card.blau{--suit:var(--blau);--wash:#f5faff}.word-card.gruen{--suit:var(--gruen);--wash:#f5fbf5}.word-card.gelb{--suit:var(--gelb);--wash:#fff9e9}.word-card.neutral{--suit:#314b45;--wash:#f2f7f2}.card-top{display:flex;align-items:center;justify-content:space-between;padding:4px 8px;height:24px;background:var(--suit);color:#fff;font-size:9px;font-weight:550;border-radius:8px 8px 0 0;letter-spacing:.1px}.suit-icon{font-size:12px;line-height:1;font-family:Arial,sans-serif}.card-main{flex:1;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;padding:4px}.card-word{font-weight:800;font-size:15px;line-height:1.2;letter-spacing:-.35px;overflow-wrap:normal;hyphens:none;max-width:100%}.card-word.long{font-size:12px;letter-spacing:-.3px}.card-type{font-size:8px;letter-spacing:.5px;text-transform:uppercase;color:#68766b}.card-bottom{font-size:9px;text-align:right;padding:0 7px 5px;color:var(--suit)}.action-icon{font-size:27px;font-weight:750;line-height:1}.card-action-title{font-size:12px;font-weight:750}.card-german-name{font-size:8px;color:#5d6e63}.word-card.selected{transform:translateY(-9px);outline:3px solid #235b47;outline-offset:3px;box-shadow:0 8px 12px #21483822}.word-card.hinted{outline:3px dashed #986509;outline-offset:3px}.word-card:disabled{opacity:.45}.word-card:not(:disabled):hover{box-shadow:0 7px 12px #21483822;transform:translateY(-5px)}.word-card.selected:not(:disabled):hover{transform:translateY(-9px)}.table .word-card{width:110px;height:145px;box-shadow:0 5px 14px #21483816}.table .word-card .card-word{font-size:16px}.table .word-card .card-word.long{font-size:13px}.table .word-card:hover{transform:none}.card-back{background:#355a4d;color:#fff;display:grid;place-content:center;text-align:center;gap:12px}.card-back b{font-size:14px}.card-back small{font-size:9px;letter-spacing:1px}.card-back .mountain{font-size:24px;color:#dec580}
+/* Assistance occupies a bounded sheet; it does not resize the board. */
+.panel{color:var(--ink);background:#fffdf8;border:1px solid var(--line);border-radius:20px;max-width:500px;width:calc(100% - 30px);max-height:min(88dvh,640px);padding:0;box-shadow:0 20px 80px #0d302b45;overflow:auto}.panel::backdrop{background:#213b3355;backdrop-filter:blur(3px)}.panel-head{padding:15px 17px 8px 23px;display:flex;align-items:center;justify-content:space-between;gap:9px;position:sticky;top:0;background:#fffdf8;border-bottom:1px solid #e3e8da}.panel-head h2{font-size:19px;margin:0;letter-spacing:-.4px}.panel-body{padding:20px 23px 24px;font-size:14px;line-height:1.65}.panel-body p{margin:0 0 14px}.panel-body button.primary,.panel-body button.secondary{margin-top:8px;width:100%}.panel-body .small{font-size:12px;color:var(--muted)}.panel-body h3{font-size:13px;margin:18px 0 7px}.color-picker{display:grid;grid-template-columns:1fr 1fr;gap:10px}.color-choice{min-height:68px;border:2px solid var(--suit);background:#fffdf8;color:var(--suit);border-radius:13px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:14px;font-weight:700}.flip-preview{display:flex;gap:12px;align-items:center;justify-content:center;background:var(--teal-light);padding:18px 9px;border-radius:12px;margin-bottom:16px;font-size:21px;font-weight:750}.learn-rule{padding:9px 0;border-bottom:1px solid var(--line)}.rule-number{color:var(--teal);font-size:11px;letter-spacing:1px;font-weight:800;display:block}.rule-functions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.rule-functions>div{border:1px solid var(--line);border-radius:9px;font-size:11px;padding:10px}.rule-functions strong{font-size:13px;display:block}.result-number{font-size:46px;text-align:center;color:var(--teal);line-height:1.3;font-weight:800}.result-stats{display:flex;justify-content:center;gap:30px;margin:18px 0}.result-stats>div{font-size:11px;text-align:center;color:var(--muted)}.result-stats b{font-size:22px;display:block;color:var(--ink)}.detail-lemma{font-size:33px;font-weight:750;line-height:1.15;overflow-wrap:break-word}.gallery{max-width:1040px;margin:35px auto;padding:0 24px}.gallery h1{font-size:30px}.gallery-cards{display:flex;flex-wrap:wrap;gap:26px 18px;margin:32px 0}.gallery figure{margin:0;text-align:center;width:142px;display:flex;flex-direction:column;align-items:center;gap:8px}.gallery figcaption{font-size:11px;color:var(--muted)}
+@media (min-height:850px) and (min-width:701px){.game{max-height:810px;grid-template-rows:55px 62px minmax(210px,1fr) 44px 266px;gap:13px}.hand-zone{grid-template-rows:28px 172px 58px}.hand .word-card{width:116px;height:147px}.hand .card-word{font-size:16px}.hand .card-word.long{font-size:13px}.table .word-card{width:136px;height:176px}.table .word-card .card-word{font-size:19px}.table .word-card .card-word.long{font-size:15px}.sentence{font-size:28px}}
+@media(max-width:700px){.header{height:56px;padding:0 14px}.brand{font-size:20px}.brand small{font-size:8px;letter-spacing:1px;padding-left:9px;margin-left:9px}.brand small b{display:none}.quiet-btn{font-size:11px;padding:0 8px}.header-actions{gap:0}.header .icon-btn{width:36px;min-width:36px}.game{width:calc(100% - 24px);height:calc(100dvh - 68px);min-height:645px;grid-template-rows:43px 61px minmax(168px,1fr) 43px 274px;gap:9px}.bot-identity{gap:6px;font-size:11px}.avatar{width:24px;height:24px}.count{font-size:11px;padding:3px 7px}.mode-tag{font-size:9px}.turn-guide{padding:9px 11px;display:block}.turn-label{font-size:10px;display:block;margin-bottom:4px}.turn-guide p{font-size:12px;line-height:1.4}#one-card{font-size:9px;float:right;position:relative;top:-42px}.table{padding:12px;gap:14px;border-radius:16px}.target-area{gap:7px}.micro{font-size:8px;letter-spacing:.7px}.table .word-card{width:88px;height:125px}.table .word-card .card-word{font-size:14px}.table .word-card .card-word.long{font-size:10px}.context{min-width:0}.sentence{font-size:17px;line-height:1.38;letter-spacing:-.25px;margin:10px 0 3px}.context-heading{gap:5px}.color-badge{font-size:10px;padding:4px 7px}.flip-badge{font-size:8px;line-height:1.3}.translation{font-size:11px;margin:6px 0;max-height:55px;overflow:auto}.context-actions{gap:6px;flex-wrap:wrap}.context-actions .text-btn{font-size:11px;padding:4px 0;min-height:36px}.context-actions>span{font-size:10px}.feedback{font-size:11px;padding:5px 9px}.hand-zone{grid-template-rows:26px 151px 89px;gap:4px}.hand-heading{font-size:11px}.hand-heading>span{font-size:9px}.hand-arrows{display:none}.hand{gap:9px;padding-top:12px;padding-left:5px;padding-right:8px}.hand:before,.hand:after{content:none}.hand .word-card{width:106px;height:131px}.action-dock{display:block;padding-top:4px}.selection{height:29px;justify-content:space-between}.selection>span{font-size:12px}.selection .text-btn{min-height:28px;padding:0 5px}.play-actions{display:flex;gap:8px}.play-actions .primary{flex:1;min-width:0;padding:0 12px;font-size:13px}.play-actions .secondary{min-width:107px;padding:0 11px;font-size:12px}.panel{border-radius:18px;max-height:85dvh}.panel-head{padding:12px 12px 8px 18px}.panel-body{padding:16px 18px 20px}.panel-head h2{font-size:18px}.setup{padding:25px 17px}.intro h1{font-size:30px;letter-spacing:-1px}.intro p{font-size:13px}.deck-options{gap:10px;margin-top:23px}.deck-option{padding:13px 11px;border-radius:13px;gap:6px}.deck-art{height:60px;margin-left:2px;margin-bottom:9px;gap:3px}.deck-art i{width:53px;height:59px;font-size:9px;border-width:3px}.deck-option-title{font-size:17px}.deck-option-title small{display:block;font-size:10px;margin:3px 0}.deck-option-desc{font-size:10px;line-height:1.5}.deck-option-foot{font-size:9px;line-height:1.4}.choice-check{flex-shrink:0;margin-left:4px}.mode-options{margin-top:20px}.mode{padding:10px}.mode small{font-size:10px}.setup-note{font-size:10px}.eyebrow{font-size:9px;letter-spacing:1px}}
+@media(max-height:730px) and (max-width:700px){.game{min-height:601px;height:calc(100dvh - 62px);grid-template-rows:34px 57px minmax(150px,1fr) 36px 265px;gap:7px}.hand-zone{grid-template-rows:24px 144px 89px}.hand .word-card{height:125px}.table{padding:9px}.table .word-card{height:112px}.sentence{font-size:16px}.micro{font-size:7px}.context-actions .text-btn{min-height:31px}.translation{max-height:38px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+</style>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="dau-tu.html" aria-label="VokabelGo — Đấu từ">Vokabel<span>Go</span><small>ĐẤU TỪ <b>0.2</b></small></a>
+    <nav class="header-actions" aria-label="Tùy chọn">
+      <button id="btn-sound" class="icon-btn" aria-label="Bật âm thanh" title="Âm thanh">♪</button>
+      <button id="btn-rules" class="quiet-btn">Luật chơi</button>
+      <button id="btn-exit" class="quiet-btn" hidden>Thoát</button>
+    </nav>
+  </header>
+
+  <main id="setup" class="setup">
+    <div class="intro">
+      <span class="eyebrow">HỌC TỪ QUA NHỮNG NƯỚC BÀI</span>
+      <h1>Cùng màu. Cùng nghĩa.<br><em>Đánh hết bài để thắng.</em></h1>
+      <p>Chọn một bộ từ, bắt đầu bằng 5 lá.<br>Không tính giờ. Bí từ thì mở gợi ý.</p>
+    </div>
+    <div class="deck-options" role="group" aria-label="Chọn bộ từ">
+      <button class="deck-option selected" id="deck-adjektive" data-deck="adjektive" aria-pressed="true">
+        <span class="deck-art" aria-hidden="true"><i>schwer</i><i>schwierig</i></span>
+        <span class="deck-option-title">Tính từ <small>Adjektive</small></span>
+        <span class="deck-option-desc">Độ khó · Giá cả · Âm lượng</span>
+        <span class="deck-option-foot">12 từ theo ngữ cảnh <b class="choice-check" aria-hidden="true">✓</b></span>
+      </button>
+      <button class="deck-option" id="deck-verben" data-deck="verben" aria-pressed="false">
+        <span class="deck-art verbs" aria-hidden="true"><i>beginnen</i><i>anfangen</i></span>
+        <span class="deck-option-title">Động từ <small>Verben</small></span>
+        <span class="deck-option-desc">Bắt đầu · Mở cửa · Di chuyển</span>
+        <span class="deck-option-foot">Câu chia sẵn, không cần gõ <b class="choice-check" aria-hidden="true">✓</b></span>
+      </button>
+    </div>
+    <div class="mode-options" role="group" aria-label="Cách chơi">
+      <button id="mode-practice" class="mode selected" aria-pressed="true"><strong>Làm quen</strong><small>Chọn sai được thử lại</small></button>
+      <button id="mode-classic" class="mode" aria-pressed="false"><strong>Ván thường</strong><small>Đánh sai: rút 1 lá, hết lượt</small></button>
+    </div>
+    <button id="btn-start" class="primary start-btn">Chơi bộ Tính từ <span aria-hidden="true">→</span></button>
+    <p class="setup-note">Làm quen: bạn đi trước. Bộ từ thử nghiệm, chưa gắn mức CEFR.</p>
+    <a class="sample-link" href="dau-tu-cards.html">Xem mẫu lá bài</a>
+  </main>
+
+  <main id="game" class="game" hidden>
+    <div class="opponent">
+      <div class="bot-identity"><span class="avatar" aria-hidden="true">V</span><strong>VokabelBot</strong><span id="bot-count" class="count">5 lá</span><span id="bot-backs" aria-hidden="true"></span></div>
+      <span id="game-mode" class="mode-tag">Làm quen · Tính từ</span>
+    </div>
+    <section class="turn-guide" aria-label="Lượt và điều kiện đánh">
+      <span id="turn-label" class="turn-label">Lượt của bạn</span>
+      <p id="turn-rule">Chọn một lá trên tay.</p>
+      <span id="one-card" hidden>Noch eine! · Còn 1 lá</span>
+    </section>
+    <section class="table" aria-label="Từ và câu hiện tại">
+      <div class="target-area">
+        <span id="target-label" class="micro">TỪ ĐANG NỐI</span>
+        <div id="target-card"></div>
+      </div>
+      <div class="context">
+        <div class="context-heading"><span id="color-badge" class="color-badge"></span><span id="flip-badge" class="flip-badge" hidden>GEGENTEIL · Đã đổi nghĩa</span></div>
+        <p id="sentence" class="sentence" lang="de"></p>
+        <p id="translation" class="translation" hidden></p>
+        <div class="context-actions"><button id="btn-translate" class="text-btn">Xem nghĩa</button><span aria-hidden="true">·</span><button id="btn-hint" class="text-btn hint-btn">💡 Gợi ý</button></div>
+      </div>
+    </section>
+    <div id="feedback" class="feedback" role="status" aria-live="polite" aria-atomic="true">Bạn đi trước. Chọn một lá để bắt đầu.</div>
+    <section class="hand-zone" aria-label="Bài của bạn">
+      <div class="hand-heading"><strong>Bài của bạn <span id="player-count" class="count">5 lá</span></strong><span id="hand-instruction">Chạm chọn → Đánh lá</span><div class="hand-arrows"><button id="scroll-left" aria-label="Cuộn bài sang trái">‹</button><button id="scroll-right" aria-label="Cuộn bài sang phải">›</button></div></div>
+      <div id="hand" class="hand" role="group" aria-label="Chọn lá bài"></div>
+      <div class="action-dock">
+        <div class="selection"><span id="selection-title">Chọn một lá trên tay</span><button id="btn-info" class="text-btn" hidden>Xem lá</button></div>
+        <div class="play-actions"><button id="btn-draw" class="secondary">Rút 1 lá</button><button id="btn-pass" class="secondary" hidden>Giữ lá · Hết lượt</button><button id="btn-play" class="primary" disabled>Đánh lá</button></div>
+      </div>
+    </section>
+  </main>
+
+  <main id="gallery" class="gallery" hidden><h1>Bộ bài Đấu từ</h1><p>Cùng component đang dùng trên bàn chơi. Lá dài chỉ là mẫu kiểm tra hiển thị.</p><div id="gallery-cards" class="gallery-cards"></div><a class="primary" href="dau-tu.html">Về chọn bộ</a></main>
+
+  <dialog id="panel" class="panel" aria-labelledby="panel-title">
+    <div class="panel-head"><h2 id="panel-title"></h2><button id="panel-close" class="icon-btn" aria-label="Đóng">×</button></div>
+    <div id="panel-body" class="panel-body"></div>
+  </dialog>
+  <script>
+/**
+ * DAU-TU-DATA.JS
+ * Dữ liệu chuẩn cho bản Preview "Đấu từ — VokabelGo" v0.1
+ * Gồm 2 bộ bài độc lập: "Tính từ · Adjektive" và "Động từ · Verben".
+ * Mỗi bộ có đúng 60 lá vật lý (48 lá từ + 12 lá chức năng).
+ */
+
+(function (root, factory) {
+  if (typeof module === 'object' && module.exports) {
+    module.exports = factory();
+  } else {
+    root.DAU_TU_DATA = factory();
+  }
+})(typeof self !== 'undefined' ? self : this, function () {
+  'use strict';
+
+  const COLORS = {
+    rot: { id: 'rot', nameVi: 'Đỏ', nameDe: 'Rot', hex: '#E5484D', borderHex: '#B22222', symbol: 'heart' },
+    blau: { id: 'blau', nameVi: 'Xanh dương', nameDe: 'Blau', hex: '#2080E0', borderHex: '#0D47A1', symbol: 'circle' },
+    gruen: { id: 'gruen', nameVi: 'Xanh lá', nameDe: 'Grün', hex: '#30A46C', borderHex: '#1B5E20', symbol: 'triangle' },
+    gelb: { id: 'gelb', nameVi: 'Vàng', nameDe: 'Gelb', hex: '#F5A623', borderHex: '#D97706', symbol: 'diamond' }
+  };
+
+  const COLOR_KEYS = ['rot', 'blau', 'gruen', 'gelb'];
+
+  // ==========================================
+  // 1. BỘ TÍNH TỪ · ADJEKTIVE
+  // ==========================================
+  const ADJEKTIVE_ENTRIES = {
+    // Nhóm 1: Độ khó bài tập (schwer ↔ schwierig | GEGENTEIL: leicht ↔ einfach)
+    schwer: {
+      entryId: 'schwer',
+      lemma: 'schwer',
+      partOfSpeech: 'Adjektiv',
+      senseVi: 'khó, khó khăn',
+      baseContextId: 'ctx_adj_difficulty_hard',
+      pronunciation: 'schwer',
+      dictionaryNotes: 'Duden: "schwer" = viel geistige Anstrengung erfordernd; im Kontext einer Aufgabe Gegenteil von "leicht".'
+    },
+    schwierig: {
+      entryId: 'schwierig',
+      lemma: 'schwierig',
+      partOfSpeech: 'Adjektiv',
+      senseVi: 'khó khăn, phức tạp',
+      baseContextId: 'ctx_adj_difficulty_hard',
+      pronunciation: 'schwierig',
+      dictionaryNotes: 'Duden: "schwierig" = nicht einfach, verwickelt, kompliziert; syn. mit "schwer".'
+    },
+    leicht: {
+      entryId: 'leicht',
+      lemma: 'leicht',
+      partOfSpeech: 'Adjektiv',
+      senseVi: 'dễ, dễ dàng',
+      baseContextId: 'ctx_adj_difficulty_easy',
+      pronunciation: 'leicht',
+      dictionaryNotes: 'Duden: "leicht" = keine Mühe machend, unkompliziert; Gegenteil von "schwer".'
+    },
+    einfach: {
+      entryId: 'einfach',
+      lemma: 'einfach',
+      partOfSpeech: 'Adjektiv',
+      senseVi: 'đơn giản, dễ làm',
+      baseContextId: 'ctx_adj_difficulty_easy',
+      pronunciation: 'einfach',
+      dictionaryNotes: 'Duden: "einfach" = ohne Schwierigkeit zu bewältigen; syn. mit "leicht".'
+    },
+
+    // Nhóm 2: Mức giá phòng nghỉ (teuer ↔ kostspielig | GEGENTEIL: billig ↔ günstig)
+    teuer: {
+      entryId: 'teuer',
+      lemma: 'teuer',
+      partOfSpeech: 'Adjektiv',
+      senseVi: 'đắt, đắt đỏ',
+      baseContextId: 'ctx_adj_price_expensive',
+      pronunciation: 'teuer',
+      dictionaryNotes: 'Duden: "teuer" = einen hohen Preis habend, kostspielig; Gegenteil von "billig".'
+    },
+    kostspielig: {
+      entryId: 'kostspielig',
+      lemma: 'kostspielig',
+      partOfSpeech: 'Adjektiv',
+      senseVi: 'tốn kém, đắt đỏ',
+      baseContextId: 'ctx_adj_price_expensive',
+      pronunciation: 'kostspielig',
+      dictionaryNotes: 'Duden: "kostspielig" = viel Geld kostend, aufwendig; syn. mit "teuer".'
+    },
+    billig: {
+      entryId: 'billig',
+      lemma: 'billig',
+      partOfSpeech: 'Adjektiv',
+      senseVi: 'rẻ, giá thấp',
+      baseContextId: 'ctx_adj_price_cheap',
+      pronunciation: 'billig',
+      dictionaryNotes: 'Duden: "billig" = von geringem Preis; Gegenteil von "teuer".'
+    },
+    günstig: {
+      entryId: 'günstig',
+      lemma: 'günstig',
+      partOfSpeech: 'Adjektiv',
+      senseVi: 'giá phải chăng, tốt',
+      baseContextId: 'ctx_adj_price_cheap',
+      pronunciation: 'günstig',
+      dictionaryNotes: 'Duden: "günstig" = preiswert, vorteilhaft im Preis; syn. mit "billig" im Preiskontext.'
+    },
+
+    // Nhóm 3: Âm lượng tiếng ồn (leise ↔ ruhig | GEGENTEIL: laut ↔ lärmend)
+    leise: {
+      entryId: 'leise',
+      lemma: 'leise',
+      partOfSpeech: 'Adjektiv',
+      senseVi: 'nhỏ tiếng, yên tĩnh',
+      baseContextId: 'ctx_adj_volume_quiet',
+      pronunciation: 'leise',
+      dictionaryNotes: 'Duden: "leise" = von geringer Lautstärke, kaum hörbar; Gegenteil von "laut".'
+    },
+    ruhig: {
+      entryId: 'ruhig',
+      lemma: 'ruhig',
+      partOfSpeech: 'Adjektiv',
+      senseVi: 'trầm tĩnh, êm ả',
+      baseContextId: 'ctx_adj_volume_quiet',
+      pronunciation: 'ruhig',
+      dictionaryNotes: 'Duden: "ruhig" = ohne laute Geräusche, still; syn. mit "leise" bezüglich Lautstärke.'
+    },
+    laut: {
+      entryId: 'laut',
+      lemma: 'laut',
+      partOfSpeech: 'Adjektiv',
+      senseVi: 'to tiếng, ồn ào',
+      baseContextId: 'ctx_adj_volume_loud',
+      pronunciation: 'laut',
+      dictionaryNotes: 'Duden: "laut" = mit hoher Lautstärke vernehmbar; Gegenteil von "leise".'
+    },
+    lärmend: {
+      entryId: 'lärmend',
+      lemma: 'lärmend',
+      partOfSpeech: 'Adjektiv',
+      senseVi: 'làm ầm ĩ, huyên náo',
+      baseContextId: 'ctx_adj_volume_loud',
+      pronunciation: 'lärmend',
+      dictionaryNotes: 'Duden: "lärmend" = lauten Lärm verursachend; syn. mit "laut".'
+    }
+  };
+
+  const ADJEKTIVE_CONTEXTS = {
+    ctx_adj_difficulty_hard: {
+      contextId: 'ctx_adj_difficulty_hard',
+      topic: 'Bài tập khó khăn',
+      explanationVi: 'Ở đây đang nói bài tập khó khăn, phức tạp; không phải vật nặng về khối lượng.',
+      sentenceVariants: {
+        schwer: {
+          de: 'Die Aufgabe ist heute sehr schwer.',
+          vi: 'Bài tập hôm nay rất khó.',
+          highlightTokens: ['schwer']
+        },
+        schwierig: {
+          de: 'Die Aufgabe ist heute sehr schwierig.',
+          vi: 'Bài tập hôm nay rất khó khăn, phức tạp.',
+          highlightTokens: ['schwierig']
+        }
+      }
+    },
+    ctx_adj_difficulty_easy: {
+      contextId: 'ctx_adj_difficulty_easy',
+      topic: 'Bài tập dễ dàng',
+      explanationVi: 'Ở đây đang nói bài tập dễ dàng, đơn giản; không phải vật nhẹ về trọng lượng.',
+      sentenceVariants: {
+        leicht: {
+          de: 'Die Aufgabe ist heute sehr leicht.',
+          vi: 'Bài tập hôm nay rất dễ.',
+          highlightTokens: ['leicht']
+        },
+        einfach: {
+          de: 'Die Aufgabe ist heute sehr einfach.',
+          vi: 'Bài tập hôm nay rất đơn giản.',
+          highlightTokens: ['einfach']
+        }
+      }
+    },
+    ctx_adj_price_expensive: {
+      contextId: 'ctx_adj_price_expensive',
+      topic: 'Khách sạn giá đắt',
+      explanationVi: 'Ở đây đang nói về mức giá phòng khách sạn đắt đỏ, tốn kém tiền bạc.',
+      sentenceVariants: {
+        teuer: {
+          de: 'Das Hotel ist heute sehr teuer.',
+          vi: 'Khách sạn hôm nay giá rất đắt.',
+          highlightTokens: ['teuer']
+        },
+        kostspielig: {
+          de: 'Das Hotel ist heute sehr kostspielig.',
+          vi: 'Khách sạn hôm nay rất tốn kém.',
+          highlightTokens: ['kostspielig']
+        }
+      }
+    },
+    ctx_adj_price_cheap: {
+      contextId: 'ctx_adj_price_cheap',
+      topic: 'Khách sạn giá phải chăng/rẻ',
+      explanationVi: 'Ở đây đang nói về mức giá phòng khách sạn rẻ, vừa túi tiền.',
+      sentenceVariants: {
+        billig: {
+          de: 'Das Hotel ist heute sehr billig.',
+          vi: 'Khách sạn hôm nay giá rất rẻ.',
+          highlightTokens: ['billig']
+        },
+        günstig: {
+          de: 'Das Hotel ist heute sehr günstig.',
+          vi: 'Khách sạn hôm nay giá rất phải chăng.',
+          highlightTokens: ['günstig']
+        }
+      }
+    },
+    ctx_adj_volume_quiet: {
+      contextId: 'ctx_adj_volume_quiet',
+      topic: 'Bọn trẻ nhỏ tiếng, yên tĩnh',
+      explanationVi: 'Ở đây đang nói về âm thanh nhỏ nhẹ, yên tĩnh; bọn trẻ không gây tiếng động ồn.',
+      sentenceVariants: {
+        leise: {
+          de: 'Die Kinder sind heute sehr leise.',
+          vi: 'Bọn trẻ hôm nay rất yên tĩnh.',
+          highlightTokens: ['leise']
+        },
+        ruhig: {
+          de: 'Die Kinder sind heute sehr ruhig.',
+          vi: 'Bọn trẻ hôm nay rất trầm tĩnh, ngoan ngoãn.',
+          highlightTokens: ['ruhig']
+        }
+      }
+    },
+    ctx_adj_volume_loud: {
+      contextId: 'ctx_adj_volume_loud',
+      topic: 'Bọn trẻ to tiếng, ồn ào',
+      explanationVi: 'Ở đây đang nói về âm thanh to tiếng, bọn trẻ đang huyên náo, làm ầm.',
+      sentenceVariants: {
+        laut: {
+          de: 'Die Kinder sind heute sehr laut.',
+          vi: 'Bọn trẻ hôm nay rất ồn ào.',
+          highlightTokens: ['laut']
+        },
+        lärmend: {
+          de: 'Die Kinder sind heute sehr lärmend.',
+          vi: 'Bọn trẻ hôm nay làm ầm ĩ náo động.',
+          highlightTokens: ['lärmend']
+        }
+      }
+    }
+  };
+
+  const ADJEKTIVE_SYNONYMS = [
+    // khó
+    { contextId: 'ctx_adj_difficulty_hard', from: 'schwer', to: 'schwierig' },
+    { contextId: 'ctx_adj_difficulty_hard', from: 'schwierig', to: 'schwer' },
+    // dễ
+    { contextId: 'ctx_adj_difficulty_easy', from: 'leicht', to: 'einfach' },
+    { contextId: 'ctx_adj_difficulty_easy', from: 'einfach', to: 'leicht' },
+    // đắt
+    { contextId: 'ctx_adj_price_expensive', from: 'teuer', to: 'kostspielig' },
+    { contextId: 'ctx_adj_price_expensive', from: 'kostspielig', to: 'teuer' },
+    // rẻ
+    { contextId: 'ctx_adj_price_cheap', from: 'billig', to: 'günstig' },
+    { contextId: 'ctx_adj_price_cheap', from: 'günstig', to: 'billig' },
+    // yên tĩnh
+    { contextId: 'ctx_adj_volume_quiet', from: 'leise', to: 'ruhig' },
+    { contextId: 'ctx_adj_volume_quiet', from: 'ruhig', to: 'leise' },
+    // ồn ào
+    { contextId: 'ctx_adj_volume_loud', from: 'laut', to: 'lärmend' },
+    { contextId: 'ctx_adj_volume_loud', from: 'lärmend', to: 'laut' }
+  ];
+
+  const ADJEKTIVE_ANTONYMS = {
+    'ctx_adj_difficulty_hard:schwer': {
+      targetEntryId: 'leicht',
+      targetContextId: 'ctx_adj_difficulty_easy',
+      explanationShortVi: 'schwer → leicht: khó → dễ'
+    },
+    'ctx_adj_difficulty_hard:schwierig': {
+      targetEntryId: 'einfach',
+      targetContextId: 'ctx_adj_difficulty_easy',
+      explanationShortVi: 'schwierig → einfach: khó khăn → đơn giản'
+    },
+    'ctx_adj_difficulty_easy:leicht': {
+      targetEntryId: 'schwer',
+      targetContextId: 'ctx_adj_difficulty_hard',
+      explanationShortVi: 'leicht → schwer: dễ → khó'
+    },
+    'ctx_adj_difficulty_easy:einfach': {
+      targetEntryId: 'schwierig',
+      targetContextId: 'ctx_adj_difficulty_hard',
+      explanationShortVi: 'einfach → schwierig: đơn giản → khó khăn'
+    },
+
+    'ctx_adj_price_expensive:teuer': {
+      targetEntryId: 'billig',
+      targetContextId: 'ctx_adj_price_cheap',
+      explanationShortVi: 'teuer → billig: đắt → rẻ'
+    },
+    'ctx_adj_price_expensive:kostspielig': {
+      targetEntryId: 'günstig',
+      targetContextId: 'ctx_adj_price_cheap',
+      explanationShortVi: 'kostspielig → günstig: tốn kém → phải chăng'
+    },
+    'ctx_adj_price_cheap:billig': {
+      targetEntryId: 'teuer',
+      targetContextId: 'ctx_adj_price_expensive',
+      explanationShortVi: 'billig → teuer: rẻ → đắt'
+    },
+    'ctx_adj_price_cheap:günstig': {
+      targetEntryId: 'kostspielig',
+      targetContextId: 'ctx_adj_price_expensive',
+      explanationShortVi: 'günstig → kostspielig: phải chăng → tốn kém'
+    },
+
+    'ctx_adj_volume_quiet:leise': {
+      targetEntryId: 'laut',
+      targetContextId: 'ctx_adj_volume_loud',
+      explanationShortVi: 'leise → laut: yên lặng → ồn ào'
+    },
+    'ctx_adj_volume_quiet:ruhig': {
+      targetEntryId: 'lärmend',
+      targetContextId: 'ctx_adj_volume_loud',
+      explanationShortVi: 'ruhig → lärmend: trầm tĩnh → ầm ĩ'
+    },
+    'ctx_adj_volume_loud:laut': {
+      targetEntryId: 'leise',
+      targetContextId: 'ctx_adj_volume_quiet',
+      explanationShortVi: 'laut → leise: ồn ào → yên lặng'
+    },
+    'ctx_adj_volume_loud:lärmend': {
+      targetEntryId: 'ruhig',
+      targetContextId: 'ctx_adj_volume_quiet',
+      explanationShortVi: 'lärmend → ruhig: ầm ĩ → trầm tĩnh'
+    }
+  };
+
+  // ==========================================
+  // 2. BỘ ĐỘNG TỪ · VERBEN
+  // ==========================================
+  const VERBEN_ENTRIES = {
+    // Nhóm 1: Giờ học bắt đầu / dừng lại (beginnen ↔ anfangen | GEGENTEIL: enden ↔ aufhören)
+    beginnen: {
+      entryId: 'beginnen',
+      lemma: 'beginnen',
+      partOfSpeech: 'Verb',
+      senseVi: 'bắt đầu',
+      baseContextId: 'ctx_verb_timing_start',
+      pronunciation: 'beginnen',
+      dictionaryNotes: 'Duden: "beginnen" = seinen Anfang nehmen, anheben; syn. mit "anfangen".'
+    },
+    anfangen: {
+      entryId: 'anfangen',
+      lemma: 'anfangen',
+      partOfSpeech: 'Verb (tách)',
+      senseVi: 'bắt đầu (tách)',
+      baseContextId: 'ctx_verb_timing_start',
+      pronunciation: 'anfangen',
+      dictionaryNotes: 'Duden: "anfangen" = trennbares Verb (fängt an); zeitlich einsetzen.'
+    },
+    enden: {
+      entryId: 'enden',
+      lemma: 'enden',
+      partOfSpeech: 'Verb',
+      senseVi: 'kết thúc',
+      baseContextId: 'ctx_verb_timing_end',
+      pronunciation: 'enden',
+      dictionaryNotes: 'Duden: "enden" = zu Ende gehen, aufhören; Gegenteil von "beginnen".'
+    },
+    aufhören: {
+      entryId: 'aufhören',
+      lemma: 'aufhören',
+      partOfSpeech: 'Verb (tách)',
+      senseVi: 'dừng lại, kết thúc',
+      baseContextId: 'ctx_verb_timing_end',
+      pronunciation: 'aufhören',
+      dictionaryNotes: 'Duden: "aufhören" = trennbares Verb (hört auf); eine Handlung beenden.'
+    },
+
+    // Nhóm 2: Mở / Khép cửa sổ (öffnen ↔ aufmachen | GEGENTEIL: schließen ↔ zumachen)
+    öffnen: {
+      entryId: 'öffnen',
+      lemma: 'öffnen',
+      partOfSpeech: 'Verb',
+      senseVi: 'mở ra',
+      baseContextId: 'ctx_verb_window_open',
+      pronunciation: 'öffnen',
+      dictionaryNotes: 'Duden: "öffnen" = aufmachen; Gegenteil von "schließen".'
+    },
+    aufmachen: {
+      entryId: 'aufmachen',
+      lemma: 'aufmachen',
+      partOfSpeech: 'Verb (tách)',
+      senseVi: 'mở ra (tách)',
+      baseContextId: 'ctx_verb_window_open',
+      pronunciation: 'aufmachen',
+      dictionaryNotes: 'Duden: "aufmachen" = trennbares Verb (macht auf); öffnen.'
+    },
+    schließen: {
+      entryId: 'schließen',
+      lemma: 'schließen',
+      partOfSpeech: 'Verb',
+      senseVi: 'đóng lại',
+      baseContextId: 'ctx_verb_window_close',
+      pronunciation: 'schließen',
+      dictionaryNotes: 'Duden: "schließen" = zumachen; Gegenteil von "öffnen".'
+    },
+    zumachen: {
+      entryId: 'zumachen',
+      lemma: 'zumachen',
+      partOfSpeech: 'Verb (tách)',
+      senseVi: 'đóng lại, khép lại',
+      baseContextId: 'ctx_verb_window_close',
+      pronunciation: 'zumachen',
+      dictionaryNotes: 'Duden: "zumachen" = trennbares Verb (macht zu); schließen.'
+    },
+
+    // Nhóm 3: Vội vã / Lề mề (sich beeilen ↔ eilen | GEGENTEIL: trödeln ↔ bummeln)
+    'sich beeilen': {
+      entryId: 'sich beeilen',
+      lemma: 'sich beeilen',
+      partOfSpeech: 'Verb (có "sich")',
+      senseVi: 'vội vã, khẩn trương',
+      baseContextId: 'ctx_verb_haste_fast',
+      pronunciation: 'sich beeilen',
+      dictionaryNotes: 'Duden: "sich beeilen" = reflexives Verb; schnell handeln/gehen.'
+    },
+    eilen: {
+      entryId: 'eilen',
+      lemma: 'eilen',
+      partOfSpeech: 'Verb',
+      senseVi: 'rảo bước vội, khẩn trương',
+      baseContextId: 'ctx_verb_haste_fast',
+      pronunciation: 'eilen',
+      dictionaryNotes: 'Duden: "eilen" = sich sehr schnell fortbewegen; syn. mit "sich beeilen".'
+    },
+    trödeln: {
+      entryId: 'trödeln',
+      lemma: 'trödeln',
+      partOfSpeech: 'Verb',
+      senseVi: 'lề mề, chậm chạp',
+      baseContextId: 'ctx_verb_haste_slow',
+      pronunciation: 'trödeln',
+      dictionaryNotes: 'Duden: "trödeln" = langsam und träge handeln; Gegenteil von "sich beeilen".'
+    },
+    bummeln: {
+      entryId: 'bummeln',
+      lemma: 'bummeln',
+      partOfSpeech: 'Verb',
+      senseVi: 'la cà, thong thả',
+      baseContextId: 'ctx_verb_haste_slow',
+      pronunciation: 'bummeln',
+      dictionaryNotes: 'Duden: "bummeln" = ohne Eile spazieren, trödeln; syn. mit "trödeln" bezüglich Fortbewegung.'
+    }
+  };
+
+  const VERBEN_CONTEXTS = {
+    ctx_verb_timing_start: {
+      contextId: 'ctx_verb_timing_start',
+      topic: 'Khóa học bắt đầu lúc 8 giờ',
+      explanationVi: 'Ở đây đang nói về hành động bắt đầu giờ học lúc 8 giờ sáng.',
+      sentenceVariants: {
+        beginnen: {
+          de: 'Der Kurs beginnt um acht Uhr.',
+          vi: 'Khóa học bắt đầu lúc 8 giờ.',
+          highlightTokens: ['beginnt']
+        },
+        anfangen: {
+          de: 'Der Kurs fängt um acht Uhr an.',
+          vi: 'Khóa học bắt đầu lúc 8 giờ.',
+          highlightTokens: ['fängt', 'an']
+        }
+      }
+    },
+    ctx_verb_timing_end: {
+      contextId: 'ctx_verb_timing_end',
+      topic: 'Khóa học kết thúc lúc 8 giờ',
+      explanationVi: 'Ở đây đang nói về hành động kết thúc, dừng giờ học lúc 8 giờ.',
+      sentenceVariants: {
+        enden: {
+          de: 'Der Kurs endet um acht Uhr.',
+          vi: 'Khóa học kết thúc lúc 8 giờ.',
+          highlightTokens: ['endet']
+        },
+        aufhören: {
+          de: 'Der Kurs hört um acht Uhr auf.',
+          vi: 'Khóa học dừng lại lúc 8 giờ.',
+          highlightTokens: ['hört', 'auf']
+        }
+      }
+    },
+    ctx_verb_window_open: {
+      contextId: 'ctx_verb_window_open',
+      topic: 'Mở cửa sổ đón gió sáng',
+      explanationVi: 'Ở đây đang nói về việc mở cửa sổ phòng vào buổi sáng sớm.',
+      sentenceVariants: {
+        öffnen: {
+          de: 'Ich öffne das Fenster am Morgen.',
+          vi: 'Tôi mở cửa sổ vào buổi sáng.',
+          highlightTokens: ['öffne']
+        },
+        aufmachen: {
+          de: 'Ich mache das Fenster am Morgen auf.',
+          vi: 'Tôi mở cửa sổ vào buổi sáng.',
+          highlightTokens: ['mache', 'auf']
+        }
+      }
+    },
+    ctx_verb_window_close: {
+      contextId: 'ctx_verb_window_close',
+      topic: 'Đóng cửa sổ vào buổi tối',
+      explanationVi: 'Ở đây đang nói về việc khép, đóng kín cửa sổ vào buổi tối.',
+      sentenceVariants: {
+        schließen: {
+          de: 'Ich schließe das Fenster am Abend.',
+          vi: 'Tôi đóng cửa sổ vào buổi tối.',
+          highlightTokens: ['schließe']
+        },
+        zumachen: {
+          de: 'Ich mache das Fenster am Abend zu.',
+          vi: 'Tôi khép cửa sổ vào buổi tối.',
+          highlightTokens: ['mache', 'zu']
+        }
+      }
+    },
+    ctx_verb_haste_fast: {
+      contextId: 'ctx_verb_haste_fast',
+      topic: 'Vội vã, rảo bước trên đường',
+      explanationVi: 'Ở đây đang nói về hành động vội vã, gấp rút đi đến trường.',
+      sentenceVariants: {
+        'sich beeilen': {
+          de: 'Die Schülerin beeilt sich auf dem Weg.',
+          vi: 'Nữ sinh vội vã trên đường đi.',
+          highlightTokens: ['beeilt', 'sich']
+        },
+        eilen: {
+          de: 'Die Schülerin eilt auf dem Weg.',
+          vi: 'Nữ sinh rảo bước vội trên đường đi.',
+          highlightTokens: ['eilt']
+        }
+      }
+    },
+    ctx_verb_haste_slow: {
+      contextId: 'ctx_verb_haste_slow',
+      topic: 'Lề mề, la cà trên đường',
+      explanationVi: 'Ở đây đang nói về hành vi chậm chạp, lề mề hoặc la cà thong dong.',
+      sentenceVariants: {
+        trödeln: {
+          de: 'Die Schülerin trödelt auf dem Weg.',
+          vi: 'Nữ sinh lề mề, chậm chạp trên đường đi.',
+          highlightTokens: ['trödelt']
+        },
+        bummeln: {
+          de: 'Die Schülerin bummelt auf dem Weg.',
+          vi: 'Nữ sinh thong thả, la cà trên đường đi.',
+          highlightTokens: ['bummelt']
+        }
+      }
+    }
+  };
+
+  const VERBEN_SYNONYMS = [
+    // bắt đầu
+    { contextId: 'ctx_verb_timing_start', from: 'beginnen', to: 'anfangen' },
+    { contextId: 'ctx_verb_timing_start', from: 'anfangen', to: 'beginnen' },
+    // kết thúc
+    { contextId: 'ctx_verb_timing_end', from: 'enden', to: 'aufhören' },
+    { contextId: 'ctx_verb_timing_end', from: 'aufhören', to: 'enden' },
+    // mở
+    { contextId: 'ctx_verb_window_open', from: 'öffnen', to: 'aufmachen' },
+    { contextId: 'ctx_verb_window_open', from: 'aufmachen', to: 'öffnen' },
+    // đóng
+    { contextId: 'ctx_verb_window_close', from: 'schließen', to: 'zumachen' },
+    { contextId: 'ctx_verb_window_close', from: 'zumachen', to: 'schließen' },
+    // vội
+    { contextId: 'ctx_verb_haste_fast', from: 'sich beeilen', to: 'eilen' },
+    { contextId: 'ctx_verb_haste_fast', from: 'eilen', to: 'sich beeilen' },
+    // chậm
+    { contextId: 'ctx_verb_haste_slow', from: 'trödeln', to: 'bummeln' },
+    { contextId: 'ctx_verb_haste_slow', from: 'bummeln', to: 'trödeln' }
+  ];
+
+  const VERBEN_ANTONYMS = {
+    'ctx_verb_timing_start:beginnen': {
+      targetEntryId: 'enden',
+      targetContextId: 'ctx_verb_timing_end',
+      explanationShortVi: 'beginnen → enden: bắt đầu → kết thúc'
+    },
+    'ctx_verb_timing_start:anfangen': {
+      targetEntryId: 'aufhören',
+      targetContextId: 'ctx_verb_timing_end',
+      explanationShortVi: 'anfangen → aufhören: bắt đầu → kết thúc'
+    },
+    'ctx_verb_timing_end:enden': {
+      targetEntryId: 'beginnen',
+      targetContextId: 'ctx_verb_timing_start',
+      explanationShortVi: 'enden → beginnen: kết thúc → bắt đầu'
+    },
+    'ctx_verb_timing_end:aufhören': {
+      targetEntryId: 'anfangen',
+      targetContextId: 'ctx_verb_timing_start',
+      explanationShortVi: 'aufhören → anfangen: kết thúc → bắt đầu'
+    },
+
+    'ctx_verb_window_open:öffnen': {
+      targetEntryId: 'schließen',
+      targetContextId: 'ctx_verb_window_close',
+      explanationShortVi: 'öffnen → schließen: mở → đóng'
+    },
+    'ctx_verb_window_open:aufmachen': {
+      targetEntryId: 'zumachen',
+      targetContextId: 'ctx_verb_window_close',
+      explanationShortVi: 'aufmachen → zumachen: mở ra → khép lại'
+    },
+    'ctx_verb_window_close:schließen': {
+      targetEntryId: 'öffnen',
+      targetContextId: 'ctx_verb_window_open',
+      explanationShortVi: 'schließen → öffnen: đóng → mở'
+    },
+    'ctx_verb_window_close:zumachen': {
+      targetEntryId: 'aufmachen',
+      targetContextId: 'ctx_verb_window_open',
+      explanationShortVi: 'zumachen → aufmachen: khép lại → mở ra'
+    },
+
+    'ctx_verb_haste_fast:sich beeilen': {
+      targetEntryId: 'trödeln',
+      targetContextId: 'ctx_verb_haste_slow',
+      explanationShortVi: 'sich beeilen → trödeln: vội vã → lề mề'
+    },
+    'ctx_verb_haste_fast:eilen': {
+      targetEntryId: 'bummeln',
+      targetContextId: 'ctx_verb_haste_slow',
+      explanationShortVi: 'eilen → bummeln: rảo bước vội → la cà thong thả'
+    },
+    'ctx_verb_haste_slow:trödeln': {
+      targetEntryId: 'sich beeilen',
+      targetContextId: 'ctx_verb_haste_fast',
+      explanationShortVi: 'trödeln → sich beeilen: lề mề → vội vã'
+    },
+    'ctx_verb_haste_slow:bummeln': {
+      targetEntryId: 'eilen',
+      targetContextId: 'ctx_verb_haste_fast',
+      explanationShortVi: 'bummeln → eilen: la cà thong thả → rảo bước vội'
+    }
+  };
+
+  // ==========================================
+  // 3. SINH BỘ LÁ VẬT LÝ (EXACT 60 CARDS PER DECK)
+  // ==========================================
+  /**
+   * Tạo 60 lá vật lý với ID duy nhất cho một bộ:
+   * - 12 từ-nghĩa × 4 màu = 48 lá từ
+   * - 4 lá Aussetzen (1 mỗi màu)
+   * - 4 lá Zieh Zwei (+2) (1 mỗi màu)
+   * - 2 lá Farbenwahl (trung tính)
+   * - 2 lá GEGENTEIL! (trung tính)
+   * Tổng: 60 lá.
+   */
+  function createDeckPhysicalCards(deckId) {
+    const isAdj = deckId === 'adjektive';
+    const entries = isAdj ? ADJEKTIVE_ENTRIES : VERBEN_ENTRIES;
+    const prefix = isAdj ? 'adj' : 'verb';
+    const cards = [];
+
+    // 48 lá từ: 12 entries x 4 colors
+    Object.keys(entries).forEach(function (entryId) {
+      COLOR_KEYS.forEach(function (colorKey) {
+        cards.push({
+          id: `${prefix}_card_${colorKey}_${entryId}`,
+          deckId: deckId,
+          type: 'word',
+          color: colorKey,
+          entryId: entryId,
+          actionType: null,
+          label: entries[entryId].lemma,
+          partOfSpeech: entries[entryId].partOfSpeech
+        });
+      });
+    });
+
+    // 4 lá Aussetzen (1 mỗi màu)
+    COLOR_KEYS.forEach(function (colorKey, idx) {
+      cards.push({
+        id: `${prefix}_action_aussetzen_${colorKey}_${idx + 1}`,
+        deckId: deckId,
+        type: 'action',
+        color: colorKey,
+        entryId: null,
+        actionType: 'aussetzen',
+        label: 'Aussetzen',
+        partOfSpeech: 'Lá chức năng'
+      });
+    });
+
+    // 4 lá Zieh Zwei (+2) (1 mỗi màu)
+    COLOR_KEYS.forEach(function (colorKey, idx) {
+      cards.push({
+        id: `${prefix}_action_plus2_${colorKey}_${idx + 1}`,
+        deckId: deckId,
+        type: 'action',
+        color: colorKey,
+        entryId: null,
+        actionType: 'plus2',
+        label: '+2',
+        subLabel: 'Zieh Zwei',
+        partOfSpeech: 'Lá chức năng'
+      });
+    });
+
+    // 2 lá Farbenwahl (trung tính)
+    for (let i = 1; i <= 2; i++) {
+      cards.push({
+        id: `${prefix}_action_farbenwahl_${i}`,
+        deckId: deckId,
+        type: 'action',
+        color: 'neutral',
+        entryId: null,
+        actionType: 'farbenwahl',
+        label: 'Farbenwahl',
+        partOfSpeech: 'Lá chức năng'
+      });
+    }
+
+    // 2 lá GEGENTEIL! (trung tính)
+    for (let i = 1; i <= 2; i++) {
+      cards.push({
+        id: `${prefix}_action_gegenteil_${i}`,
+        deckId: deckId,
+        type: 'action',
+        color: 'neutral',
+        entryId: null,
+        actionType: 'gegenteil',
+        label: 'GEGENTEIL!',
+        partOfSpeech: 'Lá chức năng'
+      });
+    }
+
+    if (cards.length !== 60) {
+      throw new Error(`Lỗi sinh bộ bài ${deckId}: kỳ vọng đúng 60 lá, thực tế ${cards.length} lá.`);
+    }
+
+    return cards;
+  }
+
+  // 10 lá mẫu đại diện cho trang mẫu component
+  // 6 lá từ (đủ 4 màu, từ dài, cụm có "sich") + 4 lá chức năng (+ mặt sau riêng)
+  const SAMPLE_CARDS = [
+    {
+      id: 'sample_adj_rot_schwierig',
+      type: 'word',
+      color: 'rot',
+      label: 'schwierig',
+      partOfSpeech: 'Adjektiv',
+      isDisplayTestOnly: false
+    },
+    {
+      id: 'sample_adj_blau_freundlich',
+      type: 'word',
+      color: 'blau',
+      label: 'freundlich',
+      partOfSpeech: 'Adjektiv',
+      isDisplayTestOnly: true,
+      displayTestNote: 'Mẫu kiểm tra hiển thị (Adjektiv dài vừa)'
+    },
+    {
+      id: 'sample_adj_gruen_modern',
+      type: 'word',
+      color: 'gruen',
+      label: 'modern',
+      partOfSpeech: 'Adjektiv',
+      isDisplayTestOnly: true,
+      displayTestNote: 'Mẫu kiểm tra hiển thị (Adjektiv ngắn)'
+    },
+    {
+      id: 'sample_adj_gelb_leise',
+      type: 'word',
+      color: 'gelb',
+      label: 'leise',
+      partOfSpeech: 'Adjektiv',
+      isDisplayTestOnly: false
+    },
+    {
+      id: 'sample_verb_rot_anfangen',
+      type: 'word',
+      color: 'rot',
+      label: 'anfangen',
+      partOfSpeech: 'Verb',
+      subBadge: 'Động từ tách',
+      isDisplayTestOnly: false
+    },
+    {
+      id: 'sample_verb_gruen_sich_beeilen',
+      type: 'word',
+      color: 'gruen',
+      label: 'sich beeilen',
+      partOfSpeech: 'Verb',
+      subBadge: 'Có "sich"',
+      isDisplayTestOnly: false
+    },
+    {
+      id: 'sample_action_aussetzen',
+      type: 'action',
+      color: 'rot',
+      actionType: 'aussetzen',
+      label: 'Aussetzen',
+      subBadge: 'Bỏ lượt',
+      isDisplayTestOnly: false
+    },
+    {
+      id: 'sample_action_plus2',
+      type: 'action',
+      color: 'blau',
+      actionType: 'plus2',
+      label: '+2',
+      subLabel: 'Zieh Zwei',
+      subBadge: '+2 lá',
+      isDisplayTestOnly: false
+    },
+    {
+      id: 'sample_action_farbenwahl',
+      type: 'action',
+      color: 'neutral',
+      actionType: 'farbenwahl',
+      label: 'Farbenwahl',
+      subBadge: 'Đổi màu',
+      isDisplayTestOnly: false
+    },
+    {
+      id: 'sample_action_gegenteil',
+      type: 'action',
+      color: 'neutral',
+      actionType: 'gegenteil',
+      label: 'GEGENTEIL!',
+      subBadge: 'Đổi nghĩa',
+      isDisplayTestOnly: false
+    }
+  ];
+
+  return {
+    COLORS: COLORS,
+    COLOR_KEYS: COLOR_KEYS,
+    ADJEKTIVE: {
+      id: 'adjektive',
+      nameVi: 'Tính từ · Adjektive',
+      description: 'Luyện các cặp tính từ quen thuộc: khó/dễ, đắt/rẻ, ồn ào/yên tĩnh.',
+      entries: ADJEKTIVE_ENTRIES,
+      contexts: ADJEKTIVE_CONTEXTS,
+      synonyms: ADJEKTIVE_SYNONYMS,
+      antonyms: ADJEKTIVE_ANTONYMS
+    },
+    VERBEN: {
+      id: 'verben',
+      nameVi: 'Động từ · Verben',
+      description: 'Luyện các cặp động từ: bắt đầu/kết thúc, mở/đóng, vội vã/lề mề (có động từ tách và "sich").',
+      entries: VERBEN_ENTRIES,
+      contexts: VERBEN_CONTEXTS,
+      synonyms: VERBEN_SYNONYMS,
+      antonyms: VERBEN_ANTONYMS
+    },
+    createDeckPhysicalCards: createDeckPhysicalCards,
+    SAMPLE_CARDS: SAMPLE_CARDS
+  };
+});
+
+</script>
+  <script>
+/**
+ * DAU-TU-ENGINE.JS
+ * Bộ máy luật chơi (Game Engine) cho "Đấu từ — VokabelGo" v0.2 (giữ luật ván thường).
+ * Độc lập với giao diện, hỗ trợ seed tái lập và bảo toàn số lượng lá bài (60 lá).
+ */
+
+(function (root, factory) {
+  if (typeof module === 'object' && module.exports) {
+    const data = require('./dau-tu-data.js');
+    module.exports = factory(data);
+  } else {
+    root.DAU_TU_ENGINE = factory(root.DAU_TU_DATA);
+  }
+})(typeof self !== 'undefined' ? self : this, function (DAU_TU_DATA) {
+  'use strict';
+
+  // PRNG có seed (Mulberry32)
+  function createRng(seed) {
+    let s = (seed === undefined || seed === null) ? Math.floor(Math.random() * 2147483647) : (seed >>> 0);
+    return function () {
+      s |= 0;
+      s = (s + 0x6d2b79f5) | 0;
+      let t = Math.imul(s ^ (s >>> 15), 1 | s);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  // Trộn mảng Fisher-Yates
+  function shuffle(array, rng) {
+    const arr = array.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(rng() * (i + 1));
+      const temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+    }
+    return arr;
+  }
+
+  function cloneCard(card) {
+    return Object.assign({}, card);
+  }
+
+  function cloneCards(cards) {
+    return cards.map(cloneCard);
+  }
+
+  function getDeckData(deckId) {
+    if (deckId === 'adjektive') return DAU_TU_DATA.ADJEKTIVE;
+    if (deckId === 'verben') return DAU_TU_DATA.VERBEN;
+    throw new Error(`Bộ từ không hợp lệ: ${deckId}`);
+  }
+
+  function isSynonym(deckId, contextId, fromEntryId, toEntryId) {
+    if (!contextId || !fromEntryId || !toEntryId) return false;
+    const deck = getDeckData(deckId);
+    return deck.synonyms.some(function (edge) {
+      return edge.contextId === contextId && edge.from === fromEntryId && edge.to === toEntryId;
+    });
+  }
+
+  function getAntonymMapping(deckId, contextId, entryId) {
+    if (!contextId || !entryId) return null;
+    const deck = getDeckData(deckId);
+    const key = `${contextId}:${entryId}`;
+    return deck.antonyms[key] || null;
+  }
+
+  function getContextSentence(deckId, contextId, entryId) {
+    if (!contextId || !entryId) return null;
+    const deck = getDeckData(deckId);
+    const ctx = deck.contexts[contextId];
+    if (!ctx || !ctx.sentenceVariants || !ctx.sentenceVariants[entryId]) {
+      return null;
+    }
+    return ctx.sentenceVariants[entryId];
+  }
+
+  /**
+   * Khởi tạo trạng thái ván mới
+   */
+  function createInitialGameState(deckId, seed, startingPlayer) {
+    seed = (seed == null ? Math.floor(Math.random() * 4294967296) : seed) >>> 0;
+    const rng = createRng(seed);
+    const allPhysicalCards = DAU_TU_DATA.createDeckPhysicalCards(deckId);
+    const shuffled = shuffle(allPhysicalCards, rng);
+
+    // Chia 5 lá mỗi bên
+    const playerHand = [];
+    const botHand = [];
+    for (let i = 0; i < 5; i++) {
+      playerHand.push(shuffled.pop());
+      botHand.push(shuffled.pop());
+    }
+
+    // Tìm lá mở bàn: BẮT BUỘC là lá từ bình thường
+    let openingIndex = shuffled.length - 1;
+    while (openingIndex >= 0 && shuffled[openingIndex].type !== 'word') {
+      openingIndex--;
+    }
+    if (openingIndex < 0) {
+      throw new Error('Không tìm thấy lá từ để mở bàn.');
+    }
+    const openingCard = shuffled.splice(openingIndex, 1)[0];
+    const discardPile = [openingCard];
+    const drawPile = shuffled; // 49 lá còn lại
+
+    const deckData = getDeckData(deckId);
+    const openingEntry = deckData.entries[openingCard.entryId];
+
+    const activePlayer = startingPlayer ? startingPlayer : (rng() < 0.5 ? 'player' : 'bot');
+
+    const state = {
+      deckId: deckId,
+      seed: seed,
+      reshuffleCount: 0,
+      drawPile: drawPile,
+      discardPile: discardPile,
+      playerHand: playerHand,
+      botHand: botHand,
+      activePlayer: activePlayer,
+      activeColor: openingCard.color,
+      activeEntryId: openingCard.entryId,
+      activeContextId: openingEntry.baseContextId,
+      physicalTopCard: openingCard,
+      turnState: 'idle', // 'idle' | 'game_over'
+      hasDrawnThisTurn: false,
+      drawnCardIdThisTurn: null,
+      winner: null,
+      isDraw: false,
+      lastAction: {
+        type: 'game_start',
+        text: `Ván mới bắt đầu. Lượt đầu tiên: ${activePlayer === 'player' ? 'Bạn' : 'VokabelBot'}.`,
+        matchType: null
+      },
+      helpStats: {
+        unassistedMoves: 0,
+        viewedMeaningMoves: 0,
+        viewedCardHintMoves: 0
+      },
+      currentTurnUsedHelp: false,
+      currentTurnUsedCardHint: false,
+      turnCount: 1
+    };
+
+    assertTotalCards(state);
+    return state;
+  }
+
+  function assertTotalCards(state) {
+    const total = state.playerHand.length + state.botHand.length + state.drawPile.length + state.discardPile.length;
+    if (total !== 60) {
+      throw new Error(`Lỗi bảo toàn bài: tổng số lá là ${total}, kỳ vọng 60.`);
+    }
+    const cards = state.playerHand.concat(state.botHand, state.drawPile, state.discardPile);
+    if (new Set(cards.map(c => c.id)).size !== total) {
+      throw new Error('Có ID lá bài trùng nhau.');
+    }
+  }
+
+  /**
+   * Tái trộn chồng rút khi hết bài (giữ nguyên lá trên cùng của discardPile)
+   */
+  function reshuffleDiscardPileIfNeeded(state, rng) {
+    if (state.drawPile.length > 0) return;
+    if (state.discardPile.length <= 1) return; // Không đủ để trộn
+
+    const topCard = state.discardPile[state.discardPile.length - 1];
+    const cardsToShuffle = state.discardPile.slice(0, state.discardPile.length - 1);
+    state.reshuffleCount = (state.reshuffleCount || 0) + 1;
+    const localRng = rng || createRng((state.seed ^ Math.imul(state.reshuffleCount, 0x9e3779b9)) >>> 0);
+    const shuffled = shuffle(cardsToShuffle, localRng);
+
+    state.drawPile = shuffled;
+    state.discardPile = [topCard];
+    assertTotalCards(state);
+  }
+
+  /**
+   * Kiểm tra tính hợp lệ của việc đánh lá bài
+   */
+  function validatePlayCard(state, cardId, playerRole, chosenColor) {
+    if (state.turnState === 'game_over') {
+      return { valid: false, reason: 'Ván chơi đã kết thúc.' };
+    }
+    if (state.activePlayer !== playerRole) {
+      return { valid: false, reason: 'Chưa tới lượt của bạn.' };
+    }
+
+    const hand = playerRole === 'player' ? state.playerHand : state.botHand;
+    const card = hand.find(c => c.id === cardId);
+    if (!card) {
+      return { valid: false, reason: 'Lá bài không có trên tay.' };
+    }
+
+    // Sau khi rút bài trong lượt: chỉ được đánh chính lá vừa rút
+    if (state.hasDrawnThisTurn) {
+      if (cardId !== state.drawnCardIdThisTurn) {
+        return {
+          valid: false,
+          reason: 'Sau khi rút bài, chỉ được đánh chính lá vừa rút hoặc chọn Giữ bài.'
+        };
+      }
+    }
+
+    // 1. Lá chức năng: Aussetzen
+    if (card.actionType === 'aussetzen') {
+      const sameColor = card.color === state.activeColor;
+      const sameSymbol = state.physicalTopCard && state.physicalTopCard.actionType === 'aussetzen';
+      if (!sameColor && !sameSymbol) {
+        return {
+          valid: false,
+          reason: `Lá Aussetzen màu ${DAU_TU_DATA.COLORS[card.color].nameVi} không khớp với màu hiện hành (${DAU_TU_DATA.COLORS[state.activeColor].nameVi}).`
+        };
+      }
+      return {
+        valid: true,
+        matchType: 'action_aussetzen',
+        actionType: 'aussetzen',
+        nextColor: card.color,
+        nextEntryId: null,
+        nextContextId: null,
+        explanation: 'Đối thủ bị bỏ lượt! Bạn được đi tiếp.'
+      };
+    }
+
+    // 2. Lá chức năng: Zieh Zwei (+2)
+    if (card.actionType === 'plus2') {
+      const sameColor = card.color === state.activeColor;
+      const sameSymbol = state.physicalTopCard && state.physicalTopCard.actionType === 'plus2';
+      if (!sameColor && !sameSymbol) {
+        return {
+          valid: false,
+          reason: `Lá +2 màu ${DAU_TU_DATA.COLORS[card.color].nameVi} không khớp với màu hiện hành (${DAU_TU_DATA.COLORS[state.activeColor].nameVi}).`
+        };
+      }
+      return {
+        valid: true,
+        matchType: 'action_plus2',
+        actionType: 'plus2',
+        nextColor: card.color,
+        nextEntryId: null,
+        nextContextId: null,
+        explanation: 'Đối thủ phải rút 2 lá và mất lượt! Bạn được đi tiếp.'
+      };
+    }
+
+    // 3. Lá chức năng: Farbenwahl (đổi màu)
+    if (card.actionType === 'farbenwahl') {
+      if (!chosenColor) {
+        return {
+          valid: true,
+          requiresColorChoice: true,
+          matchType: 'action_farbenwahl',
+          actionType: 'farbenwahl',
+          explanation: 'Vui lòng chọn màu mới.'
+        };
+      }
+      if (!DAU_TU_DATA.COLOR_KEYS.includes(chosenColor)) {
+        return { valid: false, reason: 'Màu được chọn không hợp lệ.' };
+      }
+      return {
+        valid: true,
+        requiresColorChoice: false,
+        matchType: 'action_farbenwahl',
+        actionType: 'farbenwahl',
+        nextColor: chosenColor,
+        nextEntryId: null,
+        nextContextId: null,
+        explanation: `Đã đổi màu bàn chơi sang ${DAU_TU_DATA.COLORS[chosenColor].nameVi}.`
+      };
+    }
+
+    // 4. Lá chức năng: GEGENTEIL! (đổi nghĩa)
+    if (card.actionType === 'gegenteil') {
+      if (!state.activeEntryId || !state.activeContextId) {
+        return {
+          valid: false,
+          reason: 'Không thể dùng GEGENTEIL khi trên bàn chưa có từ vựng mục tiêu hiệu lực (sau lá chức năng).'
+        };
+      }
+      const mapping = getAntonymMapping(state.deckId, state.activeContextId, state.activeEntryId);
+      if (!mapping) {
+        return {
+          valid: false,
+          reason: 'Từ hiện hành không có liên kết trái nghĩa đã khai báo trong ngữ cảnh này.'
+        };
+      }
+      return {
+        valid: true,
+        matchType: 'action_gegenteil',
+        actionType: 'gegenteil',
+        nextColor: state.activeColor, // Giữ nguyên màu hiện hành!
+        nextEntryId: mapping.targetEntryId,
+        nextContextId: mapping.targetContextId,
+        antonymExplanation: mapping.explanationShortVi,
+        explanation: `GEGENTEIL — Nghĩa đã đổi: ${mapping.explanationShortVi}. Màu giữ nguyên (${DAU_TU_DATA.COLORS[state.activeColor].nameVi}).`
+      };
+    }
+
+    // 5. Lá từ bình thường
+    if (card.type === 'word') {
+      const isColorMatch = card.color === state.activeColor;
+      const isSynonymMatch = isSynonym(state.deckId, state.activeContextId, state.activeEntryId, card.entryId);
+      const isSameWord = state.activeEntryId === card.entryId;
+
+      if (!isColorMatch && !isSynonymMatch && !isSameWord) {
+        return {
+          valid: false,
+          reason: `Lá "${card.label}" (${DAU_TU_DATA.COLORS[card.color].nameVi}) không cùng màu và cũng không có quan hệ đồng nghĩa/cùng từ với mục tiêu hiện hành.`
+        };
+      }
+
+      let matchType = 'color';
+      let nextContextId = state.activeContextId;
+
+      if (isSynonymMatch && isColorMatch) {
+        matchType = 'both';
+      } else if (isSynonymMatch) {
+        matchType = 'meaning';
+      } else if (isSameWord) {
+        matchType = 'same_word';
+      } else {
+        // Chỉ cùng màu: chuyển sang ngữ cảnh nền của từ mới
+        matchType = 'color';
+        const deckData = getDeckData(state.deckId);
+        nextContextId = deckData.entries[card.entryId].baseContextId;
+      }
+
+      return {
+        valid: true,
+        matchType: matchType,
+        actionType: null,
+        nextColor: card.color,
+        nextEntryId: card.entryId,
+        nextContextId: nextContextId,
+        isSynonym: isSynonymMatch,
+        isSameWord: isSameWord,
+        isColorMatch: isColorMatch,
+        explanation: matchType === 'both' ? 'Cùng màu VÀ Nối nghĩa đồng nghĩa!' :
+                     matchType === 'meaning' ? 'Nối nghĩa đồng nghĩa!' :
+                     matchType === 'same_word' ? 'Cùng từ (khác màu)!' :
+                     'Đánh theo cùng màu.'
+      };
+    }
+
+    return { valid: false, reason: 'Loại lá bài không hợp lệ.' };
+  }
+
+  /**
+   * Thực hiện đánh lá bài (State mutation an toàn)
+   */
+  function executePlayCard(state, cardId, playerRole, chosenColor) {
+    const val = validatePlayCard(state, cardId, playerRole, chosenColor);
+    if (!val.valid) {
+      throw new Error(`Nước đi không hợp lệ: ${val.reason}`);
+    }
+
+    // Validation may permit opening the picker, but execution must be atomic.
+    if (val.requiresColorChoice) {
+      throw new Error('Hãy chọn màu trước khi đánh lá Đổi màu.');
+    }
+    const handKey = playerRole === 'player' ? 'playerHand' : 'botHand';
+    const cardIndex = state[handKey].findIndex(c => c.id === cardId);
+    const playedCard = state[handKey].splice(cardIndex, 1)[0];
+
+    // Đưa vào discardPile
+    state.discardPile.push(playedCard);
+    state.physicalTopCard = playedCard;
+
+    // Ghi nhận trợ giúp của người chơi trong lượt
+    if (playerRole === 'player') {
+      if (state.currentTurnUsedCardHint) {
+        state.helpStats.viewedCardHintMoves++;
+      } else if (state.currentTurnUsedHelp) {
+        state.helpStats.viewedMeaningMoves++;
+      } else {
+        state.helpStats.unassistedMoves++;
+      }
+    }
+
+    // Reset cờ lượt
+    state.hasDrawnThisTurn = false;
+    state.drawnCardIdThisTurn = null;
+    state.currentTurnUsedHelp = false;
+    state.currentTurnUsedCardHint = false;
+
+    const remainingCardsCount = state[handKey].length;
+
+    // Xử lý hiệu ứng theo loại lá
+    if (playedCard.actionType === 'aussetzen') {
+      state.activeColor = val.nextColor;
+      state.activeEntryId = null;
+      state.activeContextId = null;
+      state.lastAction = {
+        type: 'aussetzen',
+        player: playerRole,
+        text: `${playerRole === 'player' ? 'Bạn' : 'VokabelBot'} đã đánh Aussetzen! Đối thủ bị bỏ lượt.`,
+        card: playedCard
+      };
+
+      // Kiểm tra thắng
+      if (remainingCardsCount === 0) {
+        state.turnState = 'game_over';
+        state.winner = playerRole;
+        assertTotalCards(state);
+        return { state: state, nextTurn: null, gameOver: true, winner: playerRole };
+      }
+
+      // Giữ lượt cho chính người đánh
+      state.turnCount++;
+      assertTotalCards(state);
+      return { state: state, nextTurn: playerRole, gameOver: false, extraTurn: true };
+    }
+
+    if (playedCard.actionType === 'plus2') {
+      state.activeColor = val.nextColor;
+      state.activeEntryId = null;
+      state.activeContextId = null;
+
+      // Đối thủ rút 2 lá
+      const opponentHandKey = playerRole === 'player' ? 'botHand' : 'playerHand';
+      const opponentName = playerRole === 'player' ? 'VokabelBot' : 'Bạn';
+      const penaltyCards = [];
+
+      for (let i = 0; i < 2; i++) {
+        reshuffleDiscardPileIfNeeded(state);
+        if (state.drawPile.length > 0) {
+          const drawn = state.drawPile.pop();
+          state[opponentHandKey].push(drawn);
+          penaltyCards.push(drawn);
+        }
+      }
+
+      state.lastAction = {
+        type: 'plus2',
+        player: playerRole,
+        text: `${playerRole === 'player' ? 'Bạn' : 'VokabelBot'} đã đánh +2! ${opponentName} phải rút ${penaltyCards.length} lá và mất lượt.`,
+        card: playedCard,
+        drawnCount: penaltyCards.length
+      };
+
+      // Nếu lá cuối cùng là +2: đối thủ đã rút 2 lá rồi kết thúc ván
+      if (remainingCardsCount === 0) {
+        state.turnState = 'game_over';
+        state.winner = playerRole;
+        assertTotalCards(state);
+        return { state: state, nextTurn: null, gameOver: true, winner: playerRole };
+      }
+
+      // Giữ lượt cho người đánh (đối thủ mất lượt)
+      state.turnCount++;
+      assertTotalCards(state);
+      return { state: state, nextTurn: playerRole, gameOver: false, extraTurn: true };
+    }
+
+    if (playedCard.actionType === 'farbenwahl') {
+      state.activeColor = val.nextColor;
+      state.activeEntryId = null;
+      state.activeContextId = null;
+      state.lastAction = {
+        type: 'farbenwahl',
+        player: playerRole,
+        text: `${playerRole === 'player' ? 'Bạn' : 'VokabelBot'} đánh Farbenwahl: Đổi màu sang ${DAU_TU_DATA.COLORS[val.nextColor].nameVi}.`,
+        card: playedCard,
+        chosenColor: val.nextColor
+      };
+
+      if (remainingCardsCount === 0) {
+        state.turnState = 'game_over';
+        state.winner = playerRole;
+        assertTotalCards(state);
+        return { state: state, nextTurn: null, gameOver: true, winner: playerRole };
+      }
+
+      // Đổi lượt sang đối thủ
+      state.activePlayer = playerRole === 'player' ? 'bot' : 'player';
+      state.turnCount++;
+      assertTotalCards(state);
+      return { state: state, nextTurn: state.activePlayer, gameOver: false };
+    }
+
+    if (playedCard.actionType === 'gegenteil') {
+      state.activeEntryId = val.nextEntryId;
+      state.activeContextId = val.nextContextId;
+      // activeColor giữ nguyên!
+      state.lastAction = {
+        type: 'gegenteil',
+        player: playerRole,
+        text: `GEGENTEIL — Nghĩa đã đổi: ${val.antonymExplanation}.`,
+        card: playedCard,
+        antonymExplanation: val.antonymExplanation
+      };
+
+      if (remainingCardsCount === 0) {
+        state.turnState = 'game_over';
+        state.winner = playerRole;
+        assertTotalCards(state);
+        return { state: state, nextTurn: null, gameOver: true, winner: playerRole };
+      }
+
+      state.activePlayer = playerRole === 'player' ? 'bot' : 'player';
+      state.turnCount++;
+      assertTotalCards(state);
+      return { state: state, nextTurn: state.activePlayer, gameOver: false };
+    }
+
+    // Lá từ bình thường
+    state.activeColor = val.nextColor;
+    state.activeEntryId = val.nextEntryId;
+    state.activeContextId = val.nextContextId;
+
+    const sentence = getContextSentence(state.deckId, val.nextContextId, val.nextEntryId);
+    state.lastAction = {
+      type: 'word',
+      player: playerRole,
+      matchType: val.matchType,
+      text: `${playerRole === 'player' ? 'Bạn' : 'VokabelBot'} đã đánh "${playedCard.label}": ${val.explanation}`,
+      card: playedCard,
+      sentence: sentence
+    };
+
+    if (remainingCardsCount === 0) {
+      state.turnState = 'game_over';
+      state.winner = playerRole;
+      assertTotalCards(state);
+      return { state: state, nextTurn: null, gameOver: true, winner: playerRole };
+    }
+
+    state.activePlayer = playerRole === 'player' ? 'bot' : 'player';
+    state.turnCount++;
+    assertTotalCards(state);
+    return { state: state, nextTurn: state.activePlayer, gameOver: false };
+  }
+
+  /**
+   * Rút 1 lá bài từ chồng rút
+   */
+  function executeDrawCard(state, playerRole) {
+    if (state.turnState === 'game_over') {
+      return { success: false, reason: 'Ván chơi đã kết thúc.' };
+    }
+    if (state.activePlayer !== playerRole) {
+      return { success: false, reason: 'Chưa tới lượt của bạn.' };
+    }
+    if (state.hasDrawnThisTurn) {
+      return { success: false, reason: 'Bạn đã rút bài trong lượt này rồi.' };
+    }
+
+    reshuffleDiscardPileIfNeeded(state);
+    if (state.drawPile.length === 0) {
+      // Do not leave a player or bot stuck waiting for an impossible draw.
+      const canPlay = role => {
+        const view = Object.assign({}, state, { activePlayer: role, hasDrawnThisTurn: false, drawnCardIdThisTurn: null });
+        const hand = role === 'player' ? state.playerHand : state.botHand;
+        return hand.some(c => validatePlayCard(view, c.id, role).valid);
+      };
+      if (!canPlay('player') && !canPlay('bot')) {
+        state.turnState = 'game_over'; state.winner = null; state.isDraw = true;
+        state.lastAction = { type: 'stalemate', text: 'Hòa: cả hai không còn nước đi hoặc bài để rút.' };
+        return { success: false, noCards: true, gameOver: true, reason: state.lastAction.text };
+      }
+      if (!canPlay(playerRole)) {
+        state.activePlayer = playerRole === 'player' ? 'bot' : 'player';
+        state.hasDrawnThisTurn = false; state.drawnCardIdThisTurn = null;
+        state.currentTurnUsedHelp = false; state.currentTurnUsedCardHint = false;
+        state.turnCount++;
+        state.lastAction = {type:'pass', player:playerRole, text:'Hết bài rút; chuyển lượt vì không có nước đi.'};
+        return { success:false, noCards:true, passed:true, reason:state.lastAction.text };
+      }
+      return { success: false, noCards:true, reason: 'Hết bài rút. Hãy chọn một lá đang có.' };
+    }
+
+    const handKey = playerRole === 'player' ? 'playerHand' : 'botHand';
+    const drawn = state.drawPile.pop();
+    state[handKey].push(drawn);
+
+    state.hasDrawnThisTurn = true;
+    state.drawnCardIdThisTurn = drawn.id;
+
+    // Kiểm tra xem lá vừa rút có đánh được không
+    const checkPlayable = validatePlayCard(state, drawn.id, playerRole);
+
+    assertTotalCards(state);
+    return {
+      success: true,
+      drawnCard: drawn,
+      canPlayDrawnCard: checkPlayable.valid
+    };
+  }
+
+  /**
+   * Giữ bài và kết thúc lượt (sau khi đã rút 1 lá)
+   */
+  function executePassTurn(state, playerRole) {
+    if (state.turnState === 'game_over') {
+      return { success: false, reason: 'Ván chơi đã kết thúc.' };
+    }
+    if (state.activePlayer !== playerRole) {
+      return { success: false, reason: 'Chưa tới lượt của bạn.' };
+    }
+    if (!state.hasDrawnThisTurn) {
+      return { success: false, reason: 'Chưa rút bài nên không thể bấm Giữ bài/Bỏ qua.' };
+    }
+
+    state.hasDrawnThisTurn = false;
+    state.drawnCardIdThisTurn = null;
+    state.currentTurnUsedHelp = false;
+    state.currentTurnUsedCardHint = false;
+
+    state.lastAction = {
+      type: 'pass',
+      player: playerRole,
+      text: `${playerRole === 'player' ? 'Bạn' : 'VokabelBot'} đã giữ bài và kết thúc lượt.`
+    };
+
+    state.activePlayer = playerRole === 'player' ? 'bot' : 'player';
+    state.turnCount++;
+    assertTotalCards(state);
+    return { success: true, nextTurn: state.activePlayer };
+  }
+
+  /**
+   * Xử lý phạt khi xác nhận đánh lá sai luật:
+   * Lá ở lại tay, hiện lý do ngắn, rút 1 lá phạt nếu lượt đó chưa rút, rồi hết lượt.
+   */
+  function executeInvalidPenalty(state, playerRole, cardId, reason) {
+    if (state.turnState === 'game_over' || state.activePlayer !== playerRole) {
+      throw new Error('Không thể xử lý phạt ngoài lượt hoặc sau khi kết thúc.');
+    }
+    const checkedHand = playerRole === 'player' ? state.playerHand : state.botHand;
+    if (!checkedHand.some(c => c.id === cardId)) throw new Error('Lá bài không ở trên tay.');
+    if (validatePlayCard(state, cardId, playerRole).valid) throw new Error('Không phạt lá hợp lệ.');
+    const handKey = playerRole === 'player' ? 'playerHand' : 'botHand';
+    let drawnPenaltyCard = null;
+
+    if (!state.hasDrawnThisTurn) {
+      reshuffleDiscardPileIfNeeded(state);
+      if (state.drawPile.length > 0) {
+        drawnPenaltyCard = state.drawPile.pop();
+        state[handKey].push(drawnPenaltyCard);
+      }
+    }
+
+    state.hasDrawnThisTurn = false;
+    state.drawnCardIdThisTurn = null;
+    state.currentTurnUsedHelp = false;
+    state.currentTurnUsedCardHint = false;
+
+    state.lastAction = {
+      type: 'invalid_play_penalty',
+      player: playerRole,
+      text: `Đánh sai luật (${reason}). ${drawnPenaltyCard ? 'Bị phạt rút 1 lá và mất lượt!' : 'Bị mất lượt!'}`,
+      cardId: cardId
+    };
+
+    state.activePlayer = playerRole === 'player' ? 'bot' : 'player';
+    state.turnCount++;
+    assertTotalCards(state);
+
+    return {
+      penalized: true,
+      reason: reason,
+      drawnPenaltyCard: drawnPenaltyCard,
+      nextTurn: state.activePlayer
+    };
+  }
+
+  /**
+   * Hệ thống gợi ý 2 bước
+   */
+  function getHint(state, step) {
+    const deck = getDeckData(state.deckId);
+    if (state.turnState === 'game_over' || state.activePlayer !== 'player') {
+      return {step:step, recommendedCardId:null, hintText:'Chờ đến lượt của bạn để dùng gợi ý.'};
+    }
+
+    // Bước 1: Gợi ý nghĩa câu / từ trên bàn, KHÔNG nêu tên lá bài trên tay
+    if (step === 1) {
+      if (!state.activeEntryId || !state.activeContextId) {
+        return {
+          step: 1,
+          hintText: `Bàn đang chơi theo màu ${DAU_TU_DATA.COLORS[state.activeColor].nameVi}. Chọn cùng màu, cùng biểu tượng chức năng hoặc lá Đổi màu. GEGENTEIL chưa dùng được vì bàn không có từ mục tiêu.`,
+          contextExplanation: null
+        };
+      }
+      const ctx = deck.contexts[state.activeContextId];
+      return {
+        step: 1,
+        hintText: ctx ? ctx.explanationVi : 'Quan sát kỹ câu tiếng Đức trên bàn để nắm ngữ cảnh diễn đạt.',
+        contextExplanation: ctx ? ctx.topic : null
+      };
+    }
+
+    // Bước 2: Sau khi người chơi bấm "Chỉ lá phù hợp"
+    // Chỉ xét các lá hiện được phép đánh trên tay người chơi
+    let candidateCards = state.playerHand;
+    if (state.hasDrawnThisTurn && state.drawnCardIdThisTurn) {
+      candidateCards = candidateCards.filter(c => c.id === state.drawnCardIdThisTurn);
+    }
+
+    // 1. Ưu tiên tìm lá nối nghĩa đồng nghĩa hợp lệ
+    const synonymCard = candidateCards.find(c => {
+      if (c.type !== 'word') return false;
+      return isSynonym(state.deckId, state.activeContextId, state.activeEntryId, c.entryId);
+    });
+
+    if (synonymCard) {
+      return {
+        step: 2,
+        foundSynonym: true,
+        recommendedCardId: synonymCard.id,
+        hintText: `Có lá "${synonymCard.label}" đồng nghĩa phù hợp trong ngữ cảnh này trên tay bạn.`,
+        actionAdvice: 'Nối nghĩa'
+      };
+    }
+
+    // 2. Không có lá đồng nghĩa: nói thật
+    // Kiểm tra xem có lá cùng từ không
+    const sameWordCard = candidateCards.find(c => c.type === 'word' && c.entryId === state.activeEntryId);
+    if (sameWordCard) {
+      return {
+        step: 2,
+        foundSynonym: false,
+        recommendedCardId: sameWordCard.id,
+        hintText: `Không có lá đồng nghĩa mới, nhưng bạn có lá "${sameWordCard.label}" cùng từ (khác màu) có thể đánh được.`,
+        actionAdvice: 'Cùng từ'
+      };
+    }
+
+    // Kiểm tra lá cùng màu hoặc lá chức năng
+    const playableOther = candidateCards.find(c => {
+      const v = validatePlayCard(state, c.id, 'player');
+      return v.valid;
+    });
+
+    if (playableOther) {
+      return {
+        step: 2,
+        foundSynonym: false,
+        recommendedCardId: playableOther.id,
+        hintText: `Không có lá đồng nghĩa trên tay, nhưng bạn có lá "${playableOther.label}" hợp lệ (cùng màu hoặc chức năng).`,
+        actionAdvice: 'Cùng màu/Chức năng'
+      };
+    }
+
+    return {
+      step: 2,
+      foundSynonym: false,
+      recommendedCardId: null,
+      hintText: state.hasDrawnThisTurn
+        ? 'Lá bài vừa rút không thể đánh được. Bạn hãy bấm "Giữ bài" để kết thúc lượt.'
+        : 'Bạn không có lá bài nào hợp lệ trên tay. Hãy bấm "Rút 1 lá" từ chồng bài.',
+      actionAdvice: state.hasDrawnThisTurn ? 'Giữ bài' : 'Rút bài'
+    };
+  }
+
+  return {
+    createRng: createRng,
+    shuffle: shuffle,
+    createInitialGameState: createInitialGameState,
+    validatePlayCard: validatePlayCard,
+    executePlayCard: executePlayCard,
+    executeDrawCard: executeDrawCard,
+    executePassTurn: executePassTurn,
+    executeInvalidPenalty: executeInvalidPenalty,
+    reshuffleDiscardPileIfNeeded: reshuffleDiscardPileIfNeeded,
+    getHint: getHint,
+    isSynonym: isSynonym,
+    getAntonymMapping: getAntonymMapping,
+    getContextSentence: getContextSentence,
+    getDeckData: getDeckData,
+    assertTotalCards: assertTotalCards
+  };
+});
+
+</script>
+  <script>
+/**
+ * DAU-TU-BOT.JS
+ * Trí tuệ nhân tạo (Bot "VokabelBot") cho "Đấu từ — VokabelGo" v0.1.
+ * Tuân thủ nghiêm ngặt nguyên tắc cách ly thông tin (Information Isolation):
+ * Bot CHỈ nhận thông tin công khai trên bàn, số lá của đối thủ và bộ bài trên tay nó.
+ * Tuyệt đối không gian lận đọc bài đối thủ hoặc thứ tự chồng rút.
+ */
+
+(function (root, factory) {
+  if (typeof module === 'object' && module.exports) {
+    const engine = require('./dau-tu-engine.js');
+    const data = require('./dau-tu-data.js');
+    module.exports = factory(engine, data);
+  } else {
+    root.DAU_TU_BOT = factory(root.DAU_TU_ENGINE, root.DAU_TU_DATA);
+  }
+})(typeof self !== 'undefined' ? self : this, function (DAU_TU_ENGINE, DAU_TU_DATA) {
+  'use strict';
+
+  /**
+   * Tạo quan sát công khai tối thiểu để chuyển cho Bot
+   */
+  function buildPublicObservation(state) {
+    return {
+      deckId: state.deckId,
+      activeColor: state.activeColor,
+      activeEntryId: state.activeEntryId,
+      activeContextId: state.activeContextId,
+      physicalTopCard: state.physicalTopCard,
+      hasDrawnThisTurn: state.hasDrawnThisTurn,
+      drawnCardIdThisTurn: state.drawnCardIdThisTurn,
+      playerCardCount: state.playerHand.length,
+      turnState: state.turnState
+    };
+  }
+
+  /**
+   * Lựa chọn màu có lợi nhất cho Bot (dùng khi đánh Farbenwahl)
+   */
+  function pickBestColorForBot(botHand) {
+    const counts = { rot: 0, blau: 0, gruen: 0, gelb: 0 };
+    botHand.forEach(card => {
+      if (card.color && counts[card.color] !== undefined) {
+        counts[card.color]++;
+      }
+    });
+
+    let bestColor = 'rot';
+    let maxCount = -1;
+    DAU_TU_DATA.COLOR_KEYS.forEach(color => {
+      if (counts[color] > maxCount) {
+        maxCount = counts[color];
+        bestColor = color;
+      }
+    });
+
+    return bestColor;
+  }
+
+  /**
+   * Quyết định nước đi của Bot
+   * @param {Object} publicObs - Quan sát công khai
+   * @param {Array} botHand - Các lá bài trên tay bot
+   * @returns {Object} { action: 'play' | 'draw' | 'pass', cardId, chosenColor, meta }
+   */
+  function getBotDecision(publicObs, botHand) {
+    // Tạo giả lập state tối thiểu để chạy bộ kiểm tra luật chung
+    const mockState = {
+      deckId: publicObs.deckId,
+      activeColor: publicObs.activeColor,
+      activeEntryId: publicObs.activeEntryId,
+      activeContextId: publicObs.activeContextId,
+      physicalTopCard: publicObs.physicalTopCard,
+      turnState: publicObs.turnState,
+      activePlayer: 'bot',
+      playerHand: new Array(publicObs.playerCardCount), // Không có nội dung lá của player
+      botHand: botHand,
+      hasDrawnThisTurn: publicObs.hasDrawnThisTurn,
+      drawnCardIdThisTurn: publicObs.drawnCardIdThisTurn
+    };
+
+    // 1. Nếu Bot vừa rút bài trong lượt này:
+    if (publicObs.hasDrawnThisTurn && publicObs.drawnCardIdThisTurn) {
+      const drawnCard = botHand.find(c => c.id === publicObs.drawnCardIdThisTurn);
+      if (drawnCard) {
+        const val = DAU_TU_ENGINE.validatePlayCard(mockState, drawnCard.id, 'bot');
+        if (val.valid) {
+          const chosenColor = val.requiresColorChoice ? pickBestColorForBot(botHand) : null;
+          return {
+            action: 'play',
+            cardId: drawnCard.id,
+            chosenColor: chosenColor,
+            meta: { reason: 'Đánh ngay lá vừa rút' }
+          };
+        }
+      }
+      return {
+        action: 'pass',
+        cardId: null,
+        chosenColor: null,
+        meta: { reason: 'Lá vừa rút không hợp lệ, giữ bài' }
+      };
+    }
+
+    // 2. Lượt đánh bình thường trước khi rút:
+    const validMoves = [];
+    botHand.forEach(card => {
+      const val = DAU_TU_ENGINE.validatePlayCard(mockState, card.id, 'bot');
+      if (val.valid) {
+        validMoves.push({
+          card: card,
+          val: val
+        });
+      }
+    });
+
+    if (validMoves.length === 0) {
+      return {
+        action: 'draw',
+        cardId: null,
+        chosenColor: null,
+        meta: { reason: 'Không có lá hợp lệ trên tay, rút bài' }
+      };
+    }
+
+    // Phân loại và xếp thứ tự ưu tiên nước đi:
+    // a) Nếu đối thủ sắp hết bài (<= 2 lá), ưu tiên hãm bằng +2 hoặc Aussetzen
+    if (publicObs.playerCardCount <= 2) {
+      const plus2Move = validMoves.find(m => m.card.actionType === 'plus2');
+      if (plus2Move) {
+        return {
+          action: 'play',
+          cardId: plus2Move.card.id,
+          chosenColor: null,
+          meta: { reason: 'Chặn đối thủ bằng lá +2' }
+        };
+      }
+      const skipMove = validMoves.find(m => m.card.actionType === 'aussetzen');
+      if (skipMove) {
+        return {
+          action: 'play',
+          cardId: skipMove.card.id,
+          chosenColor: null,
+          meta: { reason: 'Bỏ lượt đối thủ bằng Aussetzen' }
+        };
+      }
+    }
+
+    // b) Ưu tiên giáo dục từ vựng: NỐI NGHĨA ĐỒNG NGHĨA
+    const meaningMove = validMoves.find(m => m.val.isSynonym);
+    if (meaningMove) {
+      return {
+        action: 'play',
+        cardId: meaningMove.card.id,
+        chosenColor: null,
+        meta: { reason: 'Nối nghĩa đồng nghĩa' }
+      };
+    }
+
+    // c) Lá chức năng GEGENTEIL (đổi nghĩa thú vị)
+    const gegenteilMove = validMoves.find(m => m.card.actionType === 'gegenteil');
+    if (gegenteilMove) {
+      return {
+        action: 'play',
+        cardId: gegenteilMove.card.id,
+        chosenColor: null,
+        meta: { reason: 'Đổi nghĩa bằng GEGENTEIL!' }
+      };
+    }
+
+    // d) Lá chức năng +2 hoặc Aussetzen thông thường
+    const actionMove = validMoves.find(m => m.card.actionType === 'plus2' || m.card.actionType === 'aussetzen');
+    if (actionMove) {
+      return {
+        action: 'play',
+        cardId: actionMove.card.id,
+        chosenColor: null,
+        meta: { reason: 'Đánh lá chức năng' }
+      };
+    }
+
+    // e) Đánh theo màu
+    const colorMove = validMoves.find(m => m.card.type === 'word' && m.card.color === publicObs.activeColor);
+    if (colorMove) {
+      return {
+        action: 'play',
+        cardId: colorMove.card.id,
+        chosenColor: null,
+        meta: { reason: 'Đánh lá cùng màu' }
+      };
+    }
+
+    // f) Cùng từ khác màu
+    const sameWordMove = validMoves.find(m => m.card.type === 'word' && m.card.entryId === publicObs.activeEntryId);
+    if (sameWordMove) {
+      return {
+        action: 'play',
+        cardId: sameWordMove.card.id,
+        chosenColor: null,
+        meta: { reason: 'Đánh lá cùng từ khác màu' }
+      };
+    }
+
+    // g) Đổi màu Farbenwahl (chọn màu bot có nhiều nhất)
+    const wildMove = validMoves.find(m => m.card.actionType === 'farbenwahl');
+    if (wildMove) {
+      const bestColor = pickBestColorForBot(botHand);
+      return {
+        action: 'play',
+        cardId: wildMove.card.id,
+        chosenColor: bestColor,
+        meta: { reason: 'Đánh Farbenwahl và đổi sang màu có lợi' }
+      };
+    }
+
+    // Mặc định: đánh lá hợp lệ đầu tiên
+    const defaultMove = validMoves[0];
+    const defaultColor = defaultMove.val.requiresColorChoice ? pickBestColorForBot(botHand) : null;
+    return {
+      action: 'play',
+      cardId: defaultMove.card.id,
+      chosenColor: defaultColor,
+      meta: { reason: 'Đánh lá hợp lệ' }
+    };
+  }
+
+  return {
+    buildPublicObservation: buildPublicObservation,
+    getBotDecision: getBotDecision,
+    pickBestColorForBot: pickBestColorForBot
+  };
+});
+
+</script>
+  <script>
+/* Đấu từ 0.2 — controller replacement. Data/normal rules remain separate.
+ * No API calls; no state export except explicit local QA mode. */
+(function () {
+  'use strict';
+  const D = window.DAU_TU_DATA, E = window.DAU_TU_ENGINE, B = window.DAU_TU_BOT;
+  const $ = id => document.getElementById(id);
+  const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const KEY = 'vokabelgo:dautu:preview:v2:';
+  const symbols = {rot:'♥',blau:'●',gruen:'▲',gelb:'◆',neutral:'✦'};
+  const actions = {
+    aussetzen:{vi:'Bỏ lượt',de:'Aussetzen',icon:'⊘',detail:'Đối thủ mất lượt. Bạn có một lượt mới. Lá tiếp theo vẫn phải đúng luật.'},
+    plus2:{vi:'Rút hai',de:'Zieh Zwei',icon:'+2',detail:'Đối thủ rút 2 lá và mất lượt. Không cộng dồn +2. Bạn có một lượt mới.'},
+    farbenwahl:{vi:'Đổi màu',de:'Farbenwahl',icon:'◒',detail:'Chọn màu mới rồi kết thúc lượt. Không được đánh thêm lá trong lượt này.'},
+    gegenteil:{vi:'Đảo nghĩa',de:'GEGENTEIL!',icon:'⇄',detail:'Đổi từ mục tiêu sang trái nghĩa. Giữ màu, kết thúc lượt. Lượt sau vẫn nối đồng nghĩa với từ mới.'}
+  };
+  let state = null, deckId = 'adjektive', mode = 'practice', selected = null;
+  let botTimer = null, epoch = 0, muted = true, audio = null;
+  let hintId = null, showTranslation = false, retries = 0;
+  let modalKind = null, restoreFocus = null, pendingCard = null;
+  let lastUiHelpVersion = '', feedback = 'Bạn đi trước. Chọn một lá để bắt đầu.', feedbackTone = '';
+  let gameLog = [], learnedPairs = [];
+  try {const saved = localStorage.getItem(KEY+'deck');if(['adjektive','verben'].includes(saved))deckId=saved;muted=localStorage.getItem(KEY+'muted')!=='false';} catch (_) {}
+  function save(k,v){try{localStorage.setItem(KEY+k,v);}catch(_) {}}
+  function currentData(){return E.getDeckData(state ? state.deckId : deckId);}
+  function nameDeck(d=deckId){return d==='verben'?'Động từ':'Tính từ';}
+  function colorLabel(c){return D.COLORS[c]?.nameVi || 'Không màu';}
+  function label(c){return c.type==='word'?c.label:actions[c.actionType]?.vi || c.label;}
+  function ownTurn(){return !!state && state.turnState!=='game_over' && state.activePlayer==='player';}
+  function uiVersion(){return state ? `${epoch}:${state.turnCount}:${state.activePlayer}:${state.activeEntryId}:${state.drawnCardIdThisTurn||''}`:'';}
+  function killTimer(){clearTimeout(botTimer);botTimer=null;}
+  function cancelSpeech(){if('speechSynthesis' in window)window.speechSynthesis.cancel();}
+  function stopAudio(){cancelSpeech();if(audio){audio.close().catch(()=>{});audio=null;}}
+  function tone(kind='play'){
+    if(muted)return;
+    try{
+      if(!audio)audio=new (window.AudioContext||window.webkitAudioContext)();
+      audio.resume().catch(()=>{});
+      const notes=kind==='meaning'?[440,554,659]:kind==='win'?[440,554,659,880]:kind==='action'?[392,587]:kind==='error'?[160]:[310];
+      notes.forEach((f,i)=>{const o=audio.createOscillator(),g=audio.createGain(),t=audio.currentTime+i*.085;o.type='sine';o.frequency.value=f;g.gain.setValueAtTime(.055,t);g.gain.exponentialRampToValueAtTime(.0001,t+.19);o.connect(g);g.connect(audio.destination);o.start(t);o.stop(t+.20);});
+    }catch(_){}
+  }
+  function soundUi(){ $('btn-sound').textContent=muted?'♪̸':'♪';$('btn-sound').setAttribute('aria-label',muted?'Bật âm thanh':'Tắt âm thanh');$('btn-sound').setAttribute('aria-pressed',String(!muted));}
+  function cardHtml(c,{button=false,isSelected=false,hinted=false,disabled=false}={}){
+    const word=c.type==='word', a=actions[c.actionType], text=word?c.label:a?.vi || c.label;
+    const klass=`word-card ${c.color||'neutral'}${isSelected?' selected':''}${hinted?' hinted':''}`;
+    const middle=word?`<strong class="card-word ${text.length>10?'long':''}" lang="de">${escape(text).replace(/^sich /,'sich<br>')}</strong><span class="card-type">${state?.deckId==='verben'||c.partOfSpeech?.startsWith('Verb')?'Verb':'Adjektiv'}</span>`:
+      `<span class="action-icon" aria-hidden="true">${escape(a?.icon)}</span><strong class="card-action-title">${escape(text)}</strong><small class="card-german-name" lang="de">${escape(a?.de)}</small>`;
+    const inner=`<span class="card-top"><span class="suit-icon" aria-hidden="true">${symbols[c.color]||'✦'}</span><span>${escape(colorLabel(c.color))}</span></span><span class="card-main">${middle}</span><span class="card-bottom" aria-hidden="true">${word?'VokabelGo':'ĐẤU TỪ'}</span>`;
+    return button?`<button type="button" class="${klass}" data-card-id="${escape(c.id)}" aria-label="${escape(text)}, ${escape(colorLabel(c.color))}${disabled?', chưa được đánh':''}" aria-pressed="${isSelected}" ${disabled?'disabled':''}>${inner}</button>`:`<div class="${klass}" aria-label="${escape(text)}, ${escape(colorLabel(c.color))}">${inner}</div>`;
+  }
+  function sentenceHtml(sentence){
+    if(!sentence)return '';
+    const tokens=new Set((sentence.highlightTokens||[]).map(t=>t.toLocaleLowerCase('de')));
+    // Unicode-safe: \b does not correctly identify a word beginning with ö/ä/ü.
+    return (sentence.de.match(/[\p{L}\p{M}]+|[^\p{L}\p{M}]+/gu)||[]).map(t=>tokens.has(t.toLocaleLowerCase('de'))?`<mark>${escape(t)}</mark>`:escape(t)).join('');
+  }
+  function targetEntry(){return state?.activeEntryId?currentData().entries[state.activeEntryId]:null;}
+  function validSelected(){const c=state?.playerHand.find(c=>c.id===selected);return c?E.validatePlayCard(state,c.id,'player'):null;}
+  function note(text,t=''){feedback=text;feedbackTone=t;}
+  function clearHelpIfNew(){
+    if(lastUiHelpVersion!==uiVersion()){hintId=null;showTranslation=false;lastUiHelpVersion=uiVersion();}
+  }
+  function render(){
+    if(!state)return;
+    clearHelpIfNew();const me=ownTurn(), done=state.turnState==='game_over', e=targetEntry();
+    $('game-mode').textContent=`${mode==='practice'?'Làm quen':'Ván thường'} · ${nameDeck(state.deckId)}`;
+    $('bot-count').textContent=`${state.botHand.length} lá`;
+    $('bot-backs').innerHTML='<i></i>'.repeat(Math.min(state.botHand.length,5));
+    $('player-count').textContent=`${state.playerHand.length} lá`;
+    $('one-card').hidden=state.playerHand.length!==1||done;
+    $('turn-label').textContent=done?'Ván đã kết thúc':me?'Lượt của bạn':'Máy đang đi';
+    $('turn-label').parentElement.classList.toggle('waiting',!me);
+    const color=colorLabel(state.activeColor);
+    let rule=done?'Chơi lại hoặc đổi bộ để tiếp tục.':!me?'Chờ máy đánh xong. Không cần bấm gì.':
+      state.hasDrawnThisTurn?'Chỉ đánh lá vừa rút, hoặc giữ lá và hết lượt.':
+      e?`Đánh lá ${color.toLocaleLowerCase('vi')} hoặc cùng nghĩa với “${e.lemma}”.`:
+      `Đánh lá ${color.toLocaleLowerCase('vi')}, cùng biểu tượng hoặc Đổi màu.`;
+    $('turn-rule').textContent=rule;
+    $('color-badge').innerHTML=`<span class="suit-icon" style="color:var(--${state.activeColor})" aria-hidden="true">${symbols[state.activeColor]}</span> Màu ${escape(color)}`;
+    const flipped=state.physicalTopCard.actionType==='gegenteil' && !!e;
+    $('flip-badge').hidden=!flipped;
+    $('target-label').textContent=e?'TỪ ĐANG NỐI':'LÁ TRÊN BÀN';
+    // Render the effective target after GEGENTEIL, never leave an ambiguous action-only center.
+    const target=e?{id:'effective-target',type:'word',color:state.activeColor,label:e.lemma,entryId:e.entryId,partOfSpeech:e.partOfSpeech}:state.physicalTopCard;
+    $('target-card').innerHTML=cardHtml(target);
+    const sent=E.getContextSentence(state.deckId,state.activeContextId,state.activeEntryId);
+    $('sentence').innerHTML=sent?sentenceHtml(sent):state.physicalTopCard.actionType==='farbenwahl'?'Màu đã đổi. Tiếp tục theo màu mới.':state.physicalTopCard.actionType==='plus2'?'Đã rút phạt. Tiếp tục theo màu hoặc +2.':'Đã bỏ lượt. Tiếp tục theo màu hoặc Bỏ lượt.';
+    $('sentence').lang=sent?'de':'vi';
+    $('translation').textContent=sent?.vi||'';$('translation').hidden=!sent||!showTranslation;
+    $('btn-translate').hidden=!sent;$('btn-translate').textContent=showTranslation?'Ẩn nghĩa':'Xem nghĩa';
+    $('btn-hint').disabled=!me;
+    $('context')?.classList.toggle('with-translation',showTranslation);
+    $('feedback').textContent=feedback;$('feedback').dataset.tone=feedbackTone;
+    const hand=$('hand'),scroll=hand.scrollLeft,focusId=document.activeElement?.dataset?.cardId;
+    hand.innerHTML=state.playerHand.map(c=>cardHtml(c,{button:true,isSelected:c.id===selected,hinted:c.id===hintId,disabled:done||(me&&state.hasDrawnThisTurn&&c.id!==state.drawnCardIdThisTurn)})).join('');
+    hand.scrollLeft=scroll;
+    if(focusId){const focus=[...hand.children].find(x=>x.dataset.cardId===focusId);focus?.focus({preventScroll:true});}
+    const choice=state.playerHand.find(c=>c.id===selected);
+    $('selection-title').textContent=choice?label(choice):'Chọn một lá trên tay';
+    $('btn-info').hidden=!choice;
+    const v=choice&&me?E.validatePlayCard(state,choice.id,'player'):null;
+    const actionUnavailable=choice?.actionType==='gegenteil'&&v&&!v.valid;
+    $('btn-play').disabled=!me||!choice||actionUnavailable||!!(state.hasDrawnThisTurn&&choice?.id!==state.drawnCardIdThisTurn);
+    $('btn-play').textContent=!choice?'Đánh lá':choice.actionType==='farbenwahl'?'Chọn màu →':choice.actionType==='gegenteil'?'Đảo nghĩa →':`Đánh ${label(choice)}`;
+    $('btn-draw').hidden=me&&state.hasDrawnThisTurn;
+    $('btn-draw').disabled=!me;
+    $('btn-draw').title=`${state.drawPile.length} lá trong chồng rút`;
+    $('btn-pass').hidden=!me||!state.hasDrawnThisTurn;
+    $('hand-instruction').textContent=me?(state.hasDrawnThisTurn?'Lá vừa rút đang được chọn':'Chạm chọn → Đánh lá'):'Có thể xem bài trong lúc chờ';
+    $('scroll-left').hidden=$('scroll-right').hidden=hand.scrollWidth<=hand.clientWidth+1;
+    if(actionUnavailable&&me) $('selection-title').textContent='Đảo nghĩa: chưa có từ để đổi';
+  }
+  function shortAction(before){
+    const a=state.lastAction,who=a.player==='player'?'Bạn':'Máy',other=a.player==='player'?'Máy':'Bạn';
+    if(a.type==='word'){
+      if(a.matchType==='meaning'||a.matchType==='both'){
+        const old=before.activeEntryId?E.getDeckData(before.deckId).entries[before.activeEntryId]?.lemma:'';
+        note(`${who}: ${old} → ${a.card.label} · ${a.matchType==='both'?'Cùng màu & cùng nghĩa':'Nối nghĩa'}.`,'success');
+        if(a.player==='player'&&a.matchType==='meaning') learnedPairs.push({from:old,to:a.card.label,help:before.currentTurnUsedCardHint?'answer':before.currentTurnUsedHelp?'meaning':'none'});
+        tone('meaning');
+      }else{note(`${who} đánh ${a.card.label} · ${a.matchType==='same_word'?'Cùng từ':'Cùng màu (không phải đồng nghĩa)'}.`);tone();}
+    }else if(a.type==='plus2'){note(`${who} đánh +2. ${other} nhận ${a.drawnCount} lá và bỏ lượt.`,'notice');tone('action');}
+    else if(a.type==='aussetzen'){note(`${who} đánh Bỏ lượt. ${other} mất lượt.`,'notice');tone('action');}
+    else if(a.type==='gegenteil'){
+      const from=E.getDeckData(before.deckId).entries[before.activeEntryId].lemma;
+      note(`${who} đảo nghĩa: ${from} → ${targetEntry().lemma}. Giữ màu ${colorLabel(state.activeColor)}.`,'success');tone('action');
+    }else if(a.type==='farbenwahl'){note(`${who} đổi sang màu ${colorLabel(state.activeColor)}.`,'notice');tone('action');}
+    gameLog.push({turn:state.turnCount,player:a.player,type:a.type,matchType:a.matchType||null,text:feedback});
+  }
+  function start(d=deckId,options={}){
+    epoch++;killTimer();stopAudio();closePanel(false);
+    deckId=d;save('deck',deckId);state=E.createInitialGameState(d,options.seed,mode==='practice'?'player':undefined);
+    selected=null;hintId=null;showTranslation=false;retries=0;learnedPairs=[];gameLog=[];lastUiHelpVersion='';
+    $('setup').hidden=true;$('gallery').hidden=true;$('game').hidden=false;$('btn-exit').hidden=false;
+    window.scrollTo(0,0);
+    note(state.activePlayer==='player'?(mode==='practice'?'Chọn một lá. Trong Làm quen, sai được thử lại.':'Bạn đi trước. Hết bài trước là thắng.'):'Máy đi trước. Chờ đến lượt bạn.');
+    render();scheduleBot();
+  }
+  function exit(){epoch++;killTimer();stopAudio();closePanel(false);state=null;selected=null;$('game').hidden=true;$('gallery').hidden=true;$('setup').hidden=false;$('btn-exit').hidden=true;updateSetup();}
+  function commit(cardId,color){
+    if(!ownTurn())return;
+    const c=state.playerHand.find(x=>x.id===cardId);if(!c)return;
+    const v=E.validatePlayCard(state,c.id,'player',color);
+    if(!v.valid||v.requiresColorChoice){
+      if(v.requiresColorChoice)return;
+      // Proposed easing is opt-in by mode; classic penalties remain intact.
+      retries++;
+      if(mode==='practice'){
+        state.currentTurnUsedHelp=true;
+        note(`Lá này chưa khớp. ${state.activeEntryId?'Cần cùng màu hoặc cùng nghĩa trong câu.':'Cần cùng màu hoặc đúng biểu tượng.'} Bạn được chọn lại.`,'error');
+        selected=null;tone('error');render();return;
+      }
+      E.executeInvalidPenalty(state,'player',c.id,v.reason);selected=null;
+      note('Lá chưa khớp. Đã xử lý rút phạt và chuyển lượt. Mở gợi ý khi bí.','error');tone('error');render();scheduleBot(1400);return;
+    }
+    const before={...state};
+    try{E.executePlayCard(state,c.id,'player',color);selected=null;shortAction(before);render();if(state.turnState==='game_over')finish();else scheduleBot(1100);}
+    catch(err){note(`Chưa đánh được: ${err.message}`,'error');render();}
+  }
+  function play(){
+    if(!ownTurn()||!selected||$('panel').open)return;
+    const c=state.playerHand.find(c=>c.id===selected);if(!c)return;
+    if(c.actionType==='farbenwahl'){
+      pendingCard=c.id;
+      openPanel('color','Chọn màu tiếp theo',`<p class="small">Chọn xong là hết lượt. Bạn vẫn được chọn màu cũ.</p><div class="color-picker">${D.COLOR_KEYS.map(key=>`<button class="color-choice" data-color="${key}" style="--suit:var(--${key})"><span aria-hidden="true">${symbols[key]}</span>${colorLabel(key)}</button>`).join('')}</div><button class="secondary" data-cmd="close">Hủy · Giữ lại lá</button>`);
+    }else if(c.actionType==='gegenteil'){
+      const v=E.validatePlayCard(state,c.id,'player');if(!v.valid){note(v.reason,'notice');render();return;}
+      const from=targetEntry(),to=currentData().entries[v.nextEntryId],sent=E.getContextSentence(state.deckId,v.nextContextId,v.nextEntryId);
+      pendingCard=c.id;
+      openPanel('opposite','Đảo nghĩa · Giữ màu',`<div class="flip-preview" lang="de">${escape(from.lemma)} <span aria-hidden="true">→</span> ${escape(to.lemma)}</div><p lang="de">${sentenceHtml(sent)}</p><p class="small">Màu ${escape(colorLabel(state.activeColor))} giữ nguyên. Đánh xong là lượt đối thủ.</p><button class="primary" data-cmd="opposite-confirm">Đảo nghĩa và đánh lá</button><button class="secondary" data-cmd="close">Hủy · Giữ lại lá</button>`);
+    }else commit(c.id);
+  }
+  function draw(){
+    if(!ownTurn()||state.hasDrawnThisTurn||$('panel').open)return;
+    const r=E.executeDrawCard(state,'player');
+    if(!r.success){note(r.reason,'notice');render();if(r.gameOver)finish();else if(r.passed)scheduleBot();return;}
+    selected=r.drawnCard.id;
+    note(`Vừa rút “${label(r.drawnCard)}”. Có thể thử đánh hoặc giữ lá để hết lượt.`,'notice');
+    tone();render();revealCard(selected);
+  }
+  function pass(){
+    if(!ownTurn()||!state.hasDrawnThisTurn||$('panel').open)return;
+    E.executePassTurn(state,'player');selected=null;note('Bạn giữ lá và kết thúc lượt.');render();scheduleBot();
+  }
+  function revealCard(id){const c=[...$('hand').children].find(el=>el.dataset.cardId===id);if(!c)return;const hand=$('hand'),h=hand.getBoundingClientRect(),r=c.getBoundingClientRect();if(r.left<h.left+8)hand.scrollLeft-=h.left-r.left+12;else if(r.right>h.right-8)hand.scrollLeft+=r.right-h.right+12;}
+  function scheduleBot(delay=900){
+    killTimer();if(!state||state.turnState==='game_over'||state.activePlayer!=='bot'||$('panel').open||document.hidden)return;
+    const id=epoch, game=state;
+    botTimer=setTimeout(()=>{botTimer=null;if(id!==epoch||game!==state||$('panel').open||state.activePlayer!=='bot'||state.turnState==='game_over')return;runBot();},delay);
+  }
+  function runBot(){
+    if(!state||state.activePlayer!=='bot'||state.turnState==='game_over')return;
+    try{
+      const decision=B.getBotDecision(B.buildPublicObservation(state),state.botHand);
+      if(decision.action==='play'){const before={...state};E.executePlayCard(state,decision.cardId,'bot',decision.chosenColor);shortAction(before);}
+      else if(decision.action==='draw'){
+        const r=E.executeDrawCard(state,'bot');note(r.success?'Máy rút 1 lá.':r.reason);
+        if(!r.success&&!r.passed&&!r.gameOver){note('Máy chưa xử lý được nước đi. Có thể thoát và chơi lại.','error');render();return;}
+      }else{E.executePassTurn(state,'bot');note('Máy giữ lá. Đến lượt bạn.');}
+      selected=null;render();if(state.turnState==='game_over')finish();else scheduleBot(1000);
+    }catch(err){killTimer();note(`Ván tạm dừng: ${err.message}`,'error');render();}
+  }
+  function openPanel(kind,title,html){
+    killTimer();modalKind=kind;restoreFocus=document.activeElement;
+    $('panel-title').textContent=title;$('panel-body').innerHTML=html;
+    if(!$('panel').open)$('panel').showModal();
+    $('panel-close').focus();
+  }
+  function closePanel(resume=true){
+    const focus=restoreFocus;modalKind=null;pendingCard=null;
+    if($('panel').open)$('panel').close();
+    if(focus?.isConnected)focus.focus({preventScroll:true});
+    if(resume)scheduleBot();
+  }
+  function hint(){
+    if(!ownTurn())return;
+    state.currentTurnUsedHelp=true;
+    const h=E.getHint(state,1);
+    const sent=E.getContextSentence(state.deckId,state.activeContextId,state.activeEntryId);
+    openPanel('hint','Gợi ý nghĩa',`${sent?`<p lang="de">${sentenceHtml(sent)}</p>`:''}<p>${escape(h.hintText)}</p><p class="small">Chưa chỉ đáp án. Thử nhìn lại những lá trên tay.</p><button class="primary" data-cmd="close">Để mình thử</button><button class="secondary" data-cmd="hint2">Vẫn bí · Chỉ một lá phù hợp</button>`);
+  }
+  function hint2(){
+    if(!ownTurn())return;
+    state.currentTurnUsedCardHint=true;const h=E.getHint(state,2);hintId=h.recommendedCardId||null;
+    const allowed=hintId&&state.playerHand.find(c=>c.id===hintId);
+    if(allowed)selected=hintId; // Highlight and focus only. No automatic play.
+    closePanel(false);note(h.hintText,allowed?'success':'notice');render();if(hintId)revealCard(hintId);
+  }
+  function inspect(){
+    const c=state?.playerHand.find(c=>c.id===selected);if(!c)return;
+    pendingCard=c.id;
+    if(c.type==='action'){
+      const a=actions[c.actionType];openPanel('info',a.vi,`<p class="small" lang="de">${escape(a.de)} · ${escape(colorLabel(c.color))}</p><p>${escape(a.detail)}</p><button class="primary" data-cmd="close">Về bàn chơi</button>`);return;
+    }
+    const entry=currentData().entries[c.entryId];
+    state.currentTurnUsedHelp=true;
+    openPanel('info','Nghĩa của từ',`<p class="detail-lemma" lang="de">${escape(entry.lemma)}</p><p class="small">${escape(entry.partOfSpeech)} · ${escape(colorLabel(c.color))}</p><div id="detail-meaning"><p>${escape(entry.senseVi)}</p></div><div id="speech-area"></div><button class="primary" data-cmd="close">Về bàn chơi</button>`);
+    pendingCard=c.id;
+    if('speechSynthesis' in window){const voice=window.speechSynthesis.getVoices().find(v=>/^de([_-]|$)/i.test(v.lang));if(voice)$('speech-area').innerHTML=`<button class="secondary" data-cmd="speak" data-entry="${escape(entry.entryId)}">Nghe phát âm</button>`;else $('speech-area').innerHTML='<p class="small">Thiết bị hiện chưa có giọng đọc tiếng Đức.</p>';}
+  }
+  function rules(){
+    const practice=mode==='practice';
+    openPanel('rules','Chơi thế nào?',`<div class="learn-rule"><span class="rule-number">01 · MỤC TIÊU</span>Ai đánh hết bài trước thì thắng.</div><div class="learn-rule"><span class="rule-number">02 · ĐẾN LƯỢT</span>Đánh <b>cùng màu</b>, <b>cùng từ</b> hoặc <b>cùng nghĩa trong câu</b>. Chạm lá rồi bấm Đánh lá.</div><div class="learn-rule"><span class="rule-number">03 · KHI BÍ</span>Rút 1 lá. Chỉ được đánh lá vừa rút; hoặc giữ và hết lượt. Gợi ý luôn miễn phí.</div><div class="rule-functions"><div><strong>⊘ Bỏ lượt</strong>Đối thủ nghỉ 1 lượt.</div><div><strong>+2 Rút hai</strong>Đối thủ nhận 2 lá, bỏ lượt. Không cộng dồn.</div><div><strong>◒ Đổi màu</strong>Chọn màu, rồi hết lượt.</div><div><strong>⇄ GEGENTEIL</strong>Đổi sang trái nghĩa. Giữ màu. Sau đó lại nối đồng nghĩa.</div></div><p class="small"><b>${practice?'Làm quen:':'Ván thường:'}</b> ${practice?'Chọn sai được thử lại, không phạt bài. Đây là bản luyện, không đo mức thuộc từ.':'Xác nhận lá sai: rút tối đa 1 lá trong lượt và hết lượt.'} Không đếm ngược; không phạt quên báo còn 1 lá.</p><button class="primary" data-cmd="close">Hiểu rồi · Về bàn chơi</button>`);
+  }
+  function finish(){
+    killTimer();cancelSpeech();const win=state.winner==='player',drawn=state.isDraw;
+    if(win)tone('win');
+    const s=state.helpStats;
+    openPanel('result',drawn?'Ván hòa':win?'Bạn thắng rồi!':'Máy hết bài trước',`<p>${drawn?'Cả hai không còn nước đi hoặc bài để rút.':win?'Bạn đã đánh hết bài. Cùng chơi thêm một ván nhé.':'Thử giữ lá Đổi màu cho lúc bí ở ván sau nhé.'}</p><div class="result-stats"><div><b>${state.turnCount}</b>Lượt của cả hai</div><div><b>${learnedPairs.length}</b>Lượt nối nghĩa khác màu</div><div><b>${s.viewedCardHintMoves}</b>Lượt có xem lá gợi ý</div></div>${mode==='practice'?`<p class="small">Làm quen · ${retries} lần chọn lại. Các số này mô tả ván chơi, không phải điểm thuộc từ.</p>`:'<p class="small">Thắng hoặc thua không phải kết quả kiểm tra tiếng Đức.</p>'}<button class="primary" data-cmd="again">Chơi lại bộ ${nameDeck(state.deckId)}</button><button class="secondary" data-cmd="exit">Đổi bộ</button>`);
+  }
+  function updateSetup(){
+    for(const d of ['adjektive','verben']){const el=$('deck-'+d);el.classList.toggle('selected',d===deckId);el.setAttribute('aria-pressed',String(d===deckId));}
+    for(const m of ['practice','classic']){const el=$('mode-'+m);el.classList.toggle('selected',m===mode);el.setAttribute('aria-pressed',String(m===mode));}
+    $('btn-start').innerHTML=`Chơi bộ ${nameDeck()} <span aria-hidden="true">→</span>`;
+    document.querySelector('.setup-note').textContent=`${mode==='practice'?'Làm quen: bạn đi trước.':'Ván thường: chọn ngẫu nhiên bên đi trước.'} Bộ từ thử nghiệm, chưa gắn mức CEFR.`;
+  }
+  function gallery(){
+    $('setup').hidden=true;$('game').hidden=true;$('gallery').hidden=false;
+    const all=D.createDeckPhysicalCards('adjektive'),verbs=D.createDeckPhysicalCards('verben');
+    const items=[all.find(c=>c.entryId==='schwierig'&&c.color==='rot'),all.find(c=>c.entryId==='einfach'&&c.color==='blau'),all.find(c=>c.entryId==='teuer'&&c.color==='gelb'),all.find(c=>c.entryId==='ruhig'&&c.color==='gruen'),verbs.find(c=>c.entryId==='schlie\u00dfen'&&c.color==='blau')||verbs.find(c=>c.label==='schließen'),verbs.find(c=>c.label==='sich beeilen')];
+    for(const t of Object.keys(actions))items.push(all.find(c=>c.actionType===t));
+    $('gallery-cards').innerHTML=items.filter(Boolean).map((c,i)=>`<figure>${cardHtml(c)}<figcaption>${i+1}. ${escape(label(c))}</figcaption></figure>`).join('')+'<figure><div class="word-card card-back"><span class="mountain" aria-hidden="true">▲</span><b>VokabelGo</b><small>ĐẤU TỪ</small></div><figcaption>Mặt sau chung</figcaption></figure>';
+  }
+  // Stable event delegation avoids duplicate handlers after re-rendering the hand.
+  let touchStart=null,gestureMoved=false;
+  $('hand').addEventListener('pointerdown',e=>{touchStart={x:e.clientX,y:e.clientY};gestureMoved=false;});
+  $('hand').addEventListener('pointermove',e=>{if(touchStart&&Math.hypot(e.clientX-touchStart.x,e.clientY-touchStart.y)>10)gestureMoved=true;});
+  $('hand').addEventListener('pointercancel',()=>{gestureMoved=true;touchStart=null;});
+  $('hand').addEventListener('click',e=>{
+    if(gestureMoved){gestureMoved=false;return;}const el=e.target.closest('[data-card-id]');if(!el||el.disabled||!state||state.turnState==='game_over')return;
+    selected=el.dataset.cardId;render();
+  });
+  $('hand').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' ')gestureMoved=false;});
+  $('btn-play').onclick=play;$('btn-draw').onclick=draw;$('btn-pass').onclick=pass;$('btn-info').onclick=inspect;
+  $('btn-hint').onclick=hint;$('btn-rules').onclick=rules;
+  $('btn-translate').onclick=()=>{if(!state)return;showTranslation=!showTranslation;if(showTranslation)state.currentTurnUsedHelp=true;render();};
+  $('btn-start').onclick=()=>start();
+  for(const d of ['adjektive','verben'])$('deck-'+d).onclick=()=>{deckId=d;updateSetup();};
+  for(const m of ['practice','classic'])$('mode-'+m).onclick=()=>{mode=m;updateSetup();};
+  $('btn-sound').onclick=()=>{muted=!muted;save('muted',String(muted));if(muted)stopAudio();else tone();soundUi();};
+  $('btn-exit').onclick=()=>{if(state?.turnState==='game_over'){exit();return;}openPanel('exit','Rời ván này?',`<p>Ván đang chơi sẽ không được lưu. Hai bộ từ vẫn giữ nguyên.</p><button class="primary" data-cmd="close">Tiếp tục chơi</button><button class="secondary" data-cmd="exit">Rời ván · Đổi bộ</button>`);};
+  $('scroll-left').onclick=()=>$('hand').scrollBy({left:-240,behavior:'smooth'});$('scroll-right').onclick=()=>$('hand').scrollBy({left:240,behavior:'smooth'});
+  $('panel-close').onclick=()=>closePanel();
+  $('panel').addEventListener('cancel',e=>{e.preventDefault();closePanel();});
+  $('panel').addEventListener('click',e=>{if(e.target!==$('panel'))return;const r=$('panel').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closePanel();});
+  $('panel-body').addEventListener('click',e=>{
+    const btn=e.target.closest('button');if(!btn)return;
+    if(btn.dataset.color&&modalKind==='color'){const id=pendingCard;closePanel(false);commit(id,btn.dataset.color);return;}
+    switch(btn.dataset.cmd){
+      case 'close':closePanel();break;
+      case 'hint2':hint2();break;
+      case 'opposite-confirm':{const id=pendingCard;closePanel(false);commit(id);break;}
+      case 'exit':exit();break;
+      case 'again':start();break;
+      case 'meaning':{const entry=currentData().entries[btn.dataset.entry];if(entry){if(state)state.currentTurnUsedHelp=true;$('detail-meaning').innerHTML=`<p>${escape(entry.senseVi)}</p>`;}break;}
+      case 'speak':{const entry=currentData().entries[btn.dataset.entry];if(!entry||!('speechSynthesis'in window))break;const voice=window.speechSynthesis.getVoices().find(v=>/^de([_-]|$)/i.test(v.lang));if(voice){cancelSpeech();const u=new SpeechSynthesisUtterance(entry.pronunciation||entry.lemma);u.lang=voice.lang;u.voice=voice;window.speechSynthesis.speak(u);}break;}
+    }
+  });
+  document.addEventListener('visibilitychange',()=>{if(document.hidden){killTimer();stopAudio();}else scheduleBot();});
+  window.addEventListener('pagehide',()=>{epoch++;killTimer();stopAudio();});
+  document.querySelector('.brand').onclick=e=>{e.preventDefault();if(state)$('btn-exit').click();else exit();};
+  document.querySelector('.sample-link').onclick=e=>{e.preventDefault();gallery();};
+  document.querySelector('#gallery>a').onclick=e=>{e.preventDefault();exit();};
+  updateSetup();soundUi();
+  if(new URLSearchParams(location.search).get('view')==='cards')gallery();
+  // This opt-in hook is absent from normal runtime. It is not passed to the bot.
+  if(window.__DT_QA__===true||new URLSearchParams(location.search).get('qa')==='1'){
+    window.DAUTU_PREVIEW_QA={
+      getState:()=>state,
+      load:s=>{killTimer();epoch++;closePanel(false);state=s;deckId=s.deckId;selected=null;hintId=null;lastUiHelpVersion='';learnedPairs=[];gameLog=[];retries=0;$('setup').hidden=true;$('game').hidden=false;$('btn-exit').hidden=false;note('Tình huống kiểm thử tái lập.');render();},
+      start:(d,seed)=>start(d,{seed}),setMode:m=>{mode=m;updateSetup();},
+      render,runBot,scheduleBot,pause:killTimer,exit,gallery,finish,sentenceHtml,
+      getLog:()=>({gameLog,learnedPairs,retries}),getSelected:()=>selected,
+      fixtureChosen:id=>{selected=id;render();}
+    };
+  }
+})();
+
+</script>
+</body>
+</html>

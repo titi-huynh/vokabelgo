@@ -1,0 +1,81 @@
+.kds-invite[hidden], .kds-dialog [hidden] { display: none !important; }
+.kds-invite { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px; margin: 20px 0; border: 1px solid #b9c8a8; border-radius: 18px; background: #eaf0df; color: #30452f; }
+.kds-invite h3 { margin: 7px 0; font-size: 24px; }
+.kds-invite p { margin: 0; font-size: 16px; line-height: 1.6; }
+.kds-invite button, .kds-dialog button { font: inherit; cursor: pointer; border: 1px solid #bccab0; border-radius: 11px; padding: 11px 16px; min-height: 46px; background: #f9faf4; color: #355134; line-height: 1.4; }
+.kds-invite button { flex-shrink: 0; background: #42653b; color: #fff; border-color: #42653b; font-size: 16px; }
+body.kds-open { overflow: hidden; }
+.kds-dialog { --kds-green: #42653b; width: min(1180px, calc(100vw - 48px)); max-width: none; max-height: calc(100dvh - 40px); box-sizing: border-box; padding: 0; border: 1px solid #c7d1bb; border-radius: 24px; background: #faf9f2; color: #30452f; font-family: inherit; font-size: 16px; box-shadow: 0 24px 100px #10201466; overflow: auto; }
+.kds-dialog::backdrop { background: #12251dd9; backdrop-filter: blur(5px); }
+.kds-dialog *, .kds-dialog *::before, .kds-dialog *::after { box-sizing: border-box; }
+.kds-dialog button:focus-visible, .kds-dialog input:focus-visible { outline: 3px solid #a16a33; outline-offset: 3px; }
+.kds-dialog button:disabled { cursor: default; opacity: .48; }
+.kds-dialog button:not(:disabled):hover { filter: brightness(.96); }
+.kds-dialog .kds-primary { background: var(--kds-green); border-color: var(--kds-green); color: white; font-weight: 650; }
+.kds-eyebrow { color: #627552; font-size: 11px; letter-spacing: 1.5px; font-weight: 750; line-height: 1.5; margin: 0; }
+.kds-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 26px 30px 22px; border-bottom: 1px solid #dce2d3; }
+.kds-header h2 { font-size: 30px; line-height: 1.2; margin: 7px 0 9px; color: #30452f; }
+.kds-header p:last-child { margin: 0; color: #6a795f; font-size: 16px; line-height: 1.5; }
+.kds-dialog #kdsClose { flex: 0 0 44px; width: 44px; height: 44px; padding: 8px; border-radius: 50%; font-size: 20px; }
+.kds-layout { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(260px, 1fr); }
+.kds-stage-column { padding: 24px 28px 28px; min-width: 0; }
+.kds-stage { position: relative; background: #17251b; border-radius: 16px 16px 0 0; overflow: hidden; aspect-ratio: 16 / 9; }
+#kdsVideo { display: block; width: 100%; height: 100%; object-fit: contain; }
+#kdsBadge { position: absolute; top: 12px; left: 12px; max-width: calc(100% - 24px); border-radius: 20px; padding: 6px 11px; background: #162b21dd; color: white; font-size: 12px; }
+#kdsCountdown { position: absolute; inset: 0; display: grid; place-content: center; background: #10201888; color: #fff; font-size: 90px; font-weight: 750; }
+.kds-transport { display: flex; align-items: center; gap: 12px; padding: 9px 12px; background: #17251b; color: #fff; border-radius: 0 0 14px 14px; font-size: 13px; }
+.kds-dialog #kdsPause { min-height: 36px; width: 36px; padding: 4px; color: white; background: #fff1; border-color: #fff3; }
+#kdsClock { flex-shrink: 0; font-variant-numeric: tabular-nums; }
+#kdsSeek { width: 100%; min-width: 0; accent-color: #b0c28f; }
+.kds-quote { min-height: 137px; padding: 17px 0 16px; }
+.kds-cue-nav { display: flex; align-items: center; justify-content: space-between; gap: 5px; margin-bottom: 10px; }
+.kds-dialog .kds-cue-nav button { border: 0; background: transparent; padding: 5px 0; min-height: 36px; font-size: 13px; }
+#kdsCueLabel { color: #7c895f; font-size: 13px; margin: 0; text-align: center; }
+#kdsDe { margin: 0 0 8px; font-size: 22px; font-weight: 650; line-height: 1.45; overflow-wrap: anywhere; }
+#kdsVi { margin: 0; font-size: 16px; color: #6d7b60; line-height: 1.6; }
+.kds-sentence-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.kds-sentence-actions button { flex: 1 1 150px; padding: 12px 10px; font-size: 15px; }
+.kds-dialog #kdsRecord.is-recording { background: #a84336; border-color: #a84336; }
+#kdsStatus { min-height: 44px; margin: 14px 0 6px; color: #45653b; font-size: 15px; line-height: 1.6; }
+.kds-tip { margin: 0; color: #79856c; font-size: 13px; line-height: 1.65; }
+.kds-result { margin-top: 24px; padding: 20px; background: #eaf0df; border: 1px solid #cbd6bc; border-radius: 16px; display: flex; flex-wrap: wrap; gap: 10px; }
+.kds-result > div { width: 100%; }
+.kds-result h3 { margin: 5px 0 7px; font-size: 22px; }
+.kds-result p { margin: 0 0 7px; font-size: 14px; line-height: 1.6; color: #6b7a5c; }
+.kds-result button { font-size: 15px; }
+.kds-lines { padding: 24px 20px; background: #f1f2e8; border-left: 1px solid #dce2d3; min-width: 0; }
+.kds-lines-heading { margin: 0 4px 16px; }
+.kds-lines h3 { font-size: 19px; margin: 0 0 5px; }
+#kdsProgress { margin: 0; color: #768469; font-size: 14px; }
+#kdsCueList { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+#kdsCueList li { position: relative; min-width: 0; }
+.kds-dialog .kds-cue { display: flex; gap: 11px; width: 100%; padding: 12px; text-align: left; background: #f9faf4; border-color: transparent; }
+.kds-dialog .kds-cue[aria-current="true"] { border-color: #6f8b54; background: #e4ecd7; box-shadow: inset 3px 0 #6f8b54; }
+.kds-cue-index { flex: 0 0 26px; display: grid; place-content: center; width: 26px; height: 26px; border-radius: 50%; background: #dce5d0; font-size: 12px; font-weight: 700; }
+.kds-cue-text { display: block; font-size: 15px; line-height: 1.5; overflow-wrap: anywhere; }
+.kds-cue small { display: block; font-size: 11px; margin-top: 5px; color: #7c876f; padding-right: 33px; }
+.kds-dialog .kds-delete { position: absolute; right: 9px; bottom: 9px; border: 0; background: transparent; min-height: 26px; padding: 3px 7px; font-size: 12px; color: #805d50; }
+.kds-storage { font-size: 12px; line-height: 1.7; color: #7e896e; margin: 16px 4px 0; }
+@media (max-width: 800px) {
+  .kds-layout { grid-template-columns: 1fr; }
+  .kds-lines { border-left: 0; border-top: 1px solid #dce2d3; }
+  .kds-dialog { width: calc(100vw - 24px); max-height: calc(100dvh - 24px); }
+  .kds-invite { flex-direction: column; align-items: stretch; gap: 15px; }
+}
+@media (max-width: 480px) {
+  .kds-dialog { width: 100%; max-height: 100dvh; height: 100dvh; border: 0; border-radius: 0; margin: 0; }
+  .kds-header { padding: 20px 16px 16px; }
+  .kds-header h2 { font-size: 25px; }
+  .kds-eyebrow { font-size: 10px; letter-spacing: 1px; }
+  .kds-stage-column { padding: 16px; }
+  .kds-lines { padding: 20px 16px; }
+  #kdsDe { font-size: 22px; }
+  #kdsVi, #kdsStatus, .kds-tip, .kds-result p { font-size: 16px; }
+  .kds-sentence-actions button { flex: 1 1 calc(50% - 8px); font-size: 16px; }
+  .kds-sentence-actions #kdsRecord { flex-basis: 100%; order: -1; }
+  .kds-result { padding: 16px; }
+  .kds-result button { width: 100%; font-size: 16px; }
+  .kds-cue-text { font-size: 17px; }
+  .kds-cue small, #kdsProgress, .kds-storage { font-size: 14px; }
+  .kds-dialog .kds-delete { min-height: 32px; font-size: 14px; }
+}

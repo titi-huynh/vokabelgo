@@ -1,0 +1,129 @@
+<USER_REQUEST>
+# VOKABELGO — ĐẤU TỪ v0.4
+## VISUAL POLISH + CARD GAME UX + 4-PLAYER TABLE + GERMAN-FIRST DESIGN
+
+Hãy tiếp tục chỉnh trực tiếp trên bản preview Đấu từ hiện tại.
+
+KHÔNG làm lại game từ đầu.
+KHÔNG thay engine hoặc dữ liệu đang hoạt động nếu không cần thiết.
+KHÔNG deploy, merge production, sửa Supabase, navigation chính hoặc những tính năng khác của VokabelGo.
+
+Mục tiêu vòng này là:
+
+> Biến bản hiện tại từ một prototype chức năng thành một card game thực sự dễ chơi, đẹp, trực quan và ưu tiên tuyệt đối việc nhìn – đọc – nhận diện từ tiếng Đức.
+
+Ảnh screenshot hiện tại là nguồn để xác định những điểm cần sửa, KHÔNG phải thiết kế cần giữ nguyên.
+
+==================================================
+1. NGUYÊN TẮC TRUNG TÂM
+==================================================
+
+Game phải tạo cảm giác:
+
+“Đây là một bàn đánh bài thực sự. Tôi nhìn màu bằng thị giác rất nhanh, còn sự chú ý chủ động của tôi dành cho từ tiếng Đức.”
+
+Không được tạo cảm giác:
+
+“Tôi đang đọc một form học từ có thêm lá bài.”
+
+Do đó:
+
+MÀU:
+để mắt nhận ra tức thì.
+
+TỪ TIẾNG ĐỨC:
+là thứ người chơi phải đọc và xử lý.
+
+Không bắt người chơi đọc tên màu.
+
+Không dùng màu như một nội dung phải suy nghĩ.
+
+Mọi quyết định visual phải ưu tiên:
+
+German word
+→ current target
+→ turn state
+→ action
+→ decoration.
+
+==================================================
+2. SỬA THIẾT KẾ LÁ BÀI — YÊU CẦU QUAN TRỌNG NHẤT
+==================================================
+
+Hiện tại lá bài vẫn đang giống một thẻ trắng viền màu và có chữ tên màu.
+
+HÃY ĐỔI.
+
+### 2.1 Toàn thân lá mang màu của lá
+
+Mỗi lá từ phải có TOÀ
+<truncated 20881 bytes>
+e
+06_LongGermanWord
+07_GegenteilBefore
+08_GegenteilAfter
+09_Farbenwahl
+10_Plus2
+11_BotWins_EndState
+12_PlayerWins_EndState
+13_Mobile5Cards
+14_Mobile10Cards
+
+Ảnh phải từ build đang chạy thật.
+
+Không dùng mockup AI.
+
+==================================================
+39. TIÊU CHÍ DUYỆT GIAO DIỆN
+==================================================
+
+Trước khi coi hoàn tất, kiểm:
+
+- Nhìn một giây biết ai đang tới lượt?
+- German word có phải thứ nổi bật nhất trên lá?
+- Có bất kỳ tên màu nào đang cạnh tranh với từ?
+- Một lá còn lại có vẫn trông như “tay bài” không?
+- Current card có đủ nổi?
+- Bot có cảm giác ngồi quanh cùng bàn không?
+- Center có còn giống form học tập không?
+- Winner state có rõ?
+- Game ended có còn action sai không?
+- Từ Đức có bị bẻ không?
+- 1280×720 có cần scroll không?
+- Mobile có chơi được thật không?
+
+Nếu có câu “không”:
+chưa hoàn thành.
+
+==================================================
+40. DEFINITION OF DONE
+==================================================
+
+v0.4 đạt khi:
+
+- toàn bộ word cards dùng full-color body;
+- không hiện tên màu trên mặt card;
+- German word nổi bật nhất;
+- không German-word breaking;
+- 4 seats tạo thành một bàn chơi cohesive;
+- hand zone ổn từ 1–12 cards;
+- active player rõ;
+- center đẹp và dễ hiểu;
+- animation xào/chia/rút/đánh mượt;
+- GEGENTEIL dễ hiểu;
+- end state đúng;
+- desktop không scroll;
+- mobile chơi được;
+- không thay production;
+- luật cũ không bị regression.
+
+Mục tiêu cuối cùng:
+
+> Người chơi nhận màu gần như vô thức,
+> còn sự chú ý có ý thức được dành cho từ tiếng Đức.
+
+Đó phải là nguyên tắc xuyên suốt giao diện.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-09T12:24:26+07:00.
+</ADDITIONAL_METADATA>

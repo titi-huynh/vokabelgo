@@ -1,0 +1,153 @@
+{
+  "set": "May_clean_may_board_v15c",
+  "created": "2026-10-23",
+  "scope": "Chi lam sach net MAY NGOI va BANG TAO. Hop/khe v15b, be, ghe, ban, nha, dem, nen giu nguyen pixel.",
+  "sources": {
+    "main": "May_home_original_viewer_left_clean_v15b.png (anh chi duyet, 1600x1600)",
+    "background_B": "May_home_original_without_viewer_v15.png",
+    "may_crop_target": "x740..920, y785..960 tu anh v15b",
+    "board_crop_target": "x1045..1160, y840..960 tu anh v15b"
+  },
+  "image_calls": "Tong 3 luot Muse Image: may (1), bang (1), edit nen B xoa 2 vat (1). Khong bien the them.",
+  "sprites": {
+    "may-sitting-clean-v15c.png": {
+      "size": [
+        1584,
+        1440
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_content_bbox": [
+        119,
+        115,
+        1453,
+        1344
+      ],
+      "sha256": "6a1fb4fcf5fd16fe7b6b0e6422cc62d92c1fb86f45175df3fcbf0af2dcb81b56"
+    },
+    "apple-board-clean-v15c.png": {
+      "size": [
+        1600,
+        1600
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_content_bbox": [
+        228,
+        218,
+        1344,
+        1452
+      ],
+      "sha256": "c1f33c6b90ea819feb1871871f08b0778fa83bd928601b534d57ceb82367872d"
+    }
+  },
+  "background": {
+    "file": "May_home_background_clean_may_board_v15c.png",
+    "note": "Van KHONG co hop phim; Codex ve lop hop v15b len nhu hien tai.",
+    "patch_bboxes": {
+      "may": [
+        740,
+        785,
+        920,
+        960
+      ],
+      "board": [
+        1045,
+        840,
+        1160,
+        960
+      ]
+    },
+    "diff_vs_B_outside_patches": 0,
+    "sha256": "9f1622d95671e14cc143328ef6ec42363b2f39d9ba94003b665a3b54ca72073e"
+  },
+  "layers": {
+    "viewer_stand_v15b": {
+      "bbox": [
+        565,
+        800,
+        695,
+        900
+      ],
+      "fitted": [
+        130,
+        100
+      ],
+      "top_left": [
+        565,
+        800
+      ],
+      "source": "original-viewer-stand-clean-v15b.png (v15b, khong doi)"
+    },
+    "may_sitting": {
+      "bbox": [
+        750,
+        795,
+        910,
+        945
+      ],
+      "fitted": [
+        160,
+        147
+      ],
+      "top_left": [
+        750,
+        798
+      ],
+      "scale": 0.1199,
+      "sprite_content_px": [
+        1334,
+        1229
+      ]
+    },
+    "apple_board": {
+      "bbox": [
+        1053,
+        848,
+        1152,
+        950
+      ],
+      "fitted": [
+        92,
+        102
+      ],
+      "top_left": [
+        1056,
+        848
+      ],
+      "scale": 0.0827,
+      "sprite_content_px": [
+        1116,
+        1234
+      ]
+    }
+  },
+  "final": {
+    "file": "May_home_clean_may_board_v15c.png",
+    "sha256": "6e40bd8757d30a2affb6341f6ac7a8092ab72bb8da62bff40869f1b90b304fbf"
+  },
+  "pixel_diff_evidence": {
+    "final_vs_v15b_outside_may_board_regions": 0,
+    "final_vs_v15b_region_diffs": {
+      "raft_dock": 0,
+      "chair_book": 0,
+      "play_table": 0,
+      "house_cushion": 0,
+      "viewer_clean": 0
+    }
+  },
+  "design_check_may": {
+    "eyes": "Hai cham bau duc nau nho, KHONG long trang/diem sang/long mi — dat yeu cau mat.",
+    "patches": "Cam o tai/tran trai nguoi xem, than o tai/tran phai va suon phai, duoi soc cong sang phai — dung crop.",
+    "scarf": "Tam giac xanh o truoc, khong no/nut/luc lac.",
+    "deviations": "Dau hoi tron/to hon mot chut so voi crop nho trong canh; khan tam giac noi ro hon; chan ve dang ngon scallop. Net ve sach hon nhung van la NET VE MOI, khong phai pixel goc."
+  },
+  "design_check_board": {
+    "ok": "Khung gan vuong nho, chan thap, mot tao cam do + la xanh tren giay kem, khong chu.",
+    "deviations": "Co them mot quay xach nho o dinh khung va thanh day day hon so voi bang nho trong canh goc."
+  }
+}

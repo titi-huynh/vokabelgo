@@ -1,0 +1,183 @@
+{
+  "limitations": "Localhost with network emulation; one run per scenario, not a Vietnam CDN/mobile benchmark. Video bytes count from navigation through UI readiness plus six additional seconds; this is not a strict six-second transfer test. No user browser data was changed by this measurement.",
+  "results": [
+    {
+      "scenario": "catalog-unplayed",
+      "profile": "Simulated 5 Mbps download, 1 Mbps upload, 100 ms latency; fresh isolated desktop Chromium context",
+      "additionalWaitAfterUiReadySeconds": 6,
+      "prePlayBytes": 0,
+      "manualReplayFirstFrameMs": null,
+      "note": "No play action was performed.",
+      "players": [
+        {
+          "id": "kinoDiscoveryVideo",
+          "preload": "none",
+          "src": null,
+          "visible": false,
+          "currentTime": 0,
+          "readyState": 0,
+          "buffered": []
+        },
+        {
+          "id": "kinoMainVideo",
+          "preload": "none",
+          "src": null,
+          "visible": false,
+          "currentTime": 0,
+          "readyState": 0,
+          "buffered": []
+        },
+        {
+          "id": "kinoFullPlayer",
+          "preload": "none",
+          "src": null,
+          "visible": false,
+          "currentTime": 0,
+          "readyState": 0,
+          "buffered": []
+        }
+      ],
+      "requests": []
+    },
+    {
+      "scenario": "sakura-overview-unplayed",
+      "profile": "Simulated 5 Mbps download, 1 Mbps upload, 100 ms latency; fresh isolated desktop Chromium context",
+      "additionalWaitAfterUiReadySeconds": 6,
+      "prePlayBytes": 0,
+      "manualReplayFirstFrameMs": null,
+      "note": "No play action was performed.",
+      "players": [
+        {
+          "id": "kinoDiscoveryVideo",
+          "preload": "none",
+          "src": null,
+          "visible": false,
+          "currentTime": 0,
+          "readyState": 0,
+          "buffered": []
+        },
+        {
+          "id": "kinoMainVideo",
+          "preload": "none",
+          "src": null,
+          "visible": false,
+          "currentTime": 0,
+          "readyState": 0,
+          "buffered": []
+        },
+        {
+          "id": "kinoFullPlayer",
+          "preload": "none",
+          "src": null,
+          "visible": false,
+          "currentTime": 0,
+          "readyState": 0,
+          "buffered": []
+        }
+      ],
+      "requests": []
+    },
+    {
+      "scenario": "sakura-part-unplayed",
+      "profile": "Simulated 5 Mbps download, 1 Mbps upload, 100 ms latency; fresh isolated desktop Chromium context",
+      "additionalWaitAfterUiReadySeconds": 6,
+      "prePlayBytes": 0,
+      "manualReplayFirstFrameMs": null,
+      "note": "No play action was performed.",
+      "players": [
+        {
+          "id": "kinoDiscoveryVideo",
+          "preload": "none",
+          "src": null,
+          "visible": true,
+          "currentTime": 0,
+          "readyState": 0,
+          "buffered": []
+        },
+        {
+          "id": "kinoMainVideo",
+          "preload": "none",
+          "src": null,
+          "visible": false,
+          "currentTime": 0,
+          "readyState": 0,
+          "buffered": []
+        },
+        {
+          "id": "kinoFullPlayer",
+          "preload": "none",
+          "src": null,
+          "visible": false,
+          "currentTime": 0,
+          "readyState": 0,
+          "buffered": []
+        }
+      ],
+      "requests": []
+    },
+    {
+      "scenario": "sakura-listen-first-sentence",
+      "profile": "Simulated 5 Mbps download, 1 Mbps upload, 100 ms latency; fresh isolated desktop Chromium context",
+      "additionalWaitAfterUiReadySeconds": 6,
+      "prePlayBytes": 1169362,
+      "manualReplayFirstFrameMs": 448.2999999523163,
+      "note": "Opening listen mode itself plays the first sentence. The subsequent button click measures replay startup, not first-ever playback.",
+      "players": [
+        {
+          "id": "kinoDiscoveryVideo",
+          "preload": "none",
+          "src": null,
+          "visible": false,
+          "currentTime": 0,
+          "readyState": 0,
+          "buffered": []
+        },
+        {
+          "id": "kinoMainVideo",
+          "preload": "metadata",
+          "src": "video/sakura_s01e01-480p.mp4?v=1",
+          "visible": true,
+          "currentTime": 96.444411,
+          "readyState": 4,
+          "buffered": [
+            [
+              0,
+              15.422
+            ],
+            [
+              95.6785,
+              97.12907
+            ],
+            [
+              145.753,
+              147.378
+            ]
+          ]
+        },
+        {
+          "id": "kinoFullPlayer",
+          "preload": "none",
+          "src": null,
+          "visible": false,
+          "currentTime": 0,
+          "readyState": 0,
+          "buffered": []
+        }
+      ],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:3000/video/sakura_s01e01-480p.mp4?v=1",
+          "range": "bytes=0-",
+          "bytes": 1169362,
+          "status": 206
+        },
+        {
+          "url": "http://127.0.0.1:3000/video/sakura_s01e01-480p.mp4?v=1",
+          "range": "bytes=11108352-",
+          "bytes": 123855,
+          "status": 206
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+/* Featured film first, then learner-selected activities. */
+body[data-hub="kino"]:has(.kino-chapters-active) :is(#boomboxMini, #catCompanionWidget) { display: none; }
+.kino-focus-edge { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+#kinoSpeakingToggle { margin: 0; cursor: default; }
+.kino-discovery { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(280px, 1fr); gap: 0; overflow: hidden; margin: 12px 0 24px; border: 1px solid #1a211d; border-radius: 22px; background: #1a211d; color: #edf0e9; box-shadow: 0 12px 35px #38462c0c; scroll-margin-top: 16px; }
+.kino-discovery-player { min-width: 0; background: #17221b; color: #fff; }
+.kino-discovery-stage { position: relative; aspect-ratio: var(--kino-video-ratio, 16 / 9); background: #17221b center / contain no-repeat; container-type: inline-size; }
+#kinoDiscoveryVideo { width: 100%; height: 100%; display: block; object-fit: contain; opacity: 0; }
+.kino-discovery-stage.has-started #kinoDiscoveryVideo { opacity: 1; }
+#kinoDiscoveryStart { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; width: 100%; border: 0; background: #10171118; color: white; cursor: pointer; font-size: 14px; }
+#kinoDiscoveryStart[hidden] { display: none; }
+#kinoDiscoveryStart > span { display: grid; place-items: center; width: 56px; height: 56px; background: #fcfbf6ed; color: #34552b; border: 1px solid #fff9; border-radius: 50%; box-shadow: 0 4px 20px #13201735; }
+#kinoDiscoveryStart > span svg { width: 26px; height: 26px; }
+#kinoDiscoveryStart > strong { padding: 5px 12px; border-radius: 20px; background: #101711b8; font-weight: 500; }
+.kino-discovery-controls { display: grid; grid-template-columns: 40px auto 1fr 40px 40px; align-items: center; gap: 4px 8px; padding: 4px 12px 8px; background: #1a211d; color: #edf0e9; font-size: 12px; font-variant-numeric: tabular-nums; }
+.kino-discovery-controls button { display: grid; place-items: center; width: 40px; height: 40px; padding: 8px; border: 0; border-radius: 7px; background: transparent; color: #f0f3ed; cursor: pointer; font: inherit; font-size: 13px; }
+.kino-discovery-controls button:hover { background: #ffffff14; }
+.kino-discovery-controls button:focus-visible, #kinoDiscoveryStart:focus-visible { outline: 2px solid #c5d9ad; outline-offset: -3px; }
+.kino-discovery-controls button svg { width: 21px; height: 21px; }
+.kino-discovery-time { white-space: nowrap; color: #d3dbd0; }
+.kino-discovery-time > :nth-child(2) { color: #7e8a7e; margin: 0 3px; }
+#kinoDiscoveryPlay { grid-column: 1; grid-row: 2; }
+.kino-discovery-time { grid-column: 2; grid-row: 2; }
+.kino-discovery-controls input { grid-column: 1 / -1; grid-row: 1; width: 100%; min-width: 0; height: 24px; margin: 0; accent-color: #bad397; cursor: pointer; }
+#kinoDiscoveryCC { grid-column: 4; grid-row: 2; font-weight: 600; }
+.kino-discovery-controls .kino-discovery-expand { grid-column: 5; grid-row: 2; }
+#kinoDiscoveryCC[aria-pressed="true"] { color: #d7e9bf; box-shadow: inset 0 -2px #b4d297; }
+#kinoDiscoveryCC[aria-pressed="false"] { color: #9ba69b; }
+.kino-discovery-caption { position: absolute; z-index: 2; bottom: 5%; left: 50%; transform: translateX(-50%); width: max-content; max-width: 90%; box-sizing: border-box; padding: 7px 14px; border-radius: 5px; background: #0009; color: #fff; text-align: center; pointer-events: none; text-shadow: 0 1px 3px #000; }
+.kino-discovery-caption:has(#kinoDiscoveryDe:empty):has(#kinoDiscoveryVi:empty) { display: none; }
+.kino-discovery-caption p { margin: 0; line-height: 1.4; overflow-wrap: anywhere; text-wrap: pretty; }
+#kinoDiscoveryDe { font-size: clamp(13px, 2.5cqw, 21px); font-weight: 600; }
+#kinoDiscoveryVi { margin-top: 4px; font-size: clamp(12px, 2.1cqw, 18px); color: #f1f1e9; }
+#kinoDiscoveryCaptionHint { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.kino-discovery-intro { display: flex; flex-direction: column; padding: 26px; min-width: 0; }
+#kinoDiscoveryDescription h3 { font-family: var(--font-display); font-size: clamp(25px, 2.7vw, 32px); line-height: 1.25; margin: 8px 0; }
+#kinoDiscoveryDescription .peppa-eyebrow { font-size: 12px; line-height: 1.5; }
+#kinoDiscoveryDescription #peppaPartGoal { font-size: 15px; color: #58684e; line-height: 1.65; }
+.kino-discovery-reassurance { color: #637357; font-size: 15px; line-height: 1.6; margin: 16px 0 8px; }
+#kinoDiscoveryNotice { font-size: 13px; color: #536d42; line-height: 1.55; margin: 0 0 20px; }
+.kino-learning-choices { margin-top: auto; }
+.kino-learning-choices > p { margin: 0 0 10px; color: #445b36; font-size: 14px; font-weight: 600; }
+.kino-choice-buttons { display: flex; flex-direction: column; gap: 8px; }
+.kino-choice-buttons button { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 66px; padding: 12px 14px; border: 1px solid #d3dec7; border-radius: 12px; background: #f6f8f0; color: #344e2d; text-align: left; font-family: inherit; cursor: pointer; }
+.kino-choice-buttons button:hover { border-color: #7f9b62; background: #ecf2e2; }
+.kino-choice-buttons button[aria-pressed="true"] { background: #e5eed9; border-color: #76935d; box-shadow: inset 3px 0 #6b8952; }
+.kino-choice-buttons button > span:first-child { font-size: 22px; }
+.kino-choice-buttons button > span:nth-child(2) { display: flex; flex: 1; flex-direction: column; gap: 4px; }
+.kino-choice-buttons strong { font-size: 16px; }
+.kino-choice-buttons small { color: #627457; font-size: 13px; line-height: 1.45; }
+.kino-choice-buttons b { font-size: 17px; font-weight: 400; }
+#diktatMode.kino-chapters-active .kino-v3-top-header { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; flex-wrap: nowrap; }
+#diktatMode.kino-chapters-active .kino-v3-top-actions { width: auto; }
+#diktatMode.kino-chapters-active .kino-select-dropdown { min-width: 0; justify-self: start; }
+#diktatMode.kino-chapters-active .kino-select-trigger { max-width: 100%; }
+#diktatMode.kino-chapters-active .kino-sel-title { font-size: 16px; }
+#diktatMode.kino-chapters-active .kino-more-tools summary { font-size: 14px; }
+.kino-chapters-active .peppa-chapters { padding: 22px; }
+.kino-chapters-active .peppa-heading h2 { font-size: 24px; }
+.kino-chapters-active .peppa-selector-label { display: none; }
+.kino-chapters-active .peppa-part { min-height: 142px; }
+.kino-chapters-active .peppa-part-number { font-size: 12px; }
+.kino-chapters-active .peppa-part strong { font-size: 14px; }
+.kino-chapters-active .peppa-part-time, .kino-chapters-active .peppa-part-progress, .kino-chapters-active #peppaOverall { font-size: 13px; }
+.kino-chapters-active .peppa-options { margin-top: 18px; }
+.kino-chapters-active .peppa-options button { font-size: 14px; }
+.kino-chapters-active #peppaWatchStatus { font-size: 13px; }
+.kino-chapters-active[data-kino-activity="discover"] :is(.kino-v3-progress-card, .kino-practice-heading, .kino-v3-grid, .kino-v3-timeline-card, .peppa-options, .peppa-finished) { display: none; }
+.kino-chapters-active:not([data-kino-activity="write"]) :is(.kino-writing-card, .kino-sentence-passed, .kino-v3-progress-card) { display: none; }
+.kino-chapters-active:not([data-kino-activity="listen"]) .kino-listen-card { display: none; }
+.kino-chapters-active:not([data-kino-activity="speak"]) .kino-v3-dub-card { display: none; }
+.kino-chapters-active[data-kino-activity="write"] #kinoActivityNext { display: none; }
+.kino-chapters-active .kino-v3-streak-badge { display: none; }
+.kino-chapters-active .kino-v3-prog-stats { font-size: 14px; }
+.kino-chapters-active .kino-v3-timeline-row { width: 100%; min-height: 48px; text-align: left; border: 0; border-left: 3px solid transparent; background: transparent; font-family: inherit; }
+.kino-chapters-active .kino-v3-t-text { font-weight: 500; }
+.kino-chapters-active #kinoTimelineStats { color: #596f48 !important; font-size: 13px !important; }
+.kino-chapters-active .kino-v3-timeline-title { flex-wrap: wrap; }
+.kino-chapters-active .kino-dub-target-quote { margin-top: 16px; }
+.kino-chapters-active .kino-dub-quote-de, #kinoListenDe { font-size: 22px; line-height: 1.5; color: #304a2a; overflow-wrap: anywhere; }
+.kino-chapters-active .kino-dub-quote-vi, #kinoListenVi { font-size: 17px; line-height: 1.6; color: #5e704f; }
+.kino-chapters-active .kino-listen-reassurance { font-size: 14px; line-height: 1.6; color: #627457; }
+#kinoListenAgain, #kinoActivityNext { min-height: 48px; padding: 12px 18px; border-radius: 10px; border: 1px solid #a8bb95; background: #f0f4e8; color: #3c5a30; font-size: 16px; font-weight: 600; cursor: pointer; }
+#kinoActivityNext { background: #52723f; color: white; border-color: #52723f; }
+#diktatMode.kino-chapters-active .kino-skip-writing { min-height: 44px; padding: 8px 12px; border: 0; border-radius: 8px; background: transparent; color: #536f41; font-family: inherit; font-size: 14px; cursor: pointer; }
+#diktatMode.kino-chapters-active .kino-skip-writing:hover { background: #f0f4e8; }
+@media (max-width: 1050px) {
+  .kino-discovery { grid-template-columns: 1fr; }
+  .kino-discovery-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 24px; }
+  .kino-learning-choices { grid-column: 2; grid-row: 1 / 4; margin-top: 0; }
+  .kino-discovery-reassurance, #kinoDiscoveryNotice { grid-column: 1; }
+}
+@media (max-width: 800px) {
+  .kino-chapters-active .peppa-parts { display: flex; overflow-x: auto; gap: 10px; padding: 4px 4px 12px; margin: -4px; scroll-snap-type: x mandatory; }
+  .kino-chapters-active .peppa-part { flex: 0 0 190px; min-height: 166px; scroll-snap-align: start; }
+}
+@media (max-width: 640px) {
+  .kino-discovery { margin-top: 10px; border-radius: 16px; }
+  .kino-discovery-intro { display: flex; padding: 18px; }
+  .kino-learning-choices { margin-top: 14px; }
+  .kino-discovery-reassurance { margin-top: 12px; }
+  #kinoDiscoveryNotice { margin-bottom: 0; font-size: 14px; }
+  #kinoDiscoveryDescription h3 { font-size: 27px; }
+  #kinoDiscoveryDescription .peppa-eyebrow { font-size: 13px; letter-spacing: .5px; }
+  .kino-discovery-controls { gap: 2px 4px; padding: 2px 8px 6px; }
+  .kino-discovery-controls button { height: 44px; }
+  .kino-discovery-caption { max-width: 94%; padding: 5px 8px; }
+  .kino-discovery-stage:has(#kinoDiscoveryDe:not(:empty)) #kinoDiscoveryStart > strong { display: none; }
+  .kino-discovery-stage:has(#kinoDiscoveryDe:not(:empty)) #kinoDiscoveryStart > span { transform: translateY(-22px); width: 44px; height: 44px; }
+  #peppaWatchDe { font-size: 18px; }
+  #peppaWatchVi { font-size: 16px; }
+  .kino-choice-buttons strong { font-size: 17px; }
+  .kino-choice-buttons small { font-size: 14px; }
+  .kino-learning-choices > p { font-size: 15px; }
+  #diktatMode.kino-chapters-active .kino-v3-root { padding: 8px 4px; }
+  #diktatMode.kino-chapters-active .kino-select-trigger { padding: 8px 10px; gap: 8px; min-height: 54px; }
+  #diktatMode.kino-chapters-active .kino-sel-text-group { min-width: 0; }
+  #diktatMode.kino-chapters-active .kino-sel-title { font-size: 15px; line-height: 1.35; white-space: normal; }
+  #diktatMode.kino-chapters-active .kino-sel-series { font-size: 11px; }
+  #diktatMode.kino-chapters-active .kino-sel-badge { display: none; }
+  #diktatMode.kino-chapters-active .kino-more-tools summary { gap: 5px; padding: 8px; font-size: 13px; }
+  .kino-chapters-active .peppa-chapters { padding: 18px; }
+  .kino-chapters-active .peppa-heading { gap: 8px; margin-bottom: 12px; }
+  .kino-chapters-active .peppa-heading h2 { font-size: 23px; }
+  .kino-chapters-active .peppa-heading .peppa-eyebrow { display: none; }
+  .kino-chapters-active .peppa-part { flex-basis: 185px; min-height: 166px; gap: 9px; }
+  .kino-chapters-active .peppa-part strong { font-size: 16px; line-height: 1.4; }
+  .kino-chapters-active :is(.peppa-part-number, .peppa-part-time, .peppa-part-progress, #peppaOverall) { font-size: 14px; }
+  .kino-chapters-active .peppa-parts::after { content: ''; flex: 0 0 3px; }
+  .kino-chapters-active .kino-practice-heading { flex-wrap: wrap; scroll-margin-top: 12px; }
+  .kino-chapters-active .kino-practice-heading .peppa-eyebrow { font-size: 13px; line-height: 1.5; }
+  .kino-chapters-active .kino-practice-heading p:not(.peppa-eyebrow) { font-size: 16px; }
+  .kino-chapters-active #kinoBackToParts { font-size: 15px; }
+  #diktatMode.kino-chapters-active :is(.kino-btn-ctrl, .kino-action-btn-main, #kinoListenWhileTyping, #kinoContinueSentence, .kino-skip-writing) { font-size: 15px; line-height: 1.4; min-height: 48px; }
+  #diktatMode.kino-chapters-active .kino-v3-ctrl-left { grid-template-columns: 1fr 1fr; }
+  #diktatMode.kino-chapters-active #kinoPlayLoopBtn { grid-column: 1 / -1; grid-row: 1; }
+  #diktatMode.kino-chapters-active .kino-v3-card-title { font-size: 17px; }
+  #diktatMode.kino-chapters-active .kino-diktat-textarea { font-size: 18px; min-height: 120px; }
+  #diktatMode.kino-chapters-active .kino-char-btn { min-width: 36px; min-height: 40px; font-size: 16px; }
+  #diktatMode.kino-chapters-active .kino-special-chars-bar { flex-wrap: wrap; max-width: 100%; }
+  #diktatMode.kino-chapters-active :is(.kino-v3-fb-status, .kino-diff-word, #kinoFeedbackVi, .kino-sentence-passed, .kino-dub-status-tip) { font-size: 16px !important; line-height: 1.6; }
+  #diktatMode.kino-chapters-active .kino-skip-writing { grid-column: 1 / -1; }
+  .kino-chapters-active .kino-v3-sentence-info-bar { font-size: 14px; gap: 8px; }
+  #diktatMode.kino-chapters-active :is(.kino-v3-time-text, #kinoSubLockStatus) { font-size: 13px !important; line-height: 1.5; }
+  .kino-chapters-active .kino-v3-timeline-header { padding: 12px; gap: 8px; }
+  .kino-chapters-active .kino-v3-timeline-title { font-size: 16px; }
+  .kino-chapters-active .kino-v3-t-text { font-size: 16px; }
+  .kino-chapters-active .kino-dub-replay-row { flex-wrap: wrap; }
+  .kino-chapters-active .peppa-finished p { font-size: 15px; line-height: 1.6; }
+  .kino-chapters-active .peppa-finished strong { font-size: 16px; }
+}

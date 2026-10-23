@@ -1,0 +1,52 @@
+{
+  "project": "VokabelGo Cat Island",
+  "status": "playable_prototype_verified",
+  "entry": "http://127.0.0.1:3000/cat-island.html",
+  "learning_checks": {
+    "passed": 19,
+    "failed": 0,
+    "command": "node test-cat-island-learning.js"
+  },
+  "actual_controller_checks": {
+    "passed": 14,
+    "failed": 0,
+    "command": "node qa/cat-island/test-runtime.js"
+  },
+  "existing_project_tests": {
+    "passed_suites": 18,
+    "failed_suites": 0,
+    "log": "qa/cat-island/existing-unit-tests.log"
+  },
+  "browser_qa": {
+    "tool": "CUA in-app browser",
+    "isolation": "localhost:3000 QA;127.0.0.1:3000 deliverable",
+    "desktop": "1280x720",
+    "mobile_viewport": "390x844",
+    "verified": [
+      "full calm rounds including skips",
+      "wrong-hint-retry",
+      "meaning-recall-context-order UI",
+      "rush expiry and replay",
+      "pause and event clock freeze",
+      "merchant",
+      "barter and persistence",
+      "one and two stage chase",
+      "teach then apply",
+      "helper unlock",
+      "cosmetic persistence",
+      "2D fallback",
+      "final 3D no console errors"
+    ],
+    "screenshots": [
+      "review-assets/cat-island-game-2026-10-18.png",
+      "review-assets/cat-island-chase-2026-10-18.png"
+    ]
+  },
+  "limits": [
+    "One curated discovery lesson pack",
+    "German listening needs browser voices; text fallback available",
+    "Browser local storage only",
+    "No physical device or production performance claim"
+  ],
+  "review_date": "2026-10-18"
+}

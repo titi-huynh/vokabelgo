@@ -1,0 +1,3 @@
+722.496 s, -16.0 LUFS integrated (short-term max -9.2), true peak -1.0 dBTP, LRA 7.6 LU, noise floor -39.4 dBFS, brightness 2.2 kHz, bandwidth 20.5 kHz, attack 194 ms, decay 1294 ms.
+
+JSON (compact): {"duration":722.496,"peak_dbfs":-1.0,"true_peak_dbtp":-1.0,"rms_dbfs":-19.7,"lufs":-16.0,"short_term_max_lufs":-9.2,"lra_lu":7.6,"clipped_samples":0,"dc":-0.0,"noise_floor_dbfs":-39.4,"dynamic_range_db":34.1,"digital_silence_frac":0.0,"side_to_mid_db":-14.8,"correlation":0.936,"attack_at":0.35,"peak_at":120.683,"attack_ms":194.0,"decay_ms":1294.0,"centroid_hz":1069,"rolloff95_hz":3670,"bands_db":{"sub":-24.9,"low":-8.0,"lowmid":-2.8,"mid":-5.6,"presence":-15.0,"air":-18.9,"top":-42.5},"bandwidth_hz":20480,"flatness":0.0,"brightness_hz":2227,"tonal_peak_ratio_db":37.5}

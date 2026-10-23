@@ -1,0 +1,86 @@
+{
+  "videoSubtitle": "https://www.kika.de/ackley/v1/videos/pickel-104/subtitle",
+  "webvttUrl": "https://www.kika.de/ackley/v1/videos/pickel-104/webvtt",
+  "assets": [
+    {
+      "profileName": "640x360",
+      "fileName": "TV-20250623-1013-2600.ln.mp4",
+      "fileSize": 0,
+      "mediaType": null,
+      "frameWidth": 640,
+      "frameHeight": 360,
+      "bitrateVideo": -1,
+      "bitrateAudio": -1,
+      "type": "progressive",
+      "url": "https://ndr-progressive.ard-mcdn.de/progressive_geo/2025/0623/TV-20250623-1013-2600.ln.mp4"
+    },
+    {
+      "profileName": "960x540",
+      "fileName": "TV-20250623-1013-2600.hq.mp4",
+      "fileSize": 0,
+      "mediaType": null,
+      "frameWidth": 960,
+      "frameHeight": 540,
+      "bitrateVideo": -1,
+      "bitrateAudio": -1,
+      "type": "progressive",
+      "url": "https://ndr-progressive.ard-mcdn.de/progressive_geo/2025/0623/TV-20250623-1013-2600.hq.mp4"
+    },
+    {
+      "profileName": "1280x720",
+      "fileName": "TV-20250623-1013-2600.hd.mp4",
+      "fileSize": 0,
+      "mediaType": null,
+      "frameWidth": 1280,
+      "frameHeight": 720,
+      "bitrateVideo": -1,
+      "bitrateAudio": -1,
+      "type": "progressive",
+      "url": "https://ndr-progressive.ard-mcdn.de/progressive_geo/2025/0623/TV-20250623-1013-2600.hd.mp4"
+    },
+    {
+      "profileName": "Video 2018 | MP4 720p25 | Web XL| 16:9 | 1280x720",
+      "fileName": "TV-20250623-1013-2600.1080.mp4",
+      "fileSize": 0,
+      "mediaType": null,
+      "frameWidth": 1920,
+      "frameHeight": 1080,
+      "bitrateVideo": -1,
+      "bitrateAudio": -1,
+      "type": "progressive",
+      "url": "https://ndr-progressive.ard-mcdn.de/progressive_geo/2025/0623/TV-20250623-1013-2600.1080.mp4"
+    },
+    {
+      "profileName": null,
+      "fileName": null,
+      "fileSize": null,
+      "mediaType": null,
+      "frameWidth": null,
+      "frameHeight": null,
+      "bitrateVideo": null,
+      "bitrateAudio": null,
+      "type": "auto",
+      "url": "https://adaptive.ndr.de/i/geo/2025/0623/TV-20250623-1013-2600.,ln,1080,hd,hq,mn,.mp4.csmil/master.m3u8"
+    }
+  ],
+  "agfTracking": {
+    "assetid": "Y3JpZDovL25kci5kZS9jM2VkMDc5NC00YmQ5LTQ0ZGEtYmE1ZC05MjlkYWZkZjFlODQ",
+    "length": "643",
+    "c0": "0",
+    "c10": "KiKA",
+    "c12": "Content",
+    "c18": "N",
+    "c19": "KiKA",
+    "c2": "N",
+    "c5": "ARD Mediathek",
+    "c7": "Y3JpZDovL25kci5kZS9jM2VkMDc5NC00YmQ5LTQ0ZGEtYmE1ZC05MjlkYWZkZjFlODQ",
+    "c8": "643",
+    "c9": "Die Regeln von Floor_Pickel_19.10.2026 18:40",
+    "program": "Die Regeln von Floor",
+    "title": "KiKA_Die Regeln von Floor_Pickel_19.10.2026 18:40",
+    "type": "content",
+    "clientId": "{ardClientId}",
+    "vcId": "{ardVcId}",
+    "appId": "P945EA7D9-6619-4B5A-A454-33069A153141"
+  }
+}

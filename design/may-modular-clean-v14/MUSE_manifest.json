@@ -1,0 +1,95 @@
+{
+  "set": "May_modular_clean_v14",
+  "created": "2026-10-23",
+  "background_source": "May_home_soul_house_v10.png (EDIT dung 1 luot, sau do dong bang)",
+  "layout_reference_only": "May_home_red_viewer_v13c.png (chi de hieu hinh dang/bo tri, khong dung lam nen)",
+  "alpha_method": "Muse Image khong xuat alpha truc tiep. Moi vat duoc tao tren nen magenta tron #FF00FF (file raw/ giu rieng), roi tach nen bang keyout.py dung PIL/NumPy san co trong moi truong Muse: alpha theo khoang cach mau toi key, despill giam sac hong o mep, co alpha 1px chong rem. Khong dung rembg, khong gui du lieu ra ngoai.",
+  "files": [
+    {
+      "file": "May_modular_background_v14.png",
+      "kind": "background",
+      "width": 1600,
+      "height": 1600,
+      "mode": "RGB",
+      "bytes": 1816864,
+      "note": "EDIT 1 luot tu May_home_soul_house_v10.png: bo meo giua san, bo ghe dao phu trai, bo dem+sach hien; dong bang, khong qua edit nua."
+    },
+    {
+      "file": "apple-board.png",
+      "kind": "object",
+      "width": 1600,
+      "height": 1600,
+      "mode": "RGBA",
+      "bytes": 394246,
+      "note": "Tao moi Muse Image tren nen magenta #FF00FF, tach alpha bang keyout.py (PIL/NumPy).",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "has_real_alpha": true
+    },
+    {
+      "file": "porch-cushion.png",
+      "kind": "object",
+      "width": 1920,
+      "height": 1280,
+      "mode": "RGBA",
+      "bytes": 422858,
+      "note": "Tao moi Muse Image tren nen magenta #FF00FF, tach alpha bang keyout.py (PIL/NumPy).",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "has_real_alpha": true
+    },
+    {
+      "file": "vintage-viewer.png",
+      "kind": "object",
+      "width": 1600,
+      "height": 1600,
+      "mode": "RGBA",
+      "bytes": 456380,
+      "note": "Tao moi Muse Image tren nen magenta #FF00FF, tach alpha bang keyout.py (PIL/NumPy).",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "has_real_alpha": true
+    },
+    {
+      "file": "reading-chair.png",
+      "kind": "object",
+      "width": 1600,
+      "height": 1600,
+      "mode": "RGBA",
+      "bytes": 625426,
+      "note": "Tao moi Muse Image tren nen magenta #FF00FF, tach alpha bang keyout.py (PIL/NumPy).",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "has_real_alpha": true
+    },
+    {
+      "file": "play-table.png",
+      "kind": "object",
+      "width": 1920,
+      "height": 1280,
+      "mode": "RGBA",
+      "bytes": 609775,
+      "note": "Tao moi Muse Image tren nen magenta #FF00FF, tach alpha bang keyout.py (PIL/NumPy).",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "has_real_alpha": true
+    },
+    {
+      "file": "fishing-raft.png",
+      "kind": "object",
+      "width": 1920,
+      "height": 1280,
+      "mode": "RGBA",
+      "bytes": 977942,
+      "note": "Tao moi Muse Image tren nen magenta #FF00FF, tach alpha bang keyout.py (PIL/NumPy).",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "has_real_alpha": true
+    }
+  ],
+  "notes": [
+    "Khong co nhan vat May trong bo nay: Codex dung sprite doc lap tu anh chuan.",
+    "fishing-raft.png: be co 7 thanh tre (brief ghi 5-6) va la nam tren nhanh phu gan giua can thay vi sat dau can - lech nho da bao.",
+    "porch-cushion.png, play-table.png, fishing-raft.png co kich thuoc goc 1920x1280 do cong cu tra khung ngang; cac file con lai 1600x1600."
+  ]
+}

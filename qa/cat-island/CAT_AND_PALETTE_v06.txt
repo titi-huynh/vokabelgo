@@ -1,0 +1,26 @@
+Ghe Meo v06 — cat silhouette and muted palette, 2026-10-18
+
+Scope: standalone boat study and new editable v06 Blender model.
+Preserved v04/v05 assets and sources. No Fuxie or learning game edits.
+
+Art direction: driftwood, dusty rose cabin, slate blue hull, ivory canvas,
+sage apron and cool blue water/background. Changed embedded source colours,
+not a global desaturation filter. Softer, neutral lighting in the web viewer.
+
+Cat rebuilt: smooth ellipsoid head/body, rounded triangular ears, small eyes
+with catchlights, tiny nose/smile, restrained whiskers/blush, greeting paw.
+Removed old muzzle puffs, thick arched eyes and open tongue.
+
+Validation:
+- Blender full build completed; BLEND + GLB + overview/closeup renders saved.
+- GLB 6,599,016 bytes, 184,674 triangles, 40 merged material batches.
+- node --check cat-island-boat-study.js passed.
+- Web v06 loads; paused v05/v06 comparison works both directions.
+- Sail/resume controls work after swapping models.
+- Browser console had no warnings/errors in the reviewed v06 session.
+- Desktop screenshots: review-assets/cat-island-v06-cat-palette-detail.png
+  and cat-island-v06-cat-palette-overview.png.
+
+Limits: this is a changed art direction, not a claim of final user approval
+or matching a painted reference. No physical-phone/FPS benchmark in this pass.
+New default is v06; comparison shows v05, and explicit v04/v05 URLs still load.

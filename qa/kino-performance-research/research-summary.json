@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Saigon",
+  "libraryVideos": 7,
+  "libraryGB": 0.87582039,
+  "libraryMinutes": 96.65110325,
+  "unplayedMeasurements": [
+    {
+      "scenario": "catalog-unplayed",
+      "bytes": 1651701
+    },
+    {
+      "scenario": "sakura-overview-unplayed",
+      "bytes": 1424812
+    },
+    {
+      "scenario": "sakura-part-unplayed",
+      "bytes": 1436812
+    }
+  ],
+  "pilot": {
+    "originalBytes": 242449971,
+    "audioOnlyBytes": 21637704,
+    "audioOnlyReductionPercent": 91.08,
+    "audioBitstreamUnchanged": true,
+    "sampleStart": 1101.6835,
+    "sampleOriginalBytes": 10616862,
+    "sampleTargetSeconds": 60,
+    "variants": [
+      {
+        "file": "sample-720p-crf26.mp4",
+        "size": 7608594,
+        "reductionPercent": 28.33,
+        "settings": {
+          "scale": "960:720",
+          "crf": 26,
+          "preset": "fast",
+          "audio": "copy"
+        }
+      },
+      {
+        "file": "sample-480p-crf24.mp4",
+        "size": 5028614,
+        "reductionPercent": 52.64,
+        "settings": {
+          "scale": "640:480",
+          "crf": 24,
+          "preset": "fast",
+          "audio": "copy"
+        }
+      }
+    ],
+    "limitations": "One 60-second action sample, not a whole-film size guarantee or human audio/visual review. No app source or original video changed."
+  },
+  "sources": [
+    {
+      "label": "Mux: giá và giới hạn hiện hành",
+      "url": "https://www.mux.com/pricing"
+    },
+    {
+      "label": "Mux: chi tiết gói miễn phí và huy hiệu",
+      "url": "https://www.mux.com/blog/free-plan"
+    },
+    {
+      "label": "Cloudflare R2: phí lưu trữ và truy cập",
+      "url": "https://developers.cloudflare.com/r2/pricing/"
+    },
+    {
+      "label": "R2: tên miền riêng; r2.dev chỉ dành cho phát triển",
+      "url": "https://developers.cloudflare.com/r2/buckets/public-buckets/"
+    },
+    {
+      "label": "Cloudflare Stream: phí và cách tính dữ liệu tải trước",
+      "url": "https://developers.cloudflare.com/stream/pricing/"
+    },
+    {
+      "label": "Bunny Stream: giá và mức thanh toán tối thiểu",
+      "url": "https://bunny.net/pricing/stream/"
+    },
+    {
+      "label": "Bunny Stream: giá châu Á và Volume",
+      "url": "https://bunny.net/docs/stream/pricing"
+    },
+    {
+      "label": "FFmpeg: faststart và đóng gói video",
+      "url": "https://ffmpeg.org/ffmpeg-formats.html"
+    },
+    {
+      "label": "HandBrake: sao chép nguyên dữ liệu âm thanh",
+      "url": "https://handbrake.fr/docs/en/latest/technical/audio-codecs.html"
+    },
+    {
+      "label": "web.dev: trì hoãn tải video",
+      "url": "https://web.dev/articles/lazy-loading-video?hl=en"
+    },
+    {
+      "label": "Cloudflare Stream: tích hợp trình phát riêng",
+      "url": "https://developers.cloudflare.com/stream/viewing-videos/using-own-player/"
+    },
+    {
+      "label": "Mux: phát video và tích hợp",
+      "url": "https://www.mux.com/docs/guides/play-your-videos"
+    },
+    {
+      "label": "hls.js: API điều khiển tải và phát HLS",
+      "url": "https://github.com/video-dev/hls.js/blob/master/docs/API.md"
+    }
+  ],
+  "applicationChanged": false,
+  "externalUploadsPerformed": false
+}

@@ -1,0 +1,33 @@
+AO CỎ MAY — PROMPTS VÀ NGUỒN
+Ngày tạo: 2026-10-21 (Asia/Saigon).
+Công cụ: built-in image_gen; không dùng CLI/API riêng.
+Ảnh được chọn: ao-co-may-scene-v01.png.
+
+Tham chiếu:
+1. design/cat-character-profile-v01/meo-cho-model-sheet.png — nhận diện mèo.
+2. C:/Users/huynh/AppData/Local/Temp/codex-clipboard-8c7692fd-d9c3-4b39-bd69-4b0d5d9cb205.png — nét vẽ 2D và mặt nước.
+3. design/rive-source/cat12/references/approved_concept.png — tư thế/bè câu cá.
+Ảnh chụp Kling được chị đưa làm tham khảo cảnh bè, không phải yêu cầu thao tác Kling.
+
+PROMPT TẠO CẢNH
+Use case: illustration-story. Asset type: finished 2D background/key art for the first region of a cozy educational fishing game, "Ao Co May" (a small grassy Vietnamese pond). Create one clean, wide landscape composition, approximately 16:9, with NO text or interface.
+
+REFERENCE ROLES:
+Image 1 is the approved CAT CHARACTER identity/model sheet. Preserve that character: short chubby cream cat, caramel patch on its own RIGHT ear continuing onto crown (viewer-left when front-facing), caramel tail tip, broad softly trapezoidal head, tiny brown eyes and mouth, flat peach blush, mustard yellow neckerchief, short sage green apron. Render the character in simple clean 2D.
+Image 2 is the STYLE and WATER reference: playful simple hand-drawn cartoon game art, gentle warm outlines, clear flat colors, cyan water with a softly visible underwater area, cheerful readable shapes. Do not copy its gray cat, hat, giant fish, UI, text, or exact composition.
+Image 3 is a SUPPORTING POSE/RAFT reference only: a cute cat fishing from a tiny log raft, rod, thin line and bobber. Transform this into the flat 2D style from image 2, with a much more expansive pond. Do not copy the 3D shading, isolated oval water platform, purple backdrop, flag or sail.
+
+SCENE:
+A calm sunny grassy pond, water filling around 70 percent of the wide image and extending off the left, right and bottom edges, much wider than the little raft. A low curved grassy far bank runs along the upper edge with a few rounded bushes, sparse white feathery co may grass/reeds, tiny yellow wildflowers, smooth gray pebbles and a little open blue sky. Keep scenery simple, airy and uncluttered.
+Near the upper middle of the pond, the approved cream-and-caramel cat sits comfortably on a small beginner raft of 5–6 uneven brown logs tied with simple rope, facing slightly toward the viewer in a 3/4 view. The raft is about one quarter of the image width. Cat is peacefully smiling and holding a rustic forked tree-branch rod with an obviously thin loosely tied fishing line descending to a tiny cream/red cork bobber in front-left of the raft. Both short legs and feet remain visible. A small EMPTY woven bamboo fish basket sits on the raft to the cat's right and a little old bait tin with a friendly tiny earthworm peeking out sits nearby. No expensive equipment, mast, flag, sail, cabin or elaborate furniture.
+A few soft white curved ripples surround the floating raft and cork. In the spacious foreground, cyan water becomes slightly more transparent to show 4–6 small rounded pond fish, some distant fish silhouettes, a few rounded stones and sparse pond plants, in the simple cutaway-water storytelling language of image 2. No hard cross-section border and no floating island base. Fish are small secondary details, never a giant hero fish. One tiny dragonfly near the reeds. Foreground water has generous clean open spaces for future animation.
+
+STYLE:
+Simple original cute 2D game illustration, clean softly rounded warm gray-brown outlines, mainly flat pastel fills, at most one simple shadow tone per object. Turquoise/cyan water, fresh light sage grass, warm honey wood and creamy cat. Soft friendly daytime light. Straightforward shapes that can later be separated into animation layers. Keep the cat's design and accessories consistent with image 1.
+Avoid painterly grain, dense texture, 3D modeling, isometric diorama blocks, realistic reflections, photorealism, gradients that create volumetric rendering, ornate backgrounds, dramatic effects, decorative borders, menus, letters, captions, logos and watermarks. Entire illustration is opaque, edge-to-edge.
+
+PROMPT CHỈNH NHẬN DIỆN NHÂN VẬT
+Edit the first image only. Image 1 is the finished Ao Co May pond illustration to preserve. Image 2 is the authoritative cat model-sheet identity reference.
+Make ONE localized correction: match the cat's fur markings to image 2. The cat has ONE caramel marking on its own RIGHT ear and adjacent right crown/temple (on the VIEWER'S LEFT in this near-frontal pose). The opposite ear on VIEWER'S RIGHT and that side of the head must have cream outer fur with pink inner ear, NOT another caramel patch. All arm, shoulder, chest and leg fur must be cream: remove the stray caramel shoulder/upper-arm patch. Preserve the caramel tail TIP. Preserve the mustard yellow neckerchief and sage apron and preserve the cat's eyes, face, smile, sitting pose, both visible feet, paws holding the stick and entire silhouette. Do not mirror the character.
+Keep the entire pond composition, wide water area, colors, raft, branch rod, line, bobber, empty woven basket, bait tin and worm, grasses, dragonfly, fish, plants, 2D illustration style, lighting and every other element unchanged. No text, interface, logos or watermark.
+

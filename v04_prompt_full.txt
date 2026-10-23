@@ -1,0 +1,1307 @@
+<USER_REQUEST>
+# VOKABELGO — ĐẤU TỪ v0.4
+## VISUAL POLISH + CARD GAME UX + 4-PLAYER TABLE + GERMAN-FIRST DESIGN
+
+Hãy tiếp tục chỉnh trực tiếp trên bản preview Đấu từ hiện tại.
+
+KHÔNG làm lại game từ đầu.
+KHÔNG thay engine hoặc dữ liệu đang hoạt động nếu không cần thiết.
+KHÔNG deploy, merge production, sửa Supabase, navigation chính hoặc những tính năng khác của VokabelGo.
+
+Mục tiêu vòng này là:
+
+> Biến bản hiện tại từ một prototype chức năng thành một card game thực sự dễ chơi, đẹp, trực quan và ưu tiên tuyệt đối việc nhìn – đọc – nhận diện từ tiếng Đức.
+
+Ảnh screenshot hiện tại là nguồn để xác định những điểm cần sửa, KHÔNG phải thiết kế cần giữ nguyên.
+
+==================================================
+1. NGUYÊN TẮC TRUNG TÂM
+==================================================
+
+Game phải tạo cảm giác:
+
+“Đây là một bàn đánh bài thực sự. Tôi nhìn màu bằng thị giác rất nhanh, còn sự chú ý chủ động của tôi dành cho từ tiếng Đức.”
+
+Không được tạo cảm giác:
+
+“Tôi đang đọc một form học từ có thêm lá bài.”
+
+Do đó:
+
+MÀU:
+để mắt nhận ra tức thì.
+
+TỪ TIẾNG ĐỨC:
+là thứ người chơi phải đọc và xử lý.
+
+Không bắt người chơi đọc tên màu.
+
+Không dùng màu như một nội dung phải suy nghĩ.
+
+Mọi quyết định visual phải ưu tiên:
+
+German word
+→ current target
+→ turn state
+→ action
+→ decoration.
+
+==================================================
+2. SỬA THIẾT KẾ LÁ BÀI — YÊU CẦU QUAN TRỌNG NHẤT
+==================================================
+
+Hiện tại lá bài vẫn đang giống một thẻ trắng viền màu và có chữ tên màu.
+
+HÃY ĐỔI.
+
+### 2.1 Toàn thân lá mang màu của lá
+
+Mỗi lá từ phải có TOÀN BỘ phần nền ngoài mang màu chính:
+
+RED
+BLUE
+GREEN
+YELLOW.
+
+Không ghi:
+
+“Đỏ”
+“Xanh dương”
+“Xanh lá”
+“Vàng”
+
+trên mặt lá.
+
+Người chơi phải nhận diện màu trực tiếp bằng thị giác.
+
+Tên màu chỉ được tồn tại trong:
+- accessibility label;
+- tooltip nếu cần;
+- màn luật;
+- debug.
+
+KHÔNG hiện tên màu trên gameplay bình thường.
+
+### 2.2 Màu đề xuất
+
+Không dùng màu neon/chói.
+
+Dùng màu card-game rõ nhưng hơi muted/premium.
+
+Có thể bắt đầu gần:
+
+Red:
+#D94A45
+
+Blue:
+#3478C9
+
+Green:
+#43A45D
+
+Yellow:
+#E4AE32
+
+Đây chỉ là điểm khởi đầu.
+
+Phải kiểm contrast thực tế.
+
+### 2.3 Khu chữ ở giữa lá
+
+Dùng một panel trung tâm sáng:
+
+#FFFDF8
+hoặc off-white phù hợp.
+
+Panel có thể:
+- oval;
+- organic rounded rectangle;
+- hoặc một shape mềm đặc trưng VokabelGo.
+
+Không dùng một rectangle trắng cứng kiểu form.
+
+Mục tiêu:
+màu bao quanh cho cảm giác card game,
+nhưng từ Đức vẫn đọc cực rõ.
+
+### 2.4 Từ tiếng Đức là nội dung lớn nhất
+
+Ví dụ:
+
+┌───────────────┐
+│ ♥             │
+│               │
+│  ┌─────────┐  │
+│  │schwer   │  │
+│  │Adjektiv │  │
+│  └─────────┘  │
+│             ♥ │
+└───────────────┘
+
+Trong đó:
+
+schwer
+là phần visual mạnh nhất.
+
+Adjektiv / Verb:
+nhỏ hơn rõ rệt.
+
+Logo VokabelGo:
+nếu giữ thì rất nhỏ ở đáy.
+
+Không để logo cạnh tranh với từ.
+
+### 2.5 Không bẻ từ Đức
+
+Đây là lỗi bắt buộc phải sửa.
+
+Hiện tại:
+
+schließen
+
+bị hiển thị thành:
+
+schlie-
+ßen
+
+KHÔNG ĐƯỢC PHÉP.
+
+Không tự chèn hyphen.
+
+Không CSS word-break làm vỡ từ tiếng Đức.
+
+Không ellipsis.
+
+Thứ tự xử lý khi từ dài:
+
+1. tăng usable width của vùng chữ;
+2. giảm font theo scale hợp lý;
+3. nếu là cụm có khoảng trắng thì xuống dòng tại khoảng trắng;
+4. nếu vẫn quá dài thì dùng font-condensed nhẹ hoặc tăng size card.
+
+Không phá cấu trúc từ.
+
+Test bắt buộc:
+
+schließen
+schwierig
+unterschiedlich
+kennenlernen
+zurückkommen
+sich beeilen.
+
+### 2.6 Ký hiệu màu ở góc
+
+Giữ symbol nhỏ:
+
+RED = ♥
+BLUE = ●
+GREEN = ▲
+YELLOW = ◆
+
+Symbol có mục tiêu accessibility và nhận diện nhanh.
+
+Không để symbol lớn hơn từ.
+
+==================================================
+3. KÍCH THƯỚC LÁ BÀI
+==================================================
+
+Hiện tại lá người chơi quá nhỏ so với diện tích bàn.
+
+Tăng kích thước.
+
+Desktop 1280×720:
+
+lá người chơi mục tiêu khoảng:
+90–105px width
+130–150px height
+
+tùy available space.
+
+Current discard card:
+lớn hơn card trong hand khoảng 10–20%.
+
+Bot cards:
+có thể nhỏ hơn.
+
+Không dùng một kích thước cho tất cả.
+
+Ưu tiên:
+
+PLAYER HAND:
+đọc từ dễ nhất.
+
+CURRENT CARD:
+đọc rất rõ.
+
+BOT CARD BACKS:
+có thể nhỏ.
+
+==================================================
+4. BỐ CỤC BÀN — THU GỌN VÒNG CHƠI
+==================================================
+
+Bản hiện tại có quá nhiều khoảng trống.
+
+Ba bot ở quá xa trung tâm.
+
+Thu toàn bộ “vòng chơi” vào gần trung tâm khoảng 15–25%.
+
+Mục tiêu:
+
+người chơi cảm giác bốn người đang cùng ngồi quanh một bàn,
+không phải bốn widget nằm ở bốn cạnh màn hình.
+
+Desktop đề xuất:
+
+                  LENA
+              [card fan]
+
+      MAX                       MIA
+   [cards]                    [cards]
+
+              DRAW  DISCARD
+
+                 WORD
+               sentence
+
+                BẠN
+       [PLAYER HAND CARDS]
+
+Không cần mọi thứ sát nhau,
+nhưng phải tạo một cluster visual rõ.
+
+==================================================
+5. BOT SEATS
+==================================================
+
+### Bot trên
+
+Tên
+avatar
+số lá
+fan bài ngang.
+
+### Bot trái
+
+Fan bài theo chiều dọc hoặc hơi chéo.
+
+### Bot phải
+
+Đối xứng bot trái.
+
+Không để một lá bot chỉ hiện như rectangle nhỏ vô hồn.
+
+Ngay cả khi bot còn một lá,
+card back vẫn phải có presence.
+
+Khi một bot còn 1 lá:
+
+hiện badge:
+
+Noch eine!
+
+ngắn và rõ.
+
+Không dùng popup modal.
+
+==================================================
+6. PLAYER HAND ZONE
+==================================================
+
+Người chơi phải luôn có một vùng tay bài cố định ở cạnh dưới.
+
+Lỗi hiện tại:
+
+khi còn 1 lá,
+lá nhảy lên thành một card lẻ giữa bàn.
+
+SỬA.
+
+Hand zone phải tồn tại bất kể:
+1 card
+5 cards
+12 cards.
+
+### 1 card
+đặt chính giữa hand zone.
+
+### 2–5 cards
+fan nhẹ.
+
+### 6–8
+overlap vừa phải.
+
+### 9–12
+overlap tăng dần,
+nhưng phần word vẫn phải đọc được.
+
+Nếu không đủ:
+horizontal pan/scroll ở mobile.
+
+Không để cả viewport scroll.
+
+==================================================
+7. CARD SELECTION UX
+==================================================
+
+Khi player click/tap một lá:
+
+- card nhấc lên 16–24px;
+- scale nhẹ ~1.04;
+- shadow rõ hơn;
+- các lá còn lại không nhảy layout.
+
+Ngay gần card/hand hiện action:
+
+Xem
+Đánh “schließen”
+
+Không đặt CTA chính quá xa khỏi bài.
+
+Nếu không chọn lá:
+
+không hiện một button “Đánh lá” disabled lớn như hiện tại.
+
+Action bar phải contextual.
+
+==================================================
+8. BỎ TÊN MÀU KHỎI GIAO DIỆN GAMEPLAY
+==================================================
+
+Hiện tại center đang có dạng:
+
+♥ Đỏ
+TRÖDELN
+
+BỎ chữ “Đỏ”.
+
+Đổi thành:
+
+♥
+TRÖDELN
+
+hoặc:
+
+[red swatch ♥]
+
+TRÖDELN
+
+Active color cũng không ghi:
+
+“Màu hiện hành: Đỏ”
+
+Dùng:
+
+♥
+
+hoặc một chip màu.
+
+Nếu cần assistive tooltip:
+“Đỏ”.
+
+Người chơi không cần đọc tên màu.
+
+==================================================
+9. KHU TRUNG TÂM BÀN
+==================================================
+
+Center hiện tại khá giống form học tập.
+
+Thiết kế lại thành 3 layer rõ:
+
+A. deck/discard
+B. target word/state
+C. sentence/support.
+
+### A. Deck + discard
+
+Draw pile bên trái.
+
+Discard bên phải.
+
+Cả hai lớn hơn hiện tại.
+
+Giảm khoảng cách giữa chúng.
+
+### B. Target
+
+Ví dụ:
+
+TRÖDELN
+
+Không cần card trắng lớn.
+
+Có thể dùng một text plate nhỏ hòa vào table.
+
+### C. Sentence
+
+Die Schülerin **trödelt** auf dem Weg.
+
+Từ mục tiêu bold hoặc subtle highlight.
+
+Bên phải/ dưới có:
+
+Nghĩa
+Gợi ý
+
+dạng icon/button nhỏ.
+
+Không xếp:
+
+color + word + xem nghĩa + gợi ý
+
+tất cả trên một row.
+
+==================================================
+10. CÂU TIẾNG ĐỨC PHẢI LÀ PHẦN HỌC CHÍNH
+==================================================
+
+German sentence phải rõ hơn Vietnamese translation.
+
+German:
+18–21px desktop.
+
+Vietnamese:
+ẩn mặc định.
+
+Khi người chơi bấm Nghĩa:
+
+translation slide/fade nhẹ xuất hiện dưới German sentence.
+
+Không mở modal.
+
+Không permanently chiếm space nếu đóng lại.
+
+==================================================
+11. TURN STATE PHẢI CỰC RÕ
+==================================================
+
+Hiện tại rất khó biết tới lượt ai.
+
+Sửa bằng seat state.
+
+Active seat:
+
+- avatar sáng hơn;
+- border/glow subtle;
+- name bold hơn;
+- card group tăng opacity;
+- có một marker/mũi tên nhỏ.
+
+Inactive:
+opacity giảm nhẹ,
+KHÔNG dim tới mức trông disabled.
+
+Bot đang suy nghĩ:
+
+“Max …”
+
+hoặc 3 dot rất nhỏ.
+
+Không dùng spinner.
+
+Không dùng popup lớn.
+
+### Lượt của người chơi
+
+Có thể thêm một line rất nhỏ:
+
+Lượt của bạn
+
+gần hand zone.
+
+Không dùng banner che bàn.
+
+==================================================
+12. TURN DIRECTION
+==================================================
+
+Vòng dotted circle hiện tại quá mờ và không giúp nhiều.
+
+Có hai lựa chọn:
+
+A. Thiết kế lại thành 4 arc nhẹ với mũi tên rõ.
+
+HOẶC
+
+B. Trong v0.4 bỏ vòng lớn,
+chỉ dùng animation highlight seat kế tiếp.
+
+Nếu hiện tại chưa có Reverse,
+phương án B được ưu tiên nếu giao diện sạch hơn.
+
+Không giữ vòng chỉ vì “game bài phải có”.
+
+==================================================
+13. TRẠNG THÁI KẾT THÚC VÁN
+==================================================
+
+Ảnh hiện tại có lỗi UX rõ:
+
+Lena = 0 lá
+nhưng:
+
+Rút 1 lá
+Đánh lá
+
+vẫn tồn tại.
+
+Chỉ có dòng:
+
+“Ván đã kết thúc”
+
+rất nhỏ.
+
+SỬA TOÀN BỘ.
+
+Khi bất kỳ player nào có 0 card:
+
+1. engine chuyển END state ngay;
+2. cancel bot timer;
+3. disable draw/play interaction;
+4. stop turn transition;
+5. winner seat highlight;
+6. show result overlay/panel.
+
+Result panel không che toàn màn nếu không cần.
+
+Ví dụ:
+
+LENA THẮNG
+
+Bạn còn 1 lá.
+
+9 lượt
+3 lần nối nghĩa
+1 lần dùng gợi ý
+
+[Chơi lại]
+[Đổi bộ]
+
+Nếu human thắng:
+
+BẠN THẮNG 🎉
+
+Animation ăn mừng ngắn.
+
+Không để UI vẫn giống đang tới lượt.
+
+==================================================
+14. GAME EVENT MESSAGE
+==================================================
+
+Hiện tại:
+
+“Lena đánh trödeln · Cùng màu.”
+
+đặt lơ lửng giữa bàn.
+
+Thiết kế lại thành một event toast nhỏ.
+
+Ví dụ:
+
+Lena → trödeln
+Cùng màu
+
+Duration:
+700–1200ms.
+
+Sau đó fade.
+
+Không giữ permanent nếu không cần.
+
+Event toast không phải indicator turn.
+
+==================================================
+15. SHUFFLE ANIMATION
+==================================================
+
+Giữ animation xào bài,
+nhưng polish.
+
+Flow:
+
+deck center
+→ split left/right
+→ interleave
+→ combine.
+
+Duration:
+650–900ms.
+
+Không dùng particle.
+
+Không fake bằng rotate một card.
+
+Sound paper shuffle optional.
+
+==================================================
+16. DEALING ANIMATION
+==================================================
+
+Một ván mới:
+
+deck giữa bàn.
+
+Cards bay lần lượt theo vòng:
+
+Human
+Max
+Lena
+Mia
+
+rồi lặp.
+
+Có thể đổi thứ tự theo seat logic hiện tại,
+nhưng phải nhất quán.
+
+Stagger:
+55–85ms.
+
+Card travel:
+240–340ms.
+
+Human cards reveal khi tới hand.
+
+Bot cards giữ face-down.
+
+Không render 20 animation nặng nếu gây lag.
+
+Dùng clones/lightweight layers.
+
+Sau khi chia xong:
+
+reveal first current card.
+
+Sau đó mới active first seat.
+
+==================================================
+17. DRAW ANIMATION
+==================================================
+
+Rút một lá:
+
+draw pile → player hand.
+
+Bot:
+
+draw pile → bot seat.
+
++2:
+
+hai card bay lần lượt.
+
+Badge count update khi animation đúng thời điểm.
+
+Không:
+counter đổi trước,
+card mới bay sau.
+
+Visual state phải khớp engine.
+
+==================================================
+18. PLAY CARD ANIMATION
+==================================================
+
+Player card:
+
+hand → discard.
+
+Bot card:
+
+bot seat → discard.
+
+Duration:
+220–320ms.
+
+Sau khi card land:
+
+resolve rule.
+
+Không resolve visual trước khi card tới discard nếu gây khó hiểu.
+
+==================================================
+19. GEGENTEIL — SIGNATURE EFFECT
+==================================================
+
+GEGENTEIL là lá đặc trưng của Đấu từ.
+
+Phải rõ và đẹp.
+
+Khi được đánh:
+
+1. card GEGENTEIL bay vào discard;
+2. active color GIỮ NGUYÊN;
+3. target word xuất hiện:
+
+SCHWER
+
+4. chuyển thành:
+
+LEICHT
+
+5. sentence:
+
+Die Aufgabe ist **schwer**.
+
+crossfade thành:
+
+Die Aufgabe ist **leicht**.
+
+6. label nhỏ:
+
+GEGENTEIL
+Nghĩa đã đổi.
+
+Total:
+700–1000ms.
+
+Không biến thành cinematic.
+
+Không dùng Reverse icon.
+
+Không tự đổi màu.
+
+==================================================
+20. FARBENWAHL
+==================================================
+
+Không mở full-screen modal.
+
+Sau card landing:
+
+4 color options xuất hiện quanh discard hoặc ngay bên dưới.
+
+Desktop:
+horizontal/radial.
+
+Mobile:
+2×2.
+
+Không ghi tên màu lớn.
+
+Dùng four colored circles/cards + shape.
+
+Nếu hover:
+tooltip tên màu.
+
+Sau chọn:
+
+active color visual đổi.
+
+==================================================
+21. AUSSETZEN
+==================================================
+
+Target seat:
+
+skip icon xuất hiện ~400ms.
+
+Seat dim nhẹ.
+
+Turn chuyển tiếp.
+
+Không popup.
+
+==================================================
+22. +2
+==================================================
+
+Target:
+
++2 badge.
+
+2 cards fly from deck.
+
+No stacking trong preview.
+
+Không cho bot thực hiện lượt bị mất.
+
+==================================================
+23. ONBOARDING
+==================================================
+
+Không bắt đọc full luật.
+
+Lần đầu vào game:
+
+Một overlay nhỏ:
+
+Đánh:
+• lá cùng màu
+hoặc
+• từ có nghĩa phù hợp
+
+[Chơi thử]
+
+Sau đó đóng.
+
+Khi lần đầu nhận special:
+
+tooltip contextual.
+
+Ví dụ:
+
+GEGENTEIL
+Đổi từ hiện tại sang nghĩa trái ngược.
+
+Không dạy tất cả special cùng lúc.
+
+==================================================
+24. HINT
+==================================================
+
+Gợi ý hai bước.
+
+Bước 1:
+
+không tô đáp án.
+
+Ví dụ:
+
+“Ở đây ‘schwer’ nghĩa là khó,
+không phải nặng.”
+
+Bước 2:
+
+highlight MỘT card hợp lệ.
+
+Không tự đánh.
+
+Highlight:
+soft glow,
+không flashing.
+
+Nếu không có synonym:
+
+“Bạn chưa có lá nối nghĩa.
+Bạn vẫn có thể đi theo màu hoặc rút bài.”
+
+Không fake.
+
+==================================================
+25. CHẾ ĐỘ LÀM QUEN
+==================================================
+
+Giữ.
+
+Nếu invalid:
+
+card shake nhẹ.
+message:
+
+“Lá này không cùng màu và không nối được với ‘schwer’.”
+
+Không rút phạt.
+Không mất lượt.
+
+Ván thường:
+giữ penalty đã thống nhất.
+
+Hai mode phải có label rõ ở màn chọn,
+không hiện permanent trên bàn nếu không cần.
+
+==================================================
+26. VISUAL STYLE — TABLE
+==================================================
+
+Current table green khá ổn,
+nhưng hơi poker/casino.
+
+Tinh chỉnh:
+
+- giảm border nâu dày;
+- dùng edge tối mỏng hơn;
+- xanh hơi ngả teal;
+- radial gradient rất nhẹ ở center;
+- texture gần như không thấy.
+
+Ví dụ hướng:
+
+center:
+#125B4E
+
+edges:
+#0D453C
+
+KHÔNG cần dùng đúng mã.
+
+Không velvet poker texture rõ.
+
+Không wood casino aesthetic.
+
+Cảm giác:
+
+cozy
+calm
+premium
+learning-game.
+
+==================================================
+27. BACKGROUND NGOÀI BÀN
+==================================================
+
+Page background:
+warm ivory.
+
+Không nhiều card UI.
+
+Header nhỏ.
+
+VokabelGo logo + Đấu từ 0.4.
+
+Controls:
+Sound
+Rules
+Exit
+
+nhẹ.
+
+Header không cạnh tranh với game.
+
+==================================================
+28. MOBILE
+==================================================
+
+390×844 là target chính.
+
+Không ép nguyên bàn desktop thu nhỏ.
+
+Mobile arrangement:
+
+        Lena
+
+ Max              Mia
+
+      deck discard
+
+         sentence
+
+       YOUR HAND
+   ← cards scroll →
+
+    contextual actions
+
+Bot side cards có thể thành compact stacks.
+
+Từ trên human card vẫn phải đọc.
+
+Current card phải đủ lớn.
+
+Không để popup gợi ý che hand.
+
+Không để browser scroll ngang toàn trang.
+
+==================================================
+29. TEXT PRIORITY
+==================================================
+
+Trên card:
+
+1. German word
+2. part of speech
+3. VokabelGo branding
+
+Trên center:
+
+1. current German word
+2. sentence
+3. active color visual
+4. support buttons
+
+Không đưa Vietnamese lên trước German.
+
+==================================================
+30. FONT SIZING
+==================================================
+
+Human card word:
+ưu tiên khoảng 17–22px tùy card width.
+
+Current card:
+20–25px.
+
+Sentence:
+18–21px desktop.
+
+Mobile:
+16–18px.
+
+Part of speech:
+11–12px.
+
+Logo:
+10–11px hoặc nhỏ hơn.
+
+Không để Logo cùng độ nổi với word.
+
+==================================================
+31. MICROINTERACTIONS
+==================================================
+
+Hover desktop:
+
+card raise 3–5px.
+
+Selected:
+raise nhiều hơn.
+
+Valid confirmed:
+quick settle.
+
+Invalid:
+4px shake.
+
+Bot card play:
+smooth movement.
+
+Không mọi element đều animate.
+
+==================================================
+32. SOUND
+==================================================
+
+Nếu hiện đã có:
+
+shuffle
+deal
+place
+draw
+special
+success
+win
+
+giữ nhỏ.
+
+Không casino sound.
+
+Sound off button rõ.
+
+Không autoplay gây lỗi.
+
+==================================================
+33. REDUCE MOTION
+==================================================
+
+Tôn trọng:
+prefers-reduced-motion.
+
+Có setting nếu preview đã có.
+
+Reduced mode:
+
+shuffle = quick fade.
+deal = short move/fade.
+GEGENTEIL = crossfade.
+turn = instant highlight.
+
+Logic không đổi.
+
+==================================================
+34. PERFORMANCE
+==================================================
+
+Không thêm animation library lớn nếu không cần.
+
+Ưu tiên:
+transform
+opacity.
+
+Không animate:
+width
+height
+left
+top
+
+liên tục.
+
+Không dùng Canvas/WebGL chỉ để đẹp hơn.
+
+==================================================
+35. CÁC LỖI HIỆN TẠI BẮT BUỘC FIX
+==================================================
+
+Từ screenshot hiện tại:
+
+FIX 1:
+German word bị bẻ:
+“schlie-ßen”.
+
+FIX 2:
+player hand một lá nằm lơ lửng giữa bàn.
+
+FIX 3:
+game ended nhưng Draw/Play vẫn hiện.
+
+FIX 4:
+winner 0 cards chưa có result state rõ.
+
+FIX 5:
+bot seats quá xa.
+
+FIX 6:
+center content quá nhỏ so với table.
+
+FIX 7:
+current-turn indicator không rõ.
+
+FIX 8:
+direction circle khó hiểu.
+
+FIX 9:
+sentence box giống form.
+
+FIX 10:
+card colors hiện chủ yếu bằng border + chữ tên màu.
+
+FIX 11:
+ghi “Đỏ / Xanh /...” gây thêm tải đọc không cần thiết.
+
+FIX 12:
+large empty areas.
+
+==================================================
+36. KHÔNG THAY LUẬT TRONG VÒNG NÀY
+==================================================
+
+Không tự sáng tạo thêm:
+
+Reverse
++4
+stacking
+multiplayer
+combo
+coins
+levels
+timer
+streak
+powerups.
+
+Tập trung sửa:
+
+GAME FEEL
+VISUAL HIERARCHY
+READABILITY
+STATE CLARITY.
+
+==================================================
+37. QA
+==================================================
+
+Test screenshots thật:
+
+1440×900
+1280×720
+768×1024
+390×844
+360×800.
+
+Hand:
+
+1 card
+5 cards
+8 cards
+12 cards.
+
+Test German words dài.
+
+Test:
+player active
+each bot active
+winner human
+winner bot
++2
+skip
+Farbenwahl
+GEGENTEIL
+hint
+invalid
+one-card state.
+
+Test no text overflow.
+
+Test no German word break.
+
+Test no gameplay control after game end.
+
+==================================================
+38. SCREENSHOTS GỬI LẠI
+==================================================
+
+Sau khi hoàn tất gửi đúng các ảnh sau:
+
+01_SelectDeck
+02_Desktop_Normal5Cards
+03_Desktop_PlayerActive
+04_Desktop_BotActive
+05_Player1Card_NochEine
+06_LongGermanWord
+07_GegenteilBefore
+08_GegenteilAfter
+09_Farbenwahl
+10_Plus2
+11_BotWins_EndState
+12_PlayerWins_EndState
+13_Mobile5Cards
+14_Mobile10Cards
+
+Ảnh phải từ build đang chạy thật.
+
+Không dùng mockup AI.
+
+==================================================
+39. TIÊU CHÍ DUYỆT GIAO DIỆN
+==================================================
+
+Trước khi coi hoàn tất, kiểm:
+
+- Nhìn một giây biết ai đang tới lượt?
+- German word có phải thứ nổi bật nhất trên lá?
+- Có bất kỳ tên màu nào đang cạnh tranh với từ?
+- Một lá còn lại có vẫn trông như “tay bài” không?
+- Current card có đủ nổi?
+- Bot có cảm giác ngồi quanh cùng bàn không?
+- Center có còn giống form học tập không?
+- Winner state có rõ?
+- Game ended có còn action sai không?
+- Từ Đức có bị bẻ không?
+- 1280×720 có cần scroll không?
+- Mobile có chơi được thật không?
+
+Nếu có câu “không”:
+chưa hoàn thành.
+
+==================================================
+40. DEFINITION OF DONE
+==================================================
+
+v0.4 đạt khi:
+
+- toàn bộ word cards dùng full-color body;
+- không hiện tên màu trên mặt card;
+- German word nổi bật nhất;
+- không German-word breaking;
+- 4 seats tạo thành một bàn chơi cohesive;
+- hand zone ổn từ 1–12 cards;
+- active player rõ;
+- center đẹp và dễ hiểu;
+- animation xào/chia/rút/đánh mượt;
+- GEGENTEIL dễ hiểu;
+- end state đúng;
+- desktop không scroll;
+- mobile chơi được;
+- không thay production;
+- luật cũ không bị regression.
+
+Mục tiêu cuối cùng:
+
+> Người chơi nhận màu gần như vô thức,
+> còn sự chú ý có ý thức được dành cho từ tiếng Đức.
+
+Đó phải là nguyên tắc xuyên suốt giao diện.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-09T12:24:26+07:00.
+</ADDITIONAL_METADATA>

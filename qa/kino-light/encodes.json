@@ -1,0 +1,90 @@
+[
+  {
+    "key": "peppa_supermarkt",
+    "source": "video/Peppa_Wutz_Supermarkt.mp4",
+    "src": "video/kino-light/peppa_supermarkt-480p-v2.mp4",
+    "originalBytes": 81932776,
+    "lightBytes": 79768083,
+    "reductionPercent": 2.64,
+    "audioBitstreamUnchanged": true,
+    "maxKeyframeGapSeconds": 1.0,
+    "durationSeconds": 919.04
+  },
+  {
+    "key": "pizzaschwester",
+    "source": "video/pizzaschwester.mp4",
+    "src": "video/kino-light/pizzaschwester-480p-v2.mp4",
+    "originalBytes": 53024567,
+    "lightBytes": 32619415,
+    "reductionPercent": 38.48,
+    "audioBitstreamUnchanged": true,
+    "maxKeyframeGapSeconds": 1.0,
+    "durationSeconds": 419.97932
+  },
+  {
+    "key": "babysitter",
+    "source": "video/babysitter.mp4",
+    "src": "video/kino-light/babysitter-480p-v2.mp4",
+    "originalBytes": 43582354,
+    "lightBytes": 31540301,
+    "reductionPercent": 27.63,
+    "audioBitstreamUnchanged": true,
+    "maxKeyframeGapSeconds": 1.0,
+    "durationSeconds": 416.821406
+  },
+  {
+    "key": "hans",
+    "source": "video/hans.mp4",
+    "src": "video/kino-light/hans-480p-v2.mp4",
+    "originalBytes": 60058394,
+    "lightBytes": 35338128,
+    "reductionPercent": 41.16,
+    "audioBitstreamUnchanged": true,
+    "maxKeyframeGapSeconds": 1.0,
+    "durationSeconds": 570.862585
+  },
+  {
+    "key": "trudes_fahrstuhl",
+    "source": "video/trudes_fahrstuhl.mp4",
+    "src": "video/kino-light/trudes_fahrstuhl-480p-v2.mp4",
+    "originalBytes": 61722398,
+    "lightBytes": 21851524,
+    "reductionPercent": 64.6,
+    "audioBitstreamUnchanged": true,
+    "maxKeyframeGapSeconds": 1.0,
+    "durationSeconds": 411.925333
+  },
+  {
+    "key": "erdmaennchen_nudeltrick",
+    "source": "video/erdmaennchen_nudeltrick.mp4",
+    "src": "video/kino-light/erdmaennchen_nudeltrick-480p-v2.mp4",
+    "originalBytes": 268142935,
+    "lightBytes": 97857480,
+    "reductionPercent": 63.51,
+    "audioBitstreamUnchanged": true,
+    "maxKeyframeGapSeconds": 1.0,
+    "durationSeconds": 746.922667
+  },
+  {
+    "key": "frieren_s01e01",
+    "source": "video/frieren_s01e01.mp4",
+    "src": "video/kino-light/frieren_s01e01-480p-v2.mp4",
+    "originalBytes": 333049930,
+    "lightBytes": 126829224,
+    "reductionPercent": 61.92,
+    "audioBitstreamUnchanged": true,
+    "maxKeyframeGapSeconds": 1.001,
+    "durationSeconds": 1559.986009
+  },
+  {
+    "key": "sakura_s01e01",
+    "source": "video/sakura_s01e01.mp4",
+    "src": "video/kino-light/sakura_s01e01-480p-v2.mp4",
+    "originalBytes": 242449971,
+    "lightBytes": 110408211,
+    "reductionPercent": 54.46,
+    "audioBitstreamUnchanged": true,
+    "maxKeyframeGapSeconds": 1.001,
+    "durationSeconds": 1500.456875
+  }
+]

@@ -1,0 +1,129 @@
+HỒ SƠ KẾ HOẠCH ĐÃ CHỐT — VOKABELGO / MÈO CÂU CÁ / KINO CHO FUXIE
+Ngày lưu: 2026-10-21 — Asia/Saigon.
+Yêu cầu lưu trực tiếp của chị: “ok giờ em lưu các kế hoạch đã chốt nhé”.
+
+ĐỌC BẮT ĐẦU TỪ ĐÂY
+Thư mục: design/ke-hoach-da-chot-2026-10-21/
+
+1. 01-meo-be-cau-ca.txt
+   Nhân vật chính, hướng 2D trong Blender, hoạt ảnh chờ/câu cá/cá hiếm,
+   bè và nâng cấp, vòng ôn tập, đầu ra và bước sản xuất tiếp theo.
+
+2. 02-so-kham-pha-va-vung-nuoc.txt
+   Danh sách cá/hải sản/đồ nhặt được, ve chai và sửa đồ, 20 vùng nước,
+   nhân vật ghé thăm, hành trình khám phá và phạm vi bản đầu.
+
+3. 03-kino-studio-fuxie.txt
+   Thiết kế hệ thống học viên thêm video, transcript, cụm từ, chép chính tả,
+   thu âm từng vai, ghép phim; phân biệt thiết kế đích với bản thử đã có.
+
+QUY ƯỚC TRẠNG THÁI
+- ĐÃ THỐNG NHẤT: hướng sản phẩm/tạo hình và các ý tưởng đã được chị đồng ý
+  trong cuộc trò chuyện trước yêu cầu lưu hồ sơ này.
+- CẦN THỬ / CHƯA CHỐT CHI TIẾT: thông số, giá, xác suất, ngưỡng mở khóa,
+  thời lượng, kỹ thuật và cân bằng cần được kiểm chứng.
+- ĐÃ CÓ TỆP: có tài liệu/tài sản/mã trong máy; không đồng nghĩa đã triển khai
+  lên web chính thức hoặc mọi bước đã được kiểm nghiệm.
+- CHƯA SẢN XUẤT: mới có kế hoạch, chưa có hoạt ảnh/bản dựng tương ứng.
+
+LƯU Ý CHO LẦN TIẾP THEO
+- Yêu cầu hiện tại là lưu kế hoạch. Hồ sơ này không tự giao việc mới, không
+  yêu cầu xóa/tích hợp/triển khai/đăng bài hay tự động gửi sang Antigravity.
+- Ý tưởng màn hình mèo trên bè khởi động trước khi học được giữ lại; chị đã
+  nói để tạm khi chuyển sang bàn Kino. Chưa coi thay trang chủ/ẩn Đảo Mèo
+  là việc đã thực hiện.
+- Các brief Đảo Mèo cũ mô tả những đợt triển khai trước. Khi tiếp tục hướng
+  câu cá 2D, đối chiếu hồ sơ mới này và nguồn tạo hình đã duyệt; không tự
+  chạy lại nhiệm vụ cũ chỉ vì trong brief cũ có câu lệnh thực thi.
+- Giữ nguyên dữ liệu học và tài sản đang có. Không tự thay nhận diện cáo
+  Fuxie bằng mèo: mèo chính ở đây thuộc trải nghiệm mèo/bè câu cá.
+- Dữ liệu kỹ thuật, kết quả kiểm tra và địa chỉ localhost phải xác minh lại
+  khi thực sự tiếp tục công việc, không dùng báo cáo cũ làm bằng chứng mới.
+
+BƯỚC SẢN XUẤT GẦN NHẤT ĐÃ ĐỀ XUẤT
+Bảng 8 tư thế mèo câu cá -> đoạn thử 2D 15–20 giây trong Blender -> kiểm tra
+chuyển trạng thái -> bổ sung ngủ gật/nghịch nước/cá hiếm -> tích hợp vào web.
+Chưa tạo bảng tư thế câu cá hoặc hoạt ảnh mới trong lượt lưu kế hoạch.
+
+CẬP NHẬT TÀI SẢN — 2026-10-21
+Sau lượt lưu, chị yêu cầu làm vùng 1 theo ảnh 2D đơn giản, mặt nước rộng.
+Đã tạo bản cảnh PNG tĩnh tại:
+design/fishing-2d/region-01-ao-co-may/ao-co-may-scene-v01.png
+Đọc README.txt và generation-prompts.txt cùng thư mục để biết trạng thái.
+Đây là key art 2D mới, chưa phải hoạt ảnh/tệp Blender hoặc vùng web đã chơi được.
+
+PHẢN HỒI VÀ BẢN CHỈNH v02 — 2026-10-21
+Chị yêu cầu background đơn giản hơn, đúng phong cách game 2D; tham khảo game
+câu cá dễ thương. Bản chỉnh mới:
+design/fishing-2d/region-01-ao-co-may/ao-co-may-scene-v02.png
+Giảm cảnh nền thành mảng nước rộng và dải bờ cỏ gọn; giữ nhận diện mèo/bè.
+Nguồn tham khảo và prompt lưu cùng thư mục, v01 vẫn giữ nguyên.
+
+BỔ SUNG KHÔNG KHÍ VÙNG 1 — 2026-10-21
+Chị đồng ý hướng v02 (“cũng ok á”), đề xuất lâu lâu có chuồn chuồn hoặc
+sinh vật khác đi ngang mặt nước. Đã lưu yêu cầu và brief bước tiếp theo tại:
+design/fishing-2d/region-01-ao-co-may/ambient-animation-brief-v01.txt
+Ưu tiên bản thử chờ 15–20 giây; sự kiện chuồn chuồn sẽ là lớp độc lập.
+Đây là yêu cầu/brief sản xuất, chưa phải hoạt ảnh đã hoàn thành.
+TIẾN ĐỘ THỰC HIỆN — 2026-10-21
+Ao Cỏ May đã có bản thử 2D động, sprite tách lớp, web tương tác, clip 20s
+và nguồn Blender. Hồ sơ mới nhất:
+fishing-2d/region-01-ao-co-may/animation-v01/DELIVERY.txt.
+Đây là bản thử để xem, chưa phải tích hợp trò ôn từ vựng và chưa có phê duyệt
+cuối của chị về chuyển động. Các yêu cầu còn lại tiếp tục theo kế hoạch gốc.
+
+PHẢN HỒI VÀ BẢN THỬ LẠI — 2026-10-21
+Chị từ chối animation-v01 vì dáng/chuyển động thiếu tự nhiên. Không coi
+bản đó là chuẩn hoặc đã được chị duyệt. Chị đồng ý thử lại một đoạn chờ
+5 giây: animation-v02, hồ sơ tại
+design/fishing-2d/region-01-ao-co-may/animation-v02/README.txt.
+V02 là bản pose/mesh WebGL, chưa phải file Rive/Spine hoàn chỉnh và chưa
+có quyết định duyệt cuối của chị. Giữ nguyên các kế hoạch nội dung dài hạn.
+
+NGUỒN THAM KHẢO ĐỘNG TÁC DO CHỊ CHỈ ĐỊNH — 2026-10-21
+Chị cung cấp catfishing/catfishing.mp4 để làm mẫu chuyển động.
+Phân tích nhịp lấy đà/kéo/cá vào thùng/quay ra cười và sáu tư thế ở:
+design/fishing-2d/region-01-ao-co-may/reference-catfishing/MOTION_REFERENCE.txt.
+Giữ nhận diện Mèo Chợ đã chốt. Chưa coi chuỗi kéo cá mới là đã dựng xong.
+
+DỰNG CHUỖI KÉO CÁ THEO MẪU — 2026-10-21
+Chị yêu cầu tiếp tục dựng, giữ tạo hình mèo. Bản v03 đã có đoạn 7.6 giây
+chờ/lấy đà/kéo/cá vào sọt/nhìn người chơi, web tương tác và MP4.
+Hồ sơ: design/fishing-2d/region-01-ao-co-may/animation-v02/catch-v03/README.txt.
+Đây là bản dựng web 2D mới để chị xem; chưa có duyệt thẩm mỹ cuối,
+chưa có âm thanh, chưa ghép vào luồng ôn từ hoặc rig Rive/Spine đầy đủ.
+
+DẬP DỀNH MẶT AO VÀ BÈ — 2026-10-21
+Chị yêu cầu mặt nước và bè dập dềnh. Đã thêm sóng chậm, bè nhô/nghiêng
+nhẹ cùng mèo và đồ dùng; bờ đứng yên. Chuyển động ao/bè tiếp tục sau
+khi chuỗi kéo cá kết thúc, dừng khi tạm dừng hoặc giảm chuyển động.
+Clip mới ở animation-v02/catch-v03/meo-cho-keo-ca-v03-water.mp4 (12s).
+
+VẼ LẠI MẶT AO THEO VIDEO — 2026-10-21
+Chị muốn nét vẽ background, nhất là nước, sinh động hơn giống clip mẫu.
+Đã tạo nền mới pond-water-v04.png với mảng nước đậm/nhạt, sóng cong,
+nước nông sáng, ít đá/rong chìm; gắn vào trang thử, thêm cung gợn/bọt động.
+Giữ nguyên tài sản mèo/bè và nhịp câu. Nền cũ vẫn giữ để đối chiếu.
+Nguồn, prompt và trạng thái tại animation-v02/catch-v03/README.txt.
+Chưa coi đây là bản chị duyệt thẩm mỹ cuối cùng.
+
+HƯỚNG TẠO HÌNH MÂY VÀ ĐỒ DÙNG MỚI — 2026-10-22
+Sau các bản trước, chị muốn mèo đơn giản, dễ thương và bựa, đổi sang
+tam thể; đồng ý đề xuất khăn xanh cobalt. Mẫu nhân vật hiện tại:
+design/may-mascot-v04-calico/may-calico-blue-study.png.
+Các ràng buộc kem/caramel, khăn vàng và tạp dề ở kế hoạch cũ là lịch sử,
+không áp chúng thay cho hướng tam thể khăn xanh mới.
+Chị đồng ý làm góc ao mẫu theo hướng 2D vẽ tay, khối bo, màu dịu,
+ít chi tiết, nét mèo rõ hơn nền. Mẫu tranh tĩnh:
+design/fishing-2d/style-study-v05/may-pond-style-study.png.
+Nguồn/prompt/trạng thái ở README.txt và generation-prompts.txt cùng thư mục.
+Ảnh mới đang để xem phong cách, chưa có duyệt cuối; chưa thay mèo/cảnh
+trên trang thử, chưa tạo hoạt ảnh theo mẫu mới.
+
+CHỊ CHỌN ẢNH SỬA BÈ LƯỢT HAI — 2026-10-22
+Phản hồi: "ảnh hai ok á giờ làm j". Mẫu cảnh được chọn hiện tại là
+design/fishing-2d/style-study-v05/may-pond-raft-v02.png.
+Quyết định và phạm vi tại APPROVED_DESIGN.txt cùng thư mục.
+Đã chốt mẫu tranh, chưa duyệt hoạt ảnh mới hoặc toàn bộ ý tưởng game.
+Bước đề xuất tiếp theo: tách lớp và thử ngồi chờ ngắn trước khi kéo cá.
+

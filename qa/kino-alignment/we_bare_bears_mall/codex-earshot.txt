@@ -1,0 +1,5 @@
+274.042 s, -19.7 LUFS integrated (short-term max -13.1), true peak -6.6 dBTP, LRA 6.4 LU, noise floor -36.7 dBFS, brightness 2.1 kHz, bandwidth 16.3 kHz, attack 5 ms, decay 8234 ms.
+
+JSON: {"summary": "274.042 s, -19.7 LUFS integrated (short-term max -13.1), true peak -6.6 dBTP, LRA 6.4 LU, noise floor -36.7 dBFS, brightness 2.1 kHz, bandwidth 16.3 kHz, attack 5 ms, decay 8234 ms.", "duration": 274.042, "peak_dbfs": -6.8, "true_peak_dbtp": -6.6, "rms_dbfs": -22.7, "lufs": -19.7, "short_term_max_lufs": -13.1, "lra_lu": 6.4, "clipped_samples": 0, "dc": -1e-05, "noise_floor_dbfs": -36.7, "dynamic_range_db": 24.6, "digital_silence_frac": 0.0063, "side_to_mid_db": -39.5, "correlation": 1.0, "attack_at": 0.101, "peak_at": 191.063, "attack_ms": 5.0, "decay_ms": 8234.0, "centroid_hz": 838, "rolloff95_hz": 2838, "bands_db": {"sub": -9.0, "low": -6.8, "lowmid": -3.9, "mid": -6.3, "presence": -17.3, "air": -24.2, "top": -84.3}, "bandwidth_hz": 16254, "flatness": 0.0, "brightness_hz": 2142, "tonal_peak_ratio_db": 55.2}
+
+Measured by Codex with earshot measure, light=true, full=true. No audio upload or remix. Earshot does not transcribe speech or identify language.

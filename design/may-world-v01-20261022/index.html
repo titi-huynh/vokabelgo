@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thế giới của Mây · Bộ thiết kế 2D</title>
+  <link rel="stylesheet" href="world.css">
+  <script src="world.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Đến nội dung</a>
+  <header class="site-header">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">m.</span><span>Mây<small>một thế giới để học & khám phá</small></span></a>
+    <nav aria-label="Các phần của bộ thiết kế">
+      <button type="button" data-view="home" aria-pressed="true">Đảo nhà</button>
+      <button type="button" data-view="profile" aria-pressed="false">Hồ sơ Mây</button>
+      <button type="button" data-view="world" aria-pressed="false">Hải trình</button>
+      <button type="button" data-view="flow" aria-pressed="false">Luồng học</button>
+    </nav>
+    <span class="edition">BỘ THIẾT KẾ <b>01</b></span>
+  </header>
+  <main id="main">
+    <section data-panel="home">
+      <div class="section-heading"><div><p class="eyebrow">HALLO, DU! <span>CHÀO MỪNG VỀ ĐẢO</span></p><h1>Một hòn đảo nhỏ.<br>Một hành trình cùng Mây.</h1></div><p class="heading-note">Chọn một nơi trên đảo.<br>Mây sẽ cùng bạn đi một đoạn.</p></div>
+      <div class="scene-wrap">
+        <p class="pan-hint">Vuốt ngang để ngắm đảo · hoặc chọn địa điểm bên dưới</p>
+        <div class="scene-viewport" id="homeViewport">
+          <div class="island-scene">
+            <img src="art/may-home-island.png" width="1672" height="941" fetchpriority="high" alt="Mây tam thể khăn xanh đứng trước ngôi nhà mái xanh trên đảo, có vườn đọc sách, bến cá và bè câu giữa mặt nước xanh ngọc">
+            <button type="button" class="hotspot" style="--x:69%;--y:49%" data-place="house"><span>01</span> Nhà Mây</button>
+            <button type="button" class="hotspot" style="--x:86%;--y:35%" data-place="reading"><span>02</span> Vườn đọc</button>
+            <button type="button" class="hotspot" style="--x:86%;--y:88%" data-place="market"><span>03</span> Bến chợ</button>
+            <button type="button" class="hotspot" style="--x:23%;--y:89%" data-place="fishing"><span>04</span> Bè học từ</button>
+            <button type="button" class="hotspot" style="--x:34%;--y:37%" data-place="map"><span>05</span> Hải trình</button>
+            <button type="button" class="hotspot may-greeting" style="--x:49%;--y:73%" data-place="may">Gặp Mây <span aria-hidden="true">♡</span></button>
+          </div>
+        </div>
+        <div class="scene-caption"><span><i></i> ĐẢO NHÀ MÂY</span><span>Cảnh nền 2D · các nhãn là nút tương tác</span></div>
+      </div>
+      <div class="destination-list" aria-label="Địa điểm trên đảo">
+        <button type="button" data-place="house"><b>01</b><span>Nhà Mây<small>Hồ sơ & góc riêng</small></span><span aria-hidden="true">↗</span></button>
+        <button type="button" data-place="reading"><b>02</b><span>Vườn đọc<small>Truyện & bài nghe</small></span><span aria-hidden="true">↗</span></button>
+        <button type="button" data-place="market"><b>03</b><span>Bến chợ<small>Hội thoại & luyện tập</small></span><span aria-hidden="true">↗</span></button>
+        <button type="button" data-place="fishing"><b>04</b><span>Bè học từ<small>Buổi học hôm nay</small></span><span aria-hidden="true">↗</span></button>
+        <button type="button" data-place="map"><b>05</b><span>Hải trình<small>Các vùng nước</small></span><span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="editorial-row"><p class="eyebrow">CẢM GIÁC CỦA THẾ GIỚI</p><p>Vừa mở trang là gặp Mây trong nơi ở của bé. Đường mòn, mái nhà và bến nước dẫn người học đến từng hoạt động. Một thế giới có thể khám phá, với nhịp học vừa sức.</p><button type="button" class="text-link" data-open-village>Xem phương án làng học ↗</button></div>
+    </section>
+
+    <section data-panel="profile" hidden>
+      <div class="section-heading"><div><p class="eyebrow">01 / NHÂN VẬT</p><h1>Mây, người bạn<br>ở bên mỗi ngày.</h1></div><p class="heading-note">Hiền, tò mò, hơi lười.<br>Và rất mê cá.</p></div>
+      <figure class="art-board"><img src="art/may-character-profile.png" width="1672" height="941" loading="lazy" alt="Bảng đề xuất ba tư thế và sáu biểu cảm của Mây tam thể khăn xanh"><figcaption>Đề xuất tư thế: đứng chào / ngồi / câu cá. Biểu cảm: bình thường / vui / tò mò / suy nghĩ / buồn ngủ / động viên.</figcaption></figure>
+      <div class="three-columns">
+        <article class="paper"><p class="eyebrow">TẠO HÌNH</p><h2>Nhỏ thôi, nhận ra ngay.</h2><p>Mắt chấm nâu nhỏ, hai nét má xiên, khăn xanh tam giác. Lông tam thể kem – cam – xám đậm, viền nâu mềm và chuyển sắc nhẹ.</p><button class="text-link" type="button" data-open-original>Đối chiếu ảnh gốc ↗</button></article>
+        <article class="paper"><p class="eyebrow">TÍNH CÁCH & GIỌNG NÓI</p><h2>Bạn đồng hành.</h2><p>Mây thích nghịch nước, tò mò với đồ nhặt được, đôi lúc ngủ gật. Khi người học sai, bé nghiêng đầu và cùng thử lại.</p><blockquote>“Mình thử thêm một lần nhé.”<small lang="de">„Versuchen wir es noch einmal.“</small></blockquote></article>
+        <article class="paper"><p class="eyebrow">HỒ SƠ NGƯỜI HỌC</p><h2>Một góc riêng ở nhà.</h2><p>Tên gọi, mục tiêu, lịch ôn, các vùng đã ghé và kỷ niệm trên bè. Tiến độ học và bộ sưu tập có hai cách ghi nhận riêng.</p><p class="subtle">Tư thế mới là concept để duyệt; ảnh gốc vẫn là chuẩn nhận diện.</p></article>
+      </div>
+      <div class="palette" aria-label="Bảng màu đề xuất"><div style="--swatch:#fff6e6">Kem giấy <code>#FFF6E6</code></div><div style="--swatch:#29b8bd">Nước ngọc <code>#29B8BD</code></div><div style="--swatch:#9fc55a">Cỏ non <code>#9FC55A</code></div><div style="--swatch:#4e6bc6">Khăn xanh <code>#4E6BC6</code></div><div style="--swatch:#d7954f">Gỗ mật ong <code>#D7954F</code></div><div style="--swatch:#493120">Nét nâu <code>#493120</code></div></div>
+    </section>
+
+    <section data-panel="world" hidden>
+      <div class="section-heading"><div><p class="eyebrow">02 / THẾ GIỚI</p><h1>Theo dòng nước,<br>gặp thêm điều mới.</h1></div><p class="heading-note">Sáu vùng được minh họa.<br>Hải trình dài hạn gồm 20 vùng.</p></div>
+      <div class="scene-wrap">
+        <p class="pan-hint">Vuốt để xem bản đồ · chọn vùng trong danh sách bên dưới</p>
+        <div class="scene-viewport"><div class="world-scene"><img src="art/may-world-map.png" width="1672" height="941" loading="lazy" alt="Bản đồ sáu vùng nước: Ao Cỏ May, Đầm Sen, Bến Chợ Nổi, Vịnh Vỏ Sò, Vịnh Đèn Lồng và Hồ Trăng Rơi">
+          <button type="button" class="hotspot" style="--x:17%;--y:33%" data-region="lotus">Đầm Sen Ngủ Gật</button>
+          <button type="button" class="hotspot" style="--x:53%;--y:35%" data-region="market">Bến Chợ Nổi</button>
+          <button type="button" class="hotspot" style="--x:86%;--y:33%" data-region="lantern">Vịnh Đèn Lồng</button>
+          <button type="button" class="hotspot" style="--x:16%;--y:72%" data-region="pond">Ao Cỏ May</button>
+          <button type="button" class="hotspot" style="--x:52%;--y:77%" data-region="shell">Vịnh Vỏ Sò</button>
+          <button type="button" class="hotspot" style="--x:84%;--y:82%" data-region="moon">Hồ Trăng Rơi</button>
+        </div></div>
+        <div class="scene-caption"><span><i></i> HẢI TRÌNH CỦA MÂY</span><span>Các vùng là concept mỹ thuật, chưa phải màn chơi hoàn chỉnh</span></div>
+      </div>
+      <div class="region-list" id="regionList"></div>
+      <details class="journey-details"><summary>Xem đủ 20 vùng trong kế hoạch đã lưu</summary><ol id="allRegions"></ol></details>
+    </section>
+
+    <section data-panel="flow" hidden>
+      <div class="section-heading"><div><p class="eyebrow">03 / TRẢI NGHIỆM HỌC</p><h1>Mỗi buổi học,<br>một chuyến đi nhỏ.</h1></div><p class="heading-note">Bản tương tác minh họa một câu hỏi.<br>Không ghi vào tiến độ học thật.</p></div>
+      <ol class="flow-track" aria-label="Luồng học đề xuất"><li data-step="0" aria-current="step">01 <span>Gặp Mây</span></li><li data-step="1">02 <span>Chọn buổi học</span></li><li data-step="2">03 <span>Tự trả lời</span></li><li data-step="3">04 <span>Phản hồi & sửa</span></li><li data-step="4">05 <span>Cất kỷ niệm</span></li></ol>
+      <div class="flow-layout"><div class="flow-visual"><img src="art/may-home-island.png" width="1672" height="941" loading="lazy" alt="Đảo nhà Mây là nơi bắt đầu và quay về sau buổi học"><div class="may-speech" id="maySpeech" aria-live="polite">“Bạn đến rồi. Mình đi một chút nhé?”</div></div><article class="flow-card" id="flowCard" aria-live="polite"></article></div>
+      <div class="three-columns"><article class="paper"><p class="eyebrow">KHI ĐANG HỌC</p><h2>Mây chờ cùng bạn.</h2><p>Chuyển động nhỏ, nền yên, âm thanh cảnh nhường cho bài nghe. Hộp câu hỏi rõ ràng ở một vị trí ổn định.</p></article><article class="paper"><p class="eyebrow">KHI CHƯA ĐÚNG</p><h2>Có đường để thử lại.</h2><p>Hiện gợi ý, đáp án và lý do. Ghi nhận lần sửa có trợ giúp, đưa từ cần ôn quay lại sau; Mây luôn động viên.</p></article><article class="paper"><p class="eyebrow">KHI HOÀN THÀNH</p><h2>Về đảo, mang theo kỷ niệm.</h2><p>Tổng kết kết quả trước, rồi mới tới đoạn câu cá hoặc vật trang trí. Có thể bỏ qua hoạt cảnh và quay lại học.</p></article></div>
+    </section>
+  </main>
+  <footer><span>MÂY · KLEINE LERNWELT</span><p>Bộ concept 2D v01 · 22.10.2026 · Tạo hình mới và giao diện đang chờ chị duyệt.</p><a href="DESIGN_SPEC.md">Hồ sơ thiết kế & quy trình sản xuất ↗</a></footer>
+  <dialog id="detailDialog" aria-labelledby="dialogTitle"><button type="button" class="close-dialog" aria-label="Đóng chi tiết">×</button><div id="dialogBody"></div></dialog>
+</body>
+</html>

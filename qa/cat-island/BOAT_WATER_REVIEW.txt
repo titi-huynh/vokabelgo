@@ -1,0 +1,58 @@
+Boat and water visual study v04 — 2026-10-18
+
+Entry: http://127.0.0.1:3000/cat-island-boat-study.html
+Scope: main market boat and animated river. Separate visual review page;
+the existing Cat Island game, Wortregen and Fuxie were not edited for this work.
+
+Asset provenance and source
+- Antigravity CLI model selected: gemini-4-argon-high, effort high.
+- Base boat authored in Blender; Codex reviewed the actual native renders and
+  browser output, corrected bamboo/fabric intersections, raised hidden oranges,
+  added ceramic floral ornaments, and completed water and browser integration.
+- Accepted original concept: design/cat-island-blender/v04/accepted-concept.png.
+- Editable boat: design/cat-island-blender/v04/hero-boat-v04.blend.
+- Rebuild: Blender -b --python design/cat-island-blender/v04/build_hero_boat_v04.py.
+- Editable boat/water companion: design/cat-island-water-v04/boat-water-study-v04.blend.
+- Companion rebuild: Blender -b --python design/cat-island-water-v04/build_water_study.py.
+
+Final runtime boat
+- assets/cat-island/hero-boat-v04.glb: 1,282,200 bytes, 60,420 triangles,
+  38 mesh/material batches, no external images or texture downloads.
+- SHA256: AED9C38758948F07C8A9145F9E24294DC5B9E64446C93AC731889EFDD37FFDAB.
+- The source .blend preserves 347 individually editable mesh objects.
+- Main boat bow is local -X; forward sailing and stern foam follow this convention.
+
+Water implementation
+- Three analytic travelling waves, with the same height field used by buoyancy.
+- Boat pitch and roll sampled across hull length and width.
+- Planar reflected boat rendered to a local target; below-water hull clipped out.
+- Thin irregular waterline contact detail and gently travelling local ripples.
+- World-space foam and two widening wake ribbons that persist behind the boat
+  and fade independently after it moves away.
+- Surface patch follows the vessel while wave sampling stays in world coordinates.
+- Reflection resolution, water grid and pixel ratio reduced on mobile.
+- Pause freezes simulation and stops redundant rendering after camera settling.
+- Hidden documents stop simulation; reduced-motion preference starts paused.
+
+Verification actually performed
+- node --check passed for cat-island-water.js and cat-island-boat-study.js.
+- 200 mathematical samples checked analytic wave derivatives against finite
+  differences: maximum error 2.45e-10; height stayed within summed amplitudes.
+- Blender 5.2.2 rebuilt the GLB, editable boat, two native studio renders,
+  and the native animated boat/water companion without source exceptions.
+- Browser inspected overview, counter and low water views, real sailing and
+  pause/resume controls, and wave slider endpoints/default restoration.
+- Latest browser console: no warnings or errors during final desktop/mobile pass.
+- Mobile viewport 390x844: entire boat fits; document width 390 (no overflow).
+- Paused captures visually held position. Tiny GPU/screenshot raster differences
+  were observed; no claim of byte-identical screenshots is made.
+- No physical-phone FPS measurement, separate cat/lantern rig, gameplay integration,
+  island scenery or customer fleet is claimed in this visual study.
+- The native companion contains editable analytic waves; browser-only contact foam,
+  wake ribbons and live planar-reflection pass are implemented in JavaScript.
+
+Proof images in review-assets
+- cat-island-boat-water-v04-2026-10-18.png
+- cat-island-boat-counter-v04-2026-10-18.png
+- cat-island-boat-water-mobile-v04-2026-10-18.png
+- cat-island-boat-water-motion-v04-2026-10-18.png

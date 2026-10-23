@@ -1,0 +1,35 @@
+$mediaObject.jsonpHelper.storeAndPlay({
+  "mediaVersion" : "1.4.0",
+  "mediaType" : "vod",
+  "mediaResource" : {
+    "dflt" : {
+      "videoURL" : "//wdradaptiv-vh.akamaihd.net/i/medp/ondemand/weltweit/fsk0/329/3291984/,3291984_65683351,3291984_65683352,3291984_65683353,3291984_65683350,3291984_65683349,.mp4.csmil/master.m3u8?subtitle_identifier=3291984",
+      "slVideoURL" : "//wdradaptiv-vh.akamaihd.net/i/medp/ondemand/weltweit/fsk0/329/3291984/,3291984_62243692,3291984_62243693,3291984_62243694,3291984_62243691,3291984_62243690,.mp4.csmil/master.m3u8?subtitle_identifier=3291984",
+      "adVideoURL" : "//wdradaptiv-vh.akamaihd.net/i/medp/ondemand/weltweit/fsk0/329/3291984/,3291984_62243697,3291984_62243698,3291984_62243699,3291984_62243696,3291984_62243695,.mp4.csmil/master.m3u8?subtitle_identifier=3291984",
+      "mediaFormat" : "hls"
+    },
+    "alt" : {
+      "videoURL" : "//wdr-progressive.ard-mcdn.de/medp/ondemand/weltweit/fsk0/329/3291984/3291984_65683353.mp4",
+      "slVideoURL" : "//wdr-progressive.ard-mcdn.de/medp/ondemand/weltweit/fsk0/329/3291984/3291984_62243694.mp4",
+      "adVideoURL" : "//wdr-progressive.ard-mcdn.de/medp/ondemand/weltweit/fsk0/329/3291984/3291984_62243699.mp4",
+      "mediaFormat" : "mp4"
+    },
+    "previewImage" : "//kinder.wdr.de/tv/die-sendung-mit-der-maus/20250511-die-sendung-mit-der-maus-vom-102~_v-%%FORMAT%%.jpg",
+    "captionsHash" : {
+      "xml" : "//wdr-progressive.ard-mcdn.de/medp/ondemand/weltweit/fsk0/329/3291984/3291984_62243700.xml",
+      "vtt" : "//wdr-progressive.ard-mcdn.de/medp/ondemand/weltweit/fsk0/329/3291984/3291984_62243702.vtt",
+      "srt" : "//wdr-progressive.ard-mcdn.de/medp/ondemand/weltweit/fsk0/329/3291984/3291984_62243701.srt"
+    },
+    "duration" : 387
+  },
+  "trackerData" : {
+    "trackerClipId" : "sophora-22c75fdd-2d50-41af-a5fe-7bd5468c9b7d",
+    "trackerClipCategory" : "Das Erste",
+    "trackerClipSubcategory" : "Die Sendung mit der Maus",
+    "trackerClipTitle" : "Fahrstuhl",
+    "trackerClipAirTime" : "10.11.2024 17:35",
+    "trackerClipIsTrailer" : "0",
+    "trackerClipAgfCategory" : "Information",
+    "trackerClipIsWebOnly" : "0"
+  }
+});

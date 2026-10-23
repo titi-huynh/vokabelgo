@@ -1,0 +1,109 @@
+{
+  "provider": "openthesaurus",
+  "query": "beginnen",
+  "retrievedAt": "2026-10-09T07:28:21.558Z",
+  "licenseNote": "Creative Commons Attribution-ShareAlike 4.0 (CC-BY-SA) or GNU LGPL",
+  "attribution": "OpenThesaurus (www.openthesaurus.de) by Daniel Naber",
+  "rawResponse": {
+    "metaData": {
+      "apiVersion": "0.2",
+      "warning": "ACHTUNG: Bitte vor ernsthafter Nutzung feedback@openthesaurus.de kontaktieren, um bei API-Änderungen informiert zu werden",
+      "copyright": "Copyright (C) 2026 Daniel Naber (www.danielnaber.de)",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 or GNU LESSER GENERAL PUBLIC LICENSE Version 2.1",
+      "source": "https://www.openthesaurus.de",
+      "date": "Fri Oct 09 07:28:21 UTC 2026"
+    },
+    "synsets": [
+      {
+        "id": 24567,
+        "categories": [],
+        "terms": [
+          {
+            "term": "anbrechen"
+          },
+          {
+            "term": "anfangen"
+          },
+          {
+            "term": "angehen"
+          },
+          {
+            "term": "anlaufen (längere Abläufe)"
+          },
+          {
+            "term": "beginnen"
+          },
+          {
+            "term": "einsetzen"
+          },
+          {
+            "term": "entbrennen (Streit)"
+          },
+          {
+            "term": "losbrechen"
+          },
+          {
+            "term": "starten (mit)"
+          },
+          {
+            "term": "anheben",
+            "level": "gehoben"
+          },
+          {
+            "term": "in Gang kommen",
+            "level": "umgangssprachlich"
+          },
+          {
+            "term": "losgehen",
+            "level": "umgangssprachlich"
+          }
+        ]
+      },
+      {
+        "id": 14893,
+        "categories": [],
+        "terms": [
+          {
+            "term": "anheben (Gesang)"
+          },
+          {
+            "term": "beginnen"
+          }
+        ]
+      },
+      {
+        "id": 31771,
+        "categories": [],
+        "terms": [
+          {
+            "term": "aufnehmen (Gespräche, Verhandlungen, die Arbeit)"
+          },
+          {
+            "term": "beginnen"
+          },
+          {
+            "term": "einsteigen in (Debatte)"
+          },
+          {
+            "term": "eröffnen (Diskussion)"
+          }
+        ]
+      },
+      {
+        "id": 50357,
+        "categories": [],
+        "terms": [
+          {
+            "term": "(irgendwo) anfangen"
+          },
+          {
+            "term": "(irgendwo) ansetzen"
+          },
+          {
+            "term": "(irgendwo) beginnen"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,6682 @@
+{
+  "captions": [
+    {
+      "id": 805000,
+      "parentId": 805000,
+      "start": 96.42,
+      "end": 98.54,
+      "speaker": "Sakura",
+      "text": "Wer ist da?",
+      "vi": "Ai ở đó vậy?",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 805001,
+      "parentId": 805001,
+      "start": 98.66,
+      "end": 100.08,
+      "speaker": "Sakura",
+      "text": "Wer ruft mich?",
+      "vi": "Ai đang gọi mình vậy?",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 805002,
+      "parentId": 805002,
+      "start": 117.28,
+      "end": 119.3,
+      "speaker": "Stimme im Traum",
+      "text": "Cardcaptor!",
+      "vi": "Thủ lĩnh Thẻ bài!",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 800010,
+      "parentId": 800010,
+      "start": 152.16,
+      "end": 155.24,
+      "speaker": "Sakura",
+      "text": "Das war ja ein komischer Traum.",
+      "vi": "Giấc mơ gì mà kỳ lạ thật.",
+      "sourceSrtNumber": 1
+    },
+    {
+      "id": 800020,
+      "parentId": 800020,
+      "start": 155.92,
+      "end": 156.873,
+      "speaker": "Toya",
+      "text": "Sakura!",
+      "vi": "Sakura!",
+      "sourceSrtNumber": 2
+    },
+    {
+      "id": 800030,
+      "parentId": 800030,
+      "start": 156.873,
+      "end": 159.853,
+      "speaker": "Toya / Sakura",
+      "text": "Raus aus dem Bett, dein Frühstück wartet! Komme ja schon!",
+      "vi": "Dậy mau, bữa sáng xong rồi kìa! Em xuống ngay đây!",
+      "sourceSrtNumber": 3
+    },
+    {
+      "id": 800040,
+      "parentId": 800040,
+      "start": 160.46,
+      "end": 162.54,
+      "speaker": "Sakura",
+      "text": "Mein Name ist Sakura Kinomoto.",
+      "vi": "Mình tên là Sakura Kinomoto.",
+      "sourceSrtNumber": 4
+    },
+    {
+      "id": 800050,
+      "parentId": 800050,
+      "start": 162.78,
+      "end": 164.82,
+      "speaker": "Sakura",
+      "text": "Ich bin 12 Jahre alt und gehe in die vierte Klasse der",
+      "vi": "Năm nay mình 12 tuổi, học lớp 4 trường",
+      "sourceSrtNumber": 5
+    },
+    {
+      "id": 800060,
+      "parentId": 800060,
+      "start": 164.92,
+      "end": 166.42,
+      "speaker": "Sakura",
+      "text": "Tomoeda-Grundschule.",
+      "vi": "tiểu học Tomoeda.",
+      "sourceSrtNumber": 6
+    },
+    {
+      "id": 800070,
+      "parentId": 800070,
+      "start": 166.54,
+      "end": 168.853,
+      "speaker": "Sakura",
+      "text": "Meine Lieblingsfächer sind Musik und Sport",
+      "vi": "Môn tủ của mình là Âm nhạc và Thể dục.",
+      "sourceSrtNumber": 7
+    },
+    {
+      "id": 800080,
+      "parentId": 800080,
+      "start": 169.253,
+      "end": 169.886,
+      "speaker": "Sakura",
+      "text": "und ich hasse",
+      "vi": "Còn môn mình ghét cay",
+      "sourceSrtNumber": 8
+    },
+    {
+      "id": 800090,
+      "parentId": 800090,
+      "start": 169.886,
+      "end": 172.2,
+      "speaker": "Sakura",
+      "text": "Mathematik. Ich bin also ein ganz normales Mädchen.",
+      "vi": "ghét đắng là Toán. Nói chung, mình chỉ là một học sinh bình thường thôi.",
+      "sourceSrtNumber": 9
+    },
+    {
+      "id": 800100,
+      "parentId": 800100,
+      "start": 172.253,
+      "end": 174.92,
+      "speaker": "Sakura",
+      "text": "Jetzt lernt ihr meine Familie kennen. Morgen!",
+      "vi": "Bây giờ mình sẽ giới thiệu về gia đình mình nhé. Chào buổi sáng!",
+      "sourceSrtNumber": 10
+    },
+    {
+      "id": 800110,
+      "parentId": 800110,
+      "start": 177.22,
+      "end": 178.986,
+      "speaker": "Toya",
+      "text": "Gewöhn dir endlich diese Trampelei ab!",
+      "vi": "Em bỏ ngay cái tật đi lại huỳnh huỵch như thế đi.",
+      "sourceSrtNumber": 11
+    },
+    {
+      "id": 800120,
+      "parentId": 800120,
+      "start": 179.186,
+      "end": 180.98,
+      "speaker": "Sakura",
+      "text": "Ich trample überhaupt nicht!",
+      "vi": "Em có đi huỳnh huỵch đâu!",
+      "sourceSrtNumber": 12
+    },
+    {
+      "id": 800130,
+      "parentId": 800130,
+      "start": 181.12,
+      "end": 181.92,
+      "speaker": "Toya",
+      "text": "Ach ja? Und wieso",
+      "vi": "Thế à? Vậy sao",
+      "sourceSrtNumber": 13
+    },
+    {
+      "id": 800140,
+      "parentId": 800140,
+      "start": 181.92,
+      "end": 183.793,
+      "speaker": "Toya",
+      "text": "klirren dann im ganzen Haus die Fensterscheiben?",
+      "vi": "kính cả nhà cứ rung lên bần bật thế hả?",
+      "sourceSrtNumber": 14
+    },
+    {
+      "id": 800150,
+      "parentId": 800150,
+      "start": 183.793,
+      "end": 185.62,
+      "speaker": "Sakura",
+      "text": "Weiß ich nicht, ich bin normal gelaufen.",
+      "vi": "Em không biết, em đi đứng rất bình thường mà.",
+      "sourceSrtNumber": 15
+    },
+    {
+      "id": 800160,
+      "parentId": 800160,
+      "start": 186.22,
+      "end": 187.52,
+      "speaker": "Toya",
+      "text": "Kann schon sein, allerdings",
+      "vi": "Chắc thế. Nhưng nếu vậy",
+      "sourceSrtNumber": 16
+    },
+    {
+      "id": 800170,
+      "parentId": 800170,
+      "start": 187.653,
+      "end": 188.72,
+      "speaker": "Toya",
+      "text": "müsstest du dann so riesige",
+      "vi": "thì chân em phải to bự",
+      "sourceSrtNumber": 17
+    },
+    {
+      "id": 800180,
+      "parentId": 800180,
+      "start": 188.786,
+      "end": 190.52,
+      "speaker": "Toya",
+      "text": "Füße wie ein Dinosaurier haben.",
+      "vi": "như chân khủng long mới đúng.",
+      "sourceSrtNumber": 18
+    },
+    {
+      "id": 800190,
+      "parentId": 800190,
+      "start": 193.62,
+      "end": 195.72,
+      "speaker": "Sakura",
+      "text": "Ich habe ganz normale Füße!",
+      "vi": "Chân em hoàn toàn bình thường nhé!",
+      "sourceSrtNumber": 19
+    },
+    {
+      "id": 800200,
+      "parentId": 800200,
+      "start": 196.24,
+      "end": 198.82,
+      "speaker": "Sakura",
+      "text": "Das ist mein fieser, gemeiner Bruder Toya.",
+      "vi": "Đây là ông anh trai quái quỷ và đáng ghét của mình, Toya.",
+      "sourceSrtNumber": 20
+    },
+    {
+      "id": 800210,
+      "parentId": 800210,
+      "start": 198.96,
+      "end": 201.6,
+      "speaker": "Sakura",
+      "text": "Er geht auf das Seijou-Gymnasium direkt neben meiner Schule.",
+      "vi": "Anh ấy học trường trung học Seijo, ngay cạnh trường mình.",
+      "sourceSrtNumber": 21
+    },
+    {
+      "id": 800220,
+      "parentId": 800220,
+      "start": 202.02,
+      "end": 204.32,
+      "speaker": "Sakura",
+      "text": "Vielleicht liegt es daran, dass er älter ist als ich.",
+      "vi": "Có lẽ là vì anh ấy lớn tuổi hơn mình.",
+      "sourceSrtNumber": 22
+    },
+    {
+      "id": 800230,
+      "parentId": 800230,
+      "start": 204.38,
+      "end": 204.92,
+      "speaker": "Sakura",
+      "text": "Jedenfalls",
+      "vi": "nói chung là",
+      "sourceSrtNumber": 23
+    },
+    {
+      "id": 800240,
+      "parentId": 800240,
+      "start": 204.92,
+      "end": 206.72,
+      "speaker": "Sakura",
+      "text": "habe ich noch keinen Kampf gegen ihn gewonnen.",
+      "vi": "mình chưa bao giờ cãi thắng ổng cả.",
+      "sourceSrtNumber": 24
+    },
+    {
+      "id": 800250,
+      "parentId": 800250,
+      "start": 206.9,
+      "end": 208.28,
+      "speaker": "Sakura",
+      "text": "Das macht mich noch verrückt.",
+      "vi": "Tức chết đi được!",
+      "sourceSrtNumber": 25
+    },
+    {
+      "id": 800260,
+      "parentId": 800260,
+      "start": 208.44,
+      "end": 209.32,
+      "speaker": "Sakura",
+      "text": "Er ist viel größer",
+      "vi": "Anh ấy cao hơn",
+      "sourceSrtNumber": 26
+    },
+    {
+      "id": 800270,
+      "parentId": 800270,
+      "start": 209.42,
+      "end": 211.6,
+      "speaker": "Sakura",
+      "text": "als ich, aber eines Tages wird es anders sein.",
+      "vi": "mình rất nhiều, nhưng rồi sẽ có ngày mình phục thù.",
+      "sourceSrtNumber": 27
+    },
+    {
+      "id": 800280,
+      "parentId": 800280,
+      "start": 211.62,
+      "end": 214.52,
+      "speaker": "Sakura",
+      "text": "Dann zertrete ich ihn mit meinen riesigen Saurierfüßen!",
+      "vi": "Lúc đó mình sẽ dùng \"đôi chân khủng long\" khổng lồ giẫm bẹp ổng!",
+      "sourceSrtNumber": 28
+    },
+    {
+      "id": 800290,
+      "parentId": 800290,
+      "start": 217.46,
+      "end": 219.386,
+      "speaker": "Sakura",
+      "text": "Dann wird es ihm leid tun!",
+      "vi": "Rồi ổng sẽ biết tay mình!",
+      "sourceSrtNumber": 29
+    },
+    {
+      "id": 800300,
+      "parentId": 800300,
+      "start": 219.62,
+      "end": 221.786,
+      "speaker": "Fujitaka",
+      "text": "Müsst ihr am frühen Morgen schon wieder streiten?",
+      "vi": "Hai đứa sáng sớm ra đã cãi nhau rồi hả?",
+      "sourceSrtNumber": 30
+    },
+    {
+      "id": 800310,
+      "parentId": 800310,
+      "start": 221.98,
+      "end": 224.38,
+      "speaker": "Sakura",
+      "text": "Das ist mein Papa, Fujitaka Kinomoto.",
+      "vi": "Đây là bố mình, Fujitaka Kinomoto.",
+      "sourceSrtNumber": 31
+    },
+    {
+      "id": 800320,
+      "parentId": 800320,
+      "start": 224.58,
+      "end": 227.02,
+      "speaker": "Sakura",
+      "text": "Er ist Professor für Archäologie an der Universität.",
+      "vi": "Bố là giáo sư Khảo cổ học ở trường Đại học.",
+      "sourceSrtNumber": 32
+    },
+    {
+      "id": 800330,
+      "parentId": 800330,
+      "start": 227.42,
+      "end": 229.76,
+      "speaker": "Sakura",
+      "text": "Er ist sehr lieb und es gibt nichts, was er nicht kann.",
+      "vi": "Bố cực kỳ hiền và chẳng có việc gì làm khó được bố cả.",
+      "sourceSrtNumber": 33
+    },
+    {
+      "id": 800340,
+      "parentId": 800340,
+      "start": 229.76,
+      "end": 232.72,
+      "speaker": "Sakura / Fujitaka",
+      "text": "Ich hab ihn so lieb! Lass es dir schmecken.",
+      "vi": "Mình thương bố nhất trên đời! Con ăn ngon miệng nhé.",
+      "sourceSrtNumber": 34
+    },
+    {
+      "id": 800350,
+      "parentId": 800350,
+      "start": 232.9,
+      "end": 234.06,
+      "speaker": "Sakura",
+      "text": "Klar, Papa, danke.",
+      "vi": "Vâng ạ, con cảm ơn bố.",
+      "sourceSrtNumber": 35
+    },
+    {
+      "id": 800360,
+      "parentId": 800360,
+      "start": 234.52,
+      "end": 236.02,
+      "speaker": "Sakura",
+      "text": "Ich habe so einen Hunger.",
+      "vi": "Con đang đói meo đây.",
+      "sourceSrtNumber": 36
+    },
+    {
+      "id": 800370,
+      "parentId": 800370,
+      "start": 236.4,
+      "end": 237.9,
+      "speaker": "Sakura",
+      "text": "Das ist meine Familie.",
+      "vi": "Đó là gia đình mình.",
+      "sourceSrtNumber": 37
+    },
+    {
+      "id": 800380,
+      "parentId": 800380,
+      "start": 238.2,
+      "end": 240.653,
+      "speaker": "Sakura",
+      "text": "Was? Ihr wollt wissen, wo meine Mama ist? Sie ist",
+      "vi": "Mọi người muốn biết mẹ mình ở đâu ư? Mẹ mình",
+      "sourceSrtNumber": 38
+    },
+    {
+      "id": 800390,
+      "parentId": 800390,
+      "start": 240.72,
+      "end": 242.04,
+      "speaker": "Sakura",
+      "text": "gestorben, als ich klein war.",
+      "vi": "mất từ khi mình còn rất nhỏ.",
+      "sourceSrtNumber": 39
+    },
+    {
+      "id": 800400,
+      "parentId": 800400,
+      "start": 242.04,
+      "end": 243.386,
+      "speaker": "Sakura",
+      "text": "Ich war erst 3 Jahre alt, darum",
+      "vi": "Lúc đó mình mới lên ba, nên thú thực",
+      "sourceSrtNumber": 40
+    },
+    {
+      "id": 800410,
+      "parentId": 800410,
+      "start": 243.453,
+      "end": 244.9,
+      "speaker": "Sakura",
+      "text": "erinnere ich mich nicht wirklich an sie.",
+      "vi": "mình không có nhiều ký ức về mẹ.",
+      "sourceSrtNumber": 41
+    },
+    {
+      "id": 800420,
+      "parentId": 800420,
+      "start": 245.1,
+      "end": 246.62,
+      "speaker": "Sakura",
+      "text": "Und auch wenn ich oft an sie denke,",
+      "vi": "Dù thỉnh thoảng có nhớ mẹ,",
+      "sourceSrtNumber": 42
+    },
+    {
+      "id": 800430,
+      "parentId": 800430,
+      "start": 246.686,
+      "end": 247.68,
+      "speaker": "Sakura",
+      "text": "bin ich nicht traurig.",
+      "vi": "nhưng mình không thấy buồn đâu.",
+      "sourceSrtNumber": 43
+    },
+    {
+      "id": 800440,
+      "parentId": 800440,
+      "start": 247.686,
+      "end": 249.42,
+      "speaker": "Sakura",
+      "text": "Ich hab ja meinen Papa und Toya.",
+      "vi": "Vì mình đã có bố và anh Toya rồi.",
+      "sourceSrtNumber": 44
+    },
+    {
+      "id": 800450,
+      "parentId": 800450,
+      "start": 249.68,
+      "end": 251.086,
+      "speaker": "Fujitaka / Sakura",
+      "text": "Na, schmeckt's? Ja.",
+      "vi": "Sao, đồ ăn ngon chứ con? Vâng ạ.",
+      "sourceSrtNumber": 45
+    },
+    {
+      "id": 800460,
+      "parentId": 800460,
+      "start": 251.3,
+      "end": 252.453,
+      "speaker": "Toya",
+      "text": "Danke, ich muss los.",
+      "vi": "Cảm ơn bố, con phải đi học đây.",
+      "sourceSrtNumber": 46
+    },
+    {
+      "id": 800470,
+      "parentId": 800470,
+      "start": 253.02,
+      "end": 254.16,
+      "speaker": "Fujitaka",
+      "text": "Willst du schon los?",
+      "vi": "Con đi luôn hả?",
+      "sourceSrtNumber": 47
+    },
+    {
+      "id": 800480,
+      "parentId": 800480,
+      "start": 255.04,
+      "end": 258.186,
+      "speaker": "Toya / Sakura",
+      "text": "Ja, wir wollen noch trainieren. Hier ist dein Mittagessen.",
+      "vi": "Vâng, bọn con còn định tập luyện một chút. Bữa trưa của em đây.",
+      "sourceSrtNumber": 48
+    },
+    {
+      "id": 800490,
+      "parentId": 800490,
+      "start": 258.58,
+      "end": 261.053,
+      "speaker": "Toya / Sakura",
+      "text": "Danke, tschüss! Hey, warte auf mich!",
+      "vi": "Cảm ơn nha, tạm biệt! Này, đợi em với!",
+      "sourceSrtNumber": 49
+    },
+    {
+      "id": 800500,
+      "parentId": 800500,
+      "start": 265.38,
+      "end": 266.886,
+      "speaker": "Sakura",
+      "text": "Wir sind fertig, Papa.",
+      "vi": "Bọn con xong rồi bố ạ.",
+      "sourceSrtNumber": 50
+    },
+    {
+      "id": 800510,
+      "parentId": 800510,
+      "start": 267.82,
+      "end": 269.22,
+      "speaker": "Fujitaka",
+      "text": "Bist du satt geworden?",
+      "vi": "Con ăn no chưa?",
+      "sourceSrtNumber": 51
+    },
+    {
+      "id": 800520,
+      "parentId": 800520,
+      "start": 270.453,
+      "end": 272.186,
+      "speaker": "Fujitaka",
+      "text": "Vergiss dein Pausenbrot nicht!",
+      "vi": "Đừng có quên hộp cơm trưa nè!",
+      "sourceSrtNumber": 52
+    },
+    {
+      "id": 800530,
+      "parentId": 800530,
+      "start": 276.82,
+      "end": 280.053,
+      "speaker": "Sakura / Fujitaka",
+      "text": "Tschüss, Papa! Ich wünsch dir einen schönen Tag, Sakura.",
+      "vi": "Tạm biệt bố! Chúc con một ngày tốt lành nhé, Sakura.",
+      "sourceSrtNumber": 53
+    },
+    {
+      "id": 800540,
+      "parentId": 800540,
+      "start": 280.286,
+      "end": 281.32,
+      "speaker": "Sakura / Fujitaka",
+      "text": "Dir auch. Willst du Toya",
+      "vi": "Bố cũng vậy ạ. Con thực sự định đuổi kịp Toya",
+      "sourceSrtNumber": 54
+    },
+    {
+      "id": 800550,
+      "parentId": 800550,
+      "start": 281.486,
+      "end": 283.52,
+      "speaker": "Sakura / Fujitaka",
+      "text": "wirklich noch einholen? Klar, das schaff ich schon.",
+      "vi": "sao? Con làm được mà.",
+      "sourceSrtNumber": 55
+    },
+    {
+      "id": 800560,
+      "parentId": 800560,
+      "start": 283.653,
+      "end": 284.52,
+      "speaker": "Fujitaka",
+      "text": "Fahr vorsichtig.",
+      "vi": "Đi cẩn thận nha.",
+      "sourceSrtNumber": 56
+    },
+    {
+      "id": 800570,
+      "parentId": 800570,
+      "start": 288.22,
+      "end": 290.12,
+      "speaker": "Sakura",
+      "text": "Hoffentlich lässt er sich ein bisschen Zeit.",
+      "vi": "Hy vọng ổng đi tà tà thôi.",
+      "sourceSrtNumber": 57
+    },
+    {
+      "id": 800580,
+      "parentId": 800580,
+      "start": 294.686,
+      "end": 297.62,
+      "speaker": "Sakura",
+      "text": "Die Kirschbäume blühen!",
+      "vi": "Hoa anh đào nở rồi!",
+      "sourceSrtNumber": 58
+    },
+    {
+      "id": 800590,
+      "parentId": 800590,
+      "start": 306.286,
+      "end": 308.72,
+      "speaker": "Sakura",
+      "text": "Da vorne ist er! Warte auf mich, Toya!",
+      "vi": "Anh ấy ở đằng kia! Anh Toya, đợi em với!",
+      "sourceSrtNumber": 59
+    },
+    {
+      "id": 800600,
+      "parentId": 800600,
+      "start": 310.4,
+      "end": 312.086,
+      "speaker": "Toya",
+      "text": "Warum? Du bist groß genug und kannst",
+      "vi": "Làm gì? Lớn rồi thì",
+      "sourceSrtNumber": 60
+    },
+    {
+      "id": 800610,
+      "parentId": 800610,
+      "start": 312.186,
+      "end": 313.286,
+      "speaker": "Toya",
+      "text": "allein zur Schule fahren.",
+      "vi": "tự đi học một mình đi.",
+      "sourceSrtNumber": 61
+    },
+    {
+      "id": 800620,
+      "parentId": 800620,
+      "start": 314.1,
+      "end": 317.12,
+      "speaker": "Sakura",
+      "text": "Ach, nur so. Ich werd ihm nicht verraten,",
+      "vi": "Thì... em thích thế. Mình không thèm nói cho ổng biết",
+      "sourceSrtNumber": 62
+    },
+    {
+      "id": 800630,
+      "parentId": 800630,
+      "start": 317.22,
+      "end": 318.22,
+      "speaker": "Sakura",
+      "text": "dass ich nur mit ihm zur Schule",
+      "vi": "là mình đi cùng ổng",
+      "sourceSrtNumber": 63
+    },
+    {
+      "id": 800640,
+      "parentId": 800640,
+      "start": 318.286,
+      "end": 320.46,
+      "speaker": "Sakura",
+      "text": "fahre, weil ich weiß, mit wem er sich vorher trifft.",
+      "vi": "chỉ vì biết trước ổng sẽ gặp ai đâu.",
+      "sourceSrtNumber": 64
+    },
+    {
+      "id": 800650,
+      "parentId": 800650,
+      "start": 320.653,
+      "end": 321.453,
+      "speaker": "Sakura",
+      "text": "Yukito!",
+      "vi": "Anh Yukito!",
+      "sourceSrtNumber": 65
+    },
+    {
+      "id": 800660,
+      "parentId": 800660,
+      "start": 325.04,
+      "end": 326.986,
+      "speaker": "Yukito",
+      "text": "Guten Morgen, Toya. Hallo.",
+      "vi": "Chào buổi sáng Toya. Chào em.",
+      "sourceSrtNumber": 66
+    },
+    {
+      "id": 800670,
+      "parentId": 800670,
+      "start": 331.02,
+      "end": 332.853,
+      "speaker": "Yukito / Toya",
+      "text": "Alles klar? Kann nicht klagen.",
+      "vi": "Ổn cả chứ? Tớ thì bình thường.",
+      "sourceSrtNumber": 67
+    },
+    {
+      "id": 800680,
+      "parentId": 800680,
+      "start": 333.84,
+      "end": 334.72,
+      "speaker": "Yukito / Sakura",
+      "text": "Wieso bist du schon hier,",
+      "vi": "Sao em tới sớm thế,",
+      "sourceSrtNumber": 68
+    },
+    {
+      "id": 800690,
+      "parentId": 800690,
+      "start": 334.853,
+      "end": 337.386,
+      "speaker": "Yukito / Sakura",
+      "text": "Sakura? Hast du Angst, zu spät zur Schule zu kommen? Ja.",
+      "vi": "Sakura? Sợ đi học muộn à? Vâng ạ.",
+      "sourceSrtNumber": 69
+    },
+    {
+      "id": 800700,
+      "parentId": 800700,
+      "start": 337.52,
+      "end": 338.62,
+      "speaker": "Toya",
+      "text": "Dabei ist sie",
+      "vi": "Thế mà em ấy",
+      "sourceSrtNumber": 70
+    },
+    {
+      "id": 800710,
+      "parentId": 800710,
+      "start": 339.12,
+      "end": 339.986,
+      "speaker": "Toya",
+      "text": "mit ihren Rollerblades",
+      "vi": "đi đôi patin đó",
+      "sourceSrtNumber": 71
+    },
+    {
+      "id": 800720,
+      "parentId": 800720,
+      "start": 340.086,
+      "end": 341.853,
+      "speaker": "Toya",
+      "text": "schneller als ich mit meinem Rad.",
+      "vi": "còn phóng nhanh hơn cả tớ đạp xe đấy.",
+      "sourceSrtNumber": 72
+    },
+    {
+      "id": 800730,
+      "parentId": 800730,
+      "start": 348.8,
+      "end": 351.186,
+      "speaker": "Yukito",
+      "text": "Genau, lass dir bloß nichts gefallen, Sakura.",
+      "vi": "Đúng rồi, đừng có để bị bắt nạt nhé, Sakura.",
+      "sourceSrtNumber": 73
+    },
+    {
+      "id": 800740,
+      "parentId": 800740,
+      "start": 351.7,
+      "end": 353.72,
+      "speaker": "Sakura",
+      "text": "Das ist Yukito Tsukishiro.",
+      "vi": "Đây là anh Yukito Tsukishiro.",
+      "sourceSrtNumber": 74
+    },
+    {
+      "id": 800750,
+      "parentId": 800750,
+      "start": 353.86,
+      "end": 355.76,
+      "speaker": "Sakura",
+      "text": "Er geht mit meinem Bruder in dieselbe Klasse.",
+      "vi": "Anh ấy học cùng lớp với anh trai mình.",
+      "sourceSrtNumber": 75
+    },
+    {
+      "id": 800760,
+      "parentId": 800760,
+      "start": 355.78,
+      "end": 357.35,
+      "speaker": "Sakura",
+      "text": "Kaum zu glauben, dass er sein Freund ist.",
+      "vi": "Khó tin thật khi anh ấy lại chơi thân với ông anh mình.",
+      "sourceSrtNumber": 76
+    },
+    {
+      "id": 800770,
+      "parentId": 800770,
+      "start": 357.35,
+      "end": 359.086,
+      "speaker": "Sakura",
+      "text": "Er ist nämlich nicht so ein Blödmann wie der.",
+      "vi": "Vì anh ấy hiền lành chứ đâu có cộc cằn như ổng.",
+      "sourceSrtNumber": 77
+    },
+    {
+      "id": 800780,
+      "parentId": 800780,
+      "start": 359.34,
+      "end": 361.2,
+      "speaker": "Sakura",
+      "text": "Und außerdem sieht er so süß aus.",
+      "vi": "Lại còn đáng yêu nữa chứ!",
+      "sourceSrtNumber": 78
+    },
+    {
+      "id": 800790,
+      "parentId": 800790,
+      "start": 361.6,
+      "end": 363.98,
+      "speaker": "Sakura",
+      "text": "Also wenn ich mich in einen verlieben würde, dann in ihn.",
+      "vi": "Nếu có thích ai, chắc chắn mình sẽ chọn anh ấy.",
+      "sourceSrtNumber": 79
+    },
+    {
+      "id": 800800,
+      "parentId": 800800,
+      "start": 364.0,
+      "end": 365.44,
+      "speaker": "Sakura",
+      "text": "Yukito ist so niedlich.",
+      "vi": "Anh Yukito dịu dàng quá đi mất.",
+      "sourceSrtNumber": 80
+    },
+    {
+      "id": 800810,
+      "parentId": 800810,
+      "start": 367.08,
+      "end": 368.62,
+      "speaker": "Yukito",
+      "text": "Mach's gut, Sakura.",
+      "vi": "Đi học vui nhé, Sakura.",
+      "sourceSrtNumber": 81
+    },
+    {
+      "id": 800820,
+      "parentId": 800820,
+      "start": 373.74,
+      "end": 375.586,
+      "speaker": "Sakura",
+      "text": "Das war's dann schon.",
+      "vi": "Ơ, xong rồi sao.",
+      "sourceSrtNumber": 82
+    },
+    {
+      "id": 800830,
+      "parentId": 800830,
+      "start": 383.16,
+      "end": 384.853,
+      "speaker": "Yukito",
+      "text": "Hey, fang auf!",
+      "vi": "Này, bắt lấy nhé!",
+      "sourceSrtNumber": 83
+    },
+    {
+      "id": 800840,
+      "parentId": 800840,
+      "start": 390.78,
+      "end": 392.22,
+      "speaker": "Sakura",
+      "text": "Ein Bonbon!",
+      "vi": "Một viên kẹo ư!",
+      "sourceSrtNumber": 84
+    },
+    {
+      "id": 800850,
+      "parentId": 800850,
+      "start": 393.02,
+      "end": 394.653,
+      "speaker": "Tomoyo",
+      "text": "Das müsste mir mal passieren.",
+      "vi": "Ước gì chuyện đó cũng xảy ra với tớ.",
+      "sourceSrtNumber": 85
+    },
+    {
+      "id": 800860,
+      "parentId": 800860,
+      "start": 396.58,
+      "end": 397.386,
+      "speaker": "Sakura",
+      "text": "Tomoyo!",
+      "vi": "Tomoyo!",
+      "sourceSrtNumber": 86
+    },
+    {
+      "id": 800870,
+      "parentId": 800870,
+      "start": 397.46,
+      "end": 399.786,
+      "speaker": "Tomoyo",
+      "text": "Du weißt bestimmt selbst, was es bedeutet, wenn ein Junge",
+      "vi": "Chắc cậu cũng biết nó có ý nghĩa gì khi con trai",
+      "sourceSrtNumber": 87
+    },
+    {
+      "id": 800880,
+      "parentId": 800880,
+      "start": 399.853,
+      "end": 401.37,
+      "speaker": "Tomoyo",
+      "text": "einem Mädchen Süßigkeiten schenkt.",
+      "vi": "tặng kẹo cho con gái mà.",
+      "sourceSrtNumber": 88
+    },
+    {
+      "id": 800890,
+      "parentId": 800890,
+      "start": 401.37,
+      "end": 404.486,
+      "speaker": "Sakura",
+      "text": "Das... das muss gar nichts bedeuten! Morgen, Tomoyo.",
+      "vi": "Chuyện... chuyện đó làm gì có ý nghĩa gì sâu xa đâu! Chào buổi sáng, Tomoyo.",
+      "sourceSrtNumber": 89
+    },
+    {
+      "id": 800900,
+      "parentId": 800900,
+      "start": 404.686,
+      "end": 407.3,
+      "speaker": "Tomoyo / Sakura",
+      "text": "Ja, wünsch ich dir auch. Wie geht's dir, Sakura? Gut.",
+      "vi": "Chào buổi sáng. Cậu khỏe không, Sakura? Tớ khỏe.",
+      "sourceSrtNumber": 90
+    },
+    {
+      "id": 800910,
+      "parentId": 800910,
+      "start": 407.76,
+      "end": 409.32,
+      "speaker": "Sakura",
+      "text": "Das ist Tomoyo Daidouji.",
+      "vi": "Đây là Tomoyo Daidoji.",
+      "sourceSrtNumber": 91
+    },
+    {
+      "id": 800920,
+      "parentId": 800920,
+      "start": 409.32,
+      "end": 410.83,
+      "speaker": "Sakura",
+      "text": "Sie ist meine beste Freundin.",
+      "vi": "Bạn thân nhất của mình.",
+      "sourceSrtNumber": 92
+    },
+    {
+      "id": 800930,
+      "parentId": 800930,
+      "start": 410.83,
+      "end": 412.48,
+      "speaker": "Sakura",
+      "text": "Wir kennen uns schon seit der dritten Klasse.",
+      "vi": "Bọn mình chơi với nhau từ hồi lớp 3.",
+      "sourceSrtNumber": 93
+    },
+    {
+      "id": 800940,
+      "parentId": 800940,
+      "start": 412.686,
+      "end": 413.486,
+      "speaker": "Sakura",
+      "text": "Ich muss zugeben,",
+      "vi": "Phải công nhận",
+      "sourceSrtNumber": 94
+    },
+    {
+      "id": 800950,
+      "parentId": 800950,
+      "start": 413.52,
+      "end": 414.053,
+      "speaker": "Sakura",
+      "text": "dass sie sehr",
+      "vi": "là cậu ấy rất",
+      "sourceSrtNumber": 95
+    },
+    {
+      "id": 800960,
+      "parentId": 800960,
+      "start": 414.053,
+      "end": 416.02,
+      "speaker": "Sakura",
+      "text": "klug ist und mich viel zu leicht durchschaut.",
+      "vi": "thông minh và luôn bắt bài mình cái một.",
+      "sourceSrtNumber": 96
+    },
+    {
+      "id": 800970,
+      "parentId": 800970,
+      "start": 417.02,
+      "end": 420.22,
+      "speaker": "Tomoyo",
+      "text": "Aber es war so süß! Du hättest dein Gesicht sehen sollen.",
+      "vi": "Nhưng mà lãng mạn thật đấy! Giá mà cậu tự nhìn thấy khuôn mặt mình lúc đó.",
+      "sourceSrtNumber": 97
+    },
+    {
+      "id": 800980,
+      "parentId": 800980,
+      "start": 420.28,
+      "end": 423.386,
+      "speaker": "Sakura / Tomoyo",
+      "text": "Wieso? Kaum hatte er dir den Bonbon zugeworfen,",
+      "vi": "Sao cơ? Anh ấy vừa ném viên kẹo cho cậu là",
+      "sourceSrtNumber": 98
+    },
+    {
+      "id": 800990,
+      "parentId": 800990,
+      "start": 423.486,
+      "end": 425.52,
+      "speaker": "Sakura / Tomoyo",
+      "text": "hast du so einen verliebten Blick bekommen.",
+      "vi": "mắt cậu đã sáng rực lên u mê luôn rồi.",
+      "sourceSrtNumber": 99
+    },
+    {
+      "id": 801000,
+      "parentId": 801000,
+      "start": 425.6,
+      "end": 427.76,
+      "speaker": "Sakura",
+      "text": "Einen verliebten Blick? Quatsch!",
+      "vi": "Ánh mắt u mê á? Cậu nói linh tinh!",
+      "sourceSrtNumber": 100
+    },
+    {
+      "id": 801010,
+      "parentId": 801010,
+      "start": 427.84,
+      "end": 428.92,
+      "speaker": "Tomoyo",
+      "text": "Wenn ich meine Videokamera",
+      "vi": "Tiếc là tớ không cầm máy quay",
+      "sourceSrtNumber": 101
+    },
+    {
+      "id": 801020,
+      "parentId": 801020,
+      "start": 429.12,
+      "end": 431.34,
+      "speaker": "Tomoyo",
+      "text": "da gehabt hätte, könntest du es dir jetzt ansehen.",
+      "vi": "ở đó, không thì bây giờ cậu đã được xem lại rồi.",
+      "sourceSrtNumber": 102
+    },
+    {
+      "id": 801030,
+      "parentId": 801030,
+      "start": 431.48,
+      "end": 432.56,
+      "speaker": "Sakura",
+      "text": "Danke, schon okay.",
+      "vi": "Cảm ơn, thôi tớ xin.",
+      "sourceSrtNumber": 103
+    },
+    {
+      "id": 801040,
+      "parentId": 801040,
+      "start": 433.22,
+      "end": 435.186,
+      "speaker": "Sakura",
+      "text": "Tomoyo ist vernarrt in ihre Videokamera.",
+      "vi": "Tomoyo cực kỳ cuồng quay phim.",
+      "sourceSrtNumber": 104
+    },
+    {
+      "id": 801050,
+      "parentId": 801050,
+      "start": 435.58,
+      "end": 436.94,
+      "speaker": "Sakura",
+      "text": "Sie nimmt alles auf, was sie sieht.",
+      "vi": "Cậu ấy quay lại mọi thứ,",
+      "sourceSrtNumber": 105
+    },
+    {
+      "id": 801060,
+      "parentId": 801060,
+      "start": 436.94,
+      "end": 437.453,
+      "speaker": "Sakura",
+      "text": "Aber sie sagt",
+      "vi": "nhưng cậu ấy bảo",
+      "sourceSrtNumber": 106
+    },
+    {
+      "id": 801070,
+      "parentId": 801070,
+      "start": 437.453,
+      "end": 439.5,
+      "speaker": "Sakura",
+      "text": "immer, am liebsten macht sie Aufnahmen von mir.",
+      "vi": "thích nhất là quay mình.",
+      "sourceSrtNumber": 107
+    },
+    {
+      "id": 801080,
+      "parentId": 801080,
+      "start": 439.686,
+      "end": 440.72,
+      "speaker": "Tomoyo",
+      "text": "Ich hab ne neue Videokamera",
+      "vi": "Tớ mới có một chiếc máy quay mới,",
+      "sourceSrtNumber": 108
+    },
+    {
+      "id": 801090,
+      "parentId": 801090,
+      "start": 440.986,
+      "end": 443.086,
+      "speaker": "Tomoyo",
+      "text": "bekommen, die ist fantastisch. Wenn wir mal Zeit haben,",
+      "vi": "xịn xò lắm. Khi nào rảnh,",
+      "sourceSrtNumber": 109
+    },
+    {
+      "id": 801100,
+      "parentId": 801100,
+      "start": 443.42,
+      "end": 445.36,
+      "speaker": "Tomoyo",
+      "text": "würde ich gerne ein paar Aufnahmen mit dir machen.",
+      "vi": "tớ muốn quay vài cảnh của cậu.",
+      "sourceSrtNumber": 110
+    },
+    {
+      "id": 801110,
+      "parentId": 801110,
+      "start": 445.52,
+      "end": 447.32,
+      "speaker": "Sakura",
+      "text": "Von mir aus, ich hab Zeit.",
+      "vi": "Ừm sao cũng được, tớ rảnh mà.",
+      "sourceSrtNumber": 111
+    },
+    {
+      "id": 801120,
+      "parentId": 801120,
+      "start": 447.52,
+      "end": 448.82,
+      "speaker": "Sakura",
+      "text": "Aber wenn du willst, kannst du auch Videos",
+      "vi": "Nhưng nếu thích, cậu cũng có thể quay video",
+      "sourceSrtNumber": 112
+    },
+    {
+      "id": 801130,
+      "parentId": 801130,
+      "start": 448.92,
+      "end": 450.12,
+      "speaker": "Sakura",
+      "text": "von den anderen Mädchen machen.",
+      "vi": "các bạn nữ khác nữa cơ mà.",
+      "sourceSrtNumber": 113
+    },
+    {
+      "id": 801140,
+      "parentId": 801140,
+      "start": 450.12,
+      "end": 452.52,
+      "speaker": "Tomoyo",
+      "text": "Ich wäre ja verrückt, wenn ich irgendjemanden",
+      "vi": "Tớ có mà ngốc nếu quay một ai khác",
+      "sourceSrtNumber": 114
+    },
+    {
+      "id": 801150,
+      "parentId": 801150,
+      "start": 452.72,
+      "end": 454.286,
+      "speaker": "Tomoyo",
+      "text": "filmen würde, obwohl ich das schönste Mädchen",
+      "vi": "trong khi trước mặt là cô gái xinh xắn nhất",
+      "sourceSrtNumber": 115
+    },
+    {
+      "id": 801160,
+      "parentId": 801160,
+      "start": 454.386,
+      "end": 455.56,
+      "speaker": "Tomoyo",
+      "text": "der Schule aufnehmen kann.",
+      "vi": "trường!",
+      "sourceSrtNumber": 116
+    },
+    {
+      "id": 801170,
+      "parentId": 801170,
+      "start": 456.12,
+      "end": 458.64,
+      "speaker": "Tomoyo",
+      "text": "Sobald die Akkus aufgeladen sind, können wir anfangen.",
+      "vi": "Sạc pin xong là chúng ta bắt đầu ngay nhé.",
+      "sourceSrtNumber": 117
+    },
+    {
+      "id": 801180,
+      "parentId": 801180,
+      "start": 458.76,
+      "end": 461.557,
+      "speaker": "Tomoyo",
+      "text": "Ich mach ein super Video!",
+      "vi": "Tớ sẽ làm một video thật đỉnh!",
+      "sourceSrtNumber": 118
+    },
+    {
+      "id": 801190,
+      "parentId": 801190,
+      "start": 461.557,
+      "end": 463.16,
+      "speaker": "Sakura",
+      "text": "Ich weiß, was ihr denkt.",
+      "vi": "Mình biết các bạn đang nghĩ gì mà.",
+      "sourceSrtNumber": 119
+    },
+    {
+      "id": 801200,
+      "parentId": 801200,
+      "start": 463.32,
+      "end": 464.76,
+      "speaker": "Sakura",
+      "text": "Das Mädel braucht Hilfe.",
+      "vi": "Cô bạn này cần được giúp đỡ rồi.",
+      "sourceSrtNumber": 120
+    },
+    {
+      "id": 801210,
+      "parentId": 801210,
+      "start": 464.853,
+      "end": 467.94,
+      "speaker": "Lehrerin",
+      "text": "Damals war das Leben viel schwerer als heute.",
+      "vi": "Hồi đó cuộc sống khó khăn hơn bây giờ rất nhiều.",
+      "sourceSrtNumber": 121
+    },
+    {
+      "id": 801220,
+      "parentId": 801220,
+      "start": 468.16,
+      "end": 470.86,
+      "speaker": "Lehrerin",
+      "text": "Die Menschen mussten bis zu 16 Stunden arbeiten.",
+      "vi": "Mọi người phải làm việc tới 16 tiếng mỗi ngày.",
+      "sourceSrtNumber": 122
+    },
+    {
+      "id": 801230,
+      "parentId": 801230,
+      "start": 471.22,
+      "end": 472.286,
+      "speaker": "Lehrerin",
+      "text": "Auch viele Kinder wurden",
+      "vi": "Nhiều trẻ em cũng phải",
+      "sourceSrtNumber": 123
+    },
+    {
+      "id": 801240,
+      "parentId": 801240,
+      "start": 472.386,
+      "end": 474.986,
+      "speaker": "Lehrerin",
+      "text": "beschäftigt, die deshalb nicht zur Schule gehen konnten.",
+      "vi": "lao động nên không thể đến trường.",
+      "sourceSrtNumber": 124
+    },
+    {
+      "id": 801250,
+      "parentId": 801250,
+      "start": 477.56,
+      "end": 480.38,
+      "speaker": "Sakura",
+      "text": "Das war ja ein seltsamer Traum heute Nacht.",
+      "vi": "Đêm qua mình gặp một giấc mơ kỳ lạ quá.",
+      "sourceSrtNumber": 125
+    },
+    {
+      "id": 801260,
+      "parentId": 801260,
+      "start": 480.4,
+      "end": 482.52,
+      "speaker": "Lehrerin",
+      "text": "Die Zeichnung auf deinem Heft ist schön.",
+      "vi": "Hình vẽ trên vở của em đẹp đấy.",
+      "sourceSrtNumber": 126
+    },
+    {
+      "id": 801270,
+      "parentId": 801270,
+      "start": 482.58,
+      "end": 483.72,
+      "speaker": "Lehrerin",
+      "text": "Was ist das für ein Tier?",
+      "vi": "Con vật gì vậy?",
+      "sourceSrtNumber": 127
+    },
+    {
+      "id": 801280,
+      "parentId": 801280,
+      "start": 483.82,
+      "end": 485.92,
+      "speaker": "Sakura / Lehrerin / Mitschülerin",
+      "text": "Was? Ach, nur so. Sakura!",
+      "vi": "Dạ? À, em chỉ vẽ linh tinh thôi ạ. Sakura!",
+      "sourceSrtNumber": 128
+    },
+    {
+      "id": 801290,
+      "parentId": 801290,
+      "start": 486.28,
+      "end": 488.92,
+      "speaker": "Sakura / Lehrerin / Mitschülerin",
+      "text": "Ja, lies bitte weiter. Wo war sie gerade?",
+      "vi": "Dạ vâng? Em đọc tiếp đi. Cô ấy đang đọc đến đoạn nào rồi nhỉ?",
+      "sourceSrtNumber": 129
+    },
+    {
+      "id": 801300,
+      "parentId": 801300,
+      "start": 489.886,
+      "end": 491.853,
+      "speaker": "Sakura / Lehrerin / Mitschülerin",
+      "text": "Seite 14, dritter Absatz.",
+      "vi": "Trang 14, đoạn 3.",
+      "sourceSrtNumber": 130
+    },
+    {
+      "id": 801310,
+      "parentId": 801310,
+      "start": 492.74,
+      "end": 493.72,
+      "speaker": "Sakura",
+      "text": "Nur wenn die Kinder",
+      "vi": "Chỉ khi trẻ em",
+      "sourceSrtNumber": 131
+    },
+    {
+      "id": 801320,
+      "parentId": 801320,
+      "start": 493.886,
+      "end": 495.786,
+      "speaker": "Sakura",
+      "text": "mithalfen, konnten die einfachen Bauern",
+      "vi": "phụ giúp, những nông dân nghèo",
+      "sourceSrtNumber": 132
+    },
+    {
+      "id": 801330,
+      "parentId": 801330,
+      "start": 495.92,
+      "end": 497.453,
+      "speaker": "Sakura",
+      "text": "ihre Familien damals ernähren.",
+      "vi": "thời đó mới có thể nuôi sống gia đình.",
+      "sourceSrtNumber": 133
+    },
+    {
+      "id": 801340,
+      "parentId": 801340,
+      "start": 502.653,
+      "end": 505.42,
+      "speaker": "Mitschülerin",
+      "text": "Sowas möchte ich auch mal können, einmalig!",
+      "vi": "Ước gì mình cũng làm được như thế, đỉnh thật!",
+      "sourceSrtNumber": 134
+    },
+    {
+      "id": 801350,
+      "parentId": 801350,
+      "start": 505.82,
+      "end": 508.02,
+      "speaker": "Sportlehrerin",
+      "text": "Ja, das hast du sehr gut gemacht, Sakura.",
+      "vi": "Tốt lắm, em làm rất tốt, Sakura.",
+      "sourceSrtNumber": 135
+    },
+    {
+      "id": 801360,
+      "parentId": 801360,
+      "start": 508.22,
+      "end": 510.586,
+      "speaker": "Sportlehrerin",
+      "text": "Jetzt werden wir noch ein bisschen mit den Stäben üben.",
+      "vi": "Bây giờ chúng ta sẽ tập một chút với gậy.",
+      "sourceSrtNumber": 136
+    },
+    {
+      "id": 801370,
+      "parentId": 801370,
+      "start": 510.686,
+      "end": 511.32,
+      "speaker": "Sportlehrerin",
+      "text": "Holt bitte eure",
+      "vi": "Các em lấy",
+      "sourceSrtNumber": 137
+    },
+    {
+      "id": 801380,
+      "parentId": 801380,
+      "start": 511.32,
+      "end": 514.0,
+      "speaker": "Sportlehrerin",
+      "text": "Stäbe und stellt euch mit etwas Abstand auf, okay?",
+      "vi": "gậy và đứng giãn cách ra nhé, được chứ?",
+      "sourceSrtNumber": 138
+    },
+    {
+      "id": 801390,
+      "parentId": 801390,
+      "start": 520.44,
+      "end": 523.686,
+      "speaker": "Sakura",
+      "text": "Ich muss immer wieder an meinen Traum von heute Nacht",
+      "vi": "Mình cứ nghĩ mãi về giấc mơ đêm qua.",
+      "sourceSrtNumber": 139
+    },
+    {
+      "id": 801400,
+      "parentId": 801400,
+      "start": 523.82,
+      "end": 527.32,
+      "speaker": "Sakura",
+      "text": "denken. Vielleicht sollte ich Tomoyo davon erzählen.",
+      "vi": "Chắc phải kể cho Tomoyo nghe mới được.",
+      "sourceSrtNumber": 140
+    },
+    {
+      "id": 801410,
+      "parentId": 801410,
+      "start": 540.42,
+      "end": 541.62,
+      "speaker": "Mitschülerin",
+      "text": "Sakura ist die Beste",
+      "vi": "Sakura là người giỏi nhất",
+      "sourceSrtNumber": 141
+    },
+    {
+      "id": 801420,
+      "parentId": 801420,
+      "start": 541.686,
+      "end": 543.52,
+      "speaker": "Mitschülerin",
+      "text": "im Sport und eigentlich ist sie auch die beste",
+      "vi": "thể thao và thực ra cũng là người",
+      "sourceSrtNumber": 142
+    },
+    {
+      "id": 801430,
+      "parentId": 801430,
+      "start": 543.686,
+      "end": 548.04,
+      "speaker": "Mitschülerin",
+      "text": "Stabwerferin. Manchmal stellt sie sich aber echt doof an.",
+      "vi": "tung gậy đỉnh nhất. Dù thỉnh thoảng cậu ấy lại lóng ngóng thấy ớn.",
+      "sourceSrtNumber": 143
+    },
+    {
+      "id": 801440,
+      "parentId": 801440,
+      "start": 552.24,
+      "end": 554.0,
+      "speaker": "Sakura",
+      "text": "Papa, ich bin wieder da!",
+      "vi": "Con về rồi đây!",
+      "sourceSrtNumber": 144
+    },
+    {
+      "id": 801450,
+      "parentId": 801450,
+      "start": 559.686,
+      "end": 560.486,
+      "speaker": "Sakura",
+      "text": "Papa?",
+      "vi": "Bố ơi?",
+      "sourceSrtNumber": 145
+    },
+    {
+      "id": 801460,
+      "parentId": 801460,
+      "start": 566.45,
+      "end": 568.986,
+      "speaker": "Sakura",
+      "text": "Bin heute Abend erst gegen 9 zurück.",
+      "vi": "\"Tối nay khoảng 9 giờ bố mới về.\"",
+      "sourceSrtNumber": 146
+    },
+    {
+      "id": 801470,
+      "parentId": 801470,
+      "start": 569.18,
+      "end": 571.16,
+      "speaker": "Sakura",
+      "text": "Schade, Papa kommt heute spät.",
+      "vi": "Chán thế, nay bố về muộn.",
+      "sourceSrtNumber": 147
+    },
+    {
+      "id": 801480,
+      "parentId": 801480,
+      "start": 574.253,
+      "end": 575.053,
+      "speaker": "Sakura",
+      "text": "Pudding!",
+      "vi": "A, Pudding!",
+      "sourceSrtNumber": 148
+    },
+    {
+      "id": 801490,
+      "parentId": 801490,
+      "start": 580.76,
+      "end": 582.486,
+      "speaker": "Sakura",
+      "text": "Ist da etwa jemand?",
+      "vi": "Có ai ở đó không?",
+      "sourceSrtNumber": 149
+    },
+    {
+      "id": 801500,
+      "parentId": 801500,
+      "start": 592.46,
+      "end": 596.22,
+      "speaker": "Sakura",
+      "text": "Oh Mann, wenn Papa oder Toya bloß zu Hause wären.",
+      "vi": "Ôi trời ơi, giá mà bố hoặc anh Toya có ở nhà!",
+      "sourceSrtNumber": 150
+    },
+    {
+      "id": 801510,
+      "parentId": 801510,
+      "start": 611.38,
+      "end": 613.62,
+      "speaker": "Sakura",
+      "text": "Das kommt aus der Bibliothek.",
+      "vi": "Tiếng phát ra từ thư viện.",
+      "sourceSrtNumber": 151
+    },
+    {
+      "id": 801520,
+      "parentId": 801520,
+      "start": 613.88,
+      "end": 616.586,
+      "speaker": "Sakura",
+      "text": "Was soll ich machen, wenn das ein Einbrecher ist?",
+      "vi": "Nhỡ là ăn trộm thì phải làm sao đây?",
+      "sourceSrtNumber": 152
+    },
+    {
+      "id": 801530,
+      "parentId": 801530,
+      "start": 618.06,
+      "end": 619.5,
+      "speaker": "Sakura",
+      "text": "Ich muss nachsehen.",
+      "vi": "Phải đi xem thử mới được.",
+      "sourceSrtNumber": 153
+    },
+    {
+      "id": 801540,
+      "parentId": 801540,
+      "start": 619.92,
+      "end": 622.52,
+      "speaker": "Sakura",
+      "text": "Wenn ein Fremder drin ist, ruf ich die Polizei.",
+      "vi": "Nếu có người lạ, mình sẽ gọi cảnh sát.",
+      "sourceSrtNumber": 154
+    },
+    {
+      "id": 801550,
+      "parentId": 801550,
+      "start": 658.98,
+      "end": 660.52,
+      "speaker": "Sakura",
+      "text": "Aber hier ist ja niemand.",
+      "vi": "Nhưng giờ chẳng có ai cả.",
+      "sourceSrtNumber": 155
+    },
+    {
+      "id": 801560,
+      "parentId": 801560,
+      "start": 673.76,
+      "end": 676.786,
+      "speaker": "Sakura",
+      "text": "Das Buch... es scheint zu glühen.",
+      "vi": "Cuốn sách... nó đang phát sáng.",
+      "sourceSrtNumber": 156
+    },
+    {
+      "id": 801570,
+      "parentId": 801570,
+      "start": 706.02,
+      "end": 708.02,
+      "speaker": "Sakura",
+      "text": "Das Buch aus meinem Traum.",
+      "vi": "Là cuốn sách trong giấc mơ của mình.",
+      "sourceSrtNumber": 157
+    },
+    {
+      "id": 801580,
+      "parentId": 801580,
+      "start": 721.26,
+      "end": 723.2,
+      "speaker": "Sakura",
+      "text": "Das sind Karten.",
+      "vi": "Đây là những thẻ bài.",
+      "sourceSrtNumber": 158
+    },
+    {
+      "id": 801590,
+      "parentId": 801590,
+      "start": 728.686,
+      "end": 729.486,
+      "speaker": "Sakura",
+      "text": "Windy?",
+      "vi": "Windy?",
+      "sourceSrtNumber": 159
+    },
+    {
+      "id": 801600,
+      "parentId": 801600,
+      "start": 731.586,
+      "end": 733.92,
+      "speaker": "Sakura",
+      "text": "Zum Spielen scheinen die nicht zu sein.",
+      "vi": "Trông không giống bài để chơi chút nào.",
+      "sourceSrtNumber": 160
+    },
+    {
+      "id": 801610,
+      "parentId": 801610,
+      "start": 735.653,
+      "end": 736.453,
+      "speaker": "Sakura",
+      "text": "Windy.",
+      "vi": "Windy.",
+      "sourceSrtNumber": 161
+    },
+    {
+      "id": 801620,
+      "parentId": 801620,
+      "start": 737.12,
+      "end": 739.22,
+      "speaker": "Sakura",
+      "text": "Die Karte des Windes.",
+      "vi": "Thẻ bài Gió.",
+      "sourceSrtNumber": 162
+    },
+    {
+      "id": 801630,
+      "parentId": 801630,
+      "start": 778.7,
+      "end": 780.786,
+      "speaker": "Sakura",
+      "text": "Alle weg, bis auf die.",
+      "vi": "Bay sạch sành sanh, chỉ còn lại mỗi lá này!",
+      "sourceSrtNumber": 163
+    },
+    {
+      "id": 803161,
+      "parentId": 803161,
+      "start": 792.04,
+      "end": 796.58,
+      "speaker": "Kero",
+      "text": "Hi! Di-hau! Di-hau!",
+      "vi": "Chào! Di-hau! Di-hau! [Kero chào vui nhộn]",
+      "sourceReview": "Sửa Nihao: medium trên bản đầy đủ 791–798 nghe Hi, di hao, di hao; đây là phiên âm lời chào cách điệu, không phải từ tiếng Đức có chính tả chuẩn.",
+      "practiceExcluded": "Lời chào cách điệu: giữ âm thanh và phụ đề khi xem, không chấm chính tả Đức."
+    },
+    {
+      "id": 801640,
+      "parentId": 801640,
+      "start": 797.98,
+      "end": 799.753,
+      "speaker": "Kero",
+      "text": "Danke, dass du mich geweckt hast, kleine Person.",
+      "vi": "Cảm ơn nhóc đã đánh thức ta nhé, cô bé.",
+      "sourceSrtNumber": 164
+    },
+    {
+      "id": 801650,
+      "parentId": 801650,
+      "start": 799.753,
+      "end": 801.58,
+      "speaker": "Kero",
+      "text": "Das war wirklich sehr nett von dir.",
+      "vi": "Nhóc tốt bụng thật đấy.",
+      "sourceSrtNumber": 165
+    },
+    {
+      "id": 801660,
+      "parentId": 801660,
+      "start": 802.24,
+      "end": 803.56,
+      "speaker": "Sakura",
+      "text": "Ja... aus Versehen.",
+      "vi": "Dạ... tôi lỡ tay thôi.",
+      "sourceSrtNumber": 166
+    },
+    {
+      "id": 801670,
+      "parentId": 801670,
+      "start": 804.08,
+      "end": 804.82,
+      "speaker": "Kero",
+      "text": "Na, jedenfalls",
+      "vi": "Dù sao thì",
+      "sourceSrtNumber": 167
+    },
+    {
+      "id": 801680,
+      "parentId": 801680,
+      "start": 804.82,
+      "end": 805.386,
+      "speaker": "Kero",
+      "text": "bin ich dir sehr",
+      "vi": "ta cũng rất biết ơn,",
+      "sourceSrtNumber": 168
+    },
+    {
+      "id": 801690,
+      "parentId": 801690,
+      "start": 805.386,
+      "end": 807.486,
+      "speaker": "Kero",
+      "text": "dankbar, weil ich endlich aus diesem Buch herauskomme.",
+      "vi": "vì cuối cùng ta cũng thoát ra khỏi cuốn sách này.",
+      "sourceSrtNumber": 169
+    },
+    {
+      "id": 801700,
+      "parentId": 801700,
+      "start": 807.5,
+      "end": 809.786,
+      "speaker": "Kero",
+      "text": "Ich dachte, ich würde für alle Ewigkeit darin gefangen",
+      "vi": "Ta cứ ngỡ mình sẽ bị kẹt trong đó mãi mãi",
+      "sourceSrtNumber": 170
+    },
+    {
+      "id": 801710,
+      "parentId": 801710,
+      "start": 809.853,
+      "end": 810.653,
+      "speaker": "Kero",
+      "text": "bleiben.",
+      "vi": "rồi chứ.",
+      "sourceSrtNumber": 171
+    },
+    {
+      "id": 801720,
+      "parentId": 801720,
+      "start": 810.92,
+      "end": 814.786,
+      "speaker": "Sakura",
+      "text": "Was bist du? Ein Eichhörnchen oder was? Ein Insekt vielleicht?",
+      "vi": "Ngươi là cái quái gì vậy? Sóc hả? Hay là côn trùng?",
+      "sourceSrtNumber": 172
+    },
+    {
+      "id": 801730,
+      "parentId": 801730,
+      "start": 815.74,
+      "end": 817.84,
+      "speaker": "Kero",
+      "text": "Ein bisschen mehr Respekt, ja?",
+      "vi": "Ăn nói cho tôn trọng chút đi nhé!",
+      "sourceSrtNumber": 173
+    },
+    {
+      "id": 801740,
+      "parentId": 801740,
+      "start": 817.92,
+      "end": 819.286,
+      "speaker": "Kero",
+      "text": "Ich bin kein Spielzeug, sondern",
+      "vi": "Ta không phải đồ chơi, ta là",
+      "sourceSrtNumber": 174
+    },
+    {
+      "id": 801750,
+      "parentId": 801750,
+      "start": 819.486,
+      "end": 822.586,
+      "speaker": "Kero",
+      "text": "Cerberus, der Hüter des Siegels von diesem Buch!",
+      "vi": "Keroberos, linh thú canh giữ phong ấn của cuốn sách này!",
+      "sourceSrtNumber": 175
+    },
+    {
+      "id": 801760,
+      "parentId": 801760,
+      "start": 823.22,
+      "end": 825.083,
+      "speaker": "Sakura",
+      "text": "Wirklich? Du bist sein Wächter?",
+      "vi": "Thật sao? Ngươi là người canh giữ nó á?",
+      "sourceSrtNumber": 176
+    },
+    {
+      "id": 801770,
+      "parentId": 801770,
+      "start": 825.083,
+      "end": 827.253,
+      "speaker": "Kero",
+      "text": "Ja, denn es ist ein ungewöhnliches Buch,",
+      "vi": "Chuẩn luôn! Vì đây là một cuốn sách cực kỳ đặc biệt,",
+      "sourceSrtNumber": 177
+    },
+    {
+      "id": 801780,
+      "parentId": 801780,
+      "start": 827.32,
+      "end": 828.453,
+      "speaker": "Kero",
+      "text": "weil es keine Seiten hat, sondern",
+      "vi": "nó không có trang giấy, mà chứa những",
+      "sourceSrtNumber": 178
+    },
+    {
+      "id": 801790,
+      "parentId": 801790,
+      "start": 828.586,
+      "end": 830.54,
+      "speaker": "Kero",
+      "text": "Karten, die Ärger machen könnten, wenn...",
+      "vi": "thẻ bài có thể gây rắc rối to nếu...",
+      "sourceSrtNumber": 179
+    },
+    {
+      "id": 801800,
+      "parentId": 801800,
+      "start": 832.22,
+      "end": 833.42,
+      "speaker": "Kero",
+      "text": "Nein!",
+      "vi": "Khoan đã!",
+      "sourceSrtNumber": 180
+    },
+    {
+      "id": 801810,
+      "parentId": 801810,
+      "start": 834.4,
+      "end": 836.786,
+      "speaker": "Kero",
+      "text": "Sämtliche Karten sind verschwunden! Oh, nicht",
+      "vi": "Tất cả các thẻ bài biến mất đâu rồi! Ôi trời đất",
+      "sourceSrtNumber": 181
+    },
+    {
+      "id": 801820,
+      "parentId": 801820,
+      "start": 837.086,
+      "end": 839.58,
+      "speaker": "Kero",
+      "text": "doch! Meine kostbaren Karten sind weg!",
+      "vi": "ơi! Những thẻ bài quý giá của ta đâu rồi!",
+      "sourceSrtNumber": 182
+    },
+    {
+      "id": 801830,
+      "parentId": 801830,
+      "start": 841.02,
+      "end": 842.16,
+      "speaker": "Sakura",
+      "text": "Bis auf die.",
+      "vi": "Chỉ còn lại lá này.",
+      "sourceSrtNumber": 183
+    },
+    {
+      "id": 801840,
+      "parentId": 801840,
+      "start": 842.42,
+      "end": 845.86,
+      "speaker": "Kero",
+      "text": "Hm, ja, das ist Windy. Aber wo sind die anderen?",
+      "vi": "Đúng, đây là Windy. Nhưng những lá khác đâu?",
+      "sourceSrtNumber": 184
+    },
+    {
+      "id": 801850,
+      "parentId": 801850,
+      "start": 847.3,
+      "end": 849.32,
+      "speaker": "Kero",
+      "text": "Danke. Und wo sind die anderen?",
+      "vi": "Cảm ơn. Thế những lá khác đâu?",
+      "sourceSrtNumber": 185
+    },
+    {
+      "id": 801860,
+      "parentId": 801860,
+      "start": 849.78,
+      "end": 850.453,
+      "speaker": "Sakura / Kero",
+      "text": "Die Karte, die",
+      "vi": "Lá bài",
+      "sourceSrtNumber": 186
+    },
+    {
+      "id": 801870,
+      "parentId": 801870,
+      "start": 850.453,
+      "end": 852.753,
+      "speaker": "Sakura / Kero",
+      "text": "hier geblieben ist, hatte ich aus dem Buch genommen. Aha.",
+      "vi": "còn lại ở đây là do tôi rút ra khỏi sách. Aha.",
+      "sourceSrtNumber": 187
+    },
+    {
+      "id": 801880,
+      "parentId": 801880,
+      "start": 852.753,
+      "end": 855.76,
+      "speaker": "Sakura / Kero",
+      "text": "Und plötzlich wehte hier drin ein starker Wind. Aha.",
+      "vi": "Thế rồi tự dưng trong này nổi bão lớn. Aha.",
+      "sourceSrtNumber": 188
+    },
+    {
+      "id": 801890,
+      "parentId": 801890,
+      "start": 856.3,
+      "end": 858.96,
+      "speaker": "Sakura / Kero",
+      "text": "Da flogen alle Karten weg. Flogen weg?",
+      "vi": "Và tất cả các thẻ bài bay đi mất tiêu. Bay đi mất?!",
+      "sourceSrtNumber": 189
+    },
+    {
+      "id": 801900,
+      "parentId": 801900,
+      "start": 867.253,
+      "end": 868.62,
+      "speaker": "Sakura",
+      "text": "Ich räum das schon ab.",
+      "vi": "Để tôi dọn cho.",
+      "sourceSrtNumber": 190
+    },
+    {
+      "id": 801910,
+      "parentId": 801910,
+      "start": 871.64,
+      "end": 873.42,
+      "speaker": "Người nhà",
+      "text": "Wo willst du denn damit hin?",
+      "vi": "Con định mang cái đó đi đâu vậy?",
+      "sourceSrtNumber": 191
+    },
+    {
+      "id": 801920,
+      "parentId": 801920,
+      "start": 873.62,
+      "end": 875.42,
+      "speaker": "Sakura",
+      "text": "Den Pudding ess ich in meinem Zimmer.",
+      "vi": "Bánh pudding thì tôi sẽ ăn trong phòng mình.",
+      "sourceSrtNumber": 192
+    },
+    {
+      "id": 801930,
+      "parentId": 801930,
+      "start": 880.76,
+      "end": 881.82,
+      "speaker": "Sakura",
+      "text": "Und?",
+      "vi": "Và sao?",
+      "sourceSrtNumber": 193
+    },
+    {
+      "id": 801940,
+      "parentId": 801940,
+      "start": 883.02,
+      "end": 885.186,
+      "speaker": "Kero",
+      "text": "Nichts, ich hab keine Ahnung, wo die Karten",
+      "vi": "Chẳng sao cả. Ta không biết bọn chúng có thể",
+      "sourceSrtNumber": 194
+    },
+    {
+      "id": 801950,
+      "parentId": 801950,
+      "start": 885.286,
+      "end": 886.52,
+      "speaker": "Kero",
+      "text": "hingeflogen sein könnten.",
+      "vi": "bay đi đâu được.",
+      "sourceSrtNumber": 195
+    },
+    {
+      "id": 801960,
+      "parentId": 801960,
+      "start": 887.6,
+      "end": 889.886,
+      "speaker": "Sakura / Kero",
+      "text": "Bitte. Danke, ich mag Pudding.",
+      "vi": "Đây, mời ngươi. Cảm ơn, ta thích pudding.",
+      "sourceSrtNumber": 196
+    },
+    {
+      "id": 801970,
+      "parentId": 801970,
+      "start": 890.8,
+      "end": 893.02,
+      "speaker": "Kero / Sakura",
+      "text": "Aber wenn ich daran denke, dass die Clow Cards weg sind,",
+      "vi": "Nhưng cứ nghĩ đến việc những Thẻ bài Clow biến mất",
+      "sourceSrtNumber": 197
+    },
+    {
+      "id": 801980,
+      "parentId": 801980,
+      "start": 893.12,
+      "end": 896.986,
+      "speaker": "Kero / Sakura",
+      "text": "vergeht mir der Appetit. Die Clow Cards? Die Clow Cards!",
+      "vi": "là ta lại nuốt không trôi. Thẻ bài Clow? Thẻ bài Clow!",
+      "sourceSrtNumber": 198
+    },
+    {
+      "id": 801990,
+      "parentId": 801990,
+      "start": 897.54,
+      "end": 899.32,
+      "speaker": "Kero",
+      "text": "Es sind magische Karten, die vom alten",
+      "vi": "Đó là những thẻ bài ma thuật do",
+      "sourceSrtNumber": 199
+    },
+    {
+      "id": 802000,
+      "parentId": 802000,
+      "start": 899.453,
+      "end": 901.886,
+      "speaker": "Kero",
+      "text": "Hexenmeister Clow Reed erschaffen worden sind.",
+      "vi": "vị pháp sư vĩ đại Clow Reed tạo ra.",
+      "sourceSrtNumber": 200
+    },
+    {
+      "id": 802010,
+      "parentId": 802010,
+      "start": 903.2,
+      "end": 905.22,
+      "speaker": "Kero",
+      "text": "Jede Karte besitzt einen Namen,",
+      "vi": "Mỗi thẻ bài có một cái tên,",
+      "sourceSrtNumber": 201
+    },
+    {
+      "id": 802020,
+      "parentId": 802020,
+      "start": 905.386,
+      "end": 907.26,
+      "speaker": "Kero",
+      "text": "ein Aussehen und einen Zauber.",
+      "vi": "hình dạng và phép thuật riêng.",
+      "sourceSrtNumber": 202
+    },
+    {
+      "id": 802030,
+      "parentId": 802030,
+      "start": 907.4,
+      "end": 909.58,
+      "speaker": "Kero",
+      "text": "Kommen sie auf die Welt, werden sie lebendig.",
+      "vi": "Khi được giải phóng, chúng sẽ trở nên sống động.",
+      "sourceSrtNumber": 203
+    },
+    {
+      "id": 802040,
+      "parentId": 802040,
+      "start": 909.9,
+      "end": 912.286,
+      "speaker": "Kero",
+      "text": "Dann haben sie unermessliche Kräfte",
+      "vi": "Sức mạnh của chúng là không tưởng",
+      "sourceSrtNumber": 204
+    },
+    {
+      "id": 802050,
+      "parentId": 802050,
+      "start": 912.52,
+      "end": 915.286,
+      "speaker": "Kero",
+      "text": "und sie können so viel Unheil anrichten, wie sie wollen,",
+      "vi": "và chúng có thể gây ra bao nhiêu tai họa tùy thích",
+      "sourceSrtNumber": 205
+    },
+    {
+      "id": 802060,
+      "parentId": 802060,
+      "start": 915.62,
+      "end": 918.16,
+      "speaker": "Kero",
+      "text": "denn sie können von niemandem aufgehalten werden.",
+      "vi": "vì không ai có thể ngăn cản được chúng.",
+      "sourceSrtNumber": 206
+    },
+    {
+      "id": 802070,
+      "parentId": 802070,
+      "start": 919.02,
+      "end": 920.92,
+      "speaker": "Kero",
+      "text": "Clow Reed konnte die Karten bannen.",
+      "vi": "Ngài Clow Reed đã phong ấn chúng.",
+      "sourceSrtNumber": 207
+    },
+    {
+      "id": 802080,
+      "parentId": 802080,
+      "start": 921.04,
+      "end": 924.02,
+      "speaker": "Kero",
+      "text": "Er sperrte sie in das magische Buch, versiegelte es",
+      "vi": "Ngài nhốt chúng vào cuốn sách ma thuật, niêm phong lại",
+      "sourceSrtNumber": 208
+    },
+    {
+      "id": 802090,
+      "parentId": 802090,
+      "start": 924.22,
+      "end": 925.853,
+      "speaker": "Kero",
+      "text": "und machte mich zu seinem Hüter.",
+      "vi": "và giao cho ta làm người canh giữ.",
+      "sourceSrtNumber": 209
+    },
+    {
+      "id": 802100,
+      "parentId": 802100,
+      "start": 927.64,
+      "end": 930.053,
+      "speaker": "Kero",
+      "text": "Ich muss die Karten unbedingt wiederbekommen",
+      "vi": "Ta phải lấy lại những thẻ bài đó bằng mọi giá",
+      "sourceSrtNumber": 210
+    },
+    {
+      "id": 802110,
+      "parentId": 802110,
+      "start": 930.886,
+      "end": 932.76,
+      "speaker": "Kero",
+      "text": "und du wirst mir dabei helfen.",
+      "vi": "và nhóc sẽ là người giúp ta.",
+      "sourceSrtNumber": 211
+    },
+    {
+      "id": 802120,
+      "parentId": 802120,
+      "start": 933.34,
+      "end": 934.94,
+      "speaker": "Sakura",
+      "text": "Wie komme ich denn dazu?",
+      "vi": "Sao tôi lại phải làm thế?",
+      "sourceSrtNumber": 212
+    },
+    {
+      "id": 802130,
+      "parentId": 802130,
+      "start": 935.16,
+      "end": 936.653,
+      "speaker": "Kero",
+      "text": "Schließlich hast du den Wind gerufen,",
+      "vi": "Vì nhóc đã gọi gió",
+      "sourceSrtNumber": 213
+    },
+    {
+      "id": 802140,
+      "parentId": 802140,
+      "start": 936.72,
+      "end": 938.286,
+      "speaker": "Kero",
+      "text": "der die Karten befreit hat. Auch wenn es",
+      "vi": "thổi bay chúng đi mà. Dù chỉ là",
+      "sourceSrtNumber": 214
+    },
+    {
+      "id": 802150,
+      "parentId": 802150,
+      "start": 938.386,
+      "end": 940.52,
+      "speaker": "Kero / Sakura",
+      "text": "aus Versehen war. Hm, ja,",
+      "vi": "lỡ tay đi chăng nữa. Ừ thì,",
+      "sourceSrtNumber": 215
+    },
+    {
+      "id": 802160,
+      "parentId": 802160,
+      "start": 940.62,
+      "end": 941.62,
+      "speaker": "Kero / Sakura",
+      "text": "aber du hast selbst gesagt,",
+      "vi": "nhưng ngươi cũng tự thừa nhận",
+      "sourceSrtNumber": 216
+    },
+    {
+      "id": 802170,
+      "parentId": 802170,
+      "start": 941.686,
+      "end": 942.986,
+      "speaker": "Kero / Sakura",
+      "text": "dass es deine Aufgabe war, das",
+      "vi": "là ngươi có nhiệm vụ",
+      "sourceSrtNumber": 217
+    },
+    {
+      "id": 802180,
+      "parentId": 802180,
+      "start": 943.053,
+      "end": 945.086,
+      "speaker": "Kero / Sakura",
+      "text": "Siegel zu bewachen und dafür zu sorgen, dass sie nicht",
+      "vi": "canh giữ phong ấn và đảm bảo chúng không",
+      "sourceSrtNumber": 218
+    },
+    {
+      "id": 802190,
+      "parentId": 802190,
+      "start": 945.186,
+      "end": 948.186,
+      "speaker": "Kero / Sakura",
+      "text": "entkommen! Ja, ich hab nur mal kurz ein Nickerchen gemacht.",
+      "vi": "thoát ra mà! Tại ta lỡ chợp mắt một lát thôi.",
+      "sourceSrtNumber": 219
+    },
+    {
+      "id": 802200,
+      "parentId": 802200,
+      "start": 948.2,
+      "end": 950.82,
+      "speaker": "Sakura / Kero",
+      "text": "Wie kurz? So 30 Jahre, schätze ich.",
+      "vi": "Một lát là bao lâu? Chắc cỡ 30 năm.",
+      "sourceSrtNumber": 220
+    },
+    {
+      "id": 802210,
+      "parentId": 802210,
+      "start": 951.32,
+      "end": 953.64,
+      "speaker": "Sakura",
+      "text": "Dann bist du ein Langschläfer und kein Wächter!",
+      "vi": "Vậy ngươi là con sâu ngủ chứ người canh giữ cái nỗi gì!",
+      "sourceSrtNumber": 221
+    },
+    {
+      "id": 802220,
+      "parentId": 802220,
+      "start": 953.86,
+      "end": 954.82,
+      "speaker": "Kero",
+      "text": "Weißt du, wie schwer",
+      "vi": "Nhóc có biết",
+      "sourceSrtNumber": 222
+    },
+    {
+      "id": 802230,
+      "parentId": 802230,
+      "start": 954.82,
+      "end": 956.7,
+      "speaker": "Kero",
+      "text": "das ist, wenn man sich nicht bewegen kann?",
+      "vi": "việc không thể nhúc nhích nó khổ thế nào không hả?",
+      "sourceSrtNumber": 223
+    },
+    {
+      "id": 802240,
+      "parentId": 802240,
+      "start": 956.94,
+      "end": 959.21,
+      "speaker": "Sakura",
+      "text": "Tut mir leid, da würde ich auch nicht lange wach bleiben.",
+      "vi": "Xin lỗi nhé, đổi lại là tôi thì tôi cũng chẳng thức nổi.",
+      "sourceSrtNumber": 224
+    },
+    {
+      "id": 802250,
+      "parentId": 802250,
+      "start": 959.21,
+      "end": 960.52,
+      "speaker": "Kero",
+      "text": "Und außerdem",
+      "vi": "Với lại,",
+      "sourceSrtNumber": 225
+    },
+    {
+      "id": 802260,
+      "parentId": 802260,
+      "start": 960.52,
+      "end": 962.453,
+      "speaker": "Kero",
+      "text": "kann das Buch nur von jemandem geöffnet werden, der",
+      "vi": "cuốn sách này chỉ có thể được mở bởi người",
+      "sourceSrtNumber": 226
+    },
+    {
+      "id": 802270,
+      "parentId": 802270,
+      "start": 962.52,
+      "end": 963.253,
+      "speaker": "Kero",
+      "text": "magische Kräfte",
+      "vi": "có ma lực.",
+      "sourceSrtNumber": 227
+    },
+    {
+      "id": 802280,
+      "parentId": 802280,
+      "start": 963.253,
+      "end": 965.32,
+      "speaker": "Kero",
+      "text": "hat. Wie konnte ich ahnen, dass du ne kleine Zauberin",
+      "vi": "Làm sao ta biết được nhóc là một pháp sư nhí",
+      "sourceSrtNumber": 228
+    },
+    {
+      "id": 802290,
+      "parentId": 802290,
+      "start": 965.486,
+      "end": 967.22,
+      "speaker": "Kero",
+      "text": "bist? Sag mal, wie heißt du überhaupt?",
+      "vi": "cơ chứ? Khai mau, nhóc tên gì?",
+      "sourceSrtNumber": 229
+    },
+    {
+      "id": 802300,
+      "parentId": 802300,
+      "start": 967.88,
+      "end": 971.86,
+      "speaker": "Sakura / Kero",
+      "text": "Sakura. Okay, Sakura, stell dich da drüben hin und...",
+      "vi": "Sakura. Được rồi, Sakura, đứng qua bên kia đi và...",
+      "sourceSrtNumber": 230
+    },
+    {
+      "id": 802310,
+      "parentId": 802310,
+      "start": 976.16,
+      "end": 980.853,
+      "speaker": "Sakura / Kero",
+      "text": "Was wird das? Erscheine, Schlüssel der magischen Kräfte!",
+      "vi": "Làm gì thế? Hỡi Chìa khóa mang sức mạnh ma thuật!",
+      "sourceSrtNumber": 231
+    },
+    {
+      "id": 802320,
+      "parentId": 802320,
+      "start": 982.6,
+      "end": 983.886,
+      "speaker": "Kero",
+      "text": "Hier ist ein Mädchen, das",
+      "vi": "Nơi đây có một cô bé",
+      "sourceSrtNumber": 232
+    },
+    {
+      "id": 802330,
+      "parentId": 802330,
+      "start": 984.053,
+      "end": 985.52,
+      "speaker": "Kero",
+      "text": "einen Bund mit dir schließen möchte.",
+      "vi": "muốn lập giao ước với ngươi.",
+      "sourceSrtNumber": 233
+    },
+    {
+      "id": 802340,
+      "parentId": 802340,
+      "start": 986.02,
+      "end": 987.486,
+      "speaker": "Kero",
+      "text": "Ihr Name ist Sakura.",
+      "vi": "Tên cô bé là Sakura.",
+      "sourceSrtNumber": 234
+    },
+    {
+      "id": 802350,
+      "parentId": 802350,
+      "start": 988.28,
+      "end": 990.66,
+      "speaker": "Kero",
+      "text": "Schlüssel, gib ihr deine Macht!",
+      "vi": "Chìa khóa, hãy ban cho cô bé sức mạnh của ngươi!",
+      "sourceSrtNumber": 235
+    },
+    {
+      "id": 802360,
+      "parentId": 802360,
+      "start": 991.24,
+      "end": 992.786,
+      "speaker": "Kero",
+      "text": "Gib die Macht frei!",
+      "vi": "Giải trừ phong ấn!",
+      "sourceSrtNumber": 236
+    },
+    {
+      "id": 802370,
+      "parentId": 802370,
+      "start": 998.053,
+      "end": 1000.22,
+      "speaker": "Kero",
+      "text": "Sakura, nimm den Schlüssel!",
+      "vi": "Sakura, nắm lấy chiếc chìa khóa!",
+      "sourceSrtNumber": 237
+    },
+    {
+      "id": 802380,
+      "parentId": 802380,
+      "start": 1007.786,
+      "end": 1012.22,
+      "speaker": "Kero",
+      "text": "Das war's schon! Ein Cardcaptor ist geboren!",
+      "vi": "Xong rồi! Một Thủ lĩnh Thẻ bài đã ra đời!",
+      "sourceSrtNumber": 238
+    },
+    {
+      "id": 802390,
+      "parentId": 802390,
+      "start": 1016.086,
+      "end": 1016.886,
+      "speaker": "Sakura",
+      "text": "Was?",
+      "vi": "Hả?",
+      "sourceSrtNumber": 239
+    },
+    {
+      "id": 802400,
+      "parentId": 802400,
+      "start": 1018.94,
+      "end": 1021.26,
+      "speaker": "Sakura",
+      "text": "Das geht nicht! Ich kann das nicht!",
+      "vi": "Không được đâu, tôi không làm được!",
+      "sourceSrtNumber": 240
+    },
+    {
+      "id": 802410,
+      "parentId": 802410,
+      "start": 1021.82,
+      "end": 1025.39,
+      "speaker": "Sakura / Kero",
+      "text": "Nein! Das Bett gefällt mir, es federt so schön.",
+      "vi": "Không! Ta thích chiếc giường này, nó nhún êm thật.",
+      "sourceSrtNumber": 241
+    },
+    {
+      "id": 802420,
+      "parentId": 802420,
+      "start": 1025.39,
+      "end": 1026.886,
+      "speaker": "Sakura",
+      "text": "Ich kann die Karten",
+      "vi": "Tôi không đi bắt",
+      "sourceSrtNumber": 242
+    },
+    {
+      "id": 802430,
+      "parentId": 802430,
+      "start": 1026.986,
+      "end": 1029.02,
+      "speaker": "Sakura",
+      "text": "nicht einfangen, verstehst du nicht? Ich bin Schülerin!",
+      "vi": "thẻ bài được đâu, ngươi không hiểu sao? Tôi chỉ là học sinh!",
+      "sourceSrtNumber": 243
+    },
+    {
+      "id": 802440,
+      "parentId": 802440,
+      "start": 1029.386,
+      "end": 1031.186,
+      "speaker": "Kero",
+      "text": "Und Cardcaptor! Der Einzige",
+      "vi": "Và là một Thủ lĩnh Thẻ bài! Người duy nhất",
+      "sourceSrtNumber": 244
+    },
+    {
+      "id": 802450,
+      "parentId": 802450,
+      "start": 1031.253,
+      "end": 1032.286,
+      "speaker": "Kero",
+      "text": "auf der Welt! Du musst uns vor dem",
+      "vi": "trên thế giới! Nhóc phải bảo vệ chúng ta khỏi",
+      "sourceSrtNumber": 245
+    },
+    {
+      "id": 802460,
+      "parentId": 802460,
+      "start": 1032.386,
+      "end": 1034.18,
+      "speaker": "Kero",
+      "text": "Unheil beschützen, das sie anrichten können.",
+      "vi": "những tai họa mà chúng có thể gây ra.",
+      "sourceSrtNumber": 246
+    },
+    {
+      "id": 802470,
+      "parentId": 802470,
+      "start": 1034.22,
+      "end": 1035.68,
+      "speaker": "Kero",
+      "text": "Sie haben unendliche Macht!",
+      "vi": "Sức mạnh của chúng là vô tận!",
+      "sourceSrtNumber": 247
+    },
+    {
+      "id": 802480,
+      "parentId": 802480,
+      "start": 1035.72,
+      "end": 1037.453,
+      "speaker": "Sakura",
+      "text": "Die Welt ist in Gefahr und du willst ein Kind",
+      "vi": "Thế giới đang lâm nguy, và ngươi muốn phái một đứa trẻ",
+      "sourceSrtNumber": 248
+    },
+    {
+      "id": 802490,
+      "parentId": 802490,
+      "start": 1037.586,
+      "end": 1038.86,
+      "speaker": "Sakura",
+      "text": "losschicken, um sie zu retten?",
+      "vi": "đi giải cứu sao?",
+      "sourceSrtNumber": 249
+    },
+    {
+      "id": 802500,
+      "parentId": 802500,
+      "start": 1038.92,
+      "end": 1039.786,
+      "speaker": "Kero",
+      "text": "Wer hat die Karten",
+      "vi": "Ai đã để những thẻ bài",
+      "sourceSrtNumber": 250
+    },
+    {
+      "id": 802510,
+      "parentId": 802510,
+      "start": 1039.82,
+      "end": 1042.18,
+      "speaker": "Kero",
+      "text": "in alle Richtungen wegfliegen lassen? Du oder ich?",
+      "vi": "bay tứ tung? Ngươi hay tôi?",
+      "sourceSrtNumber": 251
+    },
+    {
+      "id": 802520,
+      "parentId": 802520,
+      "start": 1042.42,
+      "end": 1043.853,
+      "speaker": "Sakura",
+      "text": "Und wer hat nicht verhindert,",
+      "vi": "Và ai đã canh gác kiểu gì",
+      "sourceSrtNumber": 252
+    },
+    {
+      "id": 802530,
+      "parentId": 802530,
+      "start": 1043.92,
+      "end": 1045.886,
+      "speaker": "Sakura",
+      "text": "dass jemand das magische Buch geöffnet hat?",
+      "vi": "mà để người ta mở được cuốn sách ma thuật ra hả?",
+      "sourceSrtNumber": 253
+    },
+    {
+      "id": 802540,
+      "parentId": 802540,
+      "start": 1049.32,
+      "end": 1051.053,
+      "speaker": "Sakura",
+      "text": "Warum stürmt es plötzlich so?",
+      "vi": "Sao tự dưng lại nổi bão thế này?",
+      "sourceSrtNumber": 254
+    },
+    {
+      "id": 802550,
+      "parentId": 802550,
+      "start": 1054.04,
+      "end": 1055.12,
+      "speaker": "Kero",
+      "text": "Sakura!",
+      "vi": "Sakura!",
+      "sourceSrtNumber": 255
+    },
+    {
+      "id": 802560,
+      "parentId": 802560,
+      "start": 1060.54,
+      "end": 1063.853,
+      "speaker": "Sakura / Kero",
+      "text": "Was ist das? Eine Clow Card? Echt?",
+      "vi": "Cái quái gì vậy? Một Thẻ bài Clow. Thật luôn?",
+      "sourceSrtNumber": 256
+    },
+    {
+      "id": 802570,
+      "parentId": 802570,
+      "start": 1064.22,
+      "end": 1066.053,
+      "speaker": "Kero",
+      "text": "Fly, die Flugkarte! Ganz sicher!",
+      "vi": "Fly, thẻ bài Bay! Chắc chắn rồi!",
+      "sourceSrtNumber": 257
+    },
+    {
+      "id": 802580,
+      "parentId": 802580,
+      "start": 1066.42,
+      "end": 1069.12,
+      "speaker": "Kero",
+      "text": "Verlier keine Zeit und unternimm was!",
+      "vi": "Đừng phí thời gian nữa! Làm gì đó đi!",
+      "sourceSrtNumber": 258,
+      "acceptedTexts": [
+        "Verlier keine Zeit! Unternimm was!"
+      ],
+      "sourceReview": "SRT cũ tách sai unternimm thành dann nimm. Đối chiếu các cửa sổ medium 944–953 và 945–951: Unternimm was. Chấp nhận cả cách viết không nối bằng und."
+    },
+    {
+      "id": 802590,
+      "parentId": 802590,
+      "start": 1069.34,
+      "end": 1070.62,
+      "speaker": "Sakura",
+      "text": "Was könnte ich tun?",
+      "vi": "Tôi phải làm gì bây giờ?",
+      "sourceSrtNumber": 259
+    },
+    {
+      "id": 802600,
+      "parentId": 802600,
+      "start": 1070.686,
+      "end": 1074.2,
+      "speaker": "Kero / Sakura",
+      "text": "Dich als Cardcaptor der Karte entgegenstellen! Oh nein!",
+      "vi": "Đối mặt với nó với tư cách là một Thủ lĩnh Thẻ bài chứ sao! Ôi trời ơi!",
+      "sourceSrtNumber": 260
+    },
+    {
+      "id": 802610,
+      "parentId": 802610,
+      "start": 1081.86,
+      "end": 1083.22,
+      "speaker": "Sakura / Kero",
+      "text": "Ich hätte mich erst mal",
+      "vi": "Lẽ ra tôi phải",
+      "sourceSrtNumber": 261
+    },
+    {
+      "id": 802620,
+      "parentId": 802620,
+      "start": 1083.386,
+      "end": 1085.453,
+      "speaker": "Sakura / Kero",
+      "text": "richtig anziehen wollen. Ein Cardcaptor",
+      "vi": "thay đồ đàng hoàng đã chứ. Một Thủ lĩnh Thẻ bài",
+      "sourceSrtNumber": 262
+    },
+    {
+      "id": 802630,
+      "parentId": 802630,
+      "start": 1085.52,
+      "end": 1087.886,
+      "speaker": "Kero",
+      "text": "muss immer bereit sein zu kämpfen, auch im Pyjama!",
+      "vi": "phải luôn sẵn sàng chiến đấu, kể cả khi mặc đồ ngủ!",
+      "sourceSrtNumber": 263
+    },
+    {
+      "id": 802640,
+      "parentId": 802640,
+      "start": 1089.1,
+      "end": 1091.7,
+      "speaker": "Sakura",
+      "text": "Ich habe keine Chance gegen das blöde Ding!",
+      "vi": "Tôi làm gì có cửa thắng cái con quái vật đó!",
+      "sourceSrtNumber": 264
+    },
+    {
+      "id": 802650,
+      "parentId": 802650,
+      "start": 1091.86,
+      "end": 1093.42,
+      "speaker": "Kero",
+      "text": "Doch, du bist Cardcaptor!",
+      "vi": "Có chứ, nhóc là Thủ lĩnh Thẻ bài mà!",
+      "sourceSrtNumber": 265
+    },
+    {
+      "id": 802660,
+      "parentId": 802660,
+      "start": 1112.26,
+      "end": 1114.32,
+      "speaker": "Kero",
+      "text": "Du musst kämpfen, Sakura!",
+      "vi": "Nhóc phải chiến đấu đi Sakura!",
+      "sourceSrtNumber": 266
+    },
+    {
+      "id": 802670,
+      "parentId": 802670,
+      "start": 1114.62,
+      "end": 1116.82,
+      "speaker": "Sakura / Kero",
+      "text": "Wie? Du hast den Schlüssel des magischen Buches",
+      "vi": "Bằng cách nào? Nhóc đã nhận lấy chìa khóa của cuốn sách ma thuật",
+      "sourceSrtNumber": 267
+    },
+    {
+      "id": 802680,
+      "parentId": 802680,
+      "start": 1116.92,
+      "end": 1118.16,
+      "speaker": "Sakura / Kero",
+      "text": "übernommen. Benutze ihn!",
+      "vi": "rồi. Dùng nó đi!",
+      "sourceSrtNumber": 268
+    },
+    {
+      "id": 802690,
+      "parentId": 802690,
+      "start": 1123.3,
+      "end": 1125.453,
+      "speaker": "Sakura",
+      "text": "Schlüssel des magischen Clow-Buches,",
+      "vi": "Hỡi Chìa khóa của cuốn sách Clow ma thuật!",
+      "sourceSrtNumber": 269
+    },
+    {
+      "id": 802700,
+      "parentId": 802700,
+      "start": 1127.52,
+      "end": 1129.586,
+      "speaker": "Sakura",
+      "text": "nimm dein wahres Äußeres an!",
+      "vi": "Hãy hiện nguyên hình!",
+      "sourceSrtNumber": 270
+    },
+    {
+      "id": 802710,
+      "parentId": 802710,
+      "start": 1129.86,
+      "end": 1132.853,
+      "speaker": "Sakura",
+      "text": "Ich, Sakura, befehle es dir bei unserem Bund!",
+      "vi": "Ta, Sakura, ra lệnh cho ngươi bằng giao ước của chúng ta!",
+      "sourceSrtNumber": 271
+    },
+    {
+      "id": 802720,
+      "parentId": 802720,
+      "start": 1133.4,
+      "end": 1135.253,
+      "speaker": "Sakura",
+      "text": "Gib das Siegel frei!",
+      "vi": "Giải trừ phong ấn!",
+      "sourceSrtNumber": 272
+    },
+    {
+      "id": 802730,
+      "parentId": 802730,
+      "start": 1143.42,
+      "end": 1145.12,
+      "speaker": "Sakura / Kero",
+      "text": "Gut, es kann losgehen. Die",
+      "vi": "Tốt rồi, chiến thôi.",
+      "sourceSrtNumber": 273
+    },
+    {
+      "id": 802740,
+      "parentId": 802740,
+      "start": 1145.22,
+      "end": 1147.786,
+      "speaker": "Kero",
+      "text": "Fly-Karte gehört zum Element Luft, sie ist mit Windy",
+      "vi": "Thẻ bài Fly thuộc hệ Phong, nó có họ hàng với",
+      "sourceSrtNumber": 274
+    },
+    {
+      "id": 802750,
+      "parentId": 802750,
+      "start": 1147.886,
+      "end": 1148.356,
+      "speaker": "Kero",
+      "text": "verwandt.",
+      "vi": "Windy.",
+      "sourceSrtNumber": 275
+    },
+    {
+      "id": 802760,
+      "parentId": 802760,
+      "start": 1148.356,
+      "end": 1150.62,
+      "speaker": "Kero",
+      "text": "Also kannst du die Windkarte benutzen, um sie zu fangen.",
+      "vi": "Vậy nên nhóc có thể dùng thẻ bài Gió để bắt nó.",
+      "sourceSrtNumber": 276
+    },
+    {
+      "id": 802770,
+      "parentId": 802770,
+      "start": 1151.02,
+      "end": 1153.02,
+      "speaker": "Sakura / Kero",
+      "text": "Meinst du? Ja, aber zuerst",
+      "vi": "Ngươi chắc chứ? Chắc, nhưng trước tiên",
+      "sourceSrtNumber": 277
+    },
+    {
+      "id": 802780,
+      "parentId": 802780,
+      "start": 1153.086,
+      "end": 1156.053,
+      "speaker": "Sakura / Kero",
+      "text": "musst du so dicht wie möglich an sie herankommen.",
+      "vi": "nhóc phải áp sát nó càng gần càng tốt.",
+      "sourceSrtNumber": 278
+    },
+    {
+      "id": 802790,
+      "parentId": 802790,
+      "start": 1162.88,
+      "end": 1165.18,
+      "speaker": "Sakura",
+      "text": "Muss ich nicht, denn sie greift an!",
+      "vi": "Không cần đâu, nó đang lao tới kìa!",
+      "sourceSrtNumber": 279
+    },
+    {
+      "id": 802800,
+      "parentId": 802800,
+      "start": 1165.253,
+      "end": 1167.053,
+      "speaker": "Kero",
+      "text": "Schnell, halt die Windkarte bereit!",
+      "vi": "Nhanh lên, chuẩn bị thẻ bài Gió đi!",
+      "sourceSrtNumber": 280
+    },
+    {
+      "id": 802810,
+      "parentId": 802810,
+      "start": 1167.16,
+      "end": 1169.08,
+      "speaker": "Sakura",
+      "text": "Oh ja, die Karte, ich hab sie hier.",
+      "vi": "Ồ vâng, thẻ bài, tôi cầm đây rồi.",
+      "sourceSrtNumber": 281
+    },
+    {
+      "id": 802820,
+      "parentId": 802820,
+      "start": 1169.186,
+      "end": 1170.22,
+      "speaker": "Kero",
+      "text": "Sie greift an!",
+      "vi": "Nó quay lại tấn công kìa!",
+      "sourceSrtNumber": 282
+    },
+    {
+      "id": 802830,
+      "parentId": 802830,
+      "start": 1176.42,
+      "end": 1180.22,
+      "speaker": "Sakura / Kero",
+      "text": "Sie kommt zurück! Nimm die Windkarte zur Hilfe! Wie denn?",
+      "vi": "Nó quay lại kìa! Dùng thẻ bài Gió đi! Bằng cách nào?",
+      "sourceSrtNumber": 283
+    },
+    {
+      "id": 802840,
+      "parentId": 802840,
+      "start": 1181.44,
+      "end": 1184.853,
+      "speaker": "Sakura / Kero",
+      "text": "Die Karte hilft nicht! Du bist der Cardcaptor!",
+      "vi": "Thẻ bài không giúp được! Nhóc là Thủ lĩnh Thẻ bài mà!",
+      "sourceSrtNumber": 284
+    },
+    {
+      "id": 802850,
+      "parentId": 802850,
+      "start": 1184.92,
+      "end": 1186.786,
+      "speaker": "Kero",
+      "text": "Wenn dir nichts einfällt, sind wir verloren.",
+      "vi": "Nhóc mà không nghĩ ra cách thì cả hai tiêu mất.",
+      "sourceSrtNumber": 285
+    },
+    {
+      "id": 802860,
+      "parentId": 802860,
+      "start": 1186.82,
+      "end": 1188.453,
+      "speaker": "Sakura",
+      "text": "Ich muss sie aufhalten!",
+      "vi": "Tôi phải chặn nó lại!",
+      "sourceSrtNumber": 286
+    },
+    {
+      "id": 802870,
+      "parentId": 802870,
+      "start": 1190.56,
+      "end": 1193.486,
+      "speaker": "Sakura / Kero",
+      "text": "Na gut, ich habe eine Idee. Es wird langsam Zeit.",
+      "vi": "Được rồi, tôi có một ý tưởng. Cũng đến lúc rồi đấy.",
+      "sourceSrtNumber": 287
+    },
+    {
+      "id": 802880,
+      "parentId": 802880,
+      "start": 1197.18,
+      "end": 1198.12,
+      "speaker": "Kero",
+      "text": "Sakura!",
+      "vi": "Sakura!",
+      "sourceSrtNumber": 288
+    },
+    {
+      "id": 802890,
+      "parentId": 802890,
+      "start": 1213.08,
+      "end": 1213.987,
+      "speaker": "Sakura",
+      "text": "Windy!",
+      "vi": "Windy!",
+      "sourceSrtNumber": 289
+    },
+    {
+      "id": 802900,
+      "parentId": 802900,
+      "start": 1213.987,
+      "end": 1216.886,
+      "speaker": "Sakura",
+      "text": "Bei unserem Bund, werde zur Fessel für diesen Vogel!",
+      "vi": "Nhân danh giao ước của chúng ta, hãy hóa thành xiềng xích trói chặt con chim này lại!",
+      "sourceSrtNumber": 290
+    },
+    {
+      "id": 802910,
+      "parentId": 802910,
+      "start": 1221.74,
+      "end": 1223.22,
+      "speaker": "Sakura",
+      "text": "Entfalte deine Macht!",
+      "vi": "Giải phóng sức mạnh!",
+      "sourceSrtNumber": 291
+    },
+    {
+      "id": 802920,
+      "parentId": 802920,
+      "start": 1248.986,
+      "end": 1250.053,
+      "speaker": "Sakura",
+      "text": "Als Cardcaptor",
+      "vi": "Với tư cách là Thủ lĩnh Thẻ bài,",
+      "sourceSrtNumber": 292
+    },
+    {
+      "id": 802930,
+      "parentId": 802930,
+      "start": 1250.253,
+      "end": 1251.653,
+      "speaker": "Sakura",
+      "text": "Sakura befehle ich dir, Fly:",
+      "vi": "ta Sakura ra lệnh cho ngươi, Fly:",
+      "sourceSrtNumber": 293
+    },
+    {
+      "id": 802940,
+      "parentId": 802940,
+      "start": 1251.82,
+      "end": 1253.9,
+      "speaker": "Sakura",
+      "text": "Deine wahre Gestalt, nimm sie wieder an!",
+      "vi": "Hãy trở về nguyên dạng!",
+      "sourceSrtNumber": 294
+    },
+    {
+      "id": 802950,
+      "parentId": 802950,
+      "start": 1271.5,
+      "end": 1275.586,
+      "speaker": "Kero",
+      "text": "Ja, du hast es geschafft, Sakura!",
+      "vi": "Tuyệt quá, nhóc làm được rồi, Sakura!",
+      "sourceSrtNumber": 295
+    },
+    {
+      "id": 802960,
+      "parentId": 802960,
+      "start": 1275.88,
+      "end": 1277.14,
+      "speaker": "Sakura",
+      "text": "Wie ist das möglich?",
+      "vi": "Sao lại có chuyện này được nhỉ?",
+      "sourceSrtNumber": 296
+    },
+    {
+      "id": 802970,
+      "parentId": 802970,
+      "start": 1277.22,
+      "end": 1278.9,
+      "speaker": "Sakura",
+      "text": "Ich hätte nie geglaubt, dass ich das kann.",
+      "vi": "Tôi chưa bao giờ nghĩ mình có thể làm được.",
+      "sourceSrtNumber": 297
+    },
+    {
+      "id": 802980,
+      "parentId": 802980,
+      "start": 1279.04,
+      "end": 1281.786,
+      "speaker": "Kero / Sakura",
+      "text": "Ich wusste es, sonst hätt ich dich nie zum Cardcaptor",
+      "vi": "Ta biết mà, nếu không ta đã chẳng chọn nhóc làm Thủ lĩnh",
+      "sourceSrtNumber": 298
+    },
+    {
+      "id": 802990,
+      "parentId": 802990,
+      "start": 1281.886,
+      "end": 1283.92,
+      "speaker": "Kero / Sakura",
+      "text": "gemacht. Moment mal! Würdest du mich vielleicht fragen,",
+      "vi": "Thẻ bài. Khoan đã! Lẽ ra ngươi phải hỏi",
+      "sourceSrtNumber": 299
+    },
+    {
+      "id": 803000,
+      "parentId": 803000,
+      "start": 1284.053,
+      "end": 1285.6,
+      "speaker": "Sakura",
+      "text": "ob ich überhaupt einverstanden bin?",
+      "vi": "xem tôi có đồng ý làm không đã chứ?",
+      "sourceSrtNumber": 300
+    },
+    {
+      "id": 803010,
+      "parentId": 803010,
+      "start": 1285.786,
+      "end": 1287.786,
+      "speaker": "Kero / Sakura",
+      "text": "Warum denn? Du hast zugestimmt, als du Windy",
+      "vi": "Cần gì phải hỏi? Nhóc đã đồng ý lúc gọi Windy",
+      "sourceSrtNumber": 301
+    },
+    {
+      "id": 803020,
+      "parentId": 803020,
+      "start": 1287.886,
+      "end": 1291.386,
+      "speaker": "Kero / Sakura",
+      "text": "bei unserem Bund um Hilfe gebeten hast. Ha!",
+      "vi": "bằng giao ước rồi còn gì. Há!",
+      "sourceSrtNumber": 302
+    },
+    {
+      "id": 803030,
+      "parentId": 803030,
+      "start": 1292.686,
+      "end": 1294.42,
+      "speaker": "Kero",
+      "text": "Du musst Fly",
+      "vi": "Nhân tiện, nhóc vẫn phải chạm vào Fly",
+      "sourceSrtNumber": 303
+    },
+    {
+      "id": 803040,
+      "parentId": 803040,
+      "start": 1294.52,
+      "end": 1295.62,
+      "speaker": "Kero",
+      "text": "übrigens noch mit dem Schlüssel",
+      "vi": "bằng chiếc chìa khóa",
+      "sourceSrtNumber": 304
+    },
+    {
+      "id": 803050,
+      "parentId": 803050,
+      "start": 1295.686,
+      "end": 1297.22,
+      "speaker": "Kero",
+      "text": "berühren, um ihr die Macht zu nehmen.",
+      "vi": "để lấy đi sức mạnh của nó.",
+      "sourceSrtNumber": 305
+    },
+    {
+      "id": 803060,
+      "parentId": 803060,
+      "start": 1297.22,
+      "end": 1299.653,
+      "speaker": "Sakura",
+      "text": "Und was passiert, wenn ich sie mit dem Schlüssel berühre?",
+      "vi": "Và chuyện gì sẽ xảy ra nếu tôi gõ chìa khóa vào nó?",
+      "sourceSrtNumber": 306
+    },
+    {
+      "id": 803070,
+      "parentId": 803070,
+      "start": 1299.8,
+      "end": 1301.64,
+      "speaker": "Kero",
+      "text": "Mach's einfach, du wirst schon sehen.",
+      "vi": "Cứ thử đi, rồi nhóc sẽ thấy.",
+      "sourceSrtNumber": 307
+    },
+    {
+      "id": 803080,
+      "parentId": 803080,
+      "start": 1314.2,
+      "end": 1317.086,
+      "speaker": "Kero / Sakura",
+      "text": "Na, macht es dir Spaß zu fliegen? Ja.",
+      "vi": "Sao, bay lượn sướng chứ? Vâng, thích quá đi!",
+      "sourceSrtNumber": 308
+    },
+    {
+      "id": 803090,
+      "parentId": 803090,
+      "start": 1318.68,
+      "end": 1322.453,
+      "speaker": "Kero",
+      "text": "Du wirst ein guter Cardcaptor, das kannst du mir glauben.",
+      "vi": "Nhóc sẽ trở thành một Thủ lĩnh cừ khôi, tin ta đi.",
+      "sourceSrtNumber": 309
+    },
+    {
+      "id": 803100,
+      "parentId": 803100,
+      "start": 1322.76,
+      "end": 1323.686,
+      "speaker": "Sakura",
+      "text": "Klar.",
+      "vi": "Đương nhiên rồi.",
+      "sourceSrtNumber": 310
+    },
+    {
+      "id": 803110,
+      "parentId": 803110,
+      "start": 1324.453,
+      "end": 1325.72,
+      "speaker": "Sakura",
+      "text": "Hey,",
+      "vi": "Này,",
+      "sourceSrtNumber": 311
+    },
+    {
+      "id": 803120,
+      "parentId": 803120,
+      "start": 1325.82,
+      "end": 1327.186,
+      "speaker": "Sakura",
+      "text": "das mit dem Bund, das hab ich nur gesagt,",
+      "vi": "chuyện giao ước lúc nãy, tôi chỉ nói thế",
+      "sourceSrtNumber": 312
+    },
+    {
+      "id": 803130,
+      "parentId": 803130,
+      "start": 1327.253,
+      "end": 1328.053,
+      "speaker": "Sakura",
+      "text": "weil mir nichts Besseres",
+      "vi": "vì chả nghĩ ra câu thần chú nào",
+      "sourceSrtNumber": 313
+    },
+    {
+      "id": 803140,
+      "parentId": 803140,
+      "start": 1328.12,
+      "end": 1329.82,
+      "speaker": "Sakura",
+      "text": "eingefallen ist. Das heißt aber nicht, dass ich alle",
+      "vi": "hay hơn thôi. Chứ không có nghĩa là tôi sẽ đi",
+      "sourceSrtNumber": 314
+    },
+    {
+      "id": 803150,
+      "parentId": 803150,
+      "start": 1329.92,
+      "end": 1331.22,
+      "speaker": "Sakura",
+      "text": "Karten für dich einfange!",
+      "vi": "bắt hết thẻ bài cho ngươi đâu nhé!",
+      "sourceSrtNumber": 315
+    },
+    {
+      "id": 804000,
+      "parentId": 804000,
+      "start": 1410.1,
+      "end": 1411.46,
+      "speaker": "Kero",
+      "text": "Konyanyachiwa!",
+      "vi": "Xin chào mọi người!",
+      "sourceReview": "Chuẩn hóa lời chào riêng của Kero thành Konyanyachiwa; cách ghi cũng xuất hiện trong sự kiện Cardcaptor Sakura chính thức của Nexon. Không phải câu từ vựng Đức.",
+      "practiceExcluded": "Lời chào Nhật cách điệu: giữ khi xem, không chấm chính tả Đức."
+    },
+    {
+      "id": 804001,
+      "parentId": 804001,
+      "start": 1412.24,
+      "end": 1416.02,
+      "speaker": "Kero",
+      "text": "Hier ist euer Kero mit dem allerneuesten Klatsch und Tratsch.",
+      "vi": "Kero đây, mang đến cho các bạn những chuyện mới nhất!"
+    },
+    {
+      "id": 804002,
+      "parentId": 804002,
+      "start": 1416.18,
+      "end": 1416.98,
+      "speaker": "Kero",
+      "text": "Schön, dass ihr da seid.",
+      "vi": "Rất vui vì các bạn đã đến."
+    },
+    {
+      "id": 804003,
+      "parentId": 804003,
+      "start": 1417.2,
+      "end": 1420.7,
+      "speaker": "Kero",
+      "text": "Bei mir könnt ihr Dinge erfahren, die ihr von Sakura wahrscheinlich nicht erfahren werdet.",
+      "vi": "Ở đây các bạn sẽ biết những điều có lẽ Sakura sẽ không kể."
+    },
+    {
+      "id": 804004,
+      "parentId": 804004,
+      "start": 1420.94,
+      "end": 1422.88,
+      "speaker": "Kero",
+      "text": "Interessante Dinge, also passt auf!",
+      "vi": "Toàn chuyện thú vị đấy, chú ý nhé!"
+    },
+    {
+      "id": 804005,
+      "parentId": 804005,
+      "start": 1423.44,
+      "end": 1428.84,
+      "speaker": "Kero",
+      "text": "Heute sehen wir uns mal, tada, die Schuluniform der Tomoeda-Grundschule näher an.",
+      "vi": "Hôm nay, ta-da, chúng ta sẽ xem kỹ đồng phục trường tiểu học Tomoeda."
+    },
+    {
+      "id": 804006,
+      "parentId": 804006,
+      "start": 1430.6,
+      "end": 1433.56,
+      "speaker": "Kero",
+      "text": "Diese Uniform gibt es langärmlig und kurzärmlig.",
+      "vi": "Đồng phục này có loại tay dài và tay ngắn.",
+      "sourceReview": "Âm cuối -ig bị nhận dạng thành -ich; viết langärmlig / kurzärmlig theo Duden. Cũng chấp nhận langärmelig / kurzärmelig."
+    },
+    {
+      "id": 804007,
+      "parentId": 804007,
+      "start": 1433.68,
+      "end": 1436.04,
+      "speaker": "Kero",
+      "text": "Wie ihr seht, trägt Sakura hier die langärmlige Variante.",
+      "vi": "Như các bạn thấy, Sakura đang mặc loại tay dài.",
+      "sourceReview": "Âm cuối -ig bị nhận dạng thành -ich; viết langärmlig / kurzärmlig theo Duden. Cũng chấp nhận langärmelig / kurzärmelig."
+    },
+    {
+      "id": 804008,
+      "parentId": 804008,
+      "start": 1436.18,
+      "end": 1438.12,
+      "speaker": "Kero",
+      "text": "Die Hauptfarben sind Marineblau und Weiß.",
+      "vi": "Hai màu chủ đạo là xanh hải quân và trắng."
+    },
+    {
+      "id": 804009,
+      "parentId": 804009,
+      "start": 1438.36,
+      "end": 1440.32,
+      "speaker": "Kero",
+      "text": "Und mit den roten Streifen sieht sie echt cool aus.",
+      "vi": "Thêm các sọc đỏ nữa, trông thật đẹp phải không."
+    },
+    {
+      "id": 804010,
+      "parentId": 804010,
+      "start": 1440.7,
+      "end": 1446.06,
+      "speaker": "Kero",
+      "text": "Aber gerade die Details wie das Schulabzeichen auf dem linken Ärmel und die Mütze mit den Bändern kommen super.",
+      "vi": "Đặc biệt những chi tiết như phù hiệu ở tay áo trái và chiếc mũ có dải ruy băng trông rất đẹp.",
+      "sourceReview": "Bản nguồn đầy đủ, medium 1400–1500 xác nhận Bändern; khớp dải ruy băng trên mũ trong hình."
+    },
+    {
+      "id": 804011,
+      "parentId": 804011,
+      "start": 1446.46,
+      "end": 1449.36,
+      "speaker": "Kero",
+      "text": "Und hier haben wir jetzt Keros Schnappschuss!",
+      "vi": "Và đây là ảnh chụp nhanh của Kero!"
+    },
+    {
+      "id": 804012,
+      "parentId": 804012,
+      "start": 1449.68,
+      "end": 1450.8,
+      "speaker": "Kero",
+      "text": "Der ist gelungen, nicht?",
+      "vi": "Ảnh đẹp đấy chứ?"
+    },
+    {
+      "id": 804013,
+      "parentId": 804013,
+      "start": 1451.26,
+      "end": 1452.72,
+      "speaker": "Kero",
+      "text": "Das ist Sakuras Rock.",
+      "vi": "Đây là váy của Sakura."
+    },
+    {
+      "id": 804014,
+      "parentId": 804014,
+      "start": 1452.72,
+      "end": 1455.64,
+      "speaker": "Kero",
+      "text": "Ein weißer Faltenrock, der ihr wahnsinnig gut steht, oder?",
+      "vi": "Một chiếc váy xếp ly trắng rất hợp với cô bé, phải không?",
+      "sourceReview": "Cửa sổ medium riêng 1451–1458 xác nhận gut steht; dùng đại từ Dativ ihr. Bản nhận dạng dài bị nhầm thành schlägt."
+    },
+    {
+      "id": 804015,
+      "parentId": 804015,
+      "start": 1456.08,
+      "end": 1458.04,
+      "speaker": "Kero",
+      "text": "Und hier übrigens die Uniform der Jungs.",
+      "vi": "Nhân tiện, đây là đồng phục của các bạn nam."
+    },
+    {
+      "id": 804016,
+      "parentId": 804016,
+      "start": 1458.5,
+      "end": 1459.78,
+      "speaker": "Kero",
+      "text": "Na gut, das war’s für heute.",
+      "vi": "Được rồi, hôm nay đến đây thôi."
+    },
+    {
+      "id": 804017,
+      "parentId": 804017,
+      "start": 1459.84,
+      "end": 1461.04,
+      "speaker": "Kero",
+      "text": "Ihr habt eine Menge gelernt.",
+      "vi": "Các bạn đã học được nhiều điều.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 804018,
+      "parentId": 804018,
+      "start": 1461.06,
+      "end": 1465.1,
+      "speaker": "Kero",
+      "text": "Und wenn es euch interessiert, könnt ihr ja auch beim nächsten Mal bei Keros Klatsch und Tratsch dabei sein.",
+      "vi": "Nếu thấy hứng thú, lần sau các bạn lại đến với mục Chuyện trò cùng Kero nhé.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 804019,
+      "parentId": 804019,
+      "start": 1465.1,
+      "end": 1467.86,
+      "speaker": "Kero",
+      "text": "Dann werde ich euch wieder eine Menge Zusatzinformationen geben.",
+      "vi": "Khi đó ta sẽ lại kể cho các bạn nhiều thông tin bổ sung.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 804020,
+      "parentId": 804020,
+      "start": 1468.04,
+      "end": 1469.34,
+      "speaker": "Kero",
+      "text": "Tschüss, bis dann!",
+      "vi": "Tạm biệt, hẹn gặp lại nhé!",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 806000,
+      "parentId": 806000,
+      "start": 1471.26,
+      "end": 1474.04,
+      "speaker": "Giới thiệu tập sau",
+      "text": "Welche Abenteuer erwarten euch bei Cardcaptor Sakura?",
+      "vi": "Những cuộc phiêu lưu nào đang chờ các bạn trong Cardcaptor Sakura?",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 806001,
+      "parentId": 806001,
+      "start": 1474.36,
+      "end": 1476.86,
+      "speaker": "Sakura",
+      "text": "Ich habe Fly, die erste Clow Card, gefangen.",
+      "vi": "Mình đã bắt được Fly, thẻ bài Clow đầu tiên.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 806002,
+      "parentId": 806002,
+      "start": 1476.98,
+      "end": 1478.56,
+      "speaker": "Sakura",
+      "text": "Aber wie kann ich Cardcaptor sein?",
+      "vi": "Nhưng làm sao mình có thể làm Thủ lĩnh Thẻ bài đây?",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 806003,
+      "parentId": 806003,
+      "start": 1478.62,
+      "end": 1480.08,
+      "speaker": "Sakura",
+      "text": "Immerhin gehe ich noch zur Schule.",
+      "vi": "Dù sao mình vẫn còn đi học mà.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 806004,
+      "parentId": 806004,
+      "start": 1480.26,
+      "end": 1482.42,
+      "speaker": "Sakura",
+      "text": "Stellt euch vor, meine Freunde würden davon erfahren.",
+      "vi": "Thử tưởng tượng các bạn của mình biết được chuyện này xem.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 806005,
+      "parentId": 806005,
+      "start": 1482.64,
+      "end": 1487.4,
+      "speaker": "Sakura",
+      "text": "Sie verlieren ihre Schatten und ohne Keros Hilfe wüsste ich nicht, was ich gegen so eine Gefahr machen kann.",
+      "vi": "Họ bị mất bóng, và nếu không có Kero giúp đỡ thì mình chẳng biết phải làm gì trước mối nguy như thế.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 806006,
+      "parentId": 806006,
+      "start": 1487.6,
+      "end": 1492.74,
+      "speaker": "Sakura",
+      "text": "Aber am meisten gespannt bin ich auf Tomoyos Videokamera, mit der sie etwas ganz Besonderes aufgenommen hat.",
+      "vi": "Nhưng điều mình tò mò nhất là máy quay của Tomoyo: cậu ấy đã quay được một thứ rất đặc biệt.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    },
+    {
+      "id": 806007,
+      "parentId": 806007,
+      "start": 1493.2,
+      "end": 1496.12,
+      "speaker": "Giới thiệu tập sau",
+      "text": "Cardcaptor Sakura. Sakura und Tomoyo.",
+      "vi": "Cardcaptor Sakura. Sakura và Tomoyo.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json"
+    }
+  ],
+  "utterances": [
+    {
+      "id": 805000,
+      "parentId": 805000,
+      "start": 96.42,
+      "end": 98.54,
+      "speaker": "Sakura",
+      "text": "Wer ist da?",
+      "vi": "Ai ở đó vậy?",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        805000
+      ]
+    },
+    {
+      "id": 805001,
+      "parentId": 805001,
+      "start": 98.66,
+      "end": 100.08,
+      "speaker": "Sakura",
+      "text": "Wer ruft mich?",
+      "vi": "Ai đang gọi mình vậy?",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        805001
+      ]
+    },
+    {
+      "id": 805002,
+      "parentId": 805002,
+      "start": 117.28,
+      "end": 119.3,
+      "speaker": "Stimme im Traum",
+      "text": "Cardcaptor!",
+      "vi": "Thủ lĩnh Thẻ bài!",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        805002
+      ]
+    },
+    {
+      "id": 800010,
+      "parentId": 800010,
+      "start": 152.16,
+      "end": 155.24,
+      "speaker": "Sakura",
+      "text": "Das war ja ein komischer Traum.",
+      "vi": "Giấc mơ gì mà kỳ lạ thật.",
+      "legacyIds": [
+        800010
+      ]
+    },
+    {
+      "id": 800020,
+      "parentId": 800020,
+      "start": 155.92,
+      "end": 156.873,
+      "speaker": "Toya",
+      "text": "Sakura!",
+      "vi": "Sakura!",
+      "legacyIds": [
+        800020
+      ]
+    },
+    {
+      "id": 800030,
+      "parentId": 800030,
+      "start": 156.873,
+      "end": 159.853,
+      "speaker": "Toya / Sakura",
+      "text": "Raus aus dem Bett, dein Frühstück wartet! Komme ja schon!",
+      "vi": "Dậy mau, bữa sáng xong rồi kìa! Em xuống ngay đây!",
+      "legacyIds": [
+        800030
+      ]
+    },
+    {
+      "id": 800040,
+      "parentId": 800040,
+      "start": 160.46,
+      "end": 162.54,
+      "speaker": "Sakura",
+      "text": "Mein Name ist Sakura Kinomoto.",
+      "vi": "Mình tên là Sakura Kinomoto.",
+      "legacyIds": [
+        800040
+      ]
+    },
+    {
+      "id": 800050,
+      "parentId": 800050,
+      "start": 162.78,
+      "end": 166.42,
+      "speaker": "Sakura",
+      "text": "Ich bin 12 Jahre alt und gehe in die vierte Klasse der Tomoeda-Grundschule.",
+      "vi": "Năm nay mình 12 tuổi, học lớp 4 trường tiểu học Tomoeda.",
+      "legacyIds": [
+        800050,
+        800060
+      ]
+    },
+    {
+      "id": 800070,
+      "parentId": 800070,
+      "start": 166.54,
+      "end": 172.2,
+      "speaker": "Sakura",
+      "text": "Meine Lieblingsfächer sind Musik und Sport und ich hasse Mathematik. Ich bin also ein ganz normales Mädchen.",
+      "vi": "Môn tủ của mình là Âm nhạc và Thể dục. Còn môn mình ghét cay ghét đắng là Toán. Nói chung, mình chỉ là một học sinh bình thường thôi.",
+      "legacyIds": [
+        800070,
+        800080,
+        800090
+      ]
+    },
+    {
+      "id": 800100,
+      "parentId": 800100,
+      "start": 172.253,
+      "end": 174.92,
+      "speaker": "Sakura",
+      "text": "Jetzt lernt ihr meine Familie kennen. Morgen!",
+      "vi": "Bây giờ mình sẽ giới thiệu về gia đình mình nhé. Chào buổi sáng!",
+      "legacyIds": [
+        800100
+      ]
+    },
+    {
+      "id": 800110,
+      "parentId": 800110,
+      "start": 177.22,
+      "end": 178.986,
+      "speaker": "Toya",
+      "text": "Gewöhn dir endlich diese Trampelei ab!",
+      "vi": "Em bỏ ngay cái tật đi lại huỳnh huỵch như thế đi.",
+      "legacyIds": [
+        800110
+      ]
+    },
+    {
+      "id": 800120,
+      "parentId": 800120,
+      "start": 179.186,
+      "end": 180.98,
+      "speaker": "Sakura",
+      "text": "Ich trample überhaupt nicht!",
+      "vi": "Em có đi huỳnh huỵch đâu!",
+      "legacyIds": [
+        800120
+      ]
+    },
+    {
+      "id": 800130,
+      "parentId": 800130,
+      "start": 181.12,
+      "end": 183.793,
+      "speaker": "Toya",
+      "text": "Ach ja? Und wieso klirren dann im ganzen Haus die Fensterscheiben?",
+      "vi": "Thế à? Vậy sao kính cả nhà cứ rung lên bần bật thế hả?",
+      "legacyIds": [
+        800130,
+        800140
+      ]
+    },
+    {
+      "id": 800150,
+      "parentId": 800150,
+      "start": 183.793,
+      "end": 185.62,
+      "speaker": "Sakura",
+      "text": "Weiß ich nicht, ich bin normal gelaufen.",
+      "vi": "Em không biết, em đi đứng rất bình thường mà.",
+      "legacyIds": [
+        800150
+      ]
+    },
+    {
+      "id": 800160,
+      "parentId": 800160,
+      "start": 186.22,
+      "end": 190.52,
+      "speaker": "Toya",
+      "text": "Kann schon sein, allerdings müsstest du dann so riesige Füße wie ein Dinosaurier haben.",
+      "vi": "Chắc thế. Nhưng nếu vậy thì chân em phải to bự như chân khủng long mới đúng.",
+      "legacyIds": [
+        800160,
+        800170,
+        800180
+      ]
+    },
+    {
+      "id": 800190,
+      "parentId": 800190,
+      "start": 193.62,
+      "end": 195.72,
+      "speaker": "Sakura",
+      "text": "Ich habe ganz normale Füße!",
+      "vi": "Chân em hoàn toàn bình thường nhé!",
+      "legacyIds": [
+        800190
+      ]
+    },
+    {
+      "id": 800200,
+      "parentId": 800200,
+      "start": 196.24,
+      "end": 198.82,
+      "speaker": "Sakura",
+      "text": "Das ist mein fieser, gemeiner Bruder Toya.",
+      "vi": "Đây là ông anh trai quái quỷ và đáng ghét của mình, Toya.",
+      "legacyIds": [
+        800200
+      ]
+    },
+    {
+      "id": 800210,
+      "parentId": 800210,
+      "start": 198.96,
+      "end": 201.6,
+      "speaker": "Sakura",
+      "text": "Er geht auf das Seijou-Gymnasium direkt neben meiner Schule.",
+      "vi": "Anh ấy học trường trung học Seijo, ngay cạnh trường mình.",
+      "legacyIds": [
+        800210
+      ]
+    },
+    {
+      "id": 800220,
+      "parentId": 800220,
+      "start": 202.02,
+      "end": 204.32,
+      "speaker": "Sakura",
+      "text": "Vielleicht liegt es daran, dass er älter ist als ich.",
+      "vi": "Có lẽ là vì anh ấy lớn tuổi hơn mình.",
+      "legacyIds": [
+        800220
+      ]
+    },
+    {
+      "id": 800230,
+      "parentId": 800230,
+      "start": 204.38,
+      "end": 206.72,
+      "speaker": "Sakura",
+      "text": "Jedenfalls habe ich noch keinen Kampf gegen ihn gewonnen.",
+      "vi": "nói chung là mình chưa bao giờ cãi thắng ổng cả.",
+      "legacyIds": [
+        800230,
+        800240
+      ]
+    },
+    {
+      "id": 800250,
+      "parentId": 800250,
+      "start": 206.9,
+      "end": 208.28,
+      "speaker": "Sakura",
+      "text": "Das macht mich noch verrückt.",
+      "vi": "Tức chết đi được!",
+      "legacyIds": [
+        800250
+      ]
+    },
+    {
+      "id": 800260,
+      "parentId": 800260,
+      "start": 208.44,
+      "end": 211.6,
+      "speaker": "Sakura",
+      "text": "Er ist viel größer als ich, aber eines Tages wird es anders sein.",
+      "vi": "Anh ấy cao hơn mình rất nhiều, nhưng rồi sẽ có ngày mình phục thù.",
+      "legacyIds": [
+        800260,
+        800270
+      ]
+    },
+    {
+      "id": 800280,
+      "parentId": 800280,
+      "start": 211.62,
+      "end": 214.52,
+      "speaker": "Sakura",
+      "text": "Dann zertrete ich ihn mit meinen riesigen Saurierfüßen!",
+      "vi": "Lúc đó mình sẽ dùng \"đôi chân khủng long\" khổng lồ giẫm bẹp ổng!",
+      "legacyIds": [
+        800280
+      ]
+    },
+    {
+      "id": 800290,
+      "parentId": 800290,
+      "start": 217.46,
+      "end": 219.386,
+      "speaker": "Sakura",
+      "text": "Dann wird es ihm leid tun!",
+      "vi": "Rồi ổng sẽ biết tay mình!",
+      "legacyIds": [
+        800290
+      ]
+    },
+    {
+      "id": 800300,
+      "parentId": 800300,
+      "start": 219.62,
+      "end": 221.786,
+      "speaker": "Fujitaka",
+      "text": "Müsst ihr am frühen Morgen schon wieder streiten?",
+      "vi": "Hai đứa sáng sớm ra đã cãi nhau rồi hả?",
+      "legacyIds": [
+        800300
+      ]
+    },
+    {
+      "id": 800310,
+      "parentId": 800310,
+      "start": 221.98,
+      "end": 224.38,
+      "speaker": "Sakura",
+      "text": "Das ist mein Papa, Fujitaka Kinomoto.",
+      "vi": "Đây là bố mình, Fujitaka Kinomoto.",
+      "legacyIds": [
+        800310
+      ]
+    },
+    {
+      "id": 800320,
+      "parentId": 800320,
+      "start": 224.58,
+      "end": 227.02,
+      "speaker": "Sakura",
+      "text": "Er ist Professor für Archäologie an der Universität.",
+      "vi": "Bố là giáo sư Khảo cổ học ở trường Đại học.",
+      "legacyIds": [
+        800320
+      ]
+    },
+    {
+      "id": 800330,
+      "parentId": 800330,
+      "start": 227.42,
+      "end": 229.76,
+      "speaker": "Sakura",
+      "text": "Er ist sehr lieb und es gibt nichts, was er nicht kann.",
+      "vi": "Bố cực kỳ hiền và chẳng có việc gì làm khó được bố cả.",
+      "legacyIds": [
+        800330
+      ]
+    },
+    {
+      "id": 800340,
+      "parentId": 800340,
+      "start": 229.76,
+      "end": 232.72,
+      "speaker": "Sakura / Fujitaka",
+      "text": "Ich hab ihn so lieb! Lass es dir schmecken.",
+      "vi": "Mình thương bố nhất trên đời! Con ăn ngon miệng nhé.",
+      "legacyIds": [
+        800340
+      ]
+    },
+    {
+      "id": 800350,
+      "parentId": 800350,
+      "start": 232.9,
+      "end": 234.06,
+      "speaker": "Sakura",
+      "text": "Klar, Papa, danke.",
+      "vi": "Vâng ạ, con cảm ơn bố.",
+      "legacyIds": [
+        800350
+      ]
+    },
+    {
+      "id": 800360,
+      "parentId": 800360,
+      "start": 234.52,
+      "end": 236.02,
+      "speaker": "Sakura",
+      "text": "Ich habe so einen Hunger.",
+      "vi": "Con đang đói meo đây.",
+      "legacyIds": [
+        800360
+      ]
+    },
+    {
+      "id": 800370,
+      "parentId": 800370,
+      "start": 236.4,
+      "end": 237.9,
+      "speaker": "Sakura",
+      "text": "Das ist meine Familie.",
+      "vi": "Đó là gia đình mình.",
+      "legacyIds": [
+        800370
+      ]
+    },
+    {
+      "id": 800380,
+      "parentId": 800380,
+      "start": 238.2,
+      "end": 242.04,
+      "speaker": "Sakura",
+      "text": "Was? Ihr wollt wissen, wo meine Mama ist? Sie ist gestorben, als ich klein war.",
+      "vi": "Mọi người muốn biết mẹ mình ở đâu ư? Mẹ mình mất từ khi mình còn rất nhỏ.",
+      "legacyIds": [
+        800380,
+        800390
+      ]
+    },
+    {
+      "id": 800400,
+      "parentId": 800400,
+      "start": 242.04,
+      "end": 244.9,
+      "speaker": "Sakura",
+      "text": "Ich war erst 3 Jahre alt, darum erinnere ich mich nicht wirklich an sie.",
+      "vi": "Lúc đó mình mới lên ba, nên thú thực mình không có nhiều ký ức về mẹ.",
+      "legacyIds": [
+        800400,
+        800410
+      ]
+    },
+    {
+      "id": 800420,
+      "parentId": 800420,
+      "start": 245.1,
+      "end": 247.68,
+      "speaker": "Sakura",
+      "text": "Und auch wenn ich oft an sie denke, bin ich nicht traurig.",
+      "vi": "Dù thỉnh thoảng có nhớ mẹ, nhưng mình không thấy buồn đâu.",
+      "legacyIds": [
+        800420,
+        800430
+      ]
+    },
+    {
+      "id": 800440,
+      "parentId": 800440,
+      "start": 247.686,
+      "end": 249.42,
+      "speaker": "Sakura",
+      "text": "Ich hab ja meinen Papa und Toya.",
+      "vi": "Vì mình đã có bố và anh Toya rồi.",
+      "legacyIds": [
+        800440
+      ]
+    },
+    {
+      "id": 800450,
+      "parentId": 800450,
+      "start": 249.68,
+      "end": 251.086,
+      "speaker": "Fujitaka / Sakura",
+      "text": "Na, schmeckt's? Ja.",
+      "vi": "Sao, đồ ăn ngon chứ con? Vâng ạ.",
+      "legacyIds": [
+        800450
+      ]
+    },
+    {
+      "id": 800460,
+      "parentId": 800460,
+      "start": 251.3,
+      "end": 252.453,
+      "speaker": "Toya",
+      "text": "Danke, ich muss los.",
+      "vi": "Cảm ơn bố, con phải đi học đây.",
+      "legacyIds": [
+        800460
+      ]
+    },
+    {
+      "id": 800470,
+      "parentId": 800470,
+      "start": 253.02,
+      "end": 254.16,
+      "speaker": "Fujitaka",
+      "text": "Willst du schon los?",
+      "vi": "Con đi luôn hả?",
+      "legacyIds": [
+        800470
+      ]
+    },
+    {
+      "id": 800480,
+      "parentId": 800480,
+      "start": 255.04,
+      "end": 258.186,
+      "speaker": "Toya / Sakura",
+      "text": "Ja, wir wollen noch trainieren. Hier ist dein Mittagessen.",
+      "vi": "Vâng, bọn con còn định tập luyện một chút. Bữa trưa của em đây.",
+      "legacyIds": [
+        800480
+      ]
+    },
+    {
+      "id": 800490,
+      "parentId": 800490,
+      "start": 258.58,
+      "end": 261.053,
+      "speaker": "Toya / Sakura",
+      "text": "Danke, tschüss! Hey, warte auf mich!",
+      "vi": "Cảm ơn nha, tạm biệt! Này, đợi em với!",
+      "legacyIds": [
+        800490
+      ]
+    },
+    {
+      "id": 800500,
+      "parentId": 800500,
+      "start": 265.38,
+      "end": 266.886,
+      "speaker": "Sakura",
+      "text": "Wir sind fertig, Papa.",
+      "vi": "Bọn con xong rồi bố ạ.",
+      "legacyIds": [
+        800500
+      ]
+    },
+    {
+      "id": 800510,
+      "parentId": 800510,
+      "start": 267.82,
+      "end": 269.22,
+      "speaker": "Fujitaka",
+      "text": "Bist du satt geworden?",
+      "vi": "Con ăn no chưa?",
+      "legacyIds": [
+        800510
+      ]
+    },
+    {
+      "id": 800520,
+      "parentId": 800520,
+      "start": 270.453,
+      "end": 272.186,
+      "speaker": "Fujitaka",
+      "text": "Vergiss dein Pausenbrot nicht!",
+      "vi": "Đừng có quên hộp cơm trưa nè!",
+      "legacyIds": [
+        800520
+      ]
+    },
+    {
+      "id": 800530,
+      "parentId": 800530,
+      "start": 276.82,
+      "end": 280.053,
+      "speaker": "Sakura / Fujitaka",
+      "text": "Tschüss, Papa! Ich wünsch dir einen schönen Tag, Sakura.",
+      "vi": "Tạm biệt bố! Chúc con một ngày tốt lành nhé, Sakura.",
+      "legacyIds": [
+        800530
+      ]
+    },
+    {
+      "id": 800540,
+      "parentId": 800540,
+      "start": 280.286,
+      "end": 283.52,
+      "speaker": "Sakura / Fujitaka",
+      "text": "Dir auch. Willst du Toya wirklich noch einholen? Klar, das schaff ich schon.",
+      "vi": "Bố cũng vậy ạ. Con thực sự định đuổi kịp Toya sao? Con làm được mà.",
+      "legacyIds": [
+        800540,
+        800550
+      ]
+    },
+    {
+      "id": 800560,
+      "parentId": 800560,
+      "start": 283.653,
+      "end": 284.52,
+      "speaker": "Fujitaka",
+      "text": "Fahr vorsichtig.",
+      "vi": "Đi cẩn thận nha.",
+      "legacyIds": [
+        800560
+      ]
+    },
+    {
+      "id": 800570,
+      "parentId": 800570,
+      "start": 288.22,
+      "end": 290.12,
+      "speaker": "Sakura",
+      "text": "Hoffentlich lässt er sich ein bisschen Zeit.",
+      "vi": "Hy vọng ổng đi tà tà thôi.",
+      "legacyIds": [
+        800570
+      ]
+    },
+    {
+      "id": 800580,
+      "parentId": 800580,
+      "start": 294.686,
+      "end": 297.62,
+      "speaker": "Sakura",
+      "text": "Die Kirschbäume blühen!",
+      "vi": "Hoa anh đào nở rồi!",
+      "legacyIds": [
+        800580
+      ]
+    },
+    {
+      "id": 800590,
+      "parentId": 800590,
+      "start": 306.286,
+      "end": 308.72,
+      "speaker": "Sakura",
+      "text": "Da vorne ist er! Warte auf mich, Toya!",
+      "vi": "Anh ấy ở đằng kia! Anh Toya, đợi em với!",
+      "legacyIds": [
+        800590
+      ]
+    },
+    {
+      "id": 800600,
+      "parentId": 800600,
+      "start": 310.4,
+      "end": 313.286,
+      "speaker": "Toya",
+      "text": "Warum? Du bist groß genug und kannst allein zur Schule fahren.",
+      "vi": "Làm gì? Lớn rồi thì tự đi học một mình đi.",
+      "legacyIds": [
+        800600,
+        800610
+      ]
+    },
+    {
+      "id": 800620,
+      "parentId": 800620,
+      "start": 314.1,
+      "end": 320.46,
+      "speaker": "Sakura",
+      "text": "Ach, nur so. Ich werd ihm nicht verraten, dass ich nur mit ihm zur Schule fahre, weil ich weiß, mit wem er sich vorher trifft.",
+      "vi": "Thì... em thích thế. Mình không thèm nói cho ổng biết là mình đi cùng ổng chỉ vì biết trước ổng sẽ gặp ai đâu.",
+      "legacyIds": [
+        800620,
+        800630,
+        800640
+      ]
+    },
+    {
+      "id": 800650,
+      "parentId": 800650,
+      "start": 320.653,
+      "end": 321.453,
+      "speaker": "Sakura",
+      "text": "Yukito!",
+      "vi": "Anh Yukito!",
+      "legacyIds": [
+        800650
+      ]
+    },
+    {
+      "id": 800660,
+      "parentId": 800660,
+      "start": 325.04,
+      "end": 326.986,
+      "speaker": "Yukito",
+      "text": "Guten Morgen, Toya. Hallo.",
+      "vi": "Chào buổi sáng Toya. Chào em.",
+      "legacyIds": [
+        800660
+      ]
+    },
+    {
+      "id": 800670,
+      "parentId": 800670,
+      "start": 331.02,
+      "end": 332.853,
+      "speaker": "Yukito / Toya",
+      "text": "Alles klar? Kann nicht klagen.",
+      "vi": "Ổn cả chứ? Tớ thì bình thường.",
+      "legacyIds": [
+        800670
+      ]
+    },
+    {
+      "id": 800680,
+      "parentId": 800680,
+      "start": 333.84,
+      "end": 337.386,
+      "speaker": "Yukito / Sakura",
+      "text": "Wieso bist du schon hier, Sakura? Hast du Angst, zu spät zur Schule zu kommen? Ja.",
+      "vi": "Sao em tới sớm thế, Sakura? Sợ đi học muộn à? Vâng ạ.",
+      "legacyIds": [
+        800680,
+        800690
+      ]
+    },
+    {
+      "id": 800700,
+      "parentId": 800700,
+      "start": 337.52,
+      "end": 341.853,
+      "speaker": "Toya",
+      "text": "Dabei ist sie mit ihren Rollerblades schneller als ich mit meinem Rad.",
+      "vi": "Thế mà em ấy đi đôi patin đó còn phóng nhanh hơn cả tớ đạp xe đấy.",
+      "legacyIds": [
+        800700,
+        800710,
+        800720
+      ]
+    },
+    {
+      "id": 800730,
+      "parentId": 800730,
+      "start": 348.8,
+      "end": 351.186,
+      "speaker": "Yukito",
+      "text": "Genau, lass dir bloß nichts gefallen, Sakura.",
+      "vi": "Đúng rồi, đừng có để bị bắt nạt nhé, Sakura.",
+      "legacyIds": [
+        800730
+      ]
+    },
+    {
+      "id": 800740,
+      "parentId": 800740,
+      "start": 351.7,
+      "end": 353.72,
+      "speaker": "Sakura",
+      "text": "Das ist Yukito Tsukishiro.",
+      "vi": "Đây là anh Yukito Tsukishiro.",
+      "legacyIds": [
+        800740
+      ]
+    },
+    {
+      "id": 800750,
+      "parentId": 800750,
+      "start": 353.86,
+      "end": 355.76,
+      "speaker": "Sakura",
+      "text": "Er geht mit meinem Bruder in dieselbe Klasse.",
+      "vi": "Anh ấy học cùng lớp với anh trai mình.",
+      "legacyIds": [
+        800750
+      ]
+    },
+    {
+      "id": 800760,
+      "parentId": 800760,
+      "start": 355.78,
+      "end": 357.35,
+      "speaker": "Sakura",
+      "text": "Kaum zu glauben, dass er sein Freund ist.",
+      "vi": "Khó tin thật khi anh ấy lại chơi thân với ông anh mình.",
+      "legacyIds": [
+        800760
+      ]
+    },
+    {
+      "id": 800770,
+      "parentId": 800770,
+      "start": 357.35,
+      "end": 359.086,
+      "speaker": "Sakura",
+      "text": "Er ist nämlich nicht so ein Blödmann wie der.",
+      "vi": "Vì anh ấy hiền lành chứ đâu có cộc cằn như ổng.",
+      "legacyIds": [
+        800770
+      ]
+    },
+    {
+      "id": 800780,
+      "parentId": 800780,
+      "start": 359.34,
+      "end": 361.2,
+      "speaker": "Sakura",
+      "text": "Und außerdem sieht er so süß aus.",
+      "vi": "Lại còn đáng yêu nữa chứ!",
+      "legacyIds": [
+        800780
+      ]
+    },
+    {
+      "id": 800790,
+      "parentId": 800790,
+      "start": 361.6,
+      "end": 363.98,
+      "speaker": "Sakura",
+      "text": "Also wenn ich mich in einen verlieben würde, dann in ihn.",
+      "vi": "Nếu có thích ai, chắc chắn mình sẽ chọn anh ấy.",
+      "legacyIds": [
+        800790
+      ]
+    },
+    {
+      "id": 800800,
+      "parentId": 800800,
+      "start": 364.0,
+      "end": 365.44,
+      "speaker": "Sakura",
+      "text": "Yukito ist so niedlich.",
+      "vi": "Anh Yukito dịu dàng quá đi mất.",
+      "legacyIds": [
+        800800
+      ]
+    },
+    {
+      "id": 800810,
+      "parentId": 800810,
+      "start": 367.08,
+      "end": 368.62,
+      "speaker": "Yukito",
+      "text": "Mach's gut, Sakura.",
+      "vi": "Đi học vui nhé, Sakura.",
+      "legacyIds": [
+        800810
+      ]
+    },
+    {
+      "id": 800820,
+      "parentId": 800820,
+      "start": 373.74,
+      "end": 375.586,
+      "speaker": "Sakura",
+      "text": "Das war's dann schon.",
+      "vi": "Ơ, xong rồi sao.",
+      "legacyIds": [
+        800820
+      ]
+    },
+    {
+      "id": 800830,
+      "parentId": 800830,
+      "start": 383.16,
+      "end": 384.853,
+      "speaker": "Yukito",
+      "text": "Hey, fang auf!",
+      "vi": "Này, bắt lấy nhé!",
+      "legacyIds": [
+        800830
+      ]
+    },
+    {
+      "id": 800840,
+      "parentId": 800840,
+      "start": 390.78,
+      "end": 392.22,
+      "speaker": "Sakura",
+      "text": "Ein Bonbon!",
+      "vi": "Một viên kẹo ư!",
+      "legacyIds": [
+        800840
+      ]
+    },
+    {
+      "id": 800850,
+      "parentId": 800850,
+      "start": 393.02,
+      "end": 394.653,
+      "speaker": "Tomoyo",
+      "text": "Das müsste mir mal passieren.",
+      "vi": "Ước gì chuyện đó cũng xảy ra với tớ.",
+      "legacyIds": [
+        800850
+      ]
+    },
+    {
+      "id": 800860,
+      "parentId": 800860,
+      "start": 396.58,
+      "end": 397.386,
+      "speaker": "Sakura",
+      "text": "Tomoyo!",
+      "vi": "Tomoyo!",
+      "legacyIds": [
+        800860
+      ]
+    },
+    {
+      "id": 800870,
+      "parentId": 800870,
+      "start": 397.46,
+      "end": 401.37,
+      "speaker": "Tomoyo",
+      "text": "Du weißt bestimmt selbst, was es bedeutet, wenn ein Junge einem Mädchen Süßigkeiten schenkt.",
+      "vi": "Chắc cậu cũng biết nó có ý nghĩa gì khi con trai tặng kẹo cho con gái mà.",
+      "legacyIds": [
+        800870,
+        800880
+      ]
+    },
+    {
+      "id": 800890,
+      "parentId": 800890,
+      "start": 401.37,
+      "end": 404.486,
+      "speaker": "Sakura",
+      "text": "Das... das muss gar nichts bedeuten! Morgen, Tomoyo.",
+      "vi": "Chuyện... chuyện đó làm gì có ý nghĩa gì sâu xa đâu! Chào buổi sáng, Tomoyo.",
+      "legacyIds": [
+        800890
+      ]
+    },
+    {
+      "id": 800900,
+      "parentId": 800900,
+      "start": 404.686,
+      "end": 407.3,
+      "speaker": "Tomoyo / Sakura",
+      "text": "Ja, wünsch ich dir auch. Wie geht's dir, Sakura? Gut.",
+      "vi": "Chào buổi sáng. Cậu khỏe không, Sakura? Tớ khỏe.",
+      "legacyIds": [
+        800900
+      ]
+    },
+    {
+      "id": 800910,
+      "parentId": 800910,
+      "start": 407.76,
+      "end": 409.32,
+      "speaker": "Sakura",
+      "text": "Das ist Tomoyo Daidouji.",
+      "vi": "Đây là Tomoyo Daidoji.",
+      "legacyIds": [
+        800910
+      ]
+    },
+    {
+      "id": 800920,
+      "parentId": 800920,
+      "start": 409.32,
+      "end": 410.83,
+      "speaker": "Sakura",
+      "text": "Sie ist meine beste Freundin.",
+      "vi": "Bạn thân nhất của mình.",
+      "legacyIds": [
+        800920
+      ]
+    },
+    {
+      "id": 800930,
+      "parentId": 800930,
+      "start": 410.83,
+      "end": 412.48,
+      "speaker": "Sakura",
+      "text": "Wir kennen uns schon seit der dritten Klasse.",
+      "vi": "Bọn mình chơi với nhau từ hồi lớp 3.",
+      "legacyIds": [
+        800930
+      ]
+    },
+    {
+      "id": 800940,
+      "parentId": 800940,
+      "start": 412.686,
+      "end": 416.02,
+      "speaker": "Sakura",
+      "text": "Ich muss zugeben, dass sie sehr klug ist und mich viel zu leicht durchschaut.",
+      "vi": "Phải công nhận là cậu ấy rất thông minh và luôn bắt bài mình cái một.",
+      "legacyIds": [
+        800940,
+        800950,
+        800960
+      ]
+    },
+    {
+      "id": 800970,
+      "parentId": 800970,
+      "start": 417.02,
+      "end": 420.22,
+      "speaker": "Tomoyo",
+      "text": "Aber es war so süß! Du hättest dein Gesicht sehen sollen.",
+      "vi": "Nhưng mà lãng mạn thật đấy! Giá mà cậu tự nhìn thấy khuôn mặt mình lúc đó.",
+      "legacyIds": [
+        800970
+      ]
+    },
+    {
+      "id": 800980,
+      "parentId": 800980,
+      "start": 420.28,
+      "end": 425.52,
+      "speaker": "Sakura / Tomoyo",
+      "text": "Wieso? Kaum hatte er dir den Bonbon zugeworfen, hast du so einen verliebten Blick bekommen.",
+      "vi": "Sao cơ? Anh ấy vừa ném viên kẹo cho cậu là mắt cậu đã sáng rực lên u mê luôn rồi.",
+      "legacyIds": [
+        800980,
+        800990
+      ]
+    },
+    {
+      "id": 801000,
+      "parentId": 801000,
+      "start": 425.6,
+      "end": 427.76,
+      "speaker": "Sakura",
+      "text": "Einen verliebten Blick? Quatsch!",
+      "vi": "Ánh mắt u mê á? Cậu nói linh tinh!",
+      "legacyIds": [
+        801000
+      ]
+    },
+    {
+      "id": 801010,
+      "parentId": 801010,
+      "start": 427.84,
+      "end": 431.34,
+      "speaker": "Tomoyo",
+      "text": "Wenn ich meine Videokamera da gehabt hätte, könntest du es dir jetzt ansehen.",
+      "vi": "Tiếc là tớ không cầm máy quay ở đó, không thì bây giờ cậu đã được xem lại rồi.",
+      "legacyIds": [
+        801010,
+        801020
+      ]
+    },
+    {
+      "id": 801030,
+      "parentId": 801030,
+      "start": 431.48,
+      "end": 432.56,
+      "speaker": "Sakura",
+      "text": "Danke, schon okay.",
+      "vi": "Cảm ơn, thôi tớ xin.",
+      "legacyIds": [
+        801030
+      ]
+    },
+    {
+      "id": 801040,
+      "parentId": 801040,
+      "start": 433.22,
+      "end": 435.186,
+      "speaker": "Sakura",
+      "text": "Tomoyo ist vernarrt in ihre Videokamera.",
+      "vi": "Tomoyo cực kỳ cuồng quay phim.",
+      "legacyIds": [
+        801040
+      ]
+    },
+    {
+      "id": 801050,
+      "parentId": 801050,
+      "start": 435.58,
+      "end": 436.94,
+      "speaker": "Sakura",
+      "text": "Sie nimmt alles auf, was sie sieht.",
+      "vi": "Cậu ấy quay lại mọi thứ,",
+      "legacyIds": [
+        801050
+      ]
+    },
+    {
+      "id": 801060,
+      "parentId": 801060,
+      "start": 436.94,
+      "end": 439.5,
+      "speaker": "Sakura",
+      "text": "Aber sie sagt immer, am liebsten macht sie Aufnahmen von mir.",
+      "vi": "nhưng cậu ấy bảo thích nhất là quay mình.",
+      "legacyIds": [
+        801060,
+        801070
+      ]
+    },
+    {
+      "id": 801080,
+      "parentId": 801080,
+      "start": 439.686,
+      "end": 445.36,
+      "speaker": "Tomoyo",
+      "text": "Ich hab ne neue Videokamera bekommen, die ist fantastisch. Wenn wir mal Zeit haben, würde ich gerne ein paar Aufnahmen mit dir machen.",
+      "vi": "Tớ mới có một chiếc máy quay mới, xịn xò lắm. Khi nào rảnh, tớ muốn quay vài cảnh của cậu.",
+      "legacyIds": [
+        801080,
+        801090,
+        801100
+      ]
+    },
+    {
+      "id": 801110,
+      "parentId": 801110,
+      "start": 445.52,
+      "end": 447.32,
+      "speaker": "Sakura",
+      "text": "Von mir aus, ich hab Zeit.",
+      "vi": "Ừm sao cũng được, tớ rảnh mà.",
+      "legacyIds": [
+        801110
+      ]
+    },
+    {
+      "id": 801120,
+      "parentId": 801120,
+      "start": 447.52,
+      "end": 450.12,
+      "speaker": "Sakura",
+      "text": "Aber wenn du willst, kannst du auch Videos von den anderen Mädchen machen.",
+      "vi": "Nhưng nếu thích, cậu cũng có thể quay video các bạn nữ khác nữa cơ mà.",
+      "legacyIds": [
+        801120,
+        801130
+      ]
+    },
+    {
+      "id": 801140,
+      "parentId": 801140,
+      "start": 450.12,
+      "end": 455.56,
+      "speaker": "Tomoyo",
+      "text": "Ich wäre ja verrückt, wenn ich irgendjemanden filmen würde, obwohl ich das schönste Mädchen der Schule aufnehmen kann.",
+      "vi": "Tớ có mà ngốc nếu quay một ai khác trong khi trước mặt là cô gái xinh xắn nhất trường!",
+      "legacyIds": [
+        801140,
+        801150,
+        801160
+      ]
+    },
+    {
+      "id": 801170,
+      "parentId": 801170,
+      "start": 456.12,
+      "end": 458.64,
+      "speaker": "Tomoyo",
+      "text": "Sobald die Akkus aufgeladen sind, können wir anfangen.",
+      "vi": "Sạc pin xong là chúng ta bắt đầu ngay nhé.",
+      "legacyIds": [
+        801170
+      ]
+    },
+    {
+      "id": 801180,
+      "parentId": 801180,
+      "start": 458.76,
+      "end": 461.557,
+      "speaker": "Tomoyo",
+      "text": "Ich mach ein super Video!",
+      "vi": "Tớ sẽ làm một video thật đỉnh!",
+      "legacyIds": [
+        801180
+      ]
+    },
+    {
+      "id": 801190,
+      "parentId": 801190,
+      "start": 461.557,
+      "end": 463.16,
+      "speaker": "Sakura",
+      "text": "Ich weiß, was ihr denkt.",
+      "vi": "Mình biết các bạn đang nghĩ gì mà.",
+      "legacyIds": [
+        801190
+      ]
+    },
+    {
+      "id": 801200,
+      "parentId": 801200,
+      "start": 463.32,
+      "end": 464.76,
+      "speaker": "Sakura",
+      "text": "Das Mädel braucht Hilfe.",
+      "vi": "Cô bạn này cần được giúp đỡ rồi.",
+      "legacyIds": [
+        801200
+      ]
+    },
+    {
+      "id": 801210,
+      "parentId": 801210,
+      "start": 464.853,
+      "end": 467.94,
+      "speaker": "Lehrerin",
+      "text": "Damals war das Leben viel schwerer als heute.",
+      "vi": "Hồi đó cuộc sống khó khăn hơn bây giờ rất nhiều.",
+      "legacyIds": [
+        801210
+      ]
+    },
+    {
+      "id": 801220,
+      "parentId": 801220,
+      "start": 468.16,
+      "end": 470.86,
+      "speaker": "Lehrerin",
+      "text": "Die Menschen mussten bis zu 16 Stunden arbeiten.",
+      "vi": "Mọi người phải làm việc tới 16 tiếng mỗi ngày.",
+      "legacyIds": [
+        801220
+      ]
+    },
+    {
+      "id": 801230,
+      "parentId": 801230,
+      "start": 471.22,
+      "end": 474.986,
+      "speaker": "Lehrerin",
+      "text": "Auch viele Kinder wurden beschäftigt, die deshalb nicht zur Schule gehen konnten.",
+      "vi": "Nhiều trẻ em cũng phải lao động nên không thể đến trường.",
+      "legacyIds": [
+        801230,
+        801240
+      ]
+    },
+    {
+      "id": 801250,
+      "parentId": 801250,
+      "start": 477.56,
+      "end": 480.38,
+      "speaker": "Sakura",
+      "text": "Das war ja ein seltsamer Traum heute Nacht.",
+      "vi": "Đêm qua mình gặp một giấc mơ kỳ lạ quá.",
+      "legacyIds": [
+        801250
+      ]
+    },
+    {
+      "id": 801260,
+      "parentId": 801260,
+      "start": 480.4,
+      "end": 482.52,
+      "speaker": "Lehrerin",
+      "text": "Die Zeichnung auf deinem Heft ist schön.",
+      "vi": "Hình vẽ trên vở của em đẹp đấy.",
+      "legacyIds": [
+        801260
+      ]
+    },
+    {
+      "id": 801270,
+      "parentId": 801270,
+      "start": 482.58,
+      "end": 483.72,
+      "speaker": "Lehrerin",
+      "text": "Was ist das für ein Tier?",
+      "vi": "Con vật gì vậy?",
+      "legacyIds": [
+        801270
+      ]
+    },
+    {
+      "id": 801280,
+      "parentId": 801280,
+      "start": 483.82,
+      "end": 485.92,
+      "speaker": "Sakura / Lehrerin / Mitschülerin",
+      "text": "Was? Ach, nur so. Sakura!",
+      "vi": "Dạ? À, em chỉ vẽ linh tinh thôi ạ. Sakura!",
+      "legacyIds": [
+        801280
+      ]
+    },
+    {
+      "id": 801290,
+      "parentId": 801290,
+      "start": 486.28,
+      "end": 488.92,
+      "speaker": "Sakura / Lehrerin / Mitschülerin",
+      "text": "Ja, lies bitte weiter. Wo war sie gerade?",
+      "vi": "Dạ vâng? Em đọc tiếp đi. Cô ấy đang đọc đến đoạn nào rồi nhỉ?",
+      "legacyIds": [
+        801290
+      ]
+    },
+    {
+      "id": 801300,
+      "parentId": 801300,
+      "start": 489.886,
+      "end": 491.853,
+      "speaker": "Sakura / Lehrerin / Mitschülerin",
+      "text": "Seite 14, dritter Absatz.",
+      "vi": "Trang 14, đoạn 3.",
+      "legacyIds": [
+        801300
+      ]
+    },
+    {
+      "id": 801310,
+      "parentId": 801310,
+      "start": 492.74,
+      "end": 497.453,
+      "speaker": "Sakura",
+      "text": "Nur wenn die Kinder mithalfen, konnten die einfachen Bauern ihre Familien damals ernähren.",
+      "vi": "Chỉ khi trẻ em phụ giúp, những nông dân nghèo thời đó mới có thể nuôi sống gia đình.",
+      "legacyIds": [
+        801310,
+        801320,
+        801330
+      ]
+    },
+    {
+      "id": 801340,
+      "parentId": 801340,
+      "start": 502.653,
+      "end": 505.42,
+      "speaker": "Mitschülerin",
+      "text": "Sowas möchte ich auch mal können, einmalig!",
+      "vi": "Ước gì mình cũng làm được như thế, đỉnh thật!",
+      "legacyIds": [
+        801340
+      ]
+    },
+    {
+      "id": 801350,
+      "parentId": 801350,
+      "start": 505.82,
+      "end": 508.02,
+      "speaker": "Sportlehrerin",
+      "text": "Ja, das hast du sehr gut gemacht, Sakura.",
+      "vi": "Tốt lắm, em làm rất tốt, Sakura.",
+      "legacyIds": [
+        801350
+      ]
+    },
+    {
+      "id": 801360,
+      "parentId": 801360,
+      "start": 508.22,
+      "end": 510.586,
+      "speaker": "Sportlehrerin",
+      "text": "Jetzt werden wir noch ein bisschen mit den Stäben üben.",
+      "vi": "Bây giờ chúng ta sẽ tập một chút với gậy.",
+      "legacyIds": [
+        801360
+      ]
+    },
+    {
+      "id": 801370,
+      "parentId": 801370,
+      "start": 510.686,
+      "end": 514.0,
+      "speaker": "Sportlehrerin",
+      "text": "Holt bitte eure Stäbe und stellt euch mit etwas Abstand auf, okay?",
+      "vi": "Các em lấy gậy và đứng giãn cách ra nhé, được chứ?",
+      "legacyIds": [
+        801370,
+        801380
+      ]
+    },
+    {
+      "id": 801390,
+      "parentId": 801390,
+      "start": 520.44,
+      "end": 527.32,
+      "speaker": "Sakura",
+      "text": "Ich muss immer wieder an meinen Traum von heute Nacht denken. Vielleicht sollte ich Tomoyo davon erzählen.",
+      "vi": "Mình cứ nghĩ mãi về giấc mơ đêm qua. Chắc phải kể cho Tomoyo nghe mới được.",
+      "legacyIds": [
+        801390,
+        801400
+      ]
+    },
+    {
+      "id": 801410,
+      "parentId": 801410,
+      "start": 540.42,
+      "end": 548.04,
+      "speaker": "Mitschülerin",
+      "text": "Sakura ist die Beste im Sport und eigentlich ist sie auch die beste Stabwerferin. Manchmal stellt sie sich aber echt doof an.",
+      "vi": "Sakura là người giỏi nhất thể thao và thực ra cũng là người tung gậy đỉnh nhất. Dù thỉnh thoảng cậu ấy lại lóng ngóng thấy ớn.",
+      "legacyIds": [
+        801410,
+        801420,
+        801430
+      ]
+    },
+    {
+      "id": 801440,
+      "parentId": 801440,
+      "start": 552.24,
+      "end": 554.0,
+      "speaker": "Sakura",
+      "text": "Papa, ich bin wieder da!",
+      "vi": "Con về rồi đây!",
+      "legacyIds": [
+        801440
+      ]
+    },
+    {
+      "id": 801450,
+      "parentId": 801450,
+      "start": 559.686,
+      "end": 560.486,
+      "speaker": "Sakura",
+      "text": "Papa?",
+      "vi": "Bố ơi?",
+      "legacyIds": [
+        801450
+      ]
+    },
+    {
+      "id": 801460,
+      "parentId": 801460,
+      "start": 566.45,
+      "end": 568.986,
+      "speaker": "Sakura",
+      "text": "Bin heute Abend erst gegen 9 zurück.",
+      "vi": "\"Tối nay khoảng 9 giờ bố mới về.\"",
+      "legacyIds": [
+        801460
+      ]
+    },
+    {
+      "id": 801470,
+      "parentId": 801470,
+      "start": 569.18,
+      "end": 571.16,
+      "speaker": "Sakura",
+      "text": "Schade, Papa kommt heute spät.",
+      "vi": "Chán thế, nay bố về muộn.",
+      "legacyIds": [
+        801470
+      ]
+    },
+    {
+      "id": 801480,
+      "parentId": 801480,
+      "start": 574.253,
+      "end": 575.053,
+      "speaker": "Sakura",
+      "text": "Pudding!",
+      "vi": "A, Pudding!",
+      "legacyIds": [
+        801480
+      ]
+    },
+    {
+      "id": 801490,
+      "parentId": 801490,
+      "start": 580.76,
+      "end": 582.486,
+      "speaker": "Sakura",
+      "text": "Ist da etwa jemand?",
+      "vi": "Có ai ở đó không?",
+      "legacyIds": [
+        801490
+      ]
+    },
+    {
+      "id": 801500,
+      "parentId": 801500,
+      "start": 592.46,
+      "end": 596.22,
+      "speaker": "Sakura",
+      "text": "Oh Mann, wenn Papa oder Toya bloß zu Hause wären.",
+      "vi": "Ôi trời ơi, giá mà bố hoặc anh Toya có ở nhà!",
+      "legacyIds": [
+        801500
+      ]
+    },
+    {
+      "id": 801510,
+      "parentId": 801510,
+      "start": 611.38,
+      "end": 613.62,
+      "speaker": "Sakura",
+      "text": "Das kommt aus der Bibliothek.",
+      "vi": "Tiếng phát ra từ thư viện.",
+      "legacyIds": [
+        801510
+      ]
+    },
+    {
+      "id": 801520,
+      "parentId": 801520,
+      "start": 613.88,
+      "end": 616.586,
+      "speaker": "Sakura",
+      "text": "Was soll ich machen, wenn das ein Einbrecher ist?",
+      "vi": "Nhỡ là ăn trộm thì phải làm sao đây?",
+      "legacyIds": [
+        801520
+      ]
+    },
+    {
+      "id": 801530,
+      "parentId": 801530,
+      "start": 618.06,
+      "end": 619.5,
+      "speaker": "Sakura",
+      "text": "Ich muss nachsehen.",
+      "vi": "Phải đi xem thử mới được.",
+      "legacyIds": [
+        801530
+      ]
+    },
+    {
+      "id": 801540,
+      "parentId": 801540,
+      "start": 619.92,
+      "end": 622.52,
+      "speaker": "Sakura",
+      "text": "Wenn ein Fremder drin ist, ruf ich die Polizei.",
+      "vi": "Nếu có người lạ, mình sẽ gọi cảnh sát.",
+      "legacyIds": [
+        801540
+      ]
+    },
+    {
+      "id": 801550,
+      "parentId": 801550,
+      "start": 658.98,
+      "end": 660.52,
+      "speaker": "Sakura",
+      "text": "Aber hier ist ja niemand.",
+      "vi": "Nhưng giờ chẳng có ai cả.",
+      "legacyIds": [
+        801550
+      ]
+    },
+    {
+      "id": 801560,
+      "parentId": 801560,
+      "start": 673.76,
+      "end": 676.786,
+      "speaker": "Sakura",
+      "text": "Das Buch... es scheint zu glühen.",
+      "vi": "Cuốn sách... nó đang phát sáng.",
+      "legacyIds": [
+        801560
+      ]
+    },
+    {
+      "id": 801570,
+      "parentId": 801570,
+      "start": 706.02,
+      "end": 708.02,
+      "speaker": "Sakura",
+      "text": "Das Buch aus meinem Traum.",
+      "vi": "Là cuốn sách trong giấc mơ của mình.",
+      "legacyIds": [
+        801570
+      ]
+    },
+    {
+      "id": 801580,
+      "parentId": 801580,
+      "start": 721.26,
+      "end": 723.2,
+      "speaker": "Sakura",
+      "text": "Das sind Karten.",
+      "vi": "Đây là những thẻ bài.",
+      "legacyIds": [
+        801580
+      ]
+    },
+    {
+      "id": 801590,
+      "parentId": 801590,
+      "start": 728.686,
+      "end": 729.486,
+      "speaker": "Sakura",
+      "text": "Windy?",
+      "vi": "Windy?",
+      "legacyIds": [
+        801590
+      ]
+    },
+    {
+      "id": 801600,
+      "parentId": 801600,
+      "start": 731.586,
+      "end": 733.92,
+      "speaker": "Sakura",
+      "text": "Zum Spielen scheinen die nicht zu sein.",
+      "vi": "Trông không giống bài để chơi chút nào.",
+      "legacyIds": [
+        801600
+      ]
+    },
+    {
+      "id": 801610,
+      "parentId": 801610,
+      "start": 735.653,
+      "end": 736.453,
+      "speaker": "Sakura",
+      "text": "Windy.",
+      "vi": "Windy.",
+      "legacyIds": [
+        801610
+      ]
+    },
+    {
+      "id": 801620,
+      "parentId": 801620,
+      "start": 737.12,
+      "end": 739.22,
+      "speaker": "Sakura",
+      "text": "Die Karte des Windes.",
+      "vi": "Thẻ bài Gió.",
+      "legacyIds": [
+        801620
+      ]
+    },
+    {
+      "id": 801630,
+      "parentId": 801630,
+      "start": 778.7,
+      "end": 780.786,
+      "speaker": "Sakura",
+      "text": "Alle weg, bis auf die.",
+      "vi": "Bay sạch sành sanh, chỉ còn lại mỗi lá này!",
+      "legacyIds": [
+        801630
+      ]
+    },
+    {
+      "id": 801640,
+      "parentId": 801640,
+      "start": 797.98,
+      "end": 799.753,
+      "speaker": "Kero",
+      "text": "Danke, dass du mich geweckt hast, kleine Person.",
+      "vi": "Cảm ơn nhóc đã đánh thức ta nhé, cô bé.",
+      "legacyIds": [
+        801640
+      ]
+    },
+    {
+      "id": 801650,
+      "parentId": 801650,
+      "start": 799.753,
+      "end": 801.58,
+      "speaker": "Kero",
+      "text": "Das war wirklich sehr nett von dir.",
+      "vi": "Nhóc tốt bụng thật đấy.",
+      "legacyIds": [
+        801650
+      ]
+    },
+    {
+      "id": 801660,
+      "parentId": 801660,
+      "start": 802.24,
+      "end": 803.56,
+      "speaker": "Sakura",
+      "text": "Ja... aus Versehen.",
+      "vi": "Dạ... tôi lỡ tay thôi.",
+      "legacyIds": [
+        801660
+      ]
+    },
+    {
+      "id": 801670,
+      "parentId": 801670,
+      "start": 804.08,
+      "end": 807.486,
+      "speaker": "Kero",
+      "text": "Na, jedenfalls bin ich dir sehr dankbar, weil ich endlich aus diesem Buch herauskomme.",
+      "vi": "Dù sao thì ta cũng rất biết ơn, vì cuối cùng ta cũng thoát ra khỏi cuốn sách này.",
+      "legacyIds": [
+        801670,
+        801680,
+        801690
+      ]
+    },
+    {
+      "id": 801700,
+      "parentId": 801700,
+      "start": 807.5,
+      "end": 810.653,
+      "speaker": "Kero",
+      "text": "Ich dachte, ich würde für alle Ewigkeit darin gefangen bleiben.",
+      "vi": "Ta cứ ngỡ mình sẽ bị kẹt trong đó mãi mãi rồi chứ.",
+      "legacyIds": [
+        801700,
+        801710
+      ]
+    },
+    {
+      "id": 801720,
+      "parentId": 801720,
+      "start": 810.92,
+      "end": 814.786,
+      "speaker": "Sakura",
+      "text": "Was bist du? Ein Eichhörnchen oder was? Ein Insekt vielleicht?",
+      "vi": "Ngươi là cái quái gì vậy? Sóc hả? Hay là côn trùng?",
+      "legacyIds": [
+        801720
+      ]
+    },
+    {
+      "id": 801730,
+      "parentId": 801730,
+      "start": 815.74,
+      "end": 817.84,
+      "speaker": "Kero",
+      "text": "Ein bisschen mehr Respekt, ja?",
+      "vi": "Ăn nói cho tôn trọng chút đi nhé!",
+      "legacyIds": [
+        801730
+      ]
+    },
+    {
+      "id": 801740,
+      "parentId": 801740,
+      "start": 817.92,
+      "end": 822.586,
+      "speaker": "Kero",
+      "text": "Ich bin kein Spielzeug, sondern Cerberus, der Hüter des Siegels von diesem Buch!",
+      "vi": "Ta không phải đồ chơi, ta là Keroberos, linh thú canh giữ phong ấn của cuốn sách này!",
+      "legacyIds": [
+        801740,
+        801750
+      ]
+    },
+    {
+      "id": 801760,
+      "parentId": 801760,
+      "start": 823.22,
+      "end": 825.083,
+      "speaker": "Sakura",
+      "text": "Wirklich? Du bist sein Wächter?",
+      "vi": "Thật sao? Ngươi là người canh giữ nó á?",
+      "legacyIds": [
+        801760
+      ]
+    },
+    {
+      "id": 801770,
+      "parentId": 801770,
+      "start": 825.083,
+      "end": 830.54,
+      "speaker": "Kero",
+      "text": "Ja, denn es ist ein ungewöhnliches Buch, weil es keine Seiten hat, sondern Karten, die Ärger machen könnten, wenn...",
+      "vi": "Chuẩn luôn! Vì đây là một cuốn sách cực kỳ đặc biệt, nó không có trang giấy, mà chứa những thẻ bài có thể gây rắc rối to nếu...",
+      "legacyIds": [
+        801770,
+        801780,
+        801790
+      ]
+    },
+    {
+      "id": 801800,
+      "parentId": 801800,
+      "start": 832.22,
+      "end": 833.42,
+      "speaker": "Kero",
+      "text": "Nein!",
+      "vi": "Khoan đã!",
+      "legacyIds": [
+        801800
+      ]
+    },
+    {
+      "id": 801810,
+      "parentId": 801810,
+      "start": 834.4,
+      "end": 839.58,
+      "speaker": "Kero",
+      "text": "Sämtliche Karten sind verschwunden! Oh, nicht doch! Meine kostbaren Karten sind weg!",
+      "vi": "Tất cả các thẻ bài biến mất đâu rồi! Ôi trời đất ơi! Những thẻ bài quý giá của ta đâu rồi!",
+      "legacyIds": [
+        801810,
+        801820
+      ]
+    },
+    {
+      "id": 801830,
+      "parentId": 801830,
+      "start": 841.02,
+      "end": 842.16,
+      "speaker": "Sakura",
+      "text": "Bis auf die.",
+      "vi": "Chỉ còn lại lá này.",
+      "legacyIds": [
+        801830
+      ]
+    },
+    {
+      "id": 801840,
+      "parentId": 801840,
+      "start": 842.42,
+      "end": 845.86,
+      "speaker": "Kero",
+      "text": "Hm, ja, das ist Windy. Aber wo sind die anderen?",
+      "vi": "Đúng, đây là Windy. Nhưng những lá khác đâu?",
+      "legacyIds": [
+        801840
+      ]
+    },
+    {
+      "id": 801850,
+      "parentId": 801850,
+      "start": 847.3,
+      "end": 849.32,
+      "speaker": "Kero",
+      "text": "Danke. Und wo sind die anderen?",
+      "vi": "Cảm ơn. Thế những lá khác đâu?",
+      "legacyIds": [
+        801850
+      ]
+    },
+    {
+      "id": 801860,
+      "parentId": 801860,
+      "start": 849.78,
+      "end": 852.753,
+      "speaker": "Sakura / Kero",
+      "text": "Die Karte, die hier geblieben ist, hatte ich aus dem Buch genommen. Aha.",
+      "vi": "Lá bài còn lại ở đây là do tôi rút ra khỏi sách. Aha.",
+      "legacyIds": [
+        801860,
+        801870
+      ]
+    },
+    {
+      "id": 801880,
+      "parentId": 801880,
+      "start": 852.753,
+      "end": 855.76,
+      "speaker": "Sakura / Kero",
+      "text": "Und plötzlich wehte hier drin ein starker Wind. Aha.",
+      "vi": "Thế rồi tự dưng trong này nổi bão lớn. Aha.",
+      "legacyIds": [
+        801880
+      ]
+    },
+    {
+      "id": 801890,
+      "parentId": 801890,
+      "start": 856.3,
+      "end": 858.96,
+      "speaker": "Sakura / Kero",
+      "text": "Da flogen alle Karten weg. Flogen weg?",
+      "vi": "Và tất cả các thẻ bài bay đi mất tiêu. Bay đi mất?!",
+      "legacyIds": [
+        801890
+      ]
+    },
+    {
+      "id": 801900,
+      "parentId": 801900,
+      "start": 867.253,
+      "end": 868.62,
+      "speaker": "Sakura",
+      "text": "Ich räum das schon ab.",
+      "vi": "Để tôi dọn cho.",
+      "legacyIds": [
+        801900
+      ]
+    },
+    {
+      "id": 801910,
+      "parentId": 801910,
+      "start": 871.64,
+      "end": 873.42,
+      "speaker": "Người nhà",
+      "text": "Wo willst du denn damit hin?",
+      "vi": "Con định mang cái đó đi đâu vậy?",
+      "legacyIds": [
+        801910
+      ]
+    },
+    {
+      "id": 801920,
+      "parentId": 801920,
+      "start": 873.62,
+      "end": 875.42,
+      "speaker": "Sakura",
+      "text": "Den Pudding ess ich in meinem Zimmer.",
+      "vi": "Bánh pudding thì tôi sẽ ăn trong phòng mình.",
+      "legacyIds": [
+        801920
+      ]
+    },
+    {
+      "id": 801930,
+      "parentId": 801930,
+      "start": 880.76,
+      "end": 881.82,
+      "speaker": "Sakura",
+      "text": "Und?",
+      "vi": "Và sao?",
+      "legacyIds": [
+        801930
+      ]
+    },
+    {
+      "id": 801940,
+      "parentId": 801940,
+      "start": 883.02,
+      "end": 886.52,
+      "speaker": "Kero",
+      "text": "Nichts, ich hab keine Ahnung, wo die Karten hingeflogen sein könnten.",
+      "vi": "Chẳng sao cả. Ta không biết bọn chúng có thể bay đi đâu được.",
+      "legacyIds": [
+        801940,
+        801950
+      ]
+    },
+    {
+      "id": 801960,
+      "parentId": 801960,
+      "start": 887.6,
+      "end": 889.886,
+      "speaker": "Sakura / Kero",
+      "text": "Bitte. Danke, ich mag Pudding.",
+      "vi": "Đây, mời ngươi. Cảm ơn, ta thích pudding.",
+      "legacyIds": [
+        801960
+      ]
+    },
+    {
+      "id": 801970,
+      "parentId": 801970,
+      "start": 890.8,
+      "end": 896.986,
+      "speaker": "Kero / Sakura",
+      "text": "Aber wenn ich daran denke, dass die Clow Cards weg sind, vergeht mir der Appetit. Die Clow Cards? Die Clow Cards!",
+      "vi": "Nhưng cứ nghĩ đến việc những Thẻ bài Clow biến mất là ta lại nuốt không trôi. Thẻ bài Clow? Thẻ bài Clow!",
+      "legacyIds": [
+        801970,
+        801980
+      ]
+    },
+    {
+      "id": 801990,
+      "parentId": 801990,
+      "start": 897.54,
+      "end": 901.886,
+      "speaker": "Kero",
+      "text": "Es sind magische Karten, die vom alten Hexenmeister Clow Reed erschaffen worden sind.",
+      "vi": "Đó là những thẻ bài ma thuật do vị pháp sư vĩ đại Clow Reed tạo ra.",
+      "legacyIds": [
+        801990,
+        802000
+      ]
+    },
+    {
+      "id": 802010,
+      "parentId": 802010,
+      "start": 903.2,
+      "end": 907.26,
+      "speaker": "Kero",
+      "text": "Jede Karte besitzt einen Namen, ein Aussehen und einen Zauber.",
+      "vi": "Mỗi thẻ bài có một cái tên, hình dạng và phép thuật riêng.",
+      "legacyIds": [
+        802010,
+        802020
+      ]
+    },
+    {
+      "id": 802030,
+      "parentId": 802030,
+      "start": 907.4,
+      "end": 909.58,
+      "speaker": "Kero",
+      "text": "Kommen sie auf die Welt, werden sie lebendig.",
+      "vi": "Khi được giải phóng, chúng sẽ trở nên sống động.",
+      "legacyIds": [
+        802030
+      ]
+    },
+    {
+      "id": 802040,
+      "parentId": 802040,
+      "start": 909.9,
+      "end": 918.16,
+      "speaker": "Kero",
+      "text": "Dann haben sie unermessliche Kräfte und sie können so viel Unheil anrichten, wie sie wollen, denn sie können von niemandem aufgehalten werden.",
+      "vi": "Sức mạnh của chúng là không tưởng và chúng có thể gây ra bao nhiêu tai họa tùy thích vì không ai có thể ngăn cản được chúng.",
+      "legacyIds": [
+        802040,
+        802050,
+        802060
+      ]
+    },
+    {
+      "id": 802070,
+      "parentId": 802070,
+      "start": 919.02,
+      "end": 920.92,
+      "speaker": "Kero",
+      "text": "Clow Reed konnte die Karten bannen.",
+      "vi": "Ngài Clow Reed đã phong ấn chúng.",
+      "legacyIds": [
+        802070
+      ]
+    },
+    {
+      "id": 802080,
+      "parentId": 802080,
+      "start": 921.04,
+      "end": 925.853,
+      "speaker": "Kero",
+      "text": "Er sperrte sie in das magische Buch, versiegelte es und machte mich zu seinem Hüter.",
+      "vi": "Ngài nhốt chúng vào cuốn sách ma thuật, niêm phong lại và giao cho ta làm người canh giữ.",
+      "legacyIds": [
+        802080,
+        802090
+      ]
+    },
+    {
+      "id": 802100,
+      "parentId": 802100,
+      "start": 927.64,
+      "end": 932.76,
+      "speaker": "Kero",
+      "text": "Ich muss die Karten unbedingt wiederbekommen und du wirst mir dabei helfen.",
+      "vi": "Ta phải lấy lại những thẻ bài đó bằng mọi giá và nhóc sẽ là người giúp ta.",
+      "legacyIds": [
+        802100,
+        802110
+      ]
+    },
+    {
+      "id": 802120,
+      "parentId": 802120,
+      "start": 933.34,
+      "end": 934.94,
+      "speaker": "Sakura",
+      "text": "Wie komme ich denn dazu?",
+      "vi": "Sao tôi lại phải làm thế?",
+      "legacyIds": [
+        802120
+      ]
+    },
+    {
+      "id": 802130,
+      "parentId": 802130,
+      "start": 935.16,
+      "end": 948.186,
+      "speaker": "Kero / Sakura",
+      "text": "Schließlich hast du den Wind gerufen, der die Karten befreit hat. Auch wenn es aus Versehen war. Hm, ja, aber du hast selbst gesagt, dass es deine Aufgabe war, das Siegel zu bewachen und dafür zu sorgen, dass sie nicht entkommen! Ja, ich hab nur mal kurz ein Nickerchen gemacht.",
+      "vi": "Vì nhóc đã gọi gió thổi bay chúng đi mà. Dù chỉ là lỡ tay đi chăng nữa. Ừ thì, nhưng ngươi cũng tự thừa nhận là ngươi có nhiệm vụ canh giữ phong ấn và đảm bảo chúng không thoát ra mà! Tại ta lỡ chợp mắt một lát thôi.",
+      "legacyIds": [
+        802130,
+        802140,
+        802150,
+        802160,
+        802170,
+        802180,
+        802190
+      ]
+    },
+    {
+      "id": 802200,
+      "parentId": 802200,
+      "start": 948.2,
+      "end": 950.82,
+      "speaker": "Sakura / Kero",
+      "text": "Wie kurz? So 30 Jahre, schätze ich.",
+      "vi": "Một lát là bao lâu? Chắc cỡ 30 năm.",
+      "legacyIds": [
+        802200
+      ]
+    },
+    {
+      "id": 802210,
+      "parentId": 802210,
+      "start": 951.32,
+      "end": 953.64,
+      "speaker": "Sakura",
+      "text": "Dann bist du ein Langschläfer und kein Wächter!",
+      "vi": "Vậy ngươi là con sâu ngủ chứ người canh giữ cái nỗi gì!",
+      "legacyIds": [
+        802210
+      ]
+    },
+    {
+      "id": 802220,
+      "parentId": 802220,
+      "start": 953.86,
+      "end": 956.7,
+      "speaker": "Kero",
+      "text": "Weißt du, wie schwer das ist, wenn man sich nicht bewegen kann?",
+      "vi": "Nhóc có biết việc không thể nhúc nhích nó khổ thế nào không hả?",
+      "legacyIds": [
+        802220,
+        802230
+      ]
+    },
+    {
+      "id": 802240,
+      "parentId": 802240,
+      "start": 956.94,
+      "end": 959.21,
+      "speaker": "Sakura",
+      "text": "Tut mir leid, da würde ich auch nicht lange wach bleiben.",
+      "vi": "Xin lỗi nhé, đổi lại là tôi thì tôi cũng chẳng thức nổi.",
+      "legacyIds": [
+        802240
+      ]
+    },
+    {
+      "id": 802250,
+      "parentId": 802250,
+      "start": 959.21,
+      "end": 967.22,
+      "speaker": "Kero",
+      "text": "Und außerdem kann das Buch nur von jemandem geöffnet werden, der magische Kräfte hat. Wie konnte ich ahnen, dass du ne kleine Zauberin bist? Sag mal, wie heißt du überhaupt?",
+      "vi": "Với lại, cuốn sách này chỉ có thể được mở bởi người có ma lực. Làm sao ta biết được nhóc là một pháp sư nhí cơ chứ? Khai mau, nhóc tên gì?",
+      "legacyIds": [
+        802250,
+        802260,
+        802270,
+        802280,
+        802290
+      ]
+    },
+    {
+      "id": 802300,
+      "parentId": 802300,
+      "start": 967.88,
+      "end": 971.86,
+      "speaker": "Sakura / Kero",
+      "text": "Sakura. Okay, Sakura, stell dich da drüben hin und...",
+      "vi": "Sakura. Được rồi, Sakura, đứng qua bên kia đi và...",
+      "legacyIds": [
+        802300
+      ]
+    },
+    {
+      "id": 802310,
+      "parentId": 802310,
+      "start": 976.16,
+      "end": 980.853,
+      "speaker": "Sakura / Kero",
+      "text": "Was wird das? Erscheine, Schlüssel der magischen Kräfte!",
+      "vi": "Làm gì thế? Hỡi Chìa khóa mang sức mạnh ma thuật!",
+      "legacyIds": [
+        802310
+      ]
+    },
+    {
+      "id": 802320,
+      "parentId": 802320,
+      "start": 982.6,
+      "end": 985.52,
+      "speaker": "Kero",
+      "text": "Hier ist ein Mädchen, das einen Bund mit dir schließen möchte.",
+      "vi": "Nơi đây có một cô bé muốn lập giao ước với ngươi.",
+      "legacyIds": [
+        802320,
+        802330
+      ]
+    },
+    {
+      "id": 802340,
+      "parentId": 802340,
+      "start": 986.02,
+      "end": 987.486,
+      "speaker": "Kero",
+      "text": "Ihr Name ist Sakura.",
+      "vi": "Tên cô bé là Sakura.",
+      "legacyIds": [
+        802340
+      ]
+    },
+    {
+      "id": 802350,
+      "parentId": 802350,
+      "start": 988.28,
+      "end": 990.66,
+      "speaker": "Kero",
+      "text": "Schlüssel, gib ihr deine Macht!",
+      "vi": "Chìa khóa, hãy ban cho cô bé sức mạnh của ngươi!",
+      "legacyIds": [
+        802350
+      ]
+    },
+    {
+      "id": 802360,
+      "parentId": 802360,
+      "start": 991.24,
+      "end": 992.786,
+      "speaker": "Kero",
+      "text": "Gib die Macht frei!",
+      "vi": "Giải trừ phong ấn!",
+      "legacyIds": [
+        802360
+      ]
+    },
+    {
+      "id": 802370,
+      "parentId": 802370,
+      "start": 998.053,
+      "end": 1000.22,
+      "speaker": "Kero",
+      "text": "Sakura, nimm den Schlüssel!",
+      "vi": "Sakura, nắm lấy chiếc chìa khóa!",
+      "legacyIds": [
+        802370
+      ]
+    },
+    {
+      "id": 802380,
+      "parentId": 802380,
+      "start": 1007.786,
+      "end": 1012.22,
+      "speaker": "Kero",
+      "text": "Das war's schon! Ein Cardcaptor ist geboren!",
+      "vi": "Xong rồi! Một Thủ lĩnh Thẻ bài đã ra đời!",
+      "legacyIds": [
+        802380
+      ]
+    },
+    {
+      "id": 802390,
+      "parentId": 802390,
+      "start": 1016.086,
+      "end": 1016.886,
+      "speaker": "Sakura",
+      "text": "Was?",
+      "vi": "Hả?",
+      "legacyIds": [
+        802390
+      ]
+    },
+    {
+      "id": 802400,
+      "parentId": 802400,
+      "start": 1018.94,
+      "end": 1021.26,
+      "speaker": "Sakura",
+      "text": "Das geht nicht! Ich kann das nicht!",
+      "vi": "Không được đâu, tôi không làm được!",
+      "legacyIds": [
+        802400
+      ]
+    },
+    {
+      "id": 802410,
+      "parentId": 802410,
+      "start": 1021.82,
+      "end": 1025.39,
+      "speaker": "Sakura / Kero",
+      "text": "Nein! Das Bett gefällt mir, es federt so schön.",
+      "vi": "Không! Ta thích chiếc giường này, nó nhún êm thật.",
+      "legacyIds": [
+        802410
+      ]
+    },
+    {
+      "id": 802420,
+      "parentId": 802420,
+      "start": 1025.39,
+      "end": 1029.02,
+      "speaker": "Sakura",
+      "text": "Ich kann die Karten nicht einfangen, verstehst du nicht? Ich bin Schülerin!",
+      "vi": "Tôi không đi bắt thẻ bài được đâu, ngươi không hiểu sao? Tôi chỉ là học sinh!",
+      "legacyIds": [
+        802420,
+        802430
+      ]
+    },
+    {
+      "id": 802440,
+      "parentId": 802440,
+      "start": 1029.386,
+      "end": 1034.18,
+      "speaker": "Kero",
+      "text": "Und Cardcaptor! Der Einzige auf der Welt! Du musst uns vor dem Unheil beschützen, das sie anrichten können.",
+      "vi": "Và là một Thủ lĩnh Thẻ bài! Người duy nhất trên thế giới! Nhóc phải bảo vệ chúng ta khỏi những tai họa mà chúng có thể gây ra.",
+      "legacyIds": [
+        802440,
+        802450,
+        802460
+      ]
+    },
+    {
+      "id": 802470,
+      "parentId": 802470,
+      "start": 1034.22,
+      "end": 1035.68,
+      "speaker": "Kero",
+      "text": "Sie haben unendliche Macht!",
+      "vi": "Sức mạnh của chúng là vô tận!",
+      "legacyIds": [
+        802470
+      ]
+    },
+    {
+      "id": 802480,
+      "parentId": 802480,
+      "start": 1035.72,
+      "end": 1038.86,
+      "speaker": "Sakura",
+      "text": "Die Welt ist in Gefahr und du willst ein Kind losschicken, um sie zu retten?",
+      "vi": "Thế giới đang lâm nguy, và ngươi muốn phái một đứa trẻ đi giải cứu sao?",
+      "legacyIds": [
+        802480,
+        802490
+      ]
+    },
+    {
+      "id": 802500,
+      "parentId": 802500,
+      "start": 1038.92,
+      "end": 1042.18,
+      "speaker": "Kero",
+      "text": "Wer hat die Karten in alle Richtungen wegfliegen lassen? Du oder ich?",
+      "vi": "Ai đã để những thẻ bài bay tứ tung? Ngươi hay tôi?",
+      "legacyIds": [
+        802500,
+        802510
+      ]
+    },
+    {
+      "id": 802520,
+      "parentId": 802520,
+      "start": 1042.42,
+      "end": 1045.886,
+      "speaker": "Sakura",
+      "text": "Und wer hat nicht verhindert, dass jemand das magische Buch geöffnet hat?",
+      "vi": "Và ai đã canh gác kiểu gì mà để người ta mở được cuốn sách ma thuật ra hả?",
+      "legacyIds": [
+        802520,
+        802530
+      ]
+    },
+    {
+      "id": 802540,
+      "parentId": 802540,
+      "start": 1049.32,
+      "end": 1051.053,
+      "speaker": "Sakura",
+      "text": "Warum stürmt es plötzlich so?",
+      "vi": "Sao tự dưng lại nổi bão thế này?",
+      "legacyIds": [
+        802540
+      ]
+    },
+    {
+      "id": 802550,
+      "parentId": 802550,
+      "start": 1054.04,
+      "end": 1055.12,
+      "speaker": "Kero",
+      "text": "Sakura!",
+      "vi": "Sakura!",
+      "legacyIds": [
+        802550
+      ]
+    },
+    {
+      "id": 802560,
+      "parentId": 802560,
+      "start": 1060.54,
+      "end": 1063.853,
+      "speaker": "Sakura / Kero",
+      "text": "Was ist das? Eine Clow Card? Echt?",
+      "vi": "Cái quái gì vậy? Một Thẻ bài Clow. Thật luôn?",
+      "legacyIds": [
+        802560
+      ]
+    },
+    {
+      "id": 802570,
+      "parentId": 802570,
+      "start": 1064.22,
+      "end": 1066.053,
+      "speaker": "Kero",
+      "text": "Fly, die Flugkarte! Ganz sicher!",
+      "vi": "Fly, thẻ bài Bay! Chắc chắn rồi!",
+      "legacyIds": [
+        802570
+      ]
+    },
+    {
+      "id": 802580,
+      "parentId": 802580,
+      "start": 1066.42,
+      "end": 1069.12,
+      "speaker": "Kero",
+      "text": "Verlier keine Zeit und unternimm was!",
+      "vi": "Đừng phí thời gian nữa! Làm gì đó đi!",
+      "legacyIds": [
+        802580
+      ],
+      "acceptedTexts": [
+        "Verlier keine Zeit! Unternimm was!"
+      ]
+    },
+    {
+      "id": 802590,
+      "parentId": 802590,
+      "start": 1069.34,
+      "end": 1070.62,
+      "speaker": "Sakura",
+      "text": "Was könnte ich tun?",
+      "vi": "Tôi phải làm gì bây giờ?",
+      "legacyIds": [
+        802590
+      ]
+    },
+    {
+      "id": 802600,
+      "parentId": 802600,
+      "start": 1070.686,
+      "end": 1074.2,
+      "speaker": "Kero / Sakura",
+      "text": "Dich als Cardcaptor der Karte entgegenstellen! Oh nein!",
+      "vi": "Đối mặt với nó với tư cách là một Thủ lĩnh Thẻ bài chứ sao! Ôi trời ơi!",
+      "legacyIds": [
+        802600
+      ]
+    },
+    {
+      "id": 802610,
+      "parentId": 802610,
+      "start": 1081.86,
+      "end": 1087.886,
+      "speaker": "Sakura / Kero",
+      "text": "Ich hätte mich erst mal richtig anziehen wollen. Ein Cardcaptor muss immer bereit sein zu kämpfen, auch im Pyjama!",
+      "vi": "Lẽ ra tôi phải thay đồ đàng hoàng đã chứ. Một Thủ lĩnh Thẻ bài phải luôn sẵn sàng chiến đấu, kể cả khi mặc đồ ngủ!",
+      "legacyIds": [
+        802610,
+        802620,
+        802630
+      ]
+    },
+    {
+      "id": 802640,
+      "parentId": 802640,
+      "start": 1089.1,
+      "end": 1091.7,
+      "speaker": "Sakura",
+      "text": "Ich habe keine Chance gegen das blöde Ding!",
+      "vi": "Tôi làm gì có cửa thắng cái con quái vật đó!",
+      "legacyIds": [
+        802640
+      ]
+    },
+    {
+      "id": 802650,
+      "parentId": 802650,
+      "start": 1091.86,
+      "end": 1093.42,
+      "speaker": "Kero",
+      "text": "Doch, du bist Cardcaptor!",
+      "vi": "Có chứ, nhóc là Thủ lĩnh Thẻ bài mà!",
+      "legacyIds": [
+        802650
+      ]
+    },
+    {
+      "id": 802660,
+      "parentId": 802660,
+      "start": 1112.26,
+      "end": 1114.32,
+      "speaker": "Kero",
+      "text": "Du musst kämpfen, Sakura!",
+      "vi": "Nhóc phải chiến đấu đi Sakura!",
+      "legacyIds": [
+        802660
+      ]
+    },
+    {
+      "id": 802670,
+      "parentId": 802670,
+      "start": 1114.62,
+      "end": 1118.16,
+      "speaker": "Sakura / Kero",
+      "text": "Wie? Du hast den Schlüssel des magischen Buches übernommen. Benutze ihn!",
+      "vi": "Bằng cách nào? Nhóc đã nhận lấy chìa khóa của cuốn sách ma thuật rồi. Dùng nó đi!",
+      "legacyIds": [
+        802670,
+        802680
+      ]
+    },
+    {
+      "id": 802690,
+      "parentId": 802690,
+      "start": 1123.3,
+      "end": 1129.586,
+      "speaker": "Sakura",
+      "text": "Schlüssel des magischen Clow-Buches, nimm dein wahres Äußeres an!",
+      "vi": "Hỡi Chìa khóa của cuốn sách Clow ma thuật! Hãy hiện nguyên hình!",
+      "legacyIds": [
+        802690,
+        802700
+      ]
+    },
+    {
+      "id": 802710,
+      "parentId": 802710,
+      "start": 1129.86,
+      "end": 1132.853,
+      "speaker": "Sakura",
+      "text": "Ich, Sakura, befehle es dir bei unserem Bund!",
+      "vi": "Ta, Sakura, ra lệnh cho ngươi bằng giao ước của chúng ta!",
+      "legacyIds": [
+        802710
+      ]
+    },
+    {
+      "id": 802720,
+      "parentId": 802720,
+      "start": 1133.4,
+      "end": 1135.253,
+      "speaker": "Sakura",
+      "text": "Gib das Siegel frei!",
+      "vi": "Giải trừ phong ấn!",
+      "legacyIds": [
+        802720
+      ]
+    },
+    {
+      "id": 802730,
+      "parentId": 802730,
+      "start": 1143.42,
+      "end": 1148.356,
+      "speaker": "Sakura / Kero",
+      "text": "Gut, es kann losgehen. Die Fly-Karte gehört zum Element Luft, sie ist mit Windy verwandt.",
+      "vi": "Tốt rồi, chiến thôi. Thẻ bài Fly thuộc hệ Phong, nó có họ hàng với Windy.",
+      "legacyIds": [
+        802730,
+        802740,
+        802750
+      ]
+    },
+    {
+      "id": 802760,
+      "parentId": 802760,
+      "start": 1148.356,
+      "end": 1150.62,
+      "speaker": "Kero",
+      "text": "Also kannst du die Windkarte benutzen, um sie zu fangen.",
+      "vi": "Vậy nên nhóc có thể dùng thẻ bài Gió để bắt nó.",
+      "legacyIds": [
+        802760
+      ]
+    },
+    {
+      "id": 802770,
+      "parentId": 802770,
+      "start": 1151.02,
+      "end": 1156.053,
+      "speaker": "Sakura / Kero",
+      "text": "Meinst du? Ja, aber zuerst musst du so dicht wie möglich an sie herankommen.",
+      "vi": "Ngươi chắc chứ? Chắc, nhưng trước tiên nhóc phải áp sát nó càng gần càng tốt.",
+      "legacyIds": [
+        802770,
+        802780
+      ]
+    },
+    {
+      "id": 802790,
+      "parentId": 802790,
+      "start": 1162.88,
+      "end": 1165.18,
+      "speaker": "Sakura",
+      "text": "Muss ich nicht, denn sie greift an!",
+      "vi": "Không cần đâu, nó đang lao tới kìa!",
+      "legacyIds": [
+        802790
+      ]
+    },
+    {
+      "id": 802800,
+      "parentId": 802800,
+      "start": 1165.253,
+      "end": 1167.053,
+      "speaker": "Kero",
+      "text": "Schnell, halt die Windkarte bereit!",
+      "vi": "Nhanh lên, chuẩn bị thẻ bài Gió đi!",
+      "legacyIds": [
+        802800
+      ]
+    },
+    {
+      "id": 802810,
+      "parentId": 802810,
+      "start": 1167.16,
+      "end": 1169.08,
+      "speaker": "Sakura",
+      "text": "Oh ja, die Karte, ich hab sie hier.",
+      "vi": "Ồ vâng, thẻ bài, tôi cầm đây rồi.",
+      "legacyIds": [
+        802810
+      ]
+    },
+    {
+      "id": 802820,
+      "parentId": 802820,
+      "start": 1169.186,
+      "end": 1170.22,
+      "speaker": "Kero",
+      "text": "Sie greift an!",
+      "vi": "Nó quay lại tấn công kìa!",
+      "legacyIds": [
+        802820
+      ]
+    },
+    {
+      "id": 802830,
+      "parentId": 802830,
+      "start": 1176.42,
+      "end": 1180.22,
+      "speaker": "Sakura / Kero",
+      "text": "Sie kommt zurück! Nimm die Windkarte zur Hilfe! Wie denn?",
+      "vi": "Nó quay lại kìa! Dùng thẻ bài Gió đi! Bằng cách nào?",
+      "legacyIds": [
+        802830
+      ]
+    },
+    {
+      "id": 802840,
+      "parentId": 802840,
+      "start": 1181.44,
+      "end": 1184.853,
+      "speaker": "Sakura / Kero",
+      "text": "Die Karte hilft nicht! Du bist der Cardcaptor!",
+      "vi": "Thẻ bài không giúp được! Nhóc là Thủ lĩnh Thẻ bài mà!",
+      "legacyIds": [
+        802840
+      ]
+    },
+    {
+      "id": 802850,
+      "parentId": 802850,
+      "start": 1184.92,
+      "end": 1186.786,
+      "speaker": "Kero",
+      "text": "Wenn dir nichts einfällt, sind wir verloren.",
+      "vi": "Nhóc mà không nghĩ ra cách thì cả hai tiêu mất.",
+      "legacyIds": [
+        802850
+      ]
+    },
+    {
+      "id": 802860,
+      "parentId": 802860,
+      "start": 1186.82,
+      "end": 1188.453,
+      "speaker": "Sakura",
+      "text": "Ich muss sie aufhalten!",
+      "vi": "Tôi phải chặn nó lại!",
+      "legacyIds": [
+        802860
+      ]
+    },
+    {
+      "id": 802870,
+      "parentId": 802870,
+      "start": 1190.56,
+      "end": 1193.486,
+      "speaker": "Sakura / Kero",
+      "text": "Na gut, ich habe eine Idee. Es wird langsam Zeit.",
+      "vi": "Được rồi, tôi có một ý tưởng. Cũng đến lúc rồi đấy.",
+      "legacyIds": [
+        802870
+      ]
+    },
+    {
+      "id": 802880,
+      "parentId": 802880,
+      "start": 1197.18,
+      "end": 1198.12,
+      "speaker": "Kero",
+      "text": "Sakura!",
+      "vi": "Sakura!",
+      "legacyIds": [
+        802880
+      ]
+    },
+    {
+      "id": 802890,
+      "parentId": 802890,
+      "start": 1213.08,
+      "end": 1213.987,
+      "speaker": "Sakura",
+      "text": "Windy!",
+      "vi": "Windy!",
+      "legacyIds": [
+        802890
+      ]
+    },
+    {
+      "id": 802900,
+      "parentId": 802900,
+      "start": 1213.987,
+      "end": 1216.886,
+      "speaker": "Sakura",
+      "text": "Bei unserem Bund, werde zur Fessel für diesen Vogel!",
+      "vi": "Nhân danh giao ước của chúng ta, hãy hóa thành xiềng xích trói chặt con chim này lại!",
+      "legacyIds": [
+        802900
+      ]
+    },
+    {
+      "id": 802910,
+      "parentId": 802910,
+      "start": 1221.74,
+      "end": 1223.22,
+      "speaker": "Sakura",
+      "text": "Entfalte deine Macht!",
+      "vi": "Giải phóng sức mạnh!",
+      "legacyIds": [
+        802910
+      ]
+    },
+    {
+      "id": 802920,
+      "parentId": 802920,
+      "start": 1248.986,
+      "end": 1253.9,
+      "speaker": "Sakura",
+      "text": "Als Cardcaptor Sakura befehle ich dir, Fly: Deine wahre Gestalt, nimm sie wieder an!",
+      "vi": "Với tư cách là Thủ lĩnh Thẻ bài, ta Sakura ra lệnh cho ngươi, Fly: Hãy trở về nguyên dạng!",
+      "legacyIds": [
+        802920,
+        802930,
+        802940
+      ]
+    },
+    {
+      "id": 802950,
+      "parentId": 802950,
+      "start": 1271.5,
+      "end": 1275.586,
+      "speaker": "Kero",
+      "text": "Ja, du hast es geschafft, Sakura!",
+      "vi": "Tuyệt quá, nhóc làm được rồi, Sakura!",
+      "legacyIds": [
+        802950
+      ]
+    },
+    {
+      "id": 802960,
+      "parentId": 802960,
+      "start": 1275.88,
+      "end": 1277.14,
+      "speaker": "Sakura",
+      "text": "Wie ist das möglich?",
+      "vi": "Sao lại có chuyện này được nhỉ?",
+      "legacyIds": [
+        802960
+      ]
+    },
+    {
+      "id": 802970,
+      "parentId": 802970,
+      "start": 1277.22,
+      "end": 1278.9,
+      "speaker": "Sakura",
+      "text": "Ich hätte nie geglaubt, dass ich das kann.",
+      "vi": "Tôi chưa bao giờ nghĩ mình có thể làm được.",
+      "legacyIds": [
+        802970
+      ]
+    },
+    {
+      "id": 802980,
+      "parentId": 802980,
+      "start": 1279.04,
+      "end": 1285.6,
+      "speaker": "Kero / Sakura",
+      "text": "Ich wusste es, sonst hätt ich dich nie zum Cardcaptor gemacht. Moment mal! Würdest du mich vielleicht fragen, ob ich überhaupt einverstanden bin?",
+      "vi": "Ta biết mà, nếu không ta đã chẳng chọn nhóc làm Thủ lĩnh Thẻ bài. Khoan đã! Lẽ ra ngươi phải hỏi xem tôi có đồng ý làm không đã chứ?",
+      "legacyIds": [
+        802980,
+        802990,
+        803000
+      ]
+    },
+    {
+      "id": 803010,
+      "parentId": 803010,
+      "start": 1285.786,
+      "end": 1291.386,
+      "speaker": "Kero / Sakura",
+      "text": "Warum denn? Du hast zugestimmt, als du Windy bei unserem Bund um Hilfe gebeten hast. Ha!",
+      "vi": "Cần gì phải hỏi? Nhóc đã đồng ý lúc gọi Windy bằng giao ước rồi còn gì. Há!",
+      "legacyIds": [
+        803010,
+        803020
+      ]
+    },
+    {
+      "id": 803030,
+      "parentId": 803030,
+      "start": 1292.686,
+      "end": 1297.22,
+      "speaker": "Kero",
+      "text": "Du musst Fly übrigens noch mit dem Schlüssel berühren, um ihr die Macht zu nehmen.",
+      "vi": "Nhân tiện, nhóc vẫn phải chạm vào Fly bằng chiếc chìa khóa để lấy đi sức mạnh của nó.",
+      "legacyIds": [
+        803030,
+        803040,
+        803050
+      ]
+    },
+    {
+      "id": 803060,
+      "parentId": 803060,
+      "start": 1297.22,
+      "end": 1299.653,
+      "speaker": "Sakura",
+      "text": "Und was passiert, wenn ich sie mit dem Schlüssel berühre?",
+      "vi": "Và chuyện gì sẽ xảy ra nếu tôi gõ chìa khóa vào nó?",
+      "legacyIds": [
+        803060
+      ]
+    },
+    {
+      "id": 803070,
+      "parentId": 803070,
+      "start": 1299.8,
+      "end": 1301.64,
+      "speaker": "Kero",
+      "text": "Mach's einfach, du wirst schon sehen.",
+      "vi": "Cứ thử đi, rồi nhóc sẽ thấy.",
+      "legacyIds": [
+        803070
+      ]
+    },
+    {
+      "id": 803080,
+      "parentId": 803080,
+      "start": 1314.2,
+      "end": 1317.086,
+      "speaker": "Kero / Sakura",
+      "text": "Na, macht es dir Spaß zu fliegen? Ja.",
+      "vi": "Sao, bay lượn sướng chứ? Vâng, thích quá đi!",
+      "legacyIds": [
+        803080
+      ]
+    },
+    {
+      "id": 803090,
+      "parentId": 803090,
+      "start": 1318.68,
+      "end": 1322.453,
+      "speaker": "Kero",
+      "text": "Du wirst ein guter Cardcaptor, das kannst du mir glauben.",
+      "vi": "Nhóc sẽ trở thành một Thủ lĩnh cừ khôi, tin ta đi.",
+      "legacyIds": [
+        803090
+      ]
+    },
+    {
+      "id": 803100,
+      "parentId": 803100,
+      "start": 1322.76,
+      "end": 1323.686,
+      "speaker": "Sakura",
+      "text": "Klar.",
+      "vi": "Đương nhiên rồi.",
+      "legacyIds": [
+        803100
+      ]
+    },
+    {
+      "id": 803110,
+      "parentId": 803110,
+      "start": 1324.453,
+      "end": 1331.22,
+      "speaker": "Sakura",
+      "text": "Hey, das mit dem Bund, das hab ich nur gesagt, weil mir nichts Besseres eingefallen ist. Das heißt aber nicht, dass ich alle Karten für dich einfange!",
+      "vi": "Này, chuyện giao ước lúc nãy, tôi chỉ nói thế vì chả nghĩ ra câu thần chú nào hay hơn thôi. Chứ không có nghĩa là tôi sẽ đi bắt hết thẻ bài cho ngươi đâu nhé!",
+      "legacyIds": [
+        803110,
+        803120,
+        803130,
+        803140,
+        803150
+      ]
+    },
+    {
+      "id": 804001,
+      "parentId": 804001,
+      "start": 1412.24,
+      "end": 1416.02,
+      "speaker": "Kero",
+      "text": "Hier ist euer Kero mit dem allerneuesten Klatsch und Tratsch.",
+      "vi": "Kero đây, mang đến cho các bạn những chuyện mới nhất!",
+      "legacyIds": [
+        804001
+      ]
+    },
+    {
+      "id": 804002,
+      "parentId": 804002,
+      "start": 1416.18,
+      "end": 1416.98,
+      "speaker": "Kero",
+      "text": "Schön, dass ihr da seid.",
+      "vi": "Rất vui vì các bạn đã đến.",
+      "legacyIds": [
+        804002
+      ]
+    },
+    {
+      "id": 804003,
+      "parentId": 804003,
+      "start": 1417.2,
+      "end": 1420.7,
+      "speaker": "Kero",
+      "text": "Bei mir könnt ihr Dinge erfahren, die ihr von Sakura wahrscheinlich nicht erfahren werdet.",
+      "vi": "Ở đây các bạn sẽ biết những điều có lẽ Sakura sẽ không kể.",
+      "legacyIds": [
+        804003
+      ]
+    },
+    {
+      "id": 804004,
+      "parentId": 804004,
+      "start": 1420.94,
+      "end": 1422.88,
+      "speaker": "Kero",
+      "text": "Interessante Dinge, also passt auf!",
+      "vi": "Toàn chuyện thú vị đấy, chú ý nhé!",
+      "legacyIds": [
+        804004
+      ]
+    },
+    {
+      "id": 804005,
+      "parentId": 804005,
+      "start": 1423.44,
+      "end": 1428.84,
+      "speaker": "Kero",
+      "text": "Heute sehen wir uns mal, tada, die Schuluniform der Tomoeda-Grundschule näher an.",
+      "vi": "Hôm nay, ta-da, chúng ta sẽ xem kỹ đồng phục trường tiểu học Tomoeda.",
+      "legacyIds": [
+        804005
+      ]
+    },
+    {
+      "id": 804006,
+      "parentId": 804006,
+      "start": 1430.6,
+      "end": 1433.56,
+      "speaker": "Kero",
+      "text": "Diese Uniform gibt es langärmlig und kurzärmlig.",
+      "vi": "Đồng phục này có loại tay dài và tay ngắn.",
+      "legacyIds": [
+        804006
+      ]
+    },
+    {
+      "id": 804007,
+      "parentId": 804007,
+      "start": 1433.68,
+      "end": 1436.04,
+      "speaker": "Kero",
+      "text": "Wie ihr seht, trägt Sakura hier die langärmlige Variante.",
+      "vi": "Như các bạn thấy, Sakura đang mặc loại tay dài.",
+      "legacyIds": [
+        804007
+      ]
+    },
+    {
+      "id": 804008,
+      "parentId": 804008,
+      "start": 1436.18,
+      "end": 1438.12,
+      "speaker": "Kero",
+      "text": "Die Hauptfarben sind Marineblau und Weiß.",
+      "vi": "Hai màu chủ đạo là xanh hải quân và trắng.",
+      "legacyIds": [
+        804008
+      ]
+    },
+    {
+      "id": 804009,
+      "parentId": 804009,
+      "start": 1438.36,
+      "end": 1440.32,
+      "speaker": "Kero",
+      "text": "Und mit den roten Streifen sieht sie echt cool aus.",
+      "vi": "Thêm các sọc đỏ nữa, trông thật đẹp phải không.",
+      "legacyIds": [
+        804009
+      ]
+    },
+    {
+      "id": 804010,
+      "parentId": 804010,
+      "start": 1440.7,
+      "end": 1446.06,
+      "speaker": "Kero",
+      "text": "Aber gerade die Details wie das Schulabzeichen auf dem linken Ärmel und die Mütze mit den Bändern kommen super.",
+      "vi": "Đặc biệt những chi tiết như phù hiệu ở tay áo trái và chiếc mũ có dải ruy băng trông rất đẹp.",
+      "legacyIds": [
+        804010
+      ]
+    },
+    {
+      "id": 804011,
+      "parentId": 804011,
+      "start": 1446.46,
+      "end": 1449.36,
+      "speaker": "Kero",
+      "text": "Und hier haben wir jetzt Keros Schnappschuss!",
+      "vi": "Và đây là ảnh chụp nhanh của Kero!",
+      "legacyIds": [
+        804011
+      ]
+    },
+    {
+      "id": 804012,
+      "parentId": 804012,
+      "start": 1449.68,
+      "end": 1450.8,
+      "speaker": "Kero",
+      "text": "Der ist gelungen, nicht?",
+      "vi": "Ảnh đẹp đấy chứ?",
+      "legacyIds": [
+        804012
+      ]
+    },
+    {
+      "id": 804013,
+      "parentId": 804013,
+      "start": 1451.26,
+      "end": 1452.72,
+      "speaker": "Kero",
+      "text": "Das ist Sakuras Rock.",
+      "vi": "Đây là váy của Sakura.",
+      "legacyIds": [
+        804013
+      ]
+    },
+    {
+      "id": 804014,
+      "parentId": 804014,
+      "start": 1452.72,
+      "end": 1455.64,
+      "speaker": "Kero",
+      "text": "Ein weißer Faltenrock, der ihr wahnsinnig gut steht, oder?",
+      "vi": "Một chiếc váy xếp ly trắng rất hợp với cô bé, phải không?",
+      "legacyIds": [
+        804014
+      ]
+    },
+    {
+      "id": 804015,
+      "parentId": 804015,
+      "start": 1456.08,
+      "end": 1458.04,
+      "speaker": "Kero",
+      "text": "Und hier übrigens die Uniform der Jungs.",
+      "vi": "Nhân tiện, đây là đồng phục của các bạn nam.",
+      "legacyIds": [
+        804015
+      ]
+    },
+    {
+      "id": 804016,
+      "parentId": 804016,
+      "start": 1458.5,
+      "end": 1459.78,
+      "speaker": "Kero",
+      "text": "Na gut, das war’s für heute.",
+      "vi": "Được rồi, hôm nay đến đây thôi.",
+      "legacyIds": [
+        804016
+      ]
+    },
+    {
+      "id": 804017,
+      "parentId": 804017,
+      "start": 1459.84,
+      "end": 1461.04,
+      "speaker": "Kero",
+      "text": "Ihr habt eine Menge gelernt.",
+      "vi": "Các bạn đã học được nhiều điều.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        804017
+      ]
+    },
+    {
+      "id": 804018,
+      "parentId": 804018,
+      "start": 1461.06,
+      "end": 1465.1,
+      "speaker": "Kero",
+      "text": "Und wenn es euch interessiert, könnt ihr ja auch beim nächsten Mal bei Keros Klatsch und Tratsch dabei sein.",
+      "vi": "Nếu thấy hứng thú, lần sau các bạn lại đến với mục Chuyện trò cùng Kero nhé.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        804018
+      ]
+    },
+    {
+      "id": 804019,
+      "parentId": 804019,
+      "start": 1465.1,
+      "end": 1467.86,
+      "speaker": "Kero",
+      "text": "Dann werde ich euch wieder eine Menge Zusatzinformationen geben.",
+      "vi": "Khi đó ta sẽ lại kể cho các bạn nhiều thông tin bổ sung.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        804019
+      ]
+    },
+    {
+      "id": 804020,
+      "parentId": 804020,
+      "start": 1468.04,
+      "end": 1469.34,
+      "speaker": "Kero",
+      "text": "Tschüss, bis dann!",
+      "vi": "Tạm biệt, hẹn gặp lại nhé!",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        804020
+      ]
+    },
+    {
+      "id": 806000,
+      "parentId": 806000,
+      "start": 1471.26,
+      "end": 1474.04,
+      "speaker": "Giới thiệu tập sau",
+      "text": "Welche Abenteuer erwarten euch bei Cardcaptor Sakura?",
+      "vi": "Những cuộc phiêu lưu nào đang chờ các bạn trong Cardcaptor Sakura?",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        806000
+      ]
+    },
+    {
+      "id": 806001,
+      "parentId": 806001,
+      "start": 1474.36,
+      "end": 1476.86,
+      "speaker": "Sakura",
+      "text": "Ich habe Fly, die erste Clow Card, gefangen.",
+      "vi": "Mình đã bắt được Fly, thẻ bài Clow đầu tiên.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        806001
+      ]
+    },
+    {
+      "id": 806002,
+      "parentId": 806002,
+      "start": 1476.98,
+      "end": 1478.56,
+      "speaker": "Sakura",
+      "text": "Aber wie kann ich Cardcaptor sein?",
+      "vi": "Nhưng làm sao mình có thể làm Thủ lĩnh Thẻ bài đây?",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        806002
+      ]
+    },
+    {
+      "id": 806003,
+      "parentId": 806003,
+      "start": 1478.62,
+      "end": 1480.08,
+      "speaker": "Sakura",
+      "text": "Immerhin gehe ich noch zur Schule.",
+      "vi": "Dù sao mình vẫn còn đi học mà.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        806003
+      ]
+    },
+    {
+      "id": 806004,
+      "parentId": 806004,
+      "start": 1480.26,
+      "end": 1482.42,
+      "speaker": "Sakura",
+      "text": "Stellt euch vor, meine Freunde würden davon erfahren.",
+      "vi": "Thử tưởng tượng các bạn của mình biết được chuyện này xem.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        806004
+      ]
+    },
+    {
+      "id": 806005,
+      "parentId": 806005,
+      "start": 1482.64,
+      "end": 1487.4,
+      "speaker": "Sakura",
+      "text": "Sie verlieren ihre Schatten und ohne Keros Hilfe wüsste ich nicht, was ich gegen so eine Gefahr machen kann.",
+      "vi": "Họ bị mất bóng, và nếu không có Kero giúp đỡ thì mình chẳng biết phải làm gì trước mối nguy như thế.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        806005
+      ]
+    },
+    {
+      "id": 806006,
+      "parentId": 806006,
+      "start": 1487.6,
+      "end": 1492.74,
+      "speaker": "Sakura",
+      "text": "Aber am meisten gespannt bin ich auf Tomoyos Videokamera, mit der sie etwas ganz Besonderes aufgenommen hat.",
+      "vi": "Nhưng điều mình tò mò nhất là máy quay của Tomoyo: cậu ấy đã quay được một thứ rất đặc biệt.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        806006
+      ]
+    },
+    {
+      "id": 806007,
+      "parentId": 806007,
+      "start": 1493.2,
+      "end": 1496.12,
+      "speaker": "Giới thiệu tập sau",
+      "text": "Cardcaptor Sakura. Sakura und Tomoyo.",
+      "vi": "Cardcaptor Sakura. Sakura và Tomoyo.",
+      "sourceEvidence": "full-source-medium-review.json; full-source-final-review.json; full-source-small-review.json",
+      "legacyIds": [
+        806007
+      ]
+    }
+  ]
+}

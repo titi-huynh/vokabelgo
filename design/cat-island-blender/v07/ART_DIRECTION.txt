@@ -1,0 +1,23 @@
+GHE MEO v07 — 2026-10-18
+
+User references:
+1. White fishing cat on a raft: triangular pink ears, tiny dark eyes, round
+   blush, little W mouth, yellow neckerchief, short soft limbs and curled tail.
+2. Fishing-shop concept: depth, overlapping tools and goods, fish shop crest,
+   hanging cloth signs, visible timber construction.
+3. Nik Henderson boat illustration: working-boat equipment, ladders, ropes,
+   lifebuoys, signal flags and layered, imperfect paint.
+
+Implementation:
+Cat silhouette and cheeks adjusted; yellow folded bandana, two resting paws.
+Boat: open shutters/louvres, brass porthole, fish crest, hanging menu cloths,
+labelled goods, two life rings with wraps and surrounding rope, side ladder,
+stern net, bow rope coil, cleats, stitched canvas repair and restrained chips.
+Retain the Vietnamese floating-market stall and its open service counter.
+
+This pass adds model/surface detail. Individual cat acting and articulated
+cloth/rigging animation are not implemented; the existing water and whole-boat
+buoyancy continue in the viewer. Source remains editable; v06 is preserved.
+
+Rebuild from the workspace:
+& 'C:\Program Files\Blender Foundation\Blender 5.2\blender.exe' -b --python 'design\cat-island-blender\v07\build_hero_boat_v07.py'

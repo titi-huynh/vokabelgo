@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VokabelGo — Đấu Từ · Lexicon Pipeline Review Workbench</title>
+  <link rel="stylesheet" href="/dau-tu-lexicon-review.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div class="brand-section">
+      <span class="brand-badge">VokabelGo</span>
+      <div>
+        <h1 class="brand-title">ĐẤU TỪ · LEXICON PIPELINE & CURATION WORKBENCH</h1>
+        <div class="brand-subtitle">
+          Pipeline v0.1 · OpenThesaurus Provider · CC-BY-SA 4.0 / GNU LGPL · Runtime Offline Mode
+        </div>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <a href="/dau-tu.html" class="btn btn-secondary">
+        <span>🎮 Quay lại Bàn chơi Đấu Từ</span>
+      </a>
+      <button id="btnRebuildRuntime" class="btn btn-primary">
+        <span>⚡ Re-export & Validate Runtime</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-container">
+
+    <!-- Top Dashboard Metrics Bar -->
+    <section class="stats-dashboard" id="statsDashboard">
+      <div class="stat-card">
+        <div class="stat-label">Tổng Entries</div>
+        <div class="stat-value" id="statTotalEntries">--</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Ứng viên (Candidates)</div>
+        <div class="stat-value candidate" id="statCandidates">--</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Cần xem xét</div>
+        <div class="stat-value needs-review" id="statNeedsReview">--</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Đã duyệt (Approved)</div>
+        <div class="stat-value approved" id="statApproved">--</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Từ chối (Rejected)</div>
+        <div class="stat-value rejected" id="statRejected">--</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Cặp từ đồng nghĩa</div>
+        <div class="stat-value" id="statSynonyms">--</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Cặp trái nghĩa (Gegenteil)</div>
+        <div class="stat-value" id="statAntonyms">--</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Ngữ cảnh duyệt (Contexts)</div>
+        <div class="stat-value approved" id="statContexts">--</div>
+      </div>
+      <div class="stat-card highlight">
+        <div class="stat-label">Isolated Nodes</div>
+        <div class="stat-value approved" id="statIsolated">0</div>
+      </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs-bar">
+      <button class="tab-btn active" data-tab="tab-relations">
+        <span>Quan hệ & Ứng viên</span>
+        <span class="tab-badge" id="badgeRelationsCount">0</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-polysemy">
+        <span>Đa nghĩa Polysemy (schwer / leicht / alt)</span>
+        <span class="tab-badge">Đặc tả</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-morphology">
+        <span>Động từ & Hình thái (Tách / Phản thân)</span>
+        <span class="tab-badge">Đặc tả</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-deckbuilder">
+        <span>Bộ bài & Kết nối Graph (Deck Builder)</span>
+        <span class="tab-badge approved">Ready</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-rotation">
+        <span>Mô phỏng Xoay vòng (Rotation Simulator)</span>
+        <span class="tab-badge" style="background:#2563eb; color:#fff;">10 Matches</span>
+      </button>
+    </div>
+
+    <!-- Toolbar: Search & Filters -->
+    <div class="toolbar" id="filterToolbar">
+      <div class="filter-group">
+        <input type="text" id="searchInput" class="search-input" placeholder="Tìm theo lemma, nghĩa tiếng Việt, sense...">
+      </div>
+
+      <div class="filter-group">
+        <span style="font-size: 12px; color: var(--ink-muted); font-weight: 600;">TỪ LOẠI:</span>
+        <div class="filter-pills" id="posFilterPills">
+          <button class="filter-pill active" data-pos="all">Tất cả</button>
+          <button class="filter-pill" data-pos="adjective">Tính từ (Adjektive)</button>
+          <button class="filter-pill" data-pos="verb">Động từ (Verben)</button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <span style="font-size: 12px; color: var(--ink-muted); font-weight: 600;">TRẠNG THÁI:</span>
+        <div class="filter-pills" id="statusFilterPills">
+          <button class="filter-pill active" data-status="all">Tất cả</button>
+          <button class="filter-pill" data-status="candidate">Candidate</button>
+          <button class="filter-pill" data-status="needs_review">Needs Review</button>
+          <button class="filter-pill" data-status="approved">Approved</button>
+          <button class="filter-pill" data-status="rejected">Rejected</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 1: RELATIONS & CANDIDATES -->
+    <div class="tab-content" id="tab-relations">
+      <div class="items-grid" id="relationsGrid">
+        <!-- Rendered dynamically by dau-tu-lexicon-review.js -->
+      </div>
+    </div>
+
+    <!-- TAB 2: POLYSEMY INSPECTOR -->
+    <div class="tab-content" id="tab-polysemy" style="display: none;">
+      <div class="polysemy-card" id="polysemySchwerCard">
+        <div class="polysemy-header">
+          <div>
+            <div class="polysemy-title">Trường hợp Đa nghĩa: "schwer" (difficult vs heavy)</div>
+            <div style="font-size: 13px; color: var(--ink-secondary);">
+              Quy tắc Section 48 & 5: Tách nghĩa triệt để thành hai Entry độc lập, không gộp sense, dùng hai bộ thẻ và hai ngữ cảnh riêng biệt.
+            </div>
+          </div>
+          <span class="status-badge approved">✓ STRICT SENSE SEPARATION</span>
+        </div>
+
+        <div class="polysemy-grid">
+          <!-- Sense 1: difficult -->
+          <div class="sense-column difficult">
+            <div class="sense-title">
+              <span>Sense 1: DIFFICULT (Khó / Phức tạp)</span>
+              <span class="lex-sense-tag">adj_schwer_difficult</span>
+            </div>
+            <div style="font-size: 12px; color: var(--ink-secondary);">
+              Nghĩa: Khó khăn về mặt tư duy, nhận thức hoặc giải quyết vấn đề.
+            </div>
+            <div class="context-box">
+              <div class="context-topic">Ngữ cảnh bài học · ctx_adjective_difficult</div>
+              <div class="sentence-de">
+                Die deutsche Grammatik ist <span class="sentence-token-highlight">schwer</span> zu verstehen.
+              </div>
+              <div class="sentence-vi">Ngữ pháp tiếng Đức khó hiểu.</div>
+            </div>
+            <div class="relation-box">
+              <div class="relation-header">
+                <span>TỪ ĐỒNG NGHĨA DUYỆT</span>
+                <span class="status-badge approved">Approved</span>
+              </div>
+              <div class="relation-pair">
+                <span>schwer</span>
+                <span class="relation-arrow">↔</span>
+                <span>schwierig</span>
+              </div>
+              <div style="font-size: 12px; color: var(--ink-secondary);">
+                Biến thể thay thế hợp lệ: <em>"Die deutsche Grammatik ist <span class="sentence-token-highlight">schwierig</span> zu verstehen."</em>
+              </div>
+            </div>
+            <div class="antonym-box">
+              <span class="antonym-label">GEGENTEIL</span>
+              <span>schwer → <strong>leicht</strong> / <strong>einfach</strong> (ctx_adjective_easy)</span>
+            </div>
+          </div>
+
+          <!-- Sense 2: heavy -->
+          <div class="sense-column heavy">
+            <div class="sense-title">
+              <span>Sense 2: HEAVY (Nặng / Trọng lượng)</span>
+              <span class="lex-sense-tag">adj_schwer_heavy</span>
+            </div>
+            <div style="font-size: 12px; color: var(--ink-secondary);">
+              Nghĩa: Có khối lượng hoặc sức nặng vật lý lớn, khó nâng hoặc mang vác.
+            </div>
+            <div class="context-box">
+              <div class="context-topic">Ngữ cảnh bài học · ctx_adjective_heavy</div>
+              <div class="sentence-de">
+                Der Koffer ist zu <span class="sentence-token-highlight">schwer</span> für das Flugzeug.
+              </div>
+              <div class="sentence-vi">Chiếc vali quá nặng đối với máy bay.</div>
+            </div>
+            <div class="relation-box">
+              <div class="relation-header">
+                <span>TỪ ĐỒNG NGHĨA DUYỆT</span>
+                <span class="status-badge approved">Approved</span>
+              </div>
+              <div class="relation-pair">
+                <span>schwer</span>
+                <span class="relation-arrow">↔</span>
+                <span>gewichtig / wuchtig</span>
+              </div>
+              <div style="font-size: 12px; color: var(--ink-secondary);">
+                Biến thể thay thế hợp lệ: <em>"Der Koffer ist zu <span class="sentence-token-highlight">gewichtig</span> für das Flugzeug."</em>
+              </div>
+            </div>
+            <div class="antonym-box">
+              <span class="antonym-label">GEGENTEIL</span>
+              <span>schwer → <strong>leicht</strong> (ctx_adjective_light_weight)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional polysemy examples: leicht & alt -->
+      <div style="margin-top: 16px;" class="polysemy-card">
+        <div class="polysemy-header">
+          <div>
+            <div class="polysemy-title">Các trường hợp Đa nghĩa khác đã chuẩn hóa</div>
+            <div style="font-size: 13px; color: var(--ink-secondary);">
+              Được bảo lưu trong Candidate Store và ngăn chặn gộp nghĩa (Section 48).
+            </div>
+          </div>
+        </div>
+        <div class="polysemy-grid">
+          <div class="sense-column">
+            <div class="sense-title">
+              <span>"leicht" (Dễ dàng vs Nhẹ cân)</span>
+            </div>
+            <ul style="font-size: 13px; color: var(--ink-secondary); margin-left: 18px; display: flex; flex-direction: column; gap: 6px;">
+              <li><code>adj_leicht_easy</code>: Trái nghĩa với <code>schwer_difficult</code>. Ví dụ: bài tập dễ.</li>
+              <li><code>adj_leicht_light_weight</code>: Trái nghĩa với <code>schwer_heavy</code>. Ví dụ: hành lý nhẹ.</li>
+            </ul>
+          </div>
+          <div class="sense-column">
+            <div class="sense-title">
+              <span>"alt" (Người già vs Đồ vật cũ)</span>
+            </div>
+            <ul style="font-size: 13px; color: var(--ink-secondary); margin-left: 18px; display: flex; flex-direction: column; gap: 6px;">
+              <li><code>adj_alt_old_person</code>: Trái nghĩa với <code>jung_young_person</code>.</li>
+              <li><code>adj_alt_old_object</code>: Trái nghĩa với <code>neu_new_object</code>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: VERB MORPHOLOGY -->
+    <div class="tab-content" id="tab-morphology" style="display: none;">
+      <div class="polysemy-card">
+        <div class="polysemy-header">
+          <div>
+            <div class="polysemy-title">Đặc tả Hình thái Động từ tiếng Đức (Section 10, 11)</div>
+            <div style="font-size: 13px; color: var(--ink-secondary);">
+              Động từ tách (Trennbare Verben), Động từ phản thân (Reflexive Verben) và Token Highlight trong câu ví dụ.
+            </div>
+          </div>
+          <span class="status-badge approved">✓ MORPHOLOGY VERIFIED</span>
+        </div>
+
+        <div class="items-grid" id="verbsMorphologyGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: DECK BUILDER & CONNECTIVITY -->
+    <div class="tab-content" id="tab-deckbuilder" style="display: none;">
+      <div class="deck-summary-panel">
+        <div>
+          <h2 style="font-size: 22px; font-weight: 800; color: #FFFFFF;">Deck Builder & Graph Connectivity Audit (Section 26, 27, 28)</h2>
+          <p style="font-size: 13px; color: var(--ink-secondary); margin-top: 4px;">
+            Mỗi bộ bài Đấu Từ chuẩn gồm 60 lá (48 lá từ vựng: 12 entries × 4 màu + 12 lá chức năng đặc biệt).
+            Đảm bảo 100% đồ thị ngữ nghĩa liên thông, 0 đỉnh cô lập và hệ số Wort-Kette đạt loại A+.
+          </p>
+        </div>
+
+        <div class="deck-cards-row">
+          <!-- Adjective Deck Info -->
+          <div class="deck-info-box">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <h3 style="font-size: 17px; font-weight: 700; color: #38BDF8;">Bộ Tính từ · Adjektive Deck</h3>
+              <span class="status-badge approved">60 Lá</span>
+            </div>
+            <div class="deck-stat-line">
+              <span>Số mục từ duyệt (Approved Entries):</span>
+              <span class="deck-stat-value">12 từ vựng chuẩn A1-B1</span>
+            </div>
+            <div class="deck-stat-line">
+              <span>Phân bố màu (rot, blau, gruen, gelb):</span>
+              <span class="deck-stat-value">12 × 4 = 48 lá từ</span>
+            </div>
+            <div class="deck-stat-line">
+              <span>Lá chức năng (+2, Cấm lượt, Đổi màu):</span>
+              <span class="deck-stat-value">12 lá đặc biệt</span>
+            </div>
+            <div class="deck-stat-line">
+              <span>Cặp trái nghĩa GEGENTEIL:</span>
+              <span class="deck-stat-value" style="color: var(--accent-gold);">12 cặp (6 chu kỳ 2 chiều)</span>
+            </div>
+            <div class="deck-stat-line">
+              <span>Đỉnh cô lập (Isolated Entries):</span>
+              <span class="deck-stat-value" style="color: var(--accent-green);">0 (Hoàn toàn liên thông)</span>
+            </div>
+            <div class="deck-stat-line">
+              <span>Wort-Kette Semantic Viability:</span>
+              <span class="deck-stat-value" style="color: var(--accent-green);">A+ (100% xích bài khả thi)</span>
+            </div>
+          </div>
+
+          <!-- Verb Deck Info -->
+          <div class="deck-info-box">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <h3 style="font-size: 17px; font-weight: 700; color: #C4B5FD;">Bộ Động từ · Verben Deck</h3>
+              <span class="status-badge approved">60 Lá</span>
+            </div>
+            <div class="deck-stat-line">
+              <span>Số mục từ duyệt (Approved Entries):</span>
+              <span class="deck-stat-value">12 từ vựng chuẩn A1-B1</span>
+            </div>
+            <div class="deck-stat-line">
+              <span>Phân bố màu (rot, blau, gruen, gelb):</span>
+              <span class="deck-stat-value">12 × 4 = 48 lá từ</span>
+            </div>
+            <div class="deck-stat-line">
+              <span>Lá chức năng (+2, Cấm lượt, Đổi màu):</span>
+              <span class="deck-stat-value">12 lá đặc biệt</span>
+            </div>
+            <div class="deck-stat-line">
+              <span>Cặp trái nghĩa GEGENTEIL:</span>
+              <span class="deck-stat-value" style="color: var(--accent-gold);">10 cặp (5 chu kỳ 2 chiều)</span>
+            </div>
+            <div class="deck-stat-line">
+              <span>Đỉnh cô lập (Isolated Entries):</span>
+              <span class="deck-stat-value" style="color: var(--accent-green);">0 (Hoàn toàn liên thông)</span>
+            </div>
+            <div class="deck-stat-line">
+              <span>Wort-Kette Semantic Viability:</span>
+              <span class="deck-stat-value" style="color: var(--accent-green);">A+ (100% xích bài khả thi)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Graph Topology Visual Box -->
+        <div class="relation-box" style="padding: 16px;">
+          <div style="font-weight: 700; color: #FFFFFF; margin-bottom: 8px;">
+            Đặc tả Topo Đồ thị Ngữ nghĩa (Graph Topology Integrity)
+          </div>
+          <div style="font-size: 13px; color: var(--ink-secondary); line-height: 1.6;">
+            - Mỗi đỉnh (Node) trong bộ bài có bậc vào/ra (Degree) tối thiểu là 1 cạnh đồng nghĩa (Synonym edge) và 1 cạnh trái nghĩa (Antonym edge).<br>
+            - Động cơ trò chơi sử dụng Runtime Dataset độc lập, được nạp tại thời điểm khởi động; tuyệt đối <strong>không gọi API từ điển ngoài khi người chơi đang đánh bài</strong> (Section 43).<br>
+            - Tập dữ liệu xuất ra bao gồm cả file JSON tĩnh (<code>data/lexicon/runtime/dau-tu-approved-runtime.json</code>) và module UMD tương thích trình duyệt (<code>data/lexicon/runtime/dau-tu-runtime-data.js</code>).
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 5: Rotation Simulator & Match Diversity -->
+    <div id="tab-rotation" class="tab-pane" hidden>
+      <div class="deck-summary-container">
+        
+        <!-- Controls & Simulator Header -->
+        <div class="relation-box" style="padding: 20px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+            <div>
+              <h2 style="font-size: 20px; font-weight: 800; color: #FFFFFF; margin-bottom: 4px;">
+                Mô phỏng Xoay vòng Từ vựng · Vocabulary Rotation Simulator
+              </h2>
+              <div style="font-size: 13px; color: var(--ink-secondary);">
+                Kiến trúc: APPROVED POOL → CLUSTER SELECTION → MATCH DECK BUILDER → PHYSICAL 4-COLOR CARDS
+              </div>
+            </div>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <button id="btnSimulate10Adj" class="btn btn-primary" style="background: #2563eb;">
+                <span>▶ Mô phỏng 10 Ván Tính từ (Adjektive)</span>
+              </button>
+              <button id="btnSimulate10Verb" class="btn btn-secondary" style="border-color: #3b82f6; color: #93c5fd;">
+                <span>▶ Mô phỏng 10 Ván Động từ (Verben)</span>
+              </button>
+              <button id="btnResetRotationSim" class="btn btn-secondary" style="border-color: #ef4444; color: #fca5a5;">
+                <span>🗑 Reset Lịch sử</span>
+              </button>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 6px;">
+            <div class="stat-card">
+              <div class="stat-label">Tổng Ván Mô Phỏng</div>
+              <div class="stat-value approved" id="simStatTotalMatches">0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Từ vựng duy nhất gặp</div>
+              <div class="stat-value" style="color: #60a5fa;" id="simStatUniqueEntries">0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Trùng ván liên tiếp (N vs N-1)</div>
+              <div class="stat-value" style="color: #34d399;" id="simStatConsecOverlap">0%</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Trùng lặp Rolling 3 ván</div>
+              <div class="stat-value" style="color: #fbbf24;" id="simStatRolling3Overlap">--</div>
+            </div>
+            <div class="stat-card highlight">
+              <div class="stat-label">Isolated Nodes</div>
+              <div class="stat-value approved" id="simStatIsolated">0</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- QA Verification Table -->
+        <div class="relation-box" style="padding: 16px; overflow-x: auto;">
+          <div style="font-weight: 700; color: #FFFFFF; margin-bottom: 12px; font-size: 15px;">
+            Báo cáo Kiểm định Vòng lặp 10 Ván Liên tiếp (QA Audit Trail)
+          </div>
+          <table style="width: 100%; border-collapse: collapse; font-size: 12px; text-align: left;" id="rotationQaTable">
+            <thead>
+              <tr style="border-bottom: 1px solid var(--border-medium); color: var(--ink-muted);">
+                <th style="padding: 10px 8px;">Ván</th>
+                <th style="padding: 10px 8px;">Bộ</th>
+                <th style="padding: 10px 8px;">Cụm ngữ nghĩa (Clusters)</th>
+                <th style="padding: 10px 8px;">12 Từ vựng (Lemmas)</th>
+                <th style="padding: 10px 8px; text-align: center;">Trùng N-1</th>
+                <th style="padding: 10px 8px; text-align: center;">Trùng R3</th>
+                <th style="padding: 10px 8px; text-align: center;">Tích lũy</th>
+                <th style="padding: 10px 8px; text-align: center;">Syn / Ant</th>
+                <th style="padding: 10px 8px; text-align: center;">Isolated</th>
+                <th style="padding: 10px 8px; text-align: center;">Kiểm định</th>
+              </tr>
+            </thead>
+            <tbody id="rotationQaTableBody">
+              <tr>
+                <td colspan="10" style="padding: 24px; text-align: center; color: var(--ink-muted);">
+                  Nhấn "Mô phỏng 10 Ván Tính từ" hoặc "Mô phỏng 10 Ván Động từ" để khởi chạy kiểm định vòng lặp.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Rule Explanations -->
+        <div class="relation-box" style="padding: 16px;">
+          <div style="font-weight: 700; color: #FFFFFF; margin-bottom: 8px;">
+            Quy tắc Xoay vòng Ngữ nghĩa & Thời gian hồi (Semantic Clusters & Cooldown)
+          </div>
+          <div style="font-size: 13px; color: var(--ink-secondary); line-height: 1.6;">
+            1. <strong>Chọn theo cụm ngữ nghĩa (Semantic Clusters):</strong> Không chọn 12 từ ngẫu nhiên độc lập. Mỗi ván gồm 3 cụm (ví dụ: Khó ↔ Dễ + Đắt ↔ Rẻ + Nhanh ↔ Chậm), đảm bảo 100% từ có liên kết đồng nghĩa và trái nghĩa hợp lệ (0 isolated nodes).<br>
+            2. <strong>0% trùng lặp giữa 2 ván liên tiếp (Strict Anti-Repeat):</strong> Ván N+1 tuyệt đối không lặp lại bất kỳ từ nào của Ván N khi pool còn cụm chưa chơi.<br>
+            3. <strong>Hạ trọng số 3 ván gần nhất (Rolling 3 Cooldown):</strong> Các cụm vừa xuất hiện trong 3 ván gần nhất bị trừ điểm ưu tiên nặng.<br>
+            4. <strong>Lặp lại ngắt quãng (Spaced Review):</strong> Sau khi qua thời gian hồi (≥ 3 ván), các cụm từ nhận điểm thưởng ôn tập để người học củng cố kiến thức.<br>
+            5. <strong>Sinh 60 lá vật lý sau khi chọn từ:</strong> 12 từ × 4 màu = 48 lá từ + 12 lá chức năng = 60 lá chuẩn bàn 4 người.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Notification Toast -->
+  <div id="reviewToast" class="review-toast">
+    <span id="toastIcon">✓</span>
+    <span id="toastMessage">Thông báo</span>
+  </div>
+
+  <!-- Footer with Mandatory Attribution -->
+  <footer class="app-footer">
+    <div>
+      VokabelGo — Dự án Học tiếng Đức qua Trò chơi Thẻ bài · Lexicon Pipeline v0.1
+    </div>
+    <div class="attribution-links">
+      Nguồn dữ liệu ứng viên: <a href="https://www.openthesaurus.de" target="_blank" rel="noopener">OpenThesaurus</a>
+      (Lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC-BY-SA 4.0</a> / GNU LGPL)
+      · Dữ liệu game đã qua tinh tuyển và xác thực ngữ pháp ngữ cảnh bản ngữ.
+    </div>
+  </footer>
+
+  <script src="/data/lexicon/runtime/dau-tu-runtime-data.js"></script>
+  <script src="/src/lexicon/semantic-clusters.js"></script>
+  <script src="/src/lexicon/vocabulary-history.js"></script>
+  <script src="/src/lexicon/match-deck-builder.js"></script>
+  <script src="/dau-tu-lexicon-review.js"></script>
+</body>
+</html>

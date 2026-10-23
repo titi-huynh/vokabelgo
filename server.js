@@ -20,7 +20,7 @@ const MIME_TYPES = {
   '.ico': 'image/x-icon'
 };
 
-const server = http.createServer((req, res) => {
+const requestHandler = (req, res) => {
   let reqUrl = decodeURI(req.url.split('?')[0]);
   if (reqUrl === '/') reqUrl = '/index.html';
   if (reqUrl === '/preview/wortturm' || reqUrl === '/preview/wortturm/' || reqUrl === '/wortturm' || reqUrl === '/wortturm/') {
@@ -28,6 +28,68 @@ const server = http.createServer((req, res) => {
   }
   if (reqUrl === '/preview/wortcrush' || reqUrl === '/preview/wortcrush/' || reqUrl === '/wortcrush' || reqUrl === '/wortcrush/') {
     reqUrl = '/wortcrush.html';
+  }
+  if (reqUrl === '/preview/dau-tu' || reqUrl === '/preview/dau-tu/' || reqUrl === '/dau-tu' || reqUrl === '/dau-tu/') {
+    reqUrl = '/dau-tu.html';
+  }
+  if (reqUrl === '/preview/dau-tu-cards' || reqUrl === '/preview/dau-tu-cards/' || reqUrl === '/dau-tu-cards' || reqUrl === '/dau-tu-cards/') {
+    reqUrl = '/dau-tu-cards.html';
+  }
+  if (reqUrl === '/preview/dau-tu-lexicon-review' || reqUrl === '/preview/dau-tu-lexicon-review/' || reqUrl === '/dau-tu-lexicon-review' || reqUrl === '/dau-tu-lexicon-review/') {
+    reqUrl = '/dau-tu-lexicon-review.html';
+  }
+
+  // Lexicon Review Dev API
+  if (reqUrl === '/api/lexicon/data') {
+    res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8', 'Access-Control-Allow-Origin': '*' });
+    const candidatesPath = path.join(__dirname, 'data/lexicon/candidates/candidates.json');
+    const approvedPath = path.join(__dirname, 'data/lexicon/approved/approved.json');
+    const runtimePath = path.join(__dirname, 'data/lexicon/runtime/dau-tu-approved-runtime.json');
+    
+    let candidates = { entries: {}, relations: {} };
+    let approved = { entries: {}, relations: {}, contexts: {}, antonyms: {} };
+    let runtime = null;
+    
+    if (fs.existsSync(candidatesPath)) {
+      try { candidates = JSON.parse(fs.readFileSync(candidatesPath, 'utf8')); } catch(e) {}
+    }
+    if (fs.existsSync(approvedPath)) {
+      try { approved = JSON.parse(fs.readFileSync(approvedPath, 'utf8')); } catch(e) {}
+    }
+    if (fs.existsSync(runtimePath)) {
+      try { runtime = JSON.parse(fs.readFileSync(runtimePath, 'utf8')); } catch(e) {}
+    }
+    
+    res.end(JSON.stringify({ candidates, approved, runtime }));
+    return;
+  }
+
+  if (reqUrl === '/api/lexicon/action' && req.method === 'POST') {
+    let body = '';
+    req.on('data', chunk => { body += chunk; });
+    req.on('end', () => {
+      try {
+        const payload = JSON.parse(body);
+        const { CandidateStore } = require('./src/lexicon/candidate-store');
+        const { RuntimeExporter } = require('./src/lexicon/runtime-exporter');
+        const store = new CandidateStore();
+        
+        if (payload.action === 'set_relation_status') {
+          store.setRelationStatus(payload.relationId, payload.status, payload.notes || '', payload.reviewer || 'lead-reviewer');
+          const exporter = new RuntimeExporter(store);
+          exporter.exportRuntime();
+        } else if (payload.action === 'rebuild') {
+          const exporter = new RuntimeExporter(store);
+          exporter.exportRuntime();
+        }
+        res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8', 'Access-Control-Allow-Origin': '*' });
+        res.end(JSON.stringify({ success: true, stats: store.getDashboardStats() }));
+      } catch (err) {
+        res.writeHead(500, { 'Content-Type': 'application/json; charset=utf-8', 'Access-Control-Allow-Origin': '*' });
+        res.end(JSON.stringify({ success: false, error: err.message }));
+      }
+    });
+    return;
   }
 
   const filePath = path.join(__dirname, reqUrl);
@@ -73,19 +135,31 @@ const server = http.createServer((req, res) => {
       fs.createReadStream(filePath).pipe(res);
     }
   });
-});
+};
+
+const server = http.createServer(requestHandler);
 
 server.listen(PORT, () => {
   console.log(`\n======================================================`);
   console.log(`  VokabelGo Web Server dang chay tai:`);
   console.log(`  >> http://localhost:${PORT}`);
+  console.log(`  >> http://127.0.0.1:${PORT}`);
   console.log(`======================================================\n`);
   
   // Tự động mở trình duyệt nếu không ở chế độ CI hoặc NO_OPEN
   const SHOULD_OPEN_BROWSER = !process.env.CI && process.env.VOKABELGO_NO_OPEN !== '1';
   if (SHOULD_OPEN_BROWSER) {
-    const url = `http://localhost:${PORT}`;
+    const url = `http://localhost:${PORT}/dau-tu.html`;
     const startCmd = process.platform === 'win32' ? `start ${url}` : `open ${url}`;
     exec(startCmd);
   }
 });
+
+// Đồng thời hỗ trợ cổng 3001 nếu người dùng mở theo hướng dẫn README
+if (PORT !== 3001) {
+  const altServer = http.createServer(requestHandler);
+  altServer.on('error', () => {});
+  altServer.listen(3001, () => {
+    console.log(`  >> Ho tro them cong phu: http://localhost:3001/dau-tu.html`);
+  });
+}

@@ -1,0 +1,35 @@
+$mediaObject.jsonpHelper.storeAndPlay({
+  "mediaVersion" : "1.4.0",
+  "mediaType" : "vod",
+  "mediaResource" : {
+    "dflt" : {
+      "videoURL" : "//wdradaptiv-vh.akamaihd.net/i/media/p/public/weltweit/2026/05/12/c694aa82-44b1-49fb-a43e-ab6b56c16a45/c694aa82-44b1-49fb-a43e-ab6b56c16a45_AVC-,270,360,540,720,1080,.mp4.csmil/master.m3u8",
+      "slVideoURL" : "//wdradaptiv-vh.akamaihd.net/i/media/p/public/weltweit/2026/05/12/ad3662cc-b834-484a-affa-8c2bcd131ac8/ad3662cc-b834-484a-affa-8c2bcd131ac8_AVC-,270,360,540,720,1080,.mp4.csmil/master.m3u8",
+      "adVideoURL" : "//wdradaptiv-vh.akamaihd.net/i/media/p/public/weltweit/2026/05/12/c9550fc9-5b5a-4697-872b-1b39395b1cdb/c9550fc9-5b5a-4697-872b-1b39395b1cdb_AVC-,270,360,540,720,1080,.mp4.csmil/master.m3u8",
+      "mediaFormat" : "hls"
+    },
+    "alt" : {
+      "videoURL" : "//wdr-progressive.ard-mcdn.de/media/p/public/weltweit/2026/05/12/c694aa82-44b1-49fb-a43e-ab6b56c16a45/c694aa82-44b1-49fb-a43e-ab6b56c16a45_AVC-720.mp4",
+      "slVideoURL" : "//wdr-progressive.ard-mcdn.de/media/p/public/weltweit/2026/05/12/ad3662cc-b834-484a-affa-8c2bcd131ac8/ad3662cc-b834-484a-affa-8c2bcd131ac8_AVC-720.mp4",
+      "adVideoURL" : "//wdr-progressive.ard-mcdn.de/media/p/public/weltweit/2026/05/12/c9550fc9-5b5a-4697-872b-1b39395b1cdb/c9550fc9-5b5a-4697-872b-1b39395b1cdb_AVC-720.mp4",
+      "mediaFormat" : "mp4"
+    },
+    "previewImage" : "//kinder.wdr.de/tv/die-sendung-mit-der-maus/-die-sendung-vom--146~_v-%%FORMAT%%.jpg",
+    "captionsHash" : {
+      "xml" : "//www1.wdr.de/kinder/tv/die-sendung-mit-der-maus/av/video-lachgeschichte-trudes-tier--kuchen-100.ebutt",
+      "vtt" : "//www1.wdr.de/kinder/tv/die-sendung-mit-der-maus/av/video-lachgeschichte-trudes-tier--kuchen-100.vtt",
+      "srt" : "//www1.wdr.de/kinder/tv/die-sendung-mit-der-maus/av/video-lachgeschichte-trudes-tier--kuchen-100.srt"
+    },
+    "duration" : 382
+  },
+  "trackerData" : {
+    "trackerClipId" : "mdb-1808050",
+    "trackerClipCategory" : "Das Erste",
+    "trackerClipSubcategory" : "Die Sendung mit der Maus",
+    "trackerClipTitle" : "Kuchen",
+    "trackerClipAirTime" : "17.05.2026 09:30",
+    "trackerClipIsTrailer" : "0",
+    "trackerClipAgfCategory" : "Information",
+    "trackerClipIsWebOnly" : "0"
+  }
+});

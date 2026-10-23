@@ -1,0 +1,154 @@
+{
+  "method": "independent faster-whisper base auto-detection; no forced language",
+  "checks": [
+    {
+      "start": 10,
+      "end": 40,
+      "language": "de",
+      "languageProbability": 0.9988901019096375,
+      "segments": [
+        {
+          "start": 10.0,
+          "end": 13.0,
+          "text": "Ah, meine Mama hat mir das geschenkt."
+        },
+        {
+          "start": 13.0,
+          "end": 15.0,
+          "text": "Tom, lauf."
+        },
+        {
+          "start": 16.0,
+          "end": 18.0,
+          "text": "Hey, die schnappen wir uns."
+        },
+        {
+          "start": 19.0,
+          "end": 22.0,
+          "text": "Wie wär's, wenn ich unsere Platz in der Schlange halte?"
+        },
+        {
+          "start": 22.0,
+          "end": 23.0,
+          "text": "Ja?"
+        }
+      ]
+    },
+    {
+      "start": 120,
+      "end": 150,
+      "language": "de",
+      "languageProbability": 0.9830483198165894,
+      "segments": [
+        {
+          "start": 120.0,
+          "end": 121.0,
+          "text": "Stopp!"
+        },
+        {
+          "start": 123.0,
+          "end": 125.0,
+          "text": "Äh, bist du dabei oder nicht?"
+        },
+        {
+          "start": 125.0,
+          "end": 128.0,
+          "text": "Wo, wer fanden wir? Schnappen wir uns ein paar Pilzen wie ich den Partner!"
+        },
+        {
+          "start": 128.0,
+          "end": 129.0,
+          "text": "Das würde ich hören!"
+        },
+        {
+          "start": 142.0,
+          "end": 145.0,
+          "text": "Na, na, na, na, na, na, na, na, na, na, na, na, na, na, na, na!"
+        },
+        {
+          "start": 145.0,
+          "end": 147.0,
+          "text": "Was machen wir?"
+        },
+        {
+          "start": 149.0,
+          "end": 151.0,
+          "text": "Was machen wir?"
+        }
+      ]
+    },
+    {
+      "start": 220,
+      "end": 250,
+      "language": "de",
+      "languageProbability": 0.9892237782478333,
+      "segments": [
+        {
+          "start": 220.0,
+          "end": 224.0,
+          "text": "Wir wollen doch keine anderen limitierten Schurz ruinieren."
+        },
+        {
+          "start": 224.0,
+          "end": 226.0,
+          "text": "Du traust dich sowieso nicht."
+        },
+        {
+          "start": 226.0,
+          "end": 227.0,
+          "text": "Chris!"
+        },
+        {
+          "start": 227.0,
+          "end": 228.0,
+          "text": "Oh, vor de mich nicht heraus!"
+        },
+        {
+          "start": 228.0,
+          "end": 230.0,
+          "text": "Diese Schurz sind die einzige Freude in meinem Leben."
+        },
+        {
+          "start": 230.0,
+          "end": 232.0,
+          "text": "Wenn ich kann, ist er das Schurz abengang."
+        },
+        {
+          "start": 232.0,
+          "end": 234.0,
+          "text": "Dann auch niemand sonst."
+        },
+        {
+          "start": 234.0,
+          "end": 236.0,
+          "text": "Tom, nein!"
+        },
+        {
+          "start": 236.0,
+          "end": 238.0,
+          "text": "Nein!"
+        },
+        {
+          "start": 238.0,
+          "end": 241.0,
+          "text": "Tom, lass mich los!"
+        },
+        {
+          "start": 241.0,
+          "end": 245.0,
+          "text": "Tom!"
+        },
+        {
+          "start": 245.0,
+          "end": 246.0,
+          "text": "Ja!"
+        },
+        {
+          "start": 248.0,
+          "end": 250.0,
+          "text": "Panda!"
+        }
+      ]
+    }
+  ]
+}

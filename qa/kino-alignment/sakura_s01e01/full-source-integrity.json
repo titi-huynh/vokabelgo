@@ -1,0 +1,72 @@
+[
+  {
+    "path": "C:\\Users\\huynh\\Downloads\\Cardcaptor_S01E01_German_720p_AAC_WebRip_x264-TSP.mp4",
+    "sha256": "dc95ae144394c8e642bd6b38fa4c92584cb833f3e6e3487b4cd5d61b043956c5",
+    "encodedStreamHashes": [
+      "0,v,SHA256=9795977c7ccc7e80710a3710ca06daadaf605c6d0aa183b8e04716848075a21e",
+      "1,a,SHA256=1d58d0f96c3b9acb7b8080de163c5dfdebe247c21dbf6d8060d3dfe4970f5f7e"
+    ],
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "width": 960,
+          "height": 720,
+          "time_base": "1/24000",
+          "start_time": "0.083000",
+          "duration": "1500.373875"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "time_base": "1/44100",
+          "start_time": "0.000000",
+          "duration": "1497.361995"
+        }
+      ],
+      "format": {
+        "start_time": "0.000000",
+        "duration": "1500.456875",
+        "size": "242449971"
+      }
+    }
+  },
+  {
+    "path": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\video\\sakura_s01e01.mp4",
+    "sha256": "6f9bc597282c90524945c9f36dae627797f1857481b0f2549643d535cc2843b1",
+    "encodedStreamHashes": [
+      "0,v,SHA256=9795977c7ccc7e80710a3710ca06daadaf605c6d0aa183b8e04716848075a21e",
+      "1,a,SHA256=1d58d0f96c3b9acb7b8080de163c5dfdebe247c21dbf6d8060d3dfe4970f5f7e"
+    ],
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "width": 960,
+          "height": 720,
+          "time_base": "1/24000",
+          "start_time": "0.083000",
+          "duration": "1500.373875"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "time_base": "1/44100",
+          "start_time": "0.000000",
+          "duration": "1497.361995"
+        }
+      ],
+      "format": {
+        "start_time": "0.000000",
+        "duration": "1500.456875",
+        "size": "242449971"
+      }
+    }
+  }
+]

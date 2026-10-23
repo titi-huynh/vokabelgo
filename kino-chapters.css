@@ -1,0 +1,154 @@
+.peppa-chapters { margin: 12px 0 20px; padding: 24px; background: #fcfbf6; border: 1px solid #d8dfcd; border-radius: 20px; color: #2d3b2e; scroll-margin-top: 20px; }
+.peppa-chapters[hidden], .peppa-finished[hidden], .peppa-watch-note[hidden] { display: none; }
+.peppa-watch-controls[hidden] { display: none; }
+.peppa-watch-controls { display: flex; align-items: center; gap: 14px; padding: 14px 24px; color: #e9f0df; background: #17211d; font-size: 12px; font-variant-numeric: tabular-nums; }
+.peppa-watch-controls button { width: 44px; height: 44px; flex-shrink: 0; border: 1px solid #9cae89; border-radius: 8px; background: #334b30; color: white; cursor: pointer; }
+.peppa-watch-controls input { flex: 1; min-width: 0; accent-color: #b5cf96; }
+#diktatMode.kino-chapters-active .kino-full-modal-body { min-height: 0; position: relative; }
+.peppa-watch-caption { position: absolute; left: 5%; right: 5%; bottom: 18px; padding: 12px 18px; background: #101812e8; color: white; border-radius: 10px; text-align: center; pointer-events: none; }
+.peppa-watch-caption[hidden] { display: none; }
+#peppaWatchDe { font-size: clamp(15px, 2vw, 23px); font-weight: 700; line-height: 1.45; }
+#peppaWatchVi { margin-top: 5px; color: #e0eacb; font-size: clamp(12px, 1.4vw, 16px); }
+#peppaWatchCC[aria-pressed="false"] { background: transparent; color: #99aa92; }
+.peppa-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+.peppa-eyebrow { margin: 0 0 7px; font-size: 10px; font-weight: 700; letter-spacing: 1.3px; color: #67785b; }
+.peppa-heading h2 { margin: 0; font-family: var(--font-display); font-size: clamp(22px, 3vw, 30px); line-height: 1.3; }
+#peppaOverall { font-size: 11px; color: #67785b; white-space: nowrap; }
+.peppa-parts { display: grid; grid-template-columns: repeat(var(--kino-part-count, 5), minmax(0, 1fr)); gap: 9px; }
+.peppa-part { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; min-width: 0; min-height: 142px; text-align: left; padding: 14px 12px; border: 1px solid #dce2d4; border-radius: 12px; background: white; color: #33432f; cursor: pointer; box-shadow: none; }
+.peppa-part:hover { background: #f1f5e9; border-color: #9aac7e; transform: none; }
+.peppa-part[aria-pressed="true"] { border: 2px solid #6e8950; padding: 13px 11px; background: #edf3e3; }
+.peppa-part strong { font-size: 12px; line-height: 1.5; }
+.peppa-part-number { font-size: 9px; letter-spacing: .8px; color: #6c7d5f; }
+.peppa-part-time { font-size: 10px; color: #687260; margin-top: auto; }
+.peppa-part-progress { font-size: 10px; font-weight: 700; color: #527442; }
+.peppa-current { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0 18px; }
+.peppa-current h3 { margin: 0; font-family: var(--font-display); font-size: 25px; }
+#peppaPartGoal { margin: 7px 0 0; color: #6d7565; font-size: 12px; line-height: 1.7; max-width: 510px; }
+.peppa-actions { display: flex; flex-wrap: wrap; gap: 8px; flex-shrink: 0; }
+.peppa-actions button, .peppa-finished button, .peppa-watch-note button { min-height: 46px; padding: 10px 15px; border: 1px solid #788d60; border-radius: 10px; background: #eff3e7; color: #344b2c; font-size: 13px; font-weight: 700; cursor: pointer; box-shadow: none; }
+.peppa-actions .peppa-watch { background: #567443; color: white; border-color: #567443; }
+.peppa-options { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-top: 14px; border-top: 1px solid #dfe5d5; }
+.peppa-options > div { display: flex; flex-wrap: wrap; gap: 4px; }
+.peppa-options button { min-height: 44px; padding: 8px 10px; background: transparent; color: #526047; font-size: 12px; border: 1px solid transparent; border-radius: 8px; box-shadow: none; cursor: pointer; }
+.peppa-options button[aria-pressed="true"] { color: #3c592f; border-color: #cbd8ba; background: #e8eedf; font-weight: 700; }
+#peppaWatchStatus { color: #75806c; font-size: 10px; text-align: right; }
+.peppa-finished { margin-top: 18px; padding: 16px; background: #e8f2df; border: 1px solid #b8cda5; border-radius: 12px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.peppa-finished strong { font-size: 13px; }
+.peppa-finished p { margin: 6px 0 0; font-size: 11px; color: #637657; }
+.peppa-watch-note { display: flex; gap: 16px; align-items: center; justify-content: center; flex-wrap: wrap; padding: 10px 20px; background: #edf3e3; color: #425d35; font-size: 12px; }
+#diktatMode.kino-chapters-active .kino-v3-milestones { display: none; }
+#diktatMode.kino-chapters-active .kino-v3-progress-card { margin-bottom: 16px; }
+#diktatMode.kino-chapters-active .kino-v3-timeline-card { margin-top: 20px; }
+.peppa-selector-label { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; font-size: 12px; font-weight: 700; }
+.peppa-selector-label span { font-size: 11px; font-weight: 400; color: #687260; }
+.peppa-swipe-hint { display: none; }
+.peppa-has-progress .peppa-watch { background: #eff3e7; color: #344b2c; border-color: #788d60; }
+.peppa-has-progress .peppa-practice { background: #567443; color: white; border-color: #567443; }
+#diktatMode.kino-chapters-active { --kino-ink: #30412f; --kino-muted: #62715b; --kino-line: #d9e0d1; --kino-green: #52723f; }
+#diktatMode.kino-chapters-active :is(button, summary):focus-visible { outline: 3px solid #a7732d; outline-offset: 3px; }
+#diktatMode.kino-chapters-active :is(.kino-v3-card, .kino-v3-progress-card, .kino-v3-timeline-card, .kino-v3-video-card) { background: #fcfbf6; color: var(--kino-ink); border-color: var(--kino-line); box-shadow: 0 3px 12px #34452d09; }
+#diktatMode.kino-chapters-active :is(.kino-v3-controls-bar, .kino-v3-sentence-info-bar, .kino-v3-timeline-header) { background: #f0f3e9; border-color: var(--kino-line); color: var(--kino-muted); }
+#diktatMode.kino-chapters-active :is(.kino-v3-card-title, .kino-v3-prog-stats, .kino-v3-timeline-title) { color: var(--kino-ink); }
+#diktatMode.kino-chapters-active :is(.kino-top-action-btn, .kino-btn-ctrl, .kino-action-btn-main.outline) { min-height: 44px; background: #fcfbf6; color: var(--kino-ink); border: 1px solid #b8c7aa; box-shadow: none; }
+#diktatMode.kino-chapters-active :is(.kino-top-action-btn, .kino-btn-ctrl, .kino-action-btn-main.outline):hover:not(:disabled) { background: #e9efdf; border-color: #6e8953; color: #30492c; transform: none; }
+#diktatMode.kino-chapters-active :is(.kino-btn-ctrl.primary, .kino-action-btn-main.primary) { min-height: 44px; background: var(--kino-green); color: white; border: 1px solid var(--kino-green); box-shadow: none; }
+#diktatMode.kino-chapters-active .kino-v3-streak-badge { background: #edf2e4; border-color: #d5e0c8; color: #52723f; }
+#diktatMode.kino-chapters-active .kino-v3-streak-flame { animation: none; }
+#diktatMode.kino-chapters-active .kino-v3-meter-track { background: #e4e9db; border: 0; }
+#diktatMode.kino-chapters-active .kino-v3-meter-fill { background: #7d9961; box-shadow: none; }
+#diktatMode.kino-chapters-active .kino-v3-time-text { color: var(--kino-muted); font-size: 11px; font-family: inherit; }
+#diktatMode.kino-chapters-active #kinoSubLockStatus { color: #6e6847 !important; }
+#diktatMode.kino-chapters-active .kino-v3-card-header { flex-wrap: wrap; gap: 12px; }
+#diktatMode.kino-chapters-active .kino-char-btn { min-width: 36px; min-height: 36px; padding: 4px; background: #f0f3e9; color: #456235; border-color: var(--kino-line); }
+#diktatMode.kino-chapters-active .kino-diktat-textarea { background: white; color: var(--kino-ink); border-color: #a7b895; min-height: 100px; font-size: 16px; }
+#diktatMode.kino-chapters-active .kino-diktat-textarea:focus { border-color: #587741; box-shadow: 0 0 0 3px #78985c30; }
+#diktatMode.kino-chapters-active .kino-diktat-textarea::placeholder { color: #7a8473; }
+#diktatMode.kino-chapters-active .kino-v3-feedback-card { background: #f1f4eb; border-color: var(--kino-line); }
+#diktatMode.kino-chapters-active #kinoFeedbackVi { color: #5c6c52 !important; line-height: 1.6; }
+#diktatMode.kino-chapters-active .kino-v3-fb-status.correct { color: #36602e; }
+#diktatMode.kino-chapters-active .kino-v3-fb-status.partial { color: #8b641b; }
+#diktatMode.kino-chapters-active .kino-diff-word.correct { background: #e3efd9; color: #365c2d; border-color: #b6cfa2; }
+#diktatMode.kino-chapters-active .kino-diff-word.wrong { background: #fae8e1; color: #9b3d31; border-color: #dfb4a8; }
+#diktatMode.kino-chapters-active :is(.kino-diff-word.missing, .kino-copy-to-pass-box) { background: #f8efd9; color: #805a19; border-color: #d4bc80; }
+#diktatMode.kino-chapters-active .kino-v3-t-text { color: #3f5137; }
+#diktatMode.kino-chapters-active .kino-v3-t-time { color: #5c6f51; background: #e9efdf; }
+#diktatMode.kino-chapters-active .kino-v3-timeline-row.active { background: #e6efda; border-left-color: #6d8c4e; }
+#diktatMode.kino-chapters-active .kino-v3-timeline-row.active .kino-v3-t-num { color: #486636; }
+#diktatMode.kino-chapters-active .kino-v3-timeline-row:hover:not(.locked) { background: #eaf0e1; }
+#diktatMode.kino-chapters-active .kino-v3-timeline-row.locked { opacity: .75; }
+#diktatMode.kino-chapters-active :is(.kino-dub-target-quote, .kino-dub-lock-notice) { background: #f0f3e9; border-color: #c9d5bc; }
+#diktatMode.kino-chapters-active .kino-dub-quote-de { color: #3f5e30; }
+#diktatMode.kino-chapters-active :is(.kino-dub-quote-vi, .kino-dub-status-tip) { color: #5d6f52; }
+.kino-practice-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: #30412f; margin: 26px 0 16px; scroll-margin-top: 20px; }
+.kino-practice-heading h3 { margin: 0; font-family: var(--font-display); font-size: 24px; }
+.kino-practice-heading p:not(.peppa-eyebrow) { margin: 7px 0 0; color: #62715b; font-size: 12px; line-height: 1.6; }
+#kinoBackToParts { flex-shrink: 0; min-height: 44px; padding: 8px 12px; border: 1px solid #bac8ac; border-radius: 10px; background: #fcfbf6; color: #456039; cursor: pointer; }
+.kino-sentence-passed { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; justify-content: space-between; margin-top: 16px; padding-top: 14px; border-top: 1px solid #d9e0d1; color: #466438; font-size: 12px; }
+.kino-sentence-passed[hidden], #kinoSpeakingBody[hidden] { display: none; }
+#kinoContinueSentence { min-height: 46px; padding: 10px 16px; border: 0; border-radius: 10px; background: #52723f; color: white; font-weight: 700; cursor: pointer; }
+#kinoSpeakingToggle { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; min-height: 44px; padding: 0; border: 0; background: transparent; color: #53634a; text-align: left; font: inherit; cursor: pointer; }
+#diktatMode.kino-chapters-active .kino-v3-dub-card .kino-v3-card-header { margin-bottom: 0; }
+#diktatMode.kino-chapters-active .kino-v3-dub-card .kino-v3-card-title { width: 100%; }
+#kinoSpeakingBody { padding-top: 16px; }
+#kinoSpeakingBody .kino-dub-mute-toggle-row { margin-bottom: 12px; color: #62715b; }
+#kinoSpeakingBody .kino-dub-lock-notice { color: #62715b; }
+#kinoListenWhileTyping { display: none; }
+.kino-more-tools { position: relative; color: #4b613e; }
+.kino-more-tools summary { display: flex; align-items: center; gap: 14px; min-height: 44px; padding: 8px 12px; box-sizing: border-box; border-radius: 8px; border: 1px solid #bac8ac; background: #fcfbf6; font-size: 13px; cursor: pointer; list-style: none; }
+.kino-more-tools summary::-webkit-details-marker { display: none; }
+.kino-more-tools-menu { position: absolute; right: 0; top: calc(100% + 6px); display: flex; flex-direction: column; align-items: stretch; gap: 6px; min-width: 230px; padding: 8px; background: #fcfbf6; border: 1px solid #d9e0d1; border-radius: 12px; box-shadow: 0 8px 25px #30412f20; z-index: 20; }
+#diktatMode.kino-chapters-active .kino-select-trigger { min-height: 54px; background: #fcfbf6; border-color: #b7c7a8; color: #30412f; box-shadow: none; }
+#diktatMode.kino-chapters-active .kino-sel-title { color: #30412f; }
+#diktatMode.kino-chapters-active :is(.kino-sel-series, .kino-sel-caret, .kino-dd-group-header, .kino-dd-item-sub) { color: #637658; }
+#diktatMode.kino-chapters-active .kino-select-menu { background: #fcfbf6; border-color: #b7c7a8; box-shadow: 0 8px 25px #30412f20; min-width: min(340px, calc(100vw - 48px)); }
+.kino-dropdown-item { width: 100%; border: 0; background: transparent; text-align: left; font-family: inherit; }
+#diktatMode.kino-chapters-active .kino-dropdown-item { min-height: 64px; color: #30412f; }
+#diktatMode.kino-chapters-active .kino-dropdown-item:hover { background: #f0f3e9; }
+#diktatMode.kino-chapters-active .kino-dropdown-item.active { background: #e7efdc; color: #3c5b2f; }
+#diktatMode.kino-chapters-active :is(.kino-sel-badge, .kino-dd-item-badge) { background: #edf2e5; color: #4c6d3b; border-color: #c6d5b7; }
+#diktatMode.kino-chapters-active .kino-dropdown-item.active :is(.kino-dd-item-sub, .kino-dd-item-check) { color: #4c6d3b; }
+@media (max-width: 800px) {
+  .peppa-current { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .peppa-options { align-items: flex-start; flex-direction: column; }
+  #peppaWatchStatus { text-align: left; }
+}
+@media (max-width: 900px) {
+  #kinoListenWhileTyping { display: inline-flex; align-items: center; min-height: 44px; margin-bottom: 8px; padding: 8px 12px; border: 1px solid #b8c7aa; border-radius: 8px; background: #f0f3e9; color: #3f5a32; font-size: 13px; font-weight: 700; cursor: pointer; }
+}
+@media (max-width: 540px) {
+  body[data-hub="kino"]:has(.kino-chapters-active) #boomboxMini,
+  body[data-hub="kino"]:has(.kino-chapters-active) #catCompanionWidget { display: none; }
+  #diktatMode.kino-chapters-active .kino-full-modal { padding: 12px; }
+  #diktatMode.kino-chapters-active .kino-full-modal-header { flex-wrap: wrap; gap: 8px; }
+  .peppa-chapters { padding: 16px; }
+  .peppa-heading { align-items: flex-start; flex-direction: column; gap: 9px; }
+  .peppa-save-hint { display: none; }
+  .peppa-swipe-hint { display: inline; }
+  .peppa-parts { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 4px 10px; margin: -4px; scroll-padding: 4px; }
+  .peppa-part { flex: 0 0 156px; min-height: 132px; scroll-snap-align: start; }
+  .peppa-part[aria-pressed="true"] { box-shadow: inset 0 3px #6e8950; }
+  .peppa-current h3 { font-size: 22px; }
+  .peppa-actions { width: 100%; }
+  .peppa-actions button { flex: 1; padding: 10px; }
+  .peppa-finished { align-items: flex-start; flex-direction: column; }
+  #diktatMode.kino-chapters-active .kino-v3-root { padding: 12px 4px; }
+  #diktatMode.kino-chapters-active .kino-v3-top-header { gap: 10px; }
+  #diktatMode.kino-chapters-active .kino-v3-top-actions { width: 100%; justify-content: space-between; }
+  #diktatMode.kino-chapters-active .kino-v3-controls-bar { padding: 10px; }
+  #diktatMode.kino-chapters-active .kino-v3-ctrl-left { display: grid; grid-template-columns: 1fr 1.3fr 1fr; width: 100%; gap: 6px; }
+  #diktatMode.kino-chapters-active .kino-btn-ctrl { min-width: 0; justify-content: center; padding: 8px 6px; font-size: 12px; }
+  #diktatMode.kino-chapters-active .kino-v3-ctrl-right { width: 100%; }
+  #diktatMode.kino-chapters-active .kino-v3-ctrl-right button { flex: 1; }
+  #diktatMode.kino-chapters-active .kino-diktat-actions-row { display: grid; grid-template-columns: 1fr 1fr; }
+  #diktatMode.kino-chapters-active #kinoCheckBtn { grid-column: 1 / -1; }
+  #diktatMode.kino-chapters-active .kino-action-btn-main { justify-content: center; padding: 10px 8px; }
+  .kino-practice-heading { align-items: flex-start; }
+  .kino-practice-heading h3 { font-size: 22px; }
+  #kinoBackToParts { padding: 8px; font-size: 12px; }
+  #kinoContinueSentence { width: 100%; }
+  .peppa-watch-controls { gap: 8px; padding: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #diktatMode.kino-chapters-active *, #diktatMode.kino-chapters-active *::before, #diktatMode.kino-chapters-active *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+}

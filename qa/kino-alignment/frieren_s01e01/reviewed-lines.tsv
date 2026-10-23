@@ -1,0 +1,276 @@
+id	parentId	start	end	speaker	text	vi	reviewNotes
+700101	700101	123.58	124.06	Himmel	Frieren?	Frieren?	
+700102	700102	128.74	130.16	Himmel	Seht mal, da ist die Hauptstadt.	Nhìn kìa, kinh đô ở đằng kia rồi.	
+700103	700103	130.66	133.42	Heiter	Wir sind die Heldentruppe auf ihrer triumphalen Heimkehr.	Chúng ta là nhóm anh hùng trên đường khải hoàn trở về.	
+700104	700104	133.58	135.32	Heiter	Es wird sicher eine große Feier geben.	Chắc chắn sẽ có một bữa tiệc lớn.	Primary medium heard 'sich'; focused-medium-review confirmed 'sicher' (prob 0.91).
+700105	700105	137.98	140.2	Eisen	Wenn wir zurück sind, muss ich mir eine Arbeit suchen.	Khi chúng ta trở về, tôi phải tìm một công việc.	
+700106	700106	140.98	143.16	Himmel	Du denkst bereits jetzt über solche Sachen nach?	Cậu đã nghĩ đến mấy chuyện như vậy ngay từ bây giờ rồi sao?	
+700107	700107	143.64	144.82	Eisen	Weil es wichtig ist.	Vì chuyện đó quan trọng mà.	
+700108	700108	145.12	147.92	Eisen	Wir haben zwar den Dämonenkönig geschlagen, doch es geht weiter.	Tuy chúng ta đã đánh bại Ma Vương, nhưng cuộc sống vẫn tiếp diễn.	
+700109	700109	148.64	150.92	Eisen	Wir haben noch ein langes Leben vor uns.	Chúng ta vẫn còn cả một cuộc đời dài phía trước.	
+700110	700110	152.54	153.1	Heiter	Arbeit also.	Công việc à.	
+700111	700111	153.86	156.14	Heiter	Also ich würde gerne während der Arbeit trinken können.	Vậy thì tôi muốn có thể vừa làm việc vừa uống rượu.	
+700112	700112	156.34	157.74	Eisen	Aber du bist doch ein Kleriker.	Nhưng cậu là một giáo sĩ cơ mà.	
+700113	700113	160.24	161.92	Frieren	Ein Leben nach den Abenteuern.	Một cuộc sống sau những chuyến phiêu lưu.	
+700114	700114	164.36	164.8	Himmel	Frieren.	Frieren.	
+700115	700115	165.74	171.52	Himmel	Der Rest deines Lebens wird sicher sehr viel länger sein, als wir Menschen es uns jemals ausmalen könnten.	Phần đời còn lại của cậu chắc chắn sẽ dài hơn rất nhiều so với những gì loài người chúng tớ có thể hình dung.	
+700116	700116	172.48	172.92	Frieren	Ja, wahrscheinlich.	Ừ, có lẽ vậy.	
+700117	700117	210.88	217.92	König	Himmel der Held, Eisen der Krieger, Heiter der Kleriker und Frieren die Magierin.	Anh hùng Himmel, chiến binh Eisen, giáo sĩ Heiter và pháp sư Frieren.	Corrected ASR proper noun 'Heisen' -> 'Eisen' and 'Kläriker' -> 'Kleriker' (supported by focused-medium and small pass).
+700118	700118	219.5	223.98	König	Ich danke euch, dass ihr auf eurer Reise den Dämonenkönig besiegt habt.	Ta cảm ơn các ngươi vì đã đánh bại Ma Vương trong chuyến hành trình của mình.	
+700119	700119	224.38	228.06	König	Damit wird auf der Welt ein Zeitalter des Friedens anbrechen.	Nhờ đó, một kỷ nguyên hòa bình sẽ mở ra trên thế giới.	
+700120	700120	242.86	246.94	Heiter	Der König will angeblich Statuen von uns auf dem großen Platz aufstellen.	Nghe nói nhà vua muốn dựng tượng của chúng ta ở quảng trường lớn.	
+700121	700121	247.94	251.98	Himmel	Na ja, obwohl ich mir schlecht vorstellen kann, dass sie mein einzigartiges, edles	Chà, dù tớ khó mà tưởng tượng được rằng họ có thể khắc họa thật chuẩn	Primary ASR heard 'idles'; focused-medium confirmed 'edles' (prob 0.93).
+700122	700121	251.98	254.1	Himmel	Antlitz richtig gut nachbilden können.	dung mạo cao quý độc nhất vô nhị của tớ.	Primary ASR heard 'Ansitz', focused-medium heard 'Anlitz'; standardized to 'Antlitz'.
+700123	700123	255.26	256.72	Frieren	Wie großzügig von ihm.	Ông ấy hào phóng thật đấy.	
+700124	700124	257.02	260.26	Frieren	Er hatte uns nur 10 Kupfermünzen gegeben, als wir aufgebrochen sind.	Ông ấy chỉ cho chúng ta đúng 10 đồng xu đồng khi chúng ta lên đường.	
+700125	700125	261.76	263.7	Himmel	Ach, jetzt komm schon, Frieren.	Thôi nào, Frieren.	
+700126	700126	264.22	266.6	Himmel	Heute Abend trinken wir so viel wir wollen.	Tối nay chúng ta cứ uống thỏa thích.	
+700127	700127	266.8	268.5	Himmel	Mehr brauchen wir doch nicht, oder?	Chúng ta đâu cần gì hơn thế, đúng không?	Primary medium attached 'Mehr' to end of prior segment and inserted low-confidence 'Das' (0.14); independent small window 240 confirmed 'Mehr brauchen wir doch nicht, oder?'.
+700128	700128	269.28	270.72	Frieren	Oh, du Scheinheiliger!	Ồ, đồ đạo đức giả!	
+700129	700129	278.34	280.4	Himmel	Es ist tatsächlich vorbei.	Thực sự kết thúc rồi.	
+700130	700130	281.2	282.18	Heiter	So ist es.	Đúng vậy.	
+700131	700131	283.28	285.42	Eisen	Das ist nun das Ende unserer Reise.	Đây là điểm kết thúc chuyến hành trình của chúng ta.	
+700132	700132	286.44	288.02	Himmel	Das waren zehn Jahre, oder?	Vậy là đã mười năm rồi nhỉ?	
+700133	700133	288.7	290.88	Heiter	Es ist so viel passiert in dieser Zeit.	Đã có biết bao chuyện xảy ra trong khoảng thời gian đó.	
+700134	700134	292.32	294.26	Frieren	An dem Tag unserer Abreise	Vào ngày chúng tôi khởi hành,	
+700135	700134	294.26	299.02	Frieren	wurden Himmel und Eisen fast hingerichtet, weil sie unverschämt zum König waren.	Himmel và Eisen suýt nữa bị xử tử vì ăn nói vô lễ với nhà vua.	Restored capitalization and sentence boundary across unpunctuated medium segments 51-53.
+700136	700136	299.02	302.1	Frieren	Ein Fehler, und das wäre das Ende unserer Reise gewesen.	Chỉ một sai lầm thôi là chuyến hành trình của chúng tôi đã kết thúc ngay tại đó.	
+700137	700137	302.84	306.22	Frieren	Und Heiter war manchmal so besoffen, dass er zu nichts nutze war.	Còn Heiter thì đôi khi say xỉn đến mức chẳng làm được tích sự gì.	Primary medium heard 'zunächst nutze'; independent small and focused-small confirmed 'zu nichts nutze'.
+700138	700138	310.46	313.46	Himmel	Du siehst ja aus wie eine wandelnde Leiche.	Trông cậu cứ như một cái xác biết đi vậy.	
+700139	700139	313.46	314.44	Himmel	Alles okay bei dir?	Cậu có ổn không đấy?	
+700140	700140	314.8	315.02	Heiter	Nein.	Không.	Short reply omitted by primary medium pass; independently confirmed by small window 300 (prob 0.90) and focused-small-review (prob 0.82).
+700141	700141	315.1	316.78	Eisen	Woran kann das nur liegen?	Rốt cuộc là tại sao chứ?	
+700142	700142	316.78	319.72	Frieren	Das kam einmal die Woche vor.	Chuyện đó xảy ra mỗi tuần một lần.	
+700143	700143	319.72	321.84	Frieren	Ich hingegen war immer vorbildlich.	Ngược lại, tôi thì lúc nào cũng gương mẫu.	
+700144	700144	321.84	325.7	Himmel	Wir haben drüber nachgedacht, dich zurückzulassen, als die Mimik dich fressen wollte.	Bọn tớ đã nghĩ đến chuyện bỏ cậu lại khi con Mimik định nuốt chửng cậu đấy.	Primary medium split 'zurückzulassen' as 'zur / zu lassen' and wrote 'Memek'; independent small confirmed 'zurückzulassen' (0.97), monster name standardized to 'Mimik'.
+700145	700145	325.96	328.48	Heiter	Oh Mann, wir haben ihr doch gesagt, dass das eine Falle sein kann.	Trời đất, chúng ta đã bảo cô ấy đó có thể là bẫy rồi mà.	
+700146	700146	328.6	330.2	Eisen	Lassen wir die Elfe doch zurück.	Hay là cứ bỏ cô nàng tinh linh này lại đi.	Primary medium heard 'Elfen', focused-small heard singular 'Elfe' (referring to Frieren).
+700147	700147	334.54	338.72	Himmel	Wir haben 'ne Menge von diesen echt schrecklichen Erinnerungen.	Chúng ta có cả đống những kỷ niệm thật sự kinh khủng như thế.	
+700148	700148	339.84	341.24	Himmel	Aber ich hatte Spaß.	Nhưng tớ đã rất vui.	
+700149	700149	342.0	344.94	Himmel	Und ich bin froh, dass ich diese Abenteuer mit euch erleben konnte.	Và tớ rất mừng vì đã có thể cùng mọi người trải qua những chuyến phiêu lưu này.	
+700150	700150	345.92	347.12	Frieren	Das geht mir genauso.	Tôi cũng thấy vậy.	
+700151	700151	347.8	349.6	Frieren	Auch wenn es nur für eine kurze Zeit war.	Dù đó chỉ là một khoảng thời gian ngắn ngủi.	
+700152	700152	350.38	351.44	Heiter	Äh, wie war das?	Hả, cậu vừa nói sao cơ?	
+700153	700153	351.68	352.9	Eisen	Was redest du denn da?	Cậu đang nói cái gì thế?	
+700154	700154	352.9	354.2	Eisen	Das waren zehn Jahre.	Đó là mười năm trời đấy.	
+700155	700155	354.56	357.96	Eisen	Schau dir Heiter an, er ist inzwischen ein grauer alter Mann geworden.	Nhìn Heiter mà xem, giờ cậu ta đã thành một ông già tóc bạc rồi.	Corrected ASR 'Heide' -> 'Heiter'.
+700156	700156	358.04	359.2	Heiter	Das ist nicht sehr nett.	Nói thế chẳng tử tế chút nào.	
+700157	700157	359.7	361.0	Frieren	Das war er doch schon vorher.	Trước đó anh ta vốn đã vậy rồi mà.	
+700158	700158	361.3	362.72	Heiter	Das ist auch nicht nett.	Câu đó cũng chẳng tử tế đâu.	
+700159	700159	369.66	371.08	Himmel	Ist es nun bald so weit?	Sắp đến lúc rồi nhỉ?	
+700160	700160	379.18	381.84	Himmel	Das ist der Ära-Meteorschauer. Stimmt doch?	Đó là trận mưa sao băng Thời Đại. Đúng không?	Corrected ASR 'Ehre, Meteorschauer' -> 'Ära-Meteorschauer'.
+700161	700161	382.52	385.58	Heiter	Diese Meteore sieht man nur einmal alle 50 Jahre.	Những ngôi sao băng này cứ 50 năm mới nhìn thấy được một lần.	
+700162	700162	386.66	390.0	Eisen	Der perfekte Moment, um in eine Ära des Friedens überzugehen.	Khoảnh khắc hoàn hảo để bước sang một kỷ nguyên hòa bình.	Corrected ASR 'Ehre des Friedens' -> 'Ära des Friedens'.
+700163	700163	392.76	393.52	Frieren	Wie schön.	Đẹp quá.	
+700164	700164	394.48	396.5	Frieren	Hier in der Stadt sieht man sie aber nicht so gut.	Nhưng ở trong thành phố thế này thì nhìn không rõ lắm.	
+700165	700165	396.7	399.22	Himmel	Nimm mal Rücksicht, ich versuch das gerade zu genießen.	Tâm lý một chút đi, tớ đang cố tận hưởng khoảnh khắc này đấy.	Primary medium heard colloquial 'Nehm', independent small heard 'Nimm'.
+700166	700166	402.06	403.36	Frieren	Dann halt nächstes Mal.	Vậy thì để lần sau vậy.	
+700167	700167	404.98	408.02	Frieren	Ich kenne einen Platz, wo man sie noch viel klarer sehen kann.	Tôi biết một nơi có thể ngắm chúng rõ hơn nhiều.	
+700168	700168	408.18	409.42	Frieren	Zeig ich euch dann in 50 Jahren.	50 năm nữa tôi sẽ dẫn mọi người tới đó.	
+700169	700169	412.94	413.9	Frieren	Was denn?	Sao thế?	
+700170	700170	413.94	415.46	Himmel	Ach, es ist nichts.	À, không có gì đâu.	
+700171	700171	416.28	416.8	Himmel	Frieren.	Frieren.	
+700172	700172	418.6	419.88	Himmel	So machen wir das.	Cứ quyết định vậy nhé.	
+700173	700173	420.46	421.72	Himmel	Wir werden sie uns ansehen.	Chúng ta sẽ cùng nhau ngắm chúng.	
+700174	700174	444.32	446.34	Frieren	Also, ich muss jetzt gehen.	Vậy, giờ tôi phải đi đây.	
+700175	700175	446.82	448.48	Himmel	Was hast du denn von nun an vor?	Từ giờ trở đi cậu định làm gì?	
+700176	700176	448.88	451.1	Frieren	Ich möchte weitere Zaubersprüche erlernen.	Tôi muốn học thêm các phép thuật khác.	
+700177	700177	451.4	454.5	Frieren	Dafür werde ich die nächsten 100 Jahre die zentralen Länder bereisen.	Để làm việc đó, tôi sẽ đi khắp các vùng đất trung tâm trong 100 năm tới.	
+700178	700178	455.1	457.08	Frieren	Aber ich werde ab und zu mal vorbeischauen.	Nhưng thỉnh thoảng tôi sẽ ghé thăm mọi người.	
+700179	700179	462.32	464.9	Eisen	Die Welt der Elfen ist wirklich schwer zu verstehen.	Thế giới của tộc tinh linh thật sự khó mà hiểu nổi.	
+700180	700180	465.08	467.84	Heiter	Würde mich echt mal interessieren, wie lange sie schon lebt.	Tôi thực sự tò mò không biết cô ấy đã sống bao lâu rồi.	
+700181	700181	468.6	472.8	Himmel	Selbst fünfzig oder hundert Jahre sind für sie wohl nur wie ein kurzer Augenblick.	Ngay cả năm mươi hay một trăm năm đối với cậu ấy chắc cũng chỉ như một thoáng chốc.	
+700182	700182	523.82	526.22	Händler	Das Horn eines Schattendrachen?	Sừng của rồng bóng tối sao?	
+700183	700183	526.46	527.2	Händler	Tut mir leid.	Tôi rất tiếc.	
+700184	700184	527.2	528.74	Händler	So etwas habe ich hier nicht.	Ở đây tôi không có thứ như vậy.	
+700185	700185	529.06	532.58	Händler	Ich habe auch seit ungefähr 30 Jahren keinen Schattendrachen mehr gesehen.	Khoảng 30 năm nay tôi cũng không còn thấy con rồng bóng tối nào nữa.	ASR heard 'kein Schattendrachen', normalized to accusative 'keinen Schattendrachen'.
+700186	700186	533.26	535.0	Frieren	Verstehe, das ist nicht gut.	Ra vậy, thế thì gay rồi.	
+700187	700187	535.22	536.86	Frieren	Ich brauche eines für eine Beschwörung.	Tôi cần một chiếc để thực hiện phép triệu hồi.	
+700188	700188	539.82	542.7	Frieren	Wir hatten doch eines im Schloss des Dämonenkönigs gefunden.	Chẳng phải chúng tôi đã tìm thấy một chiếc trong lâu đài Ma Vương sao.	
+700189	700189	543.24	544.86	Frieren	Ich glaube, ich habe es Himmel gegeben.	Hình như tôi đã đưa nó cho Himmel.	
+700190	700190	545.7	548.44	Frieren	Es verströmt irgendwie eine negative Aura.	Nó tỏa ra một luồng khí tiêu cực nào đó.	
+700191	700191	548.48	550.56	Frieren	Ist das wirklich nicht gefährlich für Menschen?	Thứ này thực sự không nguy hiểm cho con người chứ?	
+700192	700192	550.94	551.88	Frieren	Das weiß ich nicht.	Tôi không biết nữa.	
+700193	700193	552.2	553.64	Himmel	Sie weiß es also nicht.	Vậy là cậu ấy cũng không biết.	
+700194	700194	554.68	556.88	Frieren	Bald kommt wieder der Ära-Meteorschauer.	Sắp tới lại có mưa sao băng Thời Đại rồi.	
+700195	700195	557.02	558.64	Frieren	Vielleicht sollte ich das Horn bei ihm abholen.	Có lẽ tôi nên đến chỗ anh ấy lấy lại chiếc sừng.	
+700196	700196	565.2	568.0	Frieren	Die Stadt hat sich seit dem letzten Mal ganz schön verändert.	Thành phố đã thay đổi khá nhiều kể từ lần trước.	
+700197	700197	582.28	584.66	Frieren	Sag mal, hab ich mich etwa verlaufen?	Này, chẳng lẽ mình bị lạc rồi sao?	
+700198	700198	585.9	586.46	Himmel	Frieren?	Frieren?	
+700199	700199	587.88	588.72	Frieren	Himmel!	Himmel!	
+700200	700200	594.92	596.7	Frieren	Du bist alt geworden.	Cậu già đi rồi.	
+700201	700201	596.7	598.58	Himmel	Kannst du das nicht netter sagen?	Cậu không thể nói nhẹ nhàng hơn được sao?	
+700202	700202	600.96	604.54	Himmel	Auch im hohen Alter bin ich doch noch ein ganz hübsches Kerlchen.	Dù đã cao tuổi nhưng tớ vẫn là một ông lão khá bảnh bao đấy chứ.	
+700203	700203	606.1	610.68	Himmel	Es ist schon 50 Jahre her, du siehst noch genauso aus wie damals.	Đã 50 năm trôi qua rồi mà trông cậu vẫn y hệt như ngày ấy.	
+700204	700204	611.82	615.2	Himmel	Ich hab schon befürchtet, dass ich dich nie mehr wiedersehen würde.	Tớ đã lo rằng mình sẽ chẳng bao giờ còn được gặp lại cậu nữa.	
+700205	700205	617.72	621.36	Himmel	Der Ära-Meteorschauer, das weckt Erinnerungen.	Mưa sao băng Thời Đại, điều đó gợi lại bao kỷ niệm.	Primary medium heard singular 'Erinnerung'; independent small heard plural 'Erinnerungen'.
+700206	700206	621.82	624.6	Frieren	Außerdem suche ich noch nach dem, was wir im Schloss gefunden haben.	Ngoài ra tôi còn đang tìm thứ mà chúng ta đã nhặt được trong lâu đài.	
+700207	700207	624.6	627.02	Himmel	Du meinst wohl das Horn des Schattendrachen.	Ý cậu chắc là chiếc sừng của rồng bóng tối chứ gì.	
+700208	700208	627.4	629.6	Himmel	Ich hab das nicht einen Augenblick vergessen.	Tớ chưa từng quên nó dù chỉ một giây.	
+700209	700209	630.14	633.76	Himmel	Denn von meinem Schrank geht seitdem eine düstere Aura aus.	Bởi từ đó đến nay, tủ đồ của tớ lúc nào cũng tỏa ra một luồng hắc khí u ám.	Corrected ASR 'Aure' -> 'Aura'.
+700210	700210	634.38	636.26	Frieren	Das tut mir wirklich leid.	Tôi thực sự xin lỗi.	
+700211	700211	636.62	639.82	Frieren	Du hättest es doch auch einfach in einem Schuppen oder so aufbewahren können.	Lẽ ra cậu cứ cất đại nó trong nhà kho hay đâu đó cũng được mà.	
+700212	700212	642.22	643.58	Himmel	Auf gar keinen Fall.	Tuyệt đối không đời nào.	
+700213	700213	647.34	651.72	Himmel	Vielleicht hast du es mir übergeben, ohne dir groß Gedanken darüber zu machen.	Có lẽ cậu đã giao nó cho tớ mà chẳng suy nghĩ gì nhiều.	
+700214	700214	651.72	656.44	Himmel	Aber für mich war es ein sehr wertvolles Geschenk von einer geliebten Gefährtin.	Nhưng đối với tớ, đó là một món quà vô cùng quý giá từ người bạn đồng hành thân yêu.	
+700215	700215	657.14	660.72	Himmel	Ich hatte gehofft, dass ich es dir eines Tages zurückgeben könnte.	Tớ đã luôn hy vọng một ngày nào đó có thể trao trả nó lại cho cậu.	Primary medium heard 'ihr', independent small heard 'dir' (flagged pronoun ambiguity in direct address).
+700216	700216	669.84	672.8	Frieren	Dabei hatte es im Grunde gar keine große Bedeutung.	Vậy mà thực ra nó chẳng có ý nghĩa gì to tát cả.	
+700217	700217	692.64	694.08	Frieren	Bist du noch nicht fertig?	Cậu vẫn chưa chuẩn bị xong sao?	
+700218	700218	694.84	695.98	Frieren	Wieso machst du dich so zurecht?	Sao cậu lại chải chuốt kỹ thế?	
+700219	700219	696.04	697.12	Frieren	Du hast doch eine Glatze.	Đầu cậu hói rồi cơ mà.	
+700220	700220	698.58	701.28	Himmel	Ein gepflegtes Äußeres ist immer wichtig.	Vẻ ngoài chỉn chu lúc nào cũng quan trọng.	
+700221	700221	708.08	711.3	Himmel	Also dann, wollen wir uns den Ära-Meteorschauer ansehen?	Vậy thì, chúng ta cùng đi ngắm mưa sao băng Thời Đại chứ?	Corrected ASR 'Meteorshower' -> 'Ära-Meteorschauer'.
+700222	700222	719.62	722.4	Frieren	Du siehst mittlerweile recht würdevoll aus, Heiter.	Giờ trông cậu khá đạo mạo đấy, Heiter.	
+700223	700223	722.5	724.54	Heiter	Ich bin nun der Bischof der Heiligen Stadt.	Giờ tôi đã là Giám mục của Thánh Đô rồi.	
+700224	700224	724.72	727.24	Heiter	Du hingegen hast dich überhaupt nicht verändert.	Còn cậu thì chẳng thay đổi chút nào cả.	
+700225	700225	728.24	729.6	Frieren	Tätschel mir nicht so den Kopf.	Đừng có xoa đầu tôi như thế.	Editorial phonetic/context reconstruction: primary medium heard 'Tetschel, mir nicht zu den Kopf', focused-medium heard 'Der chillt mir nicht so den Kopf', independent small heard 'Er tötet mich nicht zu dem Kopf'. Not manually heard.
+700226	700226	731.48	733.56	Frieren	Eisen, du hast dich nicht wirklich verändert.	Eisen, cậu thực sự không thay đổi mấy.	
+700227	700227	734.7	736.36	Eisen	Verstehe, wenn du das meinst.	Ra vậy, nếu cậu thấy thế.	
+700228	700228	736.6	738.22	Frieren	Wie ich es von einem Zwerg erwarte.	Đúng như tôi mong đợi ở người lùn.	
+700229	700229	738.52	739.66	Eisen	Wo ist nun dieser Ort,	Vậy nơi đó ở đâu,	
+700230	700229	739.66	741.36	Eisen	von dem aus wir den Schauer gut sehen?	nơi mà chúng ta có thể ngắm rõ mưa sao băng ấy?	
+700231	700231	742.5	744.32	Heiter	Wollen wir jetzt schon aufbrechen?	Chúng ta định khởi hành ngay bây giờ sao?	
+700232	700232	744.68	747.7	Heiter	Für den Ära-Meteorschauer ist es noch etwas zu früh.	Vẫn còn hơi sớm để ngắm mưa sao băng Thời Đại mà.	
+700233	700233	748.66	749.32	Frieren	Das stimmt.	Đúng vậy.	
+700234	700234	749.56	752.5	Frieren	Wir brauchen von hier aber ungefähr eine Woche zu Fuß.	Nhưng đi bộ từ đây tới đó phải mất khoảng một tuần.	
+700235	700235	752.88	754.42	Heiter	So weit weg ist dieser Ort?	Nơi đó ở xa đến vậy sao?	
+700236	700236	755.4	756.38	Heiter	Meine Güte!	Trời đất ơi!	
+700237	700237	756.86	759.02	Heiter	Sie verlangt sehr viel von uns alten Leuten.	Cô ấy đòi hỏi quá nhiều ở mấy ông già chúng ta rồi.	
+700238	700238	762.1	763.58	Himmel	Es ist wie früher.	Cứ như ngày xưa vậy.	
+700239	700239	764.2	767.78	Himmel	Diese Reise versetzt mich geradezu in die Zeit von damals zurück.	Chuyến đi này thực sự đưa tớ trở về những ngày tháng năm xưa.	
+700240	700240	772.14	775.34	Himmel	Wir haben alle möglichen Orte bereist,	Chúng ta đã đi qua đủ mọi miền đất,	
+700241	700240	776.44	781.26	Himmel	zu der Zeit war alles noch neu, und es schien mir so wundervoll.	vào thời điểm đó mọi thứ đều mới mẻ và dường như thật tuyệt diệu đối với tớ.	
+700242	700242	805.72	810.62	Himmel	Ihr seid immer ein wichtiger Teil dieser wunderschönen Erinnerungen gewesen.	Các cậu luôn là một phần quan trọng trong những ký ức tươi đẹp ấy.	
+700243	700243	814.24	819.08	Himmel	Weißt du, ich hab sehnsüchtig auf den Tag gewartet, an dem wir alle wieder zusammen	Cậu biết không, tớ đã luôn khắc khoải chờ đợi ngày mà tất cả chúng ta lại được	
+700244	700243	819.08	819.66	Himmel	sein werden.	ở bên nhau.	
+700245	700245	821.0	822.46	Himmel	Ich danke dir, Frieren.	Cảm ơn cậu, Frieren.	
+700246	700246	822.46	825.42	Himmel	Deinetwegen konnte ich zum Schluss	Nhờ có cậu mà vào lúc cuối đời,	
+700247	700246	825.42	828.66	Himmel	noch ein letztes großes Abenteuer erleben.	tớ vẫn có thể trải nghiệm thêm một chuyến phiêu lưu lớn cuối cùng.	
+700248	700248	852.46	854.18	Frieren	Wie schön!	Đẹp quá!	
+700249	700249	881.26	885.9	Heiter	Ich bin mir sicher, dass unser Himmel ein sehr glücklicher Mensch war.	Tôi chắc chắn rằng Himmel của chúng ta đã là một người rất hạnh phúc.	Primary medium duplicated boundary words across 884.16s ('Mensch ist. / Mensch war.'); independent small window 870 confirmed single sentence.
+700250	700250	886.56	887.66	Eisen	Glaubst du wirklich?	Cậu thực sự nghĩ vậy sao?	
+700251	700251	895.14	897.86	Trauergast	War dieses Mädchen da nicht eine Gefährtin von Himmel?	Cô gái đằng kia chẳng phải là bạn đồng hành của ngài Himmel sao?	
+700252	700252	898.16	900.22	Trauergast	Sie sieht kein bisschen traurig aus.	Trông cô ta chẳng có chút gì là buồn bã cả.	
+700253	700253	901.0	901.78	Trauergast	Keine Regung.	Chẳng mảy may xúc động.	
+700254	700254	902.06	902.96	Trauergast	Wie schrecklich von ihr.	Thật quá đáng.	
+700255	700255	903.72	904.84	Heiter	Nun mal langsam.	Xin hãy bình tĩnh nào.	
+700256	700256	905.04	907.28	Heiter	Wir sind nämlich auch nicht wirklich traurig.	Thực ra chúng tôi cũng không hẳn là buồn bã đâu.	
+700257	700257	907.44	908.74	Trauergast	Nimm das gefälligst ernst, Bischof!	Xin hãy nghiêm túc đi, thưa Giám mục!	Uncertain funeral crowd exclamation: primary medium heard 'Nimm das Gefährlichste ernst, Mischung!', focused-medium heard 'Nimm das Gefährlichste ernst, Mischer!', focused-small heard 'Nehmt das gefährlichst ernst, Anschlusser!'. Reconstructed in context as 'Nimm das gefälligst ernst, Bischof!'; not manually heard.
+700258	700258	909.02	910.62	Trauergast	Ihr seid kaltherzige Monster!	Các người là lũ quái vật máu lạnh!	Corrected ASR 'kaltarzige' -> 'kaltherzige'.
+700259	700259	911.34	912.76	Heiter	Das ist aber nicht nett.	Nói thế thì thật chẳng tử tế chút nào.	
+700260	700260	938.08	941.28	Frieren	Ich... ich weiß wirklich so gut wie nichts über ihn.	Tôi... tôi thực sự hầu như chẳng biết gì về anh ấy cả.	
+700261	700261	952.92	957.28	Frieren	Wir sind gerade einmal zehn Jahre miteinander gereist.	Chúng tôi mới chỉ cùng nhau đồng hành vỏn vẹn mười năm.	
+700262	700262	964.78	969.38	Frieren	Die menschliche Lebensspanne ist so kurz, das wusste ich doch eigentlich.	Tuổi thọ của con người ngắn ngủi đến thế, lẽ ra tôi vốn đã biết điều đó rồi.	
+700263	700263	970.28	971.56	Frieren	Also wieso?	Vậy thì tại sao chứ?	
+700264	700264	972.18	975.16	Frieren	Habe ich nicht versucht, ihn besser kennenzulernen?	Tại sao tôi đã không cố gắng tìm hiểu anh ấy nhiều hơn?	
+700265	700265	984.24	986.92	Frieren	Hör auf, meinen Kopf zu tätscheln.	Đừng xoa đầu tôi nữa.	
+700266	700266	994.94	997.92	Heiter	Dann werde ich auch mal in die Heilige Stadt zurückkehren.	Vậy tôi cũng xin trở về Thánh Đô đây.	
+700267	700267	1001.08	1006.72	Heiter	Lasst mich euch noch mal genauer ansehen, denn das wird jetzt wohl zum letzten Mal sein.	Hãy để tôi ngắm nhìn hai người thật kỹ thêm lần nữa, vì có lẽ đây sẽ là lần cuối cùng rồi.	
+700268	700268	1007.24	1008.42	Frieren	Geht es dir nicht so gut?	Cậu thấy trong người không khỏe sao?	
+700269	700269	1008.68	1011.44	Heiter	Der jahrelange Alkoholkonsum hat seine Folgen.	Việc uống rượu suốt bao năm qua đã để lại hậu quả rồi.	
+700270	700270	1011.54	1013.0	Eisen	Das ist die gerechte Strafe.	Đó là cái giá thích đáng đấy.	
+700271	700271	1014.48	1018.62	Heiter	Solltet ihr mal in die Heilige Stadt kommen, dann vergießt einen guten Tropfen an meinem Grab.	Nếu hai người có dịp ghé qua Thánh Đô, hãy tưới một chén rượu ngon lên mộ tôi nhé.	
+700272	700272	1021.08	1023.34	Frieren	Hast du denn gar keine Angst vor dem Sterben, Heiter?	Cậu hoàn toàn không sợ cái chết sao, Heiter?	Corrected ASR 'Hiter' -> 'Heiter'.
+700273	700273	1025.2	1028.66	Heiter	Ich bin Teil der Heldentruppe, die diese Welt gerettet hat.	Tôi là một thành viên của nhóm anh hùng đã giải cứu thế giới này.	
+700274	700274	1029.9	1034.24	Heiter	Nach meinem Tod werde ich im Paradies garantiert im größten Luxus schwelgen.	Sau khi qua đời, chắc chắn tôi sẽ được tận hưởng sự xa hoa bậc nhất trên thiên đường.	
+700275	700275	1034.64	1037.86	Heiter	Das ist der Grund, weshalb ich mit euch Seite an Seite gekämpft habe.	Đó chính là lý do tôi đã sát cánh chiến đấu cùng mọi người.	
+700276	700276	1038.04	1039.36	Frieren	Oh, du Scheinheiliger.	Ồ, đồ đạo đức giả.	
+700277	700277	1041.54	1043.34	Heiter	Ich mach mich mal auf den Weg.	Tôi lên đường đây.	
+700278	700278	1051.3	1054.78	Frieren	Na dann, ich sollte auch langsam los.	Vậy thôi, tôi cũng nên lên đường dần đây.	
+700279	700279	1055.64	1057.68	Eisen	Willst du auf Reisen weitere Zauber sammeln?	Cậu định đi chu du để thu thập thêm phép thuật sao?	
+700280	700280	1057.98	1059.76	Frieren	Ja, das ist eins meiner Ziele.	Ừ, đó là một trong những mục tiêu của tôi.	
+700281	700281	1060.48	1063.06	Frieren	Ich wünsche mir aber auch, mehr über die Menschen zu erfahren.	Nhưng tôi cũng mong muốn được tìm hiểu nhiều hơn về con người.	
+700282	700282	1065.78	1066.68	Eisen	Verstehe ich.	Tôi hiểu rồi.	
+700283	700283	1067.58	1069.8	Frieren	Ich hätte übrigens noch eine Bitte an dich.	Nhân tiện, tôi còn một lời thỉnh cầu muốn nhờ cậu.	
+700284	700284	1069.8	1075.1	Frieren	Da ich ja eine Magierin bin, könnte ich gut einen starken Kämpfer wie dich gebrauchen.	Vì tôi là một pháp sư, tôi rất cần một chiến binh mạnh mẽ như cậu đi cùng.	
+700285	700285	1075.46	1079.8	Eisen	Bitte verzeih mir, aber ich bin zu alt, um eine Axt zu schwingen.	Xin hãy thứ lỗi cho tôi, nhưng tôi đã quá già để vung rìu rồi.	
+700286	700286	1083.56	1085.54	Eisen	Jetzt mach nicht so ein Gesicht, Frieren.	Đừng làm vẻ mặt như thế chứ, Frieren.	
+700287	700287	1085.98	1091.22	Eisen	Selbst wenn die eigenen Kräfte schwinden, hat das Leben noch einige Überraschungen auf Lager.	Ngay cả khi sức lực của bản thân suy giảm, cuộc sống vẫn còn cất giấu nhiều điều bất ngờ phía trước.	
+700288	700288	1093.56	1096.38	Frieren	Verstehe. Dann auf Wiedersehen, Eisen.	Tôi hiểu rồi. Vậy tạm biệt nhé, Eisen.	
+700289	700289	1097.46	1098.66	Eisen	Ja, bis bald.	Ừ, hẹn sớm gặp lại.	
+700290	700290	1140.24	1142.32	Frieren	Schon wieder derselbe Baum.	Lại là cái cây đó nữa rồi.	Omitted by primary medium pass; recovered by independent small window 1140 and confirmed by focused-medium-late-review (prob 0.99).
+700291	700291	1143.06	1144.66	Frieren	Andauernd verlaufe ich mich in diesem Wald.	Mình cứ bị lạc mãi trong khu rừng này.	Omitted by primary medium pass; recovered by independent small window 1140 and confirmed by focused-medium-late-review (prob 0.97).
+700292	700292	1145.56	1146.58	Frieren	Wo bin ich hier?	Mình đang ở đâu thế này?	Omitted by primary medium pass; recovered by independent small window 1140 and confirmed by focused-medium-late-review (prob 0.99).
+700293	700293	1150.96	1152.94	Fern	Suchen Sie nach etwas?	Cô đang tìm thứ gì sao ạ?	Primary medium heard low-confidence 'Schauen' (0.13); independent small and focused-medium-late-review confirmed 'Suchen Sie nach etwas?'.
+700294	700294	1158.06	1159.78	Fern	Kann es sein, dass Sie sich verlaufen haben?	Có phải cô bị lạc đường rồi không ạ?	
+700295	700295	1160.9	1164.34	Frieren	Ich suche eigentlich nur nach dem Haus von jemandem namens Heiter.	Thực ra tôi chỉ đang tìm nhà của một người tên là Heiter.	Corrected ASR 'Halter' -> 'Heiter'.
+700296	700296	1165.18	1167.34	Fern	Ah, dann sind Sie wohl unser Gast.	À, vậy chắc cô là vị khách của nhà cháu rồi.	
+700297	700297	1170.8	1173.0	Frieren	Du bist ja immer noch am Leben, Scheinheiliger.	Cậu vẫn còn sống cơ đấy, đồ đạo đức giả.	
+700298	700298	1174.68	1178.5	Heiter	Es ist tatsächlich gar nicht so leicht, auf stilvolle Weise zu sterben.	Thực sự là chẳng dễ dàng chút nào để qua đời một cách thật phong thái.	
+700299	700299	1178.84	1181.46	Frieren	Ich habe extra Schnaps gekauft, um ihn auf dein Grab zu gießen.	Tôi đã cất công mua rượu mạnh để tưới lên mộ cậu đấy.	Primary medium heard 'deinen Grab'; independent small confirmed 'dein Grab'.
+700300	700300	1181.54	1182.32	Frieren	Willst du was davon?	Cậu có muốn uống một chút không?	
+700301	700301	1182.58	1184.78	Heiter	Ich trinke gar keinen Alkohol mehr.	Tôi hoàn toàn không uống rượu nữa rồi.	
+700302	700302	1185.28	1185.76	Frieren	Verstehe.	Ra vậy.	
+700303	700303	1186.56	1189.48	Frieren	Doch ich denke nicht, dass die Göttin dir verzeihen wird,	Nhưng tôi không nghĩ Nữ thần sẽ tha thứ cho cậu đâu,	
+700304	700303	1189.48	1191.54	Frieren	nur weil du inzwischen tugendhaft lebst.	chỉ vì giờ đây cậu đã sống đức hạnh.	
+700305	700305	1198.76	1200.5	Heiter	Ich danke dir, meine Liebe.	Cảm ơn cháu nhé, cháu yêu quý.	
+700306	700306	1205.68	1206.5	Frieren	Wer ist sie?	Con bé là ai vậy?	
+700307	700307	1207.1	1208.38	Heiter	Ihr Name ist Fern.	Tên con bé là Fern.	
+700308	700308	1208.92	1211.72	Heiter	Sie ist eine Kriegswaise aus den Ländern im Süden.	Con bé là một trẻ mồ côi vì chiến tranh đến từ các vùng đất phương Nam.	Corrected ASR 'Kriegsweise' -> 'Kriegswaise'.
+700309	700309	1213.2	1214.5	Frieren	Das sieht dir nicht ähnlich.	Chuyện này chẳng giống tính cách của cậu chút nào.	
+700310	700310	1215.22	1218.02	Frieren	Du bist nicht jemand, der anderen uneigennützig hilft.	Cậu vốn đâu phải người hay giúp đỡ kẻ khác một cách vô tư.	
+700311	700311	1218.02	1220.26	Frieren	Du bist nicht wie Himmel.	Cậu đâu có giống như Himmel.	
+700312	700312	1222.96	1225.46	Heiter	Frieren, warum bist du zu mir gekommen?	Frieren này, tại sao cậu lại tìm đến chỗ tôi?	Corrected ASR 'Friren' -> 'Frieren'.
+700313	700313	1225.9	1228.3	Frieren	Ich wollte etwas in der Heiligen Stadt kaufen	Tôi muốn mua vài thứ ở Thánh Đô,	
+700314	700313	1228.3	1230.08	Frieren	und ich versuche, wenn möglich,	và nếu có thể thì tôi luôn cố gắng	
+700315	700313	1230.18	1232.06	Frieren	Bekannte an meinen Reisezielen zu treffen.	ghé thăm những người quen ở nơi mình đi qua.	
+700316	700316	1233.66	1236.26	Frieren	Außerdem habe ich bei dir noch einige Schulden offen,	Ngoài ra tôi vẫn còn nợ cậu vài ân tình	
+700317	700316	1236.56	1238.34	Frieren	die ich vor deinem Tod begleichen will.	mà tôi muốn trả xong trước khi cậu qua đời.	
+700318	700318	1242.1	1244.16	Heiter	Eine Bitte hätte ich schon an dich.	Quả thực tôi có một việc muốn nhờ cậu đây.	
+700319	700319	1245.38	1247.28	Heiter	Würdest du einen Lehrling aufnehmen?	Cậu có sẵn lòng nhận một học trò không?	
+700320	700320	1248.98	1252.72	Heiter	Die kleine Fern hat nämlich das Potenzial zur Magierin.	Bé Fern đây thực sự có tiềm năng trở thành một pháp sư.	
+700321	700321	1252.96	1255.74	Heiter	Würdest du sie bitte auf deinen Reisen mitnehmen?	Cậu làm ơn đưa con bé đi cùng trong những chuyến hành trình của mình được không?	
+700322	700322	1259.14	1262.64	Frieren	Es tut mir leid, Heiter, aber das kann ich nicht machen.	Xin lỗi cậu, Heiter, nhưng tôi không thể làm việc đó được.	
+700323	700323	1263.2	1264.28	Frieren	Sie wäre mir nur im Weg.	Con bé sẽ chỉ làm vướng chân tôi thôi.	
+700324	700324	1265.82	1269.14	Frieren	Du weißt doch, wie viele Lehrlinge der Magie in echten Kämpfen sterben.	Cậu cũng biết có bao nhiêu học trò pháp thuật đã bỏ mạng trong những trận chiến thực sự mà.	
+700325	700325	1270.04	1273.44	Frieren	Ich möchte kein Kind, das ein Freund mir anvertraut hat, in Gefahr bringen.	Tôi không muốn đẩy một đứa trẻ mà bạn mình gửi gắm vào vòng nguy hiểm.	
+700326	700326	1276.54	1281.34	Heiter	Wenn das so ist, dann hätte ich eine andere Bitte an dich.	Nếu đã vậy, thì tôi có một lời thỉnh cầu khác muốn nhờ cậu.	
+700327	700327	1285.96	1290.4	Heiter	Ich habe dieses Buch aus dem Grab von Ewig dem Weisen ausgegraben.	Tôi đã khai quật cuốn sách này từ lăng mộ của Hiền nhân Ewig.	
+700328	700328	1290.7	1297.38	Heiter	In diesem Buch stehen verloren gegangene Zauber zur Wiederbelebung von Toten und zum Erlangen von Unsterblichkeit.	Trong cuốn sách này có ghi chép những phép thuật đã thất truyền để hồi sinh người chết và đạt được sự bất tử.	
+700329	700329	1297.82	1301.24	Heiter	Ich kann mir nicht vorstellen, dass solche Zauber wirklich existieren.	Tôi không thể hình dung nổi những phép thuật như thế lại thực sự tồn tại.	
+700330	700330	1301.24	1305.12	Heiter	Um das herauszufinden, möchte ich, dass du dieses Buch entschlüsselst.	Để làm rõ điều đó, tôi muốn nhờ cậu giải mã cuốn sách này.	
+700331	700331	1305.28	1306.52	Heiter	Denkst du, du schaffst das?	Cậu nghĩ mình làm được chứ?	
+700332	700332	1307.08	1309.14	Frieren	Es ist in einer geheimen Bilderschrift verfasst.	Nó được viết bằng một loại chữ tượng hình bí mật.	
+700333	700333	1309.46	1312.02	Frieren	Die Leute in deinem Zeitalter stehen auf so etwas, oder?	Người ở thời đại của cậu rất mê mấy thứ như thế này nhỉ?	
+700334	700334	1312.7	1315.22	Frieren	Ich werde wohl fünf oder sechs Jahre dafür brauchen.	Chắc tôi sẽ cần khoảng năm hoặc sáu năm để giải mã nó.	
+700335	700335	1315.7	1317.04	Heiter	Wenn du das sagst.	Nếu cậu đã nói vậy.	
+700336	700336	1317.84	1320.46	Frieren	Aber was willst du mit dem Inhalt dieses Buches anfangen?	Nhưng cậu định làm gì với nội dung của cuốn sách này?	
+700337	700337	1320.94	1322.96	Frieren	Ich dachte immer, du hättest keine Angst vor dem Tod.	Tôi cứ tưởng cậu không hề sợ cái chết cơ mà.	
+700338	700338	1323.62	1325.44	Heiter	Es gibt zwei Gründe dafür.	Có hai lý do cho việc đó.	
+700339	700339	1326.42	1330.6	Heiter	Erstens habe ich euch damals wohl ein bisschen was vorgemacht.	Thứ nhất, hồi đó có lẽ tôi đã làm bộ trước mặt mọi người một chút.	
+700340	700340	1330.6	1334.82	Heiter	Zweitens habe ich jetzt inzwischen mehr Angst vor dem Tod als früher.	Thứ hai, giờ đây tôi đã sợ cái chết nhiều hơn trước kia rồi.	
+700341	700341	1336.16	1337.6	Heiter	Ich will ja auch nicht richtig unsterblich	Tôi cũng đâu định trở nên bất tử thực sự,	Uncertain ASR divergence: primary medium heard 'Ich wäre ja auch nicht richtig unsterblich, wäre nur ein kleines bisschen.'; independent small heard 'Ich will ja auch nicht richtig unsterblich werden, nur ein kleines bisschen.' Codex selected the supported small-model alternative as the coherent provisional reading; not manually heard.
+700342	700341	1338.38	1339.8	Heiter	werden, nur ein kleines bisschen.	chỉ một chút xíu thôi.	Grouped with preceding clause; see uncertain ASR divergence note on 700341.
+700343	700343	1340.16	1344.14	Heiter	Ich möchte auf meine alten Tage noch ein wenig mehr Zeit haben.	Ở tuổi xế chiều này, tôi chỉ muốn có thêm một chút thời gian nữa.	
+700344	700344	1347.76	1349.9	Heiter	In den Heiligen Schriften steht außerdem,	Hơn nữa, trong Kinh Thánh còn viết rằng	
+700345	700344	1350.2	1352.18	Heiter	dass man sein Leben gesund führen soll.	con người nên sống một cuộc đời lành mạnh.	
+700346	700346	1352.4	1355.08	Heiter	Und ein langes Leben ist der beste Beweis dafür.	Và sống trường thọ chính là minh chứng rõ nhất cho điều đó.	
+700347	700347	1356.28	1356.88	Frieren	Scheinheiliger.	Đồ đạo đức giả.	
+700348	700348	1358.86	1360.06	Heiter	Eine Frage.	Cho tôi hỏi một câu nhé.	
+700349	700349	1360.74	1365.94	Heiter	Könntest du Fern in Magie unterrichten, auch wenn es nur während deiner Pausen sein sollte?	Cậu có thể dạy pháp thuật cho Fern, dù chỉ là trong những lúc cậu nghỉ giải lao được không?	Capitalized proper name 'Fern'.
+700350	700350	1367.12	1371.14	Heiter	Ich selber bin als Kleriker dazu leider nicht in der Lage.	Bản thân tôi là một giáo sĩ nên tiếc là không đủ khả năng làm việc đó.	
+700351	700351	1372.08	1373.72	Frieren	Na gut, solange es nur das ist.	Được thôi, miễn chỉ có vậy.	
+700352	700352	1381.94	1383.26	Frieren	Da ist sie ja.	Con bé ở kia rồi.	
+700353	700353	1384.1	1386.6	Frieren	Es war ganz schön schwierig, dich zu finden.	Tìm được em thật chẳng dễ chút nào.	
+700354	700354	1386.92	1388.42	Frieren	Trainierst du denn immer hier im Wald?	Em lúc nào cũng tập luyện ở trong rừng này sao?	
+700355	700355	1389.04	1392.42	Fern	Dann haben sogar Sie Schwierigkeiten damit, mich aufzufinden.	Vậy là ngay cả cô cũng gặp khó khăn trong việc tìm ra cháu.	
+700356	700356	1394.3	1397.78	Fern	Heiter sagt mir oft, dass ich eine schwache Präsenz habe.	Ngài Heiter thường bảo rằng cháu có sự hiện diện rất mờ nhạt.	
+700357	700357	1399.94	1402.16	Fern	Aber ich finde, das ist eine wunderbare Sache.	Nhưng cháu thấy đó lại là một điều tuyệt vời.	
+700358	700358	1403.96	1405.1	Frieren	Ja, das ist es.	Ừ, đúng là vậy.	
+700359	700359	1408.4	1411.98	Frieren	Tatsächlich, ihre Magie aufzuspüren, funktioniert so gut wie gar nicht.	Quả thực, việc dò tìm ma lực của con bé hầu như chẳng có tác dụng.	
+700360	700360	1412.46	1414.42	Frieren	Sie verfügt über eine hervorragende Magiekontrolle.	Con bé sở hữu khả năng kiểm soát ma lực xuất sắc.	
+700361	700361	1414.42	1419.88	Frieren	Wie viel muss sie trainiert haben, um das in ihrem Alter so zu beherrschen?	Ở độ tuổi này mà làm chủ được đến mức ấy, không biết con bé đã phải khổ luyện biết bao nhiêu?	
+700362	700362	1420.3	1425.92	Fern	Heiter hat gesagt, dass ich eine vollwertige Magierin bin, wenn ich diesen Felsen dort durchstoßen kann.	Ngài Heiter từng nói rằng cháu sẽ trở thành một pháp sư thực thụ nếu có thể xuyên thủng tảng đá đằng kia.	Corrected ASR 'Halter' -> 'Heiter'.
+700363	700363	1426.46	1435.18	Frieren	Oh, Heiter versteht zwar Magie, aber es ist eigentlich...	Ồ, Heiter tuy cũng hiểu về pháp thuật, nhưng thực ra điều đó...	Corrected ASR 'Halter' -> 'Heiter'.
+700364	700364	1435.76	1438.46	Fern	Meine magische Kraft löst sich jedes Mal auf.	Ma lực của cháu lần nào cũng bị tan biến mất.	
+700365	700365	1438.6	1439.74	Fern	Ich kann nichts tun.	Cháu chẳng làm được gì cả.	
+700366	700366	1440.7	1441.74	Frieren	Oh, ich verstehe.	Ồ, tôi hiểu rồi.	
+700367	700367	1441.74	1444.92	Fern	Was kann ich denn nur machen, um besser zu werden?	Cháu phải làm gì để tiến bộ hơn đây ạ?	
+700368	700368	1446.02	1448.32	Frieren	Fern? Darf ich dich vorher etwas fragen?	Fern này? Trước đó tôi hỏi em một câu được không?	
+700369	700369	1449.76	1450.5	Frieren	Liebst du Magie?	Em có yêu pháp thuật không?	
+700370	700370	1451.6	1453.58	Fern	Manchmal mehr, manchmal weniger.	Đôi khi nhiều, đôi khi ít ạ.	
+700371	700371	1456.12	1457.48	Frieren	Ganz genauso wie ich.	Giống hệt như tôi.	
+700372	700372	1550.12	1551.98	Heiter	Wie kommst du mit Fern zurecht?	Cậu với Fern hòa hợp thế nào rồi?	Uncertain post-credits preview speech: focused-medium ASR output 'Wie kommst du mit Fernseher ein?'; phonetically reconstructed in context as 'Wie kommst du mit Fern zurecht?', not manually heard.
+700373	700373	1554.22	1556.06	Fern	Es wäre eine Schande, wenn du jetzt sterben würdest.	Sẽ thật đáng tiếc nếu bây giờ ngài qua đời đấy ạ.	Post-credits preview speech: focused-medium ASR heard 'Es wäre schade, wenn du jetzt sterben würdest' / 'Schade, wenn du jetzt sterben wirst'; on-screen German quote at 1554-1556s reads 'Es wäre eine Schande, wenn du jetzt sterben würdest.' Not manually heard.
+700374	700374	1556.08	1557.84	Frieren	Das hätte nicht unbedingt Magie sein müssen.	Đâu nhất thiết phải là pháp thuật.	Post-credits preview speech: both focused-medium passes heard spoken 'Das hätte nicht unbedingt Magie sein müssen.'; on-screen Episode 2 title card reads 'Es hätte nicht unbedingt Magie sein müssen ...'.
+700375	700375	1558.04	1559.62	Heiter	Aber es lohnt sich, nach denen zu suchen.	Nhưng rất đáng để đi tìm chúng đấy.	Post-credits preview speech: confirmed by primary medium, both focused-medium passes, and on-screen German quote.

@@ -1,0 +1,262 @@
+[
+  {
+    "start": 1536,
+    "end": 1544,
+    "segments": []
+  },
+  {
+    "start": 1544,
+    "end": 1552,
+    "segments": []
+  },
+  {
+    "start": 1552,
+    "end": 1560,
+    "segments": [
+      {
+        "start": 1554.7,
+        "end": 1556.06,
+        "text": "Schade, wenn du jetzt sterben wirst.",
+        "avgLogProb": -0.3874284770037677,
+        "words": [
+          {
+            "start": 1554.7,
+            "end": 1555.08,
+            "word": "Schade,",
+            "probability": 0.33852965012192726
+          },
+          {
+            "start": 1555.56,
+            "end": 1555.62,
+            "word": "wenn",
+            "probability": 0.8706369400024414
+          },
+          {
+            "start": 1555.62,
+            "end": 1555.64,
+            "word": "du",
+            "probability": 0.9417642951011658
+          },
+          {
+            "start": 1555.64,
+            "end": 1555.96,
+            "word": "jetzt",
+            "probability": 0.923761785030365
+          },
+          {
+            "start": 1555.96,
+            "end": 1556.06,
+            "word": "sterben",
+            "probability": 0.8277273178100586
+          },
+          {
+            "start": 1556.06,
+            "end": 1556.06,
+            "word": "wirst.",
+            "probability": 0.6564334332942963
+          }
+        ]
+      },
+      {
+        "start": 1556.16,
+        "end": 1557.86,
+        "text": "Das hätte nicht unbedingt Magie sein müssen.",
+        "avgLogProb": -0.3874284770037677,
+        "words": [
+          {
+            "start": 1556.16,
+            "end": 1556.28,
+            "word": "Das",
+            "probability": 0.3643728196620941
+          },
+          {
+            "start": 1556.28,
+            "end": 1556.44,
+            "word": "hätte",
+            "probability": 0.9395140409469604
+          },
+          {
+            "start": 1556.44,
+            "end": 1556.64,
+            "word": "nicht",
+            "probability": 0.9878107309341431
+          },
+          {
+            "start": 1556.64,
+            "end": 1557.1,
+            "word": "unbedingt",
+            "probability": 0.9842415452003479
+          },
+          {
+            "start": 1557.1,
+            "end": 1557.42,
+            "word": "Magie",
+            "probability": 0.9577711820602417
+          },
+          {
+            "start": 1557.42,
+            "end": 1557.58,
+            "word": "sein",
+            "probability": 0.9992353916168213
+          },
+          {
+            "start": 1557.58,
+            "end": 1557.86,
+            "word": "müssen.",
+            "probability": 0.9977151155471802
+          }
+        ]
+      },
+      {
+        "start": 1558.08,
+        "end": 1559.6,
+        "text": "Aber es lohnt sich nach denen zu suchen.",
+        "avgLogProb": -0.3874284770037677,
+        "words": [
+          {
+            "start": 1558.08,
+            "end": 1558.24,
+            "word": "Aber",
+            "probability": 0.9248863458633423
+          },
+          {
+            "start": 1558.24,
+            "end": 1558.42,
+            "word": "es",
+            "probability": 0.9953508377075195
+          },
+          {
+            "start": 1558.42,
+            "end": 1558.66,
+            "word": "lohnt",
+            "probability": 0.998082846403122
+          },
+          {
+            "start": 1558.66,
+            "end": 1558.8,
+            "word": "sich",
+            "probability": 0.9854260683059692
+          },
+          {
+            "start": 1558.8,
+            "end": 1558.96,
+            "word": "nach",
+            "probability": 0.41766899824142456
+          },
+          {
+            "start": 1558.96,
+            "end": 1559.14,
+            "word": "denen",
+            "probability": 0.7876935601234436
+          },
+          {
+            "start": 1559.14,
+            "end": 1559.38,
+            "word": "zu",
+            "probability": 0.9886823892593384
+          },
+          {
+            "start": 1559.38,
+            "end": 1559.6,
+            "word": "suchen.",
+            "probability": 0.9990565180778503
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "start": 907,
+    "end": 909,
+    "segments": [
+      {
+        "start": 907.0,
+        "end": 908.74,
+        "text": "Nimm das gefährlichste Ernstwisser!",
+        "avgLogProb": -0.41910961057458607,
+        "words": [
+          {
+            "start": 907.0,
+            "end": 907.56,
+            "word": "Nimm",
+            "probability": 0.8495292365550995
+          },
+          {
+            "start": 907.56,
+            "end": 907.74,
+            "word": "das",
+            "probability": 0.9037027359008789
+          },
+          {
+            "start": 907.74,
+            "end": 908.28,
+            "word": "gefährlichste",
+            "probability": 0.8577146728833517
+          },
+          {
+            "start": 908.28,
+            "end": 908.74,
+            "word": "Ernstwisser!",
+            "probability": 0.55286530777812
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "start": 728,
+    "end": 730,
+    "segments": [
+      {
+        "start": 728.0,
+        "end": 729.56,
+        "text": "Der chillt mir nicht so den Kopf.",
+        "avgLogProb": -0.5228658467531204,
+        "words": [
+          {
+            "start": 728.0,
+            "end": 728.52,
+            "word": "Der",
+            "probability": 0.13273049890995026
+          },
+          {
+            "start": 728.52,
+            "end": 728.76,
+            "word": "chillt",
+            "probability": 0.6400991380214691
+          },
+          {
+            "start": 728.76,
+            "end": 728.82,
+            "word": "mir",
+            "probability": 0.9832084774971008
+          },
+          {
+            "start": 728.82,
+            "end": 728.96,
+            "word": "nicht",
+            "probability": 0.9886488318443298
+          },
+          {
+            "start": 728.96,
+            "end": 729.08,
+            "word": "so",
+            "probability": 0.5777603983879089
+          },
+          {
+            "start": 729.08,
+            "end": 729.28,
+            "word": "den",
+            "probability": 0.9964007139205933
+          },
+          {
+            "start": 729.28,
+            "end": 729.56,
+            "word": "Kopf.",
+            "probability": 0.9781280159950256
+          }
+        ]
+      }
+    ]
+  }
+]

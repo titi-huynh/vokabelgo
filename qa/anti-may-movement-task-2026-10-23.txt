@@ -1,0 +1,18 @@
+Bạn là Antigravity, trực tiếp sửa code trong C:\Users\huynh\OneDrive\Desktop\flash. Codex quản lý hướng sản phẩm và nghiệm thu. Người dùng vừa phản hồi: "vẫn đi ngược thiếu logic" và yêu cầu giao bạn sửa để tiết kiệm token.
+
+MỤC TIÊU: sửa chuyển động bé mèo Mây trên trang chủ đang chạy http://127.0.0.1:3000/ để hướng di chuyển, nhịp chân, đường đi và dừng/đổi đích hợp lý. Làm thực tế, không chỉ trả kế hoạch.
+
+PHẠM VI GIỮ NGUYÊN: bộ ảnh, nét gốc Mây, bố cục, UI, nhà, bè, chức năng học. Không tạo ảnh mới, không Muse, không đổi style. Không commit/deploy/reset git. Workspace có rất nhiều thay đổi chưa commit: tuyệt đối không dọn hoặc ghi đè phần không thuộc nhiệm vụ. Server 3000 đang chạy, ưu tiên dùng nó. Chỉ sửa may-home-engine.js, may-home-game.js và test-may-home-engine.js; CSS nếu thật sự cần và giải thích.
+
+ĐỌC TRƯỚC: may-home-engine.js, may-home-game.js, may-home-game.css, test-may-home-engine.js; qa/may-movement-review-2026-10-23.md. Tạo bản backup ba file hiện tại vào qa/anti-may-movement-before-2026-10-23/ trước khi sửa. Bản trước vòng Codex ở qa/may-movement-before-2026-10-23/. Bản báo cáo cũ và 11 test pass KHÔNG chứng minh chuyển động nhìn đúng: người dùng đã bác bỏ.
+
+CHẨN ĐOÁN TRỌNG TÂM: assets/may-home-game/may-sprites.png là atlas 2x2, các pose chủ yếu nhìn chính diện. Code hiện lật ngang theo walker.facing, luân phiên hai frame đi theo travelled/44. Phải mở xem atlas và xác định nguyên nhân thật sự cảm giác đi ngược, chân trượt hoặc hướng mâu thuẫn. Không chỉ đảo dấu scale hoặc tăng tốc cho qua. Với asset có sẵn, chọn cách thể hiện trung thực và hợp lý; không giả vờ có đủ sprite bốn hướng. Nếu thiếu pose khiến mục tiêu không thể đạt trọn vẹn, nêu rõ giới hạn và giải pháp tối thiểu, không tự vẽ lại Mây.
+
+CÁC ĐIỀU KIỆN NGHIỆM THU:
+1. Hướng hiển thị và nhịp bước phù hợp vector đang đi, không lật qua lại vô cớ hay trông lùi suốt đường; điểm chân bám mặt đất, đứng yên khi dừng.
+2. Bến câu <-> ghế Nghe & xem đi đường hợp lý; nhà <-> khu Học từ không vòng bất thường, không xuyên đồ vật/nước. Kiểm tra graph và đích đặt chân trên hình thực.
+3. Đổi đích khi đang đi không giật/teleport, không chạy tiếp action đích cũ; kéo cảnh hoặc đổi tab nav hủy di chuyển đúng. Nav luôn mở chức năng ngay.
+4. Giữ hoạt động trên desktop và mobile 390x844; camera không đuổi quá sát, không hỏng nhãn hay điểm bấm.
+5. Chạy node --check may-home-game.js, node test-may-home-engine.js và thêm kiểm tra có ý nghĩa nếu sửa nguyên nhân mới. Bắt buộc xem thử chuyển động thực tế trên trình duyệt, không chỉ đọc số liệu; nếu không có khả năng kiểm tra trực quan thì nói rõ, không tuyên bố đã nghiệm thu.
+
+Ghi qa/anti-may-movement-report-2026-10-23.md: nguyên nhân, quyết định, file sửa, kết quả test và tình huống đã xem thực tế, giới hạn asset còn lại. Có ảnh/video minh chứng nếu công cụ hỗ trợ. Kết thúc trả báo cáo ngắn và điểm Codex cần kiểm tra lại. Không đọc toàn repo hay chạy các test backend/game không liên quan để tiết kiệm token.

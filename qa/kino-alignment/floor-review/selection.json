@@ -1,0 +1,24 @@
+{
+  "reviewDate": "2026-10-23",
+  "timezone": "Asia/Saigon",
+  "series": "Die Regeln von Floor",
+  "selectedEpisode": "Strom sparen",
+  "episodeNumber": 68,
+  "season": 5,
+  "displayTitleVi": "Tiết kiệm điện",
+  "durationInSecondsFromPublisher": 573,
+  "sourceUrl": "https://www.kika.de/die-regeln-von-floor/videos/strom-sparen-102?videoType=mainContent",
+  "selectionBasis": "Publisher descriptions, not verified dialogue. Family routine, household energy use, requests, rules and disagreement provide promising learning contexts.",
+  "comparedEpisodes": ["Strom sparen", "Tagebuch", "Pickel"],
+  "status": "awaiting_accessible_source_video",
+  "accessEvidence": {
+    "publisherTransmissionType": "geo",
+    "publisherRegionsAllowed": "DE",
+    "officialMediaResponse": "HTTP 403 Forbidden for the official 720p source",
+    "officialBrowserPlayer": "Wiedergabefehler. Das Video kann leider nicht abgespielt werden. Beim Abruf aus dem Ausland kann Geoblocking die Ursache sein.",
+    "otherOfficialReleaseSearch": "No usable alternative official release found",
+    "localSourceSearch": "No Floor source video found in this workspace or matching Downloads filenames"
+  },
+  "notYetVerified": ["spoken dialogue", "Vietnamese translations", "speech timestamps", "speaker turns", "learning chapter boundaries"],
+  "runtimeRegistration": "Not added: do not show a playable Kino lesson without an accessible source and checked answers."
+}

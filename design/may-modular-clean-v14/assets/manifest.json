@@ -1,0 +1,150 @@
+{
+  "background": "May_modular_background_v14.png",
+  "assets": {
+    "May_modular_background_v14.png": {
+      "width": 1600,
+      "height": 1600,
+      "mode": "RGB",
+      "transparent_fraction": 0.0,
+      "opaque_fraction": 1.0,
+      "sha256": "65204b716f0ce089fc6df8c98700693ed150dcc1ce2bd9596e0151f402e78d48",
+      "bytes": 1816864,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1600,
+        "h": 1600
+      },
+      "provenance": "Muse modular v14"
+    },
+    "apple-board.png": {
+      "width": 1600,
+      "height": 1600,
+      "mode": "RGBA",
+      "transparent_fraction": 0.77708,
+      "opaque_fraction": 0.22017,
+      "sha256": "0e127d7d3310b907228d0002f3d7417bf2b82fa80d3026852ab915dc5b13da09",
+      "bytes": 394246,
+      "bounds": {
+        "x": 360,
+        "y": 323,
+        "w": 889,
+        "h": 1108
+      },
+      "provenance": "Muse modular v14"
+    },
+    "fishing-raft.png": {
+      "width": 1920,
+      "height": 1280,
+      "mode": "RGBA",
+      "transparent_fraction": 0.75992,
+      "opaque_fraction": 0.2371,
+      "sha256": "100775eaff77e66db5f5ab44346a1bcf49cdbc4985b3612c7bf77ead23e28cfb",
+      "bytes": 977942,
+      "bounds": {
+        "x": 316,
+        "y": 179,
+        "w": 1322,
+        "h": 919
+      },
+      "provenance": "Muse modular v14"
+    },
+    "may-sprites.png": {
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "transparent_fraction": 0.59231,
+      "opaque_fraction": 0.39595,
+      "sha256": "a9b52c7a7d6fc19135054087848a7ebc80603d21fd678071f00cbc28f59da3d2",
+      "bytes": 1075467,
+      "bounds": {
+        "x": 109,
+        "y": 78,
+        "w": 497,
+        "h": 485
+      },
+      "provenance": "Existing built-in image_gen sprite atlas, reused unchanged"
+    },
+    "play-table.png": {
+      "width": 1920,
+      "height": 1280,
+      "mode": "RGBA",
+      "transparent_fraction": 0.62584,
+      "opaque_fraction": 0.37216,
+      "sha256": "5ff438862a73e4cbe0f7b5d8255d109c54f9abd6c5edc8c63cce4f93359f844d",
+      "bytes": 609775,
+      "bounds": {
+        "x": 345,
+        "y": 182,
+        "w": 1242,
+        "h": 910
+      },
+      "provenance": "Muse modular v14"
+    },
+    "porch-cushion.png": {
+      "width": 1920,
+      "height": 1280,
+      "mode": "RGBA",
+      "transparent_fraction": 0.75259,
+      "opaque_fraction": 0.24545,
+      "sha256": "d0330991c56dc3f3f3eb1147568f694643c31d9989f9b9bb7996da4f554ec978",
+      "bytes": 422858,
+      "bounds": {
+        "x": 434,
+        "y": 203,
+        "w": 1038,
+        "h": 912
+      },
+      "provenance": "Muse modular v14"
+    },
+    "reading-chair.png": {
+      "width": 1600,
+      "height": 1600,
+      "mode": "RGBA",
+      "transparent_fraction": 0.73278,
+      "opaque_fraction": 0.26496,
+      "sha256": "db9abf02da6b1884ad0342902fa69b79c7197162c1fd6a586f87ebd7b3a1fce9",
+      "bytes": 625426,
+      "bounds": {
+        "x": 361,
+        "y": 229,
+        "w": 879,
+        "h": 1178
+      },
+      "provenance": "Muse modular v14"
+    },
+    "vintage-viewer.png": {
+      "width": 1600,
+      "height": 1600,
+      "mode": "RGBA",
+      "transparent_fraction": 0.82822,
+      "opaque_fraction": 0.17038,
+      "sha256": "9edc890108c5ac00096a4b56d8c15428a36f6acfa602fd905f1b4cd413babf7d",
+      "bytes": 456380,
+      "bounds": {
+        "x": 441,
+        "y": 452,
+        "w": 818,
+        "h": 714
+      },
+      "provenance": "Muse modular v14"
+    },
+    "vintage-viewer-stand-v14b.png": {
+      "width": 1325,
+      "height": 1132,
+      "mode": "RGBA",
+      "transparent_fraction": 0.52037,
+      "opaque_fraction": 0.47556,
+      "sha256": "b59adc81ee980f3c0fd70fd6b33355066fbf815571cd6664be96edae9a94ff67",
+      "bytes": 420774,
+      "bounds": {
+        "x": 90,
+        "y": 90,
+        "w": 1145,
+        "h": 952
+      },
+      "provenance": "Muse: original vintage-viewer.png composited onto newly generated low wooden stand; v14b"
+    }
+  },
+  "validation_errors": []
+}

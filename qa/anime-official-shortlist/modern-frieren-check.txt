@@ -1,0 +1,65 @@
+Browser tab: 6, Title: "Chọn anime tiếng Đức cho Kino", URL: "http://localhost:3000/qa/anime-official-shortlist/modern-check.html".
+1 AXWebArea Chọn anime tiếng Đức cho Kino, URL: localhost:3000/qa/anime-official-shortlist/modern-check.html
+	2 container
+		3 heading Anime tiếng Đức để chị chọn, Value: 1
+			4 text Anime tiếng Đức để chị chọn
+		5 text Đang kiểm tra thêm anime mới lồng tiếng Đức. Trạng thái phát chỉ xác nhận sau khi thử trực tiếp.
+		6 container Description: Chọn anime, ID: choices
+			7 checkbox Frieren Trích đoạn lồng tiếng Đức · Crunchyroll Deutschland, Value: 0
+				8 text Frieren
+				9 text Trích đoạn lồng tiếng Đức · Crunchyroll Deutschland
+			10 checkbox Demon Slayer – Thanh gươm diệt quỷ Trailer Infinity Castle tiếng Đức · SonyPicturesGermany, Value: 0
+				11 text Demon Slayer – Thanh gươm diệt quỷ
+				12 text Trailer Infinity Castle tiếng Đức · SonyPicturesGermany
+			13 checkbox SPY × FAMILY Trích đoạn lồng tiếng Đức · Crunchyroll Deutschland, Value: 0
+				14 text SPY × FAMILY
+				15 text Trích đoạn lồng tiếng Đức · Crunchyroll Deutschland
+			16 checkbox Solo Leveling Synchro-Trailer · Crunchyroll Deutschland, Value: 0
+				17 text Solo Leveling
+				18 text Synchro-Trailer · Crunchyroll Deutschland
+			19 checkbox SPY × FAMILY – trailer dự phòng Trailer 1 lồng tiếng Đức · Crunchyroll Deutschland, Value: 0
+				20 text SPY × FAMILY – trailer dự phòng
+				21 text Trailer 1 lồng tiếng Đức · Crunchyroll Deutschland
+			22 checkbox Frieren – tóm tắt Synchro Video tóm tắt lồng tiếng Đức · Crunchyroll Deutschland, Value: 0
+				23 text Frieren – tóm tắt Synchro
+				24 text Video tóm tắt lồng tiếng Đức · Crunchyroll Deutschland
+			25 checkbox Frieren – Phantome der Vergangenheit Trích đoạn lồng tiếng Đức · Crunchyroll Deutschland, Value: 1
+				26 text Frieren – Phantome der Vergangenheit
+				27 text Trích đoạn lồng tiếng Đức · Crunchyroll Deutschland
+		28 container stage
+			29 heading Frieren – Phantome der Vergangenheit, Value: 2, ID: title
+				58 text Frieren – Phantome der Vergangenheit
+			59 text Phantome der Vergangenheit | Deutsche Synchro
+			44 container Description: YouTube video player, ID: player
+				45 AXWebArea YouTube, URL: youtube.com/embed/m6glWu0SaMM?origin=http%3A%2F%2Flocalhost%3A3000&hl=de&playsinline=1&enablejsapi=1&widgetid=1&forigin=http%3A%2F%2Flocalhost%3A3000%2Fqa%2Fanime-official-shortlist%2Fmodern-check.html&aoriginsup=1&vf=1
+					46 container
+						47 container Description: YouTube-Videoplayer, ID: movie_player
+							60 container
+								61 text Video nicht verfügbar
+								62 link Description: Auf YouTube nach weiteren Videos suchen, Value: youtube.com/
+						51 container Video nicht verfügbar
+							52 container
+								53 image YouTube-Logo
+								54 text Video nicht verfügbar Der Uploader stellt dieses Video in deinem Land nicht zur Verfügung
+			32 container
+				33 button Phát thử, ID: play
+				34 button Dừng, ID: pause
+				35 link Description: Mở video gốc, Value: youtube.com/watch?v=t3_uYFazKrY, ID: source
+			63 text Không phát được: mã 150
+			64 text Trích đoạn; không phải tập đầy đủ.
+		38 text Sakura – Thủ lĩnh thẻ bài:
+		39 text  chưa xác nhận được video chính thức vừa lồng tiếng Đức vừa nhúng được. Bài giới thiệu Sakura của ADN ngày 27/05/2026 ghi tiếng Nhật, phụ đề Đức; chưa đưa vào các lựa chọn đạt yêu cầu.
+		40 text Đã loại khỏi danh sách dùng ngay:
+		41 text  Pokémon mùa 1, Beyblade Metal Fusion và Beyblade Burst báo chặn khu vực khi thử nhúng; các link Pokémon Generationen và trailer Conan 25 đã thử báo không phát được. Không dùng mã nhúng tồn tại làm bằng chứng video phát được. Đã kiểm tra mã nhúng qua YouTube oEmbed và trạng thái đang phát bằng YouTube IFrame API ngày 23/10/2026. Kết quả chỉ áp dụng cho các video cụ thể dưới đây tại thời điểm thử. Nhúng không cấp quyền tải, đăng lại hay sao chép toàn bộ phụ đề.
+		57 content list evidence
+			65 container
+				66 AXListMarker • 
+				67 text Frieren: Lỗi trình phát 150
+			68 container
+				69 AXListMarker • 
+				70 text Frieren – tóm tắt Synchro: Lỗi trình phát 150
+			71 container
+				72 AXListMarker • 
+				73 text Frieren – Phantome der Vergangenheit: Lỗi trình phát 150
+
+The focused UI element is 25 checkbox Frieren – Phantome der Vergangenheit Trích đoạn lồng tiếng Đức · Crunchyroll Deutschland, Value: 1

@@ -1,0 +1,41 @@
+================================================================================
+VOKABELGO - ART DIRECTION REVIEW: VIETNAMESE FLOATING CAT MARKET (v03)
+Phong Cách Mới: Low-Poly Cutaway Diorama (Bold Color Blocks & Toy Aesthetics)
+Thư Mục: design/cat-island-blender/v03/
+Phiên Bản Blender: 5.2.2 LTS
+Tác Giả: Antigravity AI Pair Programmer
+================================================================================
+
+1. NGUỒN CẢM HỨNG CHÍNH & DIỄN GIẢI PHONG CÁCH (PRIMARY REFERENCE)
+--------------------------------------------------------------------------------
+Bản dựng v03 được tái định hình hoàn toàn dựa trên hình ảnh tham chiếu mới do người dùng cung cấp:
+- Đường dẫn tham chiếu: C:/Users/huynh/AppData/Local/Temp/codex-clipboard-8f1431a9-4578-42aa-84b7-21d11dd82adb.png
+- Phân tích nguyên lý mỹ thuật được áp dụng:
+  * Bố cục Diorama khối cắt lớp (Cutaway Block): Khối nước màu xanh ngọc bích (turquoise) trong suốt có vách cắt vát hình đa giác, để lộ đáy sông màu xanh xám (sage green) có các mảng diện phẳng gồ ghề (faceted low-poly mounds).
+  * Độ tương phản màu sắc đồ họa mạnh mẽ: Nền studio màu tím hoa cà (mauve/purple #624B69) tương phản nổi bật với khối nước ngọc bích (#2CD0C2), ca-bin tàu màu đỏ san hô (#E84637), viền lan can vàng ấm (#F5B627) và thân tàu màu mận thẫm (#2E233A).
+  * Hình khối đồ chơi chunky, dứt khoát: Thân tàu kéo/tàu cá đồ chơi dạng low-poly, có ống khói nhả các cụm khói đa giác, phao cứu sinh sọc cam-kem treo bên mạn, và mắt thuyền (Mắt ghe) bảo hộ sông nước.
+  * Nhân vật mèo Chibi tối giản: Đầu tròn mịn (smooth-shaded) màu trắng kem/xám lam, tai tam giác khoang hồng, má hồng phính và quàng khăn đỏ san hô. Mèo Mochi đứng trên nóc ca-bin quan sát, mèo Pepper ở boong trước (bow deck) câu cá thả mồi bập bềnh trong các vòng sóng đồng tâm hướng thẳng về phía camera.
+  * Yếu tố chợ nổi Nam Bộ: Cây bẹo bằng tre vàng treo trái khóm và dưa hấu mẫu ở mũi thuyền; thúng tre đan hở miệng chứa thanh long và măng cụt trên quầy bán.
+
+2. SO SÁNH KHÁC BIỆT CHÍNH GIỮA v02 VÀ v03
+--------------------------------------------------------------------------------
+- Thẩm mỹ: v02 mang phong cách tả thực ấm áp (tactile cozy diorama) với chất liệu gỗ mộc, vải bạt dải sọc và bờ đảo cỏ rộng; v03 chuyển hẳn sang phong cách đồ họa phẳng low-poly (bold toy aesthetic) với các mảng màu đậm, bóng đổ sắc nét (crisp directional shadows) và độ khúc xạ mặt nước cắt lớp.
+- Khối nước: v02 dùng tấm nước mỏng phủ phẳng; v03 dựng một khối nước cắt lớp 3D (cutaway volume) cho thấy rõ độ sâu, thảm thực vật đáy sông và các gợn sóng đồng tâm màu trắng.
+- Tàu thuyền: v02 là ghe tam bản dáng dài truyền thống; v03 là thuyền chợ nổi dạng tàu kéo nhỏ gọn (compact trawler) có ca-bin đỏ san hô, nóc kem, ống khói than và lan can vàng nổi bật.
+- Số lượng vật thể & Tối ưu: v03 tinh gọn hơn rất nhiều, tập trung vào độ cô đọng của hình khối (silhouette) thay vì trải dài hàng trăm đạo cụ nhỏ lẻ (Tổng cộng chỉ 5.014 triangles cho toàn bộ cảnh).
+
+3. KẾT QUẢ KIỂM ĐỊNH FILE & ĐƯỜNG DẪN XUẤT
+--------------------------------------------------------------------------------
+- File Blender gốc: design/cat-island-blender/v03/cat-island-floating-market-v03.blend
+- Script procedural: design/cat-island-blender/v03/build_floating_market_v03.py
+- Ảnh render toàn cảnh (Overview 1400x1200): design/cat-island-blender/v03/floating-market-style-study-v03.png
+- Ảnh render cận cảnh (Detail 1400x1200): design/cat-island-blender/v03/floating-market-shopkeeper-detail-v03.png
+- Báo cáo thông số: design/cat-island-blender/v03/scene-manifest-v03.json
+- Tiến độ: design/cat-island-blender/v03/status.json
+- Thống kê lưới: 28 mesh objects, 5.014 evaluated triangles, 2 cameras, 3 lights, 13 materials.
+
+4. GIỚI HẠN HIỆN TẠI & LƯU Ý
+--------------------------------------------------------------------------------
+- Đây là bản prototype định hướng mỹ thuật (visual prototype) phục vụ đánh giá phong cách đồ họa; chưa áp dụng các kỹ thuật nướng texture (bake textures) cho WebGL.
+- Hiệu ứng mặt nước trong suốt hiện được dựng cho Cycles/Eevee; khi chuyển sang Three.js/Babylon.js cho web game sẽ cần tối ưu shader và đo đạc hiệu năng thực tế trên trình duyệt thay vì cam kết tốc độ khung hình lý thuyết.
+================================================================================

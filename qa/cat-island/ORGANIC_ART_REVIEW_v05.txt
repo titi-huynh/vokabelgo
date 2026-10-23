@@ -1,0 +1,43 @@
+GHE MEO — ORGANIC DETAIL PASS v05
+Date: 2026-10-18
+
+Scope
+Revised the standalone boat/water review and its Blender source. Preserved
+v04 for comparison. No changes to Fuxie or the vocabulary learning flow.
+
+Visible changes
+- Curved bananas arranged horizontally in two loose layers.
+- Asymmetric oranges with dimples, calyxes and small leaves.
+- Dragonfruit bodies with folded, tapered bracts and green crowns.
+- Folded plant leaves, rounded woven baskets, softer facial/rope curves.
+- Embedded wood/canvas/paint maps, subtle grain and thinner canvas edges.
+- New fruit camera and same-camera v04/v05 comparison control.
+
+Verification
+- Blender 5.2.2 full build completed: editable BLEND, GLB, two native renders.
+- GLB: 6,021,096 bytes; 164,248 triangles; 38 merged material batches.
+- Editable source: 559 mesh objects. Embedded maps, no external textures.
+- node --check cat-island-boat-study.js passed.
+- In-app browser: v05 loads without console errors/warnings; v04/v05 toggle
+  works in both directions while paused at the fruit camera.
+- Resume, sail and stop controls work after comparison.
+- 390 x 844 emulated viewport: four camera buttons and comparison fit;
+  no horizontal page overflow. Fresh mobile load frames the entire boat.
+- This is desktop browser viewport emulation, not a physical-phone or FPS test.
+
+Evidence under review-assets/
+cat-island-organic-v05-detail-2026-10-18.png
+cat-island-organic-v04-comparison-2026-10-18.png
+cat-island-organic-v05-overview-2026-10-18.png
+cat-island-organic-v05-mobile-2026-10-18.png
+
+Art assessment / remaining limits
+Softer fruit silhouettes and less repetitive arrangement improve the closeup.
+This remains stylized 3D, below the hand-painted reference's artistic finish.
+Dragonfruit bracts, cat expression, weathering and painted material variation
+still need authored art refinement. This pass does not claim final art approval.
+The boat is a static mesh with scene-level buoyancy, not a rigged character.
+The new asset is larger than v04; device performance has not been benchmarked.
+
+Rebuild from workspace in PowerShell:
+& 'C:\Program Files\Blender Foundation\Blender 5.2\blender.exe' -b --python 'design\cat-island-blender\v05\build_hero_boat_v05.py'

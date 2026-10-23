@@ -1,0 +1,92 @@
+{
+  "set": "May_original_restore_v15",
+  "created": "2026-10-23",
+  "decision": "Chi KHONG DUYET bo tach lop v14 (ve lai be/ghe/bang/ban/May va doi phong cach). Ban chuan duy nhat la May_home_red_viewer_v13c.png; v15 chi di chuyen hop phim tren chinh pixel cua ban chuan.",
+  "source": {
+    "file": "May_home_red_viewer_v13c.png",
+    "size": [
+      1600,
+      1600
+    ],
+    "sha256": "ca058a05d13c9fe9a25648f70c24436602e823ea4d5817f7fa24159df49face5"
+  },
+  "method": [
+    "Buoc 1: Muse Image EDIT chinh v13c dung 1 luot chi xoa hop do tren hien va va san (raw_edit_without_viewer.png).",
+    "Buoc 2: Canvas cuoi la ORIGINAL v13c; chi dan mieng va cua raw trong patch_bbox de tao nen B. Ngoai bbox la pixel ORIGINAL.",
+    "Buoc 3: Trich hop vuong tu ORIGINAL bang alpha mask polygon silhouette (work/viewer_extracted.png), khong AI ve lai hop.",
+    "Buoc 4: Ke go tao moi 1 luot tren nen magenta + tach alpha bang keyout.py (PIL/NumPy); ghep hop+ke bang PIL thanh C, roi alpha_composite vao vi tri moi tren B de tao A."
+  ],
+  "patch_bbox_xyxy": [
+    998,
+    538,
+    1112,
+    642
+  ],
+  "placement": {
+    "group_file": "original-viewer-stand-v15.png",
+    "group_canvas_px": [
+      150,
+      122
+    ],
+    "group_content_px": [
+      130,
+      102
+    ],
+    "placed_xyxy_on_canvas": [
+      565,
+      798,
+      695,
+      900
+    ],
+    "center_x": 630,
+    "feet_y": 900,
+    "stand_width_vs_box": 1.35
+  },
+  "outputs": {
+    "A_final": {
+      "file": "May_home_original_viewer_left_v15.png",
+      "sha256": "167eb7318b611ad6b5039c8267d1649fa2a721a76409c4bd646635ea20927a1c"
+    },
+    "B_background_without_viewer": {
+      "file": "May_home_original_without_viewer_v15.png",
+      "sha256": "ba28c9c8526d647da187ba9e1d3e0b8e25130c9a88f36e52da3c6b5ad4b17646"
+    },
+    "C_group_alpha": {
+      "file": "original-viewer-stand-v15.png",
+      "mode": "RGBA",
+      "size": [
+        150,
+        122
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "1b0d0fdd4cc09a6095d278e8601e27be4f356e5bdf71c249c1fafdb276342a2b"
+    },
+    "raw_edit": {
+      "file": "raw_edit_without_viewer.png",
+      "sha256": "dae449ecc276c3087c5bd94f9588503b73813dbe297b237b0ec5ae1fb133ff4a"
+    },
+    "stand_raw": {
+      "file": "stand_raw.png",
+      "sha256": "94f62feb067e817a89fd4c19fe4c912bc90d1663358382c65606ed80ba8363f5"
+    }
+  },
+  "pixel_diff_evidence": {
+    "B_vs_original_outside_patch_bbox": 0,
+    "A_vs_original_outside_patch_and_placement": 0,
+    "A_region_diffs_vs_original": {
+      "raft_dock": 0,
+      "may": 0,
+      "chair_book": 0,
+      "apple_board": 0,
+      "play_table": 0
+    }
+  },
+  "known_deviations": [
+    "Mieng va san hien lay tu raw edit (AI) nen ben trong patch_bbox net san co the khac nhe ORIGINAL; day la vung duy nhat cua B/A khong phai pixel goc, dung chu dich cua phuong phap.",
+    "Mask polygon trich hop con mot vet nen rat nho (vai px) sat phia phai tay quay va duoi mep cheo phai cua hop; o kich thuoc dat 130px gan nhu khong thay.",
+    "Ke go moi co texture mau nuoc ro hon cac mang mau sach cua v13c; da bao chi. Ke chi la vat moi duoc phep tao, hop la pixel goc."
+  ]
+}

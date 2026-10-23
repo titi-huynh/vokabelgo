@@ -1,0 +1,226 @@
+====================================================
+RUNNING CORE LEARNING LOOP PHASE 1 ACCEPTANCE TESTS
+====================================================
+
+--- TEST 1: New words (Intro -> Recall -> Session complete) ---
+  ✅ PASS: Session created with 5 targets
+  ✅ PASS: Initial queue includes Intro interactions for all 5 new words
+  ✅ PASS: Initial queue includes Recall interactions for all 5 new words
+  ✅ PASS: Session successfully completed after answering all 5 recalls
+  ✅ PASS: All 5 targets marked completed
+  ✅ PASS: VokabelDaily recorded 5/5 targets
+  ✅ PASS: Daily goal marked complete
+
+--- TEST 2: Mixed session (3 review + 2 new selection & deficit filling) ---
+  ✅ PASS: Picked exactly 5 targets
+  ✅ PASS: Exactly 3 review targets picked
+  ✅ PASS: Exactly 2 new targets picked
+  ✅ PASS: Prioritized unknown cards in review pool
+  ✅ PASS: Deficit review filled: 5 targets selected
+  ✅ PASS: 1 review + 4 new cards cleanly selected to meet 5 targets quota
+  ✅ PASS: Deficit new filled: 5 review cards selected when no new cards exist
+
+--- TEST 3: Wrong answer re-queue (Intervening distance) ---
+  ✅ PASS: Initial queue starts with card c_a
+  ✅ PASS: c_a is NOT marked completed on failure
+  ✅ PASS: c_a records 1 failure
+  ✅ PASS: c_a does NOT appear on immediate next question (next is c_b)
+  ✅ PASS: c_a was re-queued later in the queue
+  ✅ PASS: c_a returns after intervening interactions (re-queued at offset +3)
+
+--- TEST 4: Daily Goal exploit guard ---
+  ✅ PASS: Daily goal count is 0 (actual: 0)
+  ✅ PASS: Daily goal is NOT completed after 5 unknown ratings
+  ✅ PASS: Catch status remains 'none' (actual: 'none')
+  ✅ PASS: Session completedTargets length is 0
+  ✅ PASS: Session is NOT marked completed
+
+--- TEST 5: Successful targets (Reward unlocks exactly once) ---
+  ✅ PASS: Session completed is true
+  ✅ PASS: 5 completed targets registered
+  ✅ PASS: Daily goal completed is true
+  ✅ PASS: Catch status became pending
+  ✅ PASS: Catch status is now claimed
+  ✅ PASS: Catch status remains claimed and is NOT re-awarded
+
+--- TEST 6: Refresh (Resume 2/5 and remaining queue) ---
+  ✅ PASS: 2 targets completed before refresh
+  ✅ PASS: Same sessionId restored after refresh
+  ✅ PASS: Exactly 2 completed targets restored
+  ✅ PASS: Exact queueIndex restored
+  ✅ PASS: Current interaction resumes right at card res_3 (expected res_3)
+
+--- TEST 7: Repeated failure (3 fails -> Guided Reinforcement) ---
+  ✅ PASS: hard_target has recorded 3 failures
+  ✅ PASS: Fail-safe activated: Queue contains reinforce interaction for hard_target
+  ✅ PASS: Target marked completed for current session so learner is not trapped
+  ✅ PASS: Learning state keeps needsReview = true for future review
+  ✅ PASS: Legacy progress is 'unknown' (NOT 'known')
+
+--- TEST 8: Backward compatibility (dmf_flash_progress_v2) ---
+  ✅ PASS: dmf_flash_progress_v2 is a valid JSON object
+  ✅ PASS: Existing card_1 remains intact
+  ✅ PASS: Updated card_2 is simple string known
+  ✅ PASS: Existing card_3 remains intact
+  ✅ PASS: dmf_flash_progress_v2 contains ONLY string values (known | hard | unknown), NO objects
+  ✅ PASS: New metadata stored in separate vokabelgo_learning_state_v1
+
+--- TEST 9: Existing study modes and free study ---
+  ✅ PASS: MCQ sub-mode button exists and calls setStudySubMode
+  ✅ PASS: Typing sub-mode button exists and calls setStudySubMode
+  ✅ PASS: Match sub-mode button exists and calls setStudySubMode
+  ✅ PASS: Flashcard sub-mode button exists
+  ✅ PASS: Free study switch exitSessionToFreeStudy exists
+  ✅ PASS: Standard free study render() function exists
+
+--- TEST 10: Supabase sync via app_data jsonb ---
+  ✅ PASS: getSyncPayload serializes learningState into app_data payload
+  ✅ PASS: getSyncPayload serializes learningSession into app_data payload
+  ✅ PASS: applyCloudDataToLocal restores vokabelgo_learning_state_v1
+  ✅ PASS: applyCloudDataToLocal restores vokabelgo_learning_session_v1
+  ✅ PASS: Supabase schema contains app_data jsonb column
+  ✅ PASS: No new table or SQL migration needed on Supabase schema
+
+====================================================
+RUNNING RUNTIME QC BUGFIX TESTS (TEST A -> TEST J)
+====================================================
+
+--- TEST A: Free study known -> 0/5 daily goal ---
+  ✅ PASS: Free study rate() strictly does NOT call onCardReviewedForFeed
+  ✅ PASS: Free study rate() strictly does NOT call VokabelDaily.reviewCard
+  ✅ PASS: Free study rate() strictly does NOT trigger reward modal
+  ✅ PASS: Clean daily goal count is 0
+  ✅ PASS: After 5 free study known ratings, daily goal count remains 0 (actual: 0)
+  ✅ PASS: Daily goal completed is false after free study ratings
+
+--- TEST B: Session 2/5 -> exit free study known 5 -> 2/5 on Today, no reward ---
+  ✅ PASS: Session has recorded exactly 2 completed targets
+  ✅ PASS: Daily goal count is 2/5
+  ✅ PASS: Daily goal count remains strictly 2 after free study (actual: 2)
+  ✅ PASS: Daily goal completed is strictly false
+  ✅ PASS: Reward catchStatus remains none
+  ✅ PASS: Today dashboard isCompleted is strictly false for 2/5 targets
+
+--- TEST C: Legacy #nextBtn blocked in session ---
+  ✅ PASS: next() contains guard against running during study session
+  ✅ PASS: nextBtn is hidden and disabled during active study session
+
+--- TEST D: Free study tools disabled in session ---
+  ✅ PASS: setStudySessionUiLock function implemented
+  ✅ PASS: deckSelect is disabled in session
+  ✅ PASS: search input is disabled in session
+  ✅ PASS: shuffleBtn is hidden in session
+  ✅ PASS: reverseBtn is hidden in session
+  ✅ PASS: study submode pills (MCQ/typing/match) are hidden in session
+  ✅ PASS: applyFilter() is guarded against active session
+  ✅ PASS: render() is guarded against active session
+  ✅ PASS: newQuestion() is guarded against active session
+  ✅ PASS: newTyping() is guarded against active session
+  ✅ PASS: startMatchGame() is guarded against active session
+  ✅ PASS: setStudySubMode() is guarded against switching away from flash during session
+
+--- TEST E: Session audio reads current interaction card ---
+  ✅ PASS: Unified getCurrentlyDisplayedLearningCard() implemented
+  ✅ PASS: speak() relies on getCurrentlyDisplayedLearningCard()
+  ✅ PASS: Free study audio resolves current free card: der Apfel
+
+--- TEST F: Key 3 before reveal does not rate ---
+  ✅ PASS: handleSessionRate guards against unrevealed card
+  ✅ PASS: Key 3 requires card to be flipped in handleSessionKeydown
+  ✅ PASS: Key 2 requires card to be flipped in handleSessionKeydown
+  ✅ PASS: Key 1 requires card to be flipped in handleSessionKeydown
+
+--- TEST G: Intro card click does not flip ---
+  ✅ PASS: card.onclick guards against flipping on intro and reinforce
+
+--- TEST H: Logout clears all 4 session/learning keys ---
+  ✅ PASS: handleAuthLogout removes vokabelgo_learning_state_v1
+  ✅ PASS: handleAuthLogout removes vokabelgo_learning_session_v1
+  ✅ PASS: handleAuthLogout removes vokabelgo_daily_progress_v1
+  ✅ PASS: handleAuthLogout removes vokabelgo_fish_collection_v1
+  ✅ PASS: vokabelgo_learning_state_v1 is null after cleanup
+  ✅ PASS: vokabelgo_learning_session_v1 is null after cleanup
+  ✅ PASS: vokabelgo_daily_progress_v1 is null after cleanup
+  ✅ PASS: vokabelgo_fish_collection_v1 is null after cleanup
+
+--- TEST I: Yesterday local session replaced by today cloud session ---
+  ✅ PASS: Cloud sync detects when local session is yesterday and cloud is today
+  ✅ PASS: Cloud sync compares timestamps when session dates are identical
+  ✅ PASS: Yesterday local session cleanly replaced by today cloud session
+  ✅ PASS: Cloud session targets count is 2
+
+--- TEST J: Reinforcement target completes session without becoming known/mastered ---
+  ✅ PASS: Queue contains reinforce interaction for failed card w1
+  ✅ PASS: Reinforced card is included in completedTargets
+  ✅ PASS: Reinforced card legacy progress is strictly NOT known (actual: unknown)
+  ✅ PASS: Learning state preserves needsReview === true
+  ✅ PASS: Learning state preserves status === "learning"
+  ✅ PASS: P1-3 Copy: Đã xem lại · Tiếp tục (Space) → exists
+  ✅ PASS: P1-3 Copy: Bạn đã hoàn thành phiên học hôm nay. exists
+  ✅ PASS: P1-3 Copy: Từ này sẽ được ưu tiên ôn lại ở phiên sau. exists
+  ✅ PASS: P1-4 Copy: Đang học · X/5 mục tiêu hint exists
+
+--- TEST K: Session complete ends active session mode ---
+  ✅ PASS: renderSessionInteraction unlocks UI and sets isStudySessionMode = false when interaction.completed
+  ✅ PASS: TEST K: Session completed === true after 5 targets
+  ✅ PASS: TEST K: getCurrentInteraction reports completed === true
+  ✅ PASS: TEST K: window.isStudySessionMode is false on session complete
+  ✅ PASS: TEST K: setStudySessionUiLock(false) was invoked, free study controls usable
+  ✅ PASS: TEST K: Session data preserved intact (not deleted)
+
+--- TEST L: Reward "Học tiếp" transitions to Free Study ---
+  ✅ PASS: collectFishAndContinue closes modal
+  ✅ PASS: collectFishAndContinue calls exitSessionToFreeStudy
+  ✅ PASS: collectFishAndContinue navigates to study hub
+  ✅ PASS: collectFishAndContinue sets sub-mode to flash
+  ✅ PASS: TEST L: Reward modal closed
+  ✅ PASS: TEST L: window.isStudySessionMode is false
+  ✅ PASS: TEST L: sessionCompleteBox is hidden
+  ✅ PASS: TEST L: Primary hub is study
+  ✅ PASS: TEST L: Study sub-mode is flash
+  ✅ PASS: TEST L: No second session created
+  ✅ PASS: TEST L: No extra fish awarded on continuing study
+
+--- TEST M: Today CTA After Claiming Reward -> Free Study ---
+  ✅ PASS: handleTodayPrimaryAction has explicit Case C for completed session
+  ✅ PASS: Case C calls exitSessionToFreeStudy()
+  ✅ PASS: Case C navigates to 'study'
+  ✅ PASS: Case C selects 'flash' mode
+  ✅ PASS: Today CTA text for completed session is 'Ôn thêm từ vựng'
+  ✅ PASS: TEST M: startOrResumeTodaySession() was NOT called in Case C
+  ✅ PASS: TEST M: Case C switched to study hub
+  ✅ PASS: TEST M: Case C switched to flash sub-mode
+  ✅ PASS: TEST M: UI is not locked into session mode
+  ✅ PASS: TEST M: sessionCompleteBox is hidden in free study
+
+--- TEST N: Return to Today from Session Complete ---
+  ✅ PASS: Button btnSessionReturnToday exists in index.html
+  ✅ PASS: handleSessionReturnToday function implemented
+  ✅ PASS: handleSessionReturnToday sets isStudySessionMode = false
+  ✅ PASS: handleSessionReturnToday calls setStudySessionUiLock(false)
+  ✅ PASS: handleSessionReturnToday hides sessionHeaderBar
+  ✅ PASS: handleSessionReturnToday hides sessionCompleteBox
+  ✅ PASS: handleSessionReturnToday navigates to today hub
+  ✅ PASS: TEST N: window.isStudySessionMode is false
+  ✅ PASS: TEST N: UI lock removed
+  ✅ PASS: TEST N: sessionCompleteBox is hidden
+  ✅ PASS: TEST N: sessionHeaderBar is hidden
+  ✅ PASS: TEST N: Switched to today hub
+  ✅ PASS: TEST N: Still in free study mode on re-entering study hub
+  ✅ PASS: TEST N: sessionCompleteBox does not block free study
+
+--- TEST O: Logout during active session cleanly resets UI ---
+  ✅ PASS: handleAuthLogout sets isStudySessionMode = false
+  ✅ PASS: handleAuthLogout calls setStudySessionUiLock(false)
+  ✅ PASS: handleAuthLogout cleans up session UI state
+  ✅ PASS: TEST O: window.isStudySessionMode is false after logout
+  ✅ PASS: TEST O: UI unlocked after logout
+  ✅ PASS: TEST O: sessionHeaderBar is hidden
+  ✅ PASS: TEST O: sessionCompleteBox is hidden
+  ✅ PASS: TEST O: Flashcard un-flipped
+
+====================================================
+ACCEPTANCE SUMMARY: 163 / 163 PASSED
+🎉 ALL TESTS (TEST 1-10 & TEST A-O) PASSED SUCCESSFULLY!
+====================================================
+

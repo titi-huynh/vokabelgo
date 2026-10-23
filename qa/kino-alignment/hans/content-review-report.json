@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Saigon",
+  "captions": 138,
+  "practiceUnits": 122,
+  "groupedSentences": 11,
+  "allCaptionIdsRetainedExactlyOnce": true,
+  "groupingAddsOrRemovesSpokenWords": false,
+  "partCounts": [
+    32,
+    27,
+    37,
+    26
+  ],
+  "languageChanges": [
+    {
+      "id": 400110,
+      "beforeGerman": "Gib mir meinen Lohn.",
+      "afterGerman": "Gebt mir meinen Lohn.",
+      "beforeVietnamese": "Xin ông trả tiền công cho tôi.",
+      "afterVietnamese": "Xin ông trả tiền công cho tôi."
+    },
+    {
+      "id": 400144,
+      "beforeGerman": "Was würde ich für eine Kuh geben!",
+      "afterGerman": "Was würde ich für eine Kuh geben!",
+      "beforeVietnamese": "Tôi sẵn sàng đánh đổi biết bao để có một con bò!",
+      "afterVietnamese": "Giá mà tôi có một con bò thì hay biết mấy!"
+    },
+    {
+      "id": 400155,
+      "beforeGerman": "In diesem Moment kam ein Metzger vorbei, der auf seinem Schubkarren ein junges Schwein transportierte.",
+      "afterGerman": "In diesem Moment kam ein Metzger vorbei, der aus seinem Schubkarren ein junges Schwein transportierte.",
+      "beforeVietnamese": "Đúng lúc đó, một người bán thịt đi qua, chở một con lợn con trên xe cút kít.",
+      "afterVietnamese": "Đúng lúc đó, một người bán thịt đi qua, mang theo một con lợn con trên xe cút kít."
+    },
+    {
+      "id": 400168,
+      "beforeGerman": "Nach einer Weile gesellte sich ein Junge zu ihm, der eine schöne weiße Gans unter dem Arm trug.",
+      "afterGerman": "Nach einer Weile gesellte sich ein Junge zu ihm, der eine schöne weiße Gans unter dem Arm trug.",
+      "beforeVietnamese": "Một lúc sau, một chàng trai kẹp con ngỗng trắng xinh đẹp dưới tay đến đi cùng cậu.",
+      "afterVietnamese": "Một lúc sau, có một chàng trai đi cùng Hans, dưới tay kẹp một con ngỗng trắng xinh đẹp."
+    },
+    {
+      "id": 400173,
+      "beforeGerman": "Ich glaube, es ist dein Schwein und es wäre schlimm, wenn sie dich damit erwischen.",
+      "afterGerman": "Ich glaube, es ist dein Schwein und es wäre schlimm, wenn sie dich damit erwischen.",
+      "beforeVietnamese": "Tôi nghĩ đó chính là con lợn của cậu; nếu họ bắt gặp cậu dắt nó thì rắc rối to.",
+      "afterVietnamese": "Tôi nghĩ con lợn cậu đang dắt chính là con bị mất trộm; nếu bị họ bắt gặp thì rắc rối to đấy."
+    },
+    {
+      "id": 400187,
+      "beforeGerman": "Während sich sein Schleifer drehte, sang er:",
+      "afterGerman": "Während sich sein Schleifrad drehte, sang er:",
+      "beforeVietnamese": "Trong lúc máy mài quay, ông cất tiếng hát:",
+      "afterVietnamese": "Trong lúc bánh mài quay, ông cất tiếng hát:"
+    },
+    {
+      "id": 400189,
+      "beforeGerman": "und hänge mein Mäntelchen nach dem Wind.",
+      "afterGerman": "und hänge mein Mäntelchen nach dem Wind.",
+      "beforeVietnamese": "rồi xoay chiếc áo choàng theo chiều gió.",
+      "afterVietnamese": "gió chiều nào, ta xoay áo choàng chiều ấy."
+    },
+    {
+      "id": 400192,
+      "beforeGerman": "Dir geht's wohl gut, weil du so gut gelaunt singst.",
+      "afterGerman": "Dir geht's wohl gut, weil du so gut gelaunt singst.",
+      "beforeVietnamese": "Chắc ông sống sung túc lắm, nên mới vui vẻ hát như thế.",
+      "afterVietnamese": "Chắc ông làm ăn tốt lắm, nên mới vui vẻ hát như thế."
+    },
+    {
+      "id": 400199,
+      "beforeGerman": "Die hab ich gegen mein Schwein eingetauscht.",
+      "afterGerman": "Die habe ich gegen mein Schwein eingetauscht.",
+      "beforeVietnamese": "Tôi đổi con lợn của mình lấy nó đấy.",
+      "afterVietnamese": "Tôi đổi con lợn của mình lấy nó đấy."
+    },
+    {
+      "id": 400207,
+      "beforeGerman": "Aber du wusstest dir immer zu helfen.",
+      "afterGerman": "Du wusstest dir immer zu helfen.",
+      "beforeVietnamese": "Cậu lúc nào cũng biết cách xoay xở đấy.",
+      "afterVietnamese": "Cậu lúc nào cũng biết cách xoay xở đấy."
+    },
+    {
+      "id": 400208,
+      "beforeGerman": "Jetzt kannst du es so weit bringen, dass du immer Geld in der Tasche hast.",
+      "afterGerman": "Jetzt kannst du es so weit bringen, dass du immer Geld in der Tasche hast.",
+      "beforeVietnamese": "Giờ cậu có thể làm được đến mức lúc nào cũng có tiền trong túi.",
+      "afterVietnamese": "Giờ cậu có thể thành đạt đến mức lúc nào cũng có tiền trong túi."
+    }
+  ],
+  "evidence": {
+    "independentBaseWindows": 29,
+    "independentSmallWindows": 29,
+    "targetedMediumClips": 5,
+    "sourceVideoModified": false,
+    "sourceSubtitleAvailable": true,
+    "sourceSubtitleKind": "YouTube transcript containing recognition errors; not a verified manually edited full script",
+    "youtubeCrossCheck": {
+      "url": "https://www.youtube.com/watch?v=eyohPTKZBA8",
+      "pageEvidence": "youtube-transcript-page.txt",
+      "structuredEvidence": "youtube-transcript-check.json",
+      "screenshot": "review-assets/kino-hans-youtube-transcript.png",
+      "prepositionAt03m54s": "aus",
+      "uploaderDescriptionConfirmsGebt": true,
+      "runtimeTextChanged": true,
+      "fullComparison": "youtube-full-comparison.json",
+      "sourceSegmentsReviewed": 75,
+      "captionsReviewed": 138,
+      "thisPassChanges": {
+        "germanWording": [],
+        "vietnameseCaptionIds": [
+          400168
+        ],
+        "vocabularyIds": [
+          "vk_hans_lieber"
+        ],
+        "captionOrPracticeIdsChanged": false
+      }
+    }
+  },
+  "reviewLevel": "AI language editing and local multi-pass acoustic cross-check; not human-certified",
+  "editorialStatus": "complete; ready for local lesson use",
+  "requiresHumanAudioConfirmation": [],
+  "residualSourceUncertainties": [
+    {
+      "captionId": 400155,
+      "retained": "aus",
+      "alternative": "auf",
+      "decision": "Keep source-correlated wording; editorial decision complete, exact preposition not human-certified."
+    }
+  ],
+  "limits": [
+    "Agreement among recognizers is evidence, not proof of exact speech.",
+    "Grouping preserves the current edited transcript; it does not independently prove that no speech was missed.",
+    "Source promotional outro after the story remains outside the four lessons."
+  ]
+}

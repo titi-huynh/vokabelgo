@@ -1,0 +1,123 @@
+{
+  "scope": "Local Kino lazy media loading across all 8 catalog films; full Sakura 480p alternative with original retained. No lesson data or progress keys changed.",
+  "networkComparison": [
+    {
+      "scenario": "catalog-unplayed",
+      "beforeBytes": 1651701,
+      "afterBytes": 0,
+      "beforeRequests": 7,
+      "afterRequests": 0
+    },
+    {
+      "scenario": "sakura-overview-unplayed",
+      "beforeBytes": 1424812,
+      "afterBytes": 0,
+      "beforeRequests": 7,
+      "afterRequests": 0
+    },
+    {
+      "scenario": "sakura-part-unplayed",
+      "beforeBytes": 1436812,
+      "afterBytes": 0,
+      "beforeRequests": 7,
+      "afterRequests": 0
+    },
+    {
+      "scenario": "sakura-listen-first-sentence",
+      "beforeBytes": 1471312,
+      "afterBytes": 1169362,
+      "beforeRequests": 8,
+      "afterRequests": 2
+    }
+  ],
+  "limitations": "Localhost with network emulation; one run per scenario, not a Vietnam CDN/mobile benchmark. Video bytes count from navigation through UI readiness plus six additional seconds; this is not a strict six-second transfer test. No user browser data was changed by this measurement.",
+  "sakura": {
+    "originalBytes": 242449971,
+    "lightBytes": 114354472,
+    "reductionPercent": 52.83,
+    "original": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 960,
+          "height": 720,
+          "avg_frame_rate": "24000/1001",
+          "start_time": "0.083000",
+          "duration": "1500.373875",
+          "nb_frames": "35973"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "1497.361995",
+          "nb_frames": "64486"
+        }
+      ],
+      "format": {
+        "start_time": "0.000000",
+        "duration": "1500.456875"
+      }
+    },
+    "light": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 640,
+          "height": 480,
+          "avg_frame_rate": "24000/1001",
+          "start_time": "0.083000",
+          "duration": "1500.373875",
+          "nb_frames": "35973"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "1497.361995",
+          "nb_frames": "64486"
+        }
+      ],
+      "format": {
+        "start_time": "0.000000",
+        "duration": "1500.456875"
+      }
+    },
+    "originalAudioHash": "0,a,SHA256=1d58d0f96c3b9acb7b8080de163c5dfdebe247c21dbf6d8060d3dfe4970f5f7e",
+    "lightAudioHash": "0,a,SHA256=1d58d0f96c3b9acb7b8080de163c5dfdebe247c21dbf6d8060d3dfe4970f5f7e",
+    "encodeSettings": {
+      "video": "libx264",
+      "preset": "fast",
+      "crf": 24,
+      "scale": "640:480",
+      "audio": "copy",
+      "faststart": true
+    },
+    "audioBitstreamUnchanged": true,
+    "originalFileUnchanged": true,
+    "originalFileSHA256": "6f9bc597282c90524945c9f36dae627797f1857481b0f2549643d535cc2843b1"
+  },
+  "fullLightDecode": {
+    "passed": true,
+    "command": "ffmpeg -hide_banner -v error -i video/sakura_s01e01-480p.mp4 -map 0:v:0 -map 0:a:0 -f null -",
+    "exitCode": 0
+  },
+  "browserVerification": {
+    "uniqueChecks": 69,
+    "latestPassed": 69,
+    "unresolved": [],
+    "reports": [
+      "e2e-performance-results.json",
+      "e2e-final-targeted-results.json"
+    ],
+    "note": "Full 68-check regression run plus a final 34-check pass covering the changed media flows and corrected lazy-loading expectations. One new resume check gives 69 distinct checks. Desktop and mobile viewport Chromium on localhost; no real-device or cloud CDN claim."
+  }
+}

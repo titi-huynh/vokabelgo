@@ -1,0 +1,22 @@
+{
+  "outside_viewer_box_unchanged": true,
+  "protected_regions": {
+    "may": true,
+    "raft_dock": true,
+    "apple_board": true,
+    "play_table": true,
+    "chair_book": true
+  },
+  "sprite": {
+    "size": [
+      1728,
+      1344
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "sha256": "73f362b3ced09e88b312b28810450892b5cc282e4721dabedbbd9c5b6e3d44cf"
+  }
+}

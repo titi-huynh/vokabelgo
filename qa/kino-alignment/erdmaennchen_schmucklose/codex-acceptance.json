@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-23",
+  "executor": "Antigravity",
+  "reviewer": "Codex",
+  "status": "accepted",
+  "lessonUrl": "http://localhost:3000/?kino=schmucklose",
+  "verified": {
+    "chapterCount": 7,
+    "selectedBilingualCues": 166,
+    "highlightedCues": 49,
+    "sourceLinkedVocabularyCards": 24,
+    "nonOverlappingCuesWithinVideoAndSingleChapter": true,
+    "allChapterPicksPresentAndWithinChapter": true,
+    "allVocabularyExamplesMatchTheirSourceCue": true,
+    "protectedNudeltrickAndTrudesSourceFilesUnchanged": true,
+    "actualTestOutputInspected": true,
+    "unitSuitesPassed": 18,
+    "browserTestsPassed": 13,
+    "desktopAndMobileScreenshotsInspected": true
+  },
+  "reviewNotes": [
+    "Requested correction of clipped or unsupported draft cues before accepting the lesson.",
+    "Verified the corrected Schmuck and Erdnuesse phrases against actual word timestamps.",
+    "Reviewed all 49 highlighted lines and the vocabulary definition file.",
+    "Reconciled QA documentation with actual ASR window files and clarified draft versus runtime IDs.",
+    "Recognition provides machine evidence; no human native-speaker transcription review is claimed."
+  ]
+}

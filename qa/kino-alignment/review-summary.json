@@ -1,0 +1,40 @@
+{
+  "pizzaschwester": {
+    "sha256": "16A7D6B2CA326E40AEE1BA27FDA42CD36C0DDE46D1341705918F9AA09AFB0AA6",
+    "original_media_unchanged": true,
+    "boundaries": [
+      0,
+      134.5,
+      273.72,
+      419.97932
+    ],
+    "cue_counts": [
+      58,
+      69,
+      66
+    ],
+    "bilingual_utterances": 193,
+    "reference_word_match": 0.932,
+    "method": "Local German recognition + known-script word alignment, earshot transition checks, sentence-level bilingual captions."
+  },
+  "babysitter": {
+    "sha256": "C49FB56DA61CC0CE528A0649781B1521547009AB611D02FE624EC53FB0A9D841",
+    "original_media_unchanged": true,
+    "boundaries": [
+      0,
+      101.12,
+      188.68,
+      335.1,
+      416.821406
+    ],
+    "cue_counts": [
+      40,
+      45,
+      59,
+      27
+    ],
+    "bilingual_utterances": 171,
+    "reference_word_match": 0.93,
+    "method": "Local German recognition + known-script word alignment, earshot transition checks, sentence-level bilingual captions."
+  }
+}

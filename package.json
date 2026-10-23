@@ -4,6 +4,7 @@
   "private": true,
   "description": "VokabelGo - Ung dung hoc tieng Duc qua Flashcard va Video",
   "scripts": {
+    "start": "node server.js",
     "test:unit": "node test-all.js",
     "test:e2e": "playwright test",
     "test:ci": "npm run test:unit && npm run test:e2e"

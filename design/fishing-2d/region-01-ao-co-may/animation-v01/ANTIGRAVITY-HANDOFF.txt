@@ -1,0 +1,68 @@
+AO CỎ MAY — HOẠT ẢNH 2D MÈO CHỢ CÂU CÁ (v01)
+BẢN GIAO HÀNG & BIÊN BẢN CHUYỂN GIAO (DELIVERY HANDOFF)
+Ngày: 2026-10-21 (Asia/Saigon)
+Workspace: C:/Users/huynh/OneDrive/Desktop/flash
+Thư mục bàn giao: design/fishing-2d/region-01-ao-co-may/animation-v01/
+
+1. TỔNG QUAN VÀ NHẬN DIỆN NHÂN VẬT
+- Nhân vật chuẩn: Mèo Chợ đã được duyệt (APPROVED_DESIGN.txt).
+  + Lông kem ngà, một mảng caramel ở tai phải của nhân vật (bên trái người xem khi nhìn trực diện) và đỉnh đầu, chóp đuôi caramel.
+  + Khăn bandana vàng mustard quàng cổ, tạp dề ngắn màu xanh sage có túi trước.
+  + Thân hình mũm mĩm lùn, bàn chân có đệm hồng (paw pads).
+  + Má hồng dạng màu phẳng (painted blush), không đắp khối má hay mõm nổi 3D.
+  + Mặt vẽ nét procedural sống động trên nền phôi đầu head.png (mắt nâu, đốm sáng sparkle, chớp mắt, liếc theo chuồn chuồn, mũi san hô, khuôn miệng 3/w, cười mở miệng ^o^ và ngạc nhiên o).
+- Cảnh nền: Ao Cỏ May v02 đơn giản, mặt nước mint-turquoise phẳng thoáng rộng, bờ cỏ sage phía trên với bụi cỏ may, đá cuội và bóng cá bơi ngầm.
+
+2. CÁC TỆP ĐÃ XUẤT XƯỞNG (OUTPUT MANIFEST)
+- assets/:
+  + background.png: nền nước ao sạch 1672x941 không dính nhân vật hay UI.
+  + cat-rig-sheet.png: tấm phôi gốc chứa đầu, thân, chân, tay, đuôi, chuồn chuồn.
+  + props-sheet.png: tấm phôi gốc chứa bè gỗ, sọt cá, cần câu cành cây, hộp mồi giun đất.
+  + head.png, body.png, arm-left.png, arm-right.png, tail.png, foot-left.png, foot-right.png: các sprite rời trong suốt đã trim alpha.
+  + raft.png, basket.png, rod.png, bait.png, dragonfly.png: các đạo cụ rời.
+  + sprites.json: manifest kích thước, tọa độ crop và alphaTrim của toàn bộ sprite.
+- Web Preview & Animation Engine:
+  + index.html: khung hiển thị chuẩn 16:9 với canvas 1672x941, giao diện tiếng Việt trang nhã.
+  + style.css: thiết kế responsive, không tràn thanh cuộn ngang (mobile.scrollWidth <= mobile.viewport).
+  + main.js: động cơ hoạt ảnh 2D cutout, điều khiển phân tầng (raft, body, head, arms, tail, rod, bobber, dragonfly, fish), gợn sóng nước, tia nước bắn và toàn bộ logic 20s showcase + ambient mode.
+- Blender 3D/2D Cutout Rig (Codex thực hiện độc lập song song):
+  + ao-co-may-cutout-v01.blend: file Blender 5.2.2 LTS với camera orthographic cố định, 480 frame (20s @ 24fps), đầy đủ layer cutout có rig và sprite pack sẵn.
+  + build-blender.py & render-blender-preview.py: script tái lập và render kiểm tra Blender.
+  + BLENDER-NOTES.txt: ghi chú chi tiết kỹ thuật Blender.
+- Kiểm thử & Đánh giá:
+  + verify-preview.cjs: script Playwright chạy kiểm tra tự động headless browser.
+  + review/: chứa 11 ảnh chụp desktop tại các mốc thời gian (0s, 2s, 4s, 6s, 8s, 10s, 12s, 14s, 16s, 18s, 19.5s), ảnh mobile.png, reduced-motion.png, ảnh render Blender và verification.json.
+
+3. API ĐIỀU KHIỂN & KIỂM THỬ (DEBUG API)
+Đối tượng `window.fishingPreview` được cung cấp sẵn trên trang:
+- `setTime(seconds)`: tua tới mốc thời gian bất kỳ (0–20s) và vẽ frame tĩnh tức thì.
+- `getState()`: trả về trạng thái hiện tại (time, mode, isPlaying, reducedMotion, activeCritter, phase, pose).
+- `getPose()`: trả về tọa độ và góc xoay chi tiết của từng layer (raft, body, head, armLeft, armRight, tail, rod, bobber, dragonfly, fish).
+- `trigger('dragonfly' | 'catch')`: kích hoạt sự kiện chuồn chuồn ghé hoặc cá cắn câu.
+- `pause()` / `resume()`: tạm dừng hoặc tiếp tục hoạt ảnh.
+- `setMode('showcase' | 'ambient')`: chuyển đổi giữa kịch bản trình diễn 20s và chế độ chờ tự nhiên.
+- `setReducedMotion(boolean)`: bật/tắt chế độ giảm chuyển động.
+
+4. KỊCH BẢN TRÌNH DIỄN 20 GIÂY (20s SHOWCASE TIMELINE)
+- 0.0s – 3.5s: Yên tĩnh — Mèo thở nhẹ, bè nhấp nhô, phao dập dềnh tạo gợn sóng, mèo chớp mắt tự nhiên.
+- 3.5s – 7.5s: Chuồn chuồn ghé — Chuồn chuồn bay vào theo đường cong bezier, vỗ cánh tần số cao, mèo liếc mắt và nghiêng đầu theo dõi. Chuồn chuồn đậu lên ngọn cần, cần nhún nhẹ.
+- 7.5s – 9.5s: Chuồn chuồn rời đi — Bay vút lên cao về góc phải, mèo dõi theo rồi nhẹ nhàng quay đầu về lại phao câu.
+- 9.5s – 12.0s: Thảnh thơi — Mèo nhắm mắt cười hiền (^ ^), đầu đung đưa theo nhịp điệu thảnh thơi.
+- 12.0s – 13.0s: Động phao — Phao giật chìm nhanh xuống nước, mèo mở tròn mắt ngạc nhiên, tai vểnh lên.
+- 13.0s – 14.5s: Giằng co — Phao bị kéo chìm sâu, mèo ngả người lấy đà, hai tay nắm chặt cành cần cong xuống dưới sức căng.
+- 14.5s – 16.5s: Giật cá vào sọt — Mèo vút cần câu về phía sau, cá nhỏ ánh bạc bay theo đường parabol qua đầu mèo và rơi gọn vào sọt tre; sọt rung lắc và có tia nước bắn.
+- 16.5s – 18.5s: Ăn mừng — Mèo quay mặt trực diện người xem, mắt híp cười vui vẻ, miệng cười hở lưỡi hồng (^o^), đuôi ngoáy tít tự hào.
+- 18.5s – 20.0s: Thuần thục — Mèo hạ cần về vị trí cũ, phao chạm mặt nước êm dịu, vòng lặp sẵn sàng lặp lại.
+
+5. KẾT QUẢ KIỂM THỬ THỰC TẾ
+- Chạy `node design/fishing-2d/region-01-ao-co-may/animation-v01/verify-preview.cjs`:
+  + HTTP status: 200 trên http://127.0.0.1:3011/
+  + Lỗi JS / Console: 0 (errors: [])
+  + Thất bại tài nguyên (Failed requests): 0
+  + Mobile viewport 390x844: scrollWidth = 390, canvas thu phóng hoàn hảo, không có thanh cuộn ngang gây vỡ bố cục.
+  + Bắt đầy đủ 11 snapshot tại các mốc giây trong verification.json.
+
+6. BÀN GIAO VÀ BƯỚC TIẾP THEO
+- Antigravity đã hoàn thành kiến trúc hoạt ảnh 2D cutout, toàn bộ hệ thống procedural facial features, bộ điều khiển tiếng Việt và debug API.
+- Theo điều phối nhân sự trực tiếp từ Codex, Codex tiếp nhận việc tinh chỉnh vị trí khớp vai/cổ của torso mới và căn chỉnh camera mobile để hoàn tất video xuất bản và QA hình ảnh.
+- Không chỉnh sửa bất kỳ tệp nào ngoài phạm vi `design/fishing-2d/region-01-ao-co-may/animation-v01/`. Giữ nguyên hiện trạng các ứng dụng và game khác trong kho lưu trữ.

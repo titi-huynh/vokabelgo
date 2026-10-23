@@ -1,0 +1,1565 @@
+{
+  "packageVersion": "0.1.0",
+  "exportedAt": "2026-10-09T07:33:53.193Z",
+  "generator": "VokabelGo Lexical Pipeline v0.1",
+  "license": "Approved Pedagogic Dataset (OpenThesaurus Attribution CC-BY-SA)",
+  "decks": {
+    "adjektive_expanded": {
+      "deckId": "adjektive_expanded",
+      "nameVi": "Tính từ · Adjektive (Mở rộng)",
+      "partOfSpeech": "adjective",
+      "totalCards": 60,
+      "cards": [
+        {
+          "id": "card_adjective_schwer_rot_1",
+          "type": "word",
+          "color": "rot",
+          "entryId": "adj_schwer_difficulty",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_rot_2",
+          "type": "word",
+          "color": "rot",
+          "entryId": "adj_schwer_syn_840",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwierig_rot_3",
+          "type": "word",
+          "color": "rot",
+          "entryId": "adj_schwierig_syn_840",
+          "label": "schwierig",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_rot_4",
+          "type": "word",
+          "color": "rot",
+          "entryId": "adj_leicht_difficulty",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwierig_rot_5",
+          "type": "word",
+          "color": "rot",
+          "entryId": "adj_schwierig_difficulty",
+          "label": "schwierig",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_rot_6",
+          "type": "word",
+          "color": "rot",
+          "entryId": "adj_schwer_difficulty_opp",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_rot_7",
+          "type": "word",
+          "color": "rot",
+          "entryId": "adj_leicht_difficulty_opp",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_rot_8",
+          "type": "word",
+          "color": "rot",
+          "entryId": "adj_leicht_ease",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_einfach_rot_9",
+          "type": "word",
+          "color": "rot",
+          "entryId": "adj_einfach_ease",
+          "label": "einfach",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_rot_10",
+          "type": "word",
+          "color": "rot",
+          "entryId": "adj_leicht_ease_opp",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_rot_11",
+          "type": "word",
+          "color": "rot",
+          "entryId": "adj_schwer_ease_opp",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_teuer_rot_12",
+          "type": "word",
+          "color": "rot",
+          "entryId": "adj_teuer_price_high",
+          "label": "teuer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_blau_1",
+          "type": "word",
+          "color": "blau",
+          "entryId": "adj_schwer_difficulty",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_blau_2",
+          "type": "word",
+          "color": "blau",
+          "entryId": "adj_schwer_syn_840",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwierig_blau_3",
+          "type": "word",
+          "color": "blau",
+          "entryId": "adj_schwierig_syn_840",
+          "label": "schwierig",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_blau_4",
+          "type": "word",
+          "color": "blau",
+          "entryId": "adj_leicht_difficulty",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwierig_blau_5",
+          "type": "word",
+          "color": "blau",
+          "entryId": "adj_schwierig_difficulty",
+          "label": "schwierig",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_blau_6",
+          "type": "word",
+          "color": "blau",
+          "entryId": "adj_schwer_difficulty_opp",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_blau_7",
+          "type": "word",
+          "color": "blau",
+          "entryId": "adj_leicht_difficulty_opp",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_blau_8",
+          "type": "word",
+          "color": "blau",
+          "entryId": "adj_leicht_ease",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_einfach_blau_9",
+          "type": "word",
+          "color": "blau",
+          "entryId": "adj_einfach_ease",
+          "label": "einfach",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_blau_10",
+          "type": "word",
+          "color": "blau",
+          "entryId": "adj_leicht_ease_opp",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_blau_11",
+          "type": "word",
+          "color": "blau",
+          "entryId": "adj_schwer_ease_opp",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_teuer_blau_12",
+          "type": "word",
+          "color": "blau",
+          "entryId": "adj_teuer_price_high",
+          "label": "teuer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_gruen_1",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "adj_schwer_difficulty",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_gruen_2",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "adj_schwer_syn_840",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwierig_gruen_3",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "adj_schwierig_syn_840",
+          "label": "schwierig",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_gruen_4",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "adj_leicht_difficulty",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwierig_gruen_5",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "adj_schwierig_difficulty",
+          "label": "schwierig",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_gruen_6",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "adj_schwer_difficulty_opp",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_gruen_7",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "adj_leicht_difficulty_opp",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_gruen_8",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "adj_leicht_ease",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_einfach_gruen_9",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "adj_einfach_ease",
+          "label": "einfach",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_gruen_10",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "adj_leicht_ease_opp",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_gruen_11",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "adj_schwer_ease_opp",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_teuer_gruen_12",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "adj_teuer_price_high",
+          "label": "teuer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_gelb_1",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "adj_schwer_difficulty",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_gelb_2",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "adj_schwer_syn_840",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwierig_gelb_3",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "adj_schwierig_syn_840",
+          "label": "schwierig",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_gelb_4",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "adj_leicht_difficulty",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwierig_gelb_5",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "adj_schwierig_difficulty",
+          "label": "schwierig",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_gelb_6",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "adj_schwer_difficulty_opp",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_gelb_7",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "adj_leicht_difficulty_opp",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_gelb_8",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "adj_leicht_ease",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_einfach_gelb_9",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "adj_einfach_ease",
+          "label": "einfach",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_leicht_gelb_10",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "adj_leicht_ease_opp",
+          "label": "leicht",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_schwer_gelb_11",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "adj_schwer_ease_opp",
+          "label": "schwer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_teuer_gelb_12",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "adj_teuer_price_high",
+          "label": "teuer",
+          "partOfSpeech": "Adjektiv"
+        },
+        {
+          "id": "card_adjective_skip_rot",
+          "type": "action",
+          "actionType": "aussetzen",
+          "color": "rot",
+          "label": "Aussetzen",
+          "symbol": "skip"
+        },
+        {
+          "id": "card_adjective_skip_blau",
+          "type": "action",
+          "actionType": "aussetzen",
+          "color": "blau",
+          "label": "Aussetzen",
+          "symbol": "skip"
+        },
+        {
+          "id": "card_adjective_skip_gruen",
+          "type": "action",
+          "actionType": "aussetzen",
+          "color": "gruen",
+          "label": "Aussetzen",
+          "symbol": "skip"
+        },
+        {
+          "id": "card_adjective_skip_gelb",
+          "type": "action",
+          "actionType": "aussetzen",
+          "color": "gelb",
+          "label": "Aussetzen",
+          "symbol": "skip"
+        },
+        {
+          "id": "card_adjective_plus2_rot",
+          "type": "action",
+          "actionType": "plus2",
+          "color": "rot",
+          "label": "+2",
+          "symbol": "plus2"
+        },
+        {
+          "id": "card_adjective_plus2_blau",
+          "type": "action",
+          "actionType": "plus2",
+          "color": "blau",
+          "label": "+2",
+          "symbol": "plus2"
+        },
+        {
+          "id": "card_adjective_plus2_gruen",
+          "type": "action",
+          "actionType": "plus2",
+          "color": "gruen",
+          "label": "+2",
+          "symbol": "plus2"
+        },
+        {
+          "id": "card_adjective_plus2_gelb",
+          "type": "action",
+          "actionType": "plus2",
+          "color": "gelb",
+          "label": "+2",
+          "symbol": "plus2"
+        },
+        {
+          "id": "card_adjective_farbenwahl_1",
+          "type": "action",
+          "actionType": "farbenwahl",
+          "color": "neutral",
+          "label": "Farbenwahl",
+          "symbol": "wild"
+        },
+        {
+          "id": "card_adjective_farbenwahl_2",
+          "type": "action",
+          "actionType": "farbenwahl",
+          "color": "neutral",
+          "label": "Farbenwahl",
+          "symbol": "wild"
+        },
+        {
+          "id": "card_adjective_gegenteil_1",
+          "type": "action",
+          "actionType": "gegenteil",
+          "color": "neutral",
+          "label": "GEGENTEIL!",
+          "symbol": "opposite"
+        },
+        {
+          "id": "card_adjective_gegenteil_2",
+          "type": "action",
+          "actionType": "gegenteil",
+          "color": "neutral",
+          "label": "GEGENTEIL!",
+          "symbol": "opposite"
+        }
+      ],
+      "entries": {
+        "adj_schwer_difficulty": {
+          "entryId": "adj_schwer_difficulty",
+          "lemma": "schwer",
+          "partOfSpeech": "Adjektiv",
+          "senseVi": "khó ↔ dễ",
+          "baseContextId": "ctx_adjective_difficulty",
+          "pronunciation": "schwer"
+        },
+        "adj_schwer_syn_840": {
+          "entryId": "adj_schwer_syn_840",
+          "lemma": "schwer",
+          "partOfSpeech": "Adjektiv",
+          "senseVi": "schwierig, kompliziert, schwer",
+          "baseContextId": "ctx_adj_schwer_syn_840_adj_schwierig_syn_840",
+          "pronunciation": "schwer"
+        },
+        "adj_schwierig_syn_840": {
+          "entryId": "adj_schwierig_syn_840",
+          "lemma": "schwierig",
+          "partOfSpeech": "Adjektiv",
+          "senseVi": "schwierig, kompliziert, schwer",
+          "baseContextId": "ctx_adj_schwer_syn_840_adj_schwierig_syn_840",
+          "pronunciation": "schwierig"
+        },
+        "adj_leicht_difficulty": {
+          "entryId": "adj_leicht_difficulty",
+          "lemma": "leicht",
+          "partOfSpeech": "Adjektiv",
+          "senseVi": "khó ↔ dễ",
+          "baseContextId": "ctx_adjective_difficulty",
+          "pronunciation": "leicht"
+        },
+        "adj_schwierig_difficulty": {
+          "entryId": "adj_schwierig_difficulty",
+          "lemma": "schwierig",
+          "partOfSpeech": "Adjektiv",
+          "senseVi": "khó, phức tạp",
+          "baseContextId": "ctx_adjective_difficulty",
+          "pronunciation": "schwierig"
+        },
+        "adj_schwer_difficulty_opp": {
+          "entryId": "adj_schwer_difficulty_opp",
+          "lemma": "schwer",
+          "partOfSpeech": "Adjektiv",
+          "senseVi": "schwer ⇄ leicht",
+          "baseContextId": "ctx_adjective_difficulty_opp",
+          "pronunciation": "schwer"
+        },
+        "adj_leicht_difficulty_opp": {
+          "entryId": "adj_leicht_difficulty_opp",
+          "lemma": "leicht",
+          "partOfSpeech": "Adjektiv",
+          "senseVi": "schwer ⇄ leicht",
+          "baseContextId": "ctx_adjective_difficulty_opp",
+          "pronunciation": "leicht"
+        },
+        "adj_leicht_ease": {
+          "entryId": "adj_leicht_ease",
+          "lemma": "leicht",
+          "partOfSpeech": "Adjektiv",
+          "senseVi": "dễ, đơn giản",
+          "baseContextId": "ctx_adjective_ease",
+          "pronunciation": "leicht"
+        },
+        "adj_einfach_ease": {
+          "entryId": "adj_einfach_ease",
+          "lemma": "einfach",
+          "partOfSpeech": "Adjektiv",
+          "senseVi": "dễ, đơn giản",
+          "baseContextId": "ctx_adjective_ease",
+          "pronunciation": "einfach"
+        },
+        "adj_leicht_ease_opp": {
+          "entryId": "adj_leicht_ease_opp",
+          "lemma": "leicht",
+          "partOfSpeech": "Adjektiv",
+          "senseVi": "leicht ⇄ schwer",
+          "baseContextId": "ctx_adjective_ease_opp",
+          "pronunciation": "leicht"
+        },
+        "adj_schwer_ease_opp": {
+          "entryId": "adj_schwer_ease_opp",
+          "lemma": "schwer",
+          "partOfSpeech": "Adjektiv",
+          "senseVi": "leicht ⇄ schwer",
+          "baseContextId": "ctx_adjective_ease_opp",
+          "pronunciation": "schwer"
+        },
+        "adj_teuer_price_high": {
+          "entryId": "adj_teuer_price_high",
+          "lemma": "teuer",
+          "partOfSpeech": "Adjektiv",
+          "senseVi": "đắt, tốn kém",
+          "baseContextId": "ctx_adjective_price_high",
+          "pronunciation": "teuer"
+        }
+      },
+      "contexts": {
+        "ctx_adj_schwer_syn_840_adj_schwierig_syn_840": {
+          "contextId": "ctx_adj_schwer_syn_840_adj_schwierig_syn_840",
+          "topic": "schwer ↔ schwierig",
+          "explanationVi": "schwierig, kompliziert, schwer",
+          "sentenceVariants": {
+            "adj_schwer_syn_840": {
+              "de": "Die Aufgabe ist heute sehr schwer.",
+              "highlight": [
+                "schwer"
+              ],
+              "vi": "Bài tập hôm nay rất schwierig, kompliziert, schwer."
+            },
+            "adj_schwierig_syn_840": {
+              "de": "Die Aufgabe ist heute sehr schwierig.",
+              "highlight": [
+                "schwierig"
+              ],
+              "vi": "Bài tập hôm nay rất schwierig, kompliziert, schwer."
+            }
+          }
+        },
+        "ctx_adjective_difficulty": {
+          "contextId": "ctx_adjective_difficulty",
+          "topic": "schwer ↔ leicht",
+          "explanationVi": "khó ↔ dễ",
+          "sentenceVariants": {
+            "adj_schwer_difficulty": {
+              "de": "Die Aufgabe ist heute sehr schwer.",
+              "highlight": [
+                "schwer"
+              ],
+              "vi": "Bài tập hôm nay rất khó."
+            },
+            "adj_leicht_difficulty": {
+              "de": "Die Aufgabe ist leicht.",
+              "highlight": [
+                "leicht"
+              ],
+              "vi": "Bài tập này dễ."
+            },
+            "adj_schwierig_difficulty": {
+              "de": "Die Aufgabe ist heute sehr schwierig.",
+              "highlight": [
+                "schwierig"
+              ],
+              "vi": "Bài tập hôm nay rất phức tạp."
+            }
+          }
+        },
+        "ctx_adjective_difficulty_opp": {
+          "contextId": "ctx_adjective_difficulty_opp",
+          "topic": "schwer ↔ leicht",
+          "explanationVi": "schwer ⇄ leicht",
+          "sentenceVariants": {
+            "adj_schwer_difficulty_opp": {
+              "de": "Die Aufgabe ist heute sehr schwer.",
+              "highlight": [
+                "schwer"
+              ],
+              "vi": "Bài tập hôm nay rất khó."
+            },
+            "adj_leicht_difficulty_opp": {
+              "de": "Die Aufgabe ist heute leicht.",
+              "highlight": [
+                "leicht"
+              ],
+              "vi": "Bài tập hôm nay leicht."
+            }
+          }
+        },
+        "ctx_adjective_ease": {
+          "contextId": "ctx_adjective_ease",
+          "topic": "leicht ↔ einfach",
+          "explanationVi": "dễ, đơn giản",
+          "sentenceVariants": {
+            "adj_leicht_ease": {
+              "de": "Die Aufgabe ist heute sehr leicht.",
+              "highlight": [
+                "leicht"
+              ],
+              "vi": "Bài tập hôm nay rất dễ."
+            },
+            "adj_einfach_ease": {
+              "de": "Die Aufgabe ist heute sehr einfach.",
+              "highlight": [
+                "einfach"
+              ],
+              "vi": "Bài tập hôm nay rất đơn giản."
+            }
+          }
+        },
+        "ctx_adjective_ease_opp": {
+          "contextId": "ctx_adjective_ease_opp",
+          "topic": "leicht ↔ schwer",
+          "explanationVi": "leicht ⇄ schwer",
+          "sentenceVariants": {
+            "adj_leicht_ease_opp": {
+              "de": "Die Aufgabe ist heute sehr leicht.",
+              "highlight": [
+                "leicht"
+              ],
+              "vi": "Bài tập hôm nay rất dễ."
+            },
+            "adj_schwer_ease_opp": {
+              "de": "Die Aufgabe ist heute schwer.",
+              "highlight": [
+                "schwer"
+              ],
+              "vi": "Bài tập hôm nay schwer."
+            }
+          }
+        }
+      },
+      "synonyms": [
+        {
+          "contextId": "ctx_adj_schwer_syn_840_adj_schwierig_syn_840",
+          "from": "adj_schwer_syn_840",
+          "to": "adj_schwierig_syn_840"
+        },
+        {
+          "contextId": "ctx_adj_schwer_syn_840_adj_schwierig_syn_840",
+          "from": "adj_schwierig_syn_840",
+          "to": "adj_schwer_syn_840"
+        },
+        {
+          "contextId": "ctx_adjective_difficulty",
+          "from": "adj_schwer_difficulty",
+          "to": "adj_schwierig_difficulty"
+        },
+        {
+          "contextId": "ctx_adjective_difficulty",
+          "from": "adj_schwierig_difficulty",
+          "to": "adj_schwer_difficulty"
+        },
+        {
+          "contextId": "ctx_adjective_ease",
+          "from": "adj_leicht_ease",
+          "to": "adj_einfach_ease"
+        },
+        {
+          "contextId": "ctx_adjective_ease",
+          "from": "adj_einfach_ease",
+          "to": "adj_leicht_ease"
+        }
+      ],
+      "antonyms": {
+        "ctx_adjective_difficulty:adj_schwer_difficulty": {
+          "targetEntryId": "adj_leicht_difficulty",
+          "targetContextId": "ctx_adjective_difficulty",
+          "explanationShortVi": "schwer ⇄ leicht"
+        },
+        "ctx_adjective_difficulty:adj_leicht_difficulty": {
+          "targetEntryId": "adj_schwer_difficulty",
+          "targetContextId": "ctx_adjective_difficulty",
+          "explanationShortVi": "leicht ⇄ schwer"
+        },
+        "ctx_adjective_difficulty_opp:adj_schwer_difficulty_opp": {
+          "targetEntryId": "adj_leicht_difficulty_opp",
+          "targetContextId": "ctx_adjective_difficulty_opp",
+          "explanationShortVi": "schwer ⇄ leicht"
+        },
+        "ctx_adjective_difficulty_opp:adj_leicht_difficulty_opp": {
+          "targetEntryId": "adj_schwer_difficulty_opp",
+          "targetContextId": "ctx_adjective_difficulty_opp",
+          "explanationShortVi": "leicht ⇄ schwer"
+        },
+        "ctx_adjective_ease_opp:adj_leicht_ease_opp": {
+          "targetEntryId": "adj_schwer_ease_opp",
+          "targetContextId": "ctx_adjective_ease_opp",
+          "explanationShortVi": "leicht ⇄ schwer"
+        },
+        "ctx_adjective_ease_opp:adj_schwer_ease_opp": {
+          "targetEntryId": "adj_leicht_ease_opp",
+          "targetContextId": "ctx_adjective_ease_opp",
+          "explanationShortVi": "schwer ⇄ leicht"
+        }
+      },
+      "buildMetadata": {
+        "builtAt": "2026-10-09T07:33:53.191Z",
+        "unitsCount": 12,
+        "synonymEdgesCount": 6,
+        "antonymTransformsCount": 6
+      }
+    },
+    "verben_expanded": {
+      "deckId": "verben_expanded",
+      "nameVi": "Động từ · Verben (Mở rộng)",
+      "partOfSpeech": "verb",
+      "totalCards": 60,
+      "cards": [
+        {
+          "id": "card_verb_beginnen_rot_1",
+          "type": "word",
+          "color": "rot",
+          "entryId": "verb_beginnen_timing_start",
+          "label": "beginnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_anfangen_rot_2",
+          "type": "word",
+          "color": "rot",
+          "entryId": "verb_anfangen_timing_start",
+          "label": "anfangen",
+          "partOfSpeech": "Verb (tách)"
+        },
+        {
+          "id": "card_verb_beginnen_rot_3",
+          "type": "word",
+          "color": "rot",
+          "entryId": "verb_beginnen_timing_start_opp",
+          "label": "beginnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_enden_rot_4",
+          "type": "word",
+          "color": "rot",
+          "entryId": "verb_enden_timing_start_opp",
+          "label": "enden",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_enden_rot_5",
+          "type": "word",
+          "color": "rot",
+          "entryId": "verb_enden_timing_end",
+          "label": "enden",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_aufhören_rot_6",
+          "type": "word",
+          "color": "rot",
+          "entryId": "verb_aufhören_timing_end",
+          "label": "aufhören",
+          "partOfSpeech": "Verb (tách)"
+        },
+        {
+          "id": "card_verb_enden_rot_7",
+          "type": "word",
+          "color": "rot",
+          "entryId": "verb_enden_timing_end_opp",
+          "label": "enden",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_beginnen_rot_8",
+          "type": "word",
+          "color": "rot",
+          "entryId": "verb_beginnen_timing_end_opp",
+          "label": "beginnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_öffnen_rot_9",
+          "type": "word",
+          "color": "rot",
+          "entryId": "verb_öffnen_action_open",
+          "label": "öffnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_aufmachen_rot_10",
+          "type": "word",
+          "color": "rot",
+          "entryId": "verb_aufmachen_action_open",
+          "label": "aufmachen",
+          "partOfSpeech": "Verb (tách)"
+        },
+        {
+          "id": "card_verb_öffnen_rot_11",
+          "type": "word",
+          "color": "rot",
+          "entryId": "verb_öffnen_action_open_opp",
+          "label": "öffnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_schließen_rot_12",
+          "type": "word",
+          "color": "rot",
+          "entryId": "verb_schließen_action_open_opp",
+          "label": "schließen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_beginnen_blau_1",
+          "type": "word",
+          "color": "blau",
+          "entryId": "verb_beginnen_timing_start",
+          "label": "beginnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_anfangen_blau_2",
+          "type": "word",
+          "color": "blau",
+          "entryId": "verb_anfangen_timing_start",
+          "label": "anfangen",
+          "partOfSpeech": "Verb (tách)"
+        },
+        {
+          "id": "card_verb_beginnen_blau_3",
+          "type": "word",
+          "color": "blau",
+          "entryId": "verb_beginnen_timing_start_opp",
+          "label": "beginnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_enden_blau_4",
+          "type": "word",
+          "color": "blau",
+          "entryId": "verb_enden_timing_start_opp",
+          "label": "enden",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_enden_blau_5",
+          "type": "word",
+          "color": "blau",
+          "entryId": "verb_enden_timing_end",
+          "label": "enden",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_aufhören_blau_6",
+          "type": "word",
+          "color": "blau",
+          "entryId": "verb_aufhören_timing_end",
+          "label": "aufhören",
+          "partOfSpeech": "Verb (tách)"
+        },
+        {
+          "id": "card_verb_enden_blau_7",
+          "type": "word",
+          "color": "blau",
+          "entryId": "verb_enden_timing_end_opp",
+          "label": "enden",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_beginnen_blau_8",
+          "type": "word",
+          "color": "blau",
+          "entryId": "verb_beginnen_timing_end_opp",
+          "label": "beginnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_öffnen_blau_9",
+          "type": "word",
+          "color": "blau",
+          "entryId": "verb_öffnen_action_open",
+          "label": "öffnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_aufmachen_blau_10",
+          "type": "word",
+          "color": "blau",
+          "entryId": "verb_aufmachen_action_open",
+          "label": "aufmachen",
+          "partOfSpeech": "Verb (tách)"
+        },
+        {
+          "id": "card_verb_öffnen_blau_11",
+          "type": "word",
+          "color": "blau",
+          "entryId": "verb_öffnen_action_open_opp",
+          "label": "öffnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_schließen_blau_12",
+          "type": "word",
+          "color": "blau",
+          "entryId": "verb_schließen_action_open_opp",
+          "label": "schließen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_beginnen_gruen_1",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "verb_beginnen_timing_start",
+          "label": "beginnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_anfangen_gruen_2",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "verb_anfangen_timing_start",
+          "label": "anfangen",
+          "partOfSpeech": "Verb (tách)"
+        },
+        {
+          "id": "card_verb_beginnen_gruen_3",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "verb_beginnen_timing_start_opp",
+          "label": "beginnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_enden_gruen_4",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "verb_enden_timing_start_opp",
+          "label": "enden",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_enden_gruen_5",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "verb_enden_timing_end",
+          "label": "enden",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_aufhören_gruen_6",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "verb_aufhören_timing_end",
+          "label": "aufhören",
+          "partOfSpeech": "Verb (tách)"
+        },
+        {
+          "id": "card_verb_enden_gruen_7",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "verb_enden_timing_end_opp",
+          "label": "enden",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_beginnen_gruen_8",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "verb_beginnen_timing_end_opp",
+          "label": "beginnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_öffnen_gruen_9",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "verb_öffnen_action_open",
+          "label": "öffnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_aufmachen_gruen_10",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "verb_aufmachen_action_open",
+          "label": "aufmachen",
+          "partOfSpeech": "Verb (tách)"
+        },
+        {
+          "id": "card_verb_öffnen_gruen_11",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "verb_öffnen_action_open_opp",
+          "label": "öffnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_schließen_gruen_12",
+          "type": "word",
+          "color": "gruen",
+          "entryId": "verb_schließen_action_open_opp",
+          "label": "schließen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_beginnen_gelb_1",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "verb_beginnen_timing_start",
+          "label": "beginnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_anfangen_gelb_2",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "verb_anfangen_timing_start",
+          "label": "anfangen",
+          "partOfSpeech": "Verb (tách)"
+        },
+        {
+          "id": "card_verb_beginnen_gelb_3",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "verb_beginnen_timing_start_opp",
+          "label": "beginnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_enden_gelb_4",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "verb_enden_timing_start_opp",
+          "label": "enden",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_enden_gelb_5",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "verb_enden_timing_end",
+          "label": "enden",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_aufhören_gelb_6",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "verb_aufhören_timing_end",
+          "label": "aufhören",
+          "partOfSpeech": "Verb (tách)"
+        },
+        {
+          "id": "card_verb_enden_gelb_7",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "verb_enden_timing_end_opp",
+          "label": "enden",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_beginnen_gelb_8",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "verb_beginnen_timing_end_opp",
+          "label": "beginnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_öffnen_gelb_9",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "verb_öffnen_action_open",
+          "label": "öffnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_aufmachen_gelb_10",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "verb_aufmachen_action_open",
+          "label": "aufmachen",
+          "partOfSpeech": "Verb (tách)"
+        },
+        {
+          "id": "card_verb_öffnen_gelb_11",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "verb_öffnen_action_open_opp",
+          "label": "öffnen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_schließen_gelb_12",
+          "type": "word",
+          "color": "gelb",
+          "entryId": "verb_schließen_action_open_opp",
+          "label": "schließen",
+          "partOfSpeech": "Verb"
+        },
+        {
+          "id": "card_verb_skip_rot",
+          "type": "action",
+          "actionType": "aussetzen",
+          "color": "rot",
+          "label": "Aussetzen",
+          "symbol": "skip"
+        },
+        {
+          "id": "card_verb_skip_blau",
+          "type": "action",
+          "actionType": "aussetzen",
+          "color": "blau",
+          "label": "Aussetzen",
+          "symbol": "skip"
+        },
+        {
+          "id": "card_verb_skip_gruen",
+          "type": "action",
+          "actionType": "aussetzen",
+          "color": "gruen",
+          "label": "Aussetzen",
+          "symbol": "skip"
+        },
+        {
+          "id": "card_verb_skip_gelb",
+          "type": "action",
+          "actionType": "aussetzen",
+          "color": "gelb",
+          "label": "Aussetzen",
+          "symbol": "skip"
+        },
+        {
+          "id": "card_verb_plus2_rot",
+          "type": "action",
+          "actionType": "plus2",
+          "color": "rot",
+          "label": "+2",
+          "symbol": "plus2"
+        },
+        {
+          "id": "card_verb_plus2_blau",
+          "type": "action",
+          "actionType": "plus2",
+          "color": "blau",
+          "label": "+2",
+          "symbol": "plus2"
+        },
+        {
+          "id": "card_verb_plus2_gruen",
+          "type": "action",
+          "actionType": "plus2",
+          "color": "gruen",
+          "label": "+2",
+          "symbol": "plus2"
+        },
+        {
+          "id": "card_verb_plus2_gelb",
+          "type": "action",
+          "actionType": "plus2",
+          "color": "gelb",
+          "label": "+2",
+          "symbol": "plus2"
+        },
+        {
+          "id": "card_verb_farbenwahl_1",
+          "type": "action",
+          "actionType": "farbenwahl",
+          "color": "neutral",
+          "label": "Farbenwahl",
+          "symbol": "wild"
+        },
+        {
+          "id": "card_verb_farbenwahl_2",
+          "type": "action",
+          "actionType": "farbenwahl",
+          "color": "neutral",
+          "label": "Farbenwahl",
+          "symbol": "wild"
+        },
+        {
+          "id": "card_verb_gegenteil_1",
+          "type": "action",
+          "actionType": "gegenteil",
+          "color": "neutral",
+          "label": "GEGENTEIL!",
+          "symbol": "opposite"
+        },
+        {
+          "id": "card_verb_gegenteil_2",
+          "type": "action",
+          "actionType": "gegenteil",
+          "color": "neutral",
+          "label": "GEGENTEIL!",
+          "symbol": "opposite"
+        }
+      ],
+      "entries": {
+        "verb_beginnen_timing_start": {
+          "entryId": "verb_beginnen_timing_start",
+          "lemma": "beginnen",
+          "partOfSpeech": "Verb",
+          "senseVi": "bắt đầu",
+          "baseContextId": "ctx_verb_timing_start",
+          "pronunciation": "beginnen"
+        },
+        "verb_anfangen_timing_start": {
+          "entryId": "verb_anfangen_timing_start",
+          "lemma": "anfangen",
+          "partOfSpeech": "Verb (tách)",
+          "senseVi": "bắt đầu",
+          "baseContextId": "ctx_verb_timing_start",
+          "pronunciation": "anfangen"
+        },
+        "verb_beginnen_timing_start_opp": {
+          "entryId": "verb_beginnen_timing_start_opp",
+          "lemma": "beginnen",
+          "partOfSpeech": "Verb",
+          "senseVi": "beginnen ⇄ enden",
+          "baseContextId": "ctx_verb_timing_start_opp",
+          "pronunciation": "beginnen"
+        },
+        "verb_enden_timing_start_opp": {
+          "entryId": "verb_enden_timing_start_opp",
+          "lemma": "enden",
+          "partOfSpeech": "Verb",
+          "senseVi": "beginnen ⇄ enden",
+          "baseContextId": "ctx_verb_timing_start_opp",
+          "pronunciation": "enden"
+        },
+        "verb_enden_timing_end": {
+          "entryId": "verb_enden_timing_end",
+          "lemma": "enden",
+          "partOfSpeech": "Verb",
+          "senseVi": "kết thúc, dừng lại",
+          "baseContextId": "ctx_verb_timing_end",
+          "pronunciation": "enden"
+        },
+        "verb_aufhören_timing_end": {
+          "entryId": "verb_aufhören_timing_end",
+          "lemma": "aufhören",
+          "partOfSpeech": "Verb (tách)",
+          "senseVi": "kết thúc, dừng lại",
+          "baseContextId": "ctx_verb_timing_end",
+          "pronunciation": "aufhören"
+        },
+        "verb_enden_timing_end_opp": {
+          "entryId": "verb_enden_timing_end_opp",
+          "lemma": "enden",
+          "partOfSpeech": "Verb",
+          "senseVi": "enden ⇄ beginnen",
+          "baseContextId": "ctx_verb_timing_end_opp",
+          "pronunciation": "enden"
+        },
+        "verb_beginnen_timing_end_opp": {
+          "entryId": "verb_beginnen_timing_end_opp",
+          "lemma": "beginnen",
+          "partOfSpeech": "Verb",
+          "senseVi": "enden ⇄ beginnen",
+          "baseContextId": "ctx_verb_timing_end_opp",
+          "pronunciation": "beginnen"
+        },
+        "verb_öffnen_action_open": {
+          "entryId": "verb_öffnen_action_open",
+          "lemma": "öffnen",
+          "partOfSpeech": "Verb",
+          "senseVi": "mở cửa",
+          "baseContextId": "ctx_verb_action_open",
+          "pronunciation": "öffnen"
+        },
+        "verb_aufmachen_action_open": {
+          "entryId": "verb_aufmachen_action_open",
+          "lemma": "aufmachen",
+          "partOfSpeech": "Verb (tách)",
+          "senseVi": "mở cửa",
+          "baseContextId": "ctx_verb_action_open",
+          "pronunciation": "aufmachen"
+        },
+        "verb_öffnen_action_open_opp": {
+          "entryId": "verb_öffnen_action_open_opp",
+          "lemma": "öffnen",
+          "partOfSpeech": "Verb",
+          "senseVi": "öffnen ⇄ schließen",
+          "baseContextId": "ctx_verb_action_open_opp",
+          "pronunciation": "öffnen"
+        },
+        "verb_schließen_action_open_opp": {
+          "entryId": "verb_schließen_action_open_opp",
+          "lemma": "schließen",
+          "partOfSpeech": "Verb",
+          "senseVi": "öffnen ⇄ schließen",
+          "baseContextId": "ctx_verb_action_open_opp",
+          "pronunciation": "schließen"
+        }
+      },
+      "contexts": {
+        "ctx_verb_timing_start": {
+          "contextId": "ctx_verb_timing_start",
+          "topic": "beginnen ↔ anfangen",
+          "explanationVi": "bắt đầu",
+          "sentenceVariants": {
+            "verb_beginnen_timing_start": {
+              "de": "Der Kurs beginnt um acht Uhr.",
+              "highlight": [
+                "beginnt"
+              ],
+              "vi": "Khóa học bắt đầu lúc 8 giờ."
+            },
+            "verb_anfangen_timing_start": {
+              "de": "Der Kurs fängt um acht Uhr an.",
+              "highlight": [
+                "fängt",
+                "an"
+              ],
+              "vi": "Khóa học bắt đầu lúc 8 giờ."
+            }
+          }
+        },
+        "ctx_verb_timing_start_opp": {
+          "contextId": "ctx_verb_timing_start_opp",
+          "topic": "beginnen ↔ enden",
+          "explanationVi": "beginnen ⇄ enden",
+          "sentenceVariants": {
+            "verb_beginnen_timing_start_opp": {
+              "de": "Der Kurs beginnt um acht Uhr.",
+              "highlight": [
+                "beginnt"
+              ],
+              "vi": "Khóa học bắt đầu lúc 8 giờ."
+            },
+            "verb_enden_timing_start_opp": {
+              "de": "Der Kurs enden.",
+              "highlight": [
+                "enden"
+              ],
+              "vi": "Khóa học enden."
+            }
+          }
+        },
+        "ctx_verb_timing_end": {
+          "contextId": "ctx_verb_timing_end",
+          "topic": "enden ↔ aufhören",
+          "explanationVi": "kết thúc, dừng lại",
+          "sentenceVariants": {
+            "verb_enden_timing_end": {
+              "de": "Der Kurs endet um zehn Uhr.",
+              "highlight": [
+                "endet"
+              ],
+              "vi": "Khóa học kết thúc lúc 10 giờ."
+            },
+            "verb_aufhören_timing_end": {
+              "de": "Der Kurs hört um zehn Uhr auf.",
+              "highlight": [
+                "hört",
+                "auf"
+              ],
+              "vi": "Khóa học dừng lại lúc 10 giờ."
+            }
+          }
+        },
+        "ctx_verb_timing_end_opp": {
+          "contextId": "ctx_verb_timing_end_opp",
+          "topic": "enden ↔ beginnen",
+          "explanationVi": "enden ⇄ beginnen",
+          "sentenceVariants": {
+            "verb_enden_timing_end_opp": {
+              "de": "Der Kurs endet um zehn Uhr.",
+              "highlight": [
+                "endet"
+              ],
+              "vi": "Khóa học kết thúc lúc 10 giờ."
+            },
+            "verb_beginnen_timing_end_opp": {
+              "de": "Der Kurs beginnen.",
+              "highlight": [
+                "beginnen"
+              ],
+              "vi": "Khóa học beginnen."
+            }
+          }
+        },
+        "ctx_verb_action_open": {
+          "contextId": "ctx_verb_action_open",
+          "topic": "öffnen ↔ aufmachen",
+          "explanationVi": "mở cửa",
+          "sentenceVariants": {
+            "verb_öffnen_action_open": {
+              "de": "Ich öffne das Fenster am Morgen.",
+              "highlight": [
+                "öffne"
+              ],
+              "vi": "Tôi mở cửa sổ vào buổi sáng."
+            },
+            "verb_aufmachen_action_open": {
+              "de": "Ich mache das Fenster am Morgen auf.",
+              "highlight": [
+                "mache",
+                "auf"
+              ],
+              "vi": "Tôi mở cửa sổ vào buổi sáng."
+            }
+          }
+        },
+        "ctx_verb_action_open_opp": {
+          "contextId": "ctx_verb_action_open_opp",
+          "topic": "öffnen ↔ schließen",
+          "explanationVi": "öffnen ⇄ schließen",
+          "sentenceVariants": {
+            "verb_öffnen_action_open_opp": {
+              "de": "Ich öffne das Fenster am Morgen.",
+              "highlight": [
+                "öffne"
+              ],
+              "vi": "Tôi mở cửa sổ vào buổi sáng."
+            },
+            "verb_schließen_action_open_opp": {
+              "de": "Der Kurs schließen.",
+              "highlight": [
+                "schließen"
+              ],
+              "vi": "Khóa học schließen."
+            }
+          }
+        }
+      },
+      "synonyms": [
+        {
+          "contextId": "ctx_verb_timing_start",
+          "from": "verb_beginnen_timing_start",
+          "to": "verb_anfangen_timing_start"
+        },
+        {
+          "contextId": "ctx_verb_timing_start",
+          "from": "verb_anfangen_timing_start",
+          "to": "verb_beginnen_timing_start"
+        },
+        {
+          "contextId": "ctx_verb_timing_end",
+          "from": "verb_enden_timing_end",
+          "to": "verb_aufhören_timing_end"
+        },
+        {
+          "contextId": "ctx_verb_timing_end",
+          "from": "verb_aufhören_timing_end",
+          "to": "verb_enden_timing_end"
+        },
+        {
+          "contextId": "ctx_verb_action_open",
+          "from": "verb_öffnen_action_open",
+          "to": "verb_aufmachen_action_open"
+        },
+        {
+          "contextId": "ctx_verb_action_open",
+          "from": "verb_aufmachen_action_open",
+          "to": "verb_öffnen_action_open"
+        }
+      ],
+      "antonyms": {
+        "ctx_verb_timing_start_opp:verb_beginnen_timing_start_opp": {
+          "targetEntryId": "verb_enden_timing_start_opp",
+          "targetContextId": "ctx_verb_timing_start_opp",
+          "explanationShortVi": "beginnen ⇄ enden"
+        },
+        "ctx_verb_timing_start_opp:verb_enden_timing_start_opp": {
+          "targetEntryId": "verb_beginnen_timing_start_opp",
+          "targetContextId": "ctx_verb_timing_start_opp",
+          "explanationShortVi": "enden ⇄ beginnen"
+        },
+        "ctx_verb_timing_end_opp:verb_enden_timing_end_opp": {
+          "targetEntryId": "verb_beginnen_timing_end_opp",
+          "targetContextId": "ctx_verb_timing_end_opp",
+          "explanationShortVi": "enden ⇄ beginnen"
+        },
+        "ctx_verb_timing_end_opp:verb_beginnen_timing_end_opp": {
+          "targetEntryId": "verb_enden_timing_end_opp",
+          "targetContextId": "ctx_verb_timing_end_opp",
+          "explanationShortVi": "beginnen ⇄ enden"
+        },
+        "ctx_verb_action_open_opp:verb_öffnen_action_open_opp": {
+          "targetEntryId": "verb_schließen_action_open_opp",
+          "targetContextId": "ctx_verb_action_open_opp",
+          "explanationShortVi": "öffnen ⇄ schließen"
+        },
+        "ctx_verb_action_open_opp:verb_schließen_action_open_opp": {
+          "targetEntryId": "verb_öffnen_action_open_opp",
+          "targetContextId": "ctx_verb_action_open_opp",
+          "explanationShortVi": "schließen ⇄ öffnen"
+        }
+      },
+      "buildMetadata": {
+        "builtAt": "2026-10-09T07:33:53.192Z",
+        "unitsCount": 12,
+        "synonymEdgesCount": 6,
+        "antonymTransformsCount": 6
+      }
+    }
+  }
+}

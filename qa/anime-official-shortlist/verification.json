@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Saigon",
+  "environment": "User in-app browser; localhost:3000 embedded YouTube player; no VPN used",
+  "criteria": [
+    "Official publisher/channel",
+    "German dub as identified by publisher",
+    "oEmbed code returned",
+    "Actual IFrame Player API state 1 observed"
+  ],
+  "passed": [
+    {
+      "id": "PIGSIyt9z0E",
+      "name": "Beyblade X",
+      "durationSeconds": 1365,
+      "type": "full_episode",
+      "source": "https://www.youtube.com/watch?v=PIGSIyt9z0E",
+      "playback": "IFrame API state 1, visibly displayed in test page"
+    },
+    {
+      "id": "_xiATLPo_Y8",
+      "name": "Yu-Gi-Oh!",
+      "durationSeconds": 120,
+      "type": "trailer",
+      "source": "https://www.youtube.com/watch?v=_xiATLPo_Y8",
+      "playback": "IFrame API state 1, visibly displayed in test page"
+    },
+    {
+      "id": "EOXdxVhsg1o",
+      "name": "Digimon Adventure",
+      "durationSeconds": 117,
+      "type": "trailer",
+      "source": "https://www.youtube.com/watch?v=EOXdxVhsg1o",
+      "playback": "IFrame API state 1, visibly displayed in test page"
+    },
+    {
+      "id": "L4de4ixkYEg",
+      "name": "Naruto - The Last",
+      "durationSeconds": 77,
+      "type": "trailer",
+      "source": "https://www.youtube.com/watch?v=L4de4ixkYEg",
+      "playback": "IFrame API state 1, visibly displayed in test page"
+    }
+  ],
+  "failed": [
+    {
+      "id": "z3hMX65Khtg",
+      "name": "Pokémon Indigo League",
+      "reason": "Uploader unavailable in this country"
+    },
+    {
+      "id": "GE_V3FrF72k",
+      "name": "Beyblade Metal Fusion",
+      "reason": "IFrame error 150"
+    },
+    {
+      "id": "LTAzTivZZFU",
+      "name": "Beyblade Burst",
+      "reason": "Uploader unavailable in this country"
+    },
+    {
+      "id": "AvS2JaKJmXg",
+      "name": "Conan 25 trailer",
+      "reason": "Video unavailable; IFrame error 150"
+    },
+    {
+      "id": "o2oWEvx_TMw",
+      "name": "Pokémon Generationen HD",
+      "reason": "Video unavailable; IFrame error 150"
+    },
+    {
+      "id": "PkQ45_PWCtg",
+      "name": "Pokémon Generationen original",
+      "reason": "Video unavailable; IFrame error 150"
+    }
+  ],
+  "sakura": {
+    "result": "No matching German-dubbed official embeddable video verified",
+    "primarySource": "https://news.animationdigitalnetwork.com/de/2026/05/27/card-captor-sakura-ab-sofort-im-stream-bei-adn/",
+    "sourceAudio": "Japanese",
+    "sourceSubtitles": "German"
+  },
+  "limits": [
+    "Only selected videos tested, not full catalogues.",
+    "Not a guarantee of future or worldwide availability.",
+    "No media downloaded; no production app edits or external publishing.",
+    "Does not establish permission to republish full transcripts/translations.",
+    "Language identification is based on official publisher metadata, not an independent full audio audit."
+  ]
+}

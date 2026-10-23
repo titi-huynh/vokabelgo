@@ -1,0 +1,157 @@
+{
+  "checkedPrimaryWords": 1938,
+  "uncoveredPrimaryWords": [],
+  "stretchedSourceWordTimings": [
+    {
+      "word": {
+        "start": 306.1,
+        "end": 310.46,
+        "word": " war",
+        "probability": 0.9895888566970825
+      },
+      "captionIds": [
+        700137
+      ]
+    }
+  ],
+  "excludedRawSegments": [
+    {
+      "start": 0.0,
+      "end": 12.28,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 13.52,
+      "end": 16.0,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 16.0,
+      "end": 29.14,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 29.14,
+      "end": 29.98,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 30.0,
+      "end": 34.32,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 34.32,
+      "end": 38.64,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 38.64,
+      "end": 42.9,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 42.9,
+      "end": 48.1,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 48.1,
+      "end": 52.06,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 52.06,
+      "end": 58.18,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 58.18,
+      "end": 60.76,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 61.24,
+      "end": 65.0,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 65.42,
+      "end": 68.84,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 69.48,
+      "end": 71.84,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 72.02,
+      "end": 75.46,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 76.24,
+      "end": 77.68,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 98.53999999999999,
+      "end": 99.94,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 206.72,
+      "end": 207.9,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 1471.74,
+      "end": 1476.86,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 1477.74,
+      "end": 1483.22,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 1483.74,
+      "end": 1488.16,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 1488.16,
+      "end": 1489.76,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 1492.74,
+      "end": 1494.74,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 1494.74,
+      "end": 1502.18,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 1502.18,
+      "end": 1506.76,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 1506.76,
+      "end": 1513.24,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    },
+    {
+      "start": 1513.24,
+      "end": 1518.96,
+      "reason": "Opening/ending song or stock ASR subtitle hallucination"
+    }
+  ],
+  "forestSpeechRecovered": true,
+  "briefReplyRecovered": true,
+  "note": "Time coverage checks omissions; they do not certify exact German wording or speaker identity."
+}

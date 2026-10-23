@@ -1,0 +1,908 @@
+<USER_REQUEST>
+Bạn đang làm việc trực tiếp trên dự án VokabelGo.
+
+MỤC TIÊU CỦA NHIỆM VỤ NÀY KHÔNG PHẢI LÀ THÊM THẬT NHIỀU TÍNH NĂNG.
+
+Mục tiêu là:
+
+1. Làm VokabelGo dễ hiểu hơn ngay từ lần mở đầu tiên.
+2. Giảm số quyết định người học phải tự đưa ra.
+3. Tạo một learning loop rõ:
+   vào web → biết cần học gì → học → nhận feedback → đạt milestone → nhận thưởng → tiếp tục hoặc nghỉ.
+4. Giảm tải nhận thức.
+5. Giữ các chức năng tốt đang có.
+6. Không phá authentication, Supabase, dữ liệu người dùng, routing, progress hoặc các chức năng đã hoạt động.
+7. Không redesign theo sở thích cá nhân nếu không giải quyết một vấn đề UX/học tập cụ thể.
+8. Ưu tiên hiệu quả học tập trước gamification.
+9. Giữ nguyên hoạt họa mèo câu cá hiện tại đã được duyệt. Chỉ cải tiến UI và logic bao quanh nó.
+
+==================================================
+A. NGUYÊN TẮC LÀM VIỆC
+==================================================
+
+KHÔNG bắt đầu bằng việc sửa code ngay.
+
+Trước tiên hãy audit repo hiện tại.
+
+Hãy xác định:
+
+- cấu trúc page/router;
+- navigation;
+- dashboard/home;
+- flashcard;
+- quiz;
+- typing;
+- Blitz;
+- Kino;
+- Kino Studio;
+- progress;
+- daily goal;
+- streak;
+- leaderboard;
+- reward/cat fishing;
+- audio;
+- persistence;
+- auth;
+- Supabase schema có liên quan;
+- state management;
+- mobile responsiveness;
+- những component đang được dùng lại.
+
+Sau audit, phân loại mọi chức năng thành:
+
+A. Core learning
+B. Supporting learning
+C. Gamification
+D. Creator/admin
+E. Settings/system
+
+Không được coi tất cả các chức năng là ngang hàng với nhau.
+
+Sau đó mới bắt đầu refactor.
+
+ƯU TIÊN:
+giảm complexity > thêm feature.
+
+Nếu một chức năng có thể:
+- gom lại,
+- ẩn sâu hơn,
+- xuất hiện đúng lúc,
+- hoặc chuyển sang progressive disclosure,
+
+thì ưu tiên cách đó thay vì xóa.
+
+==================================================
+B. KIẾN TRÚC CHÍNH MỚI
+==================================================
+
+Navigation chính của người học nên được đơn giản hóa về khoảng 4 khu vực:
+
+1. HÔM NAY
+2. HỌC TỪ
+3. KINO
+4. THƯ VIỆN
+
+Các mục như:
+- tài khoản,
+- cài đặt,
+- tùy chỉnh,
+- audio,
+- developer options
+
+không được cạnh tranh với learning navigation.
+
+Đưa chúng vào avatar/settings khi phù hợp.
+
+Kino Studio là creator/admin functionality.
+
+Không để Kino Studio xuất hiện như một lựa chọn học tập ngang hàng với Kino của học viên.
+
+Leaderboard, thống kê sâu và gamification secondary không nên chiếm vị trí navigation quan trọng hơn learning.
+
+==================================================
+C. “HÔM NAY” PHẢI TRỞ THÀNH TRUNG TÂM VOKABELGO
+==================================================
+
+Đây là ưu tiên UX số 1.
+
+Khi người học mở VokabelGo, họ không nên phải nghĩ:
+
+“Mình nên chọn flashcard, Blitz, Kino, quiz hay cái gì?”
+
+Trang Hôm nay phải trả lời:
+
+“Hôm nay tôi cần làm gì?”
+
+Thiết kế trang Hôm nay theo hướng:
+
+--------------------------------
+Hôm nay
+
+[ Tiếp tục học ]
+
+3 từ cần ôn
+2 từ mới
+
+Khoảng 5–7 phút
+--------------------------------
+
+Không nhất thiết phải đúng text này, nhưng hierarchy phải tương tự.
+
+Chỉ có MỘT CTA chính.
+
+Ví dụ:
+
+“Tiếp tục học”
+
+Secondary actions phải nhẹ hơn rõ rệt.
+
+Nếu người dùng đang học dở:
+
+CTA ưu tiên phải là:
+
+“Tiếp tục từ chỗ đang học”
+
+App phải nhớ được nếu hiện architecture cho phép:
+
+- deck đang học;
+- card;
+- mode;
+- session;
+- Kino video;
+- Kino sentence.
+
+Không được bắt người dùng quay về dashboard rồi chọn lại từ đầu nếu có thể resume.
+
+==================================================
+D. DAILY LEARNING SESSION
+==================================================
+
+Không nên tách hoàn toàn:
+
+“Học từ mới”
+
+và
+
+“Ôn từ cũ”
+
+thành hai quyết định mà người học phải tự quản lý mỗi ngày.
+
+Hãy thiết kế một Daily Session.
+
+Ví dụ session target:
+
+5 cards
+
+nhưng bên trong có thể là:
+
+3 review + 2 new
+
+hoặc:
+
+4 review + 1 new
+
+hoặc:
+
+2 review + 3 new
+
+tùy trạng thái trí nhớ.
+
+UI không cần giải thích thuật toán phức tạp.
+
+Người học chỉ cần thấy:
+
+“Hôm nay: 5 từ”
+
+Nếu dữ liệu hiện tại chưa hỗ trợ đầy đủ adaptive scheduling, KHÔNG được viết một hệ thống phức tạp ngay.
+
+Hãy:
+1. kiểm tra schema hiện tại;
+2. tái sử dụng dữ liệu có sẵn;
+3. thiết kế kiến trúc cho phép nâng cấp dần.
+
+Không migration database lớn chỉ vì muốn làm đẹp thuật toán.
+
+==================================================
+E. SPACED REPETITION / MEMORY MODEL
+==================================================
+
+Learning logic nên hướng tới:
+
+- retrieval practice;
+- spaced repetition;
+- individual card scheduling;
+- adaptive review;
+- không review tất cả từ theo cùng một lịch.
+
+Nếu hiện tại app đã có SRS, hãy audit nó trước.
+
+Không thay nếu hệ thống hiện tại đủ tốt mà chỉ cần cải thiện UI.
+
+Nếu cần nâng cấp thì thiết kế gần tinh thần FSRS / modern spaced repetition:
+
+Mỗi card có state riêng dựa trên:
+- lần học;
+- lần review;
+- correct/incorrect;
+- difficulty;
+- lapse;
+- next review.
+
+Nhưng:
+
+KHÔNG expose các thuật ngữ kỹ thuật đó cho người học.
+
+UI chỉ nên nói những thứ dễ hiểu như:
+
+- Chưa nhớ
+- Còn khó
+- Nhớ được
+
+Không dùng các label kỹ thuật nếu không cần.
+
+==================================================
+F. ACTIVE RECALL PHẢI LÀ TRUNG TÂM FLASHCARD
+==================================================
+
+Không hiển thị toàn bộ đáp án ngay lập tức.
+
+Ví dụ:
+
+Front:
+
+die Entscheidung
+
+[ Xem đáp án ]
+
+Sau khi người học cố nhớ:
+
+die Entscheidung
+quyết định
+
+[ Chưa nhớ ]
+[ Còn khó ]
+[ Nhớ được ]
+
+Có thể thay wording nếu tìm được phương án tự nhiên hơn.
+
+Nguyên tắc bắt buộc:
+
+Attempt recall FIRST.
+Reveal SECOND.
+Feedback THIRD.
+
+Không biến flashcard thành một trang đọc nội dung.
+
+==================================================
+G. PROGRESSIVE DISCLOSURE
+==================================================
+
+Một từ có thể chứa:
+
+- translation;
+- article;
+- plural;
+- pronunciation;
+- audio;
+- example;
+- collocation;
+- grammar;
+- note;
+- related words;
+- AI explanation.
+
+Không hiển thị tất cả cùng một lúc.
+
+Lớp chính chỉ giữ nội dung cần thiết để học từ.
+
+Ví dụ:
+
+die Entscheidung
+quyết định
+🔊
+
+Sau đó:
+
+“Xem thêm”
+
+mới mở:
+
+- plural;
+- collocation;
+- examples;
+- grammar;
+- notes.
+
+Mỗi màn hình phải có hierarchy rõ.
+
+Thông tin quan trọng nhất phải nổi bật nhất.
+
+==================================================
+H. KINO PHẢI TRỞ THÀNH FLOW
+==================================================
+
+Hiện Kino có nhiều công cụ học.
+
+Không được cho người học thấy tất cả cùng lúc như một control panel.
+
+Thiết kế experience theo sequence.
+
+Ví dụ:
+
+1. Xem/nghe câu
+2. Nghe lại
+3. Tự viết
+4. Kiểm tra
+5. Nói lại / ghi âm
+6. Câu tiếp theo
+
+Các chức năng nâng cao:
+
+- transcript;
+- speed;
+- subtitles;
+- recorder settings;
+- audio settings;
+- advanced controls
+
+nên nằm trong secondary controls hoặc settings.
+
+Mỗi thời điểm nên có một nhiệm vụ chính.
+
+Không biến Kino thành bảng điều khiển media editing.
+
+==================================================
+I. QUY TẮC GAMIFICATION
+==================================================
+
+Gamification phải hỗ trợ learning.
+
+Không được cạnh tranh với learning.
+
+Trong màn hình học KHÔNG nhồi đồng thời:
+
+XP
+streak
+rank
+fish
+achievement
+progress
+daily goal
+leaderboard
+coins
+reward
+
+Chỉ hiển thị những thứ cần cho nhiệm vụ hiện tại.
+
+MICRO FEEDBACK:
+
+Sau câu trả lời đúng:
+- feedback rất nhẹ;
+- animation ngắn;
+- sound nhỏ;
+- khoảng vài trăm ms.
+
+Không confetti lớn sau từng câu.
+
+FULL REWARD chỉ xuất hiện sau một milestone thực.
+
+Ví dụ:
+
+hoàn thành 5 cards.
+
+==================================================
+J. CAT FISHING REWARD — PHẢI GIỮ
+==================================================
+
+Hoạt họa mèo câu cá hiện tại đã được duyệt.
+
+KHÔNG:
+- đổi mèo;
+- redesign hoạt họa chính;
+- thay concept;
+- làm lại asset chỉ vì sở thích thẩm mỹ.
+
+Vấn đề cần sửa là UI bao quanh animation.
+
+Màn hình reward hiện tại có quá nhiều UI test.
+
+Hãy loại khỏi student-facing UI:
+
+- “Prototype trải nghiệm hình ảnh & âm thanh”
+- “Không lưu tiến độ”
+- thanh “Nguồn âm”
+- Âm gốc
+- Hiệu ứng mới
+- Cả hai
+- danh sách toàn bộ các loại cá
+- các chip cá
+- timeline:
+  Kéo cần → Vào thùng → Mèo mừng → Nhận cá
+- nút “Xem cá ngay”
+- button “Phát lại từ đầu” quá lớn
+
+Các lựa chọn này nếu còn cần cho developer testing thì:
+
+đưa vào:
+Developer/Test panel
+
+KHÔNG hiển thị cho học viên.
+
+==================================================
+K. REWARD FLOW MỚI
+==================================================
+
+Reward experience nên khoảng:
+
+Milestone đạt
+↓
+Cat fishing animation tự chạy
+↓
+Cá mắc câu
+↓
+Sound + micro celebration
+↓
+Reveal fish
+↓
+Tên tiếng Đức
+↓
+Nghĩa tiếng Việt
+↓
+Rarity nếu có
+↓
+Cá được lưu vào collection
+↓
+Tiếp tục học
+
+Ví dụ reveal:
+
+BẮT ĐƯỢC RỒI!
+
+🐟
+
+die Forelle
+cá hồi vân
+
+HIẾM
+
++1 vào Hồ cá
+
+[ Tiếp tục học ]
+
+Không cần nhiều text.
+
+Không cho người học thấy trước toàn bộ danh sách cá.
+
+Discovery/surprise là một phần của reward.
+
+==================================================
+L. HỒ CÁ / COLLECTION
+==================================================
+
+Nếu collection infrastructure đã có hoặc có thể tích hợp an toàn:
+
+Sau khi reveal:
+
+fish card có thể thu nhỏ và animation bay về icon Hồ cá.
+
+Reward phải được persist.
+
+Cá đã nhận:
+- không random lại chỉ vì reload;
+- không mất khi đóng modal;
+- không phụ thuộc vào animation playback.
+
+Phân biệt rõ:
+
+reward state
+
+và
+
+reward animation.
+
+Animation không được là source of truth.
+
+Database/state mới là source of truth nếu app hiện có persistence.
+
+Nếu collection chưa đủ backend:
+
+đừng làm migration lớn ngay.
+
+Có thể thiết kế UI + architecture trước và ghi rõ phần backend còn thiếu.
+
+==================================================
+M. AUDIO
+==================================================
+
+Student UI chỉ cần dạng đơn giản:
+
+🔊
+
+hoặc
+
+🔇
+
+Bấm để toggle.
+
+Không cần cho học viên chọn:
+
+- original audio;
+- new effect;
+- both;
+- mute
+
+ở reward UI.
+
+Các lựa chọn chuyên sâu đó là test/developer controls.
+
+Đảm bảo audio:
+- không autoplay gây khó chịu ở nơi không phù hợp;
+- không chồng nhiều sound;
+- có mute;
+- state hợp lý;
+- mobile hoạt động.
+
+==================================================
+N. REPLAY
+==================================================
+
+Không cần button lớn:
+
+“Phát lại từ đầu”
+
+Có thể dùng:
+
+↻
+
+nhỏ.
+
+Hoặc:
+
+click/tap vào animation/mèo để replay.
+
+Replay animation KHÔNG được cấp thêm reward.
+
+Đây là yêu cầu quan trọng.
+
+Reward transaction và animation playback phải độc lập.
+
+==================================================
+O. STREAK
+==================================================
+
+Streak chỉ là secondary motivational signal.
+
+Không được dùng dark pattern:
+
+“Sắp mất streak!”
+“Bạn sẽ mất 37 ngày!”
+“Học ngay nếu không…”
+
+Không tạo guilt.
+
+Nếu streak hiện tại đang quá nổi bật:
+giảm visual priority.
+
+Learning progress quan trọng hơn streak.
+
+==================================================
+P. PROGRESS
+==================================================
+
+Trang chính không cần expose các con số kỹ thuật phức tạp.
+
+Ưu tiên human-readable:
+
+Hôm nay
+- 3 từ cần ôn
+- 2 từ mới
+- khoảng 6 phút
+
+Tuần này
+- 24 từ đã nhớ
+- 7 từ còn khó
+
+Metrics sâu có thể nằm trong Progress detail.
+
+Không xóa analytics nếu đang có ích.
+
+Chỉ giảm mức độ hiển thị.
+
+==================================================
+Q. VISUAL DESIGN
+==================================================
+
+Không redesign VokabelGo thành một sản phẩm hoàn toàn khác.
+
+Giữ visual language hiện tại nếu hợp lý.
+
+Cải thiện chủ yếu bằng:
+
+- spacing;
+- hierarchy;
+- reduction;
+- grouping;
+- progressive disclosure;
+- consistent button priority;
+- whitespace;
+- typography;
+- responsive layout.
+
+Một màn hình không nên có 5 nút trông như đều quan trọng.
+
+Hierarchy:
+
+Primary
+Secondary
+Tertiary
+
+phải rõ.
+
+==================================================
+R. ACCESSIBILITY
+==================================================
+
+Kiểm tra:
+
+- keyboard navigation;
+- focus states;
+- contrast;
+- screen-reader labels cho icon;
+- button hit area;
+- mobile;
+- reduced motion;
+- mute;
+- animation không bắt buộc để hiểu nội dung.
+
+Nếu user prefers-reduced-motion:
+
+reward vẫn hoạt động nhưng animation giảm.
+
+==================================================
+S. PERFORMANCE
+==================================================
+
+Không để reward animation hoặc audio làm chậm learning flow.
+
+Kiểm:
+
+- asset size;
+- lazy loading;
+- unnecessary re-render;
+- memory leak;
+- audio preload;
+- mobile performance.
+
+Không preload tất cả reward assets nếu không cần.
+
+==================================================
+T. KHÔNG PHÁ NHỮNG PHẦN ĐANG CHẠY
+==================================================
+
+Đặc biệt cẩn thận với:
+
+- Supabase;
+- authentication;
+- existing users;
+- decks;
+- vocabulary data;
+- progress;
+- saved state;
+- reward persistence;
+- routing;
+- API calls;
+- environment variables;
+- Vercel deployment.
+
+Không đổi schema chỉ để simplify frontend.
+
+Migration database chỉ khi thực sự bắt buộc.
+
+Nếu cần migration:
+phải giải thích trước:
+- vì sao;
+- ảnh hưởng;
+- rollback;
+- compatibility.
+
+==================================================
+U. THỨ TỰ IMPLEMENTATION
+==================================================
+
+Không refactor toàn repo trong một commit khổng lồ.
+
+Làm theo thứ tự:
+
+PHASE 0
+Audit.
+
+PHASE 1
+Information architecture + navigation.
+
+PHASE 2
+Trang Hôm nay + resume flow.
+
+PHASE 3
+Flashcard UX + progressive disclosure.
+
+PHASE 4
+Daily learning session / review-new integration.
+
+PHASE 5
+Kino simplification.
+
+PHASE 6
+Cat fishing reward cleanup.
+
+PHASE 7
+Collection integration nếu backend hiện tại cho phép.
+
+PHASE 8
+Gamification hierarchy.
+
+PHASE 9
+Responsive + accessibility + performance.
+
+Có thể điều chỉnh thứ tự nếu audit repo cho thấy dependency khác, nhưng phải giải thích.
+
+==================================================
+V. QUY TẮC QUAN TRỌNG KHI CODING
+==================================================
+
+1. Ưu tiên sửa component hiện tại thay vì tạo duplicate component.
+
+2. Không rewrite working code chỉ vì style preference.
+
+3. Không tạo abstraction nếu chỉ dùng một nơi.
+
+4. Không đưa thêm dependency nếu native solution đủ.
+
+5. Không đổi naming hàng loạt nếu không có lợi ích.
+
+6. Không migration database nếu frontend solution đủ.
+
+7. Không xóa feature mà chưa kiểm dependency.
+
+8. Không hard-code dữ liệu học/reward nếu app đã có data source.
+
+9. Không dùng animation làm source of truth.
+
+10. Không để replay reward tạo reward mới.
+
+11. Không expose developer controls cho student.
+
+12. Không biến homepage thành analytics dashboard.
+
+==================================================
+W. ACCEPTANCE CRITERIA
+==================================================
+
+Sau khi hoàn tất, một người dùng mới phải có thể:
+
+1. mở VokabelGo;
+2. hiểu cần bắt đầu ở đâu trong vài giây;
+3. bấm một CTA chính;
+4. học mà không phải cấu hình nhiều thứ;
+5. phân biệt rõ câu hỏi và đáp án;
+6. không bị quá nhiều thông tin trên card;
+7. hoàn thành một session nhỏ;
+8. nhận reward mèo câu cá;
+9. hiểu mình nhận được cá gì;
+10. tiếp tục học chỉ bằng một action rõ ràng.
+
+Một người dùng cũ phải:
+
+- đăng nhập bình thường;
+- dữ liệu không mất;
+- deck không mất;
+- progress không mất;
+- các chức năng cũ quan trọng vẫn sử dụng được.
+
+==================================================
+X. QA BẮT BUỘC
+==================================================
+
+Sau mỗi phase:
+
+- run build;
+- typecheck;
+- lint nếu project có;
+- test nếu có;
+- kiểm console errors;
+- kiểm routing;
+- kiểm auth;
+- kiểm mobile;
+- kiểm desktop.
+
+Sau toàn bộ thay đổi:
+
+test ít nhất các flow:
+
+FLOW 1
+Login → Today → Learn → Complete.
+
+FLOW 2
+Return user → Resume session.
+
+FLOW 3
+Flashcard → Reveal → Feedback → Next.
+
+FLOW 4
+Finish 5 cards → Cat Fishing → Fish Reveal.
+
+FLOW 5
+Replay Cat Fishing → KHÔNG nhận reward lần 2.
+
+FLOW 6
+Reload after reward → fish vẫn tồn tại nếu persistence đã có.
+
+FLOW 7
+Kino → sentence workflow.
+
+FLOW 8
+Mute sound.
+
+FLOW 9
+Reduced motion.
+
+FLOW 10
+Mobile viewport.
+
+==================================================
+Y. SAU KHI LÀM XONG, KHÔNG CHỈ NÓI “DONE”
+==================================================
+
+Hãy trả về một báo cáo ngắn gồm:
+
+1. Audit ban đầu:
+   - vấn đề lớn phát hiện.
+
+2. Các thay đổi đã thực hiện.
+
+3. File đã sửa.
+
+4. File mới tạo.
+
+5. File đã xóa nếu có.
+
+6. Database/schema:
+   - có thay hay không.
+
+7. Những gì cố tình KHÔNG sửa và lý do.
+
+8. Những rủi ro còn lại.
+
+9. Test đã chạy.
+
+10. Build status.
+
+11. Các screenshot hoặc mô tả before/after nếu môi trường hỗ trợ.
+
+12. Đề xuất bước tiếp theo, nhưng KHÔNG tự động thêm feature mới.
+
+==================================================
+Z. NGUYÊN TẮC CUỐI
+==================================================
+
+Mọi quyết định phải phục vụ một trong các mục tiêu sau:
+
+- học nhanh hơn;
+- nhớ tốt hơn;
+- ít bị phân tâm hơn;
+- ít phải suy nghĩ về cách dùng app hơn;
+- quay lại học dễ hơn;
+- reward vui hơn sau khi đã hoàn thành effort.
+
+Nếu một thay đổi chỉ làm UI “trông nhiều tính năng hơn” nhưng không cải thiện các mục tiêu trên:
+
+KHÔNG LÀM.
+
+Hãy bắt đầu bằng AUDIT TOÀN BỘ CẤU TRÚC HIỆN TẠI.
+
+Sau audit, tự lập implementation plan theo dependency thực tế của repo.
+
+Sau đó triển khai theo từng phase nhỏ, giữ build luôn chạy được.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-01T18:43:37+07:00.
+</ADDITIONAL_METADATA>

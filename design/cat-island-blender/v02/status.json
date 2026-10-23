@@ -1,0 +1,38 @@
+{
+  "stage": "completed",
+  "progress_pct": 100,
+  "status": "completed",
+  "blockers": null,
+  "milestones": {
+    "v01_inspected": true,
+    "user_references_analyzed": true,
+    "external_research_completed": true,
+    "art_direction_planned": true,
+    "scene_generation_v02": true,
+    "initial_renders": true,
+    "pass1_preserved": true,
+    "self_critique_revision": true,
+    "hollow_basket_mesh_fix": true,
+    "final_delivery": true
+  },
+  "outputs": {
+    "blend_file": "design/cat-island-blender/v02/cat-island-floating-market-v02.blend",
+    "script_file": "design/cat-island-blender/v02/build_floating_market_v02.py",
+    "pass1_comparison_render": "design/cat-island-blender/v02/floating-market-style-study-v02-pass1.png",
+    "overall_render": "design/cat-island-blender/v02/floating-market-style-study-v02.png",
+    "detail_render": "design/cat-island-blender/v02/floating-market-shopkeeper-detail-v02.png",
+    "manifest": "design/cat-island-blender/v02/scene-manifest-v02.json",
+    "art_review": "design/cat-island-blender/v02/ART_REVIEW.txt"
+  },
+  "metrics": {
+    "blender_version": "5.2.2 LTS",
+    "active_camera": "Isometric Market Overview Camera",
+    "render_resolution": "1600x1200",
+    "total_objects": 600,
+    "mesh_objects": 552,
+    "base_mesh_polygons": 20407,
+    "evaluated_triangles": 55175,
+    "materials_count": 46
+  },
+  "notes": "Art prototype v02 saved, rendered and reopened. Codex reviewed overview and detail images, requested two correction passes, confirmed hollow baskets and cleaned the Blender preview. Vietnamese-inspired motifs are stylized; historical accuracy, web export and browser performance are not verified. See corrected ART_REVIEW.txt for sources and limits."
+}

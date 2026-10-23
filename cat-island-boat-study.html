@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f1e7">
+  <title>Ghe Mèo · Thuyền & mặt nước</title>
+  <script type="importmap">{"imports":{"three":"./assets/cat-island/vendor/three.module.js","three/addons/":"./assets/cat-island/vendor/"}}</script>
+  <link rel="stylesheet" href="cat-island-boat-study.css">
+</head>
+<body>
+  <header>
+    <a class="wordmark" href="cat-island.html" aria-label="Về Chợ nổi Đảo Mèo"><span class="paw">✿</span> ĐẢO MÈO</a>
+    <span class="edition">NGHIÊN CỨU HÌNH ẢNH · 01</span>
+  </header>
+  <main>
+    <div class="intro"><div><p class="eyebrow">MỘT GÓC CHỢ TRÊN SÔNG</p><h1>Chậm một nhịp,<br>ghé <em>Ghe Mèo.</em></h1></div><p class="description">Gỗ ấm, mái vải và những gợn nước nhỏ.<br> Một chiếc thuyền bán hàng đang thành hình.</p></div>
+    <section class="study" aria-label="Bản dựng thuyền và mặt nước 3D">
+      <canvas id="boat-canvas" aria-label="Thuyền bán hàng trên sông. Kéo để xoay góc nhìn, cuộn để thu phóng." tabindex="0"></canvas>
+      <div id="loading" class="loading" role="status"><span class="loading-mark">✿</span><span id="loading-message">Đang đưa thuyền xuống nước…</span></div>
+      <div class="scene-label"><span class="live-dot"></span> <span id="scene-state">BẾN YÊN</span></div>
+      <button id="compare" class="compare-button" aria-pressed="false" disabled>Xem bản cũ</button>
+      <div class="view-controls" role="group" aria-label="Góc nhìn">
+        <button data-view="overview" aria-pressed="true">Tổng thể</button>
+        <button data-view="counter" aria-pressed="false">Gần quầy</button>
+        <button data-view="produce" aria-pressed="false">Trái cây</button>
+        <button data-view="water" aria-pressed="false">Sát mặt nước</button>
+      </div>
+      <p class="gesture">Kéo để xoay · Cuộn để đến gần</p>
+    </section>
+    <div class="toolbar">
+      <div class="transport"><button id="sail" class="primary" aria-pressed="false" disabled>Cho thuyền lướt thử <span>↗</span></button><button id="pause" class="quiet" aria-pressed="false" disabled>Tạm dừng</button></div>
+      <label class="wave-label" for="wave-strength">Nhịp nước <input id="wave-strength" type="range" min="0.3" max="1.4" step="0.1" value="0.8"><span id="wave-description">Êm nhẹ</span></label>
+    </div>
+    <footer><span>THUYỀN CHÍNH & MẶT NƯỚC</span><span>Bản dựng để duyệt hình ảnh · Chưa ghép vào lượt chơi</span></footer>
+  </main>
+  <script type="module" src="cat-island-boat-study.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+{
+  "head": {
+    "file": "head.png",
+    "source": "cat-rig-sheet.png",
+    "crop": [
+      15,
+      125,
+      485,
+      515
+    ],
+    "alphaTrim": [
+      9,
+      0,
+      467,
+      390
+    ],
+    "size": [
+      458,
+      390
+    ]
+  },
+  "body": {
+    "file": "body.png",
+    "source": "body-v02-source.png",
+    "crop": [
+      0,
+      54,
+      1244,
+      1216
+    ],
+    "size": [
+      1244,
+      1162
+    ],
+    "note": "imagegen removed baked arms; body-v01.png kept"
+  },
+  "arm-left": {
+    "file": "arm-left.png",
+    "source": "cat-rig-sheet.png",
+    "crop": [
+      910,
+      200,
+      1100,
+      500
+    ],
+    "alphaTrim": [
+      8,
+      16,
+      190,
+      276
+    ],
+    "size": [
+      182,
+      260
+    ]
+  },
+  "arm-right": {
+    "file": "arm-right.png",
+    "source": "cat-rig-sheet.png",
+    "crop": [
+      1280,
+      200,
+      1465,
+      500
+    ],
+    "alphaTrim": [
+      1,
+      16,
+      185,
+      300
+    ],
+    "size": [
+      184,
+      284
+    ]
+  },
+  "tail": {
+    "file": "tail.png",
+    "source": "cat-rig-sheet.png",
+    "crop": [
+      65,
+      600,
+      375,
+      915
+    ],
+    "alphaTrim": [
+      0,
+      0,
+      287,
+      315
+    ],
+    "size": [
+      287,
+      315
+    ]
+  },
+  "foot-left": {
+    "file": "foot-left.png",
+    "source": "cat-rig-sheet.png",
+    "crop": [
+      440,
+      650,
+      755,
+      920
+    ],
+    "alphaTrim": [
+      0,
+      0,
+      314,
+      270
+    ],
+    "size": [
+      314,
+      270
+    ]
+  },
+  "foot-right": {
+    "file": "foot-right.png",
+    "source": "cat-rig-sheet.png",
+    "crop": [
+      810,
+      650,
+      1115,
+      925
+    ],
+    "alphaTrim": [
+      0,
+      0,
+      292,
+      275
+    ],
+    "size": [
+      292,
+      275
+    ]
+  },
+  "dragonfly": {
+    "file": "dragonfly.png",
+    "source": "cat-rig-sheet.png",
+    "crop": [
+      1165,
+      600,
+      1535,
+      925
+    ],
+    "alphaTrim": [
+      10,
+      0,
+      355,
+      322
+    ],
+    "size": [
+      345,
+      322
+    ]
+  },
+  "raft": {
+    "file": "raft.png",
+    "source": "props-sheet.png",
+    "crop": [
+      80,
+      85,
+      1005,
+      455
+    ],
+    "alphaTrim": [
+      1,
+      0,
+      925,
+      369
+    ],
+    "size": [
+      924,
+      369
+    ]
+  },
+  "basket": {
+    "file": "basket.png",
+    "source": "props-sheet.png",
+    "crop": [
+      1170,
+      130,
+      1500,
+      455
+    ],
+    "alphaTrim": [
+      11,
+      0,
+      330,
+      324
+    ],
+    "size": [
+      319,
+      324
+    ]
+  },
+  "rod": {
+    "file": "rod.png",
+    "source": "props-sheet.png",
+    "crop": [
+      200,
+      470,
+      765,
+      880
+    ],
+    "alphaTrim": [
+      16,
+      5,
+      565,
+      394
+    ],
+    "size": [
+      549,
+      389
+    ]
+  },
+  "bait": {
+    "file": "bait.png",
+    "source": "props-sheet.png",
+    "crop": [
+      1195,
+      595,
+      1440,
+      860
+    ],
+    "alphaTrim": [
+      7,
+      10,
+      222,
+      249
+    ],
+    "size": [
+      215,
+      239
+    ]
+  }
+}

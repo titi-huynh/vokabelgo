@@ -1,0 +1,28 @@
+Codex review — isolated Mây walking proof, 2026-10-23
+
+Preview: http://127.0.0.1:3000/design/may-walk-proof-v1/index.html
+Scope: walking proof only; no homepage integration, learning actions, world navigation or art redesign.
+
+Delegation: Antigravity implemented the proof and measured-manifest integration. Codex generated the directional asset with the built-in image_gen tool from the original atlas, measured solid-alpha bounds and head/ground pivots, reviewed the implementation, and ran CUA UI checks.
+Asset: assets/may-home-game/may-walk-directions-v1.png
+Measured metadata: assets/may-home-game/may-walk-directions-v1.json
+Generation prompt: qa/may-walk-sprites-v1-prompt.txt
+
+Evidence:
+- Browser preview loads PNG+JSON successfully; all controls enabled, technical telemetry hidden by default.
+- Observed right, down, left and up along the test route: corresponding side/front/back poses; no horizontal mirroring.
+- Stop test: world x/y unchanged across two separate DOM reads around a screenshot; direction stays right, state stopped. Direction button resumes with the opposite side pose.
+- Desktop screenshots show the sprite and all controls within the fitted scene.
+- Mobile390x844: all7 controls visible; document width390; route finishes at750,625 facing up in idle state. One wait for the brief up/walking phase timed out after the route had already completed; the later DOM+image confirmed the final back-facing idle pose. This is not evidence of a route failure.
+- The fitted full landscape makes Mây small on portrait phones; mobile visual sizing remains a limitation of this proof.
+- Verified16 measured source rectangles and pivots stay within the PNG; common scale130/278; incomplete manifest is rejected.
+- Codex reran node --check motion.js and node --test motion.test.js after the final pass:8/8 pass. These test state/direction behavior, not artistic naturalness.
+- Source files may-home-engine.js, may-home-game.js, test-may-home-engine.js match the pre-delegation backups by SHA256.
+- Original background SHA256:77069F4399AF927048A7E707A6D9DA2464CF1DC2F98F576A8DAB317B11988AEE
+- Original mascot atlas SHA256:A9B52C7A7D6FC19135054087848A7EBC80603D21FD678071F00CBC28F59DA3D2
+
+Limits: four generated walking phases per direction, not a hand-animated finished cycle; dedicated neutral idle/turning/interaction poses are not included. Direction mismatch is addressed in this proof; small anatomical and gait inconsistencies still need visual judgment. No claim that the homepage's original movement is fixed.
+
+Screenshots: desktop.png, mobile.png (this directory).
+
+Delegation completion note: the first CLI turn returned success. The final pass wrote its completed files and QA report but the CLI remained running beyond the requested timebox without returning a final response. Codex stopped only that matching proof-worker process and independently reran syntax/tests and browser verification. The bridge therefore returned ERROR for that stopped invocation; this is not recorded as a successful CLI completion.

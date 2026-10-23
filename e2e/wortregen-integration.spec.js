@@ -141,7 +141,7 @@ test.describe('Wortregen Phase 3: In-App Integration into "Học từ"', () => {
     expect(targetCount).toBe(1);
 
     // Verify first-letter hint is displayed on target card
-    const firstLetterHint = page.locator('#falling-area .card-target .char-slot.first-char-hint');
+    const firstLetterHint = page.locator('#falling-area .card-target .wr-word-cue');
     await expect(firstLetterHint.first()).toBeVisible();
 
     // Step 6: Type answer directly on card

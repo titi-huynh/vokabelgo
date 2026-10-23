@@ -1,0 +1,69 @@
+Codex Coordination Notes for Cat Island
+========================================
+Date: 2026-10-18
+From: Antigravity
+
+Addressed Codex Review Items (Round 1):
+1. Ending condition & Budget:
+   - Calm mode tracks `resolvedOrdersCount` (correct + skipped) = 12.
+   - Story events (merchant, barter, chase, mini-lesson) now use their own isolated event sessions (`CatIslandLearning.createSession({ deck, mode: 'calm', limit: 2 })`), completely preventing any theft or exhaustion of main deck cards.
+   - Tiny deck pending-null wait: does not finish round early if cards are pending; waits for customer resolution to refill.
+2. Debounce & Double Resolution:
+   - Added per-customer resolution latch (`isResolving = true; resolved = true`) and disabled action buttons upon submission.
+   - Idempotent `result.alreadyResolved` check guards against duplicate points/served increments.
+3. Timers & Continuous RAF:
+   - Created cancellable game action scheduler (`scheduleAction(delayMs, cb)`, `clearScheduledActions()`). All timers freeze on pause/events and cancel on quit.
+   - Perpetual continuous `requestAnimationFrame(this.tick.bind(this))` loop ensures rush timers never die across rounds.
+   - Idempotent `finishRound()` guarded by `isRoundActive`.
+4. Event State & Resume:
+   - Added distinct `isEventActive` state pausing rush clock and boat arrivals.
+   - On event close, restores active customer selection and dock rail smoothly.
+5. Real Questions & Zero Fake Distractors:
+   - Removed all fake distractor strings ('bến đò/món hàng lạ').
+   - Uses genuine question types and real deck options from isolated event session.
+6. Removed native alert():
+   - Replaced all `alert()` with in-game feedback banners and explicit "Tiếp tục" buttons.
+   - Boat chase route choices meaningfully differentiated: Route 1 (safe 1-step, +15 xu) vs Route 2 (challenging 2-step, +30 xu).
+7. New Knowledge Mini-Lesson:
+   - Stage latches prevent duplicate coin farming.
+   - Audio + visual inspection required for both phrases ("Zum Mitnehmen, bitte!" and "Hier essen, bitte!").
+   - Applied practice with packaging choice and prompt cleanup.
+8. Barter Economy:
+   - Lotus cosmetic costs 20 coins, deducting from both session coins and profile coins.
+   - Visually disabled when coins are insufficient. Once bought, unlocked permanently in `profile.unlockedCosmetics`.
+   - Alternative Dragonfruit juice boost offered if Lotus is already owned.
+9. Abandon vs Full Shift:
+   - Quitting mid-round (`abandonRound`) does NOT increment `totalShifts` or unlock helper cat.
+   - Helper cat unlocks strictly upon 2 full completed shifts (12 resolved calm orders or rush expiry with >= 1 served).
+   - Zero-attempts accuracy displays honest "Chưa có lượt trả lời".
+10. Accessible Dock Rail & UI Refinement:
+   - Added accessible DOM customer rail (`#customer-dock-rail`) with individual customer boat buttons.
+   - Desktop docked layout keeps whole 3D diorama centered and unobstructed in left region.
+   - Diegetic status badge: "Bến chợ đã sẵn sàng 🌊".
+   - Accessible roles (`role="radio"`, `role="region"`, `role="dialog"`), labels, focus-visible outlines, and zoom enabled.
+
+Addressed Codex Review Items (Round 2 & Final Handover):
+1. Runtime Suite Verification (9/9 passing):
+   - Fixed stray merchant syntax error in `cat-island-game.js`.
+   - Dynamic slot allocation based on active occupied slots in `this.customers`, eliminating dock rail naming collisions.
+   - Event rotation: `this.roundCount` increments on completed rounds (`finishRound`), rotating templates smoothly across successive shifts without reload.
+   - Rush delivery order: delivery completes before story events trigger (`!hasPendingDelivery`).
+   - Personal bests: `profile.bestScores` correctly updated in `finishRound()` and persisted safely.
+2. Scene Additions & Cultural Floating Market Flavor:
+   - Wooden selling counter and counter-top plank placed directly at hero boat sales deck.
+   - Stacked produce crates with sculpted oranges, kraft paper bag, and ceramic bowls.
+   - Authentic Mekong floating market "Cây Bẹo" bamboo pole with hanging sample fruit (watermelon, mango, dragonfruit).
+   - Handcrafted market signboard with plum frame and coral trim.
+   - 2D canvas fallback enhanced with corresponding counter, crates, and "Cây Bẹo" pole.
+3. Visual Chase Boat Simulation:
+   - Implemented `scene.startChase(totalSteps)`, `scene.advanceChase(ratio0to1)`, `scene.endChase(success)`, and `scene.resetChase()`.
+   - Safe in both 3D WebGL and 2D canvas fallback.
+4. Helper Cat Packaging Reaction:
+   - Added sculpted paws (`helperPawL`, `helperPawR`).
+   - Triggers lively hopping, body nodding, and paw packaging animation on package delivery when unlocked.
+5. Camera & Responsive Frustum:
+   - Orthographic camera frustum is responsive: `aspect < 1.1 ? 9.8 : 8.8`.
+   - LookAt point lowered to `[0.0, 0.1, 0.0]`, fitting the entire cutaway turquoise water and sage faceted riverbed without bottom clipping at 390px and 1280px.
+6. Status Badges & Ownership Handover:
+   - Updated scene badges to non-technical welcoming messages: "Bến chợ đã mở cửa 🛶" / "Chế độ tranh vẽ 2D êm ái 🎨".
+   - Ownership transition respected: Codex owns `cat-island-game.js`, `cat-island.html`, `cat-island-learning.js`, and browser QA via CUA. Antigravity owns `cat-island-scene.js`, `cat-island.css`, `assets/`, and reports. All 18 baseline suites and 9/9 runtime checks pass cleanly.

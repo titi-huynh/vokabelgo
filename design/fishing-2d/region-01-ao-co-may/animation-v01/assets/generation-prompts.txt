@@ -1,0 +1,37 @@
+IMAGE GENERATION — built-in image_gen, 2026-10-21. Inputs: scene-v02 and model-sheet for cat; scene-v02 for other sheets. Original outputs preserved.
+
+CAT RIG
+Use case: identity-preserve. Asset type: transparent 2D cutout animation rig sprite sheet.
+Input 1 approved scene v02 is composition/style reference. Input 2 approved cat model sheet locks identity.
+Create an actual transparent-background SPRITE PARTS sheet for this exact cream/caramel Meo Cho fishing cat, flat clean cute 2D game illustration, soft brown outlines, simple warm pastel fill, little shading. NOT a rendered scene and NOT full poses.
+Canvas arranged as exactly 4 columns by 2 rows, eight equal cells with generous transparent gutters. Each piece fully isolated at cell center, NO text/labels/borders/grid/checkerboard drawn into art.
+Top row, left to right:
+1) HEAD ONLY including two ears, near-front slightly 3/4 matching the scene, NO scarf/body. Broad rounded trapezoid head with cream fur and exactly ONE caramel patch on viewer LEFT ear/crown (character's right), right viewer side cream. Pink inner ears. FACE IS COMPLETELY BLANK CREAM: no eyes, nose, cheeks, mouth, whiskers, brows. Leave the entire front face empty for animated facial rig.
+2) SEATED TORSO ONLY, cream chubby body with mustard neckerchief around neck and short sage apron with pocket; no head, arms, legs, feet or tail. Draw complete silhouette including hidden upper neck to support head rotation.
+3) ONE short cream ARM/PAW, separate complete rounded chubby forearm with small curled paw tip, no prop, oriented down, full shoulder covered cream; no other body.
+4) SECOND short cream ARM/PAW matching first, mirrored orientation, no prop, no other body.
+Bottom row:
+5) CURVED cream TAIL ONLY with caramel tip, whole curved tail from root to tip with root oriented lower-left, in upright relaxed C shape as source.
+6) SEATED left FOOT/short leg only, cream pear shaped with peach pads on underside matching source.
+7) SEATED right FOOT/short leg only, same proportions, slight mirrored angle, peach pads.
+8) SMALL DRAGONFLY at 3/4 top view, sage/teal slim body and four delicate pale translucent cream wings spread outward, cute simple game style; no shadow.
+Keep each within its own equal grid cell, keep all items intact, no overlap between pieces. True transparent alpha everywhere outside shapes. No water, raft, ground shadow, scenery, backdrop, writing, UI or watermark. These are functional raster cutout rig parts, every part draws hidden overlap areas too. Head and body proportions based exactly on reference.
+
+BACKGROUND
+Use case: precise-object-edit. Asset type: clean background plate for layered 2D game animation.
+Edit the approved scene. REMOVE the entire cat, raft, fishing rod and line, float, basket, bait tin, raft shadow, float concentric ripples, and both fish silhouettes. Reconstruct these areas as uninterrupted clean turquoise pond water matching surroundings. Preserve exact framing/aspect ratio, top grassy shore/bushes/reeds/stones, simple flat cute 2D game look, colors and sparse short pale horizontal water dashes. The image is ONLY a calm empty pond with narrow green bank at top. Do not add sky, extra detail, wildlife, underwater plants, foreground border or other props. Water occupies about 80% image; center and lower region remain open for separately rigged cat. No text/UI/watermark. Opaque clean background plate.
+
+PROPS
+Use case: compositing. Asset type: transparent cutout PROPS sprite sheet for a 2D fishing game.
+Reference image locks look and perspective. Generate separated props only, no cat, no scenery. Clean warm pastel 2D game art with brown outlines matching reference. TRUE transparent alpha outside each object, NO ground shadows or glow.
+Arrange FOUR isolated objects in a strict 2-column 2-row grid with large transparent gutters; no cell borders/text.
+Top left: complete EMPTY rustic beginner log raft, exactly as reference, warm brown 5-6 round logs rope tied corners, fixed three-quarter view with top deck visible. Whole unoccluded top deck; no cat, no objects on it, no mast/sail/cabin, no water or shadow.
+Top right: small empty woven bamboo fish basket matching reference, with dark oval OPEN top, no lid/fish/worm/cat. Whole object.
+Bottom left: complete twig fishing rod, slightly curved diagonal from lower-right handle to upper-left tip with a little green leaf, warm brown wood, no fishing line/hook/float, whole isolated branch.
+Bottom right: small pale blue/cream cylindrical bait tin with tiny cute pink earthworm peeking out, matching reference. Whole object.
+All props intact, centered in their cell, not touching each other or borders. NO other elements. Transparent background is essential to layer these props over turquoise water without rectangular patches.
+BODY CORRECTION — built-in image_gen, transparent output; input body.png.
+Use case: precise-object-edit. Asset type: transparent cutout cat TORSO for animation rig. Edit target: cropped body.png.
+Remove ONLY the two cream arm appendages hanging at left and right sides behind the sage apron. They are baked-in arms and must be absent because separate animated forearms will attach to this torso. The result has ONE chubby oval torso wearing exactly the same sage apron and mustard scarf; no hanging arms, hands or extra side limbs whatsoever. Keep the full scarf/tie, apron shape, pocket, cream lower belly and short cream neck. Maintain existing warm pastel 2D outlined game style, proportions and orientation. Do not add a head, face, feet, legs, tail, shadow, glow or background. Draw complete hidden torso silhouette where the arm appendages were removed. Actual transparent alpha outside the torso silhouette. Centered single isolated object with generous transparent margin, no writing/grid.
+Output source: body-v02-source.png. Current body.png is the mechanically alpha-bbox cropped output. Historical torso retained as body-v01.png. This correction removes baked side arms; animation uses two separate arm sprites.
+

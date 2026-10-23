@@ -1,0 +1,18 @@
+AO CỎ MAY — NỀN NƯỚC VẼ LẠI v04
+2026-10-21, built-in image_gen, opaque output copied unchanged into workspace.
+User request: background, especially water, more lively like catfishing.mp4.
+Edit target: animation-v02/assets/pond.png.
+Style reference: reference-catfishing/frame-0.jpg, extracted from user's video.
+Output: pond-water-v04.png.
+Original source: C:/Users/huynh/.codex/generated_images/01a15885-6dbd-7c51-b731-b02420ba1e74/exec-ec6de375-afec-4657-ab2f-c91591b4e74b.png
+Original pond retained. No Python image editing; game shader/Canvas animate the new background.
+
+EXACT PROMPT
+Use case: precise-object-edit.
+Asset type: full-bleed 2D cute fishing game environment background, 1672 by 941 landscape.
+Input image 1 is the EDIT TARGET: empty Ao Co May pond background. Input image 2 is STYLE REFERENCE ONLY from a cat fishing video, use its lively cartoon water drawing, layered turquoise patches and curved white water marks. Do not copy the cat, raft, flag, white border, floating island shape or cropped pond outline.
+Primary request: Repaint ONLY THE WATER of image 1 so it feels illustrated, alive and dimensional like reference 2. Preserve the existing top grass bank, bushes, reeds, rocks, shore outline and their exact positions and scale. Keep the open pond full bleed, still occupies bottom 80 percent of canvas. Same locked camera, no horizon/sky.
+Water: bold but soothing turquoise main plane, a few organic darker teal-blue pools below the surface, lighter mint-aqua shallow ribbons curving in from bottom left and bottom right, irregular broad soft-edged 2D color shapes with restrained smooth shading. These shapes should explain shallow/deeper water with readable hand-drawn contour rhythm. Several short WHITE CURVED crescent wave strokes, tapering ends, different lengths and natural uneven distribution. Completely remove existing straight rounded pill/dash reflection bars. Absolutely NO straight horizontal pill-shaped bars. Moderate density of curves; most water stays open. Not realistic caustics, no sparkly noise, no crowded foam.
+Add ONLY a few modest submerged rounded stones and 2 small simple dark-teal underwater leaf clumps at far bottom corners, low contrast, echoing reference. Keep center rectangle x550–1250 y220–680 uncluttered so separate cat, raft, rod and fish can animate there later. No static rings around an absent raft.
+Style: cute professional 2D game illustration, clean hand-drawn soft contours, gentle color transitions, little texture, cohesive with original bank. Color contrast on the water stronger than old uniform cyan, but still light and cheerful. No dramatic lighting.
+Constraints: preserve top bank exactly; WATER BACKGROUND ONLY. NO characters, NO boats/rafts, NO equipment, NO fish, NO text, NO logos, NO frame, NO UI. Opaque background, landscape full bleed.

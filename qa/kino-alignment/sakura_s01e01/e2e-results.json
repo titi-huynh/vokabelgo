@@ -1,0 +1,805 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "e2e/kino-sakura.spec.js",
+      "e2e/kino-frieren.spec.js",
+      "e2e/kino-hans.spec.js",
+      "e2e/kino-catalog.spec.js",
+      "--reporter=json"
+    ],
+    "configFile": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\playwright.config.js",
+    "rootDir": "C:/Users/huynh/OneDrive/Desktop/flash/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/huynh/OneDrive/Desktop/flash/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/huynh/OneDrive/Desktop/flash/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node server.js",
+      "url": "http://127.0.0.1:3000",
+      "reuseExistingServer": true,
+      "env": {
+        "VOKABELGO_NO_OPEN": "1"
+      },
+      "timeout": 10000
+    }
+  },
+  "suites": [
+    {
+      "title": "kino-catalog.spec.js",
+      "file": "kino-catalog.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Kino starts with one row of covers and titles; a film opens its own parts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4854,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:00:19.457Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d89833bc1856ceb46cd5-badfc9d827631ec3db6e",
+          "file": "kino-catalog.spec.js",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "browser back and forward, reload and direct film links restore the right view",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3956,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:00:24.466Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d89833bc1856ceb46cd5-c41653dcb4f67999519e",
+          "file": "kino-catalog.spec.js",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "phone gallery scrolls as one row and detail count is visible only after selecting a film",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1879,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:00:28.433Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d89833bc1856ceb46cd5-e0ff287b813b2e4967b6",
+          "file": "kino-catalog.spec.js",
+          "line": 73,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "kino-frieren.spec.js",
+      "file": "kino-frieren.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Frieren is discoverable, has complete chronological bilingual cues/units, 7 covers, vocabulary and HTTP Range media",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2027,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:00:52.942Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "122763152fce6e2e3ced-d6afba46967b1d69e8be",
+          "file": "kino-frieren.spec.js",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "all 7 Frieren parts play, display synced DE/VI captions, stop at part boundaries and match all-mode practice counts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11272,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:00:55.121Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "122763152fce6e2e3ced-298a9f4f52cebae744de",
+          "file": "kino-frieren.spec.js",
+          "line": 121,
+          "column": 1
+        },
+        {
+          "title": "Frieren sentence loop, focus mode, writing right/wrong, next part and reload preserve isolated progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6966,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:01:06.406Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "122763152fce6e2e3ced-9dca3669fff48f558622",
+          "file": "kino-frieren.spec.js",
+          "line": 167,
+          "column": 1
+        },
+        {
+          "title": "Frieren vocabulary opens only its own 24 source-grounded flashcards",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1256,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:01:13.384Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "122763152fce6e2e3ced-4ba20f76a242cd639634",
+          "file": "kino-frieren.spec.js",
+          "line": 212,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "kino-hans.spec.js",
+      "file": "kino-hans.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Hans is discoverable, has valid bilingual lessons, covers and real seekable media",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1719,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:01:15.296Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "65e813bb4349556ed0a8-e2f5b3a34de7ddf20bb5",
+          "file": "kino-hans.spec.js",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "all four Hans parts play with their own subtitles, stop at the boundary and retain watched progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6758,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:01:17.157Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "65e813bb4349556ed0a8-c00e9ffbb1dafca85d4c",
+          "file": "kino-hans.spec.js",
+          "line": 77,
+          "column": 1
+        },
+        {
+          "title": "Hans opt-in seven-cue round preserves separate progress after reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7122,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:01:23.926Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "65e813bb4349556ed0a8-3ddd03dbd8f3b4a35ad8",
+          "file": "kino-hans.spec.js",
+          "line": 110,
+          "column": 1
+        },
+        {
+          "title": "Hans defaults to every complete practice unit, including narration and character speech",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5108,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:01:31.062Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "65e813bb4349556ed0a8-038a351a2c8c46f92051",
+          "file": "kino-hans.spec.js",
+          "line": 143,
+          "column": 1
+        },
+        {
+          "title": "existing Hans preview switches once to complete dialogue, retains progress, then remembers an explicit short-mode choice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2436,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:01:36.181Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "65e813bb4349556ed0a8-0fa8cd0775416429135d",
+          "file": "kino-hans.spec.js",
+          "line": 178,
+          "column": 1
+        },
+        {
+          "title": "Hans vocabulary opens its own 24-card deck from the overview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1173,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:01:38.628Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "65e813bb4349556ed0a8-fea40420116345d9d971",
+          "file": "kino-hans.spec.js",
+          "line": 199,
+          "column": 1
+        },
+        {
+          "title": "content revision preserves every caption in complete practice units and keeps original learning records",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1719,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:01:39.811Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "65e813bb4349556ed0a8-51fdfabc6ca0cdef477a",
+          "file": "kino-hans.spec.js",
+          "line": 209,
+          "column": 1
+        },
+        {
+          "title": "Hans phone preview stays readable and direct part links survive browser navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2800,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:01:41.539Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "65e813bb4349556ed0a8-6d8733ce12bc01d65451",
+          "file": "kino-hans.spec.js",
+          "line": 249,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "Hans speaking",
+          "file": "kino-hans.spec.js",
+          "line": 274,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a recording can be created and replayed before completing dictation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5327,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-23T09:01:44.349Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "65e813bb4349556ed0a8-2a1fd47adaf9bb56ef59",
+              "file": "kino-hans.spec.js",
+              "line": 275,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "kino-sakura.spec.js",
+      "file": "kino-sakura.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Sakura source captions have exact, complete practice coverage, honest exclusions, eight parts and seekable media",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1375,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:00:30.338Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d0d29652d331a3d99bf-b64deea520da7c13b20e",
+          "file": "kino-sakura.spec.js",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "all eight Sakura parts play, show bilingual subtitles and stop at their boundaries",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11849,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:00:31.724Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d0d29652d331a3d99bf-817cd823f73ba51168a2",
+          "file": "kino-sakura.spec.js",
+          "line": 59,
+          "column": 1
+        },
+        {
+          "title": "Sakura full dialogue, focus mode, loop, writing and reload preserve independent progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7058,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:00:43.585Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d0d29652d331a3d99bf-d15ccfee519caca47adb",
+          "file": "kino-sakura.spec.js",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "Sakura vocabulary, phone viewing and review clips use only Sakura resources",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1580,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-23T09:00:50.656Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d0d29652d331a3d99bf-0873a34bdcdecbe0a6f6",
+          "file": "kino-sakura.spec.js",
+          "line": 117,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-23T09:00:18.791Z",
+    "duration": 91102.633,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

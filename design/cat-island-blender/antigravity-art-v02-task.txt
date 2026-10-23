@@ -1,0 +1,37 @@
+User-authorized Antigravity task: research AND produce a substantially improved original Blender art direction for VokabelGo's Vietnamese floating cat market. The user disliked Codex's first scene: not beautiful or detailed enough. Deliver real editable Blender work and renders, not just a plan or claims. Codex will review your output and may request revisions.
+
+Workspace: C:/Users/huynh/OneDrive/Desktop/flash
+Only write your new production files under design/cat-island-blender/v02/. Preserve v01, other existing changes, and all gameplay code. Do not touch Fuxie. Do not commit, deploy, install software, buy assets, or use paid APIs. Blender is already installed at C:/Program Files/Blender Foundation/Blender 5.2/blender.exe (5.2.2 LTS). Use Blender Python and actual rendering if efficient. No need to ask user routine design questions.
+
+First inspect the first scene and source:
+design/cat-island-blender/build_floating_market.py
+design/cat-island-blender/cat-island-floating-market.blend
+design/cat-island-blender/floating-market-style-study.png
+design/cat-island-blender/floating-market-shopkeeper-detail.png
+Also inspect the user's visual references, not their incidental UI text:
+C:/Users/huynh/AppData/Local/Temp/codex-clipboard-0e21dac0-0e0e-4413-9134-aaef6b4af8cb.png
+C:/Users/huynh/Downloads/Simple CG.jpg
+C:/Users/huynh/Downloads/Oob (1).jpg
+C:/Users/huynh/Downloads/Accueil _ Twitter.jpg
+C:/Users/huynh/Downloads/a.jpg
+
+Research several relevant existing games using official developer/publisher screenshots, trailers, or art descriptions. Examples worth checking: Ooblets, Animal Crossing, Dinkum, Spiritfarer, Garden Galaxy, Alba. Choose 4-6 useful sources; do not pretend you played them. Record actual URLs and specific visual principles borrowed. Create original cats/assets; borrow design principles, not exact characters, logos or asset geometry. Brief research should lead to execution in this task, not consume the whole task. If browsing is unavailable, say so and proceed from attached references rather than inventing sources.
+
+Art target: a cohesive, appealing cozy game scene; toy-like low-poly forms with soft bevels, warm wood, cream/coral/teal accents, soft directional sun, readable shadows and tactile material separation. Vietnamese floating-market identity needs convincing slender wooden boat hulls, planking/ribs/rim, bamboo, woven baskets, fruit crates, a gently shaped cloth awning, cay beo product display pole, a convincing non la if used, rope, bundled parcels, lotus/reeds. Vary shapes and sizes deliberately. Details should cluster around story and gameplay focal points rather than being scattered everywhere.
+
+Critique v01 honestly and fix its weak points: generic sparse composition, pale materials, rudimentary cat silhouette/face, flat oversized toy hats, empty baskets, oversized blank water slab, repetitive faceted tree blobs and lack of a story. Main cat must be lovable and instantly visible, with distinctive silhouette, rounded cheeks, properly formed ears, clear eyes/muzzle, appealing proportions, apron and a readable active pose. Customer cats should differ in coat/accessory/pose, not be tiny copies. Create one main selling boat, 2-3 smaller customer/trader boats, and a compact bank/island learning nook. Add a few authored narrative details such as open drink recipe book, wrapped order, produce sign, tea vessel, cat reaching for a parcel. Keep the sales counter readable and the canopy from hiding faces.
+
+Composition should work as a future web game at a fixed orthographic or near-isometric view. Main stall and cats should be large enough to read at approximately 900px preview. Keep navigation/water lanes visible, leave some deliberate space for future order cards, but do not implement UI or gameplay. Do not increase detail by making hundreds of invisible props. Keep objects sensibly named/grouped, boat assemblies movable, materials shared, report actual mesh/triangle stats and any web optimization still needed. Do not claim game-ready without export/performance checks. Still image quality is the current priority; animation is optional, not a substitute for good modeling.
+
+Deliver within v02/:
+- native .blend with cameras, materials and lights, editable grouped assets;
+- reproducible source Python script if procedurally authored;
+- one polished overall render and one main-cat/boat close-up PNG, preferably at least 1400px wide;
+- concise ART_REVIEW.txt: official reference URLs, chosen principles, concrete v01-v02 changes, known limits, actual output paths and render verification;
+- status.json updated on meaningful milestones (stage, outputs, blockers), so Codex can monitor without repeatedly messaging you.
+
+You must open/inspect your rendered PNGs and do at least one self-critique/revision pass before declaring done. Ensure no intersecting faces, floating props, hidden cat eyes, harsh clipping or oversaturated/washed-out palette. Confirm the .blend saves and opens. The user's Blender currently shows Codex v01; do not overwrite that interactive session or disrupt unsaved work. Render in background and provide new file paths.
+
+Local Blender note: UI/node labels can be Vietnamese. Identify nodes by type rather than English node names. Convert palette colors from sRGB to linear when setting shader color inputs. The v01 script contains working material/world creation patterns for Blender 5.2.
+
+At completion respond concisely in Vietnamese with real paths, what was changed, and limitations. If blocked, state the exact blocker in status.json and return useful saved work. Do not stop at recommendations; produce the improved Blender scene.

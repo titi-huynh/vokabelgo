@@ -1,0 +1,17 @@
+Homepage directional integration acceptance, 2026-10-23
+
+Approved asset: may-walk-directions-v1.png + measured JSON, unchanged from walking proof. Antigravity implemented integration; Codex reviewed diff and tested actual homepage in CUA.
+
+Changed: may-home-game.js, new may-home-motion.js and focused test, one script insertion in index.html. Engine/routes, CSS, background, original reference and accepted directional PNG/JSON unchanged. index.html byte comparison confirms exactly the intended script insertion; no other bytes changed.
+
+Checks:
+- Antigravity completed6 directional/layout tests and11 existing navigation tests; all pass. Codex syntax-checked final game JS.
+- Actual homepage loads new measured PNG/JSON and uses side-facing pose during walking.
+- Codex caught pet->immediate move retaining old wave pose; Anti cleared waveUntil when accepted place/path movement starts. Retested: side-facing walking immediately after pet, not waving/sliding.
+- Hôm nay cancels active destination. Dragging cancels destination and motion; two DOM samples around a screenshot show same stopped position and facing.
+- Main nav Nghe & xem opens Kino immediately; returning Hôm nay leaves the cat stopped rather than opening the abandoned destination.
+-390x844: no horizontal overflow, keyboard-directed walking works with front/down frame. Study landmark was outside the cropped mobile camera and hidden, so it was not force-clicked; this is existing camera/label behavior.
+- Actual homepage ArrowUp shows back-facing up/walking; screenshot homepage.png saved here. Returning Hôm nay cancels and preserves facing.
+- Restored normal viewport after mobile check.
+
+Limits retained: generated4-frame gait, contact-pose idle instead of dedicated neutral/turning/interaction art. This integration addresses the approved directional movement; it does not redesign route graph or learning interactions. Existing Kino query parameter can remain in URL after returning Hôm nay; observed before integration and outside this change.

@@ -1,0 +1,172 @@
+{
+  "profile": "Local Chromium, fresh contexts, simulated 5 Mbps down/1 Mbps up, 100 ms latency. One run; not a production/mobile benchmark.",
+  "results": [
+    {
+      "slug": "catalog",
+      "uiReadyMs": 9161,
+      "lessonBytes": 79533,
+      "resources": [
+        {
+          "name": "/kino-metadata.js",
+          "bytes": 75565
+        },
+        {
+          "name": "/kino-data.js",
+          "bytes": 3968
+        }
+      ],
+      "prePlayVideoBytes": 0,
+      "errors": []
+    },
+    {
+      "slug": "sakura",
+      "uiReadyMs": 9532,
+      "lessonBytes": 257293,
+      "resources": [
+        {
+          "name": "/kino-metadata.js",
+          "bytes": 75565
+        },
+        {
+          "name": "/kino-data.js",
+          "bytes": 3968
+        },
+        {
+          "name": "/sakura-s01e01-aligned.js",
+          "bytes": 177760
+        }
+      ],
+      "prePlayVideoBytes": 0,
+      "errors": [],
+      "source": "video/kino-light/sakura_s01e01-480p-v2.mp4",
+      "seekMs": [
+        {
+          "cueId": 805000,
+          "ms": 26.699999928474426,
+          "position": 96.42
+        },
+        {
+          "cueId": 800570,
+          "ms": 288.10000002384186,
+          "position": 288.22
+        },
+        {
+          "cueId": 800300,
+          "ms": 289.60000002384186,
+          "position": 219.62
+        },
+        {
+          "cueId": 805000,
+          "ms": 14.799999952316284,
+          "position": 96.42
+        },
+        {
+          "cueId": 805000,
+          "ms": 0.5,
+          "position": 96.42
+        }
+      ],
+      "videoBytes": 1578429
+    },
+    {
+      "slug": "frieren",
+      "uiReadyMs": 9335,
+      "lessonBytes": 219422,
+      "resources": [
+        {
+          "name": "/kino-data.js",
+          "bytes": 3968
+        },
+        {
+          "name": "/kino-metadata.js",
+          "bytes": 75565
+        },
+        {
+          "name": "/frieren-s01e01-aligned.js",
+          "bytes": 139889
+        }
+      ],
+      "prePlayVideoBytes": 0,
+      "errors": [],
+      "source": "video/kino-light/frieren_s01e01-480p-v2.mp4",
+      "seekMs": [
+        {
+          "cueId": 700101,
+          "ms": 33.10000002384186,
+          "position": 123.58
+        },
+        {
+          "cueId": 700128,
+          "ms": 291,
+          "position": 269.28
+        },
+        {
+          "cueId": 700114,
+          "ms": 308.89999997615814,
+          "position": 164.36
+        },
+        {
+          "cueId": 700101,
+          "ms": 34.5,
+          "position": 123.58
+        },
+        {
+          "cueId": 700101,
+          "ms": 0.7000000476837158,
+          "position": 123.58
+        }
+      ],
+      "videoBytes": 1570928
+    },
+    {
+      "slug": "peppa",
+      "uiReadyMs": 9126,
+      "lessonBytes": 139094,
+      "resources": [
+        {
+          "name": "/kino-metadata.js",
+          "bytes": 75565
+        },
+        {
+          "name": "/kino-data.js",
+          "bytes": 3968
+        },
+        {
+          "name": "/peppa-supermarkt-aligned.js",
+          "bytes": 59561
+        }
+      ],
+      "prePlayVideoBytes": 0,
+      "errors": [],
+      "source": "video/kino-light/peppa_supermarkt-480p-v2.mp4",
+      "seekMs": [
+        {
+          "cueId": 100301,
+          "ms": 15.399999976158142,
+          "position": 18.1
+        },
+        {
+          "cueId": 101802,
+          "ms": 397.60000002384186,
+          "position": 148.74
+        },
+        {
+          "cueId": 100701,
+          "ms": 337.39999997615814,
+          "position": 52.38
+        },
+        {
+          "cueId": 100301,
+          "ms": 15.300000071525574,
+          "position": 18.1
+        },
+        {
+          "cueId": 100301,
+          "ms": 0.5,
+          "position": 18.1
+        }
+      ],
+      "videoBytes": 1233441
+    }
+  ]
+}

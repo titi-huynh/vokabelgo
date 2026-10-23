@@ -1,0 +1,336 @@
+{
+  "profile": "Local Chromium, fresh contexts, simulated 5 Mbps down/1 Mbps up, 100 ms latency. One run; not a production/mobile benchmark.",
+  "results": [
+    {
+      "slug": "catalog",
+      "uiReadyMs": 9979,
+      "lessonBytes": 637860,
+      "resources": [
+        {
+          "name": "/peppa-supermarkt-aligned.js",
+          "bytes": 59561
+        },
+        {
+          "name": "/pizzaschwester-aligned.js",
+          "bytes": 36561
+        },
+        {
+          "name": "/babysitter-aligned.js",
+          "bytes": 33826
+        },
+        {
+          "name": "/hans-aligned.js",
+          "bytes": 62187
+        },
+        {
+          "name": "/hans-lesson.js",
+          "bytes": 8638
+        },
+        {
+          "name": "/trudes-fahrstuhl-lesson.js",
+          "bytes": 8347
+        },
+        {
+          "name": "/trudes-fahrstuhl-aligned.js",
+          "bytes": 37200
+        },
+        {
+          "name": "/erdmaennchen-nudeltrick-aligned.js",
+          "bytes": 30734
+        },
+        {
+          "name": "/erdmaennchen-nudeltrick-lesson.js",
+          "bytes": 10660
+        },
+        {
+          "name": "/frieren-s01e01-lesson.js",
+          "bytes": 11007
+        },
+        {
+          "name": "/frieren-s01e01-aligned.js",
+          "bytes": 139889
+        },
+        {
+          "name": "/sakura-s01e01-lesson.js",
+          "bytes": 21490
+        },
+        {
+          "name": "/sakura-s01e01-aligned.js",
+          "bytes": 177760
+        }
+      ],
+      "prePlayVideoBytes": 0,
+      "errors": []
+    },
+    {
+      "slug": "sakura",
+      "uiReadyMs": 9558,
+      "lessonBytes": 637860,
+      "resources": [
+        {
+          "name": "/peppa-supermarkt-aligned.js",
+          "bytes": 59561
+        },
+        {
+          "name": "/pizzaschwester-aligned.js",
+          "bytes": 36561
+        },
+        {
+          "name": "/babysitter-aligned.js",
+          "bytes": 33826
+        },
+        {
+          "name": "/hans-lesson.js",
+          "bytes": 8638
+        },
+        {
+          "name": "/hans-aligned.js",
+          "bytes": 62187
+        },
+        {
+          "name": "/trudes-fahrstuhl-aligned.js",
+          "bytes": 37200
+        },
+        {
+          "name": "/trudes-fahrstuhl-lesson.js",
+          "bytes": 8347
+        },
+        {
+          "name": "/erdmaennchen-nudeltrick-aligned.js",
+          "bytes": 30734
+        },
+        {
+          "name": "/erdmaennchen-nudeltrick-lesson.js",
+          "bytes": 10660
+        },
+        {
+          "name": "/frieren-s01e01-aligned.js",
+          "bytes": 139889
+        },
+        {
+          "name": "/frieren-s01e01-lesson.js",
+          "bytes": 11007
+        },
+        {
+          "name": "/sakura-s01e01-lesson.js",
+          "bytes": 21490
+        },
+        {
+          "name": "/sakura-s01e01-aligned.js",
+          "bytes": 177760
+        }
+      ],
+      "prePlayVideoBytes": 0,
+      "errors": [],
+      "source": "video/sakura_s01e01-480p.mp4?v=1",
+      "seekMs": [
+        {
+          "cueId": 805000,
+          "ms": 4.400000095367432,
+          "position": 96.420257
+        },
+        {
+          "cueId": 800570,
+          "ms": 347.2999999523163,
+          "position": 288.22
+        },
+        {
+          "cueId": 800300,
+          "ms": 443.2999999523163,
+          "position": 219.62
+        },
+        {
+          "cueId": 805000,
+          "ms": 36.800000071525574,
+          "position": 96.42
+        },
+        {
+          "cueId": 805000,
+          "ms": 0.6000000238418579,
+          "position": 96.42
+        }
+      ],
+      "videoBytes": 1690929
+    },
+    {
+      "slug": "frieren",
+      "uiReadyMs": 9447,
+      "lessonBytes": 637860,
+      "resources": [
+        {
+          "name": "/peppa-supermarkt-aligned.js",
+          "bytes": 59561
+        },
+        {
+          "name": "/pizzaschwester-aligned.js",
+          "bytes": 36561
+        },
+        {
+          "name": "/babysitter-aligned.js",
+          "bytes": 33826
+        },
+        {
+          "name": "/hans-aligned.js",
+          "bytes": 62187
+        },
+        {
+          "name": "/hans-lesson.js",
+          "bytes": 8638
+        },
+        {
+          "name": "/trudes-fahrstuhl-aligned.js",
+          "bytes": 37200
+        },
+        {
+          "name": "/trudes-fahrstuhl-lesson.js",
+          "bytes": 8347
+        },
+        {
+          "name": "/erdmaennchen-nudeltrick-aligned.js",
+          "bytes": 30734
+        },
+        {
+          "name": "/erdmaennchen-nudeltrick-lesson.js",
+          "bytes": 10660
+        },
+        {
+          "name": "/frieren-s01e01-lesson.js",
+          "bytes": 11007
+        },
+        {
+          "name": "/frieren-s01e01-aligned.js",
+          "bytes": 139889
+        },
+        {
+          "name": "/sakura-s01e01-aligned.js",
+          "bytes": 177760
+        },
+        {
+          "name": "/sakura-s01e01-lesson.js",
+          "bytes": 21490
+        }
+      ],
+      "prePlayVideoBytes": 0,
+      "errors": [],
+      "source": "video/frieren_s01e01.mp4",
+      "seekMs": [
+        {
+          "cueId": 700101,
+          "ms": 93.19999992847443,
+          "position": 123.58
+        },
+        {
+          "cueId": 700128,
+          "ms": 1350.8000000715256,
+          "position": 269.28
+        },
+        {
+          "cueId": 700114,
+          "ms": 953.6999999284744,
+          "position": 164.36
+        },
+        {
+          "cueId": 700101,
+          "ms": 88.20000004768372,
+          "position": 123.58
+        },
+        {
+          "cueId": 700101,
+          "ms": 0.3999999761581421,
+          "position": 123.58
+        }
+      ],
+      "videoBytes": 3064927
+    },
+    {
+      "slug": "peppa",
+      "uiReadyMs": 9243,
+      "lessonBytes": 637860,
+      "resources": [
+        {
+          "name": "/peppa-supermarkt-aligned.js",
+          "bytes": 59561
+        },
+        {
+          "name": "/pizzaschwester-aligned.js",
+          "bytes": 36561
+        },
+        {
+          "name": "/babysitter-aligned.js",
+          "bytes": 33826
+        },
+        {
+          "name": "/hans-aligned.js",
+          "bytes": 62187
+        },
+        {
+          "name": "/hans-lesson.js",
+          "bytes": 8638
+        },
+        {
+          "name": "/trudes-fahrstuhl-aligned.js",
+          "bytes": 37200
+        },
+        {
+          "name": "/trudes-fahrstuhl-lesson.js",
+          "bytes": 8347
+        },
+        {
+          "name": "/erdmaennchen-nudeltrick-aligned.js",
+          "bytes": 30734
+        },
+        {
+          "name": "/erdmaennchen-nudeltrick-lesson.js",
+          "bytes": 10660
+        },
+        {
+          "name": "/frieren-s01e01-aligned.js",
+          "bytes": 139889
+        },
+        {
+          "name": "/frieren-s01e01-lesson.js",
+          "bytes": 11007
+        },
+        {
+          "name": "/sakura-s01e01-lesson.js",
+          "bytes": 21490
+        },
+        {
+          "name": "/sakura-s01e01-aligned.js",
+          "bytes": 177760
+        }
+      ],
+      "prePlayVideoBytes": 0,
+      "errors": [],
+      "source": "video/Peppa_Wutz_Supermarkt.mp4",
+      "seekMs": [
+        {
+          "cueId": 100301,
+          "ms": 18.5,
+          "position": 18.1
+        },
+        {
+          "cueId": 101802,
+          "ms": 247.60000002384186,
+          "position": 148.74
+        },
+        {
+          "cueId": 100701,
+          "ms": 938,
+          "position": 52.38
+        },
+        {
+          "cueId": 100301,
+          "ms": 16.899999976158142,
+          "position": 18.1
+        },
+        {
+          "cueId": 100301,
+          "ms": 0.20000004768371582,
+          "position": 18.1
+        }
+      ],
+      "videoBytes": 1455381
+    }
+  ]
+}

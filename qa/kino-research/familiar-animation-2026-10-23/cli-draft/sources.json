@@ -1,0 +1,133 @@
+{
+  "checkedDate": "2026-10-23",
+  "timezone": "Asia/Saigon",
+  "verifiedBy": "Codex web fetch",
+  "series": [
+    {
+      "id": "we_bare_bears",
+      "originalTitle": "We Bare Bears",
+      "germanTitle": "We Bare Bears – Bären wie wir",
+      "priority": 1,
+      "catalogUrl": "https://serienstream.to/serie/we-bare-bears-bren-wie-wir",
+      "candidateEpisode": {
+        "catalogEntries": [
+          "S1 mục 3: Wir und der Imbisswagen / Food Truck",
+          "S1 mục 4: Wir und Chloe"
+        ],
+        "recommendedSingleEpisode": "S1 mục 3: Wir und der Imbisswagen / Food Truck",
+        "officialClipCandidates": [
+          "Wir und die Mall",
+          "Eine exklusive Tour"
+        ]
+      },
+      "germanAudioVerified": false,
+      "subtitlesVerified": false,
+      "playbackVerified": false,
+      "officialSources": [
+        {
+          "title": "We Bare Bears — Wir und die Mall",
+          "channel": "Cartoon Network Deutschland (Verified)",
+          "url": "https://www.youtube.com/watch?v=9vTRSk7Xunc",
+          "notes": "Mô tả: đi trung tâm mua sắm; ứng viên học chủ đề mua sắm/gặp gỡ. Chưa xác nhận độ dài hay nhúng được từ Việt Nam."
+        },
+        {
+          "title": "We Bare Bears — Eine exklusive Tour",
+          "channel": "Cartoon Network Deutschland (Verified)",
+          "url": "https://www.youtube.com/watch?v=5IOr1S1rQJE",
+          "notes": "Chưa xác nhận độ dài hay nhúng được."
+        }
+      ],
+      "estimatedLearningLevel": "A2–B1 (ước lượng biên tập sơ bộ theo bối cảnh đời thường/mua sắm/gặp gỡ, chưa nghe audio thực tế)",
+      "rationaleVi": "Ưu tiên số 1 vì bối cảnh sinh hoạt đời thường rõ ràng (xe đồ ăn, gặp gỡ, trung tâm mua sắm) và có thêm 2 nguồn clip chính thức trên kênh Cartoon Network Deutschland để đối chiếu tiếp.",
+      "importReadiness": "needs-media-and-reviewed-captions",
+      "blockers": [
+        "Cột Sprache trên trang serienstream.to trống, chỉ thấy host VOE, chưa xác nhận được audio Deutsch hay phụ đề",
+        "Hai link YouTube Cartoon Network Deutschland chưa xác nhận độ dài và khả năng phát/nhúng từ Việt Nam",
+        "Chưa có file media và bộ lời thoại/caption đã căn giờ, kiểm duyệt"
+      ]
+    },
+    {
+      "id": "spongebob_schwammkopf",
+      "originalTitle": "SpongeBob SquarePants",
+      "germanTitle": "SpongeBob Schwammkopf",
+      "priority": 2,
+      "catalogUrl": "https://serienstream.to/serie/spongebob",
+      "candidateEpisode": {
+        "catalogEntries": [
+          "S1 mục 1 gộp Aushilfe gesucht / Meeresbodenpflege / Experten",
+          "S1 mục 5 gộp Pizza-Heimservice / Heimat, süße Ananas"
+        ],
+        "recommendedSingleEpisode": "S1 mục 1 gộp Aushilfe gesucht / Meeresbodenpflege / Experten"
+      },
+      "germanAudioVerified": false,
+      "subtitlesVerified": false,
+      "playbackVerified": false,
+      "officialSources": [],
+      "estimatedLearningLevel": "A2–B1 (ước lượng biên tập sơ bộ, chưa nghe audio thực tế để kiểm tốc độ thoại)",
+      "rationaleVi": "Ưu tiên số 2 nhờ độ quen thuộc cao và các mục tập đầu mùa 1 dễ nhận diện chủ đề công việc/giao hàng, nhưng cần tách ranh giới tập gộp trên video thực.",
+      "importReadiness": "needs-media-and-reviewed-captions",
+      "blockers": [
+        "Cột Sprache trên trang serienstream.to trống (hiển thị VOE), chưa xác nhận audio Deutsch hay phụ đề",
+        "Mục catalog là tập gộp nhiều segment, cần mở video thực để xác nhận ranh giới từng tập con",
+        "Chưa có nguồn chính thức trong đợt kiểm tra và chưa có media/transcript đã duyệt"
+      ]
+    },
+    {
+      "id": "pinguine_aus_madagascar",
+      "originalTitle": "The Penguins of Madagascar",
+      "germanTitle": "Die Pinguine aus Madagascar",
+      "priority": 3,
+      "catalogUrl": "https://serienstream.to/serie/pinguine-aus-madagascar",
+      "candidateEpisode": {
+        "catalogEntries": [
+          "S1 mục 1 gộp Popcorn-Panik / Blitz und weg"
+        ],
+        "recommendedSingleEpisode": "S1 mục 1 gộp Popcorn-Panik / Blitz und weg"
+      },
+      "germanAudioVerified": false,
+      "subtitlesVerified": false,
+      "playbackVerified": false,
+      "officialSources": [
+        {
+          "title": "Die Pinguine aus Madagascar — Danh sách tập trên Paramount+ Đức",
+          "platform": "Paramount+ Deutschland",
+          "url": "https://www.intl.paramountplus.com/de/shows/the-penguins-of-madagascar/episodes/2/",
+          "notes": "Có danh sách tập tiếng Đức; trang episode yêu cầu đăng nhập/thuê bao. Chưa có media sẵn để nhập Kino."
+        }
+      ],
+      "estimatedLearningLevel": "B1 (ước lượng biên tập sơ bộ, chưa nghe audio thực tế)",
+      "rationaleVi": "Ưu tiên số 3; có danh mục đối chiếu tên tập tiếng Đức trên Paramount+ Đức, song trang xem yêu cầu thuê bao và bản catalog serienstream là mục gộp.",
+      "importReadiness": "needs-media-and-reviewed-captions",
+      "blockers": [
+        "Cột Sprache trên trang serienstream.to trống (hiển thị VOE), chưa xác nhận audio Deutsch hay phụ đề",
+        "Trang Paramount+ Đức yêu cầu đăng nhập/thuê bao, chưa có media sẵn để nhập Kino",
+        "S1 mục 1 là tập gộp (Popcorn-Panik / Blitz und weg), cần xác nhận ranh giới trên video thực và làm transcript"
+      ]
+    },
+    {
+      "id": "courage_der_feige_hund",
+      "originalTitle": "Courage the Cowardly Dog",
+      "germanTitle": "Courage der feige Hund",
+      "priority": 4,
+      "catalogUrl": "https://serienstream.to/serie/courage-der-feige-hund",
+      "candidateEpisode": {
+        "catalogEntries": [
+          "S1 mục 1 gộp Eine Nacht im Katz Motel / Oma-Eintopf"
+        ],
+        "recommendedSingleEpisode": "S1 mục 1 gộp Eine Nacht im Katz Motel / Oma-Eintopf"
+      },
+      "germanAudioVerified": false,
+      "subtitlesVerified": false,
+      "playbackVerified": false,
+      "officialSources": [],
+      "estimatedLearningLevel": "B1+ (ước lượng biên tập sơ bộ, chưa nghe audio thực tế)",
+      "rationaleVi": "Xếp ưu tiên thứ 4 vì cấu trúc mục trên catalog có các mục đánh dấu [In Episode before] và chưa có nguồn chính thức đi kèm trong đợt xác minh.",
+      "importReadiness": "needs-media-and-reviewed-captions",
+      "blockers": [
+        "Cột Sprache trên trang serienstream.to trống (hiển thị VOE), chưa xác nhận audio Deutsch hay phụ đề",
+        "Catalog có các mục [In Episode before]: số thứ tự mục không đồng nghĩa số file độc lập",
+        "Mục S1 mục 1 gộp 2 tập con, chưa có media và lời thoại được duyệt"
+      ]
+    }
+  ]
+}

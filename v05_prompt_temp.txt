@@ -1,0 +1,1455 @@
+<USER_REQUEST>
+# VOKABELGO — ĐẤU TỪ v0.5
+## HAND UX FIX + BOT CARD SCALE + WORT-KETTE
+## PLAYABLE PREVIEW POLISH — 4 PLAYERS / 1 HUMAN + 3 BOTS
+
+Hãy tiếp tục trực tiếp trên bản preview Đấu từ hiện tại.
+
+Đây là một vòng UPDATE, không phải rebuild.
+
+KHÔNG làm lại game từ đầu.
+KHÔNG thay visual direction đã chốt nếu không cần.
+KHÔNG thay engine/dữ liệu đang hoạt động tốt chỉ để code “đẹp hơn”.
+KHÔNG deploy.
+KHÔNG merge production.
+KHÔNG sửa Supabase.
+KHÔNG sửa navigation chính.
+KHÔNG sửa Wortregen, Wortturm hoặc các tính năng khác của VokabelGo.
+
+Mục tiêu v0.5 có đúng 3 phần:
+
+1. Tăng kích thước bài của 3 bot để bàn 4 người có cảm giác đang chơi bài thật.
+2. Sửa hoàn toàn lỗi tay bài Human Player bị crop/cắt.
+3. Thêm cơ chế WORT-KETTE để việc biết từ tiếng Đức tạo lợi thế chiến thuật thật sự.
+
+Thứ tự ưu tiên:
+
+CORRECT GAME STATE
+→ GERMAN READABILITY
+→ HAND UX
+→ WORT-KETTE GAME LOOP
+→ ANIMATION
+→ VISUAL POLISH.
+
+Không coi v0.5 hoàn thành nếu một trong ba mục tiêu chính còn lỗi.
+
+
+==================================================
+A. GIỮ NGUYÊN NHỮNG GÌ ĐÃ CHỐT
+==================================================
+
+Giữ:
+
+- bàn 4 người;
+- 1 Human Player + 3 bot;
+- bộ Tính từ và Động từ;
+- full-color cards;
+- không ghi tên màu “Đỏ / Xanh / Vàng / Xanh lá” trên card;
+- German word là nội dung nổi bật nhất;
+- 4 màu + ký hiệu hình học;
+- Aussetzen;
+- Zieh Zwei;
+- Farbenwahl;
+- GEGENTEIL;
+- Gợi ý 2 bước;
+- chế độ Làm quen;
+- chế độ Ván thường;
+- animation shuffle/deal/draw/play đã có;
+- không multiplayer thật.
+
+Không thêm trong vòng này:
+
+Reverse
++4
+stacking
+coins
+XP
+streak
+combo multiplier
+energy
+shield
+leaderboard
+missions
+new special cards
+targeted attack
+AI sinh synonym trực tiếp.
+
+
+==================================================
+B. FIX #1 — BÀI BOT ĐANG QUÁ NHỎ
+==================================================
+
+Bản hiện tại có 3 bot quanh bàn nhưng card back quá nhỏ.
+
+Đặc biệt cụm bài phía trên trông giống thumbnail/icon hơn là một tay bài.
+
+Mục tiêu:
+
+> Nhìn vào bàn phải cảm giác thật sự có bốn người đang cầm bài.
+
+--------------------------------------------------
+B1. KÍCH THƯỚC BOT CARD
+--------------------------------------------------
+
+Desktop:
+
+Tăng kích thước card back bot khoảng 15–25% so với bản hiện tại.
+
+Mục tiêu tham khảo:
+
+width:
+52–60px
+
+height:
+74–86px
+
+Không bắt buộc hard-code số này nếu responsive layout cần thay đổi.
+
+Hierarchy mong muốn:
+
+Current/discard card
+≈ Human card
+> Bot card
+> icon/decorative UI.
+
+Bot card vẫn nhỏ hơn Human card,
+nhưng phải đủ lớn để nhìn như một lá bài thật.
+
+--------------------------------------------------
+B2. FAN BÀI BOT
+--------------------------------------------------
+
+1 card:
+hiển thị một card back rõ ràng.
+
+2–5 cards:
+fan nhẹ.
+
+6–8 cards:
+tăng overlap.
+
+>8 cards:
+không kéo fan rộng vô hạn.
+
+Có thể dùng:
+
+stack + partial fan + card count.
+
+KHÔNG thu nhỏ card vì bot có nhiều bài.
+
+--------------------------------------------------
+B3. BOT TRÁI / PHẢI
+--------------------------------------------------
+
+Bot trái:
+fan card theo hướng dọc/chéo nhẹ.
+
+Bot phải:
+đối xứng.
+
+Không hiển thị bài như một danh sách rectangle nhỏ.
+
+Bot phía trên:
+fan ngang.
+
+--------------------------------------------------
+B4. KHÔNG LÀM TO MỌI THỨ THEO
+--------------------------------------------------
+
+Tăng card KHÔNG đồng nghĩa:
+
+- tăng avatar;
+- tăng tên bot;
+- tăng toàn bộ seat;
+- đẩy bot xa trung tâm.
+
+Nếu thiếu chỗ:
+giảm overlap/spacing trước.
+
+Không làm bàn trống hơn.
+
+
+==================================================
+C. FIX #2 — PLAYER HAND ĐANG BỊ CẮT
+==================================================
+
+Đây là lỗi bắt buộc phải sửa đúng nguyên nhân.
+
+Hiện tại khi chọn một card và card nhấc lên,
+một phần card/shadow có thể bị crop.
+
+Có thể xảy ra:
+
+- phía trên;
+- phía dưới;
+- phía trái/phải;
+- đặc biệt card ngoài cùng.
+
+KHÔNG được chữa bằng cách:
+
+- thu nhỏ Human card;
+- bỏ animation raise;
+- bỏ shadow;
+- giảm German font;
+- để card không được nâng khi chọn.
+
+Phải sửa cấu trúc hand container.
+
+--------------------------------------------------
+C1. HUMAN CARD SIZE
+--------------------------------------------------
+
+Desktop target tham khảo:
+
+width:
+95–110px
+
+height:
+135–155px.
+
+Nếu hiện tại đã gần mức này:
+giữ.
+
+Không giảm để chữa clipping.
+
+German word vẫn phải là nội dung nổi bật nhất.
+
+--------------------------------------------------
+C2. HAND ZONE CỐ ĐỊNH
+--------------------------------------------------
+
+Human Player phải luôn có một vùng hand cố định ở cạnh dưới.
+
+Dù còn:
+
+1 card
+2 cards
+5 cards
+8 cards
+12 cards
+
+hand zone vẫn tồn tại đúng vị trí.
+
+Không để:
+
+1 card → nhảy lên giữa bàn.
+
+1 card phải nằm chính giữa hand zone.
+
+--------------------------------------------------
+C3. SELECTED CARD
+--------------------------------------------------
+
+Khi selected:
+
+translateY khoảng:
+-16px đến -24px
+
+scale khoảng:
+1.03–1.05.
+
+Có shadow rõ hơn.
+
+Selected card phải hiển thị 100%.
+
+Không bị:
+
+- crop border;
+- crop corner;
+- crop shadow;
+- crop German word.
+
+--------------------------------------------------
+C4. OVERFLOW STRUCTURE
+--------------------------------------------------
+
+Nếu hand hiện tại dùng:
+
+overflow: hidden
+
+thì sửa.
+
+Nếu mobile cần horizontal scroll,
+KHÔNG để overflow-x:auto vô tình clip overflow-y.
+
+Ưu tiên architecture tương đương:
+
+.player-hand-zone
+    // vertical safe area
+    // cho selected card/shadow hiện đầy đủ
+
+    .player-hand-scroll
+        // quản horizontal overflow
+
+        .player-hand-track
+            // cards
+
+Không bắt buộc đúng class name,
+nhưng behavior cuối cùng phải tương đương.
+
+--------------------------------------------------
+C5. HAND LAYOUT
+--------------------------------------------------
+
+1 card:
+center.
+
+2–5:
+fan nhẹ.
+
+6–8:
+overlap tăng vừa.
+
+9–12:
+overlap lớn hơn.
+
+Nếu không đủ horizontal space:
+scroll/pan trong hand zone.
+
+KHÔNG làm toàn page overflow ngang.
+
+--------------------------------------------------
+C6. LEFT / RIGHT EDGE
+--------------------------------------------------
+
+Bắt buộc test:
+
+left-most selected card
+→ không crop trái.
+
+right-most selected card
+→ không crop phải.
+
+middle selected card
+→ không crop trên.
+
+Card không bị bottom UI crop phía dưới.
+
+--------------------------------------------------
+C7. ACTION BAR
+--------------------------------------------------
+
+Các action:
+
+Xem
+Đánh
+Rút
+WORT-KETTE actions
+
+không được đè lên card.
+
+Khi chọn card:
+
+ưu tiên contextual action gần hand:
+
+Đánh “schwierig”
+
+thay vì một CTA “Đánh lá” nằm xa.
+
+Không bắt buộc bỏ button hiện có nếu accessibility cần,
+nhưng visual primary action phải nằm gần tay bài.
+
+--------------------------------------------------
+C8. MOBILE
+--------------------------------------------------
+
+390×844
+360×800.
+
+Human hand có thể scroll ngang.
+
+Nhưng:
+
+- selected card vẫn raise;
+- không clip Y;
+- không mất card ngoài cùng;
+- action không đè word;
+- page không overflow ngang.
+
+Bot card mobile có thể compact hơn,
+nhưng vẫn phải nhìn như stack bài.
+
+
+==================================================
+D. WORT-KETTE — CƠ CHẾ SIGNATURE MỚI
+==================================================
+
+Mục tiêu của cơ chế:
+
+> Người chơi biết quan hệ từ tiếng Đức thì có lợi thế thật trong game.
+
+Hiện tại người chơi có xu hướng chỉ nhìn màu.
+
+WORT-KETTE phải tạo động lực:
+
+“Đọc từ có thể tạo ra một nước đi tốt hơn.”
+
+Không biến nó thành hệ thống điểm thưởng.
+
+--------------------------------------------------
+D1. LUẬT CƠ BẢN
+--------------------------------------------------
+
+Khi player đánh một WORD CARD:
+
+- KHÁC màu hiện hành;
+- nhưng nối nghĩa hợp lệ với target hiện tại;
+- không phải cùng chính một từ;
+- chưa dùng Hint Step 2 trong lượt;
+- chưa kích hoạt Wort-Kette trong lượt này;
+
+thì:
+
+WORT-KETTE kích hoạt.
+
+Player được:
+
++1 PLAY.
+
+Tức:
+được đánh thêm đúng 1 lá.
+
+KHÔNG phải một lượt hoàn chỉnh mới.
+
+--------------------------------------------------
+D2. VÍ DỤ
+--------------------------------------------------
+
+Current:
+
+SCHWER 🔴
+
+Player hand:
+
+SCHWIERIG 🔵
+
+Player đánh:
+
+SCHWIERIG 🔵
+
+Relation:
+
+schwer ↔ schwierig
+
+Color:
+
+RED → BLUE.
+
+=> WORT-KETTE.
+
+Active color bây giờ:
+
+BLUE.
+
+Player được đánh thêm đúng một card hợp lệ.
+
+--------------------------------------------------
+D3. CHỈ KÍCH HOẠT KHI ĐỦ TẤT CẢ
+--------------------------------------------------
+
+1. Card vừa đánh là word card.
+2. Legal nhờ semantic/synonym relation.
+3. Màu card khác activeColor trước play.
+4. fromEntryId != toEntryId.
+5. Không phải same-word different-color.
+6. Wort-Kette chưa được dùng trong lượt.
+7. Hint Step 2 chưa được dùng trong lượt.
+8. Game chưa end.
+9. Player không đang resolve penalty.
+10. Đây không phải bonus play của Wort-Kette.
+
+--------------------------------------------------
+D4. KHÔNG BONUS TRONG CÁC TRƯỜNG HỢP
+--------------------------------------------------
+
+SCHWER RED
+→ SCHWIERIG RED
+
+Legal.
+
+No Wort-Kette.
+
+------------------------
+
+SCHWER RED
+→ SCHWER BLUE
+
+Legal theo same entry rule.
+
+No Wort-Kette.
+
+------------------------
+
+SCHWER RED
+→ TEUER RED
+
+Legal vì cùng màu.
+
+No Wort-Kette.
+
+------------------------
+
+Đã dùng:
+
+“Chỉ lá phù hợp”
+
+rồi đánh synonym khác màu.
+
+Legal.
+
+No Wort-Kette.
+
+--------------------------------------------------
+D5. HINT STEP 1 VẪN CHO BONUS
+--------------------------------------------------
+
+Nếu chỉ mở:
+
+gợi ý nghĩa.
+
+Ví dụ:
+
+“Ở đây schwer nghĩa là khó,
+không phải nặng.”
+
+Sau đó player tự tìm:
+
+schwierig
+
+thì vẫn có Wort-Kette.
+
+“Xem nghĩa tiếng Việt”
+cũng không tự khóa bonus.
+
+Chỉ:
+
+“Chỉ lá phù hợp”
+
+mới khóa Wort-Kette trong lượt đó.
+
+--------------------------------------------------
+D6. KHÔNG CHAIN LẦN HAI
+--------------------------------------------------
+
+Một lượt tối đa:
+
+1 Wort-Kette.
+
+Ví dụ:
+
+SCHWER RED
+→ SCHWIERIG BLUE
+→ Wort-Kette.
+
+Bonus card sau đó cũng vô tình là cross-color semantic match:
+
+KHÔNG mở thêm Wort-Kette.
+
+Không có:
+
+Wort-Kette
+→ Wort-Kette
+→ Wort-Kette.
+
+State tương đương:
+
+wortKetteConsumedThisTurn = true
+
+ngay sau trigger đầu tiên.
+
+--------------------------------------------------
+D7. BONUS LÀ QUYỀN, KHÔNG PHẢI NGHĨA VỤ
+--------------------------------------------------
+
+Sau khi trigger:
+
+Human có:
+
+A.
+Đánh thêm một legal card.
+
+B.
+Kết thúc lượt.
+
+Button nhỏ:
+
+Kết thúc lượt
+
+phải có.
+
+Không ép dùng bonus.
+
+--------------------------------------------------
+D8. KHÔNG ĐƯỢC DRAW TRONG BONUS
+--------------------------------------------------
+
+Wort-Kette = +1 PLAY.
+
+Không phải:
++1 TURN.
+
+Trong bonus state:
+
+được đánh card.
+
+KHÔNG được:
+
+- draw;
+- draw rồi play;
+- dùng bonus để kiếm card.
+
+Nếu không có legal card:
+bonus tự kết thúc.
+
+Không penalty.
+
+--------------------------------------------------
+D9. BONUS CARD CÓ THỂ LÀ SPECIAL
+--------------------------------------------------
+
+Cho phép:
+
+word card
+Aussetzen
++2
+Farbenwahl
+GEGENTEIL
+
+nếu hợp lệ theo state hiện tại.
+
+Ví dụ:
+
+SCHWER RED
+→ SCHWIERIG BLUE
+→ WORT-KETTE
+→ +2 BLUE.
+
+Hợp lệ.
+
+--------------------------------------------------
+D10. +2 TRONG BONUS
+--------------------------------------------------
+
+Resolve +2 như bình thường.
+
+Target:
+draw 2
++ lose turn.
+
+Wort-Kette kết thúc.
+
+Không mở chain khác.
+
+--------------------------------------------------
+D11. AUSSETZEN TRONG BONUS
+--------------------------------------------------
+
+Resolve skip.
+
+Wort-Kette kết thúc.
+
+Turn order 4 players phải đúng.
+
+--------------------------------------------------
+D12. FARBENWAHL TRONG BONUS
+--------------------------------------------------
+
+Play card.
+
+Hiện color selector.
+
+Human chọn màu.
+
+Sau khi xác nhận:
+bonus kết thúc.
+
+Turn mới chuyển.
+
+Bot KHÔNG được đi trong lúc selector còn mở.
+
+--------------------------------------------------
+D13. GEGENTEIL TRONG BONUS
+--------------------------------------------------
+
+Resolve GEGENTEIL hoàn chỉnh.
+
+Giữ active color theo rule hiện tại.
+
+Update target word/context.
+
+Finish animation.
+
+Sau đó:
+bonus kết thúc
+→ next turn.
+
+--------------------------------------------------
+D14. WIN LUÔN ƯU TIÊN
+--------------------------------------------------
+
+Nếu synonym cross-color trigger Wort-Kette
+nhưng đồng thời là card cuối cùng trong hand:
+
+WIN NGAY.
+
+Không để:
+
+hand = 0
++
+waiting for Wort-Kette.
+
+--------------------------------------------------
+D15. “NOCH EINE!” + WORT-KETTE
+--------------------------------------------------
+
+Nếu Human còn 2 cards.
+
+Card thứ nhất trigger Wort-Kette.
+
+Hand còn 1.
+
+Hiện:
+
+NOCH EINE!
+
+Wort-Kette vẫn active.
+
+Nếu card cuối legal:
+Human có thể đánh nó trong bonus và thắng.
+
+Đây là một moment cần animation/feedback đẹp.
+
+
+==================================================
+E. BOT PHẢI DÙNG WORT-KETTE Y HỆT
+==================================================
+
+Bot áp dụng chính xác cùng luật.
+
+Không có luật ưu tiên riêng cho Human.
+
+Bot có thể:
+
+- trigger Wort-Kette;
+- bonus play;
+- skip bonus;
+- win bằng bonus.
+
+Bot không được:
+
+- nhìn Human hand;
+- nhìn draw pile order;
+- biết hidden info.
+
+--------------------------------------------------
+E1. BOT BONUS STRATEGY
+--------------------------------------------------
+
+Heuristic đủ dùng:
+
+1. Nếu bonus card có thể win → play.
+2. Nếu next opponent còn 1 card và bot có +2/Aussetzen hợp lệ → ưu tiên cân nhắc.
+3. Nếu special card tạo lợi thế → cân nhắc.
+4. Ưu tiên color bot đang giữ nhiều.
+5. Nếu không có chiến thuật rõ → một legal card bình thường.
+6. Không có legal card → bỏ bonus.
+
+Không cần AI.
+
+--------------------------------------------------
+E2. BOT WORT-KETTE TIMING
+--------------------------------------------------
+
+Bot không được đánh hai card nhanh đến mức Human không hiểu.
+
+Sequence:
+
+bot first card lands
+→ semantic feedback
+→ WORT-KETTE
+→ pause ngắn
+→ bot bonus card
+→ next turn.
+
+Tổng delay không quá dài.
+
+
+==================================================
+F. VISUAL FEEDBACK CHO WORT-KETTE
+==================================================
+
+Không modal.
+
+Không giant BONUS.
+
+Không confetti.
+
+German relation phải là hero.
+
+Sequence:
+
+1. synonym card bay tới discard.
+2. center hiện:
+
+SCHWER
+↔
+SCHWIERIG
+
+3. có chain/line animation nhỏ nối hai từ.
+4. hiện nhỏ:
+
+WORT-KETTE
++1 nước
+
+5. Human seat vẫn active.
+6. Hand pulse nhẹ một lần.
+
+Instruction:
+
+Chọn thêm 1 lá
+hoặc Kết thúc lượt.
+
+Duration:
+khoảng 550–850ms.
+
+Không kéo dài quá.
+
+--------------------------------------------------
+F1. VISUAL PRIORITY
+--------------------------------------------------
+
+Thứ tự:
+
+SCHWER
+SCHWIERIG
+relationship
++1 play
+WORT-KETTE branding.
+
+Không để WORT-KETTE text to hơn German words.
+
+--------------------------------------------------
+F2. SOUND
+--------------------------------------------------
+
+Nếu game có sound:
+
+thêm một cue nhẹ riêng.
+
+200–400ms.
+
+Không:
+coin
+jackpot
+casino
+level-up quá mạnh.
+
+Sound off:
+visual vẫn đủ hiểu.
+
+
+==================================================
+G. ACTION UI TRONG BONUS
+==================================================
+
+Trong Wort-Kette state:
+
+status gần hand:
+
+WORT-KETTE · +1 nước
+
+Actions:
+
+[Đánh “...”]
+[Kết thúc lượt]
+
+Ẩn/disable:
+
+Rút bài.
+
+Không hiển thị UI như một full normal turn mới.
+
+Nếu không có legal bonus card:
+
+“Không còn lá phù hợp — Wort-Kette kết thúc.”
+
+rồi tự chuyển lượt.
+
+
+==================================================
+H. CARD INTERACTION
+==================================================
+
+Giữ hướng:
+
+First click/tap:
+select.
+
+Second click/tap cùng card:
+play.
+
+Có button phụ:
+
+Đánh “schwierig”
+
+cho accessibility/người mới.
+
+Không one-tap instant play.
+
+Trong bonus:
+giữ cùng interaction.
+
+
+==================================================
+I. ACTIVE COLOR SAU WORT-KETTE
+==================================================
+
+Ví dụ:
+
+SCHWER RED
+→ SCHWIERIG BLUE.
+
+Sau card đầu:
+
+activeColor = BLUE.
+
+Bonus play sử dụng state BLUE.
+
+Không dùng lại RED cũ.
+
+
+==================================================
+J. SEMANTIC CONTEXT
+==================================================
+
+Semantic match:
+
+giữ context hiện tại
+và dùng sentence variant đúng.
+
+Ví dụ:
+
+Die Aufgabe ist schwer.
+
+→
+
+Die Aufgabe ist schwierig.
+
+activeEntryId thay đổi.
+
+Nếu bonus word card sau đó chỉ legal bằng màu:
+engine dùng base context của word mới như rule hiện tại.
+
+Không thay semantics để chiều animation.
+
+
+==================================================
+K. INVALID PLAY
+==================================================
+
+Làm quen:
+
+invalid card:
+shake nhẹ.
+
+Message:
+
+“Lá này không cùng màu và không nối được với ‘schwer’.”
+
+Không penalty.
+
+Cho chọn lại.
+
+Ván thường:
+giữ penalty hiện tại.
+
+Không dùng invalid checking để highlight trước toàn bộ đáp án.
+
+
+==================================================
+L. UI STATE / GAME END
+==================================================
+
+Giữ rule:
+
+khi bất kỳ player = 0 cards:
+
+END GAME.
+
+Ngay lập tức:
+
+- cancel bot timer;
+- cancel bonus waiting;
+- disable draw/play;
+- stop turn animation;
+- winner highlight;
+- show result panel.
+
+Không để:
+
+“Ván đã kết thúc”
+
+nhưng Draw/Play vẫn hoạt động.
+
+--------------------------------------------------
+L1. RESULT
+--------------------------------------------------
+
+Bot win:
+
+LENA THẮNG
+
+Bạn còn 1 lá.
+
+[Chơi lại]
+[Đổi bộ]
+
+Human win:
+
+BẠN THẮNG 🎉
+
+Có thể có animation ngắn.
+
+Không XP/chest/coins.
+
+
+==================================================
+M. DEBUG METRICS — PREVIEW ONLY
+==================================================
+
+Không gửi production analytics.
+
+Thu internal/debug counters:
+
+semanticMatches
+crossColorSemanticMatches
+sameColorMoves
+sameWordMoves
+wortKetteTriggered
+wortKetteBonusPlayed
+wortKetteBonusSkipped
+wortKetteNoLegalBonus
+hintStep1Used
+answerHintUsed
+specialMoves.
+
+Mục tiêu:
+
+sau test biết được Human có thực sự dùng nghĩa hay vẫn chủ yếu nhìn màu.
+
+Không cần show cho người chơi bình thường.
+
+
+==================================================
+N. KHÔNG RIG DECK
+==================================================
+
+Không phát bài đẹp cho Human.
+
+Không tăng synonym khi Human thua.
+
+Không giảm strength bot để tạo thắng giả.
+
+Normal shuffle = normal shuffle.
+
+Có thể dùng seeded test mode riêng.
+
+Production-like preview không rig.
+
+
+==================================================
+O. TEST CASE WORT-KETTE BẮT BUỘC
+==================================================
+
+CASE 01
+
+SCHWER RED
+→ SCHWIERIG BLUE
+No Answer Hint
+
+Expected:
+Wort-Kette YES.
+
+------------------------
+
+CASE 02
+
+SCHWER RED
+→ SCHWIERIG RED
+
+Expected:
+NO.
+
+------------------------
+
+CASE 03
+
+SCHWER RED
+→ SCHWER BLUE
+
+Expected:
+NO.
+
+------------------------
+
+CASE 04
+
+Hint Step 1
+→ SCHWIERIG BLUE
+
+Expected:
+YES.
+
+------------------------
+
+CASE 05
+
+Use “Chỉ lá phù hợp”
+→ SCHWIERIG BLUE
+
+Expected:
+NO.
+
+------------------------
+
+CASE 06
+
+First play triggers Wort-Kette.
+Bonus card is another cross-color semantic match.
+
+Expected:
+legal if rules allow,
+NO second Wort-Kette.
+
+------------------------
+
+CASE 07
+
+Wort-Kette
+→ bonus +2
+
+Expected:
++2 resolves,
+no chain.
+
+------------------------
+
+CASE 08
+
+Wort-Kette
+→ Aussetzen.
+
+Expected:
+skip correct.
+
+------------------------
+
+CASE 09
+
+Wort-Kette
+→ Farbenwahl.
+
+Expected:
+color selector,
+no bot turn before selection.
+
+------------------------
+
+CASE 10
+
+Wort-Kette
+→ GEGENTEIL.
+
+Expected:
+GEGENTEIL resolves,
+then next turn.
+
+------------------------
+
+CASE 11
+
+No legal bonus card.
+
+Expected:
+no draw,
+bonus ends.
+
+------------------------
+
+CASE 12
+
+Human chooses Kết thúc lượt.
+
+Expected:
+no penalty.
+
+------------------------
+
+CASE 13
+
+Trigger card = last card.
+
+Expected:
+immediate win.
+
+------------------------
+
+CASE 14
+
+2 cards left.
+First triggers Wort-Kette.
+1 card remains.
+
+Expected:
+Noch eine.
+Bonus can play final legal card and win.
+
+------------------------
+
+CASE 15
+
+Bot Wort-Kette.
+
+Expected:
+same rules,
+visible sequence,
+no cheat.
+
+------------------------
+
+CASE 16
+
+Restart during Wort-Kette.
+
+Expected:
+all bonus/timers cleared.
+
+------------------------
+
+CASE 17
+
+Open Rules/Settings during bonus.
+
+Expected:
+game pauses correctly,
+bonus preserved.
+
+------------------------
+
+CASE 18
+
+End game during bonus special effect.
+
+Expected:
+no ghost turn.
+
+
+==================================================
+P. UI QA — BÀI BOT + HAND CLIPPING
+==================================================
+
+Test:
+
+1440×900
+1280×720
+768×1024
+390×844
+360×800.
+
+Human hands:
+
+1
+5
+8
+12 cards.
+
+For each relevant hand:
+
+- left-most selected;
+- middle selected;
+- right-most selected.
+
+Verify:
+
+- no crop;
+- no shadow crop;
+- no German word crop;
+- no bottom-bar overlap;
+- no horizontal page overflow;
+- no desktop vertical scrolling caused by hand;
+- bot cards visibly larger;
+- bot fan remains coherent.
+
+Test:
+
+schließen
+schwierig
+unterschiedlich
+kennenlernen
+zurückkommen
+sich beeilen.
+
+No German word breaking.
+
+
+==================================================
+Q. SCREENSHOTS BẮT BUỘC
+==================================================
+
+Gửi ảnh từ build chạy thật:
+
+UI01_BotCardsLarger
+UI02_HumanHand5_Selected
+UI03_HumanHand12
+UI04_LeftMostSelected
+UI05_RightMostSelected
+UI06_OneCardHand
+UI07_MobileHandSelected
+
+WK01_NormalTurn
+WK02_CrossColorSynonymBefore
+WK03_WortKetteTriggered
+WK04_WortKetteBonusChoice
+WK05_WortKettePlus2
+WK06_BotWortKette
+WK07_SameColorSynonym_NoBonus
+WK08_AnswerHint_NoBonus
+WK09_WortKette_NochEine
+WK10_WortKette_Win
+WK11_MobileWortKette.
+
+Không dùng mockup AI làm bằng chứng.
+
+
+==================================================
+R. VIDEO NẾU TOOL CHO PHÉP
+==================================================
+
+Nếu thuận tiện:
+
+ghi một video ngắn từ build thật:
+
+SCHWER RED
+→ SCHWIERIG BLUE
+→ WORT-KETTE
+→ bonus card
+→ next player.
+
+Video chỉ bổ sung,
+không thay test.
+
+
+==================================================
+S. KHÔNG TỰ MỞ RỘNG PHẠM VI
+==================================================
+
+Không thêm:
+
+new cards
+new reward system
+target attack
+new game mode
+difficulty system
+multiplayer
+missions
+rank
+XP
+coins.
+
+Nếu phát hiện ý tưởng cải tiến khác:
+ghi lại ở cuối báo cáo,
+KHÔNG tự implement.
+
+
+==================================================
+T. BÀN GIAO
+==================================================
+
+Sau khi hoàn thành báo:
+
+1. URL local chính xác.
+2. File đã thay đổi.
+3. Test đã chạy.
+4. Kết quả test chính.
+5. Screenshots.
+6. Lỗi còn lại.
+7. Debug metrics từ các ván test nếu có.
+8. Xác nhận không sửa production.
+
+Không nói:
+
+“production-ready”
+“đã cân bằng hoàn hảo”
+“đã tối ưu dopamine”
+“đã chứng minh hiệu quả học”.
+
+Nếu chưa test:
+ghi rõ chưa test.
+
+
+==================================================
+U. DEFINITION OF DONE
+==================================================
+
+v0.5 chỉ đạt khi:
+
+### UI
+- bot cards lớn hơn rõ rệt;
+- vẫn nhỏ hơn Human card;
+- Human hand không crop;
+- selected card không crop;
+- shadow không crop;
+- 1 card vẫn nằm đúng hand zone;
+- 12 cards vẫn usable;
+- mobile usable;
+- German word không bị break.
+
+### WORT-KETTE
+- cross-color synonym có bonus;
+- same-color synonym không bonus;
+- same word khác màu không bonus;
+- Hint Step 2 khóa bonus;
+- Hint Step 1 vẫn cho bonus;
+- max 1 Wort-Kette/turn;
+- bonus không được draw;
+- bonus có thể skip;
+- special cards resolve đúng;
+- bot áp dụng cùng luật;
+- last-card win ưu tiên;
+- restart không ghost state;
+- mobile không bị che.
+
+### EXPERIENCE
+Người chơi phải bắt đầu có lý do thật để nghĩ:
+
+“Nếu mình hiểu từ này,
+mình có thể đánh được một nước tốt hơn.”
+
+Nếu game vẫn chỉ khuyến khích:
+
+“Nhìn màu nào giống thì đánh.”
+
+thì WORT-KETTE chưa đạt mục tiêu thiết kế.
+
+==================================================
+V. ƯU TIÊN CUỐI
+==================================================
+
+Không polish decoration trước khi:
+
+1. sửa hand clipping;
+2. tăng bot card scale;
+3. Wort-Kette chạy đúng;
+4. test state sạch.
+
+German vocabulary phải luôn là hero.
+
+Màu giúp nhận diện nhanh.
+
+Kiến thức từ vựng phải tạo ra lợi thế chơi.
+
+Đó là mục tiêu cốt lõi của Đấu từ v0.5.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-09T13:09:50+07:00.
+</ADDITIONAL_METADATA>

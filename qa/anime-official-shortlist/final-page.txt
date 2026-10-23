@@ -1,0 +1,53 @@
+Browser tab: 3, Title: "Chọn anime tiếng Đức cho Kino", URL: "http://localhost:3000/qa/anime-official-shortlist/index.html".
+1 AXWebArea Chọn anime tiếng Đức cho Kino, URL: localhost:3000/qa/anime-official-shortlist/index.html
+	2 container
+		3 heading Anime tiếng Đức để chị chọn, Value: 1
+			4 text Anime tiếng Đức để chị chọn
+		5 text Đã thử phát nhúng trên máy chị: một tập Beyblade X đầy đủ và ba trailer anime quen thuộc lồng tiếng Đức. Chị chọn một ô rồi bấm Phát thử. Chưa thêm phim vào Kino.
+		6 container Description: Chọn anime, ID: choices
+			7 checkbox Beyblade X Tập 51 đầy đủ · 22:45 · Kênh BEYBLADE Đức chính thức, Value: 1
+				8 text Beyblade X
+				9 text Tập 51 đầy đủ · 22:45 · Kênh BEYBLADE Đức chính thức
+			10 checkbox Yu-Gi-Oh! – Vua Trò Chơi Trailer bản cổ điển · KSM Anime · 2 phút, Value: 0
+				11 text Yu-Gi-Oh! – Vua Trò Chơi
+				12 text Trailer bản cổ điển · KSM Anime · 2 phút
+			13 checkbox Digimon Adventure Trailer bản cổ điển · KSM Anime · 1:57, Value: 0
+				14 text Digimon Adventure
+				15 text Trailer bản cổ điển · KSM Anime · 1:57
+			16 checkbox Naruto – The Last Trailer tiếng Đức · KSM Anime · 1:17, Value: 0
+				17 text Naruto – The Last
+				18 text Trailer tiếng Đức · KSM Anime · 1:17
+		19 container stage
+			20 heading Beyblade X, Value: 2, ID: title
+				21 text Beyblade X
+			22 text Der größte Spaß aller Zeiten. Đã phát trong trình nhúng. Đây là thế hệ Beyblade X mới, không phải bản Beyblade đầu những năm 2000.
+			23 container Description: BEYBLADE X | NEUE EPISODE! | Ep.51 Der größte Spaß aller Zeiten, ID: player
+				35 AXWebArea BEYBLADE X | NEUE EPISODE! | Ep.51 Der größte Spaß aller Zeiten - YouTube, URL: youtube.com/embed/PIGSIyt9z0E?origin=http%3A%2F%2Flocalhost%3A3000&hl=de&playsinline=1&enablejsapi=1&widgetid=1&forigin=http%3A%2F%2Flocalhost%3A3000%2Fqa%2Fanime-official-shortlist%2Findex.html&aoriginsup=1&vf=2
+					36 container
+						37 container Description: YouTube-Videoplayer, ID: movie_player
+						38 container
+							39 button Video abspielen
+							40 button Description: Steuerelemente des Videoplayers ausblenden, ID: player-controls-a11y-toggle
+							41 container player-control-overlay
+								42 container
+									43 link Description: BEYBLADE X | NEUE EPISODE! | Ep.51 Der größte Spaß aller Zeiten, Value: youtube.com/watch?v=PIGSIyt9z0E
+									44 link Description: BEYBLADE Deutsch - Offizieller Kanal, Value: youtube.com/channel/UC9nF-dFALMX6i_Hh4fh_6hg
+									45 button thumbnail-image
+										46 image thumbnail-image
+									47 container
+										48 text BEYBLADE Deutsch - Offizieller Kanal 119.000 Abonnenten
+								49 container
+									50 button Link kopieren
+									51 link Description: Auf YouTube ansehen, Value: youtube.com/watch?v=PIGSIyt9z0E
+			25 container
+				26 button Phát thử, ID: play
+				27 button Dừng, ID: pause
+				28 link Description: Mở video gốc, Value: youtube.com/watch?v=PIGSIyt9z0E, ID: source
+			52 text Trình phát sẵn sàng. Bấm Phát thử.
+			30 text Kênh BEYBLADE tiếng Đức chính thức; trình phát có phụ đề Đức.
+		31 text Sakura – Thủ lĩnh thẻ bài:
+		32 text  chưa xác nhận được video chính thức vừa lồng tiếng Đức vừa nhúng được. Bài giới thiệu Sakura của ADN ngày 27/05/2026 ghi tiếng Nhật, phụ đề Đức; chưa đưa vào các lựa chọn đạt yêu cầu.
+		33 text Đã loại khỏi danh sách dùng ngay:
+		34 text  Pokémon mùa 1, Beyblade Metal Fusion và Beyblade Burst báo chặn khu vực khi thử nhúng; các link Pokémon Generationen và trailer Conan 25 đã thử báo không phát được. Không dùng mã nhúng tồn tại làm bằng chứng video phát được. Đã kiểm tra mã nhúng qua YouTube oEmbed và trạng thái đang phát bằng YouTube IFrame API ngày 23/10/2026. Kết quả chỉ áp dụng cho các video cụ thể dưới đây tại thời điểm thử. Nhúng không cấp quyền tải, đăng lại hay sao chép toàn bộ phụ đề.
+
+The focused UI element is 1 AXWebArea Chọn anime tiếng Đức cho Kino, URL: localhost:3000/qa/anime-official-shortlist/index.html

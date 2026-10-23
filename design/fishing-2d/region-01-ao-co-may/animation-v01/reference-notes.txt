@@ -1,0 +1,18 @@
+Reference survey, 2026-10-21 — Codex
+
+Official store material read:
+Cat Goes Fishing: https://store.steampowered.com/app/343780/Cat_Goes_Fishing/
+Cornerpond: https://store.steampowered.com/app/3454590/Cornerpond/
+Fischer's Fishing Journey: https://store.steampowered.com/app/3363270/Fischers_Fishing_Journey/
+
+Cat Goes Fishing describes starting with basic equipment and distinct fish behaviors. Cornerpond describes relaxed automatic fishing with occasional attention for big catches. Fischer describes a quiet study/work companion. Steam screenshots/image-search results also surveyed for simple silhouettes and clear separation of water and fishing action. This was a visual/material survey, not hands-on play or a verified frame-by-frame study of their animation.
+
+Application to our prototype (our design choices, not claims about exact game animation):
+- Quiet rests occupy most time, rare events earn attention.
+- Clear rod/line/float connection and reaction beats make fishing legible.
+- Anticipation -> surprise -> effort -> release -> smile -> settle for a catch.
+- Dragonfly approaches, gaze changes first, then head follows with delay; hold before returning.
+- Independent breathing, head and tail, no uniform pulsing of the whole character.
+- No copied game assets, characters, music, animation tracks or logos.
+
+Art: approved Meo Cho cream cat with single caramel crown/ear patch, mustard scarf and sage apron; simplified Ao Co May v02. Built-in imagegen produced clean background and separate raster sprite art; generation-prompts.txt records exact prompts. Mechanical cropping only in package-assets.py, source PNGs retained.

@@ -1,0 +1,107 @@
+{
+  "provider": "openthesaurus",
+  "query": "reisen",
+  "retrievedAt": "2026-10-09T07:28:27.514Z",
+  "licenseNote": "Creative Commons Attribution-ShareAlike 4.0 (CC-BY-SA) or GNU LGPL",
+  "attribution": "OpenThesaurus (www.openthesaurus.de) by Daniel Naber",
+  "rawResponse": {
+    "metaData": {
+      "apiVersion": "0.2",
+      "warning": "ACHTUNG: Bitte vor ernsthafter Nutzung feedback@openthesaurus.de kontaktieren, um bei API-Änderungen informiert zu werden",
+      "copyright": "Copyright (C) 2026 Daniel Naber (www.danielnaber.de)",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 or GNU LESSER GENERAL PUBLIC LICENSE Version 2.1",
+      "source": "https://www.openthesaurus.de",
+      "date": "Fri Oct 09 07:28:27 UTC 2026"
+    },
+    "synsets": [
+      {
+        "id": 7526,
+        "categories": [],
+        "terms": [
+          {
+            "term": "abschleppen"
+          },
+          {
+            "term": "hinter sich her schleifen"
+          },
+          {
+            "term": "mitreißen"
+          },
+          {
+            "term": "reißen"
+          },
+          {
+            "term": "schleppen"
+          },
+          {
+            "term": "trecken"
+          },
+          {
+            "term": "zerren"
+          },
+          {
+            "term": "ziehen"
+          }
+        ]
+      },
+      {
+        "id": 9153,
+        "categories": [],
+        "terms": [
+          {
+            "term": "aufreißen"
+          },
+          {
+            "term": "reißen"
+          },
+          {
+            "term": "zerreißen"
+          },
+          {
+            "term": "zerren"
+          }
+        ]
+      },
+      {
+        "id": 9919,
+        "categories": [],
+        "terms": [
+          {
+            "term": "verreisen"
+          },
+          {
+            "term": "eine Reise unternehmen"
+          },
+          {
+            "term": "in (den) Urlaub fahren"
+          },
+          {
+            "term": "in (den) Urlaub fliegen"
+          },
+          {
+            "term": "reisen"
+          },
+          {
+            "term": "unterwegs sein"
+          },
+          {
+            "term": "globetrotten",
+            "level": "gehoben"
+          },
+          {
+            "term": "weltenbummeln",
+            "level": "gehoben"
+          },
+          {
+            "term": "mal rauskommen (aus)",
+            "level": "umgangssprachlich"
+          },
+          {
+            "term": "wegfahren",
+            "level": "umgangssprachlich"
+          }
+        ]
+      }
+    ]
+  }
+}

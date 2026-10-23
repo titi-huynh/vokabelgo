@@ -1,0 +1,63 @@
+.peppa-chapters { margin: 12px 0 20px; padding: 24px; background: #fcfbf6; border: 1px solid #d8dfcd; border-radius: 20px; color: #2d3b2e; scroll-margin-top: 20px; }
+.peppa-chapters[hidden], .peppa-finished[hidden], .peppa-watch-note[hidden] { display: none; }
+.peppa-watch-controls[hidden] { display: none; }
+.peppa-watch-controls { display: flex; align-items: center; gap: 14px; padding: 14px 24px; color: #e9f0df; background: #17211d; font-size: 12px; font-variant-numeric: tabular-nums; }
+.peppa-watch-controls button { width: 40px; height: 36px; border: 1px solid #9cae89; border-radius: 8px; background: #334b30; color: white; cursor: pointer; }
+.peppa-watch-controls input { flex: 1; min-width: 0; accent-color: #b5cf96; }
+#diktatMode.kino-peppa-active .kino-full-modal-body { min-height: 0; position: relative; }
+.peppa-watch-caption { position: absolute; left: 5%; right: 5%; bottom: 18px; padding: 12px 18px; background: #101812e8; color: white; border-radius: 10px; text-align: center; pointer-events: none; }
+.peppa-watch-caption[hidden] { display: none; }
+#peppaWatchDe { font-size: clamp(15px, 2vw, 23px); font-weight: 700; line-height: 1.45; }
+#peppaWatchVi { margin-top: 5px; color: #e0eacb; font-size: clamp(12px, 1.4vw, 16px); }
+#peppaWatchCC[aria-pressed="false"] { background: transparent; color: #99aa92; }
+.peppa-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+.peppa-eyebrow { margin: 0 0 7px; font-size: 10px; font-weight: 700; letter-spacing: 1.3px; color: #67785b; }
+.peppa-heading h2 { margin: 0; font-family: var(--font-display); font-size: clamp(22px, 3vw, 30px); line-height: 1.3; }
+#peppaOverall { font-size: 11px; color: #67785b; white-space: nowrap; }
+.peppa-parts { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 9px; }
+.peppa-part { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; min-width: 0; min-height: 142px; text-align: left; padding: 14px 12px; border: 1px solid #dce2d4; border-radius: 12px; background: white; color: #33432f; cursor: pointer; box-shadow: none; }
+.peppa-part:hover { background: #f1f5e9; border-color: #9aac7e; transform: none; }
+.peppa-part[aria-pressed="true"] { border: 2px solid #6e8950; padding: 13px 11px; background: #edf3e3; }
+.peppa-part strong { font-size: 12px; line-height: 1.5; }
+.peppa-part-number { font-size: 9px; letter-spacing: .8px; color: #6c7d5f; }
+.peppa-part-time { font-size: 10px; color: #687260; margin-top: auto; }
+.peppa-part-progress { font-size: 10px; font-weight: 700; color: #527442; }
+.peppa-current { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0 18px; }
+.peppa-current h3 { margin: 0; font-family: var(--font-display); font-size: 25px; }
+#peppaPartGoal { margin: 7px 0 0; color: #6d7565; font-size: 12px; line-height: 1.7; max-width: 510px; }
+.peppa-actions { display: flex; flex-wrap: wrap; gap: 8px; flex-shrink: 0; }
+.peppa-actions button, .peppa-finished button, .peppa-watch-note button { min-height: 42px; padding: 10px 15px; border: 1px solid #788d60; border-radius: 10px; background: #eff3e7; color: #344b2c; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: none; }
+.peppa-actions .peppa-watch { background: #567443; color: white; border-color: #567443; }
+.peppa-options { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-top: 14px; border-top: 1px solid #dfe5d5; }
+.peppa-options > div { display: flex; flex-wrap: wrap; gap: 4px; }
+.peppa-options button { min-height: 38px; padding: 8px 10px; background: transparent; color: #68745f; font-size: 11px; border: 1px solid transparent; border-radius: 8px; box-shadow: none; cursor: pointer; }
+.peppa-options button[aria-pressed="true"] { color: #3c592f; border-color: #cbd8ba; background: #e8eedf; font-weight: 700; }
+#peppaWatchStatus { color: #75806c; font-size: 10px; text-align: right; }
+.peppa-finished { margin-top: 18px; padding: 16px; background: #e8f2df; border: 1px solid #b8cda5; border-radius: 12px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.peppa-finished strong { font-size: 13px; }
+.peppa-finished p { margin: 6px 0 0; font-size: 11px; color: #637657; }
+.peppa-watch-note { display: flex; gap: 16px; align-items: center; justify-content: center; flex-wrap: wrap; padding: 10px 20px; background: #edf3e3; color: #425d35; font-size: 12px; }
+#diktatMode.kino-peppa-active .kino-v3-milestones { display: none; }
+#diktatMode.kino-peppa-active .kino-v3-progress-card { margin-bottom: 16px; }
+#diktatMode.kino-peppa-active .kino-v3-timeline-card { margin-top: 20px; }
+.peppa-chapters button:focus-visible { outline: 3px solid #9b6d26; outline-offset: 3px; }
+@media (max-width: 800px) {
+  .peppa-current { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .peppa-options { align-items: flex-start; flex-direction: column; }
+  #peppaWatchStatus { text-align: left; }
+}
+@media (max-width: 540px) {
+  body[data-hub="kino"]:has(.kino-peppa-active) #boomboxMini,
+  body[data-hub="kino"]:has(.kino-peppa-active) #catCompanionWidget { display: none; }
+  #diktatMode.kino-peppa-active .kino-full-modal { padding: 12px; }
+  #diktatMode.kino-peppa-active .kino-full-modal-header { flex-wrap: wrap; gap: 8px; }
+  .peppa-chapters { padding: 16px; }
+  .peppa-heading { align-items: flex-start; flex-direction: column; gap: 9px; }
+  .peppa-parts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .peppa-part { min-height: 126px; }
+  .peppa-part:last-child { grid-column: 1 / -1; min-height: 105px; }
+  .peppa-current h3 { font-size: 22px; }
+  .peppa-actions { width: 100%; }
+  .peppa-actions button { flex: 1; padding: 10px; }
+  .peppa-finished { align-items: flex-start; flex-direction: column; }
+}

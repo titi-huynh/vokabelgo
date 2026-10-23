@@ -1,0 +1,2339 @@
+[
+  {
+    "sampleStart": 5,
+    "language": "ja",
+    "languageProbability": 0.753355860710144,
+    "segments": [
+      {
+        "start": 5.0,
+        "end": 6.34,
+        "text": "切ないな",
+        "score": 0.0,
+        "srtNumber": 1,
+        "srtStart": 13.466,
+        "offset": -8.466,
+        "words": [
+          {
+            "start": 5.0,
+            "end": 5.3,
+            "word": "切",
+            "probability": 0.02229827642440796
+          },
+          {
+            "start": 5.3,
+            "end": 5.96,
+            "word": "ない",
+            "probability": 0.9806320667266846
+          },
+          {
+            "start": 5.96,
+            "end": 6.34,
+            "word": "な",
+            "probability": 0.9092070460319519
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sampleStart": 70,
+    "language": "de",
+    "languageProbability": 0.99397212266922,
+    "segments": [
+      {
+        "start": 70.0,
+        "end": 71.24,
+        "text": "wie ein Dinosaurier haben.",
+        "score": 0.893,
+        "srtNumber": 18,
+        "srtStart": 49.666,
+        "offset": 20.334,
+        "words": [
+          {
+            "start": 70.0,
+            "end": 70.18,
+            "word": "wie",
+            "probability": 0.4501967430114746
+          },
+          {
+            "start": 70.18,
+            "end": 70.3,
+            "word": "ein",
+            "probability": 0.5003892779350281
+          },
+          {
+            "start": 70.3,
+            "end": 70.94,
+            "word": "Dinosaurier",
+            "probability": 0.9438427835702896
+          },
+          {
+            "start": 70.94,
+            "end": 71.24,
+            "word": "haben.",
+            "probability": 0.8124520182609558
+          }
+        ]
+      },
+      {
+        "start": 74.36,
+        "end": 76.5,
+        "text": "Ich habe ganz normale Füße!",
+        "score": 1.0,
+        "srtNumber": 19,
+        "srtStart": 54.9,
+        "offset": 19.46,
+        "words": [
+          {
+            "start": 74.36,
+            "end": 74.84,
+            "word": "Ich",
+            "probability": 0.8984699845314026
+          },
+          {
+            "start": 74.84,
+            "end": 75.32,
+            "word": "habe",
+            "probability": 0.9745097160339355
+          },
+          {
+            "start": 75.32,
+            "end": 75.62,
+            "word": "ganz",
+            "probability": 0.9912101030349731
+          },
+          {
+            "start": 75.62,
+            "end": 76.06,
+            "word": "normale",
+            "probability": 0.9640086889266968
+          },
+          {
+            "start": 76.06,
+            "end": 76.5,
+            "word": "Füße!",
+            "probability": 0.874045749505361
+          }
+        ]
+      },
+      {
+        "start": 77.28,
+        "end": 79.7,
+        "text": "Das ist mein fieser, gemeiner Bruder Toja.",
+        "score": 0.975,
+        "srtNumber": 20,
+        "srtStart": 57.5,
+        "offset": 19.78,
+        "words": [
+          {
+            "start": 77.28,
+            "end": 77.76,
+            "word": "Das",
+            "probability": 0.9803044199943542
+          },
+          {
+            "start": 77.76,
+            "end": 77.92,
+            "word": "ist",
+            "probability": 0.9950874447822571
+          },
+          {
+            "start": 77.92,
+            "end": 78.12,
+            "word": "mein",
+            "probability": 0.9909756779670715
+          },
+          {
+            "start": 78.12,
+            "end": 78.54,
+            "word": "fieser,",
+            "probability": 0.9514102141062418
+          },
+          {
+            "start": 78.54,
+            "end": 78.94,
+            "word": "gemeiner",
+            "probability": 0.9520013928413391
+          },
+          {
+            "start": 78.94,
+            "end": 79.3,
+            "word": "Bruder",
+            "probability": 0.9884680509567261
+          },
+          {
+            "start": 79.3,
+            "end": 79.7,
+            "word": "Toja.",
+            "probability": 0.5170605331659317
+          }
+        ]
+      },
+      {
+        "start": 79.94,
+        "end": 82.38,
+        "text": "Er geht aufs Saio-Gymnasium, direkt neben meiner Schule.",
+        "score": 0.938,
+        "srtNumber": 21,
+        "srtStart": 59.866,
+        "offset": 20.074,
+        "words": [
+          {
+            "start": 79.94,
+            "end": 80.06,
+            "word": "Er",
+            "probability": 0.9923012256622314
+          },
+          {
+            "start": 80.06,
+            "end": 80.2,
+            "word": "geht",
+            "probability": 0.9896687865257263
+          },
+          {
+            "start": 80.2,
+            "end": 80.48,
+            "word": "aufs",
+            "probability": 0.5657563433051109
+          },
+          {
+            "start": 80.48,
+            "end": 80.72,
+            "word": "Saio",
+            "probability": 0.7770222723484039
+          },
+          {
+            "start": 80.72,
+            "end": 81.26,
+            "word": "-Gymnasium,",
+            "probability": 0.8345735132694244
+          },
+          {
+            "start": 81.26,
+            "end": 81.56,
+            "word": "direkt",
+            "probability": 0.991603672504425
+          },
+          {
+            "start": 81.56,
+            "end": 81.78,
+            "word": "neben",
+            "probability": 0.8982899785041809
+          },
+          {
+            "start": 81.78,
+            "end": 82.1,
+            "word": "meiner",
+            "probability": 0.9947299957275391
+          },
+          {
+            "start": 82.1,
+            "end": 82.38,
+            "word": "Schule.",
+            "probability": 0.9952741861343384
+          }
+        ]
+      },
+      {
+        "start": 82.78,
+        "end": 85.1,
+        "text": "Vielleicht geht es daran, dass er älter ist, als ich.",
+        "score": 0.95,
+        "srtNumber": 22,
+        "srtStart": 62.9,
+        "offset": 19.88,
+        "words": [
+          {
+            "start": 82.78,
+            "end": 83.26,
+            "word": "Vielleicht",
+            "probability": 0.42570018768310547
+          },
+          {
+            "start": 83.26,
+            "end": 83.42,
+            "word": "geht",
+            "probability": 0.6345984935760498
+          },
+          {
+            "start": 83.42,
+            "end": 83.54,
+            "word": "es",
+            "probability": 0.9498167037963867
+          },
+          {
+            "start": 83.54,
+            "end": 83.84,
+            "word": "daran,",
+            "probability": 0.7625994086265564
+          },
+          {
+            "start": 83.98,
+            "end": 84.06,
+            "word": "dass",
+            "probability": 0.9954462647438049
+          },
+          {
+            "start": 84.06,
+            "end": 84.18,
+            "word": "er",
+            "probability": 0.994146466255188
+          },
+          {
+            "start": 84.18,
+            "end": 84.48,
+            "word": "älter",
+            "probability": 0.9969017306963602
+          },
+          {
+            "start": 84.48,
+            "end": 84.68,
+            "word": "ist,",
+            "probability": 0.9973081350326538
+          },
+          {
+            "start": 84.8,
+            "end": 84.84,
+            "word": "als",
+            "probability": 0.9929530024528503
+          },
+          {
+            "start": 84.84,
+            "end": 85.1,
+            "word": "ich.",
+            "probability": 0.9980989098548889
+          }
+        ]
+      },
+      {
+        "start": 85.26,
+        "end": 87.48,
+        "text": "Jedenfalls habe ich noch keinen Kampf gegen ihn gewonnen.",
+        "score": 1.0,
+        "srtNumber": 23,
+        "srtStart": 65.333,
+        "offset": 19.927,
+        "words": [
+          {
+            "start": 85.26,
+            "end": 85.74,
+            "word": "Jedenfalls",
+            "probability": 0.9308526913324991
+          },
+          {
+            "start": 85.74,
+            "end": 85.9,
+            "word": "habe",
+            "probability": 0.8524240851402283
+          },
+          {
+            "start": 85.9,
+            "end": 86.04,
+            "word": "ich",
+            "probability": 0.9980630278587341
+          },
+          {
+            "start": 86.04,
+            "end": 86.18,
+            "word": "noch",
+            "probability": 0.9699318408966064
+          },
+          {
+            "start": 86.18,
+            "end": 86.44,
+            "word": "keinen",
+            "probability": 0.998676598072052
+          },
+          {
+            "start": 86.44,
+            "end": 86.8,
+            "word": "Kampf",
+            "probability": 0.998319685459137
+          },
+          {
+            "start": 86.8,
+            "end": 86.94,
+            "word": "gegen",
+            "probability": 0.9941376447677612
+          },
+          {
+            "start": 86.94,
+            "end": 87.16,
+            "word": "ihn",
+            "probability": 0.9876920580863953
+          },
+          {
+            "start": 87.16,
+            "end": 87.48,
+            "word": "gewonnen.",
+            "probability": 0.9902984499931335
+          }
+        ]
+      },
+      {
+        "start": 87.9,
+        "end": 89.08,
+        "text": "Das macht mich noch verrückt.",
+        "score": 1.0,
+        "srtNumber": 25,
+        "srtStart": 67.93299999999999,
+        "offset": 19.967,
+        "words": [
+          {
+            "start": 87.9,
+            "end": 88.04,
+            "word": "Das",
+            "probability": 0.9912458062171936
+          },
+          {
+            "start": 88.04,
+            "end": 88.3,
+            "word": "macht",
+            "probability": 0.9989025592803955
+          },
+          {
+            "start": 88.3,
+            "end": 88.48,
+            "word": "mich",
+            "probability": 0.9978432655334473
+          },
+          {
+            "start": 88.48,
+            "end": 88.64,
+            "word": "noch",
+            "probability": 0.990858256816864
+          },
+          {
+            "start": 88.64,
+            "end": 89.08,
+            "word": "verrückt.",
+            "probability": 0.997052013874054
+          }
+        ]
+      },
+      {
+        "start": 89.44,
+        "end": 92.38,
+        "text": "Er ist viel größer, als ich, aber eines Tages wird es anders sein.",
+        "score": 1.0,
+        "srtNumber": 26,
+        "srtStart": 69.333,
+        "offset": 20.107,
+        "words": [
+          {
+            "start": 89.44,
+            "end": 89.54,
+            "word": "Er",
+            "probability": 0.9952408075332642
+          },
+          {
+            "start": 89.54,
+            "end": 89.68,
+            "word": "ist",
+            "probability": 0.9982736110687256
+          },
+          {
+            "start": 89.68,
+            "end": 89.84,
+            "word": "viel",
+            "probability": 0.9930214285850525
+          },
+          {
+            "start": 89.84,
+            "end": 90.3,
+            "word": "größer,",
+            "probability": 0.9920635521411896
+          },
+          {
+            "start": 90.32,
+            "end": 90.42,
+            "word": "als",
+            "probability": 0.9961020946502686
+          },
+          {
+            "start": 90.42,
+            "end": 90.64,
+            "word": "ich,",
+            "probability": 0.9992014765739441
+          },
+          {
+            "start": 90.72,
+            "end": 90.86,
+            "word": "aber",
+            "probability": 0.9956170320510864
+          },
+          {
+            "start": 90.86,
+            "end": 91.14,
+            "word": "eines",
+            "probability": 0.8969132304191589
+          },
+          {
+            "start": 91.14,
+            "end": 91.38,
+            "word": "Tages",
+            "probability": 0.9114369750022888
+          },
+          {
+            "start": 91.38,
+            "end": 91.66,
+            "word": "wird",
+            "probability": 0.9775411486625671
+          },
+          {
+            "start": 91.66,
+            "end": 91.8,
+            "word": "es",
+            "probability": 0.9217112064361572
+          },
+          {
+            "start": 91.8,
+            "end": 92.04,
+            "word": "anders",
+            "probability": 0.9983416795730591
+          },
+          {
+            "start": 92.04,
+            "end": 92.38,
+            "word": "sein.",
+            "probability": 0.9988232254981995
+          }
+        ]
+      },
+      {
+        "start": 92.68,
+        "end": 94.9,
+        "text": "Dann zerteilte ich ihn mit meinen riesigen Saurier.",
+        "score": 0.914,
+        "srtNumber": 28,
+        "srtStart": 72.5,
+        "offset": 20.18,
+        "words": [
+          {
+            "start": 92.68,
+            "end": 92.84,
+            "word": "Dann",
+            "probability": 0.8912942409515381
+          },
+          {
+            "start": 92.84,
+            "end": 93.36,
+            "word": "zerteilte",
+            "probability": 0.7084036879241467
+          },
+          {
+            "start": 93.36,
+            "end": 93.5,
+            "word": "ich",
+            "probability": 0.9964445233345032
+          },
+          {
+            "start": 93.5,
+            "end": 93.64,
+            "word": "ihn",
+            "probability": 0.755982518196106
+          },
+          {
+            "start": 93.64,
+            "end": 93.8,
+            "word": "mit",
+            "probability": 0.9918587803840637
+          },
+          {
+            "start": 93.8,
+            "end": 93.98,
+            "word": "meinen",
+            "probability": 0.9609140753746033
+          },
+          {
+            "start": 93.98,
+            "end": 94.46,
+            "word": "riesigen",
+            "probability": 0.9927607178688049
+          },
+          {
+            "start": 94.46,
+            "end": 94.9,
+            "word": "Saurier.",
+            "probability": 0.6729406168063482
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sampleStart": 270,
+    "language": "de",
+    "languageProbability": 0.9955944418907166,
+    "segments": [
+      {
+        "start": 272.18,
+        "end": 272.98,
+        "text": "Ein Bonbon?",
+        "score": 1.0,
+        "srtNumber": 84,
+        "srtStart": 252.166,
+        "offset": 20.014,
+        "words": [
+          {
+            "start": 272.18,
+            "end": 272.58,
+            "word": "Ein",
+            "probability": 0.6043686866760254
+          },
+          {
+            "start": 272.58,
+            "end": 272.98,
+            "word": "Bonbon?",
+            "probability": 0.75077024102211
+          }
+        ]
+      },
+      {
+        "start": 273.86,
+        "end": 275.46,
+        "text": "Das müsste mir mal passieren.",
+        "score": 1.0,
+        "srtNumber": 85,
+        "srtStart": 253.966,
+        "offset": 19.894,
+        "words": [
+          {
+            "start": 273.86,
+            "end": 274.26,
+            "word": "Das",
+            "probability": 0.9749793410301208
+          },
+          {
+            "start": 274.26,
+            "end": 274.58,
+            "word": "müsste",
+            "probability": 0.9857079386711121
+          },
+          {
+            "start": 274.58,
+            "end": 274.78,
+            "word": "mir",
+            "probability": 0.9824612736701965
+          },
+          {
+            "start": 274.78,
+            "end": 274.96,
+            "word": "mal",
+            "probability": 0.9664099812507629
+          },
+          {
+            "start": 274.96,
+            "end": 275.46,
+            "word": "passieren.",
+            "probability": 0.9972032308578491
+          }
+        ]
+      },
+      {
+        "start": 277.58,
+        "end": 277.98,
+        "text": "Tomoyo!",
+        "score": 1.0,
+        "srtNumber": 86,
+        "srtStart": 257.466,
+        "offset": 20.114,
+        "words": [
+          {
+            "start": 277.58,
+            "end": 277.98,
+            "word": "Tomoyo!",
+            "probability": 0.5843026489019394
+          }
+        ]
+      },
+      {
+        "start": 278.5,
+        "end": 280.06,
+        "text": "Du weißt bestimmt selbst, was es bedeutet,",
+        "score": 0.845,
+        "srtNumber": 87,
+        "srtStart": 258.5,
+        "offset": 20.0,
+        "words": [
+          {
+            "start": 278.5,
+            "end": 278.7,
+            "word": "Du",
+            "probability": 0.9759623408317566
+          },
+          {
+            "start": 278.7,
+            "end": 278.9,
+            "word": "weißt",
+            "probability": 0.9714741408824921
+          },
+          {
+            "start": 278.9,
+            "end": 279.16,
+            "word": "bestimmt",
+            "probability": 0.9674956202507019
+          },
+          {
+            "start": 279.16,
+            "end": 279.42,
+            "word": "selbst,",
+            "probability": 0.8617416620254517
+          },
+          {
+            "start": 279.56,
+            "end": 279.66,
+            "word": "was",
+            "probability": 0.938345193862915
+          },
+          {
+            "start": 279.66,
+            "end": 279.78,
+            "word": "es",
+            "probability": 0.9620326161384583
+          },
+          {
+            "start": 279.78,
+            "end": 280.06,
+            "word": "bedeutet,",
+            "probability": 0.9922160506248474
+          }
+        ]
+      },
+      {
+        "start": 280.32,
+        "end": 282.12,
+        "text": "wenn ein Junge eine Mädchen Süßigkeiten schenkt.",
+        "score": 0.805,
+        "srtNumber": 88,
+        "srtStart": 260.733,
+        "offset": 19.587,
+        "words": [
+          {
+            "start": 280.32,
+            "end": 280.32,
+            "word": "wenn",
+            "probability": 0.9945719838142395
+          },
+          {
+            "start": 280.32,
+            "end": 280.5,
+            "word": "ein",
+            "probability": 0.7417994141578674
+          },
+          {
+            "start": 280.5,
+            "end": 280.72,
+            "word": "Junge",
+            "probability": 0.9626898169517517
+          },
+          {
+            "start": 280.72,
+            "end": 280.88,
+            "word": "eine",
+            "probability": 0.9492528438568115
+          },
+          {
+            "start": 280.88,
+            "end": 281.2,
+            "word": "Mädchen",
+            "probability": 0.9888443052768707
+          },
+          {
+            "start": 281.2,
+            "end": 281.72,
+            "word": "Süßigkeiten",
+            "probability": 0.9182220300038656
+          },
+          {
+            "start": 281.72,
+            "end": 282.12,
+            "word": "schenkt.",
+            "probability": 0.9906164606412252
+          }
+        ]
+      },
+      {
+        "start": 282.32,
+        "end": 284.4,
+        "text": "Das, das muss gar nichts bedeuten.",
+        "score": 0.821,
+        "srtNumber": 89,
+        "srtStart": 262.533,
+        "offset": 19.787,
+        "words": [
+          {
+            "start": 282.32,
+            "end": 282.56,
+            "word": "Das,",
+            "probability": 0.9879927635192871
+          },
+          {
+            "start": 282.82,
+            "end": 283.1,
+            "word": "das",
+            "probability": 0.9840359091758728
+          },
+          {
+            "start": 283.1,
+            "end": 283.34,
+            "word": "muss",
+            "probability": 0.9840496778488159
+          },
+          {
+            "start": 283.34,
+            "end": 283.62,
+            "word": "gar",
+            "probability": 0.9933865666389465
+          },
+          {
+            "start": 283.62,
+            "end": 283.82,
+            "word": "nichts",
+            "probability": 0.9787124395370483
+          },
+          {
+            "start": 283.82,
+            "end": 284.4,
+            "word": "bedeuten.",
+            "probability": 0.9939919114112854
+          }
+        ]
+      },
+      {
+        "start": 284.56,
+        "end": 285.22,
+        "text": "Morgen, Tomoyo.",
+        "score": 0.632,
+        "srtNumber": 86,
+        "srtStart": 257.466,
+        "offset": 27.094,
+        "words": [
+          {
+            "start": 284.56,
+            "end": 284.76,
+            "word": "Morgen,",
+            "probability": 0.9476791024208069
+          },
+          {
+            "start": 284.82,
+            "end": 285.22,
+            "word": "Tomoyo.",
+            "probability": 0.9970422983169556
+          }
+        ]
+      },
+      {
+        "start": 285.68,
+        "end": 287.54,
+        "text": "Ja, wünsche ich dir auch. Wie geht's dir, Sakura?",
+        "score": 0.946,
+        "srtNumber": 90,
+        "srtStart": 265.566,
+        "offset": 20.114,
+        "words": [
+          {
+            "start": 285.68,
+            "end": 285.86,
+            "word": "Ja,",
+            "probability": 0.8087784647941589
+          },
+          {
+            "start": 286.0,
+            "end": 286.2,
+            "word": "wünsche",
+            "probability": 0.9492154121398926
+          },
+          {
+            "start": 286.2,
+            "end": 286.32,
+            "word": "ich",
+            "probability": 0.9980694651603699
+          },
+          {
+            "start": 286.32,
+            "end": 286.42,
+            "word": "dir",
+            "probability": 0.9693565368652344
+          },
+          {
+            "start": 286.42,
+            "end": 286.6,
+            "word": "auch.",
+            "probability": 0.9852868318557739
+          },
+          {
+            "start": 286.72,
+            "end": 286.8,
+            "word": "Wie",
+            "probability": 0.9937677383422852
+          },
+          {
+            "start": 286.8,
+            "end": 287.16,
+            "word": "geht's",
+            "probability": 0.8026715219020844
+          },
+          {
+            "start": 287.16,
+            "end": 287.24,
+            "word": "dir,",
+            "probability": 0.9810826778411865
+          },
+          {
+            "start": 287.3,
+            "end": 287.54,
+            "word": "Sakura?",
+            "probability": 0.7648561596870422
+          }
+        ]
+      },
+      {
+        "start": 287.88,
+        "end": 288.06,
+        "text": "Gut.",
+        "score": 0.444,
+        "srtNumber": 65,
+        "srtStart": 181.533,
+        "offset": 106.347,
+        "words": [
+          {
+            "start": 287.88,
+            "end": 288.06,
+            "word": "Gut.",
+            "probability": 0.970515251159668
+          }
+        ]
+      },
+      {
+        "start": 288.74,
+        "end": 290.04,
+        "text": "Das ist Tomoyo Dai-Doi.",
+        "score": 0.933,
+        "srtNumber": 91,
+        "srtStart": 268.666,
+        "offset": 20.074,
+        "words": [
+          {
+            "start": 288.74,
+            "end": 288.92,
+            "word": "Das",
+            "probability": 0.9929524064064026
+          },
+          {
+            "start": 288.92,
+            "end": 289.04,
+            "word": "ist",
+            "probability": 0.9979459643363953
+          },
+          {
+            "start": 289.04,
+            "end": 289.54,
+            "word": "Tomoyo",
+            "probability": 0.9964695274829865
+          },
+          {
+            "start": 289.54,
+            "end": 289.74,
+            "word": "Dai",
+            "probability": 0.6852150559425354
+          },
+          {
+            "start": 289.74,
+            "end": 290.04,
+            "word": "-Doi.",
+            "probability": 0.6681374907493591
+          }
+        ]
+      },
+      {
+        "start": 290.32,
+        "end": 291.66,
+        "text": "Sie ist meine beste Freundin.",
+        "score": 1.0,
+        "srtNumber": 92,
+        "srtStart": 270.4,
+        "offset": 19.92,
+        "words": [
+          {
+            "start": 290.32,
+            "end": 290.52,
+            "word": "Sie",
+            "probability": 0.9958086013793945
+          },
+          {
+            "start": 290.52,
+            "end": 290.62,
+            "word": "ist",
+            "probability": 0.9977789521217346
+          },
+          {
+            "start": 290.62,
+            "end": 290.82,
+            "word": "meine",
+            "probability": 0.9952438473701477
+          },
+          {
+            "start": 290.82,
+            "end": 291.12,
+            "word": "beste",
+            "probability": 0.9970585107803345
+          },
+          {
+            "start": 291.12,
+            "end": 291.66,
+            "word": "Freundin.",
+            "probability": 0.9990173876285553
+          }
+        ]
+      },
+      {
+        "start": 291.78,
+        "end": 293.26,
+        "text": "Wir kennen uns schon seit der dritten Klasse.",
+        "score": 0.902,
+        "srtNumber": 93,
+        "srtStart": 271.666,
+        "offset": 20.114,
+        "words": [
+          {
+            "start": 291.78,
+            "end": 291.84,
+            "word": "Wir",
+            "probability": 0.9926072359085083
+          },
+          {
+            "start": 291.84,
+            "end": 292.06,
+            "word": "kennen",
+            "probability": 0.9900338053703308
+          },
+          {
+            "start": 292.06,
+            "end": 292.24,
+            "word": "uns",
+            "probability": 0.999508261680603
+          },
+          {
+            "start": 292.24,
+            "end": 292.38,
+            "word": "schon",
+            "probability": 0.9345512986183167
+          },
+          {
+            "start": 292.38,
+            "end": 292.56,
+            "word": "seit",
+            "probability": 0.9934271574020386
+          },
+          {
+            "start": 292.56,
+            "end": 292.64,
+            "word": "der",
+            "probability": 0.9863469004631042
+          },
+          {
+            "start": 292.64,
+            "end": 292.92,
+            "word": "dritten",
+            "probability": 0.7523598670959473
+          },
+          {
+            "start": 292.92,
+            "end": 293.26,
+            "word": "Klasse.",
+            "probability": 0.9857366383075714
+          }
+        ]
+      },
+      {
+        "start": 293.74,
+        "end": 294.98,
+        "text": "Ich muss zugeben, dass sie sehr kalt ist.",
+        "score": 0.87,
+        "srtNumber": 94,
+        "srtStart": 273.56600000000003,
+        "offset": 20.174,
+        "words": [
+          {
+            "start": 293.74,
+            "end": 293.86,
+            "word": "Ich",
+            "probability": 0.994944155216217
+          },
+          {
+            "start": 293.86,
+            "end": 294.0,
+            "word": "muss",
+            "probability": 0.9937517046928406
+          },
+          {
+            "start": 294.0,
+            "end": 294.4,
+            "word": "zugeben,",
+            "probability": 0.9650765955448151
+          },
+          {
+            "start": 294.52,
+            "end": 294.62,
+            "word": "dass",
+            "probability": 0.9836621880531311
+          },
+          {
+            "start": 294.62,
+            "end": 294.72,
+            "word": "sie",
+            "probability": 0.9462850689888
+          },
+          {
+            "start": 294.72,
+            "end": 294.9,
+            "word": "sehr",
+            "probability": 0.9975503087043762
+          },
+          {
+            "start": 294.9,
+            "end": 294.98,
+            "word": "kalt",
+            "probability": 0.2769467532634735
+          },
+          {
+            "start": 294.98,
+            "end": 294.98,
+            "word": "ist.",
+            "probability": 0.757423996925354
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sampleStart": 570,
+    "language": "de",
+    "languageProbability": 0.9830805659294128,
+    "segments": [
+      {
+        "start": 586.34,
+        "end": 588.58,
+        "text": "Das Buch aus meinem Traum!",
+        "score": 1.0,
+        "srtNumber": 157,
+        "srtStart": 566.9,
+        "offset": 19.44,
+        "words": [
+          {
+            "start": 586.34,
+            "end": 587.24,
+            "word": "Das",
+            "probability": 0.8921448588371277
+          },
+          {
+            "start": 587.24,
+            "end": 587.5,
+            "word": "Buch",
+            "probability": 0.9957942962646484
+          },
+          {
+            "start": 587.5,
+            "end": 587.72,
+            "word": "aus",
+            "probability": 0.9842261672019958
+          },
+          {
+            "start": 587.72,
+            "end": 587.94,
+            "word": "meinem",
+            "probability": 0.9910249710083008
+          },
+          {
+            "start": 587.94,
+            "end": 588.58,
+            "word": "Traum!",
+            "probability": 0.997188001871109
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sampleStart": 870,
+    "language": "de",
+    "languageProbability": 0.997012734413147,
+    "segments": [
+      {
+        "start": 870.0,
+        "end": 871.48,
+        "text": "Gib dir deine Macht!",
+        "score": 0.75,
+        "srtNumber": 235,
+        "srtStart": 849.266,
+        "offset": 20.734,
+        "words": [
+          {
+            "start": 870.0,
+            "end": 870.5,
+            "word": "Gib",
+            "probability": 0.8872411847114563
+          },
+          {
+            "start": 870.5,
+            "end": 870.68,
+            "word": "dir",
+            "probability": 0.5430462956428528
+          },
+          {
+            "start": 870.68,
+            "end": 870.92,
+            "word": "deine",
+            "probability": 0.922103226184845
+          },
+          {
+            "start": 870.92,
+            "end": 871.48,
+            "word": "Macht!",
+            "probability": 0.9971445202827454
+          }
+        ]
+      },
+      {
+        "start": 872.2,
+        "end": 873.5,
+        "text": "Gib die Macht frei!",
+        "score": 1.0,
+        "srtNumber": 236,
+        "srtStart": 852.3,
+        "offset": 19.9,
+        "words": [
+          {
+            "start": 872.2,
+            "end": 872.56,
+            "word": "Gib",
+            "probability": 0.8573295474052429
+          },
+          {
+            "start": 872.56,
+            "end": 872.76,
+            "word": "die",
+            "probability": 0.9756280183792114
+          },
+          {
+            "start": 872.76,
+            "end": 873.04,
+            "word": "Macht",
+            "probability": 0.9924076199531555
+          },
+          {
+            "start": 873.04,
+            "end": 873.5,
+            "word": "frei!",
+            "probability": 0.5525689125061035
+          }
+        ]
+      },
+      {
+        "start": 878.58,
+        "end": 880.88,
+        "text": "Makura, nimm den Schlüssel!",
+        "score": 0.96,
+        "srtNumber": 237,
+        "srtStart": 858.933,
+        "offset": 19.647,
+        "words": [
+          {
+            "start": 878.58,
+            "end": 879.54,
+            "word": "Makura,",
+            "probability": 0.5321639701724052
+          },
+          {
+            "start": 880.02,
+            "end": 880.18,
+            "word": "nimm",
+            "probability": 0.9739792346954346
+          },
+          {
+            "start": 880.18,
+            "end": 880.42,
+            "word": "den",
+            "probability": 0.8875880241394043
+          },
+          {
+            "start": 880.42,
+            "end": 880.88,
+            "word": "Schlüssel!",
+            "probability": 0.7388709932565689
+          }
+        ]
+      },
+      {
+        "start": 888.0,
+        "end": 889.6,
+        "text": "Was war's schon?",
+        "score": 0.8,
+        "srtNumber": 82,
+        "srtStart": 235.133,
+        "offset": 652.867,
+        "words": [
+          {
+            "start": 887.8,
+            "end": 888.28,
+            "word": "Was",
+            "probability": 0.6715776324272156
+          },
+          {
+            "start": 888.28,
+            "end": 889.24,
+            "word": "war's",
+            "probability": 0.7196660041809082
+          },
+          {
+            "start": 889.24,
+            "end": 889.6,
+            "word": "schon?",
+            "probability": 0.9934525489807129
+          }
+        ]
+      },
+      {
+        "start": 890.4,
+        "end": 892.96,
+        "text": "Ein Passkaptor ist geboren!",
+        "score": 0.647,
+        "srtNumber": 238,
+        "srtStart": 868.666,
+        "offset": 21.734,
+        "words": [
+          {
+            "start": 890.4,
+            "end": 890.72,
+            "word": "Ein",
+            "probability": 0.9895654916763306
+          },
+          {
+            "start": 890.72,
+            "end": 892.06,
+            "word": "Passkaptor",
+            "probability": 0.5059428885579109
+          },
+          {
+            "start": 892.06,
+            "end": 892.28,
+            "word": "ist",
+            "probability": 0.991435706615448
+          },
+          {
+            "start": 892.28,
+            "end": 892.96,
+            "word": "geboren!",
+            "probability": 0.9866149425506592
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sampleStart": 1130,
+    "language": "de",
+    "languageProbability": 0.9989079236984253,
+    "segments": [
+      {
+        "start": 1130.0,
+        "end": 1134.7,
+        "text": "Als Kart-Captor Sakura befehle ich dir vielleicht eine wahre Gestalt. Nimm sie wieder an!",
+        "score": 0.898,
+        "srtNumber": 292,
+        "srtStart": 1109.866,
+        "offset": 20.134,
+        "words": [
+          {
+            "start": 1130.0,
+            "end": 1130.26,
+            "word": "Als",
+            "probability": 0.9305458068847656
+          },
+          {
+            "start": 1130.26,
+            "end": 1130.54,
+            "word": "Kart",
+            "probability": 0.35459840297698975
+          },
+          {
+            "start": 1130.54,
+            "end": 1130.98,
+            "word": "-Captor",
+            "probability": 0.5691254436969757
+          },
+          {
+            "start": 1130.98,
+            "end": 1131.42,
+            "word": "Sakura",
+            "probability": 0.8024693727493286
+          },
+          {
+            "start": 1131.42,
+            "end": 1131.94,
+            "word": "befehle",
+            "probability": 0.8011146783828735
+          },
+          {
+            "start": 1131.94,
+            "end": 1132.08,
+            "word": "ich",
+            "probability": 0.9929966330528259
+          },
+          {
+            "start": 1132.08,
+            "end": 1132.2,
+            "word": "dir",
+            "probability": 0.9890301823616028
+          },
+          {
+            "start": 1132.2,
+            "end": 1132.5,
+            "word": "vielleicht",
+            "probability": 0.17077969014644623
+          },
+          {
+            "start": 1132.5,
+            "end": 1132.82,
+            "word": "eine",
+            "probability": 0.9228764176368713
+          },
+          {
+            "start": 1132.82,
+            "end": 1133.2,
+            "word": "wahre",
+            "probability": 0.9740095436573029
+          },
+          {
+            "start": 1133.2,
+            "end": 1133.62,
+            "word": "Gestalt.",
+            "probability": 0.8185331523418427
+          },
+          {
+            "start": 1133.82,
+            "end": 1134.02,
+            "word": "Nimm",
+            "probability": 0.9166497588157654
+          },
+          {
+            "start": 1134.02,
+            "end": 1134.16,
+            "word": "sie",
+            "probability": 0.9085937142372131
+          },
+          {
+            "start": 1134.16,
+            "end": 1134.42,
+            "word": "wieder",
+            "probability": 0.9896941184997559
+          },
+          {
+            "start": 1134.42,
+            "end": 1134.7,
+            "word": "an!",
+            "probability": 0.9862582683563232
+          }
+        ]
+      },
+      {
+        "start": 1152.36,
+        "end": 1154.64,
+        "text": "Ja! Du hast es geschafft!",
+        "score": 0.868,
+        "srtNumber": 295,
+        "srtStart": 1132.533,
+        "offset": 19.827,
+        "words": [
+          {
+            "start": 1152.36,
+            "end": 1152.92,
+            "word": "Ja!",
+            "probability": 0.9303678870201111
+          },
+          {
+            "start": 1153.58,
+            "end": 1153.84,
+            "word": "Du",
+            "probability": 0.992297351360321
+          },
+          {
+            "start": 1153.84,
+            "end": 1154.04,
+            "word": "hast",
+            "probability": 0.9952653646469116
+          },
+          {
+            "start": 1154.04,
+            "end": 1154.18,
+            "word": "es",
+            "probability": 0.7786831259727478
+          },
+          {
+            "start": 1154.18,
+            "end": 1154.64,
+            "word": "geschafft!",
+            "probability": 0.9932575225830078
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sampleStart": 1250,
+    "language": "ja",
+    "languageProbability": 0.8972994089126587,
+    "segments": [
+      {
+        "start": 1250.0,
+        "end": 1256.16,
+        "text": "きっと好きだって",
+        "score": 0.0,
+        "srtNumber": 1,
+        "srtStart": 13.466,
+        "offset": 1236.534,
+        "words": [
+          {
+            "start": 1250.0,
+            "end": 1251.1,
+            "word": "き",
+            "probability": 0.32002851366996765
+          },
+          {
+            "start": 1251.1,
+            "end": 1252.36,
+            "word": "っと",
+            "probability": 0.9982151985168457
+          },
+          {
+            "start": 1252.36,
+            "end": 1253.94,
+            "word": "好",
+            "probability": 0.5367996096611023
+          },
+          {
+            "start": 1253.94,
+            "end": 1254.48,
+            "word": "き",
+            "probability": 0.9996073842048645
+          },
+          {
+            "start": 1254.48,
+            "end": 1254.98,
+            "word": "だ",
+            "probability": 0.9944264888763428
+          },
+          {
+            "start": 1254.98,
+            "end": 1256.16,
+            "word": "って",
+            "probability": 0.9939529299736023
+          }
+        ]
+      },
+      {
+        "start": 1256.7,
+        "end": 1259.78,
+        "text": "回るよ",
+        "score": 0.0,
+        "srtNumber": 1,
+        "srtStart": 13.466,
+        "offset": 1243.234,
+        "words": [
+          {
+            "start": 1256.7,
+            "end": 1257.38,
+            "word": "回",
+            "probability": 0.21056421101093292
+          },
+          {
+            "start": 1257.38,
+            "end": 1258.52,
+            "word": "る",
+            "probability": 0.9962155222892761
+          },
+          {
+            "start": 1258.52,
+            "end": 1259.78,
+            "word": "よ",
+            "probability": 0.9916314482688904
+          }
+        ]
+      },
+      {
+        "start": 1261.06,
+        "end": 1262.88,
+        "text": "Run your love song",
+        "score": 0.455,
+        "srtNumber": 244,
+        "srtStart": 890.266,
+        "offset": 370.794,
+        "words": [
+          {
+            "start": 1261.06,
+            "end": 1261.82,
+            "word": "Run",
+            "probability": 0.10693514347076416
+          },
+          {
+            "start": 1261.82,
+            "end": 1262.06,
+            "word": "your",
+            "probability": 0.7625795602798462
+          },
+          {
+            "start": 1262.06,
+            "end": 1262.44,
+            "word": "love",
+            "probability": 0.8311107754707336
+          },
+          {
+            "start": 1262.44,
+            "end": 1262.88,
+            "word": "song",
+            "probability": 0.9527963995933533
+          }
+        ]
+      },
+      {
+        "start": 1262.88,
+        "end": 1265.0,
+        "text": "晴れ晴れの夜",
+        "score": 0.0,
+        "srtNumber": 1,
+        "srtStart": 13.466,
+        "offset": 1249.414,
+        "words": [
+          {
+            "start": 1262.88,
+            "end": 1263.62,
+            "word": "晴",
+            "probability": 0.5031697414815426
+          },
+          {
+            "start": 1263.62,
+            "end": 1263.94,
+            "word": "れ",
+            "probability": 0.9881524443626404
+          },
+          {
+            "start": 1263.94,
+            "end": 1264.3,
+            "word": "晴",
+            "probability": 0.9950363636016846
+          },
+          {
+            "start": 1264.3,
+            "end": 1264.48,
+            "word": "れ",
+            "probability": 0.7584213018417358
+          },
+          {
+            "start": 1264.48,
+            "end": 1264.72,
+            "word": "の",
+            "probability": 0.9557175040245056
+          },
+          {
+            "start": 1264.72,
+            "end": 1265.0,
+            "word": "夜",
+            "probability": 0.4604310989379883
+          }
+        ]
+      },
+      {
+        "start": 1265.0,
+        "end": 1269.38,
+        "text": "みんな弾けて愛し合おう",
+        "score": 0.0,
+        "srtNumber": 1,
+        "srtStart": 13.466,
+        "offset": 1251.534,
+        "words": [
+          {
+            "start": 1265.0,
+            "end": 1265.58,
+            "word": "み",
+            "probability": 0.7647680640220642
+          },
+          {
+            "start": 1265.58,
+            "end": 1265.92,
+            "word": "んな",
+            "probability": 0.9973875880241394
+          },
+          {
+            "start": 1265.92,
+            "end": 1266.2,
+            "word": "弾",
+            "probability": 0.8137460649013519
+          },
+          {
+            "start": 1266.2,
+            "end": 1266.78,
+            "word": "けて",
+            "probability": 0.9954898953437805
+          },
+          {
+            "start": 1266.78,
+            "end": 1267.3,
+            "word": "愛",
+            "probability": 0.761233389377594
+          },
+          {
+            "start": 1267.3,
+            "end": 1267.88,
+            "word": "し",
+            "probability": 0.9562857151031494
+          },
+          {
+            "start": 1267.88,
+            "end": 1268.16,
+            "word": "合",
+            "probability": 0.7290046215057373
+          },
+          {
+            "start": 1268.16,
+            "end": 1268.54,
+            "word": "お",
+            "probability": 0.8965883851051331
+          },
+          {
+            "start": 1268.54,
+            "end": 1269.38,
+            "word": "う",
+            "probability": 0.9981978535652161
+          }
+        ]
+      },
+      {
+        "start": 1269.38,
+        "end": 1272.84,
+        "text": "単純な日常 通常な感情",
+        "score": 0.105,
+        "srtNumber": 310,
+        "srtStart": 1183.766,
+        "offset": 85.614,
+        "words": [
+          {
+            "start": 1269.38,
+            "end": 1269.62,
+            "word": "単",
+            "probability": 0.7997100353240967
+          },
+          {
+            "start": 1269.62,
+            "end": 1269.84,
+            "word": "純",
+            "probability": 0.5989030376076698
+          },
+          {
+            "start": 1269.84,
+            "end": 1270.16,
+            "word": "な",
+            "probability": 0.9970728158950806
+          },
+          {
+            "start": 1270.16,
+            "end": 1270.38,
+            "word": "日",
+            "probability": 0.47315528988838196
+          },
+          {
+            "start": 1270.38,
+            "end": 1270.86,
+            "word": "常",
+            "probability": 0.961581289768219
+          },
+          {
+            "start": 1271.1,
+            "end": 1271.48,
+            "word": "通",
+            "probability": 0.2511972188949585
+          },
+          {
+            "start": 1271.48,
+            "end": 1271.72,
+            "word": "常",
+            "probability": 0.9326948523521423
+          },
+          {
+            "start": 1271.72,
+            "end": 1272.06,
+            "word": "な",
+            "probability": 0.9988479614257812
+          },
+          {
+            "start": 1272.06,
+            "end": 1272.34,
+            "word": "感",
+            "probability": 0.7686722874641418
+          },
+          {
+            "start": 1272.34,
+            "end": 1272.84,
+            "word": "情",
+            "probability": 0.9974808096885681
+          }
+        ]
+      },
+      {
+        "start": 1272.84,
+        "end": 1274.66,
+        "text": "守らなくちゃ",
+        "score": 0.0,
+        "srtNumber": 1,
+        "srtStart": 13.466,
+        "offset": 1259.374,
+        "words": [
+          {
+            "start": 1272.84,
+            "end": 1273.56,
+            "word": "守",
+            "probability": 0.6869070529937744
+          },
+          {
+            "start": 1273.56,
+            "end": 1274.04,
+            "word": "ら",
+            "probability": 0.9789944291114807
+          },
+          {
+            "start": 1274.04,
+            "end": 1274.32,
+            "word": "なく",
+            "probability": 0.9924653768539429
+          },
+          {
+            "start": 1274.32,
+            "end": 1274.66,
+            "word": "ちゃ",
+            "probability": 0.9806444048881531
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sampleStart": 1310,
+    "language": "de",
+    "languageProbability": 0.9926947355270386,
+    "segments": [
+      {
+        "start": 1311.54,
+        "end": 1314.46,
+        "text": "Diese Uniform gibt es langarmlich und kurzermlich.",
+        "score": 0.442,
+        "srtNumber": 221,
+        "srtStart": 812.266,
+        "offset": 499.274,
+        "words": [
+          {
+            "start": 1311.54,
+            "end": 1312.06,
+            "word": "Diese",
+            "probability": 0.9101135730743408
+          },
+          {
+            "start": 1312.06,
+            "end": 1312.54,
+            "word": "Uniform",
+            "probability": 0.9746457636356354
+          },
+          {
+            "start": 1312.54,
+            "end": 1312.74,
+            "word": "gibt",
+            "probability": 0.8635610938072205
+          },
+          {
+            "start": 1312.74,
+            "end": 1312.92,
+            "word": "es",
+            "probability": 0.9841433763504028
+          },
+          {
+            "start": 1312.92,
+            "end": 1313.52,
+            "word": "langarmlich",
+            "probability": 0.7291289468606313
+          },
+          {
+            "start": 1313.52,
+            "end": 1313.72,
+            "word": "und",
+            "probability": 0.969696044921875
+          },
+          {
+            "start": 1313.72,
+            "end": 1314.46,
+            "word": "kurzermlich.",
+            "probability": 0.8407003730535507
+          }
+        ]
+      },
+      {
+        "start": 1314.62,
+        "end": 1316.94,
+        "text": "Wie ihr seht, trinkt Sakura hier die langarmlige Variante.",
+        "score": 0.47,
+        "srtNumber": 18,
+        "srtStart": 49.666,
+        "offset": 1264.954,
+        "words": [
+          {
+            "start": 1314.62,
+            "end": 1314.62,
+            "word": "Wie",
+            "probability": 0.6646122932434082
+          },
+          {
+            "start": 1314.62,
+            "end": 1314.72,
+            "word": "ihr",
+            "probability": 0.9757313132286072
+          },
+          {
+            "start": 1314.72,
+            "end": 1314.98,
+            "word": "seht,",
+            "probability": 0.9811949133872986
+          },
+          {
+            "start": 1315.1,
+            "end": 1315.56,
+            "word": "trinkt",
+            "probability": 0.746476948261261
+          },
+          {
+            "start": 1315.56,
+            "end": 1315.56,
+            "word": "Sakura",
+            "probability": 0.9280742406845093
+          },
+          {
+            "start": 1315.56,
+            "end": 1315.8,
+            "word": "hier",
+            "probability": 0.35331419110298157
+          },
+          {
+            "start": 1315.8,
+            "end": 1315.88,
+            "word": "die",
+            "probability": 0.9831977486610413
+          },
+          {
+            "start": 1315.88,
+            "end": 1316.42,
+            "word": "langarmlige",
+            "probability": 0.816097155213356
+          },
+          {
+            "start": 1316.42,
+            "end": 1316.94,
+            "word": "Variante.",
+            "probability": 0.9871456921100616
+          }
+        ]
+      },
+      {
+        "start": 1317.08,
+        "end": 1318.98,
+        "text": "Die Hauptfarben sind marineblau und weiß.",
+        "score": 0.488,
+        "srtNumber": 162,
+        "srtStart": 598.133,
+        "offset": 718.947,
+        "words": [
+          {
+            "start": 1317.08,
+            "end": 1317.12,
+            "word": "Die",
+            "probability": 0.987079918384552
+          },
+          {
+            "start": 1317.12,
+            "end": 1317.78,
+            "word": "Hauptfarben",
+            "probability": 0.9826577504475912
+          },
+          {
+            "start": 1317.78,
+            "end": 1317.94,
+            "word": "sind",
+            "probability": 0.9921301007270813
+          },
+          {
+            "start": 1317.94,
+            "end": 1318.64,
+            "word": "marineblau",
+            "probability": 0.7776965796947479
+          },
+          {
+            "start": 1318.64,
+            "end": 1318.74,
+            "word": "und",
+            "probability": 0.980995237827301
+          },
+          {
+            "start": 1318.74,
+            "end": 1318.98,
+            "word": "weiß.",
+            "probability": 0.9936456680297852
+          }
+        ]
+      },
+      {
+        "start": 1319.24,
+        "end": 1321.24,
+        "text": "Und mit den roten Streifen sieht sie echt cool aus.",
+        "score": 0.511,
+        "srtNumber": 159,
+        "srtStart": 589.566,
+        "offset": 729.674,
+        "words": [
+          {
+            "start": 1319.24,
+            "end": 1319.24,
+            "word": "Und",
+            "probability": 0.42159509658813477
+          },
+          {
+            "start": 1319.24,
+            "end": 1319.4,
+            "word": "mit",
+            "probability": 0.99461430311203
+          },
+          {
+            "start": 1319.4,
+            "end": 1319.52,
+            "word": "den",
+            "probability": 0.9900017976760864
+          },
+          {
+            "start": 1319.52,
+            "end": 1319.82,
+            "word": "roten",
+            "probability": 0.9733168184757233
+          },
+          {
+            "start": 1319.82,
+            "end": 1320.18,
+            "word": "Streifen",
+            "probability": 0.9847666025161743
+          },
+          {
+            "start": 1320.18,
+            "end": 1320.32,
+            "word": "sieht",
+            "probability": 0.995209276676178
+          },
+          {
+            "start": 1320.32,
+            "end": 1320.48,
+            "word": "sie",
+            "probability": 0.9726799726486206
+          },
+          {
+            "start": 1320.48,
+            "end": 1320.66,
+            "word": "echt",
+            "probability": 0.9796596169471741
+          },
+          {
+            "start": 1320.66,
+            "end": 1320.92,
+            "word": "cool",
+            "probability": 0.9952136278152466
+          },
+          {
+            "start": 1320.92,
+            "end": 1321.24,
+            "word": "aus.",
+            "probability": 0.9994670748710632
+          }
+        ]
+      },
+      {
+        "start": 1321.5,
+        "end": 1324.8,
+        "text": "Aber gerade die Details, wie das Schulabzeichen auf dem linken Ärmel",
+        "score": 0.465,
+        "srtNumber": 131,
+        "srtStart": 353.733,
+        "offset": 967.767,
+        "words": [
+          {
+            "start": 1321.5,
+            "end": 1321.76,
+            "word": "Aber",
+            "probability": 0.8577131032943726
+          },
+          {
+            "start": 1321.76,
+            "end": 1322.12,
+            "word": "gerade",
+            "probability": 0.9093677401542664
+          },
+          {
+            "start": 1322.12,
+            "end": 1322.34,
+            "word": "die",
+            "probability": 0.946520209312439
+          },
+          {
+            "start": 1322.34,
+            "end": 1322.76,
+            "word": "Details,",
+            "probability": 0.9963155388832092
+          },
+          {
+            "start": 1322.96,
+            "end": 1323.06,
+            "word": "wie",
+            "probability": 0.9914528131484985
+          },
+          {
+            "start": 1323.06,
+            "end": 1323.16,
+            "word": "das",
+            "probability": 0.9871161580085754
+          },
+          {
+            "start": 1323.16,
+            "end": 1323.84,
+            "word": "Schulabzeichen",
+            "probability": 0.9348785430192947
+          },
+          {
+            "start": 1323.84,
+            "end": 1323.96,
+            "word": "auf",
+            "probability": 0.9763327240943909
+          },
+          {
+            "start": 1323.96,
+            "end": 1324.1,
+            "word": "dem",
+            "probability": 0.9950628876686096
+          },
+          {
+            "start": 1324.1,
+            "end": 1324.44,
+            "word": "linken",
+            "probability": 0.9900932610034943
+          },
+          {
+            "start": 1324.44,
+            "end": 1324.8,
+            "word": "Ärmel",
+            "probability": 0.6769510060548782
+          }
+        ]
+      },
+      {
+        "start": 1324.8,
+        "end": 1326.94,
+        "text": "und die Mütze mit den Wändern kommen super.",
+        "score": 0.547,
+        "srtNumber": 211,
+        "srtStart": 791.766,
+        "offset": 533.034,
+        "words": [
+          {
+            "start": 1324.8,
+            "end": 1324.96,
+            "word": "und",
+            "probability": 0.8609490394592285
+          },
+          {
+            "start": 1324.96,
+            "end": 1325.14,
+            "word": "die",
+            "probability": 0.9911012649536133
+          },
+          {
+            "start": 1325.14,
+            "end": 1325.44,
+            "word": "Mütze",
+            "probability": 0.9655784169832865
+          },
+          {
+            "start": 1325.44,
+            "end": 1325.58,
+            "word": "mit",
+            "probability": 0.9174947738647461
+          },
+          {
+            "start": 1325.58,
+            "end": 1325.7,
+            "word": "den",
+            "probability": 0.97394198179245
+          },
+          {
+            "start": 1325.7,
+            "end": 1326.1,
+            "word": "Wändern",
+            "probability": 0.8283614814281464
+          },
+          {
+            "start": 1326.1,
+            "end": 1326.4,
+            "word": "kommen",
+            "probability": 0.6522487998008728
+          },
+          {
+            "start": 1326.4,
+            "end": 1326.94,
+            "word": "super.",
+            "probability": 0.9084685444831848
+          }
+        ]
+      },
+      {
+        "start": 1327.34,
+        "end": 1329.92,
+        "text": "Und hier haben wir jetzt Keros Schnapschuss.",
+        "score": 0.5,
+        "srtNumber": 211,
+        "srtStart": 791.766,
+        "offset": 535.574,
+        "words": [
+          {
+            "start": 1327.34,
+            "end": 1327.48,
+            "word": "Und",
+            "probability": 0.9654117226600647
+          },
+          {
+            "start": 1327.48,
+            "end": 1327.74,
+            "word": "hier",
+            "probability": 0.990352213382721
+          },
+          {
+            "start": 1327.74,
+            "end": 1328.0,
+            "word": "haben",
+            "probability": 0.9949352145195007
+          },
+          {
+            "start": 1328.0,
+            "end": 1328.16,
+            "word": "wir",
+            "probability": 0.9740769863128662
+          },
+          {
+            "start": 1328.16,
+            "end": 1328.46,
+            "word": "jetzt",
+            "probability": 0.9622846841812134
+          },
+          {
+            "start": 1328.46,
+            "end": 1329.02,
+            "word": "Keros",
+            "probability": 0.6699316054582596
+          },
+          {
+            "start": 1329.02,
+            "end": 1329.92,
+            "word": "Schnapschuss.",
+            "probability": 0.6011114493012428
+          }
+        ]
+      },
+      {
+        "start": 1330.58,
+        "end": 1331.68,
+        "text": "Der ist gelungen, nicht?",
+        "score": 0.537,
+        "srtNumber": 26,
+        "srtStart": 69.333,
+        "offset": 1261.247,
+        "words": [
+          {
+            "start": 1330.58,
+            "end": 1330.96,
+            "word": "Der",
+            "probability": 0.9141336679458618
+          },
+          {
+            "start": 1330.96,
+            "end": 1331.1,
+            "word": "ist",
+            "probability": 0.9881131052970886
+          },
+          {
+            "start": 1331.1,
+            "end": 1331.4,
+            "word": "gelungen,",
+            "probability": 0.9962068498134613
+          },
+          {
+            "start": 1331.62,
+            "end": 1331.68,
+            "word": "nicht?",
+            "probability": 0.989612877368927
+          }
+        ]
+      },
+      {
+        "start": 1332.2,
+        "end": 1334.88,
+        "text": "Das ist Sakura´s Rock, ein balster Faltenrock.",
+        "score": 0.559,
+        "srtNumber": 127,
+        "srtStart": 343.466,
+        "offset": 988.734,
+        "words": [
+          {
+            "start": 1332.2,
+            "end": 1332.72,
+            "word": "Das",
+            "probability": 0.7403713464736938
+          },
+          {
+            "start": 1332.72,
+            "end": 1332.9,
+            "word": "ist",
+            "probability": 0.9984044432640076
+          },
+          {
+            "start": 1332.9,
+            "end": 1333.44,
+            "word": "Sakura´s",
+            "probability": 0.7652817070484161
+          },
+          {
+            "start": 1333.44,
+            "end": 1333.6,
+            "word": "Rock,",
+            "probability": 0.9026458263397217
+          },
+          {
+            "start": 1333.92,
+            "end": 1334.04,
+            "word": "ein",
+            "probability": 0.9744830131530762
+          },
+          {
+            "start": 1334.04,
+            "end": 1334.4,
+            "word": "balster",
+            "probability": 0.562265545129776
+          },
+          {
+            "start": 1334.4,
+            "end": 1334.88,
+            "word": "Faltenrock.",
+            "probability": 0.7745652794837952
+          }
+        ]
+      }
+    ]
+  }
+]

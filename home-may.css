@@ -1,0 +1,33 @@
+/* Mây greets learners in the first screen, using the approved scene. */
+.today-welcome-bar.may-home-welcome {
+  display: grid;
+  grid-template-columns: minmax(230px, .85fr) minmax(0, 1.25fr);
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #dce2cf;
+  border-radius: 22px;
+  background: #edf1e5;
+}
+.may-home-copy { padding: 25px 28px; }
+.may-home-copy .journal-eyebrow { color: #506448; margin-bottom: 10px; }
+.may-home-copy .journal-eyebrow span { padding: 0; color: #a46532; }
+.may-home-copy .welcome-text-title { font-family: var(--font-display); font-size: clamp(25px, 2.4vw, 34px); line-height: 1.25; }
+.may-home-copy .welcome-text-sub { margin: 12px 0 18px; font-size: 12px; }
+.may-home-start { display: inline-flex; align-items: center; gap: 23px; min-height: 44px; padding: 10px 17px; border: 1px solid var(--primary); border-radius: 10px; background: var(--primary); color: #fff; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: none; }
+.may-home-start:hover { background: var(--primary-hover); }
+.may-home-start span { font-size: 19px; line-height: 1; }
+.may-home-copy .today-date-badge { margin-top: 12px; font-size: 9px; }
+.may-home-scene { position: relative; min-width: 0; align-self: stretch; display: grid; align-items: center; background: #a8c97d; }
+.may-home-video { display: block; width: 100%; height: auto; aspect-ratio: 1672 / 941; object-fit: contain; }
+.may-home-motion { position: absolute; right: 10px; bottom: 10px; min-height: 36px; padding: 7px 12px; border: 1px solid #dce2cf; border-radius: 20px; background: #fffef8f2; color: #354a3c; font-size: 10px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 8px #293d3210; }
+.may-home-motion[hidden] { display: none; }
+@media (max-width: 760px) {
+  .today-welcome-bar.may-home-welcome { grid-template-columns: minmax(0, 1fr); border-radius: 17px; }
+  .may-home-scene { grid-row: 1; }
+  .may-home-copy { padding: 20px 22px; }
+  .may-home-copy .welcome-text-title { font-size: 27px; }
+  .may-home-copy .welcome-text-sub { margin: 10px 0 14px; }
+  .may-home-copy .today-date-badge { display: none; }
+}

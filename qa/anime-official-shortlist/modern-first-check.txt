@@ -1,0 +1,89 @@
+Browser tab: 6, Title: "Chọn anime tiếng Đức cho Kino", URL: "http://localhost:3000/qa/anime-official-shortlist/modern-check.html".
+1 AXWebArea Chọn anime tiếng Đức cho Kino, URL: localhost:3000/qa/anime-official-shortlist/modern-check.html
+	2 container
+		3 heading Anime tiếng Đức để chị chọn, Value: 1
+			4 text Anime tiếng Đức để chị chọn
+		5 text Đang kiểm tra thêm anime mới lồng tiếng Đức. Trạng thái phát chỉ xác nhận sau khi thử trực tiếp.
+		6 container Description: Chọn anime, ID: choices
+			7 checkbox Frieren Trích đoạn lồng tiếng Đức · Crunchyroll Deutschland, Value: 0
+				8 text Frieren
+				9 text Trích đoạn lồng tiếng Đức · Crunchyroll Deutschland
+			10 checkbox Demon Slayer – Thanh gươm diệt quỷ Trailer Infinity Castle tiếng Đức · SonyPicturesGermany, Value: 1
+				11 text Demon Slayer – Thanh gươm diệt quỷ
+				12 text Trailer Infinity Castle tiếng Đức · SonyPicturesGermany
+			13 checkbox SPY × FAMILY Trích đoạn lồng tiếng Đức · Crunchyroll Deutschland, Value: 0
+				14 text SPY × FAMILY
+				15 text Trích đoạn lồng tiếng Đức · Crunchyroll Deutschland
+			16 checkbox Solo Leveling Synchro-Trailer · Crunchyroll Deutschland, Value: 0
+				17 text Solo Leveling
+				18 text Synchro-Trailer · Crunchyroll Deutschland
+			19 checkbox SPY × FAMILY – trailer dự phòng Trailer 1 lồng tiếng Đức · Crunchyroll Deutschland, Value: 0
+				20 text SPY × FAMILY – trailer dự phòng
+				21 text Trailer 1 lồng tiếng Đức · Crunchyroll Deutschland
+		22 container stage
+			23 heading Demon Slayer – Thanh gươm diệt quỷ, Value: 2, ID: title
+				52 text Demon Slayer – Thanh gươm diệt quỷ
+			53 text Trailer của phim Infinity Castle do Sony Pictures Đức phát hành.
+			36 container Description: Demon Slayer: Kimetsu No Yaiba Infinity Castle – Trailer Deutsch (Kinostart: 18.9.2025), ID: player
+				37 AXWebArea Demon Slayer: Kimetsu No Yaiba Infinity Castle – Trailer Deutsch (Kinostart: 18.9.2025) - YouTube, URL: youtube.com/embed/m6glWu0SaMM?origin=http%3A%2F%2Flocalhost%3A3000&hl=de&playsinline=1&enablejsapi=1&widgetid=1&forigin=http%3A%2F%2Flocalhost%3A3000%2Fqa%2Fanime-official-shortlist%2Fmodern-check.html&aoriginsup=1&vf=1
+					38 container
+						39 container Description: YouTube-Videoplayer, ID: movie_player
+						54 container
+							69 button Description: Steuerelemente des Videoplayers ausblenden, ID: player-controls-a11y-toggle
+							77 container player-control-overlay
+								78 container
+									79 link Description: Demon Slayer: Kimetsu No Yaiba Infinity Castle – Trailer Deutsch (Kinostart: 18.9.2025), Value: youtube.com/watch?v=NpjVT8pA1Zg
+									80 link Description: SonyPicturesGermany, Value: youtube.com/channel/UCn-z5y-cFNPoPWDwTBMDLlQ
+									81 button
+									82 container
+										83 text SonyPicturesGermany 101.000 Abonnenten
+									84 button Stummschalten
+										85 image Stummschalten
+									86 button (disabled) Es sind keine Untertitel für dieses Video vorhanden
+									87 button Wiedergabeeinstellungen
+								88 container
+									89 button 10 Sekunden zurückspulen
+									90 button Noch einmal ansehen
+									91 button 10 Sekunden vorspulen
+								92 container
+									93 container
+										94 text Abgespielte Zeit 1 minute, 30 seconds Videodauer 1 minute, 30 seconds
+									95 button Vollbild
+								96 slider Description: Schieberegler für Suche, Value: 100
+								97 container
+									98 button Teilen
+									99 button Weitere Videos
+										100 text Weitere Videos
+									101 link Description: Auf YouTube ansehen, Value: youtube.com/watch?v=NpjVT8pA1Zg
+								102 container
+									103 link Description: DEMON SLAYER RECAP ALL COMPLETE EDITION vor 3 Jahren, Value: youtube.com/watch?v=tykcrJ38Ptc&feature=endscreen
+									104 link Description: Bị cảm cúm ! Live tới khi mệt nha ! vor 2 Stunden, Value: youtube.com/watch?v=A334iL4sO2A&feature=endscreen
+									105 link Description: Politics Chat, October 22, 2026 vor 5 Stunden gestreamt, Value: youtube.com/watch?v=Msuox8lKiH0&feature=endscreen
+									106 link Description: KPOP DEMON HUNTERS ist alles, was ich liebe - und noch mehr! | Reaction vor 1 Jahr, Value: youtube.com/watch?v=ckzyQmD63HY&feature=endscreen
+									107 link Description: So bekommst du Bauchmuskeln, die so STARK sind, dass es fast ILLEGAL ist vor 7 Tagen, Value: youtube.com/watch?v=LlT_0tubnVA&feature=endscreen
+									108 link Description: HUNTER × HUNTER – EPISODE 2 (HOFFNUNG × UND × EHRGEIZ) KI 4K LIVE-ACTION vor 3 Tagen, Value: youtube.com/watch?v=h_YMqVPWJQg&feature=endscreen
+									109 link Description: Der Tag, an dem Naruto sich endlich in Hinata verliebte und die Welt rettete vor 3 Monaten, Value: youtube.com/watch?v=0rc5FI1CXs8&feature=endscreen
+									110 link Description: Maestro DMX - Das wird die Art wie wir Licht steuern verändern! vor 2 Jahren, Value: youtube.com/watch?v=7HdOFtw4mqE&feature=endscreen
+									111 link Description: Der Spion bei der AfD vor 14 Stunden, Value: youtube.com/watch?v=HHuIcNUFpbI&feature=endscreen
+									112 link Value: youtube.com/watch?v=CBmia6IAXT8&feature=endscreen, Description: Amerikaner reagieren auf 13 Dinge, die Sie wissen müssen, bevor Sie nach Deutschland gehen! vor 1 Jahr
+									113 link Description: 100 Demon Slayer Fakten Die Du Nicht Kennst vor 3 Jahren, Value: youtube.com/watch?v=MUCDxWmYTb8&feature=endscreen
+									114 link Description: Series Ăn Cơm Cùng Doraemon #213 | Những cô gái "đặc biệt" trong thế giới Doraemon vor 3 Tagen, Value: youtube.com/watch?v=2XDdfgEQ3Pc&feature=endscreen
+			26 container
+				27 button Phát thử, ID: play
+				28 button Dừng, ID: pause
+				29 link Description: Mở video gốc, Value: youtube.com/watch?v=NpjVT8pA1Zg, ID: source
+			70 text Đang phát trong trình nhúng
+			68 text Trailer Deutsch; không phải phim hoặc tập đầy đủ.
+		32 text Sakura – Thủ lĩnh thẻ bài:
+		33 text  chưa xác nhận được video chính thức vừa lồng tiếng Đức vừa nhúng được. Bài giới thiệu Sakura của ADN ngày 27/05/2026 ghi tiếng Nhật, phụ đề Đức; chưa đưa vào các lựa chọn đạt yêu cầu.
+		34 text Đã loại khỏi danh sách dùng ngay:
+		35 text  Pokémon mùa 1, Beyblade Metal Fusion và Beyblade Burst báo chặn khu vực khi thử nhúng; các link Pokémon Generationen và trailer Conan 25 đã thử báo không phát được. Không dùng mã nhúng tồn tại làm bằng chứng video phát được. Đã kiểm tra mã nhúng qua YouTube oEmbed và trạng thái đang phát bằng YouTube IFrame API ngày 23/10/2026. Kết quả chỉ áp dụng cho các video cụ thể dưới đây tại thời điểm thử. Nhúng không cấp quyền tải, đăng lại hay sao chép toàn bộ phụ đề.
+		48 content list evidence
+			71 container
+				72 AXListMarker • 
+				73 text Frieren: Lỗi trình phát 150
+			74 container
+				75 AXListMarker • 
+				76 text Demon Slayer – Thanh gươm diệt quỷ: Đã phát trong trình nhúng
+
+The focused UI element is 27 button Phát thử, ID: play

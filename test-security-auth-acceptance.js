@@ -399,6 +399,13 @@ function createAppRuntimeEnvironment(initialStorage = {}) {
     isFinite
   });
 
+  // Load the actual external lesson data in document order before the inline
+  // application script, just as the browser does (flashcards depend on it).
+  for (const match of indexHtmlContent.matchAll(/<script\s+src="([^"]+)"/g)) {
+    if (/(?:-aligned|-lesson|kino-metadata)\.js$/.test(match[1])) {
+      vm.runInContext(fs.readFileSync(path.join(__dirname, match[1]), 'utf8'), sandbox, { filename: match[1] });
+    }
+  }
   // Chạy trực tiếp mã nguồn trích từ index.html
   vm.runInContext(appScriptCode, sandbox);
 
@@ -474,6 +481,9 @@ it('Thao tác 2: Thêm thẻ mới qua saveCard() -> Lưu vào userCards & local
   assert.strictEqual(env.elements['fMeaning'].value, '');
 
   // 4. Danh sách quản lý thẻ (cardList) đã được render và XSS tag được escape an toàn
+  // The growing built-in video decks may fill the first 300 rows. Search for
+  // this user-created card before inspecting its actual rendered markup.
+  vm.runInContext("setVal('manageSearch', 'alert(1)'); renderManageList()", env.sandbox);
   const cardListEl = env.elements['cardList'];
   assert.ok(cardListEl.children.length > 0, 'cardList phải có phần tử con được render');
   const renderedHTML = cardListEl.children.map(c => c.innerHTML).join(' ');

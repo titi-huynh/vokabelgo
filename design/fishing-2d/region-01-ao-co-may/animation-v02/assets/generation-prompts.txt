@@ -1,0 +1,17 @@
+BUILT-IN image_gen — 2026-10-21
+Use: registered 2D idle pose study; not a final Rive/Spine file.
+
+MASTER
+Use case: background-extraction. Asset type: master painted character-and-raft layer for a subtle 2D animation.
+Edit target: the approved scene image supplied. Preserve the EXACT compact, charming painted cat sitting on the raft, the existing integrated anatomy, face and cute expression, short paws holding the branch rod, feet sitting naturally on the logs, apron, scarf, tail, raft, basket and tiny worm bait tin. This must remain one coherent painted sitting pose matching the reference, not disassembled puppet parts.
+Remove only the entire water/shore/background, fish shadows, raft ground shadow, all ripples, fishing LINE and red/white FLOAT. Keep the fishing BRANCH held naturally by the paws. True alpha outside the retained actor-and-raft silhouette. No cutout gaps between arms/shoulders/head/body, no new neck, no skinny elongated arms, no upright humanoid torso, no disconnected feet. Keep single caramel patch on viewer-left ear/crown, cream cat, mustard scarf, sage apron.
+IMPORTANT REGISTRATION: preserve the original 1672x941 wide canvas framing and the retained object's exact positions and scale: cat head around x755..980 y160..345, raft around x610..1215 y380..545, branch tip around x638 y222. Do not center or zoom the objects within the canvas. All removed area should simply be transparent. No labels, grids, shadows, glow, fake checkerboard or extra objects.
+Source output exec-f6df1182-5bde-4b3d-b8c8-6d6476ac9498.png, saved assets/actor-open.png.
+
+CLOSED EYE KEYFRAME
+Use case: precise-object-edit. Asset type: registered closed-eye animation keyframe.
+Edit target is the transparent cat-and-raft layer. Change ONLY the two eyes into soft relaxed CLOSED BLINK eyelids: two small warm-brown downward resting curves, at the EXACT centers of the existing brown oval eyes (about x804 y275 and x893 y282 in this 1671x941 canvas). Remove the open pupils inside those two tiny eye regions and paint matching cream fur behind the closed lids. This is a momentary peaceful blink, not laughing or sad.
+Every other pixel should remain visually identical: exact cat head silhouette, caramel patch, pink cheeks, nose, smiling mouth, arms gripping branch, body, scarf, feet, tail, raft, basket, tin and canvas registration. No head turn or repositioning; do not change proportions. Maintain transparent background and SAME 1671x941 canvas. Do not center, crop, scale or redraw the rest. No added elements, no text.
+Source output exec-b4620ce9-d657-4541-8340-2c5d0f3a150b.png, saved assets/actor-blink-source.png.
+Generated closed frame changed overall scale despite instruction. Only the eye regions are used, with two-point eye registration in the runtime shader. Body, head contour, hands and feet always remain from the master image. No image inpainting/editing through Python.
+Background reused: animation-v01/assets/background.png, original built-in imagegen prompt recorded in prior assets/generation-prompts.txt.

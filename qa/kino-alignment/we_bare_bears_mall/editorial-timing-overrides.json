@@ -1,0 +1,23 @@
+{
+  "1100166": {
+    "start": 68.04,
+    "end": 70.38,
+    "lead": 0.08,
+    "tail": 0.02,
+    "reason": "Restore the complete question turn supported by base, medium and the short 66-74s recheck. The earlier small recognition omitted the second question."
+  },
+  "1100113": {
+    "start": 70.42,
+    "end": 72.9,
+    "lead": 0.02,
+    "tail": 0.08,
+    "reason": "Medium/base and short recheck place Wir sollten after the missing Action question; do not reuse the small model's early 69.92s start."
+  },
+  "1100117": {
+    "start": 83.98,
+    "end": 86.0,
+    "lead": 0.02,
+    "tail": 0.0,
+    "reason": "Short recheck places Die Woche davor after the Food Court phrase. Avoid beginning this exercise inside that preceding phrase."
+  }
+}

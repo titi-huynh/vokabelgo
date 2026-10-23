@@ -6584,7 +6584,7 @@ input.search:focus {
 .kino-v3-video-frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: var(--kino-video-ratio, 16 / 9);
   background: #000;
   overflow: hidden;
 }
@@ -7169,8 +7169,16 @@ input.search:focus {
   <link rel="stylesheet" href="learning-ux.css">
   <!-- Wortregen Mini-Game Stylesheet (Phase 3) -->
   <link rel="stylesheet" href="wortregen.css">
+  <link rel="stylesheet" href="learning-journal.css">
+  <link rel="stylesheet" href="may-home-game.css">
+  <link rel="stylesheet" href="kino-chapters.css">
+  <link rel="stylesheet" href="kino-discovery.css">
+  <link rel="stylesheet" href="kino-dubbing-scene.css">
+  <link rel="stylesheet" href="kino-catalog.css">
+  <link rel="stylesheet" href="kino-media.css">
 </head>
 <body>
+<a class="journal-skip-link" id="journalSkipLink" href="#todayMode">Đến nội dung học</a>
 <!-- VOKABELGO REUSABLE SVG ICON SYSTEM (ROUND 1) -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" aria-hidden="true">
   <defs>
@@ -7354,32 +7362,41 @@ input.search:focus {
 <div class="app">
   <!-- MODERN 4-HUB PEDAGOGICAL HEADER -->
   <header class="app-header-modern">
-    <div class="brand-group-modern" onclick="setPrimaryHub('today')" title="Về trang Hôm nay">
+    <button type="button" class="brand-group-modern" onclick="setPrimaryHub('today')" title="Về trang Hôm nay">
       <div class="brand-logo-icon">🐱</div>
       <div>
-        <h1>VokabelGo <span class="brand-badge-modern">B1·B2 DEUTSCH</span></h1>
+        <span class="journal-brand-name">VokabelGo</span>
+        <span class="brand-badge-modern">DEIN LERNJOURNAL</span>
       </div>
-    </div>
+    </button>
+
+    <p class="journal-nav-label">GÓC NHỎ CỦA BẠN</p>
 
     <!-- 4 MAIN LEARNER HUBS -->
     <nav class="main-nav-hubs" aria-label="Điều hướng chính">
       <button type="button" class="nav-hub-btn active" data-nav="today" onclick="setPrimaryHub('today')">
         <span class="nav-hub-icon"><svg class="v-icon icon-sm" aria-hidden="true"><use href="#icon-today"></use></svg></span>
-        <span>Hôm Nay</span>
+        <span>Hôm nay<small class="journal-nav-caption">Một chút mỗi ngày</small></span>
       </button>
       <button type="button" class="nav-hub-btn" data-nav="study" onclick="setPrimaryHub('study')">
         <span class="nav-hub-icon"><svg class="v-icon icon-sm" aria-hidden="true"><use href="#icon-study"></use></svg></span>
-        <span>Học Từ</span>
+        <span>Học từ<small class="journal-nav-caption">Từng từ, thật chắc</small></span>
       </button>
       <button type="button" class="nav-hub-btn" data-nav="kino" onclick="setPrimaryHub('kino')">
         <span class="nav-hub-icon"><svg class="v-icon icon-sm" aria-hidden="true"><use href="#icon-kino"></use></svg></span>
-        <span>Kino</span>
+        <span>Nghe & xem<small class="journal-nav-caption">Tiếng Đức đời thường</small></span>
       </button>
       <button type="button" class="nav-hub-btn" data-nav="library" onclick="setPrimaryHub('library')">
         <span class="nav-hub-icon"><svg class="v-icon icon-sm" aria-hidden="true"><use href="#icon-library"></use></svg></span>
-        <span>Thư Viện</span>
+        <span>Thư viện<small class="journal-nav-caption">Bộ từ & bộ sưu tập</small></span>
       </button>
     </nav>
+
+    <div class="journal-sidebar-note" aria-hidden="true">
+      <span class="journal-note-mark">Aa.</span>
+      <p>Kleine Schritte.<br>Große Fortschritte.</p>
+      <span>Bước nhỏ mỗi ngày,<br>đi xa lúc nào không hay.</span>
+    </div>
 
     <!-- RIGHT UTILITY GROUP -->
     <div class="header-utility-group">
@@ -7395,11 +7412,11 @@ input.search:focus {
       </button>
 
       <!-- Profile & Settings Button -->
-      <div class="header-profile-btn" id="openAvatarBtn" onclick="toggleProfileDropdown(event)" title="Hồ sơ, cài đặt & đồng bộ">
+      <button type="button" class="header-profile-btn" id="openAvatarBtn" onclick="toggleProfileDropdown(event)" aria-expanded="false" aria-controls="profileDropdownMenu" title="Hồ sơ, cài đặt & đồng bộ">
         <img id="headerAvatarImg" src="img/avatars/v2/cat_12.png" alt="Avatar mèo" class="header-profile-avatar">
         <span class="header-profile-name" id="headerProfileName">Chị</span>
         <span style="font-size:10px;color:var(--ink-muted);">▾</span>
-      </div>
+      </button>
 
       <!-- Profile & Settings Dropdown Menu -->
       <div id="profileDropdownMenu" class="profile-dropdown-menu hidden" onclick="event.stopPropagation()">
@@ -7454,28 +7471,62 @@ input.search:focus {
   <!-- =========================================================================
        HUB 1: HÔM NAY (TODAY HUB) - CENTRAL LEARNING DASHBOARD
        ========================================================================= -->
-  <section id="todayMode" class="today-dashboard-container">
+  <section id="todayMode" class="today-dashboard-container" tabindex="-1" aria-label="Góc học hôm nay">
+    <div class="may-game-home" id="mayGameHome">
+      <canvas id="mayIslandCanvas" width="1672" height="941" tabindex="0" aria-label="Vườn Mây tương tác. Chạm đường để Mây đi tới, kéo để ngắm vườn; dùng phím mũi tên để đi hoặc chọn địa điểm bằng nút bên dưới.">Vườn Mây. Chọn một địa điểm bằng các nút điều hướng.</canvas>
+      <div class="may-game-title"><p>HALLO, DU!</p><h1>Nhà của Mây</h1><span id="mayWorldHint">Chạm đường để Mây đi tới.</span></div>
+      <div class="may-place-layer" id="mayPlaceLayer">
+        <button type="button" data-may-place="house" aria-label="Đi tới Nhà Mây, mở hồ sơ">Nhà Mây <span aria-hidden="true">↗</span></button>
+        <button type="button" data-may-place="study" aria-label="Đi tới góc học từ, bắt đầu buổi học">Học từ <span aria-hidden="true">↗</span></button>
+        <button type="button" data-may-place="kino" aria-label="Đi tới vườn nghe xem, mở rạp Kino">Nghe & xem <span aria-hidden="true">↗</span></button>
+        <button type="button" data-may-place="fish" aria-label="Đi tới bến cá, mở bộ sưu tập">Hồ cá <span aria-hidden="true">↗</span></button>
+        <button type="button" data-may-place="today" aria-label="Đi tới bảng hôm nay, xem tiến độ">Hôm nay <span aria-hidden="true">↗</span></button>
+      </div>
+      <button type="button" class="may-character-touch" id="mayCharacterTouch" aria-label="Chào bé Mây"></button>
+      <p class="may-world-speech" id="mayWorldSpeech" role="status" aria-live="polite">Bạn đến rồi. Mình học một chút nhé!</p>
+      <div class="may-world-controls">
+        <button type="button" id="mayWorldOverview" aria-controls="mayDailyOverview"><span id="mayWorldProgress">0 / 5 từ</span><small>Hôm nay ↗</small></button>
+        <details class="may-world-options" id="mayWorldOptions">
+          <summary aria-label="Tùy chọn vườn Mây" title="Tùy chọn vườn Mây">⋯</summary>
+          <div>
+            <button type="button" id="mayWorldPause" aria-pressed="false">Dừng chuyển động</button>
+            <button type="button" id="mayWorldCenter">Tìm Mây</button>
+          </div>
+        </details>
+      </div>
+      <div class="may-world-start">
+        <button type="button" class="today-primary-cta" id="todayPrimaryCta" onclick="handleTodayPrimaryAction()">
+          <span id="todayCtaIcon"><svg class="v-icon icon-xs" aria-hidden="true"><use href="#icon-start"></use></svg></span>
+          <span id="todayCtaText">Bắt đầu 5 từ hôm nay</span>
+          <span class="journal-cta-arrow" aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <div class="may-world-loading" id="mayWorldLoading" role="status">Mây đang mở cửa đảo…</div>
+    </div>
+    <dialog id="mayDailyOverview" class="may-daily-overview" aria-labelledby="mayOverviewTitle">
+      <div class="may-overview-top"><h2 id="mayOverviewTitle">Góc học hôm nay</h2><button type="button" id="mayOverviewClose" aria-label="Đóng bảng hôm nay">×</button></div>
+      <div class="may-daily-grid">
     <!-- Welcome Bar -->
     <div class="today-welcome-bar">
       <div class="welcome-cat-group">
-        <img id="todayCatAvatarImg" src="img/avatars/v2/cat_12.png" alt="Avatar bé mèo" class="welcome-cat-avatar">
         <div>
-          <h2 class="welcome-text-title" id="todayGreetingText">Chào bạn! Cùng bé mèo học tiếp nhé 🐾</h2>
-          <p class="welcome-text-sub" id="todayMotivationalSub">Mục tiêu 5 từ vựng mỗi ngày · Không áp lực, nhớ thật lâu.</p>
+          <p class="journal-eyebrow"><span lang="de">HALLO!</span> MÂY Ở ĐÂY.</p>
+          <h1 class="welcome-text-title" id="todayGreetingText">Chào bạn, mình học một chút nhé.</h1>
+          <p class="welcome-text-sub" id="todayMotivationalSub">Không cần vội. Mỗi từ nhớ được đều là một bước tiến.</p>
+          <div class="today-date-badge" id="todayDateStr">Hôm nay</div>
         </div>
       </div>
-      <div class="today-date-badge" id="todayDateStr">Hôm nay</div>
     </div>
 
     <!-- 🎯 HERO LEARNING CARD: THE SINGLE PRIMARY LEARNING ACTION -->
     <div class="today-hero-card">
       <div class="today-hero-top">
-        <span class="today-session-badge"><svg class="v-icon icon-xs" aria-hidden="true"><use href="#icon-daily-goal"></use></svg> MỤC TIÊU HÔM NAY</span>
+        <span class="today-session-badge"><span class="journal-page-index" aria-hidden="true">01</span> TRANG HỌC CỦA BẠN</span>
         <span class="today-time-estimate"><svg class="v-icon icon-xs" aria-hidden="true"><use href="#icon-time"></use></svg> Khoảng 5–7 phút</span>
       </div>
 
-      <h3 class="today-hero-title display-title" id="todayHeroTitle">Bắt đầu bài học hôm nay</h3>
-      <p class="today-hero-desc body-text" id="todayHeroDesc">Học tối thiểu 5 từ vựng qua Active Recall. Đạt mốc để xem mèo câu cá trúng thưởng!</p>
+      <h2 class="today-hero-title display-title" id="todayHeroTitle">Một chút hôm nay.&#10;Nhớ lâu mai sau.</h2>
+      <p class="today-hero-desc body-text" id="todayHeroDesc">Ôn lại từ cũ, gặp thêm từ mới. Bé mèo sẽ cùng bạn đi qua 5 từ của hôm nay.</p>
 
       <!-- Daily 5-word Progress Track -->
       <div class="today-hero-progress-box">
@@ -7483,23 +7534,41 @@ input.search:focus {
           <span id="todayHeroProgressRatio">Đã học: 0 / 5 từ</span>
           <span id="todayHeroProgressStatus" style="color:var(--primary); font-weight:800;">Chưa hoàn thành</span>
         </div>
-        <div class="today-progress-track">
+        <ol class="journal-word-steps" id="todayJourneySteps" aria-label="Tiến độ 5 mục tiêu hôm nay">
+          <li class="is-current" aria-current="step" aria-label="Mục tiêu 1: tiếp theo"><span>1</span></li>
+          <li aria-label="Mục tiêu 2: chưa hoàn thành"><span>2</span></li>
+          <li aria-label="Mục tiêu 3: chưa hoàn thành"><span>3</span></li>
+          <li aria-label="Mục tiêu 4: chưa hoàn thành"><span>4</span></li>
+          <li aria-label="Mục tiêu 5: chưa hoàn thành"><span>5</span></li>
+        </ol>
+        <div class="today-progress-track" role="progressbar" aria-label="Mục tiêu học hôm nay" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0">
           <div id="todayHeroProgressFill" class="today-progress-fill" style="width: 0%;"></div>
         </div>
       </div>
 
       <!-- Single Primary Action Button -->
-      <button type="button" class="today-primary-cta" id="todayPrimaryCta" onclick="handleTodayPrimaryAction()">
-        <span id="todayCtaIcon"><svg class="v-icon icon-xs" aria-hidden="true"><use href="#icon-start"></use></svg></span>
-        <span id="todayCtaText">Bắt đầu phiên học ngay (0/5 từ)</span>
-      </button>
+      <button type="button" class="today-primary-cta" onclick="document.getElementById('mayDailyOverview').close(); handleTodayPrimaryAction();">Học cùng Mây <span aria-hidden="true">↗</span></button>
 
       <!-- Resume State Hint -->
       <div class="today-resume-hint" id="todayResumeHint">
-        <span>Tiếp tục từ:</span>
+        <span>Bộ từ gần đây:</span>
         <span class="resume-deck-tag" id="todayResumeDeckTag">Tất cả bộ · Thẻ 1</span>
       </div>
     </div>
+
+    <aside class="journal-companion" aria-label="Bé mèo đồng hành">
+      <p class="journal-eyebrow">MỘT NGƯỜI BẠN NHỎ</p>
+      <div class="journal-cat-stage">
+        <span class="journal-cat-orbit" aria-hidden="true"></span>
+        <span class="journal-cat-star" aria-hidden="true">✳</span>
+        <img id="todayCatAvatarImg" src="img/avatars/v2/cat_12.png" alt="Bé mèo đồng hành của bạn" class="welcome-cat-avatar">
+        <span class="journal-cat-note" aria-hidden="true">Hallo, du!</span>
+      </div>
+      <h3>Có mèo học cùng.</h3>
+      <p class="journal-cat-quote" lang="de">Langsam, aber sicher.</p>
+      <p class="journal-cat-translation">Chậm một chút, chắc hơn mỗi ngày.</p>
+      <button type="button" class="journal-text-button" onclick="openCatPickerModal()">Chọn bạn đồng hành <span aria-hidden="true">↗</span></button>
+    </aside>
 
     <!-- Quick Metrics Strip: Pure Learning Truth (Cần ôn · Đang học · Nhớ ổn) -->
     <div class="today-metrics-strip">
@@ -7522,11 +7591,11 @@ input.search:focus {
 
     <!-- Secondary Consistency & Gamification Row (Low-pressure, supportive) -->
     <div class="today-secondary-meta" id="todaySecondaryMeta">
-      <span class="secondary-meta-item" onclick="setPrimaryHub('library'); setLibraryTab('fish');" style="cursor:pointer;" title="Bấm để xem Hồ cá">
+      <button type="button" class="secondary-meta-item journal-meta-button" onclick="setPrimaryHub('library'); setLibraryTab('fish');" title="Bấm để xem Hồ cá">
         <span class="secondary-meta-icon"><svg class="v-icon icon-xs" aria-hidden="true"><use href="#icon-fish"></use></svg></span>
         <span id="todayMetaFishText">0 chú trong Hồ cá</span>
         <span id="todayMetricFish" style="display:none;">0 chú</span>
-      </span>
+      </button>
       <span class="secondary-meta-dot">·</span>
       <span class="secondary-meta-item">
         <span class="secondary-meta-icon"><svg class="v-icon icon-xs" aria-hidden="true" style="color: #ea580c;"><use href="#icon-streak"></use></svg></span>
@@ -7539,45 +7608,53 @@ input.search:focus {
     </div>
 
     <!-- Secondary Pathways Grid -->
-    <div>
+    <div class="journal-explore">
       <div class="today-pathways-header">
-        <span>Lựa chọn học tập khác</span>
+        <span>Đổi một chút không khí</span>
+        <span class="journal-section-aside">Khi bạn muốn khám phá thêm</span>
       </div>
       <div class="today-pathways-grid" style="margin-top:12px;">
-        <div class="pathway-card" onclick="setPrimaryHub('study'); setStudySubMode('flash');">
+        <button type="button" class="pathway-card" onclick="setPrimaryHub('study'); setStudySubMode('flash');">
           <div>
             <div class="pathway-icon"><svg class="v-icon icon-md" aria-hidden="true"><use href="#icon-study"></use></svg></div>
-            <div class="pathway-title">Thẻ Ghi Nhớ & Ôn Tập</div>
-            <div class="pathway-sub">Chủ động lật thẻ, nghe phát âm và ôn tập sâu toàn bộ từ vựng B1·B2.</div>
+            <div class="pathway-title">Lật một tấm thẻ</div>
+            <div class="pathway-sub">Tự ôn theo nhịp của bạn.</div>
           </div>
-          <div class="pathway-cta-text">Mở thẻ học ➔</div>
-        </div>
+          <div class="pathway-cta-text" aria-hidden="true">↗</div>
+        </button>
 
-        <div class="pathway-card" onclick="setPrimaryHub('kino');">
+        <button type="button" class="pathway-card" onclick="setPrimaryHub('kino');">
           <div>
             <div class="pathway-icon"><svg class="v-icon icon-md" aria-hidden="true"><use href="#icon-kino"></use></svg></div>
-            <div class="pathway-title">Rạp Phim Kino</div>
-            <div class="pathway-sub">Xem clip tiếng Đức, nghe chép chính tả và lồng tiếng theo nhân vật.</div>
+            <div class="pathway-title">Ghé rạp Kino</div>
+            <div class="pathway-sub">Nghe tiếng Đức qua chuyện nhỏ.</div>
           </div>
-          <div class="pathway-cta-text">Vào rạp phim ➔</div>
-        </div>
+          <div class="pathway-cta-text" aria-hidden="true">↗</div>
+        </button>
 
-        <div class="pathway-card" onclick="setPrimaryHub('library'); setLibraryTab('fish');">
+        <button type="button" class="pathway-card" onclick="setPrimaryHub('library'); setLibraryTab('fish');">
           <div>
             <div class="pathway-icon"><svg class="v-icon icon-md" aria-hidden="true"><use href="#icon-fish"></use></svg></div>
-            <div class="pathway-title">Hồ Cá & Bộ Sưu Tập</div>
-            <div class="pathway-sub">Xem các loài cá đã câu được sau các mốc học tập, từ vựng và chỉ số.</div>
+            <div class="pathway-title">Thăm chiếc hồ nhỏ</div>
+            <div class="pathway-sub">Cất giữ thành quả cùng bé mèo.</div>
           </div>
-          <div class="pathway-cta-text">Khám phá Hồ cá ➔</div>
-        </div>
+          <div class="pathway-cta-text" aria-hidden="true">↗</div>
+        </button>
       </div>
     </div>
+      </div>
+    </dialog>
   </section>
 
   <!-- =========================================================================
        HUB 2: HỌC TỪ (STUDY HUB CONTAINER)
        ========================================================================= -->
-  <div class="panel hidden" id="studyAreaContainer">
+  <div class="panel hidden" id="studyAreaContainer" tabindex="-1">
+    <div class="journal-study-heading">
+      <p class="journal-eyebrow">TRANG TỪ VỰNG <span>／</span> LERNZEIT</p>
+      <h1>Một từ, một lần tập trung.</h1>
+      <p>Nhìn kỹ, tự nhớ lại, rồi xem đáp án. Mình đi từng bước nhé.</p>
+    </div>
     <!-- STUDY SUB-NAVIGATION BAR (Switch between Flashcard, MCQ, Typing, Match + Deck Picker) -->
     <div class="study-subnav-bar">
       <div class="study-mode-pills" role="tablist" aria-label="Chế độ học từ">
@@ -8098,7 +8175,7 @@ input.search:focus {
           <!-- 1. TOP CINEMA SELECTOR & HEADER -->
           <div class="kino-v3-top-header">
             <div class="kino-select-dropdown" id="kinoSelectDropdown">
-              <button class="kino-select-trigger" id="kinoSelectTrigger" onclick="toggleKinoMovieDropdown(event)" type="button" title="Bấm để chọn tập phim khác">
+              <button class="kino-select-trigger" id="kinoSelectTrigger" onclick="toggleKinoMovieDropdown(event)" type="button" aria-expanded="false" aria-controls="kinoSelectMenu" title="Bấm để chọn tập phim khác">
                 <span class="kino-sel-icon" id="kinoSelIcon">🍕</span>
                 <div class="kino-sel-text-group">
                   <span class="kino-sel-series" id="kinoSelSeries">🐶 Bluey</span>
@@ -8111,38 +8188,113 @@ input.search:focus {
               <div class="kino-select-menu" id="kinoSelectMenu">
                 <!-- Group 1: Bluey -->
                 <div class="kino-dd-group-header">🐶 Bluey</div>
-                <div class="kino-dropdown-item active" id="kinoDD_pizzaschwester" data-key="pizzaschwester" onclick="selectKinoMovie('pizzaschwester')">
+                <button type="button" class="kino-dropdown-item active" id="kinoDD_pizzaschwester" data-key="pizzaschwester" onclick="selectKinoMovie('pizzaschwester')">
                   <span class="kino-dd-item-icon">🍕</span>
                   <div class="kino-dd-item-info">
                     <span class="kino-dd-item-name">Pizza-Schwestern</span>
-                    <span class="kino-dd-item-sub">Tập 1 · 06:59</span>
+                    <span class="kino-dd-item-sub">3 phần · xem và luyện từng phần</span>
                   </div>
-                  <span class="kino-dd-item-badge" id="kinoBadge_pizzaschwester">72 câu</span>
+                  <span class="kino-dd-item-badge" id="kinoBadge_pizzaschwester">3 phần</span>
                   <span class="kino-dd-item-check">✓</span>
-                </div>
-                <div class="kino-dropdown-item" id="kinoDD_babysitter" data-key="babysitter" onclick="selectKinoMovie('babysitter')">
+                </button>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_babysitter" data-key="babysitter" onclick="selectKinoMovie('babysitter')">
                   <span class="kino-dd-item-icon">👶</span>
                   <div class="kino-dd-item-info">
                     <span class="kino-dd-item-name">Die Babysitter</span>
-                    <span class="kino-dd-item-sub">Tập 2 · 07:20</span>
+                    <span class="kino-dd-item-sub">4 phần · xem và luyện từng phần</span>
                   </div>
-                  <span class="kino-dd-item-badge" id="kinoBadge_babysitter">64 câu</span>
+                  <span class="kino-dd-item-badge" id="kinoBadge_babysitter">4 phần</span>
                   <span class="kino-dd-item-check">✓</span>
-                </div>
+                </button>
 
                 <div class="kino-dd-group-divider"></div>
 
                 <!-- Group 2: Peppa Wutz -->
                 <div class="kino-dd-group-header">🐷 Peppa Wutz</div>
-                <div class="kino-dropdown-item" id="kinoDD_peppa_supermarkt" data-key="peppa_supermarkt" onclick="selectKinoMovie('peppa_supermarkt')">
+                <button type="button" class="kino-dropdown-item" id="kinoDD_peppa_supermarkt" data-key="peppa_supermarkt" onclick="selectKinoMovie('peppa_supermarkt')">
                   <span class="kino-dd-item-icon">🛒</span>
                   <div class="kino-dd-item-info">
                     <span class="kino-dd-item-name">Im Supermarkt</span>
-                    <span class="kino-dd-item-sub">Tập 1 · 15:19</span>
+                    <span class="kino-dd-item-sub">5 phần · khoảng 3 phút/phần</span>
                   </div>
-                  <span class="kino-dd-item-badge" id="kinoBadge_peppa_supermarkt">106 câu</span>
+                  <span class="kino-dd-item-badge" id="kinoBadge_peppa_supermarkt">5 phần</span>
                   <span class="kino-dd-item-check">✓</span>
-                </div>
+                </button>
+                <div class="kino-dd-group-divider"></div>
+                <div class="kino-dd-group-header">📖 Cổ tích Đức</div>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_hans" data-key="hans" onclick="selectKinoMovie('hans')">
+                  <span class="kino-dd-item-icon">🍀</span>
+                  <div class="kino-dd-item-info">
+                    <span class="kino-dd-item-name">Hans im Glück</span>
+                    <span class="kino-dd-item-sub">4 phần · Chàng Hans may mắn</span>
+                  </div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_hans">4 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
+                <div class="kino-dd-group-divider"></div>
+                <div class="kino-dd-group-header">🐾 Trudes Tier</div>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_trudes_fahrstuhl" data-key="trudes_fahrstuhl" onclick="selectKinoMovie('trudes_fahrstuhl')">
+                  <span class="kino-dd-item-icon">🛗</span>
+                  <div class="kino-dd-item-info">
+                    <span class="kino-dd-item-name">Fahrstuhl</span>
+                    <span class="kino-dd-item-sub">5 phần · Thang máy</span>
+                  </div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_trudes_fahrstuhl">5 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
+                <div class="kino-dd-group-divider"></div>
+                <div class="kino-dd-group-header">🔎 Jan &amp; Henry</div>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_erdmaennchen_nudeltrick" data-key="erdmaennchen_nudeltrick" onclick="selectKinoMovie('erdmaennchen_nudeltrick')">
+                  <span class="kino-dd-item-icon">🎩</span>
+                  <div class="kino-dd-item-info">
+                    <span class="kino-dd-item-name">Der Nudeltrick</span>
+                    <span class="kino-dd-item-sub">7 phần · Trò ảo thuật với mì</span>
+                  </div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_erdmaennchen_nudeltrick">7 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_erdmaennchen_schmucklose" data-key="erdmaennchen_schmucklose" onclick="selectKinoMovie('erdmaennchen_schmucklose')">
+                  <span class="kino-dd-item-icon">👑</span>
+                  <div class="kino-dd-item-info">
+                    <span class="kino-dd-item-name">Die schmucklose Gräfin</span>
+                    <span class="kino-dd-item-sub">7 phần · Nữ bá tước mất trang sức</span>
+                  </div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_erdmaennchen_schmucklose">7 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
+                <div class="kino-dd-group-divider"></div>
+                <div class="kino-dd-group-header">🐻 We Bare Bears</div>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_we_bare_bears_mall" data-key="we_bare_bears_mall" onclick="selectKinoMovie('we_bare_bears_mall')">
+                  <span class="kino-dd-item-icon">🛍️</span>
+                  <div class="kino-dd-item-info">
+                    <span class="kino-dd-item-name">Wir und die Mall (Đoạn trích)</span>
+                    <span class="kino-dd-item-sub">3 phần · Náo loạn ở trung tâm thương mại</span>
+                  </div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_we_bare_bears_mall">3 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
+                <div class="kino-dd-group-divider"></div>
+                <div class="kino-dd-group-header">🪄 Frieren</div>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_frieren_s01e01" data-key="frieren_s01e01" onclick="selectKinoMovie('frieren_s01e01')">
+                  <span class="kino-dd-item-icon">🪄</span>
+                  <div class="kino-dd-item-info">
+                    <span class="kino-dd-item-name">Das Ende der Reise</span>
+                    <span class="kino-dd-item-sub">7 phần · Điểm kết thúc của hành trình</span>
+                  </div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_frieren_s01e01">7 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
+                <div class="kino-dd-group-divider"></div>
+                <div class="kino-dd-group-header">🌸 Cardcaptor Sakura</div>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_sakura_s01e01" data-key="sakura_s01e01" onclick="selectKinoMovie('sakura_s01e01')">
+                  <span class="kino-dd-item-icon">🌸</span>
+                  <div class="kino-dd-item-info">
+                    <span class="kino-dd-item-name">Das geheimnisvolle Buch</span>
+                    <span class="kino-dd-item-sub">8 phần · Cuốn sách bí ẩn</span>
+                  </div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_sakura_s01e01">8 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
               </div>
             </div>
             <div class="kino-v3-top-actions">
@@ -8190,7 +8342,7 @@ input.search:focus {
             <div class="kino-v3-col-left">
               <div class="kino-v3-video-card">
                 <div class="kino-v3-video-frame">
-                  <video id="kinoMainVideo" playsinline preload="auto" src="video/babysitter.mp4"></video>
+                  <video id="kinoMainVideo" playsinline preload="none"></video>
 
                   <!-- Subtitle Overlay Banner (Locked/Unlocked) -->
                   <div class="kino-v3-sub-overlay hidden-sub" id="kinoSubOverlay">
@@ -8363,13 +8515,13 @@ input.search:focus {
         </div>
 
         <!-- FULL MOVIE MODAL -->
-        <div class="kino-full-modal hidden" id="kinoFullMovieModal">
+        <div class="kino-full-modal hidden" id="kinoFullMovieModal" role="dialog" aria-modal="true" aria-labelledby="kinoFullModalTitle">
           <div class="kino-full-modal-header">
             <div style="font-weight:700;font-size:16px;" id="kinoFullModalTitle">🍿 Xem toàn bộ tập phim mộc không phụ đề</div>
             <button class="kino-top-action-btn" onclick="closeKinoFullMovieModal()">✖️ Quay lại bài học</button>
           </div>
           <div class="kino-full-modal-body">
-            <video id="kinoFullPlayer" controls playsinline src="video/pizzaschwester.mp4"></video>
+            <video id="kinoFullPlayer" controls playsinline preload="none"></video>
           </div>
         </div>
 
@@ -9228,6 +9380,15 @@ input.search:focus {
 <script src="listening-verification.js"></script>
 <script src="learning-session.js"></script>
 <script src="learning-progress.js"></script>
+<script src="kino-metadata.js"></script>
+<script src="kino-data.js"></script>
+<script src="kino-media-manifest.js"></script>
+<script src="kino-chapter-data.js"></script>
+<script src="kino-media.js"></script>
+<script src="kino-dubbing-scene.js"></script>
+<script src="kino-discovery.js"></script>
+<script src="kino-catalog.js"></script>
+<script src="kino-chapters.js"></script>
 
 <script>
 const BASE = [
@@ -14177,6 +14338,13 @@ const VIDEO_FLASHCARDS = [
     ]
   }
 ];
+VIDEO_FLASHCARDS.push(...HANS_LESSON.flashcards);
+VIDEO_FLASHCARDS.push(...TRUDES_FAHRSTUHL_LESSON.flashcards);
+VIDEO_FLASHCARDS.push(...ERDMAENNCHEN_NUDELTRICK_LESSON.flashcards);
+VIDEO_FLASHCARDS.push(...ERDMAENNCHEN_SCHMUCKLOSE_LESSON.flashcards);
+VIDEO_FLASHCARDS.push(...WE_BARE_BEARS_MALL_LESSON.flashcards);
+VIDEO_FLASHCARDS.push(...FRIEREN_S01E01_LESSON.flashcards);
+VIDEO_FLASHCARDS.push(...SAKURA_S01E01_LESSON.flashcards);
 BASE.forEach((c, i) => {
   if (!c.id) {
     console.error('Built-in BASE card missing explicit id at index', i, c.term);
@@ -14576,10 +14744,17 @@ let currentLibraryTab = 'decks';
 
 function setPrimaryHub(hub){
   currentPrimaryHub = hub;
+  const homeOverview = document.getElementById('mayDailyOverview');
+  if (hub !== 'today' && homeOverview && homeOverview.open) homeOverview.close();
+  document.body.dataset.hub = hub;
+  const skipLink = document.getElementById('journalSkipLink');
+  if (skipLink) skipLink.href = hub === 'today' ? '#todayMode' : hub === 'library' ? '#libraryMode' : '#studyAreaContainer';
   try { localStorage.setItem('vokabelgo_active_hub', hub); } catch(e){}
 
   document.querySelectorAll('.nav-hub-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.nav === hub);
+    if (btn.dataset.nav === hub) btn.setAttribute('aria-current', 'page');
+    else btn.removeAttribute('aria-current');
   });
 
   const todaySec = document.getElementById('todayMode');
@@ -14630,6 +14805,7 @@ function setPrimaryHub(hub){
     setStudySubMode(currentStudySubMode);
   } else if (hub === 'kino') {
     if (typeof initKinoV2 === 'function') initKinoV2();
+    KinoCatalog.show();
     saveLearningResumeState({
       lastMode: 'diktat',
       lastVideo: currentKinoVideoKey,
@@ -14750,6 +14926,7 @@ document.querySelectorAll('.tabs [data-mode]').forEach(b=>b.onclick=()=>setMode(
 window.isStudySessionMode = false;
 
 function setStudySessionUiLock(locked) {
+  document.body.classList.toggle('journal-session', locked);
   const deckSel = document.getElementById('deckSelect');
   if (deckSel) {
     deckSel.disabled = locked;
@@ -15769,7 +15946,7 @@ function updateTodayDashboard(){
   } catch(e){}
 
   const greetingEl = document.getElementById('todayGreetingText');
-  if (greetingEl) greetingEl.textContent = `Chào ${profileName}! Cùng bé mèo học tiếp nhé 🐾`;
+  if (greetingEl) greetingEl.textContent = `Chào ${profileName}, mình học một chút nhé.`;
 
   const catImg = document.getElementById('todayCatAvatarImg');
   if (catImg && typeof getAvatarSrc === 'function') {
@@ -15818,6 +15995,22 @@ function updateTodayDashboard(){
   }
   const percent = Math.min((count / 5) * 100, 100);
 
+  const journey = document.getElementById('todayJourneySteps');
+  if (journey) {
+    Array.from(journey.children).forEach((step, index) => {
+      const done = index < count;
+      const next = index === count && !isCompleted;
+      step.classList.toggle('is-done', done);
+      step.classList.toggle('is-current', next);
+      step.querySelector('span').textContent = done ? '✓' : String(index + 1);
+      step.setAttribute('aria-label', `Mục tiêu ${index + 1}: ${done ? 'đã hoàn thành' : next ? 'tiếp theo' : 'chưa hoàn thành'}`);
+      if (next) step.setAttribute('aria-current', 'step');
+      else step.removeAttribute('aria-current');
+    });
+  }
+  const progressTrack = document.querySelector('.today-progress-track');
+  if (progressTrack) progressTrack.setAttribute('aria-valuenow', String(Math.min(count, 5)));
+
   if (ratioEl) ratioEl.textContent = `Đã học: ${count} / 5 từ`;
   if (fillEl) fillEl.style.width = `${percent}%`;
 
@@ -15827,14 +16020,14 @@ function updateTodayDashboard(){
       statusEl.style.color = '#10B981';
     }
     if (summary.catchStatus === 'pending') {
-      if (titleEl) titleEl.textContent = 'Bé mèo câu được cá rồi! 🎣✨';
-      if (descEl) descEl.textContent = 'Bạn đã đạt mốc 5 từ hôm nay. Nhận cá tươi cho bé mèo và mở khóa thẻ từ vựng!';
-      if (ctaText) ctaText.textContent = 'Nhận thưởng Mèo câu cá ngay!';
+      if (titleEl) titleEl.textContent = 'Trang học đã đầy.\nMèo đợi bên hồ.';
+      if (descEl) descEl.textContent = 'Bạn đã hoàn thành 5 từ hôm nay. Cùng bé mèo câu một chú cá, cất thêm một kỷ niệm nhỏ nhé.';
+      if (ctaText) ctaText.textContent = 'Cùng mèo nhận thưởng';
       if (ctaIcon) ctaIcon.textContent = '🎣';
       if (ctaBtn) ctaBtn.className = 'today-primary-cta highlight-reward';
     } else {
-      if (titleEl) titleEl.textContent = 'Đã hoàn thành phiên hôm nay! 🎉';
-      if (descEl) descEl.textContent = 'Bé mèo đã no bụng. Bạn có thể tiếp tục ôn luyện thêm hoặc chiêm ngưỡng Hồ cá!';
+      if (titleEl) titleEl.textContent = 'Hôm nay thêm giỏi.\nNgày mai mình tiếp.';
+      if (descEl) descEl.textContent = '5 từ đã được ôn luyện hôm nay. Bạn có thể nghỉ ngơi, ghé hồ cá hoặc học thêm nếu muốn.';
       if (ctaText) ctaText.textContent = 'Ôn thêm từ vựng';
       if (ctaIcon) ctaIcon.innerHTML = '<svg class="v-icon icon-xs" aria-hidden="true"><use href="#icon-study"></use></svg>';
       if (ctaBtn) ctaBtn.className = 'today-primary-cta completed';
@@ -15845,17 +16038,17 @@ function updateTodayDashboard(){
       statusEl.textContent = (isSessionInProgress || count > 0) ? `Còn ${5 - count} từ nữa` : 'Chưa hoàn thành';
       statusEl.style.color = 'var(--primary)';
     }
-    if (titleEl) titleEl.textContent = (isSessionInProgress || count > 0) ? 'Tiếp tục bài học hôm nay 🐾' : 'Bắt đầu phiên học hôm nay';
+    if (titleEl) titleEl.textContent = (isSessionInProgress || count > 0) ? 'Một trang còn dở.\nMình học tiếp nhé.' : 'Một chút hôm nay.\nNhớ lâu mai sau.';
     if (descEl) {
       if (isSessionInProgress || count > 0) {
-        descEl.textContent = `Đang học · ${count}/5 mục tiêu. Hoàn thành để mở khóa câu cá hôm nay.`;
+        descEl.textContent = `Bạn đã hoàn thành ${count}/5 từ. Mình sẽ tiếp tục đúng chỗ đã dừng, từng từ một.`;
       } else if (progressTruth.needsReview > 0) {
-        descEl.textContent = `Có ${progressTruth.needsReview} từ đang đến lượt ôn. VokabelGo sẽ ưu tiên những từ đến lượt ôn và thêm từ mới vừa đủ cho phiên 5 mục tiêu.`;
+        descEl.textContent = `Có ${progressTruth.needsReview} từ đến lượt ôn. Phiên 5 từ sẽ ưu tiên ôn lại và thêm từ mới vừa sức với bạn.`;
       } else {
-        descEl.textContent = 'VokabelGo sẽ ưu tiên những từ đến lượt ôn và thêm từ mới vừa đủ cho phiên 5 mục tiêu.';
+        descEl.textContent = 'Ôn lại từ cũ, gặp thêm từ mới. Bé mèo sẽ cùng bạn đi qua 5 từ của hôm nay.';
       }
     }
-    if (ctaText) ctaText.textContent = (isSessionInProgress || count > 0) ? `Tiếp tục học (${count}/5 từ)` : 'Bắt đầu học ngay (0/5 từ)';
+    if (ctaText) ctaText.textContent = (isSessionInProgress || count > 0) ? 'Tiếp tục học cùng mèo' : 'Bắt đầu 5 từ hôm nay';
     if (ctaIcon) ctaIcon.innerHTML = '<svg class="v-icon icon-xs" aria-hidden="true"><use href="#icon-start"></use></svg>';
     if (ctaBtn) ctaBtn.className = 'today-primary-cta';
   }
@@ -16026,12 +16219,16 @@ function toggleGlobalAudio(){
 function toggleProfileDropdown(e){
   if (e) e.stopPropagation();
   const menu = document.getElementById('profileDropdownMenu');
-  if (menu) menu.classList.toggle('hidden');
+  if (menu) {
+    menu.classList.toggle('hidden');
+    document.getElementById('openAvatarBtn').setAttribute('aria-expanded', String(!menu.classList.contains('hidden')));
+  }
 }
 
 function closeProfileDropdown(){
   const menu = document.getElementById('profileDropdownMenu');
   if (menu) menu.classList.add('hidden');
+  document.getElementById('openAvatarBtn').setAttribute('aria-expanded', 'false');
 }
 
 document.addEventListener('click', (e) => {
@@ -16458,6 +16655,7 @@ document.getElementById('manageModal').onclick=e=>{if(e.target.id==='manageModal
 document.addEventListener('keydown',e=>{
   if(document.activeElement && ['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;
   if(e.key==='Escape'){
+    closeProfileDropdown();
     ['manageModal', 'catAvatarModal', 'checkinModal', 'editGuestbookModal', 'boomboxPlaylistModal', 'podcastAddModal', 'authModal', 'supabaseConfigModal', 'firebaseConfigModal', 'leaderboardModal', 'feedNudgePopover'].forEach(id => {
       const el = document.getElementById(id);
       if(el) el.classList.add('hidden');
@@ -17186,8 +17384,8 @@ document.getElementById('boomboxClose').onclick = () => {
 refreshDecks();
 applyFilter();
 
-// Initialize 4-Hub Navigation & Default to Today Hub
-(function initLearningHubs() {
+// Restore navigation after the Kino state declared below has initialized.
+document.addEventListener('DOMContentLoaded', function initLearningHubs() {
   const isMuted = localStorage.getItem('vokabelgo_global_mute') === 'true';
   const audioIcon = document.getElementById('globalAudioIcon');
   const audioBtn = document.getElementById('globalAudioToggleBtn');
@@ -17208,6 +17406,7 @@ applyFilter();
 
   setPrimaryHub(savedHub);
   updateTodayDashboard();
+  KinoChapters.restoreInitialLocation();
 
   window.addEventListener('vokabelgo:daily-progress', () => {
     updateTodayDashboard();
@@ -17215,7 +17414,7 @@ applyFilter();
   window.addEventListener('vokabelgo:daily-goal-complete', () => {
     updateTodayDashboard();
   });
-})();
+});
 function playBoomboxClick(freq){
   try {
     if(typeof playMechanicalClick === 'function') playMechanicalClick();
@@ -17399,7 +17598,7 @@ document.querySelectorAll('.cat-tab-btn').forEach(btn => {
   };
 });
 
-document.getElementById('openAvatarBtn').onclick = openCatPickerModal;
+document.getElementById('openAvatarBtn').onclick = toggleProfileDropdown;
 const statBuddyCardEl = document.getElementById('statBuddyCard');
 if(statBuddyCardEl) statBuddyCardEl.onclick = openCatPickerModal;
 document.getElementById('closeCatAvatarModal').onclick = closeCatPickerModal;
@@ -17959,14 +18158,8 @@ window.addEventListener('vokabelgo:daily-progress', function(e){
   }
 });
 
-// Gentle first-time visitor greeting to choose cat
-try {
-  if(!localStorage.getItem('vokabelgo_user_profile')){
-    setTimeout(() => {
-      openCatPickerModal();
-    }, 800);
-  }
-} catch(e){}
+// Cat personalization is available from the companion card and profile menu.
+// First-time visitors can start learning immediately without a blocking modal.
 
 // ==========================================================================
 const CAT_BILINGUAL_DIALOGUES = {
@@ -18559,9 +18752,16 @@ function resetKinoProgressConfirm(){
 const PEPPA_SUPERMARKT_106_DEFAULT_SEGMENTS = [{"id": 1, "start": 3.05, "end": 13.2, "text": "Peppa und ihre Familie sind in den Supermarkt gegangen, um den Wocheneinkauf zu erledigen.", "vi": "Peppa và gia đình đã đến siêu thị để mua sắm đồ dùng cho cả tuần."}, {"id": 2, "start": 13.2, "end": 18.1, "text": "Mit diesem speziellen Gerät können Sie die Lebensmittel während des Einkaufs scannen.", "vi": "Với thiết bị đặc biệt này, quý khách có thể quét mã thực phẩm trong khi mua sắm."}, {"id": 3, "start": 18.1, "end": 30.9, "text": "Ähm, wir haben Kartoffeln, Milch, Brot. Oh! Achtung, Peppa!", "vi": "Ừm, chúng ta có khoai tây, sữa, bánh mì. Ồ! Cẩn thận đấy, Peppa!"}, {"id": 4, "start": 30.9, "end": 36.55, "text": "Und Bohnen! Haha! Tut mir leid, Herr Bulle!", "vi": "Và cả đậu nữa! Haha! Cháu xin lỗi, bác Bulle!"}, {"id": 5, "start": 36.55, "end": 44.0, "text": "Der Supermarkt schließt in zwei Minuten. Bitte begeben Sie sich zur Kasse! Wir müssen uns beeilen!", "vi": "Siêu thị sẽ đóng cửa sau hai phút nữa. Xin quý khách vui lòng ra quầy thu ngân! Chúng ta phải nhanh lên thôi!"}, {"id": 6, "start": 44.0, "end": 53.2, "text": "Dieser Einkaufswagen hat ein mega wackeliges Rad, Mama!", "vi": "Chiếc xe đẩy mua hàng này có một bánh xe siêu lỏng lẻo lắc lư mẹ ơi!"}, {"id": 7, "start": 53.2, "end": 61.8, "text": "Nimm den hier, Peppa. Der ist weniger wackelig. Aber das Gewackel macht doch riesen Spaß! Wackeln! Wackeln!", "vi": "Lấy chiếc này này Peppa. Chiếc này đỡ lắc hơn. Nhưng lắc lư thế này vui cực kỳ luôn ạ! Lắc lư! Lắc lư!"}, {"id": 8, "start": 61.8, "end": 72.15, "text": "Wenn du meinst. Aber ich wette, meiner ist schneller. Machen wir ein Rennen? Oh, wirklich? Eins, zwei, drei, los!", "vi": "Con nghĩ vậy thì tùy. Nhưng mẹ cá là xe của mẹ nhanh hơn. Chúng ta đua xe nhé? Ồ, thật sao? Một, hai, ba, xuất phát!"}, {"id": 9, "start": 72.15, "end": 78.5, "text": "Schon ist sie fort. Warte auf uns!", "vi": "Mẹ đã phóng đi mất rồi. Đợi bọn con với!"}, {"id": 10, "start": 78.5, "end": 86.8, "text": "Jetzt brauchen wir Cornflakes. Schnell, Schorsch! Erledigt!", "vi": "Giờ chúng ta cần ngũ cốc ngô. Nhanh lên, George! Xong rồi!"}, {"id": 11, "start": 86.8, "end": 96.4, "text": "Peppa und Schorsch gehen in Führung! Und was jetzt, Papa? Oh, ähm... Käse!", "vi": "Peppa và George vươn lên dẫn đầu! Giờ đến món gì nữa hả bố? Ồ, ừm... phô mai!"}, {"id": 12, "start": 96.4, "end": 105.95, "text": "Hab ihn! Piep! Oh! Jetzt Pasta! Piep!", "vi": "Lấy được rồi! Bíp! Ồ! Giờ là mì Ý! Bíp!"}, {"id": 13, "start": 105.95, "end": 115.75, "text": "Trauben! Piep!", "vi": "Nho! Bíp!"}, {"id": 14, "start": 115.75, "end": 127.2, "text": "Tiefkühlerbsen! Hier, bitte sehr! Piep!", "vi": "Đậu Hà Lan đông lạnh! Đây, của con đây! Bíp!"}, {"id": 15, "start": 127.2, "end": 134.2, "text": "Und als Letztes fehlt uns nur noch... Toilettenpapier!", "vi": "Và món cuối cùng chúng ta chỉ còn thiếu... giấy vệ sinh!"}, {"id": 16, "start": 134.2, "end": 138.9, "text": "Das Toilettenpapier befindet sich ganz am anderen Ende des Supermarkts.", "vi": "Giấy vệ sinh nằm ở tận đầu bên kia của siêu thị cơ."}, {"id": 17, "start": 138.9, "end": 147.0, "text": "Hallo, liebe Kunden! Der Supermarkt schließt in wenigen Augenblicken! Jetzt aber schnell!", "vi": "Xin chào quý khách thân mến! Siêu thị sẽ đóng cửa trong chốc lát nữa! Giờ thì phải nhanh lên thôi!"}, {"id": 18, "start": 147.0, "end": 157.45, "text": "Pass auf! Wir laufen zu schnell! Piep!", "vi": "Cẩn thận đấy! Chúng ta chạy nhanh quá rồi! Bíp!"}, {"id": 19, "start": 157.45, "end": 162.8, "text": "Peppas Familie hat das Toilettenpapier gefunden. Sogar richtig viel Toilettenpapier.", "vi": "Gia đình Peppa đã tìm thấy giấy vệ sinh. Thậm chí là rất nhiều giấy vệ sinh."}, {"id": 20, "start": 162.8, "end": 171.55, "text": "Na gut, Leute. Der Laden hat jetzt definitiv geschlossen. Sobald das ganze Toilettenpapier bezahlt wurde!", "vi": "Được rồi mọi người. Cửa hàng bây giờ chính thức đóng cửa. Ngay sau khi toàn bộ chỗ giấy vệ sinh này được thanh toán!"}, {"id": 21, "start": 171.55, "end": 178.8, "text": "Peppa und ihre Familie lieben es, im Supermarkt einzukaufen. Insbesondere Toilettenpapier.", "vi": "Peppa và gia đình rất thích đi mua sắm ở siêu thị. Đặc biệt là mua giấy vệ sinh."}, {"id": 22, "start": 178.8, "end": 188.4, "text": "Peppa und ihre Familie sind im Supermarkt. Sie begeben sich jetzt zur Kasse, um für ihre Einkäufe zu zahlen.", "vi": "Peppa và gia đình đang ở siêu thị. Bây giờ họ tiến về phía quầy thu ngân để thanh toán cho các món đồ đã mua."}, {"id": 23, "start": 188.4, "end": 193.95, "text": "Tut mir leid, ich muss dringend aufs Klo. Ihr könnt die Selbstbedienungskasse benutzen.", "vi": "Xin lỗi nhé, tôi phải đi vệ sinh gấp. Mọi người có thể sử dụng quầy thu ngân tự phục vụ."}, {"id": 24, "start": 193.95, "end": 202.5, "text": "Bei der Selbstbedienungskasse kann man seine Einkäufe selbst einscannen und bezahlen. Oh, was für ein großer Einkaufsroboter!", "vi": "Tại quầy thu ngân tự phục vụ, bạn có thể tự mình quét mã và thanh toán các món đồ đã mua. Ồ, robot mua sắm to lớn làm sao!"}, {"id": 25, "start": 202.5, "end": 208.45, "text": "Wollt ihr zwei alles einscannen? Ja, bitte! Hallo, liebe Kunden!", "vi": "Hai đứa có muốn tự tay quét mã tất cả không? Dạ có ạ! Xin chào quý khách thân mến!"}, {"id": 26, "start": 208.45, "end": 214.0, "text": "Hallo, Einkaufsroboter! Stellt die Taschen bitte in den Einpackbereich. Ähm...", "vi": "Chào robot mua sắm! Xin vui lòng đặt túi vào khu vực đóng gói. Ừm..."}, {"id": 27, "start": 214.0, "end": 222.2, "text": "Ja, Schorsch! Mamas Handtasche ist eine Tasche!", "vi": "Đúng rồi, George! Túi xách của mẹ là một chiếc túi!"}, {"id": 28, "start": 222.2, "end": 229.35, "text": "Diese Tasche ist die falsche Tasche. Der Einkaufsroboter braucht Einkaufstaschen.", "vi": "Chiếc túi này là túi không đúng rồi. Robot mua sắm cần túi đựng đồ mua sắm cơ."}, {"id": 29, "start": 229.35, "end": 235.2, "text": "Diese Tasche ist die richtige Tasche. Bitte Artikel einscannen!", "vi": "Chiếc túi này mới là chiếc túi đúng. Xin vui lòng quét mã sản phẩm!"}, {"id": 30, "start": 235.2, "end": 243.45, "text": "Peppa und Schorsch macht das Einscannen Spaß. Artikel nicht erkannt. Nochmal einscannen! Oh, ähm... Piep!", "vi": "Peppa và George thấy việc quét mã thật là vui. Không nhận diện được sản phẩm. Vui lòng quét lại! Ồ, ừm... Bíp!"}, {"id": 31, "start": 243.45, "end": 251.6, "text": "Artikel immer noch nicht erkannt. Nochmal einscannen! Viele Einkäufer warten darauf, den Einkaufsroboter benutzen zu können.", "vi": "Vẫn chưa nhận diện được sản phẩm. Vui lòng quét lại lần nữa! Rất nhiều khách mua sắm đang đợi để được sử dụng robot mua sắm."}, {"id": 32, "start": 251.6, "end": 262.5, "text": "Artikel nicht erkannt. Es funktioniert nicht. Artikel nicht erkannt. Artikel nicht erkannt. Artikel... Artikel... Artikel... Artikel... Artikel erkannt!", "vi": "Không nhận diện được sản phẩm. Nó không hoạt động rồi. Không nhận diện được... Sản phẩm... Đã nhận diện được sản phẩm!"}, {"id": 33, "start": 262.5, "end": 268.6, "text": "Ja! Bitte gib 10 Saftkartons in den Einpackbereich.", "vi": "Tuyệt vời! Xin vui lòng cho 10 hộp nước trái cây vào khu vực đóng gói."}, {"id": 34, "start": 268.6, "end": 274.35, "text": "10? Das kann nicht stimmen. Wir brauchen nicht so viel Saft. Ähm... Saftkartons entfernen.", "vi": "10 hộp á? Không thể nào đúng được. Chúng ta đâu cần nhiều nước trái cây thế. Ừm... lấy bớt hộp nước trái cây ra."}, {"id": 35, "start": 274.35, "end": 284.05, "text": "Mehr Saft hinzugefügt. Bitte gib 60 Saftkartons in den Einpackbereich! Abbrechen! Oh...", "vi": "Đã thêm nhiều nước trái cây hơn. Xin vui lòng cho 60 hộp nước trái cây vào khu vực đóng gói! Hủy bỏ ngay! Ồ..."}, {"id": 36, "start": 284.05, "end": 291.9, "text": "So sollte es klappen. Mama Wutz kennt sich mit Computern aus. Und mit Einkaufsrobotern.", "vi": "Như thế này là ổn rồi. Mẹ Peppa rất rành về máy tính. Và cả robot mua sắm nữa."}, {"id": 37, "start": 291.9, "end": 298.0, "text": "Wie scannt man das ein, Mama? Die Ananas hat kein Etikett, das man einscannen kann.", "vi": "Quét mã quả này thế nào hả mẹ? Quả dứa không có tem nhãn để quét mã."}, {"id": 38, "start": 298.0, "end": 308.8, "text": "Man muss sie auf dem Bildschirm suchen. Tannenzapfen? Nein. Pinienkerne? Nein. Ah, Ananas! Hier ist sie. Ja!", "vi": "Chúng ta phải tìm nó trên màn hình. Quả thông á? Không. Hạt thông? Không. A, quả dứa đây rồi! Đúng nó rồi. Hoan hô!"}, {"id": 39, "start": 308.8, "end": 314.5, "text": "Artikel ist zu leicht. Oh, ähm... Und wie ist es jetzt?", "vi": "Sản phẩm quá nhẹ. Ồ, ừm... Thế bây giờ thì sao ạ?"}, {"id": 40, "start": 314.5, "end": 323.0, "text": "Artikel ist zu schwer. Fehler! Fehler! Fehler! Fehler! Das gibt's doch nicht! Jetzt aber schnell!", "vi": "Sản phẩm quá nặng. Lỗi! Lỗi rồi! Không thể tin được! Giờ thì nhanh lên nào!"}, {"id": 41, "start": 323.0, "end": 333.25, "text": "Drück auf den Knopf an der Seite!", "vi": "Bấm vào cái nút ở bên cạnh kìa!"}, {"id": 42, "start": 333.25, "end": 340.8, "text": "Jeder im Supermarkt versucht zu helfen. Fehler! Fehler!", "vi": "Mọi người trong siêu thị đều đang cố gắng giúp đỡ. Lỗi! Lỗi rồi!"}, {"id": 43, "start": 340.8, "end": 347.3, "text": "Oh nein, der Einkaufsroboter ist kaputt! Entschuldigt, ich bin zurück! Wer ist der Nächste?", "vi": "Ồ không, robot mua sắm bị hỏng rồi! Xin lỗi mọi người, tôi đã quay lại rồi đây! Ai là người tiếp theo nào?"}, {"id": 44, "start": 347.3, "end": 357.25, "text": "Ich! Ich bin's! Na super! Jeder liebt es, einkaufen zu gehen.", "vi": "Tôi! Là tôi ạ! Tuyệt vời quá! Ai cũng thích đi siêu thị mua sắm."}, {"id": 45, "start": 357.25, "end": 364.5, "text": "Bitte Artikel einscannen! Peppa und ihre Familie waren gerade im Supermarkt einkaufen.", "vi": "Xin vui lòng quét mã sản phẩm! Peppa và gia đình vừa mới đi siêu thị mua sắm xong."}, {"id": 46, "start": 364.5, "end": 373.85, "text": "Vor dem Supermarkt steht ein Spielzeugautomat. Mandy Maus hat ein neues Spielzeug.", "vi": "Trước cửa siêu thị có một chiếc máy bán đồ chơi tự động. Chuột Mandy có một món đồ chơi mới."}, {"id": 47, "start": 373.85, "end": 382.35, "text": "Guck, Mama! Ein Jo-Jo! Gut gemacht, Mandy! Peppa, Schorsch, wollt ihr auch ein neues Spielzeug haben?", "vi": "Nhìn này mẹ ơi! Một chiếc Yo-yo! Giỏi lắm, Mandy! Peppa, George, hai đứa có muốn một món đồ chơi mới không?"}, {"id": 48, "start": 382.35, "end": 397.7, "text": "Ja, bitte! Wie funktioniert das denn, Frau Mümmel? Ihr kauft einen Jeton und drückt ihn in den Geldschlitz.", "vi": "Dạ có ạ! Cái máy này hoạt động thế nào hả cô Mümmel? Các cháu mua một đồng xèng và nhét nó vào khe nhét tiền."}, {"id": 49, "start": 397.7, "end": 402.9, "text": "Dann rollt einer der Bälle bis zum unteren Ende des Automaten und in diesem Ball ist dann ein Spielzeug versteckt. Dinosaurier!", "vi": "Sau đó một trong những quả bóng sẽ lăn xuống đáy máy và bên trong quả bóng đó có giấu đồ chơi. Khủng long!"}, {"id": 50, "start": 402.9, "end": 413.4, "text": "Schorsch hätte gern den Spielzeug-Dinosaurier. Klingt lustig! Ihr bekommt beide einen Jeton. Hier, für dich!", "vi": "George rất muốn có một chú khủng long đồ chơi. Nghe vui đấy! Cả hai đứa đều được một đồng xèng nhé. Đây, cho cháu!"}, {"id": 51, "start": 413.4, "end": 425.05, "text": "Nachdem Schorsch den Jeton einwirft, leuchtet die Maschine auf und spielt Musik ab. Ein Ball rollt jetzt bis zum unteren Ende des Automats.", "vi": "Sau khi George thả đồng xèng vào, cỗ máy sáng bừng lên và phát nhạc. Một quả bóng lăn xuống đáy máy."}, {"id": 52, "start": 425.05, "end": 431.4, "text": "Dinosau... oh! Schorschs Preis ist ein Spielzeug-Schraubenzieher.", "vi": "Khủng lo... ôi! Phần thưởng của George là một chiếc tua-vít đồ chơi."}, {"id": 53, "start": 431.4, "end": 442.8, "text": "Ein Schraubenzieher! Das ist nützlich! Dinosaurier! Keine Sorge, Schorsch. Ich werde den Dinosaurier für dich gewinnen!", "vi": "Một chiếc tua-vít! Cái này hữu ích đấy chứ! Khủng long! Đừng lo George, chị sẽ giành lấy chú khủng long cho em!"}, {"id": 54, "start": 442.8, "end": 452.2, "text": "Nachdem Peppa ihren Jeton einwirft, leuchtet der Automat wieder auf und ein anderer Ball rollt heraus.", "vi": "Sau khi Peppa thả đồng xèng vào, máy lại sáng lên và một quả bóng khác lăn ra ngoài."}, {"id": 55, "start": 452.2, "end": 460.2, "text": "Peppa hat auch nicht den Dinosaurier gewonnen. Dafür aber sehr hübsche Aufkleber. Dinosaurier!", "vi": "Peppa cũng không trúng khủng long. Nhưng đổi lại là những miếng hình dán rất xinh. Khủng long!"}, {"id": 56, "start": 460.2, "end": 465.75, "text": "Das sind echt tolle Spielzeuge. Aber unsere Eiscreme beginnt zu schmelzen.", "vi": "Đó là những món đồ chơi thật tuyệt. Nhưng kem của chúng ta bắt đầu tan chảy rồi kìa."}, {"id": 57, "start": 465.75, "end": 476.35, "text": "So nah dran! Ich spüre, dass der Dinosaurier als Nächstes rauskommen wird. Dürfen wir es noch einmal versuchen, Mama? Bitte!", "vi": "Gần được rồi mà! Con cảm nhận được chú khủng long sẽ ra tiếp theo. Bọn con thử lại lần nữa được không mẹ? Đi mà mẹ!"}, {"id": 58, "start": 476.35, "end": 486.6, "text": "Okay, na gut. Noch einen Versuch! Hurra! Peppa und Schorsch drücken den Hebel des Spielzeugautomaten nach unten.", "vi": "Được rồi, thử thêm một lần nữa thôi nhé! Hoan hô! Peppa và George gạt cần gạt của máy đồ chơi xuống."}, {"id": 59, "start": 486.6, "end": 496.7, "text": "Aber dieses Mal kommt gar kein Ball heraus. Oje, ich war schon gespannt auf euer neues Spielzeug.", "vi": "Nhưng lần này chẳng có quả bóng nào lăn ra cả. Ôi trời, cô đã rất háo hức chờ món đồ chơi mới của các cháu."}, {"id": 60, "start": 496.7, "end": 506.75, "text": "Keine Sorge, Mama Wutz. Ich repariere ihn. Ich muss dafür nur meinen Schraubenzieher finden. Nein. Nein!", "vi": "Đừng lo mẹ Peppa ơi, cháu sẽ sửa nó ngay. Cháu chỉ cần tìm chiếc tua-vít của mình thôi. Không phải. Không!"}, {"id": 61, "start": 506.75, "end": 520.55, "text": "Schraubenzieher! Ah, danke, Schorsch! Upps! Hurra!", "vi": "Tua-vít đây rồi! A, cảm ơn George nhé! Úi chà! Hoan hô!"}, {"id": 62, "start": 520.55, "end": 527.15, "text": "Frau Mümmel hat den Automaten zu gut repariert. Jetzt sind alle Bälle aus dem Automaten gerollt.", "vi": "Cô Mümmel sửa máy khéo quá mức rồi. Giờ thì tất cả bóng đều lăn hết ra ngoài máy rồi."}, {"id": 63, "start": 527.15, "end": 536.35, "text": "Ich muss die wieder zurücktun. Aber der hier ist für euch, weil ihr mir geholfen habt. Dinosaurier!", "vi": "Cô phải nhặt bóng bỏ lại vào trong máy thôi. Nhưng quả này là dành cho hai đứa vì đã giúp cô nhé. Khủng long!"}, {"id": 64, "start": 536.35, "end": 548.95, "text": "Danke, Frau Mümmel! Der hier ist für Sie! Jeder findet den Spielzeugautomaten super. Und Schorsch liebt Dinosaurier.", "vi": "Cảm ơn cô Mümmel! Quả này là dành cho cô ạ! Ai cũng thấy máy bán đồ chơi thật tuyệt. Và George thì mê mẩn khủng long."}, {"id": 65, "start": 548.95, "end": 556.2, "text": "Dinosaurier! Mama Wutz hat Peppa und Schorsch heute in einen besonderen Spielzeugladen mitgenommen.", "vi": "Khủng long! Hôm nay mẹ Peppa dẫn Peppa và George đến một cửa hàng đồ chơi rất đặc biệt."}, {"id": 66, "start": 556.2, "end": 564.9, "text": "Hallo! Ich suche nach einer Mama und zwei Kindern für ein besonderes Spielzeugerlebnis. Habt ihr sie gesehen? Das sind wir!", "vi": "Xin chào! Tôi đang tìm một người mẹ và hai đứa trẻ cho một trải nghiệm đồ chơi đặc biệt. Mọi người có thấy họ không? Chính là gia đình cháu ạ!"}, {"id": 67, "start": 564.9, "end": 572.95, "text": "Ach ja! Worauf wartet ihr dann noch? Los geht's! Hurra!", "vi": "Đúng rồi! Vậy các bạn còn đợi gì nữa? Bắt đầu thôi nào! Hoan hô!"}, {"id": 68, "start": 572.95, "end": 580.3, "text": "Hier könnt ihr euer ganz eigenes Spezialspielzeug entwerfen!", "vi": "Tại đây các cháu có thể tự tay thiết kế món đồ chơi đặc biệt của riêng mình!"}, {"id": 69, "start": 580.3, "end": 590.45, "text": "Sucht euch einfach etwas aus. Zur Wahl stehen ein Roboter, eine Prinzessin, ein lustiges Monster und... Ein Dinosaurier!", "vi": "Các cháu chỉ cần chọn thôi. Có sẵn robot, công chúa, quái vật vui nhộn và... Một chú khủng long!"}, {"id": 70, "start": 590.45, "end": 598.85, "text": "Ich wusste nicht, dass du Dinosaurier magst! Dinosaurier! Dinosaurier! Dinosaurier!", "vi": "Chị đâu biết là em thích khủng long đâu! Khủng long! Khủng long! Khủng long!"}, {"id": 71, "start": 598.85, "end": 608.95, "text": "Schorsch liebt Dinosaurier! Das sind nämlich seine Lieblingstiere. Dann wissen wir wohl, was er auswählen wird. Viel Spaß!", "vi": "George mê mẩn khủng long! Đó chính là loài động vật yêu thích nhất của bé. Thế thì chúng ta biết bé sẽ chọn gì rồi đấy. Chúc chơi vui nhé!"}, {"id": 72, "start": 608.95, "end": 619.65, "text": "Oh, gute Wahl! Reizend. Ein Astronaut, ein Monster, eine Superheldin!", "vi": "Ồ, lựa chọn tuyệt vời! Đáng yêu quá. Một nhà du hành vũ trụ, một quái vật, một nữ siêu anh hùng!"}, {"id": 73, "start": 619.65, "end": 629.2, "text": "Peppa und Schorsch gefällt es, ihr eigenes Spielzeug zu entwerfen. Ihre Vorlieben sind sehr verschieden. Meins ist ein Roboter!", "vi": "Peppa và George rất thích tự thiết kế đồ chơi cho mình. Sở thích của hai đứa rất khác nhau. Đồ chơi của chị là robot!"}, {"id": 74, "start": 629.2, "end": 639.0, "text": "Dinosaurier! Fantastisch! Und mit ein wenig Spielzeugladen-Magie...", "vi": "Khủng long! Tuyệt vời quá! Và với một chút phép thuật của cửa hàng đồ chơi..."}, {"id": 75, "start": 639.0, "end": 649.7, "text": "baut die Maschine jetzt eure Spielsachen! Jetzt fehlt nur noch die Kleidung für eure Spielsachen.", "vi": "cỗ máy đang bắt đầu chế tạo đồ chơi cho các cháu! Giờ chỉ còn thiếu quần áo cho món đồ chơi thôi."}, {"id": 76, "start": 649.7, "end": 657.8, "text": "Es stehen viele Kleidungsstücke zur Auswahl. Peppa und Schorsch finden die perfekte Kleidung für ihre neuen Spielsachen.", "vi": "Có rất nhiều bộ quần áo để lựa chọn. Peppa và George tìm được bộ đồ hoàn hảo cho đồ chơi mới của mình."}, {"id": 77, "start": 657.8, "end": 668.7, "text": "Hurra! Perfekt! Und rein damit! Oje, die Spielzeugmaschine hat den Spielsachen die falsche Kleidung angezogen.", "vi": "Hoan hô! Hoàn hảo! Cho vào trong máy nào! Ôi trời, máy làm đồ chơi đã mặc nhầm trang phục cho các món đồ chơi rồi."}, {"id": 78, "start": 668.7, "end": 678.0, "text": "Die Maschine hat die Outfits vertauscht, Frau Mümmel. Oh ja! Nun ja, ich finde die Spielsachen immer noch toll!", "vi": "Máy đã đổi nhầm đồ của nhau rồi cô Mümmel ơi. Ồ đúng rồi! Dù sao thì cô thấy món đồ chơi vẫn rất tuyệt!"}, {"id": 79, "start": 678.0, "end": 686.05, "text": "Und sehr kreativ. Fliegen macht Spaß! Hui!", "vi": "Và rất sáng tạo nữa. Bay lượn vui thật đấy! Vù vù!"}, {"id": 80, "start": 686.05, "end": 692.25, "text": "Warte auf uns, Peppa! Was ist denn das für ein Raum?", "vi": "Chờ bọn em với, chị Peppa! Căn phòng này là gì thế ạ?"}, {"id": 81, "start": 692.25, "end": 698.7, "text": "Das ist eine ganz neue Spielzeugmaschine! Stell dich in der Mitte hin, Peppa.", "vi": "Đây là một cỗ máy đồ chơi hoàn toàn mới! Peppa, con hãy đứng vào giữa đi."}, {"id": 82, "start": 698.7, "end": 707.55, "text": "Was macht sie denn da? Stillhalten! Was war denn das? Tada!", "vi": "Máy đang làm gì thế ạ? Đứng yên nào! Cái gì vừa xảy ra thế? Tada!"}, {"id": 83, "start": 707.55, "end": 718.85, "text": "Die Maschine hat ein Spielzeug gebaut, das genau wie Peppa aussieht. Guck, Schorsch! Ich bin winzig klein!", "vi": "Cỗ máy đã tạo ra một món đồ chơi trông giống hệt Peppa. Nhìn này George! Chị bé tí xíu này!"}, {"id": 84, "start": 718.85, "end": 728.25, "text": "Und du wirst es auch! Peppa und Schorsch macht es riesen Spaß, Spielsachen zu entwerfen. Aber Schorsch liebt es noch mehr, selbst ein Spielzeug zu sein.", "vi": "Và em cũng sẽ như thế! Peppa và George thấy thiết kế đồ chơi siêu vui. Nhưng George còn thích tự mình biến thành đồ chơi hơn."}, {"id": 85, "start": 728.25, "end": 736.7, "text": "Peppa Wutz Geschichten. Lasst uns spielen!", "vi": "Những câu chuyện về Peppa Pig. Chúng ta cùng chơi nào!"}, {"id": 86, "start": 736.7, "end": 745.75, "text": "Peppa und ihre Familie haben im Supermarkt viele Lebensmittel eingekauft. Und jetzt knurrt ihnen der Magen.", "vi": "Peppa và gia đình đã mua rất nhiều thực phẩm ở siêu thị. Và bây giờ bụng họ đang réo cồn cào."}, {"id": 87, "start": 745.75, "end": 754.35, "text": "Was gibt's zum Essen? Mein Magen macht schon knurrende Geräusche! Heute Abend machen wir zusammen... Tacos!", "vi": "Có món gì để ăn thế ạ? Bụng con đang phát ra những tiếng kêu ùng ục rồi này! Tối nay cả nhà mình sẽ cùng làm món... Tacos!"}, {"id": 88, "start": 754.35, "end": 760.8, "text": "Ja! Was ist ein Taco? Und wie macht man den denn?", "vi": "Tuyệt quá! Taco là món gì thế ạ? Và làm món đó như thế nào?"}, {"id": 89, "start": 760.8, "end": 769.3, "text": "Es ist ein leckeres Gericht aus Mexiko. Und Tacos macht man am allerbesten... alle zusammen!", "vi": "Đó là một món ăn ngon tuyệt đến từ Mexico. Và làm taco tuyệt nhất là khi... cả nhà cùng làm!"}, {"id": 90, "start": 769.3, "end": 777.75, "text": "Peppa, Schorsch und Mama Wutz waschen Gemüse für ihre Tacos. Wir müssen dafür sorgen, dass das Gemüse sauber ist!", "vi": "Peppa, George và mẹ rửa rau củ để làm món taco. Chúng ta phải đảm bảo rau củ thật sạch sẽ!"}, {"id": 91, "start": 777.75, "end": 783.15, "text": "Plitsch, platsch, wisch, wasch! So wird Gemüse sauber!", "vi": "Tõm, tõm, chùi, rửa! Rau củ sạch bóng là như thế đấy!"}, {"id": 92, "start": 783.15, "end": 792.15, "text": "Plitsch, platsch, wisch, wasch! So wird Gemüse sauber!", "vi": "Tõm, tõm, chùi, rửa! Rau củ sạch bóng là như thế đấy!"}, {"id": 93, "start": 792.15, "end": 801.8, "text": "Jetzt sind Peppa und Mama Wutz auch schön sauber. Weil das Gemüse jetzt sauber ist, können wir vorsichtig Zwiebeln schneiden.", "vi": "Bây giờ Peppa và mẹ cũng sạch sẽ tinh tươm rồi. Vì rau củ đã sạch, chúng ta có thể cẩn thận cắt hành tây."}, {"id": 94, "start": 801.8, "end": 811.85, "text": "Hier, bitte, Papa! Was ist los, Papa? Magst du keine Zwiebeln?", "vi": "Của bố đây ạ! Có chuyện gì thế bố? Bố không thích hành tây ạ?"}, {"id": 95, "start": 811.85, "end": 819.15, "text": "Oh, keine Sorge, Peppa. Der Zwiebelsaft sorgt manchmal dafür, dass einem die Augen tränen.", "vi": "Ồ đừng lo Peppa ơi. Nước hành tây đôi khi làm cho mắt người ta cay xè chảy nước mắt đấy."}, {"id": 96, "start": 819.15, "end": 829.2, "text": "Ich muss mir nur die Augen mit etwas abdecken. Ich hab's! Peppa weiß, wie man seine Augen perfekt vor den Zwiebeln schützen kann.", "vi": "Bố chỉ cần che mắt lại bằng thứ gì đó thôi. Con có cách rồi! Peppa biết cách bảo vệ mắt hoàn hảo trước hành tây."}, {"id": 97, "start": 829.2, "end": 836.65, "text": "Die ist perfekt, Peppa! Gibt's wieder Zwiebeln, Papa Wutz?", "vi": "Cái kính này hoàn hảo đấy Peppa! Lại có hành tây nữa hả bố Peppa?"}, {"id": 98, "start": 836.65, "end": 843.15, "text": "Jetzt machen wir ein wenig Guacamole. Hurra! Ich liebe Guacamole!", "vi": "Bây giờ chúng ta cùng làm một ít sốt bơ Guacamole nhé. Hoan hô! Con thích sốt bơ Guacamole nhất!"}, {"id": 99, "start": 843.15, "end": 852.05, "text": "Dann zerdrück schon mal die Avocado, Peppa. Peppa macht das Zerdrücken der Avocado großen Spaß, weil dabei gekleckert wird. Upps!", "vi": "Vậy Peppa hãy nghiền quả bơ ra nhé. Peppa thấy nghiền bơ siêu vui vì được làm văng lung tung. Úi chà!"}, {"id": 100, "start": 852.05, "end": 862.05, "text": "Vielleicht ist es besser, wenn du es langsamer machst? Perfekt! Jetzt kommen andere Zutaten dazu.", "vi": "Có lẽ con làm chậm lại một chút thì tốt hơn đấy? Hoàn hảo! Giờ đến lượt cho các nguyên liệu khác vào."}, {"id": 101, "start": 862.05, "end": 868.25, "text": "So. Und auch noch ein Spritzer einer Limette. Spritzer!", "vi": "Được rồi. Và thêm một giọt nước chanh nữa. Giọt chanh!"}, {"id": 102, "start": 868.25, "end": 878.45, "text": "Na gut, Schorsch. Du gibst den Limettenspritzer hinein. Zum Glück habe ich noch meine Schutzbrille auf!", "vi": "Được rồi George. Con hãy vắt một giọt chanh vào đi. May mà bố vẫn đang đeo kính bảo hộ!"}, {"id": 103, "start": 878.45, "end": 888.6, "text": "Jetzt sind alle Zutaten fertig und es ist Zeit, daraus Tacos zu machen. Und jetzt kommt das Beste: Nehmt eure Tortilla in die Hand...", "vi": "Bây giờ tất cả nguyên liệu đã sẵn sàng và đã đến lúc cuộn bánh taco. Và bây giờ là phần tuyệt nhất: Cầm bánh tortilla trên tay..."}, {"id": 104, "start": 888.6, "end": 896.05, "text": "und gebt eure Lieblingszutaten darauf! Peppa hat am liebsten Tacos mit ganz viel Guacamole.", "vi": "và cho các nguyên liệu yêu thích lên trên! Peppa thích nhất là taco với thật nhiều sốt bơ Guacamole."}, {"id": 105, "start": 896.05, "end": 903.8, "text": "Schorsch hat am liebsten leere Tacos. Mama und Papa Wutz bevorzugen Tacos mit allen Zutaten.", "vi": "George thích nhất là bánh taco không có nhân. Bố mẹ thì thích taco với đầy đủ tất cả nguyên liệu."}, {"id": 106, "start": 903.8, "end": 915.35, "text": "Alle finden ihre Tacos richtig lecker. Aber ihnen ist die Füllung auf den Teller geflutscht. Hurra! Jetzt können wir sie wieder in den Taco geben!", "vi": "Mọi người đều thấy bánh taco của mình ngon tuyệt. Nhưng phần nhân bánh đã bị tuột hết xuống đĩa rồi. Hoan hô! Giờ thì ta lại bỏ nhân vào bánh taco!"}];
 const BABYSITTER_65_DEFAULT_SEGMENTS = [{"id": 1, "start": 28.7, "end": 33.29, "text": "Onkel Rad ist da! Hey, Onkel Rad, wo ist er?", "vi": "Bác Rad đến rồi! Này, bác Rad, bác ấy đâu rồi?"}, {"id": 2, "start": 33.3, "end": 38.2, "text": "Na, wie geht's dir, Bluey? Ich bin Bingo! Wirklich?", "vi": "Nào, cháu thế nào rồi, Bluey? Cháu là Bingo mà! Thật hả?"}, {"id": 3, "start": 38.28, "end": 42.94, "text": "Ja, das ist Bluey. Oh, klar, denn er ist blau! Ich bin ein Mädchen!", "vi": "Vâng, kia mới là Bluey. Ồ, rõ rồi, vì nó màu xanh! Cháu là con gái cơ mà!"}, {"id": 4, "start": 43.2, "end": 47.34, "text": "Oh ja, wusste ich doch. Bringst du uns heute Abend ins Bett, Onkel Rad? Aber hallo!", "vi": "Ồ đúng rồi, bác biết mà. Tối nay bác cho bọn cháu đi ngủ nhé, bác Rad? Chắc chắn rồi!"}, {"id": 5, "start": 47.44, "end": 52.8, "text": "Hurra! Nicht hurra. Bluey lässt sich ungern von Babysittern ins Bett bringen, Onkel Rad.", "vi": "Hoan hô! Không hoan hô đâu. Bluey không thích để người trông trẻ cho đi ngủ đâu, bác Rad."}, {"id": 6, "start": 53.02, "end": 56.85, "text": "Keine Sorge, Bluey! Wer könnte dich denn besser ins Bett bringen als dein Onkel Rad?", "vi": "Đừng lo, Bluey! Còn ai có thể cho cháu đi ngủ tuyệt hơn bác Rad của cháu chứ?"}, {"id": 7, "start": 57, "end": 62.47, "text": "Hallo! Frisky! Hey, Mädels! Das ist Onkel Rad!", "vi": "Xin chào! Chị Frisky! Chào các cô gái nhỏ! Đây là bác Rad!"}, {"id": 8, "start": 62.52, "end": 69.42, "text": "Hi. Hi. Frisky, kennst du Bandits Bruder Radley schon?", "vi": "Chào anh. Chào em. Frisky, em đã biết Radley - anh trai của Bandit chưa?"}, {"id": 9, "start": 69.47, "end": 73.72, "text": "Ähm, ja. Bist du bei der Hochzeit nicht in den Pool gefallen? Könnte sein.", "vi": "Ừm, dạ rồi. Không phải hồi đám cưới anh bị ngã xuống hồ bơi sao? Có thể lắm chứ."}, {"id": 10, "start": 73.76, "end": 80.4, "text": "Frisky ist Blueys liebe Patentante! Entschuldige, Frisky, Onkel Rad hat in letzter Minute zugestimmt, dass er heute aufpasst.", "vi": "Frisky là mẹ đỡ đầu đáng yêu của Bluey đấy! Xin lỗi Frisky nhé, bác Rad đồng ý trông trẻ vào phút chót."}, {"id": 11, "start": 80.44, "end": 86.36, "text": "Hast du meine Nachricht nicht bekommen? Oh, nein, die habe ich nicht bekommen. Ist schon gut, dann gehe ich wieder.", "vi": "Em không nhận được tin nhắn của chị à? Ồ không, em không nhận được. Không sao đâu, vậy em về đây."}, {"id": 12, "start": 86.36, "end": 89.74, "text": "Nein, nicht gehen! Ihr könnt doch beide babysitten!", "vi": "Không, đừng về mà! Cả hai người đều có thể làm người trông trẻ mà!"}, {"id": 13, "start": 90.06, "end": 94.96, "text": "Oh na ja, wenn das für euren Onkel Rad okay ist? Voll in Ordnung. Hurra!", "vi": "Ồ thôi được, nếu bác Rad của các cháu thấy ổn? Hoàn toàn ổn luôn. Hoan hô!"}, {"id": 14, "start": 94.96, "end": 101.24, "text": "Diese Folge von Bluey heißt: Die Babysitter. Bis später! Viel Spaß! Bis dann.", "vi": "Tập phim Bluey này có tên là: Người trông trẻ. Hẹn gặp lại sau nhé! Chúc vui vẻ! Tạm biệt."}, {"id": 15, "start": 101.32, "end": 107.74, "text": "Erzähl mal, Bluey. Warum lässt du dich nicht gern vom Babysitter ins Bett bringen? Na ja, wir haben das schon mal gemacht und ich mochte es nicht.", "vi": "Kể cô nghe nào, Bluey. Sao cháu lại không thích người trông trẻ cho đi ngủ? Dạ, lần trước làm thế và cháu không thích chút nào."}, {"id": 16, "start": 107.9, "end": 111.56, "text": "Ach, warum denn nicht? Es ist so anders gewesen.", "vi": "Ủa, sao lại thế chứ? Vì mọi thứ khác lạ quá ạ."}, {"id": 17, "start": 111.84, "end": 119.26, "text": "Tja, deine Patentante und ich werden es einfach ganz genauso machen, wie deine Mum und dein Dad es immer tun. Aber ich kenne euch nicht so gut wie Mum und Dad.", "vi": "À, mẹ đỡ đầu và bác sẽ làm y hệt như bố mẹ cháu vẫn thường làm. Nhưng cháu đâu có quen hai người bằng bố mẹ cháu."}, {"id": 18, "start": 119.26, "end": 124.48, "text": "Oh ja, da hast du recht. Na ja, dann musst du uns eben besser kennenlernen. Sehr gut, wir können doch \"Wer bin ich?\" spielen!", "vi": "Ồ đúng, cháu nói phải. Thế thì cháu phải làm quen với bọn bác nhiều hơn rồi. Tuyệt quá, chúng ta có thể chơi trò 'Tôi là ai?'!"}, {"id": 19, "start": 124.48, "end": 132, "text": "Ja! Wartet, wie geht \"Wer bin ich?\" denn überhaupt? Na ja, ihr stellt uns Fragen über uns und wir werden sie euch dann beantworten.", "vi": "Vâng! Khoan đã, trò 'Tôi là ai?' chơi thế nào cơ? À, các cháu đặt câu hỏi về bọn bác và bọn bác sẽ trả lời."}, {"id": 20, "start": 132, "end": 137.72, "text": "Ist einfach, los! Wieso hast du keine Frau? Wow, sicher, dass ich keine habe? Hast du eine Frau?", "vi": "Dễ mà, bắt đầu đi! Sao bác không có vợ? Ồ, cháu chắc là bác không có không? Bác có vợ không?"}, {"id": 21, "start": 137.8, "end": 142.44, "text": "Na ja, nein. Und wieso hast du keine Frau? Sie ist dran!", "vi": "À thì, không. Thế còn cô, sao cô không có chồng? Đến lượt cô ấy kìa!"}, {"id": 22, "start": 142.54, "end": 146.7, "text": "Wie viele Freunde hast du? Oh, drei? Das sind nicht viele!", "vi": "Cô có bao nhiêu người bạn? Ồ, ba người á? Đâu có nhiều đâu!"}, {"id": 23, "start": 146.72, "end": 152.91, "text": "Warum hast du denn nur drei Freunde? Tja, er ist dran! Wieso sehen wir dich immer nur Weihnachten?", "vi": "Sao cô chỉ có ba người bạn thôi thế? À, đến lượt anh ấy! Sao bọn cháu chỉ gặp bác vào dịp Giáng sinh thôi?"}, {"id": 24, "start": 152.88, "end": 157.86, "text": "Ich arbeite auf einer Bohrinsel. Ist das der Grund, warum du keine Frau hast? Oh, mag schon sein.", "vi": "Bác làm việc trên giàn khoan dầu ngoài biển. Đó có phải là lý do bác không có vợ không? Ồ, chắc là đúng vậy rồi."}, {"id": 25, "start": 157.94, "end": 162.54, "text": "Was ist eine Bohrinsel? Wieso sieht dein Haar so hübsch aus? Mandelmilch-Shampoo!", "vi": "Giàn khoan dầu là gì ạ? Sao tóc cô trông đẹp thế? Dầu gội sữa hạnh nhân đấy!"}, {"id": 26, "start": 162.64, "end": 168.64, "text": "Möchtest du mal Kinder haben? Ja. Soll Bosco der Vater werden?", "vi": "Cô có muốn có con không? Có chứ. Chú Bosco có phải là bố của chúng không ạ?"}, {"id": 27, "start": 168.9, "end": 172.44, "text": "Nein, Bosco und ich sind jetzt keine Freunde mehr. Wer ist Bosco?", "vi": "Không, cô và Bosco giờ không còn là bạn bè nữa rồi. Bosco là ai vậy?"}, {"id": 28, "start": 172.64, "end": 176.17, "text": "Niemand, nächste Frage! Bosco ist ihre wahre Liebe. Nein, nicht mehr.", "vi": "Không là ai cả, câu tiếp theo nào! Bosco là tình yêu đích thực của cô ấy. Không, không còn nữa."}, {"id": 29, "start": 176.26, "end": 181.35, "text": "Aber die wahre Liebe hält für immer! Na ja, hält die wahre Liebe etwa nicht für immer?", "vi": "Nhưng tình yêu đích thực là mãi mãi mà! Ừm, chẳng lẽ tình yêu đích thực lại không mãi mãi sao?"}, {"id": 30, "start": 181.3, "end": 187.96, "text": "Doch, schon, ich meine, zumindest dachte ich das. Lasst uns lieber im Garten spielen!", "vi": "Có chứ, ý cô là, ít nhất thì trước đây cô từng nghĩ thế. Thôi chúng ta ra vườn chơi đi!"}, {"id": 31, "start": 187.98, "end": 193.14, "text": "Ja! Könnt ihr mit uns genau die gleichen Spiele spielen wie Mum und Dad? Okay, was spielen sie denn?", "vi": "Vâng! Hai người có thể chơi đúng những trò như bố mẹ cháu chơi không? Được thôi, bố mẹ cháu chơi trò gì?"}, {"id": 32, "start": 193.16, "end": 195.64, "text": "Rattenhuhn! Ratten-was? Komm her und geh weg!", "vi": "Gà chuột! Chuột-gì cơ? Lại đây và đi đi!"}, {"id": 33, "start": 195.7, "end": 201.84, "text": "Komm und geh, was genau? Wir müssen nicht die gleichen Spiele spielen, Bluey. Wir spielen Lampenmaus!", "vi": "Lại đây và đi đi là gì cơ? Chúng ta đâu nhất thiết phải chơi trò giống nhau đâu Bluey. Mình chơi trò Chuột đèn pin!"}, {"id": 34, "start": 202.08, "end": 230.66, "text": "Lampenmaus war ganz lustig. Aber jetzt möchte ich gar nichts mehr machen, was irgendwie anders ist.", "vi": "Trò Chuột đèn pin cũng vui đấy. Nhưng giờ cháu không muốn làm bất cứ điều gì khác lạ nữa đâu."}, {"id": 35, "start": 230.7, "end": 238.45, "text": "Wie wäre es damit? Das ist verrückt! Ja, aber du wirst dich ganz schnell dran gewöhnen.", "vi": "Thế trò này thì sao? Điên rồ thật đấy! Ừ, nhưng cháu sẽ quen nhanh thôi mà."}, {"id": 36, "start": 238.46, "end": 246.08, "text": "Ich will auch! Oh Mann, dann versuchen wir's mal. Na hallöchen, Falschrum-Bingo!", "vi": "Cháu cũng muốn chơi! Trời đất, vậy thử xem nào. Chào cô bé Bingo lộn ngược nhé!"}, {"id": 37, "start": 246.14, "end": 256.97, "text": "Hi! Bingo, du bist schwer geworden! Komm, setz dich zu mir ans Lagerfeuer! Ja, ich versuche es doch! Wie wär's mit einer Geschichte?", "vi": "Chào chú! Bingo, cháu nặng lên rồi đấy! Lại đây, ngồi bên đống lửa cùng chú nào! Vâng, cháu đang cố đây! Kể một câu chuyện thì sao nhỉ?", "_merged": true}, {"id": 38, "start": 257.02, "end": 262.64, "text": "Und dann besiegte der Prinz den Drachen mit einem einzigen Prinzenschlag! Bum! Hurra!", "vi": "Và rồi hoàng tử đã đánh bại con rồng chỉ bằng một cú đấm hoàng tử duy nhất! Bùm! Hoan hô!"}, {"id": 39, "start": 262.62, "end": 268.93, "text": "Prinzessin, ich habe dich gerettet. Jetzt können wir heiraten. Und die Prinzessin antwortete: \"Nein danke.\"", "vi": "Công chúa, ta đã cứu nàng rồi. Giờ chúng ta có thể kết hôn. Và công chúa đáp: 'Không, cảm ơn.'"}, {"id": 40, "start": 268.94, "end": 272.08, "text": "Er hat ihr nicht gut gefallen. Warum nicht?", "vi": "Cái gì cơ? Nàng ấy không thích chàng hoàng tử đó. Sao lại không thích ạ?"}, {"id": 41, "start": 272.09, "end": 278.05, "text": "Tja, sein Haar war zu durcheinander und sie fand ihn ein bisschen zu muskulös. Wisst ihr, was ich meine, Kinder?", "vi": "Chà, tóc chàng ta rối quá và nàng thấy chàng hơi cơ bắp quá đà. Các cháu hiểu ý cô chứ?"}, {"id": 42, "start": 278.06, "end": 283.85, "text": "Augenblick! Ich, der Prinz, habe den Drachen besiegt. Ich nehme dich mit in mein Schloss und wir heiraten, so läuft das!", "vi": "Khoan đã! Ta là hoàng tử, ta đã đánh bại con rồng. Ta sẽ đưa nàng về lâu đài và cưới nàng, chuyện phải như thế!"}, {"id": 43, "start": 283.85, "end": 288.64, "text": "Hey, ich habe dich aber nicht gebeten, mich zu retten! Möchtest du lieber beim stinkenden Drachen bleiben?", "vi": "Này, tôi đâu có nhờ anh đến cứu tôi đâu! Nàng muốn ở lại với con rồng bốc mùi kia hơn à?"}, {"id": 44, "start": 288.64, "end": 293.59, "text": "Ich gewöhne mich an ihn. In Ordnung, ich weck ihn auf! Warte, nein!", "vi": "Tôi đang quen dần với nó rồi. Được thôi, ta sẽ đánh thức nó dậy! Đợi đã, đừng mà!"}, {"id": 45, "start": 293.6, "end": 299.47, "text": "Ja, dachte ich mir schon. Ach, Prinzen sind doch alle gleich, dachte sie. Nein, sind wir nicht!", "vi": "Đấy, ta biết ngay mà. Chà, hoàng tử ai cũng giống nhau cả thôi, nàng nghĩ vậy. Không, bọn ta đâu có giống!"}, {"id": 46, "start": 299.47, "end": 305.28, "text": "Es gibt gute Prinzen und böse Prinzen, meine Dame. Das weiß doch jedes Kind! Was für einer war dieser Prinz?", "vi": "Có hoàng tử tốt và hoàng tử xấu mà thưa quý cô. Đứa trẻ nào cũng biết điều đó! Chàng hoàng tử này là loại nào ạ?"}, {"id": 47, "start": 305.28, "end": 310.18, "text": "Ein guter! Er hat die Prinzessin gerettet! Aber doch nur, weil er gerne gegen Drachen kämpft.", "vi": "Một chàng hoàng tử tốt! Chàng đã cứu công chúa mà! Nhưng chỉ vì chàng thích đánh nhau với rồng thôi."}, {"id": 48, "start": 310.24, "end": 315.7, "text": "Schon morgen zieht er los und sucht sich eine neue Prinzessin. Mann, diese Prinzessin ist schwierig zu retten.", "vi": "Ngay ngày mai chàng sẽ lại lên đường đi tìm công chúa mới. Trời ạ, công chúa này khó cứu thật đấy."}, {"id": 49, "start": 315.73, "end": 321.94, "text": "Tja, während der Prinz noch über alles nachdenkt, schnappt sie sich ein Buch und lebt glücklich und zufrieden weiter.", "vi": "Chà, trong khi hoàng tử còn đang mải suy nghĩ, nàng cầm lấy một cuốn sách và sống hạnh phúc viên mãn mãi về sau."}, {"id": 50, "start": 322.14, "end": 325.74, "text": "Und Ende. Was? Das ist nicht das Ende!", "vi": "Hết chuyện. Cái gì? Đó đâu phải là cái kết!"}, {"id": 51, "start": 325.94, "end": 330.21, "text": "Wenn Mum und Dad Geschichten erzählen, gibt es am Ende eine Hochzeit! Prinzessin?", "vi": "Khi bố mẹ kể chuyện, kết thúc luôn là một đám cưới cơ mà! Công chúa?"}, {"id": 52, "start": 330.74, "end": 335.18, "text": "Okay, gut, wenn die Kinder das so wollen, dann heiraten sie eben. Und Ende! Hurra!", "vi": "Được rồi, nếu bọn trẻ muốn thế thì họ cưới nhau vậy. Hết chuyện rồi nhé! Hoan hô!"}, {"id": 53, "start": 335.18, "end": 341.88, "text": "Na, läuft doch! Gute Nacht, Bingo, hattest du einen schönen... Frisky?", "vi": "Đấy, ổn rồi mà! Chúc ngủ ngon, Bingo, cháu đã có một buổi tối... Frisky?"}, {"id": 54, "start": 341.88, "end": 347.82, "text": "Ihr guckt aber nicht mehr fernsehen, wenn ich eingeschlafen bin, oder? Oh, nein, das müssen wir nicht.", "vi": "Hai người sẽ không xem TV nữa sau khi cháu ngủ thiếp đi chứ? Ồ không, bọn cô đâu cần xem TV."}, {"id": 55, "start": 347.82, "end": 353.6, "text": "Versprichst du's mir? War euer letzter Babysitter ganz zufällig Oma? Ja.", "vi": "Hai người hứa với cháu nhé? Lần trước người trông trẻ của các cháu có phải là bà nội không? Vâng ạ."}, {"id": 56, "start": 353.6, "end": 357.82, "text": "Lass mich raten: Du bist aufgewacht und der Fernseher war viel zu laut? Ja.", "vi": "Để cô đoán nhé: Cháu tỉnh giấc và tiếng TV thì bật quá to đúng không? Vâng ạ."}, {"id": 57, "start": 357.82, "end": 363.58, "text": "Meine Mum hört nicht mehr so gut, deswegen stellt sie ihn sehr laut. Sie hat sich was echt total Gruseliges angeguckt!", "vi": "Mẹ anh tai nghe không rõ lắm nên bà bật TV rất to. Bà đã xem một bộ phim cực kỳ rùng rợn luôn ạ!"}, {"id": 58, "start": 363.58, "end": 367.67, "text": "Deswegen wirst du nicht gern vom Babysitter ins Bett gebracht, nicht wahr? Ja.", "vi": "Vì thế mà cháu không thích người trông trẻ cho đi ngủ, đúng không? Vâng ạ."}, {"id": 59, "start": 367.67, "end": 372.49, "text": "Damals ist es einfach nicht so gut gelaufen. Diesmal wird es anders sein. Das versprechen wir.", "vi": "Lần đó chỉ là không được suôn sẻ thôi. Lần này sẽ khác. Bọn cô chú hứa đấy."}, {"id": 60, "start": 372.49, "end": 376.88, "text": "Aber wie kann ich mir sicher sein, dass es nicht wieder passiert? Kannst du nicht.", "vi": "Nhưng làm sao cháu chắc chắn được chuyện đó không lặp lại? Cháu không thể chắc chắn được."}, {"id": 61, "start": 376.88, "end": 383.96, "text": "Aber du musst es einfach ausprobieren. Sonst wirst du den Rest deines Lebens bei dem stinkenden Drachen festsitzen.", "vi": "Nhưng cháu cứ phải thử xem sao đã. Nếu không cháu sẽ phải mắc kẹt với con rồng bốc mùi kia suốt cả đời đấy."}, {"id": 62, "start": 383.96, "end": 388.33, "text": "Okay, dann probier ich es aus. Das ist mein Mädchen.", "vi": "Được rồi, vậy cháu sẽ thử. Đúng là cô bé ngoan của chú."}, {"id": 63, "start": 390, "end": 401.16, "text": "Ein anderes Shampoo mag ich einfach nicht. Das Shampoo ist toll, aber der Conditioner geht wirklich überhaupt nicht.", "vi": "Tôi không thích loại dầu gội nào khác đâu. Dầu gội thì tuyệt thật, nhưng dầu xả thì thực sự không ổn chút nào."}, {"id": 64, "start": 401.16, "end": 405.35, "text": "Du hast ja recht. Aber was soll man machen, wenn die Haare sonst immer so durcheinander sind?", "vi": "Em nói đúng đấy. Nhưng biết làm sao được khi tóc tai lúc nào cũng rối bời như thế này chứ?"}];
 
-const PIZZASCHWESTER_72_DEFAULT_SEGMENTS = [{"id": 1, "start": 27.6, "end": 33.1, "text": "Fertig! Okay. Klingel-klingel! Klingel-klingel!", "vi": "Xong rồi! Được rồi. Kính coong! Kính coong!"}, {"id": 2, "start": 32.9, "end": 36.8, "text": "Hallo? Hier der Pizzaladen! Möchten Sie gerne eine Pizza bestellen?", "vi": "A lô? Tiệm pizza xin nghe! Quý khách muốn đặt một chiếc pizza chứ ạ?"}, {"id": 3, "start": 36.95, "end": 40.8, "text": "Ja, bitte! Ich möchte eine Pizza Supreme ohne Pilze.", "vi": "Vâng, làm ơn! Tôi muốn một chiếc pizza Supreme không cho nấm."}, {"id": 4, "start": 40.75, "end": 44.0, "text": "Möchten Sie auch Knoblauchbrot? Ja, ich nehme auch Knoblauchbrot.", "vi": "Quý khách có lấy thêm bánh mì bơ tỏi không? Vâng, tôi lấy cả bánh mì bơ tỏi nữa."}, {"id": 5, "start": 43.95, "end": 47.4, "text": "Gut, alles klar! Wird nicht lange dauern!", "vi": "Tuyệt, rõ rồi ạ! Sẽ không lâu đâu!"}, {"id": 6, "start": 47.35, "end": 51.2, "text": "Brauchen Sie meine Adresse? Nein, ich kann Sie ja sehen! Wiederhören!", "vi": "Quý khách có cần địa chỉ của tôi không? Không, tôi nhìn thấy quý khách mà! Chào tạm biệt!"}, {"id": 7, "start": 51.2, "end": 54.8, "text": "Wir brauchen eine Pizza Supreme, bitte, Pizzatante. Oh, aber ohne Pilze. Okay!", "vi": "Bọn cháu cần một chiếc pizza Supreme, làm ơn, cô làm pizza ơi. Ồ, nhưng không có nấm nhé. Được rồi!"}, {"id": 8, "start": 54.85, "end": 60.3, "text": "Ich mach das Knoblauchbrot! Können wir so tun, als ob wir Schwestern sind, und der Pizzaladen unserer Mum gehört?", "vi": "Chị sẽ làm bánh mì bơ tỏi! Chúng mình có thể giả vờ như hai chị em, và tiệm pizza này là của mẹ không?"}, {"id": 9, "start": 60.35, "end": 66.1, "text": "Oh ja, und wir schmeißen den Pizzaladen für sie, damit sie in den Urlaub fliegen kann. Ja! Nach Italien!", "vi": "Ồ được chứ, và chúng mình quán xuyến tiệm pizza giúp mẹ, để mẹ có thể đi máy bay đi nghỉ dưỡng. Vâng! Đến Ý!"}, {"id": 10, "start": 71.8, "end": 76.1, "text": "Das Knoblauchbrot ist fertig. Klasse! Vergiss nicht das Freigetränk!", "vi": "Bánh mì bơ tỏi xong rồi. Tuyệt quá! Đừng quên nước ngọt tặng kèm đấy nhé!"}, {"id": 11, "start": 75.85, "end": 79.75, "text": "Danke, Pizzaschwester! Bis nachher!", "vi": "Cảm ơn chị gái pizza! Hẹn lát nữa gặp lại!"}, {"id": 12, "start": 85.2, "end": 90.2, "text": "Ich bin schon da! Oh, sehr schön! Es sind keine Pilze drauf?", "vi": "Tôi đến nơi rồi đây! Ồ, tuyệt quá! Trên bánh không có nấm chứ?"}, {"id": 13, "start": 90.1, "end": 92.5, "text": "Nein, keine Pilze. Sehr gut.", "vi": "Không, không có nấm đâu. Tốt lắm."}, {"id": 14, "start": 92.55, "end": 96.5, "text": "Nein, nein, den Karton können Sie nicht haben. Das ist unser einziger.", "vi": "Không, không, quý khách không thể lấy hộp các-tông này đâu. Đó là cái duy nhất của chúng tôi đấy."}, {"id": 15, "start": 96.55, "end": 102.2, "text": "Gut... was mache ich denn jetzt? Nehmen Sie einfach nur die Pizza. Äh, okay.", "vi": "Được rồi... vậy bây giờ tôi làm sao đây? Quý khách cứ cầm lấy bánh pizza thôi. À, được rồi."}, {"id": 16, "start": 102.25, "end": 106.8, "text": "Danke, Wiedersehen! Oh Mann!", "vi": "Cảm ơn, chào tạm biệt! Trời đất ơi!"}, {"id": 17, "start": 106.85, "end": 112, "text": "Ich bin wieder da, Pizzaschwester! Oh nein, nicht schon wieder. Oh, ich kann's reparieren!", "vi": "Chị về rồi đây, em gái pizza! Ôi không, lại nữa rồi à. Ồ, chị sửa được mà!"}, {"id": 18, "start": 112.05, "end": 117.2, "text": "Mum, kriegen wir ein neues Auto? Oh... Aber das hast du bekommen, als du 2 Jahre alt warst.", "vi": "Mẹ ơi, chúng con có được chiếc xe mới không? Ồ... Nhưng con đã nhận chiếc xe đó từ khi mới 2 tuổi rồi mà."}, {"id": 19, "start": 117.25, "end": 120.6, "text": "Aber das Rad fällt immer wieder ab! Ich weiß.", "vi": "Nhưng cái bánh xe cứ bị rơi ra suốt thôi! Mẹ biết rồi."}, {"id": 20, "start": 120.55, "end": 124.5, "text": "Aber an dem Auto hängen doch so viele Erinnerungen. Wie können Erinnerungen an einem Auto hängen?", "vi": "Nhưng chiếc xe đó gắn liền với biết bao kỷ niệm mà. Làm sao kỷ niệm lại có thể gắn vào một chiếc xe được ạ?"}, {"id": 21, "start": 124.55, "end": 129.8, "text": "Na ja... Fertig! Ah, na ist doch toll! Siehst du? So gut wie neu!", "vi": "Thôi nào... Xong rồi! A, chẳng phải rất tuyệt sao! Con thấy chưa? Tốt như mới luôn!"}, {"id": 22, "start": 129.85, "end": 133.95, "text": "Ist mein Auto zerkratzt? Diese Folge von Bluey heißt: Pizzaschwestern.", "vi": "Xe của con có bị trầy xước không? Tập phim Bluey này có tên là: Hai chị em bán Pizza."}, {"id": 23, "start": 134, "end": 138.5, "text": "Was ist das denn Cooles, Muffin? Das ist ein Elektroauto!", "vi": "Cái gì mà ngầu thế hả Muffin? Đó là một chiếc xe hơi điện đấy!"}, {"id": 24, "start": 138.45, "end": 143.8, "text": "Mein Dad hat ein neues Auto gekauft, und das haben wir dazu gekriegt! Das kann ja sogar ohne Pedale fahren!", "vi": "Bố em vừa mua một chiếc ô tô mới, và bọn em được tặng kèm chiếc này đấy! Xe này thậm chí chạy không cần bàn đạp luôn!"}, {"id": 25, "start": 143.85, "end": 147.5, "text": "Ja, und es ist sehr, sehr teuer. Also sei vorsichtig damit, Muffin.", "vi": "Ừ, và nó rất, rất đắt tiền đấy. Nên em phải cẩn thận với nó nhé, Muffin."}, {"id": 26, "start": 147.45, "end": 150.9, "text": "Können wir damit Pizzaschwestern spielen? Okay! Hurra!", "vi": "Chúng mình có thể chơi trò hai chị em bán pizza với chiếc xe này không? Được thôi! Hoan hô!"}, {"id": 27, "start": 152.55, "end": 156.5, "text": "Okay, wir sind drei Schwestern, die einen Pizzaladen haben. Ja, gut!", "vi": "Được rồi, chúng mình là ba chị em có một tiệm bánh pizza nhé. Ừ, hay đấy!"}, {"id": 28, "start": 156.45, "end": 161.8, "text": "Hm... Da ist gar kein Dach, wo wir das Pizzaschild festmachen können. Das ist ja auch ein Cabriolet!", "vi": "Hừm... Ở đây chẳng có mui xe để chúng mình gắn biển hiệu pizza lên cả. Xe này là xe mui trần mà!"}, {"id": 29, "start": 161.85, "end": 165.3, "text": "Okay, na ja, wir brauchen das Schild ja nicht unbedingt.", "vi": "Được rồi, ừ thì, chúng mình cũng không nhất thiết phải cần biển hiệu đâu."}, {"id": 30, "start": 165.3, "end": 167.55, "text": "Hallo? Sind da die Kunden?", "vi": "A lô? Khách hàng có ở đó không ạ?"}, {"id": 31, "start": 167.6, "end": 171.75, "text": "Und dann machst du mit dem Fuß nur so... und der Kofferraum geht auf! Oh, cool!", "vi": "Và sau đó em chỉ cần dùng chân làm thế này... là cốp xe tự mở ra luôn! Ồ, ngầu thật đấy!"}, {"id": 32, "start": 171.8, "end": 175.5, "text": "Hallo, Kunden! Das Telefon funktioniert nicht.", "vi": "Xin chào khách hàng! Điện thoại không hoạt động rồi."}, {"id": 33, "start": 175.55, "end": 180.05, "text": "Ich frag sie einfach. Warte, Muffin, nein! Wir müssen das telefonisch klären!", "vi": "Để em hỏi thẳng họ luôn. Đợi đã, Muffin, không được! Chúng ta phải giải quyết qua điện thoại chứ!"}, {"id": 34, "start": 179.9, "end": 184.95, "text": "Sie wollen eine Supreme! Okay, eine Supreme! Danke, Pizzaschwester!", "vi": "Họ muốn một chiếc bánh Supreme! Được rồi, một chiếc Supreme! Cảm ơn em gái pizza!"}, {"id": 35, "start": 184.95, "end": 191.6, "text": "Eigentlich gehört unserer Mum der Pizzaladen. Sie hat immer ganz hart gearbeitet, und deswegen wollen wir, dass sie in den Urlaub fliegen kann!", "vi": "Thực ra tiệm pizza này là của mẹ bọn mình. Mẹ luôn làm việc rất chăm chỉ, và vì thế bọn mình muốn mẹ được đi máy bay đi nghỉ dưỡng!"}, {"id": 36, "start": 191.6, "end": 196.2, "text": "Wow, jetzt können wir die Pizza ja richtig schnell ausliefern! Halt!", "vi": "Oa, bây giờ chúng mình có thể đi giao pizza cực kỳ nhanh rồi! Dừng lại!"}, {"id": 37, "start": 196.25, "end": 200.5, "text": "Aber ich leg doch nur die Pizza rein. Es darf doch kein Dreck in mein neues Auto kommen!", "vi": "Nhưng chị chỉ đặt bánh pizza vào thôi mà. Không được để một tí bụi bẩn nào dính vào xe mới của em đâu đấy!"}, {"id": 38, "start": 200.45, "end": 204.2, "text": "Was? Wieso? Weil es unglaublich viel Geld kostet!", "vi": "Cái gì? Tại sao? Vì nó tốn nhiều tiền khủng khiếp luôn đấy!"}, {"id": 39, "start": 204.25, "end": 209, "text": "Oh, okay... Und was machen wir da jetzt? Wir müssen dann eben was anderes spielen.", "vi": "Ồ, được rồi... Vậy bây giờ chúng mình làm gì đây? Vậy thì chúng mình đành phải chơi trò khác thôi."}, {"id": 40, "start": 209.05, "end": 213.8, "text": "Oh... Was kann man denn noch damit spielen? Eigentlich fahre ich damit immer nur rum.", "vi": "Ồ... Thế còn trò gì có thể chơi với chiếc xe này nữa? Thực ra em chỉ toàn lái nó chạy vòng quanh thôi."}, {"id": 41, "start": 213.85, "end": 218.5, "text": "Okay, dann machen wir das! Füße abtreten! 'Tschuldigung!", "vi": "Được rồi, vậy thì chúng mình làm thế nhé! Lau chân đi đã! Xin lỗi nhé!"}, {"id": 42, "start": 218.45, "end": 222.75, "text": "Ich will kein Dreck im Auto haben! Wir sind so weit, Muffin, nhưng bitte fahr auf keinen Fall zu...", "vi": "Em không muốn có vết bẩn nào trong xe đâu! Bọn chị sẵn sàng rồi, Muffin, nhưng làm ơn đừng bao giờ lái xe quá..."}, {"id": 43, "start": 223.3, "end": 242.1, "text": "Wuhuhu! Ich fahr lieber.", "vi": "Wuhuhu! Tôi thích lái xe hơn."}, {"id": 44, "start": 242.1, "end": 246.8, "text": "Hey, gleich sind die weißen Pfotenabdrücke drauf! Gefällt's dir auch, Trixie?", "vi": "Này, sắp có dấu chân trắng in lên rồi đấy! Em cũng thích chứ, Trixie?"}, {"id": 45, "start": 246.85, "end": 252.15, "text": "Ach... Ich vermisse das alte Auto. Damit haben wir die Kinder nach der Geburt nach Hause gefahren.", "vi": "Chao ôi... Em nhớ chiếc xe cũ quá. Chiếc xe mà chúng ta đã chở lũ trẻ từ viện về nhà sau khi sinh đấy."}, {"id": 46, "start": 252.1, "end": 256.5, "text": "Das hat Spaß gemacht! Darf ich bitte auch mal fahren? Na gut.", "vi": "Vui thật đấy! Cho cháu xin phép được lái một lần với nhé? Thôi được rồi."}, {"id": 47, "start": 256.55, "end": 260.55, "text": "Alles klar, und los geht's! Hä? Was ist denn jetzt los?", "vi": "Tất cả đã sẵn sàng, và xuất phát nào! Hả? Có chuyện gì xảy ra thế này?"}, {"id": 48, "start": 260.55, "end": 266.05, "text": "Oh, der Akku ist alle. Oh... Wir müssen ihn aufladen! Dad!", "vi": "Ôi, hết pin rồi. Ôi... Chúng ta phải sạc pin cho nó thôi! Bố ơi!"}, {"id": 49, "start": 267.25, "end": 270.5, "text": "Okay! Der Akku lädt jetzt, Kinder.", "vi": "Được rồi! Pin đang sạc rồi đấy các con."}, {"id": 50, "start": 270.45, "end": 274.5, "text": "Und wie lange dauert das mit dem Aufladen? So lange... Oh.", "vi": "Và việc sạc pin này mất bao lâu ạ? Lâu lắm đấy... Ôi."}, {"id": 51, "start": 274.55, "end": 281.3, "text": "Was wollen wir spielen, bis wir wieder fahren können? Wir können ja weiter Pizzaschwestern spielen! Ja!", "vi": "Chúng mình muốn chơi trò gì trong lúc chờ xe chạy lại được đây? Chúng mình có thể tiếp tục chơi hai chị em bán pizza mà! Đúng rồi!"}, {"id": 52, "start": 281.25, "end": 286.2, "text": "Also, Sie wollen eine Pizza Supreme mit extra Ananasstückchen drauf haben, ja? Jep!", "vi": "Vậy là, quý khách muốn một chiếc pizza Supreme có thêm những miếng dứa bên trên, đúng không ạ? Đúng thế!"}, {"id": 53, "start": 286.25, "end": 289.5, "text": "Aber ohne Pilze, das ist ganz wichtig! Geht klar!", "vi": "Nhưng không có nấm nhé, điều đó rất quan trọng đấy! Rõ rồi ạ!"}, {"id": 54, "start": 289.45, "end": 293, "text": "Wenn Sie doch Pilze drauf machen, dann wird... Okay, Wiederhören!", "vi": "Nếu các cô mà cho nấm vào, thì sẽ... Được rồi, chào tạm biệt quý khách!"}, {"id": 55, "start": 293.05, "end": 296.3, "text": "Los kommt, wir legen ihm Pilze drauf! Ja!", "vi": "Nào mọi người ơi, chúng mình cùng rải nấm lên cho chú ấy đi! Vâng!"}, {"id": 56, "start": 296.25, "end": 301.8, "text": "Bluey, was kann ich denn machen? Na ja, mein Lieferauto muss dringend repariert werden.", "vi": "Bluey ơi, em có thể làm gì được nhỉ? À, xe giao hàng của chị cần được sửa gấp đấy."}, {"id": 57, "start": 301.85, "end": 304.75, "text": "Du kannst der Mechaniker sein! Okay!", "vi": "Em có thể làm thợ sửa xe! Được luôn!"}, {"id": 58, "start": 308.8, "end": 313.2, "text": "Fertig! Hier ist Ihre Pizza!", "vi": "Xong rồi! Pizza của quý khách đây ạ!"}, {"id": 59, "start": 313.15, "end": 315.8, "text": "Oh, klasse! Hier ist das Geld.", "vi": "Ồ, tuyệt quá! Tiền đây nhé."}, {"id": 60, "start": 315.85, "end": 319.8, "text": "Wow, extra Ananas! Hey, Augenblick, was ist das denn?", "vi": "Oa, thêm dứa này! Này, khoan đã, cái gì thế này?"}, {"id": 61, "start": 319.85, "end": 323.95, "text": "Lassen Sie sich die Pilze schmecken! Was? Du kleines...", "vi": "Chúc quý khách ngon miệng với món nấm nhé! Cái gì cơ? Con nhóc này..."}, {"id": 62, "start": 323.9, "end": 329.45, "text": "Nochmal! Okay, danke, bis dann!", "vi": "Một lần nữa nào! Được rồi, cảm ơn nhé, hẹn gặp lại!"}, {"id": 63, "start": 329.3, "end": 337.2, "text": "Du meine Güte, die Kunden haben 10 Pizzen bestellt! Zehn?! Sie haben gesagt, sie machen eine Pizzaparty, und wir sollen uns ruhig Zeit lassen.", "vi": "Trời đất ơi, khách hàng đặt tận 10 chiếc pizza liền! Mười cái cơ á?! Họ nói rằng họ sẽ tổ chức một bữa tiệc pizza, và bảo chúng mình cứ thong thả làm."}, {"id": 64, "start": 337.25, "end": 344.55, "text": "Okay, ich fang dann mal an! Was macht das Auto, Mechaniker? Ich habe noch was angebaut, um das Auto ganz besonders schnell zu machen!", "vi": "Được rồi, vậy chị bắt đầu làm đây! Chiếc xe thế nào rồi hả bác thợ máy? Cháu vừa gắn thêm một bộ phận để làm cho xe chạy cực kỳ nhanh luôn đấy!"}, {"id": 65, "start": 344.6, "end": 350.15, "text": "Oh wow, du bist ein guter Mechaniker! Danke! Alles klar! Ich mach dann das Knoblauchbrot!", "vi": "Ồ oa, em là một người thợ sửa xe giỏi đấy! Cảm ơn chị! Tất cả đã sẵn sàng! Chị sẽ đi làm bánh mì bơ tỏi đây!"}, {"id": 66, "start": 350.25, "end": 357.8, "text": "Hey Mädels, der Akku ist aufgeladen. Ihr könnt wieder mit dem Auto fahren. Oh, danke. Du bist dann jetzt mit Fahren dran, Bluey. Ähm, ja... hast recht.", "vi": "Này các cô gái, pin đã được sạc đầy rồi đấy. Các con có thể lái xe trở lại rồi. Ồ, cảm ơn bố. Giờ đến lượt con lái xe rồi đấy, Bluey. Ừm, vâng... em nói đúng."}, {"id": 67, "start": 357.85, "end": 365.3, "text": "Und den Schlüssel muss man nur in der Tasche haben. Man muss ihn nicht mal raus... Stripe, bitte hör auf, über dein Auto zu reden!", "vi": "Và chìa khóa thì chỉ cần để trong túi thôi. Thậm chí không cần phải rút ra... Stripe à, làm ơn đừng có nói mãi về chiếc xe của anh nữa!"}, {"id": 68, "start": 365.25, "end": 372, "text": "Ihre Pizzen sind da! Ah, toll! Na ja, erstmal nur eine. Wie ist es in Italien? Äh, gut.", "vi": "Pizza của quý khách đến rồi đây ạ! A, tuyệt quá! À, tạm thời chỉ có một chiếc thôi. Ở Ý thế nào ạ? À, tốt lắm."}, {"id": 69, "start": 372.05, "end": 378.7, "text": "Hier, bitte sehr! Guten Hunger! Äh... danke. Ich bin gleich wieder zurück! Ups!", "vi": "Đây, xin mời quý khách! Chúc ngon miệng nhé! À... cảm ơn cháu. Tôi sẽ quay lại ngay đây! Ôi thôi!"}, {"id": 70, "start": 378.75, "end": 386.75, "text": "Oh weh! Vielleicht ist es wirklich an der Zeit für ein neues Auto, Bluey. Auf keinen Fall! Ich habe das Teil, seit ich 2 bin!", "vi": "Trời ơi! Có lẽ đã thực sự đến lúc phải mua một chiếc xe mới rồi, Bluey à. Không đời nào đâu! Cháu đã có chiếc xe này từ khi mới 2 tuổi rồi đấy!"}, {"id": 71, "start": 386.6, "end": 395.3, "text": "Hallo, Mechaniker! Ich hab eine Panne! Komme! Hi, ich möchte Ihr Auto reparieren!", "vi": "Xin chào bác thợ máy! Xe của tôi bị hỏng rồi! Đến ngay đây! Chào quý khách, tôi muốn sửa xe giúp quý khách!"}, {"id": 72, "start": 395.25, "end": 404.75, "text": "Du meine Güte, das ging ja schnell! Repariert! Nicht schlecht, oder? So gut wie neu!", "vi": "Trời đất ơi, nhanh thật đấy! Đã sửa xong rồi! Không tồi chút nào đúng không? Tốt như mới luôn!"}];
+const PIZZASCHWESTER_72_DEFAULT_SEGMENTS = [{"id": 1, "start": 27.6, "end": 33.1, "text": "Fertig! Okay. Klingel-klingel! Klingel-klingel!", "vi": "Xong rồi! Được rồi. Kính coong! Kính coong!"}, {"id": 2, "start": 32.9, "end": 36.8, "text": "Hallo? Hier der Pizzaladen! Möchten Sie gerne eine Pizza bestellen?", "vi": "A lô? Tiệm pizza xin nghe! Quý khách muốn đặt một chiếc pizza chứ ạ?"}, {"id": 3, "start": 36.95, "end": 40.8, "text": "Ja, bitte! Ich möchte eine Pizza Supreme ohne Pilze.", "vi": "Vâng, làm ơn! Tôi muốn một chiếc pizza Supreme không cho nấm."}, {"id": 4, "start": 40.75, "end": 44.0, "text": "Möchten Sie auch Knoblauchbrot? Ja, ich nehme auch Knoblauchbrot.", "vi": "Quý khách có lấy thêm bánh mì bơ tỏi không? Vâng, tôi lấy cả bánh mì bơ tỏi nữa."}, {"id": 5, "start": 43.95, "end": 47.4, "text": "Gut, alles klar! Wird nicht lange dauern!", "vi": "Tuyệt, rõ rồi ạ! Sẽ không lâu đâu!"}, {"id": 6, "start": 47.35, "end": 51.2, "text": "Brauchen Sie meine Adresse? Nein, ich kann Sie ja sehen! Wiederhören!", "vi": "Quý khách có cần địa chỉ của tôi không? Không, tôi nhìn thấy quý khách mà! Chào tạm biệt!"}, {"id": 7, "start": 51.2, "end": 54.8, "text": "Wir brauchen eine Pizza Supreme, bitte, Pizzatante. Oh, aber ohne Pilze. Okay!", "vi": "Bọn cháu cần một chiếc pizza Supreme, làm ơn, cô làm pizza ơi. Ồ, nhưng không có nấm nhé. Được rồi!"}, {"id": 8, "start": 54.85, "end": 60.3, "text": "Ich mach das Knoblauchbrot! Können wir so tun, als ob wir Schwestern sind, und der Pizzaladen unserer Mum gehört?", "vi": "Chị sẽ làm bánh mì bơ tỏi! Chúng mình có thể giả vờ như hai chị em, và tiệm pizza này là của mẹ không?"}, {"id": 9, "start": 60.35, "end": 66.1, "text": "Oh ja, und wir schmeißen den Pizzaladen für sie, damit sie in den Urlaub fliegen kann. Ja! Nach Italien!", "vi": "Ồ được chứ, và chúng mình quán xuyến tiệm pizza giúp mẹ, để mẹ có thể đi máy bay đi nghỉ dưỡng. Vâng! Đến Ý!"}, {"id": 10, "start": 71.8, "end": 76.1, "text": "Das Knoblauchbrot ist fertig. Klasse! Vergiss nicht das Freigetränk!", "vi": "Bánh mì bơ tỏi xong rồi. Tuyệt quá! Đừng quên nước ngọt tặng kèm đấy nhé!"}, {"id": 11, "start": 75.85, "end": 79.75, "text": "Danke, Pizzaschwester! Bis nachher!", "vi": "Cảm ơn chị gái pizza! Hẹn lát nữa gặp lại!"}, {"id": 12, "start": 85.2, "end": 90.2, "text": "Ich bin schon da! Oh, sehr schön! Es sind keine Pilze drauf?", "vi": "Tôi đến nơi rồi đây! Ồ, tuyệt quá! Trên bánh không có nấm chứ?"}, {"id": 13, "start": 90.1, "end": 92.5, "text": "Nein, keine Pilze. Sehr gut.", "vi": "Không, không có nấm đâu. Tốt lắm."}, {"id": 14, "start": 92.55, "end": 96.5, "text": "Nein, nein, den Karton können Sie nicht haben. Das ist unser einziger.", "vi": "Không, không, quý khách không thể lấy hộp các-tông này đâu. Đó là cái duy nhất của chúng tôi đấy."}, {"id": 15, "start": 96.55, "end": 102.2, "text": "Gut... was mache ich denn jetzt? Nehmen Sie einfach nur die Pizza. Äh, okay.", "vi": "Được rồi... vậy bây giờ tôi làm sao đây? Quý khách cứ cầm lấy bánh pizza thôi. À, được rồi."}, {"id": 16, "start": 102.25, "end": 106.8, "text": "Danke, Wiedersehen! Oh Mann!", "vi": "Cảm ơn, chào tạm biệt! Trời đất ơi!"}, {"id": 17, "start": 106.85, "end": 112, "text": "Ich bin wieder da, Pizzaschwester! Oh nein, nicht schon wieder. Oh, ich kann's reparieren!", "vi": "Chị về rồi đây, em gái pizza! Ôi không, lại nữa rồi à. Ồ, chị sửa được mà!"}, {"id": 18, "start": 112.05, "end": 117.2, "text": "Mum, kriegen wir ein neues Auto? Oh... Aber das hast du bekommen, als du 2 Jahre alt warst.", "vi": "Mẹ ơi, chúng con có được chiếc xe mới không? Ồ... Nhưng con đã nhận chiếc xe đó từ khi mới 2 tuổi rồi mà."}, {"id": 19, "start": 117.25, "end": 120.6, "text": "Aber das Rad fällt immer wieder ab! Ich weiß.", "vi": "Nhưng cái bánh xe cứ bị rơi ra suốt thôi! Mẹ biết rồi."}, {"id": 20, "start": 120.55, "end": 124.5, "text": "Aber an dem Auto hängen doch so viele Erinnerungen. Wie können Erinnerungen an einem Auto hängen?", "vi": "Nhưng chiếc xe đó gắn liền với biết bao kỷ niệm mà. Làm sao kỷ niệm lại có thể gắn vào một chiếc xe được ạ?"}, {"id": 21, "start": 124.55, "end": 129.8, "text": "Na ja... Fertig! Ah, na ist doch toll! Siehst du? So gut wie neu!", "vi": "Thôi nào... Xong rồi! A, chẳng phải rất tuyệt sao! Con thấy chưa? Tốt như mới luôn!"}, {"id": 22, "start": 129.85, "end": 133.95, "text": "Ist mein Auto zerkratzt? Diese Folge von Bluey heißt: Pizzaschwestern.", "vi": "Xe của con có bị trầy xước không? Tập phim Bluey này có tên là: Hai chị em bán Pizza."}, {"id": 23, "start": 134, "end": 138.5, "text": "Was ist das denn Cooles, Muffin? Das ist ein Elektroauto!", "vi": "Cái gì mà ngầu thế hả Muffin? Đó là một chiếc xe hơi điện đấy!"}, {"id": 24, "start": 138.45, "end": 143.8, "text": "Mein Dad hat ein neues Auto gekauft, und das haben wir dazu gekriegt! Das kann ja sogar ohne Pedale fahren!", "vi": "Bố em vừa mua một chiếc ô tô mới, và bọn em được tặng kèm chiếc này đấy! Xe này thậm chí chạy không cần bàn đạp luôn!"}, {"id": 25, "start": 143.85, "end": 147.5, "text": "Ja, und es ist sehr, sehr teuer. Also sei vorsichtig damit, Muffin.", "vi": "Ừ, và nó rất, rất đắt tiền đấy. Nên em phải cẩn thận với nó nhé, Muffin."}, {"id": 26, "start": 147.45, "end": 150.9, "text": "Können wir damit Pizzaschwestern spielen? Okay! Hurra!", "vi": "Chúng mình có thể chơi trò hai chị em bán pizza với chiếc xe này không? Được thôi! Hoan hô!"}, {"id": 27, "start": 152.55, "end": 156.5, "text": "Okay, wir sind drei Schwestern, die einen Pizzaladen haben. Ja, gut!", "vi": "Được rồi, chúng mình là ba chị em có một tiệm bánh pizza nhé. Ừ, hay đấy!"}, {"id": 28, "start": 156.45, "end": 161.8, "text": "Hm... Da ist gar kein Dach, wo wir das Pizzaschild festmachen können. Das ist ja auch ein Cabriolet!", "vi": "Hừm... Ở đây chẳng có mui xe để chúng mình gắn biển hiệu pizza lên cả. Xe này là xe mui trần mà!"}, {"id": 29, "start": 161.85, "end": 165.3, "text": "Okay, na ja, wir brauchen das Schild ja nicht unbedingt.", "vi": "Được rồi, ừ thì, chúng mình cũng không nhất thiết phải cần biển hiệu đâu."}, {"id": 30, "start": 165.3, "end": 167.55, "text": "Hallo? Sind da die Kunden?", "vi": "A lô? Khách hàng có ở đó không ạ?"}, {"id": 31, "start": 167.6, "end": 171.75, "text": "Und dann machst du mit dem Fuß nur so... und der Kofferraum geht auf! Oh, cool!", "vi": "Và sau đó em chỉ cần dùng chân làm thế này... là cốp xe tự mở ra luôn! Ồ, ngầu thật đấy!"}, {"id": 32, "start": 171.8, "end": 175.5, "text": "Hallo, Kunden! Das Telefon funktioniert nicht.", "vi": "Xin chào khách hàng! Điện thoại không hoạt động rồi."}, {"id": 33, "start": 175.55, "end": 180.05, "text": "Ich frag sie einfach. Warte, Muffin, nein! Wir müssen das telefonisch klären!", "vi": "Để em hỏi thẳng họ luôn. Đợi đã, Muffin, không được! Chúng ta phải giải quyết qua điện thoại chứ!"}, {"id": 34, "start": 179.9, "end": 184.95, "text": "Sie wollen eine Supreme! Okay, eine Supreme! Danke, Pizzaschwester!", "vi": "Họ muốn một chiếc bánh Supreme! Được rồi, một chiếc Supreme! Cảm ơn em gái pizza!"}, {"id": 35, "start": 184.95, "end": 191.6, "text": "Eigentlich gehört unserer Mum der Pizzaladen. Sie hat immer ganz hart gearbeitet, und deswegen wollen wir, dass sie in den Urlaub fliegen kann!", "vi": "Thực ra tiệm pizza này là của mẹ bọn mình. Mẹ luôn làm việc rất chăm chỉ, và vì thế bọn mình muốn mẹ được đi máy bay đi nghỉ dưỡng!"}, {"id": 36, "start": 191.6, "end": 196.2, "text": "Wow, jetzt können wir die Pizza ja richtig schnell ausliefern! Halt!", "vi": "Oa, bây giờ chúng mình có thể đi giao pizza cực kỳ nhanh rồi! Dừng lại!"}, {"id": 37, "start": 196.25, "end": 200.5, "text": "Aber ich leg doch nur die Pizza rein. Es darf doch kein Dreck in mein neues Auto kommen!", "vi": "Nhưng chị chỉ đặt bánh pizza vào thôi mà. Không được để một tí bụi bẩn nào dính vào xe mới của em đâu đấy!"}, {"id": 38, "start": 200.45, "end": 204.2, "text": "Was? Wieso? Weil es unglaublich viel Geld kostet!", "vi": "Cái gì? Tại sao? Vì nó tốn nhiều tiền khủng khiếp luôn đấy!"}, {"id": 39, "start": 204.25, "end": 209, "text": "Oh, okay... Und was machen wir da jetzt? Wir müssen dann eben was anderes spielen.", "vi": "Ồ, được rồi... Vậy bây giờ chúng mình làm gì đây? Vậy thì chúng mình đành phải chơi trò khác thôi."}, {"id": 40, "start": 209.05, "end": 213.8, "text": "Oh... Was kann man denn noch damit spielen? Eigentlich fahre ich damit immer nur rum.", "vi": "Ồ... Thế còn trò gì có thể chơi với chiếc xe này nữa? Thực ra em chỉ toàn lái nó chạy vòng quanh thôi."}, {"id": 41, "start": 213.85, "end": 218.5, "text": "Okay, dann machen wir das! Füße abtreten! 'Tschuldigung!", "vi": "Được rồi, vậy thì chúng mình làm thế nhé! Lau chân đi đã! Xin lỗi nhé!"}, {"id": 42, "start": 218.45, "end": 222.75, "text": "Ich will kein Dreck im Auto haben! Wir sind so weit, Muffin, aber bitte fahr auf keinen Fall zu...", "vi": "Em không muốn có vết bẩn nào trong xe đâu! Bọn chị sẵn sàng rồi, Muffin, nhưng làm ơn đừng bao giờ lái xe quá..."}, {"id": 43, "start": 223.3, "end": 242.1, "text": "Wuhuhu! Ich fahr lieber.", "vi": "Wuhuhu! Tôi thích lái xe hơn."}, {"id": 44, "start": 242.1, "end": 246.8, "text": "Hey, gleich sind die weißen Pfotenabdrücke drauf! Gefällt's dir auch, Trixie?", "vi": "Này, sắp có dấu chân trắng in lên rồi đấy! Em cũng thích chứ, Trixie?"}, {"id": 45, "start": 246.85, "end": 252.15, "text": "Ach... Ich vermisse das alte Auto. Damit haben wir die Kinder nach der Geburt nach Hause gefahren.", "vi": "Chao ôi... Em nhớ chiếc xe cũ quá. Chiếc xe mà chúng ta đã chở lũ trẻ từ viện về nhà sau khi sinh đấy."}, {"id": 46, "start": 252.1, "end": 256.5, "text": "Das hat Spaß gemacht! Darf ich bitte auch mal fahren? Na gut.", "vi": "Vui thật đấy! Cho cháu xin phép được lái một lần với nhé? Thôi được rồi."}, {"id": 47, "start": 256.55, "end": 260.55, "text": "Alles klar, und los geht's! Hä? Was ist denn jetzt los?", "vi": "Tất cả đã sẵn sàng, và xuất phát nào! Hả? Có chuyện gì xảy ra thế này?"}, {"id": 48, "start": 260.55, "end": 266.05, "text": "Oh, der Akku ist alle. Oh... Wir müssen ihn aufladen! Dad!", "vi": "Ôi, hết pin rồi. Ôi... Chúng ta phải sạc pin cho nó thôi! Bố ơi!"}, {"id": 49, "start": 267.25, "end": 270.5, "text": "Okay! Der Akku lädt jetzt, Kinder.", "vi": "Được rồi! Pin đang sạc rồi đấy các con."}, {"id": 50, "start": 270.45, "end": 274.5, "text": "Und wie lange dauert das mit dem Aufladen? So lange... Oh.", "vi": "Và việc sạc pin này mất bao lâu ạ? Lâu lắm đấy... Ôi."}, {"id": 51, "start": 274.55, "end": 281.3, "text": "Was wollen wir spielen, bis wir wieder fahren können? Wir können ja weiter Pizzaschwestern spielen! Ja!", "vi": "Chúng mình muốn chơi trò gì trong lúc chờ xe chạy lại được đây? Chúng mình có thể tiếp tục chơi hai chị em bán pizza mà! Đúng rồi!"}, {"id": 52, "start": 281.25, "end": 286.2, "text": "Also, Sie wollen eine Pizza Supreme mit extra Ananasstückchen drauf haben, ja? Jep!", "vi": "Vậy là, quý khách muốn một chiếc pizza Supreme có thêm những miếng dứa bên trên, đúng không ạ? Đúng thế!"}, {"id": 53, "start": 286.25, "end": 289.5, "text": "Aber ohne Pilze, das ist ganz wichtig! Geht klar!", "vi": "Nhưng không có nấm nhé, điều đó rất quan trọng đấy! Rõ rồi ạ!"}, {"id": 54, "start": 289.45, "end": 293, "text": "Wenn Sie doch Pilze drauf machen, dann wird... Okay, Wiederhören!", "vi": "Nếu các cô mà cho nấm vào, thì sẽ... Được rồi, chào tạm biệt quý khách!"}, {"id": 55, "start": 293.05, "end": 296.3, "text": "Los kommt, wir legen ihm Pilze drauf! Ja!", "vi": "Nào mọi người ơi, chúng mình cùng rải nấm lên cho chú ấy đi! Vâng!"}, {"id": 56, "start": 296.25, "end": 301.8, "text": "Bluey, was kann ich denn machen? Na ja, mein Lieferauto muss dringend repariert werden.", "vi": "Bluey ơi, em có thể làm gì được nhỉ? À, xe giao hàng của chị cần được sửa gấp đấy."}, {"id": 57, "start": 301.85, "end": 304.75, "text": "Du kannst der Mechaniker sein! Okay!", "vi": "Em có thể làm thợ sửa xe! Được luôn!"}, {"id": 58, "start": 308.8, "end": 313.2, "text": "Fertig! Hier ist Ihre Pizza!", "vi": "Xong rồi! Pizza của quý khách đây ạ!"}, {"id": 59, "start": 313.15, "end": 315.8, "text": "Oh, klasse! Hier ist das Geld.", "vi": "Ồ, tuyệt quá! Tiền đây nhé."}, {"id": 60, "start": 315.85, "end": 319.8, "text": "Wow, extra Ananas! Hey, Augenblick, was ist das denn?", "vi": "Oa, thêm dứa này! Này, khoan đã, cái gì thế này?"}, {"id": 61, "start": 319.85, "end": 323.95, "text": "Lassen Sie sich die Pilze schmecken! Was? Du kleines...", "vi": "Chúc quý khách ngon miệng với món nấm nhé! Cái gì cơ? Con nhóc này..."}, {"id": 62, "start": 323.9, "end": 329.45, "text": "Nochmal! Okay, danke, bis dann!", "vi": "Một lần nữa nào! Được rồi, cảm ơn nhé, hẹn gặp lại!"}, {"id": 63, "start": 329.3, "end": 337.2, "text": "Du meine Güte, die Kunden haben 10 Pizzen bestellt! Zehn?! Sie haben gesagt, sie machen eine Pizzaparty, und wir sollen uns ruhig Zeit lassen.", "vi": "Trời đất ơi, khách hàng đặt tận 10 chiếc pizza liền! Mười cái cơ á?! Họ nói rằng họ sẽ tổ chức một bữa tiệc pizza, và bảo chúng mình cứ thong thả làm."}, {"id": 64, "start": 337.25, "end": 344.55, "text": "Okay, ich fang dann mal an! Was macht das Auto, Mechaniker? Ich habe noch was angebaut, um das Auto ganz besonders schnell zu machen!", "vi": "Được rồi, vậy chị bắt đầu làm đây! Chiếc xe thế nào rồi hả bác thợ máy? Cháu vừa gắn thêm một bộ phận để làm cho xe chạy cực kỳ nhanh luôn đấy!"}, {"id": 65, "start": 344.6, "end": 350.15, "text": "Oh wow, du bist ein guter Mechaniker! Danke! Alles klar! Ich mach dann das Knoblauchbrot!", "vi": "Ồ oa, em là một người thợ sửa xe giỏi đấy! Cảm ơn chị! Tất cả đã sẵn sàng! Chị sẽ đi làm bánh mì bơ tỏi đây!"}, {"id": 66, "start": 350.25, "end": 357.8, "text": "Hey Mädels, der Akku ist aufgeladen. Ihr könnt wieder mit dem Auto fahren. Oh, danke. Du bist dann jetzt mit Fahren dran, Bluey. Ähm, ja... hast recht.", "vi": "Này các cô gái, pin đã được sạc đầy rồi đấy. Các con có thể lái xe trở lại rồi. Ồ, cảm ơn bố. Giờ đến lượt con lái xe rồi đấy, Bluey. Ừm, vâng... em nói đúng."}, {"id": 67, "start": 357.85, "end": 365.3, "text": "Und den Schlüssel muss man nur in der Tasche haben. Man muss ihn nicht mal raus... Stripe, bitte hör auf, über dein Auto zu reden!", "vi": "Và chìa khóa thì chỉ cần để trong túi thôi. Thậm chí không cần phải rút ra... Stripe à, làm ơn đừng có nói mãi về chiếc xe của anh nữa!"}, {"id": 68, "start": 365.25, "end": 372, "text": "Ihre Pizzen sind da! Ah, toll! Na ja, erstmal nur eine. Wie ist es in Italien? Äh, gut.", "vi": "Pizza của quý khách đến rồi đây ạ! A, tuyệt quá! À, tạm thời chỉ có một chiếc thôi. Ở Ý thế nào ạ? À, tốt lắm."}, {"id": 69, "start": 372.05, "end": 378.7, "text": "Hier, bitte sehr! Guten Hunger! Äh... danke. Ich bin gleich wieder zurück! Ups!", "vi": "Đây, xin mời quý khách! Chúc ngon miệng nhé! À... cảm ơn cháu. Tôi sẽ quay lại ngay đây! Ôi thôi!"}, {"id": 70, "start": 378.75, "end": 386.75, "text": "Oh weh! Vielleicht ist es wirklich an der Zeit für ein neues Auto, Bluey. Auf keinen Fall! Ich habe das Teil, seit ich 2 bin!", "vi": "Trời ơi! Có lẽ đã thực sự đến lúc phải mua một chiếc xe mới rồi, Bluey à. Không đời nào đâu! Cháu đã có chiếc xe này từ khi mới 2 tuổi rồi đấy!"}, {"id": 71, "start": 386.6, "end": 395.3, "text": "Hallo, Mechaniker! Ich hab eine Panne! Komme! Hi, ich möchte Ihr Auto reparieren!", "vi": "Xin chào bác thợ máy! Xe của tôi bị hỏng rồi! Đến ngay đây! Chào quý khách, tôi muốn sửa xe giúp quý khách!"}, {"id": 72, "start": 395.25, "end": 404.75, "text": "Du meine Güte, das ging ja schnell! Repariert! Nicht schlecht, oder? So gut wie neu!", "vi": "Trời đất ơi, nhanh thật đấy! Đã sửa xong rồi! Không tồi chút nào đúng không? Tốt như mới luôn!"}];
 
 const KINO_VIDEOS = {
+  sakura_s01e01: { ...SAKURA_S01E01_LESSON.video, get defaultSegs() { return SAKURA_S01E01_ALIGNED_UTTERANCES; } },
+  frieren_s01e01: { ...FRIEREN_S01E01_LESSON.video, get defaultSegs() { return FRIEREN_S01E01_ALIGNED_UTTERANCES; } },
+  trudes_fahrstuhl: { ...TRUDES_FAHRSTUHL_LESSON.video, get defaultSegs() { return TRUDES_FAHRSTUHL_ALIGNED_UTTERANCES; } },
+  erdmaennchen_nudeltrick: { ...ERDMAENNCHEN_NUDELTRICK_LESSON.video, get defaultSegs() { return ERDMAENNCHEN_NUDELTRICK_ALIGNED_UTTERANCES; } },
+  erdmaennchen_schmucklose: { ...ERDMAENNCHEN_SCHMUCKLOSE_LESSON.video, get defaultSegs() { return ERDMAENNCHEN_SCHMUCKLOSE_ALIGNED_UTTERANCES; } },
+  we_bare_bears_mall: { ...WE_BARE_BEARS_MALL_LESSON.video, get defaultSegs() { return WE_BARE_BEARS_MALL_ALIGNED_UTTERANCES; } },
+  hans: { ...HANS_LESSON.video, get defaultSegs() { return HANS_ALIGNED_UTTERANCES; } },
   peppa_supermarkt: {
     key: "peppa_supermarkt",
     series: "Peppa Wutz",
@@ -18589,7 +18789,7 @@ const KINO_VIDEOS = {
     storageKey: "kino_calibrated_babysitter_v1",
     syncKey: "vokabelgo_kino_perfected_babysitter",
     progressKey: "vokabelgo_kino_progress_babysitter",
-    fullDurationStr: "07:20",
+    fullDurationStr: "06:57",
     flashcardDeck: "🎬 Video: Bluey – Die Babysitter"
   },
   pizzaschwester: {
@@ -18604,12 +18804,16 @@ const KINO_VIDEOS = {
     storageKey: "kino_calibrated_segments_v2",
     syncKey: "vokabelgo_kino_perfected_segments_v2",
     progressKey: "vokabelgo_kino_pizzaschwester_v3",
-    fullDurationStr: "06:59",
+    fullDurationStr: "07:00",
     flashcardDeck: "🎬 Video: Bluey – Pizza-Schwestern"
   }
 };
 
 let currentKinoVideoKey = "pizzaschwester";
+try {
+  const savedKinoKey = localStorage.getItem('kino_active_video_key');
+  if (KINO_VIDEOS[savedKinoKey]) currentKinoVideoKey = savedKinoKey;
+} catch (_) {}
 let PIZZASCHWESTER_72_SEGMENTS = []; // Holds active segments for complete compatibility
 
 let kinoCurrentIndex = 0;
@@ -18625,6 +18829,11 @@ let kinoDubbingAudioChunks = [];
 let kinoDubbingBlobUrlsMap = { babysitter: {}, pizzaschwester: {} };
 let kinoDubbingBlobUrls = {};
 let kinoIsDubbing = false;
+let kinoDubbingCountdownTimer = null;
+let kinoDubbingStream = null;
+let kinoDubbingRequest = 0;
+let kinoDubbingReplayAudio = null;
+let kinoFullMovieReturnFocus = null;
 let kinoTimeupdateListener = null;
 
 // Play Bluey Cartoon Sound Effect (synthesized Web Audio for pure offline resilience)
@@ -18692,7 +18901,7 @@ function triggerKinoConfetti(){
 function loadKinoPersistentProgress(){
   try {
     const conf = KINO_VIDEOS[currentKinoVideoKey];
-    let saved = localStorage.getItem(conf.progressKey);
+    let saved = KinoChapters.isActive() ? KinoChapters.progress() : localStorage.getItem(conf.progressKey);
     if(!saved && currentKinoVideoKey === 'pizzaschwester'){
       saved = localStorage.getItem('vokabelgo_kino_pizzaschwester_v3');
     }
@@ -18709,6 +18918,7 @@ function loadKinoPersistentProgress(){
 }
 
 function saveKinoPersistentProgress(){
+  if(KinoChapters.isActive()) { KinoChapters.save(); return; }
   try {
     const conf = KINO_VIDEOS[currentKinoVideoKey];
     const data = JSON.stringify({
@@ -18724,6 +18934,14 @@ function saveKinoPersistentProgress(){
 }
 
 function switchKinoActiveVideo(videoKey){
+  if(kinoIsDubbing) return;
+  pauseKinoDubbingReplay();
+  const previousVideo = document.getElementById('kinoMainVideo');
+  if(previousVideo && kinoTimeupdateListener){
+    previousVideo.removeEventListener('timeupdate', kinoTimeupdateListener);
+    kinoTimeupdateListener = null;
+  }
+  closeKinoFullMovieModal();
   if(!KINO_VIDEOS[videoKey]) videoKey = 'pizzaschwester';
   currentKinoVideoKey = videoKey;
   try { localStorage.setItem('kino_active_video_key', videoKey); } catch(e){}
@@ -18763,20 +18981,11 @@ function switchKinoActiveVideo(videoKey){
     }
   }
 
-  PIZZASCHWESTER_72_SEGMENTS = segs;
+  PIZZASCHWESTER_72_SEGMENTS = KinoChapters.prepare(videoKey, segs);
 
-  // 2. Update Video Player Sources
-  const mainVid = document.getElementById('kinoMainVideo');
-  if(mainVid){
-    mainVid.pause();
-    if(!mainVid.src || !mainVid.src.endsWith(conf.src)){
-      mainVid.src = conf.src;
-    }
-  }
-  const fullPlayer = document.getElementById('kinoFullPlayer');
-  if(fullPlayer && (!fullPlayer.src || !fullPlayer.src.endsWith(conf.src))){
-    fullPlayer.src = conf.src;
-  }
+  // Movie selection updates lesson data without starting any media download.
+  KinoMedia.releaseAll();
+  KinoMedia.update(videoKey);
 
   // 3. Update UI Elements
   const fullTitle = document.getElementById('kinoFullModalTitle');
@@ -18824,8 +19033,9 @@ function switchKinoActiveVideo(videoKey){
 
   // 4. Progress & State
   loadKinoPersistentProgress();
-  if(!kinoDubbingBlobUrlsMap[videoKey]) kinoDubbingBlobUrlsMap[videoKey] = {};
-  kinoDubbingBlobUrls = kinoDubbingBlobUrlsMap[videoKey];
+  const recordingKey = KinoChapters.isActive() ? KinoChapters.recordingKey() : videoKey;
+  if(!kinoDubbingBlobUrlsMap[recordingKey]) kinoDubbingBlobUrlsMap[recordingKey] = {};
+  kinoDubbingBlobUrls = kinoDubbingBlobUrlsMap[recordingKey];
 
   kinoListenCountMap = {};
   kinoAttemptCountMap = {};
@@ -18841,48 +19051,36 @@ function toggleKinoMovieDropdown(e){
   if(e) e.stopPropagation();
   const dd = document.getElementById('kinoSelectDropdown');
   if(dd) dd.classList.toggle('open');
+  document.getElementById('kinoSelectTrigger')?.setAttribute('aria-expanded', String(dd?.classList.contains('open')));
 }
 
 function closeKinoMovieDropdown(){
   const dd = document.getElementById('kinoSelectDropdown');
   if(dd) dd.classList.remove('open');
+  document.getElementById('kinoSelectTrigger')?.setAttribute('aria-expanded', 'false');
 }
 
 function selectKinoMovie(videoKey){
   closeKinoMovieDropdown();
-  switchKinoActiveVideo(videoKey);
+  return KinoData.select(videoKey);
 }
 
 if(typeof window !== 'undefined'){
   window.addEventListener('click', function(e){
     const dd = document.getElementById('kinoSelectDropdown');
     if(dd && !dd.contains(e.target)){
-      dd.classList.remove('open');
+      closeKinoMovieDropdown();
+    }
+  });
+  window.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && document.getElementById('kinoSelectDropdown')?.classList.contains('open')){
+      closeKinoMovieDropdown();
+      document.getElementById('kinoSelectTrigger').focus();
     }
   });
 }
 
 function initKinoV2(){
-  let initialKey = 'pizzaschwester';
-  try {
-    const savedKey = localStorage.getItem('kino_active_video_key');
-    if(savedKey && KINO_VIDEOS[savedKey]) initialKey = savedKey;
-  } catch(e){}
-
-  switchKinoActiveVideo(initialKey);
-
-  // If returning user has progress > 0
-  const conf = KINO_VIDEOS[initialKey];
-  if(kinoCompletedSet.size > 0 && !sessionStorage.getItem('kino_welcomed_' + initialKey)){
-    sessionStorage.setItem('kino_welcomed_' + initialKey, '1');
-    const msg = document.getElementById('kinoWelcomeMsg');
-    if(msg){
-      msg.innerHTML = `Bạn đang học dở bài <b>${conf.title}</b>.<br>Đã hoàn thành <b>${kinoCompletedSet.size} / ${PIZZASCHWESTER_72_SEGMENTS.length} câu</b>.`;
-    }
-    const modal = document.getElementById('kinoWelcomeModal');
-    if(modal) modal.classList.remove('hidden');
-  }
-
   bindKinoTextareaEnter();
 }
 
@@ -18898,7 +19096,8 @@ function kinoResumeContinue(){
 
 function resetKinoProgressConfirm(){
   const conf = KINO_VIDEOS[currentKinoVideoKey];
-  if(confirm(`Bạn có chắc chắn muốn đặt lại toàn bộ tiến độ của "${conf.title}" về Câu 1 không?`)){
+  const resetMessage = KinoChapters.isActive() ? 'Bạn muốn làm lại các câu trong lượt học của phần phim đang chọn? Tiến độ những phần khác được giữ nguyên.' : `Bạn có chắc chắn muốn đặt lại toàn bộ tiến độ của "${conf.title}" về Câu 1 không?`;
+  if(confirm(resetMessage)){
     kinoCompletedSet.clear();
     kinoUnlockedIndex = 0;
     saveKinoPersistentProgress();
@@ -18988,11 +19187,15 @@ function loadKinoSentence(idx){
   // Seek video and freeze at start frame
   const video = document.getElementById('kinoMainVideo');
   if(video){
-    video.pause();
-    video.currentTime = seg.start;
+    if(kinoTimeupdateListener){
+      video.removeEventListener('timeupdate', kinoTimeupdateListener);
+      kinoTimeupdateListener = null;
+    }
+    KinoMedia.position(video, seg.start);
   }
 
   updateActiveTimelineItem(idx);
+  KinoChapters.render();
 }
 
 function formatKinoSeconds(sec){
@@ -19003,6 +19206,14 @@ function formatKinoSeconds(sec){
 
 // Anti-Cheat: Subtitle locked until listened 2 times or attempted typing 1 time
 function updateSubtitleLockState(idx){
+  if(KinoChapters.isActive()){
+    const button = document.getElementById('kinoToggleSubBtn');
+    button.innerHTML = 'CC <span>Phụ đề</span>';
+    button.title = 'Bật hoặc tắt phụ đề bất cứ lúc nào';
+    button.setAttribute('aria-pressed', String(kinoShowSubtitles));
+    document.getElementById('kinoSubLockStatus').textContent = 'Phụ đề luôn có sẵn khi bạn cần';
+    return;
+  }
   const listens = kinoListenCountMap[idx] || 0;
   const attempts = kinoAttemptCountMap[idx] || 0;
   const isDone = kinoCompletedSet.has(PIZZASCHWESTER_72_SEGMENTS[idx].id);
@@ -19023,6 +19234,9 @@ function updateSubtitleLockState(idx){
 }
 
 function playKinoCurrentSegment(rate){
+  if(kinoIsDubbing) return;
+  pauseKinoDubbingReplay();
+  KinoDiscovery.pause();
   const video = document.getElementById('kinoMainVideo');
   if(!video) return;
   const seg = PIZZASCHWESTER_72_SEGMENTS[kinoCurrentIndex];
@@ -19038,27 +19252,15 @@ function playKinoCurrentSegment(rate){
   }
 
   video.playbackRate = rate || kinoPlaybackRate;
-  video.currentTime = seg.start;
   video.muted = false;
+  video.volume = 1;
 
-  const playPromise = video.play();
-  if(playPromise !== undefined){
-    playPromise.catch(e => console.log("Play interrupted or pending", e));
-  }
-
-  // Natural pause at freeze frame
-  kinoTimeupdateListener = function(){
-    if(video.currentTime >= seg.end){
-      video.pause();
-      video.currentTime = seg.end; // Freeze at exact end frame
-      video.removeEventListener('timeupdate', kinoTimeupdateListener);
-      kinoTimeupdateListener = null;
-    }
-  };
-  video.addEventListener('timeupdate', kinoTimeupdateListener);
+  // KinoChapters already stops this player at the sentence end on each video frame.
+  KinoMedia.play(video, seg.start);
 }
 
 function prevKinoSentence(){
+  if(kinoIsDubbing) return;
   if(kinoCurrentIndex > 0){
     loadKinoSentence(kinoCurrentIndex - 1);
     playKinoCurrentSegment();
@@ -19066,7 +19268,8 @@ function prevKinoSentence(){
 }
 
 function nextKinoSentence(){
-  if(kinoCurrentIndex < kinoUnlockedIndex && kinoCurrentIndex < PIZZASCHWESTER_72_SEGMENTS.length - 1){
+  if(kinoIsDubbing) return;
+  if((KinoChapters.isActive() || kinoCurrentIndex < kinoUnlockedIndex) && kinoCurrentIndex < PIZZASCHWESTER_72_SEGMENTS.length - 1){
     loadKinoSentence(kinoCurrentIndex + 1);
     playKinoCurrentSegment();
   }
@@ -19089,7 +19292,7 @@ function toggleKinoSubtitles(){
   const attempts = kinoAttemptCountMap[idx] || 0;
   const isDone = kinoCompletedSet.has(PIZZASCHWESTER_72_SEGMENTS[idx].id);
 
-  if(!isDone && listens < 2 && attempts < 1){
+  if(!KinoChapters.isActive() && !isDone && listens < 2 && attempts < 1){
     alert("🔒 Bạn hãy nghe câu này ít nhất 2 lần (hoặc gõ thử 1 lần) để rèn luyện đôi tai trước khi mở phụ đề nhé!");
     return;
   }
@@ -19099,6 +19302,7 @@ function toggleKinoSubtitles(){
   if(overlay) overlay.classList.toggle('hidden-sub', !kinoShowSubtitles);
   const btn = document.getElementById('kinoToggleSubBtn');
   if(btn) btn.classList.toggle('active', kinoShowSubtitles);
+  if(btn) btn.setAttribute('aria-pressed', String(kinoShowSubtitles));
 }
 
 function insertKinoChar(char){
@@ -19115,7 +19319,13 @@ function insertKinoChar(char){
 // Normalize for tolerant checking (ignore punctuation, lower)
 function normalizeKinoClean(s){
   return String(s || '').toLowerCase()
+    // Both spellings of these clothing adjectives are valid (Duden).
+    .replace(/\b(lang|kurz)ärmelig(e[nmrs]?)?\b/g, (_word, prefix, ending = '') => `${prefix}ärmlig${ending}`)
     .replace(/[.,/#!$%^&*;:{}=\-_`~()?"'…!–—]/g, " ")
+    // German number words and digits are equally valid in dictation.
+    .replace(/(?<![\p{L}\p{N}_])(?:drei|neun|zehn|zwölf|vierzehn|sechzehn|dreißig|fünfzig|einhundert|hundert|dritten|dritter|vierte)(?![\p{L}\p{N}_])/gu, word =>
+      ({ drei: '3', neun: '9', zehn: '10', 'zwölf': '12', vierzehn: '14', sechzehn: '16',
+        'dreißig': '30', 'fünfzig': '50', einhundert: '100', hundert: '100', dritten: '3', dritter: '3', vierte: '4' })[word])
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -19141,12 +19351,16 @@ function checkKinoDiktat(){
   fbBox.classList.remove('hidden');
   fbVi.textContent = `🇻🇳 Nghĩa: "${seg.vi}"`;
 
-  if(cleanUser === cleanTarget){
+  if(cleanUser === cleanTarget || (seg.acceptedTexts || []).some(text => normalizeKinoClean(text) === cleanUser)){
     // CORRECT!
-    playBlueyChime('correct');
-    triggerKinoConfetti();
+    if(!KinoChapters.isActive()){
+      playBlueyChime('correct');
+      triggerKinoConfetti();
+    }
 
-    fbStatus.textContent = '🎉 Tuyệt vời! Chính xác 100%! Rất giỏi!';
+    fbStatus.textContent = KinoChapters.isActive()
+      ? (cleanUser === cleanTarget ? '✓ Đã khớp với câu gốc. Bạn có thể thử câu tiếp nhé.' : '✓ Cách viết này được chấp nhận. Bạn có thể thử câu tiếp nhé.')
+      : '🎉 Tuyệt vời! Chính xác 100%! Rất giỏi!';
     fbStatus.className = 'kino-v3-fb-status correct';
     diffBox.innerHTML = `<span class="kino-diff-word correct">${seg.text}</span>`;
     copyBox.classList.add('hidden');
@@ -19164,20 +19378,26 @@ function checkKinoDiktat(){
     renderKinoTimelineList();
     loadKinoSentence(kinoCurrentIndex);
 
+    // Keep the result and the learner's answer visible while choosing the next step.
+    if(KinoChapters.isActive()){
+      input.value = userVal;
+      fbBox.classList.remove('hidden');
+    }
+
     // Unlock and invite dubbing immediately!
     updateDubbingLockState(true, seg);
 
     // Cat companion cheer
     try {
-      if(typeof showCatSpeech === 'function'){
+      if(!KinoChapters.isActive() && typeof showCatSpeech === 'function'){
         showCatSpeech("Super gemacht! Du bist genial! 🐾", "Làm tốt lắm bạn ơi! Nghe chuẩn đét luôn nè!", 5000);
       }
     } catch(e){}
 
     // Check milestones (25%, 50%, 75%, 100%)
     const pct = Math.round((kinoCompletedSet.size / PIZZASCHWESTER_72_SEGMENTS.length) * 100);
-    if(isFirstTime){
-      if(pct === 100){
+    if(isFirstTime && !KinoChapters.isActive()){
+      if(pct === 100 && !KinoChapters.isActive()){
         setTimeout(() => {
           triggerKinoConfetti();
           document.getElementById('kinoVictoryModal').classList.remove('hidden');
@@ -19189,18 +19409,20 @@ function checkKinoDiktat(){
 
   } else {
     // INCORRECT OR PARTIAL
-    playBlueyChime('wrong');
+    if(!KinoChapters.isActive()) playBlueyChime('wrong');
     kinoFailCountMap[kinoCurrentIndex] = (kinoFailCountMap[kinoCurrentIndex] || 0) + 1;
     const fails = kinoFailCountMap[kinoCurrentIndex];
 
-    fbStatus.textContent = '💡 Gần đúng rồi! Hãy xem các từ đối chiếu dưới đây:';
+    fbStatus.textContent = KinoChapters.isActive()
+      ? 'Mình cùng xem lại vài từ nhé. Bạn vẫn có thể nghe lại hoặc chuyển câu.'
+      : '💡 Gần đúng rồi! Hãy xem các từ đối chiếu dưới đây:';
     fbStatus.className = 'kino-v3-fb-status partial';
 
     // Word Diff Rendering
     renderKinoWordDiff(userVal, seg.text, diffBox);
 
     // Copy-to-pass mechanism if failed 3 times
-    if(fails >= 3){
+    if(fails >= 3 && !KinoChapters.isActive()){
       copyBox.classList.remove('hidden');
       copyBox.innerHTML = `
         <b>💡 Chế độ Chép mẫu để vượt qua:</b><br>
@@ -19300,7 +19522,7 @@ function revealKinoAnswer(){
   const fbVi = document.getElementById('kinoFeedbackVi');
 
   fbBox.classList.remove('hidden');
-  fbStatus.textContent = '📖 Đáp án câu thoại & Bản dịch:';
+  fbStatus.textContent = KinoChapters.isActive() ? 'Lời thoại gốc và nghĩa tiếng Việt:' : '📖 Đáp án câu thoại & Bản dịch:';
   fbStatus.className = 'kino-v3-fb-status';
   diffBox.innerHTML = `<span class="kino-diff-word correct" style="font-size:15px;">${seg.text}</span>`;
   fbVi.textContent = `🇻🇳 Nghĩa: "${seg.vi}"`;
@@ -19313,6 +19535,17 @@ function updateDubbingLockState(isDone, seg){
   const recBtn = document.getElementById('kinoDubRecordBtn');
   const btnText = document.getElementById('kinoDubBtnText');
   const statusTip = document.getElementById('kinoDubStatusTip');
+
+  if(KinoChapters.isActive()){
+    lockNotice?.classList.add('hidden');
+    quoteBody?.classList.remove('hidden');
+    recBtn.disabled = false;
+    recBtn.classList.remove('highlight');
+    recBtn.title = 'Thu giọng của bạn khi sẵn sàng';
+    btnText.textContent = 'Thu thử giọng của bạn';
+    statusTip.textContent = 'Bạn tự chọn lúc thu âm. Micro chỉ mở khi bạn nhấn nút và cho phép.';
+    return;
+  }
 
   if(isDone){
     if(lockNotice) lockNotice.classList.add('hidden');
@@ -19345,7 +19578,12 @@ async function startKinoDubbingProcess(){
     stopKinoDubbing();
     return;
   }
-
+  const request = ++kinoDubbingRequest;
+  kinoIsDubbing = true;
+  pauseKinoDubbingReplay();
+  KinoDiscovery.pause();
+  document.getElementById('kinoMainVideo').pause();
+  document.getElementById('kinoDubBtnText').textContent = 'Đang mở micro… Nhấn để hủy';
   try {
     // Studio-quality microphone constraints: disable harsh choke filters, enable auto-gain boost
     const stream = await navigator.mediaDevices.getUserMedia({
@@ -19356,14 +19594,25 @@ async function startKinoDubbingProcess(){
         channelCount: 1
       }
     });
+    if(request !== kinoDubbingRequest || !kinoIsDubbing){ stream.getTracks().forEach(track => track.stop()); return; }
+    kinoDubbingStream = stream;
+    await KinoMedia.prepare(document.getElementById('kinoMainVideo'), PIZZASCHWESTER_72_SEGMENTS[kinoCurrentIndex].start);
+    if(request !== kinoDubbingRequest || !kinoIsDubbing){ stream.getTracks().forEach(track => track.stop()); return; }
     runKinoCountdown(() => runKinoDubbingRecording(stream));
   } catch(err){
+    if(request !== kinoDubbingRequest) return;
     // Fallback if specific constraints not supported
     try {
+      if(err.name !== 'OverconstrainedError') throw err;
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      if(request !== kinoDubbingRequest || !kinoIsDubbing){ stream.getTracks().forEach(track => track.stop()); return; }
+      kinoDubbingStream = stream;
+      await KinoMedia.prepare(document.getElementById('kinoMainVideo'), PIZZASCHWESTER_72_SEGMENTS[kinoCurrentIndex].start);
+      if(request !== kinoDubbingRequest || !kinoIsDubbing){ stream.getTracks().forEach(track => track.stop()); return; }
       runKinoCountdown(() => runKinoDubbingRecording(stream));
     } catch(e2){
-      alert("Không thể mở Micro. Xin vui lòng cho phép quyền truy cập Micro trên trình duyệt để luyện lồng tiếng!");
+      stopKinoDubbing();
+      document.getElementById('kinoDubStatusTip').textContent = 'Chưa mở được micro. Bạn vẫn có thể nghe mẫu; khi muốn thu, hãy cho phép micro rồi thử lại.';
       console.error("Mic error:", e2);
     }
   }
@@ -19378,14 +19627,15 @@ function runKinoCountdown(callback){
   let count = 3;
   numEl.textContent = count;
   playBlueyChime('beep');
-
-  const timer = setInterval(() => {
+  document.getElementById('kinoDubBtnText').textContent = 'Chuẩn bị thu… Nhấn để hủy';
+  kinoDubbingCountdownTimer = setInterval(() => {
     count--;
     if(count > 0){
       numEl.textContent = count;
       playBlueyChime('beep');
     } else {
-      clearInterval(timer);
+      clearInterval(kinoDubbingCountdownTimer);
+      kinoDubbingCountdownTimer = null;
       playBlueyChime('boop');
       hud.classList.add('hidden');
       callback();
@@ -19399,7 +19649,10 @@ function runKinoDubbingRecording(stream){
   if(!video || !seg) return;
 
   kinoIsDubbing = true;
-  kinoDubbingAudioChunks = [];
+  const recordingIndex = kinoCurrentIndex;
+  const recordingStore = kinoDubbingBlobUrls;
+  const recordingChunks = [];
+  kinoDubbingAudioChunks = recordingChunks;
   // Studio Bitrate 128kbps for crisp voice capture
   let recOptions = { audioBitsPerSecond: 128000 };
   if(typeof MediaRecorder.isTypeSupported === 'function'){
@@ -19416,25 +19669,27 @@ function runKinoDubbingRecording(stream){
   }
 
   kinoDubbingRecorder.ondataavailable = (e) => {
-    if(e.data.size > 0) kinoDubbingAudioChunks.push(e.data);
+    if(e.data.size > 0) recordingChunks.push(e.data);
   };
 
   kinoDubbingRecorder.onstop = () => {
-    const blob = new Blob(kinoDubbingAudioChunks, { type: 'audio/webm' });
-    if(kinoDubbingBlobUrls[kinoCurrentIndex]){
-      URL.revokeObjectURL(kinoDubbingBlobUrls[kinoCurrentIndex]);
+    const blob = new Blob(recordingChunks, { type: 'audio/webm' });
+    if(recordingStore[recordingIndex]){
+      URL.revokeObjectURL(recordingStore[recordingIndex]);
     }
-    kinoDubbingBlobUrls[kinoCurrentIndex] = URL.createObjectURL(blob);
+    recordingStore[recordingIndex] = URL.createObjectURL(blob);
 
     // Stop mic stream
     stream.getTracks().forEach(t => t.stop());
+    if(kinoDubbingStream === stream) kinoDubbingStream = null;
+    if(kinoDubbingBlobUrls !== recordingStore || kinoCurrentIndex !== recordingIndex) return;
 
     // Update UI
     document.getElementById('kinoDubReplayRow').classList.remove('hidden');
     document.getElementById('kinoDubStatusTip').textContent = '✅ Đã lồng tiếng xong! Bấm "Giọng của bạn" để nghe lại!';
 
     // Auto replay immediately (As requested by user in Question 18)!
-    replayKinoDubbing();
+    if(document.body.dataset.hub === 'kino' && document.getElementById('diktatMode').dataset.kinoView === 'lesson') replayKinoDubbing();
   };
 
   // Audio mute toggle (Tắt sạch 100% hoặc giữ 15% làm mẫu)
@@ -19466,9 +19721,16 @@ function runKinoDubbingRecording(stream){
 }
 
 function stopKinoDubbing(){
+  ++kinoDubbingRequest;
   kinoIsDubbing = false;
+  if(kinoDubbingCountdownTimer !== null){
+    clearInterval(kinoDubbingCountdownTimer);
+    kinoDubbingCountdownTimer = null;
+  }
+  document.getElementById('kinoCountdownHud').classList.add('hidden');
   const video = document.getElementById('kinoMainVideo');
   if(video){
+    KinoMedia.cancel(video);
     video.pause();
     if(kinoTimeupdateListener){
       video.removeEventListener('timeupdate', kinoTimeupdateListener);
@@ -19478,25 +19740,30 @@ function stopKinoDubbing(){
 
   if(kinoDubbingRecorder && kinoDubbingRecorder.state !== 'inactive'){
     kinoDubbingRecorder.stop();
+  } else if(kinoDubbingStream){
+    kinoDubbingStream.getTracks().forEach(track => track.stop());
+    kinoDubbingStream = null;
   }
 
   const recBtn = document.getElementById('kinoDubRecordBtn');
   if(recBtn) recBtn.classList.remove('recording');
-  document.getElementById('kinoDubBtnText').textContent = 'Bắt đầu lồng tiếng câu này';
+  document.getElementById('kinoDubBtnText').textContent = KinoChapters.isActive() ? 'Thu thử giọng của bạn' : 'Bắt đầu lồng tiếng câu này';
   document.getElementById('kinoRecordingHud').classList.add('hidden');
 }
 
 // Audio Context Gain Booster for loud, punchy playback
 let kinoAudioCtx = null;
 
-function replayKinoDubbing(){
+async function replayKinoDubbing(){
   const blobUrl = kinoDubbingBlobUrls[kinoCurrentIndex];
   if(!blobUrl) return;
   const video = document.getElementById('kinoMainVideo');
   const seg = PIZZASCHWESTER_72_SEGMENTS[kinoCurrentIndex];
   if(!video || !seg) return;
 
+  pauseKinoDubbingReplay();
   const userAudio = new Audio(blobUrl);
+  kinoDubbingReplayAudio = userAudio;
   userAudio.volume = 1.0;
 
   // Use Web Audio GainNode to amplify voice by 2.0x (200% volume boost)
@@ -19513,6 +19780,9 @@ function replayKinoDubbing(){
     userAudio.volume = 1.0;
   }
 
+  try { await KinoMedia.prepare(video, seg.start); }
+  catch (_) { userAudio.pause(); return; }
+  if(kinoDubbingReplayAudio !== userAudio) return;
   video.currentTime = seg.start;
   video.muted = true; // Mute original, play amplified user voice
   video.playbackRate = 1.0;
@@ -19536,6 +19806,11 @@ function replayKinoDubbing(){
   document.getElementById('kinoDubStatusTip').textContent = '▶️ Đang phát video kèm giọng của bạn (Đã kích âm to rõ 200%)!';
 }
 
+function pauseKinoDubbingReplay(){
+  if(kinoDubbingReplayAudio) kinoDubbingReplayAudio.pause();
+  kinoDubbingReplayAudio = null;
+}
+
 // --------------------------------------------------------------------------
 // 📜 72-SENTENCE LINEAR UNLOCK TIMELINE
 // --------------------------------------------------------------------------
@@ -19545,16 +19820,18 @@ function renderKinoTimelineList(){
   container.innerHTML = '';
 
   PIZZASCHWESTER_72_SEGMENTS.forEach((seg, idx) => {
-    const isUnlocked = (idx <= kinoUnlockedIndex);
+    const isUnlocked = KinoChapters.isActive() || (idx <= kinoUnlockedIndex);
     const isDone = kinoCompletedSet.has(seg.id);
     const isCurrent = (idx === kinoCurrentIndex);
 
-    const row = document.createElement('div');
+    const row = document.createElement(KinoChapters.isActive() ? 'button' : 'div');
+    if(KinoChapters.isActive()) row.type = 'button';
     row.className = `kino-v3-timeline-row ${isCurrent ? 'active' : ''} ${!isUnlocked ? 'locked' : ''}`;
     row.id = `kinoRow_${idx}`;
 
     if(isUnlocked){
       row.onclick = () => {
+        if(kinoIsDubbing) return;
         loadKinoSentence(idx);
         playKinoCurrentSegment();
       };
@@ -19565,7 +19842,7 @@ function renderKinoTimelineList(){
     }
 
     const startStr = formatKinoSeconds(seg.start);
-    const textPreview = isDone ? seg.text : '•••••••••••••••••••••••••';
+    const textPreview = isDone || KinoChapters.isActive() ? seg.text : '•••••••••••••••••••••••••';
 
     row.innerHTML = `
       <div class="kino-v3-t-left">
@@ -19574,7 +19851,7 @@ function renderKinoTimelineList(){
         <span class="kino-v3-t-text">${textPreview}</span>
       </div>
       <div class="kino-v3-t-status">
-        ${isDone ? '✅' : '🔒'}
+        ${isDone ? '✓' : KinoChapters.isActive() ? '▶' : '🔒'}
       </div>
     `;
     container.appendChild(row);
@@ -19589,7 +19866,7 @@ function updateActiveTimelineItem(activeIdx){
   });
 
   const activeRow = document.getElementById(`kinoRow_${activeIdx}`);
-  if(activeRow){
+  if(activeRow && !KinoChapters.isActive()){
     activeRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 }
@@ -19599,33 +19876,46 @@ function toggleKinoTimeline(){
   const btn = document.getElementById('kinoTimelineCollapseBtn');
   if(!body || !btn) return;
   const isHidden = body.classList.toggle('collapsed');
-  btn.textContent = isHidden ? 'Mở rộng ▼' : 'Thu gọn ▲';
+  btn.textContent = isHidden ? 'Xem các câu ▾' : 'Thu gọn ▴';
+  btn.setAttribute('aria-expanded', String(!isHidden));
 }
 
 // --------------------------------------------------------------------------
 // 🍿 FULL MOVIE MODE (06:59 MỘC KHÔNG PHỤ ĐỀ)
 // --------------------------------------------------------------------------
-function openKinoFullMovieModal(){
+function openKinoFullMovieModal(startTime = 0){
+  pauseKinoDubbingReplay();
+  KinoDiscovery.pause();
+  KinoChapters.clearWatch();
   const modal = document.getElementById('kinoFullMovieModal');
   const player = document.getElementById('kinoFullPlayer');
   const mainVideo = document.getElementById('kinoMainVideo');
   if(mainVideo) mainVideo.pause();
+  if(modal.classList.contains('hidden')) kinoFullMovieReturnFocus = document.activeElement;
 
   const conf = KINO_VIDEOS[currentKinoVideoKey];
-  if(player && conf && (!player.src || !player.src.endsWith(conf.src))){
-    player.src = conf.src;
-  }
+  document.getElementById('kinoFullModalTitle').textContent = `${conf.title} · Xem toàn phim (${conf.fullDurationStr})`;
 
   modal.classList.remove('hidden');
-  player.currentTime = 0;
-  player.play();
+  modal.querySelector('.kino-full-modal-header button').focus({ preventScroll: true });
+  document.querySelector('.kino-v3-root').inert = true;
+  document.querySelector('.kino-v3-root').setAttribute('aria-hidden', 'true');
+  KinoMedia.play(player, startTime);
 }
 
 function closeKinoFullMovieModal(){
+  KinoChapters.clearWatch();
   const modal = document.getElementById('kinoFullMovieModal');
   const player = document.getElementById('kinoFullPlayer');
-  player.pause();
+  const wasOpen = !modal.classList.contains('hidden');
+  KinoMedia.release(player);
   modal.classList.add('hidden');
+  document.querySelector('.kino-v3-root').inert = false;
+  document.querySelector('.kino-v3-root').removeAttribute('aria-hidden');
+  if(wasOpen && kinoFullMovieReturnFocus?.isConnected){
+    const target = kinoFullMovieReturnFocus.closest('details:not([open])')?.querySelector('summary') || kinoFullMovieReturnFocus;
+    target?.focus({ preventScroll: true });
+  }
 }
 
 // --------------------------------------------------------------------------
@@ -19819,5 +20109,8 @@ function playKinoMixtape(){
 <script src="reward-prototype.js"></script>
 <script src="wortregen-data.js"></script>
 <script src="wortregen.js"></script>
+<script src="may-home-engine.js"></script>
+<script src="may-home-motion.js"></script>
+<script src="may-home-game.js"></script>
 </body>
 </html>

@@ -1,0 +1,1330 @@
+[
+  {
+    "start": 140,
+    "end": 160,
+    "segments": [
+      {
+        "start": 140.0,
+        "end": 144.7,
+        "text": "Du hast doch bestimmt auch Angst vor irgendwelchen Sachen, die eigentlich ganz harmlos sind.",
+        "avg_logprob": -0.24666795008619066,
+        "words": [
+          {
+            "start": 140.0,
+            "end": 141.0,
+            "word": "Du",
+            "probability": 0.8985955715179443
+          },
+          {
+            "start": 141.0,
+            "end": 141.26,
+            "word": "hast",
+            "probability": 0.9574819207191467
+          },
+          {
+            "start": 141.26,
+            "end": 141.36,
+            "word": "doch",
+            "probability": 0.5354423522949219
+          },
+          {
+            "start": 141.36,
+            "end": 141.66,
+            "word": "bestimmt",
+            "probability": 0.1953815221786499
+          },
+          {
+            "start": 141.66,
+            "end": 141.9,
+            "word": "auch",
+            "probability": 0.9336628913879395
+          },
+          {
+            "start": 141.9,
+            "end": 142.06,
+            "word": "Angst",
+            "probability": 0.9946826100349426
+          },
+          {
+            "start": 142.06,
+            "end": 142.3,
+            "word": "vor",
+            "probability": 0.997350811958313
+          },
+          {
+            "start": 142.3,
+            "end": 142.68,
+            "word": "irgendwelchen",
+            "probability": 0.932450552781423
+          },
+          {
+            "start": 142.68,
+            "end": 142.92,
+            "word": "Sachen,",
+            "probability": 0.9939557909965515
+          },
+          {
+            "start": 142.94,
+            "end": 143.12,
+            "word": "die",
+            "probability": 0.9922487735748291
+          },
+          {
+            "start": 143.12,
+            "end": 143.44,
+            "word": "eigentlich",
+            "probability": 0.9384633898735046
+          },
+          {
+            "start": 143.44,
+            "end": 143.76,
+            "word": "ganz",
+            "probability": 0.9920200705528259
+          },
+          {
+            "start": 143.76,
+            "end": 144.18,
+            "word": "harmlos",
+            "probability": 0.9924389719963074
+          },
+          {
+            "start": 144.18,
+            "end": 144.7,
+            "word": "sind.",
+            "probability": 0.9981141090393066
+          }
+        ]
+      },
+      {
+        "start": 145.82,
+        "end": 147.52,
+        "text": "Woher weißt du von meiner Glühwürmchenangst?",
+        "avg_logprob": -0.24666795008619066,
+        "words": [
+          {
+            "start": 145.82,
+            "end": 146.06,
+            "word": "Woher",
+            "probability": 0.9600571990013123
+          },
+          {
+            "start": 146.06,
+            "end": 146.18,
+            "word": "weißt",
+            "probability": 0.7863606512546539
+          },
+          {
+            "start": 146.18,
+            "end": 146.36,
+            "word": "du",
+            "probability": 0.9495599269866943
+          },
+          {
+            "start": 146.36,
+            "end": 146.42,
+            "word": "von",
+            "probability": 0.9538285136222839
+          },
+          {
+            "start": 146.42,
+            "end": 146.64,
+            "word": "meiner",
+            "probability": 0.9411722421646118
+          },
+          {
+            "start": 146.64,
+            "end": 147.52,
+            "word": "Glühwürmchenangst?",
+            "probability": 0.9345124661922455
+          }
+        ]
+      },
+      {
+        "start": 148.2,
+        "end": 150.28,
+        "text": "Du hast Angst vor Glühwürmchen?",
+        "avg_logprob": -0.24666795008619066,
+        "words": [
+          {
+            "start": 148.2,
+            "end": 148.5,
+            "word": "Du",
+            "probability": 0.991297721862793
+          },
+          {
+            "start": 148.5,
+            "end": 148.86,
+            "word": "hast",
+            "probability": 0.8918116688728333
+          },
+          {
+            "start": 148.86,
+            "end": 149.1,
+            "word": "Angst",
+            "probability": 0.9917076230049133
+          },
+          {
+            "start": 149.1,
+            "end": 149.36,
+            "word": "vor",
+            "probability": 0.999104917049408
+          },
+          {
+            "start": 149.36,
+            "end": 150.28,
+            "word": "Glühwürmchen?",
+            "probability": 0.9979543089866638
+          }
+        ]
+      },
+      {
+        "start": 151.54,
+        "end": 153.5,
+        "text": "Die tun doch gar nichts.",
+        "avg_logprob": -0.24666795008619066,
+        "words": [
+          {
+            "start": 151.54,
+            "end": 152.14,
+            "word": "Die",
+            "probability": 0.8544159531593323
+          },
+          {
+            "start": 152.14,
+            "end": 152.48,
+            "word": "tun",
+            "probability": 0.9412336945533752
+          },
+          {
+            "start": 152.48,
+            "end": 152.8,
+            "word": "doch",
+            "probability": 0.9558688998222351
+          },
+          {
+            "start": 152.8,
+            "end": 153.1,
+            "word": "gar",
+            "probability": 0.9839158654212952
+          },
+          {
+            "start": 153.1,
+            "end": 153.5,
+            "word": "nichts.",
+            "probability": 0.9807486534118652
+          }
+        ]
+      },
+      {
+        "start": 155.06,
+        "end": 156.74,
+        "text": "Der Aufzug tut dir auch nichts.",
+        "avg_logprob": -0.24666795008619066,
+        "words": [
+          {
+            "start": 155.06,
+            "end": 155.22,
+            "word": "Der",
+            "probability": 0.8372119069099426
+          },
+          {
+            "start": 155.22,
+            "end": 155.84,
+            "word": "Aufzug",
+            "probability": 0.9927064776420593
+          },
+          {
+            "start": 155.84,
+            "end": 156.06,
+            "word": "tut",
+            "probability": 0.9157863855361938
+          },
+          {
+            "start": 156.06,
+            "end": 156.28,
+            "word": "dir",
+            "probability": 0.7644538879394531
+          },
+          {
+            "start": 156.28,
+            "end": 156.5,
+            "word": "auch",
+            "probability": 0.9444349408149719
+          },
+          {
+            "start": 156.5,
+            "end": 156.74,
+            "word": "nichts.",
+            "probability": 0.5287167429924011
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "start": 210,
+    "end": 220,
+    "segments": [
+      {
+        "start": 211.26,
+        "end": 213.4,
+        "text": "Ich glaube, das geht.",
+        "avg_logprob": -0.5994040966033936,
+        "words": [
+          {
+            "start": 211.26,
+            "end": 211.94,
+            "word": "Ich",
+            "probability": 0.6923308372497559
+          },
+          {
+            "start": 211.94,
+            "end": 212.28,
+            "word": "glaube,",
+            "probability": 0.4587551951408386
+          },
+          {
+            "start": 212.34,
+            "end": 212.64,
+            "word": "das",
+            "probability": 0.9710758924484253
+          },
+          {
+            "start": 212.64,
+            "end": 213.4,
+            "word": "geht.",
+            "probability": 0.996231734752655
+          }
+        ]
+      },
+      {
+        "start": 214.46,
+        "end": 217.4,
+        "text": "Eins, zwei, drei, vier.",
+        "avg_logprob": -0.5994040966033936,
+        "words": [
+          {
+            "start": 214.46,
+            "end": 214.46,
+            "word": "Eins,",
+            "probability": 0.27213722467422485
+          },
+          {
+            "start": 214.74,
+            "end": 215.4,
+            "word": "zwei,",
+            "probability": 0.967201828956604
+          },
+          {
+            "start": 215.66,
+            "end": 216.44,
+            "word": "drei,",
+            "probability": 0.9786312580108643
+          },
+          {
+            "start": 216.44,
+            "end": 217.4,
+            "word": "vier.",
+            "probability": 0.8054646849632263
+          }
+        ]
+      },
+      {
+        "start": 218.18,
+        "end": 219.3,
+        "text": "Die sind so lecker.",
+        "avg_logprob": -0.5994040966033936,
+        "words": [
+          {
+            "start": 218.18,
+            "end": 218.36,
+            "word": "Die",
+            "probability": 0.10773544758558273
+          },
+          {
+            "start": 218.36,
+            "end": 218.58,
+            "word": "sind",
+            "probability": 0.3609052896499634
+          },
+          {
+            "start": 218.58,
+            "end": 218.96,
+            "word": "so",
+            "probability": 0.9454297423362732
+          },
+          {
+            "start": 218.96,
+            "end": 219.3,
+            "word": "lecker.",
+            "probability": 0.9877489507198334
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "start": 230,
+    "end": 246,
+    "segments": [
+      {
+        "start": 230.0,
+        "end": 230.2,
+        "text": "Was?",
+        "avg_logprob": -0.5385502192534899,
+        "words": [
+          {
+            "start": 230.0,
+            "end": 230.2,
+            "word": "Was?",
+            "probability": 0.4779171943664551
+          }
+        ]
+      },
+      {
+        "start": 230.8,
+        "end": 231.42,
+        "text": "Umzug.",
+        "avg_logprob": -0.5385502192534899,
+        "words": [
+          {
+            "start": 230.8,
+            "end": 231.42,
+            "word": "Umzug.",
+            "probability": 0.9146009385585785
+          }
+        ]
+      },
+      {
+        "start": 232.4,
+        "end": 233.1,
+        "text": "Mmh, lecker.",
+        "avg_logprob": -0.5385502192534899,
+        "words": [
+          {
+            "start": 232.4,
+            "end": 232.52,
+            "word": "Mmh,",
+            "probability": 0.5464207753539085
+          },
+          {
+            "start": 232.66,
+            "end": 233.1,
+            "word": "lecker.",
+            "probability": 0.9924631714820862
+          }
+        ]
+      },
+      {
+        "start": 236.02,
+        "end": 238.5,
+        "text": "Mmh, frittierte Macchi-Pan-Kartoffel.",
+        "avg_logprob": -0.5385502192534899,
+        "words": [
+          {
+            "start": 236.02,
+            "end": 236.64,
+            "word": "Mmh,",
+            "probability": 0.6330860257148743
+          },
+          {
+            "start": 236.74,
+            "end": 237.22,
+            "word": "frittierte",
+            "probability": 0.8955450654029846
+          },
+          {
+            "start": 237.22,
+            "end": 237.6,
+            "word": "Macchi",
+            "probability": 0.5409843325614929
+          },
+          {
+            "start": 237.6,
+            "end": 237.76,
+            "word": "-Pan",
+            "probability": 0.6030684610207876
+          },
+          {
+            "start": 237.76,
+            "end": 238.5,
+            "word": "-Kartoffel.",
+            "probability": 0.8801348567008972
+          }
+        ]
+      },
+      {
+        "start": 238.52,
+        "end": 238.96,
+        "text": "Und du?",
+        "avg_logprob": -0.5385502192534899,
+        "words": [
+          {
+            "start": 238.52,
+            "end": 238.66,
+            "word": "Und",
+            "probability": 0.9848810434341431
+          },
+          {
+            "start": 238.66,
+            "end": 238.96,
+            "word": "du?",
+            "probability": 0.9434738159179688
+          }
+        ]
+      },
+      {
+        "start": 240.0,
+        "end": 241.88,
+        "text": "Mmh, frittierte Schokokuss.",
+        "avg_logprob": -0.5385502192534899,
+        "words": [
+          {
+            "start": 240.0,
+            "end": 240.62,
+            "word": "Mmh,",
+            "probability": 0.8699766993522644
+          },
+          {
+            "start": 240.72,
+            "end": 241.18,
+            "word": "frittierte",
+            "probability": 0.8825568358103434
+          },
+          {
+            "start": 241.18,
+            "end": 241.88,
+            "word": "Schokokuss.",
+            "probability": 0.8456119298934937
+          }
+        ]
+      },
+      {
+        "start": 243.4,
+        "end": 244.02,
+        "text": "Und...",
+        "avg_logprob": -0.5385502192534899,
+        "words": [
+          {
+            "start": 243.4,
+            "end": 244.02,
+            "word": "Und...",
+            "probability": 0.4247105270624161
+          }
+        ]
+      },
+      {
+        "start": 244.02,
+        "end": 244.24,
+        "text": "Äh!",
+        "avg_logprob": -0.5385502192534899,
+        "words": [
+          {
+            "start": 244.02,
+            "end": 244.24,
+            "word": "Äh!",
+            "probability": 0.3370704185217619
+          }
+        ]
+      },
+      {
+        "start": 245.08,
+        "end": 245.84,
+        "text": "Das ist ja blöd!",
+        "avg_logprob": -0.5385502192534899,
+        "words": [
+          {
+            "start": 245.08,
+            "end": 245.38,
+            "word": "Das",
+            "probability": 0.09330219030380249
+          },
+          {
+            "start": 245.38,
+            "end": 245.5,
+            "word": "ist",
+            "probability": 0.7913292646408081
+          },
+          {
+            "start": 245.5,
+            "end": 245.68,
+            "word": "ja",
+            "probability": 0.7356112003326416
+          },
+          {
+            "start": 245.68,
+            "end": 245.84,
+            "word": "blöd!",
+            "probability": 0.5297188833355904
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "start": 310,
+    "end": 329,
+    "segments": [
+      {
+        "start": 310.0,
+        "end": 310.74,
+        "text": "Du hast es geschafft.",
+        "avg_logprob": -0.8257340838511785,
+        "words": [
+          {
+            "start": 310.0,
+            "end": 310.0,
+            "word": "Du",
+            "probability": 0.08515427261590958
+          },
+          {
+            "start": 310.0,
+            "end": 310.16,
+            "word": "hast",
+            "probability": 0.6990470290184021
+          },
+          {
+            "start": 310.16,
+            "end": 310.6,
+            "word": "es",
+            "probability": 0.8899637460708618
+          },
+          {
+            "start": 310.6,
+            "end": 310.74,
+            "word": "geschafft.",
+            "probability": 0.9971144199371338
+          }
+        ]
+      },
+      {
+        "start": 317.44,
+        "end": 320.3,
+        "text": "Hier oben, hier bin ich.",
+        "avg_logprob": -0.8257340838511785,
+        "words": [
+          {
+            "start": 317.44,
+            "end": 317.5,
+            "word": "Hier",
+            "probability": 0.0749112218618393
+          },
+          {
+            "start": 317.5,
+            "end": 318.52,
+            "word": "oben,",
+            "probability": 0.9364200234413147
+          },
+          {
+            "start": 318.62,
+            "end": 319.02,
+            "word": "hier",
+            "probability": 0.9420725703239441
+          },
+          {
+            "start": 319.02,
+            "end": 319.24,
+            "word": "bin",
+            "probability": 0.4251869320869446
+          },
+          {
+            "start": 319.24,
+            "end": 320.3,
+            "word": "ich.",
+            "probability": 0.9983298182487488
+          }
+        ]
+      },
+      {
+        "start": 326.56,
+        "end": 326.8,
+        "text": "Entschuldigung.",
+        "avg_logprob": -0.8257340838511785,
+        "words": [
+          {
+            "start": 326.56,
+            "end": 327.0,
+            "word": "Entschuldigung.",
+            "probability": 0.7828293666243553
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "start": 334,
+    "end": 355,
+    "segments": [
+      {
+        "start": 334.0,
+        "end": 336.04,
+        "text": "und hatte überhaupt keine Angst.",
+        "avg_logprob": -0.24445583742289317,
+        "words": [
+          {
+            "start": 334.0,
+            "end": 334.86,
+            "word": "und",
+            "probability": 0.21213118731975555
+          },
+          {
+            "start": 334.86,
+            "end": 335.14,
+            "word": "hatte",
+            "probability": 0.9511274099349976
+          },
+          {
+            "start": 335.14,
+            "end": 335.6,
+            "word": "überhaupt",
+            "probability": 0.8332070708274841
+          },
+          {
+            "start": 335.6,
+            "end": 335.82,
+            "word": "keine",
+            "probability": 0.9877412915229797
+          },
+          {
+            "start": 335.82,
+            "end": 336.04,
+            "word": "Angst.",
+            "probability": 0.675322949886322
+          }
+        ]
+      },
+      {
+        "start": 336.16,
+        "end": 337.92,
+        "text": "Du hast ja auch sonst von nichts Angst.",
+        "avg_logprob": -0.24445583742289317,
+        "words": [
+          {
+            "start": 336.16,
+            "end": 336.18,
+            "word": "Du",
+            "probability": 0.7209062576293945
+          },
+          {
+            "start": 336.18,
+            "end": 336.46,
+            "word": "hast",
+            "probability": 0.9585295915603638
+          },
+          {
+            "start": 336.46,
+            "end": 336.62,
+            "word": "ja",
+            "probability": 0.8051092624664307
+          },
+          {
+            "start": 336.62,
+            "end": 336.82,
+            "word": "auch",
+            "probability": 0.949264407157898
+          },
+          {
+            "start": 336.82,
+            "end": 337.04,
+            "word": "sonst",
+            "probability": 0.980755627155304
+          },
+          {
+            "start": 337.04,
+            "end": 337.26,
+            "word": "von",
+            "probability": 0.45044803619384766
+          },
+          {
+            "start": 337.26,
+            "end": 337.48,
+            "word": "nichts",
+            "probability": 0.9250537753105164
+          },
+          {
+            "start": 337.48,
+            "end": 337.92,
+            "word": "Angst.",
+            "probability": 0.9963877201080322
+          }
+        ]
+      },
+      {
+        "start": 338.56,
+        "end": 340.04,
+        "text": "Deswegen musst du mir hier auch helfen.",
+        "avg_logprob": -0.24445583742289317,
+        "words": [
+          {
+            "start": 338.56,
+            "end": 338.56,
+            "word": "Deswegen",
+            "probability": 0.9603745937347412
+          },
+          {
+            "start": 338.56,
+            "end": 338.8,
+            "word": "musst",
+            "probability": 0.9842934012413025
+          },
+          {
+            "start": 338.8,
+            "end": 339.0,
+            "word": "du",
+            "probability": 0.9065045118331909
+          },
+          {
+            "start": 339.0,
+            "end": 339.16,
+            "word": "mir",
+            "probability": 0.9932703375816345
+          },
+          {
+            "start": 339.16,
+            "end": 339.4,
+            "word": "hier",
+            "probability": 0.9615248441696167
+          },
+          {
+            "start": 339.4,
+            "end": 339.64,
+            "word": "auch",
+            "probability": 0.9781783223152161
+          },
+          {
+            "start": 339.64,
+            "end": 340.04,
+            "word": "helfen.",
+            "probability": 0.9783920049667358
+          }
+        ]
+      },
+      {
+        "start": 340.68,
+        "end": 341.16,
+        "text": "Guck mal.",
+        "avg_logprob": -0.24445583742289317,
+        "words": [
+          {
+            "start": 340.68,
+            "end": 340.86,
+            "word": "Guck",
+            "probability": 0.501287785358727
+          },
+          {
+            "start": 340.86,
+            "end": 341.16,
+            "word": "mal.",
+            "probability": 0.9229850769042969
+          }
+        ]
+      },
+      {
+        "start": 343.02,
+        "end": 344.08,
+        "text": "Äh, Trude?",
+        "avg_logprob": -0.24445583742289317,
+        "words": [
+          {
+            "start": 343.02,
+            "end": 343.58,
+            "word": "Äh,",
+            "probability": 0.7928018569946289
+          },
+          {
+            "start": 343.78,
+            "end": 344.08,
+            "word": "Trude?",
+            "probability": 0.9840355515480042
+          }
+        ]
+      },
+      {
+        "start": 345.9,
+        "end": 346.46,
+        "text": "Trude!",
+        "avg_logprob": -0.24445583742289317,
+        "words": [
+          {
+            "start": 345.9,
+            "end": 346.46,
+            "word": "Trude!",
+            "probability": 0.8937222361564636
+          }
+        ]
+      },
+      {
+        "start": 346.64,
+        "end": 349.0,
+        "text": "Bring die Spinne bitte ganz, ganz weit weg!",
+        "avg_logprob": -0.24445583742289317,
+        "words": [
+          {
+            "start": 346.64,
+            "end": 346.86,
+            "word": "Bring",
+            "probability": 0.9396141171455383
+          },
+          {
+            "start": 346.86,
+            "end": 347.06,
+            "word": "die",
+            "probability": 0.9664031267166138
+          },
+          {
+            "start": 347.06,
+            "end": 347.34,
+            "word": "Spinne",
+            "probability": 0.7260921746492386
+          },
+          {
+            "start": 347.34,
+            "end": 347.6,
+            "word": "bitte",
+            "probability": 0.9825319051742554
+          },
+          {
+            "start": 347.6,
+            "end": 348.04,
+            "word": "ganz,",
+            "probability": 0.995355486869812
+          },
+          {
+            "start": 348.04,
+            "end": 348.36,
+            "word": "ganz",
+            "probability": 0.9995315074920654
+          },
+          {
+            "start": 348.36,
+            "end": 348.64,
+            "word": "weit",
+            "probability": 0.9929584264755249
+          },
+          {
+            "start": 348.64,
+            "end": 349.0,
+            "word": "weg!",
+            "probability": 0.9995662569999695
+          }
+        ]
+      },
+      {
+        "start": 349.86,
+        "end": 351.92,
+        "text": "Und deshalb hast du uns angerufen?",
+        "avg_logprob": -0.24445583742289317,
+        "words": [
+          {
+            "start": 349.86,
+            "end": 350.12,
+            "word": "Und",
+            "probability": 0.9027349948883057
+          },
+          {
+            "start": 350.12,
+            "end": 350.64,
+            "word": "deshalb",
+            "probability": 0.9930710196495056
+          },
+          {
+            "start": 350.64,
+            "end": 350.88,
+            "word": "hast",
+            "probability": 0.9989480376243591
+          },
+          {
+            "start": 350.88,
+            "end": 351.02,
+            "word": "du",
+            "probability": 0.9763290882110596
+          },
+          {
+            "start": 351.02,
+            "end": 351.34,
+            "word": "uns",
+            "probability": 0.9948551654815674
+          },
+          {
+            "start": 351.34,
+            "end": 351.92,
+            "word": "angerufen?",
+            "probability": 0.9947748482227325
+          }
+        ]
+      },
+      {
+        "start": 353.04,
+        "end": 354.76,
+        "text": "Diese langen dünnen Ballenchen!",
+        "avg_logprob": -0.24445583742289317,
+        "words": [
+          {
+            "start": 353.04,
+            "end": 353.32,
+            "word": "Diese",
+            "probability": 0.870462954044342
+          },
+          {
+            "start": 353.32,
+            "end": 353.8,
+            "word": "langen",
+            "probability": 0.9949478507041931
+          },
+          {
+            "start": 353.8,
+            "end": 354.0,
+            "word": "dünnen",
+            "probability": 0.8704553445180258
+          },
+          {
+            "start": 354.0,
+            "end": 354.76,
+            "word": "Ballenchen!",
+            "probability": 0.6161531805992126
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "start": 370,
+    "end": 390,
+    "segments": [
+      {
+        "start": 370.0,
+        "end": 374.42,
+        "text": "Wisst ihr was? Wenn ihr mir ab und zu was von diesen Leckereien mitbringt,",
+        "avg_logprob": -0.3258802051777425,
+        "words": [
+          {
+            "start": 370.0,
+            "end": 370.46,
+            "word": "Wisst",
+            "probability": 0.686417430639267
+          },
+          {
+            "start": 370.46,
+            "end": 370.52,
+            "word": "ihr",
+            "probability": 0.9592139720916748
+          },
+          {
+            "start": 370.52,
+            "end": 370.94,
+            "word": "was?",
+            "probability": 0.8917771577835083
+          },
+          {
+            "start": 371.38,
+            "end": 371.56,
+            "word": "Wenn",
+            "probability": 0.9840187430381775
+          },
+          {
+            "start": 371.56,
+            "end": 371.74,
+            "word": "ihr",
+            "probability": 0.9870499968528748
+          },
+          {
+            "start": 371.74,
+            "end": 371.98,
+            "word": "mir",
+            "probability": 0.9815815687179565
+          },
+          {
+            "start": 371.98,
+            "end": 372.06,
+            "word": "ab",
+            "probability": 0.9039185047149658
+          },
+          {
+            "start": 372.06,
+            "end": 372.28,
+            "word": "und",
+            "probability": 0.9931352138519287
+          },
+          {
+            "start": 372.28,
+            "end": 372.46,
+            "word": "zu",
+            "probability": 0.9991613626480103
+          },
+          {
+            "start": 372.46,
+            "end": 372.62,
+            "word": "was",
+            "probability": 0.9215299487113953
+          },
+          {
+            "start": 372.62,
+            "end": 372.84,
+            "word": "von",
+            "probability": 0.9903890490531921
+          },
+          {
+            "start": 372.84,
+            "end": 373.08,
+            "word": "diesen",
+            "probability": 0.9524096250534058
+          },
+          {
+            "start": 373.08,
+            "end": 373.7,
+            "word": "Leckereien",
+            "probability": 0.9816973656415939
+          },
+          {
+            "start": 373.7,
+            "end": 374.42,
+            "word": "mitbringt,",
+            "probability": 0.9828245639801025
+          }
+        ]
+      },
+      {
+        "start": 374.86,
+        "end": 376.22,
+        "text": "dann könnt ihr die Fritteuse behalten.",
+        "avg_logprob": -0.3258802051777425,
+        "words": [
+          {
+            "start": 374.86,
+            "end": 374.94,
+            "word": "dann",
+            "probability": 0.9402146339416504
+          },
+          {
+            "start": 374.94,
+            "end": 375.1,
+            "word": "könnt",
+            "probability": 0.995140552520752
+          },
+          {
+            "start": 375.1,
+            "end": 375.22,
+            "word": "ihr",
+            "probability": 0.9945493340492249
+          },
+          {
+            "start": 375.22,
+            "end": 375.44,
+            "word": "die",
+            "probability": 0.9916505217552185
+          },
+          {
+            "start": 375.44,
+            "end": 375.84,
+            "word": "Fritteuse",
+            "probability": 0.8838057319323221
+          },
+          {
+            "start": 375.84,
+            "end": 376.22,
+            "word": "behalten.",
+            "probability": 0.9977865815162659
+          }
+        ]
+      },
+      {
+        "start": 376.48,
+        "end": 377.8,
+        "text": "Ach, Mama. Du kannst doch nicht...",
+        "avg_logprob": -0.3258802051777425,
+        "words": [
+          {
+            "start": 376.48,
+            "end": 376.7,
+            "word": "Ach,",
+            "probability": 0.5767219066619873
+          },
+          {
+            "start": 376.9,
+            "end": 377.18,
+            "word": "Mama.",
+            "probability": 0.9839200377464294
+          },
+          {
+            "start": 377.52,
+            "end": 377.62,
+            "word": "Du",
+            "probability": 0.7170721888542175
+          },
+          {
+            "start": 377.62,
+            "end": 377.78,
+            "word": "kannst",
+            "probability": 0.9872561693191528
+          },
+          {
+            "start": 377.78,
+            "end": 377.78,
+            "word": "doch",
+            "probability": 0.9834179282188416
+          },
+          {
+            "start": 377.78,
+            "end": 377.8,
+            "word": "nicht...",
+            "probability": 0.6583327203989029
+          }
+        ]
+      },
+      {
+        "start": 377.8,
+        "end": 379.34,
+        "text": "So eine nette Mama hast du.",
+        "avg_logprob": -0.3258802051777425,
+        "words": [
+          {
+            "start": 377.8,
+            "end": 378.04,
+            "word": "So",
+            "probability": 0.7296700477600098
+          },
+          {
+            "start": 378.04,
+            "end": 378.28,
+            "word": "eine",
+            "probability": 0.9934535026550293
+          },
+          {
+            "start": 378.28,
+            "end": 378.64,
+            "word": "nette",
+            "probability": 0.9928596913814545
+          },
+          {
+            "start": 378.64,
+            "end": 378.8,
+            "word": "Mama",
+            "probability": 0.9967568516731262
+          },
+          {
+            "start": 378.8,
+            "end": 379.1,
+            "word": "hast",
+            "probability": 0.9937877655029297
+          },
+          {
+            "start": 379.1,
+            "end": 379.34,
+            "word": "du.",
+            "probability": 0.9689908623695374
+          }
+        ]
+      },
+      {
+        "start": 379.86,
+        "end": 381.76,
+        "text": "Oh! Was machst du?",
+        "avg_logprob": -0.3258802051777425,
+        "words": [
+          {
+            "start": 379.86,
+            "end": 379.86,
+            "word": "Oh!",
+            "probability": 0.259265661239624
+          },
+          {
+            "start": 380.66,
+            "end": 380.96,
+            "word": "Was",
+            "probability": 0.9480667114257812
+          },
+          {
+            "start": 380.96,
+            "end": 381.46,
+            "word": "machst",
+            "probability": 0.7728251218795776
+          },
+          {
+            "start": 381.46,
+            "end": 381.76,
+            "word": "du?",
+            "probability": 0.9869018793106079
+          }
+        ]
+      },
+      {
+        "start": 381.78,
+        "end": 383.9,
+        "text": "Zum Glück hat keiner von uns Geländerrutschangst.",
+        "avg_logprob": -0.3258802051777425,
+        "words": [
+          {
+            "start": 381.78,
+            "end": 381.96,
+            "word": "Zum",
+            "probability": 0.9804741144180298
+          },
+          {
+            "start": 381.96,
+            "end": 382.08,
+            "word": "Glück",
+            "probability": 0.9993791580200195
+          },
+          {
+            "start": 382.08,
+            "end": 382.22,
+            "word": "hat",
+            "probability": 0.9962708950042725
+          },
+          {
+            "start": 382.22,
+            "end": 382.5,
+            "word": "keiner",
+            "probability": 0.9905203580856323
+          },
+          {
+            "start": 382.5,
+            "end": 382.64,
+            "word": "von",
+            "probability": 0.9852790832519531
+          },
+          {
+            "start": 382.64,
+            "end": 382.84,
+            "word": "uns",
+            "probability": 0.9988246560096741
+          },
+          {
+            "start": 382.84,
+            "end": 383.9,
+            "word": "Geländerrutschangst.",
+            "probability": 0.8661047177655357
+          }
+        ]
+      },
+      {
+        "start": 384.34,
+        "end": 384.7,
+        "text": "Hopp!",
+        "avg_logprob": -0.3258802051777425,
+        "words": [
+          {
+            "start": 384.34,
+            "end": 384.7,
+            "word": "Hopp!",
+            "probability": 0.5835393965244293
+          }
+        ]
+      },
+      {
+        "start": 386.88,
+        "end": 387.36,
+        "text": "Tschüss!",
+        "avg_logprob": -0.3258802051777425,
+        "words": [
+          {
+            "start": 386.88,
+            "end": 387.36,
+            "word": "Tschüss!",
+            "probability": 0.8919854462146759
+          }
+        ]
+      }
+    ]
+  }
+]

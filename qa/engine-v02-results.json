@@ -1,0 +1,25 @@
+{
+  "passed": 15,
+  "failed": 0,
+  "simulation": {
+    "games": 200,
+    "completed": 200,
+    "capped": 0,
+    "winners": {
+      "player": 88,
+      "bot": 112,
+      "draw": 0
+    },
+    "maxTurns": 62,
+    "moves": {
+      "word": 2568,
+      "meaning": 576,
+      "both": 166,
+      "color": 1510,
+      "same": 316,
+      "actions": 718
+    },
+    "medianTurns": 15
+  },
+  "note": "Bot-vs-bot: kiểm tra trạng thái, không chứng minh cân bằng hoặc hiệu quả học."
+}

@@ -1,0 +1,198 @@
+[
+  {
+    "key": "Peppa_Wutz_Supermarkt",
+    "path": "video\\Peppa_Wutz_Supermarkt.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "bit_rate": "576883"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "bit_rate": "129750"
+        }
+      ],
+      "format": {
+        "duration": "919.040000",
+        "size": "81932776"
+      }
+    }
+  },
+  {
+    "key": "pizzaschwester",
+    "path": "video\\pizzaschwester.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "bit_rate": "875526"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "bit_rate": "127999"
+        }
+      ],
+      "format": {
+        "duration": "419.979320",
+        "size": "53024567"
+      }
+    }
+  },
+  {
+    "key": "babysitter",
+    "path": "video\\babysitter.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "bit_rate": "702124"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "bit_rate": "127999"
+        }
+      ],
+      "format": {
+        "duration": "416.821406",
+        "size": "43582354"
+      }
+    }
+  },
+  {
+    "key": "hans",
+    "path": "video\\hans.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "bit_rate": "707446"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "duration": "570.862585",
+        "size": "60058394"
+      }
+    }
+  },
+  {
+    "key": "trudes_fahrstuhl",
+    "path": "video\\trudes_fahrstuhl.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "bit_rate": "1064114"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "duration": "411.920000",
+        "size": "61722398"
+      }
+    }
+  },
+  {
+    "key": "frieren_s01e01",
+    "path": "video\\frieren_s01e01.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "bit_rate": "1539773"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "bit_rate": "161552"
+        }
+      ],
+      "format": {
+        "duration": "1559.986009",
+        "size": "333049930"
+      }
+    }
+  },
+  {
+    "key": "sakura_s01e01",
+    "path": "video\\sakura_s01e01.mp4",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 960,
+          "height": 720,
+          "bit_rate": "1172850"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "bit_rate": "114220"
+        }
+      ],
+      "format": {
+        "duration": "1500.456875",
+        "size": "242449971"
+      }
+    }
+  }
+]

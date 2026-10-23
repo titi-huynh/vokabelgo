@@ -1,0 +1,75 @@
+======================================================================
+MÂY FOUR-DIRECTION WALKING INTEGRATION REPORT
+======================================================================
+
+1. SUMMARY
+----------
+Successfully integrated the user-approved Mây 4-direction walking proof into
+the actual homepage (http://127.0.0.1:3000/). Preserved all existing engine routing,
+camera, controls, speed, action cancellation, and immediate bottomnav.
+
+2. BACKUPS
+----------
+Backup created before edits in:
+- qa/may-home-direction-integration-before/index.html
+- qa/may-home-direction-integration-before/may-home-game.js
+
+3. IMPLEMENTATION DETAILS
+-------------------------
+a) may-home-motion.js (New UMD module):
+   - buildSheetLayoutFromMeasuredManifest(): Validates 16-frame measured JSON manifest
+     (referenceHeight: 278, directions: down/right/up/left, cols: 0..3, positive bounds,
+     valid anchorX/anchorY); computes common scale (150 / 278) across all 16 frames;
+     throws explicit errors on missing or malformed metadata.
+   - resolveDirectionFromVector(): Resolves physical displacement vector (dx, dy)
+     to cardinal facing using dominant axis with 0.18 hysteresis threshold to prevent
+     near-diagonal jitter; retains current direction when displacement <= 1e-4.
+   - computeWalkFrame(): Distance-based 4-gait frame chooser with ~76px stride
+     (stepLen = 19px), alternating contact (0, 2) and passing (1, 3) frames.
+     Preserves active contact pose (0 or 2) when stopping.
+
+b) index.html:
+   - Exactly ONE script tag added before may-home-game.js:
+     <script src="may-home-motion.js"></script>
+   - Outside of this insertion, all original bytes, encoding, and newlines were preserved.
+
+c) may-home-game.js:
+   - Loaded assets/may-home-game/may-walk-directions-v1.png and
+     assets/may-home-game/may-walk-directions-v1.json via Promise.all with image + fetch.
+   - Safely catches any asset load/parse failures into existing clickable scene/nav
+     fallback rather than fake front walking.
+   - Renders 4-direction frames using actual source crop bounds and local anchors at
+     common scale 150 / 278, without horizontal mirroring, whole-sprite bob, or squash.
+   - Facing updates on physical displacement during walking and holds final facing upon
+     stop or arrival (no forced front pose reset).
+   - Removed waveUntil on automatic arrival; preserved original still/wave atlas
+     strictly for initial front idle (frame 0) and explicit pet clicks (frame 3).
+   - In goPlace and accepted branch of goPath, clears waveUntil = 0 before initiating
+     movement, and draw() requires !walking for isWaving, preventing front-wave moonwalk
+     if a place/path is clicked during greeting. Rejected water clicks preserve pet wave.
+   - DOM #mayCharacterTouch attributes data-motion ("idle" | "walking") and data-facing
+     ("down" | "right" | "up" | "left") accurately reflect renderer state.
+   - Consistent low-motion instant jumps and safe cancellation of arrivals on drag/nav interruptions.
+
+4. TEST & VERIFICATION RESULTS
+------------------------------
+a) Node Syntax Check (node --check):
+   - may-home-motion.js: PASS
+   - may-home-game.js: PASS
+   - test-may-home-motion.js: PASS
+
+b) Focused Unit Tests (node test-may-home-motion.js):
+   - exact cardinal facing resolves correctly for all 4 headings: PASS
+   - diagonal hysteresis prevents direction flickering on near-diagonal motion: PASS
+   - retain direction at zero motion or sub-threshold displacement: PASS
+   - frame advance based on travelled distance with ~76px stride and alternating legs: PASS
+   - malformed measured manifest is rejected with descriptive error: PASS
+   - source crops and pivots from production manifest are valid and scaled correctly: PASS
+   Result: 6 / 6 PASS (0 failures)
+
+c) Existing Engine Test Suite (node test-may-home-engine.js):
+   - 11 navigation checks passed: PASS
+
+d) Browser / CUA Verification:
+   - No interactive browser is attached in this CLI session.
+   - Ready for Codex CUA verification on http://127.0.0.1:3000/.

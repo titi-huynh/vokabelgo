@@ -1,0 +1,46 @@
+MÈO CHỢ — PROFILE THIẾT KẾ v01 | 2026-10-18
+
+Hai bảng phác thảo được tạo bằng công cụ imagegen tích hợp:
+meo-cho-model-sheet.png — trước, nghiêng, sau, góc 3/4, màu và tỷ lệ.
+meo-cho-expressions.png — 8 biểu cảm đầu và 4 dáng toàn thân.
+Prompt đầy đủ: generation-prompts.txt.
+Đây là bản thiết kế mới để dựng lại nhân vật; chưa thay mèo trong web v07.
+
+HƯỚNG TẠO HÌNH
+Mèo kem có mảng caramel liền từ tai phải lên đỉnh đầu, khăn vàng nhỏ,
+tạp dề sage ngắn, tay chân mũm mĩm và đuôi ngắn cong có đầu caramel.
+Đầu là khối bo như hình thang, có bề ngang ở má; không dùng một quả cầu
+lớn với trán cao. Tai tam giác bo mềm, không dài như thỏ hoặc tròn như chuột.
+Má hồng là màu vẽ phẳng trên bề mặt. Không tạo hai cục má hoặc mõm nổi.
+Khăn, tạp dề và túi là phụ kiện tách được, không dùng chúng che lỗi tỷ lệ.
+
+TỶ LỆ KHỞI ĐIỂM CHO BLOCKOUT
+Quy ước chiều cao từ lòng bàn chân đến đầu tai H = 100.
+Đầu gồm tai khoảng 54; thân khoảng 32; phần chân lộ ra khoảng 14.
+Đầu rộng khoảng 58, thân rộng khoảng 44; thân phải hiện rõ dưới đầu.
+Không có cổ dài. Hai chân tách nhẹ, bàn chân rộng, mũi chân bo tròn.
+Tỷ lệ là mục tiêu cho blockout; hình phác thảo có sai số minh họa nhỏ.
+Ba góc kỹ thuật phải được căn lại theo cùng mốc mắt/cằm/vai/hông/bàn chân
+trong Blender trước khi dựng chi tiết. Ưu tiên nhất quán mô hình hơn việc
+chép từng pixel của ảnh. Vị trí mảng caramel được xác định theo bên PHẢI
+của nhân vật; không lật họa tiết tùy theo góc nhìn.
+
+BIỂU CẢM
+1. Bình thường: mắt mở, miệng W nhỏ, hiền và tỉnh táo.
+2. Vui vẻ: mắt cong khép, miệng mở cười.
+3. Ngạc nhiên: mắt mở lớn hơn, miệng O nhỏ, tai dựng.
+4. Tập trung: mí trên hạ nhẹ, chân mày nghiêng, không cau có mặc định.
+5. Tự hào: mắt hơi lim dim, nụ cười lệch nhẹ.
+6. Dỗi nhẹ: miệng chu, một tai nghiêng, vẫn đáng yêu.
+7. Buồn nhẹ: chân mày và khóe miệng hạ, tai hơi cụp.
+8. Buồn ngủ: mí rủ, ngáp nhỏ, tai thả lỏng.
+Dáng: chào khách, ăn mừng, tò mò chống cằm, ngồi nghỉ.
+
+GỢI Ý CHUYỂN SANG 3D
+Giữ đầu/thân/chi mềm, có chuyển tiếp; không ghép các khối hộp vào mặt.
+Má hồng và họa tiết lông dùng texture/mask; mắt và miệng cần đổi hình
+qua blendshape hoặc các biểu cảm mặt thay thế, không chỉ di chuyển mắt.
+Kiểm tra silhouette trơn không phụ kiện trước, rồi mới thêm khăn/tạp dề.
+Kiểm tra nét mặt ở đúng kích thước mèo trong khung chơi, bên cạnh cận cảnh.
+Đối chiếu một biểu cảm trung tính, một vui và một ngạc nhiên trước khi
+hoàn thiện toàn bộ biểu cảm; tránh dựng lại cả thuyền trong bước này.

@@ -1,0 +1,56 @@
+Browser tab: 5, Title: "Chọn anime tiếng Đức cho Kino", URL: "http://localhost:3000/qa/anime-official-shortlist/index.html".
+1 AXWebArea Chọn anime tiếng Đức cho Kino, URL: localhost:3000/qa/anime-official-shortlist/index.html
+	2 container
+		3 heading Anime tiếng Đức để chị chọn, Value: 1
+			4 text Anime tiếng Đức để chị chọn
+		5 text Mới bổ sung Demon Slayer, Chainsaw Man và Your Name: bốn video tiếng Đức đã thử phát nhúng trên máy chị. Các video mới là trailer hoặc bản tóm tắt; tập đầy đủ hiện có là Beyblade X ở danh sách trước. Chị chọn một ô rồi bấm Phát thử. Chưa thêm vào Kino.
+		6 container Description: Chọn anime, ID: choices
+			7 checkbox Demon Slayer – Thanh gươm diệt quỷ Mới · Trailer Đức · Sony Pictures · 1:30, Value: 1
+				8 text Demon Slayer – Thanh gươm diệt quỷ
+				9 text Mới · Trailer Đức · Sony Pictures · 1:30
+			10 checkbox Chainsaw Man – tóm tắt Mới · Tóm tắt tiếng Đức · Sony Pictures · 1:11, Value: 0
+				11 text Chainsaw Man – tóm tắt
+				12 text Mới · Tóm tắt tiếng Đức · Sony Pictures · 1:11
+			13 checkbox Chainsaw Man – Reze Arc Mới · Trailer Đức · Sony Pictures · 1:07, Value: 0
+				14 text Chainsaw Man – Reze Arc
+				15 text Mới · Trailer Đức · Sony Pictures · 1:07
+			16 checkbox Your Name – Tên cậu là gì? Mới · Trailer Đức · LEONINE Studios · 1:32, Value: 0
+				17 text Your Name – Tên cậu là gì?
+				18 text Mới · Trailer Đức · LEONINE Studios · 1:32
+			19 checkbox Beyblade X Tập 51 đầy đủ · 22:45 · Kênh BEYBLADE Đức chính thức, Value: 0
+				20 text Beyblade X
+				21 text Tập 51 đầy đủ · 22:45 · Kênh BEYBLADE Đức chính thức
+			22 checkbox Yu-Gi-Oh! – Vua Trò Chơi Trailer bản cổ điển · KSM Anime · 2 phút, Value: 0
+				23 text Yu-Gi-Oh! – Vua Trò Chơi
+				24 text Trailer bản cổ điển · KSM Anime · 2 phút
+			25 checkbox Digimon Adventure Trailer bản cổ điển · KSM Anime · 1:57, Value: 0
+				26 text Digimon Adventure
+				27 text Trailer bản cổ điển · KSM Anime · 1:57
+			28 checkbox Naruto – The Last Trailer tiếng Đức · KSM Anime · 1:17, Value: 0
+				29 text Naruto – The Last
+				30 text Trailer tiếng Đức · KSM Anime · 1:17
+		31 container stage
+			32 heading Demon Slayer – Thanh gươm diệt quỷ, Value: 2, ID: title
+				33 text Demon Slayer – Thanh gươm diệt quỷ
+			34 text Trailer của phim Infinity Castle do Sony Pictures Đức phát hành.
+			35 button ▶ Xem Demon Slayer – Thanh gươm diệt quỷ
+			36 container
+				37 button Phát thử, ID: play
+				38 button Dừng, ID: pause
+				39 link Description: Mở video gốc, Value: youtube.com/watch?v=NpjVT8pA1Zg, ID: source
+			40 text Bấm Phát thử để tải video từ YouTube.
+			41 text Trailer Deutsch; không phải phim hoặc tập đầy đủ.
+		42 text Frieren:
+		43 text  đã tìm thấy bản lồng tiếng Đức chính thức của Crunchyroll Deutschland, nhưng cả 
+		44 link Description: trích đoạn Ein magisches Wort, Value: youtube.com/watch?v=m6glWu0SaMM
+		45 text , 
+		46 link Description: video tóm tắt Synchro, Value: youtube.com/watch?v=8jmWiX9YJGo
+		47 text  và 
+		48 link Description: Phantome der Vergangenheit, Value: youtube.com/watch?v=t3_uYFazKrY
+		49 text  đều báo không cung cấp tại quốc gia hiện tại khi thử nhúng. Hai video SPY × FAMILY và trailer Solo Leveling đã thử cũng bị chặn khu vực. Các video này chưa được đưa vào danh sách phát được.
+		50 text Sakura – Thủ lĩnh thẻ bài:
+		51 text  chưa xác nhận được video chính thức vừa lồng tiếng Đức vừa nhúng được. Bài giới thiệu Sakura của ADN ngày 27/05/2026 ghi tiếng Nhật, phụ đề Đức; chưa đưa vào các lựa chọn đạt yêu cầu.
+		52 text Đã loại khỏi danh sách dùng ngay:
+		53 text  Pokémon mùa 1, Beyblade Metal Fusion và Beyblade Burst báo chặn khu vực khi thử nhúng; các link Pokémon Generationen và trailer Conan 25 đã thử báo không phát được. Không dùng mã nhúng tồn tại làm bằng chứng video phát được. Đã kiểm tra mã nhúng qua YouTube oEmbed và trạng thái đang phát bằng YouTube IFrame API ngày 23/10/2026. Kết quả chỉ áp dụng cho các video cụ thể dưới đây tại thời điểm thử. Nhúng không cấp quyền tải, đăng lại hay sao chép toàn bộ phụ đề. Trình phát chỉ tải khi chị bấm xem. Chất lượng được YouTube tự điều chỉnh theo mạng; chị có thể đổi trong phần cài đặt của video.
+
+The focused UI element is 1 AXWebArea Chọn anime tiếng Đức cho Kino, URL: localhost:3000/qa/anime-official-shortlist/index.html

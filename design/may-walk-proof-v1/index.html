@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thử bước đi cùng Mây</title>
+  <link rel="stylesheet" href="./motion.css" />
+</head>
+<body>
+  <main class="proof-shell">
+    <header class="proof-toolbar" aria-label="Bảng điều khiển bước đi của Mây">
+      <div class="proof-status-group">
+        <span class="proof-title">Thử bước đi cùng Mây</span>
+        <span
+          id="status-text"
+          class="status-badge"
+          role="status"
+          aria-live="polite"
+          data-asset-status="loading"
+        >Đang chuẩn bị...</span>
+        <span id="telemetry-text" class="telemetry-pill" hidden></span>
+      </div>
+
+      <div class="proof-controls" role="group" aria-label="Điều khiển di chuyển">
+        <button id="btn-walk-route" type="button" class="btn btn-primary" disabled>Đi thử</button>
+        <button id="btn-stop" type="button" class="btn" disabled>Dừng</button>
+        <button id="btn-reset" type="button" class="btn" disabled>Về đầu</button>
+        <span class="control-divider" aria-hidden="true"></span>
+        <button id="btn-dir-left" type="button" class="btn" data-dir="left" disabled>Trái</button>
+        <button id="btn-dir-right" type="button" class="btn" data-dir="right" disabled>Phải</button>
+        <button id="btn-dir-up" type="button" class="btn" data-dir="up" disabled>Lên</button>
+        <button id="btn-dir-down" type="button" class="btn" data-dir="down" disabled>Xuống</button>
+      </div>
+    </header>
+
+    <section class="stage-viewport" aria-label="Khung cảnh bãi cỏ">
+      <div id="stage-frame" class="stage-frame">
+        <canvas
+          id="walk-canvas"
+          width="1672"
+          height="941"
+          data-motion="idle"
+          data-direction="down"
+          data-frame="0"
+          data-asset-status="loading"
+          data-x="750"
+          data-y="610"
+        ></canvas>
+
+        <div
+          id="may-avatar-probe"
+          class="avatar-dom-probe"
+          data-motion="idle"
+          data-direction="down"
+          data-frame="0"
+          data-asset-status="loading"
+          data-x="750"
+          data-y="610"
+          aria-hidden="true"
+        ></div>
+
+        <div id="asset-notice" class="asset-notice" hidden>
+          <img
+            class="ref-thumb"
+            src="/assets/may-home-game/may-sprites.png"
+            alt="Hình Mây"
+          />
+          <div>
+            Chưa tải được hình bước đi của Mây. Vui lòng thử tải lại trang sau ít phút.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./motion.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      var manifest = Object.assign(
+        {},
+        MayWalkMotion.DEFAULT_MANIFEST,
+        window.MAY_WALK_MANIFEST || {}
+      );
+      window.MAY_WALK_MANIFEST = manifest;
+
+      var isDebugMode = false;
+      try {
+        var params = new URLSearchParams(window.location.search);
+        isDebugMode = params.get('debug') === '1';
+      } catch (_err) {
+        isDebugMode = false;
+      }
+
+      var canvas = document.getElementById('walk-canvas');
+      var ctx = canvas.getContext('2d');
+      var avatarProbe = document.getElementById('may-avatar-probe');
+      var statusBadge = document.getElementById('status-text');
+      var telemetryText = document.getElementById('telemetry-text');
+      var assetNotice = document.getElementById('asset-notice');
+
+      var btnWalkRoute = document.getElementById('btn-walk-route');
+      var btnStop = document.getElementById('btn-stop');
+      var btnReset = document.getElementById('btn-reset');
+      var dirButtons = [
+        document.getElementById('btn-dir-left'),
+        document.getElementById('btn-dir-right'),
+        document.getElementById('btn-dir-up'),
+        document.getElementById('btn-dir-down')
+      ];
+
+      var mediaQuery = window.matchMedia
+        ? window.matchMedia('(prefers-reduced-motion: reduce)')
+        : null;
+
+      var controller = MayWalkMotion.createMotionController({
+        startX: MayWalkMotion.DEFAULT_START_POINT.x,
+        startY: MayWalkMotion.DEFAULT_START_POINT.y,
+        strideLength: manifest.strideLength,
+        frameSequence: manifest.frameSequence,
+        reducedMotion: Boolean(mediaQuery && mediaQuery.matches)
+      });
+
+      if (mediaQuery && typeof mediaQuery.addEventListener === 'function') {
+        mediaQuery.addEventListener('change', function (e) {
+          controller.setReducedMotion(Boolean(e.matches));
+          syncDomAndRender();
+        });
+      }
+
+      var bgImage = new Image();
+      var bgLoaded = false;
+      bgImage.onload = function () {
+        bgLoaded = true;
+        renderScene();
+      };
+      bgImage.src = manifest.backgroundUrl;
+
+      var walkImage = null;
+      var measuredJsonData = null;
+      var sheetLayout = null;
+      var assetStatus = 'loading'; // 'loading' | 'ready' | 'unavailable'
+      var rafId = null;
+      var lastTimestamp = null;
+
+      function setControlsDisabled(disabled) {
+        btnWalkRoute.disabled = disabled;
+        btnStop.disabled = disabled;
+        btnReset.disabled = disabled;
+        for (var i = 0; i < dirButtons.length; i++) {
+          dirButtons[i].disabled = disabled;
+        }
+      }
+
+      function updateStatusUi(snap) {
+        var xRound = Math.round(snap.x);
+        var yRound = Math.round(snap.y);
+
+        canvas.setAttribute('data-motion', snap.motionState);
+        canvas.setAttribute('data-direction', snap.direction);
+        canvas.setAttribute('data-frame', String(snap.frameCol));
+        canvas.setAttribute('data-asset-status', assetStatus);
+        canvas.setAttribute('data-x', String(xRound));
+        canvas.setAttribute('data-y', String(yRound));
+
+        avatarProbe.setAttribute('data-motion', snap.motionState);
+        avatarProbe.setAttribute('data-direction', snap.direction);
+        avatarProbe.setAttribute('data-frame', String(snap.frameCol));
+        avatarProbe.setAttribute('data-asset-status', assetStatus);
+        avatarProbe.setAttribute('data-x', String(xRound));
+        avatarProbe.setAttribute('data-y', String(yRound));
+        avatarProbe.style.left = ((snap.x / manifest.worldWidth) * 100).toFixed(2) + '%';
+        avatarProbe.style.top = ((snap.y / manifest.worldHeight) * 100).toFixed(2) + '%';
+
+        statusBadge.setAttribute('data-asset-status', assetStatus);
+
+        if (assetStatus === 'loading') {
+          statusBadge.textContent = 'Đang chuẩn bị...';
+          assetNotice.hidden = true;
+        } else if (assetStatus === 'unavailable') {
+          statusBadge.textContent = 'Chưa tải được hình bước đi của Mây';
+          assetNotice.hidden = false;
+        } else {
+          assetNotice.hidden = true;
+          statusBadge.textContent = MayWalkMotion.formatSimpleStatusVi(snap);
+        }
+
+        if (isDebugMode) {
+          telemetryText.hidden = false;
+          telemetryText.textContent =
+            'dir: ' + snap.direction +
+            ' (row ' + snap.directionRow + ', col ' + snap.frameCol + ')' +
+            ' | state: ' + snap.motionState +
+            ' | (' + xRound + ', ' + yRound + ')';
+        } else {
+          telemetryText.hidden = true;
+          telemetryText.textContent = '';
+        }
+      }
+
+      function drawCharacter(snap) {
+        if (assetStatus !== 'ready' || !walkImage || !sheetLayout) {
+          return;
+        }
+
+        var rowLayout = sheetLayout.rows[snap.direction] || sheetLayout.rows.down;
+        var frameMeta = rowLayout.frames[snap.frameCol] || rowLayout.frames[0];
+        var scale = frameMeta.scale;
+
+        // 1. Simple stationary contact shadow anchored at world ground (x, y)
+        ctx.save();
+        ctx.fillStyle = 'rgba(42, 34, 23, 0.24)';
+        ctx.beginPath();
+        ctx.ellipse(snap.x, snap.y + 2, 26, 9, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+
+        // 2. Draw un-mirrored measured crop anchored by footYInCell -> snap.y and pivotXInCell -> snap.x
+        var destW = frameMeta.sw * scale;
+        var destH = frameMeta.sh * scale;
+        var destX = snap.x - frameMeta.pivotXInCell * scale;
+        var destY = snap.y - frameMeta.footYInCell * scale;
+
+        ctx.drawImage(
+          walkImage,
+          frameMeta.sx,
+          frameMeta.sy,
+          frameMeta.sw,
+          frameMeta.sh,
+          destX,
+          destY,
+          destW,
+          destH
+        );
+      }
+
+      function renderScene() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        if (bgLoaded) {
+          ctx.drawImage(bgImage, 0, 0, canvas.width, canvas.height);
+        } else {
+          ctx.fillStyle = '#d7dfb0';
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
+
+        var snap = controller.getSnapshot();
+        drawCharacter(snap);
+      }
+
+      function syncDomAndRender() {
+        var snap = controller.getSnapshot();
+        updateStatusUi(snap);
+        renderScene();
+      }
+
+      function stopAnimationLoop() {
+        if (rafId !== null) {
+          cancelAnimationFrame(rafId);
+          rafId = null;
+        }
+        lastTimestamp = null;
+      }
+
+      function tick(timestamp) {
+        if (lastTimestamp === null) {
+          lastTimestamp = timestamp;
+        }
+        var dtSeconds = Math.min(0.05, Math.max(0.001, (timestamp - lastTimestamp) / 1000));
+        lastTimestamp = timestamp;
+
+        var snap = controller.update(dtSeconds);
+        updateStatusUi(snap);
+        renderScene();
+
+        if (snap.motionState === 'walking' || snap.motionState === 'settling') {
+          rafId = requestAnimationFrame(tick);
+        } else {
+          stopAnimationLoop();
+        }
+      }
+
+      function ensureAnimationLoopIfActive() {
+        var snap = controller.getSnapshot();
+        syncDomAndRender();
+        if (
+          !snap.reducedMotion &&
+          (snap.motionState === 'walking' || snap.motionState === 'settling')
+        ) {
+          if (rafId === null) {
+            lastTimestamp = null;
+            rafId = requestAnimationFrame(tick);
+          }
+        } else {
+          stopAnimationLoop();
+        }
+      }
+
+      function markAssetUnavailable() {
+        walkImage = null;
+        measuredJsonData = null;
+        sheetLayout = null;
+        assetStatus = 'unavailable';
+        controller.stop();
+        controller.resetToStart();
+        setControlsDisabled(true);
+        syncDomAndRender();
+      }
+
+      function loadImagePromise(url) {
+        return new Promise(function (resolve, reject) {
+          var img = new Image();
+          img.onload = function () {
+            resolve(img);
+          };
+          img.onerror = function () {
+            reject(new Error('Image load failed'));
+          };
+          img.src = url;
+        });
+      }
+
+      function loadMeasuredJsonPromise(url) {
+        return fetch(url, { cache: 'no-cache' }).then(function (res) {
+          if (!res.ok) {
+            throw new Error('Manifest HTTP ' + res.status);
+          }
+          return res.json();
+        });
+      }
+
+      function loadDirectionalSpriteSheet(customImageUrl, customManifestUrl) {
+        var imageUrl = customImageUrl || manifest.spriteSheetUrl;
+        var jsonUrl = customManifestUrl || manifest.spriteManifestUrl;
+        assetStatus = 'loading';
+        setControlsDisabled(true);
+        syncDomAndRender();
+
+        Promise.all([
+          loadImagePromise(imageUrl),
+          loadMeasuredJsonPromise(jsonUrl)
+        ])
+          .then(function (results) {
+            var img = results[0];
+            var metaJson = results[1];
+            // Strictly build layout from explicit measured manifest; throws if malformed (no silent fallback)
+            var builtLayout = MayWalkMotion.buildSheetLayoutFromMeasuredManifest(metaJson, manifest);
+            walkImage = img;
+            measuredJsonData = metaJson;
+            sheetLayout = builtLayout;
+            assetStatus = 'ready';
+            setControlsDisabled(false);
+            syncDomAndRender();
+          })
+          .catch(function () {
+            markAssetUnavailable();
+          });
+      }
+
+      btnWalkRoute.addEventListener('click', function () {
+        if (assetStatus !== 'ready') return;
+        controller.startDefaultRoute();
+        ensureAnimationLoopIfActive();
+      });
+
+      btnStop.addEventListener('click', function () {
+        if (assetStatus !== 'ready') return;
+        controller.stop();
+        ensureAnimationLoopIfActive();
+      });
+
+      btnReset.addEventListener('click', function () {
+        if (assetStatus !== 'ready') return;
+        controller.resetToStart();
+        ensureAnimationLoopIfActive();
+      });
+
+      for (var i = 0; i < dirButtons.length; i++) {
+        dirButtons[i].addEventListener('click', function (e) {
+          if (assetStatus !== 'ready') return;
+          var dir = e.currentTarget.getAttribute('data-dir');
+          controller.stepDirection(dir, 135);
+          ensureAnimationLoopIfActive();
+        });
+      }
+
+      window.mayWalkApp = {
+        controller: controller,
+        manifest: manifest,
+        reloadSpriteSheet: loadDirectionalSpriteSheet,
+        rebuildLayout: function () {
+          if (walkImage && measuredJsonData) {
+            sheetLayout = MayWalkMotion.buildSheetLayoutFromMeasuredManifest(measuredJsonData, manifest);
+            syncDomAndRender();
+          }
+          return sheetLayout;
+        },
+        getLayout: function () {
+          return sheetLayout;
+        },
+        getAssetStatus: function () {
+          return assetStatus;
+        }
+      };
+
+      loadDirectionalSpriteSheet();
+    })();
+  </script>
+</body>
+</html>

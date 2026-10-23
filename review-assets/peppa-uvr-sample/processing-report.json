@@ -1,0 +1,30 @@
+{
+  "source_movie": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\video\\Peppa_Wutz_Supermarkt.mp4",
+  "source_sha256": "3068d5ad7fbe520e98ccd2ab779f1b0ec4ea566b55531e429c20f9693bc84b00",
+  "source_start_seconds": 11.0,
+  "source_end_seconds": 42.6,
+  "clip_duration_seconds": 31.6,
+  "model": "UVR-MDX-NET-Inst_HQ_4.onnx",
+  "model_sha256": "3c4b5b9b05090fdf238f38ba5046813982d50e2a652e9cb3324ea79720c3c9c8",
+  "model_source": "https://github.com/TRvlvr/model_repo/releases/download/all_public_uvr_models/UVR-MDX-NET-Inst_HQ_4.onnx",
+  "runner": "audio-separator (UVR model and UVR-derived MDX implementation; not the desktop GUI)",
+  "audio_separator_version": "0.47.1",
+  "torch_version": "2.5.1+cpu",
+  "device": "CPU",
+  "denoise": true,
+  "overlap": 0.25,
+  "amplification": "none; output is not raised to match the original dialogue loudness",
+  "separation_seconds": 71.4,
+  "initialization_and_separation_seconds": 77.29,
+  "outputs": [
+    "03-removed-voice-uvr.wav",
+    "02-background-uvr.wav"
+  ],
+  "audio_uploaded": false,
+  "notes": [
+    "Two stems only: this does not isolate individual characters.",
+    "Instrumental is an estimated background, not a guaranteed original music-and-effects stem.",
+    "Effects and laughter may follow the removed voice stem; inspect both outputs.",
+    "No application integration or source movie edits."
+  ]
+}

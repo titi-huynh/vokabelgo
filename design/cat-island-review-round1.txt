@@ -1,0 +1,23 @@
+Codex live browser + code review round 1. 3D loads with no console errors. Learning engine 17 behavioral tests PASS, including real FSRS. Please FIX all below and then run your own state machine tests; I continue browser QA. You own game/scene/HTML/CSS files, I do not edit these while you work.
+
+Critical gameplay defects found in current code:
+1. Calm engine limit=12 but ending requires ordersServed>=12. Skipped orders, merchant/chase nextQuestion(), or event questions consume the issued question budget without increments -> eventually no customers and never finish. Finish by a clear resolved-order target, or issue questions until 12 ordinary orders resolved (correct + skip). Story events MUST NOT steal unresolved main questions. Tiny deck pending-null still needs wait not early finish.
+2. submitAnswer ignores result.alreadyResolved; clicking an option or Enter several times in the 700ms success animation awards repeated coins and served count. Add per-customer resolution latch/disable and action guards, engine idempotent result must not award twice. Skip can likewise schedule multiple callbacks.
+3. setTimeout completion callbacks keep running during pause, events, after finish/quit and into next round. Use cancellable active-time task scheduler or generation guards, pause all gameplay timers and animations. tick() returns on rush expiry without requesting next RAF -> following rounds timer dead. Keep a single perpetual RAF and idempotent finish.
+4. Story events merely hide panel but do NOT pause rush clock/boat arrivals. Add distinct event state, pause ordinary timers, restore active question on exit (replenishCustomers doesn't select existing activeCustomerId, leaving panel hidden).
+5. Merchant/chase call nextQuestion() then force every type into meaning choices and grade meaning against engine recall/order/context answer -> corrupt evidence and unanswered pending. NO fake 'bến đò/món hàng lạ' distractors. Render true q type or use a separate engine session for optional event and finish it accurately. Don't leave skipped event questions pending. Preserve selected deck.
+6. Remove native alert() completely. Use in-game feedback and explicit continue. Current chase two routes have same difficulty but 15 vs25 reward so one dominated; add meaningful cost/length (easy1 vs hard2 real questions) and visual route/boat travel progress.
+7. Lesson second-stage button can be clicked repeatedly to farm coins; stage not terminal; stale applyPrompt on replay; +coins not profile coins. Fix latches, reset, learn -> apply -> finish coherent; must show both phrases first and only optional continue. All rewards exactly once.
+8. Barter subtracts only round coins not profile coins, HUD not updated, lotus already free in cosmetic selector. Make trade genuinely unlock a decor and save/reflect same balance, or offer useful temporary benefit explicitly. Disable unaffordable option visibly, no alerts.
+9. finishRound called on quit currently increments completed shifts and helper unlocked by quitting immediately twice. Distinguish abandoned vs completed; count completed only meaningful full calm round or rush expiry with >=1 served. zero attempts accuracy should show no evidence, not100%.
+
+Visual/UX review at1280x720:
+- Diorama cropped at bottom and behind 380px order panel. Fit whole scene into remaining left region on desktop; fit width on mobile. Camera must keep both cat faces front-facing.
+- Tutorial says click boat after question already auto-selected, with all3 boats spawned. First round begin ONE customer, explain answer -> package -> next, then2calm/3rush.
+- Need DOM customer-select buttons/indicators aligned to screen positions or clear compact customer rail; currently mouse-only canvas and same customer name after replenishing. Unique boat name/slot handling.
+- Remove technical 'Đồ họa3D v03 hoạt động' badge; useful diegetic status instead ('Bến chợ đã sẵn sàng'). Don't expose engineering terms in product.
+- Add visible market goods/counter sign/pole fruit original art, follow approvedv03 not generic emoji-dashboard.
+- HTML mode/cosmetic/route/lesson div clicks inaccessible: use button or correct roles/keyboard. Inputs need label/aria-label. Hidden dialogs aria-hidden/inert or display:none when hidden; native AX sees all hidden panels now. Allow zoom remove user-scalable=no.
+- Responsiveness mobile390: scene and panel must both usable without overflow/keyboard traps.
+
+Please correct then update status and report checks honestly. No need ask permission. Do not modify engine or existing games/Fuxie.
