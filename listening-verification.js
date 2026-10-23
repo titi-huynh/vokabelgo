@@ -6,6 +6,28 @@
 (function() {
   'use strict';
 
+  // Nạp trước danh sách giọng và giữ bản cache mới nhất: getVoices() đồng bộ
+  // thường rỗng ở lần gọi đầu, khiến lần nghe đầu tiên hụt giọng Đức.
+  let voicesCache = [];
+  function refreshVoices() {
+    try {
+      const v = window.speechSynthesis ? window.speechSynthesis.getVoices() : [];
+      if (Array.isArray(v) && v.length) voicesCache = v;
+    } catch (e) {}
+    return voicesCache;
+  }
+  if (typeof window !== 'undefined' && window.speechSynthesis) {
+    refreshVoices();
+    if (typeof window.speechSynthesis.addEventListener === 'function') {
+      window.speechSynthesis.addEventListener('voiceschanged', refreshVoices);
+    } else {
+      window.speechSynthesis.onvoiceschanged = refreshVoices;
+    }
+    if (window.VokabelTTS && typeof window.VokabelTTS.loadVoices === 'function') {
+      window.VokabelTTS.loadVoices().then(refreshVoices).catch(function () {});
+    }
+  }
+
   let schemaModule = null;
   function getSchema() {
     if (typeof window !== 'undefined' && window.VokabelCardSchema) return window.VokabelCardSchema;
@@ -57,6 +79,10 @@
      */
     stopListeningSpeech: function() {
       try {
+        // Dung ca audio thu san dang phat (VokabelAudio), khong chi speechSynthesis
+        if (typeof window !== 'undefined' && window.VokabelAudio && typeof window.VokabelAudio.stop === 'function') {
+          window.VokabelAudio.stop();
+        }
         if (
           typeof window !== 'undefined' &&
           window.speechSynthesis &&
@@ -170,9 +196,20 @@
      * @returns {boolean} true nếu speak thành công, false nếu lỗi synchronous hoặc không thể phát
      */
     speakPrompt: function(card, onEndCallback, onErrorCallback) {
-      if (!this.canUseSpeech()) return false;
       const text = this.getListeningText(card);
       if (!text) return false;
+      // Uu tien audio thu san (assets/vocab-audio/); VokabelAudio tu du phong
+      // sang TTS chon giong Duc khi the chua co file. Loi phat di qua onError.
+      if (window.VokabelAudio && typeof window.VokabelAudio.playCard === 'function') {
+        this.stopListeningSpeech();
+        window.VokabelAudio.playCard(card, {
+          rate: 0.9,
+          onEnd: onEndCallback,
+          onError: onErrorCallback || onEndCallback
+        });
+        return true;
+      }
+      if (!this.canUseSpeech()) return false;
 
       try {
         this.stopListeningSpeech();
@@ -181,9 +218,11 @@
         utterance.rate = 0.9;
 
         if (typeof window.speechSynthesis.getVoices === 'function') {
-          const voices = window.speechSynthesis.getVoices();
+          const voices = voicesCache.length ? voicesCache : refreshVoices();
           if (Array.isArray(voices) && voices.length > 0) {
-            const deVoice = voices.find(v => v && v.lang && v.lang.toLowerCase().startsWith('de'));
+            const deVoice = (window.VokabelTTS && typeof window.VokabelTTS.pickGermanVoice === 'function')
+              ? window.VokabelTTS.pickGermanVoice(voices)
+              : voices.find(v => v && v.lang && v.lang.toLowerCase().startsWith('de'));
             if (deVoice) {
               utterance.voice = deVoice;
             }

@@ -28,6 +28,7 @@ const MIME_TYPES = {
   '.gltf': 'model/gltf+json',
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
+  '.webmanifest': 'application/manifest+json',
   '.txt': 'text/plain; charset=utf-8',
   '.md': 'text/markdown; charset=utf-8',
   '.ico': 'image/x-icon'

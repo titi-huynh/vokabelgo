@@ -6,6 +6,7 @@
   <meta name="description" content="Teach Me — lớp luyện tập dùng chung của VokabelGo: dạy lại cho Zehn điều bạn vừa học, nhận phản hồi theo bằng chứng và ôn lại đúng lúc.">
   <meta name="theme-color" content="#FBF9F2">
   <link rel="icon" type="image/png" href="img/avatars/v2/cat_12.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Teach Me · Dạy Zehn một điều mới · VokabelGo</title>
   <link rel="stylesheet" href="app-shell.css">
   <link rel="stylesheet" href="teach-me.css">
@@ -30,5 +31,12 @@
   </footer>
   <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () {});
+    });
+  }
+  </script>
 </body>
 </html>

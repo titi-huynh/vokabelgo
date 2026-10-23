@@ -6,6 +6,7 @@
   <meta name="description" content="Khu Trò chơi của VokabelGo: Đấu Từ, Wortregen, Wortturm, Wortcrush và Chợ nổi Đảo Mèo — chơi mà học tiếng Đức.">
   <meta name="theme-color" content="#FBF9F2">
   <link rel="icon" type="image/png" href="img/avatars/v2/cat_12.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Trò chơi · VokabelGo</title>
   <link rel="stylesheet" href="app-shell.css">
   <style>
@@ -143,5 +144,12 @@
       <b>Mẹo nhỏ:</b> chơi game giúp gặp lại từ đã học trong tình huống mới, nhưng phần “ghi điểm nhớ” vẫn nằm ở mục <b>Học từ</b> và lớp <b>Teach Me</b> — nơi các từ khó được đưa vào lịch ôn cho bạn.
     </aside>
   </main>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () {});
+    });
+  }
+  </script>
 </body>
 </html>

@@ -6,6 +6,7 @@
 <meta name="description" content="VokabelGo — học tiếng Đức mỗi ngày cùng bé Mây: flashcard Đức–Việt, rạp Kino với phụ đề song ngữ, trò chơi từ vựng và lớp luyện tập Teach Me.">
 <meta name="theme-color" content="#FBF9F2">
 <link rel="icon" type="image/png" href="img/avatars/v2/cat_12.png">
+<link rel="manifest" href="manifest.webmanifest">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="VokabelGo">
 <meta property="og:title" content="VokabelGo · Học tiếng Đức cùng bé Mây">
@@ -9395,6 +9396,8 @@ input.search:focus {
 <script src="fsrs-srs.js"></script>
 <script src="vocabulary-schema.js"></script>
 <script src="typing-verification.js"></script>
+<script src="tts-de.js"></script>
+<script src="vocab-audio.js"></script>
 <script src="listening-verification.js"></script>
 <script src="learning-session.js"></script>
 <script src="learning-progress.js"></script>
@@ -14745,9 +14748,19 @@ function speak(){
       }
     }
   }
+  // Uu tien audio thu san cua tu vung loi; VokabelAudio tu du phong TTS khi khong co file.
+  if (window.VokabelAudio && typeof window.VokabelAudio.playCard === 'function') {
+    window.VokabelAudio.playCard(c, { rate: 0.9 });
+    return;
+  }
   if(!('speechSynthesis' in window)) return alert('Trình duyệt này không hỗ trợ đọc giọng nói.');
+  const termText = (c.term || '').replace(/[|]/g,'');
+  if (window.VokabelTTS && typeof window.VokabelTTS.speakGerman === 'function') {
+    window.VokabelTTS.speakGerman(termText, { rate: 0.9 });
+    return;
+  }
   speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance((c.term || '').replace(/[|]/g,''));
+  const u = new SpeechSynthesisUtterance(termText);
   u.lang = 'de-DE';
   u.rate = 0.9;
   speechSynthesis.speak(u);
@@ -15507,6 +15520,10 @@ window.handleSessionListeningInputKeydown = handleSessionListeningInputKeydown;
 
 function stopListeningSpeech() {
   try {
+    // Dung ca audio thu san dang phat (VokabelAudio), khong chi speechSynthesis
+    if (typeof window !== 'undefined' && window.VokabelAudio && typeof window.VokabelAudio.stop === 'function') {
+      window.VokabelAudio.stop();
+    }
     if (
       typeof window !== 'undefined' &&
       window.speechSynthesis &&
@@ -20132,5 +20149,12 @@ function playKinoMixtape(){
 <script src="may-home-game.js"></script>
 <script src="deep-links.js"></script>
 <script src="teach-me-invite.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').catch(function () {});
+  });
+}
+</script>
 </body>
 </html>

@@ -57,7 +57,8 @@ test.describe('E2E Phase 5: Listening Recall & Audio Dictation', () => {
     await expect(page.locator('#sessionListeningCanonical')).toBeEmpty();
     await expect(page.locator('#sessionListeningMeaning')).toBeEmpty();
 
-    const spokenCountBefore = await page.evaluate(() => window.__e2eSpokenTexts.length);
+    const spokenCountBefore = await page.evaluate(() => window.__e2eSpokenTexts.length +
+      ((window.VokabelAudio && window.VokabelAudio.history) ? window.VokabelAudio.history.length : 0));
     expect(spokenCountBefore).toBe(0);
 
     // 2. Click "Nghe từ"
@@ -65,10 +66,16 @@ test.describe('E2E Phase 5: Listening Recall & Audio Dictation', () => {
     await expect(btnPlay).toBeVisible();
     await btnPlay.click();
 
-    // Assert spoken text was recorded and matches canonical German answer exactly
-    const spokenTexts = await page.evaluate(() => window.__e2eSpokenTexts);
-    expect(spokenTexts.length).toBe(1);
-    expect(spokenTexts[0]).toBe('der Gesichtsausdruck'); // canonical answer, without plural annotation
+    // Assert the learner heard exactly the canonical German answer exactly once.
+    // Hai kenh hop le: audio thu san (VokabelAudio.history, via 'file') hoac TTS (__e2eSpokenTexts).
+    await expect.poll(async () => page.evaluate(() => window.__e2eSpokenTexts.length +
+      ((window.VokabelAudio && window.VokabelAudio.history) ? window.VokabelAudio.history.length : 0)),
+      { timeout: 5000 }).toBe(1);
+    const heardText = await page.evaluate(() => {
+      if (window.__e2eSpokenTexts.length) return window.__e2eSpokenTexts[0];
+      return window.VokabelAudio.history[0].spoken;
+    });
+    expect(heardText).toBe('der Gesichtsausdruck'); // canonical answer, without plural annotation
 
     // UI still does NOT reveal text before submit
     await expect(page.locator('#frontTerm')).toBeHidden();
@@ -252,6 +259,8 @@ test.describe('E2E Phase 5: Listening Recall & Audio Dictation', () => {
         };
       }
     });
+    // Kenh audio thu san cung phai loi thi moi kich hoat fallback (TTS la du phong cua file)
+    await page.route('**/assets/vocab-audio/**', route => route.abort());
 
     const fixture = createDeterministicDailySessionFixture();
     await seedStorage(page, fixture);
@@ -319,19 +328,22 @@ test.describe('E2E Phase 5: Listening Recall & Audio Dictation', () => {
     // Now in Listening b_3
     await expect(page.locator('#sessionListeningBox')).toBeVisible();
 
-    // Click Listen -> active = true
+    // Click Listen -> audio active (kenh TTS stub hoac file thu san qua VokabelAudio)
     await page.locator('#btnSessionListeningPlay').click();
-    const stateDuringAudio = await page.evaluate(() => window.__speechState);
-    expect(stateDuringAudio.active).toBe(true);
+    await expect.poll(async () => page.evaluate(() =>
+      window.__speechState.active || (window.VokabelAudio && window.VokabelAudio.isPlaying())),
+      { timeout: 5000 }).toBe(true);
 
     // Submit correct answer
     await page.locator('#sessionListeningInput').fill('der Gesichtsausdruck');
     await page.locator('#btnSessionListeningSubmit').click();
 
-    // Assert: cancel called on submit and audio is no longer active
+    // Assert: cancel called on submit and audio is no longer active (ca hai kenh)
     const stateAfterSubmit = await page.evaluate(() => window.__speechState);
     expect(stateAfterSubmit.cancelCount).toBeGreaterThan(0);
     expect(stateAfterSubmit.active).toBe(false);
+    const filePlayingAfterSubmit = await page.evaluate(() => window.VokabelAudio && window.VokabelAudio.isPlaying());
+    expect(filePlayingAfterSubmit).toBe(false);
 
     // Wait for auto-continue (450ms) -> next card appears
     await expect(page.locator('#frontTerm')).toContainText('die Mimik', { timeout: 7000 });
@@ -339,6 +351,8 @@ test.describe('E2E Phase 5: Listening Recall & Audio Dictation', () => {
     // Assert: speech remains inactive
     const stateAfterAdvance = await page.evaluate(() => window.__speechState);
     expect(stateAfterAdvance.active).toBe(false);
+    const filePlayingAfterAdvance = await page.evaluate(() => window.VokabelAudio && window.VokabelAudio.isPlaying());
+    expect(filePlayingAfterAdvance).toBe(false);
   });
 
   test('E2E 3a: Wrong Feedback Replay Visibility: Replay button visible on Wrong', async ({ page }) => {

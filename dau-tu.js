@@ -1488,7 +1488,7 @@
       <button class="primary" data-cmd="close">Về bàn chơi</button>
     `);
 
-    if ('speechSynthesis' in window) {
+    if ('speechSynthesis' in window || window.VokabelAudio || window.VokabelTTS) {
       $('speech-area').innerHTML = `<button class="secondary" data-cmd="speak" data-word="${escapeHtml(entry.lemma)}">🔊 Nghe phát âm</button>`;
     }
   }
@@ -1713,11 +1713,17 @@
       case 'again': startGame(); break;
       case 'speak': {
         const word = btn.dataset.word;
-        if (word && 'speechSynthesis' in window) {
+        if (word) {
           cancelSpeech();
-          const utter = new SpeechSynthesisUtterance(word);
-          utter.lang = 'de-DE';
-          window.speechSynthesis.speak(utter);
+          if (window.VokabelAudio && typeof window.VokabelAudio.playTerm === 'function') {
+            window.VokabelAudio.playTerm(word);
+          } else if (window.VokabelTTS && typeof window.VokabelTTS.speakGerman === 'function') {
+            window.VokabelTTS.speakGerman(word, { rate: 0.9 });
+          } else if ('speechSynthesis' in window) {
+            const utter = new SpeechSynthesisUtterance(word);
+            utter.lang = 'de-DE';
+            window.speechSynthesis.speak(utter);
+          }
         }
         break;
       }
