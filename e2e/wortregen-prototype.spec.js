@@ -36,7 +36,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
     }
 
     // Screenshot Start Screen
-    await page.screenshot({ path: 'screenshot_wortregen_start.png', fullPage: false });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortregen_start.png', fullPage: false });
 
     // 2. Click "Bắt đầu"
     await page.waitForFunction(() => window.wortregenGame !== undefined);
@@ -170,7 +170,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
     const groundedCard1 = page.locator(`#word-${miss1WordInfo.id}`);
     await expect(groundedCard1).toHaveClass(/word-grounded-reveal/);
     await expect(groundedCard1.locator('.word-card-reveal-de')).toHaveText(miss1WordInfo.de);
-    await page.screenshot({ path: 'screenshot_wortregen_ground_reveal.png', fullPage: false });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortregen_ground_reveal.png', fullPage: false });
 
     // Wait for the 1.2s reveal duration to elapse and card to be removed
     await page.waitForTimeout(1400);
@@ -252,7 +252,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
     await expect(page.locator('#btn-replay')).toBeVisible();
 
     // Screenshot Game Over Screen
-    await page.screenshot({ path: 'screenshot_wortregen_gameover.png', fullPage: false });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortregen_gameover.png', fullPage: false });
 
     // 11. Test Replay button
     await page.click('#btn-replay');
@@ -277,7 +277,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
     await page.click('#btn-start');
     await page.waitForSelector('.word-card');
     await page.waitForTimeout(2000); // let words spawn and fall
-    await page.screenshot({ path: 'screenshot_wortregen_desktop.png', fullPage: false });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortregen_desktop.png', fullPage: false });
 
     // Laptop Viewport (1024 x 768)
     await page.setViewportSize({ width: 1024, height: 768 });
@@ -298,7 +298,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
     await page.waitForSelector('.word-card');
     await page.waitForTimeout(2000);
     await expect(page.locator('.game-board')).toBeVisible();
-    await page.screenshot({ path: 'screenshot_wortregen_mobile.png', fullPage: false });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortregen_mobile.png', fullPage: false });
   });
 
   test('regression: 2 words touching ground simultaneously when lives === 1 yields lives === 0 and clean single game over', async ({ page }) => {
@@ -676,7 +676,7 @@ test.describe('Wortregen V0.1 Gameplay Prototype', () => {
     }
 
     // Capture in-action screenshot of typing directly on card
-    await page.screenshot({ path: 'screenshot_wortregen_typing.png', fullPage: false });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortregen_typing.png', fullPage: false });
 
     // Close page and context to finish video encoding
     await page.close();

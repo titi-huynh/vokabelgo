@@ -1,0 +1,130 @@
+/* ==========================================================================
+   VokabelGo — Vỏ chung (app shell) cho các trang vệ tinh (game, Teach Me...).
+   Token màu/font trích từ hệ thiết kế của trang chính (index.html):
+   nền giấy kem, mực nâu espresso, cam đất là màu chính, xanh olive phụ trợ.
+   Mọi trang vệ tinh nên nạp file này SAU css riêng của chúng.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+  --vg-paper: #FBF9F2;
+  --vg-paper-soft: #F5F8ED;
+  --vg-card: #FFFFFF;
+  --vg-ink: #2B241E;
+  --vg-ink-muted: #736B63;
+  --vg-border-soft: #DCE5CB;
+  --vg-primary: #DB5B23;
+  --vg-primary-hover: #C44D18;
+  --vg-olive: #8DB654;
+  --vg-olive-deep: #43583C;
+  --vg-butter: #FBE577;
+  --vg-sunflower: #FFBA18;
+  --vg-font-display: 'Fraunces', Georgia, serif;
+  --vg-font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --vg-shadow: 0 4px 0 rgba(43, 36, 30, 0.9);
+}
+
+/* Thanh điều hướng trên cùng dùng chung */
+.vg-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px;
+  background: rgba(251, 249, 242, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid var(--vg-border-soft);
+  font-family: var(--vg-font-body);
+}
+
+.vg-topbar .vg-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--vg-ink);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.1px;
+}
+
+.vg-topbar .vg-brand img {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  border: 2px solid var(--vg-ink);
+  background: #fff;
+}
+
+.vg-topbar .vg-brand small {
+  display: block;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  color: var(--vg-olive-deep);
+  text-transform: uppercase;
+}
+
+.vg-topnav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.vg-topnav a {
+  color: var(--vg-ink);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13.5px;
+  padding: 8px 13px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background: transparent;
+}
+
+.vg-topnav a:hover {
+  border-color: var(--vg-border-soft);
+  background: #fff;
+}
+
+.vg-topnav a.vg-cta {
+  background: var(--vg-primary);
+  border-color: var(--vg-ink);
+  color: #fff;
+  box-shadow: 0 3px 0 rgba(43, 36, 30, 0.9);
+}
+
+.vg-topnav a.vg-cta:hover {
+  background: var(--vg-primary-hover);
+}
+
+/* Nút quay về dạng viên thuốc nổi — cho trang toàn màn hình (vd Cat Island) */
+.vg-backpill {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 200;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 15px;
+  border-radius: 999px;
+  background: rgba(251, 249, 242, 0.95);
+  border: 2px solid var(--vg-ink);
+  box-shadow: 0 3px 0 rgba(43, 36, 30, 0.9);
+  color: var(--vg-ink);
+  font-family: var(--vg-font-body);
+  font-weight: 800;
+  font-size: 13.5px;
+  text-decoration: none;
+}
+
+.vg-backpill:hover {
+  background: var(--vg-butter);
+}

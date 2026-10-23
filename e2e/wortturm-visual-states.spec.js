@@ -29,7 +29,7 @@ test('Capture Wortturm Stacked & Game Over Visuals', async ({ page }) => {
   }
 
   // Screenshot of stacked tower
-  await page.screenshot({ path: 'screenshot_wortturm_stacked.png' });
+  await page.screenshot({ path: 'test-results/captures/screenshot_wortturm_stacked.png' });
 
   // Now trigger game over
   await page.evaluate(() => {
@@ -51,5 +51,5 @@ test('Capture Wortturm Stacked & Game Over Visuals', async ({ page }) => {
   await page.waitForTimeout(400);
 
   // Screenshot of game over
-  await page.screenshot({ path: 'screenshot_wortturm_game_over.png' });
+  await page.screenshot({ path: 'test-results/captures/screenshot_wortturm_game_over.png' });
 });

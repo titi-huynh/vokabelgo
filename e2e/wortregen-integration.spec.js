@@ -273,26 +273,26 @@ test.describe('Wortregen Phase 3: In-App Integration into "Học từ"', () => {
     // 1. In Học từ with study pills visible
     await page.locator('.nav-hub-btn[data-nav="study"]').click();
     await page.waitForTimeout(300);
-    await page.screenshot({ path: 'screenshot_wortregen_in_study_pills.png', fullPage: false });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortregen_in_study_pills.png', fullPage: false });
 
     // 2. Click Wortregen pill -> Start screen
     await page.locator('.study-mode-pill[data-studymode="wortregen"]').click();
     await expect(page.locator('#wortregenMode')).toBeVisible();
     await page.waitForTimeout(300);
-    await page.screenshot({ path: 'screenshot_wortregen_in_study_start.png', fullPage: false });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortregen_in_study_start.png', fullPage: false });
 
     // 3. Start game -> Playing screen with falling word
     await page.locator('#btn-start').click();
     await page.waitForSelector('#falling-area .card-target', { timeout: 5000 });
     await page.waitForTimeout(400);
-    await page.screenshot({ path: 'screenshot_wortregen_in_study_playing.png', fullPage: false });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortregen_in_study_playing.png', fullPage: false });
 
     // 4. Click ← Quay lại Học từ -> Return to Study
     await page.locator('#btn-back-to-study').click();
     await expect(page.locator('#wortregenMode')).toBeHidden();
     await expect(page.locator('#flashMode')).toBeVisible();
     await page.waitForTimeout(300);
-    await page.screenshot({ path: 'screenshot_wortregen_in_study_returned.png', fullPage: false });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortregen_in_study_returned.png', fullPage: false });
   });
 
 });

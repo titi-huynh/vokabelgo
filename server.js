@@ -56,9 +56,9 @@ const DEV_ONLY_PATHS = new Set([
   '/cat-island-boat-study.js',
   '/cat-island-boat-study.css',
   '/kino_v2_template.html',
-  '/kino_v3_html.html',
-  '/wortturm.html',                       // phòng chờ: prototype, chờ tân trang vào hub Trò chơi
-  '/wortcrush.html'                       // phòng chờ: prototype, chờ tân trang vào hub Trò chơi
+  '/kino_v3_html.html'
+  // Wortturm & Wortcrush đã tân trang theo hệ thiết kế chung và có lối vào
+  // từ hub Trò chơi — đã tốt nghiệp khỏi phòng chờ (2026-10-24).
 ]);
 
 function devPagesAllowed(req) {

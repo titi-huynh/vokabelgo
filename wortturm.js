@@ -362,7 +362,7 @@
     }
 
     getBlockColors(lvl) {
-      const hue = (200 + lvl * 14) % 360;
+      const hue = (84 + lvl * 14) % 360;
       return {
         bg: `hsl(${hue}, 72%, 50%)`,
         border: `hsl(${hue}, 80%, 40%)`,

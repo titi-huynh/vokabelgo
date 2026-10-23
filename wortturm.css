@@ -4,21 +4,21 @@
    ========================================================================== */
 
 :root {
-  --wt-bg: #0f172a;
-  --wt-surface: #1e293b;
-  --wt-surface-card: #334155;
-  --wt-text-main: #f8fafc;
-  --wt-text-muted: #94a3b8;
-  --wt-border: #475569;
-  --wt-primary: #38bdf8;
-  --wt-primary-glow: rgba(56, 189, 248, 0.4);
+  --wt-bg: #FBF9F2;
+  --wt-surface: #FFFFFF;
+  --wt-surface-card: #F5F8ED;
+  --wt-text-main: #2B241E;
+  --wt-text-muted: #736B63;
+  --wt-border: #DCE5CB;
+  --wt-primary: #8DB654;
+  --wt-primary-glow: rgba(141, 182, 84, 0.35);
   --wt-success: #10b981;
   --wt-warning: #f59e0b;
   --wt-danger: #ef4444;
   --wt-field-w: 360px;
   --wt-field-h: 420px;
   --wt-block-h: 36px;
-  --wt-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --wt-font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -89,10 +89,10 @@ body.wortturm-standalone {
   display: flex;
   align-items: baseline;
   gap: 6px;
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(43, 36, 30, 0.45);
   padding: 6px 14px;
   border-radius: 20px;
-  border: 1px solid rgba(56, 189, 248, 0.3);
+  border: 1px solid rgba(141, 182, 84, 0.3);
 }
 
 .hud-hoehe-label {
@@ -137,7 +137,7 @@ body.wortturm-standalone {
 .prompt-container {
   width: 100%;
   text-align: center;
-  background: rgba(30, 41, 59, 0.8);
+  background: rgba(255, 255, 255, 0.92);
   border: 1px solid var(--wt-border);
   border-radius: 12px;
   padding: 10px 16px;
@@ -164,7 +164,7 @@ body.wortturm-standalone {
   width: 100%;
   max-width: var(--wt-field-w);
   height: var(--wt-field-h);
-  background: radial-gradient(circle at 50% 30%, #1e293b 0%, #0f172a 100%);
+  background: radial-gradient(circle at 50% 30%, #FFFFFF 0%, #F1F5E4 100%);
   border: 2px solid var(--wt-border);
   border-radius: 16px;
   position: relative;
@@ -177,8 +177,8 @@ body.wortturm-standalone {
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(43, 36, 30, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(43, 36, 30, 0.05) 1px, transparent 1px);
   background-size: 20px 20px;
   pointer-events: none;
 }
@@ -220,7 +220,7 @@ body.wortturm-standalone {
 .wt-block-moving {
   z-index: 10;
   border: 1.5px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  box-shadow: 0 6px 16px rgba(141, 182, 84, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .wt-block-moving .block-text {
@@ -230,9 +230,9 @@ body.wortturm-standalone {
 
 /* Base Block (Level 0) */
 .wt-block-base {
-  background: linear-gradient(135deg, #475569 0%, #334155 100%);
-  border: 1px solid #64748b;
-  color: #cbd5e1;
+  background: linear-gradient(135deg, #B7D493 0%, #8DB654 100%);
+  border: 1px solid #5B8434;
+  color: #FFFFFF;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -302,7 +302,7 @@ body.wortturm-standalone {
   top: 16px;
   left: 50%;
   transform: translateX(-50%) translateY(-10px);
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(43, 36, 30, 0.55);
   border: 1.5px solid var(--wt-primary);
   color: #fff;
   font-size: 0.88rem;
@@ -323,9 +323,9 @@ body.wortturm-standalone {
 }
 
 .feedback-overlay.feedback-perfect {
-  border-color: #38bdf8;
-  color: #38bdf8;
-  box-shadow: 0 0 16px rgba(56, 189, 248, 0.6);
+  border-color: #8DB654;
+  color: #8DB654;
+  box-shadow: 0 0 16px rgba(141, 182, 84, 0.6);
 }
 
 .feedback-overlay.feedback-correct {
@@ -385,7 +385,7 @@ body.wortturm-standalone {
 }
 
 .btn-submit {
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  background: linear-gradient(135deg, #DB5B23 0%, #C44D18 100%);
   border: none;
   color: #fff;
   border-radius: 12px;
@@ -423,7 +423,7 @@ body.wortturm-standalone {
 .game-over-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(15, 23, 42, 0.94);
+  background: rgba(251, 249, 242, 0.94);
   backdrop-filter: blur(8px);
   display: none;
   flex-direction: column;
@@ -461,13 +461,13 @@ body.wortturm-standalone {
 }
 
 .game-over-height strong {
-  color: #38bdf8;
+  color: #8DB654;
   font-size: 1.5rem;
   font-weight: 800;
 }
 
 .btn-restart {
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  background: linear-gradient(135deg, #DB5B23 0%, #C44D18 100%);
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-family: inherit;

@@ -226,7 +226,7 @@ test.describe('WortCrush High-Fidelity Gameplay Preview E2E Tests', () => {
     await page.setViewportSize({ width: 1280, height: 800 });
     await page.goto('/wortcrush.html');
     await page.waitForTimeout(300);
-    await page.screenshot({ path: 'screenshot_wortcrush_desktop.png' });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortcrush_desktop.png' });
 
     // 2. Mobile Viewport (390x844 - iPhone 14 / modern smartphone)
     await page.setViewportSize({ width: 390, height: 844 });
@@ -238,7 +238,7 @@ test.describe('WortCrush High-Fidelity Gameplay Preview E2E Tests', () => {
     const clientWidth = await page.evaluate(() => document.documentElement.clientWidth);
     expect(scrollWidth).toBeLessThanOrEqual(clientWidth + 1);
 
-    await page.screenshot({ path: 'screenshot_wortcrush_mobile.png' });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortcrush_mobile.png' });
 
     // 3. Capture Shatter Animation Action Shot
     await page.evaluate(() => {
@@ -252,7 +252,7 @@ test.describe('WortCrush High-Fidelity Gameplay Preview E2E Tests', () => {
 
     // Wait 260ms into the shatter animation
     await page.waitForTimeout(260);
-    await page.screenshot({ path: 'screenshot_wortcrush_shatter.png' });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortcrush_shatter.png' });
   });
 
 });

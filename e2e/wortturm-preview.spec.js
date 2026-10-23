@@ -97,7 +97,9 @@ test.describe('Wortturm Prototype Preview E2E Tests', () => {
     await page.evaluate(() => {
       const g = window.__wortturmGameInstance;
       g.currentWord = { vi: 'học', de: 'lernen' };
-      // Align exactly with base block
+      // Align exactly with base block (đóng băng chuyển động như Scenario 5,
+      // nếu không khối sẽ trôi khỏi vị trí căn chỉnh trước khi kịp nhấn Enter)
+      g.speed = 0;
       g.currentX = g.BASE_LEFT;
       g.movingBlockEl.style.left = g.currentX + 'px';
     });
@@ -257,7 +259,7 @@ test.describe('Wortturm Prototype Preview E2E Tests', () => {
     await page.setViewportSize({ width: 1280, height: 800 });
     await page.goto('/wortturm.html');
     await page.waitForTimeout(300);
-    await page.screenshot({ path: 'screenshot_wortturm_desktop.png' });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortturm_desktop.png' });
 
     // 2. Mobile screenshot
     await page.setViewportSize({ width: 390, height: 844 }); // iPhone 12/13/14 size
@@ -270,7 +272,7 @@ test.describe('Wortturm Prototype Preview E2E Tests', () => {
     await expect(page.locator('#wortturm-input')).toBeVisible();
     await expect(page.locator('#btn-submit')).toBeVisible();
 
-    await page.screenshot({ path: 'screenshot_wortturm_mobile.png' });
+    await page.screenshot({ path: 'test-results/captures/screenshot_wortturm_mobile.png' });
   });
 
 });
