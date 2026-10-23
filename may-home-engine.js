@@ -1,4 +1,4 @@
-/* Path-only navigation for Mây's home. No learning or reward state lives here. */
+/* Path-only navigation for Zehn's home. No learning or reward state lives here. */
 (function (root, factory) {
   const api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api;

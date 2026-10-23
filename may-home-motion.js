@@ -1,4 +1,4 @@
-/* Reusable motion module for Mây: measured asset validation, direction resolver with hysteresis, and distance-based gait. */
+/* Reusable motion module for Zehn: measured asset validation, direction resolver with hysteresis, and distance-based gait. */
 (function (root, factory) {
   if (typeof module === 'object' && module.exports) {
     module.exports = factory();

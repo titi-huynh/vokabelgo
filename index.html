@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="VokabelGo — học tiếng Đức mỗi ngày cùng bé Mây: flashcard Đức–Việt, rạp Kino với phụ đề song ngữ, trò chơi từ vựng và lớp luyện tập Teach Me.">
+<meta name="description" content="VokabelGo — học tiếng Đức mỗi ngày cùng bé Zehn: flashcard Đức–Việt, rạp Kino với phụ đề song ngữ, trò chơi từ vựng và lớp luyện tập Teach Me.">
 <meta name="theme-color" content="#FBF9F2">
 <link rel="icon" type="image/png" href="img/avatars/v2/cat_12.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="VokabelGo">
-<meta property="og:title" content="VokabelGo · Học tiếng Đức cùng bé Mây">
+<meta property="og:title" content="VokabelGo · Học tiếng Đức cùng bé Zehn">
 <meta property="og:description" content="Flashcard Đức–Việt, Kino phụ đề song ngữ, trò chơi từ vựng và ôn tập theo lịch nhớ — bước nhỏ mỗi ngày, đi xa lúc nào không hay.">
 <meta property="og:image" content="img/avatars/v2/cat_12.png">
 <title>VokabelGo · Thư viện Flashcard tiếng Đức</title>
@@ -7444,12 +7444,12 @@ input.search:focus {
           <img id="dropdownAvatarImg" src="img/avatars/v2/cat_12.png" alt="Avatar mèo" class="header-profile-avatar" style="width:34px;height:34px;">
           <div>
             <div style="font-size:13.5px;font-weight:800;color:var(--ink-text);" id="dropdownProfileName">Bạn học</div>
-            <div style="font-size:11px;color:var(--ink-muted);">Bé mèo đồng hành</div>
+            <div style="font-size:11px;color:var(--ink-muted);">Zehn đồng hành</div>
           </div>
         </div>
         <button type="button" class="dropdown-menu-item" onclick="openCatPickerModal(); closeProfileDropdown();">
           <span>🐱</span>
-          <span>Đổi bé mèo đồng hành</span>
+          <span>Đổi hình Zehn</span>
         </button>
         <div class="dropdown-menu-item" id="openAuthBtn" onclick="openAuthModal(); closeProfileDropdown();" title="Tài khoản & Đồng bộ Đám mây" style="cursor:pointer;">
           <span class="auth-sync-icon" id="authSyncIcon">🔑</span>
@@ -7461,7 +7461,7 @@ input.search:focus {
         </div>
         <button type="button" class="dropdown-menu-item" id="catTourNavBtn" onclick="startCatSpotlightTour(); closeProfileDropdown();">
           <span>🧭</span>
-          <span>Bé mèo hướng dẫn web</span>
+          <span>Zehn hướng dẫn web</span>
         </button>
         <div class="dropdown-menu-divider"></div>
         <button type="button" class="dropdown-menu-item" id="manageBtn" onclick="openManageModal(); closeProfileDropdown();">
@@ -7493,24 +7493,24 @@ input.search:focus {
        ========================================================================= -->
   <section id="todayMode" class="today-dashboard-container" tabindex="-1" aria-label="Góc học hôm nay">
     <div class="may-game-home" id="mayGameHome">
-      <canvas id="mayIslandCanvas" width="1672" height="941" tabindex="0" aria-label="Vườn Mây tương tác. Chạm đường để Mây đi tới, kéo để ngắm vườn; dùng phím mũi tên để đi hoặc chọn địa điểm bằng nút bên dưới.">Vườn Mây. Chọn một địa điểm bằng các nút điều hướng.</canvas>
-      <div class="may-game-title"><p>HALLO, DU!</p><h1>Nhà của Mây</h1><span id="mayWorldHint">Chạm đường để Mây đi tới.</span></div>
+      <canvas id="mayIslandCanvas" width="1672" height="941" tabindex="0" aria-label="Vườn Zehn tương tác. Chạm đường để Zehn đi tới, kéo để ngắm vườn; dùng phím mũi tên để đi hoặc chọn địa điểm bằng nút bên dưới.">Vườn Zehn. Chọn một địa điểm bằng các nút điều hướng.</canvas>
+      <div class="may-game-title"><p>HALLO, DU!</p><h1>Nhà của Zehn</h1><span id="mayWorldHint">Chạm đường để Zehn đi tới.</span></div>
       <div class="may-place-layer" id="mayPlaceLayer">
-        <button type="button" data-may-place="house" aria-label="Đi tới Nhà Mây, mở hồ sơ">Nhà Mây <span aria-hidden="true">↗</span></button>
+        <button type="button" data-may-place="house" aria-label="Đi tới Nhà Zehn, mở hồ sơ">Nhà Zehn <span aria-hidden="true">↗</span></button>
         <button type="button" data-may-place="study" aria-label="Đi tới góc học từ, bắt đầu buổi học">Học từ <span aria-hidden="true">↗</span></button>
         <button type="button" data-may-place="kino" aria-label="Đi tới vườn nghe xem, mở rạp Kino">Nghe & xem <span aria-hidden="true">↗</span></button>
         <button type="button" data-may-place="fish" aria-label="Đi tới bến cá, mở bộ sưu tập">Hồ cá <span aria-hidden="true">↗</span></button>
         <button type="button" data-may-place="today" aria-label="Đi tới bảng hôm nay, xem tiến độ">Hôm nay <span aria-hidden="true">↗</span></button>
       </div>
-      <button type="button" class="may-character-touch" id="mayCharacterTouch" aria-label="Chào bé Mây"></button>
+      <button type="button" class="may-character-touch" id="mayCharacterTouch" aria-label="Chào bé Zehn"></button>
       <p class="may-world-speech" id="mayWorldSpeech" role="status" aria-live="polite">Bạn đến rồi. Mình học một chút nhé!</p>
       <div class="may-world-controls">
         <button type="button" id="mayWorldOverview" aria-controls="mayDailyOverview"><span id="mayWorldProgress">0 / 5 từ</span><small>Hôm nay ↗</small></button>
         <details class="may-world-options" id="mayWorldOptions">
-          <summary aria-label="Tùy chọn vườn Mây" title="Tùy chọn vườn Mây">⋯</summary>
+          <summary aria-label="Tùy chọn vườn Zehn" title="Tùy chọn vườn Zehn">⋯</summary>
           <div>
             <button type="button" id="mayWorldPause" aria-pressed="false">Dừng chuyển động</button>
-            <button type="button" id="mayWorldCenter">Tìm Mây</button>
+            <button type="button" id="mayWorldCenter">Tìm Zehn</button>
           </div>
         </details>
       </div>
@@ -7521,7 +7521,7 @@ input.search:focus {
           <span class="journal-cta-arrow" aria-hidden="true">↗</span>
         </button>
       </div>
-      <div class="may-world-loading" id="mayWorldLoading" role="status">Mây đang mở cửa đảo…</div>
+      <div class="may-world-loading" id="mayWorldLoading" role="status">Zehn đang mở cửa đảo…</div>
     </div>
     <dialog id="mayDailyOverview" class="may-daily-overview" aria-labelledby="mayOverviewTitle">
       <div class="may-overview-top"><h2 id="mayOverviewTitle">Góc học hôm nay</h2><button type="button" id="mayOverviewClose" aria-label="Đóng bảng hôm nay">×</button></div>
@@ -7546,7 +7546,7 @@ input.search:focus {
       </div>
 
       <h2 class="today-hero-title display-title" id="todayHeroTitle">Một chút hôm nay.&#10;Nhớ lâu mai sau.</h2>
-      <p class="today-hero-desc body-text" id="todayHeroDesc">Ôn lại từ cũ, gặp thêm từ mới. Bé mèo sẽ cùng bạn đi qua 5 từ của hôm nay.</p>
+      <p class="today-hero-desc body-text" id="todayHeroDesc">Ôn lại từ cũ, gặp thêm từ mới. Zehn sẽ cùng bạn đi qua 5 từ của hôm nay.</p>
 
       <!-- Daily 5-word Progress Track -->
       <div class="today-hero-progress-box">
@@ -7567,7 +7567,7 @@ input.search:focus {
       </div>
 
       <!-- Single Primary Action Button -->
-      <button type="button" class="today-primary-cta" onclick="document.getElementById('mayDailyOverview').close(); handleTodayPrimaryAction();">Học cùng Mây <span aria-hidden="true">↗</span></button>
+      <button type="button" class="today-primary-cta" onclick="document.getElementById('mayDailyOverview').close(); handleTodayPrimaryAction();">Học cùng Zehn <span aria-hidden="true">↗</span></button>
 
       <!-- Resume State Hint -->
       <div class="today-resume-hint" id="todayResumeHint">
@@ -7576,12 +7576,12 @@ input.search:focus {
       </div>
     </div>
 
-    <aside class="journal-companion" aria-label="Bé mèo đồng hành">
+    <aside class="journal-companion" aria-label="Zehn đồng hành">
       <p class="journal-eyebrow">MỘT NGƯỜI BẠN NHỎ</p>
       <div class="journal-cat-stage">
         <span class="journal-cat-orbit" aria-hidden="true"></span>
         <span class="journal-cat-star" aria-hidden="true">✳</span>
-        <img id="todayCatAvatarImg" src="img/avatars/v2/cat_12.png" alt="Bé mèo đồng hành của bạn" class="welcome-cat-avatar">
+        <img id="todayCatAvatarImg" src="img/avatars/v2/cat_12.png" alt="Zehn đồng hành của bạn" class="welcome-cat-avatar">
         <span class="journal-cat-note" aria-hidden="true">Hallo, du!</span>
       </div>
       <h3>Có mèo học cùng.</h3>
@@ -7656,7 +7656,7 @@ input.search:focus {
           <div>
             <div class="pathway-icon"><svg class="v-icon icon-md" aria-hidden="true"><use href="#icon-fish"></use></svg></div>
             <div class="pathway-title">Thăm chiếc hồ nhỏ</div>
-            <div class="pathway-sub">Cất giữ thành quả cùng bé mèo.</div>
+            <div class="pathway-sub">Cất giữ thành quả cùng Zehn.</div>
           </div>
           <div class="pathway-cta-text" aria-hidden="true">↗</div>
         </button>
@@ -16080,7 +16080,7 @@ function updateTodayDashboard(){
       } else if (progressTruth.needsReview > 0) {
         descEl.textContent = `Có ${progressTruth.needsReview} từ đến lượt ôn. Phiên 5 từ sẽ ưu tiên ôn lại và thêm từ mới vừa sức với bạn.`;
       } else {
-        descEl.textContent = 'Ôn lại từ cũ, gặp thêm từ mới. Bé mèo sẽ cùng bạn đi qua 5 từ của hôm nay.';
+        descEl.textContent = 'Ôn lại từ cũ, gặp thêm từ mới. Zehn sẽ cùng bạn đi qua 5 từ của hôm nay.';
       }
     }
     if (ctaText) ctaText.textContent = (isSessionInProgress || count > 0) ? 'Tiếp tục học cùng mèo' : 'Bắt đầu 5 từ hôm nay';

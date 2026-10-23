@@ -1,4 +1,4 @@
-/* Mây greets learners in the first screen, using the approved scene. */
+/* Zehn greets learners in the first screen, using the approved scene. */
 .today-welcome-bar.may-home-welcome {
   display: grid;
   grid-template-columns: minmax(230px, .85fr) minmax(0, 1.25fr);

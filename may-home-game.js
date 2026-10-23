@@ -25,7 +25,7 @@
   const initial = Number.isFinite(saved.x) && Number.isFinite(saved.y) ? E.project({x:saved.x,y:saved.y}).point : E.points.square;
   const walker = new E.Walker(initial);
   const places = {
-    house: { point: E.points.porch, label: [.62,.465], title: 'Nhà Mây', action: () => window.openCatPickerModal?.() },
+    house: { point: E.points.porch, label: [.62,.465], title: 'Nhà Zehn', action: () => window.openCatPickerModal?.() },
     study: { point: E.points.shore, label: [.23,.79], title: 'Góc học từ', action: () => window.handleTodayPrimaryAction?.() },
     kino: { point: E.points.garden, label: [.82,.42], title: 'Góc nghe & xem', action: () => window.setPrimaryHub?.('kino') },
     fish: { point: E.points.fish, label: [.89,.69], title: 'Bến cá', action: () => { window.setPrimaryHub?.('library'); window.setLibraryTab?.('fish'); } },
@@ -66,7 +66,7 @@
     }
     if (wasMoving) {
       speech.textContent='';
-      hint.textContent='Chạm đường để Mây đi tới. Kéo để ngắm vườn.';
+      hint.textContent='Chạm đường để Zehn đi tới. Kéo để ngắm vườn.';
     }
   }
   function project(point) { return {x:point.x*camera.scale+camera.x,y:point.y*camera.scale+camera.y}; }
@@ -125,7 +125,7 @@
     speech.style.transform = `translate(${clamp(p.x-100,14,Math.max(14,width-255))}px,${clamp(p.y-spriteHeight-65,85,height-200)}px)`;
   }
   function drawDockForeground(p) {
-    // Reuse pixels from the same illustration so the front piling can hide Mây's feet.
+    // Reuse pixels from the same illustration so the front piling can hide Zehn's feet.
     if (p.y >= 829 || p.x < 1370 || p.x > 1590) return;
     context.save();
     context.beginPath();
@@ -213,7 +213,7 @@
   function arrive(id) {
     const place = places[id]; if (!place) return;
     goalPoint = null; visited[id] = true; lastSavedPlace = id; save();
-    hint.textContent = 'Chạm đường để Mây đi tới. Kéo để ngắm vườn.';
+    hint.textContent = 'Chạm đường để Zehn đi tới. Kéo để ngắm vườn.';
     say(`Đến ${place.title.toLowerCase()} rồi!`,2.5);
     place.action();
     draw(); lifecycle();
@@ -223,7 +223,7 @@
     waveUntil = 0;
     camera.follow = true;
     goalPoint = place.point;
-    hint.textContent = `Mây đang đi tới ${place.title.toLowerCase()}…`;
+    hint.textContent = `Zehn đang đi tới ${place.title.toLowerCase()}…`;
     say('Đi cùng mình nhé!',2);
     const prevX = walker.position.x, prevY = walker.position.y;
     walker.go(place.point,id,lowMotion() || !assetsReady);
@@ -328,7 +328,7 @@
     if (!gesture || gesture.id !== event.pointerId) return;
     if (!gesture.drag && Math.hypot(event.clientX-gesture.x,event.clientY-gesture.y)>7) {
       gesture.drag = true; stopWalk();
-      hint.textContent = 'Kéo để ngắm vườn. Chạm một địa điểm để Mây đi tới.';
+      hint.textContent = 'Kéo để ngắm vườn. Chạm một địa điểm để Zehn đi tới.';
     }
     if (gesture.drag) {
       camera.follow = false; camera.x += event.clientX-gesture.lastX; camera.y += event.clientY-gesture.lastY;
