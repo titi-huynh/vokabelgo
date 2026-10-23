@@ -408,10 +408,37 @@
       // Sắp xếp Tier 4 (Future SRS fallback): thẻ gần đến hạn nhất lên trước
       tier4_futureSrs.sort((a, b) => a.dueMs - b.dueMs);
 
-      // Tạo review pool chuẩn: [Tier 1, Tier 2, Tier 3]
+      // Tạo review pool chuẩn: [Tier 1, Pha C: từ game sai, Tier 2, Tier 3]
       // Tuyệt đối KHÔNG đưa tier4_futureSrs (chưa tới hạn) vào review pool bình thường
+      // PHA C — từ chơi sai trong game 7 ngày gần nhất (sổ bằng chứng) được ưu
+      // tiên gặp lại ngay sau thẻ đến hạn thật, tối đa 5 từ, nằm TRONG quota ôn.
+      let revisitIds = [];
+      try {
+        if (typeof window !== 'undefined' && window.VokabelEvidence &&
+            typeof window.VokabelEvidence.recentWrong === 'function') {
+          const wrong = window.VokabelEvidence.recentWrong(7, 5);
+          const byTerm = new Map();
+          (allCardsList || []).forEach(c => {
+            if (!c || !c.term) return;
+            const k = window.VokabelEvidence.normalizeTermKey(c.term);
+            if (k && !byTerm.has(k)) byTerm.set(k, c.id);
+          });
+          const seenIds = new Set();
+          (wrong.cardIds || []).forEach(id => { if (id && !seenIds.has(id)) { seenIds.add(id); revisitIds.push(id); } });
+          (wrong.termKeys || []).forEach(k => {
+            const id = byTerm.get(k);
+            if (id && !seenIds.has(id)) { seenIds.add(id); revisitIds.push(id); }
+          });
+          revisitIds = revisitIds.slice(0, 5);
+        }
+      } catch (e) { revisitIds = []; }
+      try { this._lastRevisitIds = revisitIds; } catch (e) {}
+      const tier1Ids = tier1_dueSrs.map(x => x.id);
+      const tier1Set = new Set(tier1Ids);
+      const revisitOnly = revisitIds.filter(id => !tier1Set.has(id));
       const reviewPool = [
-        ...tier1_dueSrs.map(x => x.id),
+        ...tier1Ids,
+        ...revisitOnly,
         ...tier2_legacyUrgent.map(x => x.id),
         ...tier3_legacyKnown
       ];
@@ -715,6 +742,8 @@
           lastListeningResult: null,
           listeningFeedback: null
         };
+        // PHA C: đánh dấu nguồn "gặp lại từ game" để giao diện ghi nhãn.
+        if ((this._lastRevisitIds || []).includes(id)) targetStates[id].via = 'game-revisit';
       });
 
       const session = {

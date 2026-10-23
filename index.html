@@ -8625,13 +8625,20 @@ input.search:focus {
                 <div class="stat-value"><span id="monthlyCheckinCount">0</span> <span style="font-size:14px;font-weight:600">ngày học</span></div>
               </div>
             </div>
-            <div class="stat-card" id="statBuddyCard" style="cursor:pointer" title="Bấm để đổi bé mèo">
+            <div class="stat-card" id="statBuddyCard" style="cursor:pointer" title="Bấm để đổi hình Zehn">
               <div class="stat-icon-wrap stat-icon-buddy">
-                <img id="statBuddyImg" src="img/avatars/v2/cat_12.png" alt="Bé mèo" class="stat-buddy-img">
+                <img id="statBuddyImg" src="img/avatars/v2/cat_12.png" alt="Zehn" class="stat-buddy-img">
               </div>
               <div>
                 <div class="stat-label">Bạn học đồng hành</div>
                 <div class="stat-value" id="statBuddyName" style="font-size:18px">Chị</div>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon-wrap"><span style="font-size:18px" aria-hidden="true">🧭</span></div>
+              <div>
+                <div class="stat-label">Hoạt động 7 ngày · mọi mạch học</div>
+                <div class="stat-value" id="activityBySource7d" style="font-size:14px;font-weight:600">—</div>
               </div>
             </div>
           </div>
@@ -15108,6 +15115,13 @@ function renderSessionInteraction() {
   if (barEl) barEl.style.width = `${((interaction.completedCount) / interaction.totalTargets) * 100}%`;
   const statLine = document.getElementById('statusLine');
   if (statLine) statLine.textContent = `Phiên học hôm nay · Bước ${interaction.queueIndex + 1}/${interaction.queueTotal}`;
+  // PHA C: nhãn "gặp lại từ game" cho mục tiêu đến từ sổ bằng chứng.
+  try {
+    const sessNow = window.VokabelSession && typeof window.VokabelSession.getTodaySession === 'function' ? window.VokabelSession.getTodaySession() : null;
+    const curItem = sessNow && Array.isArray(sessNow.queue) ? sessNow.queue[sessNow.queueIndex] : null;
+    const tsNow = curItem && sessNow.targetStates ? sessNow.targetStates[curItem.cardId] : null;
+    if (statLine && tsNow && tsNow.via === 'game-revisit') statLine.textContent += ' · ↩ Gặp lại từ game';
+  } catch(e){}
 
   // Fill card content
   const frontTerm = document.getElementById('frontTerm');
@@ -16236,6 +16250,24 @@ function renderDayPlan(){
     if (s.teachme > 0) parts.push(`Teach Me ${s.teachme} phiên`);
     if (s.wrongTerms > 0) parts.push(`${s.wrongTerms} từ cần gặp lại trong buổi ôn tới`);
     sumEl.textContent = parts.length ? `Hoạt động khác hôm nay: ${parts.join(' · ')}.` : '';
+  }
+
+  // --- Thống kê 7 ngày theo nguồn (hiện ở mục điểm danh/Thư viện) ---
+  const actEl = document.getElementById('activityBySource7d');
+  if (actEl && window.VokabelEvidence && typeof window.VokabelEvidence.list === 'function') {
+    try {
+      const since = Date.now() - 7 * 86400000;
+      const counts = { session: 0, kino: 0, game: 0, teachme: 0 };
+      window.VokabelEvidence.list().forEach(e => {
+        if (e && e.ts >= since && e.kind === 'completed' && Object.prototype.hasOwnProperty.call(counts, e.source)) counts[e.source]++;
+      });
+      const bits = [];
+      if (counts.session) bits.push(`${counts.session} buổi học`);
+      if (counts.kino) bits.push(`${counts.kino} phần Kino`);
+      if (counts.game) bits.push(`${counts.game} ván game`);
+      if (counts.teachme) bits.push(`${counts.teachme} phiên Teach Me`);
+      actEl.textContent = bits.length ? bits.join(' · ') : 'Chưa ghi nhận — hãy học một buổi đầu tiên!';
+    } catch(e){}
   }
 
   // --- Trạng thái "xong ngày": mục tiêu từ xong VÀ không còn Teach Me đến hạn ---
