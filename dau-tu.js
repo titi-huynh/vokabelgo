@@ -1570,15 +1570,15 @@
       el.setAttribute('aria-pressed', String(m === mode));
     });
     $('btn-start').innerHTML = `Chơi bàn 4 người bộ ${nameDeck()} <span aria-hidden="true">→</span>`;
-    document.querySelector('.setup-note').textContent = `${mode === 'practice' ? 'Làm quen: Bạn đi trước.' : 'Ván thường: Chọn ngẫu nhiên bên đi trước.'} Bộ từ thử nghiệm, chưa gắn mức CEFR.`;
+    document.querySelector('.setup-note').textContent = `${mode === 'practice' ? 'Làm quen: Bạn đi trước.' : 'Ván thường: Chọn ngẫu nhiên bên đi trước.'} Đọc từ theo ngữ cảnh để ghi nhớ lâu hơn.`;
 
     const statusText = $('rotation-status-text');
     if (statusText) {
       const hist = DAU_TU_DATA.getVocabularyHistory ? DAU_TU_DATA.getVocabularyHistory() : null;
       if (hist && hist.matches.length > 0) {
-        statusText.textContent = `Đã chơi ${hist.matches.length} ván · Gặp ${Object.keys(hist.entries).length} từ vựng (0% trùng ván tiếp theo)`;
+        statusText.textContent = `Đã chơi ${hist.matches.length} ván · Đã gặp ${Object.keys(hist.entries).length} từ — ván sau ưu tiên từ mới`;
       } else {
-        statusText.textContent = `0% trùng lặp giữa 2 ván liên tiếp (Sẵn sàng 12 từ mới)`;
+        statusText.textContent = `12 từ mới đang chờ cho ván đầu tiên`;
       }
     }
   }

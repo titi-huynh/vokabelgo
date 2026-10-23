@@ -8,16 +8,48 @@
   let cloudSyncTimeout = null;
   let isSyncing = false;
 
+  // Tải thư viện Supabase theo yêu cầu: chỉ khi người dùng đã cấu hình
+  // Supabase của riêng họ thì mới cần tới CDN này (mặc định không tải).
+  let sbLibPromise = null;
+  function loadSupabaseLib() {
+    if (window.supabase && typeof window.supabase.createClient === 'function') {
+      return Promise.resolve(true);
+    }
+    if (sbLibPromise) return sbLibPromise;
+    sbLibPromise = new Promise((resolve) => {
+      const s = document.createElement('script');
+      s.src = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
+      s.onload = () => resolve(true);
+      s.onerror = () => {
+        console.warn('[VokabelGo Cloud] Không tải được thư viện @supabase/supabase-js.');
+        resolve(false);
+      };
+      document.head.appendChild(s);
+    });
+    return sbLibPromise;
+  }
+
   // Khởi tạo Supabase Client
   function initSupabase() {
-    if (!window.supabase || typeof window.supabase.createClient !== 'function') {
-      console.warn('[VokabelGo Cloud] Thư viện @supabase/supabase-js chưa sẵn sàng.');
+    if (!window.isSupabaseConfigured()) {
+      console.log('[VokabelGo Cloud] Supabase chưa được cấu hình. Ứng dụng chạy ở chế độ Khách (Offline/LocalStorage).');
       updateAuthUI();
       return false;
     }
 
-    if (!window.isSupabaseConfigured()) {
-      console.log('[VokabelGo Cloud] Supabase chưa được cấu hình. Ứng dụng chạy ở chế độ Khách (Offline/LocalStorage).');
+    if (!window.supabase || typeof window.supabase.createClient !== 'function') {
+      loadSupabaseLib().then((ok) => { if (ok) initSupabaseClient(); });
+      return false;
+    }
+
+    return initSupabaseClient();
+  }
+
+  function initSupabaseClient() {
+    if (sbClient) return true;
+
+    if (!window.supabase || typeof window.supabase.createClient !== 'function') {
+      console.warn('[VokabelGo Cloud] Thư viện @supabase/supabase-js chưa sẵn sàng.');
       updateAuthUI();
       return false;
     }

@@ -4,3 +4,11 @@
 *.wav filter=lfs diff=lfs merge=lfs -text
 *.blend filter=lfs diff=lfs merge=lfs -text
 *.glb filter=lfs diff=lfs merge=lfs -text
+# Bản hoa: hệ thống file phân biệt hoa/thường (Linux) không khớp mẫu chữ thường,
+# vd catfishing/catfishing.MP3 từng bị git coi là file nhị phân thường.
+*.ZIP filter=lfs diff=lfs merge=lfs -text
+*.MP4 filter=lfs diff=lfs merge=lfs -text
+*.MP3 filter=lfs diff=lfs merge=lfs -text
+*.WAV filter=lfs diff=lfs merge=lfs -text
+*.BLEND filter=lfs diff=lfs merge=lfs -text
+*.GLB filter=lfs diff=lfs merge=lfs -text

@@ -109,6 +109,10 @@
         p.x=clamp(character.x+side*(halfCharacter+labelWidth/2+18),labelWidth/2+8,width-labelWidth/2-8);
         p.y=character.y-characterHeight*.5;
       }
+      if (!outside) {
+        p.x = clamp(p.x, labelWidth / 2 + 8, Math.max(labelWidth / 2 + 8, width - labelWidth / 2 - 8));
+        p.y = clamp(p.y, labelHeight / 2 + 8, Math.max(labelHeight / 2 + 8, height - labelHeight / 2 - 8));
+      }
       button.style.transform = `translate(${p.x}px,${p.y}px) translate(-50%,-50%)`;
       button.setAttribute('aria-pressed', String(walker.intent === button.dataset.mayPlace));
     });
