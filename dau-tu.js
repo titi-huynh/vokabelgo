@@ -1553,6 +1553,7 @@
         </div>
         <button class="primary" data-cmd="again">Chơi lại bộ ${nameDeck(state.deckId)}</button>
         <button class="secondary" data-cmd="exit">Đổi bộ khác</button>
+        <p style="margin-top:10px;font-size:14px;"><a href="index.html" style="font-weight:700;color:var(--primary,#C44D18);text-decoration:none;">🏠 Về Hôm nay</a> · <a href="games.html" style="font-weight:700;color:var(--primary,#C44D18);text-decoration:none;">🎲 Hub Trò chơi</a></p>
       `);
     }, humanWon ? 1200 : 900);
   }

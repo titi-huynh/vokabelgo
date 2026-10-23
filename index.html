@@ -7763,7 +7763,7 @@ input.search:focus {
           <div id="sessionCompleteBox" class="session-complete-box hidden">
             <div class="session-complete-icon">🎉</div>
             <h3 class="session-complete-title">Hoàn thành 5 mục tiêu hôm nay!</h3>
-            <p class="session-complete-desc" id="sessionCompleteDesc">Bạn đã hoàn thành phiên học hôm nay. Bé mèo đã sẵn sàng nhận thưởng!</p>
+            <p class="session-complete-desc" id="sessionCompleteDesc">Bạn đã hoàn thành phiên học hôm nay. Zehn đã sẵn sàng nhận thưởng!</p>
             <div class="session-complete-actions">
               <button type="button" class="btn-session-reward-cta" id="btnSessionClaimReward" onclick="handleSessionClaimReward()">
                 <svg class="v-icon icon-sm" aria-hidden="true"><use href="#icon-reward"></use></svg>
@@ -7772,6 +7772,9 @@ input.search:focus {
               <button type="button" class="btn-session-secondary-cta" onclick="exitSessionToFreeStudy()">
                 <svg class="v-icon icon-sm" aria-hidden="true"><use href="#icon-library"></use></svg>
                 <span>Ôn tự do các thẻ khác</span>
+              </button>
+              <button type="button" class="btn-session-secondary-cta" onclick="setPrimaryHub('today')">
+                <span>🏠 Về Hôm nay</span>
               </button>
               <button type="button" class="btn-session-secondary-cta" id="btnSessionReturnToday" onclick="handleSessionReturnToday()">
                 <svg class="v-icon icon-sm" aria-hidden="true"><use href="#icon-today"></use></svg>
