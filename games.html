@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Khu Trò chơi của VokabelGo: Đấu Từ, Wortregen, Wortturm, Wortcrush và Chợ nổi Đảo Mèo — chơi mà học tiếng Đức.">
+  <meta name="theme-color" content="#FBF9F2">
+  <link rel="icon" type="image/png" href="img/avatars/v2/cat_12.png">
+  <title>Trò chơi · VokabelGo</title>
+  <link rel="stylesheet" href="app-shell.css">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--vg-paper);
+      color: var(--vg-ink);
+      font-family: var(--vg-font-body);
+    }
+    .games-wrap { max-width: 1060px; margin: 0 auto; padding: 28px 18px 56px; }
+    .games-hero h1 {
+      font-family: var(--vg-font-display);
+      font-size: clamp(30px, 5vw, 44px);
+      margin: 6px 0 8px;
+      line-height: 1.12;
+    }
+    .games-hero .kicker {
+      color: var(--vg-olive-deep);
+      font-weight: 800;
+      letter-spacing: 2.4px;
+      font-size: 11.5px;
+      text-transform: uppercase;
+    }
+    .games-hero p { color: var(--vg-ink-muted); font-size: 16px; margin: 0 0 6px; max-width: 620px; line-height: 1.55; }
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 18px;
+      margin-top: 26px;
+    }
+    .game-card {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      background: var(--vg-card);
+      border: 2px solid var(--vg-ink);
+      border-radius: 20px;
+      box-shadow: var(--vg-shadow);
+      padding: 22px 22px 20px;
+      text-decoration: none;
+      color: var(--vg-ink);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .game-card:hover { transform: translateY(-3px); box-shadow: 0 7px 0 rgba(43,36,30,0.9); }
+    .game-card .art { font-size: 40px; line-height: 1; }
+    .game-card h2 { font-family: var(--vg-font-display); font-size: 23px; margin: 2px 0 0; }
+    .game-card h2 small { font-family: var(--vg-font-body); font-size: 12px; color: var(--vg-olive-deep); font-weight: 800; letter-spacing: 0.4px; margin-left: 7px; text-transform: uppercase; }
+    .game-card p { margin: 0; color: var(--vg-ink-muted); font-size: 14.5px; line-height: 1.55; flex: 1; }
+    .game-card .meta { display: flex; gap: 7px; flex-wrap: wrap; }
+    .game-card .tag {
+      font-size: 11.5px; font-weight: 800; padding: 5px 10px; border-radius: 999px;
+      background: var(--vg-paper-soft); border: 1.5px solid var(--vg-border-soft); color: var(--vg-olive-deep);
+    }
+    .game-card .go { font-weight: 800; color: var(--vg-primary); font-size: 15px; }
+    .game-card.featured { background: linear-gradient(160deg, #FFFDF4, #F5F8ED); }
+    .games-note {
+      margin-top: 30px; padding: 16px 18px; border-radius: 16px;
+      background: var(--vg-paper-soft); border: 1.5px dashed var(--vg-border-soft);
+      color: var(--vg-ink-muted); font-size: 14px; line-height: 1.6;
+    }
+    .games-note b { color: var(--vg-ink); }
+  </style>
+</head>
+<body>
+  <header class="vg-topbar">
+    <a class="vg-brand" href="index.html"><img src="img/avatars/v2/cat_12.png" alt=""><span>VokabelGo<small>Dein Lernjournal</small></span></a>
+    <nav class="vg-topnav">
+      <a href="index.html">Hôm nay</a>
+      <a href="index.html?hub=study">Học từ</a>
+      <a href="index.html?hub=kino">Nghe &amp; xem</a>
+      <a href="teach-me.html">Teach Me</a>
+      <a href="index.html?hub=library">Thư viện</a>
+    </nav>
+  </header>
+
+  <main class="games-wrap">
+    <section class="games-hero">
+      <span class="kicker">Khu vui chơi của VokabelGo</span>
+      <h1>Trò chơi</h1>
+      <p>Học mà như không học. Mỗi trò chơi luyện một kỹ năng khác nhau — từ vựng gặp lại trong lúc chơi sẽ nhớ lâu hơn hẳn.</p>
+    </section>
+
+    <section class="games-grid" aria-label="Danh sách trò chơi">
+      <a class="game-card featured" href="dau-tu.html">
+        <span class="art" aria-hidden="true">🃏</span>
+        <h2>Đấu Từ <small>Trò chơi chính</small></h2>
+        <p>Game bài kiểu Uno với ba bot Max, Lena, Mia: đánh lá cùng màu hoặc cùng nghĩa, dùng lá đặc biệt để đảo nghĩa và đổi màu. Luyện từ đồng nghĩa theo ngữ cảnh câu thật.</p>
+        <span class="meta"><span class="tag">Đồng nghĩa</span><span class="tag">Ngữ cảnh</span><span class="tag">2–5 phút</span></span>
+        <span class="go">Vào bàn đấu →</span>
+      </a>
+
+      <a class="game-card" href="index.html?hub=study&amp;mode=wortregen">
+        <span class="art" aria-hidden="true">🌧️</span>
+        <h2>Wortregen <small>Mưa từ vựng</small></h2>
+        <p>Những giọt mưa mang từ tiếng Đức rơi xuống — bắt đúng nghĩa trước khi chúng chạm đất. Luyện phản xạ và nhận diện từ thật nhanh.</p>
+        <span class="meta"><span class="tag">Phản xạ</span><span class="tag">Nhận diện từ</span><span class="tag">1–3 phút</span></span>
+        <span class="go">Chơi trong mục Học từ →</span>
+      </a>
+
+      <a class="game-card" href="wortturm.html">
+        <span class="art" aria-hidden="true">🗼</span>
+        <h2>Wortturm <small>Tháp từ</small></h2>
+        <p>Gõ đúng từ tiếng Đức để thả khối xếp tháp. Căn càng chuẩn, tháp càng cao — sai một nhịp là khối bị cắt nhỏ dần. Luyện gõ từ và chính tả.</p>
+        <span class="meta"><span class="tag">Gõ từ</span><span class="tag">Chính tả</span><span class="tag">2–4 phút</span></span>
+        <span class="go">Xếp tháp →</span>
+      </a>
+
+      <a class="game-card" href="wortcrush.html">
+        <span class="art" aria-hidden="true">💎</span>
+        <h2>Wortcrush <small>Phá kính</small></h2>
+        <p>Bay xuyên qua các tấm kính từ vựng: dịch đúng để phá kính và đi tiếp, sai là kính nứt dần. Luyện dịch nhanh dưới áp lực nhẹ nhàng.</p>
+        <span class="meta"><span class="tag">Dịch nhanh</span><span class="tag">Gõ từ</span><span class="tag">2–4 phút</span></span>
+        <span class="go">Phá kính →</span>
+      </a>
+
+      <a class="game-card" href="cat-island.html">
+        <span class="art" aria-hidden="true">🏝️</span>
+        <h2>Cat Island <small>Chợ nổi Đảo Mèo</small></h2>
+        <p>Ghé chợ nổi 3D trên đảo mèo: chèo thuyền, ghé các sạp hàng và làm nhiệm vụ từ vựng ngắn để kiếm xu. Khu giải trí thư giãn sau giờ học.</p>
+        <span class="meta"><span class="tag">Khám phá 3D</span><span class="tag">Nhiệm vụ ngắn</span><span class="tag">Thư giãn</span></span>
+        <span class="go">Ra đảo →</span>
+      </a>
+
+      <a class="game-card" href="index.html?hub=library">
+        <span class="art" aria-hidden="true">🎣</span>
+        <h2>Hồ cá <small>Phần thưởng</small></h2>
+        <p>Hoàn thành mục tiêu ngày để câu cá và sưu tầm vào Hồ cá trong Thư viện. Học đều mỗi ngày, hồ cá đầy lúc nào không hay.</p>
+        <span class="meta"><span class="tag">Mục tiêu ngày</span><span class="tag">Sưu tầm</span></span>
+        <span class="go">Tới Hồ cá →</span>
+      </a>
+    </section>
+
+    <aside class="games-note">
+      <b>Mẹo nhỏ:</b> chơi game giúp gặp lại từ đã học trong tình huống mới, nhưng phần “ghi điểm nhớ” vẫn nằm ở mục <b>Học từ</b> và lớp <b>Teach Me</b> — nơi các từ khó được đưa vào lịch ôn cho bạn.
+    </aside>
+  </main>
+</body>
+</html>
