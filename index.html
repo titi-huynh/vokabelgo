@@ -7566,6 +7566,21 @@ input.search:focus {
         </div>
       </div>
 
+      <!-- 🗓️ KẾ HOẠCH HÔM NAY: gom mọi mạch học về một vòng -->
+      <div id="dayPlanBlock" style="margin-top:14px;border:1.5px solid var(--border,#e5ddcb);border-radius:14px;padding:12px 14px;background:rgba(255,255,255,.55);">
+        <p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--ink-muted,#8a7f6a);">KẾ HOẠCH HÔM NAY</p>
+        <div id="dayPlanTeachMeRow" style="display:none;align-items:center;justify-content:space-between;gap:10px;padding:6px 0;">
+          <span id="dayPlanTeachMeText" style="font-size:14px;"></span>
+          <a id="dayPlanTeachMeBtn" href="teach-me.html" style="font-size:13px;font-weight:700;color:var(--primary,#C44D18);text-decoration:none;white-space:nowrap;">Ôn cùng Zehn →</a>
+        </div>
+        <div id="dayPlanResumeRow" style="display:none;align-items:center;justify-content:space-between;gap:10px;padding:6px 0;">
+          <span id="dayPlanResumeText" style="font-size:14px;"></span>
+          <button type="button" id="dayPlanResumeBtn" style="font-size:13px;font-weight:700;color:var(--primary,#C44D18);background:none;border:none;cursor:pointer;white-space:nowrap;">Làm tiếp →</button>
+        </div>
+        <p id="dayPlanSummaryText" style="margin:6px 0 0;font-size:13px;color:var(--ink-muted,#8a7f6a);"></p>
+        <p id="dayPlanDoneText" style="margin:4px 0 0;font-size:13px;font-weight:700;"></p>
+      </div>
+
       <!-- Single Primary Action Button -->
       <button type="button" class="today-primary-cta" onclick="document.getElementById('mayDailyOverview').close(); handleTodayPrimaryAction();">Học cùng Zehn <span aria-hidden="true">↗</span></button>
 
@@ -9379,6 +9394,7 @@ input.search:focus {
 
 <!-- Daily Goal & Streak Engine -->
 <script src="daily-progress.js"></script>
+<script src="evidence-ledger.js"></script>
 
 <!-- Cloud Engines: Supabase (Chính thức) & Firebase (Dự phòng) -->
 <script>
@@ -16141,6 +16157,107 @@ function updateTodayDashboard(){
       }
     }
   }
+  if (typeof renderDayPlan === 'function') renderDayPlan();
+}
+
+// 🗓️ Kế hoạch hôm nay: gom Teach Me đến hạn + việc đang dở + tổng kết
+// hoạt động đủ các mạch (đọc từ sổ bằng chứng + kho Teach Me + resume).
+// Nguyên tắc: chỉ HIỂN THỊ và ĐIỀU PHỐI — không tự ghi điểm ở đây.
+function renderDayPlan(){
+  const tmRow = document.getElementById('dayPlanTeachMeRow');
+  const tmText = document.getElementById('dayPlanTeachMeText');
+  const tmBtn = document.getElementById('dayPlanTeachMeBtn');
+  const rsRow = document.getElementById('dayPlanResumeRow');
+  const rsText = document.getElementById('dayPlanResumeText');
+  const rsBtn = document.getElementById('dayPlanResumeBtn');
+  const sumEl = document.getElementById('dayPlanSummaryText');
+  const doneEl = document.getElementById('dayPlanDoneText');
+  if (!tmRow || !sumEl) return;
+
+  // --- Teach Me đến hạn / đang chờ ---
+  let dueCount = 0, pendingCount = 0, firstDueId = null;
+  try {
+    const raw = localStorage.getItem('vokabelgo_teachme_v1');
+    if (raw) {
+      const data = JSON.parse(raw);
+      const queue = (data && data.queue) || {};
+      const now = Date.now();
+      Object.keys(queue).forEach(id => {
+        const q = queue[id];
+        if (!q) return;
+        if (q.status === 'review' && q.dueAt && new Date(q.dueAt).getTime() <= now) { dueCount++; if (!firstDueId) firstDueId = id; }
+        else if (q.status === 'pending') pendingCount++;
+      });
+    }
+  } catch(e){}
+  window.__teachMeDueCount = dueCount;
+  if (tmRow && tmText && tmBtn) {
+    if (dueCount > 0) {
+      tmRow.style.display = 'flex';
+      tmText.textContent = `🐾 Teach Me: ${dueCount} nhiệm vụ đến hạn ôn`;
+      tmBtn.href = firstDueId ? `teach-me.html?task=${encodeURIComponent(firstDueId)}` : 'teach-me.html';
+      tmBtn.textContent = 'Ôn cùng Zehn →';
+    } else if (pendingCount > 0) {
+      tmRow.style.display = 'flex';
+      tmText.textContent = `🐾 Teach Me: ${pendingCount} nhiệm vụ đang chờ bạn nhận`;
+      tmBtn.href = 'teach-me.html';
+      tmBtn.textContent = 'Xem Teach Me →';
+    } else {
+      tmRow.style.display = 'none';
+    }
+  }
+
+  // --- Đang dở (Kino) ---
+  if (rsRow && rsText && rsBtn) {
+    let resume = null;
+    try { resume = typeof getLearningResumeState === 'function' ? getLearningResumeState() : null; } catch(e){}
+    if (resume && resume.lastMode === 'diktat' && resume.lastVideo) {
+      rsRow.style.display = 'flex';
+      rsText.textContent = `🎬 Đang xem dở một bài Kino (đến câu ${(resume.lastSentence || 0) + 1})`;
+      rsBtn.onclick = () => {
+        const dlg = document.getElementById('mayDailyOverview');
+        if (dlg) dlg.close();
+        if (typeof setPrimaryHub === 'function') setPrimaryHub('kino');
+      };
+    } else {
+      rsRow.style.display = 'none';
+    }
+  }
+
+  // --- Tổng kết hoạt động hôm nay theo sổ bằng chứng ---
+  if (window.VokabelEvidence && typeof window.VokabelEvidence.summaryForDay === 'function') {
+    const s = window.VokabelEvidence.summaryForDay();
+    const parts = [];
+    if (s.kino > 0) parts.push(`Kino ${s.kino} phần`);
+    if (s.game > 0) parts.push(`${s.game} ván game`);
+    if (s.teachme > 0) parts.push(`Teach Me ${s.teachme} phiên`);
+    if (s.wrongTerms > 0) parts.push(`${s.wrongTerms} từ cần gặp lại trong buổi ôn tới`);
+    sumEl.textContent = parts.length ? `Hoạt động khác hôm nay: ${parts.join(' · ')}.` : '';
+  }
+
+  // --- Trạng thái "xong ngày": mục tiêu từ xong VÀ không còn Teach Me đến hạn ---
+  let vocabDone = false;
+  try {
+    if (window.VokabelDaily && typeof window.VokabelDaily.getSummary === 'function') {
+      vocabDone = Boolean(window.VokabelDaily.getSummary().completed);
+    }
+  } catch(e){}
+  if (doneEl) {
+    if (vocabDone && dueCount === 0) {
+      doneEl.textContent = '✓ Xong ngày — hẹn gặp bạn ngày mai!';
+      doneEl.style.color = '#10B981';
+    } else if (vocabDone && dueCount > 0) {
+      doneEl.textContent = 'Đã xong phần từ — ôn nốt Teach Me đến hạn là trọn ngày.';
+      doneEl.style.color = 'var(--primary)';
+      const statusEl = document.getElementById('todayHeroProgressStatus');
+      if (statusEl && statusEl.textContent.indexOf('Hoàn thành') === 0) {
+        statusEl.textContent = 'Còn Teach Me đến hạn';
+        statusEl.style.color = 'var(--primary)';
+      }
+    } else {
+      doneEl.textContent = '';
+    }
+  }
 }
 
 function handleTodayPrimaryAction(){
@@ -20149,6 +20266,7 @@ function playKinoMixtape(){
 <script src="may-home-game.js"></script>
 <script src="deep-links.js"></script>
 <script src="teach-me-invite.js"></script>
+<script src="workflow-bridges.js"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () {

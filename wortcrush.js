@@ -706,6 +706,13 @@
       }
 
       if (result.status === 'wrong') {
+        if (window.VokabelEvidence && this.currentWord && this.currentWord.de) {
+          this._evWrong = this._evWrong || new Set();
+          if (!this._evWrong.has(this.currentWord.de)) {
+            this._evWrong.add(this.currentWord.de);
+            window.VokabelEvidence.record('game', 'wrong', { termKeys: [this.currentWord.de], ref: 'wortcrush' });
+          }
+        }
         this.triggerInputError(result.feedback);
         this.audio.playWrong();
         return;
@@ -718,6 +725,9 @@
       }
 
       if (result.isCorrect) {
+        if (window.VokabelEvidence && this.currentWord && this.currentWord.de) {
+          window.VokabelEvidence.record('game', 'correct', { termKeys: [this.currentWord.de], ref: 'wortcrush' });
+        }
         // Fast answer (< 2.5s) awards "PERFEKT!"
         const elapsed = (performance.now() - this.promptStartTime) / 1000;
         const isPerfekt = elapsed <= 2.5;
@@ -973,6 +983,9 @@
 
     endGame() {
       this.state = 'ENDED';
+      if (window.VokabelEvidence) {
+        window.VokabelEvidence.record('game', 'completed', { ref: 'wortcrush' });
+      }
       this.clearAllTimers();
       this.lockInput();
 

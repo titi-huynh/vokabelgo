@@ -30,6 +30,9 @@
 
   // Game state
   let state = null;
+  // Sổ bằng chứng học tập: lá người học đã đánh trong ván hiện tại.
+  const evPlayedEntries = new Set();
+  let evGameOverDone = false;
   let deckId = 'adjektive';
   let mode = 'practice'; // 'practice' (Làm quen) | 'classic' (Ván thường)
   let selected = null;
@@ -737,6 +740,10 @@
   }
 
   function applyCardPlayPostEffects(res, beforeState, playedCard, playerRole, chosenColor) {
+    // Sổ bằng chứng: ghi nhận các lá người học đã đánh ra trong ván này.
+    if (playerRole === 'player' && playedCard && playedCard.entryId) {
+      evPlayedEntries.add(playedCard.entryId);
+    }
     const whoName = E.getPlayerName(state, playerRole);
 
     if (res.wortKette) {
@@ -1058,6 +1065,8 @@
     hintId = null;
     showTranslation = false;
     learnedPairs = [];
+    evPlayedEntries.clear();
+    evGameOverDone = false;
     gameLog = [];
 
     // Cập nhật thẻ trạng thái vòng lặp từ vựng ở header
@@ -1520,6 +1529,13 @@
   function handleGameOver() {
     clearTimers();
     cancelSpeech();
+    if (window.VokabelEvidence && !evGameOverDone) {
+      evGameOverDone = true;
+      window.VokabelEvidence.record('game', 'completed', { ref: 'dau-tu' });
+      if (evPlayedEntries.size) {
+        window.VokabelEvidence.record('game', 'seen', { termKeys: [...evPlayedEntries], ref: 'dau-tu' });
+      }
+    }
     render();
     const humanWon = state.winner === 'player';
     runWinCelebration(state.winner);

@@ -1658,6 +1658,9 @@ import scene from './cat-island-scene.js';
     finishRound() {
       if (!this.isRoundActive) return;
       this.isRoundActive = false;
+      if (window.VokabelEvidence) {
+        window.VokabelEvidence.record('game', 'completed', { ref: 'cat-island' });
+      }
       this.clearScheduledActions();
 
       this.ui.orderPanel.classList.add('hidden');

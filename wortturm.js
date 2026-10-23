@@ -488,6 +488,13 @@
 
       if (!evaluation.isCorrect) {
         // WRONG: DO NOT DROP! Block keeps moving.
+        if (window.VokabelEvidence && this.currentWord && this.currentWord.de) {
+          this._evWrong = this._evWrong || new Set();
+          if (!this._evWrong.has(this.currentWord.de)) {
+            this._evWrong.add(this.currentWord.de);
+            window.VokabelEvidence.record('game', 'wrong', { termKeys: [this.currentWord.de], ref: 'wortturm' });
+          }
+        }
         this.audio.playWrong();
         this.showFeedback(evaluation.feedback, 'wrong');
 
@@ -507,6 +514,9 @@
       }
 
       // CORRECT: DROP BLOCK IMMEDIATELY at currentX!
+      if (window.VokabelEvidence && this.currentWord && this.currentWord.de) {
+        window.VokabelEvidence.record('game', 'correct', { termKeys: [this.currentWord.de], ref: 'wortturm' });
+      }
       this.isDropping = true;
       if (this.inputEl) this.inputEl.disabled = true;
 
@@ -685,6 +695,10 @@
         }
         if (this.gameOverOverlayEl) {
           this.gameOverOverlayEl.classList.add('show');
+        }
+        if (window.VokabelEvidence && !this._evDone) {
+          this._evDone = true;
+          window.VokabelEvidence.record('game', 'completed', { ref: 'wortturm' });
         }
       }, 400);
     }
