@@ -1,25 +1,22 @@
 // VokabelGo — Kino Shorts: đoạn trích hay mỗi ngày (Mục 9 cải thiện Kino).
-// Mỗi ngày chọn tất định một câu "pick" từ một phần của một phim (xoay vòng
-// theo ngày qua toàn bộ thư viện), hiện thành thẻ lớn đầu catalog. Bấm xem ->
-// mở đúng phần và phát đúng câu đó. Không cần nội dung mới: dùng picks sẵn có.
+// Mỗi ngày chọn tất định một thẻ từ có câu ví dụ từ lời thoại (xoay vòng theo
+// ngày qua toàn bộ thẻ video) làm "đoạn hay hôm nay" ở đầu catalog.
+// QUAN TRỌNG: bản này CHỈ dùng dữ liệu tĩnh (VIDEO_FLASHCARDS) — không tải
+// lời thoại khi mở catalog (giữ đúng hợp đồng tải lười của app). Bấm xem ->
+// mở đúng phần của phim; khi bài học đã nạp, tự nhảy tới câu ví dụ đó.
 (function () {
   'use strict';
   function esc(s) {
     return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
   function dayNumber() { return Math.floor(Date.now() / 86400000); }
-  function dailyTarget() {
-    if (typeof KINO_CHAPTER_DATA === 'undefined') return null;
-    var flat = [];
-    Object.entries(KINO_CHAPTER_DATA).forEach(function ([key, m]) {
-      (m.chapters || []).forEach(function (ch, i) {
-        if ((ch.picks || []).length) flat.push({ key: key, partIdx: i, chapter: ch });
-      });
+  function dailyCard() {
+    if (typeof VIDEO_FLASHCARDS === 'undefined' || typeof KINO_CHAPTER_DATA === 'undefined') return null;
+    var pool = VIDEO_FLASHCARDS.filter(function (c) {
+      return c && c.videoKey && c.example && c.sourceUrl && KINO_CHAPTER_DATA[c.videoKey];
     });
-    if (!flat.length) return null;
-    var t = flat[dayNumber() % flat.length];
-    t.pickId = t.chapter.picks[dayNumber() % t.chapter.picks.length];
-    return t;
+    if (!pool.length) return null;
+    return pool[dayNumber() % pool.length];
   }
   function jumpToCueText(cueText) {
     var norm = function (s) { return String(s || '').replace(/\s+/g, ' ').trim(); };
@@ -40,35 +37,28 @@
       } else if (tries > 25) clearInterval(timer);
     }, 700);
   }
-  async function render(container) {
-    var t = dailyTarget();
-    if (!t || typeof KinoData === 'undefined') { container.hidden = true; return; }
-    try { await KinoData.load(t.key); } catch (e) { container.hidden = true; return; }
-    var cues = KinoData.cues(t.key);
-    var cue = cues.find(function (c) { return c.id === t.pickId; });
-    if (!cue) { container.hidden = true; return; }
-    var idx = cues.indexOf(cue);
-    var next = cues[idx + 1];
-    var endAt = next ? Math.min(next.start, cue.start + 45) : cue.end;
-    var dur = Math.max(4, Math.round(endAt - cue.start));
-    var movie = KINO_CHAPTER_DATA[t.key];
+  function render(container) {
+    var card = dailyCard();
+    if (!card) { container.hidden = true; return; }
+    var movie = KINO_CHAPTER_DATA[card.videoKey];
+    var partMatch = /[?&]part=(\d+)/.exec(card.sourceUrl || '');
+    var part = partMatch ? Number(partMatch[1]) : 1;
     container.hidden = false;
     container.innerHTML =
-      '<img class="kino-short-poster" src="assets/kino-posters/' + t.key + '-1.jpg" alt="" width="480" height="270">'
+      '<img class="kino-short-poster" src="assets/kino-posters/' + card.videoKey + '-1.jpg" alt="" width="480" height="270">'
       + '<div class="kino-short-body">'
       + '<p class="kino-short-eyebrow">🎬 ĐOẠN HAY HÔM NAY</p>'
-      + '<strong class="kino-short-title">' + esc(movie.catalogTitle || movie.title) + ' · Phần ' + (t.partIdx + 1) + '</strong>'
-      + '<p class="kino-short-quote">„' + esc(cue.text) + '"</p>'
-      + (cue.vi ? '<p class="kino-short-vi">' + esc(cue.vi) + '</p>' : '')
-      + '<p class="kino-short-meta">Đoạn trích ~' + dur + ' giây · Đổi mới mỗi ngày</p>'
+      + '<strong class="kino-short-title">' + esc(movie.catalogTitle || movie.title) + ' · Phần ' + part + '</strong>'
+      + '<p class="kino-short-quote">„' + esc(card.example) + '"</p>'
+      + '<p class="kino-short-vi">Từ nổi bật trong đoạn: <strong>' + esc(card.term) + '</strong> — ' + esc(card.meaning || '') + '</p>'
+      + '<p class="kino-short-meta">Một câu thoại đáng nhớ mỗi ngày · Bấm xem để vào đúng đoạn trong bài</p>'
       + '<button type="button" class="kino-short-btn">▶ Xem đoạn này</button>'
       + '</div>';
     container.querySelector('.kino-short-btn').addEventListener('click', function () {
       try {
-        sessionStorage.setItem('vokabelgo_kino_short', JSON.stringify({ key: t.key, part: t.partIdx, cueText: cue.text }));
+        sessionStorage.setItem('vokabelgo_kino_short', JSON.stringify({ cueText: card.example }));
       } catch (e) {}
-      var alias = (typeof KINO_ALIASES !== 'undefined' && KINO_ALIASES[t.key]) || t.key;
-      location.assign('?kino=' + alias + '&part=' + (t.partIdx + 1));
+      location.assign(card.sourceUrl);
     });
   }
   // Sau khi điều hướng từ thẻ Short: tự nhảy tới đúng câu trong timeline.
@@ -81,5 +71,5 @@
     try { want = JSON.parse(raw); } catch (e) {}
     if (want && want.cueText) setTimeout(function () { jumpToCueText(want.cueText); }, 1200);
   })();
-  window.KinoShorts = { render: render, dailyTarget: dailyTarget };
+  window.KinoShorts = { render: render, dailyCard: dailyCard };
 })();

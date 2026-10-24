@@ -34,7 +34,7 @@ test('Frieren is discoverable, has complete chronological bilingual cues/units, 
   await expect(page.locator('#kinoMovieSeries')).toHaveText('FRIEREN · TẬP 1');
   await expect(page.locator('#kinoMovieSummary')).toContainText('26:00');
   await expect(page.locator('#kinoMovieSummary')).toContainText('B1–B2');
-  await expect(page.locator('#kinoMovieSummary')).toContainText('5 câu cần rà lời');
+  await expect(page.locator('#kinoMovieSummary')).not.toContainText('cần rà lời');
   await expect(page.locator('#kinoMovieVocabBtn')).toHaveText('📇 Ôn 24 từ và cụm từ');
   await expect(page.locator('.peppa-part')).toHaveCount(7);
   await expect(page.locator('#kinoDD_frieren_s01e01')).toHaveAttribute('data-key', 'frieren_s01e01');
