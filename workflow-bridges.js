@@ -102,7 +102,9 @@
     if (visible && !finishedSeen) {
       finishedSeen = true;
       var ref = currentKinoRef();
-      if (!window.VokabelEvidence.hasCompletedToday('kino', ref)) {
+      var unreviewedScene = false;
+      try { unreviewedScene = !!(window.UserScenes && typeof currentKinoVideoKey === 'string' && window.UserScenes.isUnreviewed(currentKinoVideoKey)); } catch (e) {}
+      if (!unreviewedScene && !window.VokabelEvidence.hasCompletedToday('kino', ref)) {
         window.VokabelEvidence.record('kino', 'completed', { ref: ref });
       }
       if (typeof window.renderDayPlan === 'function') window.renderDayPlan();

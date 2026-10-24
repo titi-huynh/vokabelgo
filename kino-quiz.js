@@ -131,9 +131,10 @@
       });
     }
     function renderEnd() {
+      const unreviewed = !!(window.UserScenes && window.UserScenes.isUnreviewed(key));
       try {
         if (window.VokabelEvidence) {
-          window.VokabelEvidence.record('kino', 'quiz', { ref: key + ':p' + (partIdx + 1) + ':' + score + '/' + qs.length });
+          if (!unreviewed) window.VokabelEvidence.record('kino', 'quiz', { ref: key + ':p' + (partIdx + 1) + ':' + score + '/' + qs.length });
           if (wrongTerms.length) {
             window.VokabelEvidence.record('kino', 'wrong', { ref: key + ':p' + (partIdx + 1), termKeys: wrongTerms });
           }
@@ -143,6 +144,7 @@
         <div style="text-align:center;padding:8px 0;">
           <div style="font-size:40px;">${score === qs.length ? '🌟' : score >= qs.length / 2 ? '💪' : '🌱'}</div>
           <h3 style="margin:8px 0 4px;">Bạn đạt ${score}/${qs.length}</h3>
+          ${unreviewed ? '<p style="color:#9a5b00;">Đang luyện — cảnh dùng phụ đề máy chưa rà nên kết quả chưa tính hoàn thành. Rà phụ đề trong mục Cảnh của bạn để mở tính năng ghi nhận.</p>' : ''}
           <p style="margin:0 0 6px;color:#5D5347;">${score === qs.length ? 'Hiểu bài rất chắc!' : 'Làm lại bất cứ lúc nào — câu hỏi sẽ được xáo trộn.'}</p>
           ${wrongTerms.length ? `<p style="margin:0 0 6px;color:#5D5347;">Từ chưa thuộc (${wrongTerms.map(esc).join(', ')}) sẽ được buổi học nhắc lại.</p>` : ''}
           <button type="button" class="kq-done" style="margin-top:10px;border:none;background:#52723f;color:#fff;border-radius:999px;padding:10px 22px;font-weight:700;cursor:pointer;">Đóng</button>
