@@ -1,11 +1,28 @@
 .kino-catalog[hidden], .kino-v3-root[hidden] { display: none !important; }
 .kino-catalog { max-width: 1240px; margin: 0 auto; padding: 16px; color: #30412f; scroll-margin-top: 20px; }
-.kino-catalog h1 { margin: 0 0 24px; font-family: var(--font-display); font-size: clamp(30px, 4vw, 40px); line-height: 1.2; }
-.kino-film-row { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 22px; padding: 4px 4px 20px; margin: -4px; list-style: none; overflow-x: auto; scroll-snap-type: x mandatory; }
-.kino-film-row > li { min-width: 0; scroll-snap-align: start; }
-.kino-film-card { display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #30412f; border-radius: 14px; }
+.kino-catalog h1 { margin: 0 0 8px; font-family: var(--font-display); font-size: clamp(30px, 4vw, 40px); line-height: 1.2; }
+.kino-catalog-sub { margin: 0 0 14px; color: #647958; font-size: 15px; }
+.kino-filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
+.kino-filter-chip { min-height: 38px; padding: 7px 14px; border: 1px solid #bac9ad; border-radius: 999px; background: #fcfbf6; color: #3e5c32; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.kino-filter-chip.active { background: #52723f; border-color: #52723f; color: #fff; }
+.kino-resume-row { margin: 0 0 22px; }
+.kino-resume-row h2 { margin: 0 0 10px; font-size: 19px; font-family: var(--font-display); }
+.kino-resume-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+.kino-resume-card { display: flex; gap: 12px; align-items: center; padding: 10px; border: 1px solid #d4ddc9; border-radius: 14px; background: #fcfbf6; text-decoration: none; color: #30412f; }
+.kino-resume-card img { width: 120px; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 9px; flex-shrink: 0; }
+.kino-resume-info { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.kino-resume-info strong { font-size: 16px; line-height: 1.35; }
+.kino-resume-info small { color: #5d7151; font-size: 13.5px; font-weight: 600; }
+.kino-film-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(205px, 1fr)); gap: 22px; padding: 4px; margin: -4px; list-style: none; }
+.kino-film-row > li { min-width: 0; }
+.kino-film-card { display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #30412f; border-radius: 14px; }
 .kino-film-card img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; background: #e8eddf; border: 1px solid #d4ddc9; box-sizing: border-box; }
-.kino-film-card strong { font-size: 18px; line-height: 1.5; font-weight: 600; padding: 0 2px; }
+.kino-film-card strong { font-size: 17px; line-height: 1.4; font-weight: 600; padding: 0 2px; overflow-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.8em; }
+.kino-film-meta { font-size: 13.5px; color: #647958; font-weight: 600; padding: 0 2px; }
+.kino-film-progress { display: flex; align-items: center; gap: 8px; padding: 0 2px; }
+.kino-film-progress-bar { display: inline-block; width: 74px; height: 7px; border-radius: 99px; background: #e2e9d5; overflow: hidden; flex-shrink: 0; }
+.kino-film-progress-bar > span { display: block; height: 100%; background: #6d9c4f; border-radius: 99px; }
+.kino-film-progress-text { font-size: 13px; color: #4c703a; font-weight: 700; }
 .kino-film-card:hover img { outline: 2px solid #78925e; outline-offset: 2px; }
 .kino-film-card:hover strong { color: #54733e; }
 .kino-film-card:focus-visible, #kinoCatalogBack:focus-visible { outline: 3px solid #a7732d; outline-offset: 4px; }
@@ -56,7 +73,9 @@
 #kinoLessonPanel #peppaFinished { margin: 20px 0; }
 .kino-chapters-active:not([data-kino-activity="write"]) #peppaFinished { display: none; }
 @media (max-width: 800px) {
-  .kino-film-row { grid-auto-columns: min(78vw, 340px); gap: 18px; }
+  .kino-film-row { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: min(78vw, 340px); gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 20px; }
+  .kino-film-row > li { scroll-snap-align: start; }
+  .kino-resume-list { grid-template-columns: 1fr; }
 }
 @media (max-width: 540px) {
   .kino-catalog { padding: 12px 4px; }

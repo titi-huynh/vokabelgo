@@ -10,7 +10,7 @@ const FRIEREN_S01E01_LESSON = (() => {
   const chapterData = {
     title: 'Das Ende der Reise', catalogTitle: 'Frieren · Tập 1', series: 'FRIEREN · TẬP 1',
     summary: 'Điểm kết thúc của hành trình · Nhóm anh hùng trở về sau mười năm đánh bại Ma Vương. Cái chết của Himmel mở ra cho Frieren chuyến đi mới để thấu hiểu con người.',
-    levelLabel: 'Gợi ý B1–B2 · Bản thử: 5 câu cần rà lời',
+    levelLabel: 'Gợi ý B1–B2',
     defaultMode: 'all', practiceModeVersion: 1,
     contentVersion: 1, captionCues: FRIEREN_S01E01_CAPTION_CUES,
     storageKey: 'vokabelgo_kino_chapters_v1_frieren_s01e01',

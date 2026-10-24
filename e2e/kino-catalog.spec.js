@@ -7,7 +7,7 @@ async function openCatalog(page) {
   await expect(page.locator('#kinoCatalog')).toBeVisible();
 }
 
-test('Kino starts with one row of covers and titles; a film opens its own parts', async ({ page }) => {
+test('Kino starts with a grid of covers, titles and level meta; a film opens its own parts', async ({ page }) => {
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
   await page.setViewportSize({ width: 1440, height: 1000 });
@@ -16,12 +16,20 @@ test('Kino starts with one row of covers and titles; a film opens its own parts'
   await expect(page.locator('#kinoDiscovery')).toBeHidden();
   await expect(page.locator('#kinoPeppaChapters')).toBeHidden();
   for (const card of await page.locator('.kino-film-card').all()) {
-    expect(await card.locator(':scope > *').evaluateAll(nodes => nodes.map(n => n.tagName))).toEqual(['IMG', 'STRONG']);
+    expect(await card.locator(':scope > *').evaluateAll(nodes => nodes.map(n => n.tagName))).toEqual(['IMG', 'STRONG', 'SPAN']);
     expect((await page.request.get(await card.locator('img').getAttribute('src'))).ok()).toBeTruthy();
     await expect(card).not.toContainText('phần');
+    // Meta hiển thị cấp độ hoặc thời lượng; tiêu đề không tràn khỏi thẻ (lỗi chồng chữ cũ)
+    await expect(card.locator('.kino-film-meta')).not.toBeEmpty();
+    const overflow = await card.locator('strong').evaluate(el => el.scrollWidth - el.clientWidth);
+    expect(overflow).toBeLessThanOrEqual(1);
   }
-  const tops = await page.locator('.kino-film-card img').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().top));
-  expect(new Set(tops).size).toBe(1);
+  // Không poster nào chồng lên poster nào trong lưới
+  const rects = await page.locator('.kino-film-card img').evaluateAll(nodes => nodes.map(n => { const r = n.getBoundingClientRect(); return { l: r.left, t: r.top, r: r.right, b: r.bottom }; }));
+  for (let i = 0; i < rects.length; i++) for (let j = i + 1; j < rects.length; j++) {
+    const a = rects[i], b = rects[j];
+    expect(a.l < b.r && b.l < a.r && a.t < b.b && b.t < a.b).toBeFalsy();
+  }
   await page.screenshot({ path: path.join(__dirname, '../test-results/captures/review-assets/kino-catalog-desktop.png') });
   for (const [key, count] of [['peppa_supermarkt', 5], ['pizzaschwester', 3], ['babysitter', 4], ['hans', 4], ['trudes_fahrstuhl', 5], ['erdmaennchen_nudeltrick', 7], ['erdmaennchen_schmucklose', 7], ['we_bare_bears_mall', 3], ['frieren_s01e01', 7], ['sakura_s01e01', 8]]) {
     await page.locator(`.kino-film-card[data-movie="${key}"]`).click();

@@ -2,8 +2,8 @@
 const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura' };
 const KINO_CHAPTER_DATA = {
   peppa_supermarkt: {
-    title: 'Im Supermarkt', series: 'PEPPA WUTZ',
-    storageKey: 'vokabelgo_kino_peppa_chapters_v1',
+    title: 'Im Supermarkt', series: 'PEPPA WUTZ', levelLabel: 'Gợi ý A1–A2',
+    storageKey: 'vokabelgo_kino_peppa_chapters_v1', cueCount: 312,
     legacyKey: 'vokabelgo_kino_progress_peppa_supermarkt', legacyCount: 106,
     get cues() { return PEPPA_ALIGNED_UTTERANCES; },
     chapters: [
@@ -20,8 +20,8 @@ const KINO_CHAPTER_DATA = {
   ]
   },
   pizzaschwester: {
-    title: 'Pizza-Schwestern', series: 'BLUEY',
-    storageKey: 'vokabelgo_kino_chapters_v1_pizzaschwester',
+    title: 'Pizza-Schwestern', series: 'BLUEY', levelLabel: 'Gợi ý A2',
+    storageKey: 'vokabelgo_kino_chapters_v1_pizzaschwester', cueCount: 193,
     legacyKey: 'vokabelgo_kino_pizzaschwester_v3', legacyCount: 72,
     get cues() { return PIZZA_ALIGNED_UTTERANCES; },
     chapters: [
@@ -37,8 +37,8 @@ const KINO_CHAPTER_DATA = {
     ]
   },
   babysitter: {
-    title: 'Die Babysitter', series: 'BLUEY',
-    storageKey: 'vokabelgo_kino_chapters_v1_babysitter',
+    title: 'Die Babysitter', series: 'BLUEY', levelLabel: 'Gợi ý A2',
+    storageKey: 'vokabelgo_kino_chapters_v1_babysitter', cueCount: 171,
     legacyKey: 'vokabelgo_kino_progress_babysitter', legacyCount: 64,
     get cues() { return BABYSITTER_ALIGNED_UTTERANCES; },
     chapters: [
