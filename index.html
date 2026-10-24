@@ -6633,6 +6633,15 @@ input.search:focus {
   color: #94a3b8;
   margin-top: 4px;
 }
+/* Mục 2: chế độ Mờ Việt — bấm vào dòng Việt để xem rõ */
+.kino-v3-sub-vi.sub-blur {
+  filter: blur(6px);
+  cursor: pointer;
+  transition: filter .2s ease;
+}
+.kino-v3-sub-vi.sub-blur.revealed {
+  filter: none;
+}
 .kino-v3-recording-hud {
   position: absolute;
   top: 12px;
@@ -19006,6 +19015,29 @@ let PIZZASCHWESTER_72_SEGMENTS = []; // Holds active segments for complete compa
 let kinoCurrentIndex = 0;
 let kinoPlaybackRate = 1.0;
 let kinoShowSubtitles = false;
+// Mục 2 cải thiện Kino: phụ đề 4 nấc — both (song ngữ) / de (chỉ Đức) /
+// blur (mờ dòng Việt, bấm để xem) / off (tắt). Lưu lựa chọn của người học.
+let kinoSubMode = (function(){ try { return localStorage.getItem('vokabelgo_kino_submode') || 'both'; } catch(e){ return 'both'; } })();
+const KINO_SUB_MODES = ['both', 'de', 'blur', 'off'];
+const KINO_SUB_LABELS = { both: 'Song ngữ', de: 'Chỉ Đức', blur: 'Mờ Việt', off: 'Tắt' };
+function applyKinoSubMode(){
+  kinoShowSubtitles = kinoSubMode !== 'off';
+  const overlay = document.getElementById('kinoSubOverlay');
+  if(overlay) overlay.classList.toggle('hidden-sub', kinoSubMode === 'off');
+  const vi = document.getElementById('kinoOverlayVi');
+  if(vi){
+    vi.style.display = kinoSubMode === 'de' ? 'none' : '';
+    vi.classList.toggle('sub-blur', kinoSubMode === 'blur');
+    vi.classList.remove('revealed');
+  }
+  const btn = document.getElementById('kinoToggleSubBtn');
+  if(btn){
+    btn.innerHTML = `CC <span>Phụ đề: ${KINO_SUB_LABELS[kinoSubMode]}</span>`;
+    btn.classList.toggle('active', kinoSubMode !== 'off');
+    btn.setAttribute('aria-pressed', String(kinoSubMode !== 'off'));
+    btn.title = 'Chuyển chế độ phụ đề: Song ngữ → Chỉ Đức → Mờ Việt → Tắt';
+  }
+}
 let kinoListenCountMap = {};
 let kinoAttemptCountMap = {};
 let kinoFailCountMap = {};
@@ -19335,6 +19367,7 @@ function loadKinoSentence(idx){
   // Overlay text
   document.getElementById('kinoOverlayDe').textContent = seg.text;
   document.getElementById('kinoOverlayVi').textContent = seg.vi;
+  if(typeof applyKinoSubMode === 'function') applyKinoSubMode();
 
   // Dub Target
   document.getElementById('kinoDubTargetDe').textContent = seg.text;
@@ -19395,9 +19428,8 @@ function formatKinoSeconds(sec){
 function updateSubtitleLockState(idx){
   if(KinoChapters.isActive()){
     const button = document.getElementById('kinoToggleSubBtn');
-    button.innerHTML = 'CC <span>Phụ đề</span>';
-    button.title = 'Bật hoặc tắt phụ đề bất cứ lúc nào';
-    button.setAttribute('aria-pressed', String(kinoShowSubtitles));
+    if(typeof applyKinoSubMode === 'function') applyKinoSubMode();
+    if(button) button.title = 'Chuyển chế độ phụ đề: Song ngữ → Chỉ Đức → Mờ Việt → Tắt';
     document.getElementById('kinoSubLockStatus').textContent = 'Phụ đề luôn có sẵn khi bạn cần';
     return;
   }
@@ -19484,13 +19516,16 @@ function toggleKinoSubtitles(){
     return;
   }
 
-  kinoShowSubtitles = !kinoShowSubtitles;
-  const overlay = document.getElementById('kinoSubOverlay');
-  if(overlay) overlay.classList.toggle('hidden-sub', !kinoShowSubtitles);
-  const btn = document.getElementById('kinoToggleSubBtn');
-  if(btn) btn.classList.toggle('active', kinoShowSubtitles);
-  if(btn) btn.setAttribute('aria-pressed', String(kinoShowSubtitles));
+  const next = KINO_SUB_MODES[(KINO_SUB_MODES.indexOf(kinoSubMode) + 1) % KINO_SUB_MODES.length];
+  kinoSubMode = next;
+  try { localStorage.setItem('vokabelgo_kino_submode', kinoSubMode); } catch(e){}
+  applyKinoSubMode();
 }
+// Bấm vào dòng Việt đang mờ để xem rõ (chế độ Mờ Việt).
+document.addEventListener('click', (e) => {
+  const vi = e.target && e.target.closest ? e.target.closest('#kinoOverlayVi.sub-blur') : null;
+  if(vi) vi.classList.toggle('revealed');
+});
 
 function insertKinoChar(char){
   const textarea = document.getElementById('kinoDiktatInput');
