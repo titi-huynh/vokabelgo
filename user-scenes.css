@@ -43,3 +43,10 @@
 .usc-ed-del { justify-self: end; }
 .usc-progress { height: 8px; border-radius: 99px; background: #e8ebf2; overflow: hidden; }
 .usc-progress > span { display: block; height: 100%; background: var(--accent, #2f6fed); transition: width .25s; }
+
+.usc-ed-video { width: 100%; max-height: 260px; border-radius: 10px; background: #000; }
+.usc-ed-shift { display: flex; gap: 8px; align-items: end; flex-wrap: wrap; border: 1px solid var(--line, #e3e6ee); border-radius: 10px; padding: 8px 10px; }
+.usc-ed-shift label { flex: 0 1 220px; }
+.usc-ed-row.usc-ed-flagged { border-color: #e8a33d; box-shadow: inset 3px 0 0 #e8a33d; }
+.usc-ed-chip { color: #9a5b00; font-size: .75rem; line-height: 1.35; }
+.usc-ed-play { font-size: .78rem; }

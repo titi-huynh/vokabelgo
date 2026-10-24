@@ -9,6 +9,24 @@
   const esc = s => String(s || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const fmtT = s => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
   let dlg = null, work = null, sceneId = null, onDoneCb = null, deletedAny = false;
+  let previewUntil = -1;
+  function flagFor(cue, prev) {
+    const reasons = [];
+    const dur = cue.end - cue.start;
+    if (dur > 8) reasons.push('câu dài ' + dur.toFixed(1) + 's');
+    if (dur < 0.4) reasons.push('quá ngắn');
+    if (cue.text.length > 140) reasons.push('nhiều chữ bất thường');
+    if (/[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\u0400-\u04FF]/.test(cue.text)) reasons.push('ký tự lạ — nghi máy nghe sai');
+    if (prev && prev.text && prev.text === cue.text) reasons.push('lặp câu trước');
+    return reasons;
+  }
+  function preview(cue) {
+    const v = $('uscEdVideo');
+    if (!v || !v.src) return;
+    previewUntil = cue.end;
+    v.currentTime = Math.max(0, cue.start);
+    v.play().catch(() => {});
+  }
 
   function open(id, onDone) {
     const scene = US().get(id);
@@ -23,6 +41,15 @@
     if (!dlg) build();
     render(scene);
     dlg.showModal();
+    const v = $('uscEdVideo');
+    v.hidden = true; v.removeAttribute('src');
+    US().prepare(US().keyOf(scene.id)).then(ok => {
+      if (!ok) return;
+      try {
+        const src = KINO_VIDEOS[US().keyOf(scene.id)]?.src;
+        if (src) { v.src = src; v.hidden = false; }
+      } catch (e) { /* bỏ qua xem trước */ }
+    });
   }
   function build() {
     dlg = document.createElement('dialog');
@@ -30,6 +57,11 @@
     dlg.innerHTML = '<form method="dialog" class="usc-form">'
       + '<header><h3>Sửa cảnh</h3><button type="submit" class="usc-x" aria-label="Đóng">✕</button></header>'
       + '<label>Tên cảnh <input id="uscEdTitle" type="text" maxlength="80"></label>'
+      + '<video id="uscEdVideo" class="usc-ed-video" controls playsinline hidden></video>'
+      + '<div class="usc-ed-shift"><label>Dịch toàn bộ mốc thời gian (giây) <input id="uscEdShift" type="number" step="0.1" value="0"></label>'
+      + '<button type="button" id="uscEdShiftBtn" class="btn">Dịch tất cả</button>'
+      + '<span class="usc-note">Dùng khi phụ đề lệch đều so với video (ví dụ lệch 1,5 giây thì nhập 1.5, lệch sớm thì nhập số âm).</span></div>'
+      + '<p id="uscEdFlags" class="usc-note"></p>'
       + '<div id="uscEdReviewRow"></div>'
       + '<div id="uscEdParts"></div>'
       + '<div id="uscEdList" class="usc-ed-list"></div>'
@@ -38,6 +70,20 @@
       + '<button type="button" id="uscEdSave" class="btn usc-primary">Lưu thay đổi</button></div></form>';
     document.body.append(dlg);
     $('uscEdSave').onclick = save;
+    $('uscEdShiftBtn').onclick = () => {
+      const d = +$('uscEdShift').value || 0;
+      if (!d) return;
+      for (const c of work.cues) {
+        c.start = Math.max(0, Math.round((c.start + d) * 100) / 100);
+        c.end = Math.max(c.start + 0.3, Math.round((c.end + d) * 100) / 100);
+      }
+      render(US().get(sceneId));
+      $('uscEdStatus').textContent = 'Đã dịch toàn bộ mốc ' + (d > 0 ? '+' : '') + d + 's (áp dụng khi Lưu).';
+    };
+    $('uscEdVideo').addEventListener('timeupdate', e => {
+      if (previewUntil > 0 && e.target.currentTime >= previewUntil) { e.target.pause(); previewUntil = -1; }
+    });
+    dlg.addEventListener('close', () => { const v = $('uscEdVideo'); if (v) v.pause(); });
   }
   function render(scene) {
     $('uscEdTitle').value = work.title;
@@ -60,14 +106,20 @@
     });
     const list = $('uscEdList');
     list.replaceChildren();
+    let flagCount = 0;
     work.cues.forEach((cue, idx) => {
+      const flags = flagFor(cue, work.cues[idx - 1]);
+      if (flags.length) flagCount++;
       const row = document.createElement('div');
-      row.className = 'usc-ed-row';
+      row.className = 'usc-ed-row' + (flags.length ? ' usc-ed-flagged' : '');
       row.innerHTML = '<div class="usc-ed-times"><span class="usc-ed-range">' + fmtT(cue.start) + ' – ' + fmtT(cue.end) + '</span>'
+        + '<button type="button" class="usc-ed-play">▶ Nghe đoạn này</button>'
+        + (flags.length ? '<span class="usc-ed-chip">⚠ ' + flags.join(' · ') + '</span>' : '')
         + '<span><button type="button" data-nudge="-0.2">−0,2s</button> <button type="button" data-nudge="0.2">+0,2s</button></span>'
         + '<button type="button" class="usc-ed-del">🗑 Xóa câu</button></div>'
         + '<div class="usc-ed-texts"><textarea data-f="text" lang="de" rows="2">' + esc(cue.text) + '</textarea>'
         + '<textarea data-f="vi" lang="vi" rows="2" placeholder="Bản dịch tiếng Việt (tùy chọn)">' + esc(cue.vi) + '</textarea></div>';
+      row.querySelector('.usc-ed-play').onclick = () => preview(cue);
       row.querySelectorAll('[data-nudge]').forEach(b => b.onclick = () => {
         const d = +b.dataset.nudge;
         cue.start = Math.max(0, Math.round((cue.start + d) * 100) / 100);
@@ -78,6 +130,7 @@
       row.querySelectorAll('textarea').forEach(t => t.addEventListener('input', () => { cue[t.dataset.f] = t.value; }));
       list.append(row);
     });
+    $('uscEdFlags').textContent = flagCount ? '⚠ ' + flagCount + ' câu cần chú ý (đã đánh dấu trong danh sách).' : '';
     $('uscEdStatus').textContent = work.cues.length + ' câu. Sửa chữ thoải mái; xóa câu sẽ xóa kèm bản thu của cảnh khi lưu.';
   }
   async function save() {
