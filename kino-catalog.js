@@ -60,7 +60,7 @@ const KinoCatalog = (() => {
     const genreRow = catalog.querySelector('.kino-genre-row');
     const activeFilter = { level: '', genre: '' };
     const applyFilters = () => {
-      catalog.querySelectorAll('.kino-film-row:not(.kino-coming-row) .kino-film-card').forEach(card => {
+      catalog.querySelectorAll('.kino-film-row .kino-film-card').forEach(card => {
         const li = card.closest('li');
         if (!li) return;
         const okLevel = !activeFilter.level || card.dataset.level === activeFilter.level;
@@ -207,7 +207,6 @@ const KinoCatalog = (() => {
     const hero = document.getElementById('kinoShortHero');
     if (hero && window.KinoShorts) window.KinoShorts.render(hero);
     if (window.UserScenesUI) window.UserScenesUI.renderSection();
-    if (window.KinoComing) window.KinoComing.render(catalog);
     stopPlayback();
     document.querySelector('.kino-more-tools')?.removeAttribute('open');
     detail.hidden = true;
