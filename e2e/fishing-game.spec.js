@@ -42,7 +42,9 @@ test.describe('E2E Fishing Game (giai đoạn 1)', () => {
     await action.click(); // bắt đầu quét thanh lực
     await expect(page.locator('#fgGauge')).toBeVisible();
     await action.click(); // chốt vùng rơi
-    await expect(page.locator('#fgBobber')).toBeVisible();
+    // Canvas: phao rời trạng thái ẩn (đang bay / đã nổi)
+    await expect.poll(async () => (await page.evaluate(() => window.VokabelFishingGame.__test.getScene())).bobberMode,
+      { timeout: 8000 }).not.toBe('hidden');
 
     // Chờ cá cắn (fast mode ~0,6s) rồi giật trong cửa sổ
     await expect.poll(async () => (await action.textContent()) || '', { timeout: 8000 })
@@ -52,9 +54,9 @@ test.describe('E2E Fishing Game (giai đoạn 1)', () => {
     // Pha kéo: giữ-nhả nhịp nhàng bằng phím Space tới khi lên cá
     const meters = page.locator('#fgMeters');
     await expect(meters).toBeVisible();
-    // Gói nước sống: cá hiện hình dưới nước + dây câu được vẽ thật
-    await expect(page.locator('#fgFightFish')).toHaveClass(/show/);
-    await expect.poll(async () => (await page.locator('#fgLinePath').getAttribute('d')) || '').toContain('M');
+    // Canvas: cá chính đang ở chế độ kéo và cần cong lên khi giữ nút
+    await expect.poll(async () => (await page.evaluate(() => window.VokabelFishingGame.__test.getScene())).heroMode,
+      { timeout: 8000 }).toBe('fight');
     const deadline = Date.now() + 45000;
     while (Date.now() < deadline) {
       const layerHidden = await page.locator('#rewardCatchRevealLayer').evaluate((el) => el.classList.contains('hidden')).catch(() => true);

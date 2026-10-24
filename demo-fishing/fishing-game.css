@@ -25,62 +25,17 @@
 }
 .fishing-game-layer.hidden { display: none; }
 
-.fishing-game-layer .fg-bg {
+.fishing-game-layer .fg-canvas {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-.fishing-game-layer .fg-water-shade {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  height: 46%;
-  background: linear-gradient(to bottom, rgba(13, 92, 110, 0), rgba(13, 92, 110, 0.25));
-}
-
-.fishing-game-layer .fg-zehn {
-  position: absolute;
-  left: 4%;
-  bottom: 30%;
-  width: 34%;
-  max-width: 240px;
-  filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.25));
-  pointer-events: none;
-}
-
-.fishing-game-layer .fg-fish-shadow {
-  position: absolute;
-  bottom: 16%;
-  width: 74px;
-  height: 22px;
-  margin-left: -37px;
-  border-radius: 50%;
-  background: rgba(9, 60, 74, 0.55);
-  opacity: 0;
-  transition: opacity 0.4s;
-  pointer-events: none;
+  display: block;
 }
 .fishing-game-layer .fg-shadow-telegraph { animation: fgTelegraph 0.4s linear infinite alternate; }
 .fishing-game-layer .fg-shadow-run { animation: fgRun 0.22s linear infinite alternate; }
 @keyframes fgTelegraph { from { transform: translateX(-3px); } to { transform: translateX(3px); } }
 @keyframes fgRun { from { transform: translateX(-13px) scaleX(1.12); } to { transform: translateX(13px) scaleX(1.12); } }
-
-.fishing-game-layer .fg-bobber {
-  position: absolute;
-  bottom: 34%;
-  width: 14px;
-  height: 20px;
-  margin-left: -7px;
-  border-radius: 8px;
-  background: linear-gradient(to bottom, #ef4444 0 45%, #ffffff 45% 60%, #ef4444 60% 100%);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: transform 0.15s;
-  pointer-events: none;
-}
-.fishing-game-layer .fg-bobber.hidden { display: none; }
-.fishing-game-layer .fg-bobber.nibble { transform: translateY(4px); }
-.fishing-game-layer .fg-bobber.sunk { transform: translateY(13px); }
 
 .fishing-game-layer .fg-bang {
   position: absolute;
@@ -225,185 +180,8 @@
 .fishing-game-meta.record::after { content: " ✨"; }
 @keyframes fgRecordPulse { from { transform: scale(1); } to { transform: scale(1.045); } }
 
-/* --- Gói "nước sống": sắc nước theo vùng, dây câu, cá hiện hình, hiệu ứng --- */
-.fishing-game-layer .fg-zone-tint {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  height: 46%;
-  pointer-events: none;
-  transition: background 0.8s;
-  background: rgba(2, 32, 71, 0);
-}
-.fishing-game-layer .fg-zone-tint.fg-tint-mid { background: rgba(2, 32, 71, 0.10); }
-.fishing-game-layer .fg-zone-tint.fg-tint-deep { background: rgba(2, 32, 71, 0.24); }
-
-.fishing-game-layer .fg-line-svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.fishing-game-layer .fg-fight-fish {
-  position: absolute;
-  bottom: 14%;
-  width: 17%;
-  margin-left: 0;
-  transform: translateX(-50%);
-  opacity: 0;
-  pointer-events: none;
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
-}
-.fishing-game-layer .fg-fight-fish.show { opacity: 1; }
-.fishing-game-layer .fg-fight-fish.under {
-  opacity: 0.96;
-  filter: brightness(0.82) saturate(0.92) drop-shadow(0 0 7px rgba(255, 255, 255, 0.45)) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
-}
-.fishing-game-layer .fg-fight-fish.surface {
-  opacity: 1;
-  filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.3));
-  animation: fgThrash 0.28s ease-in-out infinite alternate;
-  transform-origin: 50% 60%;
-}
-@keyframes fgThrash { from { rotate: -5deg; } to { rotate: 5deg; } }
-
-.fishing-game-layer .fg-fx {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-.fishing-game-layer .fg-ripple {
-  position: absolute;
-  bottom: 32.5%;
-  width: 34px;
-  height: 12px;
-  margin-left: -17px;
-  border: 2px solid rgba(255, 255, 255, 0.75);
-  border-radius: 50%;
-  animation: fgRipple 1.6s ease-out forwards;
-}
-.fishing-game-layer .fg-ripple.big { width: 52px; height: 18px; margin-left: -26px; }
-@keyframes fgRipple {
-  from { transform: scale(0.35); opacity: 0.95; }
-  to { transform: scale(1.9); opacity: 0; }
-}
-.fishing-game-layer .fg-drop {
-  position: absolute;
-  bottom: 35%;
-  width: 6px;
-  height: 8px;
-  margin-left: -3px;
-  border-radius: 50%;
-  background: rgba(224, 242, 254, 0.95);
-  animation: fgDrop 0.7s ease-in forwards;
-}
-.fishing-game-layer .fg-drop.big { width: 8px; height: 11px; }
-@keyframes fgDrop {
-  0% { transform: translate(0, 0); opacity: 1; }
-  70% { opacity: 1; }
-  100% { transform: translate(var(--dx, 0px), calc(var(--dy, -24px) + 34px)); opacity: 0; }
-}
-
-.fishing-game-layer .fg-fly-fish {
-  position: absolute;
-  bottom: 33%;
-  width: 21%;
-  transform: translateX(-50%);
-  pointer-events: none;
-  z-index: 5;
-  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.3));
-}
-
-/* Chuyển động của Zehn: đu đưa khi kéo cá + cá được nhấc lên treo ở đầu dây */
-.fishing-game-layer .fg-zehn { transform-origin: 50% 88%; }
-.fishing-game-layer .fg-zehn.fg-reeling-rock { animation: fgRock 0.9s ease-in-out infinite alternate; }
-.fishing-game-layer .fg-zehn.fg-reeling-rock.fg-reeling-hard { animation-duration: 0.45s; }
-@keyframes fgRock {
-  from { transform: rotate(-1.4deg) translateY(0); }
-  to { transform: rotate(1.4deg) translateY(-2px); }
-}
-.fishing-game-layer .fg-fight-fish.fg-lifted {
-  transform-origin: 50% 0%;
-  z-index: 6;
-  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.3));
-}
-
-.fishing-game-layer.fg-shake { animation: fgShake 0.36s linear; }
-@keyframes fgShake {
-  0%, 100% { transform: translate(0, 0); }
-  20% { transform: translate(-4px, 2px); }
-  40% { transform: translate(4px, -2px); }
-  60% { transform: translate(-3px, -1px); }
-  80% { transform: translate(3px, 1px); }
-}
-
-/* Sinh khí môi trường: vệt sáng trên nước, lá trôi, chuồn chuồn */
-.fishing-game-layer .fg-ambient { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
-.fishing-game-layer .fg-shimmer {
-  position: absolute;
-  bottom: 6%;
-  left: -20%;
-  width: 55%;
-  height: 34%;
-  background: linear-gradient(100deg, rgba(255,255,255,0) 20%, rgba(255,255,255,0.13) 50%, rgba(255,255,255,0) 80%);
-  animation: fgShimmer 11s ease-in-out infinite alternate;
-}
-@keyframes fgShimmer { from { transform: translateX(0) skewX(-8deg); } to { transform: translateX(52%) skewX(-8deg); } }
-.fishing-game-layer .fg-leaf {
-  position: absolute;
-  top: -4%;
-  width: 13px;
-  height: 8px;
-  border-radius: 60% 40% 60% 40%;
-  background: rgba(217, 119, 6, 0.75);
-  animation: fgLeafFall linear infinite;
-}
-.fishing-game-layer .fg-leaf-1 { left: 22%; animation-duration: 17s; }
-.fishing-game-layer .fg-leaf-2 { left: 64%; animation-duration: 23s; animation-delay: -9s; background: rgba(101, 163, 13, 0.7); }
-@keyframes fgLeafFall {
-  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
-  8% { opacity: 1; }
-  55% { transform: translate(26px, 34vh) rotate(190deg); opacity: 1; }
-  92% { opacity: 1; }
-  100% { transform: translate(-12px, 62vh) rotate(330deg); opacity: 0; }
-}
-.fishing-game-layer .fg-dragonfly {
-  position: absolute;
-  top: 16%;
-  left: -8%;
-  width: 20px;
-  height: 5px;
-  border-radius: 999px;
-  background: rgba(8, 145, 178, 0.85);
-  animation: fgDragonfly 19s linear infinite;
-}
-.fishing-game-layer .fg-dragonfly::before,
-.fishing-game-layer .fg-dragonfly::after {
-  content: "";
-  position: absolute;
-  top: -5px;
-  width: 11px;
-  height: 5px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.55);
-}
-.fishing-game-layer .fg-dragonfly::before { left: 1px; transform: rotate(-24deg); }
-.fishing-game-layer .fg-dragonfly::after { right: 1px; transform: rotate(24deg); }
-@keyframes fgDragonfly {
-  0% { transform: translate(0, 0); opacity: 0; }
-  4% { opacity: 1; }
-  30% { transform: translate(38vw, 3vh); }
-  55% { transform: translate(62vw, -1vh); opacity: 1; }
-  62%, 100% { transform: translate(80vw, 2vh); opacity: 0; }
-}
-
 @media (max-width: 640px) {
   .fishing-game-layer .fg-meters { width: 138px; top: 56px; }
-  .fishing-game-layer .fg-zehn { width: 42%; bottom: 34%; }
   .fishing-game-layer .fg-action { min-width: 190px; font-size: 16px; }
   .fishing-game-layer .fg-gauge { bottom: 126px; }
 }
@@ -413,11 +191,5 @@
   .fishing-game-layer .fg-shadow-run,
   .fishing-game-layer .fg-shadow-telegraph,
   .fishing-game-layer .fg-meter-tension .fg-meter-fill.fg-t-danger,
-  .fishing-game-layer .fg-shimmer,
-  .fishing-game-layer .fg-leaf,
-  .fishing-game-layer .fg-dragonfly,
-  .fishing-game-layer .fg-fight-fish.surface,
-  .fishing-game-layer.fg-shake,
-  .fishing-game-layer .fg-zehn.fg-reeling-rock,
   .fishing-game-meta.record { animation: none; }
 }

@@ -1,11 +1,18 @@
 // ==============================================================================
-// VokabelGo - Game câu cá của Zehn (giai đoạn 1)
+// VokabelGo - Game câu cá của Zehn
 // Thay đoạn xem video thụ động bằng một ván câu có thao tác thật, gắn vào hộp
 // thoại nhận thưởng hiện tại (reward-prototype.js). Thắng -> gọi đúng đường
 // reveal/lưu kho cũ với via:'game'. Thua/hụt -> được 1 lượt phụ trong ngày
 // (D2), hết lượt phụ thì quay về luồng video cũ, không bao giờ mất thưởng.
 // Điểm quyết mặc định (chị duyệt hướng 2026-10-25): D1 Dễ, D2 lượt phụ,
 // D3 1 lượt/ngày, D5 giọng TTS sẵn có cho tiếng gọi "Jetzt!".
+//
+// Tầng cảnh vẽ bằng CANVAS (chị duyệt làm lại 2026-10-25): Zehn là hình khớp
+// nối — thân vẽ riêng, cần câu là vật riêng quay quanh khớp tay bằng vật lý
+// lò xo và CONG theo độ căng dây; cá là nhân vật bơi thật dưới nước (chính
+// con cá sắp cắn sẽ lượn quanh phao, rỉa mồi, rồi lao vào cắn); hạt nước,
+// bong bóng, gợn sóng chạy bằng vật lý hạt; máy quay có lia/zoom/rung nhẹ.
+// Luật chơi (FishingCore) và đường lưu kho giữ nguyên như bản DOM trước.
 // ==============================================================================
 
 (function () {
@@ -386,15 +393,619 @@
     } catch (e) {}
   }
 
-  // Nạp trước các tư thế để đổi hình không chớp
-  function preloadPoses() {
-    ['idle', 'cast', 'castback', 'castthrow', 'yank', 'lift', 'reeling', 'celebrate'].forEach(function (p) {
-      var im = new Image();
-      im.src = ASSET + 'zehn-' + p + '.png';
+  // ---------------------------------------------------------------------------
+  // TẦNG CẢNH CANVAS — Zehn khớp nối, cá bơi thật, vật lý hạt, máy quay
+  // Hệ tọa độ ảo 1000x562 (khớp khung tranh ao). Mọi pha của ván chỉ đặt
+  // "lệnh" vào scene (góc cần đích, chế độ phao/cá); vòng lặp vẽ 60fps tự
+  // nội suy bằng lò xo/thủy động nên chuyển động luôn liên tục.
+  // ---------------------------------------------------------------------------
+
+  var VW = 1000, VH = 562, WATER_Y = 352;
+  var IMG = {};
+  var SILHOUETTES = [];
+  var cv = { canvas: null, ctx: null, w: 0, h: 0, dpr: 1, running: false, last: 0 };
+
+  function loadImg(key, src) {
+    var im = new Image();
+    im.src = src;
+    IMG[key] = im;
+    return im;
+  }
+  function preloadImages() {
+    loadImg('bg', ASSET + 'pond-bg.webp');
+    loadImg('body', ASSET + 'zehn-body.png');
+    loadImg('rod', ASSET + 'rod-branch.png');
+    loadImg('celebrate', ASSET + 'zehn-celebrate.png');
+    Object.keys(SPRITE_BY_FISH).forEach(function (id) {
+      loadImg('fish_' + id, SPRITE_BY_FISH[id]);
+    });
+  }
+  function makeSilhouette(img) {
+    try {
+      var c = document.createElement('canvas');
+      c.width = img.naturalWidth; c.height = img.naturalHeight;
+      var g = c.getContext('2d');
+      g.drawImage(img, 0, 0);
+      g.globalCompositeOperation = 'source-in';
+      g.fillStyle = 'rgba(10, 60, 80, 1)';
+      g.fillRect(0, 0, c.width, c.height);
+      return c;
+    } catch (e) { return null; }
+  }
+  // Bản sao "nhuộm nước" của sprite cá: nướng sẵn sắc xanh vào hình để cá
+  // dưới nước vẫn đọc rõ hình mà không bị lớp phủ nước làm chìm hẳn.
+  function makeTinted(img) {
+    try {
+      if (!img || !img.complete || !img.naturalWidth) return null;
+      var c = document.createElement('canvas');
+      c.width = img.naturalWidth; c.height = img.naturalHeight;
+      var g = c.getContext('2d');
+      g.drawImage(img, 0, 0);
+      g.globalCompositeOperation = 'source-atop';
+      g.fillStyle = 'rgba(14,80,110,0.30)';
+      g.fillRect(0, 0, c.width, c.height);
+      return c;
+    } catch (e) { return null; }
+  }
+  function buildSilhouettes() {
+    if (SILHOUETTES.length) return;
+    ['karpfen', 'forelle', 'sardine'].forEach(function (id) {
+      var im = IMG['fish_' + id];
+      if (im && im.complete && im.naturalWidth) {
+        var s = makeSilhouette(im);
+        if (s) SILHOUETTES.push(s);
+      }
     });
   }
 
-  // --- Dựng DOM (một lần) ---
+  // Trạng thái cảnh — làm mới mỗi ván, đàn cá nền sống xuyên ván
+  var scene = null;
+  function newScene() {
+    scene = {
+      t: 0,
+      cam: { x: 500, y: 281, zoom: 1, tx: 500, ty: 281, tzoom: 1, shake: 0 },
+      rod: { angle: -33, vel: 0, target: -33, stiff: 60, damp: 11, bend: 0, bendTarget: 0 },
+      cat: { lean: 0, leanTarget: 0, celebF: 0, celebTarget: 0 },
+      bobber: { mode: 'hidden', x: 550, y: WATER_Y, flyT: 0, fx: 0, fy: 0, tx: 0, jiggleT: 0, sunk: false },
+      hero: { active: false, img: null, w: 190, x: 0, y: 0, dir: 1, mode: 'off', ang: 0, dartT: 0, liftT: 0, hangX: 0, hangY: 0, alpha: 1 },
+      shoal: [],
+      ripples: [],
+      parts: [],
+      bubbles: [],
+      sparkles: [],
+      leaves: [
+        { x: 220, y: -20, rot: 0, vr: 0.7, vy: 13, sway: 0.9, col: 'rgba(217,119,6,0.8)' },
+        { x: 640, y: -140, rot: 1, vr: -0.5, vy: 10, sway: 0.6, col: 'rgba(101,163,13,0.75)' }
+      ],
+      lineVisible: false,
+      tint: 0, tintTarget: 0,
+      rippleAt: 0,
+      bubbleAt: 0
+    };
+    for (var i = 0; i < 4; i++) {
+      scene.shoal.push({
+        img: i % 3, x: Math.random() * 1000, y: 395 + Math.random() * 120,
+        dir: Math.random() < 0.5 ? -1 : 1, speed: 14 + Math.random() * 20,
+        w: 90 + Math.random() * 90, ph: Math.random() * 6.28
+      });
+    }
+  }
+
+  function rodPivot() {
+    // Khớp tay của Zehn trong tọa độ ảo (điểm hai chân trước chụm lại)
+    var bobY = Math.sin(scene.t * 1.25) * 2.6;
+    return { x: 200, y: 273 + bobY };
+  }
+  function rodCurve() {
+    var p = rodPivot();
+    var a = scene.rod.angle * Math.PI / 180;
+    var L = 250;
+    var tip = { x: p.x + Math.cos(a) * L, y: p.y + Math.sin(a) * L };
+    // Độ cong: điểm điều khiển lệch xuống dưới theo độ căng
+    var mx = (p.x + tip.x) / 2, my = (p.y + tip.y) / 2;
+    var bend = scene.rod.bend;
+    var ctrl = { x: mx - Math.sin(a) * -bend * 0.3, y: my + bend };
+    // Cần phải nghiêng CÙNG thân mèo (chung một khung khớp nối)
+    var lean = scene.cat.lean * Math.PI / 180;
+    if (Math.abs(lean) > 0.001) {
+      var cx = 210, cy = 388 + Math.sin(scene.t * 1.25) * 2.6;
+      var cos = Math.cos(lean), sin = Math.sin(lean);
+      var rot = function (pt) {
+        var dx = pt.x - cx, dy = pt.y - cy;
+        return { x: cx + dx * cos - dy * sin, y: cy + dx * sin + dy * cos };
+      };
+      return { p0: rot(p), p1: rot(ctrl), p2: rot(tip) };
+    }
+    return { p0: p, p1: ctrl, p2: tip };
+  }
+  function quadAt(c, t) {
+    var u = 1 - t;
+    return {
+      x: u * u * c.p0.x + 2 * u * t * c.p1.x + t * t * c.p2.x,
+      y: u * u * c.p0.y + 2 * u * t * c.p1.y + t * t * c.p2.y
+    };
+  }
+  function rodTip() { return rodCurve().p2; }
+
+  // --- Hạt hiệu ứng ---
+  function spawnRipple(x, big) {
+    if (!scene) return;
+    scene.ripples.push({ x: x, r: big ? 10 : 6, max: big ? 62 : 38, a: 0.85, big: !!big });
+    if (scene.ripples.length > 26) scene.ripples.shift();
+  }
+  function spawnSplash(x, n, big) {
+    if (!scene) return;
+    for (var i = 0; i < (n || 6); i++) {
+      scene.parts.push({
+        x: x + (Math.random() * 2 - 1) * 10, y: WATER_Y + 2,
+        vx: (Math.random() * 2 - 1) * (big ? 130 : 80),
+        vy: -(90 + Math.random() * (big ? 190 : 120)),
+        r: big ? 2.6 + Math.random() * 2.4 : 1.8 + Math.random() * 1.8,
+        life: 0, ttl: 0.55 + Math.random() * 0.3
+      });
+    }
+    if (scene.parts.length > 240) scene.parts.splice(0, scene.parts.length - 240);
+  }
+  function spawnDroplets(x, y, n) {
+    if (!scene) return;
+    for (var i = 0; i < (n || 3); i++) {
+      scene.parts.push({
+        x: x + (Math.random() * 2 - 1) * 26, y: y + Math.random() * 8,
+        vx: (Math.random() * 2 - 1) * 22, vy: 20 + Math.random() * 40,
+        r: 1.6 + Math.random() * 1.6, life: 0, ttl: 0.7
+      });
+    }
+  }
+  function spawnBubble(x, y) {
+    if (!scene) return;
+    scene.bubbles.push({ x: x, y: y, r: 1.6 + Math.random() * 2.6, vy: -(16 + Math.random() * 22), ph: Math.random() * 6.28 });
+    if (scene.bubbles.length > 60) scene.bubbles.shift();
+  }
+  function spawnSparkles(x, y) {
+    if (!scene) return;
+    for (var i = 0; i < 14; i++) {
+      scene.sparkles.push({
+        x: x + (Math.random() * 2 - 1) * 120, y: y + (Math.random() * 2 - 1) * 70,
+        r: 2 + Math.random() * 3.4, life: 0, ttl: 0.7 + Math.random() * 0.5,
+        ph: Math.random() * 6.28
+      });
+    }
+  }
+
+  // --- Cập nhật cảnh theo thời gian thực ---
+  function updateScene(dt) {
+    var sc = scene;
+    sc.t += dt;
+    // Máy quay: nội suy mềm về đích + rung giảm dần
+    var cam = sc.cam;
+    var ck = Math.min(1, dt * 3.2);
+    cam.x += (cam.tx - cam.x) * ck;
+    cam.y += (cam.ty - cam.y) * ck;
+    cam.zoom += (cam.tzoom - cam.zoom) * Math.min(1, dt * 2.6);
+    // Kẹp tâm máy để khung hình không bao giờ trượt ra ngoài tranh
+    var hzx = (VW / 2) / cam.zoom, hzy = (VH / 2) / cam.zoom;
+    cam.x = Math.max(hzx, Math.min(VW - hzx, cam.x));
+    cam.y = Math.max(hzy, Math.min(VH - hzy, cam.y));
+    cam.shake *= Math.exp(-dt * 7);
+    if (cam.shake < 0.05) cam.shake = 0;
+    // Sắc nước theo vùng
+    sc.tint += (sc.tintTarget - sc.tint) * Math.min(1, dt * 2);
+    // Cần câu: lò xo vật lý hướng về góc đích + độ cong theo đích
+    var r = sc.rod;
+    var acc = (r.target - r.angle) * r.stiff - r.vel * r.damp;
+    r.vel += acc * dt;
+    r.angle += r.vel * dt;
+    r.bend += (r.bendTarget - r.bend) * Math.min(1, dt * 7);
+    // Thân mèo: nghiêng mềm + độ ăn mừng
+    sc.cat.lean += (sc.cat.leanTarget - sc.cat.lean) * Math.min(1, dt * 5);
+    sc.cat.celebF += (sc.cat.celebTarget - sc.cat.celebF) * Math.min(1, dt * 4.5);
+
+    // Phao: bay theo cung khi thả, nổi/trồi khi chờ
+    var b = sc.bobber;
+    if (b.mode === 'fly') {
+      b.flyT += dt / 0.62;
+      var ft = Math.min(1, b.flyT);
+      var e = ft;
+      b.x = b.fx + (b.tx - b.fx) * e;
+      b.y = b.fy + (WATER_Y - b.fy) * e - Math.sin(e * Math.PI) * 105;
+      if (ft >= 1) { b.mode = 'float'; b.x = b.tx; b.y = WATER_Y; landBobber(); }
+    } else if (b.mode === 'float') {
+      b.y = WATER_Y + Math.sin(sc.t * 2.2) * 1.8 + (b.sunk ? 9 : 0);
+      if (b.jiggleT > 0) { b.jiggleT -= dt; b.x = b.tx + Math.sin(sc.t * 42) * 2.4; }
+      else b.x = b.tx;
+      if (sc.t - sc.rippleAt > 1.5 && state && (state.phase === 'wait' || state.phase === 'bite')) {
+        sc.rippleAt = sc.t;
+        spawnRipple(b.tx, false);
+      }
+    }
+
+    // Đàn cá nền: bơi thong thả khắp ao
+    buildSilhouettes();
+    sc.shoal.forEach(function (f) {
+      f.x += f.dir * f.speed * dt;
+      f.y += Math.sin(sc.t * 0.9 + f.ph) * 6 * dt;
+      if (f.x < -120) { f.x = 1120; f.y = 395 + Math.random() * 120; }
+      if (f.x > 1120) { f.x = -120; f.y = 395 + Math.random() * 120; }
+    });
+
+    // Cá chính: hành vi theo chế độ
+    var h = sc.hero;
+    if (h.active) {
+      if (h.mode === 'circle') {
+        h.ang += dt * 0.75;
+        var cx = b.tx, cy = WATER_Y + 80;
+        var hx = cx + Math.cos(h.ang) * 88;
+        var hy = cy + Math.sin(h.ang) * 24;
+        h.dir = Math.cos(h.ang) >= 0 ? 1 : -1;
+        h.x += (hx - h.x) * Math.min(1, dt * 3);
+        h.y += (hy - h.y) * Math.min(1, dt * 3);
+      } else if (h.mode === 'dart') {
+        h.dartT -= dt;
+        var ddx = b.tx - h.x, ddy = (WATER_Y + 26) - h.y;
+        h.dir = ddx >= 0 ? 1 : -1;
+        h.x += ddx * Math.min(1, dt * 9);
+        h.y += ddy * Math.min(1, dt * 9);
+        if (h.dartT <= 0) h.mode = 'circle';
+      } else if (h.mode === 'lunge') {
+        var lx = b.tx - h.x, ly = (WATER_Y + 30) - h.y;
+        h.dir = lx >= 0 ? 1 : -1;
+        h.x += lx * Math.min(1, dt * 12);
+        h.y += ly * Math.min(1, dt * 12);
+      } else if (h.mode === 'fight' && state && state.fight) {
+        var s = state.fight;
+        var prog = s.progress / 100;
+        var tx = b.tx + (400 - b.tx) * prog;
+        var ty = (415 - 55 * prog);
+        if (s.phase === 'run') { tx += 95; ty += 26; }
+        var kk = s.phase === 'run' ? dt * 5.5 : dt * 2.6;
+        h.x += (tx - h.x) * Math.min(1, kk);
+        h.y += (ty - h.y) * Math.min(1, kk);
+        h.dir = s.phase === 'run' ? 1 : -1;
+        if (s.phase === 'telegraph') { h.x += Math.sin(sc.t * 55) * 1.6; }
+        // Bong bóng khi vùng chạy hoặc trồi mặt nước
+        if ((s.phase === 'run' || prog >= 0.85) && sc.t - sc.bubbleAt > 0.16) {
+          sc.bubbleAt = sc.t;
+          spawnBubble(h.x + h.dir * h.w * 0.32, h.y - 6);
+          if (prog >= 0.85) spawnSplash(h.x, 2, false);
+        }
+      } else if (h.mode === 'lift') {
+        h.liftT += dt;
+        var tip = rodTip();
+        var targetX = tip.x - 4, targetY = tip.y + 96;
+        var lk = Math.min(1, dt * 4.2);
+        h.x += (targetX - h.x) * lk;
+        h.y += (targetY - h.y) * lk;
+        if (Math.random() < dt * 7) spawnDroplets(h.x, h.y + 14, 1);
+      } else if (h.mode === 'escape') {
+        h.x += h.dir * 340 * dt;
+        h.y += 40 * dt;
+        h.alpha -= dt * 1.4;
+        if (h.alpha <= 0) { h.active = false; h.alpha = 1; }
+      }
+    }
+
+    // Hạt nước / gợn / bong bóng / lấp lánh / lá trôi
+    var i;
+    for (i = sc.parts.length - 1; i >= 0; i--) {
+      var p = sc.parts[i];
+      p.life += dt;
+      p.vy += 950 * dt;
+      p.x += p.vx * dt; p.y += p.vy * dt;
+      if (p.life >= p.ttl || p.y > VH + 10) sc.parts.splice(i, 1);
+    }
+    for (i = sc.ripples.length - 1; i >= 0; i--) {
+      var rp = sc.ripples[i];
+      rp.r += dt * (rp.big ? 46 : 30);
+      rp.a = 0.85 * Math.max(0, 1 - rp.r / rp.max);
+      if (rp.r >= rp.max) sc.ripples.splice(i, 1);
+    }
+    for (i = sc.bubbles.length - 1; i >= 0; i--) {
+      var bb = sc.bubbles[i];
+      bb.y += bb.vy * dt;
+      bb.x += Math.sin(sc.t * 6 + bb.ph) * 8 * dt;
+      if (bb.y < WATER_Y + 6) sc.bubbles.splice(i, 1);
+    }
+    for (i = sc.sparkles.length - 1; i >= 0; i--) {
+      var sp = sc.sparkles[i];
+      sp.life += dt;
+      if (sp.life >= sp.ttl) sc.sparkles.splice(i, 1);
+    }
+    sc.leaves.forEach(function (lf) {
+      lf.y += lf.vy * dt;
+      lf.x += Math.sin(sc.t * lf.sway + lf.rot) * 9 * dt;
+      lf.rot += lf.vr * dt;
+      if (lf.y > VH + 24) { lf.y = -24; lf.x = 120 + Math.random() * 700; }
+    });
+  }
+
+  // --- Vẽ ---
+  function drawFishImg(g, img, x, y, w, dir, rot, alpha) {
+    if (!img) return;
+    var iw = img.naturalWidth || img.width;
+    var ih = img.naturalHeight || img.height;
+    if (!iw || !ih) return;
+    var hh = w * ih / iw;
+    g.save();
+    g.translate(x, y);
+    g.rotate(rot || 0);
+    g.scale(dir >= 0 ? 1 : -1, 1);
+    g.globalAlpha = alpha == null ? 1 : alpha;
+    g.drawImage(img, -w / 2, -hh / 2, w, hh);
+    g.restore();
+  }
+
+  function drawScene() {
+    var g = cv.ctx;
+    if (!g || !scene) return;
+    var sc = scene;
+    var sx = cv.w / VW, sy = cv.h / VH;
+    g.setTransform(cv.dpr, 0, 0, cv.dpr, 0, 0);
+    g.clearRect(0, 0, cv.w, cv.h);
+    // Máy quay (tọa độ ảo)
+    var cam = sc.cam;
+    var shX = cam.shake ? (Math.random() * 2 - 1) * cam.shake : 0;
+    var shY = cam.shake ? (Math.random() * 2 - 1) * cam.shake * 0.7 : 0;
+    g.translate(cv.w / 2, cv.h / 2);
+    g.scale(cam.zoom, cam.zoom);
+    g.translate(-cam.x * sx + shX, -cam.y * sy + shY);
+    g.scale(sx, sy);
+
+    // 1) Nền ao
+    var bg = IMG.bg;
+    if (bg && bg.complete && bg.naturalWidth) g.drawImage(bg, 0, 0, VW, VH);
+    else { g.fillStyle = '#7ec8d8'; g.fillRect(0, 0, VW, VH); }
+
+    // 2) Đàn cá nền + cá chính khi còn dưới nước
+    sc.shoal.forEach(function (f) {
+      var sil = SILHOUETTES[f.img % Math.max(1, SILHOUETTES.length)];
+      if (sil) {
+        g.save();
+        g.globalAlpha = 0.16;
+        drawFishImg(g, sil, f.x, f.y, f.w, f.dir, Math.sin(sc.t + f.ph) * 0.04, 0.16);
+        g.restore();
+      }
+    });
+    var h = sc.hero;
+    var heroUnder = h.active && (h.mode === 'circle' || h.mode === 'dart' || h.mode === 'lunge' ||
+      (h.mode === 'fight' && state && state.fight && state.fight.progress < 85) || h.mode === 'escape');
+
+    // 3) Lớp nước phủ (làm cá dưới nước chìm đúng nghĩa) + sắc vùng + vệt sáng
+    var grad = g.createLinearGradient(0, WATER_Y, 0, VH);
+    grad.addColorStop(0, 'rgba(10,90,120,0.10)');
+    grad.addColorStop(1, 'rgba(6,50,90,0.30)');
+    g.fillStyle = grad;
+    g.fillRect(0, WATER_Y, VW, VH - WATER_Y);
+    if (sc.tint > 0.01) {
+      g.fillStyle = 'rgba(2,32,71,' + sc.tint.toFixed(3) + ')';
+      g.fillRect(0, WATER_Y, VW, VH - WATER_Y);
+    }
+    g.save();
+    g.beginPath(); g.rect(0, WATER_Y, VW, VH - WATER_Y); g.clip();
+    g.globalAlpha = 0.10;
+    g.fillStyle = '#ffffff';
+    for (var bi = 0; bi < 2; bi++) {
+      var bx = ((sc.t * (9 + bi * 5) + bi * 420) % 1300) - 300;
+      g.save();
+      g.translate(bx, WATER_Y + 40 + bi * 70);
+      g.transform(1, 0, -0.6, 1, 0, 0);
+      g.fillRect(0, 0, 130, 150);
+      g.restore();
+    }
+    g.restore();
+    // Mặt nước: đường sáng mảnh
+    g.fillStyle = 'rgba(255,255,255,0.20)';
+    g.fillRect(0, WATER_Y - 1, VW, 2);
+
+    // 3b) Cá chính dưới nước: vẽ SAU lớp phủ bằng bản nhuộm nước + viền sáng
+    if (heroUnder) {
+      if (!h.tint) h.tint = makeTinted(h.img);
+      g.save();
+      g.shadowColor = 'rgba(190,240,255,0.6)';
+      g.shadowBlur = 14;
+      drawFishImg(g, h.tint || h.img, h.x, h.y, h.w, h.dir, Math.sin(sc.t * 3.1) * 0.05, 0.97 * h.alpha);
+      g.restore();
+    }
+
+    // 4) Gợn sóng tại mặt nước
+    sc.ripples.forEach(function (rp) {
+      g.save();
+      g.strokeStyle = 'rgba(255,255,255,' + (rp.a * 0.8).toFixed(3) + ')';
+      g.lineWidth = 2;
+      g.beginPath();
+      g.ellipse(rp.x, WATER_Y + 5, rp.r, rp.r * 0.34, 0, 0, Math.PI * 2);
+      g.stroke();
+      g.restore();
+    });
+
+    // 5) Cá chính khi trồi lên / được nhấc lên
+    if (h.active && !heroUnder) {
+      var rot = 0;
+      if (h.mode === 'lift') rot = Math.sin(Math.max(0, sc.t - 0) * 5.0) * 0.10 * Math.exp(-h.liftT * 0.9);
+      if (h.mode === 'fight') rot = Math.sin(sc.t * 16) * 0.09; // giãy trên mặt nước
+      drawFishImg(g, h.img, h.x, h.y, h.w, h.dir, rot, h.alpha);
+    }
+
+    // 6) Zehn khớp nối: thân (thở + nhấp nhô + nghiêng) và cần (lò xo + cong)
+    var bobY = Math.sin(sc.t * 1.25) * 2.6;
+    var rigAlpha = 1 - sc.cat.celebF * 0.9;
+    g.save();
+    g.globalAlpha = rigAlpha;
+    g.translate(210, 388 + bobY);
+    g.rotate(sc.cat.lean * Math.PI / 180);
+    g.translate(-210, -(388 + bobY));
+    var body = IMG.body;
+    if (body && body.complete && body.naturalWidth) {
+      var bw = 340, bh = bw * body.naturalHeight / body.naturalWidth;
+      var breathe = 1 + Math.sin(sc.t * 1.9) * 0.006;
+      g.save();
+      g.translate(210, 388 + bobY);
+      g.scale(1, breathe);
+      g.translate(-210, -(388 + bobY));
+      g.drawImage(body, 40, 388 + bobY - bh, bw, bh);
+      g.restore();
+    }
+    // Cần câu vẽ theo lát dọc đường cong — cong thật theo độ căng
+    var rod = IMG.rod;
+    var curve = rodCurve();
+    if (rod && rod.complete && rod.naturalWidth) {
+      var SEG = 9, rodLen = 250;
+      var sw = rod.naturalWidth / SEG;
+      for (var si = 0; si < SEG; si++) {
+        var t0 = si / SEG, t1 = (si + 1) / SEG;
+        var pa = quadAt(curve, t0), pb = quadAt(curve, t1);
+        var segLen = Math.hypot(pb.x - pa.x, pb.y - pa.y) + 2.5;
+        var ang = Math.atan2(pb.y - pa.y, pb.x - pa.x);
+        g.save();
+        g.translate(pa.x, pa.y + bobY * 0); // pivot đã gồm bobY trong rodPivot
+        g.rotate(ang);
+        g.drawImage(rod, si * sw, 0, sw, rod.naturalHeight, 0, -rodLen * 0.06, segLen, rodLen * 0.12);
+        g.restore();
+      }
+    }
+    g.restore();
+
+    // Ăn mừng: phủ hình ăn mừng trọn thân, mờ dần đè lên khớp nối ở cuối ván thắng
+    if (sc.cat.celebF > 0.02) {
+      var cel = IMG.celebrate;
+      if (cel && cel.complete && cel.naturalWidth) {
+        var cw = 340, chh = cw * cel.naturalHeight / cel.naturalWidth;
+        var bounce = Math.abs(Math.sin(sc.t * 7)) * -5 * sc.cat.celebF;
+        g.save();
+        g.globalAlpha = sc.cat.celebF;
+        g.drawImage(cel, 40, 393 - chh + bounce, cw, chh);
+        g.restore();
+      }
+    }
+
+    // 7) Dây câu: từ đầu cần tới phao / miệng cá
+    if (sc.lineVisible) {
+      var tip = rodTip();
+      var end = null;
+      if (h.active && (state && (state.phase === 'fight' || state.phase === 'won'))) {
+        end = { x: h.x - h.dir * h.w * 0.30, y: h.y - 4 };
+      } else if (sc.bobber.mode !== 'hidden') {
+        end = { x: sc.bobber.x, y: sc.bobber.y };
+      }
+      if (end) {
+        var sag = 30, col = 'rgba(255,255,255,0.88)';
+        if (state && state.phase === 'bite') sag = 6;
+        if (state && state.phase === 'fight' && state.fight) {
+          var tt = state.fight.tension;
+          sag = 34 * (1 - tt / 100) + 3;
+          col = tt >= 95 ? '#ef4444' : (tt >= 75 ? '#fbbf24' : 'rgba(255,255,255,0.92)');
+        }
+        if (state && state.phase === 'won') sag = 4;
+        g.save();
+        g.strokeStyle = col;
+        g.lineWidth = 2.4;
+        g.lineCap = 'round';
+        g.beginPath();
+        g.moveTo(tip.x, tip.y);
+        g.quadraticCurveTo((tip.x + end.x) / 2, Math.max(tip.y, end.y) + sag, end.x, end.y);
+        g.stroke();
+        g.restore();
+      }
+    }
+
+    // 8) Phao
+    var b = sc.bobber;
+    if (b.mode !== 'hidden') {
+      g.save();
+      g.translate(b.x, b.y);
+      if (b.sunk) g.rotate(0.35);
+      g.fillStyle = '#ef4444';
+      g.beginPath(); g.arc(0, 0, 9, Math.PI, 0); g.fill();
+      g.fillStyle = '#ffffff';
+      g.beginPath(); g.arc(0, 0, 9, 0, Math.PI); g.fill();
+      g.fillStyle = '#fbbf24';
+      g.fillRect(-1.6, -14, 3.2, 6);
+      g.restore();
+    }
+
+    // 9) Hạt nước + bong bóng + lấp lánh
+    sc.parts.forEach(function (p) {
+      g.save();
+      g.globalAlpha = Math.max(0, 1 - p.life / p.ttl) * 0.95;
+      g.fillStyle = '#e8f6ff';
+      g.beginPath(); g.arc(p.x, p.y, p.r, 0, Math.PI * 2); g.fill();
+      g.restore();
+    });
+    sc.bubbles.forEach(function (bb) {
+      g.save();
+      g.strokeStyle = 'rgba(230,248,255,0.75)';
+      g.lineWidth = 1.2;
+      g.beginPath(); g.arc(bb.x, bb.y, bb.r, 0, Math.PI * 2); g.stroke();
+      g.restore();
+    });
+    sc.sparkles.forEach(function (sp) {
+      var a = Math.sin((sp.life / sp.ttl) * Math.PI);
+      g.save();
+      g.globalAlpha = a;
+      g.fillStyle = '#fde68a';
+      g.translate(sp.x, sp.y);
+      g.rotate(sp.ph + sc.t * 2);
+      g.fillRect(-sp.r, -1, sp.r * 2, 2);
+      g.fillRect(-1, -sp.r, 2, sp.r * 2);
+      g.restore();
+    });
+
+    // 10) Lá trôi + chuồn chuồn (vẽ vector)
+    sc.leaves.forEach(function (lf) {
+      g.save();
+      g.translate(lf.x, lf.y);
+      g.rotate(lf.rot);
+      g.fillStyle = lf.col;
+      g.beginPath(); g.ellipse(0, 0, 8, 4.5, 0, 0, Math.PI * 2); g.fill();
+      g.restore();
+    });
+    var dt2 = sc.t * 26;
+    var dx2 = (dt2 % 1150) - 80;
+    var dy2 = 120 + Math.sin(sc.t * 0.7) * 15 + Math.sin(sc.t * 3.3) * 4;
+    g.save();
+    g.translate(dx2, dy2);
+    g.fillStyle = 'rgba(8,145,178,0.9)';
+    g.beginPath(); g.ellipse(0, 0, 11, 3, 0, 0, Math.PI * 2); g.fill();
+    g.fillStyle = 'rgba(255,255,255,0.55)';
+    var flap = Math.sin(sc.t * 40) * 0.25;
+    g.save(); g.rotate(-0.5 - flap); g.beginPath(); g.ellipse(-4, -5, 7, 3, 0, 0, Math.PI * 2); g.fill(); g.restore();
+    g.save(); g.rotate(0.5 + flap); g.beginPath(); g.ellipse(4, -5, 7, 3, 0, 0, Math.PI * 2); g.fill(); g.restore();
+    g.restore();
+  }
+
+  function sizeCanvas() {
+    if (!cv.canvas || !els) return;
+    var r = els.layer.getBoundingClientRect();
+    var w = Math.max(50, Math.round(r.width));
+    var h = Math.max(50, Math.round(r.height));
+    var dpr = Math.min(2, window.devicePixelRatio || 1);
+    if (w !== cv.w || h !== cv.h || dpr !== cv.dpr) {
+      cv.w = w; cv.h = h; cv.dpr = dpr;
+      cv.canvas.width = Math.round(w * dpr);
+      cv.canvas.height = Math.round(h * dpr);
+    }
+  }
+
+  function startRenderLoop() {
+    if (cv.running && sceneRaf) return;
+    cv.running = true;
+    cv.last = performance.now();
+    var loop = function (now) {
+      if (!cv.running) return;
+      sceneRaf = requestAnimationFrame(loop);
+      if (!state || !els || els.layer.classList.contains('hidden')) return;
+      var dt = Math.min(0.05, (now - cv.last) / 1000); cv.last = now;
+      sizeCanvas();
+      updateScene(dt);
+      drawScene();
+    };
+    sceneRaf = requestAnimationFrame(loop);
+  }
+  function stopRenderLoop() {
+    cv.running = false;
+    if (sceneRaf) { cancelAnimationFrame(sceneRaf); sceneRaf = null; }
+  }
+
+  // --- Dựng DOM (một lần): canvas cảnh + các lớp phủ chữ/nút giữ DOM ---
   function buildDom() {
     var wrapper = document.querySelector('#rewardPrototypeModal .reward-stage-wrapper');
     if (!wrapper || document.getElementById('fishingGameLayer')) return;
@@ -403,22 +1014,7 @@
     layer.id = 'fishingGameLayer';
     layer.className = 'fishing-game-layer hidden';
     layer.innerHTML =
-      '<img class="fg-bg" src="' + ASSET + 'pond-bg.webp" alt="">' +
-      '<div class="fg-water-shade"></div>' +
-      '<div class="fg-zone-tint" id="fgZoneTint"></div>' +
-      '<div class="fg-ambient" aria-hidden="true">' +
-        '<span class="fg-shimmer"></span>' +
-        '<span class="fg-leaf fg-leaf-1"></span>' +
-        '<span class="fg-leaf fg-leaf-2"></span>' +
-        '<span class="fg-dragonfly"></span>' +
-      '</div>' +
-      '<img class="fg-zehn" id="fgZehn" src="' + ASSET + 'zehn-idle.png" alt="Zehn đang câu cá">' +
-      '<svg class="fg-line-svg" id="fgLineSvg" viewBox="0 0 1000 562" preserveAspectRatio="none" aria-hidden="true">' +
-        '<path id="fgLinePath" d="" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" stroke-linecap="round"/></svg>' +
-      '<img class="fg-fight-fish" id="fgFightFish" alt="">' +
-      '<div class="fg-fish-shadow" id="fgFishShadow"></div>' +
-      '<div class="fg-fx" id="fgFx"></div>' +
-      '<div class="fg-bobber hidden" id="fgBobber"><span class="fg-bobber-top"></span></div>' +
+      '<canvas class="fg-canvas" id="fgCanvas"></canvas>' +
       '<div class="fg-bang hidden" id="fgBang">!</div>' +
       '<div class="fg-speech" id="fgSpeech"><span class="fg-speech-de" id="fgSpeechDe"></span>' +
       '<span class="fg-speech-vi" id="fgSpeechVi"></span></div>' +
@@ -456,14 +1052,7 @@
 
     els = {
       layer: layer,
-      zehn: layer.querySelector('#fgZehn'),
-      zoneTint: layer.querySelector('#fgZoneTint'),
-      lineSvg: layer.querySelector('#fgLineSvg'),
-      linePath: layer.querySelector('#fgLinePath'),
-      fightFish: layer.querySelector('#fgFightFish'),
-      fx: layer.querySelector('#fgFx'),
-      bobber: layer.querySelector('#fgBobber'),
-      shadow: layer.querySelector('#fgFishShadow'),
+      canvas: layer.querySelector('#fgCanvas'),
       bang: layer.querySelector('#fgBang'),
       speech: layer.querySelector('#fgSpeech'),
       speechDe: layer.querySelector('#fgSpeechDe'),
@@ -479,12 +1068,13 @@
       skip: layer.querySelector('#fgSkip'),
       startBtn: startBtn
     };
+    cv.canvas = els.canvas;
+    cv.ctx = els.canvas.getContext('2d');
 
     if (startBtn) startBtn.addEventListener('click', startGame);
     els.skip.addEventListener('click', exitToClassic);
     els.action.addEventListener('pointerdown', function (e) { e.preventDefault(); onPress(); });
     window.addEventListener('pointerup', onRelease);
-    els.action.addEventListener('pointerup', function () { /* nhả xử lý ở window */ });
     document.addEventListener('keydown', function (e) {
       if (e.code !== 'Space') return;
       if (!state || els.layer.classList.contains('hidden')) return;
@@ -503,10 +1093,6 @@
         if (modal.classList.contains('hidden')) destroyRound();
       }).observe(modal, { attributes: true, attributeFilter: ['class'] });
     }
-  }
-
-  function setZehn(pose) {
-    if (els) els.zehn.src = ASSET + 'zehn-' + pose + '.png';
   }
 
   function say(de, vi) {
@@ -531,11 +1117,14 @@
     if (els.startBtn) els.startBtn.classList.add('hidden');
     els.layer.classList.remove('hidden');
     startAmbient();
+    if (!scene) newScene();
+    startRenderLoop();
     newRound(false);
   }
 
   function newRound(isBonus) {
     clearTimers();
+    startRenderLoop(); // clearTimers ngắt vòng lặp vẽ — nối lại ngay
     var play = loadPlayState();
     state = {
       phase: 'intro',
@@ -552,25 +1141,21 @@
       hookDeadline: 0,
       recast: false,
       bobberXPct: 55,
-      fishXPct: 55,
-      fishFlip: false,
-      sceneT: 0,
-      lastRippleAt: 0,
       lastClickAt: 0,
-      lastSurfSplashAt: 0,
       slowUntil: 0
     };
-    setZehn('idle');
-    els.zehn.classList.remove('fg-reeling-rock', 'fg-reeling-hard');
-    els.bobber.classList.add('hidden');
+    // Đặt lại cảnh
+    scene.rod.target = -33; scene.rod.stiff = 60; scene.rod.damp = 11; scene.rod.bendTarget = 0;
+    scene.cat.leanTarget = 0; scene.cat.celebTarget = 0; scene.cat.celebF = 0;
+    scene.bobber.mode = 'hidden'; scene.bobber.sunk = false;
+    scene.hero.active = false; scene.hero.mode = 'off'; scene.hero.alpha = 1;
+    scene.lineVisible = false;
+    scene.tintTarget = 0;
+    scene.cam.tx = 500; scene.cam.ty = 281; scene.cam.tzoom = 1;
+    scene.parts.length = 0; scene.bubbles.length = 0; scene.ripples.length = 0;
     els.bang.classList.add('hidden');
     els.gauge.classList.add('hidden');
     els.meters.classList.add('hidden');
-    els.shadow.style.opacity = '0';
-    els.zoneTint.className = 'fg-zone-tint';
-    els.lineSvg.style.opacity = '0';
-    els.fightFish.classList.remove('show');
-    els.fx.innerHTML = '';
     say('', '');
     setAction('Thả câu 🎣', true);
     els.sub.textContent = play.bonusUsed
@@ -594,6 +1179,7 @@
 
   function destroyRound() {
     clearTimers();
+    stopRenderLoop();
     stopAmbient();
     state = null;
     if (els) {
@@ -616,145 +1202,12 @@
     if (state && state.phase === 'fight') state.holding = false;
   }
 
-  // --- Lớp "nước sống": dây câu, gợn sóng, tóe nước, cá hiện hình ---
-  function spawnRipple(xPct, big) {
-    if (!els) return;
-    var r = document.createElement('span');
-    r.className = 'fg-ripple' + (big ? ' big' : '');
-    r.style.left = xPct + '%';
-    els.fx.appendChild(r);
-    later(function () { r.remove(); }, 1700);
-  }
-
-  function spawnSplash(xPct, n, big) {
-    if (!els) return;
-    for (var i = 0; i < (n || 6); i++) {
-      var d = document.createElement('span');
-      d.className = 'fg-drop' + (big ? ' big' : '');
-      d.style.left = xPct + '%';
-      d.style.setProperty('--dx', ((Math.random() * 2 - 1) * (big ? 46 : 26)).toFixed(0) + 'px');
-      d.style.setProperty('--dy', (-(14 + Math.random() * (big ? 44 : 26))).toFixed(0) + 'px');
-      els.fx.appendChild(d);
-      (function (el) { later(function () { el.remove(); }, 750); })(d);
-    }
-  }
-
-  function elementCenterSvg(el) {
-    try {
-      var r = el.getBoundingClientRect();
-      var lr = els.layer.getBoundingClientRect();
-      if (!lr.width || !lr.height) return null;
-      return {
-        x: ((r.left + r.width / 2 - lr.left) / lr.width) * 1000,
-        y: ((r.top + r.height / 2 - lr.top) / lr.height) * 562
-      };
-    } catch (e) { return null; }
-  }
-
-  function updateLine() {
-    if (!state || !els) return;
-    var tipX = 330, tipY = 168;
-    // Tư thế nhấc cá: đầu cần nằm cao bên phải theo đúng hình vẽ
-    if (state.phase === 'won') { tipX = 505; tipY = 95; }
-    var bx = state.bobberXPct * 10;
-    var by = 352 + (els.bobber.classList.contains('sunk') ? 12 : (els.bobber.classList.contains('nibble') ? 4 : 0));
-    // Khi mồi đang bay / cá đang được nhấc lên: đầu dây bám theo vật đang chuyển động
-    if (state.phase === 'casting') {
-      var bp = elementCenterSvg(els.bobber);
-      if (bp) { bx = bp.x; by = bp.y; }
-    } else if (state.phase === 'won') {
-      var fp = elementCenterSvg(els.fightFish);
-      if (fp) { bx = fp.x; by = fp.y; }
-    }
-    var sag = 30;
-    var color = 'rgba(255,255,255,0.85)';
-    if (state.phase === 'bite') sag = 6;
-    if (state.phase === 'fight' && state.fight) {
-      var t = state.fight.tension;
-      sag = 34 * (1 - t / 100) + 3;
-      color = t >= 95 ? '#ef4444' : (t >= 75 ? '#fbbf24' : 'rgba(255,255,255,0.9)');
-    }
-    var cx = (tipX + bx) / 2;
-    var cy = Math.max(tipY, by) + sag;
-    els.linePath.setAttribute('d', 'M ' + tipX + ' ' + tipY + ' Q ' + cx + ' ' + cy + ' ' + bx + ' ' + by);
-    els.linePath.setAttribute('stroke', color);
-  }
-
-  function startSceneLoop() {
-    if (sceneRaf) return;
-    var last = performance.now();
-    var loop = function (now) {
-      sceneRaf = null;
-      if (!state || els.layer.classList.contains('hidden')) return;
-      var dt = Math.min(0.05, (now - last) / 1000); last = now;
-      state.sceneT += dt;
-      // Gợn sóng quanh phao khi chờ
-      if ((state.phase === 'wait' || state.phase === 'bite') && now - state.lastRippleAt > 1500) {
-        state.lastRippleAt = now;
-        spawnRipple(state.bobberXPct, false);
-      }
-      updateLine();
-      // Cá hiện hình trong pha kéo
-      if (state.phase === 'fight' && state.fight) {
-        var s = state.fight;
-        var base = state.bobberXPct;
-        var target, flip;
-        if (s.phase === 'run') { target = base + 10; flip = true; }
-        else { target = base + Math.sin(state.sceneT * 0.8) * 2.0; flip = false; }
-        var k = Math.min(1, dt * (s.phase === 'run' ? 5 : 1.6));
-        state.fishXPct += (target - state.fishXPct) * k;
-        state.fishFlip = flip;
-        var surface = s.progress >= 85;
-        els.fightFish.classList.toggle('surface', surface);
-        els.fightFish.style.left = state.fishXPct + '%';
-        els.fightFish.style.bottom = surface
-          ? (27 + Math.sin(state.sceneT * 9) * 1.4) + '%'
-          : (13.5 + Math.sin(state.sceneT * 2.1) * 0.8) + '%';
-        els.fightFish.style.transform = 'translateX(-50%) scaleX(' + (flip ? -1 : 1) + ')';
-        if (surface && now - state.lastSurfSplashAt > 320) {
-          state.lastSurfSplashAt = now;
-          spawnSplash(state.fishXPct, 4, false);
-          noiseBurst(0.15, 1200, 400, 0.05);
-        }
-      }
-      sceneRaf = requestAnimationFrame(loop);
-    };
-    sceneRaf = requestAnimationFrame(loop);
-  }
-
-  // Cá thắng được Zehn nhấc lên: rời mặt nước, treo ở đầu dây cạnh bè và đung đưa
-  function liftFish(fish) {
-    if (!els || !fish) return;
-    var el = els.fightFish;
-    var fromLeft = parseFloat(el.style.left) || state.fishXPct;
-    var fromBottom = parseFloat(el.style.bottom) || 14;
-    el.classList.remove('under', 'surface');
-    el.classList.add('show', 'fg-lifted');
-    el.style.transform = 'translateX(-50%)';
-    spawnSplash(state.bobberXPct, 5, false);
-    later(function () { spawnSplash(47, 3, false); }, 350);
-    if (el.animate) {
-      el.animate([
-        { left: fromLeft + '%', bottom: fromBottom + '%' },
-        { left: '47%', bottom: '60%' }
-      ], { duration: 720, easing: 'cubic-bezier(.25,.7,.3,1)', fill: 'forwards' });
-      var swing = el.animate([
-        { transform: 'translateX(-50%) rotate(-6deg)' },
-        { transform: 'translateX(-50%) rotate(6deg)' },
-        { transform: 'translateX(-50%) rotate(-3deg)' },
-        { transform: 'translateX(-50%) rotate(0deg)' }
-      ], { duration: 950, delay: 700, easing: 'ease-in-out', fill: 'forwards' });
-      swing.onfinish = function () {};
-    } else {
-      el.style.left = '47%';
-      el.style.bottom = '60%';
-    }
-  }
-
   // Pha 1: thanh lực quét, bấm để chốt vùng rơi
   function startCast() {
     state.phase = 'cast';
-    setZehn('castback');
+    // Zehn vung cần ra sau lấy đà trong lúc người chơi canh lực
+    scene.rod.target = -74; scene.rod.stiff = 55; scene.rod.damp = 10;
+    scene.cat.leanTarget = -4;
     say('', '');
     els.gauge.classList.remove('hidden');
     setAction('Thả! 🎯', true);
@@ -782,63 +1235,40 @@
     if (raf) { cancelAnimationFrame(raf); raf = null; }
     state.zone = zoneFromGauge(state.gaugeT);
     els.gauge.classList.add('hidden');
-    // Phao rơi theo vùng: gần 38%, giữa 55%, sâu 72% bề ngang
     var xPct = state.zone === 'near' ? 38 : (state.zone === 'mid' ? 55 : 72);
     state.bobberXPct = xPct;
-    els.bobber.style.left = xPct + '%';
-    els.bobber.classList.remove('hidden');
-    els.bobber.classList.remove('sunk');
-    els.zoneTint.className = 'fg-zone-tint fg-tint-' + state.zone;
-    els.lineSvg.style.opacity = '1';
-    // Chuỗi chuyển động thả câu: Zehn đã vung cần ra sau ở pha canh lực,
-    // giờ quăng cần ra trước và mồi bay theo đường cong tới vùng rơi.
+    scene.tintTarget = state.zone === 'deep' ? 0.20 : (state.zone === 'mid' ? 0.09 : 0);
     state.phase = 'casting';
     setAction('Đang thả câu…', false);
     els.sub.textContent = '';
-    startSceneLoop();
+    // Quăng cần: lò xo cứng, vung về trước rồi dừng ở góc hướng lên
+    scene.rod.target = -14; scene.rod.stiff = 150; scene.rod.damp = 13;
+    scene.cat.leanTarget = 3;
     later(function () {
       if (!state || state.phase !== 'casting') return;
-      setZehn('castthrow');
       noiseBurst(0.25, 900, 1900, 0.045, 'bandpass');
-      flyBobber(xPct);
+      var tip = rodTip();
+      var b = scene.bobber;
+      b.mode = 'fly'; b.flyT = 0;
+      b.fx = tip.x; b.fy = tip.y;
+      b.tx = xPct * 10; b.x = tip.x; b.y = tip.y;
+      b.sunk = false;
+      scene.lineVisible = true;
     }, 240);
   }
 
-  // Mồi bay từ đầu cần tới điểm rơi (hiệu ứng vật lý bằng WAAPI)
-  function flyBobber(xPct) {
-    if (!els) return;
-    var bob = els.bobber;
-    try {
-      var layerRect = els.layer.getBoundingClientRect();
-      var rect = bob.getBoundingClientRect();
-      var startX = layerRect.left + layerRect.width * 0.335;
-      var startY = layerRect.top + layerRect.height * 0.28;
-      var dx = startX - (rect.left + rect.width / 2);
-      var dy = startY - (rect.top + rect.height / 2);
-      if (bob.animate) {
-        var anim = bob.animate([
-          { transform: 'translate(' + dx + 'px,' + dy + 'px)' },
-          { transform: 'translate(' + (dx * 0.45) + 'px,' + (dy - layerRect.height * 0.16) + 'px)', offset: 0.55 },
-          { transform: 'translate(0px, 0px)' }
-        ], { duration: 620, easing: 'cubic-bezier(.25,.6,.35,1)' });
-        anim.onfinish = landBobber;
-        later(function () { if (state && state.phase === 'casting') landBobber(); }, 760);
-        return;
-      }
-    } catch (e) {}
-    landBobber();
-  }
-
+  // Engine gọi khi mồi chạm nước
   function landBobber() {
     if (!state || state.phase !== 'casting') return;
     sndSplash(false);
-    spawnSplash(state.bobberXPct, 6, false);
-    spawnRipple(state.bobberXPct, true);
-    setZehn('idle');
+    spawnSplash(state.bobberXPct * 10, 6, false);
+    spawnRipple(state.bobberXPct * 10, true);
+    scene.rod.target = -33; scene.rod.stiff = 60; scene.rod.damp = 11;
+    scene.cat.leanTarget = 0;
     startWait(false);
   }
 
-  // Pha 2: chờ cắn — giật giả rồi cắn thật
+  // Pha 2: chờ cắn — con cá sắp cắn bơi lượn quanh phao, rỉa mồi rồi mới cắn
   function startWait(isRecast) {
     state.phase = 'wait';
     state.recast = !!isRecast;
@@ -849,10 +1279,21 @@
     state.nibblesLeft = fastMode ? 0 : 1 + Math.floor(Math.random() * 3);
     state.nextNibbleAt = performance.now() + (wait * 1000) * (0.3 + Math.random() * 0.3);
     setAction('Chờ cá cắn…', false);
-    els.sub.textContent = 'Phao động nhẹ là cá rỉa mồi — đừng giật vội. Phao chìm hẳn mới là cá cắn!';
-    els.shadow.style.opacity = '0.5';
-    els.shadow.style.left = els.bobber.style.left;
-    startSceneLoop();
+    els.sub.textContent = 'Cá đang lượn quanh phao — nó rỉa mồi thì đừng giật vội. Phao chìm hẳn mới là cá cắn!';
+    // Cá chính xuất hiện dưới nước, bơi vòng quanh phao
+    var fish = state.fish;
+    var h = scene.hero;
+    h.active = true;
+    h.tint = null;
+    h.img = IMG['fish_' + fish.id] || IMG.fish_karpfen;
+    h.w = fish.rarity === 'legendary' ? 270 : (fish.rarity === 'rare' ? 230 : 190);
+    h.x = state.bobberXPct * 10 + 190;
+    h.y = 448;
+    h.dir = -1;
+    h.mode = 'circle';
+    h.ang = Math.random() * 6.28;
+    h.alpha = 1;
+    scene.cam.tx = 500; scene.cam.ty = 281; scene.cam.tzoom = 1.02;
     pollWait();
   }
 
@@ -862,9 +1303,12 @@
     if (state.nibblesLeft > 0 && now >= state.nextNibbleAt && now < state.biteAt - 600) {
       state.nibblesLeft--;
       state.nextNibbleAt = now + 900 + Math.random() * 1400;
-      els.bobber.classList.add('nibble');
+      // Cá lao vào rỉa mồi: phao rung, gợn nhỏ, tiếng "tõm" khẽ
+      scene.hero.mode = 'dart';
+      scene.hero.dartT = 0.55;
+      scene.bobber.jiggleT = 0.35;
+      spawnRipple(state.bobberXPct * 10, false);
       sndNibble();
-      later(function () { if (els) els.bobber.classList.remove('nibble'); }, 350);
     }
     if (now >= state.biteAt) { biteNow(); return; }
     later(pollWait, 90);
@@ -872,10 +1316,11 @@
 
   function biteNow() {
     state.phase = 'bite';
-    els.bobber.classList.add('sunk');
+    scene.hero.mode = 'lunge';
+    scene.bobber.sunk = true;
     els.bang.classList.remove('hidden');
-    els.bang.style.left = els.bobber.style.left;
-    spawnSplash(state.bobberXPct, 5, false);
+    els.bang.style.left = state.bobberXPct + '%';
+    spawnSplash(state.bobberXPct * 10, 5, false);
     sndBite();
     speakDe('Jetzt!');
     say('Jetzt!', 'Giật ngay!');
@@ -894,30 +1339,34 @@
   function hookAttempt(expired) {
     if (!state) return;
     if (state.phase === 'bite' && !expired) {
-      // Móc dính -> pha kéo: rung nhẹ + chậm một nhịp cho đã tay
+      // Móc dính: Zehn giựt cần lên thật mạnh (lò xo cứng), máy rung nhẹ
       els.bang.classList.add('hidden');
-      els.bobber.classList.remove('sunk');
-      els.layer.classList.add('fg-shake');
-      later(function () { if (els) els.layer.classList.remove('fg-shake'); }, 380);
-      spawnSplash(state.bobberXPct, 8, true);
+      scene.bobber.sunk = false;
+      scene.bobber.mode = 'hidden';
+      scene.cam.shake = 7;
+      spawnSplash(state.bobberXPct * 10, 8, true);
       sndSplash(true);
       state.slowUntil = performance.now() + 380;
-      // Zehn giựt mạnh cần lên cho móc đóng chắc, rồi mới vào tư thế kéo
-      setZehn('yank');
+      scene.rod.target = -88; scene.rod.stiff = 175; scene.rod.damp = 14;
+      scene.cat.leanTarget = -5;
       later(function () {
-        if (state && state.phase === 'fight') setZehn('reeling');
+        if (state && state.phase === 'fight') {
+          scene.rod.stiff = 70; scene.rod.damp = 11;
+        }
       }, 500);
       say('Er beißt an!', 'Cá dính rồi — giữ nút để kéo!');
       startFight();
       return;
     }
     if (state.phase === 'wait' || (state.phase === 'bite' && expired)) {
-      // Giật sớm vào giật giả, hoặc chậm tay: cá nhả, ném lại trong cùng lượt
+      // Giật sớm vào cá rỉa, hoặc chậm tay: cá nhả và bơi đi, ném lại cùng lượt
       els.bang.classList.add('hidden');
-      els.bobber.classList.remove('sunk');
+      scene.bobber.sunk = false;
       if (state.phase === 'wait') { say('Zu früh!', 'Sớm quá — đó mới là cá rỉa mồi.'); }
       else { say('Knapp daneben!', 'Suýt nữa! Cá nhả mồi rồi.'); }
       sndNibble();
+      scene.hero.mode = 'escape';
+      scene.hero.dir = scene.hero.x >= state.bobberXPct * 10 ? 1 : -1;
       state.phase = 'missed';
       setAction('Câu lại', false);
       later(function () {
@@ -928,31 +1377,15 @@
     }
   }
 
-  // Pha 3: kéo cá bằng mô hình căng dây
+  // Pha 3: kéo cá — lõi tính căng/tiến độ, cảnh đọc theo từng khung hình
   function startFight() {
     state.phase = 'fight';
     state.holding = false;
     state.fight = FishingCore.createFight(state.fish, Math.random);
-    els.zehn.classList.add('fg-reeling-rock');
-    // Cá hiện hình dưới nước: sprite loài (hoặc SVG dự phòng), mờ xanh dưới nước
-    var fish = state.fish;
-    if (SPRITE_BY_FISH[fish.id]) {
-      els.fightFish.src = SPRITE_BY_FISH[fish.id];
-    } else if (typeof window.getVokabelFishSvg === 'function') {
-      try { els.fightFish.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(window.getVokabelFishSvg(fish)); } catch (e) {}
-    }
-    els.fightFish.style.width = fish.rarity === 'legendary' ? '27%' : (fish.rarity === 'rare' ? '23%' : '19%');
-    if (els.fightFish.getAnimations) {
-      els.fightFish.getAnimations().forEach(function (a) { a.cancel(); });
-    }
-    els.fightFish.className = 'fg-fight-fish show under';
-    state.fishXPct = state.bobberXPct;
-    els.fightFish.style.left = state.fishXPct + '%';
-    els.shadow.style.opacity = '0';
-    els.shadow.classList.remove('fg-shadow-run', 'fg-shadow-telegraph');
+    scene.hero.mode = 'fight';
     els.meters.classList.remove('hidden');
     setAction('GIỮ ĐỂ KÉO 🎣', true);
-    els.sub.textContent = 'Giữ nút để kéo. Cá vùng chạy (bọt nước nổi) thì NHẢ nút kẻo đứt dây!';
+    els.sub.textContent = 'Giữ nút để kéo. Cá vùng chạy (bong bóng nổi) thì NHẢ nút kẻo đứt dây!';
     var last = performance.now();
     var tick = function (now) {
       if (!state || state.phase !== 'fight') return;
@@ -966,15 +1399,18 @@
         state.lastClickAt = now;
         sndReelClick();
       }
-      els.zehn.classList.toggle('fg-reeling-hard', !!state.holding);
-      // Vẽ lại
+      // Nối lõi vào cảnh: cần cong theo căng, thân nghiêng theo sức kéo, máy lia theo cá
+      scene.rod.bendTarget = s.tension * 0.5;
+      scene.rod.target = -24 - s.tension * 0.13;
+      scene.cat.leanTarget = state.holding ? -2.5 - s.tension * 0.045 : 1.5;
+      scene.cam.tx = 470;
+      scene.cam.tzoom = 1.07;
+      // Vẽ lại thanh đo
       els.progressFill.style.width = s.progress + '%';
       els.tensionFill.style.width = s.tension + '%';
       els.tensionFill.className = 'fg-meter-fill' +
         (s.tension >= 95 ? ' fg-t-danger' : (s.tension >= 75 ? ' fg-t-warn' : ''));
       els.tensionWarn.style.visibility = s.tension >= 75 ? 'visible' : 'hidden';
-      els.shadow.classList.toggle('fg-shadow-run', s.phase === 'run');
-      els.shadow.classList.toggle('fg-shadow-telegraph', s.phase === 'telegraph');
       if (s.surged && !wasSurged) { say('Halt durch!', 'Cá bùng lên — nhả tay ngay!'); speakDe('Halt durch!'); }
       if (s.over) { finishFight(); return; }
       raf = requestAnimationFrame(tick);
@@ -985,16 +1421,18 @@
   function finishFight() {
     var s = state.fight;
     els.meters.classList.add('hidden');
-    els.fightFish.classList.remove('show');
-    els.zehn.classList.remove('fg-reeling-rock', 'fg-reeling-hard');
+    scene.rod.bendTarget = 0;
     if (s.won) { winRound(); return; }
-    // Đứt dây: kết thúc ván, an ủi + lượt phụ (D2)
+    // Đứt dây: cần văng về trước, cá lao đi, an ủi + lượt phụ (D2)
     sndSnap();
-    els.lineSvg.style.opacity = '0';
-    spawnSplash(state.bobberXPct, 4, false);
-    setZehn('idle');
-    els.bobber.classList.add('hidden');
-    els.shadow.style.opacity = '0';
+    scene.lineVisible = false;
+    scene.rod.target = 38; scene.rod.stiff = 120; scene.rod.damp = 9;
+    scene.cat.leanTarget = 3;
+    scene.hero.mode = 'escape';
+    scene.hero.dir = 1;
+    scene.bobber.mode = 'hidden';
+    scene.cam.tx = 500; scene.cam.ty = 281; scene.cam.tzoom = 1;
+    spawnSplash(state.bobberXPct * 10, 4, false);
     var c = CONSOLATIONS[Math.floor(Math.random() * CONSOLATIONS.length)];
     say(c.de, c.vi);
     speakDe('Schade!');
@@ -1013,20 +1451,25 @@
     }
   }
 
-  // Pha 4: lên cá — bàn giao cho đường reveal/lưu kho hiện có
+  // Pha 4: lên cá — Zehn nhấc cần, cá rời nước treo ở đầu dây rồi mới vào thẻ
   function winRound() {
     var fish = state.fish;
     state.phase = 'won';
-    els.bobber.classList.add('hidden');
-    els.shadow.style.opacity = '0';
-    spawnSplash(state.bobberXPct, 10, true);
+    scene.bobber.mode = 'hidden';
+    spawnSplash(scene.hero.x, 10, true);
     sndSplash(true);
     sndWin();
-    // Zehn nhấc cần lên: con cá được kéo lên khỏi mặt nước, treo lủng lẳng
-    // ở đầu dây cạnh bè, đung đưa một nhịp rồi mới vào thẻ.
-    setZehn('lift');
-    liftFish(fish);
-    later(function () { if (state && state.phase === 'won') setZehn('celebrate'); }, 980);
+    scene.rod.target = -52; scene.rod.stiff = 85; scene.rod.damp = 11;
+    scene.cat.leanTarget = -3;
+    scene.hero.mode = 'lift';
+    scene.hero.liftT = 0;
+    scene.cam.tx = 330; scene.cam.ty = 275; scene.cam.tzoom = 1.13;
+    later(function () {
+      if (state && state.phase === 'won') {
+        scene.cat.celebTarget = 1;
+        spawnSparkles(215, 235);
+      }
+    }, 980);
     say('Ein ' + fish.german + '!', 'Lên cá rồi!');
     speakDe('Ein ' + fish.german + '!');
 
@@ -1094,7 +1537,7 @@
   }
 
   // Khởi tạo khi DOM sẵn sàng (nút mở game chỉ hiện cùng hộp thoại)
-  function init() { buildDom(); preloadPoses(); }
+  function init() { buildDom(); preloadImages(); }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
@@ -1106,7 +1549,23 @@
     exitToClassic: exitToClassic,
     __test: {
       setFastMode: function (v) { fastMode = !!v; },
-      core: FishingCore
+      core: FishingCore,
+      getScene: function () {
+        return {
+          phase: state ? state.phase : null,
+          bobberMode: scene ? scene.bobber.mode : null,
+          heroActive: !!(scene && scene.hero.active),
+          heroMode: scene ? scene.hero.mode : null,
+          heroX: scene ? Math.round(scene.hero.x) : 0,
+          heroY: scene ? Math.round(scene.hero.y) : 0,
+          heroW: scene ? scene.hero.w : 0,
+          fishId: state && state.fish ? state.fish.id : null,
+          rodBend: scene ? Math.round(scene.rod.bend) : 0,
+          rodAngle: scene ? Math.round(scene.rod.angle) : 0,
+          camZoom: scene ? +scene.cam.zoom.toFixed(2) : 0,
+          canvasOk: !!(cv.ctx && IMG.bg)
+        };
+      }
     }
   };
 })();
