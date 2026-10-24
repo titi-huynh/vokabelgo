@@ -15129,7 +15129,7 @@ function renderSessionInteraction() {
     const sessNow = window.VokabelSession && typeof window.VokabelSession.getTodaySession === 'function' ? window.VokabelSession.getTodaySession() : null;
     const curItem = sessNow && Array.isArray(sessNow.queue) ? sessNow.queue[sessNow.queueIndex] : null;
     const tsNow = curItem && sessNow.targetStates ? sessNow.targetStates[curItem.cardId] : null;
-    if (statLine && tsNow && tsNow.via === 'game-revisit') statLine.textContent += ' · ↩ Gặp lại từ game';
+    if (statLine && tsNow && tsNow.via === 'game-revisit') statLine.textContent += ' · ↩ Từ cần gặp lại';
   } catch(e){}
 
   // Fill card content
@@ -20338,6 +20338,7 @@ function playKinoMixtape(){
 <script src="teach-me-invite.js"></script>
 <script src="workflow-bridges.js"></script>
 <script src="kino-lookup.js"></script>
+<script src="kino-quiz.js"></script>
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () {

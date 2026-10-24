@@ -80,7 +80,8 @@
     for (var i = events.length - 1; i >= 0; i--) {
       var e = events[i];
       if (e.ts < since) break;
-      if (e.source !== 'game' || e.kind !== 'wrong') continue;
+      // Từ sai từ game VÀ từ quiz Kino đều là "từ cần gặp lại" trong buổi học.
+      if ((e.source !== 'game' && e.source !== 'kino') || e.kind !== 'wrong') continue;
       (e.termKeys || []).forEach(function (k) {
         if (!seenTerm.has(k) && termKeys.length < limit) { seenTerm.add(k); termKeys.push(k); }
       });

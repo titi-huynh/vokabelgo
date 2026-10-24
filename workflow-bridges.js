@@ -46,6 +46,15 @@
       v.addEventListener('click', function () { window.reviewCurrentVideoVocab(); });
       ramp.appendChild(v);
     }
+    // Mục 4: quiz hiểu bài cho phần vừa học (câu hỏi sinh từ picks + thẻ của phần).
+    if (window.KinoQuiz && typeof KINO_CHAPTER_DATA !== 'undefined' && KINO_CHAPTER_DATA[currentKey()]) {
+      var qz = document.createElement('button');
+      qz.type = 'button';
+      qz.textContent = '🧠 Kiểm tra hiểu bài';
+      qz.style.cssText = btnCss;
+      qz.addEventListener('click', function () { window.KinoQuiz.open(currentKey(), currentPart() - 1); });
+      ramp.appendChild(qz);
+    }
     var home = document.createElement('button');
     home.type = 'button';
     home.textContent = '🏠 Về Hôm nay';
