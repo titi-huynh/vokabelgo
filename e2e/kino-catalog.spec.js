@@ -8,6 +8,7 @@ async function openCatalog(page) {
 }
 
 test('Kino starts with a grid of covers, titles and level meta; a film opens its own parts', async ({ page }) => {
+  test.setTimeout(120000); // vòng lặp mở đủ 17 phim sau hợp nhất hai nhánh
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
   await page.setViewportSize({ width: 1440, height: 1000 });
