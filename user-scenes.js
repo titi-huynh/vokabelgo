@@ -18,10 +18,11 @@
   function db() {
     if (dbPromise) return dbPromise;
     dbPromise = new Promise((resolve, reject) => {
-      const req = indexedDB.open(DB_NAME, 1);
-      req.onupgradeneeded = () => {
-        req.result.createObjectStore('videos');
-        req.result.createObjectStore('takes');
+      const req = indexedDB.open(DB_NAME, 2);
+      req.onupgradeneeded = e => {
+        const d = req.result;
+        if (e.oldVersion < 1) { d.createObjectStore('videos'); d.createObjectStore('takes'); }
+        if (e.oldVersion < 2) d.createObjectStore('audio-cache');
       };
       req.onsuccess = () => resolve(req.result);
       req.onerror = () => reject(req.error);
@@ -159,6 +160,11 @@
     unregister(id);
   }
 
+  /* ---------- Cache tiếng đã tách (16kHz mono) cho ASR ---------- */
+  const cacheAudio = (fp, buffer) => idbPut('audio-cache', fp, buffer);
+  const getCachedAudio = fp => idbGet('audio-cache', fp);
+  const clearAudioCache = async () => { for (const k of await idbKeys('audio-cache')) await idbDel('audio-cache', k); };
+
   /* ---------- Bản thu lồng tiếng theo cảnh ---------- */
   const takeKey = (sceneKey, idx) => sceneKey + ':' + idx;
   const saveTake = (sceneKey, idx, blob) => idbPut('takes', takeKey(sceneKey, idx), blob);
@@ -194,6 +200,7 @@
     list: () => scenes.slice(), get, getByKey, keyOf, idOf, isUserKey, isUnreviewed,
     create, update, remove, prepare, register, posterFor, cuesFor, levelLabel,
     saveTake, loadTake, deleteTake, takeIndexes, videoBytesTotal,
+    cacheAudio, getCachedAudio, clearAudioCache,
     limits: { MAX_TOTAL_BYTES, MAX_FILE_BYTES }
   };
 })();
