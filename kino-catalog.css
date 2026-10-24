@@ -51,6 +51,20 @@
 .kino-reco-card strong { font-size: 15.5px; line-height: 1.35; overflow-wrap: break-word; }
 .kino-reco-card small { color: #647958; font-weight: 600; }
 .kino-reco-card:hover img { outline: 2px solid #78925e; outline-offset: 2px; }
+.kino-short-hero { display: flex; gap: 18px; align-items: stretch; margin: 0 0 22px; padding: 14px; border: 1.5px solid #d9a05b; border-radius: 18px; background: linear-gradient(120deg, #FFF7E8, #FFFDF7); }
+.kino-short-hero[hidden] { display: none; }
+.kino-short-poster { width: min(300px, 42%); height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; align-self: center; }
+.kino-short-body { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.kino-short-eyebrow { margin: 0; font-size: 12.5px; letter-spacing: 1.2px; font-weight: 800; color: #b06f1f; }
+.kino-short-title { font-size: 19px; color: #30412f; }
+.kino-short-quote { margin: 2px 0 0; font-size: 16.5px; line-height: 1.5; color: #2B241E; }
+.kino-short-vi { margin: 0; font-size: 14.5px; color: #5D5347; font-style: italic; }
+.kino-short-meta { margin: 2px 0 8px; font-size: 13px; color: #8a7f6a; }
+.kino-short-btn { align-self: flex-start; border: none; background: #C44D18; color: #fff; border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px; cursor: pointer; }
+@media (max-width: 640px) {
+  .kino-short-hero { flex-direction: column; }
+  .kino-short-poster { width: 100%; }
+}
 .kino-chapters-active:not([data-kino-view="lesson"]) :is(#kinoLessonHeader, #kinoLessonTabs, #kinoLessonPanel) { display: none; }
 .kino-chapters-active[data-kino-view="detail"] .peppa-parts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: visible; padding: 0; margin: 0; gap: 12px; }
 .kino-chapters-active[data-kino-view="detail"] .peppa-part { min-height: 160px; padding: 18px; gap: 8px; flex-basis: auto; border: 1px solid #d4dfc7; background: #fff; box-shadow: none; }

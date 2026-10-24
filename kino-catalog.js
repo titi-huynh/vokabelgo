@@ -46,6 +46,7 @@ const KinoCatalog = (() => {
     catalog.innerHTML = '<h1 id="kinoCatalogTitle">Kino</h1>'
       + `<p class="kino-catalog-sub">${movieKeys.length} phim · phụ đề Đức–Việt · chia phần theo mục tiêu giao tiếp</p>`
       + '<div class="kino-filter-row" role="group" aria-label="Lọc theo cấp độ"></div>'
+      + '<section id="kinoShortHero" class="kino-short-hero" hidden></section>'
       + '<section class="kino-resume-row" hidden><h2>Đang học dở</h2><div class="kino-resume-list"></div></section>'
       + '<ul class="kino-film-row" aria-label="Chọn phim"></ul>';
     // Chips lọc theo cấp độ (nhãn cấp độ sẵn có của từng phim)
@@ -186,6 +187,8 @@ const KinoCatalog = (() => {
     KinoData.cancelSelection();
     mount();
     refreshCatalogExtras();
+    const hero = document.getElementById('kinoShortHero');
+    if (hero && window.KinoShorts) window.KinoShorts.render(hero);
     stopPlayback();
     document.querySelector('.kino-more-tools')?.removeAttribute('open');
     detail.hidden = true;
