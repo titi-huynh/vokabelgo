@@ -1,5 +1,5 @@
 /* Chapter bounds sit between complete spoken turns; all sources remain original MP4s. */
-const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura' };
+const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura', druck_s07e01: 'druck', simplicissimus_leberwurst: 'simplicissimus' };
 const KINO_CHAPTER_DATA = {
   peppa_supermarkt: {
     genre: 'Thiếu nhi',
@@ -66,4 +66,45 @@ const KINO_CHAPTER_DATA = {
   we_bare_bears_mall: { ...WE_BARE_BEARS_MALL_LESSON.chapterData, genre: 'Hoạt hình', get cues() { return WE_BARE_BEARS_MALL_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('we_bare_bears_mall'); } },
   frieren_s01e01: { ...FRIEREN_S01E01_LESSON.chapterData, genre: 'Anime', get cues() { return FRIEREN_S01E01_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('frieren_s01e01'); } },
   sakura_s01e01: { ...SAKURA_S01E01_LESSON.chapterData, genre: 'Anime', get cues() { return SAKURA_S01E01_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('sakura_s01e01'); } }
+,
+  druck_s07e01: {
+    genre: 'Tuổi teen',
+    title: 'Alles ist verzaubert', series: 'DRUCK', levelLabel: 'Gợi ý B1–B2',
+    catalogTitle: 'DRUCK · Alles ist verzaubert (Mùa 7 · Tập 1)',
+    storageKey: 'vokabelgo_kino_chapters_v1_druck_s07e01', cueCount: 268,
+    get cues() { return DRUCK_S07E01_ALIGNED_UTTERANCES; },
+    chapters: [
+    { title: 'Tin nhắn và chuyến đi', icon: '🎒', start: 0.04, end: 176.6,
+      picks: [500001, 500002, 500003, 500004, 500005, 500006, 500007], goal: 'Chào hỏi, hẹn gặp lại và kể chuyện thường ngày qua tin nhắn thoại.' },
+    { title: 'Ngày đầu của Lou', icon: '🏫', start: 177.84, end: 328.72,
+      picks: [500047, 500048, 500049, 500050, 500051, 500052, 500053], goal: 'Chào đón học sinh mới và những câu xã giao đầu tiên ở trường.' },
+    { title: 'Ngồi cạnh Lou', icon: '📚', start: 335.4, end: 503.04,
+      picks: [500068, 500069, 500070, 500071, 500072, 500073, 500074], goal: 'Bắt chuyện làm quen và nói về sách vở, môn học.' },
+    { title: 'Cây cảnh và bóng đá', icon: '🪴', start: 505.28, end: 745.8,
+      picks: [500114, 500115, 500116, 500117, 500118, 500119, 500120], goal: 'Nói về sở thích, việc nhà và thể thao với bạn bè, gia đình.' },
+    { title: 'Lời mời Halloween', icon: '🎃', start: 751.44, end: 922.64,
+      picks: [500165, 500166, 500167, 500168, 500169, 500170, 500171], goal: 'Rủ rê đi chơi, bàn kế hoạch và nói sau lưng một cách dí dỏm.' },
+    { title: 'Đêm Halloween', icon: '👻', start: 934.4, end: 1088.48,
+      picks: [500205, 500206, 500207, 500208, 500209, 500210, 500211], goal: 'Phản ứng bất ngờ, rủ nhau khám phá nơi lạ.' },
+    { title: 'Vòng tròn ma thuật', icon: '✨', start: 1089.76, end: 1246.8,
+      picks: [500249, 500250, 500251, 500252, 500253, 500254, 500255], goal: 'Đùa giỡn, hô thần chú và chia sẻ bài hát yêu thích.' }
+    ]
+  },
+  simplicissimus_leberwurst: {
+    genre: 'Khoa học',
+    title: 'Warum deine Leberwurst 1,09 € kostet', series: 'Simplicissimus', levelLabel: 'Gợi ý B2',
+    catalogTitle: 'Simplicissimus · Warum deine Leberwurst 1,09 € kostet',
+    storageKey: 'vokabelgo_kino_chapters_v1_simplicissimus_leberwurst', cueCount: 259,
+    get cues() { return SIMPLICISSIMUS_LEBERWURST_ALIGNED_UTTERANCES; },
+    chapters: [
+    { title: 'Cái giá thật của xúc xích gan', icon: '🥩', start: 1.12, end: 242.3,
+      picks: [500001, 500002, 500003, 500004, 500005, 500006, 500007], goal: 'Từ vựng về ngành công nghiệp thịt, mạng lưới lợi ích và chính trị.' },
+    { title: 'Phân bón và nước ngầm', icon: '💧', start: 243.77, end: 423.68,
+      picks: [500079, 500080, 500081, 500082, 500083, 500084, 500085], goal: 'Từ vựng môi trường: phân chuồng, nitrat, chỉ thị EU và giới hạn ô nhiễm.' },
+    { title: 'Con người trả giá', icon: '👷', start: 428.03, end: 669.77,
+      picks: [500142, 500143, 500144, 500145, 500146, 500147, 500148], goal: 'Từ vựng về điều kiện lao động, lao động nhập cư và trách nhiệm xã hội.' },
+    { title: 'Luật mới và câu hỏi mở', icon: '⚖️', start: 669.88, end: 775.22,
+      picks: [500226, 500227, 500228, 500229, 500230, 500231, 500232], goal: 'Theo dõi tranh luận lập pháp và những câu hỏi phản biện ở cuối video.' }
+    ]
+  }
 };

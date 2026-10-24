@@ -18955,6 +18955,36 @@ const PIZZASCHWESTER_72_DEFAULT_SEGMENTS = [{"id": 1, "start": 27.6, "end": 33.1
 
 const KINO_VIDEOS = {
   sakura_s01e01: { ...SAKURA_S01E01_LESSON.video, get defaultSegs() { return SAKURA_S01E01_ALIGNED_UTTERANCES; } },
+  druck_s07e01: {
+    key: "druck_s07e01",
+    series: "DRUCK",
+    seriesIcon: "🎒",
+    episodeTitle: "Alles ist verzaubert",
+    icon: "🎒",
+    title: "🎒 DRUCK – Alles ist verzaubert",
+    src: "video/druck-s07e01.mp4",
+    get defaultSegs() { return DRUCK_S07E01_ALIGNED_UTTERANCES; },
+    storageKey: "kino_calibrated_druck_s07e01_v1",
+    syncKey: "vokabelgo_kino_perfected_druck_s07e01",
+    progressKey: "vokabelgo_kino_progress_druck_s07e01",
+    fullDurationStr: "21:18",
+    flashcardDeck: "🎬 Video: DRUCK – Alles ist verzaubert"
+  },
+  simplicissimus_leberwurst: {
+    key: "simplicissimus_leberwurst",
+    series: "Simplicissimus",
+    seriesIcon: "🔍",
+    episodeTitle: "Warum deine Leberwurst 1,09 € kostet",
+    icon: "📜",
+    title: "📜 Simplicissimus – Warum deine Leberwurst 1,09 € kostet",
+    src: "video/simplicissimus-leberwurst.mp4",
+    get defaultSegs() { return SIMPLICISSIMUS_LEBERWURST_ALIGNED_UTTERANCES; },
+    storageKey: "kino_calibrated_simplicissimus_leberwurst_v1",
+    syncKey: "vokabelgo_kino_perfected_simplicissimus_leberwurst",
+    progressKey: "vokabelgo_kino_progress_simplicissimus_leberwurst",
+    fullDurationStr: "12:56",
+    flashcardDeck: "🎬 Video: Simplicissimus – Leberwurst"
+  },
   frieren_s01e01: { ...FRIEREN_S01E01_LESSON.video, get defaultSegs() { return FRIEREN_S01E01_ALIGNED_UTTERANCES; } },
   trudes_fahrstuhl: { ...TRUDES_FAHRSTUHL_LESSON.video, get defaultSegs() { return TRUDES_FAHRSTUHL_ALIGNED_UTTERANCES; } },
   erdmaennchen_nudeltrick: { ...ERDMAENNCHEN_NUDELTRICK_LESSON.video, get defaultSegs() { return ERDMAENNCHEN_NUDELTRICK_ALIGNED_UTTERANCES; } },

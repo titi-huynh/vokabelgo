@@ -10,7 +10,9 @@ const KinoData = (() => {
     erdmaennchen_schmucklose: 'erdmaennchen-schmucklose-aligned.js',
     we_bare_bears_mall: 'we-bare-bears-mall-aligned.js',
     frieren_s01e01: 'frieren-s01e01-aligned.js',
-    sakura_s01e01: 'sakura-s01e01-aligned.js'
+    sakura_s01e01: 'sakura-s01e01-aligned.js',
+    druck_s07e01: 'druck_s07e01-aligned.js',
+    simplicissimus_leberwurst: 'simplicissimus_leberwurst-aligned.js'
   };
   const requests = new Map(), loaded = new Set();
   let selection = 0;
@@ -65,6 +67,8 @@ const KinoData = (() => {
       case 'we_bare_bears_mall': return WE_BARE_BEARS_MALL_ALIGNED_UTTERANCES;
       case 'frieren_s01e01': return FRIEREN_S01E01_ALIGNED_UTTERANCES;
       case 'sakura_s01e01': return SAKURA_S01E01_ALIGNED_UTTERANCES;
+      case 'druck_s07e01': return DRUCK_S07E01_ALIGNED_UTTERANCES;
+      case 'simplicissimus_leberwurst': return SIMPLICISSIMUS_LEBERWURST_ALIGNED_UTTERANCES;
       default: return [];
     }
   }

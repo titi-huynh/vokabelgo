@@ -26,10 +26,6 @@
       format: '2 mùa · 14 tập · ~45 phút/tập',
       pitch: 'Nữ điệp viên Đông Đức trả thù sau khi Bức tường Berlin sụp đổ. Nhịp nhanh, màu sắc bắt mắt, thoại rõ bất ngờ so với thể loại.',
       file: 'video/kleo-s01e01.mp4', source: 'Netflix — cần file video.' },
-    { key: 'druck', emoji: '🎒', title: 'DRUCK', level: 'B1–B2', genre: 'Tuổi teen',
-      format: '8 mùa · tập 11–35 phút',
-      pitch: 'Bản Đức của Skam: nhóm bạn học sinh Berlin với tình bạn, tình yêu và bản sắc. Tiếng teen thật 100%, tập ngắn dễ theo.',
-      file: 'video/druck-s01e01.mp4', source: 'funk/ZDFneo — phát chính thức miễn phí trên YouTube.' },
     { key: 'dark', emoji: '🌀', title: 'Dark', level: 'B2', genre: 'Giật gân',
       format: '3 mùa · 26 tập · ~50 phút/tập',
       pitch: 'Du hành thời gian ở thị trấn Winden — series Đức nổi tiếng nhất toàn cầu. Cốt truyện mê hoặc; thoại phức tạp nên để dành khi đã vững B2.',
@@ -46,10 +42,6 @@
       format: 'Video 8–15 phút · tuyển tập theo chủ đề',
       pitch: 'Kênh hoạt hình khoa học nổi tiếng nhất nước Đức: vũ trụ, cơ thể, triết học — lời dẫn thu sẵn nhịp vừa, hình ảnh cuốn từng giây. Có phụ đề chính thức.',
       file: 'video/kurzgesagt-dinge-erklaert.mp4', source: 'Kênh YouTube chính chủ của Kurzgesagt.' },
-    { key: 'simplicissimus', emoji: '📜', title: 'Simplicissimus', level: 'B2', genre: 'Khoa học',
-      format: 'Video essay 10–20 phút',
-      pitch: 'Kể chuyện lịch sử và xã hội kiểu video essay, giọng kể có duyên và rất "bắt tai". Hợp làm từng phần ngắn trong Kino.',
-      file: 'video/simplicissimus.mp4', source: 'Kênh YouTube của nhóm làm nội dung Đức.' }
   ];
   function hueFor(key) { let h = 0; for (const ch of key) h = (h * 31 + ch.charCodeAt(0)) % 360; return h; }
   let dlg = null;
