@@ -145,9 +145,10 @@
     if (!st) return;
     const all = st.mode === 'asr' ? (st.asrCues || []) : st.cuesAll;
     const span = all.length ? all[all.length - 1].end - all[0].start : 0;
-    const needWindow = all.length > 0 && (span > 300 || st.mode === 'asr');
+    const needWindow = all.length > 0 ? (span > 300 || st.mode === 'asr')
+      : (st.mode === 'asr' && !!st.videoFile && (st.duration || 0) > 300);
     $('uscWindowRow').hidden = !needWindow;
-    if (needWindow && !$('uscWinStart').value) $('uscWinStart').value = Math.floor(all[0].start);
+    if (needWindow && !$('uscWinStart').value) $('uscWinStart').value = all.length ? Math.floor(all[0].start) : 0;
     const win = windowedCues();
     if (st.mode === 'srt') {
       $('uscWinInfo').textContent = all.length
