@@ -1,5 +1,5 @@
 /* Chapter bounds sit between complete spoken turns; all sources remain original MP4s. */
-const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura', druck_s07e01: 'druck', simplicissimus_leberwurst: 'simplicissimus', trudes_bagger: 'bagger' };
+const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura', druck_s07e01: 'druck', simplicissimus_leberwurst: 'simplicissimus', trudes_bagger: 'bagger', erdmaennchen_spukschloss: 'spukschloss' };
 const KINO_CHAPTER_DATA = {
   peppa_supermarkt: {
     genre: 'Thiếu nhi',
@@ -119,6 +119,26 @@ const KINO_CHAPTER_DATA = {
       picks: [500001, 500002, 500003, 500004, 500005, 500006, 500007], goal: 'Phát hiện một vật lạ, hỏi xem chuyện gì đã xảy ra và giải thích.' },
     { title: 'Trả lại và xin lỗi', icon: '🙏', start: 191.56, end: 349.68,
       picks: [500030, 500031, 500032, 500033, 500034, 500035, 500036], goal: 'Học cách nói lời xin lỗi, nhận lỗi và sửa sai.' }
+    ]
+  }
+,
+  erdmaennchen_spukschloss: {
+    genre: 'Hoạt hình',
+    title: 'Das Spukschloss', series: 'Ein Fall für die Erdmännchen', levelLabel: 'Gợi ý A2–B1',
+    catalogTitle: 'Ein Fall für die Erdmännchen · Das Spukschloss',
+    storageKey: 'vokabelgo_kino_chapters_v1_erdmaennchen_spukschloss', cueCount: 201,
+    get cues() { return ERDMAENNCHEN_SPUKSCHLOSS_ALIGNED_UTTERANCES; },
+    chapters: [
+    { title: 'Lâu đài của bà bá tước', icon: '🏰', start: 0, end: 190.84,
+      picks: [500001, 500002, 500003, 500004, 500005, 500006, 500007], goal: 'Đến thăm một lâu đài và nghe kể về một bí ẩn ban đêm.' },
+    { title: 'Kế hoạch dọa ma', icon: '🎭', start: 192.16, end: 355.78,
+      picks: [500041, 500042, 500043, 500044, 500045, 500046, 500047], goal: 'Bàn kế hoạch, chuẩn bị mặt nạ và sẵn sàng cho ban đêm.' },
+    { title: 'Ai là con ma?', icon: '🌙', start: 363.19, end: 537.25,
+      picks: [500088, 500089, 500090, 500091, 500092, 500093, 500094], goal: 'Lần theo tiếng động lạ, thẩm vấn nghi phạm và loại trừ từng người.' },
+    { title: 'Cư dân trên gác mái', icon: '🦇', start: 540.19, end: 694.53,
+      picks: [500148, 500149, 500150, 500151, 500152, 500153, 500154], goal: 'Phát hiện sự thật bất ngờ và tìm giải pháp tốt cho mọi người.' },
+    { title: 'Khai trương khách sạn ma', icon: '🎉', start: 695.92, end: 739.36,
+      picks: [500187, 500188, 500189, 500190, 500191, 500192, 500193], goal: 'Chào đón vị khách đầu tiên và xử lý tình huống bất ngờ.' }
     ]
   }
 };

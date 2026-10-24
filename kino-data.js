@@ -13,7 +13,8 @@ const KinoData = (() => {
     sakura_s01e01: 'sakura-s01e01-aligned.js',
     druck_s07e01: 'druck_s07e01-aligned.js',
     simplicissimus_leberwurst: 'simplicissimus_leberwurst-aligned.js',
-    trudes_bagger: 'trudes_bagger-aligned.js'
+    trudes_bagger: 'trudes_bagger-aligned.js',
+    erdmaennchen_spukschloss: 'erdmaennchen_spukschloss-aligned.js'
   };
   const requests = new Map(), loaded = new Set();
   let selection = 0;
@@ -71,6 +72,7 @@ const KinoData = (() => {
       case 'druck_s07e01': return DRUCK_S07E01_ALIGNED_UTTERANCES;
       case 'simplicissimus_leberwurst': return SIMPLICISSIMUS_LEBERWURST_ALIGNED_UTTERANCES;
       case 'trudes_bagger': return TRUDES_BAGGER_ALIGNED_UTTERANCES;
+      case 'erdmaennchen_spukschloss': return ERDMAENNCHEN_SPUKSCHLOSS_ALIGNED_UTTERANCES;
       default: return [];
     }
   }
