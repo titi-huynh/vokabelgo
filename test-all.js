@@ -35,7 +35,8 @@ const suites = [
   'test-dau-tu-v05.js',
   'test-lexicon-pipeline.js',
   'test-vocabulary-rotation.js',
-  'test-dau-tu-v06.js'
+  'test-dau-tu-v06.js',
+  'test-srt-align.js'
 ];
 
 let failedSuites = [];
