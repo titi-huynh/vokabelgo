@@ -49,29 +49,41 @@ const KinoCatalog = (() => {
     catalog.innerHTML = '<h1 id="kinoCatalogTitle">Kino</h1>'
       + `<p class="kino-catalog-sub">${movieKeys.length} phim · phụ đề Đức–Việt · chia phần theo mục tiêu giao tiếp</p>`
       + '<div class="kino-filter-row" role="group" aria-label="Lọc theo cấp độ"></div>'
+      + '<div class="kino-filter-row kino-genre-row" role="group" aria-label="Lọc theo thể loại"></div>'
       + '<section id="kinoShortHero" class="kino-short-hero" hidden></section>'
       + '<section class="kino-resume-row" hidden><h2>Đang học dở</h2><div class="kino-resume-list"></div></section>'
       + '<ul class="kino-film-row" aria-label="Chọn phim"></ul>';
-    // Chips lọc theo cấp độ (nhãn cấp độ sẵn có của từng phim)
+    // Chips lọc theo cấp độ + thể loại (kết hợp cả hai điều kiện)
     const levels = [...new Set(movieKeys.map(k => KINO_CHAPTER_DATA[k].levelLabel).filter(Boolean))];
+    const genres = [...new Set(movieKeys.map(k => KINO_CHAPTER_DATA[k].genre).filter(Boolean))];
     const chipRow = catalog.querySelector('.kino-filter-row');
-    const mkChip = (label, value) => {
+    const genreRow = catalog.querySelector('.kino-genre-row');
+    const activeFilter = { level: '', genre: '' };
+    const applyFilters = () => {
+      catalog.querySelectorAll('.kino-film-row:not(.kino-coming-row) .kino-film-card').forEach(card => {
+        const li = card.closest('li');
+        if (!li) return;
+        const okLevel = !activeFilter.level || card.dataset.level === activeFilter.level;
+        const okGenre = !activeFilter.genre || card.dataset.genre === activeFilter.genre;
+        li.style.display = okLevel && okGenre ? '' : 'none';
+      });
+    };
+    const mkChip = (row, label, value, kind) => {
       const b = document.createElement('button');
       b.type = 'button';
       b.className = 'kino-filter-chip' + (value === '' ? ' active' : '');
       b.textContent = label;
-      b.dataset.level = value;
       b.addEventListener('click', () => {
-        chipRow.querySelectorAll('.kino-filter-chip').forEach(c => c.classList.toggle('active', c === b));
-        catalog.querySelectorAll('.kino-film-card').forEach(card => {
-          const li = card.closest('li');
-          if (li) li.style.display = (!value || card.dataset.level === value) ? '' : 'none';
-        });
+        row.querySelectorAll('.kino-filter-chip').forEach(c => c.classList.toggle('active', c === b));
+        activeFilter[kind] = value;
+        applyFilters();
       });
       return b;
     };
-    chipRow.append(mkChip('Tất cả', ''));
-    levels.forEach(lv => chipRow.append(mkChip(lv.replace(/^Gợi ý\s*/, ''), lv)));
+    chipRow.append(mkChip(chipRow, 'Tất cả', '', 'level'));
+    levels.forEach(lv => chipRow.append(mkChip(chipRow, lv.replace(/^Gợi ý\s*/, ''), lv, 'level')));
+    genreRow.append(mkChip(genreRow, 'Mọi thể loại', '', 'genre'));
+    genres.forEach(g => genreRow.append(mkChip(genreRow, g, g, 'genre')));
     for (const [key, movie] of Object.entries(KINO_CHAPTER_DATA)) {
       if (movie.userScene) continue;
       const item = document.createElement('li');
@@ -79,6 +91,7 @@ const KinoCatalog = (() => {
       link.className = 'kino-film-card';
       link.dataset.movie = key;
       if (movie.levelLabel) link.dataset.level = movie.levelLabel;
+      if (movie.genre) link.dataset.genre = movie.genre;
       link.href = `?kino=${aliases[key]}`;
       const cover = document.createElement('img');
       cover.src = posterFor(key);
@@ -92,7 +105,7 @@ const KinoCatalog = (() => {
       link.append(cover, title);
       const meta = document.createElement('span');
       meta.className = 'kino-film-meta';
-      meta.textContent = [movie.levelLabel ? movie.levelLabel.replace(/^Gợi ý\s*/, '') : '', KINO_VIDEOS[key] && KINO_VIDEOS[key].fullDurationStr].filter(Boolean).join(' · ');
+      meta.textContent = [movie.genre || '', movie.levelLabel ? movie.levelLabel.replace(/^Gợi ý\s*/, '') : '', KINO_VIDEOS[key] && KINO_VIDEOS[key].fullDurationStr].filter(Boolean).join(' · ');
       link.append(meta);
       const prog = progressSpan(key);
       if (prog) link.append(prog);
@@ -170,7 +183,7 @@ const KinoCatalog = (() => {
   // Cập nhật lại tiến độ trên thẻ phim + hàng đang học dở mỗi lần mở catalog.
   function refreshCatalogExtras() {
     if (!catalog) return;
-    catalog.querySelectorAll('.kino-film-card').forEach(card => {
+    catalog.querySelectorAll('.kino-film-card[data-movie]').forEach(card => {
       const key = card.dataset.movie;
       const old = card.querySelector('.kino-film-progress');
       if (old) old.remove();
@@ -194,6 +207,7 @@ const KinoCatalog = (() => {
     const hero = document.getElementById('kinoShortHero');
     if (hero && window.KinoShorts) window.KinoShorts.render(hero);
     if (window.UserScenesUI) window.UserScenesUI.renderSection();
+    if (window.KinoComing) window.KinoComing.render(catalog);
     stopPlayback();
     document.querySelector('.kino-more-tools')?.removeAttribute('open');
     detail.hidden = true;

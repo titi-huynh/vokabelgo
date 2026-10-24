@@ -122,3 +122,18 @@
   .kino-listen-footer { align-items: flex-start; flex-direction: column; gap: 12px; padding: 16px; }
   #kinoLessonPanel .kino-practice-heading { margin-top: 12px; }
 }
+
+.kino-genre-row { margin-top: 6px; }
+.kino-coming { margin-top: 26px; }
+.kino-coming-cover { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; aspect-ratio: 16 / 9; border-radius: 10px; color: #fff; text-align: center; padding: 10px;
+  background: linear-gradient(140deg, hsl(var(--kc-hue, 250) 55% 42%), hsl(calc(var(--kc-hue, 250) + 50) 60% 26%)); }
+.kino-coming-emoji { font-size: 2rem; line-height: 1; }
+.kino-coming-name { font-weight: 800; font-size: .98rem; text-shadow: 0 1px 8px rgba(0,0,0,.35); }
+.kino-coming-badge { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.35); padding: 2px 8px; border-radius: 999px; font-size: .7rem; font-weight: 700; letter-spacing: .4px; }
+.kino-coming-tile { display: flex; flex-direction: column; gap: 6px; width: 100%; text-align: left; background: none; border: none; padding: 0; cursor: pointer; font: inherit; color: inherit; }
+.kino-coming-tile strong { font-size: .95rem; }
+.kino-coming-tile .kino-coming-cover { width: 100%; box-sizing: border-box; }
+.kino-coming-dialog { border: none; border-radius: 16px; max-width: 520px; width: calc(100vw - 32px); padding: 20px; }
+.kino-coming-info .kino-coming-cover { margin-bottom: 12px; }
+.kino-coming-info code { background: rgba(120,130,160,.16); padding: 2px 8px; border-radius: 6px; word-break: break-all; }
+.kino-coming-facts { opacity: .75; font-size: .9rem; }

@@ -2,6 +2,7 @@
 const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura' };
 const KINO_CHAPTER_DATA = {
   peppa_supermarkt: {
+    genre: 'Thiếu nhi',
     title: 'Im Supermarkt', series: 'PEPPA WUTZ', levelLabel: 'Gợi ý A1–A2',
     storageKey: 'vokabelgo_kino_peppa_chapters_v1', cueCount: 312,
     legacyKey: 'vokabelgo_kino_progress_peppa_supermarkt', legacyCount: 106,
@@ -20,6 +21,7 @@ const KINO_CHAPTER_DATA = {
   ]
   },
   pizzaschwester: {
+    genre: 'Thiếu nhi',
     title: 'Pizza-Schwestern', series: 'BLUEY', levelLabel: 'Gợi ý A2',
     storageKey: 'vokabelgo_kino_chapters_v1_pizzaschwester', cueCount: 193,
     legacyKey: 'vokabelgo_kino_pizzaschwester_v3', legacyCount: 72,
@@ -37,6 +39,7 @@ const KINO_CHAPTER_DATA = {
     ]
   },
   babysitter: {
+    genre: 'Thiếu nhi',
     title: 'Die Babysitter', series: 'BLUEY', levelLabel: 'Gợi ý A2',
     storageKey: 'vokabelgo_kino_chapters_v1_babysitter', cueCount: 171,
     legacyKey: 'vokabelgo_kino_progress_babysitter', legacyCount: 64,
@@ -56,11 +59,11 @@ const KINO_CHAPTER_DATA = {
         goal: 'Nói về nỗi lo, lời hứa và thử một điều mới.' }
     ]
   },
-  hans: { ...HANS_LESSON.chapterData, get cues() { return HANS_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('hans'); } },
-  trudes_fahrstuhl: { ...TRUDES_FAHRSTUHL_LESSON.chapterData, get cues() { return TRUDES_FAHRSTUHL_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('trudes_fahrstuhl'); } },
-  erdmaennchen_nudeltrick: { ...ERDMAENNCHEN_NUDELTRICK_LESSON.chapterData, get cues() { return ERDMAENNCHEN_NUDELTRICK_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('erdmaennchen_nudeltrick'); } },
-  erdmaennchen_schmucklose: { ...ERDMAENNCHEN_SCHMUCKLOSE_LESSON.chapterData, get cues() { return ERDMAENNCHEN_SCHMUCKLOSE_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('erdmaennchen_schmucklose'); } },
-  we_bare_bears_mall: { ...WE_BARE_BEARS_MALL_LESSON.chapterData, get cues() { return WE_BARE_BEARS_MALL_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('we_bare_bears_mall'); } },
-  frieren_s01e01: { ...FRIEREN_S01E01_LESSON.chapterData, get cues() { return FRIEREN_S01E01_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('frieren_s01e01'); } },
-  sakura_s01e01: { ...SAKURA_S01E01_LESSON.chapterData, get cues() { return SAKURA_S01E01_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('sakura_s01e01'); } }
+  hans: { ...HANS_LESSON.chapterData, genre: 'Cổ tích', get cues() { return HANS_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('hans'); } },
+  trudes_fahrstuhl: { ...TRUDES_FAHRSTUHL_LESSON.chapterData, genre: 'Hoạt hình', get cues() { return TRUDES_FAHRSTUHL_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('trudes_fahrstuhl'); } },
+  erdmaennchen_nudeltrick: { ...ERDMAENNCHEN_NUDELTRICK_LESSON.chapterData, genre: 'Hoạt hình', get cues() { return ERDMAENNCHEN_NUDELTRICK_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('erdmaennchen_nudeltrick'); } },
+  erdmaennchen_schmucklose: { ...ERDMAENNCHEN_SCHMUCKLOSE_LESSON.chapterData, genre: 'Hoạt hình', get cues() { return ERDMAENNCHEN_SCHMUCKLOSE_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('erdmaennchen_schmucklose'); } },
+  we_bare_bears_mall: { ...WE_BARE_BEARS_MALL_LESSON.chapterData, genre: 'Hoạt hình', get cues() { return WE_BARE_BEARS_MALL_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('we_bare_bears_mall'); } },
+  frieren_s01e01: { ...FRIEREN_S01E01_LESSON.chapterData, genre: 'Anime', get cues() { return FRIEREN_S01E01_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('frieren_s01e01'); } },
+  sakura_s01e01: { ...SAKURA_S01E01_LESSON.chapterData, genre: 'Anime', get cues() { return SAKURA_S01E01_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('sakura_s01e01'); } }
 };
