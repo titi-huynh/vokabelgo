@@ -1,8 +1,3 @@
-// SPY × FAMILY (lồng tiếng Đức) — tập 1 "Operation Strix".
-// Lời thoại Đức do nhận dạng giọng nói tại máy (Whisper small), đã đối chiếu mô hình base và rà soát biên tập;
-// 29 đoạn không phân giải được (nhạc kết ED, câu rối hai mô hình) đã bỏ — danh sách trong báo cáo đợt bàn giao.
-// Phụ đề Việt là bản dịch phục vụ học tập, chờ rà soát. Nguồn video: tệp do chị/Codex bàn giao (source.json đi kèm),
-// quyền phát hành chưa xác minh — chỉ dùng học tập nội bộ, không công bố.
 const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   {
     "id": 500001,
@@ -269,8 +264,16 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
     "vi": "Này Robert, nói em nghe một điều."
   },
   {
-    "id": 500034,
+    "id": 500425,
     "parentId": 34,
+    "start": 108.02,
+    "end": 109.5,
+    "text": "Wirst du mir eines Tages auch ...?",
+    "vi": "Một ngày nào đó anh cũng sẽ… chứ?"
+  },
+  {
+    "id": 500034,
+    "parentId": 35,
     "start": 109.76,
     "end": 110.94,
     "text": "Karen, ich mach Schluss.",
@@ -278,7 +281,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500035,
-    "parentId": 35,
+    "parentId": 36,
     "start": 111.96,
     "end": 114.42,
     "text": "Ehrlich gesagt, langweilst du mich zu Tode.",
@@ -286,7 +289,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500036,
-    "parentId": 36,
+    "parentId": 37,
     "start": 116.96,
     "end": 118.42,
     "text": "Moment mal, Robert!",
@@ -294,7 +297,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500037,
-    "parentId": 37,
+    "parentId": 38,
     "start": 118.9,
     "end": 120.38,
     "text": "Du kannst mich doch nicht einfach!",
@@ -302,7 +305,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500038,
-    "parentId": 38,
+    "parentId": 39,
     "start": 120.6,
     "end": 121.68,
     "text": "Bleib gefälligst hier!",
@@ -310,7 +313,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500039,
-    "parentId": 39,
+    "parentId": 40,
     "start": 122.16,
     "end": 123.42,
     "text": "Nimm's mir nicht übel, Karen.",
@@ -318,7 +321,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500040,
-    "parentId": 40,
+    "parentId": 41,
     "start": 124.1,
     "end": 125.86,
     "text": "Ich brauche dich und deinen Vater jetzt nicht mehr.",
@@ -326,7 +329,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500041,
-    "parentId": 41,
+    "parentId": 42,
     "start": 126.5,
     "end": 128.32,
     "text": "Und auch Robert hat nun ausgedient.",
@@ -334,7 +337,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500042,
-    "parentId": 42,
+    "parentId": 43,
     "start": 129.53,
     "end": 130.09,
     "text": "Heiraten?",
@@ -342,7 +345,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500043,
-    "parentId": 43,
+    "parentId": 44,
     "start": 130.63,
     "end": 131.65,
     "text": "Ein glücklicher Alltag?",
@@ -350,7 +353,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500044,
-    "parentId": 44,
+    "parentId": 45,
     "start": 132.21,
     "end": 133.45,
     "text": "Davon habe ich mich am Tag,",
@@ -358,7 +361,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500045,
-    "parentId": 45,
+    "parentId": 46,
     "start": 133.55,
     "end": 136.41,
     "text": "als ich Spion wurde, zusammen mit meiner Identität verabschiedet.",
@@ -366,15 +369,23 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500046,
-    "parentId": 46,
+    "parentId": 47,
     "start": 149.38,
     "end": 150.46,
     "text": "Ein Code C.",
     "vi": "Một mật mã C."
   },
   {
+    "id": 500426,
+    "parentId": 48,
+    "start": 151.3,
+    "end": 154.34,
+    "text": "An Gleis 5 fährt in Kürze ein, der Zug nach Berlin.",
+    "vi": "Tại đường ray số 5, chuyến tàu đi Berlin sắp vào ga."
+  },
+  {
     "id": 500047,
-    "parentId": 47,
+    "parentId": 49,
     "start": 157.38,
     "end": 157.9,
     "text": "Hallo.",
@@ -382,7 +393,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500048,
-    "parentId": 48,
+    "parentId": 50,
     "start": 158.52,
     "end": 159.86,
     "text": "Oder auch guten Abend, Twilight.",
@@ -390,7 +401,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500049,
-    "parentId": 49,
+    "parentId": 51,
     "start": 160.52,
     "end": 162.22,
     "text": "Das war mal wieder hervorragende Arbeit.",
@@ -398,7 +409,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500050,
-    "parentId": 50,
+    "parentId": 52,
     "start": 163.08,
     "end": 164.96,
     "text": "Sie haben dem Minister den Kopf gerettet,",
@@ -406,7 +417,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500051,
-    "parentId": 51,
+    "parentId": 53,
     "start": 165.04,
     "end": 167.04,
     "text": "was unserem Land von großem Nutzen sein wird.",
@@ -414,7 +425,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500052,
-    "parentId": 52,
+    "parentId": 54,
     "start": 168.17,
     "end": 169.73,
     "text": "Kommen wir also zur nächsten Mission.",
@@ -422,7 +433,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500053,
-    "parentId": 53,
+    "parentId": 55,
     "start": 171.14,
     "end": 172.74,
     "text": "Das Ziel ist Donovan Desmond,",
@@ -430,7 +441,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500054,
-    "parentId": 54,
+    "parentId": 56,
     "start": 173.0,
     "end": 175.22,
     "text": "Vorsitzender der Nationalen Einheitspartei.",
@@ -438,7 +449,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500055,
-    "parentId": 55,
+    "parentId": 57,
     "start": 175.22,
     "end": 177.96,
     "text": "Er stellt eine große Bedrohung für den Ostwestfrieden dar.",
@@ -446,7 +457,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500056,
-    "parentId": 56,
+    "parentId": 58,
     "start": 178.66,
     "end": 180.22,
     "text": "Ich will, dass Sie sich bei ihm einschleusen",
@@ -454,7 +465,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500057,
-    "parentId": 57,
+    "parentId": 59,
     "start": 180.22,
     "end": 181.34,
     "text": "und ein Auge auf ihn haben.",
@@ -462,7 +473,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500058,
-    "parentId": 58,
+    "parentId": 60,
     "start": 181.82,
     "end": 182.88,
     "text": "Doch um das zu erreichen,",
@@ -470,7 +481,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500059,
-    "parentId": 59,
+    "parentId": 61,
     "start": 183.1,
     "end": 185.08,
     "text": "müssen Sie zunächst heiraten und ein Kind kriegen.",
@@ -478,7 +489,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500060,
-    "parentId": 60,
+    "parentId": 62,
     "start": 188.21,
     "end": 189.53,
     "text": "Desmond ist überaus paranoid",
@@ -486,7 +497,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500061,
-    "parentId": 61,
+    "parentId": 63,
     "start": 189.53,
     "end": 191.65,
     "text": "und kaum in der Öffentlichkeit anzutreffen.",
@@ -494,7 +505,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500062,
-    "parentId": 62,
+    "parentId": 64,
     "start": 192.41,
     "end": 194.49,
     "text": "Lediglich bei den regelmäßigen Zusammenkünften",
@@ -502,7 +513,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500063,
-    "parentId": 63,
+    "parentId": 65,
     "start": 194.49,
     "end": 196.41,
     "text": "der berühmten Schule, an die sein Sohn geht,",
@@ -510,7 +521,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500064,
-    "parentId": 64,
+    "parentId": 66,
     "start": 196.53,
     "end": 197.47,
     "text": "bekommt man ihn zu Gesicht.",
@@ -518,7 +529,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500065,
-    "parentId": 65,
+    "parentId": 67,
     "start": 198.27,
     "end": 200.97,
     "text": "Dort kommt auch die Politik und Wirtschaftselite zusammen.",
@@ -526,7 +537,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500066,
-    "parentId": 66,
+    "parentId": 68,
     "start": 202.44,
     "end": 203.66,
     "text": "Um sich Zugang zu verschaffen,",
@@ -534,7 +545,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500067,
-    "parentId": 67,
+    "parentId": 69,
     "start": 203.8,
     "end": 205.58,
     "text": "müssen Sie Ihr Kind an dieser Schule unterbringen",
@@ -542,7 +553,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500068,
-    "parentId": 68,
+    "parentId": 70,
     "start": 205.58,
     "end": 207.54,
     "text": "und diese Zusammenkünfte infiltrieren.",
@@ -550,7 +561,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500069,
-    "parentId": 69,
+    "parentId": 71,
     "start": 208.5,
     "end": 210.48,
     "text": "Allerdings findet die Aufnahmeprüfung",
@@ -558,7 +569,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500070,
-    "parentId": 70,
+    "parentId": 72,
     "start": 210.48,
     "end": 211.74,
     "text": "bereits in einer Woche statt.",
@@ -566,7 +577,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500071,
-    "parentId": 71,
+    "parentId": 73,
     "start": 212.6,
     "end": 214.68,
     "text": "Wie soll ich denn bitte in einer Woche ein Kind kriegen?",
@@ -574,7 +585,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500072,
-    "parentId": 72,
+    "parentId": 74,
     "start": 219.82,
     "end": 220.86,
     "text": "Operation Strix.",
@@ -582,7 +593,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500073,
-    "parentId": 73,
+    "parentId": 75,
     "start": 221.66,
     "end": 223.18,
     "text": "Von ihr hängt nicht nur der Ost-West-Frieden,",
@@ -590,7 +601,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500074,
-    "parentId": 74,
+    "parentId": 76,
     "start": 223.68,
     "end": 225.36,
     "text": "sondern der gesamte Weltfrieden ab.",
@@ -598,7 +609,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500075,
-    "parentId": 75,
+    "parentId": 77,
     "start": 226.0,
     "end": 227.46,
     "text": "Sie sind ein Held ohne Schatten.",
@@ -606,7 +617,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500076,
-    "parentId": 76,
+    "parentId": 78,
     "start": 227.94,
     "end": 229.08,
     "text": "Niemand wird je erfahren,",
@@ -614,7 +625,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500077,
-    "parentId": 77,
+    "parentId": 79,
     "start": 229.42,
     "end": 231.12,
     "text": "was ihr Agenten für uns leistet.",
@@ -622,7 +633,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500078,
-    "parentId": 78,
+    "parentId": 80,
     "start": 231.66,
     "end": 234.26,
     "text": "Auch diesmal gibt es keinen Orden oder Zeitungsbericht.",
@@ -630,7 +641,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500079,
-    "parentId": 79,
+    "parentId": 81,
     "start": 234.82,
     "end": 236.66,
     "text": "Doch bitte vergessen Sie niemals,",
@@ -638,7 +649,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500080,
-    "parentId": 80,
+    "parentId": 82,
     "start": 236.66,
     "end": 239.86,
     "text": "dass das Wohl der Menschen auf Ihren Schultern lastet.",
@@ -646,7 +657,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500081,
-    "parentId": 81,
+    "parentId": 83,
     "start": 241.74,
     "end": 242.26,
     "text": "Verstanden.",
@@ -654,7 +665,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500082,
-    "parentId": 82,
+    "parentId": 84,
     "start": 242.9,
     "end": 245.66,
     "text": "Ich, Twilight, habe meinen Namen und mein Gesicht abgelegt.",
@@ -662,7 +673,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500083,
-    "parentId": 83,
+    "parentId": 85,
     "start": 246.12,
     "end": 248.72,
     "text": "Dann werde ich eben dieses Mal den Vater eines Kindes spielen.",
@@ -670,7 +681,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500084,
-    "parentId": 84,
+    "parentId": 86,
     "start": 249.18,
     "end": 250.68,
     "text": "Alles für eine bessere Welt.",
@@ -678,7 +689,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500085,
-    "parentId": 85,
+    "parentId": 87,
     "start": 256.3,
     "end": 258.46,
     "text": "Diese Wohnung bietet genug Platz für eine Familie.",
@@ -686,7 +697,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500086,
-    "parentId": 86,
+    "parentId": 88,
     "start": 258.62,
     "end": 260.36,
     "text": "Sie ist voll möbliert, gut klimatisiert",
@@ -694,7 +705,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500087,
-    "parentId": 87,
+    "parentId": 89,
     "start": 260.36,
     "end": 262.5,
     "text": "und darüber hinaus ... mein Herr.",
@@ -702,7 +713,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500088,
-    "parentId": 88,
+    "parentId": 90,
     "start": 263.24,
     "end": 265.56,
     "text": "Keine Wanzen, jede Menge Fluchtwege.",
@@ -710,7 +721,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500089,
-    "parentId": 89,
+    "parentId": 91,
     "start": 266.68,
     "end": 267.78,
     "text": "Ja, ich werde sie nehmen.",
@@ -718,7 +729,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500090,
-    "parentId": 90,
+    "parentId": 92,
     "start": 267.94,
     "end": 269.12,
     "text": "Das freut mich sehr, Herr Forger.",
@@ -726,7 +737,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500091,
-    "parentId": 91,
+    "parentId": 93,
     "start": 269.38,
     "end": 270.52,
     "text": "Dann unterschreiben Sie bitte hier.",
@@ -734,7 +745,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500092,
-    "parentId": 92,
+    "parentId": 94,
     "start": 271.46,
     "end": 272.42,
     "text": "Loid Forger.",
@@ -742,7 +753,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500093,
-    "parentId": 93,
+    "parentId": 95,
     "start": 272.76,
     "end": 274.16,
     "text": "Beruf, Psychiater.",
@@ -750,7 +761,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500094,
-    "parentId": 94,
+    "parentId": 96,
     "start": 274.68,
     "end": 276.22,
     "text": "Das ist meine neue Identität.",
@@ -758,7 +769,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500095,
-    "parentId": 95,
+    "parentId": 97,
     "start": 277.62,
     "end": 279.44,
     "text": "Familienglück in einem trauten Heim.",
@@ -766,7 +777,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500096,
-    "parentId": 96,
+    "parentId": 98,
     "start": 280.14,
     "end": 282.34,
     "text": "Ein neues Heim für die Familie ist aufregend, nicht wahr?",
@@ -774,7 +785,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500097,
-    "parentId": 97,
+    "parentId": 99,
     "start": 282.98,
     "end": 284.32,
     "text": "Haben Sie einen Jungen oder ein Mädchen?",
@@ -782,7 +793,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500098,
-    "parentId": 98,
+    "parentId": 100,
     "start": 285.04,
     "end": 287.18,
     "text": "Ach, also, das muss ich mir noch überlegen.",
@@ -790,7 +801,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500099,
-    "parentId": 99,
+    "parentId": 101,
     "start": 287.72,
     "end": 287.96,
     "text": "Wie?",
@@ -798,7 +809,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500100,
-    "parentId": 100,
+    "parentId": 102,
     "start": 288.62,
     "end": 291.06,
     "text": "Der ultimative Klotz am Bein im Leben eines Spions.",
@@ -806,7 +817,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500101,
-    "parentId": 101,
+    "parentId": 103,
     "start": 294.65,
     "end": 296.59,
     "text": "Ja, Sie wollen bestimmt ein Kind adoptieren.",
@@ -814,7 +825,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500102,
-    "parentId": 102,
+    "parentId": 104,
     "start": 296.91,
     "end": 298.73,
     "text": "Ja, ich habe gehört,",
@@ -822,7 +833,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500103,
-    "parentId": 103,
+    "parentId": 105,
     "start": 298.83,
     "end": 300.41,
     "text": "dass das in diesem Heim hier möglich sein soll.",
@@ -830,7 +841,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500104,
-    "parentId": 104,
+    "parentId": 106,
     "start": 300.41,
     "end": 302.59,
     "text": "Meine Frau und ich können nämlich keine ...",
@@ -838,7 +849,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500105,
-    "parentId": 105,
+    "parentId": 107,
     "start": 302.59,
     "end": 305.43,
     "text": "Passt schon, nehmen Sie einfach irgendein Kind mit.",
@@ -846,7 +857,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500106,
-    "parentId": 106,
+    "parentId": 108,
     "start": 305.99,
     "end": 307.11,
     "text": "Na los, kommen Sie schon.",
@@ -854,15 +865,23 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500107,
-    "parentId": 107,
+    "parentId": 109,
     "start": 307.97,
     "end": 309.27,
     "text": "Was für ein furchtbarer Ort.",
     "vi": "Đúng là một nơi tồi tệ."
   },
   {
+    "id": 500427,
+    "parentId": 110,
+    "start": 309.56,
+    "end": 313.06,
+    "text": "Doch je zwielichtiger das Heim, desto mehr Kinder unbekannter Herkunft.",
+    "vi": "Nhưng trại trẻ càng tai tiếng thì càng có nhiều trẻ không rõ lai lịch."
+  },
+  {
     "id": 500108,
-    "parentId": 108,
+    "parentId": 111,
     "start": 313.75,
     "end": 315.65,
     "text": "Das macht es einfacher, den Lebenslauf zu fälschen.",
@@ -870,7 +889,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500109,
-    "parentId": 109,
+    "parentId": 112,
     "start": 316.8,
     "end": 318.74,
     "text": "Für meine Mission brauche ich nur ein Kind.",
@@ -878,7 +897,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500110,
-    "parentId": 110,
+    "parentId": 113,
     "start": 319.62,
     "end": 321.62,
     "text": "Am liebsten würde ich alles alleine erledigen.",
@@ -886,7 +905,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500111,
-    "parentId": 111,
+    "parentId": 114,
     "start": 322.22,
     "end": 324.74,
     "text": "Doch selbst ich, der beste Spion in Westalis,",
@@ -894,7 +913,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500112,
-    "parentId": 112,
+    "parentId": 115,
     "start": 325.1,
     "end": 327.42,
     "text": "kann mich nun mal nicht in ein Kind verwandeln.",
@@ -902,7 +921,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500113,
-    "parentId": 113,
+    "parentId": 116,
     "start": 327.68,
     "end": 329.14,
     "text": "Hören Sie mal, wenn es möglich ist,",
@@ -910,7 +929,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500114,
-    "parentId": 114,
+    "parentId": 117,
     "start": 329.14,
     "end": 331.32,
     "text": "hätte ich gerne ein Kind, das schon lesen und schreiben kann.",
@@ -918,7 +937,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500115,
-    "parentId": 115,
+    "parentId": 118,
     "start": 331.48,
     "end": 333.38,
     "text": "Ah, wenn das so ist.",
@@ -926,7 +945,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500116,
-    "parentId": 116,
+    "parentId": 119,
     "start": 333.68,
     "end": 336.2,
     "text": "Hey, Anya, das ist die Hellste hier.",
@@ -934,7 +953,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500117,
-    "parentId": 117,
+    "parentId": 120,
     "start": 336.6,
     "end": 338.26,
     "text": "Spricht zwar nicht viel, ist aber eine Liebe.",
@@ -942,7 +961,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500118,
-    "parentId": 118,
+    "parentId": 121,
     "start": 338.72,
     "end": 340.78,
     "text": "Soll mir recht sein, wenn er das Gör mitnimmt,",
@@ -950,7 +969,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500119,
-    "parentId": 119,
+    "parentId": 122,
     "start": 340.92,
     "end": 342.6,
     "text": "die ist mir absolut unheimlich.",
@@ -958,7 +977,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500120,
-    "parentId": 120,
+    "parentId": 123,
     "start": 343.1,
     "end": 344.72,
     "text": "Sag Hallo zu dem netten Herrn.",
@@ -966,7 +985,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500121,
-    "parentId": 121,
+    "parentId": 124,
     "start": 345.9,
     "end": 346.6,
     "text": "Entschuldigen Sie bitte.",
@@ -974,7 +993,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500122,
-    "parentId": 122,
+    "parentId": 125,
     "start": 348.79,
     "end": 351.25,
     "text": "Das Einschulungsalter an der Edenakademie ist sechs.",
@@ -982,7 +1001,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500123,
-    "parentId": 123,
+    "parentId": 126,
     "start": 351.77,
     "end": 353.29,
     "text": "Aber die ist doch höchstens vier oder fünf.",
@@ -990,7 +1009,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500124,
-    "parentId": 124,
+    "parentId": 127,
     "start": 356.64,
     "end": 358.58,
     "text": "Bist du wirklich schon sechs Jahre alt?",
@@ -998,7 +1017,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500125,
-    "parentId": 125,
+    "parentId": 128,
     "start": 359.24,
     "end": 360.84,
     "text": "Dafür ist sie doch viel zu klein.",
@@ -1006,7 +1025,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500126,
-    "parentId": 126,
+    "parentId": 129,
     "start": 365.79,
     "end": 366.61,
     "text": "Eine Zeitung?",
@@ -1014,7 +1033,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500127,
-    "parentId": 127,
+    "parentId": 130,
     "start": 367.13,
     "end": 368.15,
     "text": "Ein Kreuzworträtsel.",
@@ -1022,7 +1041,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500128,
-    "parentId": 128,
+    "parentId": 131,
     "start": 368.63,
     "end": 370.07,
     "text": "Als ob ein Kind das lösen könnte.",
@@ -1030,7 +1049,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500129,
-    "parentId": 129,
+    "parentId": 132,
     "start": 372.04,
     "end": 373.9,
     "text": "Für mich hingegen ist das ein Kinderspiel.",
@@ -1038,7 +1057,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500130,
-    "parentId": 130,
+    "parentId": 133,
     "start": 374.97,
     "end": 376.63,
     "text": "Senkrecht 1 ist Homöostase.",
@@ -1046,7 +1065,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500131,
-    "parentId": 131,
+    "parentId": 134,
     "start": 377.13,
     "end": 378.55,
     "text": "Waagerecht 1, Kausalität.",
@@ -1054,7 +1073,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500132,
-    "parentId": 132,
+    "parentId": 135,
     "start": 379.05,
     "end": 380.57,
     "text": "Darunter Symplektomorphismus.",
@@ -1062,7 +1081,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500133,
-    "parentId": 133,
+    "parentId": 136,
     "start": 385.88,
     "end": 387.42,
     "text": "Alles richtig? Ernsthaft?",
@@ -1070,7 +1089,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500134,
-    "parentId": 134,
+    "parentId": 137,
     "start": 387.92,
     "end": 389.02,
     "text": "Was für ein kluges Kind.",
@@ -1078,7 +1097,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500135,
-    "parentId": 135,
+    "parentId": 138,
     "start": 389.54,
     "end": 391.96,
     "text": "Somit sollte die Aufnahmeprüfung für Sie ein Klacks sein.",
@@ -1086,15 +1105,15 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500136,
-    "parentId": 136,
+    "parentId": 139,
     "start": 392.54,
     "end": 393.54,
-    "text": "Gut, ich nehme Sie mit.",
+    "text": "Gut, ich nehme sie mit.",
     "vi": "Được, ta sẽ mang cháu theo."
   },
   {
     "id": 500137,
-    "parentId": 137,
+    "parentId": 140,
     "start": 394.2,
     "end": 395.38,
     "text": "Was den Papierkram angeht.",
@@ -1102,15 +1121,15 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500138,
-    "parentId": 138,
-    "start": 396.62,
+    "parentId": 141,
+    "start": 395.48,
     "end": 398.1,
-    "text": "Nehmen Sie die Kleine und gehen Sie.",
-    "vi": "Cứ mang con bé đi đi."
+    "text": "Nicht nötig. Nehmen Sie die Kleine und gehen Sie.",
+    "vi": "Không cần đâu. Cứ mang con bé đi đi."
   },
   {
     "id": 500139,
-    "parentId": 139,
+    "parentId": 142,
     "start": 398.1,
     "end": 399.52,
     "text": "Und schon habe ich ein Kind.",
@@ -1118,7 +1137,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500140,
-    "parentId": 140,
+    "parentId": 143,
     "start": 400.08,
     "end": 401.66,
     "text": "Irgendwie unheimlich, wie einfach das war.",
@@ -1126,7 +1145,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500141,
-    "parentId": 141,
+    "parentId": 144,
     "start": 402.14,
     "end": 403.52,
     "text": "Und, bist du damit einverstanden?",
@@ -1134,7 +1153,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500142,
-    "parentId": 142,
+    "parentId": 145,
     "start": 404.34,
     "end": 406.76,
     "text": "Spion, Mission, spannend!",
@@ -1142,7 +1161,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500143,
-    "parentId": 143,
+    "parentId": 146,
     "start": 407.86,
     "end": 409.9,
     "text": "Dieses Mädchen besitzt übersinnliche Kräfte.",
@@ -1150,7 +1169,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500144,
-    "parentId": 144,
+    "parentId": 147,
     "start": 410.72,
     "end": 413.34,
     "text": "Im Labor war sie Versuchsobjekt 007",
@@ -1158,7 +1177,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500145,
-    "parentId": 145,
+    "parentId": 148,
     "start": 413.34,
     "end": 415.9,
     "text": "und sie erlangte durch ein Zufallsexperiment",
@@ -1166,7 +1185,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500146,
-    "parentId": 146,
+    "parentId": 149,
     "start": 415.9,
     "end": 418.1,
     "text": "die Fähigkeit Gedanken zu lesen.",
@@ -1174,7 +1193,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500147,
-    "parentId": 147,
+    "parentId": 150,
     "start": 418.52,
     "end": 421.72,
     "text": "Doch sie floh von dort und wurde auf der Suche nach neuen Eltern",
@@ -1182,7 +1201,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500148,
-    "parentId": 148,
+    "parentId": 151,
     "start": 421.72,
     "end": 423.3,
     "text": "immer wieder herumgereicht.",
@@ -1190,7 +1209,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500149,
-    "parentId": 149,
+    "parentId": 152,
     "start": 423.88,
     "end": 424.6,
     "text": "Hör zu, Kleine.",
@@ -1198,7 +1217,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500150,
-    "parentId": 150,
+    "parentId": 153,
     "start": 424.88,
     "end": 425.28,
     "text": "Anya.",
@@ -1206,7 +1225,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500151,
-    "parentId": 151,
+    "parentId": 154,
     "start": 425.72,
     "end": 426.62,
     "text": "Hör zu, Anya.",
@@ -1214,7 +1233,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500152,
-    "parentId": 152,
+    "parentId": 155,
     "start": 426.62,
     "end": 428.42,
     "text": "Von nun an bist du meine Tochter.",
@@ -1222,7 +1241,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500153,
-    "parentId": 153,
+    "parentId": 156,
     "start": 428.84,
     "end": 431.46,
     "text": "Tu vor anderen, aber bitte so, als wärst du das schon immer gewesen.",
@@ -1230,7 +1249,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500154,
-    "parentId": 154,
+    "parentId": 157,
     "start": 431.96,
     "end": 432.28,
     "text": "Verstanden?",
@@ -1238,7 +1257,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500155,
-    "parentId": 155,
+    "parentId": 158,
     "start": 433.1,
     "end": 433.38,
     "text": "Ja.",
@@ -1246,7 +1265,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500156,
-    "parentId": 156,
+    "parentId": 159,
     "start": 434.6,
     "end": 436.98,
     "text": "Außerdem wirst du mich ab sofort mit Vater ansprechen.",
@@ -1254,7 +1273,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500157,
-    "parentId": 157,
+    "parentId": 160,
     "start": 438.57,
     "end": 438.85,
     "text": "Na gut.",
@@ -1262,7 +1281,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500158,
-    "parentId": 158,
+    "parentId": 161,
     "start": 439.45,
     "end": 442.65,
     "text": "Ah, wie überaus entzückend. Guten Tag, kleines Fräulein.",
@@ -1270,7 +1289,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500159,
-    "parentId": 159,
+    "parentId": 162,
     "start": 442.73,
     "end": 444.79,
     "text": "Wir sind Familie Forger, Ihre neuen Nachbarn.",
@@ -1278,7 +1297,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500160,
-    "parentId": 160,
+    "parentId": 163,
     "start": 444.93,
     "end": 446.95,
     "text": "Ich bin Anya und schon immer Papas Tochter.",
@@ -1286,7 +1305,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500161,
-    "parentId": 161,
+    "parentId": 164,
     "start": 448.27,
     "end": 449.63,
     "text": "Das hättest du dir sparen können.",
@@ -1294,7 +1313,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500162,
-    "parentId": 162,
+    "parentId": 165,
     "start": 449.99,
     "end": 450.69,
     "text": "Komm, wir gehen rein.",
@@ -1302,7 +1321,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500163,
-    "parentId": 163,
+    "parentId": 166,
     "start": 452.72,
     "end": 453.52,
     "text": "Wohnen wir hier?",
@@ -1310,7 +1329,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500164,
-    "parentId": 164,
+    "parentId": 167,
     "start": 453.94,
     "end": 454.38,
     "text": "Exakt.",
@@ -1318,7 +1337,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500165,
-    "parentId": 165,
+    "parentId": 168,
     "start": 456.9,
     "end": 457.96,
     "text": "Schalte ihn ruhig an.",
@@ -1326,7 +1345,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500166,
-    "parentId": 166,
+    "parentId": 169,
     "start": 464.56,
     "end": 465.36,
     "text": "War ja klar.",
@@ -1334,7 +1353,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500167,
-    "parentId": 167,
+    "parentId": 170,
     "start": 466.06,
     "end": 467.78,
     "text": "Eine Pistole mit Schalldämpfer.",
@@ -1342,7 +1361,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500168,
-    "parentId": 168,
+    "parentId": 171,
     "start": 470.1,
     "end": 471.96,
     "text": "Jetzt muss ich nur noch ein paar Dinge besorgen",
@@ -1350,7 +1369,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500169,
-    "parentId": 169,
+    "parentId": 172,
     "start": 471.96,
     "end": 473.54,
     "text": "und ihre Papiere fälschen lassen.",
@@ -1358,7 +1377,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500170,
-    "parentId": 170,
+    "parentId": 173,
     "start": 474.39,
     "end": 475.77,
     "text": "Ich muss noch mal kurz los.",
@@ -1366,23 +1385,39 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500171,
-    "parentId": 171,
+    "parentId": 174,
     "start": 476.31,
     "end": 477.65,
     "text": "Sei artig und schau weiter fern.",
     "vi": "Ngoan nhé, cứ xem TV tiếp đi."
   },
   {
+    "id": 500428,
+    "parentId": 175,
+    "start": 478.86,
+    "end": 479.9,
+    "text": "Ein Abenteuer!",
+    "vi": "Một chuyến phiêu lưu!"
+  },
+  {
     "id": 500172,
-    "parentId": 172,
+    "parentId": 176,
     "start": 480.85,
     "end": 482.97,
     "text": "Nein, kein Abenteuer, ich geh nur einkaufen.",
     "vi": "Không, không phải phiêu lưu đâu, ta chỉ đi mua sắm."
   },
   {
+    "id": 500429,
+    "parentId": 177,
+    "start": 487.3,
+    "end": 489.76,
+    "text": "Anya will auch eine Pistole, die keine Geräusche macht.",
+    "vi": "Anya cũng muốn một khẩu súng không phát ra tiếng động."
+  },
+  {
     "id": 500173,
-    "parentId": 173,
+    "parentId": 178,
     "start": 490.06,
     "end": 491.46,
     "text": "Ja, ja, mal sehen, was es so gibt.",
@@ -1390,7 +1425,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500174,
-    "parentId": 174,
+    "parentId": 179,
     "start": 492.2,
     "end": 494.88,
     "text": "Die Grundlage der Spionage besteht darin nicht aufzufallen",
@@ -1398,7 +1433,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500175,
-    "parentId": 175,
+    "parentId": 180,
     "start": 494.88,
     "end": 496.06,
     "text": "und sich normal zu verhalten.",
@@ -1406,7 +1441,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500176,
-    "parentId": 176,
+    "parentId": 181,
     "start": 496.46,
     "end": 498.78,
     "text": "Alle müssen uns für eine ganz gewöhnliche Familie halten.",
@@ -1414,7 +1449,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500177,
-    "parentId": 177,
+    "parentId": 182,
     "start": 498.78,
     "end": 499.42,
     "text": "Papa!",
@@ -1422,7 +1457,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500178,
-    "parentId": 178,
+    "parentId": 183,
     "start": 500.45,
     "end": 501.37,
     "text": "Geht ja gut los.",
@@ -1430,7 +1465,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500179,
-    "parentId": 179,
+    "parentId": 184,
     "start": 501.61,
     "end": 504.59,
     "text": "Na, na, Kleine, du bleibst besser bei deinem Papa an der Hand.",
@@ -1438,7 +1473,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500180,
-    "parentId": 180,
+    "parentId": 185,
     "start": 504.83,
     "end": 505.35,
     "text": "Bitte schön.",
@@ -1446,15 +1481,15 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500181,
-    "parentId": 181,
+    "parentId": 186,
     "start": 509.73,
     "end": 511.05,
-    "text": "Wenn jetzt dein Feind angreift,",
+    "text": "Wenn jetzt ein Feind angreift,",
     "vi": "Nếu kẻ địch tấn công lúc này,"
   },
   {
     "id": 500182,
-    "parentId": 182,
+    "parentId": 187,
     "start": 511.11,
     "end": 512.75,
     "text": "habe ich eine Hand weniger zur Verteidigung.",
@@ -1462,7 +1497,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500183,
-    "parentId": 183,
+    "parentId": 188,
     "start": 513.31,
     "end": 513.99,
     "text": "Ach, was soll's?",
@@ -1470,7 +1505,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500184,
-    "parentId": 184,
+    "parentId": 189,
     "start": 514.64,
     "end": 515.24,
     "text": "Ein Feind?",
@@ -1478,7 +1513,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500185,
-    "parentId": 185,
+    "parentId": 190,
     "start": 522.04,
     "end": 522.88,
     "text": "Was machst du denn?",
@@ -1486,7 +1521,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500186,
-    "parentId": 186,
+    "parentId": 191,
     "start": 524.22,
     "end": 525.82,
     "text": "Hab ich hier womöglich Angst gemacht?",
@@ -1494,7 +1529,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500187,
-    "parentId": 187,
+    "parentId": 192,
     "start": 526.44,
     "end": 527.72,
     "text": "Vielleicht war das mit der Hand zu früh.",
@@ -1502,7 +1537,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500188,
-    "parentId": 188,
+    "parentId": 193,
     "start": 528.28,
     "end": 529.6,
     "text": "Oh je, das ist nicht gut.",
@@ -1510,7 +1545,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500189,
-    "parentId": 189,
+    "parentId": 194,
     "start": 530.32,
     "end": 533.24,
     "text": "Was jetzt? Bis zum Abschluss der Mission muss ich gut mit dir auskommen.",
@@ -1518,7 +1553,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500190,
-    "parentId": 190,
+    "parentId": 195,
     "start": 533.7,
     "end": 536.16,
     "text": "Ich muss alles über dieses Geschöpf in Erfahrung bringen.",
@@ -1526,7 +1561,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500191,
-    "parentId": 191,
+    "parentId": 196,
     "start": 536.52,
     "end": 537.62,
     "text": "Wie in der Diplomatie",
@@ -1534,15 +1569,23 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500192,
-    "parentId": 192,
+    "parentId": 197,
     "start": 537.62,
     "end": 539.8,
     "text": "ist das der erste Schritt zum Weltfrieden.",
     "vi": "đó là bước đầu tiên tiến tới hòa bình thế giới."
   },
   {
+    "id": 500430,
+    "parentId": 198,
+    "start": 540.12,
+    "end": 542.06,
+    "text": "Anya zu kennen führt zum Weltfrieden?",
+    "vi": "Quen Anya thôi mà dẫn tới hòa bình thế giới sao?"
+  },
+  {
     "id": 500193,
-    "parentId": 193,
+    "parentId": 199,
     "start": 545.13,
     "end": 546.23,
     "text": "Erdnüsse über alles.",
@@ -1550,15 +1593,23 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500194,
-    "parentId": 194,
+    "parentId": 200,
     "start": 546.41,
     "end": 547.23,
     "text": "Aber Möhren nicht.",
     "vi": "Nhưng cà rốt thì không."
   },
   {
+    "id": 500431,
+    "parentId": 201,
+    "start": 548.26,
+    "end": 549.98,
+    "text": "Und Eier mag Anya auch ganz gerne.",
+    "vi": "Và trứng thì Anya cũng rất thích."
+  },
+  {
     "id": 500195,
-    "parentId": 195,
+    "parentId": 202,
     "start": 551.4,
     "end": 553.88,
     "text": "In einer Bäckerei kann man aber leider keine Eier kaufen.",
@@ -1566,7 +1617,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500196,
-    "parentId": 196,
+    "parentId": 203,
     "start": 554.22,
     "end": 556.61,
     "text": "Was bitte?",
@@ -1574,7 +1625,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500197,
-    "parentId": 197,
+    "parentId": 204,
     "start": 564.89,
     "end": 566.57,
     "text": "Ob sie doch nicht so schlau ist, wie ich dachte,",
@@ -1582,7 +1633,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500198,
-    "parentId": 198,
+    "parentId": 205,
     "start": 567.15,
     "end": 568.81,
     "text": "war das Kreuzworträtsel nur ein Zufall.",
@@ -1590,7 +1641,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500199,
-    "parentId": 199,
+    "parentId": 206,
     "start": 569.37,
     "end": 570.91,
     "text": "Vielleicht sollte ich sie noch schnell austauschen.",
@@ -1598,7 +1649,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500200,
-    "parentId": 200,
+    "parentId": 207,
     "start": 573.6,
     "end": 574.94,
     "text": "Hey, was hast du denn?",
@@ -1606,7 +1657,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500201,
-    "parentId": 201,
+    "parentId": 208,
     "start": 580.1,
     "end": 580.86,
     "text": "Was mach ich nur?",
@@ -1614,7 +1665,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500202,
-    "parentId": 202,
+    "parentId": 209,
     "start": 581.78,
     "end": 583.46,
     "text": "Ich kauf die Erdnüsse, also hör auf zu weinen.",
@@ -1622,7 +1673,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500203,
-    "parentId": 203,
+    "parentId": 210,
     "start": 594.76,
     "end": 596.96,
     "text": "Ich geb's auf, das ist mehr ein Rätsel.",
@@ -1630,7 +1681,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500204,
-    "parentId": 204,
+    "parentId": 211,
     "start": 597.61,
     "end": 599.59,
     "text": "Ich versteh dieses Geschöpf einfach nicht.",
@@ -1638,7 +1689,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500205,
-    "parentId": 205,
+    "parentId": 212,
     "start": 600.92,
     "end": 604.16,
     "text": "Ich brauche eine Anleitung, um dieses irrationale Verhalten zu begreifen.",
@@ -1646,7 +1697,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500206,
-    "parentId": 206,
+    "parentId": 213,
     "start": 605.75,
     "end": 608.17,
     "text": "Vertrauen ist das A und O in der Kindererziehung.",
@@ -1654,7 +1705,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500207,
-    "parentId": 207,
+    "parentId": 214,
     "start": 608.55,
     "end": 610.89,
     "text": "Statt zu schimpfen, sollte man sich in sie hineinversetzen.",
@@ -1662,7 +1713,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500208,
-    "parentId": 208,
+    "parentId": 215,
     "start": 612.22,
     "end": 614.54,
     "text": "Kinder können ihre Gefühle noch schlecht in Worte fassen.",
@@ -1670,7 +1721,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500209,
-    "parentId": 209,
+    "parentId": 216,
     "start": 614.68,
     "end": 616.48,
     "text": "Das Stichwort lautet Einfühlungsvermögen.",
@@ -1678,7 +1729,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500210,
-    "parentId": 210,
+    "parentId": 217,
     "start": 617.08,
     "end": 618.68,
     "text": "Also besser nicht in die Menge nehmen.",
@@ -1686,7 +1737,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500211,
-    "parentId": 211,
+    "parentId": 218,
     "start": 619.74,
     "end": 621.36,
     "text": "Kaum zu glauben, dass sich die meisten Eltern",
@@ -1694,7 +1745,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500212,
-    "parentId": 212,
+    "parentId": 219,
     "start": 621.36,
     "end": 623.66,
     "text": "an einer derart schwierigen Mission freiwillig aussetzen.",
@@ -1702,7 +1753,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500213,
-    "parentId": 213,
+    "parentId": 220,
     "start": 623.66,
     "end": 627.48,
     "text": "Selbstvertrauen ist der Schlüssel für eine glückliche Zukunft.",
@@ -1710,7 +1761,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500214,
-    "parentId": 214,
+    "parentId": 221,
     "start": 628.12,
     "end": 630.98,
     "text": "Ihr Kind muss lernen, Probleme eigenständig zu lösen.",
@@ -1718,7 +1769,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500215,
-    "parentId": 215,
+    "parentId": 222,
     "start": 634.17,
     "end": 636.51,
     "text": "Wenn meine Arbeit getan ist, kommt sie eh wieder ins Heim.",
@@ -1726,15 +1777,15 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500216,
-    "parentId": 216,
+    "parentId": 223,
     "start": 637.21,
     "end": 638.91,
-    "text": "Mir ist für uns beide nicht vorgesehen.",
-    "vi": "Chuyện \"chúng ta\" không nằm trong kế hoạch của ta."
+    "text": "Mehr ist für uns beide nicht vorgesehen.",
+    "vi": "Hai cha con mình cũng chỉ được đến thế thôi."
   },
   {
     "id": 500217,
-    "parentId": 217,
+    "parentId": 224,
     "start": 647.72,
     "end": 649.06,
     "text": "Jetzt stell dich nicht so an.",
@@ -1742,15 +1793,23 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500218,
-    "parentId": 218,
+    "parentId": 225,
     "start": 649.18,
     "end": 651.78,
     "text": "Für die Prüfung muss ich nun mal deinen Wissensstand in Erfahrung bringen.",
     "vi": "Ta phải nắm được trình độ của cháu cho kỳ thi."
   },
   {
+    "id": 500432,
+    "parentId": 226,
+    "start": 651.84,
+    "end": 654.62,
+    "text": "Aber Anya besteht den doofen Test auch ohne zu lernen.",
+    "vi": "Nhưng Anya sẽ đỗ cái bài kiểm tra ngớ ngẩn ấy mà chẳng cần học."
+  },
+  {
     "id": 500219,
-    "parentId": 219,
+    "parentId": 227,
     "start": 654.91,
     "end": 657.17,
     "text": "Muss nur bei anderen die Gedanken lesen.",
@@ -1758,7 +1817,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500220,
-    "parentId": 220,
+    "parentId": 228,
     "start": 657.51,
     "end": 659.13,
     "text": "Na hör mal, du willst doch nicht etwa schummeln?",
@@ -1766,7 +1825,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500221,
-    "parentId": 221,
+    "parentId": 229,
     "start": 659.45,
     "end": 659.81,
     "text": "Lass das.",
@@ -1774,7 +1833,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500222,
-    "parentId": 222,
+    "parentId": 230,
     "start": 660.09,
     "end": 663.19,
     "text": "Wenn du die Aufnahme vergeigst, dann wird meine Mission scheitern.",
@@ -1782,7 +1841,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500223,
-    "parentId": 223,
+    "parentId": 231,
     "start": 666.46,
     "end": 667.24,
     "text": "Ach egal.",
@@ -1790,7 +1849,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500224,
-    "parentId": 224,
+    "parentId": 232,
     "start": 669.09,
     "end": 670.33,
     "text": "Ich muss dann jetzt los.",
@@ -1798,7 +1857,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500225,
-    "parentId": 225,
+    "parentId": 233,
     "start": 671.94,
     "end": 673.44,
     "text": "Diesmal wirst du schön hier bleiben.",
@@ -1806,7 +1865,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500226,
-    "parentId": 226,
+    "parentId": 234,
     "start": 674.04,
     "end": 674.44,
     "text": "Verstanden?",
@@ -1814,7 +1873,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500227,
-    "parentId": 227,
+    "parentId": 235,
     "start": 675.16,
     "end": 675.92,
     "text": "Stell nichts an.",
@@ -1822,7 +1881,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500228,
-    "parentId": 228,
+    "parentId": 236,
     "start": 682.26,
     "end": 684.76,
     "text": "Hey, ich hab doch gesagt, du bleibst hier.",
@@ -1830,7 +1889,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500229,
-    "parentId": 229,
+    "parentId": 237,
     "start": 686.04,
     "end": 686.86,
     "text": "Ich bin nicht blind.",
@@ -1838,7 +1897,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500230,
-    "parentId": 230,
+    "parentId": 238,
     "start": 687.26,
     "end": 688.7,
     "text": "Dachtest du echt, du könntest dich verstecken?",
@@ -1846,7 +1905,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500231,
-    "parentId": 231,
+    "parentId": 239,
     "start": 689.08,
     "end": 689.72,
     "text": "Habe ich dich.",
@@ -1854,7 +1913,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500232,
-    "parentId": 232,
+    "parentId": 240,
     "start": 690.3,
     "end": 690.84,
     "text": "Da oben.",
@@ -1862,7 +1921,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500233,
-    "parentId": 233,
+    "parentId": 241,
     "start": 696.08,
     "end": 697.54,
     "text": "Jetzt kommt sie nicht mehr raus.",
@@ -1870,7 +1929,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500234,
-    "parentId": 234,
+    "parentId": 242,
     "start": 698.42,
     "end": 699.96,
     "text": "Was? Deshalb bist du spät dran?",
@@ -1878,7 +1937,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500235,
-    "parentId": 235,
+    "parentId": 243,
     "start": 700.3,
     "end": 701.7,
     "text": "Am Ende musste ich sie einsperren",
@@ -1886,7 +1945,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500236,
-    "parentId": 236,
+    "parentId": 244,
     "start": 701.7,
     "end": 703.4,
     "text": "und die Tür komplett verbarrikadieren.",
@@ -1894,7 +1953,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500237,
-    "parentId": 237,
+    "parentId": 245,
     "start": 704.12,
     "end": 706.44,
     "text": "Lass dich bloß nicht wegen Kindesmisshandlung erwischen.",
@@ -1902,7 +1961,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500238,
-    "parentId": 238,
+    "parentId": 246,
     "start": 706.44,
     "end": 709.06,
     "text": "Ach weißt du, ich verstehe einfach nicht, wie Kinder ticken.",
@@ -1910,7 +1969,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500239,
-    "parentId": 239,
+    "parentId": 247,
     "start": 709.42,
     "end": 712.4,
     "text": "Es regt mich total auf, dass wir immer wegen jeder kleinen Sache losfallen.",
@@ -1918,7 +1977,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500240,
-    "parentId": 240,
+    "parentId": 248,
     "start": 712.78,
     "end": 715.18,
     "text": "Sie ist ein Kind, Weinen ist quasi ihr Job, Twilight.",
@@ -1926,7 +1985,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500241,
-    "parentId": 241,
+    "parentId": 249,
     "start": 716.02,
     "end": 717.6,
     "text": "Hier, das worum du mich gebeten hast.",
@@ -1934,7 +1993,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500242,
-    "parentId": 242,
+    "parentId": 250,
     "start": 719.44,
     "end": 720.96,
     "text": "Aufnahmeeintrag, Prüfungsschein und ihr Aufgaben.",
@@ -1942,7 +2001,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500243,
-    "parentId": 243,
+    "parentId": 251,
     "start": 721.4,
     "end": 723.1,
     "text": "War eine Heidenarbeit, daran zu kommen.",
@@ -1950,7 +2009,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500244,
-    "parentId": 244,
+    "parentId": 252,
     "start": 723.44,
     "end": 724.98,
     "text": "Danke, du bist mir eine große Hilfe, Franky.",
@@ -1958,7 +2017,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500245,
-    "parentId": 245,
+    "parentId": 253,
     "start": 725.6,
     "end": 727.6,
     "text": "Wenn sie die Lösungen auswendig lernt, schafft sie das schon.",
@@ -1966,7 +2025,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500246,
-    "parentId": 246,
+    "parentId": 254,
     "start": 727.66,
     "end": 729.22,
     "text": "Was die Vergangenheit der Kleinen angeht,",
@@ -1974,7 +2033,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500247,
-    "parentId": 247,
+    "parentId": 255,
     "start": 729.36,
     "end": 731.76,
     "text": "ist nicht viel, aber hier steht alles, was ich gefunden habe.",
@@ -1982,7 +2041,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500248,
-    "parentId": 248,
+    "parentId": 256,
     "start": 732.64,
     "end": 734.1,
     "text": "Aber nichts zu ihrer Herkunft.",
@@ -1990,7 +2049,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500249,
-    "parentId": 249,
+    "parentId": 257,
     "start": 734.1,
     "end": 736.14,
     "text": "Auch Alter und Eltern sind unbekannt.",
@@ -1998,7 +2057,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500250,
-    "parentId": 250,
+    "parentId": 258,
     "start": 736.64,
     "end": 739.24,
     "text": "Sie war ein Jahr lang im Heim, wurde ganze viermal adoptiert,",
@@ -2006,7 +2065,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500251,
-    "parentId": 251,
+    "parentId": 259,
     "start": 739.38,
     "end": 741.24,
     "text": "aber jedes Mal gleich wieder zurückgegeben.",
@@ -2014,7 +2073,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500252,
-    "parentId": 252,
+    "parentId": 260,
     "start": 741.8,
     "end": 743.42,
     "text": "Zweimal hat sie das Heim gewechselt.",
@@ -2022,7 +2081,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500253,
-    "parentId": 253,
+    "parentId": 261,
     "start": 743.92,
     "end": 747.22,
     "text": "Mal sehen, Anya Williams, Anya Levski, Anya Roach.",
@@ -2030,7 +2089,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500254,
-    "parentId": 254,
+    "parentId": 262,
     "start": 747.44,
     "end": 749.34,
     "text": "Die wechselt ihre Namen wie Unterwäsche,",
@@ -2038,7 +2097,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500255,
-    "parentId": 255,
+    "parentId": 263,
     "start": 749.56,
     "end": 750.46,
     "text": "finde ich richtig passend.",
@@ -2046,7 +2105,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500256,
-    "parentId": 256,
+    "parentId": 264,
     "start": 751.42,
     "end": 753.08,
     "text": "Das war nur ein Witz, Mann.",
@@ -2054,7 +2113,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500257,
-    "parentId": 257,
+    "parentId": 265,
     "start": 753.4,
     "end": 754.44,
     "text": "Guck nicht gleich so böse.",
@@ -2062,7 +2121,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500258,
-    "parentId": 258,
+    "parentId": 266,
     "start": 754.86,
     "end": 756.64,
     "text": "Lass dich nur nicht zu sehr auf die Kleine ein.",
@@ -2070,7 +2129,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500259,
-    "parentId": 259,
+    "parentId": 267,
     "start": 756.86,
     "end": 758.04,
     "text": "In Filmen geht das nie gut.",
@@ -2078,7 +2137,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500260,
-    "parentId": 260,
+    "parentId": 268,
     "start": 759.32,
     "end": 760.38,
     "text": "Danke für die Warnung.",
@@ -2086,7 +2145,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500261,
-    "parentId": 261,
+    "parentId": 269,
     "start": 760.94,
     "end": 761.96,
     "text": "Hey, mein Geld!",
@@ -2094,7 +2153,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500262,
-    "parentId": 262,
+    "parentId": 270,
     "start": 762.92,
     "end": 763.68,
     "text": "Oh Mann.",
@@ -2102,7 +2161,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500263,
-    "parentId": 263,
+    "parentId": 271,
     "start": 764.24,
     "end": 767.0,
     "text": "Soll mal einer aus diesen Spionen schlau werden, ich jedenfalls nicht.",
@@ -2110,7 +2169,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500264,
-    "parentId": 264,
+    "parentId": 272,
     "start": 775.32,
     "end": 777.12,
     "text": "Ist Spion sein nicht spannender?",
@@ -2118,7 +2177,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500265,
-    "parentId": 265,
+    "parentId": 273,
     "start": 777.86,
     "end": 779.38,
     "text": "Anya will Bomben entschärfen.",
@@ -2126,7 +2185,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500266,
-    "parentId": 266,
+    "parentId": 274,
     "start": 780.32,
     "end": 781.76,
     "text": "Ich hänge lieber ein Schloss davor,",
@@ -2134,7 +2193,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500267,
-    "parentId": 267,
+    "parentId": 275,
     "start": 781.86,
     "end": 783.92,
     "text": "damit sie nicht an meine Spionageausrüstung geht.",
@@ -2142,7 +2201,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500268,
-    "parentId": 268,
+    "parentId": 276,
     "start": 784.4,
     "end": 785.86,
     "text": "Die Geheimzahl ist 6.1.",
@@ -2150,15 +2209,23 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500269,
-    "parentId": 269,
+    "parentId": 277,
     "start": 786.28,
     "end": 786.92,
     "text": "Eins, Null.",
     "vi": "Một, không."
   },
   {
+    "id": 500433,
+    "parentId": 278,
+    "start": 798.42,
+    "end": 801.22,
+    "text": "Für Geheimkommunikation.",
+    "vi": "Để liên lạc bí mật."
+  },
+  {
     "id": 500270,
-    "parentId": 270,
+    "parentId": 279,
     "start": 805.41,
     "end": 807.95,
     "text": "Boss, wir empfangen hier seltsame Signale.",
@@ -2166,7 +2233,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500271,
-    "parentId": 271,
+    "parentId": 280,
     "start": 808.76,
     "end": 809.68,
     "text": "Ist es ein Westcode?",
@@ -2174,7 +2241,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500272,
-    "parentId": 272,
+    "parentId": 281,
     "start": 810.58,
     "end": 812.16,
     "text": "Nein, denn er ist unverschlüsselt.",
@@ -2182,7 +2249,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500273,
-    "parentId": 273,
+    "parentId": 282,
     "start": 812.8,
     "end": 815.24,
     "text": "Ähm, Hallo, hier ist Twilight.",
@@ -2190,7 +2257,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500274,
-    "parentId": 274,
+    "parentId": 283,
     "start": 815.24,
     "end": 816.78,
     "text": "Hallo, hier ist Twilight?",
@@ -2198,7 +2265,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500275,
-    "parentId": 275,
+    "parentId": 284,
     "start": 817.32,
     "end": 819.72,
     "text": "Diese Frequenz wird von den westlichen Geheimdiensten genutzt.",
@@ -2206,7 +2273,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500276,
-    "parentId": 276,
+    "parentId": 285,
     "start": 820.16,
     "end": 823.34,
     "text": "Noch einer, fang mich doch, wenn ihr könnt.",
@@ -2214,7 +2281,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500277,
-    "parentId": 277,
+    "parentId": 286,
     "start": 823.94,
     "end": 825.64,
     "text": "Findet die Signalquelle, pronto!",
@@ -2222,7 +2289,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500278,
-    "parentId": 278,
+    "parentId": 287,
     "start": 831.5,
     "end": 834.26,
     "text": "Da du nun weißt wer ich bin, muss ich dich leider ausschalten.",
@@ -2230,7 +2297,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500279,
-    "parentId": 279,
+    "parentId": 288,
     "start": 836.58,
     "end": 840.32,
     "text": "Wenn er von Anyas Kräften erfährt, schickt er sie weg.",
@@ -2238,7 +2305,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500280,
-    "parentId": 280,
+    "parentId": 289,
     "start": 841.57,
     "end": 844.79,
     "text": "Anya, du darfst niemals jemandem von deinen Kräften erzählen.",
@@ -2246,7 +2313,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500281,
-    "parentId": 281,
+    "parentId": 290,
     "start": 846.03,
     "end": 847.53,
     "text": "Los, jetzt komm schon, Anya, bitte.",
@@ -2254,7 +2321,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500282,
-    "parentId": 282,
+    "parentId": 291,
     "start": 847.77,
     "end": 848.47,
     "text": "Es wird Zeit zu lernen.",
@@ -2262,7 +2329,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500283,
-    "parentId": 283,
+    "parentId": 292,
     "start": 848.75,
     "end": 850.25,
     "text": "Anya will lieber malen.",
@@ -2270,7 +2337,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500284,
-    "parentId": 284,
+    "parentId": 293,
     "start": 850.25,
     "end": 852.91,
     "text": "Vergiss auf der Stelle diesen kindischen Unfug.",
@@ -2278,7 +2345,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500285,
-    "parentId": 285,
+    "parentId": 294,
     "start": 853.29,
     "end": 856.43,
     "text": "Für den Weltfrieden musst du unbedingt lernen, mit deinen Kräften umzugehen.",
@@ -2286,7 +2353,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500286,
-    "parentId": 286,
+    "parentId": 295,
     "start": 856.77,
     "end": 860.33,
     "text": "Wir haben jetzt keine Zeit für Tränen, also spiel nicht, sondern lerne!",
@@ -2294,7 +2361,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500287,
-    "parentId": 287,
+    "parentId": 296,
     "start": 865.49,
     "end": 867.51,
     "text": "Hoffentlich hat sie die Wohnung nicht verwüstet.",
@@ -2302,7 +2369,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500288,
-    "parentId": 288,
+    "parentId": 297,
     "start": 868.75,
     "end": 870.89,
     "text": "Ach ja, ich hatte die Tür ja verrammelt.",
@@ -2310,7 +2377,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500289,
-    "parentId": 289,
+    "parentId": 298,
     "start": 895.87,
     "end": 898.44,
     "text": "Anya! Anya!",
@@ -2318,15 +2385,23 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500290,
-    "parentId": 290,
+    "parentId": 299,
     "start": 902.28,
     "end": 904.74,
     "text": "Haben sie sie entführt? Aber wieso nur?",
     "vi": "Chúng bắt cóc con bé sao? Nhưng vì sao chứ?"
   },
   {
+    "id": 500434,
+    "parentId": 300,
+    "start": 905.8,
+    "end": 907.22,
+    "text": "Ich muss sie sofort suchen.",
+    "vi": "Ta phải đi tìm con bé ngay."
+  },
+  {
     "id": 500291,
-    "parentId": 291,
+    "parentId": 301,
     "start": 907.88,
     "end": 909.26,
     "text": "Nein, immer mit der Ruhe.",
@@ -2334,7 +2409,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500292,
-    "parentId": 292,
+    "parentId": 302,
     "start": 909.39,
     "end": 912.43,
     "text": "Denk nach, scheinbar wissen sie, dass ich ein Spion bin.",
@@ -2342,7 +2417,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500293,
-    "parentId": 293,
+    "parentId": 303,
     "start": 912.67,
     "end": 913.93,
     "text": "Ich muss mich in Sicherheit bringen.",
@@ -2350,7 +2425,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500294,
-    "parentId": 294,
+    "parentId": 304,
     "start": 915.34,
     "end": 915.76,
     "text": "Und Anya?",
@@ -2358,7 +2433,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500295,
-    "parentId": 295,
+    "parentId": 305,
     "start": 916.34,
     "end": 917.96,
     "text": "Naja, es gibt ja noch genug andere Kinder.",
@@ -2366,7 +2441,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500296,
-    "parentId": 296,
+    "parentId": 306,
     "start": 918.86,
     "end": 920.36,
     "text": "Ich fang einfach noch mal von vorne an.",
@@ -2374,7 +2449,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500297,
-    "parentId": 297,
+    "parentId": 307,
     "start": 922.12,
     "end": 925.97,
     "text": "Wer ist diese kleine Göhre?",
@@ -2382,7 +2457,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500298,
-    "parentId": 298,
+    "parentId": 308,
     "start": 926.75,
     "end": 928.43,
     "text": "Doch nicht etwa Twilights Tochter.",
@@ -2390,7 +2465,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500299,
-    "parentId": 299,
+    "parentId": 309,
     "start": 929.01,
     "end": 929.83,
     "text": "Das wissen wir nicht.",
@@ -2398,7 +2473,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500300,
-    "parentId": 300,
+    "parentId": 310,
     "start": 930.17,
     "end": 932.75,
     "text": "Sie war dort, wo das Signal herkam, also haben wir sie mitgenommen.",
@@ -2406,7 +2481,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500301,
-    "parentId": 301,
+    "parentId": 311,
     "start": 933.01,
     "end": 933.81,
     "text": "Was für ein Signal?",
@@ -2414,7 +2489,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500302,
-    "parentId": 302,
+    "parentId": 312,
     "start": 934.25,
     "end": 937.37,
     "text": "Sie war eingesperrt und die Wohnung wurde von außen verbarrikadiert.",
@@ -2422,7 +2497,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500303,
-    "parentId": 303,
+    "parentId": 313,
     "start": 937.73,
     "end": 938.61,
     "text": "Wieso das denn?",
@@ -2430,7 +2505,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500304,
-    "parentId": 304,
+    "parentId": 314,
     "start": 938.79,
     "end": 939.23,
     "text": "Kein Plan.",
@@ -2438,7 +2513,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500305,
-    "parentId": 305,
+    "parentId": 315,
     "start": 939.23,
     "end": 943.75,
     "text": "Ach, was soll's? Wer weiß, vielleicht kann sie uns als Geisel noch von Nutzen sein.",
@@ -2446,7 +2521,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500306,
-    "parentId": 306,
+    "parentId": 316,
     "start": 944.09,
     "end": 947.85,
     "text": "Wenn er sie wieder haben will, wird er uns das Toupet des Ministers persönlich bringen müssen.",
@@ -2454,7 +2529,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500307,
-    "parentId": 307,
+    "parentId": 317,
     "start": 948.25,
     "end": 951.01,
     "text": "Boss, vergessen Sie die Sache mit dem Toupet doch einfach.",
@@ -2462,7 +2537,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500308,
-    "parentId": 308,
+    "parentId": 318,
     "start": 951.77,
     "end": 955.43,
     "text": "In der Politik ist Transparenz alles. Es wird nichts versteckt.",
@@ -2470,7 +2545,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500309,
-    "parentId": 309,
+    "parentId": 319,
     "start": 955.85,
     "end": 957.67,
     "text": "Eine Pistole, die keine Geräusche macht.",
@@ -2478,7 +2553,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500310,
-    "parentId": 310,
+    "parentId": 320,
     "start": 957.81,
     "end": 961.19,
     "text": "Zudem ist der Minister ein Landesverräter, der gemeinsame Sache mit dem Westen macht.",
@@ -2486,7 +2561,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500311,
-    "parentId": 311,
+    "parentId": 321,
     "start": 961.43,
     "end": 963.83,
     "text": "Wer Verräter in Schutz nimmt, ist selber einer.",
@@ -2494,7 +2569,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500312,
-    "parentId": 312,
+    "parentId": 322,
     "start": 965.33,
     "end": 967.03,
     "text": "Ein echter Bösewicht.",
@@ -2502,7 +2577,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500313,
-    "parentId": 313,
+    "parentId": 323,
     "start": 969.2,
     "end": 972.5,
     "text": "Boss, Jürgen und seine Männer scheinen aus der Wohnung zurück zu sein.",
@@ -2510,7 +2585,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500314,
-    "parentId": 314,
+    "parentId": 324,
     "start": 973.91,
     "end": 975.25,
     "text": "Wir haben einen Mann gefahren.",
@@ -2518,7 +2593,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500315,
-    "parentId": 315,
+    "parentId": 325,
     "start": 976.55,
     "end": 977.41,
     "text": "Gute Arbeit.",
@@ -2526,7 +2601,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500316,
-    "parentId": 316,
+    "parentId": 326,
     "start": 979.02,
     "end": 982.2,
     "text": "Das ist definitiv kein Amateur. So viel ist klar.",
@@ -2534,7 +2609,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500317,
-    "parentId": 317,
+    "parentId": 327,
     "start": 982.76,
     "end": 983.9,
     "text": "Alter, leg dich besser hin.",
@@ -2542,7 +2617,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500318,
-    "parentId": 318,
+    "parentId": 328,
     "start": 984.26,
     "end": 986.38,
     "text": "Also dann, freut mich sehr, Twilight.",
@@ -2550,7 +2625,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500319,
-    "parentId": 319,
+    "parentId": 329,
     "start": 987.58,
     "end": 990.36,
     "text": "Ich glaube, du hast ein paar Fotos, die mir gehören, Freundchen.",
@@ -2558,7 +2633,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500320,
-    "parentId": 320,
+    "parentId": 330,
     "start": 991.98,
     "end": 993.56,
     "text": "Aber er war doch...",
@@ -2566,7 +2641,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500321,
-    "parentId": 321,
+    "parentId": 331,
     "start": 993.56,
     "end": 994.46,
     "text": "Das Mädchen ist weg.",
@@ -2574,7 +2649,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500322,
-    "parentId": 322,
+    "parentId": 332,
     "start": 995.18,
     "end": 996.2,
     "text": "Nicht schon wieder!",
@@ -2582,15 +2657,23 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500323,
-    "parentId": 323,
+    "parentId": 333,
     "start": 996.2,
     "end": 1000.64,
     "text": "Es war ein Fehler, alles aufs Spiel zu setzen und mich in die Höhle des Löwen zu begeben.",
     "vi": "Ta đã sai khi liều lĩnh tất cả và bước vào hang cọp."
   },
   {
+    "id": 500435,
+    "parentId": 334,
+    "start": 1000.9,
+    "end": 1002.02,
+    "text": "Und ich will ein Spion sein.",
+    "vi": "Và mình muốn làm điệp viên."
+  },
+  {
     "id": 500324,
-    "parentId": 324,
+    "parentId": 335,
     "start": 1002.22,
     "end": 1002.5,
     "text": "Papa!",
@@ -2598,7 +2681,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500325,
-    "parentId": 325,
+    "parentId": 336,
     "start": 1004.68,
     "end": 1007.3,
     "text": "Keine Angst, ich tu dir schon nichts. Alles wird gut.",
@@ -2606,7 +2689,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500326,
-    "parentId": 326,
+    "parentId": 337,
     "start": 1009.37,
     "end": 1011.47,
     "text": "Ich kann dieses Geheule nicht ausstehen.",
@@ -2614,7 +2697,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500327,
-    "parentId": 327,
+    "parentId": 338,
     "start": 1012.43,
     "end": 1016.5,
     "text": "Ach so, jetzt verstehe ich, warum mich weinende Kinder so aufregen.",
@@ -2622,7 +2705,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500328,
-    "parentId": 328,
+    "parentId": 339,
     "start": 1017.44,
     "end": 1020.0,
     "text": "Weil sie mich an meine eigene Kindheit erinnern.",
@@ -2630,7 +2713,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500329,
-    "parentId": 329,
+    "parentId": 340,
     "start": 1021.14,
     "end": 1022.82,
     "text": "Niemand war da, um mir zu helfen.",
@@ -2638,7 +2721,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500330,
-    "parentId": 330,
+    "parentId": 341,
     "start": 1023.88,
     "end": 1027.68,
     "text": "Und meine Einsamkeit und Verzweiflung konnte ich nichts anderes tun, als zu weinen.",
@@ -2646,7 +2729,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500331,
-    "parentId": 331,
+    "parentId": 342,
     "start": 1027.78,
     "end": 1030.78,
     "text": "Ich dachte, ich hätte meine Vergangenheit längst begraben.",
@@ -2654,7 +2737,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500332,
-    "parentId": 332,
+    "parentId": 343,
     "start": 1030.92,
     "end": 1032.48,
     "text": "Aber ich habe mich wohl geirrt.",
@@ -2662,7 +2745,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500333,
-    "parentId": 333,
+    "parentId": 344,
     "start": 1033.0,
     "end": 1035.06,
     "text": "Nein, das ist es nicht.",
@@ -2670,7 +2753,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500334,
-    "parentId": 334,
+    "parentId": 345,
     "start": 1038.58,
     "end": 1039.78,
     "text": "Hör mir mal zu, Kleine.",
@@ -2678,7 +2761,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500335,
-    "parentId": 335,
+    "parentId": 346,
     "start": 1040.77,
     "end": 1042.21,
     "text": "Hör mir mal zu, Anya.",
@@ -2686,7 +2769,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500336,
-    "parentId": 336,
+    "parentId": 347,
     "start": 1042.65,
     "end": 1043.99,
     "text": "Wir sind Fangspiel-Profis.",
@@ -2694,7 +2777,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500337,
-    "parentId": 337,
+    "parentId": 348,
     "start": 1044.45,
     "end": 1045.83,
     "text": "Nach unserer Meinung hast du echt Talent.",
@@ -2702,7 +2785,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500338,
-    "parentId": 338,
+    "parentId": 349,
     "start": 1046.35,
     "end": 1048.31,
     "text": "Weißt du, das ist heutzutage wirklich selten.",
@@ -2710,7 +2793,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500339,
-    "parentId": 339,
+    "parentId": 350,
     "start": 1048.71,
     "end": 1050.29,
     "text": "Und deswegen wollen wir dich herausfordern.",
@@ -2718,7 +2801,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500340,
-    "parentId": 340,
+    "parentId": 351,
     "start": 1050.83,
     "end": 1052.37,
     "text": "Oh, Papa ist ein Lügner.",
@@ -2726,7 +2809,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500341,
-    "parentId": 341,
+    "parentId": 352,
     "start": 1052.67,
     "end": 1056.99,
     "text": "Also, wenn du diesem Weg folgst und rechts abbiegst, kommt eine Polizeistation.",
@@ -2734,7 +2817,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500342,
-    "parentId": 342,
+    "parentId": 353,
     "start": 1058.26,
     "end": 1061.52,
     "text": "Wenn du diesen Zettel hier den Polizisten gibst, dann hast du gewonnen.",
@@ -2742,7 +2825,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500343,
-    "parentId": 343,
+    "parentId": 354,
     "start": 1061.52,
     "end": 1062.28,
     "text": "Verstanden?",
@@ -2750,15 +2833,15 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500344,
-    "parentId": 344,
+    "parentId": 355,
     "start": 1062.92,
     "end": 1065.22,
-    "text": "Wenn sie das zeigt, wird sie in ein besseres Heim kommen.",
-    "vi": "Nếu con bé đưa nó ra, nó sẽ được vào một trại trẻ tốt hơn."
+    "text": "Wenn sie Ihnen das zeigt, wird sie in ein besseres Heim kommen.",
+    "vi": "Nếu con bé đưa cho họ xem, nó sẽ được vào một trại trẻ tốt hơn."
   },
   {
     "id": 500345,
-    "parentId": 345,
+    "parentId": 356,
     "start": 1066.02,
     "end": 1067.56,
     "text": "Ich kann mich nicht auf ein Kind verlassen,",
@@ -2766,7 +2849,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500346,
-    "parentId": 346,
+    "parentId": 357,
     "start": 1067.84,
     "end": 1069.34,
     "text": "und werde einen anderen Weg finden müssen.",
@@ -2774,7 +2857,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500347,
-    "parentId": 347,
+    "parentId": 358,
     "start": 1069.52,
     "end": 1069.82,
     "text": "Papa!",
@@ -2782,7 +2865,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500348,
-    "parentId": 348,
+    "parentId": 359,
     "start": 1070.04,
     "end": 1071.56,
     "text": "Los geht's! Lauf schon!",
@@ -2790,7 +2873,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500349,
-    "parentId": 349,
+    "parentId": 360,
     "start": 1073.02,
     "end": 1074.38,
     "text": "Bin ich ein mieser Spion?",
@@ -2798,7 +2881,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500350,
-    "parentId": 350,
+    "parentId": 361,
     "start": 1075.0,
     "end": 1078.62,
     "text": "Nein. Mein Fehler war es, sie überhaupt erst in Gefahr zu bringen.",
@@ -2806,7 +2889,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500351,
-    "parentId": 351,
+    "parentId": 362,
     "start": 1079.6,
     "end": 1081.88,
     "text": "Denn schließlich bin ich doch Spion geworden,",
@@ -2814,15 +2897,31 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500352,
-    "parentId": 352,
+    "parentId": 363,
     "start": 1082.9,
     "end": 1086.32,
     "text": "damit Kinder in dieser Welt nicht mehr weinen müssen.",
     "vi": "là để trẻ em trên thế giới này không còn phải khóc nữa."
   },
   {
+    "id": 500436,
+    "parentId": 364,
+    "start": 1090.52,
+    "end": 1092.3,
+    "text": "Lass diesen Mistkerl nicht entkommen!",
+    "vi": "Đừng để thằng khốn đó chạy thoát!"
+  },
+  {
+    "id": 500437,
+    "parentId": 365,
+    "start": 1092.32,
+    "end": 1094.5,
+    "text": "Wir reißen ihm die Maske vom Gesicht und ...",
+    "vi": "Lột mặt nạ của hắn ra rồi…"
+  },
+  {
     "id": 500353,
-    "parentId": 353,
+    "parentId": 366,
     "start": 1095.86,
     "end": 1096.78,
     "text": "Eine Falle!",
@@ -2830,7 +2929,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500354,
-    "parentId": 354,
+    "parentId": 367,
     "start": 1097.28,
     "end": 1098.06,
     "text": "Wann hat er das?",
@@ -2838,7 +2937,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500355,
-    "parentId": 355,
+    "parentId": 368,
     "start": 1098.58,
     "end": 1099.58,
     "text": "Wo ist das denn?",
@@ -2846,7 +2945,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500356,
-    "parentId": 356,
+    "parentId": 369,
     "start": 1102.4,
     "end": 1102.86,
     "text": "Twilight!",
@@ -2854,7 +2953,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500357,
-    "parentId": 357,
+    "parentId": 370,
     "start": 1103.18,
     "end": 1105.08,
     "text": "Bloß nicht schießen, sonst geht hier alles hoch!",
@@ -2862,7 +2961,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500358,
-    "parentId": 358,
+    "parentId": 371,
     "start": 1107.46,
     "end": 1115.61,
     "text": "Kann nicht sein!",
@@ -2870,7 +2969,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500359,
-    "parentId": 359,
+    "parentId": 372,
     "start": 1119.14,
     "end": 1120.46,
     "text": "Wenn du dich umdrehst, bist du tot.",
@@ -2878,7 +2977,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500360,
-    "parentId": 360,
+    "parentId": 373,
     "start": 1120.84,
     "end": 1121.3,
     "text": "Twilight.",
@@ -2886,7 +2985,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500361,
-    "parentId": 361,
+    "parentId": 374,
     "start": 1123.18,
     "end": 1123.46,
     "text": "Hallo.",
@@ -2894,7 +2993,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500362,
-    "parentId": 362,
+    "parentId": 375,
     "start": 1124.1,
     "end": 1125.56,
     "text": "Oder auch guten Abend, lieber Edgar.",
@@ -2902,7 +3001,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500363,
-    "parentId": 363,
+    "parentId": 376,
     "start": 1126.1,
     "end": 1127.18,
     "text": "Wie geht es eigentlich Karen?",
@@ -2910,7 +3009,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500364,
-    "parentId": 364,
+    "parentId": 377,
     "start": 1127.4,
     "end": 1129.66,
     "text": "Du Schwein, woher weißt du, wie meine Tochter heißt?",
@@ -2918,7 +3017,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500365,
-    "parentId": 365,
+    "parentId": 378,
     "start": 1129.8,
     "end": 1132.1,
     "text": "Naja, Dinge zu wissen, ist mein Job, Edgar.",
@@ -2926,7 +3025,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500366,
-    "parentId": 366,
+    "parentId": 379,
     "start": 1132.74,
     "end": 1135.82,
     "text": "Größe, Gewicht, Schuhgröße, ihr Lieblingsessen",
@@ -2934,7 +3033,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500367,
-    "parentId": 367,
+    "parentId": 380,
     "start": 1135.82,
     "end": 1138.0,
     "text": "und sogar all ihre Muttermale kenn ich.",
@@ -2942,7 +3041,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500368,
-    "parentId": 368,
+    "parentId": 381,
     "start": 1138.34,
     "end": 1140.32,
     "text": "Ich weiß auch, wie viel Dreck sie am Stecken hat.",
@@ -2950,7 +3049,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500369,
-    "parentId": 369,
+    "parentId": 382,
     "start": 1140.8,
     "end": 1142.04,
     "text": "Natürlich kein Vergleich zu dir.",
@@ -2958,7 +3057,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500370,
-    "parentId": 370,
+    "parentId": 383,
     "start": 1142.16,
     "end": 1143.82,
     "text": "Red kein Unsinn, meine Tochter!",
@@ -2966,7 +3065,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500371,
-    "parentId": 371,
+    "parentId": 384,
     "start": 1144.02,
     "end": 1145.58,
     "text": "Edgar, kommen wir zur Sache.",
@@ -2974,7 +3073,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500372,
-    "parentId": 372,
+    "parentId": 385,
     "start": 1145.72,
     "end": 1147.2,
     "text": "Ich weiß genau, wie wichtig sie dir ist.",
@@ -2982,7 +3081,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500373,
-    "parentId": 373,
+    "parentId": 386,
     "start": 1147.7,
     "end": 1150.8,
     "text": "Capiche, wenn du willst, dass sie weiter in Frieden leben kann,",
@@ -2990,7 +3089,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500374,
-    "parentId": 374,
+    "parentId": 387,
     "start": 1150.96,
     "end": 1152.94,
     "text": "dann leg dich nie wieder mit mir an.",
@@ -2998,7 +3097,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500375,
-    "parentId": 375,
+    "parentId": 388,
     "start": 1155.95,
     "end": 1157.17,
     "text": "Haben wir uns verstanden?",
@@ -3006,7 +3105,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500376,
-    "parentId": 376,
+    "parentId": 389,
     "start": 1157.81,
     "end": 1158.57,
     "text": "Und jetzt verzieh dich.",
@@ -3014,7 +3113,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500377,
-    "parentId": 377,
+    "parentId": 390,
     "start": 1173.68,
     "end": 1174.16,
     "text": "Anya!",
@@ -3022,7 +3121,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500378,
-    "parentId": 378,
+    "parentId": 391,
     "start": 1174.16,
     "end": 1179.46,
     "text": "Was machst du hier?",
@@ -3030,7 +3129,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500379,
-    "parentId": 379,
+    "parentId": 392,
     "start": 1179.82,
     "end": 1182.16,
     "text": "Ich mein, wieso bist du nicht zu Hause in unserer Wohnung?",
@@ -3038,7 +3137,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500380,
-    "parentId": 380,
+    "parentId": 393,
     "start": 1182.8,
     "end": 1185.5,
     "text": "Weißt du, ich wollte nur rein zufällig da drüben einkaufen.",
@@ -3046,7 +3145,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500381,
-    "parentId": 381,
+    "parentId": 394,
     "start": 1185.9,
     "end": 1187.42,
     "text": "Aber die haben scheinbar dichtgemacht.",
@@ -3054,7 +3153,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500382,
-    "parentId": 382,
+    "parentId": 395,
     "start": 1187.64,
     "end": 1189.0,
     "text": "Papa ist ein schlechter Lügner.",
@@ -3062,7 +3161,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500383,
-    "parentId": 383,
+    "parentId": 396,
     "start": 1189.86,
     "end": 1191.98,
     "text": "Anya hat mit den fremden Männern fangen gespielt.",
@@ -3070,15 +3169,23 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500384,
-    "parentId": 384,
+    "parentId": 397,
     "start": 1192.66,
     "end": 1193.02,
     "text": "Ach so?",
     "vi": "Vậy sao?"
   },
   {
+    "id": 500438,
+    "parentId": 398,
+    "start": 1193.3,
+    "end": 1194.28,
+    "text": "Hattest du Spaß?",
+    "vi": "Con chơi có vui không?"
+  },
+  {
     "id": 500385,
-    "parentId": 385,
+    "parentId": 399,
     "start": 1194.91,
     "end": 1196.23,
     "text": "Es war gruselig.",
@@ -3086,7 +3193,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500386,
-    "parentId": 386,
+    "parentId": 400,
     "start": 1197.3,
     "end": 1198.66,
     "text": "Anya will nach Hause.",
@@ -3094,7 +3201,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500387,
-    "parentId": 387,
+    "parentId": 401,
     "start": 1199.68,
     "end": 1201.1,
     "text": "Zurück in unserer Wohnung.",
@@ -3102,7 +3209,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500388,
-    "parentId": 388,
+    "parentId": 402,
     "start": 1203.4,
     "end": 1204.18,
     "text": "Bist du dir sicher?",
@@ -3110,7 +3217,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500389,
-    "parentId": 389,
+    "parentId": 403,
     "start": 1206.19,
     "end": 1209.01,
     "text": "Wenn du Anya wieder allein lässt, muss sie weinen.",
@@ -3118,7 +3225,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500390,
-    "parentId": 390,
+    "parentId": 404,
     "start": 1209.01,
     "end": 1212.23,
     "text": "Sie wurde ganze viermal adoptiert, aber jedes Mal wieder zurückgegeben.",
@@ -3126,7 +3233,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500391,
-    "parentId": 391,
+    "parentId": 405,
     "start": 1212.63,
     "end": 1217.0,
     "text": "Anya Williams, Anya Levski, Anya Roach.",
@@ -3134,7 +3241,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500392,
-    "parentId": 392,
+    "parentId": 406,
     "start": 1217.93,
     "end": 1220.41,
     "text": "Okay, gehen wir nach Hause.",
@@ -3142,7 +3249,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500393,
-    "parentId": 393,
+    "parentId": 407,
     "start": 1225.67,
     "end": 1229.61,
     "text": "Aber ich hab dort gestern eine Giftschlange gesehen, also sollten wir lieber umziehen.",
@@ -3150,7 +3257,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500394,
-    "parentId": 394,
+    "parentId": 408,
     "start": 1229.95,
     "end": 1230.85,
     "text": "Schlangen sind blöd.",
@@ -3158,7 +3265,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500395,
-    "parentId": 395,
+    "parentId": 409,
     "start": 1231.41,
     "end": 1232.87,
     "text": "Papa ist ein schlechter Lügner.",
@@ -3166,7 +3273,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500396,
-    "parentId": 396,
+    "parentId": 410,
     "start": 1233.76,
     "end": 1235.12,
     "text": "Aber ein cooler Lügner.",
@@ -3174,7 +3281,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500397,
-    "parentId": 397,
+    "parentId": 411,
     "start": 1235.9,
     "end": 1237.88,
     "text": "Anya will in einem großen Schloss wohnen.",
@@ -3182,7 +3289,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500398,
-    "parentId": 398,
+    "parentId": 412,
     "start": 1237.88,
     "end": 1239.34,
     "text": "Vielleicht ist eins im Angebot.",
@@ -3190,7 +3297,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500399,
-    "parentId": 399,
+    "parentId": 413,
     "start": 1239.8,
     "end": 1241.68,
     "text": "Aber nachdem wir umgezogen sind, lernst du.",
@@ -3198,7 +3305,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500400,
-    "parentId": 400,
+    "parentId": 414,
     "start": 1242.68,
     "end": 1245.02,
     "text": "Diesmal musst du nur die Lösungen auswendig lernen.",
@@ -3206,7 +3313,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500401,
-    "parentId": 401,
+    "parentId": 415,
     "start": 1245.5,
     "end": 1246.36,
     "text": "Das ist kinderleicht.",
@@ -3214,7 +3321,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500402,
-    "parentId": 402,
+    "parentId": 416,
     "start": 1257.47,
     "end": 1258.91,
     "text": "Wir beginnen jetzt mit der Prüfung.",
@@ -3222,7 +3329,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500403,
-    "parentId": 403,
+    "parentId": 417,
     "start": 1261.45,
     "end": 1263.03,
     "text": "Ich verlass mich auf dich, Anya.",
@@ -3230,7 +3337,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500404,
-    "parentId": 404,
+    "parentId": 418,
     "start": 1263.84,
     "end": 1264.46,
     "text": "Du schaffst das.",
@@ -3238,7 +3345,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500405,
-    "parentId": 405,
+    "parentId": 419,
     "start": 1265.04,
     "end": 1266.56,
     "text": "Was bedeutet das?",
@@ -3246,15 +3353,23 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500406,
-    "parentId": 406,
+    "parentId": 420,
     "start": 1266.64,
     "end": 1267.8,
     "text": "Das ist viel zu schwer.",
     "vi": "Khó quá đi."
   },
   {
+    "id": 500439,
+    "parentId": 421,
+    "start": 1285.14,
+    "end": 1287.94,
+    "text": "K212. K212.",
+    "vi": "K212. K212."
+  },
+  {
     "id": 500407,
-    "parentId": 407,
+    "parentId": 422,
     "start": 1291.41,
     "end": 1291.93,
     "text": "Stets.",
@@ -3262,7 +3377,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500408,
-    "parentId": 408,
+    "parentId": 423,
     "start": 1292.25,
     "end": 1293.21,
     "text": "Du hast bestanden.",
@@ -3270,7 +3385,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500409,
-    "parentId": 409,
+    "parentId": 424,
     "start": 1293.91,
     "end": 1295.59,
     "text": "Hat Anya gut gemacht?",
@@ -3278,7 +3393,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500410,
-    "parentId": 410,
+    "parentId": 425,
     "start": 1295.85,
     "end": 1296.85,
     "text": "Ja, hervorragend.",
@@ -3286,7 +3401,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500411,
-    "parentId": 411,
+    "parentId": 426,
     "start": 1300.04,
     "end": 1302.68,
     "text": "Das muss die Erschöpfung sein.",
@@ -3294,7 +3409,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500412,
-    "parentId": 412,
+    "parentId": 427,
     "start": 1303.39,
     "end": 1305.07,
     "text": "Moment mal, erschöpft?",
@@ -3302,7 +3417,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500413,
-    "parentId": 413,
+    "parentId": 428,
     "start": 1305.68,
     "end": 1306.16,
     "text": "Ich?",
@@ -3310,15 +3425,55 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500414,
-    "parentId": 414,
+    "parentId": 429,
     "start": 1308.38,
     "end": 1309.94,
     "text": "Was ist los mit mir?",
     "vi": "Ta bị sao thế này?"
   },
   {
+    "id": 500440,
+    "parentId": 430,
+    "start": 1376.23,
+    "end": 1377.45,
+    "text": "Familie Forger?",
+    "vi": "Có phải nhà Forger không ạ?"
+  },
+  {
+    "id": 500441,
+    "parentId": 431,
+    "start": 1378.61,
+    "end": 1379.35,
+    "text": "Anya Forger.",
+    "vi": "Anya Forger ạ."
+  },
+  {
+    "id": 500442,
+    "parentId": 432,
+    "start": 1379.65,
+    "end": 1382.21,
+    "text": "Würdest du diesen Brief bitte deinem Papa oder Mama geben?",
+    "vi": "Cháu đưa lá thư này cho papa hoặc mama của cháu giúp chú nhé?"
+  },
+  {
+    "id": 500443,
+    "parentId": 433,
+    "start": 1382.51,
+    "end": 1383.66,
+    "text": "Ist keine Mama.",
+    "vi": "Không có mama đâu."
+  },
+  {
+    "id": 500444,
+    "parentId": 434,
+    "start": 1383.66,
+    "end": 1385.96,
+    "text": "Ach so, entschuldige bitte.",
+    "vi": "À thế à, cho chú xin lỗi."
+  },
+  {
     "id": 500415,
-    "parentId": 415,
+    "parentId": 435,
     "start": 1407.8,
     "end": 1410.74,
     "text": "Hey, was soll das? Willst du, dass ich einen Herzinfarkt kriege?",
@@ -3326,7 +3481,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500416,
-    "parentId": 416,
+    "parentId": 436,
     "start": 1411.49,
     "end": 1413.37,
     "text": "Ich bin tatsächlich vor ihr eingeschlafen.",
@@ -3334,7 +3489,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500417,
-    "parentId": 417,
+    "parentId": 437,
     "start": 1413.83,
     "end": 1416.17,
     "text": "Reiß dich zusammen. Das darf nicht noch mal passieren.",
@@ -3342,7 +3497,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500418,
-    "parentId": 418,
+    "parentId": 438,
     "start": 1416.27,
     "end": 1416.85,
     "text": "Hier, die Post.",
@@ -3350,7 +3505,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500419,
-    "parentId": 419,
+    "parentId": 439,
     "start": 1418.44,
     "end": 1421.04,
     "text": "Von der Eden-Akademie ein Einladungsschreiben.",
@@ -3358,7 +3513,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500420,
-    "parentId": 420,
+    "parentId": 440,
     "start": 1422.68,
     "end": 1424.06,
     "text": "Was steht denn drin, Papa?",
@@ -3366,7 +3521,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500421,
-    "parentId": 421,
+    "parentId": 441,
     "start": 1424.76,
     "end": 1427.04,
     "text": "Zulassung Phase 2 ist ein Elterngespräch.",
@@ -3374,7 +3529,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500422,
-    "parentId": 422,
+    "parentId": 442,
     "start": 1428.1,
     "end": 1430.2,
     "text": "Beide Elternteile haben mit dem Kind zu erscheinen.",
@@ -3382,7 +3537,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500423,
-    "parentId": 423,
+    "parentId": 443,
     "start": 1431.14,
     "end": 1432.74,
     "text": "Ausnahmen werden nicht gestattet.",
@@ -3390,7 +3545,7 @@ const SPY_FAMILY_S01E01_ALIGNED_UTTERANCES = [
   },
   {
     "id": 500424,
-    "parentId": 424,
+    "parentId": 444,
     "start": 1434.27,
     "end": 1435.81,
     "text": "Hä? Aber es gibt keine Mama.",

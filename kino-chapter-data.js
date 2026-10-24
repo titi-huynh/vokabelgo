@@ -149,7 +149,7 @@ const KINO_CHAPTER_DATA = {
     genre: 'Anime',
     title: 'Operation Strix', series: 'SPY × FAMILY', levelLabel: 'Gợi ý B1',
     catalogTitle: 'SPY × FAMILY · Operation Strix',
-    storageKey: 'vokabelgo_kino_chapters_v1_spy_family_s01e01', cueCount: 424,
+    storageKey: 'vokabelgo_kino_chapters_v1_spy_family_s01e01', cueCount: 444,
     get cues() { return SPY_FAMILY_S01E01_ALIGNED_UTTERANCES; },
     chapters: [
     { title: 'Nhiệm vụ mang tên Strix', icon: '🎯', start: 3.47, end: 250.68,
