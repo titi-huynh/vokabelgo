@@ -40,6 +40,7 @@
     });
   }
   const idbGet = (store, k) => idb(store, 'readonly', s => s.get(k));
+  const loadVideo = id => idbGet('videos', idOf(id));
   const idbPut = (store, k, v) => idb(store, 'readwrite', s => s.put(v, k));
   const idbDel = (store, k) => idb(store, 'readwrite', s => s.delete(k));
   const idbKeys = store => idb(store, 'readonly', s => s.getAllKeys());
@@ -223,7 +224,7 @@
   window.UserScenes = {
     list: () => scenes.slice(), get, getByKey, keyOf, idOf, isUserKey, isUnreviewed,
     create, update, remove, prepare, register, posterFor, cuesFor, levelLabel,
-    saveTake, loadTake, deleteTake, takeIndexes, videoBytesTotal,
+    saveTake, loadTake, deleteTake, takeIndexes, videoBytesTotal, loadVideo,
     cacheAudio, getCachedAudio, clearAudioCache,
     limits: { MAX_TOTAL_BYTES, MAX_FILE_BYTES }
   };

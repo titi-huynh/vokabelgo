@@ -46,6 +46,18 @@
     }
   }
 
+  /* Chuẩn hoá độ lớn của một bản thu về quanh mức RMS mục tiêu (giới hạn hệ số). */
+  function normalizeGain(buffer) {
+    let sum = 0, count = 0;
+    for (let ch = 0; ch < buffer.numberOfChannels; ch++) {
+      const d = buffer.getChannelData(ch);
+      for (let i = 0; i < d.length; i += 4) { sum += d[i] * d[i]; count++; }
+    }
+    const rms = Math.sqrt(sum / Math.max(1, count));
+    if (!rms) return 1;
+    return Math.min(3, Math.max(0.5, 0.12 / rms));
+  }
+
   /* ================= Bản trộn duck ================= */
   let mix = null;   /* { ctx, video, raf, takes: Map<cueId, AudioBuffer>, stopAt, started: Set } */
   async function playMix(btn) {
@@ -95,7 +107,9 @@
             mix.started.add(cue.id);
             const src = ctx.createBufferSource();
             src.buffer = buf;
-            src.connect(ctx.destination);
+            const g = ctx.createGain();
+            g.gain.value = normalizeGain(buf);
+            src.connect(g); g.connect(ctx.destination);
             src.start(0, Math.max(0, t - cue.start));
           }
         }
@@ -122,6 +136,74 @@
     mix = null;
   }
 
+  /* Xuất bản trộn thành file WAV: tiếng gốc (duck 0,1 ở đoạn có bản thu) + các bản thu đã chuẩn hoá. */
+  function encodeWav(buffer) {
+    const nCh = Math.min(2, buffer.numberOfChannels), sr = buffer.sampleRate;
+    const len = buffer.length * nCh * 2 + 44;
+    const ab = new ArrayBuffer(len), v = new DataView(ab);
+    const wstr = (o, s) => { for (let i = 0; i < s.length; i++) v.setUint8(o + i, s.charCodeAt(i)); };
+    wstr(0, 'RIFF'); v.setUint32(4, len - 8, true); wstr(8, 'WAVEfmt ');
+    v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, nCh, true);
+    v.setUint32(24, sr, true); v.setUint32(28, sr * nCh * 2, true); v.setUint16(32, nCh * 2, true);
+    v.setUint16(34, 16, true); wstr(36, 'data'); v.setUint32(40, len - 44, true);
+    const chans = [];
+    for (let c = 0; c < nCh; c++) chans.push(buffer.getChannelData(c));
+    let o = 44;
+    for (let i = 0; i < buffer.length; i++) for (let c = 0; c < nCh; c++) {
+      const x = Math.max(-1, Math.min(1, chans[c][i]));
+      v.setInt16(o, x * 0x7fff, true); o += 2;
+    }
+    return new Blob([ab], { type: 'audio/wav' });
+  }
+  async function exportMix(btn) {
+    const key = currentKey();
+    if (!US() || !US().isUserKey(key)) return;
+    const scene = US().getByKey(key);
+    const cues = (typeof KinoData !== 'undefined' && KinoData.cues(key)) || [];
+    if (!scene || !cues.length) return;
+    btn.disabled = true; const old = btn.textContent; btn.textContent = '⏳ Đang dựng file…';
+    try {
+      const videoBlob = await US().loadVideo(scene.id);
+      if (!videoBlob) throw new Error('Không tìm thấy video của cảnh.');
+      const actx = new (window.AudioContext || window.webkitAudioContext)();
+      const original = await actx.decodeAudioData(await videoBlob.arrayBuffer());
+      await actx.close();
+      const sr = original.sampleRate;
+      const t0 = cues[0].start, t1 = cues[cues.length - 1].end + 0.3;
+      const off = new OfflineAudioContext(original.numberOfChannels, Math.ceil((t1 - t0) * sr), sr);
+      const src = off.createBufferSource(); src.buffer = original;
+      const duck = off.createGain(); duck.gain.value = 1;
+      src.connect(duck); duck.connect(off.destination);
+      const dctx = new OfflineAudioContext(1, 1, sr);
+      let any = false;
+      for (const cue of cues) {
+        const blob = await US().loadTake(key, token(cue.id));
+        if (!blob) continue;
+        any = true;
+        const buf = await dctx.decodeAudioData(await blob.arrayBuffer());
+        const ts = off.createBufferSource(); ts.buffer = buf;
+        const g = off.createGain(); g.gain.value = normalizeGain(buf);
+        ts.connect(g); g.connect(off.destination);
+        ts.start(cue.start - t0);
+        duck.gain.setValueAtTime(1, Math.max(0, cue.start - t0 - 0.05));
+        duck.gain.linearRampToValueAtTime(0.1, Math.max(0.01, cue.start - t0 + 0.03));
+        duck.gain.setValueAtTime(0.1, Math.max(0.01, cue.start - t0 + buf.duration - 0.03));
+        duck.gain.linearRampToValueAtTime(1, Math.max(0.02, cue.start - t0 + buf.duration + 0.05));
+      }
+      if (!any) { alert('Cảnh này chưa có câu nào được lồng tiếng.'); return; }
+      src.start(0, t0, t1 - t0);
+      const rendered = await off.startRendering();
+      const wav = encodeWav(rendered);
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(wav);
+      a.download = 'ban-tron-' + scene.title.replace(/[^\wÀ-ỹ-]+/g, '-').slice(0, 40) + '.wav';
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    } catch (e) {
+      alert('Không xuất được bản trộn: ' + e.message);
+    } finally { btn.disabled = false; btn.textContent = old; }
+  }
+
   /* Tiêm nút bản trộn vào panel lồng tiếng khi đang học cảnh người dùng. */
   function watch() {
     const key = currentKey();
@@ -135,9 +217,45 @@
       btn.textContent = '▶ Nghe cảnh với giọng mình';
       btn.onclick = () => playMix(btn);
       recBtn.parentElement.append(btn);
+      const exp = document.createElement('button');
+      exp.type = 'button'; exp.id = 'uscMixExport'; exp.className = 'btn';
+      exp.style.cssText = 'margin:6px 0 0;width:100%;';
+      exp.textContent = '⬇ Tải bản trộn (file audio)';
+      exp.onclick = () => exportMix(exp);
+      recBtn.parentElement.append(exp);
+      const del = document.createElement('button');
+      del.type = 'button'; del.id = 'uscTakeDelete'; del.className = 'btn';
+      del.style.cssText = 'margin:6px 0 0;width:100%;';
+      del.textContent = '🗑 Xóa bản thu của câu này';
+      del.onclick = async () => {
+        const segs = currentSegs();
+        let idx = -1;
+        try { idx = typeof kinoCurrentIndex === 'number' ? kinoCurrentIndex : -1; } catch (e) {}
+        const cue = segs[idx];
+        if (!cue || cue.id == null) return;
+        await US().deleteTake(key, token(cue.id));
+        hydrated.delete(key + '|' + token(cue.id));
+        const map = currentMap();
+        if (map && map[idx]) { URL.revokeObjectURL(map[idx]); delete map[idx]; }
+        if (typeof loadKinoSentence === 'function') loadKinoSentence(idx);
+      };
+      recBtn.parentElement.append(del);
     }
-    if (!show && btn) { stopMix(); btn.remove(); }
-    if (show) hydrate(key, currentMap());
+    if (!show && btn) {
+      stopMix(); btn.remove();
+      document.getElementById('uscMixExport')?.remove();
+      document.getElementById('uscTakeDelete')?.remove();
+    }
+    if (show) {
+      hydrate(key, currentMap());
+      const del = document.getElementById('uscTakeDelete');
+      if (del) {
+        const map = currentMap();
+        let idx = -1;
+        try { idx = typeof kinoCurrentIndex === 'number' ? kinoCurrentIndex : -1; } catch (e) {}
+        del.hidden = !(map && map[idx]);
+      }
+    }
   }
   setInterval(watch, 1200);
 
