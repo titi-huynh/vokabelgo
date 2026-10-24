@@ -69,6 +69,11 @@
   function currentContext() {
     var de = document.getElementById('kinoOverlayDe');
     var vi = document.getElementById('kinoOverlayVi');
+    // Đang xem liên tục (Nghe hiểu): phụ đề nằm ở discovery, overlay có thể rỗng.
+    if (!de || !de.textContent.trim()) {
+      var dDe = document.getElementById('kinoDiscoveryDe');
+      if (dDe && dDe.textContent.trim()) { de = dDe; vi = document.getElementById('kinoDiscoveryVi') || vi; }
+    }
     var key = 'kino';
     try { if (typeof currentKinoVideoKey === 'string' && currentKinoVideoKey) key = currentKinoVideoKey; } catch (e) {}
     var partBtn = document.querySelector('.peppa-part[aria-pressed="true"]');
@@ -180,7 +185,15 @@
         b.className = 'kino-word';
         b.textContent = words[i];
         b.style.cssText = 'background:none;border:none;border-bottom:1.5px dotted rgba(219,91,35,.55);color:inherit;font:inherit;cursor:pointer;padding:0 1px;';
-        b.addEventListener('click', function (ev) { ev.stopPropagation(); showPop(b, words[i]); });
+        b.addEventListener('click', function (ev) {
+          ev.stopPropagation();
+          // Tra từ ngay trong lúc xem: dừng video để người học kịp đọc thẻ nghĩa.
+          if (el.id === 'kinoDiscoveryDe') {
+            var dv = document.getElementById('kinoDiscoveryVideo');
+            if (dv && !dv.paused) dv.pause();
+          }
+          showPop(b, words[i]);
+        });
         el.appendChild(b);
       }
     });
@@ -194,10 +207,19 @@
       if (el.dataset.klWrapped !== el.textContent || !el.querySelector('.kino-word')) wrapWords(el);
     }).observe(el, { childList: true, characterData: true, subtree: true });
   }
+  function watchLater(id) {
+    if (document.getElementById(id)) { watch(id); return; }
+    var mo = new MutationObserver(function () {
+      if (document.getElementById(id)) { mo.disconnect(); watch(id); }
+    });
+    mo.observe(document.body, { childList: true, subtree: true });
+  }
   function start() {
     buildIndex();
     watch('kinoOverlayDe');
     watch('kinoDubTargetDe');
+    // Phụ đề của trình xem liên tục (Nghe hiểu) được tạo động khi mở bài Kino.
+    watchLater('kinoDiscoveryDe');
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
   else start();

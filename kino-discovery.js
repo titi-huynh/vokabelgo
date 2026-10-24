@@ -23,7 +23,7 @@ const KinoDiscovery = (() => {
           <div class="kino-discovery-caption" id="kinoDiscoveryCaption">
             <p id="kinoDiscoveryDe" lang="de"></p>
             <p id="kinoDiscoveryVi" lang="vi"></p>
-            <p id="kinoDiscoveryCaptionHint">Phụ đề Đức và Việt đi cùng lời thoại khi phát.</p>
+            <p id="kinoDiscoveryCaptionHint">Phụ đề Đức – Việt đi cùng lời thoại · Chạm vào một từ tiếng Đức để tra nghĩa ngay.</p>
           </div>
         </div>
         <div class="kino-discovery-controls">
@@ -127,8 +127,17 @@ const KinoDiscovery = (() => {
     if (!video.paused) { video.pause(); return; }
     actions.beforePlay();
     const position = video.hasAttribute('src') ? video.currentTime : resumeTime;
-    const time = position >= data.chapter.end - .1 || position < data.chapter.start
+    let time = position >= data.chapter.end - .1 || position < data.chapter.start
       ? data.chapter.start : position;
+    // Bắt đầu mới: nếu đoạn mở đầu của phần chưa có lời thoại quá 5 giây
+    // (hình hiệu, thiết lập cảnh) thì lướt tới sát câu đầu tiên và báo rõ.
+    if (time === data.chapter.start) {
+      const firstCue = data.cues.find(c => c.start >= data.chapter.start && c.start < data.chapter.end);
+      if (firstCue && firstCue.start - data.chapter.start > 5) {
+        time = Math.max(data.chapter.start, firstCue.start - 1.2);
+        byId('kinoDiscoveryNotice').textContent = 'Đã lướt qua đoạn mở đầu chưa có lời thoại · Câu đầu tiên ở ' + clock(firstCue.start - data.chapter.start) + ' của phần này.';
+      }
+    }
     finished = false;
     KinoMedia.play(video, time, data.key);
   }
@@ -149,10 +158,13 @@ const KinoDiscovery = (() => {
     if (!data) return;
     const cue = showCaptions && video.currentTime >= data.chapter.start && video.currentTime < data.chapter.end
       ? data.cues.find(c => video.currentTime >= c.start && video.currentTime < c.end) : null;
-    byId('kinoDiscoveryDe').textContent = cue?.text || '';
-    byId('kinoDiscoveryVi').textContent = cue?.vi || '';
+    // Chỉ gán lại khi câu đổi: tránh xoá các nút tra từ (kino-lookup) mỗi nhịp timeupdate.
+    const deEl = byId('kinoDiscoveryDe'), viEl = byId('kinoDiscoveryVi');
+    const deText = cue?.text || '', viText = cue?.vi || '';
+    if (deEl.textContent !== deText) deEl.textContent = deText;
+    if (viEl.textContent !== viText) viEl.textContent = viText;
     byId('kinoDiscoveryCaptionHint').hidden = Boolean(cue);
-    byId('kinoDiscoveryCaptionHint').textContent = showCaptions ? 'Phụ đề Đức và Việt đi cùng lời thoại khi phát.' : 'Đang tắt phụ đề · Bấm CC để xem lại.';
+    byId('kinoDiscoveryCaptionHint').textContent = showCaptions ? 'Phụ đề Đức – Việt đi cùng lời thoại · Chạm vào một từ tiếng Đức để tra nghĩa ngay.' : 'Đang tắt phụ đề · Bấm CC để xem lại.';
   }
   function refresh() {
     if (!data) return;
