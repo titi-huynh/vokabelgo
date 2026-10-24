@@ -88,12 +88,35 @@
       };
     } catch (e) { /* KINO_VIDEOS chưa được định nghĩa ở thời điểm script này chạy;
                     prepare() và DOMContentLoaded sẽ đăng ký lại đầy đủ. */ }
+    syncFlashcards(scene);
+  }
+  /* Đồng bộ thẻ từ vựng của cảnh vào VIDEO_FLASHCARDS (quiz đọc trực tiếp). */
+  function syncFlashcards(scene) {
+    try {
+      const k = keyOf(scene.id);
+      for (let i = VIDEO_FLASHCARDS.length - 1; i >= 0; i--) {
+        if (VIDEO_FLASHCARDS[i].userSceneKey === k) VIDEO_FLASHCARDS.splice(i, 1);
+      }
+      (scene.flashcards || []).filter(c => c.term && c.meaning).forEach((c, i) => {
+        VIDEO_FLASHCARDS.push({
+          id: 'usc_' + scene.id + '_' + i, term: c.term, meaning: c.meaning,
+          example: c.example || '', videoKey: k, cueId: c.cueId,
+          sourceUrl: '?kino=' + k, userSceneKey: k,
+          deck: '🎬 Cảnh của bạn: ' + scene.title
+        });
+      });
+    } catch (e) { /* VIDEO_FLASHCARDS chưa sẵn sàng */ }
   }
   function unregister(id) {
     const k = keyOf(id);
     try { delete KINO_CHAPTER_DATA[k]; } catch (e) { /* chưa có */ }
     try { delete KINO_VIDEOS[k]; } catch (e) { /* chưa có */ }
     try { delete KINO_ALIASES[k]; } catch (e) { /* chưa có */ }
+    try {
+      for (let i = VIDEO_FLASHCARDS.length - 1; i >= 0; i--) {
+        if (VIDEO_FLASHCARDS[i].userSceneKey === k) VIDEO_FLASHCARDS.splice(i, 1);
+      }
+    } catch (e) { /* chưa có */ }
     if (blobUrls.has(k)) { URL.revokeObjectURL(blobUrls.get(k)); blobUrls.delete(k); }
   }
   /* KinoData.load() gọi trước khi mở bài: dựng blob URL cho video của cảnh. */
@@ -132,7 +155,8 @@
       videoBytes: data.videoBlob ? data.videoBlob.size : 0,
       poster: data.poster || '',
       cues: data.cues || [],
-      chapters: data.chapters || []
+      chapters: data.chapters || [],
+      flashcards: data.flashcards || []
     };
     if (data.videoBlob) await idbPut('videos', scene.id, data.videoBlob);
     scenes.push(scene);

@@ -36,7 +36,8 @@
       title: scene.title,
       reviewed: !!scene.reviewed,
       cues: scene.cues.map(c => ({ ...c })),
-      partTitles: scene.chapters.map(c => c.title)
+      partTitles: scene.chapters.map(c => c.title),
+      flashcards: (scene.flashcards || []).map(c => ({ ...c }))
     };
     if (!dlg) build();
     render(scene);
@@ -64,6 +65,7 @@
       + '<p id="uscEdFlags" class="usc-note"></p>'
       + '<div id="uscEdReviewRow"></div>'
       + '<div id="uscEdParts"></div>'
+      + '<div id="uscEdVocab"></div>'
       + '<div id="uscEdList" class="usc-ed-list"></div>'
       + '<p id="uscEdStatus" class="usc-note" role="status"></p>'
       + '<div class="usc-foot"><button type="submit" class="btn">Đóng</button>'
@@ -95,6 +97,7 @@
     } else {
       rr.innerHTML = '<p class="usc-note">Cảnh dùng phụ đề bạn cung cấp — sửa chữ và mốc thời gian thoải mái.</p>';
     }
+    renderVocab();
     const parts = $('uscEdParts');
     parts.replaceChildren();
     work.partTitles.forEach((t, i) => {
@@ -133,6 +136,36 @@
     $('uscEdFlags').textContent = flagCount ? '⚠ ' + flagCount + ' câu cần chú ý (đã đánh dấu trong danh sách).' : '';
     $('uscEdStatus').textContent = work.cues.length + ' câu. Sửa chữ thoải mái; xóa câu sẽ xóa kèm bản thu của cảnh khi lưu.';
   }
+  function renderVocab() {
+    const box = $('uscEdVocab');
+    if (!box) return;
+    const saved = work.flashcards || [];
+    const savedTerms = new Set(saved.map(f => f.term.toLowerCase()));
+    const cands = (window.SrtAlign ? SrtAlign.vocabCandidates(work.cues, 20) : [])
+      .filter(c => !savedTerms.has(c.term.toLowerCase()));
+    let html = '<h4 style="margin:10px 0 6px;">Từ vựng của cảnh</h4>';
+    if (saved.length) {
+      html += saved.map((f, i) => '<div class="usc-vocab-row"><span><strong>' + esc(f.term) + '</strong> — ' + esc(f.meaning)
+        + '<br><small>' + esc(f.example || '') + '</small></span>'
+        + '<button type="button" class="btn" data-vdel="' + i + '">✕</button></div>').join('');
+    } else html += '<p class="usc-note">Chưa có thẻ nào. Chọn từ gợi ý bên dưới, điền nghĩa tiếng Việt rồi bấm ＋ — thẻ sẽ vào quiz của cảnh và bộ thẻ của bạn.</p>';
+    if (cands.length) {
+      html += '<p class="usc-note" style="margin-top:8px;">Gợi ý theo tần suất trong cảnh:</p>' + cands.map((c, i) =>
+        '<div class="usc-vocab-row"><span><strong>' + esc(c.term) + '</strong> <small>×' + c.count + ' · “' + esc(c.example.slice(0, 60)) + '…”</small></span>'
+        + '<input type="text" data-vmean="' + i + '" placeholder="Nghĩa tiếng Việt">'
+        + '<button type="button" class="btn" data-vadd="' + i + '">＋ Lưu thẻ</button></div>').join('');
+    }
+    box.innerHTML = html;
+    box.querySelectorAll('[data-vdel]').forEach(b => b.onclick = () => { work.flashcards.splice(+b.dataset.vdel, 1); renderVocab(); });
+    box.querySelectorAll('[data-vadd]').forEach(b => b.onclick = () => {
+      const i = +b.dataset.vadd;
+      const mean = box.querySelector('[data-vmean="' + i + '"]').value.trim();
+      if (!mean) { box.querySelector('[data-vmean="' + i + '"]').focus(); return; }
+      const c = cands[i];
+      work.flashcards.push({ term: c.term, meaning: mean, example: c.example, cueId: c.cueId });
+      renderVocab();
+    });
+  }
   async function save() {
     const scene = US().get(sceneId);
     if (!scene) return;
@@ -144,12 +177,18 @@
       .sort((a, b) => a.start - b.start)
       .map((c, i) => ({ ...c, id: i + 1, parentId: i + 1 }));
     if (cues.length !== work.cues.length) deletedAny = true;
+    const byOldId = new Map(work.cues.map(c => [c.id, c]));
+    const flashcards = (work.flashcards || []).map(f => {
+      const obj = byOldId.get(f.cueId);
+      const pos = obj ? cues.findIndex(c => c.start === obj.start && c.text === (obj.text || '').trim()) : -1;
+      return pos >= 0 ? { ...f, cueId: cues[pos].id } : null;
+    }).filter(Boolean);
     const chapters = window.SrtAlign.draftChapters(cues, 150)
       .map((c, i) => ({ ...c, title: work.partTitles[i] || c.title }));
     const reviewedEl = $('uscEdReviewed');
     const patch = {
       title: $('uscEdTitle').value.trim() || scene.title,
-      cues, chapters,
+      cues, chapters, flashcards,
       hasVi: cues.some(c => c.vi)
     };
     if (reviewedEl) patch.reviewed = reviewedEl.checked;

@@ -50,3 +50,7 @@
 .usc-ed-row.usc-ed-flagged { border-color: #e8a33d; box-shadow: inset 3px 0 0 #e8a33d; }
 .usc-ed-chip { color: #9a5b00; font-size: .75rem; line-height: 1.35; }
 .usc-ed-play { font-size: .78rem; }
+
+.usc-vocab-row { display: flex; gap: 8px; align-items: center; padding: 6px 0; border-bottom: 1px dashed var(--line, #e3e6ee); }
+.usc-vocab-row span { flex: 1; min-width: 0; }
+.usc-vocab-row input { flex: 1; }
