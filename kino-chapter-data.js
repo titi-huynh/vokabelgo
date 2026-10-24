@@ -1,5 +1,5 @@
 /* Chapter bounds sit between complete spoken turns; all sources remain original MP4s. */
-const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura', druck_s07e01: 'druck', simplicissimus_leberwurst: 'simplicissimus' };
+const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura', druck_s07e01: 'druck', simplicissimus_leberwurst: 'simplicissimus', trudes_bagger: 'bagger' };
 const KINO_CHAPTER_DATA = {
   peppa_supermarkt: {
     genre: 'Thiếu nhi',
@@ -105,6 +105,20 @@ const KINO_CHAPTER_DATA = {
       picks: [500142, 500143, 500144, 500145, 500146, 500147, 500148], goal: 'Từ vựng về điều kiện lao động, lao động nhập cư và trách nhiệm xã hội.' },
     { title: 'Luật mới và câu hỏi mở', icon: '⚖️', start: 669.88, end: 775.22,
       picks: [500226, 500227, 500228, 500229, 500230, 500231, 500232], goal: 'Theo dõi tranh luận lập pháp và những câu hỏi phản biện ở cuối video.' }
+    ]
+  }
+,
+  trudes_bagger: {
+    genre: 'Hoạt hình',
+    title: 'Bagger', series: 'Trudes Tier', levelLabel: 'Gợi ý A2',
+    catalogTitle: 'Trudes Tier · Bagger',
+    storageKey: 'vokabelgo_kino_chapters_v1_trudes_bagger', cueCount: 54,
+    get cues() { return TRUDES_BAGGER_ALIGNED_UTTERANCES; },
+    chapters: [
+    { title: 'Chiếc máy xúc trong vườn', icon: '🚜', start: 0, end: 189.84,
+      picks: [500001, 500002, 500003, 500004, 500005, 500006, 500007], goal: 'Phát hiện một vật lạ, hỏi xem chuyện gì đã xảy ra và giải thích.' },
+    { title: 'Trả lại và xin lỗi', icon: '🙏', start: 191.56, end: 349.68,
+      picks: [500030, 500031, 500032, 500033, 500034, 500035, 500036], goal: 'Học cách nói lời xin lỗi, nhận lỗi và sửa sai.' }
     ]
   }
 };

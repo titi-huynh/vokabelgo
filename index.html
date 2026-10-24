@@ -18955,6 +18955,21 @@ const PIZZASCHWESTER_72_DEFAULT_SEGMENTS = [{"id": 1, "start": 27.6, "end": 33.1
 
 const KINO_VIDEOS = {
   sakura_s01e01: { ...SAKURA_S01E01_LESSON.video, get defaultSegs() { return SAKURA_S01E01_ALIGNED_UTTERANCES; } },
+  trudes_bagger: {
+    key: "trudes_bagger",
+    series: "Trudes Tier",
+    seriesIcon: "🐾",
+    episodeTitle: "Bagger",
+    icon: "🚜",
+    title: "🚜 Trudes Tier – Bagger",
+    src: "video/trudes-bagger.mp4",
+    get defaultSegs() { return TRUDES_BAGGER_ALIGNED_UTTERANCES; },
+    storageKey: "kino_calibrated_trudes_bagger_v1",
+    syncKey: "vokabelgo_kino_perfected_trudes_bagger",
+    progressKey: "vokabelgo_kino_progress_trudes_bagger",
+    fullDurationStr: "5:54",
+    flashcardDeck: "🎬 Video: Trudes Tier – Bagger"
+  },
   druck_s07e01: {
     key: "druck_s07e01",
     series: "DRUCK",
