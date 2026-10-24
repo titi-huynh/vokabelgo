@@ -80,4 +80,45 @@ ok('PARITY: trùng kết quả căn với tools/kino-import trên cùng SRT', ()
   fs.rmSync(tmp, { recursive: true, force: true });
 });
 
-console.log('test-srt-align: ' + passed + '/6 PASS');
+
+// --- Bổ sung đợt cải thiện: VTT, resegment, vocabCandidates ---
+ok('parseSubtitles: đọc được WebVTT (mốc MM:SS + cài đặt sau mốc)', () => {
+  const vtt = ['WEBVTT', '',
+    '00:01.000 --> 00:03.500 align:start position:0%', 'Guten Morgen, Hans!', '',
+    '00:00:04.000 --> 00:00:06.000', 'Wie geht es dir?'].join('\n');
+  const cues = SrtAlign.parseSubtitles(vtt);
+  assert.strictEqual(cues.length, 2);
+  assert.strictEqual(cues[0].start, 1); assert.strictEqual(cues[0].text, 'Guten Morgen, Hans!');
+  assert.strictEqual(cues[1].start, 4);
+});
+ok('buildSceneCues: nhận cả đầu vào VTT', () => {
+  const vtt = ['WEBVTT', '', '00:00:01.000 --> 00:00:02.500', 'Hallo Welt.'].join('\n');
+  const { cues, total } = SrtAlign.buildSceneCues(vtt, '');
+  assert.strictEqual(total, 1); assert.strictEqual(cues[0].text, 'Hallo Welt.');
+});
+ok('resegment: câu dài 12s tách tại dấu câu, thời gian liên tục', () => {
+  const long = [{ id: 1, parentId: 1, start: 0, end: 12, text: 'Erstens gehen wir einkaufen. Zweitens kochen wir zusammen. Drittens essen wir alles auf.', vi: '' }];
+  const out = SrtAlign.resegment(long);
+  assert.strictEqual(out.length, 3);
+  assert.strictEqual(out[0].start, 0); assert.strictEqual(out[2].end, 12);
+  for (let i = 1; i < out.length; i++) assert.ok(out[i].start >= out[i - 1].end - 0.01);
+});
+ok('resegment: mảnh <0,5s gộp vào câu trước', () => {
+  const cues = [
+    { id: 1, parentId: 1, start: 0, end: 3, text: 'Ein normaler Satz hier.', vi: '' },
+    { id: 2, parentId: 2, start: 3, end: 3.3, text: 'Ja.', vi: '' }];
+  const out = SrtAlign.resegment(cues);
+  assert.strictEqual(out.length, 1);
+  assert.strictEqual(out[0].end, 3.3);
+});
+ok('vocabCandidates: từ nội dung dài >=5, bỏ stopword, đếm tần suất', () => {
+  const cues = [
+    { id: 1, parentId: 1, start: 0, end: 2, text: 'Der Hund läuft durch den Garten und der Hund spielt.', vi: '' },
+    { id: 2, parentId: 2, start: 2, end: 4, text: 'Im Garten steht ein alter Baum.', vi: '' }];
+  const v = SrtAlign.vocabCandidates(cues, 10);
+  const garten = v.find(x => x.term === 'Garten');
+  assert.ok(garten && garten.count === 2);
+  assert.ok(!v.some(x => ['und', 'der', 'im'].includes(x.term.toLowerCase())));
+});
+
+console.log('test-srt-align: ' + passed + '/11 PASS');
