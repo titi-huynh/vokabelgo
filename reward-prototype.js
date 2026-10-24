@@ -741,7 +741,7 @@
   }
 
   // GIAI ĐOẠN D: Bung Thẻ Loài Cá Ngẫu Nhiên (Gacha Catch Reveal)
-  function triggerCatchReveal(forcedFishId) {
+  function triggerCatchReveal(forcedFishId, via) {
     catchRevealHandled = true;
     updateTimelineIndicator('D');
 
@@ -859,7 +859,8 @@
           exp: fish.exp,
           quote: fish.quote,
           color: fish.color,
-          caughtAt: new Date().toISOString()
+          caughtAt: new Date().toISOString(),
+          ...(via === 'game' ? { via: 'game' } : {})
         };
         collection.unshift(newFishEntry);
         localStorage.setItem('vokabelgo_fish_collection_v1', JSON.stringify(collection));
@@ -1409,6 +1410,7 @@
   window.renderDevTestingPanel = renderDevTestingPanel;
   window.VokabelFishDatabase = FISH_DATABASE;
   window.getVokabelFishSvg = getFishSvg;
+  window.triggerVokabelCatchReveal = triggerCatchReveal;
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', setupPrototypeListeners);
