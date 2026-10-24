@@ -18,6 +18,8 @@ const KinoMedia = (() => {
     document.querySelector('.kino-v3-root')?.style.setProperty('--kino-video-ratio', String(ratio));
   }
   function poster(key, index) {
+    const cd = (typeof KINO_CHAPTER_DATA !== 'undefined' && KINO_CHAPTER_DATA[key]) || null;
+    if (cd && cd.posterUrl) return cd.posterUrl;
     return `assets/kino-posters/${key}${key === 'sakura_s01e01' ? '-native' : ''}-${index + 1}.jpg`;
   }
   document.addEventListener('loadedmetadata', event => {

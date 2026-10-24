@@ -4,6 +4,9 @@ const KinoCatalog = (() => {
   let catalog, detail, back, detailCount, overview;
 
   // Mục 3: tiến độ theo phim — đọc trạng thái chương đã lưu (completed/total câu).
+  function posterFor(key) {
+    return (window.UserScenes && window.UserScenes.posterFor(key)) || ('assets/kino-posters/' + key + '-1.jpg');
+  }
   function movieProgress(key) {
     try {
       const movie = KINO_CHAPTER_DATA[key];
@@ -42,7 +45,7 @@ const KinoCatalog = (() => {
     catalog.className = 'kino-catalog';
     catalog.hidden = true;
     catalog.setAttribute('aria-labelledby', 'kinoCatalogTitle');
-    const movieKeys = Object.keys(KINO_CHAPTER_DATA);
+    const movieKeys = Object.keys(KINO_CHAPTER_DATA).filter(k => !KINO_CHAPTER_DATA[k].userScene);
     catalog.innerHTML = '<h1 id="kinoCatalogTitle">Kino</h1>'
       + `<p class="kino-catalog-sub">${movieKeys.length} phim · phụ đề Đức–Việt · chia phần theo mục tiêu giao tiếp</p>`
       + '<div class="kino-filter-row" role="group" aria-label="Lọc theo cấp độ"></div>'
@@ -70,6 +73,7 @@ const KinoCatalog = (() => {
     chipRow.append(mkChip('Tất cả', ''));
     levels.forEach(lv => chipRow.append(mkChip(lv.replace(/^Gợi ý\s*/, ''), lv)));
     for (const [key, movie] of Object.entries(KINO_CHAPTER_DATA)) {
+      if (movie.userScene) continue;
       const item = document.createElement('li');
       const link = document.createElement('a');
       link.className = 'kino-film-card';
@@ -77,7 +81,7 @@ const KinoCatalog = (() => {
       if (movie.levelLabel) link.dataset.level = movie.levelLabel;
       link.href = `?kino=${aliases[key]}`;
       const cover = document.createElement('img');
-      cover.src = `assets/kino-posters/${key}-1.jpg`;
+      cover.src = posterFor(key);
       cover.alt = '';
       cover.width = 960;
       cover.height = 540;
@@ -152,7 +156,7 @@ const KinoCatalog = (() => {
       const a = document.createElement('a');
       a.className = 'kino-resume-card';
       a.href = `?kino=${aliases[key]}`;
-      a.innerHTML = `<img src="assets/kino-posters/${key}-1.jpg" alt="" width="160" height="90"><span class="kino-resume-info"><strong></strong><span class="kino-film-progress-bar"><span style="width:${pct}%"></span></span><small>Đã học ${pct}% · Học tiếp →</small></span>`;
+      a.innerHTML = `<img src="${posterFor(key)}" alt="" width="160" height="90"><span class="kino-resume-info"><strong></strong><span class="kino-film-progress-bar"><span style="width:${pct}%"></span></span><small>Đã học ${pct}% · Học tiếp →</small></span>`;
       a.querySelector('strong').textContent = movie.catalogTitle || (key === 'peppa_supermarkt' ? 'Peppa Wutz · Im Supermarkt' : movie.title);
       a.addEventListener('click', async event => {
         if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
@@ -189,6 +193,7 @@ const KinoCatalog = (() => {
     refreshCatalogExtras();
     const hero = document.getElementById('kinoShortHero');
     if (hero && window.KinoShorts) window.KinoShorts.render(hero);
+    if (window.UserScenesUI) window.UserScenesUI.renderSection();
     stopPlayback();
     document.querySelector('.kino-more-tools')?.removeAttribute('open');
     detail.hidden = true;
@@ -226,7 +231,7 @@ const KinoCatalog = (() => {
     if (!detailCount) return;
     const movie = KINO_CHAPTER_DATA[currentKinoVideoKey];
     detailCount.textContent = `${movie.chapters.length} phần`;
-    document.getElementById('kinoMovieCover').src = `assets/kino-posters/${currentKinoVideoKey}-1.jpg`;
+    document.getElementById('kinoMovieCover').src = posterFor(currentKinoVideoKey);
     document.getElementById('kinoMovieSeries').textContent = movie.series;
     document.getElementById('kinoMovieTitle').textContent = movie.title;
     document.getElementById('kinoMovieSummary').textContent = movie.summary
@@ -241,14 +246,14 @@ const KinoCatalog = (() => {
     if (reco) {
       const list = reco.querySelector('.kino-reco-list');
       list.innerHTML = '';
-      const others = Object.entries(KINO_CHAPTER_DATA)
+      const others = Object.entries(KINO_CHAPTER_DATA).filter(([, m]) => !m.userScene)
         .filter(([k, m]) => k !== currentKinoVideoKey && m.levelLabel && m.levelLabel === movie.levelLabel)
         .slice(0, 3);
       others.forEach(([k, m]) => {
         const a = document.createElement('a');
         a.className = 'kino-reco-card';
         a.href = `?kino=${aliases[k]}`;
-        a.innerHTML = `<img src="assets/kino-posters/${k}-1.jpg" alt="" width="320" height="180"><strong></strong><small>${KINO_VIDEOS[k] ? KINO_VIDEOS[k].fullDurationStr : ''}</small>`;
+        a.innerHTML = `<img src="${posterFor(k)}" alt="" width="320" height="180"><strong></strong><small>${KINO_VIDEOS[k] ? KINO_VIDEOS[k].fullDurationStr : ''}</small>`;
         a.querySelector('strong').textContent = m.catalogTitle || (k === 'peppa_supermarkt' ? 'Peppa Wutz · Im Supermarkt' : m.title);
         a.addEventListener('click', async event => {
           if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;

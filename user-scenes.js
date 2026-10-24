@@ -65,35 +65,44 @@
     return 'Phụ đề của bạn';
   }
   function register(scene) {
-    if (typeof KINO_CHAPTER_DATA === 'undefined' || typeof KINO_VIDEOS === 'undefined') return;
     const k = keyOf(scene.id);
-    KINO_CHAPTER_DATA[k] = {
-      title: scene.title, series: 'CẢNH CỦA BẠN',
-      levelLabel: levelLabel(scene),
-      storageKey: 'vokabelgo_kino_chapters_v1_' + k,
-      cueCount: scene.cues.length,
-      posterUrl: scene.poster || '',
-      userScene: true, source: scene.source, reviewed: !!scene.reviewed,
-      cues: scene.cues, chapters: scene.chapters
-    };
-    if (typeof KINO_ALIASES !== 'undefined') KINO_ALIASES[k] = k;
-    KINO_VIDEOS[k] = {
-      key: k, series: 'Cảnh của bạn', seriesIcon: '🎬',
-      episodeTitle: scene.title, icon: '🎬', title: scene.title,
-      src: blobUrls.get(k) || '', defaultSegs: scene.cues,
-      fullDurationStr: fmtDur(scene.duration || 0), userScene: true
-    };
+    try {
+      KINO_CHAPTER_DATA[k] = {
+        title: scene.title, series: 'CẢNH CỦA BẠN',
+        levelLabel: levelLabel(scene),
+        storageKey: 'vokabelgo_kino_chapters_v1_' + k,
+        cueCount: scene.cues.length,
+        posterUrl: scene.poster || '',
+        userScene: true, source: scene.source, reviewed: !!scene.reviewed,
+        cues: scene.cues, chapters: scene.chapters
+      };
+      KINO_ALIASES[k] = k;
+    } catch (e) { /* KINO_CHAPTER_DATA chưa sẵn sàng — lần đăng ký sau sẽ bổ sung. */ }
+    try {
+      KINO_VIDEOS[k] = {
+        key: k, series: 'Cảnh của bạn', seriesIcon: '🎬',
+        episodeTitle: scene.title, icon: '🎬', title: scene.title,
+        src: blobUrls.get(k) || '', defaultSegs: scene.cues,
+        fullDurationStr: fmtDur(scene.duration || 0), userScene: true
+      };
+    } catch (e) { /* KINO_VIDEOS chưa được định nghĩa ở thời điểm script này chạy;
+                    prepare() và DOMContentLoaded sẽ đăng ký lại đầy đủ. */ }
   }
   function unregister(id) {
     const k = keyOf(id);
-    if (typeof KINO_CHAPTER_DATA !== 'undefined') delete KINO_CHAPTER_DATA[k];
-    if (typeof KINO_VIDEOS !== 'undefined') delete KINO_VIDEOS[k];
-    if (typeof KINO_ALIASES !== 'undefined') delete KINO_ALIASES[k];
+    try { delete KINO_CHAPTER_DATA[k]; } catch (e) { /* chưa có */ }
+    try { delete KINO_VIDEOS[k]; } catch (e) { /* chưa có */ }
+    try { delete KINO_ALIASES[k]; } catch (e) { /* chưa có */ }
     if (blobUrls.has(k)) { URL.revokeObjectURL(blobUrls.get(k)); blobUrls.delete(k); }
   }
   /* KinoData.load() gọi trước khi mở bài: dựng blob URL cho video của cảnh. */
   async function prepare(k) {
-    if (blobUrls.has(k)) return true;
+    const scene = getByKey(k);
+    if (scene) register(scene);   /* hoàn tất đăng ký (gồm KINO_VIDEOS) trước khi mở bài */
+    if (blobUrls.has(k)) {
+      try { if (KINO_VIDEOS[k]) KINO_VIDEOS[k].src = blobUrls.get(k); } catch (e) { /* bỏ qua */ }
+      return true;
+    }
     const blob = await idbGet('videos', idOf(k));
     if (!blob) return false;
     const url = URL.createObjectURL(blob);
@@ -176,6 +185,9 @@
     return s ? s.cues : [];
   }
 
+  /* Đăng ký ngay khi script chạy (thẻ script nằm sau các định nghĩa toàn cục)
+     và nhắc lại ở DOMContentLoaded cho chắc — register() là idempotent. */
+  scenes.forEach(register);
   document.addEventListener('DOMContentLoaded', () => { scenes.forEach(register); });
 
   window.UserScenes = {

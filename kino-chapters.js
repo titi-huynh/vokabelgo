@@ -513,7 +513,8 @@ const KinoChapters = (() => {
         : `Đang luyện ${segments.length} / ${chapterCueCount} câu · Chọn “${allLabel}” để học đủ`
       : 'Tự chọn câu · Có thể dừng bất cứ lúc nào';
     document.getElementById('kinoSelBadge').textContent = `${chapters.length} phần`;
-    document.getElementById(`kinoBadge_${videoKey}`).textContent = `${chapters.length} phần`;
+    const partBadge = document.getElementById(`kinoBadge_${videoKey}`);
+    if (partBadge) partBadge.textContent = `${chapters.length} phần`;
     document.getElementById('kinoTimelineTitleText').textContent = `${segments.length} câu ${state.mode === 'light' ? 'gợi ý' : 'thoại'} · Phần ${state.chapter + 1}`;
     document.getElementById('kinoTimelineStats').textContent = 'Chọn câu nào cũng được';
     document.getElementById('kinoProgressCount').textContent = `Đã viết ${done} / ${segments.length} câu · theo nhịp của bạn`;

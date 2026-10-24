@@ -15,6 +15,12 @@ const KinoData = (() => {
   const requests = new Map(), loaded = new Set();
   let selection = 0;
   function load(key) {
+    if (window.UserScenes && window.UserScenes.isUserKey(key)) {
+      return window.UserScenes.prepare(key).then(ok => {
+        if (!ok) throw new Error('Không tìm thấy video của cảnh trên thiết bị này.');
+        loaded.add(key);
+      });
+    }
     if (!files[key]) return Promise.reject(new Error('Unknown Kino movie'));
     if (!requests.has(key)) {
       const promise = new Promise((resolve, reject) => {
@@ -47,6 +53,7 @@ const KinoData = (() => {
   }
   function cues(key) {
     if (!loaded.has(key)) return [];
+    if (window.UserScenes && window.UserScenes.isUserKey(key)) return window.UserScenes.cuesFor(key);
     switch (key) {
       case 'peppa_supermarkt': return PEPPA_ALIGNED_UTTERANCES;
       case 'pizzaschwester': return PIZZA_ALIGNED_UTTERANCES;
