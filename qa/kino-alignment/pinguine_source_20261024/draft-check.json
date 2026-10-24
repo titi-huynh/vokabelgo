@@ -1,0 +1,14 @@
+{
+  "cues": 21,
+  "chapters": 3,
+  "picks": [
+    7,
+    7,
+    7
+  ],
+  "vocabulary": 12,
+  "uniqueIds": true,
+  "cueRangesValid": true,
+  "vocabCueReferencesValid": true,
+  "fullVideoDecode": "ffmpeg -v error -i video/pinguine_popcorn_panik.mp4 -f null - returned exit 0"
+}

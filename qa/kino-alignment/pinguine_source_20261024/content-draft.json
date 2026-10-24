@@ -1,0 +1,509 @@
+{
+  "key": "pinguine_popcorn_panik",
+  "title": "Popcorn-Panik",
+  "series": "Die Pinguine aus Madagascar",
+  "sourceUrl": "https://www.youtube.com/watch?v=ONRyWXIGWQI",
+  "video": "video/pinguine_popcorn_panik.mp4",
+  "duration": 140.480726,
+  "isExcerpt": true,
+  "level": "A2–B1",
+  "reviewStatus": "local ASR comparison plus visual speaker inspection; no human listening review",
+  "cueScope": "21 selected learning cues, not an exhaustive subtitle transcript; omitted dialogue remains in recognized-words.json and medium-recheck.json",
+  "lines": [
+    {
+      "id": 1300101,
+      "start": 5.54,
+      "end": 6.94,
+      "speaker": "Skipper",
+      "text": "Sag mir was, das ich noch nicht weiß.",
+      "vi": "Nói cho tôi điều gì tôi chưa biết đi.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned"
+    },
+    {
+      "id": 1300102,
+      "start": 18.96,
+      "end": 20.02,
+      "speaker": "Skipper",
+      "text": "Es bleibt nicht viel Zeit.",
+      "vi": "Không còn nhiều thời gian nữa.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned"
+    },
+    {
+      "id": 1300103,
+      "start": 25.25,
+      "end": 28.44,
+      "speaker": "Skipper",
+      "text": "Rico, kein unbefugtes Personal bei den Einsätzen.",
+      "vi": "Rico, không được có người không phận sự trong các nhiệm vụ.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned"
+    },
+    {
+      "id": 1300104,
+      "start": 40.84,
+      "end": 42.52,
+      "speaker": "Skipper",
+      "text": "Einsatzformation, Männer!",
+      "vi": "Vào đội hình tác chiến, các anh em!",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned",
+      "reviewNote": "Small start 40.94 versus medium 41.40; broadened cue covers both."
+    },
+    {
+      "id": 1300105,
+      "start": 44.58,
+      "end": 46.46,
+      "speaker": "Skipper",
+      "text": "Ziel lokalisiert!",
+      "vi": "Đã xác định vị trí mục tiêu!",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned",
+      "reviewNote": "Small start 44.68 versus medium 45.30; broadened cue covers both."
+    },
+    {
+      "id": 1300106,
+      "start": 50.44,
+      "end": 52.5,
+      "speaker": "Skipper",
+      "text": "Halt ja die Stellung, Private!",
+      "vi": "Nhớ giữ vị trí đấy, Private!",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned"
+    },
+    {
+      "id": 1300107,
+      "start": 52.98,
+      "end": 54.96,
+      "speaker": "Skipper",
+      "text": "Umgekehrte Formation, jetzt!",
+      "vi": "Đảo ngược đội hình, ngay!",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned"
+    },
+    {
+      "id": 1300108,
+      "start": 66.0,
+      "end": 67.56,
+      "speaker": "King Julien",
+      "text": "Wo ist das Popcorn?",
+      "vi": "Bỏng ngô đâu rồi?",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned"
+    },
+    {
+      "id": 1300109,
+      "start": 67.94,
+      "end": 69.68,
+      "speaker": "Mort",
+      "text": "Da ist das Popcorn.",
+      "vi": "Bỏng ngô ở kia.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned",
+      "reviewNote": "Speaker Mort attributed from frame 67; check exact speaker if needed."
+    },
+    {
+      "id": 1300110,
+      "start": 71.62,
+      "end": 73.0,
+      "speaker": "Private",
+      "text": "Skipper, sieh mal.",
+      "vi": "Skipper, nhìn kìa.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned"
+    },
+    {
+      "id": 1300111,
+      "start": 79.76,
+      "end": 81.7,
+      "speaker": "Maurice",
+      "text": "Der Finder darf’s behalten.",
+      "vi": "Ai tìm thấy thì được giữ.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned",
+      "reviewNote": "Both ASR models mis-tokenize the contraction darfs as darfst. Normalized to darf’s; Maurice attributed visually from frame 80. Recheck contraction/speaker before final release."
+    },
+    {
+      "id": 1300112,
+      "start": 82.4,
+      "end": 83.94,
+      "speaker": "Skipper",
+      "text": "Kowalski, rechtliche Analyse.",
+      "vi": "Kowalski, phân tích pháp lý đi.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned"
+    },
+    {
+      "id": 1300113,
+      "start": 83.94,
+      "end": 85.24,
+      "speaker": "Kowalski",
+      "text": "Es stimmt, Skipper.",
+      "vi": "Đúng vậy, Skipper.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned",
+      "reviewNote": "Medium hears Es stimmt, Skipper; small omits Skipper. Medium word boundaries used for this sub-sentence."
+    },
+    {
+      "id": 1300114,
+      "start": 88.06,
+      "end": 88.94,
+      "speaker": "Skipper",
+      "text": "So ein Mist!",
+      "vi": "Thật bực mình!",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned",
+      "reviewNote": "Small So ein Mist, medium So’n Mist. Expansion in draft; exact spoken contraction needs recheck."
+    },
+    {
+      "id": 1300115,
+      "start": 99.36,
+      "end": 102.4,
+      "speaker": "Marlene",
+      "text": "Das sieht überhaupt nicht so aus wie das Bild auf dem Sack.",
+      "vi": "Trông nó chẳng giống hình trên bao chút nào.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned"
+    },
+    {
+      "id": 1300116,
+      "start": 102.76,
+      "end": 105.1,
+      "speaker": "Marlene",
+      "text": "Außerdem ist es nicht besonders poppig.",
+      "vi": "Hơn nữa, nó cũng chẳng có vẻ nổ bung gì cả.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned",
+      "reviewNote": "Medium recognizes this correctly; small hallucinates müsstest du. Poppig is the episode’s joke, not standard learner vocabulary."
+    },
+    {
+      "id": 1300117,
+      "start": 113.96,
+      "end": 115.82,
+      "speaker": "Kowalski",
+      "text": "Ich habe freie Schussbahn, Skipper.",
+      "vi": "Tôi có đường bắn trống, Skipper.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned",
+      "reviewNote": "ASR variants Schusswahn/Schussbahnskippe normalized from context to Schussbahn, Skipper; recheck before release."
+    },
+    {
+      "id": 1300118,
+      "start": 115.72,
+      "end": 116.82,
+      "speaker": "Skipper",
+      "text": "Nein, nicht feuern!",
+      "vi": "Không, đừng bắn!",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned"
+    },
+    {
+      "id": 1300119,
+      "start": 117.3,
+      "end": 118.58,
+      "speaker": "Skipper",
+      "text": "Er blufft doch nur.",
+      "vi": "Hắn chỉ đang bịp thôi mà.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned",
+      "reviewNote": "Both models mis-tokenize blufft (blöfft/Erblöff); normalized conventional spelling."
+    },
+    {
+      "id": 1300120,
+      "start": 126.66,
+      "end": 128.92,
+      "speaker": "Marlene",
+      "text": "Ach, ich weiß gar nicht, was das wäre.",
+      "vi": "Ôi, tôi cũng chẳng biết phải gọi thế là gì nữa.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned"
+    },
+    {
+      "id": 1300121,
+      "start": 128.84,
+      "end": 131.94,
+      "speaker": "Skipper",
+      "text": "Marlene, ich schätze, das Wort, nach dem du suchst, lautet lächerlich.",
+      "vi": "Marlene, tôi đoán từ cô đang tìm là “nực cười”.",
+      "status": "ASR-compared editorial draft",
+      "speakerConfidence": "visual/contextual; exact lip-sync review pending",
+      "timingStatus": "small/medium ASR union with short padding; not forced-aligned"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "pinguine-popcorn-einsatz",
+      "start": 0,
+      "end": 56,
+      "title": "Geheimer Snack-Einsatz",
+      "titleVi": "Nhiệm vụ đồ ăn vặt bí mật",
+      "summaryVi": "Skipper chỉ huy cả đội đột nhập kho đồ ăn vặt.",
+      "picks": [
+        1300101,
+        1300102,
+        1300103,
+        1300104,
+        1300105,
+        1300106,
+        1300107
+      ]
+    },
+    {
+      "id": "pinguine-popcorn-fund",
+      "start": 56,
+      "end": 96,
+      "title": "Wer darf das Popcorn behalten?",
+      "titleVi": "Ai được giữ bỏng ngô?",
+      "summaryVi": "Các vượn cáo tìm được bao bỏng ngô và tranh quyền sở hữu với đội Pinguine.",
+      "picks": [
+        1300108,
+        1300109,
+        1300110,
+        1300111,
+        1300112,
+        1300113,
+        1300114
+      ]
+    },
+    {
+      "id": "pinguine-popcorn-raetsel",
+      "start": 96,
+      "end": 140.480726,
+      "title": "Warum poppt es nicht?",
+      "titleVi": "Sao bỏng ngô chưa nổ?",
+      "summaryVi": "Marlene phát hiện hạt ngô không giống hình trên bao; Julien đưa ra lời giải thích kỳ quặc.",
+      "picks": [
+        1300115,
+        1300116,
+        1300117,
+        1300118,
+        1300119,
+        1300120,
+        1300121
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "pinguine-popcorn-v01",
+      "de": "bleiben",
+      "vi": "còn lại; ở lại",
+      "type": "verb",
+      "cueId": 1300102,
+      "surface": "bleibt",
+      "example": "Es bleibt nicht viel Zeit."
+    },
+    {
+      "id": "pinguine-popcorn-v02",
+      "de": "unbefugt",
+      "vi": "không được phép; không có phận sự",
+      "type": "adjective",
+      "cueId": 1300103,
+      "surface": "unbefugtes",
+      "example": "Rico, kein unbefugtes Personal bei den Einsätzen."
+    },
+    {
+      "id": "pinguine-popcorn-v03",
+      "de": "der Einsatz",
+      "vi": "nhiệm vụ; chiến dịch",
+      "type": "noun",
+      "cueId": 1300103,
+      "surface": "Einsätzen",
+      "example": "Rico, kein unbefugtes Personal bei den Einsätzen."
+    },
+    {
+      "id": "pinguine-popcorn-v04",
+      "de": "die Formation",
+      "vi": "đội hình",
+      "type": "noun",
+      "cueId": 1300104,
+      "surface": "Einsatzformation",
+      "example": "Einsatzformation, Männer!"
+    },
+    {
+      "id": "pinguine-popcorn-v05",
+      "de": "das Ziel",
+      "vi": "mục tiêu",
+      "type": "noun",
+      "cueId": 1300105,
+      "surface": "Ziel",
+      "example": "Ziel lokalisiert!"
+    },
+    {
+      "id": "pinguine-popcorn-v06",
+      "de": "die Stellung halten",
+      "vi": "giữ vị trí",
+      "type": "phrase",
+      "cueId": 1300106,
+      "surface": "Halt ja die Stellung",
+      "example": "Halt ja die Stellung, Private!"
+    },
+    {
+      "id": "pinguine-popcorn-v07",
+      "de": "umgekehrt",
+      "vi": "đảo ngược",
+      "type": "adjective",
+      "cueId": 1300107,
+      "surface": "Umgekehrte",
+      "example": "Umgekehrte Formation, jetzt!"
+    },
+    {
+      "id": "pinguine-popcorn-v08",
+      "de": "der Finder",
+      "vi": "người tìm thấy",
+      "type": "noun",
+      "cueId": 1300111,
+      "surface": "Finder",
+      "example": "Der Finder darf’s behalten."
+    },
+    {
+      "id": "pinguine-popcorn-v09",
+      "de": "behalten",
+      "vi": "giữ lại",
+      "type": "verb",
+      "cueId": 1300111,
+      "surface": "behalten",
+      "example": "Der Finder darf’s behalten."
+    },
+    {
+      "id": "pinguine-popcorn-v10",
+      "de": "rechtlich",
+      "vi": "thuộc pháp lý",
+      "type": "adjective",
+      "cueId": 1300112,
+      "surface": "rechtliche",
+      "example": "Kowalski, rechtliche Analyse."
+    },
+    {
+      "id": "pinguine-popcorn-v11",
+      "de": "aussehen",
+      "vi": "trông như; có vẻ",
+      "type": "verb",
+      "cueId": 1300115,
+      "surface": "sieht … aus",
+      "example": "Das sieht überhaupt nicht so aus wie das Bild auf dem Sack."
+    },
+    {
+      "id": "pinguine-popcorn-v12",
+      "de": "lächerlich",
+      "vi": "nực cười; lố bịch",
+      "type": "adjective",
+      "cueId": 1300121,
+      "surface": "lächerlich",
+      "example": "Marlene, ich schätze, das Wort, nach dem du suchst, lautet lächerlich."
+    }
+  ],
+  "omissionsAndRechecks": [
+    {
+      "range": [
+        0,
+        5.5
+      ],
+      "reason": "Aztekischen/aztecischen/täglichen model disagreement; opening sentence excluded."
+    },
+    {
+      "range": [
+        6.94,
+        13.4
+      ],
+      "reason": "ASR disagreement; unnecessary anatomical aside omitted from learning picks."
+    },
+    {
+      "range": [
+        15.4,
+        17.1
+      ],
+      "reason": "Snackvorratsraum is inferred correctly from context but models disagree on tokenization; omit from picks."
+    },
+    {
+      "range": [
+        28.44,
+        32.72
+      ],
+      "reason": "Rico speaks intelligibly in this scene? Attribution and exact wording need recheck; omit."
+    },
+    {
+      "range": [
+        57.7,
+        65.9
+      ],
+      "reason": "Opening scent phrase and follow-up highly model-dependent; omit."
+    },
+    {
+      "range": [
+        70,
+        71.3
+      ],
+      "reason": "Gute/Guter ... Mort model disagreement; omit."
+    },
+    {
+      "range": [
+        73,
+        79
+      ],
+      "reason": "Both models mishear behaarten Griffel/gehört/Mort; omitted from picks."
+    },
+    {
+      "range": [
+        85.3,
+        88
+      ],
+      "reason": "Long fictitious Fundsachenbesitzrechtgesetz compound needs exact recheck; omit."
+    },
+    {
+      "range": [
+        89,
+        95
+      ],
+      "reason": "Command Stell(t) einen/deinen weiteren Sack sicher uncertain; omit."
+    },
+    {
+      "range": [
+        109,
+        114
+      ],
+      "reason": "Comic intentional malformed Mysterium word and interruptions; omit."
+    },
+    {
+      "range": [
+        118.58,
+        123.06
+      ],
+      "reason": "Popcorn-Eier article and müssen/mussten/ausgebrütet wording differs. Retain raw ASR only."
+    },
+    {
+      "range": [
+        132.3,
+        137.84
+      ],
+      "reason": "Final accented fast sentence has model disagreement; omit from picks."
+    }
+  ],
+  "limitations": [
+    "Machine ASR can be wrong despite agreement. All cues need final editorial/audio review if exact verbatim subtitles are required.",
+    "Contraction/speaker on 1300111 and exact Schussbahn phrasing on 1300117 should be rechecked; safe to omit either until then.",
+    "Timings are padded ASR boundaries, not phonetic forced alignment.",
+    "360p public publisher clip; not a full episode."
+  ]
+}
