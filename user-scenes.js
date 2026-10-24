@@ -167,7 +167,7 @@
   async function takeIndexes(sceneKey) {
     const keys = await idbKeys('takes');
     return keys.filter(t => String(t).startsWith(sceneKey + ':'))
-      .map(t => +String(t).slice(sceneKey.length + 1)).filter(n => Number.isFinite(n)).sort((a, b) => a - b);
+      .map(t => String(t).slice(sceneKey.length + 1)).sort();
   }
 
   /* ---------- Truy vấn cho các module khác ---------- */

@@ -19258,6 +19258,7 @@ function switchKinoActiveVideo(videoKey){
   const recordingKey = KinoChapters.isActive() ? KinoChapters.recordingKey() : videoKey;
   if(!kinoDubbingBlobUrlsMap[recordingKey]) kinoDubbingBlobUrlsMap[recordingKey] = {};
   kinoDubbingBlobUrls = kinoDubbingBlobUrlsMap[recordingKey];
+  if(window.UserDub) window.UserDub.hydrate(videoKey, kinoDubbingBlobUrls);
 
   kinoListenCountMap = {};
   kinoAttemptCountMap = {};
@@ -19903,6 +19904,7 @@ function runKinoDubbingRecording(stream){
       URL.revokeObjectURL(recordingStore[recordingIndex]);
     }
     recordingStore[recordingIndex] = URL.createObjectURL(blob);
+    if(window.UserDub) window.UserDub.onRecorded(blob, seg);
 
     // Stop mic stream
     stream.getTracks().forEach(t => t.stop());
@@ -20344,6 +20346,7 @@ function playKinoMixtape(){
 <script src="kino-quiz.js"></script>
 <script src="user-scenes-ui.js"></script>
 <script src="user-scenes-editor.js"></script>
+<script src="user-dub.js"></script>
 <script src="kino-speech-score.js"></script>
 <script src="kino-cloze.js"></script>
 <script src="kino-shorts.js"></script>
