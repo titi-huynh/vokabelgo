@@ -8,12 +8,12 @@ async function openCatalog(page) {
 }
 
 test('Kino starts with a grid of covers, titles and level meta; a film opens its own parts', async ({ page }) => {
-  test.setTimeout(120000); // vòng lặp mở đủ 17 phim sau hợp nhất hai nhánh
+  test.setTimeout(120000); // vòng lặp mở đủ 18 phim sau hợp nhất hai nhánh + SPY
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
   await page.setViewportSize({ width: 1440, height: 1000 });
   await openCatalog(page);
-  await expect(page.locator('.kino-film-card')).toHaveCount(17);
+  await expect(page.locator('.kino-film-card')).toHaveCount(18);
   await expect(page.locator('#kinoDiscovery')).toBeHidden();
   await expect(page.locator('#kinoPeppaChapters')).toBeHidden();
   for (const card of await page.locator('.kino-film-card').all()) {
@@ -32,7 +32,7 @@ test('Kino starts with a grid of covers, titles and level meta; a film opens its
     expect(a.l < b.r && b.l < a.r && a.t < b.b && b.t < a.b).toBeFalsy();
   }
   await page.screenshot({ path: path.join(__dirname, '../test-results/captures/review-assets/kino-catalog-desktop.png') });
-  for (const [key, count] of [['peppa_supermarkt', 5], ['pizzaschwester', 3], ['babysitter', 4], ['hans', 4], ['trudes_fahrstuhl', 5], ['erdmaennchen_nudeltrick', 7], ['erdmaennchen_schmucklose', 7], ['we_bare_bears_mall', 3], ['frieren_s01e01', 7], ['sakura_s01e01', 8], ['druck_s07e01', 7], ['simplicissimus_leberwurst', 4], ['trudes_bagger', 2], ['erdmaennchen_spukschloss', 5], ['spongebob_pizza', 3], ['pinguine_popcorn_panik', 3], ['courage_diamantraub', 2]]) {
+  for (const [key, count] of [['peppa_supermarkt', 5], ['pizzaschwester', 3], ['babysitter', 4], ['hans', 4], ['trudes_fahrstuhl', 5], ['erdmaennchen_nudeltrick', 7], ['erdmaennchen_schmucklose', 7], ['we_bare_bears_mall', 3], ['frieren_s01e01', 7], ['sakura_s01e01', 8], ['druck_s07e01', 7], ['simplicissimus_leberwurst', 4], ['trudes_bagger', 2], ['erdmaennchen_spukschloss', 5], ['spongebob_pizza', 3], ['pinguine_popcorn_panik', 3], ['courage_diamantraub', 2], ['spy_family_s01e01', 8]]) {
     await page.locator(`.kino-film-card[data-movie="${key}"]`).click();
     await expect(page.locator('#kinoCatalog')).toBeHidden();
     await expect(page.locator('#kinoCatalogDetailCount')).toHaveText(`${count} phần`);

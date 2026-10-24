@@ -33,7 +33,7 @@ function tmpSrt(name, content) {
 
 test('user scene via SRT: create -> learn -> persists -> delete; built-in grid untouched', async ({ page }) => {
   await openCatalog(page);
-  await expect(page.locator('.kino-film-card')).toHaveCount(17);
+  await expect(page.locator('.kino-film-card')).toHaveCount(18);
   await page.locator('#uscAddBtn').click();
   await page.locator('#uscVideo').setInputFiles(VIDEO);
   await page.locator('#uscSrtDe').setInputFiles(tmpSrt('a.de.srt', DE_SRT));
@@ -50,7 +50,7 @@ test('user scene via SRT: create -> learn -> persists -> delete; built-in grid u
   await page.goto('/?hub=kino');
   await expect(page.locator('.usc-card')).toHaveCount(1);
   await expect(page.locator('.usc-badge')).toHaveText('Phụ đề của bạn');
-  await expect(page.locator('.kino-film-card')).toHaveCount(17);
+  await expect(page.locator('.kino-film-card')).toHaveCount(18);
   // Xóa cảnh: mất khỏi catalog, kho và registry
   page.on('dialog', d => d.accept());
   await page.locator('.usc-del').click();

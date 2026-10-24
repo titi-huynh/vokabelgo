@@ -1,5 +1,5 @@
 /* Chapter bounds sit between complete spoken turns; all sources remain original MP4s. */
-const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', pinguine_popcorn_panik: 'pinguine', courage_diamantraub: 'courage', spongebob_pizza: 'spongebob', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura', druck_s07e01: 'druck', simplicissimus_leberwurst: 'simplicissimus', trudes_bagger: 'bagger', erdmaennchen_spukschloss: 'spukschloss' };
+const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', pinguine_popcorn_panik: 'pinguine', courage_diamantraub: 'courage', spongebob_pizza: 'spongebob', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura', druck_s07e01: 'druck', simplicissimus_leberwurst: 'simplicissimus', trudes_bagger: 'bagger', erdmaennchen_spukschloss: 'spukschloss', spy_family_s01e01: 'spy' };
 const KINO_CHAPTER_DATA = {
   peppa_supermarkt: {
     genre: 'Thiếu nhi',
@@ -142,6 +142,32 @@ const KINO_CHAPTER_DATA = {
       picks: [500148, 500149, 500150, 500151, 500152, 500153, 500154], goal: 'Phát hiện sự thật bất ngờ và tìm giải pháp tốt cho mọi người.' },
     { title: 'Khai trương khách sạn ma', icon: '🎉', start: 695.92, end: 739.36,
       picks: [500187, 500188, 500189, 500190, 500191, 500192, 500193], goal: 'Chào đón vị khách đầu tiên và xử lý tình huống bất ngờ.' }
+    ]
+  }
+,
+  spy_family_s01e01: {
+    genre: 'Anime',
+    title: 'Operation Strix', series: 'SPY × FAMILY', levelLabel: 'Gợi ý B1',
+    catalogTitle: 'SPY × FAMILY · Operation Strix',
+    storageKey: 'vokabelgo_kino_chapters_v1_spy_family_s01e01', cueCount: 424,
+    get cues() { return SPY_FAMILY_S01E01_ALIGNED_UTTERANCES; },
+    chapters: [
+    { title: 'Nhiệm vụ mang tên Strix', icon: '🎯', start: 3.47, end: 250.68,
+      picks: [500001, 500002, 500003, 500004, 500005, 500006, 500007], goal: 'Nghe bối cảnh chiến tranh lạnh, màn giao ảnh và nhiệm vụ kỳ lạ: phải kết hôn và có con trong một tuần.' },
+    { title: 'Nhận nuôi Anya', icon: '🏠', start: 256.3, end: 432.28,
+      picks: [500085, 500086, 500087, 500088, 500089, 500090, 500091], goal: 'Theo dõi buổi xem nhà, chuyến đến trại trẻ và khoảnh khắc Anya giải ô chữ khiến Loid quyết định nhận nuôi.' },
+    { title: 'Ngày đầu tiên làm cha', icon: '🛒', start: 433.1, end: 583.46,
+      picks: [500155, 500156, 500157, 500158, 500159, 500160, 500161], goal: 'Học cách chào hàng xóm, dắt trẻ đi mua sắm, nắm tay và dỗ trẻ nín khóc.' },
+    { title: 'Sách dạy con và giấy tờ giả', icon: '📚', start: 594.76, end: 767.0,
+      picks: [500203, 500204, 500205, 500206, 500207, 500208, 500209], goal: 'Nghe lời khuyên nuôi dạy con trong sách, buổi ôn tập đầu tiên và thương vụ giấy tờ giả với Franky.' },
+    { title: 'Anya nghịch máy phát tín hiệu', icon: '📻', start: 775.32, end: 939.23,
+      picks: [500264, 500265, 500266, 500267, 500268, 500269, 500270], goal: 'Theo dõi tình huống leo thang: Anya phát tín hiệu lạ, mật vụ chú ý và vụ bắt cóc xảy ra.' },
+    { title: 'Giải cứu Anya', icon: '💥', start: 939.23, end: 1158.57,
+      picks: [500305, 500306, 500307, 500308, 500309, 500310, 500311], goal: 'Nghe màn trà trộn giải cứu, cuộc đối đầu với Edgar và lời đe dọa để bảo vệ con gái nuôi.' },
+    { title: 'Đoàn tụ và ôn thi', icon: '🎒', start: 1173.68, end: 1246.36,
+      picks: [500377, 500378, 500379, 500380, 500381, 500382, 500383], goal: 'Học cách động viên sau nguy hiểm, cái cớ chuyển nhà và kế hoạch học thuộc đáp án cho kỳ thi.' },
+    { title: 'Kỳ thi và lá thư', icon: '✉️', start: 1257.47, end: 1435.81,
+      picks: [500402, 500403, 500404, 500405, 500406, 500407, 500408], goal: 'Theo dõi phòng thi qua khả năng đọc suy nghĩ, tin vui trúng tuyển và yêu cầu bất ngờ của vòng hai: cần cả cha lẫn mẹ.' },
     ]
   }
 };
