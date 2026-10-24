@@ -72,6 +72,25 @@
       n.addEventListener('click', function () { next.click(); });
       ramp.appendChild(n);
     }
+    // Mục 7: gợi ý một phim cùng cấp độ để học tiếp sau khi xong phần.
+    try {
+      var curKey = currentKey();
+      var curMovie = (typeof KINO_CHAPTER_DATA !== 'undefined') ? KINO_CHAPTER_DATA[curKey] : null;
+      if (curMovie && curMovie.levelLabel && typeof KINO_ALIASES !== 'undefined') {
+        var otherKey = Object.keys(KINO_CHAPTER_DATA).find(function (k) {
+          return k !== curKey && KINO_CHAPTER_DATA[k].levelLabel === curMovie.levelLabel;
+        });
+        if (otherKey) {
+          var sug = document.createElement('button');
+          sug.type = 'button';
+          var sugMovie = KINO_CHAPTER_DATA[otherKey];
+          sug.textContent = '🎬 Học tiếp: ' + (sugMovie.catalogTitle || sugMovie.title);
+          sug.style.cssText = btnCss;
+          sug.addEventListener('click', function () { location.assign('?kino=' + KINO_ALIASES[otherKey]); });
+          ramp.appendChild(sug);
+        }
+      }
+    } catch (e) {}
     panel.appendChild(ramp);
   }
 

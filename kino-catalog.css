@@ -42,6 +42,15 @@
 #diktatMode.kino-chapters-active #kinoFullMovieBtn { justify-content: center; min-height: 48px; padding: 12px 18px; background: #52723f; border-color: #52723f; color: #fff; font-size: 16px; }
 #diktatMode.kino-chapters-active .kino-v3-top-header { display: none; }
 .kino-chapters-active:not([data-kino-view="detail"]) :is(#kinoMovieOverview, #kinoPeppaChapters) { display: none; }
+.kino-chapters-active:not([data-kino-view="detail"]) #kinoRecoRow { display: none; }
+.kino-reco-row { margin: 0 0 22px; }
+.kino-reco-row h2 { margin: 0 0 10px; font-size: 19px; font-family: var(--font-display); color: #30412f; }
+.kino-reco-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 14px; }
+.kino-reco-card { display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: #30412f; }
+.kino-reco-card img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 1px solid #d4ddc9; background: #e8eddf; }
+.kino-reco-card strong { font-size: 15.5px; line-height: 1.35; overflow-wrap: break-word; }
+.kino-reco-card small { color: #647958; font-weight: 600; }
+.kino-reco-card:hover img { outline: 2px solid #78925e; outline-offset: 2px; }
 .kino-chapters-active:not([data-kino-view="lesson"]) :is(#kinoLessonHeader, #kinoLessonTabs, #kinoLessonPanel) { display: none; }
 .kino-chapters-active[data-kino-view="detail"] .peppa-parts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: visible; padding: 0; margin: 0; gap: 12px; }
 .kino-chapters-active[data-kino-view="detail"] .peppa-part { min-height: 160px; padding: 18px; gap: 8px; flex-basis: auto; border: 1px solid #d4dfc7; background: #fff; box-shadow: none; }

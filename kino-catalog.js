@@ -122,6 +122,13 @@ const KinoCatalog = (() => {
     vocabulary.onclick = () => reviewCurrentVideoVocab();
     overview.querySelector('#kinoMovieWatchAction').append(vocabulary);
     bar.after(overview);
+    // Mục 7: hàng gợi ý phim cùng cấp độ dưới phần tổng quan.
+    const reco = document.createElement('section');
+    reco.id = 'kinoRecoRow';
+    reco.className = 'kino-reco-row';
+    reco.hidden = true;
+    reco.innerHTML = '<h2>Phim cùng cấp độ</h2><div class="kino-reco-list"></div>';
+    overview.after(reco);
     back.addEventListener('click', () => {
       if (document.getElementById('diktatMode').dataset.kinoView === 'lesson') {
         if (history.state?.kinoOpenedPart) history.back();
@@ -226,6 +233,29 @@ const KinoCatalog = (() => {
     const vocabulary = document.getElementById('kinoMovieVocabBtn');
     vocabulary.hidden = !movie.vocabularyCount;
     vocabulary.textContent = movie.vocabularyCount ? `📇 Ôn ${movie.vocabularyCount} từ và cụm từ` : '';
+    // Mục 7: nạp gợi ý cùng cấp độ cho phim đang xem.
+    const reco = document.getElementById('kinoRecoRow');
+    if (reco) {
+      const list = reco.querySelector('.kino-reco-list');
+      list.innerHTML = '';
+      const others = Object.entries(KINO_CHAPTER_DATA)
+        .filter(([k, m]) => k !== currentKinoVideoKey && m.levelLabel && m.levelLabel === movie.levelLabel)
+        .slice(0, 3);
+      others.forEach(([k, m]) => {
+        const a = document.createElement('a');
+        a.className = 'kino-reco-card';
+        a.href = `?kino=${aliases[k]}`;
+        a.innerHTML = `<img src="assets/kino-posters/${k}-1.jpg" alt="" width="320" height="180"><strong></strong><small>${KINO_VIDEOS[k] ? KINO_VIDEOS[k].fullDurationStr : ''}</small>`;
+        a.querySelector('strong').textContent = m.catalogTitle || (k === 'peppa_supermarkt' ? 'Peppa Wutz · Im Supermarkt' : m.title);
+        a.addEventListener('click', async event => {
+          if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+          event.preventDefault();
+          openMovie(k, a);
+        });
+        list.append(a);
+      });
+      reco.hidden = !others.length;
+    }
   }
   return { mount, show, showDetail, showLesson, stopPlayback, updateCount };
 })();
