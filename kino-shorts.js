@@ -51,10 +51,14 @@
       + '<strong class="kino-short-title">' + esc(movie.catalogTitle || movie.title) + ' · Phần ' + part + '</strong>'
       + '<p class="kino-short-quote">„' + esc(card.example) + '"</p>'
       + '<p class="kino-short-vi">Từ nổi bật trong đoạn: <strong>' + esc(card.term) + '</strong> — ' + esc(card.meaning || '') + '</p>'
-      + '<p class="kino-short-meta">Một câu thoại đáng nhớ mỗi ngày · Bấm xem để vào đúng đoạn trong bài</p>'
-      + '<button type="button" class="kino-short-btn">▶ Xem đoạn này</button>'
+      + '<p class="kino-short-meta">Một câu thoại đáng nhớ mỗi ngày · Lướt Shorts để xem liên tục nhiều đoạn hay, hoặc vào thẳng đoạn này trong bài</p>'
+      + '<button type="button" class="kino-short-btn kino-short-feed-btn">▶ Lướt Shorts</button> '
+      + '<button type="button" class="kino-short-btn">Vào đúng đoạn này ▸</button>'
       + '</div>';
-    container.querySelector('.kino-short-btn').addEventListener('click', function () {
+    container.querySelector('.kino-short-feed-btn').addEventListener('click', function () {
+      if (window.KinoShortsFeed) window.KinoShortsFeed.open(card);
+    });
+    container.querySelector('.kino-short-btn:not(.kino-short-feed-btn)').addEventListener('click', function () {
       try {
         sessionStorage.setItem('vokabelgo_kino_short', JSON.stringify({ cueText: card.example }));
       } catch (e) {}
