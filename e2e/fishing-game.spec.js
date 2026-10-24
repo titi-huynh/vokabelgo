@@ -52,6 +52,9 @@ test.describe('E2E Fishing Game (giai đoạn 1)', () => {
     // Pha kéo: giữ-nhả nhịp nhàng bằng phím Space tới khi lên cá
     const meters = page.locator('#fgMeters');
     await expect(meters).toBeVisible();
+    // Gói nước sống: cá hiện hình dưới nước + dây câu được vẽ thật
+    await expect(page.locator('#fgFightFish')).toHaveClass(/show/);
+    await expect.poll(async () => (await page.locator('#fgLinePath').getAttribute('d')) || '').toContain('M');
     const deadline = Date.now() + 45000;
     while (Date.now() < deadline) {
       const layerHidden = await page.locator('#rewardCatchRevealLayer').evaluate((el) => el.classList.contains('hidden')).catch(() => true);

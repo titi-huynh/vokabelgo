@@ -210,7 +210,13 @@
   var SPRITE_BY_FISH = {
     karpfen: ASSET + 'fish-karpfen.png',
     goldfisch: ASSET + 'fish-goldfisch.png',
-    riesenwels: ASSET + 'fish-riesenwels.png'
+    riesenwels: ASSET + 'fish-riesenwels.png',
+    lachs: ASSET + 'fish-lachs.png',
+    forelle: ASSET + 'fish-forelle.png',
+    sardine: ASSET + 'fish-sardine.png',
+    barsch: ASSET + 'fish-barsch.png',
+    regenbogenforelle: ASSET + 'fish-regenbogenforelle.png',
+    b2_meisterfisch: ASSET + 'fish-meisterfisch.png'
   };
   var CONSOLATIONS = [
     { de: 'Schade! Der war riesig — bestimmt!', vi: 'Tiếc quá! Con đó chắc to lắm!' },
@@ -251,32 +257,127 @@
     return id;
   }
 
+  var sceneRaf = null;
   function clearTimers() {
     timers.forEach(function (id) { clearTimeout(id); });
     timers = [];
     if (raf) { cancelAnimationFrame(raf); raf = null; }
+    if (sceneRaf) { cancelAnimationFrame(sceneRaf); sceneRaf = null; }
   }
 
-  // --- Âm thanh nhỏ tự tổng hợp (không tệp ngoài) ---
+  // --- Âm thanh tự tổng hợp (không tệp ngoài): bíp + tiếng nước + ambient ---
   var audioCtx = null;
+  function ensureCtx() {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    return audioCtx;
+  }
+  function gameSoundOn() {
+    // Tôn trọng nút tắt tiếng sẵn có của hộp thoại nhận thưởng
+    try {
+      var t = document.getElementById('btnRewardSoundToggle');
+      if (t && (t.textContent.indexOf('🔇') !== -1 || t.classList.contains('muted'))) return false;
+    } catch (e) {}
+    return true;
+  }
   function beep(freq, dur, type, vol, when) {
     try {
-      if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-      var t = audioCtx.currentTime + (when || 0);
-      var o = audioCtx.createOscillator();
-      var g = audioCtx.createGain();
+      if (!gameSoundOn()) return;
+      var ctx = ensureCtx();
+      var t = ctx.currentTime + (when || 0);
+      var o = ctx.createOscillator();
+      var g = ctx.createGain();
       o.type = type || 'sine';
       o.frequency.setValueAtTime(freq, t);
       g.gain.setValueAtTime(vol || 0.08, t);
       g.gain.exponentialRampToValueAtTime(0.001, t + dur);
-      o.connect(g); g.connect(audioCtx.destination);
+      o.connect(g); g.connect(ctx.destination);
       o.start(t); o.stop(t + dur);
     } catch (e) {}
   }
-  function sndSplash() { beep(300, 0.25, 'sine', 0.10); beep(180, 0.3, 'sine', 0.07, 0.05); }
-  function sndNibble() { beep(880, 0.07, 'sine', 0.05); }
+  var noiseBuf = null;
+  function getNoiseBuf(ctx) {
+    if (noiseBuf) return noiseBuf;
+    var len = ctx.sampleRate * 1.2;
+    noiseBuf = ctx.createBuffer(1, len, ctx.sampleRate);
+    var d = noiseBuf.getChannelData(0);
+    for (var i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
+    return noiseBuf;
+  }
+  function noiseBurst(dur, fFrom, fTo, vol, type) {
+    try {
+      if (!gameSoundOn()) return;
+      var ctx = ensureCtx();
+      var t = ctx.currentTime;
+      var src = ctx.createBufferSource();
+      src.buffer = getNoiseBuf(ctx);
+      src.loop = true;
+      var flt = ctx.createBiquadFilter();
+      flt.type = type || 'lowpass';
+      flt.frequency.setValueAtTime(fFrom, t);
+      flt.frequency.exponentialRampToValueAtTime(Math.max(40, fTo), t + dur);
+      var g = ctx.createGain();
+      g.gain.setValueAtTime(vol, t);
+      g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+      src.connect(flt); flt.connect(g); g.connect(ctx.destination);
+      src.start(t); src.stop(t + dur + 0.05);
+    } catch (e) {}
+  }
+  function sndSplash(big) {
+    noiseBurst(big ? 0.5 : 0.3, 1400, 300, big ? 0.16 : 0.10);
+    beep(300, 0.25, 'sine', 0.06);
+    beep(180, 0.3, 'sine', 0.04, 0.05);
+  }
+  function sndNibble() { noiseBurst(0.08, 2000, 900, 0.05, 'bandpass'); beep(880, 0.07, 'sine', 0.04); }
   function sndBite() { beep(660, 0.1, 'square', 0.07); beep(990, 0.14, 'square', 0.07, 0.09); }
-  function sndSnap() { beep(220, 0.35, 'sawtooth', 0.08); beep(140, 0.4, 'sawtooth', 0.06, 0.08); }
+  function sndSnap() {
+    noiseBurst(0.18, 3000, 500, 0.12, 'highpass');
+    beep(220, 0.35, 'sawtooth', 0.08); beep(140, 0.4, 'sawtooth', 0.06, 0.08);
+  }
+  function sndReelClick() { noiseBurst(0.03, 2600, 1800, 0.05, 'bandpass'); }
+  function sndWin() {
+    beep(523, 0.14, 'triangle', 0.09);
+    beep(659, 0.14, 'triangle', 0.09, 0.1);
+    beep(784, 0.26, 'triangle', 0.10, 0.2);
+  }
+  // Ambient ao: nước rì rào rất khẽ + chim hót thưa, chỉ chạy khi game mở
+  var ambient = null;
+  function startAmbient() {
+    try {
+      if (!gameSoundOn() || ambient) return;
+      var ctx = ensureCtx();
+      var src = ctx.createBufferSource();
+      src.buffer = getNoiseBuf(ctx);
+      src.loop = true;
+      var flt = ctx.createBiquadFilter();
+      flt.type = 'lowpass'; flt.frequency.value = 420;
+      var g = ctx.createGain(); g.gain.value = 0.014;
+      var lfo = ctx.createOscillator(); lfo.frequency.value = 0.13;
+      var lfoG = ctx.createGain(); lfoG.gain.value = 0.005;
+      lfo.connect(lfoG); lfoG.connect(g.gain);
+      src.connect(flt); flt.connect(g); g.connect(ctx.destination);
+      src.start(); lfo.start();
+      ambient = { src: src, lfo: lfo, birdTimer: null };
+      var chirp = function () {
+        if (!ambient) return;
+        if (gameSoundOn()) {
+          var base = 2300 + Math.random() * 500;
+          beep(base, 0.09, 'sine', 0.018);
+          beep(base * 0.82, 0.11, 'sine', 0.015, 0.12);
+        }
+        ambient.birdTimer = setTimeout(chirp, 3800 + Math.random() * 5200);
+      };
+      ambient.birdTimer = setTimeout(chirp, 2000);
+    } catch (e) {}
+  }
+  function stopAmbient() {
+    if (!ambient) return;
+    try {
+      if (ambient.birdTimer) clearTimeout(ambient.birdTimer);
+      ambient.src.stop(); ambient.lfo.stop();
+    } catch (e) {}
+    ambient = null;
+  }
   function speakDe(text) {
     try {
       if (window.VokabelTTS && typeof window.VokabelTTS.speakGerman === 'function') {
@@ -296,8 +397,19 @@
     layer.innerHTML =
       '<img class="fg-bg" src="' + ASSET + 'pond-bg.webp" alt="">' +
       '<div class="fg-water-shade"></div>' +
+      '<div class="fg-zone-tint" id="fgZoneTint"></div>' +
+      '<div class="fg-ambient" aria-hidden="true">' +
+        '<span class="fg-shimmer"></span>' +
+        '<span class="fg-leaf fg-leaf-1"></span>' +
+        '<span class="fg-leaf fg-leaf-2"></span>' +
+        '<span class="fg-dragonfly"></span>' +
+      '</div>' +
       '<img class="fg-zehn" id="fgZehn" src="' + ASSET + 'zehn-idle.png" alt="Zehn đang câu cá">' +
+      '<svg class="fg-line-svg" id="fgLineSvg" viewBox="0 0 1000 562" preserveAspectRatio="none" aria-hidden="true">' +
+        '<path id="fgLinePath" d="" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" stroke-linecap="round"/></svg>' +
+      '<img class="fg-fight-fish" id="fgFightFish" alt="">' +
       '<div class="fg-fish-shadow" id="fgFishShadow"></div>' +
+      '<div class="fg-fx" id="fgFx"></div>' +
       '<div class="fg-bobber hidden" id="fgBobber"><span class="fg-bobber-top"></span></div>' +
       '<div class="fg-bang hidden" id="fgBang">!</div>' +
       '<div class="fg-speech" id="fgSpeech"><span class="fg-speech-de" id="fgSpeechDe"></span>' +
@@ -337,6 +449,11 @@
     els = {
       layer: layer,
       zehn: layer.querySelector('#fgZehn'),
+      zoneTint: layer.querySelector('#fgZoneTint'),
+      lineSvg: layer.querySelector('#fgLineSvg'),
+      linePath: layer.querySelector('#fgLinePath'),
+      fightFish: layer.querySelector('#fgFightFish'),
+      fx: layer.querySelector('#fgFx'),
       bobber: layer.querySelector('#fgBobber'),
       shadow: layer.querySelector('#fgFishShadow'),
       bang: layer.querySelector('#fgBang'),
@@ -405,6 +522,7 @@
     if (video) video.pause();
     if (els.startBtn) els.startBtn.classList.add('hidden');
     els.layer.classList.remove('hidden');
+    startAmbient();
     newRound(false);
   }
 
@@ -424,7 +542,15 @@
       nibblesLeft: 0,
       nextNibbleAt: 0,
       hookDeadline: 0,
-      recast: false
+      recast: false,
+      bobberXPct: 55,
+      fishXPct: 55,
+      fishFlip: false,
+      sceneT: 0,
+      lastRippleAt: 0,
+      lastClickAt: 0,
+      lastSurfSplashAt: 0,
+      slowUntil: 0
     };
     setZehn('idle');
     els.bobber.classList.add('hidden');
@@ -432,6 +558,10 @@
     els.gauge.classList.add('hidden');
     els.meters.classList.add('hidden');
     els.shadow.style.opacity = '0';
+    els.zoneTint.className = 'fg-zone-tint';
+    els.lineSvg.style.opacity = '0';
+    els.fightFish.classList.remove('show');
+    els.fx.innerHTML = '';
     say('', '');
     setAction('Thả câu 🎣', true);
     els.sub.textContent = play.bonusUsed
@@ -455,6 +585,7 @@
 
   function destroyRound() {
     clearTimers();
+    stopAmbient();
     state = null;
     if (els) {
       els.layer.classList.add('hidden');
@@ -474,6 +605,114 @@
 
   function onRelease() {
     if (state && state.phase === 'fight') state.holding = false;
+  }
+
+  // --- Lớp "nước sống": dây câu, gợn sóng, tóe nước, cá hiện hình ---
+  function spawnRipple(xPct, big) {
+    if (!els) return;
+    var r = document.createElement('span');
+    r.className = 'fg-ripple' + (big ? ' big' : '');
+    r.style.left = xPct + '%';
+    els.fx.appendChild(r);
+    later(function () { r.remove(); }, 1700);
+  }
+
+  function spawnSplash(xPct, n, big) {
+    if (!els) return;
+    for (var i = 0; i < (n || 6); i++) {
+      var d = document.createElement('span');
+      d.className = 'fg-drop' + (big ? ' big' : '');
+      d.style.left = xPct + '%';
+      d.style.setProperty('--dx', ((Math.random() * 2 - 1) * (big ? 46 : 26)).toFixed(0) + 'px');
+      d.style.setProperty('--dy', (-(14 + Math.random() * (big ? 44 : 26))).toFixed(0) + 'px');
+      els.fx.appendChild(d);
+      (function (el) { later(function () { el.remove(); }, 750); })(d);
+    }
+  }
+
+  function updateLine() {
+    if (!state || !els) return;
+    var tipX = 330, tipY = 168;
+    var bx = state.bobberXPct * 10;
+    var by = 352 + (els.bobber.classList.contains('sunk') ? 12 : (els.bobber.classList.contains('nibble') ? 4 : 0));
+    var sag = 30;
+    var color = 'rgba(255,255,255,0.85)';
+    if (state.phase === 'bite') sag = 6;
+    if (state.phase === 'fight' && state.fight) {
+      var t = state.fight.tension;
+      sag = 34 * (1 - t / 100) + 3;
+      color = t >= 95 ? '#ef4444' : (t >= 75 ? '#fbbf24' : 'rgba(255,255,255,0.9)');
+    }
+    var cx = (tipX + bx) / 2;
+    var cy = Math.max(tipY, by) + sag;
+    els.linePath.setAttribute('d', 'M ' + tipX + ' ' + tipY + ' Q ' + cx + ' ' + cy + ' ' + bx + ' ' + by);
+    els.linePath.setAttribute('stroke', color);
+  }
+
+  function startSceneLoop() {
+    if (sceneRaf) return;
+    var last = performance.now();
+    var loop = function (now) {
+      sceneRaf = null;
+      if (!state || els.layer.classList.contains('hidden')) return;
+      var dt = Math.min(0.05, (now - last) / 1000); last = now;
+      state.sceneT += dt;
+      // Gợn sóng quanh phao khi chờ
+      if ((state.phase === 'wait' || state.phase === 'bite') && now - state.lastRippleAt > 1500) {
+        state.lastRippleAt = now;
+        spawnRipple(state.bobberXPct, false);
+      }
+      updateLine();
+      // Cá hiện hình trong pha kéo
+      if (state.phase === 'fight' && state.fight) {
+        var s = state.fight;
+        var base = state.bobberXPct;
+        var target, flip;
+        if (s.phase === 'run') { target = base + 10; flip = true; }
+        else { target = base + Math.sin(state.sceneT * 0.8) * 2.0; flip = false; }
+        var k = Math.min(1, dt * (s.phase === 'run' ? 5 : 1.6));
+        state.fishXPct += (target - state.fishXPct) * k;
+        state.fishFlip = flip;
+        var surface = s.progress >= 85;
+        els.fightFish.classList.toggle('surface', surface);
+        els.fightFish.style.left = state.fishXPct + '%';
+        els.fightFish.style.bottom = surface
+          ? (27 + Math.sin(state.sceneT * 9) * 1.4) + '%'
+          : (13.5 + Math.sin(state.sceneT * 2.1) * 0.8) + '%';
+        els.fightFish.style.transform = 'translateX(-50%) scaleX(' + (flip ? -1 : 1) + ')';
+        if (surface && now - state.lastSurfSplashAt > 320) {
+          state.lastSurfSplashAt = now;
+          spawnSplash(state.fishXPct, 4, false);
+          noiseBurst(0.15, 1200, 400, 0.05);
+        }
+      }
+      sceneRaf = requestAnimationFrame(loop);
+    };
+    sceneRaf = requestAnimationFrame(loop);
+  }
+
+  // Cá thắng bay một vòng khỏi mặt nước trước khi vào thẻ
+  function flyFish(fish) {
+    if (!els || !fish) return;
+    var img = document.createElement('img');
+    img.className = 'fg-fly-fish';
+    img.alt = '';
+    if (SPRITE_BY_FISH[fish.id]) {
+      img.src = SPRITE_BY_FISH[fish.id];
+    } else if (typeof window.getVokabelFishSvg === 'function') {
+      try { img.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(window.getVokabelFishSvg(fish)); } catch (e) {}
+    }
+    img.style.left = state.bobberXPct + '%';
+    els.layer.appendChild(img);
+    if (img.animate) {
+      var anim = img.animate([
+        { transform: 'translate(-50%, 0) rotate(0deg)', opacity: 1 },
+        { transform: 'translate(-50%, -120px) rotate(-16deg)', opacity: 1, offset: 0.55 },
+        { transform: 'translate(-50%, -64px) rotate(6deg)', opacity: 0.95 }
+      ], { duration: 880, easing: 'cubic-bezier(.2,.7,.3,1)' });
+      anim.onfinish = function () { img.remove(); };
+    }
+    later(function () { img.remove(); }, 1000);
   }
 
   // Pha 1: thanh lực quét, bấm để chốt vùng rơi
@@ -507,12 +746,17 @@
     if (raf) { cancelAnimationFrame(raf); raf = null; }
     state.zone = zoneFromGauge(state.gaugeT);
     els.gauge.classList.add('hidden');
-    sndSplash();
+    sndSplash(false);
     // Phao rơi theo vùng: gần 38%, giữa 55%, sâu 72% bề ngang
     var xPct = state.zone === 'near' ? 38 : (state.zone === 'mid' ? 55 : 72);
+    state.bobberXPct = xPct;
     els.bobber.style.left = xPct + '%';
     els.bobber.classList.remove('hidden');
     els.bobber.classList.remove('sunk');
+    els.zoneTint.className = 'fg-zone-tint fg-tint-' + state.zone;
+    els.lineSvg.style.opacity = '1';
+    spawnSplash(xPct, 6, false);
+    spawnRipple(xPct, true);
     setZehn('idle');
     startWait(false);
   }
@@ -531,6 +775,7 @@
     els.sub.textContent = 'Phao động nhẹ là cá rỉa mồi — đừng giật vội. Phao chìm hẳn mới là cá cắn!';
     els.shadow.style.opacity = '0.5';
     els.shadow.style.left = els.bobber.style.left;
+    startSceneLoop();
     pollWait();
   }
 
@@ -553,6 +798,7 @@
     els.bobber.classList.add('sunk');
     els.bang.classList.remove('hidden');
     els.bang.style.left = els.bobber.style.left;
+    spawnSplash(state.bobberXPct, 5, false);
     sndBite();
     speakDe('Jetzt!');
     say('Jetzt!', 'Giật ngay!');
@@ -571,9 +817,14 @@
   function hookAttempt(expired) {
     if (!state) return;
     if (state.phase === 'bite' && !expired) {
-      // Móc dính -> pha kéo
+      // Móc dính -> pha kéo: rung nhẹ + chậm một nhịp cho đã tay
       els.bang.classList.add('hidden');
       els.bobber.classList.remove('sunk');
+      els.layer.classList.add('fg-shake');
+      later(function () { if (els) els.layer.classList.remove('fg-shake'); }, 380);
+      spawnSplash(state.bobberXPct, 8, true);
+      sndSplash(true);
+      state.slowUntil = performance.now() + 380;
       say('Er beißt an!', 'Cá dính rồi — giữ nút để kéo!');
       startFight();
       return;
@@ -601,6 +852,19 @@
     state.holding = false;
     state.fight = FishingCore.createFight(state.fish, Math.random);
     setZehn('reeling');
+    // Cá hiện hình dưới nước: sprite loài (hoặc SVG dự phòng), mờ xanh dưới nước
+    var fish = state.fish;
+    if (SPRITE_BY_FISH[fish.id]) {
+      els.fightFish.src = SPRITE_BY_FISH[fish.id];
+    } else if (typeof window.getVokabelFishSvg === 'function') {
+      try { els.fightFish.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(window.getVokabelFishSvg(fish)); } catch (e) {}
+    }
+    els.fightFish.style.width = fish.rarity === 'legendary' ? '27%' : (fish.rarity === 'rare' ? '23%' : '19%');
+    els.fightFish.className = 'fg-fight-fish show under';
+    state.fishXPct = state.bobberXPct;
+    els.fightFish.style.left = state.fishXPct + '%';
+    els.shadow.style.opacity = '0';
+    els.shadow.classList.remove('fg-shadow-run', 'fg-shadow-telegraph');
     els.meters.classList.remove('hidden');
     setAction('GIỮ ĐỂ KÉO 🎣', true);
     els.sub.textContent = 'Giữ nút để kéo. Cá vùng chạy (bọt nước nổi) thì NHẢ nút kẻo đứt dây!';
@@ -610,7 +874,13 @@
       var dt = Math.min(0.05, (now - last) / 1000); last = now;
       var s = state.fight;
       var wasSurged = s.surged;
-      FishingCore.stepFight(s, dt * (fastMode ? 3 : 1), state.holding);
+      var scale = fastMode ? 3 : (now < state.slowUntil ? 0.35 : 1);
+      FishingCore.stepFight(s, dt * scale, state.holding);
+      // Tiếng cuộn dây khi giữ: càng căng càng dồn dập
+      if (state.holding && now - state.lastClickAt > Math.max(55, 150 - s.tension * 0.95)) {
+        state.lastClickAt = now;
+        sndReelClick();
+      }
       // Vẽ lại
       els.progressFill.style.width = s.progress + '%';
       els.tensionFill.style.width = s.tension + '%';
@@ -629,9 +899,12 @@
   function finishFight() {
     var s = state.fight;
     els.meters.classList.add('hidden');
+    els.fightFish.classList.remove('show');
     if (s.won) { winRound(); return; }
     // Đứt dây: kết thúc ván, an ủi + lượt phụ (D2)
     sndSnap();
+    els.lineSvg.style.opacity = '0';
+    spawnSplash(state.bobberXPct, 4, false);
     setZehn('idle');
     els.bobber.classList.add('hidden');
     els.shadow.style.opacity = '0';
@@ -659,6 +932,11 @@
     setZehn('celebrate');
     els.bobber.classList.add('hidden');
     els.shadow.style.opacity = '0';
+    els.lineSvg.style.opacity = '0';
+    spawnSplash(state.bobberXPct, 10, true);
+    sndSplash(true);
+    sndWin();
+    flyFish(fish);
     say('Ein ' + fish.german + '!', 'Lên cá rồi!');
     speakDe('Ein ' + fish.german + '!');
     state.phase = 'won';
@@ -701,18 +979,29 @@
     var meta = document.createElement('div');
     meta.id = 'fishingGameMeta';
     meta.className = 'fishing-game-meta';
-    var text = '🎣 Câu bằng game';
-    if (entry) {
-      var len = String(entry.length).replace('.', ',');
-      var wgt = String(entry.weight).replace('.', ',');
-      text += ' · ' + len + ' cm · ' + wgt + ' kg';
-      if (FishingCore.isSpeciesRecord(collection, entry)) {
-        text += ' · 🏆 Kỷ lục mới của loài này!';
-        meta.classList.add('record');
-      }
+    var isRec = false;
+    if (entry) isRec = FishingCore.isSpeciesRecord(collection, entry);
+    if (isRec) meta.classList.add('record');
+    if (entry && !isNaN(parseFloat(entry.length)) && !isNaN(parseFloat(entry.weight))) {
+      var targetLen = parseFloat(entry.length);
+      var targetWgt = parseFloat(entry.weight);
+      meta.innerHTML = '🎣 Câu bằng game · <span class="fg-meta-num">0</span> cm · <span class="fg-meta-num">0</span> kg' +
+        (isRec ? ' · 🏆 Kỷ lục mới của loài này!' : '');
+      card.appendChild(meta);
+      var nums = meta.querySelectorAll('.fg-meta-num');
+      var t0 = performance.now();
+      var countTick = function (now) {
+        var p = Math.min(1, (now - t0) / 850);
+        var eased = 1 - Math.pow(1 - p, 3);
+        nums[0].textContent = (targetLen * eased).toFixed(1).replace('.', ',');
+        nums[1].textContent = (targetWgt * eased).toFixed(2).replace('.', ',');
+        if (p < 1) requestAnimationFrame(countTick);
+      };
+      requestAnimationFrame(countTick);
+    } else {
+      meta.textContent = '🎣 Câu bằng game';
+      card.appendChild(meta);
     }
-    meta.textContent = text;
-    card.appendChild(meta);
   }
 
   // Khởi tạo khi DOM sẵn sàng (nút mở game chỉ hiện cùng hộp thoại)
