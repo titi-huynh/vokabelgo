@@ -18,7 +18,8 @@ const KinoData = (() => {
     simplicissimus_leberwurst: 'simplicissimus_leberwurst-aligned.js',
     trudes_bagger: 'trudes_bagger-aligned.js',
     erdmaennchen_spukschloss: 'erdmaennchen_spukschloss-aligned.js',
-    spy_family_s01e01: 'spy_family_s01e01-aligned.js'
+    spy_family_s01e01: 'spy_family_s01e01-aligned.js',
+    demon_slayer_s01e01: 'demon_slayer_s01e01-aligned.js'
   };
   const requests = new Map(), loaded = new Set();
   let selection = 0;
@@ -84,6 +85,7 @@ const KinoData = (() => {
       case 'trudes_bagger': return TRUDES_BAGGER_ALIGNED_UTTERANCES;
       case 'erdmaennchen_spukschloss': return ERDMAENNCHEN_SPUKSCHLOSS_ALIGNED_UTTERANCES;
       case 'spy_family_s01e01': return SPY_FAMILY_S01E01_ALIGNED_UTTERANCES;
+      case 'demon_slayer_s01e01': return DEMON_SLAYER_S01E01_ALIGNED_UTTERANCES;
       default: return [];
     }
   }

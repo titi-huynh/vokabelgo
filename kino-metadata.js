@@ -400,3 +400,342 @@ const SPY_FAMILY_S01E01_FLASHCARDS = [
     "sourceUrl": "?kino=spy&part=8"
   }
 ];
+
+const DEMON_SLAYER_S01E01_FLASHCARDS = [
+  {
+    "id": "vk_demon_s01e01_holzkohle",
+    "term": "die Holzkohle",
+    "meaning": "than củi",
+    "grammar": "die Holzkohle, die Holzkohlen (f.)",
+    "example": "Dafür verkaufe ich ein bisschen Holzkohle.",
+    "collocations": [
+      "Holzkohle verkaufen",
+      "ein bisschen Holzkohle"
+    ],
+    "note": "Nghề của gia đình Kamado: đốt và bán than củi.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500011,
+    "sourceUrl": "?kino=demon&part=1"
+  },
+  {
+    "id": "vk_demon_s01e01_karren",
+    "term": "der Karren",
+    "meaning": "xe kéo tay",
+    "grammar": "der Karren, die Karren (m.)",
+    "example": "Außerdem kann er heute unseren Karren nicht mitnehmen.",
+    "collocations": [
+      "den Karren mitnehmen",
+      "einen Karren ziehen"
+    ],
+    "note": "Xe hai bánh kéo tay để chở than xuống làng.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500018,
+    "sourceUrl": "?kino=demon&part=1"
+  },
+  {
+    "id": "vk_demon_s01e01_sich-erklaelten",
+    "term": "sich erkälten",
+    "meaning": "bị cảm lạnh",
+    "grammar": "Động từ phản thân: erkältet sich – erkältete sich – hat sich erkältet.",
+    "example": "Pass auf, dass du dich nicht erkältest.",
+    "collocations": [
+      "sich leicht erkälten",
+      "Pass auf, dass du dich nicht erkältest"
+    ],
+    "note": "Cấu trúc dặn dò: Pass auf, dass ... + động từ cuối câu.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500069,
+    "sourceUrl": "?kino=demon&part=2"
+  },
+  {
+    "id": "vk_demon_s01e01_menschenfressend",
+    "term": "menschenfressend",
+    "meaning": "ăn thịt người",
+    "grammar": "Tính từ ghép: Menschen (người) + fressend (ăn, dành cho thú).",
+    "example": "Seit jeher treiben menschenfressende Dämonen nachts in unserem Land hier Unwesen.",
+    "collocations": [
+      "menschenfressende Dämonen",
+      "ein menschenfressendes Tier"
+    ],
+    "note": "fressen dùng cho động vật hoặc ăn thô lỗ; essen mới là ăn của người.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500102,
+    "sourceUrl": "?kino=demon&part=3"
+  },
+  {
+    "id": "vk_demon_s01e01_daemonenjager",
+    "term": "der Dämonenjäger",
+    "meaning": "thợ săn quỷ",
+    "grammar": "der Dämonenjäger, die Dämonenjäger (m.); ghép Dämon + Jäger.",
+    "example": "Um das zu verhindern, existieren auch schon genauso lange die Dämonenjäger,",
+    "collocations": [
+      "ein Dämonenjäger werden",
+      "die Dämonenjäger existieren"
+    ],
+    "note": "Tên gọi chính thức trong truyện của lực lượng diệt quỷ.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500109,
+    "sourceUrl": "?kino=demon&part=3"
+  },
+  {
+    "id": "vk_demon_s01e01_winterschlaf",
+    "term": "der Winterschlaf",
+    "meaning": "kỳ ngủ đông",
+    "grammar": "der Winterschlaf (m.), không có số nhiều thông dụng.",
+    "example": "Vielleicht ist er zu früh aus seinem Winterschlaf erwacht.",
+    "collocations": [
+      "aus dem Winterschlaf erwachen",
+      "Winterschlaf halten"
+    ],
+    "note": "erwachen = tỉnh giấc; gấu tỉnh sớm khỏi kỳ ngủ đông là điềm nguy hiểm.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500136,
+    "sourceUrl": "?kino=demon&part=4"
+  },
+  {
+    "id": "vk_demon_s01e01_abschlachten",
+    "term": "abschlachten",
+    "meaning": "thảm sát, giết hàng loạt",
+    "grammar": "Động từ tách: schlachtet ab – schlachtete ab – hat abgeschlachtet.",
+    "example": "wurde meine ganze Familie hier abgeschlachtet.",
+    "collocations": [
+      "eine Familie abschlachten",
+      "brutal abgeschlachtet werden"
+    ],
+    "note": "Từ mạnh, dùng cho giết chóc tàn bạo; gốc là giết mổ gia súc.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500173,
+    "sourceUrl": "?kino=demon&part=5"
+  },
+  {
+    "id": "vk_demon_s01e01_durchhalten",
+    "term": "durchhalten",
+    "meaning": "chịu đựng, cầm cự đến cùng",
+    "grammar": "Động từ tách: hält durch – hielt durch – hat durchgehalten.",
+    "example": "Du musst durchhalten.",
+    "collocations": [
+      "Du musst durchhalten.",
+      "bis zum Ende durchhalten"
+    ],
+    "note": "Lời động viên khi ai đó sắp gục: cố chịu đựng thêm chút nữa.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500181,
+    "sourceUrl": "?kino=demon&part=5"
+  },
+  {
+    "id": "vk_demon_s01e01_katana",
+    "term": "das Katana",
+    "meaning": "kiếm katana",
+    "grammar": "das Katana, die Katanas (n.); từ mượn tiếng Nhật.",
+    "example": "Ein Katana?",
+    "collocations": [
+      "ein Katana tragen",
+      "das Katana ziehen"
+    ],
+    "note": "Kiếm dài của võ sĩ Nhật; trong truyện là vũ khí của thợ săn quỷ.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500189,
+    "sourceUrl": "?kino=demon&part=6"
+  },
+  {
+    "id": "vk_demon_s01e01_vernichten",
+    "term": "vernichten",
+    "meaning": "tiêu diệt, hủy diệt",
+    "grammar": "vernichtet – vernichtete – hat vernichtet.",
+    "example": "Es ist meine Pflicht, jeden Dämon zu vernichten.",
+    "collocations": [
+      "jeden Dämon vernichten",
+      "eine Pflicht, etwas zu vernichten"
+    ],
+    "note": "Mẫu câu với zu: Es ist meine Pflicht, ... zu vernichten.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500197,
+    "sourceUrl": "?kino=demon&part=6"
+  },
+  {
+    "id": "vk_demon_s01e01_geruch",
+    "term": "der Geruch",
+    "meaning": "mùi, mùi hương",
+    "grammar": "der Geruch, die Gerüche (m.)",
+    "example": "einen fremden Geruch wahrgenommen.",
+    "collocations": [
+      "einen fremden Geruch wahrnehmen",
+      "der Geruch von Blut"
+    ],
+    "note": "Khứu giác siêu nhạy là khả năng đặc biệt của Tanjiro.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500203,
+    "sourceUrl": "?kino=demon&part=6"
+  },
+  {
+    "id": "vk_demon_s01e01_wunde",
+    "term": "die Wunde",
+    "meaning": "vết thương",
+    "grammar": "die Wunde, die Wunden (f.)",
+    "example": "Dämonenblut gelangt in ihre Wunden",
+    "collocations": [
+      "in ihre Wunden gelangen",
+      "eine schwere Wunde"
+    ],
+    "note": "Máu quỷ ngấm vào vết thương là cách một người biến thành quỷ.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500211,
+    "sourceUrl": "?kino=demon&part=6"
+  },
+  {
+    "id": "vk_demon_s01e01_schwaechling",
+    "term": "der Schwächling",
+    "meaning": "kẻ yếu đuối",
+    "grammar": "der Schwächling, die Schwächlinge (m.); từ mang sắc thái khinh thường.",
+    "example": "Denkst du denn wirklich ein Schwächling,",
+    "collocations": [
+      "ein Schwächling wie du",
+      "kein Schwächling sein"
+    ],
+    "note": "Giyu dùng từ này để chọc tức, buộc Tanjiro phải đứng lên.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500242,
+    "sourceUrl": "?kino=demon&part=7"
+  },
+  {
+    "id": "vk_demon_s01e01_axt",
+    "term": "die Axt",
+    "meaning": "cái rìu",
+    "grammar": "die Axt, die Äxte (f.)",
+    "example": "Wo ist seine Axt?",
+    "collocations": [
+      "seine Axt werfen",
+      "die Axt ziehen"
+    ],
+    "note": "Chiếc rìu chẻ củi trở thành vũ khí bí mật trong đòn tấn công của Tanjiro.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500280,
+    "sourceUrl": "?kino=demon&part=8"
+  },
+  {
+    "id": "vk_demon_s01e01_ausgehungert",
+    "term": "ausgehungert",
+    "meaning": "đói khát, đói lả",
+    "grammar": "Tính từ từ phân từ của aushungern (bỏ đói).",
+    "example": "Das bedeutet, sie ist gerade komplett ausgehungert.",
+    "collocations": [
+      "komplett ausgehungert sein",
+      "ein ausgehungerter Dämon"
+    ],
+    "note": "Quỷ đói khát sẽ ăn cả cha mẹ và anh chị em của mình.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500304,
+    "sourceUrl": "?kino=demon&part=8"
+  },
+  {
+    "id": "vk_demon_s01e01_ausnahme",
+    "term": "die Ausnahme",
+    "meaning": "ngoại lệ",
+    "grammar": "die Ausnahme, die Ausnahmen (f.)",
+    "example": "Vielleicht sind sie ja eine Ausnahme.",
+    "collocations": [
+      "eine Ausnahme sein",
+      "keine Ausnahme machen"
+    ],
+    "note": "Cụm hay gặp: Ausnahmen bestätigen die Regel — ngoại lệ càng khẳng định quy luật.",
+    "deck": "🎬 Video: Demon Slayer – Grausamkeit",
+    "tags": [
+      "Video",
+      "Demon Slayer",
+      "Anime"
+    ],
+    "videoKey": "demon_slayer_s01e01",
+    "cueId": 500310,
+    "sourceUrl": "?kino=demon&part=8"
+  }
+];

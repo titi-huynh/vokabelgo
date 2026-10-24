@@ -1,5 +1,5 @@
 /* Chapter bounds sit between complete spoken turns; all sources remain original MP4s. */
-const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', pinguine_popcorn_panik: 'pinguine', courage_diamantraub: 'courage', spongebob_pizza: 'spongebob', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura', druck_s07e01: 'druck', simplicissimus_leberwurst: 'simplicissimus', trudes_bagger: 'bagger', erdmaennchen_spukschloss: 'spukschloss', spy_family_s01e01: 'spy' };
+const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', pinguine_popcorn_panik: 'pinguine', courage_diamantraub: 'courage', spongebob_pizza: 'spongebob', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura', druck_s07e01: 'druck', simplicissimus_leberwurst: 'simplicissimus', trudes_bagger: 'bagger', erdmaennchen_spukschloss: 'spukschloss', spy_family_s01e01: 'spy', demon_slayer_s01e01: 'demon' };
 const KINO_CHAPTER_DATA = {
   peppa_supermarkt: {
     genre: 'Thiếu nhi',
@@ -168,6 +168,31 @@ const KINO_CHAPTER_DATA = {
       picks: [500377, 500378, 500379, 500380, 500381, 500382, 500383], goal: 'Học cách động viên sau nguy hiểm, cái cớ chuyển nhà và kế hoạch học thuộc đáp án cho kỳ thi.' },
     { title: 'Kỳ thi và lá thư', icon: '✉️', start: 1257.47, end: 1435.81,
       picks: [500402, 500403, 500404, 500405, 500406, 500407, 500408], goal: 'Theo dõi phòng thi qua khả năng đọc suy nghĩ, tin vui trúng tuyển và yêu cầu bất ngờ của vòng hai: cần cả cha lẫn mẹ.' },
+    ]
+  },
+  demon_slayer_s01e01: {
+    genre: 'Anime',
+    title: 'Grausamkeit', series: 'Demon Slayer', levelLabel: 'Gợi ý B1',
+    catalogTitle: 'Demon Slayer · Grausamkeit',
+    storageKey: 'vokabelgo_kino_chapters_v1_demon_slayer_s01e01', cueCount: 318,
+    get cues() { return DEMON_SLAYER_S01E01_ALIGNED_UTTERANCES; },
+    chapters: [
+    { title: 'Buổi sáng chia tay', icon: '🏠', start: 26.05, end: 172.0,
+      picks: [500001, 500002, 500003, 500004, 500005, 500006, 500007], goal: 'Nghe mẹ Kamado dặn dò Tanjiro, các em níu anh ở lại và lời hứa mang quà từ phố về.' },
+    { title: 'Gặp Nezuko và xuống làng bán than', icon: '🎒', start: 177.18, end: 303.59,
+      picks: [500045, 500046, 500047, 500048, 500049, 500050, 500051], goal: 'Theo dõi cuộc gặp với Nezuko trên đường núi, đoạn độc thoại về hạnh phúc mong manh và cảnh bán than trong làng.' },
+    { title: 'Ngủ lại nhà ông Saburo', icon: '🌙', start: 308.24, end: 433.46,
+      picks: [500088, 500089, 500090, 500091, 500092, 500093, 500094], goal: 'Nghe truyền thuyết về quỷ ăn thịt người, các thợ săn quỷ và lời dặn không ra ngoài sau khi mặt trời lặn.' },
+    { title: 'Trở về và thảm kịch', icon: '🩸', start: 440.36, end: 570.12,
+      picks: [500120, 500121, 500122, 500123, 500124, 500125, 500126], goal: 'Theo dõi Tanjiro ngửi thấy mùi máu, phát hiện thảm kịch và cõng Nezuko chạy xuyên tuyết.' },
+    { title: 'Nezuko biến thành quỷ', icon: '👹', start: 579.17, end: 704.07,
+      picks: [500148, 500149, 500150, 500151, 500152, 500153, 500154], goal: 'Nghe Tanjiro vật lộn với Nezuko, gọi em tỉnh lại và tự trấn an rằng em không thể là thủ phạm.' },
+    { title: 'Kiếm sĩ bí ẩn xuất hiện', icon: '⚔️', start: 737.0, end: 880.32,
+      picks: [500187, 500188, 500189, 500190, 500191, 500192, 500193], goal: 'Nghe cuộc đối đầu bên vực tuyết: Giyu đòi chém Nezuko, Tanjiro kể về mùi lạ và quỳ xuống van xin.' },
+    { title: 'Bài học khắc nghiệt của Giyu', icon: '🗣️', start: 892.44, end: 1001.25,
+      picks: [500238, 500239, 500240, 500241, 500242, 500243, 500244], goal: 'Nghe bài răn dạy nổi tiếng: không trao quyền sinh sát cho kẻ khác, kẻ yếu không có quyền cũng không có lựa chọn.' },
+    { title: 'Ngoại lệ và lên đường', icon: '🗻', start: 1021.98, end: 1211.29,
+      picks: [500278, 500279, 500280, 500281, 500282, 500283, 500284], goal: 'Nghe Giyu phân tích đòn rìu giấu kín, nhận ra hai anh em là ngoại lệ và chỉ đường đến chân núi Sagiri.' },
     ]
   }
 };
