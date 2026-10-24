@@ -318,6 +318,20 @@
   filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.3));
 }
 
+/* Chuyển động của Zehn: đu đưa khi kéo cá + cá được nhấc lên treo ở đầu dây */
+.fishing-game-layer .fg-zehn { transform-origin: 50% 88%; }
+.fishing-game-layer .fg-zehn.fg-reeling-rock { animation: fgRock 0.9s ease-in-out infinite alternate; }
+.fishing-game-layer .fg-zehn.fg-reeling-rock.fg-reeling-hard { animation-duration: 0.45s; }
+@keyframes fgRock {
+  from { transform: rotate(-1.4deg) translateY(0); }
+  to { transform: rotate(1.4deg) translateY(-2px); }
+}
+.fishing-game-layer .fg-fight-fish.fg-lifted {
+  transform-origin: 50% 0%;
+  z-index: 6;
+  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.3));
+}
+
 .fishing-game-layer.fg-shake { animation: fgShake 0.36s linear; }
 @keyframes fgShake {
   0%, 100% { transform: translate(0, 0); }
@@ -404,5 +418,6 @@
   .fishing-game-layer .fg-dragonfly,
   .fishing-game-layer .fg-fight-fish.surface,
   .fishing-game-layer.fg-shake,
+  .fishing-game-layer .fg-zehn.fg-reeling-rock,
   .fishing-game-meta.record { animation: none; }
 }
