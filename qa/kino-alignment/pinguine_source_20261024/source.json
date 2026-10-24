@@ -1,0 +1,74 @@
+{
+  "title": "Die Pinguine aus Madagascar | Popcorn Panik! | Nickelodeon Deutschland",
+  "lessonTitle": "Popcorn-Panik",
+  "series": "Die Pinguine aus Madagascar",
+  "contentType": "official TV-series episode excerpt",
+  "not2014FeatureFilm": true,
+  "publisher": "Nickelodeon Deutschland",
+  "channelId": "UCQU3PO2g_rmqbmr8VJWvrsA",
+  "channelUrl": "https://www.youtube.com/channel/UCQU3PO2g_rmqbmr8VJWvrsA",
+  "channelIsVerified": true,
+  "url": "https://www.youtube.com/watch?v=ONRyWXIGWQI",
+  "videoId": "ONRyWXIGWQI",
+  "uploadDate": "20140712",
+  "retrievedDate": "2026-10-24",
+  "availability": "public",
+  "duration": 140.480726,
+  "sourceMetadataDuration": 141,
+  "isExcerpt": true,
+  "excerptDescription": "Full 140.48-second publisher-uploaded clip, itself an excerpt from the TV episode Popcorn-Panik; no further cutting. Not a full episode.",
+  "localVideo": "video/pinguine_popcorn_panik.mp4",
+  "bytes": 4080956,
+  "sha256": "6012e2d9e45729ead0d180021a3f82c9560668e9a794fb1ef6146469d35050ce",
+  "media": {
+    "videoCodec": "h264",
+    "width": 640,
+    "height": 360,
+    "fps": 25,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": 44100
+  },
+  "acquisition": {
+    "tool": "yt-dlp 2026.08.19",
+    "format": "18 (public MP4 H264/AAC)",
+    "arguments": "--js-runtimes node --remote-components ejs:github --no-playlist --write-info-json",
+    "note": "Standard unauthenticated public YouTube download. No DRM, paywall, geo-proxy, credentials, or access-control bypass used. Default attempt without JS solver incorrectly returned unavailable."
+  },
+  "germanAudioEvidence": {
+    "method": "faster-whisper base automatic language detection (not forced)",
+    "language": "de",
+    "windows": [
+      {
+        "start": 5,
+        "end": 35,
+        "probability": 0.9945825934410095
+      },
+      {
+        "start": 50,
+        "end": 80,
+        "probability": 0.9943424463272095
+      },
+      {
+        "start": 95,
+        "end": 125,
+        "probability": 0.9943987727165222
+      }
+    ],
+    "evidenceFile": "language-check.json",
+    "warning": "MP4 audio metadata tag says eng, which conflicts with acoustic ASR; do not use track tag as language proof."
+  },
+  "audioMeasurement": {
+    "tool": "earshot measure light",
+    "lufs": -19.2,
+    "truePeakDbtp": -6.4,
+    "clippedSamples": 0,
+    "file": "earshot-measure.json"
+  },
+  "description": "Abonniert uns für noch mehr: http://smarturl.it/NickelodeonDE\nDie Pinguine aus Madagascar sind auf geheimer Mission - der Snack Vorratsraum soll geplündert werden! Was sie dort finden entspricht nicht so ganz ihren Vorstellungen..\n\nDie Agenten-Pinguine aus den beiden \"Madagascar\"-Kinohits gehen bei uns an den Start: In der computeranimierten Trickfilmserie aus den weltberühmten DreamWorks-Studios erleben die Frackträger Kowalski, Private, Rico und Skipper zum Schreien komische Abenteuer und bringen kleine und große Zuschauer zum Lachen. Mit dabei sind natürlich auch die anderen Zoobewohner, die allesamt mindestens so originell und witzig sind wie die Pinguine selbst.\n\nMehr Programm Infos findet ihr auch auf unserer Website: http://www.nick.de/\n\nTatatataaaa! Willkommen auf dem offiziellen YouTube Kanal von Nickelodeon Deutschland. Schaut Euch hier die neuesten Trailer und spannende Ausschnitte der beliebtesten Nickelodeon-Serien an. Hier findet ihr Eure Lieblingssendungen wie 'SpongeBob Schwammkopf', 'Jimmy Neutron' oder 'Die Pinguine aus Madagaskar'! Wir haben auch viel Neues für Euch, z.B. 'Dora' und 'Backyardigans -- Die Hinterhofzwerge', den Superheld-Cartoon 'Danny Phantom' sowie erfolgreiche Live-Action-Serien wie iCarly, Victorious, Das Haus Anubis und Big Time Rush! Wir wünschen Euch ganz viel Spaß!\n\nAbonniert uns direkt für noch mehr: http://smarturl.it/NickelodeonDE\n\nWerdet Fan auf Facebook: https://www.facebook.com/nickelodeondeutschland\n\nFolgt uns auf Google+: https://plus.google.com/+nickelodeonoffiziell/\n\nEin Bild sagt mehr als 1000 Worte: http://instagram.com/nickelodeon_north",
+  "limitations": [
+    "360p source; public availability is not a grant of redistribution rights.",
+    "Transcript is machine-derived and requires editorial review for cartoon names, overlapping dialogue, and boundaries.",
+    "No claim of personal hearing; language verified by local ASR."
+  ]
+}

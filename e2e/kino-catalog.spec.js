@@ -12,7 +12,7 @@ test('Kino starts with one row of covers and titles; a film opens its own parts'
   page.on('pageerror', e => errors.push(e.message));
   await page.setViewportSize({ width: 1440, height: 1000 });
   await openCatalog(page);
-  await expect(page.locator('.kino-film-card')).toHaveCount(10);
+  await expect(page.locator('.kino-film-card')).toHaveCount(13);
   await expect(page.locator('#kinoDiscovery')).toBeHidden();
   await expect(page.locator('#kinoPeppaChapters')).toBeHidden();
   for (const card of await page.locator('.kino-film-card').all()) {
@@ -23,7 +23,7 @@ test('Kino starts with one row of covers and titles; a film opens its own parts'
   const tops = await page.locator('.kino-film-card img').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().top));
   expect(new Set(tops).size).toBe(1);
   await page.screenshot({ path: path.join(__dirname, '../review-assets/kino-catalog-desktop.png') });
-  for (const [key, count] of [['peppa_supermarkt', 5], ['pizzaschwester', 3], ['babysitter', 4], ['hans', 4], ['trudes_fahrstuhl', 5], ['erdmaennchen_nudeltrick', 7], ['erdmaennchen_schmucklose', 7], ['we_bare_bears_mall', 3], ['frieren_s01e01', 7], ['sakura_s01e01', 8]]) {
+  for (const [key, count] of [['peppa_supermarkt', 5], ['pizzaschwester', 3], ['babysitter', 4], ['hans', 4], ['trudes_fahrstuhl', 5], ['erdmaennchen_nudeltrick', 7], ['erdmaennchen_schmucklose', 7], ['we_bare_bears_mall', 3], ['frieren_s01e01', 7], ['sakura_s01e01', 8], ['spongebob_pizza', 3], ['pinguine_popcorn_panik', 3], ['courage_diamantraub', 2]]) {
     await page.locator(`.kino-film-card[data-movie="${key}"]`).click();
     await expect(page.locator('#kinoCatalog')).toBeHidden();
     await expect(page.locator('#kinoCatalogDetailCount')).toHaveText(`${count} phần`);

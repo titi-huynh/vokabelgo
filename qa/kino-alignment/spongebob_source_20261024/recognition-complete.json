@@ -1,0 +1,16 @@
+{
+  "model": "small",
+  "device": "cpu",
+  "compute_type": "int8",
+  "cpu_threads": 2,
+  "language": "de",
+  "languageProbability": 1.0,
+  "duration": 301.139625,
+  "segments": 107,
+  "wordCount": 540,
+  "beam_size": 5,
+  "condition_on_previous_text": false,
+  "word_timestamps": true,
+  "elapsedSeconds": 217.6,
+  "reviewStatus": "machine ASR; transcript and exact boundaries need editorial review"
+}

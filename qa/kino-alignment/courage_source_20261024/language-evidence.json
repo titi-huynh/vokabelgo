@@ -1,0 +1,48 @@
+{
+  "model": "faster-whisper small int8 CPU",
+  "language": "de",
+  "languageProbability": 0.9888100028038025,
+  "sampleSeconds": [
+    0,
+    45
+  ],
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 9.0,
+      "text": " Aber das muss ein Missverständnis sein.",
+      "avg_logprob": -0.2856011487999741
+    },
+    {
+      "start": 9.0,
+      "end": 11.0,
+      "text": " Ganz sicher nicht.",
+      "avg_logprob": -0.2856011487999741
+    },
+    {
+      "start": 16.0,
+      "end": 19.0,
+      "text": " Sehen Sie, da sind Sie mit dem Diamant.",
+      "avg_logprob": -0.2856011487999741
+    },
+    {
+      "start": 25.0,
+      "end": 28.0,
+      "text": " Sie haben das Recht, die Aussage zu verweigern.",
+      "avg_logprob": -0.2856011487999741
+    },
+    {
+      "start": 28.0,
+      "end": 35.0,
+      "text": " Ja, mein kleine Langfingere, jetzt haben wir genügend Geld, um deine Schönheit OP zu zahlen.",
+      "avg_logprob": -0.2572137514750163
+    },
+    {
+      "start": 36.0,
+      "end": 42.0,
+      "text": " Ach, da kommen unsere Nachbarn, denen zeige ich, wie man mit Verfolgern umgeht.",
+      "avg_logprob": -0.2572137514750163
+    }
+  ],
+  "limitation": "Machine ASR evidence, not human listening or reviewed lesson captions."
+}

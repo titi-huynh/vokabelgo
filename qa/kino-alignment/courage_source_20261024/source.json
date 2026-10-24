@@ -1,0 +1,69 @@
+{
+  "key": "courage_diamantraub",
+  "title": "Diamantraub | Courage der feige Hund | Cartoon Network",
+  "uploader": "Cartoon Network Deutschland",
+  "channelId": "UC_7a7x7rwQQgzNr7tfH4CZw",
+  "channelIsVerified": true,
+  "sourceUrl": "https://www.youtube.com/watch?v=QVVX49ssitY",
+  "uploadDate": "20110111",
+  "retrievedAt": "2026-10-24",
+  "availability": "public",
+  "durationSeconds": 152.044263,
+  "isExcerpt": true,
+  "excerptNote": "Official 2:32 promotional story clip Diamantraub; not a complete episode. Published description: Muriel is mistaken for a diamond thief; Courage must catch the real thief.",
+  "localFile": "video/courage_diamantraub.mp4",
+  "bytes": 7524288,
+  "sha256": "7bca344151bb77d5c610c4418e401ebf697b249217bd114c4ea60797bbf5f0b5",
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "resolution": "480x360",
+  "aspectRatio": "4:3",
+  "fps": 25,
+  "sampleRate": 44100,
+  "channels": 2,
+  "germanAudioEvidence": {
+    "method": "Local faster-whisper small automatic language detection, first 45s",
+    "language": "de",
+    "languageProbability": 0.9888100028038025,
+    "file": "qa/kino-alignment/courage_source_20261024/language-evidence.json",
+    "sampleTranscript": "Aber das muss ein Missverständnis sein."
+  },
+  "decodeVerification": {
+    "method": "ffmpeg whole-file decode to null",
+    "errors": 0
+  },
+  "downloadMethod": "yt-dlp official standard playback extractor; node runtime and official ejs:github challenge solver. No cookies, payment or access-control bypass.",
+  "audioMeasurements": {
+    "lufs": -19.0,
+    "truePeakDbtp": -8.9,
+    "clippedSamples": 0,
+    "file": "qa/kino-alignment/courage_source_20261024/earshot-measure.txt"
+  },
+  "limitations": [
+    "Publisher availability and verified status do not grant rights to redistribute or reuse; no reuse license inferred.",
+    "Audio language is supported by local ASR, not human listening.",
+    "Machine word timings need editorial review; loud cartoon effects can cause hallucinated words.",
+    "Container language tags may be inaccurate; use ASR evidence.",
+    "Old official clip is 480x360 (4:3)."
+  ],
+  "rejectedCandidates": [
+    {
+      "url": "https://serienstream.to/serie/courage-der-feige-hund",
+      "reason": "Catalog only; actual media, language, and source rights unverified. Not used."
+    }
+  ],
+  "asrEvidenceFiles": [
+    "recognized-words.json",
+    "recognition-complete.json",
+    "medium-review-words.json",
+    "medium-review-complete.json",
+    "closing-idiom-check.json"
+  ],
+  "contentDraft": {
+    "file": "content-draft.json",
+    "status": "needs-root-editorial-review",
+    "cueCount": 12,
+    "vocabularyCount": 12,
+    "chapters": 2
+  }
+}

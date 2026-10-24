@@ -504,7 +504,9 @@ const KinoChapters = (() => {
     document.getElementById('peppaLight').setAttribute('aria-pressed', String(state.mode === 'light'));
     document.getElementById('peppaAll').setAttribute('aria-pressed', String(state.mode === 'all'));
     const chapterCueCount = selected(chapter, 'all').length;
-    document.getElementById('peppaLight').textContent = config.defaultMode === 'all' ? '7 câu trọng tâm' : '7 câu gợi ý';
+    const highlightCount = selected(chapter, 'light').length;
+    document.getElementById('peppaLight').textContent = `${highlightCount} câu ${config.defaultMode === 'all' ? 'trọng tâm' : 'gợi ý'}`;
+    document.getElementById('peppaPractice').textContent = `Luyện ${highlightCount} câu →`;
     const allLabel = config.allLabel || 'Toàn bộ lời thoại';
     document.getElementById('peppaAll').textContent = config.defaultMode === 'all' ? allLabel : 'Thêm câu thoại';
     document.getElementById('peppaWatchStatus').textContent = config.defaultMode === 'all'

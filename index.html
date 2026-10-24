@@ -8263,6 +8263,30 @@ input.search:focus {
                   <span class="kino-dd-item-check">✓</span>
                 </button>
                 <div class="kino-dd-group-divider"></div>
+                <div class="kino-dd-group-divider"></div>
+                <div class="kino-dd-group-header">🐧 Die Pinguine aus Madagascar</div>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_pinguine_popcorn_panik" data-key="pinguine_popcorn_panik" onclick="selectKinoMovie('pinguine_popcorn_panik')">
+                  <span class="kino-dd-item-icon">🐧</span>
+                  <div class="kino-dd-item-info"><span class="kino-dd-item-name">Popcorn-Panik (Đoạn trích)</span><span class="kino-dd-item-sub">3 phần · Lời thoại chọn lọc</span></div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_pinguine_popcorn_panik">3 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
+                <div class="kino-dd-group-divider"></div>
+                <div class="kino-dd-group-header">💎 Courage der feige Hund</div>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_courage_diamantraub" data-key="courage_diamantraub" onclick="selectKinoMovie('courage_diamantraub')">
+                  <span class="kino-dd-item-icon">💎</span>
+                  <div class="kino-dd-item-info"><span class="kino-dd-item-name">Diamantraub (Đoạn trích)</span><span class="kino-dd-item-sub">2 phần · Lời thoại chọn lọc</span></div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_courage_diamantraub">2 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
+                <div class="kino-dd-group-divider"></div>
+                <div class="kino-dd-group-header">🍕 SpongeBob Schwammkopf</div>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_spongebob_pizza" data-key="spongebob_pizza" onclick="selectKinoMovie('spongebob_pizza')">
+                  <span class="kino-dd-item-icon">🍕</span>
+                  <div class="kino-dd-item-info"><span class="kino-dd-item-name">Krosse Krabbe Pizza (Đoạn trích)</span><span class="kino-dd-item-sub">3 phần · Lời thoại chọn lọc</span></div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_spongebob_pizza">3 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
                 <div class="kino-dd-group-header">🐻 We Bare Bears</div>
                 <button type="button" class="kino-dropdown-item" id="kinoDD_we_bare_bears_mall" data-key="we_bare_bears_mall" onclick="selectKinoMovie('we_bare_bears_mall')">
                   <span class="kino-dd-item-icon">🛍️</span>
@@ -14342,6 +14366,9 @@ VIDEO_FLASHCARDS.push(...HANS_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...TRUDES_FAHRSTUHL_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...ERDMAENNCHEN_NUDELTRICK_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...ERDMAENNCHEN_SCHMUCKLOSE_LESSON.flashcards);
+VIDEO_FLASHCARDS.push(...PINGUINE_POPCORN_PANIK_LESSON.flashcards);
+VIDEO_FLASHCARDS.push(...COURAGE_DIAMANTRAUB_LESSON.flashcards);
+VIDEO_FLASHCARDS.push(...SPONGEBOB_PIZZA_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...WE_BARE_BEARS_MALL_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...FRIEREN_S01E01_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...SAKURA_S01E01_LESSON.flashcards);
@@ -18760,6 +18787,9 @@ const KINO_VIDEOS = {
   trudes_fahrstuhl: { ...TRUDES_FAHRSTUHL_LESSON.video, get defaultSegs() { return TRUDES_FAHRSTUHL_ALIGNED_UTTERANCES; } },
   erdmaennchen_nudeltrick: { ...ERDMAENNCHEN_NUDELTRICK_LESSON.video, get defaultSegs() { return ERDMAENNCHEN_NUDELTRICK_ALIGNED_UTTERANCES; } },
   erdmaennchen_schmucklose: { ...ERDMAENNCHEN_SCHMUCKLOSE_LESSON.video, get defaultSegs() { return ERDMAENNCHEN_SCHMUCKLOSE_ALIGNED_UTTERANCES; } },
+  pinguine_popcorn_panik: { ...PINGUINE_POPCORN_PANIK_LESSON.video, get defaultSegs() { return PINGUINE_POPCORN_PANIK_ALIGNED_UTTERANCES; } },
+  courage_diamantraub: { ...COURAGE_DIAMANTRAUB_LESSON.video, get defaultSegs() { return COURAGE_DIAMANTRAUB_ALIGNED_UTTERANCES; } },
+  spongebob_pizza: { ...SPONGEBOB_PIZZA_LESSON.video, get defaultSegs() { return SPONGEBOB_PIZZA_ALIGNED_UTTERANCES; } },
   we_bare_bears_mall: { ...WE_BARE_BEARS_MALL_LESSON.video, get defaultSegs() { return WE_BARE_BEARS_MALL_ALIGNED_UTTERANCES; } },
   hans: { ...HANS_LESSON.video, get defaultSegs() { return HANS_ALIGNED_UTTERANCES; } },
   peppa_supermarkt: {

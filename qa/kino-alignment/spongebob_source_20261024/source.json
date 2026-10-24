@@ -1,0 +1,58 @@
+{
+  "key": "spongebob_pizza",
+  "title": "SpongeBob Schwammkopf | 5-Minuten-Episoden | Krosse Krabbe Pizza | Nickelodeon Deutschland",
+  "sourceUrl": "https://www.youtube.com/watch?v=wxJnojpxPe8",
+  "uploader": "Nickelodeon Deutschland",
+  "channelId": "UCQU3PO2g_rmqbmr8VJWvrsA",
+  "channelIsVerified": true,
+  "uploadDate": "20201006",
+  "isExcerpt": true,
+  "excerptNote": "Publisher five-minute condensed Pizza-Heimservice clip; not a complete original broadcast episode.",
+  "localFile": "video/spongebob_pizza.mp4",
+  "durationSeconds": 301.139592,
+  "bytes": 17860400,
+  "sha256": "241c5cf57f3e8fe37942d779591275629bd3674669d733d63b8348027e6b0b98",
+  "germanAudioEvidence": {
+    "language": "de",
+    "method": "Local faster-whisper small automatic language detection on three independent windows; no forced language for these samples",
+    "checks": [
+      {
+        "start": 10,
+        "end": 40,
+        "language": "de",
+        "probability": 0.9938794374465942
+      },
+      {
+        "start": 90,
+        "end": 120,
+        "language": "de",
+        "probability": 0.9981088638305664
+      },
+      {
+        "start": 180,
+        "end": 210,
+        "language": "de",
+        "probability": 0.9899391531944275
+      }
+    ]
+  },
+  "reviewedLesson": {
+    "file": "lesson-content.json",
+    "cues": 60,
+    "chapters": 3,
+    "vocabulary": 18,
+    "reviewScope": "Selected speech only; small/base machine ASR and source frame comparisons, not native-human full listening review"
+  },
+  "audioMeasurements": {
+    "method": "earshot measure MCP, local file, light=true",
+    "source": "tmp/codex-spongebob-assist/pizza.mp4",
+    "durationSeconds": 301.14,
+    "integratedLufs": -14.6,
+    "truePeakDbtp": -3.2,
+    "loudnessRangeLu": 6.0,
+    "clippedSamples": 0,
+    "note": "Exact meter readings; these do not verify transcription accuracy. No audio uploaded to an external model."
+  },
+  "acquisition": "Ordinary public official-publisher YouTube playback extraction with yt-dlp Node/EJS, no account or paid API.",
+  "retrievedDate": "2026-10-24"
+}

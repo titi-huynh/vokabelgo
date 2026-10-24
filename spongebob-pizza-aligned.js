@@ -1,0 +1,544 @@
+// Selected German–Vietnamese dialogue from the unchanged publisher clip; uncertain speech and music omitted.
+const SPONGEBOB_PIZZA_CAPTION_CUES = [
+  {
+    "id": 1200101,
+    "start": 1.02,
+    "end": 3.26,
+    "speaker": "Thaddäus",
+    "text": "Ich geh ran, ich geh ran, komme schon!",
+    "vi": "Tôi nghe máy đây, tôi nghe đây, ra ngay đây!",
+    "parentId": 1200101
+  },
+  {
+    "id": 1200102,
+    "start": 9.82,
+    "end": 12.48,
+    "speaker": "Mr. Krabs",
+    "text": "Pizza? Natürlich haben wir Pizza!",
+    "vi": "Pizza hả? Tất nhiên là chúng tôi có pizza rồi!",
+    "parentId": 1200102
+  },
+  {
+    "id": 1200103,
+    "start": 12.76,
+    "end": 13.58,
+    "speaker": "Thaddäus",
+    "text": "Ähm, Mr. Krabs?",
+    "vi": "Ờm, ông Krabs?",
+    "parentId": 1200103
+  },
+  {
+    "id": 1200104,
+    "start": 16.74,
+    "end": 19.48,
+    "speaker": "Thaddäus",
+    "text": "Aber Mr. Krabs, wir bieten da keine Pizza an.",
+    "vi": "Nhưng ông Krabs ơi, ở đây chúng ta đâu có bán pizza.",
+    "parentId": 1200104
+  },
+  {
+    "id": 1200105,
+    "start": 22.88,
+    "end": 24.88,
+    "speaker": "Thaddäus",
+    "text": "Und wir liefern auch nicht.",
+    "vi": "Và chúng ta cũng đâu có giao hàng.",
+    "parentId": 1200105
+  },
+  {
+    "id": 1200106,
+    "start": 25.22,
+    "end": 26.46,
+    "speaker": "Mr. Krabs",
+    "text": "Wir liefern auch nicht!",
+    "vi": "Chúng ta cũng đâu có giao hàng à!",
+    "parentId": 1200106
+  },
+  {
+    "id": 1200107,
+    "start": 26.78,
+    "end": 27.84,
+    "speaker": "Mr. Krabs",
+    "text": "Du wirst das tun.",
+    "vi": "Cậu sẽ làm việc đó.",
+    "parentId": 1200107
+  },
+  {
+    "id": 1200108,
+    "start": 29.26,
+    "end": 31.42,
+    "speaker": "SpongeBob",
+    "text": "Heute schreiben wir Geschichte, Thaddäus.",
+    "vi": "Hôm nay chúng ta làm nên lịch sử đấy, Thaddäus.",
+    "parentId": 1200108
+  },
+  {
+    "id": 1200109,
+    "start": 31.66,
+    "end": 35.82,
+    "speaker": "SpongeBob",
+    "text": "Dieser glückliche Kunde bekommt die erste Krabbenburger-Pizza überhaupt.",
+    "vi": "Vị khách may mắn này sẽ nhận được chiếc pizza burger cua đầu tiên từ trước đến nay.",
+    "parentId": 1200109
+  },
+  {
+    "id": 1200110,
+    "start": 36.06,
+    "end": 38.3,
+    "speaker": "Thaddäus",
+    "text": "Na toll, dann darfst du auch fahren.",
+    "vi": "Hay lắm, vậy thì cậu được cầm lái luôn đấy.",
+    "parentId": 1200110
+  },
+  {
+    "id": 1200111,
+    "start": 38.7,
+    "end": 40.82,
+    "speaker": "SpongeBob",
+    "text": "Das geht nicht. Ich bin immer noch in der Fahrschule.",
+    "vi": "Không được đâu. Tớ vẫn còn đang học ở trường dạy lái xe mà.",
+    "parentId": 1200111
+  },
+  {
+    "id": 1200112,
+    "start": 41.0,
+    "end": 43.78,
+    "speaker": "Thaddäus",
+    "text": "Stell dich nicht so an, SpongeBob. Das ist gleich um die Ecke.",
+    "vi": "Đừng có làm quá lên thế, SpongeBob. Ngay góc đường thôi mà.",
+    "parentId": 1200112
+  },
+  {
+    "id": 1200113,
+    "start": 45.52,
+    "end": 47.92,
+    "speaker": "Thaddäus",
+    "text": "Mach einfach dasselbe wie in der Fahrschule.",
+    "vi": "Cứ làm y hệt như ở trường dạy lái xe thôi.",
+    "parentId": 1200113
+  },
+  {
+    "id": 1200114,
+    "start": 48.14,
+    "end": 49.24,
+    "speaker": "SpongeBob",
+    "text": "Naja, okay.",
+    "vi": "Thôi được, đồng ý.",
+    "parentId": 1200114
+  },
+  {
+    "id": 1200115,
+    "start": 50.5,
+    "end": 52.1,
+    "speaker": "SpongeBob",
+    "text": "Moment, wie war das noch?",
+    "vi": "Khoan đã, làm thế nào ấy nhỉ?",
+    "parentId": 1200115
+  },
+  {
+    "id": 1200116,
+    "start": 56.58,
+    "end": 58.86,
+    "speaker": "SpongeBob",
+    "text": "Ach so, ausparken.",
+    "vi": "À phải rồi, đánh xe ra khỏi chỗ đỗ.",
+    "parentId": 1200116
+  },
+  {
+    "id": 1200117,
+    "start": 77.92,
+    "end": 79.18,
+    "speaker": "Thaddäus",
+    "text": "Und weißt du was noch?",
+    "vi": "Và cậu biết còn gì nữa không?",
+    "parentId": 1200117
+  },
+  {
+    "id": 1200118,
+    "start": 79.72,
+    "end": 81.54,
+    "speaker": "Thaddäus",
+    "text": "Du hast den Tank leer gefahren.",
+    "vi": "Cậu chạy cạn sạch bình xăng rồi.",
+    "parentId": 1200118
+  },
+  {
+    "id": 1200119,
+    "start": 87.78,
+    "end": 89.7,
+    "speaker": "Thaddäus",
+    "text": "Und weißt du, was sonst noch ist?",
+    "vi": "Và cậu biết còn chuyện gì nữa không?",
+    "parentId": 1200119
+  },
+  {
+    "id": 1200121,
+    "start": 105.94,
+    "end": 109.64,
+    "speaker": "Thaddäus",
+    "text": "Jetzt lass doch endlich diese idiotische Pizza los.",
+    "vi": "Giờ thì buông cái bánh pizza ngớ ngẩn đó ra đi chứ.",
+    "parentId": 1200121
+  },
+  {
+    "id": 1200122,
+    "start": 109.9,
+    "end": 111.44,
+    "speaker": "SpongeBob",
+    "text": "Das geht nicht, die ist für den Kunden.",
+    "vi": "Không được đâu, cái này là dành cho khách hàng.",
+    "parentId": 1200122
+  },
+  {
+    "id": 1200123,
+    "start": 111.44,
+    "end": 114.04,
+    "speaker": "Thaddäus",
+    "text": "Was glaubst du, wie egal mir der Kunde ist?",
+    "vi": "Cậu nghĩ xem tôi có thèm quan tâm đến khách hàng không hả?",
+    "parentId": 1200123
+  },
+  {
+    "id": 1200124,
+    "start": 114.26,
+    "end": 114.72,
+    "speaker": "SpongeBob",
+    "text": "Mir nicht!",
+    "vi": "Tớ thì có quan tâm!",
+    "parentId": 1200124
+  },
+  {
+    "id": 1200125,
+    "start": 117.02,
+    "end": 118.82,
+    "speaker": "SpongeBob",
+    "text": "Also, Thaddäus!",
+    "vi": "Thôi nào, Thaddäus!",
+    "parentId": 1200125
+  },
+  {
+    "id": 1200126,
+    "start": 120.04,
+    "end": 122.06,
+    "speaker": "Thaddäus",
+    "text": "Lass die Pizza los!",
+    "vi": "Buông chiếc pizza ra!",
+    "parentId": 1200126
+  },
+  {
+    "id": 1200127,
+    "start": 122.66,
+    "end": 123.24,
+    "speaker": "SpongeBob",
+    "text": "Nein!",
+    "vi": "Không!",
+    "parentId": 1200127
+  },
+  {
+    "id": 1200128,
+    "start": 126.54,
+    "end": 129.0,
+    "speaker": "Thaddäus",
+    "text": "Halt bloß die Pizza fest!",
+    "vi": "Nhớ giữ chặt lấy chiếc pizza đấy!",
+    "parentId": 1200128
+  },
+  {
+    "id": 1200129,
+    "start": 141.44,
+    "end": 145.28,
+    "speaker": "Thaddäus",
+    "text": "Wo, wo, wo ist die Straße? Wo, wo ist die Straße?",
+    "vi": "Đường đâu, đường đâu rồi? Đường ở đâu rồi?",
+    "parentId": 1200129
+  },
+  {
+    "id": 1200130,
+    "start": 146.16,
+    "end": 147.28,
+    "speaker": "Thaddäus",
+    "text": "Wir sind am Ende.",
+    "vi": "Chúng ta tiêu đời rồi.",
+    "parentId": 1200130
+  },
+  {
+    "id": 1200131,
+    "start": 148.02,
+    "end": 149.76,
+    "speaker": "Thaddäus",
+    "text": "Wie, wie kommen wir jetzt nach Hause?",
+    "vi": "Làm sao, làm sao chúng ta về nhà bây giờ?",
+    "parentId": 1200131
+  },
+  {
+    "id": 1200132,
+    "start": 150.26,
+    "end": 152.36,
+    "speaker": "Thaddäus",
+    "text": "Welche Richtung? Was machen wir jetzt bloß?",
+    "vi": "Hướng nào đây? Giờ chúng ta biết làm sao đây?",
+    "parentId": 1200132
+  },
+  {
+    "id": 1200133,
+    "start": 152.52,
+    "end": 153.62,
+    "speaker": "SpongeBob",
+    "text": "Hier gibt es keine Straße.",
+    "vi": "Ở đây chẳng có con đường nào cả.",
+    "parentId": 1200133
+  },
+  {
+    "id": 1200135,
+    "start": 160.56,
+    "end": 162.12,
+    "speaker": "Thaddäus",
+    "text": "Gut, dann geh ich hierhin.",
+    "vi": "Tốt, vậy tôi đi hướng này.",
+    "parentId": 1200135
+  },
+  {
+    "id": 1200136,
+    "start": 162.62,
+    "end": 164.9,
+    "speaker": "SpongeBob",
+    "text": "Thaddäus, warte! Ich glaube nicht...",
+    "vi": "Thaddäus, đợi đã! Tớ không nghĩ...",
+    "parentId": 1200136
+  },
+  {
+    "id": 1200137,
+    "start": 164.92,
+    "end": 166.76,
+    "speaker": "Thaddäus",
+    "text": "Vertrau mir, ich weiß, was ich tu.",
+    "vi": "Tin tôi đi, tôi biết mình đang làm gì mà.",
+    "parentId": 1200137
+  },
+  {
+    "id": 1200138,
+    "start": 202.8,
+    "end": 204.12,
+    "speaker": "SpongeBob",
+    "text": "Wir sind gerettet!",
+    "vi": "Chúng ta được cứu rồi!",
+    "parentId": 1200138
+  },
+  {
+    "id": 1200139,
+    "start": 204.42,
+    "end": 207.14,
+    "speaker": "Thaddäus",
+    "text": "Das ist doch bloß so ein blöder Brocken.",
+    "vi": "Đó chỉ là một tảng đá ngớ ngẩn thôi mà.",
+    "parentId": 1200139
+  },
+  {
+    "id": 1200140,
+    "start": 207.4,
+    "end": 209.74,
+    "speaker": "SpongeBob",
+    "text": "Das ist eben nicht bloß ein Brocken.",
+    "vi": "Đó hoàn toàn không chỉ là một tảng đá đâu.",
+    "parentId": 1200140
+  },
+  {
+    "id": 1200141,
+    "start": 210.32,
+    "end": 211.54,
+    "speaker": "SpongeBob",
+    "text": "Das ist ein Fels.",
+    "vi": "Đó là một tảng đá lớn.",
+    "parentId": 1200141
+  },
+  {
+    "id": 1200142,
+    "start": 217.16,
+    "end": 220.84,
+    "speaker": "SpongeBob",
+    "text": "Ich kann es kaum erwarten, den Gesichtsausdruck unseres Kunden zu sehen!",
+    "vi": "Tớ nóng lòng muốn thấy nét mặt của vị khách hàng quá đi mất!",
+    "parentId": 1200142
+  },
+  {
+    "id": 1200143,
+    "start": 224.42,
+    "end": 225.02,
+    "speaker": "Kunde",
+    "text": "Ja?",
+    "vi": "Vâng?",
+    "parentId": 1200143
+  },
+  {
+    "id": 1200144,
+    "start": 225.64,
+    "end": 228.92,
+    "speaker": "SpongeBob",
+    "text": "Herzlichen Glückwunsch, Sir! Ihre Krosse-Krabbe-Pizza ist da!",
+    "vi": "Xin chúc mừng ngài! Bánh pizza Krosse Krabbe của ngài đã tới!",
+    "parentId": 1200144
+  },
+  {
+    "id": 1200145,
+    "start": 229.08,
+    "end": 231.5,
+    "speaker": "Kunde",
+    "text": "Wow, danke! Ich habe mich schon so darauf gefreut.",
+    "vi": "Chà, cảm ơn nhé! Tôi đã mong chờ nó lắm đấy.",
+    "parentId": 1200145
+  },
+  {
+    "id": 1200146,
+    "start": 232.08,
+    "end": 233.36,
+    "speaker": "Kunde",
+    "text": "Wo ist mein Getränk?",
+    "vi": "Đồ uống của tôi đâu?",
+    "parentId": 1200146
+  },
+  {
+    "id": 1200147,
+    "start": 234.24,
+    "end": 235.3,
+    "speaker": "SpongeBob",
+    "text": "Welches Getränk?",
+    "vi": "Đồ uống nào cơ ạ?",
+    "parentId": 1200147
+  },
+  {
+    "id": 1200148,
+    "start": 235.6,
+    "end": 238.2,
+    "speaker": "Kunde",
+    "text": "Mein Getränk? Meine Diätkola!",
+    "vi": "Đồ uống của tôi? Lon cola ăn kiêng của tôi!",
+    "parentId": 1200148
+  },
+  {
+    "id": 1200149,
+    "start": 238.66,
+    "end": 240.9,
+    "speaker": "Kunde",
+    "text": "Sag bloß nicht, du hast mein Getränk vergessen!",
+    "vi": "Đừng nói với tôi là cậu quên đồ uống của tôi nhé!",
+    "parentId": 1200149
+  },
+  {
+    "id": 1200150,
+    "start": 241.22,
+    "end": 242.96,
+    "speaker": "SpongeBob",
+    "text": "Aber, Sie haben gar kein Getränk...",
+    "vi": "Nhưng ngài đâu có gọi đồ uống nào...",
+    "parentId": 1200150
+  },
+  {
+    "id": 1200151,
+    "start": 242.96,
+    "end": 246.48,
+    "speaker": "Kunde",
+    "text": "Und wie soll ich bitte diese Pizza ohne ein Getränk essen?",
+    "vi": "Vậy xin hỏi làm sao tôi ăn cái bánh pizza này mà không có đồ uống được chứ?",
+    "parentId": 1200151
+  },
+  {
+    "id": 1200152,
+    "start": 250.4,
+    "end": 252.82,
+    "speaker": "Kunde",
+    "text": "Und du willst ein Lieferjunge sein?",
+    "vi": "Mà cậu tự nhận mình là nhân viên giao hàng đấy à?",
+    "parentId": 1200152
+  },
+  {
+    "id": 1200153,
+    "start": 253.16,
+    "end": 254.06,
+    "speaker": "Kunde",
+    "text": "Behalt deinen Dreck!",
+    "vi": "Giữ lấy thứ rác rưởi của cậu đi!",
+    "parentId": 1200153
+  },
+  {
+    "id": 1200154,
+    "start": 259.62,
+    "end": 261.22,
+    "speaker": "Thaddäus",
+    "text": "Ach, Schwamm drüber.",
+    "vi": "Thôi, bỏ qua chuyện đó đi.",
+    "parentId": 1200154
+  },
+  {
+    "id": 1200155,
+    "start": 276.38,
+    "end": 277.74,
+    "speaker": "Kunde",
+    "text": "Schon wieder einer?",
+    "vi": "Lại thêm một kẻ nữa à?",
+    "parentId": 1200155
+  },
+  {
+    "id": 1200156,
+    "start": 278.16,
+    "end": 281.1,
+    "speaker": "Kunde",
+    "text": "Ich hab deinem kleinen Freund schon gesagt, dass ich die nicht will!",
+    "vi": "Tôi đã bảo anh bạn nhỏ của anh là tôi không cần nó rồi mà!",
+    "parentId": 1200156
+  },
+  {
+    "id": 1200157,
+    "start": 281.16,
+    "end": 283.0,
+    "speaker": "Thaddäus",
+    "text": "Ja, die hier geht aufs Haus!",
+    "vi": "Vâng, cái này là cửa hàng khao đấy!",
+    "parentId": 1200157
+  },
+  {
+    "id": 1200158,
+    "start": 285.74,
+    "end": 288.94,
+    "speaker": "Thaddäus",
+    "text": "Aber selbstverständlich, er hat sie auf einen Bissen gegessen.",
+    "vi": "Ồ dĩ nhiên rồi, ông ấy đã ăn hết sạch chỉ trong một miếng.",
+    "parentId": 1200158
+  },
+  {
+    "id": 1200159,
+    "start": 289.06,
+    "end": 289.94,
+    "speaker": "SpongeBob",
+    "text": "Kein Getränk?",
+    "vi": "Không cần đồ uống ạ?",
+    "parentId": 1200159
+  },
+  {
+    "id": 1200160,
+    "start": 290.18,
+    "end": 292.16,
+    "speaker": "Thaddäus",
+    "text": "Nö, jetzt fahr mich heim.",
+    "vi": "Không, giờ chở tôi về đi.",
+    "parentId": 1200160
+  },
+  {
+    "id": 1200161,
+    "start": 293.5,
+    "end": 295.6,
+    "speaker": "SpongeBob",
+    "text": "Wir kommen gerade noch rechtzeitig zur Arbeit!",
+    "vi": "Chúng ta về vừa kịp giờ làm việc luôn!",
+    "parentId": 1200161
+  },
+  {
+    "id": 1200162,
+    "start": 297.7,
+    "end": 298.22,
+    "speaker": "Thaddäus",
+    "text": "Arbeit?",
+    "vi": "Làm việc á?",
+    "parentId": 1200162
+  }
+];
+const SPONGEBOB_PIZZA_ALIGNED_UTTERANCES = SPONGEBOB_PIZZA_CAPTION_CUES.map(cue => ({ ...cue }));

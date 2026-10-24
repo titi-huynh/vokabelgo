@@ -1,0 +1,19 @@
+{
+  "selectedCues": 60,
+  "excludedDraftCues": [
+    {
+      "id": 1200120,
+      "reason": "Speaker attribution at90sec not independently resolved; no vocabulary/highlight depends on this line."
+    },
+    {
+      "id": 1200134,
+      "reason": "Moos/inRichtung wording inferred in draft from picture; both independent ASR passes distort it, so omit rather than infer the quote."
+    }
+  ],
+  "notes": [
+    "Mr.Krabs speaker at25.8sec confirmed in speaker-sheet-verify.jpg; retain draft cue1200106.",
+    "Clarified Vietnamese Mir nicht! to Tớ thì có quan tâm! from customer-indifference context.",
+    "No song lyrics or noisy parking/tornado cries included.",
+    "Other word choices compared with codex-base-recheck.json; source accents/contractions retained where intelligible."
+  ]
+}

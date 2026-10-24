@@ -1,0 +1,32 @@
+{
+  "status": "editorial-draft-needs-independent-review",
+  "evidence": [
+    "source.json",
+    "ffprobe.json",
+    "language-evidence.json",
+    "recognized-words.json",
+    "medium-review-words.json",
+    "contact-sheet.jpg",
+    "end-contact.jpg",
+    "tv-contact.jpg"
+  ],
+  "speakerEvidence": {
+    "Muriel": "7.5s beside policeman, 123–131s on motorbike",
+    "Polizist": "7.5–27.5s holding Muriel and showing the van",
+    "Diebin": "Muriel lookalike without spectacles driving van, 28–42s and115–119s",
+    "Eustace": "58.5–59.5s contact sheet shows him watching the television at home"
+  },
+  "transcriptionLimitations": [
+    "Neither ASR pass is human listening; word ends may include nonverbal sounds.",
+    "The first 4 seconds and final seconds are CN bumpers.",
+    "Large spans 42–57s and60–114s contain chase and sound effects rather than useful dialogue.",
+    "114–119s contains stylized foreign/accented expressions with poor small-ASR log probability -1.446; exclude unless independently checked.",
+    "Both ASR models detect Diamant rather than standard Dativ Diamanten; preserve spoken form, clarify standard grammar in vocabulary note."
+  ],
+  "audioMeters": {
+    "method": "earshot measure light, whole video",
+    "integratedLufs": -19.0,
+    "truePeakDbtp": -8.9,
+    "clippedSamples": 0
+  }
+}

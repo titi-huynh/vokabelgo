@@ -1,0 +1,278 @@
+{
+  "key": "courage_diamantraub",
+  "alias": "courage",
+  "symbol": "COURAGE_DIAMANTRAUB",
+  "stem": "courage-diamantraub",
+  "duration": 152.04,
+  "src": "video/courage_diamantraub.mp4",
+  "sourceUrl": "https://www.youtube.com/watch?v=QVVX49ssitY",
+  "series": "Courage der feige Hund",
+  "episodeTitle": "Diamantraub (Đoạn trích)",
+  "icon": "💎",
+  "summary": "Đoạn trích chính thức: Muriel bị nhận nhầm là kẻ trộm kim cương, còn Courage truy đuổi thủ phạm thật. Phần lớn nửa sau là rượt đuổi bằng hình ảnh và hiệu ứng; bài học dùng lời thoại chọn lọc.",
+  "levelLabel": "Gợi ý A2–B1",
+  "cues": [
+    {
+      "id": 1400101,
+      "start": 6.76,
+      "end": 9.14,
+      "speaker": "Muriel",
+      "text": "Aber das muss ein Missverständnis sein.",
+      "vi": "Nhưng chắc đây là một sự hiểu lầm."
+    },
+    {
+      "id": 1400102,
+      "start": 9.26,
+      "end": 10.2,
+      "speaker": "Polizist",
+      "text": "Ganz sicher nicht.",
+      "vi": "Chắc chắn là không."
+    },
+    {
+      "id": 1400104,
+      "start": 24.94,
+      "end": 27.46,
+      "speaker": "Polizist",
+      "text": "Sie haben das Recht, die Aussage zu verweigern.",
+      "vi": "Bà có quyền từ chối khai báo."
+    },
+    {
+      "id": 1400105,
+      "start": 28.02,
+      "end": 30.18,
+      "speaker": "Diebin",
+      "text": "Ja, mein kleiner Langfinger.",
+      "vi": "Ừ, tên trộm nhỏ của ta."
+    },
+    {
+      "id": 1400106,
+      "start": 30.5,
+      "end": 34.56,
+      "speaker": "Diebin",
+      "text": "Jetzt haben wir genügend Geld, um deine Schönheits-OP zu zahlen.",
+      "vi": "Giờ chúng ta có đủ tiền để trả cho ca phẫu thuật thẩm mỹ của mày."
+    },
+    {
+      "id": 1400107,
+      "start": 35.68,
+      "end": 38.34,
+      "speaker": "Diebin",
+      "text": "Da kommen unsere Nachbarn.",
+      "vi": "Hàng xóm của chúng ta đến kìa."
+    },
+    {
+      "id": 1400108,
+      "start": 38.9,
+      "end": 41.84,
+      "speaker": "Diebin",
+      "text": "Denen zeige ich, wie man mit Verfolgern umgeht.",
+      "vi": "Ta sẽ cho họ thấy cách xử lý những kẻ bám đuổi."
+    },
+    {
+      "id": 1400109,
+      "start": 57.46,
+      "end": 59.98,
+      "speaker": "Eustace",
+      "text": "Der Ton klingt total echt!",
+      "vi": "Âm thanh nghe thật như thật!"
+    },
+    {
+      "id": 1400110,
+      "start": 122.42,
+      "end": 125.08,
+      "speaker": "Muriel",
+      "text": "Die können meine alten Fotos stehlen.",
+      "vi": "Chúng có thể lấy trộm những tấm ảnh cũ của tôi."
+    },
+    {
+      "id": 1400111,
+      "start": 125.26,
+      "end": 127.28,
+      "speaker": "Muriel",
+      "text": "Die können meinen Personalausweis haben.",
+      "vi": "Chúng có thể lấy cả thẻ căn cước của tôi."
+    },
+    {
+      "id": 1400112,
+      "start": 127.44,
+      "end": 131.32,
+      "speaker": "Muriel",
+      "text": "Aber wenn sie mir meinen Courage stehlen, dann kriegen die eins auf die Mütze!",
+      "vi": "Nhưng nếu chúng bắt mất Courage của tôi thì chúng sẽ bị tôi cho một trận!"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Muriel bị nhận nhầm",
+      "icon": "🚓",
+      "start": 0,
+      "end": 27.46,
+      "picks": [
+        1400101,
+        1400102,
+        1400104
+      ],
+      "goal": "Giải thích sự hiểu lầm, nhận diện người trong ảnh và nghe câu thông báo quyền từ chối khai báo."
+    },
+    {
+      "title": "Đuổi theo kẻ trộm kim cương",
+      "icon": "💎",
+      "start": 27.46,
+      "end": 152.04,
+      "picks": [
+        1400105,
+        1400106,
+        1400107,
+        1400108,
+        1400109,
+        1400111,
+        1400112
+      ],
+      "goal": "Nói về số tiền đủ dùng và người bám đuổi; nghe Muriel quyết tâm bảo vệ Courage. Đoạn giữa dài chủ yếu là hành động."
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "missverstaendnis",
+      "term": "das Missverständnis",
+      "meaning": "sự hiểu lầm",
+      "grammar": "das Missverständnis, die Missverständnisse (n.)",
+      "cueId": 1400101,
+      "collocations": [
+        "Das muss ein Missverständnis sein."
+      ],
+      "note": "muss ở đây diễn đạt suy đoán chắc chắn: chắc hẳn là."
+    },
+    {
+      "id": "langfinger",
+      "term": "der Langfinger",
+      "meaning": "kẻ trộm; kẻ hay chôm chỉa",
+      "grammar": "der Langfinger, die Langfinger (m.); khẩu ngữ.",
+      "cueId": 1400105,
+      "collocations": [
+        "mein kleiner Langfinger"
+      ],
+      "note": "Cách gọi hình tượng trong hội thoại, không mang nghĩa đen là ngón tay dài."
+    },
+    {
+      "id": "recht-haben",
+      "term": "das Recht haben",
+      "meaning": "có quyền",
+      "grammar": "das Recht, die Rechte; das Recht haben, etwas zu tun.",
+      "cueId": 1400104,
+      "collocations": [
+        "das Recht haben, zu schweigen",
+        "Sie haben das Recht, ..."
+      ],
+      "note": "Phân biệt das Recht haben (có quyền) và recht haben (nói đúng)."
+    },
+    {
+      "id": "aussage-verweigern",
+      "term": "die Aussage verweigern",
+      "meaning": "từ chối khai báo",
+      "grammar": "die Aussage, die Aussagen; verweigert, verweigerte, hat verweigert.",
+      "cueId": 1400104,
+      "collocations": [
+        "die Aussage verweigern",
+        "eine Aussage machen"
+      ],
+      "note": "zu verweigern là nhóm động từ nguyên mẫu có zu, bổ nghĩa cho das Recht."
+    },
+    {
+      "id": "genuegend",
+      "term": "genügend",
+      "meaning": "đủ",
+      "grammar": "Từ chỉ lượng / tính từ: genügend Geld.",
+      "cueId": 1400106,
+      "collocations": [
+        "genügend Geld haben",
+        "genügend Zeit haben"
+      ],
+      "note": "genügend thường đứng trước danh từ chỉ lượng."
+    },
+    {
+      "id": "nachbar",
+      "term": "der Nachbar",
+      "meaning": "người hàng xóm",
+      "grammar": "der Nachbar, die Nachbarn; danh từ yếu: den/dem Nachbarn.",
+      "cueId": 1400107,
+      "collocations": [
+        "unsere Nachbarn",
+        "mit den Nachbarn sprechen"
+      ],
+      "note": "Nachbarn ở đây là số nhiều."
+    },
+    {
+      "id": "verfolger",
+      "term": "der Verfolger",
+      "meaning": "người đuổi theo",
+      "grammar": "der Verfolger, die Verfolger; Dativ số nhiều: den Verfolgern.",
+      "cueId": 1400108,
+      "collocations": [
+        "mit Verfolgern umgehen",
+        "die Verfolger abschütteln"
+      ],
+      "note": "Trong câu, mit yêu cầu Dativ nên dùng Verfolgern."
+    },
+    {
+      "id": "umgehen-mit",
+      "term": "mit etwas/jemandem umgehen",
+      "meaning": "xử lý; đối phó với",
+      "grammar": "Động từ tách: geht um, ging um, ist umgegangen.",
+      "cueId": 1400108,
+      "collocations": [
+        "mit Problemen umgehen",
+        "mit Verfolgern umgehen"
+      ],
+      "note": "Trong mệnh đề phụ với wie, động từ viết liền ở cuối: umgeht."
+    },
+    {
+      "id": "klingen",
+      "term": "klingen",
+      "meaning": "nghe có vẻ; vang lên",
+      "grammar": "klingt, klang, hat geklungen.",
+      "cueId": 1400109,
+      "collocations": [
+        "echt klingen",
+        "Das klingt gut."
+      ],
+      "note": "klingen + tính từ mô tả ấn tượng qua âm thanh; Eustace đang xem TV ở nhà."
+    },
+    {
+      "id": "stehlen",
+      "term": "stehlen",
+      "meaning": "lấy trộm; đánh cắp",
+      "grammar": "stiehlt, stahl, hat gestohlen.",
+      "cueId": 1400110,
+      "collocations": [
+        "Fotos stehlen",
+        "jemandem etwas stehlen"
+      ],
+      "note": "Muriel dùng lặp Die können ... để tạo đà trước lời đe dọa bảo vệ Courage."
+    },
+    {
+      "id": "personalausweis",
+      "term": "der Personalausweis",
+      "meaning": "thẻ căn cước",
+      "grammar": "der Personalausweis, die Personalausweise (m.).",
+      "cueId": 1400111,
+      "collocations": [
+        "den Personalausweis zeigen",
+        "meinen Personalausweis haben"
+      ],
+      "note": "meinen đứng ở Akkusativ, giống đực, số ít."
+    },
+    {
+      "id": "eins-auf-die-muetze",
+      "term": "eins auf die Mütze kriegen",
+      "meaning": "bị cho một trận; bị đánh",
+      "grammar": "Thành ngữ khẩu ngữ; kriegt, kriegte, hat gekriegt.",
+      "cueId": 1400112,
+      "collocations": [
+        "Du kriegst eins auf die Mütze!"
+      ],
+      "note": "Nghĩa bóng là bị đánh hoặc bị phạt. Small ASR toàn clip và bản cắt riêng đều nhận kriegen; medium nhận nhầm zeigen."
+    }
+  ],
+  "reviewMethod": "Compared local small/medium/base ASR, cropped closing-phrase recheck and source frames; exact inflection at16sec omitted rather than guessed; no native-human full listening approval."
+}

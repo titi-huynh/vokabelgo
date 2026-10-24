@@ -1,5 +1,5 @@
 /* Chapter bounds sit between complete spoken turns; all sources remain original MP4s. */
-const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura' };
+const KINO_ALIASES = { peppa_supermarkt: 'peppa', pizzaschwester: 'pizza', babysitter: 'babysitter', hans: 'hans', trudes_fahrstuhl: 'trude', erdmaennchen_nudeltrick: 'nudeltrick', erdmaennchen_schmucklose: 'schmucklose', pinguine_popcorn_panik: 'pinguine', courage_diamantraub: 'courage', spongebob_pizza: 'spongebob', we_bare_bears_mall: 'bears', frieren_s01e01: 'frieren', sakura_s01e01: 'sakura' };
 const KINO_CHAPTER_DATA = {
   peppa_supermarkt: {
     title: 'Im Supermarkt', series: 'PEPPA WUTZ',
@@ -60,6 +60,9 @@ const KINO_CHAPTER_DATA = {
   trudes_fahrstuhl: { ...TRUDES_FAHRSTUHL_LESSON.chapterData, get cues() { return TRUDES_FAHRSTUHL_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('trudes_fahrstuhl'); } },
   erdmaennchen_nudeltrick: { ...ERDMAENNCHEN_NUDELTRICK_LESSON.chapterData, get cues() { return ERDMAENNCHEN_NUDELTRICK_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('erdmaennchen_nudeltrick'); } },
   erdmaennchen_schmucklose: { ...ERDMAENNCHEN_SCHMUCKLOSE_LESSON.chapterData, get cues() { return ERDMAENNCHEN_SCHMUCKLOSE_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('erdmaennchen_schmucklose'); } },
+  pinguine_popcorn_panik: { ...PINGUINE_POPCORN_PANIK_LESSON.chapterData, get cues() { return PINGUINE_POPCORN_PANIK_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('pinguine_popcorn_panik'); } },
+  courage_diamantraub: { ...COURAGE_DIAMANTRAUB_LESSON.chapterData, get cues() { return COURAGE_DIAMANTRAUB_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('courage_diamantraub'); } },
+  spongebob_pizza: { ...SPONGEBOB_PIZZA_LESSON.chapterData, get cues() { return SPONGEBOB_PIZZA_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('spongebob_pizza'); } },
   we_bare_bears_mall: { ...WE_BARE_BEARS_MALL_LESSON.chapterData, get cues() { return WE_BARE_BEARS_MALL_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('we_bare_bears_mall'); } },
   frieren_s01e01: { ...FRIEREN_S01E01_LESSON.chapterData, get cues() { return FRIEREN_S01E01_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('frieren_s01e01'); } },
   sakura_s01e01: { ...SAKURA_S01E01_LESSON.chapterData, get cues() { return SAKURA_S01E01_ALIGNED_UTTERANCES; }, get captionCues() { return KinoData.captions('sakura_s01e01'); } }
