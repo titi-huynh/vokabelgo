@@ -104,3 +104,57 @@ test('ASR scene (fake adapter): draft -> unreviewed badge -> editor review flips
   expect(after.cue0).toBe('Korrigierter erster Satz.');
   expect(after.label).toContain('Đã rà');
 });
+
+const DE_VTT = [
+  'WEBVTT', '',
+  '00:01.000 --> 00:03.500', 'Guten Morgen, wie geht es dir?', '',
+  '00:04.000 --> 00:06.500', 'Mir geht es gut, danke der Nachfrage.', ''
+].join('\n');
+
+test('user scene via VTT: create dialog accepts WebVTT and the lesson opens', async ({ page }) => {
+  await openCatalog(page);
+  await page.locator('#uscAddBtn').click();
+  await page.locator('#uscVideo').setInputFiles(VIDEO);
+  await page.locator('#uscSrtDe').setInputFiles(tmpSrt('a.de.vtt', DE_VTT));
+  await expect(page.locator('#uscWinInfo')).toContainText('2 câu');
+  await page.locator('#uscCreateBtn').click();
+  await page.waitForURL(/kino=user_/);
+  await expect(page.locator('#kinoOverlayDe')).toContainText('Guten Morgen');
+});
+
+test('editor upgrades: flags, global shift, scene flashcards reach the quiz', async ({ page }) => {
+  await openCatalog(page);
+  const key = await page.evaluate(async () => {
+    const texts = [
+      'Der Garten ist gross und der Garten ist schoen.',
+      'Im Garten steht ein alter Baum und ein Hund.',
+      'Der Hund laeuft durch den Garten zum Baum.',
+      'Ein Vogel sitzt auf dem Baum im Garten.'];
+    const cues = texts.map((t, i) => ({ id: i + 1, parentId: i + 1, start: i * 4, end: i * 4 + 3, text: t, vi: 'Câu ' + (i + 1) }));
+    cues.push({ id: 5, parentId: 5, start: 16, end: 25.5, text: 'Ein viel zu langer Satz der einfach nicht enden will.', vi: '' });
+    const blob = await (await fetch('assets/kino-posters/hans-1.jpg')).blob();
+    const scene = await window.UserScenes.create({ title: 'Cảnh nâng cấp', source: 'asr', reviewed: false, duration: 26, videoBlob: blob, poster: '', cues, chapters: window.SrtAlign.draftChapters(cues, 150) });
+    window.UserScenesUI.renderSection();
+    return window.UserScenes.keyOf(scene.id);
+  });
+  await page.locator('.usc-edit').click();
+  await expect(page.locator('#uscEditorDialog')).toBeVisible();
+  await expect(page.locator('#uscEdFlags')).toContainText('câu cần chú ý');
+  // Dịch mốc +1,5s rồi lưu
+  await page.locator('#uscEdShift').fill('1.5');
+  await page.locator('#uscEdShiftBtn').click();
+  // Thêm 3 thẻ từ vựng từ gợi ý
+  const rows = page.locator('#uscEdVocab .usc-vocab-row');
+  for (let i = 0; i < 3; i++) {
+    await rows.nth(i).locator('input[data-vmean]').fill('nghĩa e2e ' + i);
+    await rows.nth(i).locator('button[data-vadd]').click();
+  }
+  await page.locator('#uscEdSave').click();
+  await expect.poll(() => page.evaluate(k => window.UserScenes.getByKey(k).cues[0].start, key)).toBe(1.5);
+  const check = await page.evaluate(k => ({
+    cards: (window.UserScenes.getByKey(k).flashcards || []).length,
+    quizTypes: window.KinoQuiz.buildQuiz(k, 0).map(q => q.type)
+  }), key);
+  expect(check.cards).toBe(3);
+  expect(check.quizTypes).toContain('vocab');
+});

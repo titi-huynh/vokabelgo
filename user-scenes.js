@@ -216,16 +216,28 @@
     return s ? s.cues : [];
   }
 
+  /* Xin trình duyệt giữ dữ liệu bền (giảm nguy cơ bị tự dọn IndexedDB,
+     nhất là Safari iOS khi máy đầy). */
+  async function ensurePersisted() {
+    try {
+      if (navigator.storage && navigator.storage.persist) {
+        if (await navigator.storage.persisted()) return true;
+        return await navigator.storage.persist();
+      }
+    } catch (e) { /* trình duyệt không hỗ trợ */ }
+    return false;
+  }
+
   /* Đăng ký ngay khi script chạy (thẻ script nằm sau các định nghĩa toàn cục)
      và nhắc lại ở DOMContentLoaded cho chắc — register() là idempotent. */
   scenes.forEach(register);
-  document.addEventListener('DOMContentLoaded', () => { scenes.forEach(register); });
+  document.addEventListener('DOMContentLoaded', () => { scenes.forEach(register); ensurePersisted(); });
 
   window.UserScenes = {
     list: () => scenes.slice(), get, getByKey, keyOf, idOf, isUserKey, isUnreviewed,
     create, update, remove, prepare, register, posterFor, cuesFor, levelLabel,
     saveTake, loadTake, deleteTake, takeIndexes, videoBytesTotal, loadVideo,
-    cacheAudio, getCachedAudio, clearAudioCache,
+    cacheAudio, getCachedAudio, clearAudioCache, ensurePersisted,
     limits: { MAX_TOTAL_BYTES, MAX_FILE_BYTES }
   };
 })();

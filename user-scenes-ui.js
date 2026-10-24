@@ -54,6 +54,12 @@
     }
     sec.querySelector('#uscUsage').textContent =
       'Đã dùng ' + fmtMB(US().videoBytesTotal()) + ' / 300MB cho video tự thêm. Xóa dữ liệu trình duyệt sẽ mất các cảnh này.';
+    if (navigator.storage && navigator.storage.persisted) {
+      navigator.storage.persisted().then(p => {
+        const el = sec.querySelector('#uscUsage');
+        if (el) el.textContent += p ? ' Trình duyệt đã đồng ý giữ dữ liệu này bền lâu.' : ' Mẹo: thêm trang này vào màn hình chính / dùng thường xuyên để trình duyệt giữ dữ liệu lâu hơn.';
+      }).catch(() => {});
+    }
   }
 
   /* ================= Tạo cảnh ================= */
