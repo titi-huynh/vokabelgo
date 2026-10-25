@@ -84,7 +84,12 @@ test('ASR scene (fake adapter): draft -> unreviewed badge -> editor review flips
   await expect(page.locator('#uscCreateBtn')).toBeEnabled();
   await page.locator('#uscCreateBtn').click();
   await page.waitForURL(/kino=user_/);
+  // The new document restores the scene asynchronously after navigation.
+  // Read its key once the scene has opened, after startup URL synchronization.
+  await expect(page.locator('#diktatMode')).toHaveAttribute('data-kino-view', 'detail');
   const key = new URL(page.url()).searchParams.get('kino');
+  expect(key).toMatch(/^user_/);
+  await expect.poll(() => page.evaluate(k => window.UserScenes.isUnreviewed(k), key)).toBe(true);
   await page.goto('/?hub=kino');
   await expect(page.locator('.usc-badge')).toHaveText('Phụ đề máy — chưa rà');
   expect(await page.evaluate(k => window.UserScenes.isUnreviewed(k), key)).toBe(true);

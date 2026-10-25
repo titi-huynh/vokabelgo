@@ -17,7 +17,19 @@
   "validation": {
     "unitSuites": 21,
     "newAnimeBrowserTests": 7,
-    "mediaBrowserTests": 2
+    "mediaBrowserTests": 2,
+    "regressionBrowserTests": 15,
+    "asrSceneReadinessRepeats": 3,
+    "previewPlayback": {
+      "deployment": "dpl_2H4MLTKpGsvyWkkZpU46SRLBP5ab",
+      "commit": "54ad8f35334644e887947a0af46da9d28a20fcbe",
+      "kon480p": {
+        "readyState": 4,
+        "videoWidth": 854,
+        "videoHeight": 480,
+        "currentTime": 53.277193
+      }
+    }
   },
   "limits": [
     "Unclear or unresolved ASR lines are omitted from captions and practice.",
