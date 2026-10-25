@@ -9,16 +9,75 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" }
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, OPTIONS"
+        }
       ]
     },
     {
       "source": "/(video|music)/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
-        { "key": "Accept-Ranges", "value": "bytes" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Accept-Ranges",
+          "value": "bytes"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "destination": "https://github.com/titi-huynh/vokabelgo-media/releases/download/media-v1/video--kino-light--:file",
+      "permanent": false,
+      "source": "/video/kino-light/:file"
+    },
+    {
+      "destination": "https://github.com/titi-huynh/vokabelgo-media/releases/download/media-v1/video--:file",
+      "permanent": false,
+      "source": "/video/:file"
+    },
+    {
+      "destination": "https://github.com/titi-huynh/vokabelgo-media/releases/download/media-v1/music--:file",
+      "permanent": false,
+      "source": "/music/:file"
+    },
+    {
+      "destination": "https://github.com/titi-huynh/vokabelgo-media/releases/download/media-v1/assets--vocab-audio--:file",
+      "permanent": false,
+      "source": "/assets/vocab-audio/:file"
+    },
+    {
+      "destination": "https://github.com/titi-huynh/vokabelgo-media/releases/download/media-v1/assets--kino-dubbing--peppa-market--:file",
+      "permanent": false,
+      "source": "/assets/kino-dubbing/peppa-market/:file"
+    },
+    {
+      "destination": "https://github.com/titi-huynh/vokabelgo-media/releases/download/media-v1/assets--may-home--may-welcome.mp4",
+      "permanent": false,
+      "source": "/assets/may-home/may-welcome.mp4"
+    },
+    {
+      "destination": "https://github.com/titi-huynh/vokabelgo-media/releases/download/media-v1/catfishing--:file",
+      "permanent": false,
+      "source": "/catfishing/:file"
+    },
+    {
+      "destination": "https://github.com/titi-huynh/vokabelgo-media/releases/download/media-v1/reward_prototype_desktop.mp4",
+      "permanent": false,
+      "source": "/reward_prototype_desktop.mp4"
+    },
+    {
+      "destination": "https://github.com/titi-huynh/vokabelgo-media/releases/download/media-v1/reward_prototype_mobile.mp4",
+      "permanent": false,
+      "source": "/reward_prototype_mobile.mp4"
     }
   ]
 }
