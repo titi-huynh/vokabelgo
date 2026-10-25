@@ -1,20 +1,193 @@
-/* Trang chủ gọn (2026-10-25, theo yêu cầu của chị): gỡ đảo Zehn tương tác,
-   bảng Hôm nay thành trang chính — một cột thoáng, giữ bảng màu ấm quen thuộc. */
+/* Trang chủ gọn + tươi sáng (hướng A — Pinterest, chị duyệt 2026-10-25):
+   một cột thoáng, mỗi khu một màu nhấn riêng, thẻ bo tròn mềm,
+   ảnh Zehn tĩnh làm điểm nhấn ở thanh chào. Không đảo, không mèo chạy. */
+
 body[data-hub="today"] #todayMode {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-areas: 'welcome' 'hero' 'metrics' 'meta' 'explore';
-  gap: 26px;
-  max-width: 880px;
-  margin: 0 auto;
+  display: grid !important;
+  grid-template-columns: minmax(0, 880px);
+  justify-content: center;
+  grid-template-areas:
+    "welcome"
+    "hero"
+    "metrics"
+    "meta"
+    "explore";
+  gap: 24px;
   padding: 30px 20px 130px;
+  max-width: none;
 }
-/* Thẻ bạn đồng hành dạng cột phụ của bố cục cũ: ẩn cho gọn */
-body[data-hub="today"] #todayMode .journal-companion { display: none; }
+
+/* --- Thanh chào: banner ảnh ao tĩnh, chữ trên lớp phủ kem bên trái --- */
+body[data-hub="today"] .today-welcome-bar {
+  grid-area: welcome;
+  border-radius: 26px;
+  padding: 24px 26px;
+  min-height: 132px;
+  align-items: center;
+  border: none;
+  box-shadow: 0 14px 34px rgba(31, 122, 77, 0.16);
+  background:
+    linear-gradient(90deg, rgba(255, 251, 240, 0.97) 34%, rgba(255, 251, 240, 0.72) 52%, rgba(255, 251, 240, 0) 66%),
+    url("assets/may-home/may-original.png") right 30% / cover no-repeat;
+}
+body[data-hub="today"] .welcome-cat-group { max-width: 62%; }
+body[data-hub="today"] .today-date-badge {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(120, 84, 20, 0.15);
+  border: none;
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 5px 14px;
+  margin-top: 10px;
+}
+
+/* --- Thẻ chính "Buổi hôm nay": khối xanh đậm, chữ trắng, nút trắng --- */
 body[data-hub="today"] .today-hero-card {
-  box-shadow: 0 14px 34px rgba(53, 74, 60, .09);
+  grid-area: hero;
+  min-width: 0;
+  border-radius: 28px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(135deg, #159a5f 0%, #1db97c 55%, #34cf92 100%);
+  box-shadow: 0 20px 44px rgba(21, 154, 95, 0.35);
+  padding: 30px 32px;
 }
-body[data-hub="today"] .today-welcome-bar { padding-bottom: 4px; border-bottom: 0; }
-@media (max-width: 640px) {
-  body[data-hub="today"] #todayMode { padding: 20px 14px 120px; gap: 20px; }
+body[data-hub="today"] .today-session-badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+}
+body[data-hub="today"] .today-time-estimate { color: #dffcef; }
+body[data-hub="today"] .today-hero-title { color: #fff; }
+body[data-hub="today"] .today-hero-desc { color: #e6fdf0; }
+body[data-hub="today"] .today-hero-progress-box {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  padding: 14px 16px;
+}
+body[data-hub="today"] .progress-label-row { color: #eafff3; }
+body[data-hub="today"] #todayHeroProgressStatus { color: #fff !important; }
+body[data-hub="today"] .journal-word-steps {
+  justify-content: space-between;
+}
+body[data-hub="today"] .journal-word-steps li {
+  background: rgba(255, 255, 255, 0.22);
+  color: #eafff3;
+  border-color: transparent;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+}
+body[data-hub="today"] .today-session-badge .journal-page-index {
+  background: #fff;
+  color: #159a5f;
+  border-radius: 7px;
+  padding: 1px 6px;
+  font-weight: 800;
+}
+body[data-hub="today"] .journal-word-steps li.is-done { background: #fff; color: #159a5f; }
+body[data-hub="today"] .journal-word-steps li.is-current {
+  background: rgba(255, 255, 255, 0.45);
+  color: #fff;
+  box-shadow: 0 0 0 2px #fff inset;
+}
+body[data-hub="today"] .today-progress-track { background: rgba(255, 255, 255, 0.25); }
+body[data-hub="today"] .today-progress-fill { background: #fff; }
+body[data-hub="today"] #dayPlanBlock {
+  background: rgba(255, 255, 255, 0.94) !important;
+  border: none !important;
+  border-radius: 18px !important;
+}
+body[data-hub="today"] .today-primary-cta {
+  background: #fff !important;
+  color: #128a52 !important;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(9, 84, 46, 0.3);
+  font-weight: 800;
+  margin-top: 18px;
+}
+body[data-hub="today"] .today-primary-cta:hover { transform: translateY(-1px); }
+body[data-hub="today"] .today-resume-hint { color: #dffcef; }
+body[data-hub="today"] .resume-deck-tag {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Ẩn thẻ trích dẫn mèo (phụ, gây rối mắt ở trang chủ) */
+body[data-hub="today"] .journal-companion { display: none !important; }
+
+/* --- Ba thẻ chỉ số: mỗi thẻ một màu pastel riêng --- */
+body[data-hub="today"] .today-metrics-strip {
+  grid-area: metrics;
+  gap: 14px;
+}
+body[data-hub="today"] .metric-card-modern {
+  border-radius: 22px;
+  border: none;
+  padding: 18px 20px;
+}
+body[data-hub="today"] .metric-card-modern .metric-card-icon {
+  background: #fff;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(90, 60, 10, 0.12);
+}
+body[data-hub="today"] .metric-needs-review { background: #ffedd5; }
+body[data-hub="today"] .metric-needs-review .metric-card-val { color: #c2410c; }
+body[data-hub="today"] .metric-learning { background: #e0e7ff; }
+body[data-hub="today"] .metric-learning .metric-card-val { color: #4338ca; }
+body[data-hub="today"] .metric-stable { background: #dcf7e6; }
+body[data-hub="today"] .metric-stable .metric-card-val { color: #15803d; }
+
+/* --- Hàng phụ: hai viên pill màu --- */
+body[data-hub="today"] .today-secondary-meta {
+  grid-area: meta;
+  gap: 10px;
+  align-items: center;
+}
+body[data-hub="today"] .today-secondary-meta .secondary-meta-dot { display: none; }
+body[data-hub="today"] .today-secondary-meta .secondary-meta-item {
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-weight: 600;
+}
+body[data-hub="today"] .today-secondary-meta .journal-meta-button { background: #e0f2fe; color: #0369a1; }
+body[data-hub="today"] .today-secondary-meta .secondary-meta-item:not(.journal-meta-button) { background: #fef3c7; color: #92400e; }
+
+/* --- Ba lối khám phá: mỗi thẻ một màu riêng --- */
+body[data-hub="today"] .journal-explore { grid-area: explore; min-width: 0; }
+body[data-hub="today"] .today-pathways-grid { gap: 14px; }
+body[data-hub="today"] .pathway-card {
+  border-radius: 22px;
+  border: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+body[data-hub="today"] .pathway-card:hover { transform: translateY(-3px); }
+body[data-hub="today"] .pathway-card .pathway-icon {
+  border-radius: 16px;
+  color: #fff;
+}
+body[data-hub="today"] .today-pathways-grid .pathway-card:nth-child(1) { background: #efeaff; }
+body[data-hub="today"] .today-pathways-grid .pathway-card:nth-child(1) .pathway-icon { background: #7c5cff; }
+body[data-hub="today"] .today-pathways-grid .pathway-card:nth-child(1) .pathway-title { color: #4c2fb3; }
+body[data-hub="today"] .today-pathways-grid .pathway-card:nth-child(2) { background: #ffe9e2; }
+body[data-hub="today"] .today-pathways-grid .pathway-card:nth-child(2) .pathway-icon { background: #f0562f; }
+body[data-hub="today"] .today-pathways-grid .pathway-card:nth-child(2) .pathway-title { color: #b23c17; }
+body[data-hub="today"] .today-pathways-grid .pathway-card:nth-child(3) { background: #ddf5f2; }
+body[data-hub="today"] .today-pathways-grid .pathway-card:nth-child(3) .pathway-icon { background: #0ea5a4; }
+body[data-hub="today"] .today-pathways-grid .pathway-card:nth-child(3) .pathway-title { color: #0b6e6d; }
+
+@media (max-width: 680px) {
+  body[data-hub="today"] .today-welcome-bar {
+    background:
+      linear-gradient(180deg, rgba(255, 251, 240, 0.97) 42%, rgba(255, 251, 240, 0.78) 68%, rgba(255, 251, 240, 0) 92%),
+      url("assets/may-home/may-original.png") center 74% / cover no-repeat;
+    min-height: 225px;
+    align-items: flex-start;
+  }
+  body[data-hub="today"] .welcome-cat-group { max-width: 100%; }
+  body[data-hub="today"] .today-hero-card { padding: 24px 20px; }
 }
