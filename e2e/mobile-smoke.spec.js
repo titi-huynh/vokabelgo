@@ -27,10 +27,7 @@ test.describe('E2E Test 4: Mobile Responsive Usability & Touch Flow', () => {
     const todayOverflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
     expect(todayOverflow).toBe(false);
 
-    await expect(page.locator('#mayIslandCanvas')).toBeVisible();
     await expect(page.locator('#todayPrimaryCta')).toBeVisible();
-    await page.locator('#mayWorldOverview').click();
-    await expect(page.locator('#mayDailyOverview')).toBeVisible();
 
     // Round 1.1 Mobile Visual Regression Assertions
     // Requirement A & B: Welcome title width reasonable (>= 150px) and not word-by-word wrapping into tall column
@@ -68,7 +65,6 @@ test.describe('E2E Test 4: Mobile Responsive Usability & Touch Flow', () => {
     await expect(secondaryMeta).toBeVisible();
 
     // 2. Start Daily Session on Mobile
-    await page.locator('#mayOverviewClose').click();
     await primaryCta.click();
 
     const studyArea = page.locator('#studyAreaContainer');

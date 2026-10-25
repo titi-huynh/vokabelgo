@@ -1,0 +1,20 @@
+/* Trang chủ gọn (2026-10-25, theo yêu cầu của chị): gỡ đảo Zehn tương tác,
+   bảng Hôm nay thành trang chính — một cột thoáng, giữ bảng màu ấm quen thuộc. */
+body[data-hub="today"] #todayMode {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: 'welcome' 'hero' 'metrics' 'meta' 'explore';
+  gap: 26px;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 30px 20px 130px;
+}
+/* Thẻ bạn đồng hành dạng cột phụ của bố cục cũ: ẩn cho gọn */
+body[data-hub="today"] #todayMode .journal-companion { display: none; }
+body[data-hub="today"] .today-hero-card {
+  box-shadow: 0 14px 34px rgba(53, 74, 60, .09);
+}
+body[data-hub="today"] .today-welcome-bar { padding-bottom: 4px; border-bottom: 0; }
+@media (max-width: 640px) {
+  body[data-hub="today"] #todayMode { padding: 20px 14px 120px; gap: 20px; }
+}

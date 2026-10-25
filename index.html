@@ -7188,7 +7188,7 @@ input.search:focus {
   <!-- Wortregen Mini-Game Stylesheet (Phase 3) -->
   <link rel="stylesheet" href="wortregen.css">
   <link rel="stylesheet" href="learning-journal.css">
-  <link rel="stylesheet" href="may-home-game.css">
+  <link rel="stylesheet" href="home-clean.css">
   <link rel="stylesheet" href="kino-chapters.css">
   <link rel="stylesheet" href="kino-discovery.css">
   <link rel="stylesheet" href="kino-dubbing-scene.css">
@@ -7502,40 +7502,6 @@ input.search:focus {
        HUB 1: HÔM NAY (TODAY HUB) - CENTRAL LEARNING DASHBOARD
        ========================================================================= -->
   <section id="todayMode" class="today-dashboard-container" tabindex="-1" aria-label="Góc học hôm nay">
-    <div class="may-game-home" id="mayGameHome">
-      <canvas id="mayIslandCanvas" width="1672" height="941" tabindex="0" aria-label="Vườn Zehn tương tác. Chạm đường để Zehn đi tới, kéo để ngắm vườn; dùng phím mũi tên để đi hoặc chọn địa điểm bằng nút bên dưới.">Vườn Zehn. Chọn một địa điểm bằng các nút điều hướng.</canvas>
-      <div class="may-game-title"><p>HALLO, DU!</p><h1>Nhà của Zehn</h1><span id="mayWorldHint">Chạm đường để Zehn đi tới.</span></div>
-      <div class="may-place-layer" id="mayPlaceLayer">
-        <button type="button" data-may-place="house" aria-label="Đi tới Nhà Zehn, mở hồ sơ">Nhà Zehn <span aria-hidden="true">↗</span></button>
-        <button type="button" data-may-place="study" aria-label="Đi tới góc học từ, bắt đầu buổi học">Học từ <span aria-hidden="true">↗</span></button>
-        <button type="button" data-may-place="kino" aria-label="Đi tới vườn nghe xem, mở rạp Kino">Nghe & xem <span aria-hidden="true">↗</span></button>
-        <button type="button" data-may-place="fish" aria-label="Đi tới bến cá, mở bộ sưu tập">Hồ cá <span aria-hidden="true">↗</span></button>
-        <button type="button" data-may-place="today" aria-label="Đi tới bảng hôm nay, xem tiến độ">Hôm nay <span aria-hidden="true">↗</span></button>
-      </div>
-      <button type="button" class="may-character-touch" id="mayCharacterTouch" aria-label="Chào bé Zehn"></button>
-      <p class="may-world-speech" id="mayWorldSpeech" role="status" aria-live="polite">Bạn đến rồi. Mình học một chút nhé!</p>
-      <div class="may-world-controls">
-        <button type="button" id="mayWorldOverview" aria-controls="mayDailyOverview"><span id="mayWorldProgress">0 / 5 từ</span><small>Hôm nay ↗</small></button>
-        <details class="may-world-options" id="mayWorldOptions">
-          <summary aria-label="Tùy chọn vườn Zehn" title="Tùy chọn vườn Zehn">⋯</summary>
-          <div>
-            <button type="button" id="mayWorldPause" aria-pressed="false">Dừng chuyển động</button>
-            <button type="button" id="mayWorldCenter">Tìm Zehn</button>
-          </div>
-        </details>
-      </div>
-      <div class="may-world-start">
-        <button type="button" class="today-primary-cta" id="todayPrimaryCta" onclick="handleTodayPrimaryAction()">
-          <span id="todayCtaIcon"><svg class="v-icon icon-xs" aria-hidden="true"><use href="#icon-start"></use></svg></span>
-          <span id="todayCtaText">Bắt đầu 5 từ hôm nay</span>
-          <span class="journal-cta-arrow" aria-hidden="true">↗</span>
-        </button>
-      </div>
-      <div class="may-world-loading" id="mayWorldLoading" role="status">Zehn đang mở cửa đảo…</div>
-    </div>
-    <dialog id="mayDailyOverview" class="may-daily-overview" aria-labelledby="mayOverviewTitle">
-      <div class="may-overview-top"><h2 id="mayOverviewTitle">Góc học hôm nay</h2><button type="button" id="mayOverviewClose" aria-label="Đóng bảng hôm nay">×</button></div>
-      <div class="may-daily-grid">
     <!-- Welcome Bar -->
     <div class="today-welcome-bar">
       <div class="welcome-cat-group">
@@ -7592,7 +7558,7 @@ input.search:focus {
       </div>
 
       <!-- Single Primary Action Button -->
-      <button type="button" class="today-primary-cta" onclick="document.getElementById('mayDailyOverview').close(); handleTodayPrimaryAction();">Học cùng Zehn <span aria-hidden="true">↗</span></button>
+      <button type="button" class="today-primary-cta" id="todayPrimaryCta" onclick="handleTodayPrimaryAction();"><span id="todayCtaIcon"><svg class="v-icon icon-xs" aria-hidden="true"><use href="#icon-start"></use></svg></span> <span id="todayCtaText">Bắt đầu 5 từ hôm nay</span> <span class="journal-cta-arrow" aria-hidden="true">↗</span></button>
 
       <!-- Resume State Hint -->
       <div class="today-resume-hint" id="todayResumeHint">
@@ -7687,8 +7653,6 @@ input.search:focus {
         </button>
       </div>
     </div>
-      </div>
-    </dialog>
   </section>
 
   <!-- =========================================================================
@@ -20459,9 +20423,6 @@ function playKinoMixtape(){
 <script src="reward-prototype.js"></script>
 <script src="wortregen-data.js"></script>
 <script src="wortregen.js"></script>
-<script src="may-home-engine.js"></script>
-<script src="may-home-motion.js"></script>
-<script src="may-home-game.js"></script>
 <script src="deep-links.js"></script>
 <script src="teach-me-invite.js"></script>
 <script src="workflow-bridges.js"></script>
