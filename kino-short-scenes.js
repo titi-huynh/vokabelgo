@@ -1,6 +1,5 @@
-/* Twelve editorial scenes: full exchanges with one memorable line.
- * Times reference the existing source movies; no media loads with this file.
- * Selection provenance and boundary review: qa/kino-context-shorts-2026-10-25/selection.json. */
+/* Curated scenes retain original subtitle/lesson timestamps.
+ * Normalized standalone clips are loaded only when a scene opens. */
 window.KinoShortScenes = Object.freeze([
   {
     "id": "peppa-supermarkt-60-saftkartons",
@@ -16,7 +15,9 @@ window.KinoShortScenes = Object.freeze([
     "meaning": "không thể nào đúng được / chắc chắn có nhầm lẫn",
     "hook": "Ủa, sao lại thành 60 hộp rồi?",
     "tone": "Hài hước",
-    "sourceUrl": "?kino=peppa&part=2"
+    "sourceUrl": "?kino=peppa&part=2",
+    "clipSrc": "assets/kino-shorts/peppa-supermarkt-60-saftkartons-60eb20d922.mp4",
+    "clipDuration": 29.23
   },
   {
     "id": "spy-marry-order",
@@ -32,7 +33,9 @@ window.KinoShortScenes = Object.freeze([
     "meaning": "kết hôn",
     "hook": "Một tuần kiếm đâu ra vợ con?",
     "tone": "Bất ngờ",
-    "sourceUrl": "?kino=spy&part=1"
+    "sourceUrl": "?kino=spy&part=1",
+    "clipSrc": "assets/kino-shorts/spy-marry-order-0ca571da11.mp4",
+    "clipDuration": 33.18
   },
   {
     "id": "pizzaschwester-einziger-karton",
@@ -48,7 +51,9 @@ window.KinoShortScenes = Object.freeze([
     "meaning": "vậy bây giờ tôi biết làm sao đây?",
     "hook": "Bánh thì bán, hộp thì không nha",
     "tone": "Hài hước",
-    "sourceUrl": "?kino=pizza&part=1"
+    "sourceUrl": "?kino=pizza&part=1",
+    "clipSrc": "assets/kino-shorts/pizzaschwester-einziger-karton-fff2c3e80c.mp4",
+    "clipDuration": 16.94
   },
   {
     "id": "spy-anya-crossword",
@@ -64,7 +69,9 @@ window.KinoShortScenes = Object.freeze([
     "meaning": "thật không đấy; nghiêm túc đấy à",
     "hook": "Anya làm Loid đứng hình",
     "tone": "Hài hước",
-    "sourceUrl": "?kino=spy&part=2"
+    "sourceUrl": "?kino=spy&part=2",
+    "clipSrc": "assets/kino-shorts/spy-anya-crossword-63a2a7cb03.mp4",
+    "clipDuration": 23.55
   },
   {
     "id": "babysitter-einfach-ausprobieren",
@@ -80,7 +87,9 @@ window.KinoShortScenes = Object.freeze([
     "meaning": "chắc chắn, yên tâm về điều gì",
     "hook": "Chưa thử sao biết có ổn không?",
     "tone": "Ấm áp",
-    "sourceUrl": "?kino=babysitter&part=4"
+    "sourceUrl": "?kino=babysitter&part=4",
+    "clipSrc": "assets/kino-shorts/babysitter-einfach-ausprobieren-ba99c8e602.mp4",
+    "clipDuration": 20.76
   },
   {
     "id": "demon-weather",
@@ -96,7 +105,9 @@ window.KinoShortScenes = Object.freeze([
     "meaning": "bất chợt đổi thay",
     "hook": "Giá mà ngày nào cũng yên bình",
     "tone": "Ấm áp",
-    "sourceUrl": "?kino=demon&part=2"
+    "sourceUrl": "?kino=demon&part=2",
+    "clipSrc": "assets/kino-shorts/demon-weather-3aa7a9e366.mp4",
+    "clipDuration": 17.7
   },
   {
     "id": "trudes-fahrstuhl-spinne-in-der-kueche",
@@ -112,7 +123,9 @@ window.KinoShortScenes = Object.freeze([
     "meaning": "chỉ vì chuyện đó mà mẹ/bạn gọi cho tụi con sao?",
     "hook": "Hóa ra mẹ cũng biết sợ",
     "tone": "Bất ngờ",
-    "sourceUrl": "?kino=trude&part=5"
+    "sourceUrl": "?kino=trude&part=5",
+    "clipSrc": "assets/kino-shorts/trudes-fahrstuhl-spinne-in-der-kueche-f8687711a5.mp4",
+    "clipDuration": 32.23
   },
   {
     "id": "frieren-meteor-promise",
@@ -128,7 +141,9 @@ window.KinoShortScenes = Object.freeze([
     "meaning": "50 năm nữa",
     "hook": "Hẹn 50 năm nữa nhé!",
     "tone": "Ấm áp",
-    "sourceUrl": "?kino=frieren&part=2"
+    "sourceUrl": "?kino=frieren&part=2",
+    "clipSrc": "assets/kino-shorts/frieren-meteor-promise-d18837c10f.mp4",
+    "clipDuration": 27.56
   },
   {
     "id": "erdmaennchen-schmucklose-elefant-diaet",
@@ -144,7 +159,9 @@ window.KinoShortScenes = Object.freeze([
     "meaning": "đang ăn kiêng",
     "hook": "Ăn kiêng… bằng sô-cô-la",
     "tone": "Hài hước",
-    "sourceUrl": "?kino=schmucklose&part=3"
+    "sourceUrl": "?kino=schmucklose&part=3",
+    "clipSrc": "assets/kino-shorts/erdmaennchen-schmucklose-elefant-diaet-89e2758dde.mp4",
+    "clipDuration": 26.61
   },
   {
     "id": "sakura-kero-guardian",
@@ -160,7 +177,9 @@ window.KinoShortScenes = Object.freeze([
     "meaning": "người canh giữ",
     "hook": "Đã bảo không phải đồ chơi mà!",
     "tone": "Bất ngờ",
-    "sourceUrl": "?kino=sakura&part=5"
+    "sourceUrl": "?kino=sakura&part=5",
+    "clipSrc": "assets/kino-shorts/sakura-kero-guardian-a04db9316c.mp4",
+    "clipDuration": 27.22
   },
   {
     "id": "spongebob-pizza-getraenk-vergessen",
@@ -176,7 +195,9 @@ window.KinoShortScenes = Object.freeze([
     "meaning": "đừng nói với tôi là... nhé!",
     "hook": "Giao cái pizza thôi mà cũng khổ",
     "tone": "Căng thẳng",
-    "sourceUrl": "?kino=spongebob&part=3"
+    "sourceUrl": "?kino=spongebob&part=3",
+    "clipSrc": "assets/kino-shorts/spongebob-pizza-getraenk-vergessen-bdbef1f8b5.mp4",
+    "clipDuration": 29.96
   },
   {
     "id": "hans-stolen-pig",
@@ -192,6 +213,8 @@ window.KinoShortScenes = Object.freeze([
     "meaning": "bắt gặp; tóm tại trận",
     "hook": "Nghe dọa một câu, Hans đổi luôn",
     "tone": "Hài hước",
-    "sourceUrl": "?kino=hans&part=3"
+    "sourceUrl": "?kino=hans&part=3",
+    "clipSrc": "assets/kino-shorts/hans-stolen-pig-5ba6641586.mp4",
+    "clipDuration": 25.54
   }
 ].map(scene => Object.freeze(scene)));

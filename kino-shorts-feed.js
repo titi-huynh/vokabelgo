@@ -14,6 +14,9 @@
   const curated = card => Number.isFinite(card.start) && Number.isFinite(card.end);
   const partOf = card => Number(card.part) || Number(/[?&]part=(\d+)/.exec(card.sourceUrl || '')?.[1]) || 1;
   const current = (it, token = generation) => Boolean(overlay && !overlay.hidden && items[activeIdx] === it && token === generation);
+  // Standalone normalized clips start at zero; lesson/caption times stay absolute.
+  const mediaTime = (it, sourceSeconds) => sourceSeconds - it.offset;
+  const sourceTime = it => it.video.currentTime + it.offset;
 
   function pool() {
     if (typeof KINO_CHAPTER_DATA === 'undefined') return [];
@@ -122,8 +125,14 @@
       + '<div class="ksf-rail"><button type="button" class="ksf-act ksf-like" aria-label="Thích" aria-pressed="false">🤍<span>Thích</span></button>'
       + '<button type="button" class="ksf-act ksf-save" aria-label="Lưu từ">🔖<span>Lưu từ</span></button><button type="button" class="ksf-act ksf-lesson" aria-label="Vào bài học">🎓<span>Vào bài</span></button></div>'
       + '<p class="ksf-swipe-hint">' + (idx === 0 ? 'Vuốt lên để xem cảnh tiếp ▾' : 'Vuốt để xem cảnh khác') + '</p></div>';
+    const content = sec.querySelector('.ksf-content');
+    const viewing = document.createElement('div'); viewing.className = 'ksf-viewing';
+    const details = document.createElement('div'); details.className = 'ksf-details';
+    viewing.append(sec.querySelector('.ksf-card'), sec.querySelector('.ksf-controls'), sec.querySelector('.ksf-status-row'));
+    details.append(sec.querySelector('.ksf-scene-heading'), sec.querySelector('.ksf-caption'), sec.querySelector('.ksf-rail'), sec.querySelector('.ksf-swipe-hint'));
+    content.append(viewing, details);
     const video = sec.querySelector('video');
-    const it = { card, el: sec, video, part, start: null, end: null, loaded: false, ready: false, captions: [], captionKey: null, frame: null, intentToPlay: false };
+    const it = { card, el: sec, video, part, start: null, end: null, offset: 0, loaded: false, ready: false, captions: [], captionKey: null, frame: null, intentToPlay: false };
     sec.querySelector('.ksf-de').append(words(card.focusText || card.example, card));
     const like = sec.querySelector('.ksf-like');
     const syncLike = () => { const on = likes.has(likeId(card)); like.classList.toggle('on', on); like.firstChild.textContent = on ? '❤️' : '🤍'; like.setAttribute('aria-pressed', String(on)); };
@@ -132,10 +141,10 @@
     sec.querySelector('.ksf-save').onclick = () => { if (!saveTerm(card.term, card.meaning, card.focusText || card.example, it.focusCue?.vi || '', card)) toast('Chưa lưu được — hãy mở một bài học rồi thử lại.'); };
     sec.querySelector('.ksf-lesson').onclick = () => jumpToLesson(card);
     sec.querySelector('.ksf-play').onclick = () => toggle(it);
-    sec.querySelector('.ksf-replay').onclick = () => { if (current(it) && it.ready) { video.currentTime = it.start; update(it); startPlayback(it, generation); } };
+    sec.querySelector('.ksf-replay').onclick = () => { if (current(it) && it.ready) { video.currentTime = mediaTime(it, it.start); update(it); startPlayback(it, generation); } };
     sec.querySelector('.ksf-retry').onclick = () => activate(idx, true);
     sec.querySelector('.ksf-seek').addEventListener('input', event => {
-      if (current(it) && it.ready) { video.currentTime = Math.max(it.start, Math.min(it.end - .05, it.start + Number(event.target.value))); update(it); }
+      if (current(it) && it.ready) { video.currentTime = mediaTime(it, Math.max(it.start, Math.min(it.end - .05, it.start + Number(event.target.value)))); update(it); }
     });
     video.addEventListener('click', () => {
       if (video.muted) { muted = false; video.muted = false; sec.querySelector('.ksf-tap-hint').hidden = true; updateMute(); if (video.paused) startPlayback(it, generation); }
@@ -145,7 +154,7 @@
     video.addEventListener('play', () => { if (!current(it)) { video.pause(); return; } update(it); if (video.requestVideoFrameCallback && it.frame === null) it.frame = video.requestVideoFrameCallback(tick); });
     video.addEventListener('pause', () => { stopFrame(it); update(it); clearTimeout(watchTimer); });
     for (const event of ['timeupdate', 'seeked']) video.addEventListener(event, () => update(it));
-    video.addEventListener('ended', () => { if (current(it) && it.intentToPlay) { video.currentTime = it.start; startPlayback(it, generation); } });
+    video.addEventListener('ended', () => { if (current(it) && it.intentToPlay) { video.currentTime = mediaTime(it, it.start); startPlayback(it, generation); } });
     video.addEventListener('error', () => { if (current(it)) showError(it, 'Chưa tải được cảnh. Chị thử lại nhé.'); });
     video.addEventListener('loadedmetadata', () => { if (video.videoWidth && video.videoHeight) sec.style.setProperty('--ksf-ratio', video.videoWidth / video.videoHeight); });
     if (card.videoKey === 'sakura_s01e01') sec.style.setProperty('--ksf-ratio', 4 / 3);
@@ -159,13 +168,14 @@
   function update(it) {
     if (it.start === null || it.end === null || !current(it)) return;
     const v = it.video;
-    if (it.ready && !v.seeking && (v.currentTime >= it.end || v.currentTime < it.start - .1)) v.currentTime = it.start;
-    const elapsed = Math.max(0, Math.min(it.end, v.currentTime) - it.start), duration = it.end - it.start;
+    if (it.ready && !v.seeking && (sourceTime(it) >= it.end || sourceTime(it) < it.start - .1)) v.currentTime = mediaTime(it, it.start);
+    const time = sourceTime(it);
+    const elapsed = Math.max(0, Math.min(it.end, time) - it.start), duration = it.end - it.start;
     it.el.querySelector('.ksf-progress span').style.width = `${Math.min(100, elapsed / duration * 100)}%`;
     it.el.querySelector('.ksf-elapsed').textContent = clock(elapsed);
     const seek = it.el.querySelector('.ksf-seek'); seek.value = elapsed; seek.setAttribute('aria-valuetext', `${clock(elapsed)} trên ${clock(duration)}`);
     const play = it.el.querySelector('.ksf-play'); play.textContent = v.paused ? '▶' : 'Ⅱ'; play.setAttribute('aria-label', v.paused ? 'Phát cảnh' : 'Tạm dừng cảnh');
-    const cue = it.captions.find(c => v.currentTime >= c.start && v.currentTime < c.end), key = cue ? `${cue.id}:${cue.start}:${cue.text}` : '';
+    const cue = it.captions.find(c => time >= c.start && time < c.end), key = cue ? `${cue.id}:${cue.start}:${cue.text}` : '';
     it.currentCue = cue || null;
     if (key !== it.captionKey) {
       it.captionKey = key; it.el.querySelector('.ksf-de').replaceChildren(words(cue?.text || '', it.card)); it.el.querySelector('.ksf-vi').textContent = cue?.vi || '';
@@ -181,6 +191,9 @@
     const start = curated(it.card) ? it.card.start : Math.max(0, cue.start - .25), end = curated(it.card) ? it.card.end : cue.end + .45;
     if (!(start >= 0 && end > start && cue.start >= start && cue.end <= end + .1)) throw new Error('Mốc cảnh chưa khớp lời thoại. Chị chọn cảnh khác nhé.');
     it.start = start; it.end = end; it.focusCue = cue;
+    if (it.card.clipSrc && (!Number.isFinite(it.card.clipDuration) || Math.abs(it.card.clipDuration - (end - start)) > .1)) throw new Error('Thời lượng cảnh chưa khớp. Chị chọn cảnh khác nhé.');
+    it.offset = it.card.clipSrc ? start : 0;
+    it.video.dataset.sourceOffset = it.offset;
     it.captions = (KinoData.captions(it.card.videoKey) || cues).filter(c => c.start < end && c.end > start);
     it.el.dataset.start = start; it.el.dataset.end = end;
     it.el.querySelector('.ksf-length').textContent = clock(end - start); it.el.querySelector('.ksf-seek').max = end - start; it.loaded = true;
@@ -216,8 +229,8 @@
     it.el.querySelector('.ksf-status').textContent = 'Đang mở cảnh…'; it.el.querySelector('.ksf-retry').hidden = true; it.captionKey = null;
     try {
       await ensureScene(it); if (!current(it, token)) return;
-      it.video.muted = muted; await KinoMedia.prepare(it.video, it.start, it.card.videoKey); if (!current(it, token)) return;
-      if (it.end > it.video.duration + .1) throw new Error('Mốc cảnh vượt thời lượng phim. Chị chọn cảnh khác nhé.');
+      it.video.muted = muted; await KinoMedia.prepare(it.video, mediaTime(it, it.start), it.card.videoKey, it.card.clipSrc); if (!current(it, token)) return;
+      if (mediaTime(it, it.end) > it.video.duration + .1) throw new Error('Mốc cảnh vượt thời lượng phim. Chị chọn cảnh khác nhé.');
       it.ready = true; for (const el of it.el.querySelectorAll('.ksf-play, .ksf-seek, .ksf-replay')) el.disabled = false;
       it.el.querySelector('.ksf-status').textContent = ''; update(it); await startPlayback(it, token);
     } catch (error) { if (current(it, token) && error.name !== 'AbortError') showError(it, error.message || 'Chưa mở được cảnh. Chị thử lại nhé.'); }

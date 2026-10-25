@@ -70,7 +70,7 @@ const KinoMedia = (() => {
       signal.addEventListener('abort', stop, { once: true });
     });
   }
-  async function prepare(video, time, key = currentKinoVideoKey) {
+  async function prepare(video, time, key = currentKinoVideoKey, clipSource = null) {
     players().filter(other => other !== video).forEach(release);
     cancel(video);
     video.pause();
@@ -78,7 +78,7 @@ const KinoMedia = (() => {
     const job = { controller, time, resume: false, pending: true };
     jobs.set(video, job);
     const signal = controller.signal;
-    const src = source(key);
+    const src = clipSource || source(key);
     const rate = video.playbackRate;
     if (video.getAttribute('src') !== src || video.error) {
       video.preload = 'metadata';

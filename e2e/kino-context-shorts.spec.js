@@ -33,7 +33,7 @@ test('catalog keeps all film dialogue and videos lazy before opening Shorts', as
   await catalog(page);
   expect(scenes).toHaveLength(12);
   expect(new Set(scenes.map(s => s.videoKey)).size).toBe(11);
-  expect(requested.filter(p => /-aligned\.js$/.test(p) || p.startsWith('/video/'))).toEqual([]);
+  expect(requested.filter(p => /-aligned\.js$/.test(p) || p.startsWith('/video/') || p.startsWith('/assets/kino-shorts/'))).toEqual([]);
   await expect(page.locator('.kino-short-feed-btn')).toContainText('12');
 });
 
@@ -47,13 +47,16 @@ test('all 12 scenes have real playback, complete cue bounds and changing bilingu
     await expect(it.locator('.ksf-hook')).toHaveText(scene.hook);
     const first = await page.evaluate(() => {
       const item = document.querySelector('.ksf-item[data-idx="0"]'), v = item.querySelector('video');
-      return { time: v.currentTime, start: Number(item.dataset.start), end: Number(item.dataset.end), playing: [...document.querySelectorAll('#ksfOverlay video')].filter(v => !v.paused).length };
+      return { time: v.currentTime + Number(v.dataset.sourceOffset || 0), mediaTime: v.currentTime, duration: v.duration, src: v.getAttribute('src'), start: Number(item.dataset.start), end: Number(item.dataset.end), playing: [...document.querySelectorAll('#ksfOverlay video')].filter(v => !v.paused).length };
     });
     expect(first.start).toBe(scene.start);
     expect(first.end).toBe(scene.end);
     expect(first.time).toBeGreaterThanOrEqual(scene.start - .15);
     expect(first.time).toBeLessThan(scene.end);
     expect(first.playing).toBe(1);
+    expect(first.src).toBe(scene.clipSrc);
+    expect(first.duration).toBeCloseTo(scene.clipDuration, 1);
+    expect(first.mediaTime).toBeLessThan(scene.clipDuration);
     expect(scene.end - scene.start).toBeGreaterThanOrEqual(15);
     expect(scene.end - scene.start).toBeLessThanOrEqual(45);
     await it.locator('.ksf-play').click();
@@ -71,7 +74,7 @@ test('all 12 scenes have real playback, complete cue bounds and changing bilingu
     // End guard: replay loops to this scene, never to the movie opening.
     await seek(it, scene.end - scene.start - .1);
     await it.locator('.ksf-play').click();
-    await expect.poll(() => it.locator('video').evaluate(v => v.currentTime)).toBeLessThan(scene.start + 3);
+    await expect.poll(() => it.locator('video').evaluate(v => v.currentTime + Number(v.dataset.sourceOffset || 0))).toBeLessThan(scene.start + 3);
     await page.locator('#ksfClose').click();
     expect(await page.locator('#ksfOverlay video').evaluateAll(vs => vs.every(v => v.paused && !v.hasAttribute('src')))).toBe(true);
   }
@@ -95,12 +98,15 @@ test('fast swipe and close while subtitles load cannot start a hidden player', a
 });
 
 test('hiding the tab while preparing a scene cancels pending playback', async ({ page }) => {
-  let allowLoad;
+  let allowLoad, loadStarted;
   const pending = new Promise(resolve => { allowLoad = resolve; });
-  await page.route('**/peppa-supermarkt-aligned.js', async route => { await pending; await route.continue(); });
+  const started = new Promise(resolve => { loadStarted = resolve; });
+  await page.route('**/assets/kino-shorts/**', async route => { loadStarted(); await pending; await route.continue().catch(() => {}); });
   await catalog(page);
   await page.evaluate(() => KinoShortsFeed.open(KinoShortScenes[0]));
+  await started;
   await expect(page.locator('#ksfCounter')).toHaveText('1 / 12');
+  await expect(page.locator('.ksf-item[data-idx="0"] .ksf-play')).toBeDisabled();
   await page.evaluate(() => {
     Object.defineProperty(document, 'hidden', { configurable: true, value: true });
     document.dispatchEvent(new Event('visibilitychange'));
@@ -154,4 +160,34 @@ test('mobile layout, word lookup, likes and saved focus keep the full context', 
   expect(saved.example).toBe(scene.focusText);
   expect(saved.exampleVi).toBeTruthy();
   await page.screenshot({ path: 'review-assets/kino-context-shorts-mobile.png' });
+});
+
+test('wide screens give the native-ratio picture a large column beside the text', async ({ page }) => {
+  await page.setViewportSize({ width: 1519, height: 667 });
+  await catalog(page);
+  const it = await opened(page, scenes[0]);
+  await it.locator('.ksf-play').click();
+  const layout = await it.evaluate(el => {
+    const box = selector => { const r = el.querySelector(selector).getBoundingClientRect(); return { left: r.left, right: r.right, top: r.top, bottom: r.bottom, width: r.width, height: r.height }; };
+    return { frame: box('.ksf-card'), captions: box('.ksf-details'), controls: box('.ksf-controls'), height: innerHeight, pageWidth: document.documentElement.scrollWidth, width: innerWidth };
+  });
+  expect(layout.frame.height).toBeGreaterThan(400);
+  expect(layout.frame.width).toBeGreaterThan(700);
+  expect(layout.frame.width / layout.frame.height).toBeCloseTo(16 / 9, 1);
+  expect(layout.captions.left).toBeGreaterThan(layout.frame.right);
+  expect(layout.controls.bottom).toBeLessThanOrEqual(layout.height);
+  expect(layout.pageWidth).toBeLessThanOrEqual(layout.width);
+  await page.screenshot({ path: 'review-assets/kino-shorts-large-desktop.png' });
+});
+
+test('a missing normalized clip gives a retry action without playing the full movie', async ({ page }) => {
+  const movies = [];
+  page.on('request', req => { if (new URL(req.url()).pathname.startsWith('/video/')) movies.push(req.url()); });
+  await page.route('**/assets/kino-shorts/**', route => route.abort());
+  await catalog(page);
+  await page.evaluate(() => KinoShortsFeed.open(KinoShortScenes[0]));
+  const it = page.locator('.ksf-item[data-idx="0"]');
+  await expect(it.locator('.ksf-retry')).toBeVisible();
+  expect(await it.locator('video').evaluate(v => v.paused)).toBe(true);
+  expect(movies).toEqual([]);
 });

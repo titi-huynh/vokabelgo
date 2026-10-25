@@ -13,7 +13,9 @@
 .ksf-scroller::-webkit-scrollbar { display: none; }
 .ksf-item { --ksf-ratio: 1.7777778; position: relative; height: 100%; min-height: 100%; scroll-snap-align: start; scroll-snap-stop: always; box-sizing: border-box; display: flex; align-items: center; justify-content: center; padding: 10px 18px max(12px, env(safe-area-inset-bottom)); background: radial-gradient(ellipse at 50% 20%, #292b3e, #0b0d12 76%); }
 .ksf-content { width: min(100%, 820px); max-height: 100%; display: flex; flex-direction: column; align-items: stretch; gap: 8px; }
+.ksf-viewing, .ksf-details { display: contents; }
 .ksf-scene-heading { text-align: center; flex-shrink: 0; }
+.ksf-scene-heading { order: -1; }
 .ksf-scene-label { margin: 0 0 4px; color: #d5bc91; font-size: .76rem; letter-spacing: .04em; }
 .ksf-hook { margin: 0; color: #fff5df; font-size: clamp(1.08rem, 2.7vw, 1.55rem); font-weight: 700; line-height: 1.25; }
 .ksf-card { position: relative; width: 100%; min-height: 65px; aspect-ratio: var(--ksf-ratio); max-height: min(45dvh, 470px); align-self: center; border-radius: 14px; overflow: hidden; background: #000; box-shadow: 0 14px 40px #0005; flex: 0 1 auto; }
@@ -75,5 +77,25 @@
   .ksf-meta { font-size: .64rem; }
   .ksf-rail { gap: 8px; }
   .ksf-act { min-height: 34px; padding-top: 4px; padding-bottom: 4px; }
+}
+/* Wide screens give the film its own large column; text never squeezes it. */
+@media (min-width: 900px) {
+  .ksf-item { padding: 20px 28px; }
+  .ksf-content { width: min(100%, 1480px); display: grid; grid-template-columns: minmax(0, 1fr) 290px; align-items: center; gap: 30px; }
+  .ksf-viewing { display: flex; flex-direction: column; align-items: center; gap: 9px; min-width: 0; }
+  .ksf-details { display: flex; flex-direction: column; gap: 18px; max-height: calc(100dvh - 110px); overflow-y: auto; padding: 4px; }
+  .ksf-card { width: min(100%, calc((100dvh - 170px) * var(--ksf-ratio))); max-height: none; min-height: 0; height: auto; flex: none; }
+  .ksf-controls { width: min(100%, calc((100dvh - 170px) * var(--ksf-ratio))); }
+  .ksf-scene-heading, .ksf-caption { text-align: left; }
+  .ksf-hook { font-size: clamp(1.25rem, 1.6vw, 1.65rem); line-height: 1.3; }
+  .ksf-scene-label { font-size: .75rem; }
+  .ksf-subtitle { min-height: 100px; align-items: flex-start; padding: 12px 0; background: transparent; }
+  .ksf-de { font-size: 1.22rem; line-height: 1.45; }
+  .ksf-vi { font-size: .96rem; line-height: 1.45; }
+  .ksf-termline { font-size: .8rem; margin-top: 12px; }
+  .ksf-meta { font-size: .72rem; margin-top: 8px; }
+  .ksf-rail { justify-content: flex-start; gap: 7px; flex-wrap: wrap; }
+  .ksf-act { min-width: 76px; min-height: 40px; padding: 6px 10px; }
+  .ksf-swipe-hint { text-align: left; }
 }
 @media (prefers-reduced-motion: reduce) { .ksf-toast { transition: none; } }
