@@ -106,6 +106,7 @@
   loadImg('bg', ASSET + 'pond-bg.webp');
   loadImg('body', ASSET + 'zehn-body.png');
   loadImg('rod', ASSET + 'rod-branch.png');
+  loadImg('paw', ASSET + 'zehn-paw.png');
   Object.keys(SPECIES).forEach(function (id) { loadImg('f_' + id, ASSET + 'fish-' + (id === 'b2_meisterfisch' ? 'meisterfisch' : id) + '.png'); });
   var TINT = {};
   function tinted(id) {
@@ -196,7 +197,7 @@
     var bobY = Math.sin(G.t * 1.25) * 2.6;
     var bh = 340 * ((IMG.body.naturalHeight || 573) / (IMG.body.naturalWidth || 620));
     var hip = { x: 215, y: 388 + bobY - bh + bh * 0.70 };
-    var paw = { x: 200, y: 273 + bobY };
+    var paw = { x: 179, y: 279 + bobY }; // đúng vị trí hai tay chắp ở bụng trong ảnh gốc
     var dx = paw.x - hip.x, dy = paw.y - hip.y;
     var c = Math.cos(G.lean.a), s = Math.sin(G.lean.a);
     return { x: hip.x + dx * c - dy * s + G.shift.x, y: hip.y + dx * s + dy * c };
@@ -205,8 +206,10 @@
     var p = rodPivot();
     var a = G.rod.angle * Math.PI / 180, L = 250;
     var tip = { x: p.x + Math.cos(a) * L, y: p.y + Math.sin(a) * L };
-    var ctrl = { x: (p.x + tip.x) / 2, y: (p.y + tip.y) / 2 + G.rod.bend };
-    return { p0: p, p1: ctrl, p2: tip };
+    // Cán cần kéo dài 16px XUYÊN QUA tay về phía sau — lớp tay phủ lên sẽ "nắm" lấy nó
+    var tail = { x: p.x - Math.cos(a) * 16, y: p.y - Math.sin(a) * 16 };
+    var ctrl = { x: (tail.x + tip.x) / 2, y: (tail.y + tip.y) / 2 + G.rod.bend };
+    return { p0: tail, p1: ctrl, p2: tip };
   }
   function quadAt(c, t) {
     var u = 1 - t;
@@ -876,6 +879,16 @@
         g.drawImage(rod, si * sw, 0, sw, rod.naturalHeight, 0, -rodLen * 0.06, segLen, rodLen * 0.12);
         g.restore();
       }
+    }
+    // LỚP TAY NẮM: phủ đúng vùng hai tay (cắt từ ảnh gốc, cùng phép biến hình
+    // với lớp thân trên) lên trên cán cần -> cần chạy xuyên qua tay, hết lơ lửng
+    var pawImg = IMG.paw;
+    if (pawImg && pawImg.complete && pawImg.naturalWidth && typeof hipX !== 'undefined') {
+      g.save();
+      g.translate(hipX + G.shift.x, hipY + Math.abs(G.shift.x) * 0.12);
+      g.rotate(G.lean.a);
+      g.drawImage(pawImg, 40 + 0.30 * bw - hipX, top + 0.47 * bh - hipY, 0.23 * bw, 0.19 * bh);
+      g.restore();
     }
 
     // Dây + mồi / cá đã móc
