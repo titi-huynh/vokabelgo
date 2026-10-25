@@ -14,7 +14,7 @@ window.KinoShortScenes = Object.freeze([
     "exampleVi": "Không thể nào đúng được.",
     "term": "Das kann nicht stimmen",
     "meaning": "không thể nào đúng được / chắc chắn có nhầm lẫn",
-    "hook": "Quét nhầm một hộp nước thành sáu mươi hộp",
+    "hook": "Ủa, sao lại thành 60 hộp rồi?",
     "tone": "Hài hước",
     "sourceUrl": "?kino=peppa&part=2"
   },
@@ -30,7 +30,7 @@ window.KinoShortScenes = Object.freeze([
     "exampleVi": "trước hết anh phải kết hôn và có một đứa con.",
     "term": "heiraten",
     "meaning": "kết hôn",
-    "hook": "Nhiệm vụ này cần cả một gia đình?",
+    "hook": "Một tuần kiếm đâu ra vợ con?",
     "tone": "Bất ngờ",
     "sourceUrl": "?kino=spy&part=1"
   },
@@ -46,7 +46,7 @@ window.KinoShortScenes = Object.freeze([
     "exampleVi": "Được rồi... vậy bây giờ tôi làm sao đây?",
     "term": "Was mache ich denn jetzt?",
     "meaning": "vậy bây giờ tôi biết làm sao đây?",
-    "hook": "Giao bánh pizza nhưng đòi giữ lại vỏ hộp",
+    "hook": "Bánh thì bán, hộp thì không nha",
     "tone": "Hài hước",
     "sourceUrl": "?kino=pizza&part=1"
   },
@@ -62,7 +62,7 @@ window.KinoShortScenes = Object.freeze([
     "exampleVi": "Đúng hết sao? Thật không đấy?",
     "term": "ernsthaft",
     "meaning": "thật không đấy; nghiêm túc đấy à",
-    "hook": "Ô chữ khó mà cô bé giải ngay?",
+    "hook": "Anya làm Loid đứng hình",
     "tone": "Hài hước",
     "sourceUrl": "?kino=spy&part=2"
   },
@@ -78,7 +78,7 @@ window.KinoShortScenes = Object.freeze([
     "exampleVi": "Nhưng làm sao cháu chắc chắn được chuyện đó không lặp lại?",
     "term": "sich sicher sein",
     "meaning": "chắc chắn, yên tâm về điều gì",
-    "hook": "Cách bác Rad giúp Bluey vượt qua nỗi sợ",
+    "hook": "Chưa thử sao biết có ổn không?",
     "tone": "Ấm áp",
     "sourceUrl": "?kino=babysitter&part=4"
   },
@@ -94,7 +94,7 @@ window.KinoShortScenes = Object.freeze([
     "exampleVi": "Cuộc đời có thể đổi thay bất chợt.",
     "term": "umschlagen",
     "meaning": "bất chợt đổi thay",
-    "hook": "Cuộc đời có mãi bình yên như thế?",
+    "hook": "Giá mà ngày nào cũng yên bình",
     "tone": "Ấm áp",
     "sourceUrl": "?kino=demon&part=2"
   },
@@ -110,7 +110,7 @@ window.KinoShortScenes = Object.freeze([
     "exampleVi": "Và vì thế mà mẹ gọi tụi con đến à?",
     "term": "Und deshalb hast du uns angerufen?",
     "meaning": "chỉ vì chuyện đó mà mẹ/bạn gọi cho tụi con sao?",
-    "hook": "Sự cố khẩn cấp trong bếp của mẹ Trude",
+    "hook": "Hóa ra mẹ cũng biết sợ",
     "tone": "Bất ngờ",
     "sourceUrl": "?kino=trude&part=5"
   },
@@ -126,7 +126,7 @@ window.KinoShortScenes = Object.freeze([
     "exampleVi": "50 năm nữa tôi sẽ dẫn mọi người tới đó.",
     "term": "in 50 Jahren",
     "meaning": "50 năm nữa",
-    "hook": "Một lời hẹn tận năm mươi năm sau",
+    "hook": "Hẹn 50 năm nữa nhé!",
     "tone": "Ấm áp",
     "sourceUrl": "?kino=frieren&part=2"
   },
@@ -142,7 +142,7 @@ window.KinoShortScenes = Object.freeze([
     "exampleVi": "Tôi đang ăn kiêng mà! Tôi chỉ ăn sô-cô-la ăn kiêng thôi.",
     "term": "auf Diät sein",
     "meaning": "đang ăn kiêng",
-    "hook": "Bằng chứng ngoại phạm của chú voi ăn kiêng",
+    "hook": "Ăn kiêng… bằng sô-cô-la",
     "tone": "Hài hước",
     "sourceUrl": "?kino=schmucklose&part=3"
   },
@@ -158,7 +158,7 @@ window.KinoShortScenes = Object.freeze([
     "exampleVi": "Ta không phải đồ chơi, ta là Keroberos, linh thú canh giữ phong ấn của cuốn sách này!",
     "term": "der Hüter",
     "meaning": "người canh giữ",
-    "hook": "Thú bông này tự xưng là ai?",
+    "hook": "Đã bảo không phải đồ chơi mà!",
     "tone": "Bất ngờ",
     "sourceUrl": "?kino=sakura&part=5"
   },
@@ -174,7 +174,7 @@ window.KinoShortScenes = Object.freeze([
     "exampleVi": "Đừng nói với tôi là cậu quên đồ uống của tôi nhé!",
     "term": "Sag bloß nicht, ...",
     "meaning": "đừng nói với tôi là... nhé!",
-    "hook": "Vị khách nổi giận vì giao pizza thiếu nước",
+    "hook": "Giao cái pizza thôi mà cũng khổ",
     "tone": "Căng thẳng",
     "sourceUrl": "?kino=spongebob&part=3"
   },
@@ -190,7 +190,7 @@ window.KinoShortScenes = Object.freeze([
     "exampleVi": "Tôi nghĩ con lợn cậu đang dắt chính là con bị mất trộm; nếu bị họ bắt gặp thì rắc rối to đấy.",
     "term": "erwischen",
     "meaning": "bắt gặp; tóm tại trận",
-    "hook": "Con lợn có thật là đồ ăn trộm?",
+    "hook": "Nghe dọa một câu, Hans đổi luôn",
     "tone": "Hài hước",
     "sourceUrl": "?kino=hans&part=3"
   }
