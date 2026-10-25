@@ -151,8 +151,13 @@
       parts: [], ripples: [], bubbles: [], bubbleAt: 0,
       baitClass: 0, // 0 mồi thường; n = cá cấp n làm mồi
       msg: '',
-      fast: false
+      fast: false,
+      blinkAt: 1.6, blinkT: 0, blinkForce: false,
+      motes: []
     };
+    for (var mi = 0; mi < 26; mi++) {
+      G.motes.push({ x: Math.random() * VW, y: WATER_Y + 14 + Math.random() * 180, r: 0.8 + Math.random() * 1.8, ph: Math.random() * 6.28, sp: 4 + Math.random() * 9 });
+    }
     spawnFishes();
   }
   function spawnFishes() {
@@ -177,6 +182,7 @@
       state: 'swim',
       wx: 200 + Math.random() * 700, wy: band[0] + Math.random() * (band[1] - band[0]),
       wob: Math.random() * 6.28,
+      phase: Math.random() * 6.28, speed: 0, coil: 0,
       nibbles: 0, hunger: 0.4 + Math.random() * 0.6,
       dartT: 1 + Math.random() * 1.5, dartX: 0, dartY: 0,
       bites: 0, huntCd: 0
@@ -348,6 +354,9 @@
     if (Math.abs(f.vx) > 4) f.dir = f.vx > 0 ? 1 : -1;
     f.x = Math.max(30, Math.min(970, f.x));
     f.y = Math.max(368, Math.min(548, f.y));
+    // Pha sóng thân: chạy theo tốc độ bơi — bơi nhanh vẫy mạnh như hoạt hình
+    f.speed = Math.hypot(f.vx, f.vy);
+    f.phase += dt * (3 + f.speed * 0.10);
   }
 
   function hookFish(f) {
@@ -388,7 +397,8 @@
       h.dartY = (40 + Math.random() * 90) * (Math.random() < 0.75 ? 1 : -0.6);
       h.dartT = 1.1 + Math.random() * 1.6;
       h.tired = (h.tired || 0) + 1;
-      if (Math.random() < 0.5) spawnBubble(h.x, h.y - 8);
+      spawnBubble(h.x, h.y - 8); spawnBubble(h.x - 12, h.y); spawnBubble(h.x + 10, h.y + 6);
+      if (h.y < 420) spawnSplash(h.x, WATER_Y + 2, 5, false);
     }
     var kv = darting ? 4.5 : 1.4;
     h.vx += ((h.dartX || 0) - h.vx) * Math.min(1, dt * kv);
@@ -407,6 +417,11 @@
     h.x = Math.max(40, Math.min(965, h.x));
     h.y = Math.max(360, Math.min(548, h.y));
     if (Math.abs(h.vx) > 4) h.dir = h.vx > 0 ? 1 : -1;
+    h.speed = Math.hypot(h.vx, h.vy);
+    h.phase += dt * (4 + h.speed * 0.11);
+    // Co mình lấy đà ngay trước cú phóng (báo trước bằng hình thể, kiểu hoạt hình)
+    var coilT = (!darting && h.dartT < 0.18) ? 1 : 0;
+    h.coil += (coilT - h.coil) * Math.min(1, dt * 14);
     // Độ căng: tăng khi GIỮ đúng lúc cá phóng (nguy hiểm), tăng chậm khi giữ
     // lúc cá yên (được kéo vào), giảm nhanh khi nhả — đọc từ chính cú phóng
     // của cá mà người chơi nhìn thấy, không phải đồng hồ ẩn.
@@ -603,6 +618,15 @@
   // --- Cập nhật & vẽ ---
   function update(dt) {
     G.t += dt;
+    // Nhịp chớp mắt của Zehn
+    if (G.t >= G.blinkAt) { G.blinkT = 0.13; G.blinkAt = G.t + 2.2 + Math.random() * 2.8; }
+    if (G.blinkT > 0) G.blinkT -= dt;
+    // Bụi nước trôi lững lờ cho mặt nước có đời sống
+    G.motes.forEach(function (m) {
+      m.x += Math.sin(G.t * 0.6 + m.ph) * 3 * dt + m.sp * dt * 0.4;
+      m.y += Math.cos(G.t * 0.4 + m.ph) * 2 * dt;
+      if (m.x > VW + 4) { m.x = -4; m.y = WATER_Y + 14 + Math.random() * 180; }
+    });
     // Lò xo cần
     var r = G.rod;
     var acc = (r.target - r.angle) * r.stiff - r.vel * r.damp;
@@ -667,17 +691,29 @@
     else { cam.tx = 500; cam.ty = 281; cam.tzoom = 1; }
   }
 
-  function drawFish(g, img, x, y, w, dir, rot, alpha) {
+  // Vẽ cá kiểu HOẠT HÌNH: cắt thân thành 12 lát, mỗi lát lệch theo sóng
+  // chạy từ đầu tới đuôi (đuôi lệch mạnh nhất) -> cá uốn mình vẫy đuôi thật.
+  // Kèm co-giãn (squash & stretch): co lại khi lấy đà, giãn ra khi phóng nhanh.
+  function drawFish(g, img, f, w, alpha) {
     if (!img) return;
     var iw = img.naturalWidth || img.width, ih = img.naturalHeight || img.height;
     if (!iw || !ih) return;
     var hh = w * ih / iw;
+    var speed = f.speed || 0;
+    var amp = (2.6 + Math.min(9.5, speed * 0.075)) * (f.state === 'hooked' ? 1.4 : 1) * (1 + (f.coil || 0) * 0.7);
+    var stretch = Math.max(0.88, Math.min(1.16, 1 + (speed - 45) * 0.0009 - (f.coil || 0) * 0.10));
+    var rot = Math.sin(G.t * 3 + f.wob) * 0.04 + Math.max(-0.30, Math.min(0.30, f.vy * 0.0035)) + (f.state === 'hooked' ? Math.sin(G.t * 16) * 0.05 : 0);
+    var SEG = 12, sw = iw / SEG;
     g.save();
-    g.translate(x, y);
-    g.rotate(rot || 0);
-    g.scale(dir >= 0 ? 1 : -1, 1);
+    g.translate(f.x, f.y);
+    g.rotate(rot);
+    g.scale((f.dir >= 0 ? 1 : -1) * stretch, 1 / Math.sqrt(stretch));
     g.globalAlpha = alpha == null ? 1 : alpha;
-    g.drawImage(img, -w / 2, -hh / 2, w, hh);
+    for (var i = 0; i < SEG; i++) {
+      var u = 1 - (i + 0.5) / SEG; // 0 ở đầu (phải), 1 ở đuôi (trái)
+      var off = Math.sin((f.phase || 0) + i * 0.55) * amp * Math.pow(u, 1.3);
+      g.drawImage(img, i * sw, 0, sw, ih, -w / 2 + (i / SEG) * w, -hh / 2 + off, w / SEG + 1.2, hh);
+    }
     g.restore();
   }
 
@@ -702,13 +738,12 @@
     G.fishes.forEach(function (f) {
       var isHooked = G.hooked === f;
       var img = isHooked ? IMG['f_' + f.id] : tinted(f.id);
-      var rot = Math.sin(G.t * 3 + f.wob) * 0.05 + (isHooked ? Math.sin(G.t * 18) * 0.07 : 0);
       if (isHooked) {
         g.save(); g.shadowColor = 'rgba(255,255,255,0.6)'; g.shadowBlur = 16;
-        drawFish(g, img, f.x, f.y, FISH_W[f.sp.cls], f.dir, rot, 1);
+        drawFish(g, img, f, FISH_W[f.sp.cls], 1);
         g.restore();
       } else {
-        drawFish(g, img, f.x, f.y, FISH_W[f.sp.cls], f.dir, rot, f.state === 'hunt' ? 0.95 : 0.88);
+        drawFish(g, img, f, FISH_W[f.sp.cls], f.state === 'hunt' ? 0.95 : 0.88);
       }
       if (f.state === 'hunt' && G.hooked) {
         g.save();
@@ -718,6 +753,15 @@
         g.fillText('!', f.x, f.y - FISH_W[f.sp.cls] * 0.42);
         g.restore();
       }
+    });
+
+    // Bụi nước trôi (vẽ trước lớp phủ cho chìm tự nhiên)
+    G.motes.forEach(function (m) {
+      g.save();
+      g.globalAlpha = 0.20 + 0.10 * Math.sin(G.t + m.ph);
+      g.fillStyle = '#eafcff';
+      g.beginPath(); g.arc(m.x, m.y, m.r, 0, Math.PI * 2); g.fill();
+      g.restore();
     });
 
     // Lớp phủ nước
@@ -736,12 +780,32 @@
       g.restore();
     });
 
-    // Zehn khớp nối: thân + cần lát cong (tái dùng kỹ thuật bản V1)
+    // Zehn khớp nối: thân thở nhẹ (squash quanh điểm neo ở chân) + chớp mắt,
+    // cần lát cong (tái dùng kỹ thuật bản V1)
     var bobY = Math.sin(G.t * 1.25) * 2.6;
     var body = IMG.body;
     if (body && body.complete && body.naturalWidth) {
       var bw = 340, bh = bw * body.naturalHeight / body.naturalWidth;
-      g.drawImage(body, 40, 388 + bobY - bh, bw, bh);
+      var brY = 1 + Math.sin(G.t * 1.9) * 0.009; // hơi thở
+      g.save();
+      g.translate(210, 388 + bobY);
+      g.scale(1, brY);
+      g.drawImage(body, -170, -bh, bw, bh);
+      g.restore();
+      // Chớp mắt: hai miếng lông che mắt + vạch mi cong (vị trí đo từ ảnh gốc)
+      var blinking = (G.blinkT > 0) || G.blinkForce;
+      if (blinking) {
+        var eyes = [[0.435, 0.368], [0.539, 0.362]];
+        eyes.forEach(function (e) {
+          var ex = 40 + e[0] * bw, ey = 388 + bobY - bh + e[1] * bh;
+          g.save();
+          g.fillStyle = '#fff7ea';
+          g.beginPath(); g.ellipse(ex, ey, 8.5, 5.5, 0, 0, Math.PI * 2); g.fill();
+          g.strokeStyle = '#6b4f35'; g.lineWidth = 2; g.lineCap = 'round';
+          g.beginPath(); g.arc(ex, ey - 1.5, 6, Math.PI * 0.15, Math.PI * 0.85); g.stroke();
+          g.restore();
+        });
+      }
     }
     var rod = IMG.rod, curve = rodCurve();
     if (rod && rod.complete && rod.naturalWidth) {
@@ -888,6 +952,7 @@
         };
       },
       setFast: function () { G.fast = true; },
+      setBlink: function (on) { G.blinkForce = !!on; },
       addCoins: function (n) { save.coins += n; persist(); refreshTop(); },
       forceLureNearFish: function () {
         var f = G.fishes.find(function (x) { return x.sp.cls === G.baitClass + 1; });
