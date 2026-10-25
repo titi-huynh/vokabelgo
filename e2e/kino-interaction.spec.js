@@ -30,7 +30,7 @@ test('Kino opens with the featured film in view; listening does not require writ
   await expect(page.locator('#kinoListenVi')).toContainText('khoai tây');
   await expect(page.locator('#kinoNextBtn')).toBeEnabled();
   await page.locator('#kinoActivityNext').click();
-  await expect(page.locator('#kinoListenDe')).toHaveText('Und Bohnen!');
+  await expect(page.locator('#kinoListenDe')).toHaveText('Tut mir leid, Herr Bulle!');
   await page.locator('#kinoToggleSubBtn').click();
   await page.locator('#kinoToggleSubBtn').click();
   await expect(page.locator('#kinoSubOverlay')).not.toHaveClass(/hidden-sub/);
@@ -43,6 +43,8 @@ test('Kino opens with the featured film in view; listening does not require writ
 test('featured subtitles and chapter boundaries stay aligned; watching does not complete writing', async ({ page }) => {
   await open(page);
   await page.locator('#kinoDiscoveryStart').click();
+  // Wait for the asynchronous media preparation before seeking a paused frame.
+  await expect.poll(() => page.locator('#kinoDiscoveryVideo').evaluate(v => !v.paused && v.readyState >= 2)).toBeTruthy();
   await page.locator('#kinoDiscoveryVideo').evaluate(v => { v.pause(); v.currentTime = 35.5; });
   await expect(page.locator('#kinoDiscoveryDe')).toHaveText('Möchten Sie gerne eine Pizza bestellen?');
   await expect(page.locator('#kinoDiscoveryVi')).not.toBeEmpty();

@@ -197,14 +197,14 @@ const KinoChapters = (() => {
     const heading = document.createElement('div');
     heading.className = 'kino-practice-heading';
     heading.id = 'kinoPracticeHeading';
-    heading.innerHTML = '<div><p class="peppa-eyebrow" id="kinoActivityName"></p><h3 id="kinoPracticePosition"></h3><p id="kinoActivityHelp"></p></div><button type="button" id="kinoBackToParts">↑ Xem cả phần</button>';
+    heading.innerHTML = '<div><p class="peppa-eyebrow" id="kinoActivityName"></p><h3 id="kinoPracticePosition"></h3><p id="kinoActivityHelp"></p><p id="kinoUsageNote" hidden></p></div><button type="button" id="kinoBackToParts">↑ Xem cả phần</button>';
     document.querySelector('.kino-v3-grid').before(heading);
     document.getElementById('kinoBackToParts').onclick = () => {
       context();
     };
     const input = document.getElementById('kinoDiktatInput');
     input.setAttribute('aria-label', 'Gõ câu tiếng Đức bạn nghe được');
-    input.setAttribute('aria-describedby', 'kinoPracticePosition');
+    input.setAttribute('aria-describedby', 'kinoPracticePosition kinoUsageNote');
     document.querySelector('.kino-v3-col-right .kino-v3-card-title span').textContent = '✍️ Gõ điều bạn nghe được';
     document.querySelector('.kino-v3-col-right .kino-v3-card').classList.add('kino-writing-card');
     document.getElementById('kinoCheckBtn').textContent = 'Xem góp ý ↵';
@@ -531,6 +531,10 @@ const KinoChapters = (() => {
     document.getElementById('kinoActivityHelp').textContent = activity === 'write' ? 'Gõ thử, xem câu gốc khi cần. Có thể để câu này sau.'
       : activity === 'speak' ? 'Nghe giọng nhân vật rồi nói theo. Không cần làm phần viết trước.' : 'Đọc lời thoại và nghĩa tiếng Việt. Chọn câu nào cũng được.';
     document.getElementById('kinoPracticePosition').textContent = `Câu ${kinoCurrentIndex + 1} / ${segments.length} · Phần ${state.chapter + 1}`;
+    const usage = chapter.practiceUsage?.[segments[kinoCurrentIndex]?.id];
+    const usageNote = document.getElementById('kinoUsageNote');
+    usageNote.hidden = !usage;
+    usageNote.textContent = usage ? `Tình huống: ${usage}` : '';
     const passed = kinoCompletedSet.has(segments[kinoCurrentIndex]?.id);
     document.getElementById('kinoSentencePassed').hidden = !passed;
     document.getElementById('kinoContinueSentence').textContent = kinoCurrentIndex < segments.length - 1

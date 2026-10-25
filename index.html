@@ -6918,6 +6918,13 @@ input.search:focus {
   color: #f59e0b;
   border: 1px dashed rgba(245, 158, 11, 0.5);
 }
+.kino-diff-word:is(.extra, .replacement) {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  overflow-wrap: anywhere;
+}
+.kino-diff-summary { flex-basis: 100%; margin: 0 0 4px; font-size: 13px; }
 .kino-copy-to-pass-box {
   background: rgba(245, 158, 11, 0.1);
   border: 1px solid rgba(245, 158, 11, 0.3);
@@ -7189,7 +7196,7 @@ input.search:focus {
   <link rel="stylesheet" href="wortregen.css">
   <link rel="stylesheet" href="learning-journal.css">
   <link rel="stylesheet" href="home-clean.css">
-  <link rel="stylesheet" href="kino-chapters.css">
+  <link rel="stylesheet" href="kino-chapters.css?v=20261025-practice">
   <link rel="stylesheet" href="kino-discovery.css">
   <link rel="stylesheet" href="kino-dubbing-scene.css">
   <link rel="stylesheet" href="user-scenes.css">
@@ -9429,12 +9436,14 @@ input.search:focus {
 <script src="kino-metadata.js"></script>
 <script src="kino-data.js"></script>
 <script src="kino-media-manifest.js"></script>
+<script src="kino-dictation.js"></script>
 <script src="kino-chapter-data.js"></script>
+<script src="kino-practice-data.js"></script>
 <script src="kino-media.js"></script>
 <script src="kino-dubbing-scene.js"></script>
 <script src="kino-discovery.js"></script>
 <script src="kino-catalog.js"></script>
-<script src="kino-chapters.js"></script>
+<script src="kino-chapters.js?v=20261025-practice"></script>
 <script src="srt-align.js"></script>
 <script src="user-scenes.js"></script>
 
@@ -19631,16 +19640,7 @@ function insertKinoChar(char){
 
 // Normalize for tolerant checking (ignore punctuation, lower)
 function normalizeKinoClean(s){
-  return String(s || '').toLowerCase()
-    // Both spellings of these clothing adjectives are valid (Duden).
-    .replace(/\b(lang|kurz)ärmelig(e[nmrs]?)?\b/g, (_word, prefix, ending = '') => `${prefix}ärmlig${ending}`)
-    .replace(/[.,/#!$%^&*;:{}=\-_`~()?"'…!–—]/g, " ")
-    // German number words and digits are equally valid in dictation.
-    .replace(/(?<![\p{L}\p{N}_])(?:drei|neun|zehn|zwölf|vierzehn|sechzehn|dreißig|fünfzig|einhundert|hundert|dritten|dritter|vierte)(?![\p{L}\p{N}_])/gu, word =>
-      ({ drei: '3', neun: '9', zehn: '10', 'zwölf': '12', vierzehn: '14', sechzehn: '16',
-        'dreißig': '30', 'fünfzig': '50', einhundert: '100', hundert: '100', dritten: '3', dritter: '3', vierte: '4' })[word])
-    .replace(/\s+/g, " ")
-    .trim();
+  return KinoDictation.normalize(s);
 }
 
 function checkKinoDiktat(){
@@ -19749,30 +19749,34 @@ function checkKinoDiktat(){
 }
 
 function renderKinoWordDiff(userVal, targetVal, container){
-  container.innerHTML = '';
-  const userWords = String(userVal || '').replace(/[.,/#!$%^&*;:{}=\-_`~()?"'…!–—]/g, ' ').split(/\s+/).filter(w => w);
-  const targetWords = String(targetVal || '').replace(/[.,/#!$%^&*;:{}=\-_`~()?"'…!–—]/g, ' ').split(/\s+/).filter(w => w);
-
-  targetWords.forEach((tw, idx) => {
-    const uw = userWords[idx];
-    const cleanTw = normalizeKinoClean(tw);
-    const cleanUw = normalizeKinoClean(uw);
-
+  container.replaceChildren();
+  const operations = KinoDictation.align(userVal, targetVal);
+  const counts = { missing: 0, extra: 0, replace: 0 };
+  for (const operation of operations) {
     const span = document.createElement('span');
-    if(!uw){
+    span.dataset.kind = operation.type;
+    if(operation.type === 'missing'){
       span.className = 'kino-diff-word missing';
-      span.textContent = `[?] (${cleanTw.charAt(0)}...)`;
-      span.title = "Từ còn thiếu";
-    } else if(cleanTw === cleanUw){
+      span.textContent = `Thiếu: ${operation.target.text}`;
+    } else if(operation.type === 'extra'){
+      span.className = 'kino-diff-word extra';
+      span.textContent = `Thừa: ${operation.user.text}`;
+    } else if(operation.type === 'correct'){
       span.className = 'kino-diff-word correct';
-      span.textContent = tw;
+      span.textContent = operation.target.text;
     } else {
-      span.className = 'kino-diff-word wrong';
-      span.textContent = uw;
-      span.title = `Chưa đúng. Gợi ý: bắt đầu bằng '${cleanTw.charAt(0)}'`;
+      span.className = 'kino-diff-word replacement';
+      const original = document.createElement('s');
+      original.textContent = operation.user.text;
+      span.append(original, ` → ${operation.target.text}`);
     }
+    if (operation.type !== 'correct') counts[operation.type]++;
     container.appendChild(span);
-  });
+  }
+  const summary = document.createElement('p');
+  summary.className = 'kino-diff-summary';
+  summary.textContent = [counts.missing && `Thiếu ${counts.missing} từ`, counts.extra && `Thừa ${counts.extra} từ`, counts.replace && `${counts.replace} từ cần sửa`].filter(Boolean).join(' · ');
+  if (summary.textContent) container.prepend(summary);
 }
 
 // Smart word hint (Option 2: auto-fill next word without alert)

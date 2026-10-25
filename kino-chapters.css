@@ -70,6 +70,9 @@
 #diktatMode.kino-chapters-active .kino-v3-fb-status.partial { color: #8b641b; }
 #diktatMode.kino-chapters-active .kino-diff-word.correct { background: #e3efd9; color: #365c2d; border-color: #b6cfa2; }
 #diktatMode.kino-chapters-active .kino-diff-word.wrong { background: #fae8e1; color: #9b3d31; border-color: #dfb4a8; }
+#diktatMode.kino-chapters-active .kino-diff-word:is(.extra, .replacement) { background: #fae8e1; color: #9b3d31; border-color: #dfb4a8; }
+#diktatMode.kino-chapters-active .kino-diff-summary { color: #805a19; }
+#diktatMode.kino-chapters-active #kinoUsageNote { padding: 9px 12px; border-left: 3px solid #6e8950; border-radius: 4px; background: #edf2e5; color: #3f5a32; font-size: 14px; overflow-wrap: anywhere; }
 #diktatMode.kino-chapters-active :is(.kino-diff-word.missing, .kino-copy-to-pass-box) { background: #f8efd9; color: #805a19; border-color: #d4bc80; }
 #diktatMode.kino-chapters-active .kino-v3-t-text { color: #3f5137; }
 #diktatMode.kino-chapters-active .kino-v3-t-time { color: #5c6f51; background: #e9efdf; }
