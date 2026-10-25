@@ -17,7 +17,7 @@ body[data-hub="today"] #todayMode {
   max-width: none;
 }
 
-/* --- Thanh chào: banner ảnh ao tĩnh, chữ trên lớp phủ kem bên trái --- */
+/* --- Thanh chào: nền chuyển sắc ấm + đốm màu trang trí (KHÔNG dùng ảnh mèo câu cá) --- */
 body[data-hub="today"] .today-welcome-bar {
   grid-area: welcome;
   border-radius: 26px;
@@ -25,12 +25,13 @@ body[data-hub="today"] .today-welcome-bar {
   min-height: 132px;
   align-items: center;
   border: none;
-  box-shadow: 0 14px 34px rgba(31, 122, 77, 0.16);
+  box-shadow: 0 14px 34px rgba(214, 132, 44, 0.16);
   background:
-    linear-gradient(90deg, rgba(255, 251, 240, 0.97) 34%, rgba(255, 251, 240, 0.72) 52%, rgba(255, 251, 240, 0) 66%),
-    url("assets/may-home/may-original.png") right 30% / cover no-repeat;
+    radial-gradient(circle at 88% 18%, rgba(124, 92, 255, 0.20) 0 52px, transparent 53px),
+    radial-gradient(circle at 96% 88%, rgba(14, 165, 164, 0.22) 0 74px, transparent 75px),
+    radial-gradient(circle at 76% 96%, rgba(240, 86, 47, 0.16) 0 40px, transparent 41px),
+    linear-gradient(100deg, #fff3d6 0%, #ffe9ec 52%, #e2f6ee 100%);
 }
-body[data-hub="today"] .welcome-cat-group { max-width: 62%; }
 body[data-hub="today"] .today-date-badge {
   background: #fff;
   box-shadow: 0 4px 12px rgba(120, 84, 20, 0.15);
@@ -181,13 +182,6 @@ body[data-hub="today"] .today-pathways-grid .pathway-card:nth-child(3) .pathway-
 body[data-hub="today"] .today-pathways-grid .pathway-card:nth-child(3) .pathway-title { color: #0b6e6d; }
 
 @media (max-width: 680px) {
-  body[data-hub="today"] .today-welcome-bar {
-    background:
-      linear-gradient(180deg, rgba(255, 251, 240, 0.97) 42%, rgba(255, 251, 240, 0.78) 68%, rgba(255, 251, 240, 0) 92%),
-      url("assets/may-home/may-original.png") center 74% / cover no-repeat;
-    min-height: 225px;
-    align-items: flex-start;
-  }
-  body[data-hub="today"] .welcome-cat-group { max-width: 100%; }
+  body[data-hub="today"] .today-welcome-bar { min-height: 0; }
   body[data-hub="today"] .today-hero-card { padding: 24px 20px; }
 }
