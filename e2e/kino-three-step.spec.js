@@ -32,7 +32,7 @@ test('catalog → film overview → chosen part, with full-video viewing on the 
   await expect(page.locator('#kinoMovieOverview')).toBeHidden();
   await expect(page.locator('#kinoPeppaChapters')).toBeHidden();
   await expect(page.locator('#kinoLessonTabs')).toBeVisible();
-  await expect(page.getByRole('tab')).toHaveText(['Nghe hiểu', 'Viết', 'Nói']);
+  await expect(page.getByRole('tab')).toHaveText(['Nghe hiểu', 'Luyện 7 câu →', 'Nói']);
   await expect(page.getByRole('tab', { name: 'Nghe hiểu', exact: true })).toHaveAttribute('aria-selected', 'true');
   await expect(page.locator('#peppaPartTitle')).toHaveText('Thử chiếc xe mới');
   await expect(page.locator('#kinoDiktatInput')).toBeHidden();
@@ -53,7 +53,7 @@ test('part tabs switch freely, retain the selected sentence, and reload into lis
   await seedStorage(page, { vokabelgo_kino_reset_done_v2026: 'true' });
   await page.goto('/?kino=babysitter&part=3');
   await expect(page.getByRole('tab', { name: 'Nghe hiểu', exact: true })).toHaveAttribute('aria-selected', 'true');
-  await page.getByRole('tab', { name: 'Viết', exact: true }).click();
+  await page.getByRole('tab', { name: 'Luyện 7 câu →', exact: true }).click();
   await expect(page.locator('#kinoDiktatInput')).toBeVisible();
   await page.locator('#kinoSkipWriting').click();
   await expect(page.locator('#kinoPracticePosition')).toContainText('Câu 2 / 7');
@@ -65,14 +65,14 @@ test('part tabs switch freely, retain the selected sentence, and reload into lis
   await expect(page.getByRole('tab', { name: 'Nghe hiểu', exact: true })).toBeFocused();
   await expect(page.locator('#kinoDiscovery')).toBeVisible();
   await page.getByRole('tab', { name: 'Nghe hiểu', exact: true }).press('ArrowRight');
-  await expect(page.getByRole('tab', { name: 'Viết', exact: true })).toBeFocused();
+  await expect(page.getByRole('tab', { name: 'Luyện 7 câu →', exact: true })).toBeFocused();
   await expect(page.locator('#kinoDiktatInput')).toBeVisible();
   await page.locator('#kinoDiktatInput').fill(await page.locator('#kinoOverlayDe').textContent());
   await page.locator('#kinoCheckBtn').click();
   await page.reload();
   await expect(page.getByRole('tab', { name: 'Nghe hiểu', exact: true })).toHaveAttribute('aria-selected', 'true');
   await expect(page.locator('#peppaPartMeta')).toContainText('PHẦN 3 / 4');
-  await page.getByRole('tab', { name: 'Viết', exact: true }).click();
+  await page.getByRole('tab', { name: 'Luyện 7 câu →', exact: true }).click();
   await expect(page.locator('#kinoProgressCount')).toContainText('1 / 7 câu');
 });
 
@@ -90,7 +90,7 @@ test('phone overview shows the full-video choice and parts, then a compact acces
   await page.screenshot({ path: capture('kino-part-tabs-mobile.png') });
   for (const width of [320, 390, 768]) {
     await page.setViewportSize({ width, height: 844 });
-    await page.getByRole('tab', { name: 'Viết', exact: true }).click();
+    await page.getByRole('tab', { name: 'Luyện 7 câu →', exact: true }).click();
     await expect(page.locator('#kinoDiktatInput')).toHaveCSS('font-size', width <= 640 ? '18px' : '16px');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
     await page.getByRole('tab', { name: 'Nghe hiểu', exact: true }).click();

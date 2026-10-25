@@ -580,7 +580,28 @@ const KinoChapters = (() => {
     revealSelectedPart();
   }
   window.addEventListener('popstate', () => restoreLocation(new URLSearchParams(location.search), true));
-  return { prepare, progress, save, render, clearWatch, enter, syncLocation,
+  function focusShortCue(want) {
+    if (!active || !panel || document.body.dataset.hub !== 'kino' || want.videoKey && want.videoKey !== videoKey) return false;
+    if (document.getElementById('diktatMode').dataset.kinoView !== 'lesson') return false;
+    const cue = source.find(seg => want.cueId != null ? seg.id === Number(want.cueId) : seg.text === want.cueText);
+    if (!cue) return false;
+    const index = chapters.findIndex(part => cue.start >= part.start && cue.end <= part.end);
+    if (index < 0) return false;
+    const mode = chapters[index].picks.includes(cue.id) ? state.mode : 'all';
+    change(index, mode, true, false);
+    activity = 'listen';
+    KinoDiscovery.pause();
+    kinoShowSubtitles = true;
+    document.getElementById('kinoSubOverlay').classList.remove('hidden-sub');
+    const selectedIndex = PIZZASCHWESTER_72_SEGMENTS.findIndex(seg => seg.id === cue.id);
+    if (selectedIndex < 0) return false;
+    loadKinoSentence(selectedIndex);
+    render();
+    document.getElementById('kinoPracticeHeading').scrollIntoView({ block: 'start' });
+    document.getElementById('kinoPlayLoopBtn').focus({ preventScroll: true });
+    return true;
+  }
+  return { prepare, progress, save, render, clearWatch, enter, syncLocation, focusShortCue,
     restoreInitialLocation: () => restoreLocation(initialQuery), isActive: () => active,
     recordingKey: () => `${videoKey}_${state.chapter}_${state.mode}` };
 })();
