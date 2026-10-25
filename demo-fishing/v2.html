@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zehn câu cá V2 — bản chơi thử (kiểu Cat Goes Fishing)</title>
+<link rel="stylesheet" href="fishing-v2.css">
+</head>
+<body>
+  <main class="v2-shell">
+    <header class="v2-top">
+      <div class="v2-title">🎣 Zehn câu cá <span class="v2-badge">V2</span></div>
+      <div class="v2-stats">
+        <span class="v2-stat" id="v2Coins">🪙 0 xu</span>
+        <span class="v2-stat" id="v2BasketInfo">🧺 0/5</span>
+        <span class="v2-stat" id="v2BaitInfo">🪱 Mồi thường</span>
+        <span class="v2-stat" id="v2RodInfo">🎣 Cần cấp 1</span>
+      </div>
+      <div class="v2-top-btns">
+        <button type="button" id="v2StallBtn">🏪 Sạp cá</button>
+        <button type="button" id="v2ShopBtn">🛠️ Cửa hàng</button>
+        <a class="v2-back" href="index.html">← Bản V1</a>
+      </div>
+    </header>
+
+    <section class="v2-stage" id="v2Stage">
+      <canvas id="v2Canvas"></canvas>
+      <div class="v2-order" id="v2Order"></div>
+      <div class="v2-gauge hidden" id="v2Gauge">
+        <span>Gần</span><span>Giữa</span><span>Sâu</span>
+        <div class="v2-gauge-marker" id="v2GaugeMarker"></div>
+      </div>
+      <div class="v2-card hidden" id="v2Card"></div>
+      <div class="v2-toast hidden" id="v2Toast"></div>
+    </section>
+
+    <footer class="v2-controls">
+      <button type="button" class="v2-action" id="v2Action">Thả câu 🎣</button>
+      <div class="v2-hint" id="v2Hint">Bấm Thả câu, bấm lần nữa để chốt độ xa. Mồi chìm xuống — kéo chuột/tay để lái mồi tới gần con cá mình muốn.</div>
+    </footer>
+
+    <div class="v2-panel hidden" id="v2Stall"></div>
+    <div class="v2-panel hidden" id="v2Shop"></div>
+  </main>
+  <script src="fishing-v2.js"></script>
+</body>
+</html>

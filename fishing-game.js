@@ -1040,7 +1040,10 @@
     // Nút mở game trong header của hộp thoại
     var headerBtns = document.querySelector('#rewardPrototypeModal .reward-header-right-btns');
     var startBtn = null;
-    if (headerBtns) {
+    // TẠM DỪNG GAME (chị quyết 2026-10-25): ẩn nút mở game, hộp thoại thưởng
+    // chạy luồng video cổ điển. Code/art/dữ liệu giữ nguyên chờ bản V2.
+    var GAME_PAUSED = true;
+    if (headerBtns && !GAME_PAUSED) {
       startBtn = document.createElement('button');
       startBtn.type = 'button';
       startBtn.id = 'fishingGameStartBtn';

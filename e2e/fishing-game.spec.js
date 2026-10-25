@@ -3,7 +3,8 @@ const { seedStorage, getStorageJson } = require('./helpers/storage');
 
 // Game câu cá giai đoạn 1: ván thắng đi qua đường reveal/lưu kho hiện có
 // với via:'game'; đường thoát nhanh quay về luồng video cũ nguyên vẹn.
-test.describe('E2E Fishing Game (giai đoạn 1)', () => {
+// Game tạm dừng chờ bản V2 (chị quyết 2026-10-25) — bật lại khi V2 vào app.
+test.describe.skip('E2E Fishing Game (giai đoạn 1)', () => {
   test.beforeEach(async ({ page }) => {
     await page.addInitScript(() => {
       window.__e2eSpokenTexts = [];
