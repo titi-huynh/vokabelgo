@@ -3126,6 +3126,434 @@ const KINO_PRACTICE_DATA = {
         }
       ]
     }
+  ],
+  "k_on_s01e01": [
+    {
+      "part": 1,
+      "picks": [
+        {
+          "id": 1100003,
+          "usage": "Mở đầu một cột mốc mới: 'Ab heute bin ich …' = Từ hôm nay tôi là…"
+        },
+        {
+          "id": 1100006,
+          "usage": "'immer noch nicht' = vẫn chưa…; câu hỏi gián tiếp với 'in welchem'"
+        },
+        {
+          "id": 1100008,
+          "usage": "'Es wird Zeit' = đã đến lúc phải…; 'bereits vor zwei Wochen' = đã từ hai tuần trước"
+        },
+        {
+          "id": 1100009,
+          "usage": "'eine Niete sein' = dở tệ ở mảng nào đó (cách nói tự trào)"
+        },
+        {
+          "id": 1100011,
+          "usage": "Câu điều kiện với 'wenn' và chủ ngữ chung 'man'"
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "picks": [
+        {
+          "id": 1100018,
+          "usage": "'sich entscheiden' + zu-Infinitiv = quyết định làm gì"
+        },
+        {
+          "id": 1100019,
+          "usage": "'ausfüllen' = điền đơn; 'schon' = đã… rồi (Perfekt)"
+        },
+        {
+          "id": 1100022,
+          "usage": "'genauer gesagt' = nói chính xác hơn; 'kurz vor' = ngay trước/sắp"
+        },
+        {
+          "id": 1100024,
+          "usage": "Bị động 'wird aufgelöst' + hạn chót 'bis Ende des Monats'"
+        },
+        {
+          "id": 1100030,
+          "usage": "'bildschön' = đẹp tuyệt trần; câu hỏi đuôi 'findest du nicht?'"
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "picks": [
+        {
+          "id": 1100081,
+          "usage": "'scheinen … zu sein' = có vẻ như…"
+        },
+        {
+          "id": 1100082,
+          "usage": "Nhượng bộ 'zwar … aber' = tuy… nhưng"
+        },
+        {
+          "id": 1100084,
+          "usage": "Khi vui mừng nhận lời giúp đỡ: “Tuyệt quá, cảm ơn cậu!”"
+        },
+        {
+          "id": 1100085,
+          "usage": "Khi thông báo nhóm chỉ còn thiếu thêm một người nữa."
+        },
+        {
+          "id": 1100086,
+          "usage": "'als … zählen' = tính ai đó là…"
+        },
+        {
+          "id": 1100106,
+          "usage": "Công thức trang trọng 'Hiermit ist … eröffnet' = xin tuyên bố khai mạc"
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "picks": [
+        {
+          "id": 1100114,
+          "usage": "'so etwas wie' = kiểu như…"
+        },
+        {
+          "id": 1100115,
+          "usage": "'spendieren' = chiêu đãi, mời; 'bei den Hausaufgaben helfen' = giúp làm bài tập"
+        },
+        {
+          "id": 1100135,
+          "usage": "'klingen' = nghe có vẻ; 'nicht gerade' = không hẳn là…"
+        },
+        {
+          "id": 1100144,
+          "usage": "'es gibt' + Akkusativ = có thêm một…"
+        },
+        {
+          "id": 1100154,
+          "usage": "'nach etwas klingen' = nghe như là…"
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "picks": [
+        {
+          "id": 1100162,
+          "usage": "'kneifen' (lóng) = chuồn, né tránh"
+        },
+        {
+          "id": 1100163,
+          "usage": "'kommen und gehen, wann du willst' = đến đi tùy thích"
+        },
+        {
+          "id": 1100184,
+          "usage": "Chúc ăn ngon: 'Lass es dir gut schmecken'"
+        },
+        {
+          "id": 1100196,
+          "usage": "'Es gibt nur zwei Arten von…' = chỉ có hai loại… (câu nói đùa nổi tiếng)"
+        },
+        {
+          "id": 1100201,
+          "usage": "Konjunktiv II quá khứ: 'hätten … gefunden, wäre … aufgelöst worden' = nếu không… thì đã…"
+        },
+        {
+          "id": 1100211,
+          "usage": "Nói mình không làm được: 'Geht nicht. Ich weiß nicht, wie.'"
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "picks": [
+        {
+          "id": 1100216,
+          "usage": "'auf keinen Fall' = tuyệt đối không"
+        },
+        {
+          "id": 1100218,
+          "usage": "'umstimmen' = thuyết phục ai đổi ý"
+        },
+        {
+          "id": 1100223,
+          "usage": "Thành ngữ 'anbeißen' = cắn câu (nghĩa đen lẫn nghĩa bóng)"
+        },
+        {
+          "id": 1100236,
+          "usage": "'auf etwas stehen' = mê mẩn thứ gì (khẩu ngữ)"
+        },
+        {
+          "id": 1100245,
+          "usage": "'faulenzen' = lười biếng nằm dài"
+        },
+        {
+          "id": 1100248,
+          "usage": "'obwohl' = mặc dù; 'es ernst meinen' = nghiêm túc với việc gì"
+        },
+        {
+          "id": 1100252,
+          "usage": "'wenigstens' = ít nhất; 'bevor' = trước khi"
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "picks": [
+        {
+          "id": 1100256,
+          "usage": "'Mir fehlen die Worte' = tôi không biết nói gì nữa"
+        },
+        {
+          "id": 1100259,
+          "usage": "'Spaß an etwas haben' = thấy vui với việc gì"
+        },
+        {
+          "id": 1100260,
+          "usage": "'sich etwas überlegen' = suy nghĩ lại, đổi ý"
+        },
+        {
+          "id": 1100273,
+          "usage": "'jdm. etwas beibringen' = dạy ai điều gì; mệnh đề quan hệ với 'was'"
+        },
+        {
+          "id": 1100274,
+          "usage": "Trấn an bạn bằng một câu ngắn, tự nhiên: “Đừng lo.”"
+        }
+      ]
+    },
+    {
+      "part": 8,
+      "picks": [
+        {
+          "id": 1100278,
+          "usage": "Khi bất ngờ vì bạn đã thật sự tham gia một hoạt động."
+        },
+        {
+          "id": 1100282,
+          "usage": "Khi phản ứng vì cảm thấy mình bị trêu hoặc bị xem nhẹ."
+        },
+        {
+          "id": 1100284,
+          "usage": "Kể lại lời đề nghị dạy mình một kỹ năng mới."
+        },
+        {
+          "id": 1100285,
+          "usage": "'Ist dir klar, …?' = cậu có hiểu… không?"
+        },
+        {
+          "id": 1100286,
+          "usage": "Khi nói ai đó cần tự mua một món đồ: “Du musst dir … kaufen.”"
+        },
+        {
+          "id": 1100288,
+          "usage": "Trả lời ngắn gọn tự nhiên: 'Glaube ich kaum' = tớ không tin đâu"
+        },
+        {
+          "id": 1100289,
+          "usage": "'man kriegt' = người ta mua được… (cách nói xuôi miệng)"
+        }
+      ]
+    }
+  ],
+  "delicious_in_dungeon_s01e01": [
+    {
+      "part": 1,
+      "picks": [
+        {
+          "id": 1200008,
+          "usage": "Khi khẳng định cả nhóm đã chuẩn bị kỹ càng trước một thử thách."
+        },
+        {
+          "id": 1200011,
+          "usage": "Khi nhận xét mọi người đang di chuyển chậm chạp, nặng nề vì mệt hoặc đói."
+        },
+        {
+          "id": 1200012,
+          "usage": "Khi giải thích lý do bị trễ một ngày đường vì nhầm bản đồ."
+        },
+        {
+          "id": 1200014,
+          "usage": "Khi khuyên cả nhóm nên quay về ngay sau khi hoàn thành mục tiêu chính."
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "picks": [
+        {
+          "id": 1200051,
+          "usage": "Khi hỏi ý kiến cả nhóm xem nên chọn món gì cho bữa ăn."
+        },
+        {
+          "id": 1200054,
+          "usage": "Khi nhiệt tình giới thiệu một quán ăn ngon không thể bỏ qua."
+        },
+        {
+          "id": 1200068,
+          "usage": "Khi đồng tình rằng một kế hoạch hoặc giải pháp hoàn toàn có khả năng thành công."
+        },
+        {
+          "id": 1200073,
+          "usage": "Khi nhắc bạn bè đừng coi mình là gánh nặng của cả nhóm."
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "picks": [
+        {
+          "id": 1200095,
+          "usage": "Khi nhấn mạnh tình thế cấp bách và hỏi đối phương có phương án nào tốt hơn không."
+        },
+        {
+          "id": 1200106,
+          "usage": "Khi rủ đồng đội tìm một chỗ thích hợp để dừng chân và nhóm lửa."
+        },
+        {
+          "id": 1200107,
+          "usage": "Khi nhận xét rằng nếu có thêm một vài nguyên liệu nữa thì món ăn sẽ ngon hơn."
+        },
+        {
+          "id": 1200133,
+          "usage": "Khi ghi nhận rằng mình vừa rút ra được một kinh nghiệm hay kiến thức mới."
+        },
+        {
+          "id": 1200140,
+          "usage": "Khi giải thích thông tin mình đọc được trong sách và muốn tự mình kiểm chứng."
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "picks": [
+        {
+          "id": 1200145,
+          "usage": "Khi chỉ ra rằng cách chế biến món ăn hiện tại hoàn toàn chưa đúng."
+        },
+        {
+          "id": 1200160,
+          "usage": "Khi nhận xét dụng cụ hiện có quá nhỏ và đề nghị đổi sang đồ dùng của mình."
+        },
+        {
+          "id": 1200161,
+          "usage": "Khi khen ngợi ai đó đã chuẩn bị đồ đạc rất chu đáo."
+        },
+        {
+          "id": 1200178,
+          "usage": "Khi đưa khăn tay cho người đối diện để lau mặt hoặc vết bẩn."
+        },
+        {
+          "id": 1200194,
+          "usage": "Khi giải thích món đồ cần thời gian chuẩn bị nhưng mình đã có sẵn một phần làm xong."
+        },
+        {
+          "id": 1200202,
+          "usage": "Khi dặn mọi người kiên nhẫn chờ thêm một chút trước khi món ăn chín."
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "picks": [
+        {
+          "id": 1200206,
+          "usage": "Khi nhận xét bước đầu rằng món ăn tỏa mùi rất thơm."
+        },
+        {
+          "id": 1200212,
+          "usage": "Khi tấm tắc khen ngợi một món ăn ngon vượt ngoài sức tưởng tượng."
+        },
+        {
+          "id": 1200213,
+          "usage": "Khi người nấu bày tỏ niềm vui vì món ăn hợp khẩu vị của mọi người."
+        },
+        {
+          "id": 1200226,
+          "usage": "Khi sực nhớ ra mọi người đã trò chuyện một lúc mà vẫn chưa giới thiệu tên tuổi."
+        },
+        {
+          "id": 1200229,
+          "usage": "Khi hỏi thăm xem đối phương đến một nơi nào đó vì mục đích gì."
+        },
+        {
+          "id": 1200238,
+          "usage": "Khi lịch sự xin phép được tham gia đồng hành cùng một nhóm."
+        },
+        {
+          "id": 1200239,
+          "usage": "Khi vui vẻ nhận lời và khẳng định sự góp mặt của đối phương sẽ giúp ích rất nhiều."
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "picks": [
+        {
+          "id": 1200255,
+          "usage": "Khi nhận xét cả nhóm đã đi đường dài và ai nấy đều thấm mệt."
+        },
+        {
+          "id": 1200256,
+          "usage": "Khi rủ mọi người tìm chỗ dừng chân qua đêm để nghỉ ngơi."
+        },
+        {
+          "id": 1200269,
+          "usage": "Khi nói rằng mình không kén chọn, miễn là món đó ăn được."
+        },
+        {
+          "id": 1200286,
+          "usage": "Khi nhận lỗi sau lúc tranh luận và thừa nhận người kia nói đúng."
+        },
+        {
+          "id": 1200301,
+          "usage": "Khi trấn an đồng đội rằng khu vực hiện tại vẫn còn an toàn."
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "picks": [
+        {
+          "id": 1200314,
+          "usage": "Khi giục người khác gác lại chuyện lý thuyết vì tình thế đang khẩn cấp."
+        },
+        {
+          "id": 1200320,
+          "usage": "Khi giải thích rằng đặc điểm hoặc kết quả còn tùy thuộc vào từng loại cụ thể."
+        },
+        {
+          "id": 1200326,
+          "usage": "Khi khuyên nên tập trung xử lý dứt điểm vào một chỗ thay vì dàn trải."
+        },
+        {
+          "id": 1200330,
+          "usage": "Khi bày tỏ lòng biết ơn chân thành sau khi được bạn bè giúp đỡ."
+        }
+      ]
+    },
+    {
+      "part": 8,
+      "picks": [
+        {
+          "id": 1200352,
+          "usage": "Khi hoàn tất việc nấu nướng và gọi mọi người vào dùng bữa."
+        },
+        {
+          "id": 1200355,
+          "usage": "Khi nhận xét hương vị món ăn mặn mà và khác hẳn hình dung ban đầu."
+        },
+        {
+          "id": 1200368,
+          "usage": "Khi gật gù vì vừa hiểu ra quy luật hoặc cách vận hành của một sự việc."
+        },
+        {
+          "id": 1200375,
+          "usage": "Khi khuyên ngăn không nên mạo hiểm làm việc gì đó vì dễ xảy ra rủi ro."
+        },
+        {
+          "id": 1200378,
+          "usage": "Khi nhấn mạnh rằng cần đặt một vật ở vị trí thật dễ nhận thấy."
+        }
+      ]
+    }
   ]
 };
 

@@ -19,7 +19,9 @@ const KinoData = (() => {
     trudes_bagger: 'trudes_bagger-aligned.js',
     erdmaennchen_spukschloss: 'erdmaennchen_spukschloss-aligned.js',
     spy_family_s01e01: 'spy_family_s01e01-aligned.js',
-    demon_slayer_s01e01: 'demon_slayer_s01e01-aligned.js'
+    demon_slayer_s01e01: 'demon_slayer_s01e01-aligned.js',
+    k_on_s01e01: 'k-on-s01e01-aligned.js',
+    delicious_in_dungeon_s01e01: 'delicious-in-dungeon-s01e01-aligned.js'
   };
   const requests = new Map(), loaded = new Set();
   let selection = 0;
@@ -60,6 +62,8 @@ const KinoData = (() => {
       case 'we_bare_bears_mall': return WE_BARE_BEARS_MALL_CAPTION_CUES;
       case 'frieren_s01e01': return FRIEREN_S01E01_CAPTION_CUES;
       case 'sakura_s01e01': return SAKURA_S01E01_CAPTION_CUES;
+      case 'k_on_s01e01': return K_ON_S01E01_CAPTION_CUES;
+      case 'delicious_in_dungeon_s01e01': return DELICIOUS_IN_DUNGEON_S01E01_CAPTION_CUES;
       default: return cues(key);
     }
   }
@@ -86,6 +90,8 @@ const KinoData = (() => {
       case 'erdmaennchen_spukschloss': return ERDMAENNCHEN_SPUKSCHLOSS_ALIGNED_UTTERANCES;
       case 'spy_family_s01e01': return SPY_FAMILY_S01E01_ALIGNED_UTTERANCES;
       case 'demon_slayer_s01e01': return DEMON_SLAYER_S01E01_ALIGNED_UTTERANCES;
+      case 'k_on_s01e01': return K_ON_S01E01_ALIGNED_UTTERANCES;
+      case 'delicious_in_dungeon_s01e01': return DELICIOUS_IN_DUNGEON_S01E01_ALIGNED_UTTERANCES;
       default: return [];
     }
   }

@@ -402,8 +402,9 @@ function createAppRuntimeEnvironment(initialStorage = {}) {
   // Load the actual external lesson data in document order before the inline
   // application script, just as the browser does (flashcards depend on it).
   for (const match of indexHtmlContent.matchAll(/<script\s+src="([^"]+)"/g)) {
-    if (/(?:-aligned|-lesson|kino-metadata)\.js$/.test(match[1])) {
-      vm.runInContext(fs.readFileSync(path.join(__dirname, match[1]), 'utf8'), sandbox, { filename: match[1] });
+    const scriptFile = match[1].split(/[?#]/)[0];
+    if (/(?:-aligned|-lesson|kino-metadata)\.js$/.test(scriptFile)) {
+      vm.runInContext(fs.readFileSync(path.join(__dirname, scriptFile), 'utf8'), sandbox, { filename: scriptFile });
     }
   }
   // Chạy trực tiếp mã nguồn trích từ index.html

@@ -1,0 +1,28 @@
+[
+  {
+    "key": "k_on_s01e01",
+    "originalContainer": "mpegts",
+    "original720p": "video/k_on_s01e01-web-v1.mp4",
+    "viewing480p": "video/kino-light/k_on_s01e01-480p-v1.mp4",
+    "duration": 1451.744,
+    "originalBytes": 372260248,
+    "viewingBytes": 100336353,
+    "decodedAudioUnchanged": true,
+    "decodedAudioSha256": "SHA256=85bb9b7f1b31b3c9ea2b5441152b8180bd8458194d455fbb2b53a5983ef15ce7",
+    "webSha256": "8d3784e8d33e09b11f14e85205364a08716e1f2b6a42f4de636c9b3f8a200472",
+    "viewingSha256": "8211b469cfb4550143b882b0e8fa5348ce038379112c5bbaffd74aee3b4c6580"
+  },
+  {
+    "key": "delicious_in_dungeon_s01e01",
+    "originalContainer": "mpegts",
+    "original720p": "video/delicious_in_dungeon_s01e01-web-v1.mp4",
+    "viewing480p": "video/kino-light/delicious_in_dungeon_s01e01-480p-v1.mp4",
+    "duration": 1607.488,
+    "originalBytes": 230489559,
+    "viewingBytes": 126203834,
+    "decodedAudioUnchanged": true,
+    "decodedAudioSha256": "SHA256=2c200d31c6edee2f10a4d219afc8ba769395d79c8205d2dfb9ed2b6a8db1f30c",
+    "webSha256": "b9977423f0dfe3e3317602e1f9bbed4b6a8e240071c66b2d985553e0a61a9223",
+    "viewingSha256": "cfbabd02a758e841200f5bea47263deb7d7070d5042cc992fa1342cbe21c75ca"
+  }
+]

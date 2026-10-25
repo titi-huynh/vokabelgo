@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-25T17:15:22.596Z",
+  "films": {
+    "k_on_s01e01": {
+      "chapters": 8,
+      "practicePicks": 46,
+      "captions": 239,
+      "flashcards": 16
+    },
+    "delicious_in_dungeon_s01e01": {
+      "chapters": 8,
+      "practicePicks": 40,
+      "captions": 367,
+      "flashcards": 16
+    }
+  },
+  "validation": {
+    "unitSuites": 21,
+    "newAnimeBrowserTests": 7,
+    "mediaBrowserTests": 2
+  },
+  "limits": [
+    "Unclear or unresolved ASR lines are omitted from captions and practice.",
+    "Timing checks combine bounded recognition and forced alignment; this is not a claim that every word was human-transcribed.",
+    "New Shorts remain reviewed proposals; the existing12 Shorts continue unchanged."
+  ]
+}

@@ -34,7 +34,10 @@ def audio_hash(path):
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     QA.mkdir(parents=True, exist_ok=True)
-    manifest, evidence = {}, []
+    manifest_path = ROOT / 'kino-media-manifest.js'
+    # Other reviewed film pipelines also register viewing copies here.
+    manifest = json.loads(manifest_path.read_text(encoding='utf8').split('const KINO_MEDIA_MANIFEST = ', 1)[1].strip().removesuffix(';')) if manifest_path.exists() else {}
+    evidence = []
     for key, name in MOVIES.items():
         source = ROOT / 'video' / name
         target = OUT / f'{key}-480p-v2.mp4'

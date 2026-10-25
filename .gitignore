@@ -29,3 +29,8 @@ venv/
 .vercel
 preview_wortregen/
 artifacts_video/
+# Local playback caches; the two episodes are served from the media release.
+video/k_on_s01e01-web-v1.mp4
+video/delicious_in_dungeon_s01e01-web-v1.mp4
+video/kino-light/k_on_s01e01-480p-v1.mp4
+video/kino-light/delicious_in_dungeon_s01e01-480p-v1.mp4

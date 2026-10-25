@@ -8,12 +8,12 @@ async function openCatalog(page) {
 }
 
 test('Kino starts with a grid of covers, titles and level meta; a film opens its own parts', async ({ page }) => {
-  test.setTimeout(120000); // vòng lặp mở đủ 19 phim sau hợp nhất hai nhánh + SPY
+  test.setTimeout(120000); // vòng lặp mở đủ 21 phim, gồm K-On và Delicious in Dungeon
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
   await page.setViewportSize({ width: 1440, height: 1000 });
   await openCatalog(page);
-  await expect(page.locator('.kino-film-card')).toHaveCount(19);
+  await expect(page.locator('.kino-film-card')).toHaveCount(21);
   await expect(page.locator('#kinoDiscovery')).toBeHidden();
   await expect(page.locator('#kinoPeppaChapters')).toBeHidden();
   for (const card of await page.locator('.kino-film-card').all()) {
