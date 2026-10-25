@@ -153,6 +153,9 @@
       msg: '',
       fast: false,
       blinkAt: 1.6, blinkT: 0, blinkForce: false,
+      lean: { a: 0, v: 0, target: 0 },   // thân trên nghiêng quanh khớp hông
+      head: { a: 0, v: 0, target: 0 },   // đầu nghiêng quanh khớp cổ
+      shift: { x: 0, v: 0, target: 0 },  // thân trên dịch ngang (lấy đà/lunge)
       motes: []
     };
     for (var mi = 0; mi < 26; mi++) {
@@ -188,8 +191,15 @@
       bites: 0, huntCd: 0
     };
   }
+  // Điểm tay cầm cần: bám theo lớp thân trên khi Zehn nghiêng người
   function rodPivot() {
-    return { x: 200, y: 273 + Math.sin(G.t * 1.25) * 2.6 };
+    var bobY = Math.sin(G.t * 1.25) * 2.6;
+    var bh = 340 * ((IMG.body.naturalHeight || 573) / (IMG.body.naturalWidth || 620));
+    var hip = { x: 215, y: 388 + bobY - bh + bh * 0.70 };
+    var paw = { x: 200, y: 273 + bobY };
+    var dx = paw.x - hip.x, dy = paw.y - hip.y;
+    var c = Math.cos(G.lean.a), s = Math.sin(G.lean.a);
+    return { x: hip.x + dx * c - dy * s + G.shift.x, y: hip.y + dx * s + dy * c };
   }
   function rodCurve() {
     var p = rodPivot();
@@ -260,6 +270,8 @@
     var x = t < 0.34 ? 430 : (t < 0.72 ? 620 : 810);
     G.phase = 'casting';
     G.rod.target = -14; G.rod.stiff = 150; G.rod.damp = 13;
+    G.lean.v += 3.4;  // người vụt tới theo cú thả
+    G.shift.v += 175; // + lao ngang về trước (dịch chuyển đọc rõ hơn xoay với thân tròn)
     setAction('Đang thả…', 'off');
     setTimeout(function () {
       if (!G || G.phase !== 'casting') return;
@@ -461,6 +473,9 @@
   function catchFish() {
     var h = G.hooked;
     G.phase = 'caught';
+    G.lean.v -= 3.2; // ngả ra sau + nảy mừng khi cá lên
+    G.head.v -= 2.4;
+    G.shift.v -= 130;
     sndSplash(true);
     beep(523, 0.14, 'triangle', 0.09); beep(659, 0.14, 'triangle', 0.09, 0.1); beep(784, 0.26, 'triangle', 0.1, 0.2);
     spawnSplash(330, WATER_Y + 2, 10, true);
@@ -634,6 +649,25 @@
     r.angle += r.vel * dt;
     var bendT = G.phase === 'hooked' ? G.tension * 0.45 : 0;
     r.bend += (bendT - r.bend) * Math.min(1, dt * 7);
+    // Lò xo thân trên + đầu + dịch ngang: đích theo hành động từng pha
+    var leanT, headT, shiftT;
+    if (G.phase === 'gauge') { leanT = -0.15; headT = -0.05; shiftT = -7; }        // ngả ra sau + lùi lấy đà
+    else if (G.phase === 'casting') { leanT = 0.07; headT = 0.02; shiftT = 5; }    // vụt tới
+    else if (G.phase === 'sink') { leanT = -0.015 + Math.sin(G.t * 1.3) * 0.008; headT = 0.055; shiftT = 0; } // nhìn xuống mồi
+    else if (G.phase === 'hooked') {
+      leanT = -0.07 - G.tension * 0.0006 + (G.holding ? Math.sin(G.t * 21) * 0.013 : 0); // gồng theo sức căng + đu nhịp kéo
+      headT = -0.03 - (G.holding ? 0.012 : 0);
+      shiftT = -3;
+    }
+    else if (G.phase === 'caught') { leanT = -0.02; headT = -0.04; shiftT = -2; }
+    else { leanT = Math.sin(G.t * 1.1) * 0.010; headT = Math.sin(G.t * 0.9) * 0.012; shiftT = 0; }
+    G.lean.target = leanT; G.head.target = headT; G.shift.target = shiftT;
+    G.lean.v += ((G.lean.target - G.lean.a) * 110 - G.lean.v * 13) * dt;
+    G.lean.a += G.lean.v * dt;
+    G.head.v += ((G.head.target - G.head.a) * 80 - G.head.v * 11) * dt;
+    G.head.a += G.head.v * dt;
+    G.shift.v += ((G.shift.target - G.shift.x) * 90 - G.shift.v * 12) * dt;
+    G.shift.x += G.shift.v * dt;
     // Máy quay
     var cam = G.cam;
     var ck = Math.min(1, dt * 3);
@@ -780,32 +814,54 @@
       g.restore();
     });
 
-    // Zehn khớp nối: thân thở nhẹ (squash quanh điểm neo ở chân) + chớp mắt,
-    // cần lát cong (tái dùng kỹ thuật bản V1)
+    // Zehn HOẠT HÌNH LỚP (kiểu khớp xương của game 2D): lớp nền chỉ giữ phần
+    // dưới đường may (bè + chân) -> lớp thân trên xoay quanh khớp hông theo
+    // hành động -> lớp đầu xoay quanh khớp cổ (kèm chớp mắt) -> cần bám theo tay.
     var bobY = Math.sin(G.t * 1.25) * 2.6;
     var body = IMG.body;
     if (body && body.complete && body.naturalWidth) {
       var bw = 340, bh = bw * body.naturalHeight / body.naturalWidth;
+      var top = 388 + bobY - bh;
       var brY = 1 + Math.sin(G.t * 1.9) * 0.009; // hơi thở
+      // Lớp nền: phần dưới đường may 70% (chân + bè), neo chân + thở nhẹ
       g.save();
       g.translate(210, 388 + bobY);
       g.scale(1, brY);
+      g.beginPath();
+      g.rect(-176, -bh * 0.30 - 4, 352, bh);
+      g.clip();
       g.drawImage(body, -170, -bh, bw, bh);
       g.restore();
-      // Chớp mắt: hai miếng lông che mắt + vạch mi cong (vị trí đo từ ảnh gốc)
-      var blinking = (G.blinkT > 0) || G.blinkForce;
-      if (blinking) {
+      // Lớp thân trên: xoay quanh khớp hông + dịch ngang theo hành động
+      var hipX = 215, hipY = top + bh * 0.70;
+      g.save();
+      g.translate(hipX + G.shift.x, hipY + Math.abs(G.shift.x) * 0.12);
+      g.rotate(G.lean.a);
+      g.beginPath();
+      g.rect(40 - hipX - 6, top - hipY - 6, bw + 12, bh * 0.70 + 15);
+      g.clip();
+      g.drawImage(body, 40 - hipX, top - hipY, bw, bh);
+      g.restore();
+      // Lớp đầu: xoay quanh khớp cổ (gánh 55% nghiêng thân + nghiêng riêng), chớp mắt theo đầu
+      var neckX = 232, neckY = top + bh * 0.42;
+      g.save();
+      g.translate(neckX + G.shift.x, neckY + Math.abs(G.shift.x) * 0.12);
+      g.rotate(G.lean.a * 0.55 + G.head.a);
+      g.beginPath();
+      g.rect(40 - neckX - 6, top - neckY - 6, bw + 12, bh * 0.46 + 10);
+      g.clip();
+      g.drawImage(body, 40 - neckX, top - neckY, bw, bh);
+      if ((G.blinkT > 0) || G.blinkForce) {
         var eyes = [[0.435, 0.368], [0.539, 0.362]];
         eyes.forEach(function (e) {
-          var ex = 40 + e[0] * bw, ey = 388 + bobY - bh + e[1] * bh;
-          g.save();
+          var ex = 40 + e[0] * bw - neckX, ey = top + e[1] * bh - neckY;
           g.fillStyle = '#fff7ea';
           g.beginPath(); g.ellipse(ex, ey, 8.5, 5.5, 0, 0, Math.PI * 2); g.fill();
           g.strokeStyle = '#6b4f35'; g.lineWidth = 2; g.lineCap = 'round';
           g.beginPath(); g.arc(ex, ey - 1.5, 6, Math.PI * 0.15, Math.PI * 0.85); g.stroke();
-          g.restore();
         });
       }
+      g.restore();
     }
     var rod = IMG.rod, curve = rodCurve();
     if (rod && rod.complete && rod.naturalWidth) {
