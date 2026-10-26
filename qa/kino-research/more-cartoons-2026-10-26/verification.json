@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-26",
+  "baseCommit": "c60fb083309d5737634b2843c4ac240105f075b4",
+  "catalogBefore": 23,
+  "catalogAfter": 26,
+  "newLessons": 3,
+  "newChapters": 6,
+  "newBilingualCues": 46,
+  "newCards": 33,
+  "newPracticePicksWithUsage": 34,
+  "uniqueNewIdsWithoutExistingCollisions": true,
+  "unit": { "command": "npm run test:unit", "suitesPassed": 21, "suitesFailed": 0 },
+  "browser": {
+    "engine": "Chromium",
+    "catalogAndNewClips": {
+      "command": "npx playwright test e2e/kino-next-cartoons.spec.js e2e/kino-catalog.spec.js --trace off",
+      "passedInitially": 11,
+      "failedInitially": 1,
+      "resolvedFailure": "Courage source.json had languageVerification but lacked the standardized germanAudioEvidence field. Copied the same measured evidence to the expected field; no language result invented.",
+      "targetedRerunCommand": "npx playwright test e2e/kino-next-cartoons.spec.js --grep \"courage-fischverfolgungsjagd: catalog\" --trace off",
+      "targetedRerunPassed": 1,
+      "distinctTestsPassingAfterFix": 12
+    },
+    "existingThreeClipsRegression": {
+      "command": "npx playwright test e2e/kino-familiar-animation.spec.js --trace off",
+      "passed": 9,
+      "failed": 0
+    },
+    "verified": [
+      "Catalog contains all 26 films, including Das Spukschloss; existing film routes still open",
+      "All new MP4s are real media with matching source SHA-256 and HTTP 206 byte ranges",
+      "Native full video playback, duration and 75 percent seeking",
+      "German and Vietnamese captions, CC switching and playback stopping at every chapter boundary",
+      "Flashcard decks and links back to the originating part",
+      "Dictation correctness and saved progress across reloads",
+      "Peppa, We Bare Bears and Das Spukschloss progress preserved during new lesson practice",
+      "No page JavaScript errors; no horizontal overflow at widths 320,390,768"
+    ]
+  },
+  "mediaPublishing": {
+    "repository": "titi-huynh/vokabelgo-media",
+    "tag": "media-v1",
+    "assetsAdded": 3,
+    "existingAssetsReplaced": 0,
+    "remoteDigestAndByteRangeVerified": true
+  },
+  "limitations": [
+    "Official short clips with selected dialogue, not full broadcast episodes or exhaustive subtitles",
+    "Local ASR and visual editorial review; no native-human full listening approval",
+    "Browser validation above ran against the local server; media asset range checks ran remotely"
+  ]
+}

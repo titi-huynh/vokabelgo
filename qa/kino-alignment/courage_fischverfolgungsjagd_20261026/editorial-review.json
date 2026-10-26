@@ -1,0 +1,43 @@
+{
+  "selectedCues": 6,
+  "cards": 8,
+  "speakerAttribution": "Generic Fisch labels: visible fish characters speak in these passages; exact names/which member of the group are not asserted.",
+  "timings": "Small/medium word timing union with adjacent cues split at123.52; no overlaps.",
+  "excluded": [
+    {
+      "range": [
+        0,
+        97.9
+      ],
+      "reason": "Mostly action/effects. ZDF credit hallucination at26.96–28.38 and nonverbal cries are not lesson dialogue."
+    },
+    {
+      "range": [
+        102.7,
+        106.7
+      ],
+      "reason": "Both small and medium misrecognize the final verb; no inferred correction to vorknöpfen."
+    },
+    {
+      "range": [
+        126.2,
+        129.4
+      ],
+      "reason": "Aquarium-like final word inconsistent among three ASR passes; omitted rather than guessed."
+    },
+    {
+      "range": [
+        129.7,
+        135.0
+      ],
+      "reason": "Food term and connector before Lieblingssendung differ among small, medium, base; whole line omitted."
+    }
+  ],
+  "normalization": [
+    "Ja, ja reply supported by medium and base; small heard hesitation plus ja.",
+    "Unzivilisation is a coined form in the fictional speech, consistently recognized by small/medium.",
+    "Punctuation and initial capitals normalized for selected cue boundaries."
+  ],
+  "languageVerification": "medium automatic de0.992565393447876; source sample95–135s",
+  "isHumanListened": false
+}

@@ -1,0 +1,59 @@
+{
+  "source": "source.json",
+  "transcriptScope": "21 selected bilingual cues, not an exhaustive subtitle track. 2 parts cover the unchanged 126.966712-second clip.",
+  "omissions": [
+    {
+      "start": 0,
+      "end": 7.4,
+      "reason": "Cheering and nonverbal sounds."
+    },
+    {
+      "start": 21.84,
+      "end": 28.48,
+      "reason": "Whisper-wing command, comic Fischstäbchen phrase, and Mason/Meistens discrepancy; omit rather than infer."
+    },
+    {
+      "start": 38.18,
+      "end": 44.86,
+      "reason": "Small hears nervt mich, medium nervt Mason; following long Schimpanse/Kumpanen phrase also disagrees. Omit."
+    },
+    {
+      "start": 46.04,
+      "end": 50.2,
+      "reason": "Small and medium differ on an additional ja in the Aufenthalt sentence. Omit the sentence and do not derive a card from it."
+    },
+    {
+      "start": 52.5,
+      "end": 53.8,
+      "reason": "Fictional Flüsterflügel command omitted."
+    },
+    {
+      "start": 61.74,
+      "end": 67.86,
+      "reason": "Repeated short ja responses and some repeated questions omitted; retained only useful complete questions with padding."
+    },
+    {
+      "start": 68.52,
+      "end": 73.48,
+      "reason": "Schimpansen-Nachbar and Großreinemachtag fast comic compound uncertain; omit."
+    },
+    {
+      "start": 76.1,
+      "end": 83.82,
+      "reason": "Small/base differ on imperative überlass/überlasse and halten/haltet. Omit rather than choose an inflection."
+    },
+    {
+      "start": 87.14,
+      "end": 126.966712,
+      "reason": "Mostly cleaning action/music; very short isolated lines omitted."
+    }
+  ],
+  "normalizations": [
+    "Skepper→Skipper and Pinguiner→Pinguine corrected using proper-name context and medium agreement.",
+    "Glocken hell→Glockenhell and Großrheinemachen→Großreinemachen use ordinary German orthography.",
+    "Quietz-Sauber/Quitsch sauber→Quietschsauber uses the official published operation name.",
+    "Small/medium boundary union and short preroll; cue ends shortened to avoid adjacent-cue overlap."
+  ],
+  "timingLimit": "ASR word-based timings with visual checks, not phonetic forced alignment; selected gaps intentional.",
+  "speakerLimit": "Visual/contextual assignments. Root may generalize any speaker requiring further review."
+}

@@ -1,0 +1,19 @@
+{
+  "builder": "scripts/build-kino-short-lessons.py",
+  "builderAssertionsPassed": true,
+  "rootWritesInterceptedTo": "builder-preview/",
+  "practiceUsageMapsComplete": true,
+  "picksPerPart": [
+    3,
+    3
+  ],
+  "cueCount": 6,
+  "cardCount": 8,
+  "written": [
+    "builder-preview\\courage-fischverfolgungsjagd-aligned.js",
+    "builder-preview\\courage-fischverfolgungsjagd-lesson.js",
+    "courage_fischverfolgungsjagd.de.vtt",
+    "courage_fischverfolgungsjagd.vi.vtt",
+    "build-summary.json"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "key": "pinguine_quietschsauber",
+  "title": "Die Pinguine aus Madagascar | Operation Quietschsauber | Nickelodeon Deutschland",
+  "publisher": "Nickelodeon Deutschland",
+  "channelId": "UCQU3PO2g_rmqbmr8VJWvrsA",
+  "channelIsVerified": true,
+  "sourceUrl": "https://www.youtube.com/watch?v=_6qcFEES_yc",
+  "url": "https://www.youtube.com/watch?v=_6qcFEES_yc",
+  "uploadDate": "20140809",
+  "retrievedAt": "2026-10-26",
+  "availability": "public",
+  "durationSeconds": 126.966712,
+  "isExcerpt": true,
+  "excerptNote": "Complete public publisher clip, itself a short television-series excerpt. Not a full episode. Different source from previously integrated ONRyWXIGWQI.",
+  "localFile": "video/pinguine_quietschsauber.mp4",
+  "bytes": 7029741,
+  "sha256": "7207bc13941e5024551b7e09bc02318162f1bcd3e6251b8dd2b212fddfd3bd94",
+  "media": [
+    {
+      "codec_type": "video",
+      "codec_name": "h264",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "codec_type": "audio",
+      "codec_name": "aac",
+      "sample_rate": "44100",
+      "channels": 2
+    }
+  ],
+  "germanAudioEvidence": {
+    "method": "Local faster-whisper base automatic language detection; no forced language",
+    "language": "de",
+    "supportedSpeechWindows": [
+      {
+        "start": 0,
+        "end": 30,
+        "language": "de",
+        "probability": 0.981316328048706
+      },
+      {
+        "start": 45,
+        "end": 75,
+        "language": "de",
+        "probability": 0.9926759600639343
+      }
+    ],
+    "inconclusiveWindow": {
+      "start": 90,
+      "end": 120,
+      "detectedLanguage": "en",
+      "probability": 0.306216299533844,
+      "note": "Sparse speech/action and music; this low-probability result is inconclusive, not used to claim German throughout."
+    },
+    "file": "language-check.json"
+  },
+  "audioMeasurements": {
+    "tool": "earshot measure light",
+    "lufs": -20.7,
+    "truePeakDbtp": -8.4,
+    "clippedSamples": 0,
+    "file": "earshot-measure.json"
+  },
+  "decodeVerification": {
+    "method": "ffmpeg whole-file decode to null",
+    "errors": 0
+  },
+  "downloadMethod": "Normal unauthenticated yt-dlp format18 public YouTube extraction with --js-runtimes node --remote-components ejs:github. No DRM/paywall/access-control bypass, no proxy, no credentials.",
+  "seriesEvidence": "Abonniert uns für noch mehr: http://smarturl.it/NickelodeonDE\nDie Pinguine aus Madagascar sind auf Operation Quietschsauber. Der Hausgast dieser Episode ist Mason, der ganz besonders für seine extreme Reinlichkeit bekannt ist..\n\nDie Agenten-Pinguine aus den beiden \"Madagascar\"-Kinohits gehen bei uns an den Start: In der computeranimierten Trickfilmserie aus den weltberühmten DreamWorks-Studios erleben die Frackträger Kowalski, Private, Rico und Skipper zum Schreien komische Abenteuer und bringen kleine und große Zuschauer zum Lachen. Mit dabei sind natürlich auch die anderen Zoobewohner, die allesamt mindestens so originell und witzig sind wie die Pinguine selbst.\n\nMehr Programm Infos findet ihr auch auf unserer Website: http://www.nick.de/\n\nTatatataaaa! Willkommen auf dem offiziellen YouTube Kanal von Nickelodeon Deutschland. Schaut Euch hier die neuesten Trailer und spannende Ausschnitte der beliebtesten Nickelodeon-Serien an. Hier findet ihr Eure Lieblingssendungen wie 'SpongeBob Schwammkopf', 'Jimmy Neutron' oder 'Die Pinguine aus Madagaskar'! Wir haben auch viel Neues für Euch, z.B. 'Dora' und 'Backyardigans -- Die Hinterhofzwerge', den Superheld-Cartoon 'Danny Phantom' sowie erfolgreiche Live-Action-Serien wie iCarly, Victorious, Das Haus Anubis und Big Time Rush! Wir wünschen Euch ganz viel Spaß!\n\nAbonniert uns direkt für noch mehr: http://smarturl.it/NickelodeonDE\n\nWerdet Fan auf Facebook: https://www.facebook.com/nickelodeondeutschland\n\nFolgt uns auf Google+: https://plus.google.com/+nickelodeonoffiziell/\n\nEin Bild sagt mehr als 1000 Worte: http://instagram.com/nickelodeon_north",
+  "webVerification": {
+    "url": "https://www.youtube.com/watch?v=_6qcFEES_yc",
+    "resultTitle": "Die Pinguine aus Madagascar | Operation Quietschsauber | Nickelodeon Deutschland - YouTube",
+    "method": "web search Pinguine Quietschsauber YouTube Nickelodeon returned exact official source; downloaded metadata verifies publisher channel."
+  },
+  "limitations": [
+    "Short official publisher excerpt; not a full episode.",
+    "ASR and visual review, no claim of personal hearing or native-human full listening approval.",
+    "Uncertain speech is omitted from the selected learning cues.",
+    "640×360 video; public availability does not establish redistribution rights."
+  ]
+}

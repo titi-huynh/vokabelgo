@@ -1,0 +1,21 @@
+{
+  "method": "Full local small/base transcription, targeted independent medium transcription at 7–31.5,57.8–61.1,80–116 seconds, plus source contact sheets. No native-human listening approval.",
+  "sourceUnchanged": true,
+  "isSelectedDialogue": true,
+  "decisions": [
+    {"span": [0,7], "action": "omit", "reason": "No confident dialogue transcription."},
+    {"span": [7.08,9.96], "action": "keep colloquial contraction", "reason": "Small recognizes ne; base/medium normalize eine. Written 'ne retains the colloquial form; vocabulary teaches the standard noun phrase."},
+    {"span": [14,18], "action": "omit", "reason": "Models disagree on fast instruction wording."},
+    {"span": [21.7,23.5], "action": "omit", "reason": "Beckenstoß/Backhandstoß disagreement, do not teach the guessed noun."},
+    {"span": [25.7,28.8], "action": "omit", "reason": "Truncated instruction and shout."},
+    {"span": [31.5,57.8], "action": "omit", "reason": "Repetitive chanting, shouts, and technical instructions with ASR disagreements."},
+    {"span": [58.04,60], "action": "keep shared clause only", "reason": "Small/medium agree on immer schön auf dem rechten Fuß landen; beginning before this differs, and is excluded."},
+    {"span": [61.1,82.3], "action": "omit", "reason": "Fast choreography instructions, repeated deictic words and sound effects."},
+    {"span": [82.2,83.32], "action": "omit", "reason": "Donnerwelle/Donnerwetter unclear; keep only shared Das war ausgezeichnet clause."},
+    {"span": [92.6,94.9], "action": "omit", "reason": "eine Seifenblase wording varies with base meine; lesson retains other independently agreed phrases."},
+    {"span": [102.5,112.56], "action": "keep", "reason": "Independent small/base/medium agree on substantive wording of Kunstwerk and Genen statements; names and punctuation standardized."},
+    {"span": [112.56,173.18], "action": "omit", "reason": "Repeated name chanting, musical and wordless action, incidental unclear shout."},
+    {"span": [173.18,174.78], "action": "keep greeting only", "reason": "Base/small agree Hallo meine Freunde; following clipped phrase and final Genie exclamation are not consistently recognized."},
+    {"span": [174.78,222.84], "action": "omit", "reason": "Uncertain clipped wording, final action and branded publisher outro. Base hallucinated Das wars at219s; not included."}
+  ]
+}

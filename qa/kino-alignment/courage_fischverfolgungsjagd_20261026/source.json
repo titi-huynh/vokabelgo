@@ -1,0 +1,54 @@
+{
+  "key": "courage_fischverfolgungsjagd",
+  "title": "Fischverfolgungsjagd | Courage der feige Hund | Cartoon Network",
+  "sourceUrl": "https://www.youtube.com/watch?v=ek35w-oEB48",
+  "uploader": "Cartoon Network Deutschland",
+  "channelId": "UC_7a7x7rwQQgzNr7tfH4CZw",
+  "channelIsVerified": true,
+  "availability": "public",
+  "uploadDate": "20110111",
+  "retrievedAt": "2026-10-26",
+  "isExcerpt": true,
+  "excerptNote": "Official promotional story clip, not a full episode.",
+  "publisherDescription": "Courage versucht, vor riesigen Fischen zu fliehen. Wohin? An Land! Ob es hilft?",
+  "localFile": "video/courage_fischverfolgungsjagd.mp4",
+  "bytes": 8470408,
+  "sha256": "b47f329d464bcc32762effd6f1c3b18297c4c85142c8e333139ad0a6f42d2508",
+  "durationSeconds": 143.40644,
+  "resolution": "480x360",
+  "displayAspectRatio": "4:3",
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "fps": "25/1",
+  "sampleRate": "44100",
+  "channels": 2,
+  "decodeErrors": "",
+  "downloadMethod": "Normal yt-dlp format18 with node runtime and official ejs:github playback solver; no cookies, payment, DRM or access-control bypass.",
+  "webVerification": "web.run search attempted; watch/oembed fetch failed or throttled. Public publisher metadata successfully read directly by yt-dlp (publisher-info.json).",
+  "limitations": [
+    "Verified publisher status is provenance evidence; no reuse licence is inferred.",
+    "Local ASR supports German speech; not a human native-listener transcript. Selected dialogue only; most of the clip is action/effects."
+  ],
+  "languageVerification": {
+    "method": "local faster-whisper medium automatic language detection,95–135s source excerpt",
+    "language": "de",
+    "languageProbability": 0.992565393447876,
+    "sampleStart": 95,
+    "sampleEnd": 135,
+    "isHumanListened": false
+  },
+  "selectedDialogue": {
+    "cues": 6,
+    "chapters": 2,
+    "vocabulary": 8,
+    "content": "lesson-content.json"
+  },
+  "germanAudioEvidence": {
+    "method": "local faster-whisper medium automatic language detection,95–135s source excerpt",
+    "language": "de",
+    "languageProbability": 0.992565393447876,
+    "sampleStart": 95,
+    "sampleEnd": 135,
+    "isHumanListened": false
+  }
+}

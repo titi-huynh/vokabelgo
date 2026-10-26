@@ -1,0 +1,199 @@
+{
+  "key": "courage_fischverfolgungsjagd",
+  "alias": "courage-fischverfolgungsjagd",
+  "symbol": "COURAGE_FISCHVERFOLGUNGSJAGD",
+  "stem": "courage-fischverfolgungsjagd",
+  "duration": 143.41,
+  "src": "video/courage_fischverfolgungsjagd.mp4",
+  "sourceUrl": "https://www.youtube.com/watch?v=ek35w-oEB48",
+  "series": "Courage der feige Hund",
+  "episodeTitle": "Fischverfolgungsjagd (Đoạn trích)",
+  "icon": "🐟",
+  "summary": "Lời thoại chọn lọc từ đoạn trích chính thức: Courage chạy trốn những con cá khổng lồ. Phần lớn clip là hành động và hiệu ứng; các câu học ở cuối tập trung vào hỏi thăm, trả tự do và mệnh lệnh. Đây là đoạn trích, không phải tập đầy đủ.",
+  "levelLabel": "Gợi ý A2–B1",
+  "cues": [
+    {
+      "id": 1800101,
+      "start": 98.1,
+      "end": 99.7,
+      "speaker": "Fisch",
+      "text": "Geht es dir gut?",
+      "vi": "Cậu có ổn không?"
+    },
+    {
+      "id": 1800102,
+      "start": 99.86,
+      "end": 101.04,
+      "speaker": "Fisch",
+      "text": "Ja, ja.",
+      "vi": "Ừ, ừ."
+    },
+    {
+      "id": 1800103,
+      "start": 101.14,
+      "end": 102.7,
+      "speaker": "Fisch",
+      "text": "Lasst die Menschen frei!",
+      "vi": "Thả những con người đó ra!"
+    },
+    {
+      "id": 1800104,
+      "start": 118.46,
+      "end": 120.38,
+      "speaker": "Fisch",
+      "text": "Verhaftet die Fischmissionarin!",
+      "vi": "Bắt giữ nữ truyền giáo cá đó!"
+    },
+    {
+      "id": 1800105,
+      "start": 120.54,
+      "end": 123.52,
+      "speaker": "Fisch",
+      "text": "Sie ist offensichtlich ein Opfer der Unzivilisation geworden.",
+      "vi": "Rõ ràng bà ta đã trở thành nạn nhân của sự thiếu văn minh."
+    },
+    {
+      "id": 1800106,
+      "start": 123.52,
+      "end": 125.68,
+      "speaker": "Fisch",
+      "text": "Und muss wieder zivilisiert werden.",
+      "vi": "Và cần được giáo hóa lại."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Chạy trốn và lời yêu cầu thả người",
+      "icon": "🐟",
+      "start": 0,
+      "end": 117.0,
+      "picks": [
+        1800101,
+        1800102,
+        1800103
+      ],
+      "goal": "Theo dõi cuộc rượt đuổi, rồi nghe câu hỏi thăm và yêu cầu trả tự do. Lời thoại chọn lọc bắt đầu gần cuối phần này.",
+      "practiceUsage": {
+        "1800101": "Hỏi thăm một người bạn sau khi họ vừa gặp sự cố.",
+        "1800102": "Đáp lại ngắn gọn và xác nhận rằng mình vẫn ổn.",
+        "1800103": "Ra lệnh cho một nhóm người trả tự do cho những người đang bị giữ."
+      }
+    },
+    {
+      "title": "Lệnh bắt giữ và cách nói bị động",
+      "icon": "🚨",
+      "start": 117.0,
+      "end": 143.41,
+      "picks": [
+        1800104,
+        1800105,
+        1800106
+      ],
+      "goal": "Nghe mệnh lệnh và nhận ra cách diễn đạt đã trở thành nạn nhân, cùng cấu trúc phải được làm gì.",
+      "practiceUsage": {
+        "1800104": "Ra lệnh cho những người khác bắt giữ một nhân vật cụ thể trong câu chuyện.",
+        "1800105": "Nhận xét rằng một người rõ ràng đã trở thành nạn nhân của một tình trạng.",
+        "1800106": "Tiếp tục lời giải thích và nói rằng đối tượng cần được tác động trở lại bằng cấu trúc bị động."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "gut-gehen",
+      "term": "es geht jemandem gut",
+      "meaning": "ai đó cảm thấy khỏe, ổn",
+      "grammar": "Dùng Dativ chỉ người: mir, dir, ihm, ihr. geht; ging; ist gegangen.",
+      "cueId": 1800101,
+      "collocations": [
+        "Geht es dir gut?",
+        "Mir geht es gut."
+      ],
+      "note": "es là chủ ngữ hình thức; dir là Dativ chỉ người được hỏi thăm."
+    },
+    {
+      "id": "freilassen",
+      "term": "freilassen",
+      "meaning": "thả ra; trả tự do",
+      "grammar": "Động từ tách: lässt frei; ließ frei; hat freigelassen.",
+      "cueId": 1800103,
+      "collocations": [
+        "jemanden freilassen",
+        "Lasst sie frei!"
+      ],
+      "note": "Lasst ... frei là mệnh lệnh ngôi ihr: ra lệnh cho nhiều người cùng thả ai đó."
+    },
+    {
+      "id": "mensch",
+      "term": "der Mensch",
+      "meaning": "con người; người",
+      "grammar": "der Mensch, die Menschen; danh từ giống đực biến cách yếu: den/dem Menschen.",
+      "cueId": 1800103,
+      "collocations": [
+        "die Menschen",
+        "einem Menschen helfen"
+      ],
+      "note": "die Menschen ở đây là Akkusativ số nhiều, chỉ những người phải được thả."
+    },
+    {
+      "id": "verhaften",
+      "term": "verhaften",
+      "meaning": "bắt giữ; bắt giam",
+      "grammar": "verhaftet; verhaftete; hat verhaftet. Động từ không tách.",
+      "cueId": 1800104,
+      "collocations": [
+        "jemanden verhaften",
+        "einen Verdächtigen verhaften"
+      ],
+      "note": "Verhaftet! là mệnh lệnh ngôi ihr; tân ngữ die Fischmissionarin chỉ nhân vật cá trong phim."
+    },
+    {
+      "id": "offensichtlich",
+      "term": "offensichtlich",
+      "meaning": "rõ ràng; hiển nhiên",
+      "grammar": "Tính từ/trạng từ; trong câu này dùng như trạng từ.",
+      "cueId": 1800105,
+      "collocations": [
+        "offensichtlich sein",
+        "offensichtlich ein Fehler"
+      ],
+      "note": "Từ này cho biết người nói xem kết luận của mình là rõ ràng dựa trên điều quan sát được."
+    },
+    {
+      "id": "opfer",
+      "term": "das Opfer",
+      "meaning": "nạn nhân",
+      "grammar": "das Opfer, die Opfer (n.); ein Opfer von etwas / einer Sache.",
+      "cueId": 1800105,
+      "collocations": [
+        "ein Opfer werden",
+        "ein Opfer der Umstände"
+      ],
+      "note": "ein Opfer ... geworden dùng werden ở Perfekt để diễn tả sự thay đổi: đã trở thành nạn nhân."
+    },
+    {
+      "id": "zivilisieren",
+      "term": "zivilisieren",
+      "meaning": "giáo hóa; làm cho văn minh",
+      "grammar": "zivilisiert; zivilisierte; hat zivilisiert.",
+      "cueId": 1800106,
+      "collocations": [
+        "jemanden zivilisieren",
+        "zivilisiert werden"
+      ],
+      "note": "Nhân vật dùng từ này trong mệnh lệnh mang tính châm biếm của phim; ở dạng bị động zivilisiert werden."
+    },
+    {
+      "id": "werden-passiv",
+      "term": "werden trong câu bị động",
+      "meaning": "được; bị — tạo cấu trúc bị động",
+      "grammar": "Vorgangspassiv: werden + Partizip II; với động từ tình thái: muss ... zivilisiert werden.",
+      "cueId": 1800106,
+      "collocations": [
+        "wieder zivilisiert werden",
+        "Das muss gemacht werden."
+      ],
+      "note": "muss biểu thị điều cần/phải làm; zivilisiert werden biểu thị đối tượng nhận hành động."
+    }
+  ],
+  "reviewMethod": "Compared full local small ASR, medium 95–135s and base cropped checks; visual source contact sheets; selected lexical dialogue only. Ambiguous commands and closing food/TV line omitted. No human native-listener approval."
+}

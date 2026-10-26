@@ -8307,6 +8307,30 @@ input.search:focus {
                   <span class="kino-dd-item-badge" id="kinoBadge_spongebob_pizza">3 phần</span>
                   <span class="kino-dd-item-check">✓</span>
                 </button>
+                <div class="kino-dd-group-divider"></div>
+                <div class="kino-dd-group-header">🫧 SpongeBob Schwammkopf</div>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_spongebob_blubberunterricht" data-key="spongebob_blubberunterricht" onclick="selectKinoMovie('spongebob_blubberunterricht')">
+                  <span class="kino-dd-item-icon">🫧</span>
+                  <div class="kino-dd-item-info"><span class="kino-dd-item-name">Blubberunterricht (Đoạn trích)</span><span class="kino-dd-item-sub">2 phần · Lời thoại chọn lọc</span></div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_spongebob_blubberunterricht">2 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
+                <div class="kino-dd-group-divider"></div>
+                <div class="kino-dd-group-header">🐧 Die Pinguine aus Madagascar</div>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_pinguine_quietschsauber" data-key="pinguine_quietschsauber" onclick="selectKinoMovie('pinguine_quietschsauber')">
+                  <span class="kino-dd-item-icon">🐧</span>
+                  <div class="kino-dd-item-info"><span class="kino-dd-item-name">Operation Quietschsauber (Đoạn trích)</span><span class="kino-dd-item-sub">2 phần · Lời thoại chọn lọc</span></div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_pinguine_quietschsauber">2 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
+                <div class="kino-dd-group-divider"></div>
+                <div class="kino-dd-group-header">🐟 Courage der feige Hund</div>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_courage_fischverfolgungsjagd" data-key="courage_fischverfolgungsjagd" onclick="selectKinoMovie('courage_fischverfolgungsjagd')">
+                  <span class="kino-dd-item-icon">🐟</span>
+                  <div class="kino-dd-item-info"><span class="kino-dd-item-name">Fischverfolgungsjagd (Đoạn trích)</span><span class="kino-dd-item-sub">2 phần · Lời thoại chọn lọc</span></div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_courage_fischverfolgungsjagd">2 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
                 <div class="kino-dd-group-header">🐻 We Bare Bears</div>
                 <button type="button" class="kino-dropdown-item" id="kinoDD_we_bare_bears_mall" data-key="we_bare_bears_mall" onclick="selectKinoMovie('we_bare_bears_mall')">
                   <span class="kino-dd-item-icon">🛍️</span>
@@ -9433,12 +9457,12 @@ input.search:focus {
 <script src="listening-verification.js"></script>
 <script src="learning-session.js"></script>
 <script src="learning-progress.js"></script>
-<script src="kino-metadata.js?v=20261026-ep2-v1"></script>
-<script src="kino-data.js?v=20261026-ep2-v1"></script>
+<script src="kino-metadata.js?v=20261026-cartoons-v1"></script>
+<script src="kino-data.js?v=20261026-cartoons-v1"></script>
 <script src="kino-media-manifest.js?v=20261026-ep2-v1"></script>
 <script src="kino-dictation.js"></script>
-<script src="kino-chapter-data.js?v=20261026-ep2-v1"></script>
-<script src="kino-practice-data.js?v=20261026-ep2-v1"></script>
+<script src="kino-chapter-data.js?v=20261026-cartoons-v1"></script>
+<script src="kino-practice-data.js?v=20261026-cartoons-v1"></script>
 <script src="kino-media.js"></script>
 <script src="kino-dubbing-scene.js"></script>
 <script src="kino-discovery.js"></script>
@@ -14404,6 +14428,9 @@ VIDEO_FLASHCARDS.push(...COURAGE_DIAMANTRAUB_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...SPONGEBOB_PIZZA_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...SPY_FAMILY_S01E01_FLASHCARDS);
 VIDEO_FLASHCARDS.push(...DEMON_SLAYER_S01E01_FLASHCARDS);
+VIDEO_FLASHCARDS.push(...SPONGEBOB_BLUBBERUNTERRICHT_LESSON.flashcards);
+VIDEO_FLASHCARDS.push(...PINGUINE_QUIETSCHSAUBER_LESSON.flashcards);
+VIDEO_FLASHCARDS.push(...COURAGE_FISCHVERFOLGUNGSJAGD_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...WE_BARE_BEARS_MALL_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...FRIEREN_S01E01_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...SAKURA_S01E01_LESSON.flashcards);
@@ -19063,6 +19090,9 @@ const KINO_VIDEOS = {
   pinguine_popcorn_panik: { ...PINGUINE_POPCORN_PANIK_LESSON.video, get defaultSegs() { return PINGUINE_POPCORN_PANIK_ALIGNED_UTTERANCES; } },
   courage_diamantraub: { ...COURAGE_DIAMANTRAUB_LESSON.video, get defaultSegs() { return COURAGE_DIAMANTRAUB_ALIGNED_UTTERANCES; } },
   spongebob_pizza: { ...SPONGEBOB_PIZZA_LESSON.video, get defaultSegs() { return SPONGEBOB_PIZZA_ALIGNED_UTTERANCES; } },
+  spongebob_blubberunterricht: { ...SPONGEBOB_BLUBBERUNTERRICHT_LESSON.video, get defaultSegs() { return SPONGEBOB_BLUBBERUNTERRICHT_ALIGNED_UTTERANCES; } },
+  pinguine_quietschsauber: { ...PINGUINE_QUIETSCHSAUBER_LESSON.video, get defaultSegs() { return PINGUINE_QUIETSCHSAUBER_ALIGNED_UTTERANCES; } },
+  courage_fischverfolgungsjagd: { ...COURAGE_FISCHVERFOLGUNGSJAGD_LESSON.video, get defaultSegs() { return COURAGE_FISCHVERFOLGUNGSJAGD_ALIGNED_UTTERANCES; } },
   we_bare_bears_mall: { ...WE_BARE_BEARS_MALL_LESSON.video, get defaultSegs() { return WE_BARE_BEARS_MALL_ALIGNED_UTTERANCES; } },
   hans: { ...HANS_LESSON.video, get defaultSegs() { return HANS_ALIGNED_UTTERANCES; } },
   peppa_supermarkt: {

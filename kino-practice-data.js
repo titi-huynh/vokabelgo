@@ -2,6 +2,178 @@
  * Load after kino-chapter-data.js; this does not load any subtitle/media files.
  * Each usage note describes a situation, without revealing the German answer. */
 const KINO_PRACTICE_DATA = {
+  "courage_fischverfolgungsjagd": [
+  {
+    "part": 1,
+    "picks": [
+      {
+        "id": 1800101,
+        "usage": "Hỏi thăm một người bạn sau khi họ vừa gặp sự cố."
+      },
+      {
+        "id": 1800102,
+        "usage": "Đáp lại ngắn gọn và xác nhận rằng mình vẫn ổn."
+      },
+      {
+        "id": 1800103,
+        "usage": "Ra lệnh cho một nhóm người trả tự do cho những người đang bị giữ."
+      }
+    ]
+  },
+  {
+    "part": 2,
+    "picks": [
+      {
+        "id": 1800104,
+        "usage": "Ra lệnh cho những người khác bắt giữ một nhân vật cụ thể trong câu chuyện."
+      },
+      {
+        "id": 1800105,
+        "usage": "Nhận xét rằng một người rõ ràng đã trở thành nạn nhân của một tình trạng."
+      },
+      {
+        "id": 1800106,
+        "usage": "Tiếp tục lời giải thích và nói rằng đối tượng cần được tác động trở lại bằng cấu trúc bị động."
+      }
+    ]
+  }
+],
+  "pinguine_quietschsauber": [
+  {
+    "part": 1,
+    "picks": [
+      {
+        "id": 1700101,
+        "usage": "Khi nhận ra căn phòng có điều gì khác mọi ngày."
+      },
+      {
+        "id": 1700103,
+        "usage": "Khi báo rằng kết quả tính toán cho thấy cả nhóm đang có khách."
+      },
+      {
+        "id": 1700104,
+        "usage": "Khi nhắc cả nhóm khử trùng mặt bàn làm việc."
+      },
+      {
+        "id": 1700105,
+        "usage": "Khi hỏi lý do sau khi nghe nói một người đang bối rối."
+      },
+      {
+        "id": 1700106,
+        "usage": "Khi an ủi rằng chuyện như vậy vẫn thường xảy ra."
+      },
+      {
+        "id": 1700107,
+        "usage": "Khi muốn biết lý do một người xuất hiện ở đây."
+      },
+      {
+        "id": 1700108,
+        "usage": "Khi giải thích rằng có người thực sự rất bừa bộn, ở bẩn."
+      }
+    ]
+  },
+  {
+    "part": 2,
+    "picks": [
+      {
+        "id": 1700110,
+        "usage": "Khi vui vì hai người cùng có một ý nghĩ."
+      },
+      {
+        "id": 1700111,
+        "usage": "Khi cho biết mình đã nghe được toàn bộ cuộc trò chuyện."
+      },
+      {
+        "id": 1700112,
+        "usage": "Khi kiểm tra xem người khác có còn nghe thấy mình không."
+      },
+      {
+        "id": 1700113,
+        "usage": "Khi trả lời rằng mình nghe rất rõ."
+      },
+      {
+        "id": 1700114,
+        "usage": "Khi ngạc nhiên và muốn xác nhận lời người kia vừa nói."
+      },
+      {
+        "id": 1700119,
+        "usage": "Khi xác nhận mình vừa nghe ai nhắc tới việc tổng vệ sinh."
+      },
+      {
+        "id": 1700120,
+        "usage": "Khi thông báo cả nhóm đã sẵn sàng cho chiến dịch dọn dẹp."
+      }
+    ]
+  }
+],
+  "spongebob_blubberunterricht": [
+  {
+    "part": 1,
+    "picks": [
+      {
+        "id": 1600101,
+        "usage": "Nhắc người bạn đừng quên điều quan trọng khi thực hành."
+      },
+      {
+        "id": 1600102,
+        "usage": "Chỉ cho bạn từng động tác đơn giản."
+      },
+      {
+        "id": 1600104,
+        "usage": "Mời bạn nhìn cách mình làm rồi đếm từng bước."
+      },
+      {
+        "id": 1600105,
+        "usage": "Nhắc cả nhóm luôn chú ý đến cách làm."
+      },
+      {
+        "id": 1600106,
+        "usage": "Gọi tên bạn và nhắc bạn tập trung."
+      },
+      {
+        "id": 1600107,
+        "usage": "Hướng dẫn bạn tiếp đất an toàn bằng một chân cụ thể."
+      },
+      {
+        "id": 1600108,
+        "usage": "Đáp lại khi ai đó liên tục nhắc việc bạn đã nhớ."
+      }
+    ]
+  },
+  {
+    "part": 2,
+    "picks": [
+      {
+        "id": 1600109,
+        "usage": "Khen một màn thể hiện vừa hoàn thành rất xuất sắc."
+      },
+      {
+        "id": 1600111,
+        "usage": "Tự đánh giá thành quả rồi hỏi người khác có đồng ý không."
+      },
+      {
+        "id": 1600112,
+        "usage": "Thừa nhận rằng nhóm mình chưa từng làm được điều tương tự."
+      },
+      {
+        "id": 1600113,
+        "usage": "Nhắc người nghe rằng mình đã nói điều đó từ trước."
+      },
+      {
+        "id": 1600114,
+        "usage": "Giải thích rằng kết quả thành công phụ thuộc vào cách làm."
+      },
+      {
+        "id": 1600117,
+        "usage": "Phủ nhận việc mình thành công nhờ sự giúp đỡ của người khác."
+      },
+      {
+        "id": 1600118,
+        "usage": "Nói đùa rằng năng khiếu của mình là bẩm sinh."
+      }
+    ]
+  }
+],
   "peppa_supermarkt": [
     {
       "part": 1,

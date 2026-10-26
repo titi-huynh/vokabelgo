@@ -1,0 +1,136 @@
+{
+  "model": "base",
+  "language": "de",
+  "probability": 0.9887155890464783,
+  "segments": [
+    {
+      "start": 78.6,
+      "end": 82.2,
+      "text": "Bitte überlasse, dass den Profis und jetzt halten Sicherheitsabstand ein.",
+      "words": [
+        {
+          "start": 78.6,
+          "end": 79.24,
+          "word": " Bitte",
+          "probability": 0.4100113809108734
+        },
+        {
+          "start": 79.24,
+          "end": 79.56,
+          "word": " überlasse,",
+          "probability": 0.545259527862072
+        },
+        {
+          "start": 79.66,
+          "end": 79.72,
+          "word": " dass",
+          "probability": 0.9359070658683777
+        },
+        {
+          "start": 79.72,
+          "end": 79.86,
+          "word": " den",
+          "probability": 0.5994443297386169
+        },
+        {
+          "start": 79.86,
+          "end": 80.34,
+          "word": " Profis",
+          "probability": 0.9228413105010986
+        },
+        {
+          "start": 80.34,
+          "end": 80.66,
+          "word": " und",
+          "probability": 0.7276098728179932
+        },
+        {
+          "start": 80.66,
+          "end": 80.82,
+          "word": " jetzt",
+          "probability": 0.8179458975791931
+        },
+        {
+          "start": 80.82,
+          "end": 81.1,
+          "word": " halten",
+          "probability": 0.8014379739761353
+        },
+        {
+          "start": 81.1,
+          "end": 81.88,
+          "word": " Sicherheitsabstand",
+          "probability": 0.942344918847084
+        },
+        {
+          "start": 81.88,
+          "end": 82.2,
+          "word": " ein.",
+          "probability": 0.9275749921798706
+        }
+      ]
+    },
+    {
+      "start": 83.9,
+      "end": 86.28,
+      "text": "Alles bereit für Operation Quietz-Sauber!",
+      "words": [
+        {
+          "start": 83.9,
+          "end": 84.53999999999999,
+          "word": " Alles",
+          "probability": 0.9428362250328064
+        },
+        {
+          "start": 84.53999999999999,
+          "end": 84.82,
+          "word": " bereit",
+          "probability": 0.9457851052284241
+        },
+        {
+          "start": 84.82,
+          "end": 85.02,
+          "word": " für",
+          "probability": 0.9943049550056458
+        },
+        {
+          "start": 85.02,
+          "end": 85.44,
+          "word": " Operation",
+          "probability": 0.8491506576538086
+        },
+        {
+          "start": 85.44,
+          "end": 86.0,
+          "word": " Quietz",
+          "probability": 0.3232133537530899
+        },
+        {
+          "start": 86.0,
+          "end": 86.28,
+          "word": "-Sauber!",
+          "probability": 0.7599123790860176
+        }
+      ]
+    },
+    {
+      "start": 86.6,
+      "end": 87.0,
+      "text": "Dann los!",
+      "words": [
+        {
+          "start": 86.6,
+          "end": 86.76,
+          "word": " Dann",
+          "probability": 0.9174793362617493
+        },
+        {
+          "start": 86.76,
+          "end": 87.0,
+          "word": " los!",
+          "probability": 0.8922937512397766
+        }
+      ]
+    }
+  ]
+}

@@ -11,6 +11,9 @@ const KinoData = (() => {
     pinguine_popcorn_panik: 'pinguine-popcorn-panik-aligned.js',
     courage_diamantraub: 'courage-diamantraub-aligned.js',
     spongebob_pizza: 'spongebob-pizza-aligned.js',
+    spongebob_blubberunterricht: 'spongebob-blubberunterricht-aligned.js',
+    pinguine_quietschsauber: 'pinguine-quietschsauber-aligned.js',
+    courage_fischverfolgungsjagd: 'courage-fischverfolgungsjagd-aligned.js',
     we_bare_bears_mall: 'we-bare-bears-mall-aligned.js',
     frieren_s01e01: 'frieren-s01e01-aligned.js',
     sakura_s01e01: 'sakura-s01e01-aligned.js',
@@ -61,6 +64,9 @@ const KinoData = (() => {
       case 'pinguine_popcorn_panik': return PINGUINE_POPCORN_PANIK_CAPTION_CUES;
       case 'courage_diamantraub': return COURAGE_DIAMANTRAUB_CAPTION_CUES;
       case 'spongebob_pizza': return SPONGEBOB_PIZZA_CAPTION_CUES;
+      case 'spongebob_blubberunterricht': return SPONGEBOB_BLUBBERUNTERRICHT_CAPTION_CUES;
+      case 'pinguine_quietschsauber': return PINGUINE_QUIETSCHSAUBER_CAPTION_CUES;
+      case 'courage_fischverfolgungsjagd': return COURAGE_FISCHVERFOLGUNGSJAGD_CAPTION_CUES;
       case 'we_bare_bears_mall': return WE_BARE_BEARS_MALL_CAPTION_CUES;
       case 'frieren_s01e01': return FRIEREN_S01E01_CAPTION_CUES;
       case 'sakura_s01e01': return SAKURA_S01E01_CAPTION_CUES;
@@ -85,6 +91,9 @@ const KinoData = (() => {
       case 'pinguine_popcorn_panik': return PINGUINE_POPCORN_PANIK_ALIGNED_UTTERANCES;
       case 'courage_diamantraub': return COURAGE_DIAMANTRAUB_ALIGNED_UTTERANCES;
       case 'spongebob_pizza': return SPONGEBOB_PIZZA_ALIGNED_UTTERANCES;
+      case 'spongebob_blubberunterricht': return SPONGEBOB_BLUBBERUNTERRICHT_ALIGNED_UTTERANCES;
+      case 'pinguine_quietschsauber': return PINGUINE_QUIETSCHSAUBER_ALIGNED_UTTERANCES;
+      case 'courage_fischverfolgungsjagd': return COURAGE_FISCHVERFOLGUNGSJAGD_ALIGNED_UTTERANCES;
       case 'we_bare_bears_mall': return WE_BARE_BEARS_MALL_ALIGNED_UTTERANCES;
       case 'frieren_s01e01': return FRIEREN_S01E01_ALIGNED_UTTERANCES;
       case 'sakura_s01e01': return SAKURA_S01E01_ALIGNED_UTTERANCES;

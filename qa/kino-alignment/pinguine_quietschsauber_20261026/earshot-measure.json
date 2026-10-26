@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "126.967 s, -20.7 LUFS integrated (short-term max -19.0), true peak -8.4 dBTP, LRA 3.6 LU, noise floor -42.5 dBFS, brightness 2.5 kHz, bandwidth 16.3 kHz, attack 70 ms, decay 21305 ms.\n\nJSON: {\"summary\": \"126.967 s, -20.7 LUFS integrated (short-term max -19.0), true peak -8.4 dBTP, LRA 3.6 LU, noise floor -42.5 dBFS, brightness 2.5 kHz, bandwidth 16.3 kHz, attack 70 ms, decay 21305 ms.\", \"duration\": 126.967, \"peak_dbfs\": -8.5, \"true_peak_dbtp\": -8.4, \"rms_dbfs\": -24.0, \"lufs\": -20.7, \"short_term_max_lufs\": -19.0, \"lra_lu\": 3.6, \"clipped_samples\": 0, \"dc\": 0.00023, \"noise_floor_dbfs\": -42.5, \"dynamic_range_db\": 27.9, \"digital_silence_frac\": 0.0009, \"side_to_mid_db\": -11.6, \"correlation\": 0.872, \"attack_at\": 0.144, \"peak_at\": 97.404, \"attack_ms\": 70.0, \"decay_ms\": 21305.0, \"centroid_hz\": 991, \"rolloff95_hz\": 4070, \"bands_db\": {\"sub\": -21.5, \"low\": -4.9, \"lowmid\": -3.8, \"mid\": -6.9, \"presence\": -14.3, \"air\": -18.4, \"top\": -76.1}, \"bandwidth_hz\": 16254, \"flatness\": 0.0002, \"brightness_hz\": 2516, \"tonal_peak_ratio_db\": 39.0}"
+    }
+  ],
+  "isError": false
+}

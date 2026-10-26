@@ -1,0 +1,16 @@
+{
+  "key": "pinguine_quietschsauber",
+  "cues": 21,
+  "chapters": 2,
+  "picks": [
+    7,
+    7
+  ],
+  "practiceUsageCount": 14,
+  "cards": 13,
+  "uniqueIds": true,
+  "orderedNonoverlappingCues": true,
+  "cueAndCardChapterReferences": true,
+  "fullVideoDecode": "passed ffmpeg -f null",
+  "builderStatus": "Schema assertions mirrored; shared builder deliberately not run to avoid creating root runtime files outside ownership."
+}

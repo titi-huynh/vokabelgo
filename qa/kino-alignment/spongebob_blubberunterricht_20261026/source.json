@@ -1,0 +1,90 @@
+{
+  "key": "spongebob_blubberunterricht",
+  "title": "SpongeBob Schwammkopf | Blubberunterricht | Nickelodeon Deutschland",
+  "sourceUrl": "https://www.youtube.com/watch?v=aCUB_Kxlu2Q",
+  "uploader": "Nickelodeon Deutschland",
+  "channelId": "UCQU3PO2g_rmqbmr8VJWvrsA",
+  "channelIsVerified": true,
+  "uploadDate": "20191207",
+  "isExcerpt": true,
+  "excerptNote": "Official publisher short excerpt, not a complete original broadcast episode.",
+  "localFile": "video/spongebob_blubberunterricht.mp4",
+  "durationSeconds": 222.841905,
+  "bytes": 12325458,
+  "sha256": "0e1ec80278f70b49d352a6ec31d760f610f72be2e204984a9aa0f8e39b32a42e",
+  "germanAudioEvidence": {
+    "language": "de",
+    "method": "Local faster-whisper automatic language detection and independent base/small/targeted medium ASR. No forced language.",
+    "checks": [
+      {
+        "model": "small",
+        "language": "de",
+        "probability": 0.9812787771224976,
+        "duration": 222.8419375
+      },
+      {
+        "model": "base",
+        "language": "de",
+        "probability": 0.993608832359314,
+        "duration": 222.8419375
+      },
+      {
+        "model": "medium",
+        "language": "de",
+        "probability": 0.9961310625076294,
+        "duration": 222.8419375
+      },
+      {
+        "model": "medium-early",
+        "language": "de",
+        "probability": 0.9927349090576172,
+        "duration": 222.8419375
+      }
+    ]
+  },
+  "reviewedLesson": {
+    "file": "lesson-content.json",
+    "cues": 19,
+    "chapters": 2,
+    "vocabulary": 12,
+    "reviewScope": "Selected speech only; independent machine ASR and visual frame crosscheck, not a native-human full listening review"
+  },
+  "audioMeasurements": {
+    "summary": "222.842 s, -21.2 LUFS integrated (short-term max -15.6), true peak -8.9 dBTP, LRA 8.0 LU, noise floor -41.6 dBFS, brightness 2.4 kHz, bandwidth 16.3 kHz, attack 2 ms, decay 1980 ms.",
+    "duration": 222.842,
+    "peak_dbfs": -8.9,
+    "true_peak_dbtp": -8.9,
+    "rms_dbfs": -25.5,
+    "lufs": -21.2,
+    "short_term_max_lufs": -15.6,
+    "lra_lu": 8.0,
+    "clipped_samples": 0,
+    "dc": 0.00076,
+    "noise_floor_dbfs": -41.6,
+    "dynamic_range_db": 27.8,
+    "digital_silence_frac": 0.0003,
+    "side_to_mid_db": -18.8,
+    "correlation": 0.974,
+    "attack_at": 0.167,
+    "peak_at": 135.811,
+    "attack_ms": 2.0,
+    "decay_ms": 1980.0,
+    "centroid_hz": 1324,
+    "rolloff95_hz": 3405,
+    "bands_db": {
+      "sub": -27.2,
+      "low": -11.7,
+      "lowmid": -3.5,
+      "mid": -3.4,
+      "presence": -18.2,
+      "air": -23.5,
+      "top": -89.7
+    },
+    "bandwidth_hz": 16254,
+    "flatness": 0.0001,
+    "brightness_hz": 2386,
+    "tonal_peak_ratio_db": 38.5
+  },
+  "acquisition": "Ordinary public official publisher YouTube extraction with yt-dlp Node/EJS; no cookies, DRM, paid account or API.",
+  "retrievedDate": "2026-10-26"
+}
