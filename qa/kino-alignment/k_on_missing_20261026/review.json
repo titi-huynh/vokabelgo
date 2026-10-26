@@ -1,0 +1,3962 @@
+{
+  "film": "K-On! S01E01",
+  "date": "2026-10-26",
+  "candidatesReviewed": 32,
+  "addedCount": 42,
+  "captionsBefore": 239,
+  "captionsAfter": 281,
+  "method": {
+    "humanListened": false,
+    "description": "Local independent small + medium recognition without transcript prompts, extra narrow/wide context passes, source audio hash match, visual scene checks. Word timestamps are model-derived, not human-certified. Unresolved variants are withheld.",
+    "decodedAudioSha256": "85bb9b7f1b31b3c9ea2b5441152b8180bd8458194d455fbb2b53a5983ef15ce7"
+  },
+  "idPolicy": "New IDs start at 1100298; 1100296/1100297 were already reserved in the source JSON. All previously visible IDs retained.",
+  "added": [
+    {
+      "candidate": 1,
+      "start": 271.49,
+      "end": 274.91,
+      "text": "Ich hab schon das Gefühl, dass ich endlich irgendwas tun müsste.",
+      "vi": "Tớ cũng thấy mình phải làm gì đó rồi.",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100013
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 271.49,
+            "end": 271.63,
+            "word": " Ich",
+            "probability": 0.9678277373313904
+          },
+          {
+            "start": 271.63,
+            "end": 271.87,
+            "word": " hab",
+            "probability": 0.6451337337493896
+          },
+          {
+            "start": 271.87,
+            "end": 272.13,
+            "word": " schon",
+            "probability": 0.9624496102333069
+          },
+          {
+            "start": 272.13,
+            "end": 272.43,
+            "word": " das",
+            "probability": 0.9982600808143616
+          },
+          {
+            "start": 272.43,
+            "end": 272.67,
+            "word": " Gefühl,",
+            "probability": 0.9898115992546082
+          },
+          {
+            "start": 272.75,
+            "end": 272.91,
+            "word": " dass",
+            "probability": 0.9884005784988403
+          },
+          {
+            "start": 272.91,
+            "end": 273.05,
+            "word": " ich",
+            "probability": 0.9892798066139221
+          },
+          {
+            "start": 273.05,
+            "end": 273.53,
+            "word": " endlich",
+            "probability": 0.9978253841400146
+          },
+          {
+            "start": 273.53,
+            "end": 273.99,
+            "word": " irgendwas",
+            "probability": 0.9482936263084412
+          },
+          {
+            "start": 273.99,
+            "end": 274.43,
+            "word": " tun",
+            "probability": 0.9985796213150024
+          },
+          {
+            "start": 274.43,
+            "end": 274.91,
+            "word": " müsste.",
+            "probability": 0.9891451001167297
+          }
+        ]
+      },
+      "id": 1100298,
+      "part": 1
+    },
+    {
+      "candidate": 1,
+      "start": 276.67,
+      "end": 278.09,
+      "text": "Wenn ich nur wüsste, was.",
+      "vi": "Giá mà tớ biết phải làm gì.",
+      "speaker": "Yui",
+      "sourceIds": [],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 276.67,
+            "end": 276.77,
+            "word": " Wenn",
+            "probability": 0.9610574245452881
+          },
+          {
+            "start": 276.77,
+            "end": 277.01,
+            "word": " ich",
+            "probability": 0.9958036541938782
+          },
+          {
+            "start": 277.01,
+            "end": 277.23,
+            "word": " nur",
+            "probability": 0.9790679216384888
+          },
+          {
+            "start": 277.23,
+            "end": 277.63,
+            "word": " wüsste,",
+            "probability": 0.9888429443041483
+          },
+          {
+            "start": 277.79,
+            "end": 278.09,
+            "word": " was...",
+            "probability": 0.7074529379606247
+          }
+        ]
+      },
+      "id": 1100299,
+      "part": 1
+    },
+    {
+      "candidate": 2,
+      "start": 353.77,
+      "end": 355.73,
+      "text": "Verteil doch bitte schon mal die Kopien, ja?",
+      "vi": "Em phát giúp cô mấy bản photo trước nhé?",
+      "speaker": "Sawako",
+      "sourceIds": [
+        1100032
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 2,
+        "words": [
+          {
+            "start": 353.77,
+            "end": 354.21,
+            "word": " Verteil",
+            "probability": 0.6359456380208334
+          },
+          {
+            "start": 354.21,
+            "end": 354.33,
+            "word": " doch",
+            "probability": 0.9749998450279236
+          },
+          {
+            "start": 354.33,
+            "end": 354.59,
+            "word": " bitte",
+            "probability": 0.9688366055488586
+          },
+          {
+            "start": 354.59,
+            "end": 354.73,
+            "word": " schon",
+            "probability": 0.9748407602310181
+          },
+          {
+            "start": 354.73,
+            "end": 354.89,
+            "word": " mal",
+            "probability": 0.776755154132843
+          },
+          {
+            "start": 354.89,
+            "end": 355.07,
+            "word": " die",
+            "probability": 0.9909539818763733
+          },
+          {
+            "start": 355.07,
+            "end": 355.43,
+            "word": " Kopien,",
+            "probability": 0.9250511825084686
+          },
+          {
+            "start": 355.45,
+            "end": 355.73,
+            "word": " ja?",
+            "probability": 0.9719690680503845
+          }
+        ]
+      },
+      "id": 1100300,
+      "part": 2
+    },
+    {
+      "candidate": 3,
+      "start": 361.42,
+      "end": 364.3,
+      "text": "Ich war mit den Gedanken woanders. Entschuldigung.",
+      "vi": "Em mải nghĩ chuyện khác mất. Em xin lỗi cô ạ.",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100034
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 3,
+        "words": [
+          {
+            "start": 361.42,
+            "end": 362.02,
+            "word": " Ich",
+            "probability": 0.7657997608184814
+          },
+          {
+            "start": 362.02,
+            "end": 362.2,
+            "word": " war",
+            "probability": 0.9868589639663696
+          },
+          {
+            "start": 362.2,
+            "end": 362.34,
+            "word": " mit",
+            "probability": 0.985791802406311
+          },
+          {
+            "start": 362.34,
+            "end": 362.5,
+            "word": " den",
+            "probability": 0.9488798975944519
+          },
+          {
+            "start": 362.5,
+            "end": 362.84,
+            "word": " Gedanken",
+            "probability": 0.9978744983673096
+          },
+          {
+            "start": 362.84,
+            "end": 363.4,
+            "word": " woanders.",
+            "probability": 0.976490318775177
+          },
+          {
+            "start": 363.5,
+            "end": 364.3,
+            "word": " Entschuldigung.",
+            "probability": 0.9940857440233231
+          }
+        ]
+      },
+      "id": 1100301,
+      "part": 2
+    },
+    {
+      "candidate": 4,
+      "start": 370.87,
+      "end": 372.01,
+      "text": "Was für 'ne Schnecke!",
+      "vi": "Chậm như rùa ấy!",
+      "speaker": "Nhân vật",
+      "sourceIds": [
+        1100035
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 4,
+        "words": [
+          {
+            "start": 370.87,
+            "end": 370.93,
+            "word": " Was",
+            "probability": 0.849407970905304
+          },
+          {
+            "start": 370.93,
+            "end": 371.13,
+            "word": " für",
+            "probability": 0.9958075284957886
+          },
+          {
+            "start": 371.13,
+            "end": 371.37,
+            "word": " ne",
+            "probability": 0.4178363084793091
+          },
+          {
+            "start": 371.37,
+            "end": 372.01,
+            "word": " Schnecke!",
+            "probability": 0.9829771816730499
+          }
+        ]
+      },
+      "id": 1100302,
+      "part": 2
+    },
+    {
+      "candidate": 5,
+      "start": 449.93,
+      "end": 451.37,
+      "text": "Nein, ich dachte, hier ist der Chor.",
+      "vi": "Không, tớ tưởng đây là câu lạc bộ hợp xướng.",
+      "speaker": "Tsumugi",
+      "sourceIds": [
+        1100056
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 449.93,
+            "end": 450.21,
+            "word": " Nein,",
+            "probability": 0.9618731141090393
+          },
+          {
+            "start": 450.47,
+            "end": 450.55,
+            "word": " ich",
+            "probability": 0.9692990779876709
+          },
+          {
+            "start": 450.55,
+            "end": 450.73,
+            "word": " dachte,",
+            "probability": 0.9908522963523865
+          },
+          {
+            "start": 450.83,
+            "end": 450.85,
+            "word": " hier",
+            "probability": 0.989623486995697
+          },
+          {
+            "start": 450.85,
+            "end": 451.01,
+            "word": " ist",
+            "probability": 0.9958192110061646
+          },
+          {
+            "start": 451.01,
+            "end": 451.25,
+            "word": " der",
+            "probability": 0.9951744675636292
+          },
+          {
+            "start": 451.25,
+            "end": 451.37,
+            "word": " Chor.",
+            "probability": 0.6780906021595001
+          }
+        ]
+      },
+      "id": 1100303,
+      "part": 3
+    },
+    {
+      "candidate": 5,
+      "start": 451.57,
+      "end": 453.23,
+      "text": "Wolltest du Mitglied im Musikclub werden?",
+      "vi": "Cậu định gia nhập câu lạc bộ âm nhạc à?",
+      "speaker": "Ritsu",
+      "sourceIds": [
+        1100057
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 451.57,
+            "end": 451.75,
+            "word": " Wolltest",
+            "probability": 0.759247899055481
+          },
+          {
+            "start": 451.75,
+            "end": 451.91,
+            "word": " du",
+            "probability": 0.9614449143409729
+          },
+          {
+            "start": 451.91,
+            "end": 452.27,
+            "word": " Mitglied",
+            "probability": 0.9926264882087708
+          },
+          {
+            "start": 452.27,
+            "end": 452.41,
+            "word": " im",
+            "probability": 0.9945436716079712
+          },
+          {
+            "start": 452.41,
+            "end": 452.89,
+            "word": " Musikclub",
+            "probability": 0.9491705000400543
+          },
+          {
+            "start": 452.89,
+            "end": 453.23,
+            "word": " werden?",
+            "probability": 0.9978099465370178
+          }
+        ]
+      },
+      "id": 1100304,
+      "part": 3
+    },
+    {
+      "candidate": 5,
+      "start": 453.79,
+      "end": 455.17,
+      "text": "Ich wollte eigentlich in den Chor.",
+      "vi": "Thật ra tớ muốn vào câu lạc bộ hợp xướng.",
+      "speaker": "Tsumugi",
+      "sourceIds": [
+        1100058
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 453.79,
+            "end": 453.95,
+            "word": " Ich",
+            "probability": 0.9325604438781738
+          },
+          {
+            "start": 453.95,
+            "end": 454.19,
+            "word": " wollte",
+            "probability": 0.9959724545478821
+          },
+          {
+            "start": 454.19,
+            "end": 454.65,
+            "word": " eigentlich",
+            "probability": 0.9970678687095642
+          },
+          {
+            "start": 454.65,
+            "end": 454.79,
+            "word": " in",
+            "probability": 0.9925639033317566
+          },
+          {
+            "start": 454.79,
+            "end": 454.97,
+            "word": " den",
+            "probability": 0.9966562986373901
+          },
+          {
+            "start": 454.97,
+            "end": 455.17,
+            "word": " Chor.",
+            "probability": 0.9973433017730713
+          }
+        ]
+      },
+      "id": 1100305,
+      "part": 3
+    },
+    {
+      "candidate": 5,
+      "start": 455.17,
+      "end": 456.69,
+      "text": "Wir haben zu wenige Mitglieder.",
+      "vi": "Bọn tớ đang thiếu thành viên.",
+      "speaker": "Ritsu",
+      "sourceIds": [
+        1100059
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 455.17,
+            "end": 455.37,
+            "word": " Wir",
+            "probability": 0.9597942233085632
+          },
+          {
+            "start": 455.37,
+            "end": 455.61,
+            "word": " haben",
+            "probability": 0.9825007319450378
+          },
+          {
+            "start": 455.61,
+            "end": 455.87,
+            "word": " zu",
+            "probability": 0.9976447224617004
+          },
+          {
+            "start": 455.87,
+            "end": 456.25,
+            "word": " wenige",
+            "probability": 0.9727547764778137
+          },
+          {
+            "start": 456.25,
+            "end": 456.69,
+            "word": " Mitglieder.",
+            "probability": 0.9990502595901489
+          }
+        ]
+      },
+      "id": 1100306,
+      "part": 3
+    },
+    {
+      "candidate": 5,
+      "start": 460.05,
+      "end": 463.01,
+      "text": "Du vertreibst sie nur mit deiner Bettelei und rabiaten Art.",
+      "vi": "Cậu cứ năn nỉ rồi lôi kéo như thế thì cậu ấy sợ chạy mất thôi.",
+      "speaker": "Mio",
+      "sourceIds": [
+        1100061
+      ],
+      "timingEvidence": {
+        "file": "independent-small.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 460.05,
+            "end": 460.25,
+            "word": " Du",
+            "probability": 0.5092124342918396
+          },
+          {
+            "start": 460.25,
+            "end": 460.87,
+            "word": " vertreibst",
+            "probability": 0.924774780869484
+          },
+          {
+            "start": 460.87,
+            "end": 460.97,
+            "word": " sie",
+            "probability": 0.8210568428039551
+          },
+          {
+            "start": 460.97,
+            "end": 461.11,
+            "word": " nur",
+            "probability": 0.9834920763969421
+          },
+          {
+            "start": 461.11,
+            "end": 461.25,
+            "word": " mit",
+            "probability": 0.9948533177375793
+          },
+          {
+            "start": 461.25,
+            "end": 461.53,
+            "word": " deiner",
+            "probability": 0.749578669667244
+          },
+          {
+            "start": 461.53,
+            "end": 462.01,
+            "word": " Bettelai",
+            "probability": 0.5265509188175201
+          },
+          {
+            "start": 462.01,
+            "end": 462.13,
+            "word": " und",
+            "probability": 0.4919298589229584
+          },
+          {
+            "start": 462.13,
+            "end": 462.65,
+            "word": " rabiaten",
+            "probability": 0.5770712296168009
+          },
+          {
+            "start": 462.65,
+            "end": 463.01,
+            "word": " Art.",
+            "probability": 0.9382879734039307
+          }
+        ]
+      },
+      "id": 1100307,
+      "part": 3
+    },
+    {
+      "candidate": 6,
+      "start": 490.48,
+      "end": 493.62,
+      "text": "An dem Tag, als wir zusammen auf dem Live-Konzert waren.",
+      "vi": "Cái hôm bọn mình cùng đi xem hòa nhạc ấy.",
+      "speaker": "Ritsu",
+      "sourceIds": [],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 6,
+        "words": [
+          {
+            "start": 490.48,
+            "end": 491,
+            "word": " An",
+            "probability": 0.6009457111358643
+          },
+          {
+            "start": 491,
+            "end": 491.18,
+            "word": " dem",
+            "probability": 0.9974228143692017
+          },
+          {
+            "start": 491.18,
+            "end": 491.4,
+            "word": " Tag,",
+            "probability": 0.9441925883293152
+          },
+          {
+            "start": 491.56,
+            "end": 491.56,
+            "word": " als",
+            "probability": 0.9804051518440247
+          },
+          {
+            "start": 491.56,
+            "end": 491.82,
+            "word": " wir",
+            "probability": 0.9981813430786133
+          },
+          {
+            "start": 491.82,
+            "end": 492.08,
+            "word": " zusammen",
+            "probability": 0.9880682826042175
+          },
+          {
+            "start": 492.08,
+            "end": 492.26,
+            "word": " auf",
+            "probability": 0.9883665442466736
+          },
+          {
+            "start": 492.26,
+            "end": 492.4,
+            "word": " dem",
+            "probability": 0.9920803904533386
+          },
+          {
+            "start": 492.4,
+            "end": 492.72,
+            "word": " Live",
+            "probability": 0.9723187685012817
+          },
+          {
+            "start": 492.72,
+            "end": 493.24,
+            "word": "-Konzert",
+            "probability": 0.922895222902298
+          },
+          {
+            "start": 493.24,
+            "end": 493.62,
+            "word": " waren.",
+            "probability": 0.9948739409446716
+          }
+        ]
+      },
+      "id": 1100308,
+      "part": 3
+    },
+    {
+      "candidate": 7,
+      "start": 559.92,
+      "end": 560.44,
+      "text": "Yui!",
+      "vi": "Yui!",
+      "speaker": "Nodoka",
+      "sourceIds": [
+        1100092
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 7,
+        "words": [
+          {
+            "start": 559.92,
+            "end": 560.44,
+            "word": " Yui.",
+            "probability": 0.6164745986461639
+          }
+        ]
+      },
+      "id": 1100309,
+      "part": 3
+    },
+    {
+      "candidate": 7,
+      "start": 561.02,
+      "end": 564.84,
+      "text": "Nodoka, ich glaube, jetzt, wo ich Oberschülerin bin, sollte ich endlich was tun.",
+      "vi": "Nodoka này, giờ đã lên cấp ba rồi, tớ nghĩ mình phải làm gì đó mới được.",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100093
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 7,
+        "words": [
+          {
+            "start": 561.02,
+            "end": 561.36,
+            "word": " Lodoka,",
+            "probability": 0.6886527339617411
+          },
+          {
+            "start": 561.5,
+            "end": 561.52,
+            "word": " ich",
+            "probability": 0.9775869250297546
+          },
+          {
+            "start": 561.52,
+            "end": 561.76,
+            "word": " glaube",
+            "probability": 0.9909521341323853
+          },
+          {
+            "start": 561.76,
+            "end": 562.04,
+            "word": " jetzt,",
+            "probability": 0.8271899819374084
+          },
+          {
+            "start": 562.1,
+            "end": 562.2,
+            "word": " wo",
+            "probability": 0.9940981864929199
+          },
+          {
+            "start": 562.2,
+            "end": 562.36,
+            "word": " ich",
+            "probability": 0.9987088441848755
+          },
+          {
+            "start": 562.36,
+            "end": 562.98,
+            "word": " Oberschülerin",
+            "probability": 0.9511577248573303
+          },
+          {
+            "start": 562.98,
+            "end": 563.38,
+            "word": " bin,",
+            "probability": 0.9991967082023621
+          },
+          {
+            "start": 563.62,
+            "end": 563.74,
+            "word": " sollte",
+            "probability": 0.7942373156547546
+          },
+          {
+            "start": 563.74,
+            "end": 563.96,
+            "word": " ich",
+            "probability": 0.9965838193893433
+          },
+          {
+            "start": 563.96,
+            "end": 564.3,
+            "word": " endlich",
+            "probability": 0.9947429895401001
+          },
+          {
+            "start": 564.3,
+            "end": 564.58,
+            "word": " was",
+            "probability": 0.9747233986854553
+          },
+          {
+            "start": 564.58,
+            "end": 564.84,
+            "word": " tun.",
+            "probability": 0.998304009437561
+          }
+        ]
+      },
+      "id": 1100310,
+      "part": 3
+    },
+    {
+      "candidate": 10,
+      "start": 686.48,
+      "end": 688.72,
+      "text": "Das machst du sehr gut, Yui-chan.",
+      "vi": "Giỏi lắm, Yui!",
+      "speaker": "Nhân vật",
+      "sourceIds": [
+        1100129
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 686.48,
+            "end": 687.12,
+            "word": " Das",
+            "probability": 0.5885752439498901
+          },
+          {
+            "start": 687.12,
+            "end": 687.36,
+            "word": " machst",
+            "probability": 0.9986864924430847
+          },
+          {
+            "start": 687.36,
+            "end": 687.54,
+            "word": " du",
+            "probability": 0.9728668928146362
+          },
+          {
+            "start": 687.54,
+            "end": 687.8,
+            "word": " sehr",
+            "probability": 0.9970642924308777
+          },
+          {
+            "start": 687.8,
+            "end": 688.02,
+            "word": " gut,",
+            "probability": 0.9975542426109314
+          },
+          {
+            "start": 688.18,
+            "end": 688.36,
+            "word": " Yui",
+            "probability": 0.8569743037223816
+          },
+          {
+            "start": 688.36,
+            "end": 688.72,
+            "word": "-chan.",
+            "probability": 0.8996180891990662
+          }
+        ]
+      },
+      "id": 1100311,
+      "part": 4
+    },
+    {
+      "candidate": 11,
+      "start": 701.49,
+      "end": 704.97,
+      "text": "Ich habe beschlossen, Mitglied im Musikclub zu werden.",
+      "vi": "Tớ quyết định vào câu lạc bộ âm nhạc rồi.",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100130
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 11,
+        "words": [
+          {
+            "start": 701.49,
+            "end": 702.01,
+            "word": " Ich",
+            "probability": 0.7502936720848083
+          },
+          {
+            "start": 702.01,
+            "end": 702.33,
+            "word": " habe",
+            "probability": 0.9559379816055298
+          },
+          {
+            "start": 702.33,
+            "end": 702.91,
+            "word": " beschlossen,",
+            "probability": 0.9560143649578094
+          },
+          {
+            "start": 702.93,
+            "end": 703.43,
+            "word": " Mitglied",
+            "probability": 0.9939751029014587
+          },
+          {
+            "start": 703.43,
+            "end": 703.69,
+            "word": " im",
+            "probability": 0.9889727234840393
+          },
+          {
+            "start": 703.69,
+            "end": 704.27,
+            "word": " Musikklub",
+            "probability": 0.7918783128261566
+          },
+          {
+            "start": 704.27,
+            "end": 704.55,
+            "word": " zu",
+            "probability": 0.9936538934707642
+          },
+          {
+            "start": 704.55,
+            "end": 704.97,
+            "word": " werden.",
+            "probability": 0.9983792304992676
+          }
+        ]
+      },
+      "id": 1100312,
+      "part": 4
+    },
+    {
+      "candidate": 11,
+      "start": 705.57,
+      "end": 708.19,
+      "text": "Ach ja? Und was genau musst du da so machen, Yui?",
+      "vi": "Thế à? Vậy cụ thể ở đó cậu phải làm gì, Yui?",
+      "speaker": "Nodoka",
+      "sourceIds": [
+        1100131
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 11,
+        "words": [
+          {
+            "start": 705.57,
+            "end": 705.69,
+            "word": " Ach",
+            "probability": 0.8910830020904541
+          },
+          {
+            "start": 705.69,
+            "end": 706.01,
+            "word": " ja?",
+            "probability": 0.9180727601051331
+          },
+          {
+            "start": 706.35,
+            "end": 706.61,
+            "word": " Und",
+            "probability": 0.9771389365196228
+          },
+          {
+            "start": 706.61,
+            "end": 706.81,
+            "word": " was",
+            "probability": 0.9896743893623352
+          },
+          {
+            "start": 706.81,
+            "end": 707.03,
+            "word": " genau",
+            "probability": 0.9885692596435547
+          },
+          {
+            "start": 707.03,
+            "end": 707.19,
+            "word": " musst",
+            "probability": 0.9667813181877136
+          },
+          {
+            "start": 707.19,
+            "end": 707.29,
+            "word": " du",
+            "probability": 0.9627987146377563
+          },
+          {
+            "start": 707.29,
+            "end": 707.45,
+            "word": " da",
+            "probability": 0.9562028646469116
+          },
+          {
+            "start": 707.45,
+            "end": 707.63,
+            "word": " so",
+            "probability": 0.9904078841209412
+          },
+          {
+            "start": 707.63,
+            "end": 707.85,
+            "word": " machen,",
+            "probability": 0.9983276724815369
+          },
+          {
+            "start": 708.07,
+            "end": 708.19,
+            "word": " Yui?",
+            "probability": 0.8494976460933685
+          }
+        ]
+      },
+      "id": 1100313,
+      "part": 4
+    },
+    {
+      "candidate": 11,
+      "start": 708.77,
+      "end": 709.79,
+      "text": "Keine Ahnung.",
+      "vi": "Tớ cũng chẳng biết nữa.",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100132
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 11,
+        "words": [
+          {
+            "start": 708.77,
+            "end": 709.17,
+            "word": " Keine",
+            "probability": 0.9697391092777252
+          },
+          {
+            "start": 709.17,
+            "end": 709.79,
+            "word": " Ahnung.",
+            "probability": 0.9962417781352997
+          }
+        ]
+      },
+      "id": 1100314,
+      "part": 4
+    },
+    {
+      "candidate": 11,
+      "start": 711.41,
+      "end": 715.71,
+      "text": "Die Musiklehrerin hat irgendwas von leichter Musik erzählt, also wird es nichts Schweres sein.",
+      "vi": "Cô dạy nhạc có nói gì đó về nhạc nhẹ, nên chắc cũng chẳng khó gì đâu.",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100133
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 11,
+        "words": [
+          {
+            "start": 711.41,
+            "end": 711.57,
+            "word": " Die",
+            "probability": 0.8519366383552551
+          },
+          {
+            "start": 711.57,
+            "end": 712.41,
+            "word": " Musiklehrerin",
+            "probability": 0.9956642687320709
+          },
+          {
+            "start": 712.41,
+            "end": 712.65,
+            "word": " hat",
+            "probability": 0.995274007320404
+          },
+          {
+            "start": 712.65,
+            "end": 712.93,
+            "word": " irgendwas",
+            "probability": 0.8566858768463135
+          },
+          {
+            "start": 712.93,
+            "end": 713.21,
+            "word": " von",
+            "probability": 0.9933149218559265
+          },
+          {
+            "start": 713.21,
+            "end": 713.59,
+            "word": " leichter",
+            "probability": 0.9809439480304718
+          },
+          {
+            "start": 713.59,
+            "end": 713.83,
+            "word": " Musik",
+            "probability": 0.9980705380439758
+          },
+          {
+            "start": 713.83,
+            "end": 714.25,
+            "word": " erzählt,",
+            "probability": 0.9982592463493347
+          },
+          {
+            "start": 714.45,
+            "end": 714.53,
+            "word": " also",
+            "probability": 0.9906978011131287
+          },
+          {
+            "start": 714.53,
+            "end": 714.73,
+            "word": " wird",
+            "probability": 0.9930344820022583
+          },
+          {
+            "start": 714.73,
+            "end": 714.93,
+            "word": " es",
+            "probability": 0.9438760876655579
+          },
+          {
+            "start": 714.93,
+            "end": 715.05,
+            "word": " nichts",
+            "probability": 0.5809590816497803
+          },
+          {
+            "start": 715.05,
+            "end": 715.49,
+            "word": " schweres",
+            "probability": 0.7879239618778229
+          },
+          {
+            "start": 715.49,
+            "end": 715.71,
+            "word": " sein.",
+            "probability": 0.9985684156417847
+          }
+        ]
+      },
+      "id": 1100315,
+      "part": 4
+    },
+    {
+      "candidate": 12,
+      "start": 724.85,
+      "end": 727.71,
+      "text": "Was? Aber ich kann doch gar nicht Gitarre spielen.",
+      "vi": "Hả? Nhưng tớ có biết chơi guitar đâu.",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100137
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 12,
+        "words": [
+          {
+            "start": 724.85,
+            "end": 725.35,
+            "word": " Was?",
+            "probability": 0.7394669055938721
+          },
+          {
+            "start": 725.69,
+            "end": 725.93,
+            "word": " Aber",
+            "probability": 0.9674513339996338
+          },
+          {
+            "start": 725.93,
+            "end": 726.09,
+            "word": " ich",
+            "probability": 0.9837470650672913
+          },
+          {
+            "start": 726.09,
+            "end": 726.33,
+            "word": " kann",
+            "probability": 0.9985281229019165
+          },
+          {
+            "start": 726.33,
+            "end": 726.53,
+            "word": " doch",
+            "probability": 0.9837836623191833
+          },
+          {
+            "start": 726.53,
+            "end": 726.75,
+            "word": " gar",
+            "probability": 0.9619525074958801
+          },
+          {
+            "start": 726.75,
+            "end": 726.85,
+            "word": " nicht",
+            "probability": 0.9977741837501526
+          },
+          {
+            "start": 726.85,
+            "end": 727.39,
+            "word": " Gitarre",
+            "probability": 0.963326891263326
+          },
+          {
+            "start": 727.39,
+            "end": 727.71,
+            "word": " spielen.",
+            "probability": 0.9970235228538513
+          }
+        ]
+      },
+      "id": 1100316,
+      "part": 4
+    },
+    {
+      "candidate": 12,
+      "start": 728.29,
+      "end": 729.79,
+      "text": "Was kannst du denn dann spielen?",
+      "vi": "Thế cậu biết chơi nhạc cụ nào?",
+      "speaker": "Nodoka",
+      "sourceIds": [
+        1100138
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 12,
+        "words": [
+          {
+            "start": 728.29,
+            "end": 728.49,
+            "word": " Was",
+            "probability": 0.9646714329719543
+          },
+          {
+            "start": 728.49,
+            "end": 728.75,
+            "word": " kannst",
+            "probability": 0.994441568851471
+          },
+          {
+            "start": 728.75,
+            "end": 728.95,
+            "word": " du",
+            "probability": 0.9595605731010437
+          },
+          {
+            "start": 728.95,
+            "end": 729.15,
+            "word": " denn",
+            "probability": 0.9931476712226868
+          },
+          {
+            "start": 729.15,
+            "end": 729.39,
+            "word": " dann",
+            "probability": 0.9597963094711304
+          },
+          {
+            "start": 729.39,
+            "end": 729.79,
+            "word": " spielen?",
+            "probability": 0.9963472485542297
+          }
+        ]
+      },
+      "id": 1100317,
+      "part": 4
+    },
+    {
+      "candidate": 13,
+      "start": 731.11,
+      "end": 735.19,
+      "text": "Ich kann ganz gut mit Kastagnetten umgehen.",
+      "vi": "Tớ chơi phách castanet khá giỏi đấy.",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100139
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 13,
+        "words": [
+          {
+            "start": 731.11,
+            "end": 731.83,
+            "word": " Ich",
+            "probability": 0.7979483604431152
+          },
+          {
+            "start": 731.83,
+            "end": 732.81,
+            "word": " kann",
+            "probability": 0.9857082366943359
+          },
+          {
+            "start": 732.81,
+            "end": 733.67,
+            "word": " ganz",
+            "probability": 0.4957110583782196
+          },
+          {
+            "start": 733.67,
+            "end": 733.83,
+            "word": " gut",
+            "probability": 0.9959796667098999
+          },
+          {
+            "start": 733.83,
+            "end": 734.05,
+            "word": " mit",
+            "probability": 0.9949265718460083
+          },
+          {
+            "start": 734.05,
+            "end": 734.65,
+            "word": " Kastanetten",
+            "probability": 0.7611857056617737
+          },
+          {
+            "start": 734.65,
+            "end": 735.19,
+            "word": " umgehen.",
+            "probability": 0.9984775185585022
+          }
+        ]
+      },
+      "id": 1100318,
+      "part": 4
+    },
+    {
+      "candidate": 14,
+      "start": 740.22,
+      "end": 741.96,
+      "text": "Ja, das passt zu dir.",
+      "vi": "Ừ, đúng là hợp với cậu.",
+      "speaker": "Nodoka",
+      "sourceIds": [
+        1100140
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 14,
+        "words": [
+          {
+            "start": 740.22,
+            "end": 740.7,
+            "word": " Ja,",
+            "probability": 0.9007449746131897
+          },
+          {
+            "start": 740.76,
+            "end": 740.9,
+            "word": " das",
+            "probability": 0.9930671453475952
+          },
+          {
+            "start": 740.9,
+            "end": 741.16,
+            "word": " passt",
+            "probability": 0.9985343217849731
+          },
+          {
+            "start": 741.16,
+            "end": 741.4,
+            "word": " zu",
+            "probability": 0.9897241592407227
+          },
+          {
+            "start": 741.4,
+            "end": 741.96,
+            "word": " dir.",
+            "probability": 0.9381082653999329
+          }
+        ]
+      },
+      "id": 1100319,
+      "part": 4
+    },
+    {
+      "candidate": 14,
+      "start": 745.06,
+      "end": 745.66,
+      "text": "Guten Tag!",
+      "vi": "Chào các em!",
+      "speaker": "Sawako",
+      "sourceIds": [
+        1100142
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 14,
+        "words": [
+          {
+            "start": 745.06,
+            "end": 745.66,
+            "word": " Tag!",
+            "probability": 0.9823077917098999
+          }
+        ]
+      },
+      "id": 1100320,
+      "part": 4
+    },
+    {
+      "candidate": 15,
+      "start": 752.36,
+      "end": 753.08,
+      "text": "Ich freu mich für euch.",
+      "vi": "Cô mừng cho các em.",
+      "speaker": "Sawako",
+      "sourceIds": [
+        1100146
+      ],
+      "timingEvidence": {
+        "file": "independent-medium-tight.json",
+        "candidate": 15,
+        "words": [
+          {
+            "start": 752.36,
+            "end": 752.52,
+            "word": " ich",
+            "probability": 0.6984014511108398
+          },
+          {
+            "start": 752.52,
+            "end": 752.74,
+            "word": " freu",
+            "probability": 0.8075048327445984
+          },
+          {
+            "start": 752.74,
+            "end": 752.88,
+            "word": " mich",
+            "probability": 0.8896442651748657
+          },
+          {
+            "start": 752.88,
+            "end": 753.02,
+            "word": " für",
+            "probability": 0.9333875775337219
+          },
+          {
+            "start": 753.02,
+            "end": 753.08,
+            "word": " euch.",
+            "probability": 0.94258713722229
+          }
+        ]
+      },
+      "id": 1100321,
+      "part": 4
+    },
+    {
+      "candidate": 15,
+      "start": 753.96,
+      "end": 758.1,
+      "text": "Hört mal, das Teeservice ist sehr hübsch, aber räumt es weg, bevor ihr hier rausgeht, ja?",
+      "vi": "Này, bộ ấm chén đẹp đấy, nhưng nhớ cất đi trước khi ra khỏi phòng nhé?",
+      "speaker": "Sawako",
+      "sourceIds": [
+        1100147
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 15,
+        "words": [
+          {
+            "start": 753.96,
+            "end": 754.14,
+            "word": " Hört",
+            "probability": 0.5959079638123512
+          },
+          {
+            "start": 754.14,
+            "end": 754.54,
+            "word": " mal,",
+            "probability": 0.9859995245933533
+          },
+          {
+            "start": 754.8,
+            "end": 754.88,
+            "word": " das",
+            "probability": 0.9805073142051697
+          },
+          {
+            "start": 754.88,
+            "end": 755.36,
+            "word": " Tesavis",
+            "probability": 0.6670448283354441
+          },
+          {
+            "start": 755.36,
+            "end": 755.52,
+            "word": " ist",
+            "probability": 0.9921892881393433
+          },
+          {
+            "start": 755.52,
+            "end": 755.74,
+            "word": " sehr",
+            "probability": 0.9745413064956665
+          },
+          {
+            "start": 755.74,
+            "end": 756.02,
+            "word": " hübsch,",
+            "probability": 0.9981418997049332
+          },
+          {
+            "start": 756.12,
+            "end": 756.2,
+            "word": " aber",
+            "probability": 0.9900333285331726
+          },
+          {
+            "start": 756.2,
+            "end": 756.42,
+            "word": " räumt",
+            "probability": 0.9818099935849508
+          },
+          {
+            "start": 756.42,
+            "end": 756.56,
+            "word": " es",
+            "probability": 0.9590197205543518
+          },
+          {
+            "start": 756.56,
+            "end": 756.74,
+            "word": " weg,",
+            "probability": 0.9804398417472839
+          },
+          {
+            "start": 756.92,
+            "end": 757.02,
+            "word": " bevor",
+            "probability": 0.989768385887146
+          },
+          {
+            "start": 757.02,
+            "end": 757.16,
+            "word": " ihr",
+            "probability": 0.9932954907417297
+          },
+          {
+            "start": 757.16,
+            "end": 757.38,
+            "word": " hier",
+            "probability": 0.9571896195411682
+          },
+          {
+            "start": 757.38,
+            "end": 757.7,
+            "word": " rausgeht,",
+            "probability": 0.8862078487873077
+          }
+        ]
+      },
+      "id": 1100322,
+      "part": 4
+    },
+    {
+      "candidate": 15,
+      "start": 759.46,
+      "end": 759.94,
+      "text": "Klar!",
+      "vi": "Vâng ạ!",
+      "speaker": "Nhân vật",
+      "sourceIds": [
+        1100148
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 15,
+        "words": [
+          {
+            "start": 759.46,
+            "end": 759.94,
+            "word": " Klar!",
+            "probability": 0.8710063099861145
+          }
+        ]
+      },
+      "id": 1100323,
+      "part": 4
+    },
+    {
+      "candidate": 15,
+      "start": 763.32,
+      "end": 765.16,
+      "text": "Na bitte, der Club wird nicht aufgelöst!",
+      "vi": "Thấy chưa, câu lạc bộ không bị giải thể nữa rồi!",
+      "speaker": "Ritsu",
+      "sourceIds": [
+        1100149,
+        1100150,
+        1100151
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 15,
+        "words": [
+          {
+            "start": 763.32,
+            "end": 763.74,
+            "word": " Na",
+            "probability": 0.9700312614440918
+          },
+          {
+            "start": 763.74,
+            "end": 764.04,
+            "word": " bitte,",
+            "probability": 0.9291332364082336
+          },
+          {
+            "start": 764.14,
+            "end": 764.32,
+            "word": " der",
+            "probability": 0.9871785640716553
+          },
+          {
+            "start": 764.32,
+            "end": 764.52,
+            "word": " Klub",
+            "probability": 0.5885946154594421
+          },
+          {
+            "start": 764.52,
+            "end": 764.68,
+            "word": " wird",
+            "probability": 0.9646043181419373
+          },
+          {
+            "start": 764.68,
+            "end": 764.92,
+            "word": " nicht",
+            "probability": 0.9958431124687195
+          },
+          {
+            "start": 764.92,
+            "end": 765.16,
+            "word": " aufgelöst!",
+            "probability": 0.9976110458374023
+          }
+        ]
+      },
+      "id": 1100324,
+      "part": 4
+    },
+    {
+      "candidate": 16,
+      "start": 781.56,
+      "end": 783.56,
+      "text": "Musikclub, Musikclub!",
+      "vi": "Câu lạc bộ âm nhạc, câu lạc bộ âm nhạc!",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100157
+      ],
+      "timingEvidence": {
+        "file": "independent-small-context.json",
+        "candidate": 16,
+        "words": [
+          {
+            "start": 781.56,
+            "end": 782.56,
+            "word": " Musikclub,",
+            "probability": 0.5727516710758209
+          },
+          {
+            "start": 782.56,
+            "end": 783.56,
+            "word": " Musikclub!",
+            "probability": 0.9924696087837219
+          }
+        ]
+      },
+      "id": 1100325,
+      "part": 5
+    },
+    {
+      "candidate": 17,
+      "start": 818.18,
+      "end": 821.82,
+      "text": "Es fällt mir schwer, denen zu beichten, dass ich doch nicht Mitglied werden will.",
+      "vi": "Mình ngại thú thật với các cậu ấy là mình không muốn gia nhập nữa.",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100160
+      ],
+      "timingEvidence": {
+        "file": "independent-medium-tight.json",
+        "candidate": 17,
+        "words": [
+          {
+            "start": 818.18,
+            "end": 818.62,
+            "word": " Es",
+            "probability": 0.25171488523483276
+          },
+          {
+            "start": 818.62,
+            "end": 818.88,
+            "word": " fällt",
+            "probability": 0.9966627955436707
+          },
+          {
+            "start": 818.88,
+            "end": 819.08,
+            "word": " mir",
+            "probability": 0.9969351291656494
+          },
+          {
+            "start": 819.08,
+            "end": 819.34,
+            "word": " schwer,",
+            "probability": 0.9875182509422302
+          },
+          {
+            "start": 819.52,
+            "end": 819.56,
+            "word": " denen",
+            "probability": 0.39796531200408936
+          },
+          {
+            "start": 819.56,
+            "end": 819.82,
+            "word": " zu",
+            "probability": 0.9791082739830017
+          },
+          {
+            "start": 819.82,
+            "end": 820.12,
+            "word": " beichten,",
+            "probability": 0.9669433832168579
+          },
+          {
+            "start": 820.28,
+            "end": 820.3,
+            "word": " dass",
+            "probability": 0.9668177962303162
+          },
+          {
+            "start": 820.3,
+            "end": 820.5,
+            "word": " ich",
+            "probability": 0.9940897226333618
+          },
+          {
+            "start": 820.5,
+            "end": 820.72,
+            "word": " doch",
+            "probability": 0.9639206528663635
+          },
+          {
+            "start": 820.72,
+            "end": 820.9,
+            "word": " nicht",
+            "probability": 0.9903102517127991
+          },
+          {
+            "start": 820.9,
+            "end": 821.32,
+            "word": " Mitglied",
+            "probability": 0.9962812662124634
+          },
+          {
+            "start": 821.32,
+            "end": 821.54,
+            "word": " werden",
+            "probability": 0.997427761554718
+          },
+          {
+            "start": 821.54,
+            "end": 821.82,
+            "word": " will.",
+            "probability": 0.990757167339325
+          }
+        ]
+      },
+      "id": 1100326,
+      "part": 5
+    },
+    {
+      "candidate": 20,
+      "start": 984.04,
+      "end": 989.78,
+      "text": "Es tut mir leid, aber ich bin in Wirklichkeit nur hierher gekommen, um euch zu sagen, dass ich doch nicht mitmachen will.",
+      "vi": "Tớ xin lỗi, nhưng thật ra tớ đến đây chỉ để nói là tớ không muốn tham gia nữa.",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100204
+      ],
+      "timingEvidence": {
+        "file": "independent-small-tight.json",
+        "candidate": 20,
+        "words": [
+          {
+            "start": 984.04,
+            "end": 984.5,
+            "word": " Es",
+            "probability": 0.6239221692085266
+          },
+          {
+            "start": 984.5,
+            "end": 984.96,
+            "word": " tut",
+            "probability": 0.9991600513458252
+          },
+          {
+            "start": 984.96,
+            "end": 985.18,
+            "word": " mir",
+            "probability": 0.9916760921478271
+          },
+          {
+            "start": 985.18,
+            "end": 985.5,
+            "word": " leid,",
+            "probability": 0.9319270551204681
+          },
+          {
+            "start": 985.66,
+            "end": 985.7,
+            "word": " aber",
+            "probability": 0.9521178603172302
+          },
+          {
+            "start": 985.7,
+            "end": 985.84,
+            "word": " ich",
+            "probability": 0.9562634825706482
+          },
+          {
+            "start": 985.84,
+            "end": 986,
+            "word": " bin",
+            "probability": 0.8101752996444702
+          },
+          {
+            "start": 986,
+            "end": 986.08,
+            "word": " in",
+            "probability": 0.1555490344762802
+          },
+          {
+            "start": 986.08,
+            "end": 986.62,
+            "word": " Wirklichkeit",
+            "probability": 0.9683364232381185
+          },
+          {
+            "start": 986.62,
+            "end": 986.88,
+            "word": " nur",
+            "probability": 0.7138251662254333
+          },
+          {
+            "start": 986.88,
+            "end": 987.26,
+            "word": " hierher",
+            "probability": 0.8404152393341064
+          },
+          {
+            "start": 987.26,
+            "end": 987.58,
+            "word": " gekommen,",
+            "probability": 0.6161524653434753
+          },
+          {
+            "start": 987.76,
+            "end": 987.76,
+            "word": " um",
+            "probability": 0.9594057202339172
+          },
+          {
+            "start": 987.76,
+            "end": 987.88,
+            "word": " euch",
+            "probability": 0.9374898076057434
+          },
+          {
+            "start": 987.88,
+            "end": 988.1,
+            "word": " zu",
+            "probability": 0.9831559658050537
+          },
+          {
+            "start": 988.1,
+            "end": 988.34,
+            "word": " sagen,",
+            "probability": 0.994365930557251
+          },
+          {
+            "start": 988.42,
+            "end": 988.52,
+            "word": " dass",
+            "probability": 0.9870294332504272
+          },
+          {
+            "start": 988.52,
+            "end": 988.7,
+            "word": " ich",
+            "probability": 0.993827760219574
+          },
+          {
+            "start": 988.7,
+            "end": 988.86,
+            "word": " doch",
+            "probability": 0.8468320965766907
+          },
+          {
+            "start": 988.86,
+            "end": 989.02,
+            "word": " nicht",
+            "probability": 0.987392246723175
+          },
+          {
+            "start": 989.02,
+            "end": 989.42,
+            "word": " mitmachen",
+            "probability": 0.9742929637432098
+          },
+          {
+            "start": 989.42,
+            "end": 989.78,
+            "word": " will.",
+            "probability": 0.9954149723052979
+          }
+        ]
+      },
+      "id": 1100327,
+      "part": 5
+    },
+    {
+      "candidate": 20,
+      "start": 991.12,
+      "end": 993.2,
+      "text": "Ich kann gar nicht Gitarre spielen!",
+      "vi": "Tớ có biết chơi guitar đâu!",
+      "speaker": "Yui",
+      "sourceIds": [],
+      "timingEvidence": {
+        "file": "independent-small-tight.json",
+        "candidate": 20,
+        "words": [
+          {
+            "start": 991.12,
+            "end": 991.58,
+            "word": " Ich",
+            "probability": 0.7513481378555298
+          },
+          {
+            "start": 991.58,
+            "end": 992.04,
+            "word": " kann",
+            "probability": 0.9987278580665588
+          },
+          {
+            "start": 992.04,
+            "end": 992.24,
+            "word": " gar",
+            "probability": 0.9545955061912537
+          },
+          {
+            "start": 992.24,
+            "end": 992.38,
+            "word": " nicht",
+            "probability": 0.9951227307319641
+          },
+          {
+            "start": 992.38,
+            "end": 992.9,
+            "word": " Gitarre",
+            "probability": 0.9681546886761984
+          },
+          {
+            "start": 992.9,
+            "end": 993.2,
+            "word": " spielen!",
+            "probability": 0.9990851879119873
+          }
+        ]
+      },
+      "id": 1100328,
+      "part": 5
+    },
+    {
+      "candidate": 21,
+      "start": 1106.01,
+      "end": 1108.51,
+      "text": "Ich hab eure Hoffnung zerstört!",
+      "vi": "Tớ làm các cậu thất vọng hết rồi!",
+      "speaker": "Yui",
+      "sourceIds": [],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 21,
+        "words": [
+          {
+            "start": 1106.01,
+            "end": 1106.61,
+            "word": " Ich",
+            "probability": 0.3595183491706848
+          },
+          {
+            "start": 1106.61,
+            "end": 1106.91,
+            "word": " hab",
+            "probability": 0.6127879619598389
+          },
+          {
+            "start": 1106.91,
+            "end": 1107.19,
+            "word": " eure",
+            "probability": 0.7488824129104614
+          },
+          {
+            "start": 1107.19,
+            "end": 1107.73,
+            "word": " Hoffnung",
+            "probability": 0.9974918365478516
+          },
+          {
+            "start": 1107.73,
+            "end": 1108.51,
+            "word": " zerstört!",
+            "probability": 0.9981478254000345
+          }
+        ]
+      },
+      "id": 1100329,
+      "part": 6
+    },
+    {
+      "candidate": 21,
+      "start": 1109.27,
+      "end": 1111.75,
+      "text": "Ich bin so blöd, es tut mir so leid!",
+      "vi": "Tớ ngốc quá, tớ xin lỗi các cậu nhiều lắm!",
+      "speaker": "Yui",
+      "sourceIds": [],
+      "timingEvidence": {
+        "file": "independent-medium-tight.json",
+        "candidate": 21,
+        "words": [
+          {
+            "start": 1109.27,
+            "end": 1109.57,
+            "word": " bin",
+            "probability": 0.9941949248313904
+          },
+          {
+            "start": 1109.57,
+            "end": 1109.89,
+            "word": " so",
+            "probability": 0.9897518157958984
+          },
+          {
+            "start": 1109.89,
+            "end": 1110.19,
+            "word": " blöd,",
+            "probability": 0.9915948808193207
+          },
+          {
+            "start": 1110.19,
+            "end": 1110.39,
+            "word": " es",
+            "probability": 0.9858249425888062
+          },
+          {
+            "start": 1110.39,
+            "end": 1110.57,
+            "word": " tut",
+            "probability": 0.9996076226234436
+          },
+          {
+            "start": 1110.57,
+            "end": 1110.81,
+            "word": " mir",
+            "probability": 0.9976744055747986
+          },
+          {
+            "start": 1110.81,
+            "end": 1111.17,
+            "word": " so",
+            "probability": 0.9809396266937256
+          },
+          {
+            "start": 1111.17,
+            "end": 1111.75,
+            "word": " leid!",
+            "probability": 0.9960684478282928
+          }
+        ]
+      },
+      "id": 1100330,
+      "part": 6
+    },
+    {
+      "candidate": 22,
+      "start": 1114.64,
+      "end": 1117.02,
+      "text": "Nicht doch, wir müssen uns bei dir entschuldigen.",
+      "vi": "Đừng nói thế, bọn tớ mới phải xin lỗi cậu.",
+      "speaker": "Mio",
+      "sourceIds": [
+        1100249
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 22,
+        "words": [
+          {
+            "start": 1114.64,
+            "end": 1115.04,
+            "word": " nicht",
+            "probability": 0.07477937638759613
+          },
+          {
+            "start": 1115.04,
+            "end": 1115.22,
+            "word": " doch",
+            "probability": 0.5351338982582092
+          },
+          {
+            "start": 1115.22,
+            "end": 1115.38,
+            "word": " wir",
+            "probability": 0.790529727935791
+          },
+          {
+            "start": 1115.38,
+            "end": 1115.6,
+            "word": " müssen",
+            "probability": 0.9878727197647095
+          },
+          {
+            "start": 1115.6,
+            "end": 1115.76,
+            "word": " uns",
+            "probability": 0.9894146919250488
+          },
+          {
+            "start": 1115.76,
+            "end": 1115.9,
+            "word": " bei",
+            "probability": 0.9713587164878845
+          },
+          {
+            "start": 1115.9,
+            "end": 1116.14,
+            "word": " dir",
+            "probability": 0.932601809501648
+          },
+          {
+            "start": 1116.14,
+            "end": 1117.02,
+            "word": " entschuldigen",
+            "probability": 0.9935144931077957
+          }
+        ]
+      },
+      "id": 1100331,
+      "part": 6
+    },
+    {
+      "candidate": 23,
+      "start": 1124.67,
+      "end": 1126.03,
+      "text": "Ihr wollt für mich spielen?",
+      "vi": "Các cậu muốn chơi nhạc cho tớ nghe à?",
+      "speaker": "Yui",
+      "sourceIds": [],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 23,
+        "words": [
+          {
+            "start": 1124.67,
+            "end": 1124.89,
+            "word": " Ihr",
+            "probability": 0.7560600638389587
+          },
+          {
+            "start": 1124.89,
+            "end": 1125.11,
+            "word": " wollt",
+            "probability": 0.9968209266662598
+          },
+          {
+            "start": 1125.11,
+            "end": 1125.35,
+            "word": " für",
+            "probability": 0.9513460397720337
+          },
+          {
+            "start": 1125.35,
+            "end": 1125.55,
+            "word": " mich",
+            "probability": 0.9991852641105652
+          },
+          {
+            "start": 1125.55,
+            "end": 1126.03,
+            "word": " spielen?",
+            "probability": 0.991784930229187
+          }
+        ]
+      },
+      "id": 1100332,
+      "part": 6
+    },
+    {
+      "candidate": 23,
+      "start": 1126.79,
+      "end": 1127.55,
+      "text": "Sie beißt an.",
+      "vi": "Cậu ấy cắn câu rồi.",
+      "speaker": "Ritsu",
+      "sourceIds": [],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 23,
+        "words": [
+          {
+            "start": 1126.79,
+            "end": 1127.01,
+            "word": " Sie",
+            "probability": 0.9811057448387146
+          },
+          {
+            "start": 1127.01,
+            "end": 1127.33,
+            "word": " beißt",
+            "probability": 0.9906618396441141
+          },
+          {
+            "start": 1127.33,
+            "end": 1127.55,
+            "word": " an.",
+            "probability": 0.9972096085548401
+          }
+        ]
+      },
+      "id": 1100333,
+      "part": 6
+    },
+    {
+      "candidate": 25,
+      "start": 1200.28,
+      "end": 1201.08,
+      "text": "Hat's dir gefallen?",
+      "vi": "Cậu thấy thích không?",
+      "speaker": "Ritsu",
+      "sourceIds": [
+        1100253
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 25,
+        "words": [
+          {
+            "start": 1200.28,
+            "end": 1200.54,
+            "word": " hat's",
+            "probability": 0.7752712070941925
+          },
+          {
+            "start": 1200.54,
+            "end": 1200.64,
+            "word": " dir",
+            "probability": 0.8435479998588562
+          },
+          {
+            "start": 1200.64,
+            "end": 1201.08,
+            "word": " gefallen?",
+            "probability": 0.9913333058357239
+          }
+        ]
+      },
+      "id": 1100334,
+      "part": 7
+    },
+    {
+      "candidate": 26,
+      "start": 1207.62,
+      "end": 1209.54,
+      "text": "Ihr seid gar nicht mal so gut, wie ich dachte!",
+      "vi": "Các cậu chơi không giỏi như tớ tưởng!",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100257
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 26,
+        "words": [
+          {
+            "start": 1207.62,
+            "end": 1207.74,
+            "word": " Ihr",
+            "probability": 0.9506852626800537
+          },
+          {
+            "start": 1207.74,
+            "end": 1207.94,
+            "word": " seid",
+            "probability": 0.9915225505828857
+          },
+          {
+            "start": 1207.94,
+            "end": 1208.16,
+            "word": " gar",
+            "probability": 0.9746136665344238
+          },
+          {
+            "start": 1208.16,
+            "end": 1208.32,
+            "word": " nicht",
+            "probability": 0.9906070232391357
+          },
+          {
+            "start": 1208.32,
+            "end": 1208.46,
+            "word": " mal",
+            "probability": 0.9071131944656372
+          },
+          {
+            "start": 1208.46,
+            "end": 1208.64,
+            "word": " so",
+            "probability": 0.9968017339706421
+          },
+          {
+            "start": 1208.64,
+            "end": 1208.76,
+            "word": " gut,",
+            "probability": 0.9958398342132568
+          },
+          {
+            "start": 1208.76,
+            "end": 1208.92,
+            "word": " wie",
+            "probability": 0.9969968795776367
+          },
+          {
+            "start": 1208.92,
+            "end": 1209.2,
+            "word": " ich",
+            "probability": 0.996086835861206
+          },
+          {
+            "start": 1209.2,
+            "end": 1209.54,
+            "word": " dachte!",
+            "probability": 0.9848954677581787
+          }
+        ]
+      },
+      "id": 1100335,
+      "part": 7
+    },
+    {
+      "candidate": 27,
+      "start": 1229.59,
+      "end": 1231.49,
+      "text": "Das erste Foto unseres Musikclubs.",
+      "vi": "Bức ảnh đầu tiên của câu lạc bộ âm nhạc chúng mình.",
+      "speaker": "Ritsu",
+      "sourceIds": [
+        1100262
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 27,
+        "words": [
+          {
+            "start": 1229.59,
+            "end": 1229.69,
+            "word": " Das",
+            "probability": 0.9876486659049988
+          },
+          {
+            "start": 1229.69,
+            "end": 1229.97,
+            "word": " erste",
+            "probability": 0.9871468544006348
+          },
+          {
+            "start": 1229.97,
+            "end": 1230.35,
+            "word": " Foto",
+            "probability": 0.9972944259643555
+          },
+          {
+            "start": 1230.35,
+            "end": 1230.71,
+            "word": " unseres",
+            "probability": 0.9954341650009155
+          },
+          {
+            "start": 1230.71,
+            "end": 1231.49,
+            "word": " Musikclubs.",
+            "probability": 0.8153354028860728
+          }
+        ]
+      },
+      "id": 1100336,
+      "part": 7
+    },
+    {
+      "candidate": 29,
+      "start": 1283.19,
+      "end": 1285.61,
+      "text": "Ich bin als richtiges Mitglied da eingetreten.",
+      "vi": "Tớ gia nhập với tư cách thành viên chính thức đấy.",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100283
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 29,
+        "words": [
+          {
+            "start": 1283.19,
+            "end": 1283.35,
+            "word": " Ich",
+            "probability": 0.9955006241798401
+          },
+          {
+            "start": 1283.35,
+            "end": 1283.53,
+            "word": " bin",
+            "probability": 0.9982929825782776
+          },
+          {
+            "start": 1283.53,
+            "end": 1283.77,
+            "word": " als",
+            "probability": 0.9913164377212524
+          },
+          {
+            "start": 1283.77,
+            "end": 1284.33,
+            "word": " richtiges",
+            "probability": 0.9613186717033386
+          },
+          {
+            "start": 1284.33,
+            "end": 1284.69,
+            "word": " Mitglied",
+            "probability": 0.964806854724884
+          },
+          {
+            "start": 1284.69,
+            "end": 1284.93,
+            "word": " da",
+            "probability": 0.9690127968788147
+          },
+          {
+            "start": 1284.93,
+            "end": 1285.61,
+            "word": " eingetreten.",
+            "probability": 0.995951513449351
+          }
+        ]
+      },
+      "id": 1100337,
+      "part": 8
+    },
+    {
+      "candidate": 30,
+      "start": 1295.33,
+      "end": 1297.27,
+      "text": "Vielleicht leihen die mir ja auch eine.",
+      "vi": "Biết đâu các cậu ấy sẽ cho tớ mượn một cây.",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100287
+      ],
+      "timingEvidence": {
+        "file": "independent-small.json",
+        "candidate": 30,
+        "words": [
+          {
+            "start": 1295.33,
+            "end": 1295.93,
+            "word": " Vielleicht",
+            "probability": 0.8818877339363098
+          },
+          {
+            "start": 1295.93,
+            "end": 1296.33,
+            "word": " leihen",
+            "probability": 0.8265646994113922
+          },
+          {
+            "start": 1296.33,
+            "end": 1296.45,
+            "word": " die",
+            "probability": 0.97109454870224
+          },
+          {
+            "start": 1296.45,
+            "end": 1296.59,
+            "word": " mir",
+            "probability": 0.9966579675674438
+          },
+          {
+            "start": 1296.59,
+            "end": 1296.79,
+            "word": " ja",
+            "probability": 0.8627855777740479
+          },
+          {
+            "start": 1296.79,
+            "end": 1296.97,
+            "word": " auch",
+            "probability": 0.9908985495567322
+          },
+          {
+            "start": 1296.97,
+            "end": 1297.27,
+            "word": " eine.",
+            "probability": 0.961942732334137
+          }
+        ]
+      },
+      "id": 1100338,
+      "part": 8
+    },
+    {
+      "candidate": 32,
+      "start": 1443.95,
+      "end": 1449.59,
+      "text": "Aber jetzt als Oberschülerin bin ich zum ersten Mal in einem Club aktiv.",
+      "vi": "Nhưng giờ lên cấp ba, lần đầu tiên mình tham gia hoạt động trong một câu lạc bộ.",
+      "speaker": "Yui",
+      "sourceIds": [
+        1100296
+      ],
+      "timingEvidence": {
+        "file": "independent-medium.json",
+        "candidate": 32,
+        "words": [
+          {
+            "start": 1443.95,
+            "end": 1444.23,
+            "word": " Aber",
+            "probability": 0.8642564415931702
+          },
+          {
+            "start": 1444.23,
+            "end": 1444.61,
+            "word": " jetzt",
+            "probability": 0.9922751784324646
+          },
+          {
+            "start": 1444.61,
+            "end": 1444.89,
+            "word": " als",
+            "probability": 0.9028147459030151
+          },
+          {
+            "start": 1444.89,
+            "end": 1445.85,
+            "word": " Oberschülerin",
+            "probability": 0.9627571105957031
+          },
+          {
+            "start": 1445.85,
+            "end": 1447.13,
+            "word": " bin",
+            "probability": 0.47655197978019714
+          },
+          {
+            "start": 1447.13,
+            "end": 1447.35,
+            "word": " ich",
+            "probability": 0.9983348250389099
+          },
+          {
+            "start": 1447.35,
+            "end": 1447.69,
+            "word": " zum",
+            "probability": 0.9957587122917175
+          },
+          {
+            "start": 1447.69,
+            "end": 1448.01,
+            "word": " ersten",
+            "probability": 0.9874647855758667
+          },
+          {
+            "start": 1448.01,
+            "end": 1448.27,
+            "word": " Mal",
+            "probability": 0.8615390062332153
+          },
+          {
+            "start": 1448.27,
+            "end": 1448.47,
+            "word": " in",
+            "probability": 0.9928969740867615
+          },
+          {
+            "start": 1448.47,
+            "end": 1448.69,
+            "word": " einem",
+            "probability": 0.9961742758750916
+          },
+          {
+            "start": 1448.69,
+            "end": 1449.05,
+            "word": " Club",
+            "probability": 0.9718747735023499
+          },
+          {
+            "start": 1449.05,
+            "end": 1449.59,
+            "word": " aktiv.",
+            "probability": 0.9947404265403748
+          }
+        ]
+      },
+      "id": 1100339,
+      "part": 8
+    }
+  ],
+  "adjusted": [
+    {
+      "id": 1100033,
+      "before": {
+        "id": 1100033,
+        "start": 355.37,
+        "end": 361.18,
+        "text": "Die Kopien?",
+        "vi": "Các bản photo ạ?"
+      },
+      "changes": {
+        "start": 359.88,
+        "end": 360.68
+      },
+      "reason": "Neighbor timing from independent-medium candidate 3; prevents overlap with the recovered teacher instruction."
+    },
+    {
+      "id": 1100036,
+      "before": {
+        "id": 1100036,
+        "start": 371.8,
+        "end": 373.02,
+        "text": "Oh nein!",
+        "vi": "Ôi không!"
+      },
+      "changes": {
+        "start": 372.63,
+        "end": 372.99
+      },
+      "reason": "Neighbor word boundaries from independent-medium candidate 4; prevents overlap with Schnecke."
+    },
+    {
+      "id": 1100128,
+      "before": {
+        "id": 1100128,
+        "start": 669.5,
+        "end": 672.5,
+        "text": "Der Musikclub sucht noch Mitglieder.",
+        "vi": "'Câu lạc bộ âm nhạc đang tuyển thêm thành viên.'",
+        "speaker": "Yui"
+      },
+      "changes": {
+        "start": 677.02,
+        "end": 679.62
+      },
+      "reason": "Same single poster-reading utterance, not a second copy. Wider 668–680.5 checks show no repetition at the old 669.5s time."
+    },
+    {
+      "id": 1100145,
+      "before": {
+        "id": 1100145,
+        "start": 751.9,
+        "end": 752.8,
+        "text": "Danke.",
+        "vi": "Em cảm ơn ạ.",
+        "reviewNeeded": true
+      },
+      "changes": {
+        "start": 751.6,
+        "end": 751.98
+      },
+      "reason": "Unresolved Hier/Danke stays omitted; narrow word bounds keep it separate from confirmed Ich freu mich."
+    },
+    {
+      "id": 1100161,
+      "before": {
+        "id": 1100161,
+        "start": 821.76,
+        "end": 825.92,
+        "text": "Aber ich würde schon gerne wissen, wer so in dem Club ist.",
+        "vi": "Nhưng mình cũng muốn biết trong câu lạc bộ gồm những ai.",
+        "speaker": "Yui"
+      },
+      "changes": {
+        "start": 822.55
+      },
+      "reason": "Adjacent response begins at word Aber, independent-medium candidate 17; avoids overlap."
+    },
+    {
+      "id": 1100250,
+      "before": {
+        "id": 1100250,
+        "start": 1118.02,
+        "end": 1120.24,
+        "text": "Entschuldige, dass wir dich umstimmen wollten.",
+        "vi": "Xin lỗi vì bọn tớ cứ cố làm cậu đổi ý.",
+        "speaker": "Mio"
+      },
+      "changes": {
+        "start": 1117.02,
+        "end": 1119.14
+      },
+      "reason": "Adjacent apology follows Nicht doch, using independent-medium candidate 22 word boundaries."
+    }
+  ],
+  "excluded": [
+    {
+      "candidate": 7,
+      "start": 564.87,
+      "end": 567.64,
+      "reason": "Dann tu doch endlich was đã có cue 1100094; không thêm trùng."
+    },
+    {
+      "candidate": 10,
+      "start": 677.02,
+      "end": 679.62,
+      "reason": "Đã có cue 1100128, chỉ sửa thời gian; không thêm bản sao."
+    },
+    {
+      "candidate": 15,
+      "start": 760.6,
+      "end": 766.12,
+      "reason": "Hai câu Das ist nicht der Club / Das ist der Club không được tái xác nhận bởi hai lượt độc lập; chỉ phục hồi câu Na bitte một lần, giữ các câu kia ngoài captions."
+    },
+    {
+      "candidate": 19,
+      "start": 936.55,
+      "end": 940.99,
+      "reason": "Jimmy Page đã có cue 1100192; các âm Ah/Oh còn lại là phản ứng phi từ vựng."
+    },
+    {
+      "candidate": 22,
+      "start": 1117.02,
+      "end": 1120.66,
+      "reason": "Entschuldige… và Ich hab ne Bitte đã có 1100250/1100251; chỉnh mốc câu liền kề, không thêm trùng."
+    },
+    {
+      "candidate": 24,
+      "start": 1144.55,
+      "end": 1146.39,
+      "reason": "Eins, zwei, drei, vier là đếm nhịp trong màn biểu diễn; giữ trong exclusions của phần biểu diễn."
+    },
+    {
+      "candidate": 25,
+      "start": 1201.44,
+      "end": 1203.74,
+      "reason": "Ganz ehrlich? / Na ja, wie soll ich sagen? đã có 1100254/1100255. Không thêm chữ Nein do lượt quét Muse nhận nhầm."
+    },
+    {
+      "candidate": 29,
+      "start": 1280.46,
+      "end": 1282.79,
+      "reason": "Was soll das? Willst du mich etwa beleidigen? đã có 1100282."
+    },
+    {
+      "candidate": 30,
+      "start": 1298,
+      "end": 1298.77,
+      "reason": "Glaube ich kaum đã có 1100288."
+    },
+    {
+      "candidate": 32,
+      "start": 1439.33,
+      "end": 1440.51,
+      "reason": "Lời gọi Leute đã có 1100295; không nhân đôi trong lượt bổ sung câu cuối."
+    }
+  ],
+  "reviewNeeded": [
+    {
+      "candidate": 1,
+      "start": 270.15,
+      "end": 270.75,
+      "reviewNeeded": true,
+      "reason": "Au/Autsch: thán từ chưa thống nhất giữa các lượt nhận dạng."
+    },
+    {
+      "candidate": 4,
+      "start": 368.77,
+      "end": 370.51,
+      "reviewNeeded": true,
+      "reason": "Die starrn / Die starben / Sie haben: chưa chốt được nguyên văn câu đầu."
+    },
+    {
+      "candidate": 5,
+      "start": 448.07,
+      "end": 449.55,
+      "reviewNeeded": true,
+      "reason": "Im/Mein Musikclub: phần trước câu Nein chưa thống nhất."
+    },
+    {
+      "candidate": 5,
+      "start": 457.15,
+      "end": 459.83,
+      "reviewNeeded": true,
+      "reason": "flehe/fahre/kläre/pläde: không đoán từ chỉ vì hợp ngữ cảnh."
+    },
+    {
+      "candidate": 8,
+      "start": 571.41,
+      "end": 575.15,
+      "reviewNeeded": true,
+      "reason": "Các lượt nhận dạng cho Gimmie/Yimei/mảnh âm rời; chưa đủ để chép câu."
+    },
+    {
+      "candidate": 9,
+      "start": 631.91,
+      "end": 632.95,
+      "reviewNeeded": true,
+      "reason": "Ứng viên Ich hab keine Ahnung chỉ ở lần quét Muse, hai lượt độc lập không tái nhận dạng được."
+    },
+    {
+      "candidate": 13,
+      "start": 730.45,
+      "end": 730.95,
+      "reviewNeeded": true,
+      "reason": "Na ja: chưa khôi phục riêng vì ranh giới ngắt câu và phần nối chưa đủ chắc."
+    },
+    {
+      "candidate": 14,
+      "start": 742.28,
+      "end": 744.54,
+      "reviewNeeded": true,
+      "reason": "Câu về von links nach links có nhiều cách nhận dạng khác nhau."
+    },
+    {
+      "candidate": 14,
+      "start": 746.98,
+      "end": 747.94,
+      "reviewNeeded": true,
+      "reason": "Đáp lời có từ cuối Sensei/Cincy/Sinzi chưa chốt được."
+    },
+    {
+      "candidate": 15,
+      "start": 751.4,
+      "end": 752.38,
+      "reviewNeeded": true,
+      "reason": "Hier/Danke: phần trước Ich freu mich chưa thống nhất."
+    },
+    {
+      "candidate": 16,
+      "start": 790.76,
+      "end": 794.98,
+      "reviewNeeded": true,
+      "reason": "Câu Ich muss da durchgehen…: hai lượt rộng lệch đầu câu >1 giây, đuôi clip cắt sát câu Nanu tiếp theo."
+    },
+    {
+      "candidate": 18,
+      "start": 856.17,
+      "end": 859.42,
+      "reviewNeeded": true,
+      "reason": "Câu hỏi Samajusam… chưa nhận dạng ổn định; không bịa tên/từ."
+    },
+    {
+      "candidate": 27,
+      "start": 1227.05,
+      "end": 1228.88,
+      "reviewNeeded": true,
+      "reason": "Das müssen wir (dir?) festhalten: một từ chen giữa chưa thống nhất."
+    },
+    {
+      "candidate": 28,
+      "start": 1273,
+      "end": 1275.9,
+      "reviewNeeded": true,
+      "reason": "Die/Sie/Wir haben…: đại từ đầu câu thay đổi theo lượt cắt."
+    },
+    {
+      "candidate": 31,
+      "start": 1423.22,
+      "end": 1425.8,
+      "reviewNeeded": true,
+      "reason": "Freundin/Freundinnen: không tự sửa số nhiều theo ngữ cảnh."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate": 1,
+      "start": 271.37,
+      "end": 278.39,
+      "addedIds": [
+        1100298,
+        1100299
+      ],
+      "exclusions": [],
+      "reviewNeeded": [
+        {
+          "candidate": 1,
+          "start": 270.15,
+          "end": 270.75,
+          "reviewNeeded": true,
+          "reason": "Au/Autsch: thán từ chưa thống nhất giữa các lượt nhận dạng."
+        }
+      ]
+    },
+    {
+      "candidate": 2,
+      "start": 353.73,
+      "end": 355.93,
+      "addedIds": [
+        1100300
+      ],
+      "exclusions": [],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 3,
+      "start": 362.28,
+      "end": 364.6,
+      "addedIds": [
+        1100301
+      ],
+      "exclusions": [],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 4,
+      "start": 369.89,
+      "end": 372.31,
+      "addedIds": [
+        1100302
+      ],
+      "exclusions": [],
+      "reviewNeeded": [
+        {
+          "candidate": 4,
+          "start": 368.77,
+          "end": 370.51,
+          "reviewNeeded": true,
+          "reason": "Die starrn / Die starben / Sie haben: chưa chốt được nguyên văn câu đầu."
+        }
+      ]
+    },
+    {
+      "candidate": 5,
+      "start": 450.47,
+      "end": 463.48,
+      "addedIds": [
+        1100303,
+        1100304,
+        1100305,
+        1100306,
+        1100307
+      ],
+      "exclusions": [],
+      "reviewNeeded": [
+        {
+          "candidate": 5,
+          "start": 448.07,
+          "end": 449.55,
+          "reviewNeeded": true,
+          "reason": "Im/Mein Musikclub: phần trước câu Nein chưa thống nhất."
+        },
+        {
+          "candidate": 5,
+          "start": 457.15,
+          "end": 459.83,
+          "reviewNeeded": true,
+          "reason": "flehe/fahre/kläre/pläde: không đoán từ chỉ vì hợp ngữ cảnh."
+        }
+      ]
+    },
+    {
+      "candidate": 6,
+      "start": 492.04,
+      "end": 493.95,
+      "addedIds": [
+        1100308
+      ],
+      "exclusions": [],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 7,
+      "start": 560.68,
+      "end": 566.59,
+      "addedIds": [
+        1100309,
+        1100310
+      ],
+      "exclusions": [
+        {
+          "candidate": 7,
+          "start": 564.87,
+          "end": 567.64,
+          "reason": "Dann tu doch endlich was đã có cue 1100094; không thêm trùng."
+        }
+      ],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 8,
+      "start": 572.61,
+      "end": 573.95,
+      "addedIds": [],
+      "exclusions": [],
+      "reviewNeeded": [
+        {
+          "candidate": 8,
+          "start": 571.41,
+          "end": 575.15,
+          "reviewNeeded": true,
+          "reason": "Các lượt nhận dạng cho Gimmie/Yimei/mảnh âm rời; chưa đủ để chép câu."
+        }
+      ]
+    },
+    {
+      "candidate": 9,
+      "start": 631.91,
+      "end": 632.95,
+      "addedIds": [],
+      "exclusions": [],
+      "reviewNeeded": [
+        {
+          "candidate": 9,
+          "start": 631.91,
+          "end": 632.95,
+          "reviewNeeded": true,
+          "reason": "Ứng viên Ich hab keine Ahnung chỉ ở lần quét Muse, hai lượt độc lập không tái nhận dạng được."
+        }
+      ]
+    },
+    {
+      "candidate": 10,
+      "start": 677.06,
+      "end": 688.99,
+      "addedIds": [
+        1100311
+      ],
+      "exclusions": [
+        {
+          "candidate": 10,
+          "start": 677.02,
+          "end": 679.62,
+          "reason": "Đã có cue 1100128, chỉ sửa thời gian; không thêm bản sao."
+        }
+      ],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 11,
+      "start": 701.99,
+      "end": 716.12,
+      "addedIds": [
+        1100312,
+        1100313,
+        1100314,
+        1100315
+      ],
+      "exclusions": [],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 12,
+      "start": 726.57,
+      "end": 730.23,
+      "addedIds": [
+        1100316,
+        1100317
+      ],
+      "exclusions": [],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 13,
+      "start": 733.51,
+      "end": 735.42,
+      "addedIds": [
+        1100318
+      ],
+      "exclusions": [],
+      "reviewNeeded": [
+        {
+          "candidate": 13,
+          "start": 730.45,
+          "end": 730.95,
+          "reviewNeeded": true,
+          "reason": "Na ja: chưa khôi phục riêng vì ranh giới ngắt câu và phần nối chưa đủ chắc."
+        }
+      ]
+    },
+    {
+      "candidate": 14,
+      "start": 740.42,
+      "end": 745.79,
+      "addedIds": [
+        1100319,
+        1100320
+      ],
+      "exclusions": [],
+      "reviewNeeded": [
+        {
+          "candidate": 14,
+          "start": 742.28,
+          "end": 744.54,
+          "reviewNeeded": true,
+          "reason": "Câu về von links nach links có nhiều cách nhận dạng khác nhau."
+        },
+        {
+          "candidate": 14,
+          "start": 746.98,
+          "end": 747.94,
+          "reviewNeeded": true,
+          "reason": "Đáp lời có từ cuối Sensei/Cincy/Sinzi chưa chốt được."
+        }
+      ]
+    },
+    {
+      "candidate": 15,
+      "start": 751.46,
+      "end": 765.85,
+      "addedIds": [
+        1100321,
+        1100322,
+        1100323,
+        1100324
+      ],
+      "exclusions": [
+        {
+          "candidate": 15,
+          "start": 760.6,
+          "end": 766.12,
+          "reason": "Hai câu Das ist nicht der Club / Das ist der Club không được tái xác nhận bởi hai lượt độc lập; chỉ phục hồi câu Na bitte một lần, giữ các câu kia ngoài captions."
+        }
+      ],
+      "reviewNeeded": [
+        {
+          "candidate": 15,
+          "start": 751.4,
+          "end": 752.38,
+          "reviewNeeded": true,
+          "reason": "Hier/Danke: phần trước Ich freu mich chưa thống nhất."
+        }
+      ]
+    },
+    {
+      "candidate": 16,
+      "start": 782.73,
+      "end": 786.87,
+      "addedIds": [
+        1100325
+      ],
+      "exclusions": [],
+      "reviewNeeded": [
+        {
+          "candidate": 16,
+          "start": 790.76,
+          "end": 794.98,
+          "reviewNeeded": true,
+          "reason": "Câu Ich muss da durchgehen…: hai lượt rộng lệch đầu câu >1 giây, đuôi clip cắt sát câu Nanu tiếp theo."
+        }
+      ]
+    },
+    {
+      "candidate": 17,
+      "start": 818.31,
+      "end": 822.3,
+      "addedIds": [
+        1100326
+      ],
+      "exclusions": [],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 18,
+      "start": 856.17,
+      "end": 859.42,
+      "addedIds": [],
+      "exclusions": [],
+      "reviewNeeded": [
+        {
+          "candidate": 18,
+          "start": 856.17,
+          "end": 859.42,
+          "reviewNeeded": true,
+          "reason": "Câu hỏi Samajusam… chưa nhận dạng ổn định; không bịa tên/từ."
+        }
+      ]
+    },
+    {
+      "candidate": 19,
+      "start": 936.55,
+      "end": 940.99,
+      "addedIds": [],
+      "exclusions": [
+        {
+          "candidate": 19,
+          "start": 936.55,
+          "end": 940.99,
+          "reason": "Jimmy Page đã có cue 1100192; các âm Ah/Oh còn lại là phản ứng phi từ vựng."
+        }
+      ],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 20,
+      "start": 985.51,
+      "end": 987,
+      "addedIds": [
+        1100327,
+        1100328
+      ],
+      "exclusions": [],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 21,
+      "start": 1107.65,
+      "end": 1108.67,
+      "addedIds": [
+        1100329,
+        1100330
+      ],
+      "exclusions": [],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 22,
+      "start": 1114.6,
+      "end": 1119.39,
+      "addedIds": [
+        1100331
+      ],
+      "exclusions": [
+        {
+          "candidate": 22,
+          "start": 1117.02,
+          "end": 1120.66,
+          "reason": "Entschuldige… và Ich hab ne Bitte đã có 1100250/1100251; chỉnh mốc câu liền kề, không thêm trùng."
+        }
+      ],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 23,
+      "start": 1124.45,
+      "end": 1127.71,
+      "addedIds": [
+        1100332,
+        1100333
+      ],
+      "exclusions": [],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 24,
+      "start": 1144.55,
+      "end": 1146.39,
+      "addedIds": [],
+      "exclusions": [
+        {
+          "candidate": 24,
+          "start": 1144.55,
+          "end": 1146.39,
+          "reason": "Eins, zwei, drei, vier là đếm nhịp trong màn biểu diễn; giữ trong exclusions của phần biểu diễn."
+        }
+      ],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 25,
+      "start": 1200.36,
+      "end": 1201.37,
+      "addedIds": [
+        1100334
+      ],
+      "exclusions": [
+        {
+          "candidate": 25,
+          "start": 1201.44,
+          "end": 1203.74,
+          "reason": "Ganz ehrlich? / Na ja, wie soll ich sagen? đã có 1100254/1100255. Không thêm chữ Nein do lượt quét Muse nhận nhầm."
+        }
+      ],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 26,
+      "start": 1207.78,
+      "end": 1209.05,
+      "addedIds": [
+        1100335
+      ],
+      "exclusions": [],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 27,
+      "start": 1227.43,
+      "end": 1232.73,
+      "addedIds": [
+        1100336
+      ],
+      "exclusions": [],
+      "reviewNeeded": [
+        {
+          "candidate": 27,
+          "start": 1227.05,
+          "end": 1228.88,
+          "reviewNeeded": true,
+          "reason": "Das müssen wir (dir?) festhalten: một từ chen giữa chưa thống nhất."
+        }
+      ]
+    },
+    {
+      "candidate": 28,
+      "start": 1273.67,
+      "end": 1277.37,
+      "addedIds": [],
+      "exclusions": [],
+      "reviewNeeded": [
+        {
+          "candidate": 28,
+          "start": 1273,
+          "end": 1275.9,
+          "reviewNeeded": true,
+          "reason": "Die/Sie/Wir haben…: đại từ đầu câu thay đổi theo lượt cắt."
+        }
+      ]
+    },
+    {
+      "candidate": 29,
+      "start": 1280.29,
+      "end": 1286.07,
+      "addedIds": [
+        1100337
+      ],
+      "exclusions": [
+        {
+          "candidate": 29,
+          "start": 1280.46,
+          "end": 1282.79,
+          "reason": "Was soll das? Willst du mich etwa beleidigen? đã có 1100282."
+        }
+      ],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 30,
+      "start": 1295.49,
+      "end": 1297.72,
+      "addedIds": [
+        1100338
+      ],
+      "exclusions": [
+        {
+          "candidate": 30,
+          "start": 1298,
+          "end": 1298.77,
+          "reason": "Glaube ich kaum đã có 1100288."
+        }
+      ],
+      "reviewNeeded": []
+    },
+    {
+      "candidate": 31,
+      "start": 1424.1,
+      "end": 1426.11,
+      "addedIds": [],
+      "exclusions": [],
+      "reviewNeeded": [
+        {
+          "candidate": 31,
+          "start": 1423.22,
+          "end": 1425.8,
+          "reviewNeeded": true,
+          "reason": "Freundin/Freundinnen: không tự sửa số nhiều theo ngữ cảnh."
+        }
+      ]
+    },
+    {
+      "candidate": 32,
+      "start": 1439.33,
+      "end": 1449.95,
+      "addedIds": [
+        1100339
+      ],
+      "exclusions": [
+        {
+          "candidate": 32,
+          "start": 1439.33,
+          "end": 1440.51,
+          "reason": "Lời gọi Leute đã có 1100295; không nhân đôi trong lượt bổ sung câu cuối."
+        }
+      ],
+      "reviewNeeded": []
+    }
+  ],
+  "superseded": [
+    {
+      "id": 1100013,
+      "start": 268.95,
+      "end": 277.52,
+      "text": "Autsch! Ich hab schon das Gefühl, dass ich endlich irgendwas tun müsste, wenn ich nur wüsste was.",
+      "vi": "Ây da! Tớ cũng cảm thấy mình phải làm gì đó rồi, giá mà tớ biết phải làm gì.",
+      "speaker": "Yui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100032,
+      "start": 349.18,
+      "end": 355.37,
+      "text": "Verteil doch bitte schon mal die Kopien, ja?",
+      "vi": "Em phát trước các bản photo này nhé?",
+      "speaker": "Sawako",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100034,
+      "start": 361.18,
+      "end": 364.14,
+      "text": "Den Gedanken woanders, Entschuldigung.",
+      "vi": "Cô đang mải nghĩ chuyện khác, xin lỗi nhé.",
+      "speaker": "Sawako",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100035,
+      "start": 364.14,
+      "end": 371.8,
+      "text": "Was für ne Schnecke.",
+      "vi": "Cô ấy xinh thật đấy.",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100056,
+      "start": 446.47,
+      "end": 450.96,
+      "text": "Ich dachte, hier ist der Chor.",
+      "vi": "Tớ tưởng đây là câu lạc bộ hợp xướng chứ.",
+      "speaker": "Tsumugi",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100057,
+      "start": 450.96,
+      "end": 452.96,
+      "text": "Möchtest du Mitglied im Musikclub werden?",
+      "vi": "Cậu có muốn vào câu lạc bộ âm nhạc không?",
+      "speaker": "Ritsu"
+    },
+    {
+      "id": 1100058,
+      "start": 452.96,
+      "end": 454.96,
+      "text": "Ich wollte eigentlich in den Chor.",
+      "vi": "Thật ra tớ định vào câu lạc bộ hợp xướng cơ.",
+      "speaker": "Tsumugi",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100059,
+      "start": 455,
+      "end": 456.62,
+      "text": "Wir haben zu wenige Mitglieder.",
+      "vi": "Bọn tớ đang thiếu thành viên quá.",
+      "speaker": "Ritsu",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100061,
+      "start": 460.06,
+      "end": 463.12,
+      "text": "Du vertreibst sie nur mit deiner Bettelei und rabiaten Art.",
+      "vi": "Cậu cứ năn nỉ rồi kéo người ta như thế thì cậu ấy sợ chạy mất thôi.",
+      "speaker": "Mio"
+    },
+    {
+      "id": 1100092,
+      "start": 554.65,
+      "end": 560.87,
+      "text": "Yui.",
+      "vi": "Yui.",
+      "speaker": "Yui"
+    },
+    {
+      "id": 1100093,
+      "start": 560.87,
+      "end": 564.87,
+      "text": "Nodoka, ich glaube, jetzt, wo ich Oberschülerin bin, sollte ich endlich was tun.",
+      "vi": "Nodoka này, tớ nghĩ giờ mình đã là học sinh cấp ba rồi, tớ nên làm gì đó mới được.",
+      "speaker": "Yui"
+    },
+    {
+      "id": 1100129,
+      "start": 699,
+      "end": 702.01,
+      "text": "Das machst du sehr gut, Yui-chan.",
+      "vi": "Chị làm tốt lắm đấy, Yui.",
+      "speaker": "Ui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100130,
+      "start": 702.01,
+      "end": 705.3,
+      "text": "Ich habe beschlossen, Mitglied im Musikclub zu werden.",
+      "vi": "Chị đã quyết định vào câu lạc bộ âm nhạc rồi.",
+      "speaker": "Yui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100131,
+      "start": 705.3,
+      "end": 708.11,
+      "text": "Ach ja? Und was genau musst du da so machen, Yui?",
+      "vi": "Vậy sao? Thế vào đó chị phải làm những gì hả Yui?",
+      "speaker": "Ui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100132,
+      "start": 708.65,
+      "end": 710.3,
+      "text": "Keine Ahnung.",
+      "vi": "Chị cũng không biết nữa.",
+      "speaker": "Yui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100133,
+      "start": 710.3,
+      "end": 716.34,
+      "text": "Die Musiklehrerin hat irgendwas von leichter Musik erzählt, also wird es nichts Schweres sein.",
+      "vi": "Cô giáo dạy nhạc có nói gì đó về nhạc nhẹ, nên chắc không có gì nặng nề đâu.",
+      "speaker": "Yui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100137,
+      "start": 723.3,
+      "end": 726.1,
+      "text": "Was? Aber ich kann doch gar nicht Gitarre spielen.",
+      "vi": "Sao cơ? Nhưng chị có biết chơi guitar đâu.",
+      "speaker": "Yui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100138,
+      "start": 727.62,
+      "end": 729.98,
+      "text": "Was kannst du denn dann spielen?",
+      "vi": "Thế chị biết chơi cái gì?",
+      "speaker": "Ui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100139,
+      "start": 729.98,
+      "end": 735.05,
+      "text": "Na ja, gut mit Kastagnetten umgehen.",
+      "vi": "À thì, chị giỏi chơi phách castanet lắm.",
+      "speaker": "Yui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100140,
+      "start": 735.05,
+      "end": 737.05,
+      "text": "Ja, das passt zu dir.",
+      "vi": "Ừ, hợp với chị thật đấy.",
+      "speaker": "Ui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100142,
+      "start": 744.3,
+      "end": 745.8,
+      "text": "Guten Tag.",
+      "vi": "Chào cô ạ.",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100146,
+      "start": 752.8,
+      "end": 754.3,
+      "text": "Ich freue mich für euch.",
+      "vi": "Cô mừng cho các em.",
+      "speaker": "Sawako",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100147,
+      "start": 754.3,
+      "end": 759.8,
+      "text": "Hört mal, das Teeservice ist sehr hübsch, aber räumt es weg, bevor ihr hier rausgeht, ja?",
+      "vi": "Nghe này, bộ ấm trà này rất đẹp, nhưng nhớ cất nó đi trước khi các em ra về nhé?",
+      "speaker": "Sawako",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100148,
+      "start": 759.8,
+      "end": 760.6,
+      "text": "Klar!",
+      "vi": "Vâng ạ!",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100149,
+      "start": 760.6,
+      "end": 763.5,
+      "text": "Na bitte, der Club wird nicht aufgelöst.",
+      "vi": "Đấy thấy chưa, câu lạc bộ sẽ không bị giải tán đâu.",
+      "speaker": "Ritsu",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100150,
+      "start": 763.5,
+      "end": 764.7,
+      "text": "Das ist nicht der Club.",
+      "vi": "Đó không phải là câu lạc bộ đâu.",
+      "speaker": "Mio",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100151,
+      "start": 764.7,
+      "end": 766.12,
+      "text": "Das ist der Club.",
+      "vi": "Đó là câu lạc bộ đấy.",
+      "speaker": "Ritsu",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100157,
+      "start": 776.5,
+      "end": 794.38,
+      "text": "Musikclub. Ich muss da durchgehen, wenn ich zum Musikclub will.",
+      "vi": "Câu lạc bộ… mình phải đi qua đó nếu muốn tới câu lạc bộ âm nhạc.",
+      "speaker": "Yui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100160,
+      "start": 815.81,
+      "end": 821.76,
+      "text": "Es fällt mir schwer, den zu beichten, dass ich doch nicht Mitglied werden will.",
+      "vi": "Thật khó để thú nhận với họ rằng mình không muốn làm thành viên nữa.",
+      "speaker": "Yui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100204,
+      "start": 984.08,
+      "end": 993.29,
+      "text": "Es tut man nicht Gitarre spielen.",
+      "vi": "(Em không biết chơi guitar đâu ạ — câu ASR méo, cần rà lại)",
+      "speaker": "Yui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100249,
+      "start": 1116.02,
+      "end": 1118.02,
+      "text": "Nicht, doch wir müssen uns bei dir entschuldigen.",
+      "vi": "Không, bọn tớ mới phải xin lỗi cậu.",
+      "speaker": "Mio",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100253,
+      "start": 1200,
+      "end": 1200.98,
+      "text": "Hat's dir gefallen?",
+      "vi": "Cậu thấy sao, có thích không?",
+      "speaker": "Ritsu",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100257,
+      "start": 1207.26,
+      "end": 1209.4,
+      "text": "Ihr seid gar nicht mal so gut, wie ich dachte.",
+      "vi": "Các cậu chơi không giỏi như tớ tưởng đâu.",
+      "speaker": "Yui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100262,
+      "start": 1229.29,
+      "end": 1231.36,
+      "text": "Erste Foto unseres Musikclubs.",
+      "vi": "Tấm ảnh đầu tiên của câu lạc bộ âm nhạc của chúng ta.",
+      "speaker": "Ritsu",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100283,
+      "start": 1283.15,
+      "end": 1285.53,
+      "text": "Ich bin als richtiges Mitglied da eingetreten.",
+      "vi": "Tớ vào đó làm thành viên thật sự cơ đấy.",
+      "speaker": "Yui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100287,
+      "start": 1295.52,
+      "end": 1297.34,
+      "text": "Vielleicht leihen die mir ja auch eine.",
+      "vi": "Biết đâu họ lại cho tớ mượn một cây.",
+      "speaker": "Yui",
+      "reviewNeeded": true
+    },
+    {
+      "id": 1100296,
+      "start": 1442.67,
+      "end": 1449.57,
+      "text": "Aber jetzt als Oberschülerin bin ich zum ersten Mal in einem Club aktiv.",
+      "vi": "Nhưng giờ đây, với tư cách một học sinh cấp ba, lần đầu tiên mình tham gia một câu lạc bộ.",
+      "speaker": "Yui",
+      "reviewNeeded": true
+    }
+  ],
+  "priorUncertain": [
+    {
+      "start": 59.46,
+      "end": 60.4,
+      "text": "Kommt zu spät!",
+      "reason": "Turbo nghe được một mảnh hét trong cảnh buổi sáng lẫn nhạc nền; medium bỏ sót. Cần nghe lại để xác nhận người nói và đủ câu"
+    },
+    {
+      "start": 64.3,
+      "end": 65.04,
+      "text": "Gucken, Jui-Chan.",
+      "reason": "Turbo nghe méo trong vùng nhạc nền trước opening, không đáng tin"
+    },
+    {
+      "start": 65.04,
+      "end": 109.88,
+      "text": "(lời dẫn của Yui dưới nhạc nền)",
+      "reason": "Vùng dẫn truyện dưới nhạc: chỉ xác nhận chắc chắn được câu cuối 'Ab heute bin ich Oberschülerin.' (110.90-114.90, kiểm chứng bằng đoạn cắt riêng); phần còn lại hai model đều kéo dài/ảo giác mốc"
+    },
+    {
+      "start": 215.32,
+      "end": 239.6,
+      "text": "(tiếng mời chào của các câu lạc bộ)",
+      "reason": "Nhiều tiếng rao chồng nhau ở sân trường; chỉ tách được câu Judo-Club ở 214.02-215.32"
+    },
+    {
+      "start": 361.18,
+      "end": 364.14,
+      "text": "Den Gedanken woanders, Entschuldigung.",
+      "reason": "Câu ASR thiếu thành phần (có thể là 'Du bist mit den Gedanken woanders'); bản dịch tạm theo ý, cần nghe lại"
+    },
+    {
+      "start": 467.12,
+      "end": 493.54,
+      "text": "...als wir zusammen auf dem Live-Konzert waren. (chỉ rõ phần cuối)",
+      "reason": "Vùng hồi tưởng lẫn nhạc hòa nhạc: medium nghe được mảnh 'Live-Konzert waren.', turbo nghe được 'Wir zusammen auf dem Live-Konzert waren.' trong cùng một đoạn kéo dài 467.12-493.54; đầu câu và mốc chính xác không tách được nên không đưa vào cues"
+    },
+    {
+      "start": 446.47,
+      "end": 454.96,
+      "text": "der Co. (x2)",
+      "reason": "ASR cắt cụt 'Chor' thành 'Co.'; đã chuẩn hóa theo ngữ cảnh (Tsumugi tìm câu lạc bộ hợp xướng) nhưng gắn cờ để Codex đối chiếu"
+    },
+    {
+      "start": 456.96,
+      "end": 460.15,
+      "text": "Ich flehe dich an (medium: 'nähe', turbo: 'leere')",
+      "reason": "Hai model nghe lệch cùng một từ theo hai cách khác nhau; ngữ cảnh Ritsu van nài Tsumugi gia nhập nên 'flehe' là cách đọc hợp lý nhất, vẫn gắn reviewNeeded ở cue"
+    },
+    {
+      "start": 729.17,
+      "end": 731.23,
+      "text": "medium: 'Wenn man das von links nach links zieht.' / turbo: 'Wenn man dazu von links nachricht.'",
+      "reason": "Hai model nghe lệch khác nhau cùng một câu (có thể là hướng dẫn đeo dây castanet); không khôi phục được nguyên văn, cue giữ theo medium và gắn reviewNeeded"
+    },
+    {
+      "start": 753.58,
+      "end": 755.58,
+      "text": "medium: 'Plaa!' / turbo còn nghe 'Mal sehen.' ngay trước đó",
+      "reason": "Đã sửa cue thành 'Klar!' (đáp lại yêu cầu cất bộ ấm trà) nhưng vẫn gắn reviewNeeded vì hai model không thống nhất"
+    },
+    {
+      "start": 857.33,
+      "end": 859.33,
+      "text": "medium: 'Sag mal, bist du etwa hier das Samajusam?' / turbo: 'Sag mal, bist du etwa hier, dass er bei Yui-san?'",
+      "reason": "'Samajusam' không phải từ có nghĩa; có thể Yui hỏi Sawako là thành viên câu lạc bộ phải không; cần nghe lại"
+    },
+    {
+      "start": 984.08,
+      "end": 993.29,
+      "text": "medium: 'Es tut man nicht Gitarre spielen.' / turbo: 'Es kann nicht Gitarre spielen.'",
+      "reason": "Câu thú nhận của Yui bị cả hai model làm méo theo hai cách; dạng thật có lẽ chứa '…kann … nicht Gitarre spielen', cần nghe lại trực tiếp"
+    },
+    {
+      "start": 939.57,
+      "end": 941.57,
+      "text": "Jimi Page. -> Jimmy Page.",
+      "reason": "Đã chuẩn hóa theo chuỗi đoán tên guitar bắt đầu bằng J (Hendrix - Page - Jeff Beck); vẫn ghi lại để Codex đối chiếu"
+    },
+    {
+      "start": 757.58,
+      "end": 762.06,
+      "text": "Das ist nicht der Club. / Das ist der Club.",
+      "reason": "Cặp câu đối đáp này chỉ có ở medium; bản turbo (đoạn gộp 756.68-765.46) không chứa chúng. Giữ cả hai cue kèm reviewNeeded để Codex đối chiếu bản nghe độc lập"
+    },
+    {
+      "start": 1000.27,
+      "end": 1002.27,
+      "text": "medium: 'Muntermonika.' / turbo: 'Munter Monika.'",
+      "reason": "Hai model cùng nghe méo giống hệt nhau; trong ngữ cảnh liệt kê nhạc cụ và việc Mio đưa tận tay cho Yui chơi thử, cách đọc hợp lý là 'Mundharmonika' (kèn harmonica) — cue đã chuẩn hóa như vậy, ghi lại để đối chiếu"
+    },
+    {
+      "start": 895.68,
+      "end": 896.26,
+      "text": "medium: 'Soll ich machen?' -> đã thay bằng turbo 'Greif zu.'",
+      "reason": "Câu của medium thiếu nghĩa trong ngữ cảnh dọn trà bánh; bản turbo 'Greif zu.' (mời dùng tự nhiên) khớp mạch cảnh nên đã dùng, ghi lại để Codex đối chiếu"
+    },
+    {
+      "start": 760.6,
+      "end": 766.12,
+      "text": "'Na bitte, der Club wird nicht aufgelöst.' (lần 2, medium 762.06-764.93) — ĐÃ XÓA khỏi cues",
+      "reason": "Bản medium nghe câu này hai lần quanh cảnh bộ ấm trà, bản turbo chỉ có một lần; lần hai có khả năng cao là medium nghe trùng trong đoạn kéo dài. Đã xóa để tránh câu ma, ghi lại đây để Codex khôi phục nếu audit độc lập nghe thấy thật"
+    },
+    {
+      "start": 1306.67,
+      "end": 1308.22,
+      "text": "Meine Freundin aus dem Musikclub.",
+      "reason": "Mảnh lời dẫn nằm ngay đầu vùng ending, bị cả hai model gộp vào đoạn kéo dài của bài hát; không tách mốc chắc chắn được"
+    },
+    {
+      "start": 1432.84,
+      "end": 1434.02,
+      "text": "Juh. / Jui.",
+      "reason": "Mảnh tiếng gọi rời rạc trong đoạn giới thiệu tập sau, không đủ ngữ cảnh làm cue"
+    },
+    {
+      "start": 1449.57,
+      "end": 1451.74,
+      "text": "Und jetzt als Oberschülerin (turbo, lp -0.87)",
+      "reason": "Đuôi turbo vượt quá thời lượng file và độ tin cậy thấp; có thể là dư âm xem trước tập sau, đã loại"
+    },
+    {
+      "start": 559.58,
+      "end": 563.84,
+      "text": "Ich bin Kotobuki. (turbo, avg_logprob -1.09)",
+      "reason": "Turbo nghe nhiễu ở cảnh chuyển ngoài đường phố với độ tin cậy rất thấp; không đưa vào cues"
+    },
+    {
+      "cueId": 1100208,
+      "start": 998.27,
+      "end": 1000.27,
+      "text": "Kastagnetten.",
+      "reason": "Từ bị ngắt giữa chừng; chưa dùng làm câu luyện."
+    }
+  ],
+  "priorExclusions": [
+    {
+      "start": 0,
+      "end": 33.58,
+      "reason": "Mở đầu: cảnh buổi sáng và nhạc nền, chưa có thoại Đức rõ"
+    },
+    {
+      "start": 114.9,
+      "end": 214.02,
+      "reason": "Bài hát mở đầu (opening tiếng Nhật) — không đưa lời bài hát vào transcript; cả hai model ASR đều ảo giác chữ Đức trên đoạn này"
+    },
+    {
+      "start": 468.12,
+      "end": 493.54,
+      "reason": "Đoạn hồi tưởng xem video hòa nhạc: nhạc là chính, chỉ nghe được mảnh thoại ở cuối (xem uncertain)"
+    },
+    {
+      "start": 1126.24,
+      "end": 1200,
+      "reason": "Ban nhạc biểu diễn thử cho Yui nghe — phần nhạc không lời"
+    },
+    {
+      "start": 1306.67,
+      "end": 1425.77,
+      "reason": "Bài hát kết thúc (ending tiếng Nhật) + credits; lời dẫn của Yui chỉ tiếp tục rõ từ 1426.51"
+    }
+  ],
+  "normalizations": [
+    "Musikklub → Musikclub (spelling variant)",
+    "Lodoka/Ludoka → Nodoka, Jui → Yui (established character names)",
+    "Co → Chor, Kastanetten/Kastanietten → Kastagnetten, Tesavis/Thesavis → Teeservice (German spelling of the recognized spoken nouns)"
+  ],
+  "validation": {
+    "practiceData": {
+      "passed": true,
+      "filmsAtRun": 33,
+      "chaptersAtRun": 162,
+      "picksAtRun": 1057
+    },
+    "unit": {
+      "passed": true,
+      "suites": 21
+    },
+    "player": {
+      "passed": true,
+      "checked": 42,
+      "boundaryChecks": 126,
+      "videoDimensions": [
+        1280,
+        720
+      ],
+      "source": "Unmodified Kino player on localhost:3000; local lossless remux of the matching source served via Playwright request routing only"
+    },
+    "uniqueIds": true,
+    "strictlyNonoverlappingCaptions": true,
+    "originalVisibleIdsRetained": true,
+    "originalPicksAndFlashcardsUnchanged": true,
+    "otherBaselineAlignedFilesUnchanged": true,
+    "gitActions": "No branch change, commit, push or deployment"
+  }
+}

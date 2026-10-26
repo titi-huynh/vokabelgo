@@ -26,14 +26,14 @@ const K_ON_S01E01_LESSON = (() => {
     "storageKey": "vokabelgo_kino_chapters_v1_k_on_s01e01",
     "legacyKey": "vokabelgo_kino_progress_k_on_s01e01",
     "legacyCount": 0,
-    "cueCount": 239,
+    "cueCount": 281,
     "vocabularyCount": 16,
     "chapters": [
       {
         "title": "Yui vẫn chưa chọn được câu lạc bộ",
         "icon": "🌅",
         "start": 0,
-        "end": 277.52,
+        "end": 278.09,
         "picks": [
           1100003,
           1100006,

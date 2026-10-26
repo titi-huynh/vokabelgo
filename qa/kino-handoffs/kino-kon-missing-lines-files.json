@@ -1,0 +1,143 @@
+{
+  "branch": "codex/kino-kon-missing-lines",
+  "baseMain": "ab589604ed8348ee626fe8758c32272ed7664364",
+  "files": [
+    {
+      "status": "M",
+      "path": "k-on-s01e01-aligned.js"
+    },
+    {
+      "status": "M",
+      "path": "k-on-s01e01-lesson.js"
+    },
+    {
+      "status": "M",
+      "path": "kino-metadata.js"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/BAO-CAO-KIEM-CHUNG-K-ON-2026-10-26.md"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/baseline-aligned-sha256.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/candidate-contact-sheet-1.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/candidate-contact-sheet-2.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/candidate-contact-sheet-3.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/candidate-contact-sheet-4.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/earshot-21.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/earshot-24.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/independent-medium-context.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/independent-medium-tight.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/independent-medium.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/independent-small-context.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/independent-small-tight.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/independent-small.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/muse-candidates.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/player-cue-1100298.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/player-cue-1100319.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/player-cue-1100339.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/player-verification.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/k_on_missing_20261026/review.json"
+    },
+    {
+      "status": "M",
+      "path": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-handoffs/kino-kon-missing-lines-files.json"
+    }
+  ],
+  "frozenWorkingSha256": {
+    "k-on-s01e01-aligned.js": "70cab8da92153903d123af8ecde21c89dd9872fa499a311750f860a5bc061765",
+    "k-on-s01e01-lesson.js": "5da45dc00cdf80e3b18702f98c839fc9bcd3b8d313ba6b92c086ff1be15785e7",
+    "qa/kino-alignment/k_on_missing_20261026/BAO-CAO-KIEM-CHUNG-K-ON-2026-10-26.md": "15d4c414a2b7ee6f065eab1b4b69a7cc3e5d317850051c45f689d838b0d1777a",
+    "qa/kino-alignment/k_on_missing_20261026/baseline-aligned-sha256.json": "ab2f1a59e0e0edd43699863473431f9e3f814a4fc467c1f2babe08edfef84c05",
+    "qa/kino-alignment/k_on_missing_20261026/candidate-contact-sheet-1.jpg": "ba07dcd8dba819397bec742df721c80265067d95f0794dcfdf8319d76b36814c",
+    "qa/kino-alignment/k_on_missing_20261026/candidate-contact-sheet-2.jpg": "cd1e7b27f46c352a1107eabd504dfa01c4ed4cdd27bbe694c171f9ee86e0edbf",
+    "qa/kino-alignment/k_on_missing_20261026/candidate-contact-sheet-3.jpg": "68aa1936049d372537be1507ef48051a578e7278a4c4feabd216c0c8f21dcf70",
+    "qa/kino-alignment/k_on_missing_20261026/candidate-contact-sheet-4.jpg": "a91a6569f254d230df7e11990dbb59ae1d0eb9ab7f011fcb3df1547f71bb5efa",
+    "qa/kino-alignment/k_on_missing_20261026/earshot-21.json": "1e2e201dcad71e906a164b46235179158fb57f8bf093f8438c34bb3f9d7bbcbb",
+    "qa/kino-alignment/k_on_missing_20261026/earshot-24.json": "25cdcf1958e44988e2b30d5359d7295ca11ab839851eb36dd1741aba0cd3aefc",
+    "qa/kino-alignment/k_on_missing_20261026/independent-medium-context.json": "b7ba5658b7390bdecbcda2a8fa904f81f1d09171457881a5ce723ee73d0f490a",
+    "qa/kino-alignment/k_on_missing_20261026/independent-medium-tight.json": "38368d6ffb28bfb8aeda8c67b70430ad73e5f7f7ecc77ee7b0d19cc59b029a09",
+    "qa/kino-alignment/k_on_missing_20261026/independent-medium.json": "5f14bdcc313cfbf64da95861f39ef225bb6d31340d7552b10e78e06f486dbec5",
+    "qa/kino-alignment/k_on_missing_20261026/independent-small-context.json": "581a2badf67999f81e2eb6bc2ed6340cf7974efc4f40c58ea0c92c65089444a1",
+    "qa/kino-alignment/k_on_missing_20261026/independent-small-tight.json": "888ea424003876e80fe43f6f12ba868fdee49af3b41f8fdde8098f740082617d",
+    "qa/kino-alignment/k_on_missing_20261026/independent-small.json": "5aed40060977623e9813c01952441f2c228c1389571f2b4c64ef174df3e327fb",
+    "qa/kino-alignment/k_on_missing_20261026/muse-candidates.json": "a8497e31e7cf72907b46845ad95c972d95e591b5de00edb66a9bd0250d9dafaf",
+    "qa/kino-alignment/k_on_missing_20261026/player-cue-1100298.png": "ffe375e66b38ea98e7d675e6b21fa612cf6b75dcb104888d5c44c719cac73753",
+    "qa/kino-alignment/k_on_missing_20261026/player-cue-1100319.png": "6dc50b0418a2af8ea2d8c31c65ae2d178425a26568dab6b1cb19533ebc14b1bf",
+    "qa/kino-alignment/k_on_missing_20261026/player-cue-1100339.png": "7d08cc0bdac8ef01a3bff92f7847475ba9fae95d61de129233820b6a3d6ba059",
+    "qa/kino-alignment/k_on_missing_20261026/player-verification.json": "6b6ea6ded9ed0ce075fc464b3da7f294bd1e896a976ff7a051e052b62c869ee4",
+    "qa/kino-alignment/k_on_missing_20261026/review.json": "56d1c86df505fdd1d6a36631085fb257dc9b5dba6c842e38825c22122ac5b7bc",
+    "qa/kino-alignment/muse-two-films/k_on_s01e01.json": "9742f17f2ba4b6c187100df1098d6a6378b4b2b9435ea6f6508e4aefbe1b652f",
+    "kino-metadata.js": "46215d860b85833ea6180b25bc8379a197d946f9a7a72410acdcb82183927ebe"
+  },
+  "notes": [
+    "Prepared from current main using an isolated Git index. Checked-out branch, files and index preserved.",
+    "No new lesson/runtime edits; metadata is split to include only the accepted work belonging to this branch."
+  ],
+  "publishedCaptionCount": 281,
+  "reviewNeededCount": 15,
+  "reviewNeededLocations": [
+    "qa/kino-alignment/k_on_missing_20261026/review.json:reviewNeeded",
+    "qa/kino-alignment/muse-two-films/k_on_s01e01.json:missingDialogueReview.candidates"
+  ],
+  "publicationAssertion": "The 15 reviewNeeded queue records are not copied into CAPTION_CUES or ALIGNED_UTTERANCES and not referenced by picks/flashcards. Time windows may touch already-confirmed neighboring cues; unresolved proposed words remain QA only."
+}

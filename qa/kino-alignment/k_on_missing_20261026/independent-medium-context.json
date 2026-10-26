@@ -1,0 +1,176 @@
+{
+  "model": "medium",
+  "source": "video/k_on_s01e01.mp4",
+  "candidateSha256": "a8497e31e7cf72907b46845ad95c972d95e591b5de00edb66a9bd0250d9dafaf",
+  "method": "Independent local bounded ASR, no prompt or candidate text supplied",
+  "humanListened": false,
+  "completed": 2,
+  "total": 2,
+  "elapsedSeconds": 24.16,
+  "windows": [
+    {
+      "candidate": 10,
+      "start": 668,
+      "end": 680.5,
+      "segments": [
+        {
+          "start": 668.0,
+          "end": 679.32,
+          "text": "nicht der musikklub sucht noch mitglieder",
+          "avg_logprob": -0.6528434356053671,
+          "no_speech_prob": 0.3415997624397278,
+          "words": [
+            {
+              "start": 668.0,
+              "end": 669.3,
+              "word": " nicht",
+              "probability": 0.03866200894117355
+            },
+            {
+              "start": 669.3,
+              "end": 677.3,
+              "word": " der",
+              "probability": 0.44006550312042236
+            },
+            {
+              "start": 677.3,
+              "end": 677.98,
+              "word": " musikklub",
+              "probability": 0.6569878943264484
+            },
+            {
+              "start": 677.98,
+              "end": 678.34,
+              "word": " sucht",
+              "probability": 0.9674349725246429
+            },
+            {
+              "start": 678.34,
+              "end": 678.52,
+              "word": " noch",
+              "probability": 0.9953409433364868
+            },
+            {
+              "start": 678.52,
+              "end": 679.32,
+              "word": " mitglieder",
+              "probability": 0.949580987294515
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 16,
+      "start": 775.5,
+      "end": 795,
+      "segments": [
+        {
+          "start": 775.5,
+          "end": 777.16,
+          "text": "Neues Mitglied!",
+          "avg_logprob": -0.6031437183127684,
+          "no_speech_prob": 0.3680191934108734,
+          "words": [
+            {
+              "start": 775.5,
+              "end": 775.88,
+              "word": " Neues",
+              "probability": 0.5178840830922127
+            },
+            {
+              "start": 775.88,
+              "end": 777.16,
+              "word": " Mitglied!",
+              "probability": 0.9868197739124298
+            }
+          ]
+        },
+        {
+          "start": 786.56,
+          "end": 788.08,
+          "text": "Musikklub... Musikklb...",
+          "avg_logprob": -0.6031437183127684,
+          "no_speech_prob": 0.3680191934108734,
+          "words": [
+            {
+              "start": 786.56,
+              "end": 787.32,
+              "word": " Musikklub...",
+              "probability": 0.6015650033950806
+            },
+            {
+              "start": 787.32,
+              "end": 788.08,
+              "word": " Musikklb...",
+              "probability": 0.5984860950138682
+            }
+          ]
+        },
+        {
+          "start": 792.5,
+          "end": 794.98,
+          "text": "Ich muss da durchgehen, wenn ich zum Musikklubs will.",
+          "avg_logprob": -0.6031437183127684,
+          "no_speech_prob": 0.3680191934108734,
+          "words": [
+            {
+              "start": 792.24,
+              "end": 792.62,
+              "word": " Ich",
+              "probability": 0.6693320870399475
+            },
+            {
+              "start": 792.62,
+              "end": 792.9,
+              "word": " muss",
+              "probability": 0.9893089532852173
+            },
+            {
+              "start": 792.9,
+              "end": 793.16,
+              "word": " da",
+              "probability": 0.9725846648216248
+            },
+            {
+              "start": 793.16,
+              "end": 793.64,
+              "word": " durchgehen,",
+              "probability": 0.926166296005249
+            },
+            {
+              "start": 793.8,
+              "end": 793.84,
+              "word": " wenn",
+              "probability": 0.9928348064422607
+            },
+            {
+              "start": 793.84,
+              "end": 794.02,
+              "word": " ich",
+              "probability": 0.9948603510856628
+            },
+            {
+              "start": 794.02,
+              "end": 794.22,
+              "word": " zum",
+              "probability": 0.9275116920471191
+            },
+            {
+              "start": 794.22,
+              "end": 794.82,
+              "word": " Musikklubs",
+              "probability": 0.6582811282908855
+            },
+            {
+              "start": 794.82,
+              "end": 794.98,
+              "word": " will.",
+              "probability": 0.9251135587692261
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
