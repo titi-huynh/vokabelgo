@@ -1,8 +1,11 @@
 // VokabelGo — Tra từ tại chỗ trong Kino (Mục 1 cải thiện Kino).
-// Bấm vào một từ trong dòng phụ đề Đức (hoặc câu lồng tiếng) → hiện thẻ nghĩa
-// tra từ kho thẻ của app; lưu được thành thẻ cá nhân kèm câu ngữ cảnh.
-// Nguồn tra: kho thẻ chung (BASE + VIDEO_FLASHCARDS + thẻ người dùng).
-// Từ chưa có trong kho: vẫn lưu được, người học tự điền nghĩa.
+// Bấm vào một từ trong dòng phụ đề Đức (hoặc câu lồng tiếng) → hiện thẻ nghĩa;
+// lưu được thành thẻ cá nhân kèm câu ngữ cảnh.
+// Thứ tự nguồn tra (bản thử từ điển 2026-10-26):
+//   1) kho thẻ chung của app (BASE + VIDEO_FLASHCARDS + thẻ người dùng) — đã biên tập;
+//   2) lớp từ chức năng/dạng chia biên tập tay (kino-dict-common.js);
+//   3) từ điển Wiktionary qua /api/dictionary phía máy chủ (dictionary-server.js);
+//   4) vẫn không có: người học tự điền nghĩa như trước.
 (function () {
   'use strict';
 
@@ -91,9 +94,9 @@
       var u = new SpeechSynthesisUtterance(text); u.lang = 'de-DE'; speechSynthesis.speak(u);
     } catch (e) {}
   }
-  function saveCard(word, hit, ctx, meaningInput) {
-    var term = hit ? hit.card.term : word;
-    var meaning = hit ? (hit.card.meaning || '') : (meaningInput || '').trim();
+  function saveCard(word, entry, ctx, meaningInput) {
+    var term = entry ? entry.term : word;
+    var meaning = entry ? (entry.meaning || '') : (meaningInput || '').trim();
     var card = {
       id: 'u_kino_' + Date.now().toString(36),
       term: term,
@@ -116,6 +119,66 @@
     } catch (e) {}
     return false;
   }
+  // ---------- Từ điển ngoài (lớp 3): /api/dictionary + cache ----------
+  var dictCache = {};
+  try {
+    var storedCache = JSON.parse(localStorage.getItem('vokabelgo_dict_cache_v1') || '{}');
+    if (storedCache && typeof storedCache === 'object') dictCache = storedCache;
+  } catch (e) {}
+  function fetchDictionary(word) {
+    var key = fold(word);
+    if (Object.prototype.hasOwnProperty.call(dictCache, key)) return Promise.resolve(dictCache[key]);
+    return fetch('/api/dictionary?term=' + encodeURIComponent(word))
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (!data || !data.ok) throw new Error('dict unavailable');
+        dictCache[key] = data;
+        try {
+          var keys = Object.keys(dictCache);
+          if (keys.length > 400) keys.slice(0, keys.length - 400).forEach(function (k) { delete dictCache[k]; });
+          localStorage.setItem('vokabelgo_dict_cache_v1', JSON.stringify(dictCache));
+        } catch (e) {}
+        return data;
+      });
+  }
+  function dictEntry(data) {
+    // Chuẩn hoá kết quả từ điển thành entry để hiển thị + lưu thẻ.
+    var lemma = data.lemma || data.title || data.term || '';
+    var term = data.article ? data.article + ' ' + lemma : lemma;
+    var vi = (data.vietnamese && data.vietnamese.length) ? data.vietnamese
+      : (data.viGloss && data.viGloss.length) ? data.viGloss
+      : (data.compound && data.compound.gloss) ? [data.compound.gloss] : [];
+    var grammarBits = [];
+    if (data.wordClass) grammarBits.push(data.wordClass);
+    if (data.plural) grammarBits.push('số nhiều: ' + data.plural);
+    if (data.ipa) grammarBits.push('/' + data.ipa + '/');
+    return {
+      term: term, lemma: lemma, meaning: vi.join('; '), viList: vi,
+      grammar: grammarBits.join(' · '),
+      definitions: data.definitions || [], example: (data.examples || [])[0] || '',
+      viSource: data.vietnameseSource || (data.viGloss ? 'vi.wiktionary' : ''),
+      sourceUrl: data.sourceUrl || ''
+    };
+  }
+  var BTNS_HTML = '<div style="display:flex;gap:8px;margin-top:10px;">'
+    + '<button type="button" class="kl-speak" style="border:1.5px solid #DB5B23;color:#C44D18;background:#fff;border-radius:999px;padding:6px 12px;font-weight:700;cursor:pointer;">🔊 Nghe</button>'
+    + '<button type="button" class="kl-save" style="border:none;background:#DB5B23;color:#fff;border-radius:999px;padding:6px 12px;font-weight:700;cursor:pointer;">＋ Lưu vào bộ thẻ</button>'
+    + '</div>';
+  var MEANING_INPUT = '<input class="kl-meaning" type="text" placeholder="Tự điền nghĩa tiếng Việt…" style="margin-top:8px;width:100%;box-sizing:border-box;border:1px solid #d8cfb8;border-radius:8px;padding:7px 9px;font-size:13.5px;">';
+  function wirePop(word, entry, ctx) {
+    if (!pop) return;
+    var speakBtn = pop.querySelector('.kl-speak');
+    if (speakBtn) speakBtn.addEventListener('click', function () { speak(entry ? entry.term : word); });
+    var saveBtn = pop.querySelector('.kl-save');
+    if (saveBtn) saveBtn.addEventListener('click', function () {
+      var inp = pop.querySelector('.kl-meaning');
+      var ok = saveCard(word, entry, ctx, inp ? inp.value : '');
+      saveBtn.textContent = ok ? '✓ Đã lưu — sẽ gặp lại trong buổi ôn' : 'Chưa lưu được';
+      // Chỉ đóng đúng thẻ đã lưu — tránh hẹn giờ cũ đóng nhầm thẻ người học vừa mở tiếp.
+      var myPop = pop;
+      if (ok) setTimeout(function () { if (pop === myPop) closePop(); }, 1200);
+    });
+  }
   function showPop(anchor, word) {
     closePop();
     var hit = resolve(word);
@@ -123,37 +186,76 @@
     pop = document.createElement('div');
     pop.className = 'kino-lookup-pop';
     pop.setAttribute('role', 'dialog');
+    pop.dataset.word = word;
     pop.style.cssText = 'position:fixed;z-index:4000;max-width:320px;background:#FFFDF7;border:1.5px solid #DB5B23;border-radius:14px;box-shadow:0 12px 32px rgba(43,36,30,.25);padding:12px 14px;font-size:14px;color:#2B241E;';
+    var entry = null;
     var html = '';
     if (hit) {
       var c = hit.card;
+      entry = { term: c.term, meaning: c.meaning || '' };
       html += '<div style="font-weight:800;font-size:16px;">' + escapeHtml(c.term) + '</div>';
       if (c.meaning) html += '<div style="margin-top:2px;">' + escapeHtml(c.meaning) + '</div>';
       if (c.grammar) html += '<div style="margin-top:4px;font-size:12.5px;color:#8a7f6a;">' + escapeHtml(c.grammar) + '</div>';
       if (c.example) html += '<div style="margin-top:6px;font-style:italic;font-size:13px;">„' + escapeHtml(c.example) + '"</div>';
       if (hit.via === 'compound') html += '<div style="margin-top:4px;font-size:12px;color:#8a7f6a;">(từ ghép — nghĩa của phần đuôi)</div>';
       if (hit.via === 'form') html += '<div style="margin-top:4px;font-size:12px;color:#8a7f6a;">(dạng chia của từ này)</div>';
+      html += BTNS_HTML;
+      pop.innerHTML = html;
+      wirePop(word, entry, ctx);
+    } else if (window.KinoDictCommon && window.KinoDictCommon.lookup(word)) {
+      var common = window.KinoDictCommon.lookup(word);
+      entry = { term: common.term, meaning: common.meaning };
+      html += '<div style="font-weight:800;font-size:16px;">' + escapeHtml(common.term) + '</div>';
+      html += '<div style="margin-top:2px;">' + escapeHtml(common.meaning) + '</div>';
+      if (common.grammar) html += '<div style="margin-top:4px;font-size:12.5px;color:#8a7f6a;">' + escapeHtml(common.grammar) + '</div>';
+      html += '<div style="margin-top:4px;font-size:12px;color:#8a7f6a;">(từ thông dụng — đã biên tập trong app)</div>';
+      html += BTNS_HTML;
+      pop.innerHTML = html;
+      wirePop(word, entry, ctx);
     } else {
       html += '<div style="font-weight:800;font-size:16px;">' + escapeHtml(word) + '</div>';
-      html += '<div style="margin-top:2px;color:#8a7f6a;">Từ này chưa có trong kho từ của app.</div>';
-      html += '<input class="kl-meaning" type="text" placeholder="Tự điền nghĩa tiếng Việt…" style="margin-top:8px;width:100%;box-sizing:border-box;border:1px solid #d8cfb8;border-radius:8px;padding:7px 9px;font-size:13.5px;">';
+      html += '<div class="kl-dict-status" style="margin-top:2px;color:#8a7f6a;">Đang tra từ điển…</div>';
+      pop.innerHTML = html;
+      var myPop = pop;
+      fetchDictionary(word).then(function (data) {
+        if (!pop || pop !== myPop || pop.dataset.word !== word) return;
+        if (!data.found && !data.viGloss && !data.compound) {
+          pop.innerHTML = '<div style="font-weight:800;font-size:16px;">' + escapeHtml(word) + '</div>'
+            + '<div style="margin-top:2px;color:#8a7f6a;">Từ điển cũng chưa có từ này (có thể là tên riêng).</div>'
+            + MEANING_INPUT + BTNS_HTML;
+          wirePop(word, null, ctx);
+          return;
+        }
+        var de = dictEntry(data);
+        var h = '<div style="font-weight:800;font-size:16px;">' + escapeHtml(de.term) + '</div>';
+        if (de.viList.length) {
+          h += '<div style="margin-top:2px;">' + escapeHtml(de.viList.join('; ')) + '</div>';
+          if (de.viSource === 'mymemory') h += '<div style="margin-top:2px;font-size:12px;color:#b3541e;">Nghĩa dự phòng từ kho dịch công cộng — chưa kiểm chứng</div>';
+        } else {
+          h += '<div style="margin-top:2px;color:#8a7f6a;">Chưa có nghĩa Việt — xem định nghĩa tiếng Đức:</div>';
+        }
+        if (de.grammar) h += '<div style="margin-top:4px;font-size:12.5px;color:#8a7f6a;">' + escapeHtml(de.grammar) + '</div>';
+        if (!de.viList.length && de.definitions.length) {
+          h += '<div style="margin-top:4px;font-size:13px;">' + escapeHtml(de.definitions.slice(0, 2).join(' · ')) + '</div>';
+        }
+        if (de.example) h += '<div style="margin-top:6px;font-style:italic;font-size:13px;">' + escapeHtml(de.example) + '</div>';
+        h += '<div style="margin-top:4px;font-size:12px;color:#8a7f6a;">Nguồn: <a href="' + escapeHtml(de.sourceUrl) + '" target="_blank" rel="noopener" style="color:#C44D18;">Wiktionary</a> (CC BY-SA)</div>';
+        if (!de.viList.length) h += MEANING_INPUT;
+        h += BTNS_HTML;
+        pop.innerHTML = h;
+        wirePop(word, de.viList.length ? de : null, ctx);
+      }).catch(function () {
+        if (!pop || pop !== myPop || pop.dataset.word !== word) return;
+        pop.innerHTML = '<div style="font-weight:800;font-size:16px;">' + escapeHtml(word) + '</div>'
+          + '<div style="margin-top:2px;color:#8a7f6a;">Chưa kết nối được từ điển. Từ này chưa có trong kho từ của app.</div>'
+          + MEANING_INPUT + BTNS_HTML;
+        wirePop(word, null, ctx);
+      });
     }
-    html += '<div style="display:flex;gap:8px;margin-top:10px;">'
-      + '<button type="button" class="kl-speak" style="border:1.5px solid #DB5B23;color:#C44D18;background:#fff;border-radius:999px;padding:6px 12px;font-weight:700;cursor:pointer;">🔊 Nghe</button>'
-      + '<button type="button" class="kl-save" style="border:none;background:#DB5B23;color:#fff;border-radius:999px;padding:6px 12px;font-weight:700;cursor:pointer;">＋ Lưu vào bộ thẻ</button>'
-      + '</div>';
-    pop.innerHTML = html;
     document.body.appendChild(pop);
     var r = anchor.getBoundingClientRect();
     pop.style.left = Math.max(8, Math.min(r.left, window.innerWidth - 336)) + 'px';
     pop.style.top = Math.min(r.bottom + 8, window.innerHeight - 240) + 'px';
-    pop.querySelector('.kl-speak').addEventListener('click', function () { speak(hit ? hit.card.term : word); });
-    pop.querySelector('.kl-save').addEventListener('click', function () {
-      var inp = pop.querySelector('.kl-meaning');
-      var ok = saveCard(word, hit, ctx, inp ? inp.value : '');
-      pop.querySelector('.kl-save').textContent = ok ? '✓ Đã lưu — sẽ gặp lại trong buổi ôn' : 'Chưa lưu được';
-      if (ok) setTimeout(closePop, 1200);
-    });
     setTimeout(function () {
       document.addEventListener('pointerdown', function onDoc(e) {
         if (pop && !pop.contains(e.target)) { closePop(); document.removeEventListener('pointerdown', onDoc); }

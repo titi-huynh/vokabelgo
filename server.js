@@ -273,6 +273,22 @@ const requestHandler = (req, res) => {
     return;
   }
 
+  // Tra từ điển cho Kino (bản thử): GET /api/dictionary?term=<từ Đức>
+  // Nguồn: Wiktionary qua dictionary-server.js. Cùng origin nên CSP 'self' đã đủ.
+  if (reqUrl === '/api/dictionary') {
+    const term = new URL(req.url, 'http://localhost').searchParams.get('term') || '';
+    require('./dictionary-server').lookup(term)
+      .then(result => {
+        res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify({ ok: true, ...result }));
+      })
+      .catch(err => {
+        res.writeHead(err.status || 502, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify({ ok: false, error: err.status ? err.message : 'Chưa kết nối được Wiktionary. Kiểm tra mạng rồi thử lại.' }));
+      });
+    return;
+  }
+
   // Cổng dev/phòng chờ: trang chưa ra mắt chỉ xem được từ localhost
   if (DEV_ONLY_PATHS.has(reqUrl) && !devPagesAllowed(req)) {
     sendText(res, 404, '404 Not Found');
