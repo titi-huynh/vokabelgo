@@ -77,6 +77,16 @@
       var dDe = document.getElementById('kinoDiscoveryDe');
       if (dDe && dDe.textContent.trim()) { de = dDe; vi = document.getElementById('kinoDiscoveryVi') || vi; }
     }
+    // Đang ở thẻ Nghe & hiểu từng câu: dùng câu trong thẻ khi chữ đã hiện
+    // (khi còn ẩn kiểu "nghe mù" thì các dòng gợi ý không phải ngữ cảnh thật).
+    if (!de || !de.textContent.trim()) {
+      var lDe = document.getElementById('kinoListenDe');
+      if (lDe && lDe.textContent.trim() && lDe.textContent.indexOf('🎧') !== 0) {
+        de = lDe;
+        var lVi = document.getElementById('kinoListenVi');
+        vi = (lVi && lVi.textContent.trim() && lVi.textContent.indexOf('Đoán nghĩa') !== 0) ? lVi : null;
+      }
+    }
     var key = 'kino';
     try { if (typeof currentKinoVideoKey === 'string' && currentKinoVideoKey) key = currentKinoVideoKey; } catch (e) {}
     var partBtn = document.querySelector('.peppa-part[aria-pressed="true"]');
@@ -272,6 +282,8 @@
     if (!el) return;
     var text = el.textContent;
     if (!text || !text.trim()) return;
+    // Thẻ Nghe & hiểu khi đang "nghe mù": dòng hiện tại chỉ là gợi ý, không bọc từ.
+    if (el.id === 'kinoListenDe' && text.trim().indexOf('🎧') === 0) return;
     // Đã bọc và nội dung không đổi -> bỏ qua. App có thể set lại đúng câu cũ
     // (xoá mất span) nên phải kiểm cả sự hiện diện của span, không chỉ chữ.
     if (el.dataset.klWrapped === text && el.querySelector('.kino-word')) return;
@@ -322,6 +334,8 @@
     watch('kinoDubTargetDe');
     // Phụ đề của trình xem liên tục (Nghe hiểu) được tạo động khi mở bài Kino.
     watchLater('kinoDiscoveryDe');
+    // Thẻ Nghe & hiểu từng câu cũng tra được sau khi chữ Đức đã hiện.
+    watchLater('kinoListenDe');
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
   else start();

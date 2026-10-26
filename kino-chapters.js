@@ -43,6 +43,11 @@ const KinoChapters = (() => {
   let captionsVisible = true;
   let activity = 'discover';
   let currentLesson = '';
+  // Bản thử "nghe mù trước" (2026-10-26): ở bước Nghe & hiểu, chữ Đức và nghĩa
+  // Việt chỉ hiện khi người học tự bấm; trạng thái đặt lại mỗi khi đổi câu.
+  let listenRevealKey = '';
+  let listenRevealDe = false;
+  let listenRevealVi = false;
 
   function persist() {
     try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch (_) {}
@@ -235,9 +240,16 @@ const KinoChapters = (() => {
 
     const listenCard = document.createElement('div');
     listenCard.className = 'kino-v3-card kino-listen-card';
-    listenCard.innerHTML = '<p class="peppa-eyebrow">CÙNG HIỂU CÂU NÀY</p><p id="kinoListenDe" lang="de"></p><p id="kinoListenVi" lang="vi"></p><p class="kino-listen-reassurance">Nghe lại bao nhiêu lần cũng được. Bạn tự chọn câu muốn nghe.</p><button type="button" id="kinoListenAgain">🔁 Nghe lại</button>';
+    listenCard.innerHTML = '<p class="peppa-eyebrow">NGHE TRƯỚC · HIỂU SAU</p><p id="kinoListenDe" lang="de"></p><p id="kinoListenVi" lang="vi"></p>'
+      + '<div style="display:flex;gap:8px;flex-wrap:wrap;margin:6px 0;">'
+      + '<button type="button" id="kinoRevealDe" style="border:1.5px solid #DB5B23;color:#C44D18;background:#fff;border-radius:999px;padding:6px 12px;font-weight:700;cursor:pointer;">👀 Hiện chữ Đức</button>'
+      + '<button type="button" id="kinoRevealVi" style="border:1.5px solid #DB5B23;color:#C44D18;background:#fff;border-radius:999px;padding:6px 12px;font-weight:700;cursor:pointer;">🇻🇳 Hiện nghĩa Việt</button>'
+      + '</div>'
+      + '<p class="kino-listen-reassurance">Nghe trước, đoán trong đầu — rồi mới hiện chữ và nghĩa để kiểm tra. Nghe lại bao nhiêu lần cũng được.</p><button type="button" id="kinoListenAgain">🔁 Nghe lại</button>';
     document.querySelector('.kino-v3-learn-hub').prepend(listenCard);
     document.getElementById('kinoListenAgain').onclick = () => playKinoCurrentSegment();
+    document.getElementById('kinoRevealDe').onclick = () => { listenRevealDe = true; render(); };
+    document.getElementById('kinoRevealVi').onclick = () => { if (listenRevealDe) { listenRevealVi = true; render(); } };
     const activityNext = document.createElement('button');
     activityNext.type = 'button';
     activityNext.id = 'kinoActivityNext';
@@ -529,7 +541,7 @@ const KinoChapters = (() => {
     document.getElementById('kinoSpeakingToggle').querySelector('b').hidden = true;
     document.getElementById('kinoActivityName').textContent = { discover: '', listen: 'NGHE & HIỂU · TỪNG CÂU MỘT', write: 'THỬ VIẾT · KHÔNG CHẤM ĐIỂM', speak: 'THỬ NÓI · THEO NHỊP CỦA BẠN' }[activity];
     document.getElementById('kinoActivityHelp').textContent = activity === 'write' ? 'Gõ thử, xem câu gốc khi cần. Có thể để câu này sau.'
-      : activity === 'speak' ? 'Nghe giọng nhân vật rồi nói theo. Không cần làm phần viết trước.' : 'Đọc lời thoại và nghĩa tiếng Việt. Chọn câu nào cũng được.';
+      : activity === 'speak' ? 'Nghe giọng nhân vật rồi nói theo. Không cần làm phần viết trước.' : 'Nghe trước khi thấy chữ: đoán, rồi hiện chữ Đức và nghĩa Việt để kiểm tra. Chọn câu nào cũng được.';
     document.getElementById('kinoPracticePosition').textContent = `Câu ${kinoCurrentIndex + 1} / ${segments.length} · Phần ${state.chapter + 1}`;
     const usage = chapter.practiceUsage?.[segments[kinoCurrentIndex]?.id];
     const usageNote = document.getElementById('kinoUsageNote');
@@ -543,8 +555,17 @@ const KinoChapters = (() => {
     document.getElementById('kinoNextBtn').disabled = kinoCurrentIndex >= segments.length - 1;
     document.getElementById('kinoSkipWriting').hidden = passed;
     document.getElementById('kinoActivityNext').textContent = kinoCurrentIndex < segments.length - 1 ? 'Nghe câu tiếp →' : 'Xem cả phần ↑';
-    document.getElementById('kinoListenDe').textContent = segments[kinoCurrentIndex]?.text || '';
-    document.getElementById('kinoListenVi').textContent = segments[kinoCurrentIndex]?.vi || '';
+    // Nghe mù trước: chỉ hiện chữ/nghĩa khi người học đã bấm; đổi câu là đặt lại.
+    const listenKey = segments[kinoCurrentIndex]?.id || String(kinoCurrentIndex);
+    if (listenRevealKey !== listenKey) { listenRevealKey = listenKey; listenRevealDe = false; listenRevealVi = false; }
+    document.getElementById('kinoListenDe').textContent = listenRevealDe
+      ? (segments[kinoCurrentIndex]?.text || '') : '🎧 Nghe câu này trước — đừng nhìn chữ vội.';
+    document.getElementById('kinoListenVi').textContent = listenRevealVi
+      ? (segments[kinoCurrentIndex]?.vi || '') : (listenRevealDe ? 'Đoán nghĩa trong đầu, rồi bấm “Hiện nghĩa Việt” để kiểm tra.' : '');
+    const revealDeBtn = document.getElementById('kinoRevealDe');
+    if (revealDeBtn) revealDeBtn.hidden = listenRevealDe;
+    const revealViBtn = document.getElementById('kinoRevealVi');
+    if (revealViBtn) { revealViBtn.hidden = listenRevealVi; revealViBtn.disabled = !listenRevealDe; revealViBtn.style.opacity = listenRevealDe ? '' : '.45'; }
     KinoDiscovery.update({ key: videoKey, src: KINO_VIDEOS[videoKey].src, chapter, index: state.chapter,
       cues: config.captionCues || source, watched: state.watched.includes(state.chapter), activity });
     KinoCatalog.updateCount();
