@@ -1,0 +1,886 @@
+{
+  "videoKey": "erdmaennchen_luftgehen",
+  "modelsUsed": [
+    "faster-whisper medium (muse-asr-medium.json)",
+    "faster-whisper small (anti-asr-small-windows.json)",
+    "faster-whisper base (anti-asr-base-windows.json)"
+  ],
+  "picksCount": 41,
+  "picksAudit": [
+    {
+      "part": 1,
+      "id": 3100012,
+      "start": 62.01,
+      "end": 65.01,
+      "speaker": "Geburtstagskind",
+      "text": "Aber alle unsere Luftballons sind verschwunden.",
+      "vi": "Nhưng tất cả bóng bay của bọn em biến mất rồi.",
+      "usage": "Khi báo tin toàn bộ bóng bay chuẩn bị cho bữa tiệc đã biến mất.",
+      "asrMedium": "Weinen. Aber alle unsere Luftballons sind verschwunden.",
+      "asrSmall": "Aber alle unsere Luftballons sind verschwunden.",
+      "asrBase": "Aber all unsere Luftballons sind verschwunden.",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 1,
+      "id": 3100018,
+      "start": 81.92,
+      "end": 84.8,
+      "speaker": "Jan & Henry",
+      "text": "Ihr habt Glück, wir sind nämlich Detektive.",
+      "vi": "Các em may mắn đấy, bọn anh là thám tử mà.",
+      "usage": "Khi trấn an người đang lo lắng và giới thiệu mình là thám tử.",
+      "asrMedium": "Ihr habt Glück, wir sind nämlich Detektive. Und",
+      "asrSmall": "Ihr habt Glück, die sind nämlich Detektive und",
+      "asrBase": "Ihr habt Glück. Wir sind nämlich direktive und",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 1,
+      "id": 3100021,
+      "start": 93.42,
+      "end": 98.34,
+      "speaker": "Jan & Henry",
+      "text": "Dann fangen wir gleich mal mit der Spurensuche an.",
+      "vi": "Vậy chúng ta bắt đầu tìm dấu vết ngay thôi.",
+      "usage": "Khi đề nghị cả nhóm bắt tay ngay vào việc tìm kiếm dấu vết tại hiện trường.",
+      "asrMedium": "Dann fangen wir gleich mal mit der Spurensuche an.",
+      "asrSmall": "Ja, fangen wir gleich mal mit der Spurensuche an. Ja.",
+      "asrBase": "Ja, fangen wir gleich mal mit der Spuren -Juhe an.",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 1,
+      "id": 3100023,
+      "start": 102.55,
+      "end": 106.27,
+      "speaker": "Jan & Henry",
+      "text": "Das ist ja ein Fischstäbchen.",
+      "vi": "Đó là một que cá tẩm bột mà.",
+      "usage": "Khi ngạc nhiên nhận ra vật lạ nằm ở hiện trường là một que cá tẩm bột.",
+      "asrMedium": "Das ist ja ein Fischstäbchen.",
+      "asrSmall": "mal! Das ist ja ein Fischstäbchen.",
+      "asrBase": "mal! Das ist ja ein Fischstip.",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 1,
+      "id": 3100029,
+      "start": 118.65,
+      "end": 122.1,
+      "speaker": "Jan & Henry",
+      "text": "Vielleicht hat jemand die Ballons in Fischstäbchen verwandelt.",
+      "vi": "Có lẽ ai đó đã biến bóng bay thành cá tẩm bột.",
+      "usage": "Khi nêu giả thuyết hài hước rằng ai đó đã biến bóng bay thành món ăn.",
+      "asrMedium": "Vielleicht hat jemand die Ballons im Fischstäbchen verwandelt. Der",
+      "asrSmall": "Vielleicht hat jemand die Ballons im Fischstäbchen verwandelt.",
+      "asrBase": "Vielleicht hat jemand die Ballons im Fischgebiet verwandelt.",
+      "note": "All 3 ASR models output 'im' before 'Fischstäbchen' (medium p=0.413, small p=0.728, base p=0.816) due to spoken labial nasal assimilation (/n/ -> [m] before /f/); standard orthographic 'in Fischstäbchen verwandelt' is retained to match flashcard and grammar."
+    },
+    {
+      "part": 1,
+      "id": 3100035,
+      "start": 138.36,
+      "end": 140.26,
+      "speaker": "Henry",
+      "text": "Wir sind sofort da, bis gleich.",
+      "vi": "Bọn cháu tới ngay, hẹn gặp ngay nhé.",
+      "usage": "Khi hẹn qua điện thoại rằng mình sẽ có mặt ngay lập tức.",
+      "asrMedium": "Wir sind sofort da, bis gleich.",
+      "asrSmall": "Ja, wir sind sofort da. Bis gleich!",
+      "asrBase": "Ja, wir sind schon voll da, bis gleich!",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 2,
+      "id": 3100053,
+      "start": 192.46,
+      "end": 193.82,
+      "speaker": "Jan & Henry",
+      "text": "Was ist denn genau passiert?",
+      "vi": "Chính xác thì đã xảy ra chuyện gì?",
+      "usage": "Khi hỏi nhân chứng để nắm chính xác chuyện gì vừa xảy ra.",
+      "asrMedium": "Mausilei. Was ist denn genau passiert?",
+      "asrSmall": "Was ist denn genau passiert?",
+      "asrBase": "Was ist denn genau passiert?",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 2,
+      "id": 3100054,
+      "start": 194.46,
+      "end": 196.28,
+      "speaker": "Mausilein",
+      "text": "Wir haben heute Hochzeitstag.",
+      "vi": "Hôm nay là kỷ niệm ngày cưới của bọn em.",
+      "usage": "Khi chia sẻ rằng hôm nay là ngày kỷ niệm ngày cưới của hai vợ chồng.",
+      "asrMedium": "Wir haben heute Hochzeitstag.",
+      "asrSmall": "Wir haben heute Hochzeitstag und",
+      "asrBase": "Wir haben heute Hochzeitstag und",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 2,
+      "id": 3100058,
+      "start": 212.86,
+      "end": 214.43,
+      "speaker": "Mausilein",
+      "text": "Man hat sie alle abgeschnitten.",
+      "vi": "Người ta cắt hết chúng đi rồi.",
+      "usage": "Khi chỉ vào các sợi dây và báo rằng toàn bộ bóng bay đã bị cắt đứt.",
+      "asrMedium": "Man hat sie alle abgeschnitten.",
+      "asrSmall": "jemand hat sie alle abgeschnitten!",
+      "asrBase": "Jemand hat sie alle abgeschnitten!",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 2,
+      "id": 3100062,
+      "start": 228.6,
+      "end": 233.67,
+      "speaker": "Mausilein",
+      "text": "Als ich dann wieder zu den Ballons gucken wollte, waren dann nur noch Fischstäbchen.",
+      "vi": "Khi em nhìn lại về phía bóng bay, thì chỉ còn lại cá tẩm bột thôi.",
+      "usage": "Khi kể lại khoảnh khắc quay sang nhìn lại thì chỉ còn thấy cá tẩm bột chiên.",
+      "asrMedium": "dann wieder zu den Ballons gucken wollte, waren dann nur noch Fischstäbchen.",
+      "asrSmall": "Und als ich dann wieder zu den Ballons gucken wollte, waren dann nur noch Fischstiebchen.",
+      "asrBase": "Und als ich dann wieder zu den Ballons gucken wollte, waren dann nur noch Fischstäbchen.",
+      "note": "Start refined from 227.12 to 228.60 based on small (228.66 p=0.965) and base (228.68 p=0.901) word timestamps for 'als ich dann...'."
+    },
+    {
+      "part": 2,
+      "id": 3100066,
+      "start": 239.15,
+      "end": 240.89,
+      "speaker": "Jan & Henry",
+      "text": "Wir schauen uns hier mal genauer um.",
+      "vi": "Chúng ta xem xét kỹ quanh đây một chút.",
+      "usage": "Khi thông báo mình sẽ đi quan sát kỹ xung quanh khu vực hiện trường.",
+      "asrMedium": "Wir schauen uns hier mal genauer um.",
+      "asrSmall": "Wir schauen uns hier mal genauer um. Ja,",
+      "asrBase": "Und wir schauen uns hier mal genauer um, ja",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 2,
+      "id": 3100067,
+      "start": 242.15,
+      "end": 243.91,
+      "speaker": "Jan & Henry",
+      "text": "Behaltet ihr hier mal alles im Auge.",
+      "vi": "Các em để mắt tới mọi thứ ở đây nhé.",
+      "usage": "Khi dặn người ở lại để mắt trông chừng mọi thứ tại chỗ.",
+      "asrMedium": "Behaltet ihr zwar hier mal alles im Auge.",
+      "asrSmall": "Beidet ihr zwei hier mal alles im Auge?",
+      "asrBase": "da beidet ihr zwar immer alles im Auge.",
+      "note": "Start refined from 241.29 to 242.15 to exclude preceding 'Ja genau.' (241.01-241.81). Between 'ihr' and 'hier', medium (p=0.487) and base (p=0.221) output 'zwar' while small (p=0.432) outputs 'zwei' (all < 0.50 confidence); recorded in uncertain."
+    },
+    {
+      "part": 3,
+      "id": 3100071,
+      "start": 265.56,
+      "end": 269.68,
+      "speaker": "Jan & Henry",
+      "text": "Aber von hier oben können wir den ganzen Freizeitpark überblicken.",
+      "vi": "Nhưng từ trên này chúng ta có thể nhìn bao quát toàn bộ công viên giải trí.",
+      "usage": "Khi nhận xét rằng từ điểm cao này có thể nhìn bao quát toàn bộ công viên giải trí.",
+      "asrMedium": "Aber von hier oben können wir den ganzen Freizeitpark überblicken.",
+      "asrSmall": "Aber von hier oben können wir den ganzen Freizeitpark überblicken.",
+      "asrBase": "Aber von hier oben können wir den ganzen Freizeitpark überblicken.",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 3,
+      "id": 3100074,
+      "start": 278.66,
+      "end": 282.22,
+      "speaker": "Jan & Henry",
+      "text": "Ja genau. Wir sind nämlich Detektive und suchen einen Dieb.",
+      "vi": "Đúng vậy. Bọn anh là thám tử và đang tìm một tên trộm.",
+      "usage": "Khi xác nhận thông tin và giải thích mình đang làm nhiệm vụ truy tìm kẻ trộm.",
+      "asrMedium": "Ja genau. Wir sind nämlich Detektive und suchen einen Dieb.",
+      "asrSmall": "Ja, genau. Und wir sind nämlich Detektive und suchen einen Dieb.",
+      "asrBase": "Ja, genau! Und wir sind nämlich die Klive und suchen einen Dieb.",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 3,
+      "id": 3100078,
+      "start": 291.8,
+      "end": 295.2,
+      "speaker": "Vogeldame",
+      "text": "Schön blöd, wenn man nicht fliegen kann, so wie wir.",
+      "vi": "Thật tệ khi không thể bay được như bọn chị đây này.",
+      "usage": "Khi cô chim khoe khả năng bay lượn và châm chọc những kẻ không thể bay như mình.",
+      "asrMedium": "Schön blöd, wenn man nicht fliegen kann, so wie wir.",
+      "asrSmall": "Schön blöd, wenn man nicht fliegen kann, so wie wir.",
+      "asrBase": "Schön blöd, wenn man nicht fliegen kann, so wie wir.",
+      "note": "Exact 3-model German match; Vietnamese translation fixed to 'Thật tệ khi không thể bay được như bọn chị đây này.'."
+    },
+    {
+      "part": 3,
+      "id": 3100081,
+      "start": 306.42,
+      "end": 308.64,
+      "speaker": "Jan & Henry",
+      "text": "Die hätten uns ja auch beim Suchen helfen können.",
+      "vi": "Lẽ ra họ cũng có thể giúp chúng ta tìm kiếm.",
+      "usage": "Khi trách nhẹ rằng lẽ ra người kia cũng có thể phụ giúp việc tìm kiếm.",
+      "asrMedium": "Die hätten uns ja auch beim Suchen helfen können.",
+      "asrSmall": "Die hätten uns ja auch beim Suchen helfen können.",
+      "asrBase": "Die hätten uns ja auch beim suchen helfen können ja",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 3,
+      "id": 3100084,
+      "start": 313.74,
+      "end": 315.74,
+      "speaker": "Jan & Henry",
+      "text": "Ach richtig. Und auch keine Fischstäbchen.",
+      "vi": "À đúng rồi. Và cũng không có cá tẩm bột nữa.",
+      "usage": "Khi sực nhớ ra một chi tiết quan trọng giúp loại trừ nghi phạm.",
+      "asrMedium": "Ach richtig. Und auch keine Fischstäbchen.",
+      "asrSmall": "Ach richtig. Und auch keine Fischstäbchen.",
+      "asrBase": "Archistik und auch keine Fischstäbchen.",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 4,
+      "id": 3100087,
+      "start": 328.24,
+      "end": 330.86,
+      "speaker": "Jan & Henry",
+      "text": "Das muss der Dieb sein. Komm, den schnappen wir uns.",
+      "vi": "Đó chắc chắn là kẻ trộm. Đi, chúng ta tóm lấy hắn.",
+      "usage": "Khi khẳng định người phía trước chính là thủ phạm và rủ đồng đội lao tới bắt giữ.",
+      "asrMedium": "Das muss der Dieb sein. Komm, den schnappen wir uns.",
+      "asrSmall": "Das muss der Dieb sein. Kommt den schnappen wir uns!",
+      "asrBase": "Das muss der Dieb sein, kommt den Schnapp wieder uns!",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 4,
+      "id": 3100091,
+      "start": 339.6,
+      "end": 342.24,
+      "speaker": "Jan & Henry",
+      "text": "Was fällt dir ein, einfach die ganzen Ballons zu klauen?",
+      "vi": "Ngươi nghĩ sao mà dám trộm hết bóng bay của mọi người?",
+      "usage": "Khi chất vấn gay gắt vì sao đối phương dám tự ý lấy cắp hết bóng bay.",
+      "asrMedium": "dich. Was fällt dir ein, einfach die ganzen Ballons zu klauen?",
+      "asrSmall": "Was fällt hier ein? Einfach die ganzen Ballons zu klauen.",
+      "asrBase": "Was fällt dir ein, einfach die ganzen Ballon zu klauen?",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 4,
+      "id": 3100094,
+      "start": 347.0,
+      "end": 349.12,
+      "speaker": "Ballonverkäufer",
+      "text": "Ich habe überhaupt keine Ballons geklaut.",
+      "vi": "Tôi hoàn toàn không trộm bóng bay nào cả.",
+      "usage": "Khi phủ nhận dứt khoát rằng mình hoàn toàn không lấy cắp quả bóng bay nào cả.",
+      "asrMedium": "Ich habe überhaupt keine Ballons geklaut.",
+      "asrSmall": "Ich habe immer auch keine Ballons geklaut.",
+      "asrBase": "Ich habe überhaupt keine Ballons geklaut.",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 4,
+      "id": 3100102,
+      "start": 371.6,
+      "end": 376.84,
+      "speaker": "Ballonverkäufer",
+      "text": "Ja, ich verkaufe diese wunderschönen Ballons.",
+      "vi": "Vâng, tôi bán những quả bóng bay tuyệt đẹp này.",
+      "usage": "Khi người bán hàng tự giới thiệu công việc bán những quả bóng bay tuyệt đẹp của mình.",
+      "asrMedium": "Ja, ich verkaufe diese wunderschönen Ballons.",
+      "asrSmall": "Ja! Ich verkaufe diese wunderschönen ... Ballons!",
+      "asrBase": "Ja! Ich verkaufe diese wunderschöne... Ballons!",
+      "note": "Exact 3-model German match; flashcard #12 updated from 'der Ballonverkäufer' to 'verkaufen' to match 'verkaufe' in cue."
+    },
+    {
+      "part": 4,
+      "id": 3100105,
+      "start": 381.7,
+      "end": 384.48,
+      "speaker": "Jan & Henry",
+      "text": "Direkt vor unserer Nase und wir haben nichts gemerkt.",
+      "vi": "Ngay trước mắt chúng ta mà chúng ta không nhận ra gì cả.",
+      "usage": "Khi tiếc nuối vì sự việc diễn ra ngay trước mắt mà cả nhóm không hề nhận ra.",
+      "asrMedium": "Direkt vor unserer Nase und wir haben nichts gemerkt.",
+      "asrSmall": "Direkt vor unserer Nase und wir haben nichts gemerkt.",
+      "asrBase": "Direkt von unserer Nase und werfen nix gemerkt",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 4,
+      "id": 3100108,
+      "start": 390.4,
+      "end": 394.96,
+      "speaker": "Jan & Henry",
+      "text": "Am besten wir suchen den ganzen Park ab.",
+      "vi": "Tốt nhất là chúng ta lục soát toàn bộ công viên.",
+      "usage": "Khi đề xuất phương án tốt nhất lúc này là lục soát toàn bộ công viên.",
+      "asrMedium": "Fischstäbchen? Am besten wir suchen den ganzen Park ab.",
+      "asrSmall": "Am besten, wir suchen den ganzen Park ab.",
+      "asrBase": "am besten wir suchen den ganzen park ab die",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 5,
+      "id": 3100114,
+      "start": 414.92,
+      "end": 419.84,
+      "speaker": "Jan & Henry",
+      "text": "Oh nein, Erdmännchen dürfen nur zusammen mit einem Erwachsenen in die Achterbahn.",
+      "vi": "Ôi không, chuột đất chỉ được đi tàu lượn cùng với một người lớn.",
+      "usage": "Khi đọc quy định trẻ nhỏ hoặc chuột đất chỉ được đi tàu lượn khi có người lớn đi kèm.",
+      "asrMedium": "Oh nein, Erdmännchen dürfen nur zusammen mit einem Erwachsenen in die Achterbahn. Oh,",
+      "asrSmall": "Oh nein, Erdmännchen dürfen nur zusammen mit einem Erwachsenen in die Achterbahn.",
+      "asrBase": "Oh nein, er hat Menschen dürfen nur zusammen mit einem Erfachsenen in die Achterbahn.",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 5,
+      "id": 3100117,
+      "start": 426.92,
+      "end": 428.07,
+      "speaker": "Jan & Henry",
+      "text": "Das ist ein Notfall.",
+      "vi": "Đây là trường hợp khẩn cấp.",
+      "usage": "Khi thuyết phục người khác giúp đỡ ngay bằng cách nhấn mạnh đây là tình huống khẩn cấp.",
+      "asrMedium": "mitnehmen? Das ist ein Notfall. Sie",
+      "asrSmall": "Das ist ein Notfall!",
+      "asrBase": "Das ist ein Notfall!",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 5,
+      "id": 3100123,
+      "start": 488.9,
+      "end": 490.84,
+      "speaker": "Jan & Henry",
+      "text": "Wir müssen leise sein, sonst haut der ab.",
+      "vi": "Chúng ta phải im lặng, không là hắn chạy mất.",
+      "usage": "Khi nhắc đồng đội phải giữ im lặng kẻo nghi phạm phát hiện và bỏ chạy mất.",
+      "asrMedium": "Wir müssen leise sein, sonst haut der ab.",
+      "asrSmall": "Wir müssen leise sein, sonst haut der ab. Genau!",
+      "asrBase": "Wir müssen leise sein, sonst haut er ab. Genau!",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 5,
+      "id": 3100131,
+      "start": 510.54,
+      "end": 512.0,
+      "speaker": "Jan & Henry",
+      "text": "Das nennt man Klauen.",
+      "vi": "Thế gọi là ăn trộm đấy.",
+      "usage": "Khi giải thích thẳng thắn rằng việc tự ý lấy đồ không xin phép chính là hành vi ăn trộm.",
+      "asrMedium": "Das nennt man Klauen.",
+      "asrSmall": "Das nennt man Clawing.",
+      "asrBase": "das Neckmann -Klauwe.",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 5,
+      "id": 3100135,
+      "start": 518.28,
+      "end": 520.84,
+      "speaker": "Pinguin",
+      "text": "Ja, Fischstäbchen sind mein Leibgericht.",
+      "vi": "Vâng, cá tẩm bột là món ăn yêu thích nhất của tôi.",
+      "usage": "Khi hào hứng xác nhận cá tẩm bột chiên chính là món ăn khoái khẩu nhất của mình.",
+      "asrMedium": "Ja, Fischstäbchen sind mein Leibgericht.",
+      "asrSmall": "Ja, Fischdiebchen sind mein Leibgericht.",
+      "asrBase": "Ja, Fischstäbchen sind mein Leibgericht und...",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 5,
+      "id": 3100138,
+      "start": 526.44,
+      "end": 528.04,
+      "speaker": "Pinguin",
+      "text": "Weil ich mal fliegen wollte.",
+      "vi": "Vì tôi muốn được bay một lần.",
+      "usage": "Khi giải thích lý do lấy bóng bay chỉ vì bản thân cũng mong một lần được bay lên.",
+      "asrMedium": "Weil ich mal fliegen wollte.",
+      "asrSmall": "weil ich mal fliegen wollte.",
+      "asrBase": "Und weil ich mal fliegen wollte.",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 5,
+      "id": 3100139,
+      "start": 528.4,
+      "end": 531.06,
+      "speaker": "Pinguin",
+      "text": "Ich bin ein Vogel, aber ich kann nicht fliegen.",
+      "vi": "Tôi là một con chim, nhưng tôi không biết bay.",
+      "usage": "Khi tâm sự nỗi buồn rằng mình tuy là loài chim nhưng lại không thể bay được.",
+      "asrMedium": "Ich bin ein Vogel, aber ich kann nicht fliegen.",
+      "asrSmall": "Ich bin ein Vogel, aber ich kann nicht fliegen.",
+      "asrBase": "Ich bin ein Vogel, aber ich kann nicht fliegen und",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 6,
+      "id": 3100151,
+      "start": 558.54,
+      "end": 561.9,
+      "speaker": "Vogeldame",
+      "text": "Meine schöne Halskette, die ist in den See gefallen.",
+      "vi": "Vòng cổ xinh đẹp của tôi, nó rơi xuống hồ rồi.",
+      "usage": "Khi hốt hoảng báo tin chiếc vòng cổ đẹp của mình vừa bị rơi xuống dưới hồ nước.",
+      "asrMedium": "Meine schöne Halskette, die ist in den See gefallen.",
+      "asrSmall": "Meine schöne Halskette, die ist in den See gefallen.",
+      "asrBase": "Meine schöne Halskette, die ist in den Segel fallen.",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 6,
+      "id": 3100153,
+      "start": 564.56,
+      "end": 567.1,
+      "speaker": "Jan & Henry",
+      "text": "Dann spring doch einfach in den See und hol sie raus.",
+      "vi": "Vậy cô cứ nhảy xuống hồ và lấy nó lên đi.",
+      "usage": "Khi khuyên ai đó cứ nhảy thẳng xuống hồ nước để tự vớt món đồ lên.",
+      "asrMedium": "rauskriegen? Dann spring doch einfach in den See und hol sie raus.",
+      "asrSmall": "Na spring doch einfach in den Seel und hol' sie raus!",
+      "asrBase": "Ich bringe noch Eiferinienze und hol sie raus!",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 6,
+      "id": 3100156,
+      "start": 571.46,
+      "end": 574.2,
+      "speaker": "Vogeldame",
+      "text": "Vögel fliegen in der Luft, aber gehen doch nicht tauchen.",
+      "vi": "Chim thì bay trên không, chứ không đi lặn đâu.",
+      "usage": "Khi phản bác rằng loài chim vốn bay trên trời chứ đâu có đi lặn dưới nước.",
+      "asrMedium": "Vögel fliegen in der Luft, aber gehen doch nicht tauchen.",
+      "asrSmall": "Vögel fliegen in der Luft, aber gehen doch nicht tauchen.",
+      "asrBase": "Für den Fliegen in der Luft, aber geht doch nicht tauchen.",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 6,
+      "id": 3100158,
+      "start": 577.74,
+      "end": 582.1,
+      "speaker": "Pinguin",
+      "text": "Ja, ich kann zwar nicht so gut fliegen, aber umso besser tauchen.",
+      "vi": "Vâng, tôi tuy không bay giỏi lắm, nhưng lặn thì càng giỏi hơn.",
+      "usage": "Khi tự tin khẳng định tuy mình không giỏi bay nhưng bù lại có tài lặn nước rất cừ.",
+      "asrMedium": "Ja, ich kann zwar nicht so gut fliegen, aber umso besser tauchen.",
+      "asrSmall": "Ja, ich kann zwar nicht so gut fliegen, aber um zu besser tauchen!",
+      "asrBase": "Ja, ich kann zwar nicht so gut fliegen, aber um zu besser tauchen.",
+      "note": "All 3 models (medium, small, base) confirm 'Ja, ich kann zwar nicht so gut fliegen, aber...' with 'zwar' clearly spoken."
+    },
+    {
+      "part": 6,
+      "id": 3100161,
+      "start": 593.02,
+      "end": 594.35,
+      "speaker": "Jan & Henry",
+      "text": "Da, die Kette.",
+      "vi": "Kia kìa, sợi dây chuyền.",
+      "usage": "Khi reo lên báo hiệu vừa phát hiện chiếc vòng cổ nằm ở dưới đáy hồ.",
+      "asrMedium": "Da, die Kette. Oh,",
+      "asrSmall": "Da! Die Kette!",
+      "asrBase": "Da, die Kette!",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 6,
+      "id": 3100167,
+      "start": 608.66,
+      "end": 612.32,
+      "speaker": "Vogeldame",
+      "text": "Es tut uns wirklich leid, dass wir uns über dich lustig gemacht haben,",
+      "vi": "Chúng tôi thật sự xin lỗi vì đã chế giễu ngươi,",
+      "usage": "Khi chân thành nói lời xin lỗi vì trước đó đã từng cười nhạo và chế giễu người khác.",
+      "asrMedium": "Es tut uns wirklich leid, dass wir uns über dich lustig gemacht haben, weil",
+      "asrSmall": "Es tut uns wirklich leid, dass wir uns über dich lustig gemacht haben, weil",
+      "asrBase": "Hast du uns wirklich leid, dass wir uns über dich lustig gemacht haben?",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 7,
+      "id": 3100171,
+      "start": 622.98,
+      "end": 625.33,
+      "speaker": "Ballonverkäufer",
+      "text": "Sie wollen wirklich alle Ballons kaufen.",
+      "vi": "Các cô thực sự muốn mua hết bóng bay sao?",
+      "usage": "Khi người bán bóng ngạc nhiên hỏi lại các cô chim có thực sự muốn mua toàn bộ số bóng bay.",
+      "asrMedium": "Sie wollen wirklich alle Ballons kaufen. Sogar",
+      "asrSmall": "Sie wollen wirklich alle Ballons kaufen?",
+      "asrBase": "Sie wollen wirklich alle Ballons kaufen.",
+      "note": "Exact 3-model German match (small punctuates with '?'); speaker fixed to 'Ballonverkäufer' and Vietnamese fixed to 'Các cô thực sự muốn mua hết bóng bay sao?' based on visual frames 623.5s-626.8s."
+    },
+    {
+      "part": 7,
+      "id": 3100172,
+      "start": 625.34,
+      "end": 628.34,
+      "speaker": "Ballonverkäufer",
+      "text": "Sogar die, die ich jetzt neu aufgepustet habe?",
+      "vi": "Cả những quả tôi vừa mới thổi lên nữa à?",
+      "usage": "Khi hỏi xác nhận xem khách có muốn lấy luôn cả những quả bóng vừa mới được thổi phồng không.",
+      "asrMedium": "kaufen. Sogar die, die ich jetzt neu aufgepustet habe?",
+      "asrSmall": "Sogar die, die ich jetzt neu aufgepustet habe?",
+      "asrBase": "Sogar die, die ich jetzt neu aufgepustet haben?",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 7,
+      "id": 3100175,
+      "start": 642.44,
+      "end": 644.06,
+      "speaker": "Pinguin",
+      "text": "Ich fliege.",
+      "vi": "Tôi đang bay.",
+      "usage": "Khi reo lên đầy phấn khích ở khoảnh khắc ước mơ được bay lên bầu trời thành hiện thực.",
+      "asrMedium": "Ich fliege.",
+      "asrSmall": "Ich fliege!",
+      "asrBase": "Ich fliege!",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 7,
+      "id": 3100177,
+      "start": 646.86,
+      "end": 648.78,
+      "speaker": "Jan & Henry",
+      "text": "Tatsächlich, er kann fliegen.",
+      "vi": "Thật đấy, cậu ấy bay được.",
+      "usage": "Khi trầm trồ xác nhận trước cảnh tượng cậu chim cánh cụt thực sự đang bay lên được.",
+      "asrMedium": "Tatsächlich, er kann fliegen.",
+      "asrSmall": "Tatsächlich, er kann fliegen!",
+      "asrBase": "Tatsächlich, er kann fliegen",
+      "note": "Verified across medium, small, and base ASR windows."
+    },
+    {
+      "part": 7,
+      "id": 3100179,
+      "start": 654.38,
+      "end": 656.6,
+      "speaker": "Pinguin",
+      "text": "Alles so klein von hier oben.",
+      "vi": "Mọi thứ nhỏ bé quá từ trên này.",
+      "usage": "Khi ngắm nhìn cảnh vật từ trên cao xuống và cảm thán mọi thứ bên dưới trông thật nhỏ bé.",
+      "asrMedium": "Alles so klein von hier oben.",
+      "asrSmall": "Alles schon klein von hier oben!",
+      "asrBase": "Alles so klein von Jörg!",
+      "note": "Verified across medium, small, and base ASR windows."
+    }
+  ],
+  "specialChecks": {
+    "3100055_excluded": {
+      "cue": {
+        "id": 3100055,
+        "start": 196.6,
+        "end": 200.16,
+        "text": "Und Taterchen hat mir diese wunderschönen Ballons geschenkt.",
+        "vi": "Và Taterchen đã tặng em những quả bóng bay tuyệt đẹp này.",
+        "speaker": "Mausilein",
+        "reviewNeeded": true
+      },
+      "action": "excluded_from_runtime_all_picks_cards",
+      "reason": "Proper name 'Taterchen' has low ASR confidence and disagrees across all 3 models: medium='Taterchen' (p=0.639), small='Carterchen' (p=0.484), base='Katarchen' (p=0.560).",
+      "asrEvidence": {
+        "medium": [
+          {
+            "word": " Und",
+            "start": 196.6,
+            "end": 196.88,
+            "probability": 0.884
+          },
+          {
+            "word": " Taterchen",
+            "start": 196.88,
+            "end": 197.32,
+            "probability": 0.639
+          },
+          {
+            "word": " hat",
+            "start": 197.32,
+            "end": 197.48,
+            "probability": 0.983
+          },
+          {
+            "word": " mir",
+            "start": 197.48,
+            "end": 197.66,
+            "probability": 0.995
+          },
+          {
+            "word": " diese",
+            "start": 197.66,
+            "end": 197.98,
+            "probability": 0.984
+          },
+          {
+            "word": " wunderschönen",
+            "start": 197.98,
+            "end": 198.94,
+            "probability": 0.993
+          },
+          {
+            "word": " Ballons",
+            "start": 198.94,
+            "end": 199.5,
+            "probability": 0.978
+          },
+          {
+            "word": " geschenkt.",
+            "start": 199.5,
+            "end": 200.16,
+            "probability": 0.996
+          }
+        ],
+        "small": [
+          {
+            "word": " und",
+            "start": 196.16,
+            "end": 196.58,
+            "probability": 0.6927
+          },
+          {
+            "word": " Carterchen",
+            "start": 196.58,
+            "end": 197.22,
+            "probability": 0.4641
+          },
+          {
+            "word": " hat",
+            "start": 197.22,
+            "end": 197.42,
+            "probability": 0.9945
+          },
+          {
+            "word": " mir",
+            "start": 197.42,
+            "end": 197.58,
+            "probability": 0.9916
+          },
+          {
+            "word": " diese",
+            "start": 197.58,
+            "end": 197.78,
+            "probability": 0.9257
+          },
+          {
+            "word": " wunderschönen",
+            "start": 197.78,
+            "end": 198.86,
+            "probability": 0.9921
+          },
+          {
+            "word": " Ballons",
+            "start": 198.86,
+            "end": 199.36,
+            "probability": 0.8435
+          },
+          {
+            "word": " geschägen.",
+            "start": 199.36,
+            "end": 200.02,
+            "probability": 0.7235
+          }
+        ],
+        "base": [
+          {
+            "word": " und",
+            "start": 196.18,
+            "end": 196.6,
+            "probability": 0.7458
+          },
+          {
+            "word": " Katarchen",
+            "start": 196.6,
+            "end": 197.2,
+            "probability": 0.5602
+          },
+          {
+            "word": " hat",
+            "start": 197.2,
+            "end": 197.4,
+            "probability": 0.9676
+          },
+          {
+            "word": " mir",
+            "start": 197.4,
+            "end": 197.56,
+            "probability": 0.7462
+          },
+          {
+            "word": " diese",
+            "start": 197.56,
+            "end": 197.8,
+            "probability": 0.9315
+          },
+          {
+            "word": " wunderschönen",
+            "start": 197.8,
+            "end": 198.86,
+            "probability": 0.9544
+          },
+          {
+            "word": " Ballons",
+            "start": 198.86,
+            "end": 199.32,
+            "probability": 0.7316
+          },
+          {
+            "word": " geschenkt.",
+            "start": 199.32,
+            "end": 200.1,
+            "probability": 0.8447
+          }
+        ]
+      }
+    },
+    "3100182_excluded": {
+      "cue": {
+        "id": 3100182,
+        "start": 680.65,
+        "end": 681.79,
+        "text": "Alles so klein.",
+        "vi": "Mọi thứ nhỏ bé quá.",
+        "speaker": "Pinguin",
+        "reviewNeeded": true
+      },
+      "action": "excluded_from_runtime_all_picks_cards",
+      "reason": "Closing-music utterance at 677.68-681.79 has first word 'Alles' at 677.68-679.50 with p=0.022 in medium and p=0.105 in base; cue span 680.65-681.79 only covers 'so klein.'.",
+      "asrEvidence": {
+        "medium": [
+          {
+            "word": " Alles",
+            "start": 677.68,
+            "end": 679.5,
+            "probability": 0.022
+          },
+          {
+            "word": " so",
+            "start": 680.65,
+            "end": 681.23,
+            "probability": 0.986
+          },
+          {
+            "word": " klein.",
+            "start": 681.23,
+            "end": 681.79,
+            "probability": 0.981
+          }
+        ],
+        "small": [
+          {
+            "word": " Wow!",
+            "start": 677.67,
+            "end": 678.29,
+            "probability": 0.1658
+          },
+          {
+            "word": " Alles",
+            "start": 679.93,
+            "end": 680.59,
+            "probability": 0.7748
+          },
+          {
+            "word": " so",
+            "start": 680.59,
+            "end": 680.93,
+            "probability": 0.979
+          },
+          {
+            "word": " klein!",
+            "start": 680.93,
+            "end": 681.49,
+            "probability": 0.9868
+          }
+        ],
+        "base": [
+          {
+            "word": " Alles",
+            "start": 679.73,
+            "end": 680.55,
+            "probability": 0.105
+          },
+          {
+            "word": " so",
+            "start": 680.55,
+            "end": 680.91,
+            "probability": 0.8385
+          },
+          {
+            "word": " klein!",
+            "start": 680.91,
+            "end": 681.25,
+            "probability": 0.9243
+          }
+        ]
+      }
+    },
+    "3100100_foreign_accent_preserved": {
+      "id": 3100100,
+      "start": 364.74,
+      "end": 368.56,
+      "text": "Das ist, weil ich bin Ballonverkäufer.",
+      "asrMedium": "Das ist, weil ich bin Ballonverkäufer.",
+      "asrSmall": "Das ist, weil ... Ich bin Ballonverkäufer.",
+      "asrBase": "Das ist, weil ich bin Ballonverkäufer.",
+      "decision": "Retained verbatim ('Das ist, weil ich bin Ballonverkäufer.') as all 3 ASR models confirm the character's spoken V2 order after 'weil'."
+    },
+    "3100120_hast_lead_in": {
+      "id": 3100120,
+      "start": 478.06,
+      "end": 479.4,
+      "text": "Hast du was gesehen?",
+      "asrMedium": "du was gesehen?",
+      "asrSmall": "Und? Hast du was gesehen?",
+      "asrBase": "Und hast du was gesehen?",
+      "decision": "Medium missed initial 'Hast', but both small ('Hast du was gesehen?', p=0.984) and base ('und hast du was gesehen?', p=0.525) confirm 'Hast' at 478.06-478.48."
+    },
+    "3100128_gibs_zu": {
+      "id": 3100128,
+      "start": 500.26,
+      "end": 502.8,
+      "text": "Du hast die Luftballons geklaut, gib's zu.",
+      "asrMedium": "Du hast die Luftballons geklaut, gibst zu.",
+      "asrSmall": "Du hast die Luftballons geklaut, gibst du!",
+      "asrBase": "Du hast die Luftballons geklaut, gibst du!",
+      "decision": "Retained orthographic \"gib's zu\" (/gɪps tsuː/), which ASR models render phonetically as 'gibst zu' / 'gibst du'."
+    },
+    "3100140_3100141_vogeldamen_auslachen": {
+      "ids": [
+        3100140,
+        3100141
+      ],
+      "asrMedium_140": "Und diese gemeinen Vogeldarmen lachen mich deshalb immer wieder auf. Och,",
+      "asrSmall_140": "diese gemeinten Vogeldarmen lachen mich deshalb immer wieder auf! Ach,",
+      "asrSmall_141": "Ach, lass die Gemeindvogel -Dame doch ruhig lachen!",
+      "decision": "Small ASR transcribes '-Dame' in 3100141 ('Gemeindvogel -Dame'), and 3100167 ('dass wir uns über dich lustig gemacht haben') confirms the separable verb is 'auslachen' ('lachen mich deshalb immer wieder aus')."
+    },
+    "3100143_chapter_assignment": {
+      "id": 3100143,
+      "start": 542.96,
+      "end": 543.24,
+      "text": "Ja.",
+      "speaker": "Pinguin",
+      "assignedPart": 5,
+      "partBounds": [
+        414.92,
+        543.64
+      ],
+      "decision": "Frames 543.1s, 543.5s, and 543.8s confirm 3100143 ('Ja.') is the penguin's reply at the end of Part 5 before the cut to Vogeldame at 543.64 (Part 6)."
+    }
+  }
+}

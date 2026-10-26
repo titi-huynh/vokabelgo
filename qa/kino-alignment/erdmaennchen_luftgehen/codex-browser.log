@@ -1,0 +1,17 @@
+
+Running 8 tests using 1 worker
+
+(node:6360) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › e2e\kino-catalog.spec.js:10:1 › Kino starts with a grid of covers, titles and level meta; a film opens its own parts (20.6s)
+  ok 2 [chromium] › e2e\kino-catalog.spec.js:50:1 › browser back and forward, reload and direct film links restore the right view (4.6s)
+  ok 3 [chromium] › e2e\kino-catalog.spec.js:82:1 › phone gallery scrolls as one row and detail count is visible only after selecting a film (2.6s)
+(node:35024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 4 [chromium] › e2e\kino-erdmaennchen-luftgehen.spec.js:44:1 › Zum in die Luft gehen is discoverable with 7 parts, 179 runtime cues (reviewNeeded excluded), 21 flashcards, posters and HTTP 206 seekable video (2.6s)
+  ok 5 [chromium] › e2e\kino-erdmaennchen-luftgehen.spec.js:121:1 › all 7 parts play, render DE/VI captions, toggle CC, stop at chapter boundaries, and account for all 179 runtime cues (15.5s)
+  ok 6 [chromium] › e2e\kino-erdmaennchen-luftgehen.spec.js:163:1 › all/focus practice modes, right/wrong dictation, progress restore, movie switching and Back navigation work without stale data (5.0s)
+  ok 7 [chromium] › e2e\kino-erdmaennchen-luftgehen.spec.js:204:1 › 21 source-linked flashcards open cleanly and jump back to the exact scene (2.7s)
+  ok 8 [chromium] › e2e\kino-erdmaennchen-luftgehen.spec.js:221:1 › mobile viewports (320, 390, 768) have zero horizontal overflow and simulated speaking recording works (6.4s)
+
+  8 passed (1.1m)

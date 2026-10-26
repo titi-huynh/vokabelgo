@@ -1,0 +1,672 @@
+{
+  "kind": "same_model_consistency_only_not_independent_accuracy",
+  "reviewDate": "2026-10-26",
+  "flagCount": 40,
+  "flags": [
+    {
+      "id": 3100002,
+      "start": 30.01,
+      "end": 31.09,
+      "text": "Ja, hoffentlich klappt's.",
+      "rawWindow": "Ja, hoffentlich klappt's. Ja,",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 31.09,
+          "end": 31.37,
+          "word": " Ja,",
+          "probability": 0.461
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100003,
+      "start": 31.09,
+      "end": 35.01,
+      "text": "Ja, also ich spanne jetzt das Seil und renne nach da.",
+      "rawWindow": "klappt's. Ja, also ich spanne jetzt das Seil und renne nach da.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 30.75,
+          "end": 31.09,
+          "word": " klappt's.",
+          "probability": 0.93
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100011,
+      "start": 60.07,
+      "end": 62.01,
+      "text": "Das ist doch kein Grund zum Weinen.",
+      "rawWindow": "Das ist doch kein Grund zum Weinen. Aber",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 62.01,
+          "end": 62.81,
+          "word": " Aber",
+          "probability": 0.743
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100012,
+      "start": 62.01,
+      "end": 65.01,
+      "text": "Aber alle unsere Luftballons sind verschwunden.",
+      "rawWindow": "Weinen. Aber alle unsere Luftballons sind verschwunden.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 61.29,
+          "end": 62.01,
+          "word": " Weinen.",
+          "probability": 0.861
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100029,
+      "start": 118.65,
+      "end": 122.11,
+      "text": "Vielleicht hat jemand die Ballons in Fischstäbchen verwandelt.",
+      "rawWindow": "Vielleicht hat jemand die Ballons im Fischstäbchen verwandelt. Der",
+      "tokenSupport": 0.875,
+      "edgeWords": [
+        {
+          "start": 122.11,
+          "end": 122.83,
+          "word": " Der",
+          "probability": 0.647
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100030,
+      "start": 122.11,
+      "end": 124.87,
+      "text": "Der Täter war vielleicht ein Zauberer.",
+      "rawWindow": "verwandelt. Der Täter war vielleicht ein Zauberer.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 121.75,
+          "end": 122.11,
+          "word": " verwandelt.",
+          "probability": 0.997
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100038,
+      "start": 144.58,
+      "end": 146.34,
+      "text": "Genau, im Freizeitpark.",
+      "rawWindow": "Genau, im Freizeitpark. Und",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 146.4,
+          "end": 146.94,
+          "word": " Und",
+          "probability": 0.583
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100039,
+      "start": 146.4,
+      "end": 149.9,
+      "text": "Und es lagen wieder überall Fischstäbchen herum.",
+      "rawWindow": "Freizeitpark. Und es lagen wieder überall Fischstäbchen herum.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 145.46,
+          "end": 146.34,
+          "word": " Freizeitpark.",
+          "probability": 0.993
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100040,
+      "start": 150.22,
+      "end": 151.84,
+      "text": "Das müssen wir uns ansehen.",
+      "rawWindow": "Das müssen wir uns ansehen. Ja,",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 151.84,
+          "end": 152.42,
+          "word": " Ja,",
+          "probability": 0.627
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100041,
+      "start": 151.84,
+      "end": 155.16,
+      "text": "Ja, ich sag's doch, ein Zauberer.",
+      "rawWindow": "ansehen. Ja, ich sag's doch, ein Zauberer.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 151.48,
+          "end": 151.84,
+          "word": " ansehen.",
+          "probability": 0.92
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100051,
+      "start": 187.0,
+      "end": 189.24,
+      "text": "Ich bin so traurig.",
+      "rawWindow": "Ich bin so traurig. Och,",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 189.24,
+          "end": 190.04,
+          "word": " Och,",
+          "probability": 0.068
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100052,
+      "start": 189.24,
+      "end": 192.34,
+      "text": "Och, beruhig dich Mausilei.",
+      "rawWindow": "traurig. Och, beruhig dich Mausilei.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 188.26,
+          "end": 189.24,
+          "word": " traurig.",
+          "probability": 0.98
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100061,
+      "start": 225.78,
+      "end": 227.12,
+      "text": "Ach, so war das.",
+      "rawWindow": "Ach, so war das. Als ich",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 227.12,
+          "end": 227.72,
+          "word": " ich",
+          "probability": 0.734
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100062,
+      "start": 227.12,
+      "end": 233.67,
+      "text": "Als ich dann wieder zu den Ballons gucken wollte, waren dann nur noch Fischstäbchen.",
+      "rawWindow": "das. Als ich dann wieder zu den Ballons gucken wollte, waren dann nur noch Fischstäbchen.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 226.84,
+          "end": 227.12,
+          "word": " das.",
+          "probability": 0.987
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100063,
+      "start": 235.29,
+      "end": 235.81,
+      "text": "Fischstäbchen?",
+      "rawWindow": "Fischstäbchen? Sag",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 235.89,
+          "end": 236.19,
+          "word": " Sag",
+          "probability": 0.784
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100064,
+      "start": 235.89,
+      "end": 237.65,
+      "text": "Sag ich doch. Bezaubert.",
+      "rawWindow": "Fischstäbchen? Sag ich doch. Bezaubert.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 235.29,
+          "end": 235.81,
+          "word": " Fischstäbchen?",
+          "probability": 0.914
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100098,
+      "start": 359.38,
+      "end": 361.08,
+      "text": "Ich beklaue doch keine Leute.",
+      "rawWindow": "Ich beklaue doch keine Leute. Ach,",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 361.08,
+          "end": 361.48,
+          "word": " Ach,",
+          "probability": 0.265
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100099,
+      "start": 361.08,
+      "end": 363.82,
+      "text": "Ach, und woher hast du denn die ganzen Ballons?",
+      "rawWindow": "Leute. Ach, und woher hast du denn die ganzen Ballons?",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 360.64,
+          "end": 361.08,
+          "word": " Leute.",
+          "probability": 0.998
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100107,
+      "start": 388.74,
+      "end": 390.4,
+      "text": "Schon wieder Fischstäbchen?",
+      "rawWindow": "Schon wieder Fischstäbchen? Am",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 390.4,
+          "end": 391.42,
+          "word": " Am",
+          "probability": 0.558
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100108,
+      "start": 390.4,
+      "end": 394.96,
+      "text": "Am besten wir suchen den ganzen Park ab.",
+      "rawWindow": "Fischstäbchen? Am besten wir suchen den ganzen Park ab.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 389.48,
+          "end": 390.4,
+          "word": " Fischstäbchen?",
+          "probability": 0.832
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100116,
+      "start": 425.02,
+      "end": 426.9,
+      "text": "Hallo Mann, können Sie uns mitnehmen?",
+      "rawWindow": "Hallo Mann, können Sie uns mitnehmen? Das",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 426.92,
+          "end": 427.12,
+          "word": " Das",
+          "probability": 0.358
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100117,
+      "start": 426.92,
+      "end": 428.08,
+      "text": "Das ist ein Notfall.",
+      "rawWindow": "mitnehmen? Das ist ein Notfall. Sie",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 426.38,
+          "end": 426.9,
+          "word": " mitnehmen?",
+          "probability": 0.998
+        },
+        {
+          "start": 428.08,
+          "end": 428.24,
+          "word": " Sie",
+          "probability": 0.585
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100118,
+      "start": 428.08,
+      "end": 429.88,
+      "text": "Sie bekommen dafür auch ein Fischstäbchen.",
+      "rawWindow": "Notfall. Sie bekommen dafür auch ein Fischstäbchen.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 427.54,
+          "end": 428.08,
+          "word": " Notfall.",
+          "probability": 1.0
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100120,
+      "start": 478.12,
+      "end": 479.4,
+      "text": "Hast du was gesehen?",
+      "rawWindow": "du was gesehen?",
+      "tokenSupport": 0.75,
+      "edgeWords": [],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100126,
+      "start": 496.6,
+      "end": 497.82,
+      "text": "Ein Pinguin.",
+      "rawWindow": "Ein Pinguin. Na,",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 497.9,
+          "end": 498.14,
+          "word": " Na,",
+          "probability": 0.667
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100127,
+      "start": 497.9,
+      "end": 499.94,
+      "text": "Na, das habe ich mir ja gleich gedacht.",
+      "rawWindow": "Pinguin. Na, das habe ich mir ja gleich gedacht.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 496.88,
+          "end": 497.82,
+          "word": " Pinguin.",
+          "probability": 0.987
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100128,
+      "start": 500.26,
+      "end": 502.8,
+      "text": "Du hast die Luftballons geklaut, gib's zu.",
+      "rawWindow": "Du hast die Luftballons geklaut, gibst zu.",
+      "tokenSupport": 0.75,
+      "edgeWords": [],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100129,
+      "start": 503.42,
+      "end": 507.26,
+      "text": "Ja, das stimmt, aber ich habe sie nicht wirklich geklaut.",
+      "rawWindow": "Ja, das stimmt, aber ich habe sie nicht wirklich geklaut. Na",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 507.26,
+          "end": 507.96,
+          "word": " Na",
+          "probability": 0.158
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100130,
+      "start": 507.26,
+      "end": 510.26,
+      "text": "Na ja, du hast sie ohne zu fragen einfach mitgenommen.",
+      "rawWindow": "geklaut. Na ja, du hast sie ohne zu fragen einfach mitgenommen.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 506.36,
+          "end": 507.26,
+          "word": " geklaut.",
+          "probability": 0.999
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100140,
+      "start": 531.82,
+      "end": 535.98,
+      "text": "Und diese gemeinen Vogeldamen lachen mich deshalb immer wieder aus.",
+      "rawWindow": "Und diese gemeinen Vogeldarmen lachen mich deshalb immer wieder auf. Och,",
+      "tokenSupport": 0.8,
+      "edgeWords": [
+        {
+          "start": 535.98,
+          "end": 537.0,
+          "word": " Och,",
+          "probability": 0.053
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100141,
+      "start": 535.98,
+      "end": 539.52,
+      "text": "Och, lass die gemeinen Vogeldamen doch ruhig lachen.",
+      "rawWindow": "auf. Och, lass die gemeinen Vogeldarmen doch ruhig lachen.",
+      "tokenSupport": 0.875,
+      "edgeWords": [
+        {
+          "start": 535.58,
+          "end": 535.98,
+          "word": " auf.",
+          "probability": 0.844
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100144,
+      "start": 543.64,
+      "end": 546.2,
+      "text": "Oh nein, ist das furchtbar.",
+      "rawWindow": "Oh nein, ist das furchtbar. Was",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 546.22,
+          "end": 546.4,
+          "word": " Was",
+          "probability": 0.991
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100145,
+      "start": 546.22,
+      "end": 548.06,
+      "text": "Was soll ich denn jetzt so machen?",
+      "rawWindow": "furchtbar. Was soll ich denn jetzt so machen?",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 545.22,
+          "end": 546.2,
+          "word": " furchtbar.",
+          "probability": 0.996
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100152,
+      "start": 562.14,
+      "end": 564.56,
+      "text": "Wie soll ich die denn da wieder rauskriegen?",
+      "rawWindow": "Wie soll ich die denn da wieder rauskriegen? Dann",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 564.56,
+          "end": 565.32,
+          "word": " Dann",
+          "probability": 0.149
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100153,
+      "start": 564.56,
+      "end": 567.1,
+      "text": "Dann spring doch einfach in den See und hol sie raus.",
+      "rawWindow": "rauskriegen? Dann spring doch einfach in den See und hol sie raus.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 563.44,
+          "end": 564.56,
+          "word": " rauskriegen?",
+          "probability": 0.975
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100161,
+      "start": 593.02,
+      "end": 594.36,
+      "text": "Da, die Kette.",
+      "rawWindow": "Da, die Kette. Oh,",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 594.36,
+          "end": 595.08,
+          "word": " Oh,",
+          "probability": 0.32
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100162,
+      "start": 594.36,
+      "end": 598.76,
+      "text": "Oh, ich weiß gar nicht, was ich sagen soll.",
+      "rawWindow": "Kette. Oh, ich weiß gar nicht, was ich sagen soll.",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 593.76,
+          "end": 594.36,
+          "word": " Kette.",
+          "probability": 0.998
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100171,
+      "start": 622.98,
+      "end": 625.34,
+      "text": "Sie wollen wirklich alle Ballons kaufen.",
+      "rawWindow": "Sie wollen wirklich alle Ballons kaufen. Sogar",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 625.34,
+          "end": 626.3,
+          "word": " Sogar",
+          "probability": 0.671
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100172,
+      "start": 625.34,
+      "end": 628.34,
+      "text": "Sogar die, die ich jetzt neu aufgepustet habe?",
+      "rawWindow": "kaufen. Sogar die, die ich jetzt neu aufgepustet habe?",
+      "tokenSupport": 1.0,
+      "edgeWords": [
+        {
+          "start": 624.9,
+          "end": 625.34,
+          "word": " kaufen.",
+          "probability": 0.999
+        }
+      ],
+      "reviewNeeded": false
+    },
+    {
+      "id": 3100182,
+      "start": 680.65,
+      "end": 681.79,
+      "text": "Alles so klein.",
+      "rawWindow": "so klein.",
+      "tokenSupport": 0.667,
+      "edgeWords": [],
+      "reviewNeeded": true
+    }
+  ]
+}

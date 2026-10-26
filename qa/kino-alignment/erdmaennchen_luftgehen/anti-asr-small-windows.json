@@ -1,0 +1,3773 @@
+{
+  "model": "small",
+  "elapsedSeconds": 143.33,
+  "completedWindows": 32,
+  "totalWindows": 32,
+  "windows": [
+    {
+      "windowIndex": 1,
+      "start": 61.51,
+      "end": 65.51,
+      "cueIds": [
+        3100012
+      ],
+      "segments": [
+        {
+          "start": 61.51,
+          "end": 65.27,
+          "text": "Aber alle unsere Luftballons sind verschwunden.",
+          "avg_logprob": -0.3079,
+          "words": [
+            {
+              "start": 61.51,
+              "end": 62.69,
+              "word": " Aber",
+              "probability": 0.5488
+            },
+            {
+              "start": 62.69,
+              "end": 62.99,
+              "word": " alle",
+              "probability": 0.8746
+            },
+            {
+              "start": 62.99,
+              "end": 63.29,
+              "word": " unsere",
+              "probability": 0.7367
+            },
+            {
+              "start": 63.29,
+              "end": 64.01,
+              "word": " Luftballons",
+              "probability": 0.9235
+            },
+            {
+              "start": 64.01,
+              "end": 64.23,
+              "word": " sind",
+              "probability": 0.9494
+            },
+            {
+              "start": 64.23,
+              "end": 65.27,
+              "word": " verschwunden.",
+              "probability": 0.9847
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 2,
+      "start": 79.68,
+      "end": 85.3,
+      "cueIds": [
+        3100017,
+        3100018
+      ],
+      "segments": [
+        {
+          "start": 79.68,
+          "end": 85.28,
+          "text": "Kein Grund zu panik. Ihr habt Glück, die sind nämlich Detektive und das...",
+          "avg_logprob": -0.455,
+          "words": [
+            {
+              "start": 79.68,
+              "end": 80.58,
+              "word": " Kein",
+              "probability": 0.9202
+            },
+            {
+              "start": 80.58,
+              "end": 80.78,
+              "word": " Grund",
+              "probability": 0.9974
+            },
+            {
+              "start": 80.78,
+              "end": 81.04,
+              "word": " zu",
+              "probability": 0.6227
+            },
+            {
+              "start": 81.04,
+              "end": 81.66,
+              "word": " panik.",
+              "probability": 0.8636
+            },
+            {
+              "start": 82.0,
+              "end": 82.0,
+              "word": " Ihr",
+              "probability": 0.9501
+            },
+            {
+              "start": 82.0,
+              "end": 82.26,
+              "word": " habt",
+              "probability": 0.9943
+            },
+            {
+              "start": 82.26,
+              "end": 82.56,
+              "word": " Glück,",
+              "probability": 0.9661
+            },
+            {
+              "start": 82.78,
+              "end": 83.14,
+              "word": " die",
+              "probability": 0.4093
+            },
+            {
+              "start": 83.14,
+              "end": 83.32,
+              "word": " sind",
+              "probability": 0.9633
+            },
+            {
+              "start": 83.32,
+              "end": 83.6,
+              "word": " nämlich",
+              "probability": 0.6817
+            },
+            {
+              "start": 83.6,
+              "end": 84.58,
+              "word": " Detektive",
+              "probability": 0.7589
+            },
+            {
+              "start": 84.58,
+              "end": 85.0,
+              "word": " und",
+              "probability": 0.1913
+            },
+            {
+              "start": 85.0,
+              "end": 85.28,
+              "word": " das...",
+              "probability": 0.5535
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 3,
+      "start": 92.92,
+      "end": 106.77,
+      "cueIds": [
+        3100021,
+        3100023
+      ],
+      "segments": [
+        {
+          "start": 92.92,
+          "end": 98.28,
+          "text": "Ja, fangen wir gleich mal mit der Spurensuche an.",
+          "avg_logprob": -0.4177,
+          "words": [
+            {
+              "start": 92.92,
+              "end": 93.58,
+              "word": " Ja,",
+              "probability": 0.1144
+            },
+            {
+              "start": 95.66,
+              "end": 95.9,
+              "word": " fangen",
+              "probability": 0.9614
+            },
+            {
+              "start": 95.9,
+              "end": 96.06,
+              "word": " wir",
+              "probability": 0.9922
+            },
+            {
+              "start": 96.06,
+              "end": 96.38,
+              "word": " gleich",
+              "probability": 0.9779
+            },
+            {
+              "start": 96.38,
+              "end": 96.66,
+              "word": " mal",
+              "probability": 0.9372
+            },
+            {
+              "start": 96.66,
+              "end": 96.82,
+              "word": " mit",
+              "probability": 0.9886
+            },
+            {
+              "start": 96.82,
+              "end": 96.96,
+              "word": " der",
+              "probability": 0.9759
+            },
+            {
+              "start": 96.96,
+              "end": 97.92,
+              "word": " Spurensuche",
+              "probability": 0.9636
+            },
+            {
+              "start": 97.92,
+              "end": 98.28,
+              "word": " an.",
+              "probability": 0.9505
+            }
+          ]
+        },
+        {
+          "start": 98.38,
+          "end": 98.46,
+          "text": "Ja.",
+          "avg_logprob": -0.4177,
+          "words": [
+            {
+              "start": 98.38,
+              "end": 98.46,
+              "word": " Ja.",
+              "probability": 0.5564
+            }
+          ]
+        },
+        {
+          "start": 99.48,
+          "end": 100.52,
+          "text": "Oh ja!",
+          "avg_logprob": -0.4177,
+          "words": [
+            {
+              "start": 99.48,
+              "end": 100.0,
+              "word": " Oh",
+              "probability": 0.3236
+            },
+            {
+              "start": 100.0,
+              "end": 100.52,
+              "word": " ja!",
+              "probability": 0.2
+            }
+          ]
+        },
+        {
+          "start": 101.42,
+          "end": 102.54,
+          "text": "Guck mal!",
+          "avg_logprob": -0.4177,
+          "words": [
+            {
+              "start": 101.42,
+              "end": 102.14,
+              "word": " Guck",
+              "probability": 0.8426
+            },
+            {
+              "start": 102.14,
+              "end": 102.54,
+              "word": " mal!",
+              "probability": 0.9812
+            }
+          ]
+        },
+        {
+          "start": 103.46,
+          "end": 106.02,
+          "text": "Das ist ja ein Fischstäbchen.",
+          "avg_logprob": -0.4177,
+          "words": [
+            {
+              "start": 103.46,
+              "end": 103.62,
+              "word": " Das",
+              "probability": 0.8784
+            },
+            {
+              "start": 103.62,
+              "end": 103.84,
+              "word": " ist",
+              "probability": 0.9929
+            },
+            {
+              "start": 103.84,
+              "end": 104.08,
+              "word": " ja",
+              "probability": 0.9609
+            },
+            {
+              "start": 104.08,
+              "end": 104.7,
+              "word": " ein",
+              "probability": 0.9648
+            },
+            {
+              "start": 104.7,
+              "end": 106.02,
+              "word": " Fischstäbchen.",
+              "probability": 0.8697
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 4,
+      "start": 118.15,
+      "end": 122.61,
+      "cueIds": [
+        3100029
+      ],
+      "segments": [
+        {
+          "start": 118.15,
+          "end": 122.37,
+          "text": "Vielleicht hat jemand die Ballons im Fischstäbchen verwandelt.",
+          "avg_logprob": -0.344,
+          "words": [
+            {
+              "start": 118.15,
+              "end": 119.11,
+              "word": " Vielleicht",
+              "probability": 0.9571
+            },
+            {
+              "start": 119.11,
+              "end": 119.41,
+              "word": " hat",
+              "probability": 0.975
+            },
+            {
+              "start": 119.41,
+              "end": 119.77,
+              "word": " jemand",
+              "probability": 0.9936
+            },
+            {
+              "start": 119.77,
+              "end": 119.97,
+              "word": " die",
+              "probability": 0.9868
+            },
+            {
+              "start": 119.97,
+              "end": 120.67,
+              "word": " Ballons",
+              "probability": 0.9318
+            },
+            {
+              "start": 120.67,
+              "end": 120.89,
+              "word": " im",
+              "probability": 0.9709
+            },
+            {
+              "start": 120.89,
+              "end": 121.67,
+              "word": " Fischstäbchen",
+              "probability": 0.8102
+            },
+            {
+              "start": 121.67,
+              "end": 122.37,
+              "word": " verwandelt.",
+              "probability": 0.9918
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 5,
+      "start": 137.86,
+      "end": 140.76,
+      "cueIds": [
+        3100035
+      ],
+      "segments": [
+        {
+          "start": 137.86,
+          "end": 140.02,
+          "text": "Ja, wir sind sofort da. Bis gleich!",
+          "avg_logprob": -0.398,
+          "words": [
+            {
+              "start": 137.86,
+              "end": 138.64,
+              "word": " Ja,",
+              "probability": 0.7232
+            },
+            {
+              "start": 138.76,
+              "end": 138.82,
+              "word": " wir",
+              "probability": 0.8498
+            },
+            {
+              "start": 138.82,
+              "end": 138.96,
+              "word": " sind",
+              "probability": 0.9843
+            },
+            {
+              "start": 138.96,
+              "end": 139.26,
+              "word": " sofort",
+              "probability": 0.6392
+            },
+            {
+              "start": 139.26,
+              "end": 139.52,
+              "word": " da.",
+              "probability": 0.9672
+            },
+            {
+              "start": 139.58,
+              "end": 139.7,
+              "word": " Bis",
+              "probability": 0.9928
+            },
+            {
+              "start": 139.7,
+              "end": 140.02,
+              "word": " gleich!",
+              "probability": 0.9961
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 6,
+      "start": 188.74,
+      "end": 200.66,
+      "cueIds": [
+        3100052,
+        3100053,
+        3100054,
+        3100055
+      ],
+      "segments": [
+        {
+          "start": 188.74,
+          "end": 191.7,
+          "text": "Ach, beruhigt dich Mausi ein!",
+          "avg_logprob": -0.3681,
+          "words": [
+            {
+              "start": 188.74,
+              "end": 189.8,
+              "word": " Ach,",
+              "probability": 0.401
+            },
+            {
+              "start": 189.9,
+              "end": 190.54,
+              "word": " beruhigt",
+              "probability": 0.6564
+            },
+            {
+              "start": 190.54,
+              "end": 190.72,
+              "word": " dich",
+              "probability": 0.968
+            },
+            {
+              "start": 190.72,
+              "end": 191.34,
+              "word": " Mausi",
+              "probability": 0.4836
+            },
+            {
+              "start": 191.34,
+              "end": 191.7,
+              "word": " ein!",
+              "probability": 0.8066
+            }
+          ]
+        },
+        {
+          "start": 192.4,
+          "end": 193.68,
+          "text": "Was ist denn genau passiert?",
+          "avg_logprob": -0.3681,
+          "words": [
+            {
+              "start": 192.4,
+              "end": 192.64,
+              "word": " Was",
+              "probability": 0.8934
+            },
+            {
+              "start": 192.64,
+              "end": 192.82,
+              "word": " ist",
+              "probability": 0.9985
+            },
+            {
+              "start": 192.82,
+              "end": 192.96,
+              "word": " denn",
+              "probability": 0.9957
+            },
+            {
+              "start": 192.96,
+              "end": 193.26,
+              "word": " genau",
+              "probability": 0.9949
+            },
+            {
+              "start": 193.26,
+              "end": 193.68,
+              "word": " passiert?",
+              "probability": 0.9744
+            }
+          ]
+        },
+        {
+          "start": 194.38,
+          "end": 196.16,
+          "text": "Wir haben heute Hochzeitstag",
+          "avg_logprob": -0.3681,
+          "words": [
+            {
+              "start": 194.38,
+              "end": 194.64,
+              "word": " Wir",
+              "probability": 0.9896
+            },
+            {
+              "start": 194.64,
+              "end": 194.88,
+              "word": " haben",
+              "probability": 0.9988
+            },
+            {
+              "start": 194.88,
+              "end": 195.16,
+              "word": " heute",
+              "probability": 0.9566
+            },
+            {
+              "start": 195.16,
+              "end": 196.16,
+              "word": " Hochzeitstag",
+              "probability": 0.7449
+            }
+          ]
+        },
+        {
+          "start": 196.16,
+          "end": 200.02,
+          "text": "und Carterchen hat mir diese wunderschönen Ballons geschägen.",
+          "avg_logprob": -0.3681,
+          "words": [
+            {
+              "start": 196.16,
+              "end": 196.58,
+              "word": " und",
+              "probability": 0.6927
+            },
+            {
+              "start": 196.58,
+              "end": 197.22,
+              "word": " Carterchen",
+              "probability": 0.4641
+            },
+            {
+              "start": 197.22,
+              "end": 197.42,
+              "word": " hat",
+              "probability": 0.9945
+            },
+            {
+              "start": 197.42,
+              "end": 197.58,
+              "word": " mir",
+              "probability": 0.9916
+            },
+            {
+              "start": 197.58,
+              "end": 197.78,
+              "word": " diese",
+              "probability": 0.9257
+            },
+            {
+              "start": 197.78,
+              "end": 198.86,
+              "word": " wunderschönen",
+              "probability": 0.9921
+            },
+            {
+              "start": 198.86,
+              "end": 199.36,
+              "word": " Ballons",
+              "probability": 0.8435
+            },
+            {
+              "start": 199.36,
+              "end": 200.02,
+              "word": " geschägen.",
+              "probability": 0.7235
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 7,
+      "start": 212.36,
+      "end": 214.93,
+      "cueIds": [
+        3100058
+      ],
+      "segments": [
+        {
+          "start": 212.36,
+          "end": 214.28,
+          "text": "Ja, jemand hat sie alle abgeschnitten!",
+          "avg_logprob": -0.3479,
+          "words": [
+            {
+              "start": 212.36,
+              "end": 212.36,
+              "word": " Ja,",
+              "probability": 0.4329
+            },
+            {
+              "start": 212.64,
+              "end": 212.9,
+              "word": " jemand",
+              "probability": 0.9164
+            },
+            {
+              "start": 212.9,
+              "end": 213.1,
+              "word": " hat",
+              "probability": 0.9931
+            },
+            {
+              "start": 213.1,
+              "end": 213.28,
+              "word": " sie",
+              "probability": 0.8497
+            },
+            {
+              "start": 213.28,
+              "end": 213.56,
+              "word": " alle",
+              "probability": 0.9891
+            },
+            {
+              "start": 213.56,
+              "end": 214.28,
+              "word": " abgeschnitten!",
+              "probability": 0.9881
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 8,
+      "start": 225.28,
+      "end": 234.17,
+      "cueIds": [
+        3100061,
+        3100062
+      ],
+      "segments": [
+        {
+          "start": 225.28,
+          "end": 226.98,
+          "text": "Ach so war das!",
+          "avg_logprob": -0.3186,
+          "words": [
+            {
+              "start": 225.28,
+              "end": 226.24,
+              "word": " Ach",
+              "probability": 0.8891
+            },
+            {
+              "start": 226.24,
+              "end": 226.48,
+              "word": " so",
+              "probability": 0.6396
+            },
+            {
+              "start": 226.48,
+              "end": 226.72,
+              "word": " war",
+              "probability": 0.7372
+            },
+            {
+              "start": 226.72,
+              "end": 226.98,
+              "word": " das!",
+              "probability": 0.9546
+            }
+          ]
+        },
+        {
+          "start": 228.18,
+          "end": 233.34,
+          "text": "Und als ich dann wieder zu den Ballons gucken wollte, waren dann nur noch Fischstiebchen.",
+          "avg_logprob": -0.3186,
+          "words": [
+            {
+              "start": 228.18,
+              "end": 228.66,
+              "word": " Und",
+              "probability": 0.9141
+            },
+            {
+              "start": 228.66,
+              "end": 228.84,
+              "word": " als",
+              "probability": 0.9647
+            },
+            {
+              "start": 228.84,
+              "end": 228.98,
+              "word": " ich",
+              "probability": 0.9968
+            },
+            {
+              "start": 228.98,
+              "end": 229.1,
+              "word": " dann",
+              "probability": 0.9492
+            },
+            {
+              "start": 229.1,
+              "end": 229.3,
+              "word": " wieder",
+              "probability": 0.9897
+            },
+            {
+              "start": 229.3,
+              "end": 229.52,
+              "word": " zu",
+              "probability": 0.9368
+            },
+            {
+              "start": 229.52,
+              "end": 229.62,
+              "word": " den",
+              "probability": 0.7491
+            },
+            {
+              "start": 229.62,
+              "end": 230.1,
+              "word": " Ballons",
+              "probability": 0.9586
+            },
+            {
+              "start": 230.1,
+              "end": 230.34,
+              "word": " gucken",
+              "probability": 0.843
+            },
+            {
+              "start": 230.34,
+              "end": 230.84,
+              "word": " wollte,",
+              "probability": 0.9983
+            },
+            {
+              "start": 231.26,
+              "end": 231.54,
+              "word": " waren",
+              "probability": 0.9841
+            },
+            {
+              "start": 231.54,
+              "end": 231.78,
+              "word": " dann",
+              "probability": 0.9388
+            },
+            {
+              "start": 231.78,
+              "end": 232.02,
+              "word": " nur",
+              "probability": 0.9627
+            },
+            {
+              "start": 232.02,
+              "end": 232.22,
+              "word": " noch",
+              "probability": 0.9929
+            },
+            {
+              "start": 232.22,
+              "end": 233.34,
+              "word": " Fischstiebchen.",
+              "probability": 0.8031
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 9,
+      "start": 238.65,
+      "end": 244.41,
+      "cueIds": [
+        3100066,
+        3100067
+      ],
+      "segments": [
+        {
+          "start": 238.65,
+          "end": 240.83,
+          "text": "Wir schauen uns hier mal genauer um.",
+          "avg_logprob": -0.4188,
+          "words": [
+            {
+              "start": 238.65,
+              "end": 239.23,
+              "word": " Wir",
+              "probability": 0.4459
+            },
+            {
+              "start": 239.23,
+              "end": 239.55,
+              "word": " schauen",
+              "probability": 0.986
+            },
+            {
+              "start": 239.55,
+              "end": 239.81,
+              "word": " uns",
+              "probability": 0.9893
+            },
+            {
+              "start": 239.81,
+              "end": 239.93,
+              "word": " hier",
+              "probability": 0.7077
+            },
+            {
+              "start": 239.93,
+              "end": 240.09,
+              "word": " mal",
+              "probability": 0.9391
+            },
+            {
+              "start": 240.09,
+              "end": 240.63,
+              "word": " genauer",
+              "probability": 0.9686
+            },
+            {
+              "start": 240.63,
+              "end": 240.83,
+              "word": " um.",
+              "probability": 0.9903
+            }
+          ]
+        },
+        {
+          "start": 241.01,
+          "end": 241.61,
+          "text": "Ja, genau!",
+          "avg_logprob": -0.4188,
+          "words": [
+            {
+              "start": 241.01,
+              "end": 241.35,
+              "word": " Ja,",
+              "probability": 0.794
+            },
+            {
+              "start": 241.59,
+              "end": 241.61,
+              "word": " genau!",
+              "probability": 0.9979
+            }
+          ]
+        },
+        {
+          "start": 242.11,
+          "end": 243.83,
+          "text": "Beidet ihr zwei hier mal alles im Auge?",
+          "avg_logprob": -0.4188,
+          "words": [
+            {
+              "start": 242.11,
+              "end": 242.55,
+              "word": " Beidet",
+              "probability": 0.4656
+            },
+            {
+              "start": 242.55,
+              "end": 242.67,
+              "word": " ihr",
+              "probability": 0.8882
+            },
+            {
+              "start": 242.67,
+              "end": 242.83,
+              "word": " zwei",
+              "probability": 0.432
+            },
+            {
+              "start": 242.83,
+              "end": 243.01,
+              "word": " hier",
+              "probability": 0.9087
+            },
+            {
+              "start": 243.01,
+              "end": 243.15,
+              "word": " mal",
+              "probability": 0.9062
+            },
+            {
+              "start": 243.15,
+              "end": 243.37,
+              "word": " alles",
+              "probability": 0.9854
+            },
+            {
+              "start": 243.37,
+              "end": 243.53,
+              "word": " im",
+              "probability": 0.969
+            },
+            {
+              "start": 243.53,
+              "end": 243.83,
+              "word": " Auge?",
+              "probability": 0.9922
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 10,
+      "start": 265.06,
+      "end": 270.18,
+      "cueIds": [
+        3100071
+      ],
+      "segments": [
+        {
+          "start": 265.06,
+          "end": 269.06,
+          "text": "Aber von hier oben können wir den ganzen Freizeitpark überblicken.",
+          "avg_logprob": -0.2554,
+          "words": [
+            {
+              "start": 265.06,
+              "end": 265.64,
+              "word": " Aber",
+              "probability": 0.6331
+            },
+            {
+              "start": 265.64,
+              "end": 265.92,
+              "word": " von",
+              "probability": 0.9725
+            },
+            {
+              "start": 265.92,
+              "end": 266.12,
+              "word": " hier",
+              "probability": 0.9662
+            },
+            {
+              "start": 266.12,
+              "end": 266.36,
+              "word": " oben",
+              "probability": 0.9907
+            },
+            {
+              "start": 266.36,
+              "end": 266.58,
+              "word": " können",
+              "probability": 0.9548
+            },
+            {
+              "start": 266.58,
+              "end": 266.72,
+              "word": " wir",
+              "probability": 0.9912
+            },
+            {
+              "start": 266.72,
+              "end": 266.84,
+              "word": " den",
+              "probability": 0.8634
+            },
+            {
+              "start": 266.84,
+              "end": 267.4,
+              "word": " ganzen",
+              "probability": 0.9795
+            },
+            {
+              "start": 267.4,
+              "end": 268.42,
+              "word": " Freizeitpark",
+              "probability": 0.9653
+            },
+            {
+              "start": 268.42,
+              "end": 269.06,
+              "word": " überblicken.",
+              "probability": 0.9525
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 11,
+      "start": 278.16,
+      "end": 282.72,
+      "cueIds": [
+        3100074
+      ],
+      "segments": [
+        {
+          "start": 278.16,
+          "end": 282.12,
+          "text": "Ja, genau. Und wir sind nämlich Detektive und suchen einen Dieb.",
+          "avg_logprob": -0.5064,
+          "words": [
+            {
+              "start": 278.16,
+              "end": 278.78,
+              "word": " Ja,",
+              "probability": 0.6101
+            },
+            {
+              "start": 278.88,
+              "end": 279.06,
+              "word": " genau.",
+              "probability": 0.969
+            },
+            {
+              "start": 279.44,
+              "end": 279.54,
+              "word": " Und",
+              "probability": 0.614
+            },
+            {
+              "start": 279.54,
+              "end": 279.68,
+              "word": " wir",
+              "probability": 0.994
+            },
+            {
+              "start": 279.68,
+              "end": 279.88,
+              "word": " sind",
+              "probability": 0.9794
+            },
+            {
+              "start": 279.88,
+              "end": 280.14,
+              "word": " nämlich",
+              "probability": 0.9905
+            },
+            {
+              "start": 280.14,
+              "end": 280.9,
+              "word": " Detektive",
+              "probability": 0.7116
+            },
+            {
+              "start": 280.9,
+              "end": 281.06,
+              "word": " und",
+              "probability": 0.9719
+            },
+            {
+              "start": 281.06,
+              "end": 281.3,
+              "word": " suchen",
+              "probability": 0.9913
+            },
+            {
+              "start": 281.3,
+              "end": 281.62,
+              "word": " einen",
+              "probability": 0.8945
+            },
+            {
+              "start": 281.62,
+              "end": 282.12,
+              "word": " Dieb.",
+              "probability": 0.6169
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 12,
+      "start": 291.3,
+      "end": 295.7,
+      "cueIds": [
+        3100078
+      ],
+      "segments": [
+        {
+          "start": 291.3,
+          "end": 295.0,
+          "text": "Schön blöd, wenn man nicht fliegen kann, so wie wir.",
+          "avg_logprob": -0.3019,
+          "words": [
+            {
+              "start": 291.3,
+              "end": 292.24,
+              "word": " Schön",
+              "probability": 0.7161
+            },
+            {
+              "start": 292.24,
+              "end": 292.9,
+              "word": " blöd,",
+              "probability": 0.914
+            },
+            {
+              "start": 293.0,
+              "end": 293.08,
+              "word": " wenn",
+              "probability": 0.9638
+            },
+            {
+              "start": 293.08,
+              "end": 293.22,
+              "word": " man",
+              "probability": 0.987
+            },
+            {
+              "start": 293.22,
+              "end": 293.46,
+              "word": " nicht",
+              "probability": 0.97
+            },
+            {
+              "start": 293.46,
+              "end": 293.9,
+              "word": " fliegen",
+              "probability": 0.9691
+            },
+            {
+              "start": 293.9,
+              "end": 294.18,
+              "word": " kann,",
+              "probability": 0.9952
+            },
+            {
+              "start": 294.28,
+              "end": 294.44,
+              "word": " so",
+              "probability": 0.8632
+            },
+            {
+              "start": 294.44,
+              "end": 294.64,
+              "word": " wie",
+              "probability": 0.9971
+            },
+            {
+              "start": 294.64,
+              "end": 295.0,
+              "word": " wir.",
+              "probability": 0.9888
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 13,
+      "start": 305.92,
+      "end": 309.14,
+      "cueIds": [
+        3100081
+      ],
+      "segments": [
+        {
+          "start": 305.92,
+          "end": 308.5,
+          "text": "Die hätten uns ja auch beim Suchen helfen können.",
+          "avg_logprob": -0.3973,
+          "words": [
+            {
+              "start": 305.92,
+              "end": 306.58,
+              "word": " Die",
+              "probability": 0.4226
+            },
+            {
+              "start": 306.58,
+              "end": 306.74,
+              "word": " hätten",
+              "probability": 0.9665
+            },
+            {
+              "start": 306.74,
+              "end": 306.98,
+              "word": " uns",
+              "probability": 0.9442
+            },
+            {
+              "start": 306.98,
+              "end": 307.1,
+              "word": " ja",
+              "probability": 0.5933
+            },
+            {
+              "start": 307.1,
+              "end": 307.22,
+              "word": " auch",
+              "probability": 0.9413
+            },
+            {
+              "start": 307.22,
+              "end": 307.38,
+              "word": " beim",
+              "probability": 0.9868
+            },
+            {
+              "start": 307.38,
+              "end": 307.82,
+              "word": " Suchen",
+              "probability": 0.8926
+            },
+            {
+              "start": 307.82,
+              "end": 308.14,
+              "word": " helfen",
+              "probability": 0.9724
+            },
+            {
+              "start": 308.14,
+              "end": 308.5,
+              "word": " können.",
+              "probability": 0.9949
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 14,
+      "start": 313.24,
+      "end": 316.24,
+      "cueIds": [
+        3100084
+      ],
+      "segments": [
+        {
+          "start": 313.24,
+          "end": 315.62,
+          "text": "Ach richtig. Und auch keine Fischstäbchen.",
+          "avg_logprob": -0.4478,
+          "words": [
+            {
+              "start": 313.24,
+              "end": 313.82,
+              "word": " Ach",
+              "probability": 0.5207
+            },
+            {
+              "start": 313.82,
+              "end": 314.14,
+              "word": " richtig.",
+              "probability": 0.8528
+            },
+            {
+              "start": 314.5,
+              "end": 314.6,
+              "word": " Und",
+              "probability": 0.9549
+            },
+            {
+              "start": 314.6,
+              "end": 314.74,
+              "word": " auch",
+              "probability": 0.9196
+            },
+            {
+              "start": 314.74,
+              "end": 314.9,
+              "word": " keine",
+              "probability": 0.9679
+            },
+            {
+              "start": 314.9,
+              "end": 315.62,
+              "word": " Fischstäbchen.",
+              "probability": 0.7696
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 15,
+      "start": 327.74,
+      "end": 331.36,
+      "cueIds": [
+        3100087
+      ],
+      "segments": [
+        {
+          "start": 327.74,
+          "end": 330.84,
+          "text": "Das muss der Dieb sein. Kommt den schnappen wir uns!",
+          "avg_logprob": -0.4536,
+          "words": [
+            {
+              "start": 327.74,
+              "end": 328.46,
+              "word": " Das",
+              "probability": 0.8021
+            },
+            {
+              "start": 328.46,
+              "end": 328.68,
+              "word": " muss",
+              "probability": 0.9546
+            },
+            {
+              "start": 328.68,
+              "end": 328.88,
+              "word": " der",
+              "probability": 0.9471
+            },
+            {
+              "start": 328.88,
+              "end": 329.18,
+              "word": " Dieb",
+              "probability": 0.7054
+            },
+            {
+              "start": 329.18,
+              "end": 329.44,
+              "word": " sein.",
+              "probability": 0.9975
+            },
+            {
+              "start": 329.62,
+              "end": 329.9,
+              "word": " Kommt",
+              "probability": 0.8068
+            },
+            {
+              "start": 329.9,
+              "end": 329.98,
+              "word": " den",
+              "probability": 0.5519
+            },
+            {
+              "start": 329.98,
+              "end": 330.48,
+              "word": " schnappen",
+              "probability": 0.8032
+            },
+            {
+              "start": 330.48,
+              "end": 330.64,
+              "word": " wir",
+              "probability": 0.9431
+            },
+            {
+              "start": 330.64,
+              "end": 330.84,
+              "word": " uns!",
+              "probability": 0.4489
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 16,
+      "start": 339.1,
+      "end": 349.62,
+      "cueIds": [
+        3100091,
+        3100094
+      ],
+      "segments": [
+        {
+          "start": 339.1,
+          "end": 342.16,
+          "text": "Was fällt hier ein? Einfach die ganzen Ballons zu klauen.",
+          "avg_logprob": -0.2791,
+          "words": [
+            {
+              "start": 339.1,
+              "end": 339.72,
+              "word": " Was",
+              "probability": 0.5358
+            },
+            {
+              "start": 339.72,
+              "end": 340.0,
+              "word": " fällt",
+              "probability": 0.8746
+            },
+            {
+              "start": 340.0,
+              "end": 340.2,
+              "word": " hier",
+              "probability": 0.4616
+            },
+            {
+              "start": 340.2,
+              "end": 340.38,
+              "word": " ein?",
+              "probability": 0.9479
+            },
+            {
+              "start": 340.52,
+              "end": 340.7,
+              "word": " Einfach",
+              "probability": 0.9028
+            },
+            {
+              "start": 340.7,
+              "end": 340.86,
+              "word": " die",
+              "probability": 0.9338
+            },
+            {
+              "start": 340.86,
+              "end": 341.04,
+              "word": " ganzen",
+              "probability": 0.9369
+            },
+            {
+              "start": 341.04,
+              "end": 341.52,
+              "word": " Ballons",
+              "probability": 0.9757
+            },
+            {
+              "start": 341.52,
+              "end": 341.68,
+              "word": " zu",
+              "probability": 0.7363
+            },
+            {
+              "start": 341.68,
+              "end": 342.16,
+              "word": " klauen.",
+              "probability": 0.9784
+            }
+          ]
+        },
+        {
+          "start": 342.66,
+          "end": 344.72,
+          "text": "Was? Ballons klauen ich?",
+          "avg_logprob": -0.2791,
+          "words": [
+            {
+              "start": 342.66,
+              "end": 343.14,
+              "word": " Was?",
+              "probability": 0.9593
+            },
+            {
+              "start": 343.62,
+              "end": 344.1,
+              "word": " Ballons",
+              "probability": 0.987
+            },
+            {
+              "start": 344.1,
+              "end": 344.52,
+              "word": " klauen",
+              "probability": 0.9914
+            },
+            {
+              "start": 344.52,
+              "end": 344.72,
+              "word": " ich?",
+              "probability": 0.9584
+            }
+          ]
+        },
+        {
+          "start": 345.14,
+          "end": 346.36,
+          "text": "Na klar, wer denn sonst?",
+          "avg_logprob": -0.2791,
+          "words": [
+            {
+              "start": 345.14,
+              "end": 345.3,
+              "word": " Na",
+              "probability": 0.9318
+            },
+            {
+              "start": 345.3,
+              "end": 345.64,
+              "word": " klar,",
+              "probability": 0.9904
+            },
+            {
+              "start": 345.82,
+              "end": 345.92,
+              "word": " wer",
+              "probability": 0.9218
+            },
+            {
+              "start": 345.92,
+              "end": 346.08,
+              "word": " denn",
+              "probability": 0.9699
+            },
+            {
+              "start": 346.08,
+              "end": 346.36,
+              "word": " sonst?",
+              "probability": 0.9974
+            }
+          ]
+        },
+        {
+          "start": 347.0,
+          "end": 349.04,
+          "text": "Ich habe immer auch keine Ballons geklaut.",
+          "avg_logprob": -0.2791,
+          "words": [
+            {
+              "start": 347.0,
+              "end": 347.24,
+              "word": " Ich",
+              "probability": 0.9949
+            },
+            {
+              "start": 347.24,
+              "end": 347.44,
+              "word": " habe",
+              "probability": 0.3338
+            },
+            {
+              "start": 347.44,
+              "end": 347.62,
+              "word": " immer",
+              "probability": 0.7074
+            },
+            {
+              "start": 347.62,
+              "end": 347.76,
+              "word": " auch",
+              "probability": 0.7941
+            },
+            {
+              "start": 347.76,
+              "end": 347.92,
+              "word": " keine",
+              "probability": 0.9955
+            },
+            {
+              "start": 347.92,
+              "end": 348.36,
+              "word": " Ballons",
+              "probability": 0.984
+            },
+            {
+              "start": 348.36,
+              "end": 349.04,
+              "word": " geklaut.",
+              "probability": 0.9911
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 17,
+      "start": 364.24,
+      "end": 384.98,
+      "cueIds": [
+        3100100,
+        3100101,
+        3100102,
+        3100105
+      ],
+      "segments": [
+        {
+          "start": 364.24,
+          "end": 366.5,
+          "text": "Das ist, weil ...",
+          "avg_logprob": -0.3619,
+          "words": [
+            {
+              "start": 364.24,
+              "end": 364.98,
+              "word": " Das",
+              "probability": 0.7924
+            },
+            {
+              "start": 364.98,
+              "end": 365.26,
+              "word": " ist,",
+              "probability": 0.9863
+            },
+            {
+              "start": 365.54,
+              "end": 365.64,
+              "word": " weil",
+              "probability": 0.9331
+            },
+            {
+              "start": 365.64,
+              "end": 366.5,
+              "word": " ...",
+              "probability": 0.1242
+            }
+          ]
+        },
+        {
+          "start": 366.5,
+          "end": 367.88,
+          "text": "Ich bin Ballonverkäufer.",
+          "avg_logprob": -0.3619,
+          "words": [
+            {
+              "start": 366.5,
+              "end": 366.74,
+              "word": " Ich",
+              "probability": 0.6096
+            },
+            {
+              "start": 366.74,
+              "end": 366.9,
+              "word": " bin",
+              "probability": 0.9972
+            },
+            {
+              "start": 366.9,
+              "end": 367.88,
+              "word": " Ballonverkäufer.",
+              "probability": 0.9546
+            }
+          ]
+        },
+        {
+          "start": 369.16,
+          "end": 371.1,
+          "text": "Ballon-Verkäufer?",
+          "avg_logprob": -0.3619,
+          "words": [
+            {
+              "start": 369.16,
+              "end": 370.32,
+              "word": " Ballon",
+              "probability": 0.9807
+            },
+            {
+              "start": 370.32,
+              "end": 371.1,
+              "word": "-Verkäufer?",
+              "probability": 0.7385
+            }
+          ]
+        },
+        {
+          "start": 371.38,
+          "end": 374.44,
+          "text": "Ja! Ich verkaufe diese wunderschönen ...",
+          "avg_logprob": -0.3619,
+          "words": [
+            {
+              "start": 371.38,
+              "end": 372.02,
+              "word": " Ja!",
+              "probability": 0.6363
+            },
+            {
+              "start": 372.6,
+              "end": 372.72,
+              "word": " Ich",
+              "probability": 0.9916
+            },
+            {
+              "start": 372.72,
+              "end": 373.14,
+              "word": " verkaufe",
+              "probability": 0.9838
+            },
+            {
+              "start": 373.14,
+              "end": 373.32,
+              "word": " diese",
+              "probability": 0.8794
+            },
+            {
+              "start": 373.32,
+              "end": 374.38,
+              "word": " wunderschönen",
+              "probability": 0.753
+            },
+            {
+              "start": 374.38,
+              "end": 374.96,
+              "word": " ...",
+              "probability": 0.2874
+            }
+          ]
+        },
+        {
+          "start": 376.08,
+          "end": 378.28,
+          "text": "Ballons! Wo sind meine Ballons?",
+          "avg_logprob": -0.3308,
+          "words": [
+            {
+              "start": 376.08,
+              "end": 376.64,
+              "word": " Ballons!",
+              "probability": 0.7556
+            },
+            {
+              "start": 377.2,
+              "end": 377.44,
+              "word": " Wo",
+              "probability": 0.9959
+            },
+            {
+              "start": 377.44,
+              "end": 377.56,
+              "word": " sind",
+              "probability": 0.9942
+            },
+            {
+              "start": 377.56,
+              "end": 377.78,
+              "word": " meine",
+              "probability": 0.9969
+            },
+            {
+              "start": 377.78,
+              "end": 378.28,
+              "word": " Ballons?",
+              "probability": 0.9915
+            }
+          ]
+        },
+        {
+          "start": 378.78,
+          "end": 381.34,
+          "text": "Oh nein, der Dieb hat wieder zugeschlagen.",
+          "avg_logprob": -0.3308,
+          "words": [
+            {
+              "start": 378.78,
+              "end": 379.0,
+              "word": " Oh",
+              "probability": 0.8105
+            },
+            {
+              "start": 379.0,
+              "end": 379.38,
+              "word": " nein,",
+              "probability": 0.8856
+            },
+            {
+              "start": 379.8,
+              "end": 379.86,
+              "word": " der",
+              "probability": 0.7912
+            },
+            {
+              "start": 379.86,
+              "end": 380.2,
+              "word": " Dieb",
+              "probability": 0.4658
+            },
+            {
+              "start": 380.2,
+              "end": 380.3,
+              "word": " hat",
+              "probability": 0.9758
+            },
+            {
+              "start": 380.3,
+              "end": 380.48,
+              "word": " wieder",
+              "probability": 0.988
+            },
+            {
+              "start": 380.48,
+              "end": 381.34,
+              "word": " zugeschlagen.",
+              "probability": 0.9675
+            }
+          ]
+        },
+        {
+          "start": 381.62,
+          "end": 384.36,
+          "text": "Direkt vor unserer Nase und wir haben nichts gemerkt.",
+          "avg_logprob": -0.3308,
+          "words": [
+            {
+              "start": 381.62,
+              "end": 382.02,
+              "word": " Direkt",
+              "probability": 0.9549
+            },
+            {
+              "start": 382.02,
+              "end": 382.18,
+              "word": " vor",
+              "probability": 0.9426
+            },
+            {
+              "start": 382.18,
+              "end": 382.44,
+              "word": " unserer",
+              "probability": 0.9876
+            },
+            {
+              "start": 382.44,
+              "end": 382.92,
+              "word": " Nase",
+              "probability": 0.9889
+            },
+            {
+              "start": 382.92,
+              "end": 383.08,
+              "word": " und",
+              "probability": 0.7812
+            },
+            {
+              "start": 383.08,
+              "end": 383.22,
+              "word": " wir",
+              "probability": 0.9925
+            },
+            {
+              "start": 383.22,
+              "end": 383.38,
+              "word": " haben",
+              "probability": 0.9984
+            },
+            {
+              "start": 383.38,
+              "end": 383.66,
+              "word": " nichts",
+              "probability": 0.4967
+            },
+            {
+              "start": 383.66,
+              "end": 384.36,
+              "word": " gemerkt.",
+              "probability": 0.9882
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 18,
+      "start": 389.9,
+      "end": 395.46,
+      "cueIds": [
+        3100108
+      ],
+      "segments": [
+        {
+          "start": 392.02,
+          "end": 394.82,
+          "text": "Am besten, wir suchen den ganzen Park ab.",
+          "avg_logprob": -0.513,
+          "words": [
+            {
+              "start": 392.02,
+              "end": 392.58,
+              "word": " Am",
+              "probability": 0.6845
+            },
+            {
+              "start": 392.58,
+              "end": 393.14,
+              "word": " besten,",
+              "probability": 0.9876
+            },
+            {
+              "start": 393.14,
+              "end": 393.36,
+              "word": " wir",
+              "probability": 0.9871
+            },
+            {
+              "start": 393.36,
+              "end": 393.64,
+              "word": " suchen",
+              "probability": 0.9849
+            },
+            {
+              "start": 393.64,
+              "end": 393.86,
+              "word": " den",
+              "probability": 0.9916
+            },
+            {
+              "start": 393.86,
+              "end": 394.2,
+              "word": " ganzen",
+              "probability": 0.9919
+            },
+            {
+              "start": 394.2,
+              "end": 394.56,
+              "word": " Park",
+              "probability": 0.9879
+            },
+            {
+              "start": 394.56,
+              "end": 394.82,
+              "word": " ab.",
+              "probability": 0.3625
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 19,
+      "start": 414.42,
+      "end": 420.34,
+      "cueIds": [
+        3100114
+      ],
+      "segments": [
+        {
+          "start": 414.42,
+          "end": 419.68,
+          "text": "Oh nein, Erdmännchen dürfen nur zusammen mit einem Erwachsenen in die Achterbahn.",
+          "avg_logprob": -0.2874,
+          "words": [
+            {
+              "start": 414.42,
+              "end": 415.14,
+              "word": " Oh",
+              "probability": 0.4908
+            },
+            {
+              "start": 415.14,
+              "end": 415.46,
+              "word": " nein,",
+              "probability": 0.8932
+            },
+            {
+              "start": 415.94,
+              "end": 416.56,
+              "word": " Erdmännchen",
+              "probability": 0.8648
+            },
+            {
+              "start": 416.56,
+              "end": 416.74,
+              "word": " dürfen",
+              "probability": 0.9973
+            },
+            {
+              "start": 416.74,
+              "end": 417.06,
+              "word": " nur",
+              "probability": 0.9699
+            },
+            {
+              "start": 417.06,
+              "end": 417.52,
+              "word": " zusammen",
+              "probability": 0.9494
+            },
+            {
+              "start": 417.52,
+              "end": 417.68,
+              "word": " mit",
+              "probability": 0.9959
+            },
+            {
+              "start": 417.68,
+              "end": 417.9,
+              "word": " einem",
+              "probability": 0.9852
+            },
+            {
+              "start": 417.9,
+              "end": 418.7,
+              "word": " Erwachsenen",
+              "probability": 0.9706
+            },
+            {
+              "start": 418.7,
+              "end": 418.84,
+              "word": " in",
+              "probability": 0.9761
+            },
+            {
+              "start": 418.84,
+              "end": 418.96,
+              "word": " die",
+              "probability": 0.9952
+            },
+            {
+              "start": 418.96,
+              "end": 419.68,
+              "word": " Achterbahn.",
+              "probability": 0.9696
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 20,
+      "start": 426.42,
+      "end": 428.58,
+      "cueIds": [
+        3100117
+      ],
+      "segments": [
+        {
+          "start": 426.42,
+          "end": 427.98,
+          "text": "Das ist ein Notfall!",
+          "avg_logprob": -0.7235,
+          "words": [
+            {
+              "start": 426.42,
+              "end": 426.94,
+              "word": " Das",
+              "probability": 0.0396
+            },
+            {
+              "start": 426.94,
+              "end": 427.12,
+              "word": " ist",
+              "probability": 0.9537
+            },
+            {
+              "start": 427.12,
+              "end": 427.32,
+              "word": " ein",
+              "probability": 0.7592
+            },
+            {
+              "start": 427.32,
+              "end": 427.98,
+              "word": " Notfall!",
+              "probability": 0.9869
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 21,
+      "start": 477.62,
+      "end": 479.9,
+      "cueIds": [
+        3100120
+      ],
+      "segments": [
+        {
+          "start": 477.62,
+          "end": 479.24,
+          "text": "Und? Hast du was gesehen?",
+          "avg_logprob": -0.4091,
+          "words": [
+            {
+              "start": 477.62,
+              "end": 478.0,
+              "word": " Und?",
+              "probability": 0.5814
+            },
+            {
+              "start": 478.26,
+              "end": 478.48,
+              "word": " Hast",
+              "probability": 0.9842
+            },
+            {
+              "start": 478.48,
+              "end": 478.64,
+              "word": " du",
+              "probability": 0.8588
+            },
+            {
+              "start": 478.64,
+              "end": 478.78,
+              "word": " was",
+              "probability": 0.5627
+            },
+            {
+              "start": 478.78,
+              "end": 479.24,
+              "word": " gesehen?",
+              "probability": 0.9887
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 22,
+      "start": 488.4,
+      "end": 491.34,
+      "cueIds": [
+        3100123
+      ],
+      "segments": [
+        {
+          "start": 488.4,
+          "end": 490.86,
+          "text": "Wir müssen leise sein, sonst haut der ab.",
+          "avg_logprob": -0.4429,
+          "words": [
+            {
+              "start": 488.4,
+              "end": 489.02,
+              "word": " Wir",
+              "probability": 0.319
+            },
+            {
+              "start": 489.02,
+              "end": 489.26,
+              "word": " müssen",
+              "probability": 0.5078
+            },
+            {
+              "start": 489.26,
+              "end": 489.74,
+              "word": " leise",
+              "probability": 0.968
+            },
+            {
+              "start": 489.74,
+              "end": 489.96,
+              "word": " sein,",
+              "probability": 0.9955
+            },
+            {
+              "start": 490.06,
+              "end": 490.2,
+              "word": " sonst",
+              "probability": 0.9674
+            },
+            {
+              "start": 490.2,
+              "end": 490.4,
+              "word": " haut",
+              "probability": 0.9933
+            },
+            {
+              "start": 490.4,
+              "end": 490.58,
+              "word": " der",
+              "probability": 0.4418
+            },
+            {
+              "start": 490.58,
+              "end": 490.86,
+              "word": " ab.",
+              "probability": 0.9753
+            }
+          ]
+        },
+        {
+          "start": 490.92,
+          "end": 491.1,
+          "text": "Genau!",
+          "avg_logprob": -0.4429,
+          "words": [
+            {
+              "start": 490.92,
+              "end": 491.1,
+              "word": " Genau!",
+              "probability": 0.7123
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 23,
+      "start": 499.76,
+      "end": 503.3,
+      "cueIds": [
+        3100128
+      ],
+      "segments": [
+        {
+          "start": 499.76,
+          "end": 502.62,
+          "text": "Du hast die Luftballons geklaut, gibst du!",
+          "avg_logprob": -0.4776,
+          "words": [
+            {
+              "start": 499.76,
+              "end": 500.38,
+              "word": " Du",
+              "probability": 0.8656
+            },
+            {
+              "start": 500.38,
+              "end": 500.6,
+              "word": " hast",
+              "probability": 0.9935
+            },
+            {
+              "start": 500.6,
+              "end": 500.76,
+              "word": " die",
+              "probability": 0.6169
+            },
+            {
+              "start": 500.76,
+              "end": 501.26,
+              "word": " Luftballons",
+              "probability": 0.6973
+            },
+            {
+              "start": 501.26,
+              "end": 501.92,
+              "word": " geklaut,",
+              "probability": 0.9875
+            },
+            {
+              "start": 502.0,
+              "end": 502.3,
+              "word": " gibst",
+              "probability": 0.666
+            },
+            {
+              "start": 502.3,
+              "end": 502.62,
+              "word": " du!",
+              "probability": 0.8707
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 24,
+      "start": 510.04,
+      "end": 512.5,
+      "cueIds": [
+        3100131
+      ],
+      "segments": [
+        {
+          "start": 510.04,
+          "end": 511.92,
+          "text": "Das nennt man Clawing.",
+          "avg_logprob": -0.5154,
+          "words": [
+            {
+              "start": 510.04,
+              "end": 510.56,
+              "word": " Das",
+              "probability": 0.6321
+            },
+            {
+              "start": 510.56,
+              "end": 510.86,
+              "word": " nennt",
+              "probability": 0.9852
+            },
+            {
+              "start": 510.86,
+              "end": 511.0,
+              "word": " man",
+              "probability": 0.9911
+            },
+            {
+              "start": 511.0,
+              "end": 511.92,
+              "word": " Clawing.",
+              "probability": 0.4993
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 25,
+      "start": 517.78,
+      "end": 521.34,
+      "cueIds": [
+        3100135
+      ],
+      "segments": [
+        {
+          "start": 517.78,
+          "end": 520.72,
+          "text": "Ja, Fischdiebchen sind mein Leibgericht.",
+          "avg_logprob": -0.4452,
+          "words": [
+            {
+              "start": 517.78,
+              "end": 518.44,
+              "word": " Ja,",
+              "probability": 0.453
+            },
+            {
+              "start": 518.9,
+              "end": 519.5,
+              "word": " Fischdiebchen",
+              "probability": 0.6648
+            },
+            {
+              "start": 519.5,
+              "end": 519.64,
+              "word": " sind",
+              "probability": 0.9906
+            },
+            {
+              "start": 519.64,
+              "end": 519.84,
+              "word": " mein",
+              "probability": 0.9932
+            },
+            {
+              "start": 519.84,
+              "end": 520.72,
+              "word": " Leibgericht.",
+              "probability": 0.9647
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 26,
+      "start": 525.94,
+      "end": 546.7,
+      "cueIds": [
+        3100138,
+        3100139,
+        3100140,
+        3100141,
+        3100142,
+        3100143,
+        3100144
+      ],
+      "segments": [
+        {
+          "start": 525.94,
+          "end": 527.96,
+          "text": "weil ich mal fliegen wollte.",
+          "avg_logprob": -0.2798,
+          "words": [
+            {
+              "start": 525.94,
+              "end": 526.72,
+              "word": " weil",
+              "probability": 0.2562
+            },
+            {
+              "start": 526.72,
+              "end": 526.9,
+              "word": " ich",
+              "probability": 0.9934
+            },
+            {
+              "start": 526.9,
+              "end": 527.06,
+              "word": " mal",
+              "probability": 0.9875
+            },
+            {
+              "start": 527.06,
+              "end": 527.46,
+              "word": " fliegen",
+              "probability": 0.984
+            },
+            {
+              "start": 527.46,
+              "end": 527.96,
+              "word": " wollte.",
+              "probability": 0.9975
+            }
+          ]
+        },
+        {
+          "start": 528.48,
+          "end": 530.88,
+          "text": "Ich bin ein Vogel, aber ich kann nicht fliegen.",
+          "avg_logprob": -0.2798,
+          "words": [
+            {
+              "start": 528.48,
+              "end": 528.54,
+              "word": " Ich",
+              "probability": 0.9538
+            },
+            {
+              "start": 528.54,
+              "end": 528.68,
+              "word": " bin",
+              "probability": 0.9954
+            },
+            {
+              "start": 528.68,
+              "end": 528.82,
+              "word": " ein",
+              "probability": 0.9915
+            },
+            {
+              "start": 528.82,
+              "end": 529.34,
+              "word": " Vogel,",
+              "probability": 0.9969
+            },
+            {
+              "start": 529.64,
+              "end": 529.84,
+              "word": " aber",
+              "probability": 0.9847
+            },
+            {
+              "start": 529.84,
+              "end": 530.0,
+              "word": " ich",
+              "probability": 0.9899
+            },
+            {
+              "start": 530.0,
+              "end": 530.14,
+              "word": " kann",
+              "probability": 0.9983
+            },
+            {
+              "start": 530.14,
+              "end": 530.38,
+              "word": " nicht",
+              "probability": 0.9951
+            },
+            {
+              "start": 530.38,
+              "end": 530.88,
+              "word": " fliegen.",
+              "probability": 0.9956
+            }
+          ]
+        },
+        {
+          "start": 531.42,
+          "end": 535.8,
+          "text": "Und diese gemeinten Vogeldarmen lachen mich deshalb immer wieder auf!",
+          "avg_logprob": -0.2798,
+          "words": [
+            {
+              "start": 531.42,
+              "end": 531.52,
+              "word": " Und",
+              "probability": 0.8495
+            },
+            {
+              "start": 531.52,
+              "end": 532.08,
+              "word": " diese",
+              "probability": 0.9277
+            },
+            {
+              "start": 532.08,
+              "end": 532.64,
+              "word": " gemeinten",
+              "probability": 0.3775
+            },
+            {
+              "start": 532.64,
+              "end": 533.36,
+              "word": " Vogeldarmen",
+              "probability": 0.6815
+            },
+            {
+              "start": 533.36,
+              "end": 533.86,
+              "word": " lachen",
+              "probability": 0.9835
+            },
+            {
+              "start": 533.86,
+              "end": 534.14,
+              "word": " mich",
+              "probability": 0.9974
+            },
+            {
+              "start": 534.14,
+              "end": 534.54,
+              "word": " deshalb",
+              "probability": 0.9802
+            },
+            {
+              "start": 534.54,
+              "end": 534.92,
+              "word": " immer",
+              "probability": 0.992
+            },
+            {
+              "start": 534.92,
+              "end": 535.26,
+              "word": " wieder",
+              "probability": 0.9843
+            },
+            {
+              "start": 535.26,
+              "end": 535.8,
+              "word": " auf!",
+              "probability": 0.9831
+            }
+          ]
+        },
+        {
+          "start": 535.8,
+          "end": 539.38,
+          "text": "Ach, lass die Gemeindvogel-Dame doch ruhig lachen!",
+          "avg_logprob": -0.4053,
+          "words": [
+            {
+              "start": 535.8,
+              "end": 536.76,
+              "word": " Ach,",
+              "probability": 0.415
+            },
+            {
+              "start": 537.04,
+              "end": 537.2,
+              "word": " lass",
+              "probability": 0.8334
+            },
+            {
+              "start": 537.2,
+              "end": 537.42,
+              "word": " die",
+              "probability": 0.9537
+            },
+            {
+              "start": 537.42,
+              "end": 538.18,
+              "word": " Gemeindvogel",
+              "probability": 0.753
+            },
+            {
+              "start": 538.18,
+              "end": 538.42,
+              "word": "-Dame",
+              "probability": 0.4062
+            },
+            {
+              "start": 538.42,
+              "end": 538.64,
+              "word": " doch",
+              "probability": 0.9372
+            },
+            {
+              "start": 538.64,
+              "end": 538.96,
+              "word": " ruhig",
+              "probability": 0.9941
+            },
+            {
+              "start": 538.96,
+              "end": 539.38,
+              "word": " lachen!",
+              "probability": 0.9898
+            }
+          ]
+        },
+        {
+          "start": 539.68,
+          "end": 542.58,
+          "text": "Ja, du kannst dafür bestimmt viele andere tolle Dinge.",
+          "avg_logprob": -0.4053,
+          "words": [
+            {
+              "start": 539.68,
+              "end": 539.9,
+              "word": " Ja,",
+              "probability": 0.9515
+            },
+            {
+              "start": 540.08,
+              "end": 540.2,
+              "word": " du",
+              "probability": 0.973
+            },
+            {
+              "start": 540.2,
+              "end": 540.44,
+              "word": " kannst",
+              "probability": 0.9968
+            },
+            {
+              "start": 540.44,
+              "end": 540.78,
+              "word": " dafür",
+              "probability": 0.9644
+            },
+            {
+              "start": 540.78,
+              "end": 541.26,
+              "word": " bestimmt",
+              "probability": 0.9741
+            },
+            {
+              "start": 541.26,
+              "end": 541.56,
+              "word": " viele",
+              "probability": 0.9482
+            },
+            {
+              "start": 541.56,
+              "end": 541.88,
+              "word": " andere",
+              "probability": 0.9816
+            },
+            {
+              "start": 541.88,
+              "end": 542.28,
+              "word": " tolle",
+              "probability": 0.9822
+            },
+            {
+              "start": 542.28,
+              "end": 542.58,
+              "word": " Dinge.",
+              "probability": 0.992
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 27,
+      "start": 558.04,
+      "end": 582.6,
+      "cueIds": [
+        3100151,
+        3100153,
+        3100156,
+        3100158
+      ],
+      "segments": [
+        {
+          "start": 558.04,
+          "end": 561.76,
+          "text": "Meine schöne Halskette, die ist in den See gefallen.",
+          "avg_logprob": -0.2913,
+          "words": [
+            {
+              "start": 558.04,
+              "end": 558.74,
+              "word": " Meine",
+              "probability": 0.684
+            },
+            {
+              "start": 558.74,
+              "end": 559.14,
+              "word": " schöne",
+              "probability": 0.9376
+            },
+            {
+              "start": 559.14,
+              "end": 560.16,
+              "word": " Halskette,",
+              "probability": 0.9445
+            },
+            {
+              "start": 560.38,
+              "end": 560.54,
+              "word": " die",
+              "probability": 0.9734
+            },
+            {
+              "start": 560.54,
+              "end": 560.68,
+              "word": " ist",
+              "probability": 0.9896
+            },
+            {
+              "start": 560.68,
+              "end": 560.8,
+              "word": " in",
+              "probability": 0.9933
+            },
+            {
+              "start": 560.8,
+              "end": 561.0,
+              "word": " den",
+              "probability": 0.969
+            },
+            {
+              "start": 561.0,
+              "end": 561.18,
+              "word": " See",
+              "probability": 0.9753
+            },
+            {
+              "start": 561.18,
+              "end": 561.76,
+              "word": " gefallen.",
+              "probability": 0.9878
+            }
+          ]
+        },
+        {
+          "start": 562.16,
+          "end": 564.24,
+          "text": "Wie soll ich sie denn da wieder raus kriegen?",
+          "avg_logprob": -0.2913,
+          "words": [
+            {
+              "start": 562.16,
+              "end": 562.26,
+              "word": " Wie",
+              "probability": 0.9361
+            },
+            {
+              "start": 562.26,
+              "end": 562.44,
+              "word": " soll",
+              "probability": 0.996
+            },
+            {
+              "start": 562.44,
+              "end": 562.56,
+              "word": " ich",
+              "probability": 0.9983
+            },
+            {
+              "start": 562.56,
+              "end": 562.66,
+              "word": " sie",
+              "probability": 0.221
+            },
+            {
+              "start": 562.66,
+              "end": 562.82,
+              "word": " denn",
+              "probability": 0.8946
+            },
+            {
+              "start": 562.82,
+              "end": 563.06,
+              "word": " da",
+              "probability": 0.9799
+            },
+            {
+              "start": 563.06,
+              "end": 563.22,
+              "word": " wieder",
+              "probability": 0.9845
+            },
+            {
+              "start": 563.22,
+              "end": 563.74,
+              "word": " raus",
+              "probability": 0.9917
+            },
+            {
+              "start": 563.74,
+              "end": 564.24,
+              "word": " kriegen?",
+              "probability": 0.2886
+            }
+          ]
+        },
+        {
+          "start": 565.08,
+          "end": 566.9,
+          "text": "Na spring doch einfach in den Seel und hol' sie raus!",
+          "avg_logprob": -0.2913,
+          "words": [
+            {
+              "start": 565.08,
+              "end": 565.18,
+              "word": " Na",
+              "probability": 0.7421
+            },
+            {
+              "start": 565.18,
+              "end": 565.34,
+              "word": " spring",
+              "probability": 0.6855
+            },
+            {
+              "start": 565.34,
+              "end": 565.52,
+              "word": " doch",
+              "probability": 0.7168
+            },
+            {
+              "start": 565.52,
+              "end": 565.76,
+              "word": " einfach",
+              "probability": 0.9719
+            },
+            {
+              "start": 565.76,
+              "end": 565.92,
+              "word": " in",
+              "probability": 0.9899
+            },
+            {
+              "start": 565.92,
+              "end": 566.04,
+              "word": " den",
+              "probability": 0.9563
+            },
+            {
+              "start": 566.04,
+              "end": 566.22,
+              "word": " Seel",
+              "probability": 0.183
+            },
+            {
+              "start": 566.22,
+              "end": 566.32,
+              "word": " und",
+              "probability": 0.9823
+            },
+            {
+              "start": 566.32,
+              "end": 566.46,
+              "word": " hol'",
+              "probability": 0.877
+            },
+            {
+              "start": 566.52,
+              "end": 566.58,
+              "word": " sie",
+              "probability": 0.9708
+            },
+            {
+              "start": 566.58,
+              "end": 566.9,
+              "word": " raus!",
+              "probability": 0.9958
+            }
+          ]
+        },
+        {
+          "start": 568.0,
+          "end": 569.14,
+          "text": "Bist du verrückt?",
+          "avg_logprob": -0.2714,
+          "words": [
+            {
+              "start": 568.0,
+              "end": 568.42,
+              "word": " Bist",
+              "probability": 0.613
+            },
+            {
+              "start": 568.42,
+              "end": 568.54,
+              "word": " du",
+              "probability": 0.9704
+            },
+            {
+              "start": 568.54,
+              "end": 569.14,
+              "word": " verrückt?",
+              "probability": 0.941
+            }
+          ]
+        },
+        {
+          "start": 569.26,
+          "end": 570.48,
+          "text": "Ich geh doch nicht ins Wasser!",
+          "avg_logprob": -0.2714,
+          "words": [
+            {
+              "start": 569.26,
+              "end": 569.38,
+              "word": " Ich",
+              "probability": 0.8596
+            },
+            {
+              "start": 569.38,
+              "end": 569.5,
+              "word": " geh",
+              "probability": 0.3736
+            },
+            {
+              "start": 569.5,
+              "end": 569.62,
+              "word": " doch",
+              "probability": 0.8095
+            },
+            {
+              "start": 569.62,
+              "end": 569.74,
+              "word": " nicht",
+              "probability": 0.5266
+            },
+            {
+              "start": 569.74,
+              "end": 569.96,
+              "word": " ins",
+              "probability": 0.9839
+            },
+            {
+              "start": 569.96,
+              "end": 570.48,
+              "word": " Wasser!",
+              "probability": 0.9981
+            }
+          ]
+        },
+        {
+          "start": 571.14,
+          "end": 573.96,
+          "text": "Vögel fliegen in der Luft, aber gehen doch nicht tauchen.",
+          "avg_logprob": -0.2714,
+          "words": [
+            {
+              "start": 571.14,
+              "end": 571.56,
+              "word": " Vögel",
+              "probability": 0.7814
+            },
+            {
+              "start": 571.56,
+              "end": 571.96,
+              "word": " fliegen",
+              "probability": 0.9843
+            },
+            {
+              "start": 571.96,
+              "end": 572.1,
+              "word": " in",
+              "probability": 0.9926
+            },
+            {
+              "start": 572.1,
+              "end": 572.22,
+              "word": " der",
+              "probability": 0.9983
+            },
+            {
+              "start": 572.22,
+              "end": 572.56,
+              "word": " Luft,",
+              "probability": 0.9968
+            },
+            {
+              "start": 572.62,
+              "end": 572.76,
+              "word": " aber",
+              "probability": 0.9844
+            },
+            {
+              "start": 572.76,
+              "end": 572.92,
+              "word": " gehen",
+              "probability": 0.7591
+            },
+            {
+              "start": 572.92,
+              "end": 573.1,
+              "word": " doch",
+              "probability": 0.9866
+            },
+            {
+              "start": 573.1,
+              "end": 573.22,
+              "word": " nicht",
+              "probability": 0.9907
+            },
+            {
+              "start": 573.22,
+              "end": 573.96,
+              "word": " tauchen.",
+              "probability": 0.9499
+            }
+          ]
+        },
+        {
+          "start": 574.82,
+          "end": 576.58,
+          "text": "Na ja manche schon.",
+          "avg_logprob": -0.2714,
+          "words": [
+            {
+              "start": 574.82,
+              "end": 575.24,
+              "word": " Na",
+              "probability": 0.6182
+            },
+            {
+              "start": 575.24,
+              "end": 575.44,
+              "word": " ja",
+              "probability": 0.977
+            },
+            {
+              "start": 575.44,
+              "end": 576.1,
+              "word": " manche",
+              "probability": 0.3446
+            },
+            {
+              "start": 576.1,
+              "end": 576.58,
+              "word": " schon.",
+              "probability": 0.998
+            }
+          ]
+        },
+        {
+          "start": 577.46,
+          "end": 581.88,
+          "text": "Ja, ich kann zwar nicht so gut fliegen, aber um zu besser tauchen!",
+          "avg_logprob": -0.2846,
+          "words": [
+            {
+              "start": 577.46,
+              "end": 577.9,
+              "word": " Ja,",
+              "probability": 0.4994
+            },
+            {
+              "start": 578.26,
+              "end": 578.44,
+              "word": " ich",
+              "probability": 0.9708
+            },
+            {
+              "start": 578.44,
+              "end": 578.62,
+              "word": " kann",
+              "probability": 0.9546
+            },
+            {
+              "start": 578.62,
+              "end": 578.78,
+              "word": " zwar",
+              "probability": 0.9525
+            },
+            {
+              "start": 578.78,
+              "end": 578.98,
+              "word": " nicht",
+              "probability": 0.9981
+            },
+            {
+              "start": 578.98,
+              "end": 579.14,
+              "word": " so",
+              "probability": 0.9846
+            },
+            {
+              "start": 579.14,
+              "end": 579.3,
+              "word": " gut",
+              "probability": 0.9965
+            },
+            {
+              "start": 579.3,
+              "end": 579.78,
+              "word": " fliegen,",
+              "probability": 0.9809
+            },
+            {
+              "start": 580.16,
+              "end": 580.36,
+              "word": " aber",
+              "probability": 0.9893
+            },
+            {
+              "start": 580.36,
+              "end": 580.84,
+              "word": " um",
+              "probability": 0.7806
+            },
+            {
+              "start": 580.84,
+              "end": 580.96,
+              "word": " zu",
+              "probability": 0.8342
+            },
+            {
+              "start": 580.96,
+              "end": 581.2,
+              "word": " besser",
+              "probability": 0.9938
+            },
+            {
+              "start": 581.2,
+              "end": 581.88,
+              "word": " tauchen!",
+              "probability": 0.9859
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 28,
+      "start": 592.52,
+      "end": 594.86,
+      "cueIds": [
+        3100161
+      ],
+      "segments": [
+        {
+          "start": 592.52,
+          "end": 594.1,
+          "text": "Da! Die Kette!",
+          "avg_logprob": -0.435,
+          "words": [
+            {
+              "start": 592.52,
+              "end": 593.32,
+              "word": " Da!",
+              "probability": 0.4598
+            },
+            {
+              "start": 593.52,
+              "end": 593.66,
+              "word": " Die",
+              "probability": 0.9714
+            },
+            {
+              "start": 593.66,
+              "end": 594.1,
+              "word": " Kette!",
+              "probability": 0.9794
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 29,
+      "start": 608.16,
+      "end": 632.22,
+      "cueIds": [
+        3100167,
+        3100170,
+        3100171,
+        3100172,
+        3100173
+      ],
+      "segments": [
+        {
+          "start": 608.16,
+          "end": 612.2,
+          "text": "Es tut uns wirklich leid, dass wir uns über dich lustig gemacht haben,",
+          "avg_logprob": -0.1982,
+          "words": [
+            {
+              "start": 608.16,
+              "end": 608.78,
+              "word": " Es",
+              "probability": 0.6464
+            },
+            {
+              "start": 608.78,
+              "end": 608.92,
+              "word": " tut",
+              "probability": 0.9628
+            },
+            {
+              "start": 608.92,
+              "end": 609.16,
+              "word": " uns",
+              "probability": 0.9949
+            },
+            {
+              "start": 609.16,
+              "end": 609.56,
+              "word": " wirklich",
+              "probability": 0.9848
+            },
+            {
+              "start": 609.56,
+              "end": 610.16,
+              "word": " leid,",
+              "probability": 0.9698
+            },
+            {
+              "start": 610.24,
+              "end": 610.3,
+              "word": " dass",
+              "probability": 0.9822
+            },
+            {
+              "start": 610.3,
+              "end": 610.44,
+              "word": " wir",
+              "probability": 0.9965
+            },
+            {
+              "start": 610.44,
+              "end": 610.56,
+              "word": " uns",
+              "probability": 0.9961
+            },
+            {
+              "start": 610.56,
+              "end": 610.78,
+              "word": " über",
+              "probability": 0.9385
+            },
+            {
+              "start": 610.78,
+              "end": 610.96,
+              "word": " dich",
+              "probability": 0.9814
+            },
+            {
+              "start": 610.96,
+              "end": 611.4,
+              "word": " lustig",
+              "probability": 0.9668
+            },
+            {
+              "start": 611.4,
+              "end": 611.7,
+              "word": " gemacht",
+              "probability": 0.9936
+            },
+            {
+              "start": 611.7,
+              "end": 612.2,
+              "word": " haben,",
+              "probability": 0.9992
+            }
+          ]
+        },
+        {
+          "start": 612.44,
+          "end": 613.76,
+          "text": "weil du nicht fliegen kannst.",
+          "avg_logprob": -0.1982,
+          "words": [
+            {
+              "start": 612.44,
+              "end": 612.56,
+              "word": " weil",
+              "probability": 0.9934
+            },
+            {
+              "start": 612.56,
+              "end": 612.68,
+              "word": " du",
+              "probability": 0.9975
+            },
+            {
+              "start": 612.68,
+              "end": 612.86,
+              "word": " nicht",
+              "probability": 0.9859
+            },
+            {
+              "start": 612.86,
+              "end": 613.28,
+              "word": " fliegen",
+              "probability": 0.9909
+            },
+            {
+              "start": 613.28,
+              "end": 613.76,
+              "word": " kannst.",
+              "probability": 0.9994
+            }
+          ]
+        },
+        {
+          "start": 614.18,
+          "end": 615.98,
+          "text": "Wie kann ich das nur wieder gut machen?",
+          "avg_logprob": -0.1982,
+          "words": [
+            {
+              "start": 614.18,
+              "end": 614.3,
+              "word": " Wie",
+              "probability": 0.9833
+            },
+            {
+              "start": 614.3,
+              "end": 614.54,
+              "word": " kann",
+              "probability": 0.9957
+            },
+            {
+              "start": 614.54,
+              "end": 614.68,
+              "word": " ich",
+              "probability": 0.9905
+            },
+            {
+              "start": 614.68,
+              "end": 614.82,
+              "word": " das",
+              "probability": 0.9941
+            },
+            {
+              "start": 614.82,
+              "end": 615.0,
+              "word": " nur",
+              "probability": 0.7789
+            },
+            {
+              "start": 615.0,
+              "end": 615.2,
+              "word": " wieder",
+              "probability": 0.9964
+            },
+            {
+              "start": 615.2,
+              "end": 615.6,
+              "word": " gut",
+              "probability": 0.9928
+            },
+            {
+              "start": 615.6,
+              "end": 615.98,
+              "word": " machen?",
+              "probability": 0.7648
+            }
+          ]
+        },
+        {
+          "start": 615.98,
+          "end": 618.36,
+          "text": "Also ich wüsste da schon was.",
+          "avg_logprob": -0.2374,
+          "words": [
+            {
+              "start": 615.98,
+              "end": 617.06,
+              "word": " Also",
+              "probability": 0.5141
+            },
+            {
+              "start": 617.06,
+              "end": 617.3,
+              "word": " ich",
+              "probability": 0.6548
+            },
+            {
+              "start": 617.3,
+              "end": 617.68,
+              "word": " wüsste",
+              "probability": 0.9692
+            },
+            {
+              "start": 617.68,
+              "end": 617.84,
+              "word": " da",
+              "probability": 0.8831
+            },
+            {
+              "start": 617.84,
+              "end": 618.02,
+              "word": " schon",
+              "probability": 0.9963
+            },
+            {
+              "start": 618.02,
+              "end": 618.36,
+              "word": " was.",
+              "probability": 0.8905
+            }
+          ]
+        },
+        {
+          "start": 622.48,
+          "end": 625.18,
+          "text": "Sie wollen wirklich alle Ballons kaufen?",
+          "avg_logprob": -0.2374,
+          "words": [
+            {
+              "start": 622.48,
+              "end": 623.18,
+              "word": " Sie",
+              "probability": 0.9244
+            },
+            {
+              "start": 623.18,
+              "end": 623.44,
+              "word": " wollen",
+              "probability": 0.9968
+            },
+            {
+              "start": 623.44,
+              "end": 623.84,
+              "word": " wirklich",
+              "probability": 0.9787
+            },
+            {
+              "start": 623.84,
+              "end": 624.32,
+              "word": " alle",
+              "probability": 0.9951
+            },
+            {
+              "start": 624.32,
+              "end": 624.78,
+              "word": " Ballons",
+              "probability": 0.9044
+            },
+            {
+              "start": 624.78,
+              "end": 625.18,
+              "word": " kaufen?",
+              "probability": 0.9961
+            }
+          ]
+        },
+        {
+          "start": 625.82,
+          "end": 628.16,
+          "text": "Sogar die, die ich jetzt neu aufgepustet habe?",
+          "avg_logprob": -0.2374,
+          "words": [
+            {
+              "start": 625.82,
+              "end": 626.2,
+              "word": " Sogar",
+              "probability": 0.9854
+            },
+            {
+              "start": 626.2,
+              "end": 626.44,
+              "word": " die,",
+              "probability": 0.9977
+            },
+            {
+              "start": 626.52,
+              "end": 626.6,
+              "word": " die",
+              "probability": 0.9991
+            },
+            {
+              "start": 626.6,
+              "end": 626.78,
+              "word": " ich",
+              "probability": 0.996
+            },
+            {
+              "start": 626.78,
+              "end": 626.96,
+              "word": " jetzt",
+              "probability": 0.8349
+            },
+            {
+              "start": 626.96,
+              "end": 627.18,
+              "word": " neu",
+              "probability": 0.9955
+            },
+            {
+              "start": 627.18,
+              "end": 627.88,
+              "word": " aufgepustet",
+              "probability": 0.8662
+            },
+            {
+              "start": 627.88,
+              "end": 628.16,
+              "word": " habe?",
+              "probability": 0.9898
+            }
+          ]
+        },
+        {
+          "start": 628.9,
+          "end": 631.36,
+          "text": "Unbedingt! Sie sind alle für ihn!",
+          "avg_logprob": -0.2374,
+          "words": [
+            {
+              "start": 628.9,
+              "end": 629.6,
+              "word": " Unbedingt!",
+              "probability": 0.8551
+            },
+            {
+              "start": 630.12,
+              "end": 630.24,
+              "word": " Sie",
+              "probability": 0.9871
+            },
+            {
+              "start": 630.24,
+              "end": 630.46,
+              "word": " sind",
+              "probability": 0.9984
+            },
+            {
+              "start": 630.46,
+              "end": 630.82,
+              "word": " alle",
+              "probability": 0.9922
+            },
+            {
+              "start": 630.82,
+              "end": 631.12,
+              "word": " für",
+              "probability": 0.9977
+            },
+            {
+              "start": 631.12,
+              "end": 631.36,
+              "word": " ihn!",
+              "probability": 0.6766
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 30,
+      "start": 641.94,
+      "end": 649.28,
+      "cueIds": [
+        3100175,
+        3100177
+      ],
+      "segments": [
+        {
+          "start": 641.94,
+          "end": 643.66,
+          "text": "Ich fliege!",
+          "avg_logprob": -0.4497,
+          "words": [
+            {
+              "start": 641.94,
+              "end": 642.72,
+              "word": " Ich",
+              "probability": 0.5799
+            },
+            {
+              "start": 642.72,
+              "end": 643.66,
+              "word": " fliege!",
+              "probability": 0.9722
+            }
+          ]
+        },
+        {
+          "start": 644.44,
+          "end": 645.76,
+          "text": "Ja!",
+          "avg_logprob": -0.4497,
+          "words": [
+            {
+              "start": 644.44,
+              "end": 645.76,
+              "word": " Ja!",
+              "probability": 0.4821
+            }
+          ]
+        },
+        {
+          "start": 646.68,
+          "end": 648.62,
+          "text": "Tatsächlich, er kann fliegen!",
+          "avg_logprob": -0.4497,
+          "words": [
+            {
+              "start": 646.68,
+              "end": 647.54,
+              "word": " Tatsächlich,",
+              "probability": 0.8505
+            },
+            {
+              "start": 647.78,
+              "end": 647.9,
+              "word": " er",
+              "probability": 0.9865
+            },
+            {
+              "start": 647.9,
+              "end": 648.06,
+              "word": " kann",
+              "probability": 0.9956
+            },
+            {
+              "start": 648.06,
+              "end": 648.62,
+              "word": " fliegen!",
+              "probability": 0.9727
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 31,
+      "start": 653.88,
+      "end": 657.1,
+      "cueIds": [
+        3100179
+      ],
+      "segments": [
+        {
+          "start": 653.88,
+          "end": 656.22,
+          "text": "Alles schon klein von hier oben!",
+          "avg_logprob": -0.6087,
+          "words": [
+            {
+              "start": 653.88,
+              "end": 654.6,
+              "word": " Alles",
+              "probability": 0.5542
+            },
+            {
+              "start": 654.6,
+              "end": 654.88,
+              "word": " schon",
+              "probability": 0.5767
+            },
+            {
+              "start": 654.88,
+              "end": 655.34,
+              "word": " klein",
+              "probability": 0.8814
+            },
+            {
+              "start": 655.34,
+              "end": 655.64,
+              "word": " von",
+              "probability": 0.8395
+            },
+            {
+              "start": 655.64,
+              "end": 655.88,
+              "word": " hier",
+              "probability": 0.5551
+            },
+            {
+              "start": 655.88,
+              "end": 656.22,
+              "word": " oben!",
+              "probability": 0.9383
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "windowIndex": 32,
+      "start": 670.73,
+      "end": 682.5,
+      "cueIds": [
+        3100180,
+        3100181,
+        3100182
+      ],
+      "segments": [
+        {
+          "start": 670.73,
+          "end": 673.21,
+          "text": "Huiiiiiiiih!",
+          "avg_logprob": -0.8674,
+          "words": [
+            {
+              "start": 670.73,
+              "end": 673.21,
+              "word": " Huiiiiiiiih!",
+              "probability": 0.2555
+            }
+          ]
+        },
+        {
+          "start": 674.11,
+          "end": 675.49,
+          "text": "Macht das Spaß!",
+          "avg_logprob": -0.8674,
+          "words": [
+            {
+              "start": 674.11,
+              "end": 674.57,
+              "word": " Macht",
+              "probability": 0.9423
+            },
+            {
+              "start": 674.57,
+              "end": 674.85,
+              "word": " das",
+              "probability": 0.5287
+            },
+            {
+              "start": 674.85,
+              "end": 675.49,
+              "word": " Spaß!",
+              "probability": 0.4981
+            }
+          ]
+        },
+        {
+          "start": 677.67,
+          "end": 678.29,
+          "text": "Wow!",
+          "avg_logprob": -0.8674,
+          "words": [
+            {
+              "start": 677.67,
+              "end": 678.29,
+              "word": " Wow!",
+              "probability": 0.1658
+            }
+          ]
+        },
+        {
+          "start": 679.93,
+          "end": 681.49,
+          "text": "Alles so klein!",
+          "avg_logprob": -0.8674,
+          "words": [
+            {
+              "start": 679.93,
+              "end": 680.59,
+              "word": " Alles",
+              "probability": 0.7748
+            },
+            {
+              "start": 680.59,
+              "end": 680.93,
+              "word": " so",
+              "probability": 0.979
+            },
+            {
+              "start": 680.93,
+              "end": 681.49,
+              "word": " klein!",
+              "probability": 0.9868
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

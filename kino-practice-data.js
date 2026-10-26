@@ -4727,7 +4727,425 @@ const KINO_PRACTICE_DATA = {
         }
       ]
     }
-  ]
+  ],
+  "erdmaennchen_luftgehen": [
+  {
+    "part": 1,
+    "picks": [
+      {
+        "id": 3100012,
+        "usage": "Khi báo tin toàn bộ bóng bay chuẩn bị cho bữa tiệc đã biến mất.",
+        "grammarNote": "'verschwunden' = biến mất; thì Perfekt với 'sein': sind verschwunden"
+      },
+      {
+        "id": 3100018,
+        "usage": "Khi trấn an người đang lo lắng và giới thiệu mình là thám tử.",
+        "grammarNote": "'nämlich' = giải thích lý do: vì bọn anh là thám tử mà"
+      },
+      {
+        "id": 3100021,
+        "usage": "Khi đề nghị cả nhóm bắt tay ngay vào việc tìm kiếm dấu vết tại hiện trường.",
+        "grammarNote": "'anfangen mit' = bắt đầu bằng việc gì; 'gleich mal' = ngay bây giờ"
+      },
+      {
+        "id": 3100023,
+        "usage": "Khi ngạc nhiên nhận ra vật lạ nằm ở hiện trường là một que cá tẩm bột.",
+        "grammarNote": "Câu cảm thán nhận ra đồ vật: 'Das ist ja ein …!'"
+      },
+      {
+        "id": 3100029,
+        "usage": "Khi nêu giả thuyết hài hước rằng ai đó đã biến bóng bay thành món ăn.",
+        "grammarNote": "'vielleicht' = có lẽ; 'verwandeln in' = biến thành"
+      },
+      {
+        "id": 3100035,
+        "usage": "Khi hẹn qua điện thoại rằng mình sẽ có mặt ngay lập tức.",
+        "grammarNote": "'sofort' = ngay lập tức; 'bis gleich' = hẹn gặp ngay"
+      }
+    ]
+  },
+  {
+    "part": 2,
+    "picks": [
+      {
+        "id": 3100053,
+        "usage": "Khi hỏi nhân chứng để nắm chính xác chuyện gì vừa xảy ra.",
+        "grammarNote": "Câu hỏi điều tra chuẩn: 'Was ist denn genau passiert?'"
+      },
+      {
+        "id": 3100054,
+        "usage": "Khi chia sẻ rằng hôm nay là ngày kỷ niệm ngày cưới của hai vợ chồng.",
+        "grammarNote": "'Hochzeitstag' = kỷ niệm ngày cưới; 'heute haben wir …'"
+      },
+      {
+        "id": 3100058,
+        "usage": "Khi chỉ vào các sợi dây và báo rằng toàn bộ bóng bay đã bị cắt đứt.",
+        "grammarNote": "'man' = người ta; 'abschneiden' = cắt đi, cắt đứt"
+      },
+      {
+        "id": 3100062,
+        "usage": "Khi kể lại khoảnh khắc quay sang nhìn lại thì chỉ còn thấy cá tẩm bột chiên.",
+        "grammarNote": "Kể trình tự bằng 'als … wollte, waren … nur noch …' = khi tôi định nhìn lại thì chỉ còn…"
+      },
+      {
+        "id": 3100066,
+        "usage": "Khi thông báo mình sẽ đi quan sát kỹ xung quanh khu vực hiện trường.",
+        "grammarNote": "'sich umschauen' = nhìn quanh, quan sát kỹ"
+      }
+    ]
+  },
+  {
+    "part": 3,
+    "picks": [
+      {
+        "id": 3100071,
+        "usage": "Khi nhận xét rằng từ điểm cao này có thể nhìn bao quát toàn bộ công viên giải trí.",
+        "grammarNote": "'überblicken' = nhìn bao quát toàn cảnh"
+      },
+      {
+        "id": 3100074,
+        "usage": "Khi xác nhận thông tin và giải thích mình đang làm nhiệm vụ truy tìm kẻ trộm.",
+        "grammarNote": "'einen Dieb suchen' = truy tìm một tên trộm"
+      },
+      {
+        "id": 3100078,
+        "usage": "Khi cô chim khoe khả năng bay lượn và châm chọc những kẻ không thể bay như mình.",
+        "grammarNote": "'wenn man nicht … kann' = khi người ta không biết…; cách nói châm chọc"
+      },
+      {
+        "id": 3100081,
+        "usage": "Khi trách nhẹ rằng lẽ ra người kia cũng có thể phụ giúp việc tìm kiếm.",
+        "grammarNote": "'hätten … können' = lẽ ra đã có thể… (tiếc nuối)"
+      },
+      {
+        "id": 3100084,
+        "usage": "Khi sực nhớ ra một chi tiết quan trọng giúp loại trừ nghi phạm.",
+        "grammarNote": "Loại trừ nghi phạm: 'auch keine …' = cũng không có…"
+      }
+    ]
+  },
+  {
+    "part": 4,
+    "picks": [
+      {
+        "id": 3100087,
+        "usage": "Khi khẳng định người phía trước chính là thủ phạm và rủ đồng đội lao tới bắt giữ.",
+        "grammarNote": "'Das muss … sein' = chắc chắn đó là…; 'sich schnappen' = tóm lấy"
+      },
+      {
+        "id": 3100091,
+        "usage": "Khi chất vấn gay gắt vì sao đối phương dám tự ý lấy cắp hết bóng bay.",
+        "grammarNote": "'Was fällt dir ein!' = ngươi nghĩ sao vậy!; 'klauen' = ăn trộm (thông tục)"
+      },
+      {
+        "id": 3100094,
+        "usage": "Khi phủ nhận dứt khoát rằng mình hoàn toàn không lấy cắp quả bóng bay nào cả.",
+        "grammarNote": "Phủ nhận mạnh: 'überhaupt keine' = hoàn toàn không … nào cả"
+      },
+      {
+        "id": 3100102,
+        "usage": "Khi người bán hàng tự giới thiệu công việc bán những quả bóng bay tuyệt đẹp của mình.",
+        "grammarNote": "Tự giới thiệu nghề: 'Ich verkaufe …' = tôi bán…"
+      },
+      {
+        "id": 3100105,
+        "usage": "Khi tiếc nuối vì sự việc diễn ra ngay trước mắt mà cả nhóm không hề nhận ra.",
+        "grammarNote": "'direkt vor unserer Nase' = ngay trước mắt chúng ta"
+      },
+      {
+        "id": 3100108,
+        "usage": "Khi đề xuất phương án tốt nhất lúc này là lục soát toàn bộ công viên.",
+        "grammarNote": "'absuchen' = lục soát khắp; 'am besten' = tốt nhất là…"
+      }
+    ]
+  },
+  {
+    "part": 5,
+    "picks": [
+      {
+        "id": 3100114,
+        "usage": "Khi đọc quy định trẻ nhỏ hoặc chuột đất chỉ được đi tàu lượn khi có người lớn đi kèm.",
+        "grammarNote": "'dürfen nur … zusammen mit' = chỉ được … cùng với…"
+      },
+      {
+        "id": 3100117,
+        "usage": "Khi thuyết phục người khác giúp đỡ ngay bằng cách nhấn mạnh đây là tình huống khẩn cấp.",
+        "grammarNote": "'ein Notfall' = trường hợp khẩn cấp — câu thuyết phục ngắn gọn"
+      },
+      {
+        "id": 3100123,
+        "usage": "Khi nhắc đồng đội phải giữ im lặng kẻo nghi phạm phát hiện và bỏ chạy mất.",
+        "grammarNote": "'sonst' = nếu không thì…; 'abhauen' = chạy trốn (thông tục)"
+      },
+      {
+        "id": 3100131,
+        "usage": "Khi giải thích thẳng thắn rằng việc tự ý lấy đồ không xin phép chính là hành vi ăn trộm.",
+        "grammarNote": "'Das nennt man …' = thế gọi là… — định nghĩa hành vi"
+      },
+      {
+        "id": 3100135,
+        "usage": "Khi hào hứng xác nhận cá tẩm bột chiên chính là món ăn khoái khẩu nhất của mình.",
+        "grammarNote": "'mein Leibgericht' = món ăn yêu thích nhất của tôi"
+      },
+      {
+        "id": 3100138,
+        "usage": "Khi giải thích lý do lấy bóng bay chỉ vì bản thân cũng mong một lần được bay lên.",
+        "grammarNote": "Lý do với 'weil' + động từ về cuối câu: 'Weil ich mal fliegen wollte.'"
+      },
+      {
+        "id": 3100139,
+        "usage": "Khi tâm sự nỗi buồn rằng mình tuy là loài chim nhưng lại không thể bay được.",
+        "grammarNote": "Tương phản 'aber': là chim nhưng không biết bay"
+      }
+    ]
+  },
+  {
+    "part": 6,
+    "picks": [
+      {
+        "id": 3100151,
+        "usage": "Khi hốt hoảng báo tin chiếc vòng cổ đẹp của mình vừa bị rơi xuống dưới hồ nước.",
+        "grammarNote": "'in den See gefallen' = rơi xuống hồ; Perfekt với 'sein'"
+      },
+      {
+        "id": 3100153,
+        "usage": "Khi khuyên ai đó cứ nhảy thẳng xuống hồ nước để tự vớt món đồ lên.",
+        "grammarNote": "Đề nghị bằng mệnh lệnh mềm: 'spring doch einfach …'"
+      },
+      {
+        "id": 3100156,
+        "usage": "Khi phản bác rằng loài chim vốn bay trên trời chứ đâu có đi lặn dưới nước.",
+        "grammarNote": "'tauchen' = lặn — đối lập với 'fliegen'"
+      },
+      {
+        "id": 3100158,
+        "usage": "Khi tự tin khẳng định tuy mình không giỏi bay nhưng bù lại có tài lặn nước rất cừ.",
+        "grammarNote": "'zwar nicht …, aber umso …' = tuy không… nhưng lại càng…"
+      },
+      {
+        "id": 3100161,
+        "usage": "Khi reo lên báo hiệu vừa phát hiện chiếc vòng cổ nằm ở dưới đáy hồ.",
+        "grammarNote": "Câu chỉ đồ vật vừa tìm thấy: 'Da, die …!'"
+      },
+      {
+        "id": 3100167,
+        "usage": "Khi chân thành nói lời xin lỗi vì trước đó đã từng cười nhạo và chế giễu người khác.",
+        "grammarNote": "'Es tut uns leid, dass …' = chúng tôi xin lỗi vì…; 'sich lustig machen über' = chế giễu"
+      }
+    ]
+  },
+  {
+    "part": 7,
+    "picks": [
+      {
+        "id": 3100171,
+        "usage": "Khi người bán bóng ngạc nhiên hỏi lại các cô chim có thực sự muốn mua toàn bộ số bóng bay.",
+        "grammarNote": "'wirklich alle' = thật sự tất cả — nhấn mạnh bất ngờ"
+      },
+      {
+        "id": 3100172,
+        "usage": "Khi hỏi xác nhận xem khách có muốn lấy luôn cả những quả bóng vừa mới được thổi phồng không.",
+        "grammarNote": "'sogar' = thậm chí cả; 'aufgepustet' = đã thổi phồng"
+      },
+      {
+        "id": 3100175,
+        "usage": "Khi reo lên đầy phấn khích ở khoảnh khắc ước mơ được bay lên bầu trời thành hiện thực.",
+        "grammarNote": "Câu cảm thán ngắn gọn ở khoảnh khắc ước mơ thành thật"
+      },
+      {
+        "id": 3100177,
+        "usage": "Khi trầm trồ xác nhận trước cảnh tượng cậu chim cánh cụt thực sự đang bay lên được.",
+        "grammarNote": "'tatsächlich' = thật sự, đúng là…"
+      },
+      {
+        "id": 3100179,
+        "usage": "Khi ngắm nhìn cảnh vật từ trên cao xuống và cảm thán mọi thứ bên dưới trông thật nhỏ bé.",
+        "grammarNote": "'von hier oben' = từ trên cao này — cảm thán khi ngắm cảnh"
+      }
+    ]
+  }
+],
+  "erdmaennchen_platte_reifen": [
+  {
+    "part": 1,
+    "picks": [
+      {
+        "id": 3200004,
+        "usage": "Khi liệt kê toàn bộ những thứ đã ghi ra danh sách cho chuyến đi chơi ra hồ tắm."
+      },
+      {
+        "id": 3200013,
+        "usage": "Khi kiểm tra xong xuôi mọi thứ và hào hứng tuyên bố đã sẵn sàng lên đường."
+      },
+      {
+        "id": 3200019,
+        "usage": "Khi đồng tình rằng trời rất đẹp và nhắc bạn chỉ còn thiếu đúng một mục duy nhất."
+      },
+      {
+        "id": 3200021,
+        "usage": "Khi nêu tên mục còn thiếu trong danh sách một cách hài hước là khởi hành ngay."
+      },
+      {
+        "id": 3200024,
+        "usage": "Khi phát thanh viên thông báo thời tiết ngày hè tuyệt đẹp với nhiệt độ cao."
+      },
+      {
+        "id": 3200026,
+        "usage": "Khi phát thanh viên dùng ngôi xưng lịch sự khuyên người nghe nên mang theo ô."
+      }
+    ]
+  },
+  {
+    "part": 2,
+    "picks": [
+      {
+        "id": 3200044,
+        "usage": "Khi chỉ về phía mái hiên đằng xa và rủ bạn vào đó để trú cơn mưa bất chợt."
+      },
+      {
+        "id": 3200046,
+        "usage": "Khi tiếc nuối than thở rằng cả hai vốn định đạp xe ra hồ để bơi lội."
+      },
+      {
+        "id": 3200052,
+        "usage": "Khi gợi ý đùa rằng hãy trồng chuối để bụng không bị ướt lúc trời đang mưa."
+      },
+      {
+        "id": 3200061,
+        "usage": "Khi trấn an người đối diện sau va chạm nhẹ rằng mình chỉ bị chích hơi nhói chút thôi."
+      },
+      {
+        "id": 3200067,
+        "usage": "Khi vui mừng gọi bạn nhìn ra ngoài và báo tin cơn mưa rào đã tạnh hẳn."
+      },
+      {
+        "id": 3200076,
+        "usage": "Khi thốt lên đầy kinh ngạc vì phát hiện toàn bộ lốp xe đạp đều đã xẹp lép."
+      }
+    ]
+  },
+  {
+    "part": 3,
+    "picks": [
+      {
+        "id": 3200078,
+        "usage": "Khi nhận định sự cố bí ẩn này chính là một vụ án mới dành cho hai thám tử."
+      },
+      {
+        "id": 3200093,
+        "usage": "Khi ngài ủy viên nghiêm túc giải thích quy định cấm dừng xe ở khu vực có biển cấm."
+      },
+      {
+        "id": 3200096,
+        "usage": "Khi tự hào khẳng định bản thân lúc nào cũng quan sát và để mắt tới mọi thứ."
+      },
+      {
+        "id": 3200105,
+        "usage": "Khi trả lời dứt khoát rằng mọi quy định đều phải được tuân thủ nghiêm ngặt."
+      },
+      {
+        "id": 3200126,
+        "usage": "Khi xâu chuỗi manh mối và nhận ra quy luật cứ sau mỗi cơn mưa lại có lốp xe bị xẹp."
+      }
+    ]
+  },
+  {
+    "part": 4,
+    "picks": [
+      {
+        "id": 3200141,
+        "usage": "Khi quyết định hành động ngay và rủ đồng đội đi tóm gọn nghi phạm."
+      },
+      {
+        "id": 3200147,
+        "usage": "Khi đặt câu hỏi chất vấn trực tiếp xem đối phương có phải là người làm xẹp lốp xe không."
+      },
+      {
+        "id": 3200155,
+        "usage": "Khi đưa ra bằng chứng ngoại phạm rằng những chiếc gai của mình giờ không còn nhọn nữa."
+      },
+      {
+        "id": 3200157,
+        "usage": "Khi giải thích cách khắc phục đơn giản là gắn những chiếc nút bần lên đầu gai nhọn."
+      },
+      {
+        "id": 3200165,
+        "usage": "Khi khoe rằng nhờ gắn nút bần nên giờ có thể chèo thuyền hơi mà không sợ thuyền thủng."
+      }
+    ]
+  },
+  {
+    "part": 5,
+    "picks": [
+      {
+        "id": 3200177,
+        "usage": "Khi bác bỏ suy đoán của người khác và khẳng định vật đó là máy sấy của nhóm mình."
+      },
+      {
+        "id": 3200180,
+        "usage": "Khi than phiền rằng trên đời không có cảm giác nào khó chịu hơn một bộ lông bị ướt."
+      },
+      {
+        "id": 3200192,
+        "usage": "Khi vỡ lẽ và nhận ra chính những người trước mặt là thủ phạm suốt thời gian qua."
+      },
+      {
+        "id": 3200193,
+        "usage": "Khi thuật lại toàn bộ quá trình các chú chuột dùng hơi từ lốp xe để sấy khô bộ lông."
+      },
+      {
+        "id": 3200198,
+        "usage": "Khi nói lời xin lỗi ngắn gọn và chân thành sau khi biết mình đã lấy nhầm đồ của người khác."
+      }
+    ]
+  },
+  {
+    "part": 6,
+    "picks": [
+      {
+        "id": 3200200,
+        "usage": "Khi chú chuột hamster lịch sự hứa trả lại ngay chiếc thuyền hơi cho chủ nhân là anh nhím."
+      },
+      {
+        "id": 3200204,
+        "usage": "Khi ngỏ ý tặng một món đồ hữu ích giúp giải quyết nỗi lo bị ướt lông mỗi lúc trời mưa."
+      },
+      {
+        "id": 3200207,
+        "usage": "Khi giới thiệu ngắn gọn món đồ giải cứu cho cả nhóm chính là một chiếc bơm hơi."
+      },
+      {
+        "id": 3200210,
+        "usage": "Khi giải thích rằng chiếc bơm còn lại sẽ được dùng để bơm căng lại các lốp xe bị xẹp."
+      }
+    ]
+  },
+  {
+    "part": 7,
+    "picks": [
+      {
+        "id": 3200215,
+        "usage": "Khi chú chuột hamster tự tin khoe tài tạo bong bóng dưới nước mà không cần dùng tới bơm."
+      },
+      {
+        "id": 3200216,
+        "usage": "Khi tổng kết một ngày đi chơi tuyệt vời bên hồ dù kế hoạch ban đầu suýt nữa bị đổ bể."
+      },
+      {
+        "id": 3200223,
+        "usage": "Khi lễ phép báo tin cho ngài ủy viên yên tâm rằng vụ án xẹp lốp xe đã được phá xong."
+      },
+      {
+        "id": 3200233,
+        "usage": "Khi ngài ủy viên lập tức tự nhận rằng mình đã biết rõ kết quả đó ngay từ đầu."
+      },
+      {
+        "id": 3200238,
+        "usage": "Khi lễ phép ngỏ ý cho ngài ủy viên đi nhờ một đoạn vì xe của ngài đang bị xẹp lốp."
+      }
+    ]
+  }
+]
 };
 
 for (const [key, parts] of Object.entries(KINO_PRACTICE_DATA)) {

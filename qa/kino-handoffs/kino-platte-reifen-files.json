@@ -1,0 +1,876 @@
+{
+  "branch": "codex/kino-platte-reifen",
+  "baseMain": "ab589604ed8348ee626fe8758c32272ed7664364",
+  "files": [
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_luftgehen-1.jpg"
+    },
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_luftgehen-2.jpg"
+    },
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_luftgehen-3.jpg"
+    },
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_luftgehen-4.jpg"
+    },
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_luftgehen-5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_luftgehen-6.jpg"
+    },
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_luftgehen-7.jpg"
+    },
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_platte_reifen-1.jpg"
+    },
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_platte_reifen-2.jpg"
+    },
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_platte_reifen-3.jpg"
+    },
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_platte_reifen-4.jpg"
+    },
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_platte_reifen-5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_platte_reifen-6.jpg"
+    },
+    {
+      "status": "A",
+      "path": "assets/kino-posters/erdmaennchen_platte_reifen-7.jpg"
+    },
+    {
+      "status": "M",
+      "path": "e2e/kino-catalog.spec.js"
+    },
+    {
+      "status": "A",
+      "path": "e2e/kino-erdmaennchen-luftgehen.spec.js"
+    },
+    {
+      "status": "A",
+      "path": "e2e/kino-erdmaennchen-platte-reifen.spec.js"
+    },
+    {
+      "status": "A",
+      "path": "erdmaennchen-luftgehen-aligned.js"
+    },
+    {
+      "status": "A",
+      "path": "erdmaennchen-luftgehen-lesson.js"
+    },
+    {
+      "status": "A",
+      "path": "erdmaennchen-platte-reifen-aligned.js"
+    },
+    {
+      "status": "A",
+      "path": "erdmaennchen-platte-reifen-lesson.js"
+    },
+    {
+      "status": "M",
+      "path": "index.html"
+    },
+    {
+      "status": "M",
+      "path": "kino-chapter-data.js"
+    },
+    {
+      "status": "M",
+      "path": "kino-data.js"
+    },
+    {
+      "status": "M",
+      "path": "kino-metadata.js"
+    },
+    {
+      "status": "M",
+      "path": "kino-practice-data.js"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/README.md"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/anti-asr-base-windows.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/anti-asr-small-windows.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/anti-integration-brief.md"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/anti-integration-report.md"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/build_reviewed_and_runtime.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/changelog.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/check_boundaries.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/codex-acceptance.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/codex-browser.log"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/codex-finalize.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/codex-protected-files.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/codex-raw-consistency.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/codex-review-notes.md"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/codex-structure-audit.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/codex-unit.log"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/compare-three-models.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/dump-medium-spans.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/earshot-measure.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/ffprobe-source.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch1_end_175_8.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch2_end_263_0.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch2_start_176_2.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch3_end_325_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch3_start_263_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch4_end_414_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch4_start_326_0.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch5_start_415_2.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch6_end_622_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/cue_3100143_543_1.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/cue_3100144_543_8.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/cue_3100171_623_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/cue_3100171_624_8.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/cue_3100172_626_8.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/cue_3100173_630_2.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/frames/transition_543_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/generate_runtime_files.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/independent-asr-audit.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/independent-picks-audit.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/inspect-muse-vs-raw.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/inspect_asr_comparison.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/integration-status.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/muse-asr-medium.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/muse-lesson.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/register_app_files.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/reviewed-lesson.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/desktop-1440-dictation-practice.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/desktop-1440-flashcards.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/desktop-1440-overview.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/desktop-1440-part3-captions.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/mobile-390-part7-caption.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/mobile-390-speaking-recorded.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/viewport-320-part7.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/viewport-768-part7.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/validate_integration.js"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_luftgehen/validator-output.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/README.md"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/anti-asr-base-windows.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/anti-asr-small-windows.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/anti-brief.md"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/anti-integration-report.md"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-source-hashes.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/build_reviewed_and_runtime.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/changelog.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/codex-acceptance.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/codex-structure-audit.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/compare-three-models.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/delivery.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/e2e-browser.log"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/earshot-measure.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/ffprobe-source.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/c226_706_3.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/c226_707_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/c227_709_0.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/c231_712_6.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/c232_713_4.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200032_122_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200033_124_0.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200037_135_0.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200116_397_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200185_568_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200186_570_2.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200187_571_8.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200196_615_0.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200199_621_8.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200200_624_2.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200201_628_0.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200203_633_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200210_651_0.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200211_653_4.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200212_655_8.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200213_657_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200214_667_8.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200215_671_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200215_672_2.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200215_672_8.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200215_673_4.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200216_682_0.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200226_706_8.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200228_710_1.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200232_713_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200237_726_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200239_739_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200241_747_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part1_048_0.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part2_igel_208_0.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part3_halteverbot_309_0.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part4_korken_494_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part5_foehn_586_0.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part6_luftpumpe_643_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part7_ende_741_5.jpg"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/generate_runtime_files.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/independent-asr-audit.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/independent-picks-audit.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/inspect-muse-vs-raw.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/integration-status.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/muse-asr-medium.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/muse-brief.txt"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/muse-delivery.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/muse-lesson.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/register_app_files.py"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/reviewed-lesson.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/desktop-1440-dictation-practice.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/desktop-1440-flashcards.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/desktop-1440-overview.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/desktop-1440-part3-captions.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/mobile-390-part6-caption.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/mobile-390-speaking-recorded.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/viewport-320-part6.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/viewport-768-part6.png"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/three-model-comparison.txt"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/unit-test.log"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/validate_integration.js"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-alignment/erdmaennchen_platte_reifen/validator-output.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-handoffs/platte-reifen-reconciliation.json"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-handoffs/platte-reifen-reconciliation.md"
+    },
+    {
+      "status": "M",
+      "path": "scripts/build-kino-metadata.cjs"
+    },
+    {
+      "status": "M",
+      "path": "scripts/build-kino-posters.cjs"
+    },
+    {
+      "status": "A",
+      "path": "video/erdmaennchen_luftgehen.mp4"
+    },
+    {
+      "status": "A",
+      "path": "video/erdmaennchen_platte_reifen.mp4"
+    },
+    {
+      "status": "A",
+      "path": "qa/kino-handoffs/kino-platte-reifen-files.json"
+    }
+  ],
+  "frozenWorkingSha256": {
+    "assets/kino-posters/erdmaennchen_luftgehen-1.jpg": "140dfab10c85027dbc5a51c2cc195ee9182fe4059235363728830adc2ed882b0",
+    "assets/kino-posters/erdmaennchen_luftgehen-2.jpg": "f03c36d71758848c4e41fbfdc9cb639e3d8ffed2d0ae7d11bdeb2713e8e0e623",
+    "assets/kino-posters/erdmaennchen_luftgehen-3.jpg": "b4d9953ab12d763036afee35a3fab43f1a4580a595ea62c2f0f0b253fca412f3",
+    "assets/kino-posters/erdmaennchen_luftgehen-4.jpg": "8841fbe161998c4df089b61b0a1703cc984099ea6dabe2011add7759dba6ffec",
+    "assets/kino-posters/erdmaennchen_luftgehen-5.jpg": "388161cd789b0526fea0fdc1ef23ec92f069e5e3720a755ebb28709a128a52e4",
+    "assets/kino-posters/erdmaennchen_luftgehen-6.jpg": "068a0a981a2112c6f409bd94f8a4a41ab210a59ad061e46c95e862c44ea24a1e",
+    "assets/kino-posters/erdmaennchen_luftgehen-7.jpg": "ac44c36922f348f841e9e7a255ff1c52faa40065b075767a4c4d21e63ce25f71",
+    "assets/kino-posters/erdmaennchen_platte_reifen-1.jpg": "f2226fe7d06ff435866562eefe9d2b4a863d316a249cdebb4694cd2fafd1a231",
+    "assets/kino-posters/erdmaennchen_platte_reifen-2.jpg": "d9376a76f0cea50a78ff56a89c69537aa3082b78eb6600d37ac1061290878947",
+    "assets/kino-posters/erdmaennchen_platte_reifen-3.jpg": "1bd35738fff64c1174b4e33b2bdb423e5d25364ddde4c6ad07cdcfd3e83a3492",
+    "assets/kino-posters/erdmaennchen_platte_reifen-4.jpg": "4192cd7e2ee64cbf96fdfb8f16b34656a3a1a588db43b7dbcb263cbbfdd02c43",
+    "assets/kino-posters/erdmaennchen_platte_reifen-5.jpg": "727d3c0a931a45576413bc0ffd2867f7606e09fc26ab084156ea4e98cf47d8ea",
+    "assets/kino-posters/erdmaennchen_platte_reifen-6.jpg": "3abcb7ab6eaf8025011797c756cda41d6207fa89b9826771be777132b9822e32",
+    "assets/kino-posters/erdmaennchen_platte_reifen-7.jpg": "66fc4edb321edbfe4ede72680f88d994e22abef9f73db7b100e82a34374af4c9",
+    "e2e/kino-catalog.spec.js": "7a4c783aa43bcf0ee6c1ec41348500565c146babe32066e6ca77441da560e5d7",
+    "e2e/kino-erdmaennchen-luftgehen.spec.js": "0586212ecebe40a532400f42f027555c05656c7120dddc93071d6202a866162e",
+    "e2e/kino-erdmaennchen-platte-reifen.spec.js": "5ddccc15f31a93e3cb7f2e7f35a0b10ee0b3f6570ab2f59890e46a6ac9d703ec",
+    "erdmaennchen-luftgehen-aligned.js": "cd78f509c783cbd422ccf628f53e580e7f706880a60cb4ba76728b1cc274ffe4",
+    "erdmaennchen-luftgehen-lesson.js": "1b518989a2b6ed49d47a010b32827d1a695aa896bc416166ba0aef2701388a1f",
+    "erdmaennchen-platte-reifen-aligned.js": "72145933b3c3ccf8611a5d629d6123352d26deee47014a4807ccfcd22f125ff1",
+    "erdmaennchen-platte-reifen-lesson.js": "c63e904daa85dc56467255833a113937c22e3c9d7ff1703a43dcea388ab1f1a7",
+    "index.html": "dcd53634bd3bc3e5b88812dcb8759806d61517d9cf646c42571435ade019503a",
+    "kino-chapter-data.js": "019eb73ff7414fc113cfedd2690e39aaa59fbee7cfee0f2d2bec1577a0a3176a",
+    "kino-data.js": "39fefb0240c325acc618bbaf9f568841d1df4bce8e625da20741140cbcf3d469",
+    "kino-metadata.js": "46215d860b85833ea6180b25bc8379a197d946f9a7a72410acdcb82183927ebe",
+    "kino-practice-data.js": "144fb6cf55184de241b3c4ffb7473b6674d7483808321511a4b2a84406422d5e",
+    "qa/kino-alignment/erdmaennchen_luftgehen/README.md": "c761f038b6b11c366817bc0cd78f9a1919542326902623ff38c3d1de230bb525",
+    "qa/kino-alignment/erdmaennchen_luftgehen/anti-asr-base-windows.json": "644f844d75fe4f7a40687a08b81393fe4f4b6752f1fe4f4e74fa47c4787dfd8c",
+    "qa/kino-alignment/erdmaennchen_luftgehen/anti-asr-small-windows.json": "05c4ce3eab3a0cef60ccf92a3a46783572bc6e5293b1124b2f0384996e8a5c4a",
+    "qa/kino-alignment/erdmaennchen_luftgehen/anti-integration-brief.md": "2fca4a21c9f56071a8709f2e3a98fdf9df18d2ac00383cd189b15754262d6ff1",
+    "qa/kino-alignment/erdmaennchen_luftgehen/anti-integration-report.md": "afb2f9216273dcdcc43cbb79132844a26860766ca5a0c84073084274e9fa273f",
+    "qa/kino-alignment/erdmaennchen_luftgehen/build_reviewed_and_runtime.py": "14df6b6a9b54493eac5a680f6deaf9863dbb258b84033862ae43d80c137ae4a6",
+    "qa/kino-alignment/erdmaennchen_luftgehen/changelog.json": "96a942fe7dab7bf9cd23f29c5358ebf78dd804a91f65bde46efed23c84ff2a09",
+    "qa/kino-alignment/erdmaennchen_luftgehen/check_boundaries.py": "88808f072f31db3dbdba697b3d57024554820dcced9990366b361ce644955cae",
+    "qa/kino-alignment/erdmaennchen_luftgehen/codex-acceptance.json": "7593e3355bb9fcdc134f5dd39af7afc8ee31091a7fb82568094787a7b5713276",
+    "qa/kino-alignment/erdmaennchen_luftgehen/codex-browser.log": "62ba9fe0173fd5ea9c0788d4ffe80c33c5abcb03377399f58ef0b0c324aa1969",
+    "qa/kino-alignment/erdmaennchen_luftgehen/codex-finalize.py": "a14bb9c248b169969497cd5cd8aeecdae5347e98fbdc43f3edd39a1185965eae",
+    "qa/kino-alignment/erdmaennchen_luftgehen/codex-protected-files.json": "f69e86fa8fdf46a9b92ed8f7c585b50a446b3e9398df4934d432beb451553268",
+    "qa/kino-alignment/erdmaennchen_luftgehen/codex-raw-consistency.json": "b7467d7fd89f881474db579bc791b28f1d722150ee3fde8bcd1b2044695246db",
+    "qa/kino-alignment/erdmaennchen_luftgehen/codex-review-notes.md": "129469e60241fbeb1b854b8f2d4bacf18d1869fb5f4f8f8a0abdf124beefb480",
+    "qa/kino-alignment/erdmaennchen_luftgehen/codex-structure-audit.json": "e6b5b573b1fae33aefa6bc43f675b888e66fce3fa53a1db14c5b5d4a43869460",
+    "qa/kino-alignment/erdmaennchen_luftgehen/codex-unit.log": "5594381ad23725193a5522c201f741768cb888a0103f9c21422492ccce2b0ed9",
+    "qa/kino-alignment/erdmaennchen_luftgehen/compare-three-models.py": "5d95a53c72e7327060de9ee38c6cee8ee9ac26ff2eceb8de5ecee281b0001dee",
+    "qa/kino-alignment/erdmaennchen_luftgehen/dump-medium-spans.py": "bfc259c76b2c4d24d8f36a484df38c2593c8c76e3034b0c8107e94b4fe47a228",
+    "qa/kino-alignment/erdmaennchen_luftgehen/earshot-measure.json": "7d2f787484b39bf6d25c2c88ed1983d57449d4110ca4745534af9a78cb2ba712",
+    "qa/kino-alignment/erdmaennchen_luftgehen/ffprobe-source.json": "3e3512f2ff68ba16952e5c17fe8583a482f93da2e0c209701ed5064b2632dc67",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch1_end_175_8.jpg": "a2f319837e19d3bffea4faeb09295dfbf2ac6f2e88692433342918044626af57",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch2_end_263_0.jpg": "5182e5e31f0ce2434e4eadfd7ce748fd9bad0cd4a96cea161f66b34031668048",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch2_start_176_2.jpg": "4b80e30e980d66e5dc4aa302e93052dca180b62cb8400a6ec3d8c893664bf382",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch3_end_325_5.jpg": "0b7e2a11e592b2c9e6e19d1981b2b4fb8aa915a9e5f76cfa2bc5c9b48d78dd60",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch3_start_263_5.jpg": "42a9f432b294ab59e9170c8207a48378453ea5cdf0a3a199a6b4d25aad1fe51d",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch4_end_414_5.jpg": "01c84817921c2808fa3c5df387a5b1acb466bf8fd4f1bba440259ff4481cb494",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch4_start_326_0.jpg": "c639046f0ed796d3785945946fae4f87330760ee33dfbb0c8d9b177fedd1f610",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch5_start_415_2.jpg": "77e7795172938d3aaf2a2c5b8e5690db57dd2e14318a8fc7a84b10b6c95705e4",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/ch6_end_622_5.jpg": "f886ce18e465ff4d162dcd9cae6acbb84a2fd18e787464ddff85626aac9b79f1",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/cue_3100143_543_1.jpg": "3a699539b19b70afe994b93006a835628a557723c4b5a1d44a72b232707580f3",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/cue_3100144_543_8.jpg": "14c13ae22e952fdf2943c89e66a2da8aeb17e5506a2ef6d404303eda31cdc58a",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/cue_3100171_623_5.jpg": "9aa97515cee06e7601883b49dfcd129ffa281fa5bf237a93e80c2679b2888c2f",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/cue_3100171_624_8.jpg": "5592a852a6477cca7328224ddc6f2ed406e14b3caa9a8feb4f5cde0e337dff0b",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/cue_3100172_626_8.jpg": "1d7c01dd67cf7197c4fce66f488d0a803ebda1aafc37a2ced1af98be4bf44dbb",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/cue_3100173_630_2.jpg": "8f307ba3a2c757b2d0318d0745e165cb755c1683622a17a3eda3fff21978ed2f",
+    "qa/kino-alignment/erdmaennchen_luftgehen/frames/transition_543_5.jpg": "4e91e8176ddbed0337cc93cd0281f160dcbc7d4f58dda11515822c86b598c0aa",
+    "qa/kino-alignment/erdmaennchen_luftgehen/generate_runtime_files.py": "c56b061fb51a4671dae5abdac4b289be317c8e18a56c64948ff8863e28d02a5b",
+    "qa/kino-alignment/erdmaennchen_luftgehen/independent-asr-audit.py": "18c20ef44a6c45e6698bcec5e2e425da036dcaf8326cdf48ef757ad91bbf37be",
+    "qa/kino-alignment/erdmaennchen_luftgehen/independent-picks-audit.json": "6febcac2a565021f068aba218c41e8844527f9ca8600d7a3c46733e54a6afd22",
+    "qa/kino-alignment/erdmaennchen_luftgehen/inspect-muse-vs-raw.py": "bc9c493b11ac522a533be44dc56f3433ea22588811ed785bfc57089ae123eace",
+    "qa/kino-alignment/erdmaennchen_luftgehen/inspect_asr_comparison.py": "ab255b6294b45b6bcb07e907e4e92bed33f8543921b2af963ba7d08fbbf8d9cd",
+    "qa/kino-alignment/erdmaennchen_luftgehen/integration-status.json": "3ce0a3beeb17af444328b3d33f561ef9e49db83d8af1ab843a511f17c913a620",
+    "qa/kino-alignment/erdmaennchen_luftgehen/muse-asr-medium.json": "388959ff0807faed778f3bbc42e2e13763062bc3b9ff2a2008f65e014b0d4bd4",
+    "qa/kino-alignment/erdmaennchen_luftgehen/muse-lesson.json": "dd6c82cc27b89b34caeb2883e49adf33aaf8f7cac1727295c19910beccaa0f2e",
+    "qa/kino-alignment/erdmaennchen_luftgehen/register_app_files.py": "066379cb4008354fc44d5c43fd2b04ce30cc0a457ceb45693e40b09aecf3a0ef",
+    "qa/kino-alignment/erdmaennchen_luftgehen/reviewed-lesson.json": "cb4fb3525564184134a8b05e4e7652e68f265187a3a7ed24ec5d5c6181dda22a",
+    "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/desktop-1440-dictation-practice.png": "4558b9e7add0df6b409223308bd3feba5e18fdd37f5dff2d47b7a2f48fe9efcb",
+    "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/desktop-1440-flashcards.png": "f01f3475fff354233ad50d6b8a32b1c5d55d1ee81808e5fdbd012ed4bc742b45",
+    "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/desktop-1440-overview.png": "808d6b74731c4fc25df6bf623493b747890c66655f5b963ba1fe799d07287c7b",
+    "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/desktop-1440-part3-captions.png": "338364cef3f39848171f3d2250982639cae1ba96f95640580eb7b544afe3327f",
+    "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/mobile-390-part7-caption.png": "7d44ee27419f88dfff86605cfbb2bc62f5c65e970e57d105e41dcd2cf5251952",
+    "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/mobile-390-speaking-recorded.png": "26f65f3f8bf892fd817c41cca7952070ea9320c4de40dd110b328b8774679374",
+    "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/viewport-320-part7.png": "29336211971f5747207f61c366e30100f894f13fa7df84f3755cff9d241bd6e2",
+    "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/viewport-768-part7.png": "85827c17dc785726149633efce33bcdfd6f9ecd6a5c41db3be85ec54669a38a2",
+    "qa/kino-alignment/erdmaennchen_luftgehen/validate_integration.js": "fa969d11f791819193c4264ae877428b38915b8108591d2f77c25e531fa99a03",
+    "qa/kino-alignment/erdmaennchen_luftgehen/validator-output.json": "59ee0c0abc33ab537598bf87815605ea7d70dd824122295b0e0dfa6c023e11a3",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/README.md": "fa94539ca1c533b397852b9b46fd9fddd73df61cfef1493d01d5a7e326167877",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/anti-asr-base-windows.json": "84ae5d1c6cccc6b98126a19823bd3fa171826424b1d2954a4a4265a4961212fc",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/anti-asr-small-windows.json": "dc8f1339b01607d3a1223f9d05eff7b1a74900ac9fc54995134d4ffa54043e9d",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/anti-brief.md": "47fde48f5b0752954314754f7be76c26cef965f881650a2a0ad5c2fd1f6224c5",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/anti-integration-report.md": "52181e96cfbc2741a9d6d8dfa4b67412eec219f503bdda0f563060a18c19ef17",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json": "7ace585849562cb0e623c69da11d8cbc078046182942e7e184fc16291788bd1b",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-source-hashes.json": "d270a5bf6b2e484136ef6c38c63497b2fc94c47f41cb2d052f3f9790b87a5d44",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/build_reviewed_and_runtime.py": "cf503cec4707f081966f562ad5be93f84ab0cdc52068f2f7b2ac1be0a3baace4",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/changelog.json": "dc0f022581a26cc760aedb644198c245120f79b38f89e06170e85a298553a80b",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/codex-acceptance.json": "2d65656681d3e9e834805161791dcc19f87e534b36fc707d94250eed4ffa3b1f",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/codex-structure-audit.json": "f4fc486b905c3826e1abd6e66dd926657d263dd5a3a75ed189e119e1cd44353c",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/compare-three-models.py": "c66dcf5b9d683239ece75989ef584fad00eb25da701d4b44397e722e194e5138",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/delivery.json": "0380ed0ae1f29c6e62fd652e1fd1a7f3b3ea32b99fa0784e066ad94d7c95feac",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/e2e-browser.log": "eafd9af02b22b426765e0381a27ce08769cef3a44a4bf495ae338be2e1f56ebb",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/earshot-measure.json": "8870a77d7a5a7cec4b521430c31c83326dda78be751b2553d7f59c0945d08a78",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/ffprobe-source.json": "63f903dcfd047db8d6abafe1273a454c7b8bbd6571194185023a41a318f571e7",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/c226_706_3.jpg": "b67dddc0f8eaa3b071bc444ff6a63743a75a6cee921b75bec6eb36bbc7238b6d",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/c226_707_5.jpg": "80f872f43f55f8d1bb6329fa6654af63c51e1819ac364bb4506b124cd566b543",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/c227_709_0.jpg": "25f2d216ad0d450832747cf4635d4661b54522f2f40a29c27248fb54d60cdf29",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/c231_712_6.jpg": "aed03753d65a689cdf171bd2f0614902310650b3cf9a98d6a9cd151e0086626f",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/c232_713_4.jpg": "1fe52dcd9001c4a4c460516fafa8528cac3f6107ac58ef49a3279c8de80bf9b4",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200032_122_5.jpg": "0bf1993325a2e3632a2fa5c0f15e7a0a23883de564ab30715bae134928cc78a3",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200033_124_0.jpg": "6819da8ac19edfe3fd118b5c6caec73bc5f2de409c969d7cf598a8f93036bb66",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200037_135_0.jpg": "cd6333af738e7ce41e1863b00afa99404d571b34bed86a1168dbf4ee7fa232b7",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200116_397_5.jpg": "aa657d7a01b91eb8999381f37d9212136827fb33a2373f6b4f4936657cd8d945",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200185_568_5.jpg": "5f50e5bcbd4ad9e4966da93df708d952870d1da1b90a3aa0f1f8e5a4909f7f63",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200186_570_2.jpg": "00ba3d9a5b4bae71137eb540471b87bc850d598fa839d5054fa06308e82f1760",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200187_571_8.jpg": "3b65f1753f422df1950e5e5dfd38b8665c4aa5d4e496b8d815ac00694f3c479b",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200196_615_0.jpg": "4f99c2b179fd6427bcf655b9e5b0a94e14b64aa18c2c16b80e2ebf9d8d97be42",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200199_621_8.jpg": "db9675ba807c993729d1509284480aef3814ddba4f7e356ce8c4228733293c41",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200200_624_2.jpg": "acf03fadeb4380b11632caf4a013c33081ca3b2f274dc9b82224fa04ffaa547b",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200201_628_0.jpg": "6d22212d57891558b4855d3e6620f68133a2760679a38c8bae3be9b66560fe86",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200203_633_5.jpg": "95d92c096da0c3c3625b1b3e706b0b783e734df904b421532ecf028dd9a99cbe",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200210_651_0.jpg": "8d4f13cacbecef158478a1b0d35f60a24220c7ea6a2e392a73267a4b5589bc1a",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200211_653_4.jpg": "a0f9ec13f539acf32b6afdcb4a720ae662e97828e9a6380c97953959b0b597cd",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200212_655_8.jpg": "4243dfa0fbd481ee9e0bf961950fdf94588902d67aaab5f4dcc5dfe365a88acd",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200213_657_5.jpg": "874395704c14be96cae9117e822c5833a22c6252352fe3b472acf2cf067d3279",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200214_667_8.jpg": "b225e9306ea2621d6eb5d422fed39b298711ab9836a5e3de9dcd74d2db80ffdd",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200215_671_5.jpg": "7c8089ab02f12bafd48b80e85044158b061315b33720cfcb96c3b4ed26bfd55a",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200215_672_2.jpg": "8928a99326c4c177fbe4b299714fbf0d21c7c45c5fe9d0bc86ce944b79be1479",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200215_672_8.jpg": "4b638aae57c9b799e03f188274ac5634f486fc4207064057c9e74453e02cc12d",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200215_673_4.jpg": "fe5cdd7f80fcd90eafe4a12a9b2a753be21c96b7a9fb08b5a29bf15c9af6d010",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200216_682_0.jpg": "ffe77d3300ac44f7eb0c146630798967f06e4afd97e0441e79a44771e2366720",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200226_706_8.jpg": "e10f4f0f4cd25358db369b3dc72f0a268106de71d7416b72e0a8217a04e06369",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200228_710_1.jpg": "2afc2642185b1879ad8fb4b5536d1225642af8e5b245aada0b086ebe741ef514",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200232_713_5.jpg": "6a3471251360dfcde515945d163123627fbd32895f6c8091f36fe0db8b08849e",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200237_726_5.jpg": "fd278c750782c4dd98e1e1a3449d2150aec760c13956b04f80dbfb0ea48031c5",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200239_739_5.jpg": "4c25f2f6158ef9ead635431034db654a96971d8f1dab02e194b3054308cae43f",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/cue_3200241_747_5.jpg": "b1a20400eabba9e51f9d525b83a814d1d08915e64acdafb36848597959806c29",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part1_048_0.jpg": "8d76227e36fe7018fd60636bf7047916b1b6862c34e0e93b97b334e5e5c2c97a",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part2_igel_208_0.jpg": "1b4798d1745eddf70dd89118b95e129f847e83b8705ec316d2457809f3b5ae50",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part3_halteverbot_309_0.jpg": "6777fb8b3479c3a6a09a08fb5e62d7a7f84b2ebc222be4d776f50485a6385a5f",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part4_korken_494_5.jpg": "18ccad07e8ada26043308b1f9cb2cf9e988b39bdf1965c8ee1aae4d71a76bf75",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part5_foehn_586_0.jpg": "c389806b56fa25205141d60894a832c0375f329a622ba223360a8191e2b4303f",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part6_luftpumpe_643_5.jpg": "354bb41c19e4a605b8a04a4791e58fd7845e4a5776efaad3fefffbbec8bc5b8c",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/frames/part7_ende_741_5.jpg": "ef13ae458fd5bab6dc10ef5daa3bcccb3295625243d1598af635b13b5fbef04b",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/generate_runtime_files.py": "88c18c1ad3adcf8d022f6bf51f8f28fb50dc65c9564622258e97f433cbd2a55e",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/independent-asr-audit.py": "928aeec7f8d4afc6c444a1ccde7dd0ece2502f1a4661044e878c282dde9d5eb9",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/independent-picks-audit.json": "6e28e8d3ca6bb230414361961a4d7b3d1d3763d5c218c1e17d53201b72dacf29",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/inspect-muse-vs-raw.py": "43ab6e6a9a5f141f05e9ce7754ea0ec39faf4dfccf99290109c04eca853fe0ad",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/integration-status.json": "68e6c87479ee4ab89bb8b1208ba4916a50c7a25fa1553fdea65b9e6b6d70b379",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/muse-asr-medium.json": "36a107f01d716527394ad1d6ccff64d504177178720f6b723be7357d4e34d235",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/muse-brief.txt": "bf6b752eb89ecb86d2507e4afe888da99fa6f189d19690eb1c19cdb1b55d754d",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/muse-delivery.png": "28f0588f99f7465b6678d72253804c4143fde058666cd014cd326645808c0599",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/muse-lesson.json": "d149159859ae59caf8391545a7938eb519d956e5a2f68597f039edab620a2179",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/register_app_files.py": "6b72eb837d54ef21ecd83230782b8fed1f3602f24bbb9c0b61a73e045e2ede9b",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/reviewed-lesson.json": "0ced571bb9121c92292fa03ee4f49954c5045f82b98a712ed8410e638d6f2f13",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/desktop-1440-dictation-practice.png": "722f817eadb352f2b15d4576cdd869b854ff77e18fd01c8c75d6128757d2e333",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/desktop-1440-flashcards.png": "54213677be3cfdaac773ed779db7d79c66b41c636cca8cf840a416d20de7ff19",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/desktop-1440-overview.png": "5a481c2162acac9d1e69ee5fab9a1bdab60adc7f477314acb1c05d0ea7549caa",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/desktop-1440-part3-captions.png": "6d8013ad28084f1acf5328935bace06914ef08a5ae02f4d71842b783ce36d942",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/mobile-390-part6-caption.png": "067911aa3e51bab584cd742c452741db48e5ee1cb79683039290963739286fe2",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/mobile-390-speaking-recorded.png": "e0392dac8e3080b7bf3f8a1a1715bd7ac81f47438889032fa17e4f685104983e",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/viewport-320-part6.png": "962724704c89d6fc4155d3eb5dea72bfc94bcd5c4e61f4b8aaa433ed8310485d",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/screenshots/viewport-768-part6.png": "eb10f0a7211c8ac61c44bb23e7a62b0b63eb9afe05f7d77baf35730c7f512f8d",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/three-model-comparison.txt": "75bd4a91ee8a9df52e4b94ae3450b4fdb4e62b3b7f51fee96381957a34049545",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/unit-test.log": "eafab1a7caa3438002d1191b242557acf54d8450a3c7d5c105b78a469e366def",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/validate_integration.js": "a309e04f28ec5c6d0492f48f30003650f43b71017408d3ebacda7eae5b2d24e7",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/validator-output.json": "110519b19914c035ed397735e470c09e9b310a893205768a213b64753f0c4f8d",
+    "scripts/build-kino-metadata.cjs": "449bf6f0f22ec3bd23a3e445236b3e1f6ac7268e27c443dc09fd17e1bc0c39ff",
+    "scripts/build-kino-posters.cjs": "09413e71330ab10e0062e300d90136d008a64502a6dd68b4baf035244225651b",
+    "video/erdmaennchen_luftgehen.mp4": "5e037e81b804487f054052b88d3c8adad9af8b92aa3ea0aaf3e036bc80d28278",
+    "video/erdmaennchen_platte_reifen.mp4": "4fb2d58c1c2d3a8b1141e0a5b5ca1cf96e964795ed133972ad8dcbcc62c8cdb5"
+  },
+  "notes": [
+    "Prepared from current main using an isolated Git index. Checked-out branch, files and index preserved.",
+    "No new lesson/runtime edits; metadata is split to include only the accepted work belonging to this branch."
+  ],
+  "episodes": [
+    {
+      "key": "erdmaennchen_platte_reifen",
+      "sourceCount": 241,
+      "publishedCount": 223,
+      "parts": 7,
+      "picks": 36,
+      "flashcards": 22,
+      "merged": [],
+      "split": [],
+      "newCueIds": [],
+      "evidence": "qa/kino-alignment/erdmaennchen_platte_reifen/changelog.json"
+    },
+    {
+      "key": "erdmaennchen_luftgehen",
+      "sourceCount": 182,
+      "publishedCount": 179,
+      "parts": 7,
+      "picks": 40,
+      "flashcards": 21,
+      "merged": [],
+      "split": [],
+      "newCueIds": [],
+      "evidence": "qa/kino-alignment/erdmaennchen_luftgehen/changelog.json"
+    }
+  ],
+  "reconciliation": "qa/kino-handoffs/platte-reifen-reconciliation.md"
+}

@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-26",
+  "status": "accepted",
+  "lessonUrl": "http://localhost:3000/?kino=plattereifen",
+  "authors": {
+    "content": "Muse",
+    "integrationAndAsrAudit": "Antigravity",
+    "finalReview": "Codex"
+  },
+  "counts": {
+    "cues": 223,
+    "chapters": 7,
+    "focusPicks": 36,
+    "flashcards": 22
+  },
+  "removedCueIds": [
+    3200030,
+    3200033,
+    3200039,
+    3200091,
+    3200116,
+    3200124,
+    3200134,
+    3200161,
+    3200186,
+    3200212,
+    3200214,
+    3200220,
+    3200227,
+    3200228,
+    3200237,
+    3200239,
+    3200240,
+    3200241
+  ],
+  "sourceSha256": "4fb2d58c1c2d3a8b1141e0a5b5ca1cf96e964795ed133972ad8dcbcc62c8cdb5",
+  "verified": {
+    "sourceBytes": 267747631,
+    "sourceDuration": 750,
+    "validatorRerunByCodex": true,
+    "oldSourceHashesUnchanged": 55,
+    "otherFilmPracticeDataUnchanged": true,
+    "luftgehenPreserved": {
+      "cues": 179,
+      "chapters": 7,
+      "focusPicks": 40,
+      "flashcards": 21
+    },
+    "unitSuitesPassed": 21,
+    "browserTestsPassed": 8,
+    "actualTestLogsInspected": true,
+    "desktopMobileScreenshotsInspected": true,
+    "focusLinesAndVocabularyReviewed": true
+  },
+  "evidence": [
+    "validator-output.json",
+    "unit-test.log",
+    "e2e-browser.log",
+    "independent-picks-audit.json",
+    "changelog.json",
+    "screenshots/desktop-1440-overview.png",
+    "screenshots/mobile-390-part6-caption.png"
+  ],
+  "limits": [
+    "Selected dialogue; no full native-speaker audio review claimed.",
+    "Tests were executed by Anti; Codex inspected actual logs and reran the integration validator.",
+    "Simulated microphone tests cover UI, not physical capture.",
+    "Shorts remain QA proposals.",
+    "Local integration only, no commit/push/deploy."
+  ]
+}

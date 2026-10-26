@@ -1,0 +1,17 @@
+
+Running 8 tests using 1 worker
+
+(node:26928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › e2e\kino-catalog.spec.js:10:1 › Kino starts with a grid of covers, titles and level meta; a film opens its own parts (19.3s)
+  ok 2 [chromium] › e2e\kino-catalog.spec.js:50:1 › browser back and forward, reload and direct film links restore the right view (4.0s)
+  ok 3 [chromium] › e2e\kino-catalog.spec.js:82:1 › phone gallery scrolls as one row and detail count is visible only after selecting a film (2.5s)
+(node:9032) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 4 [chromium] › e2e\kino-erdmaennchen-platte-reifen.spec.js:44:1 › Platte Reifen is discoverable with 7 parts, 223 runtime cues (unverified cues excluded), 22 flashcards, posters and HTTP 206 seekable video (2.2s)
+  ok 5 [chromium] › e2e\kino-erdmaennchen-platte-reifen.spec.js:121:1 › all 7 parts play, render DE/VI captions, toggle CC, stop at chapter boundaries, and account for all 223 runtime cues (14.1s)
+  ok 6 [chromium] › e2e\kino-erdmaennchen-platte-reifen.spec.js:163:1 › all/focus practice modes, right/wrong dictation, progress restore, movie switching and Back navigation work without stale data (4.3s)
+  ok 7 [chromium] › e2e\kino-erdmaennchen-platte-reifen.spec.js:208:1 › 22 source-linked flashcards open cleanly and jump back to the exact scene (2.3s)
+  ok 8 [chromium] › e2e\kino-erdmaennchen-platte-reifen.spec.js:224:1 › mobile viewports (320, 390, 768) have zero horizontal overflow and simulated speaking recording works (6.0s)
+
+  8 passed (59.0s)

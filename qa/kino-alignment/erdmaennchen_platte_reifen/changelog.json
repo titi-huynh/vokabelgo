@@ -1,0 +1,688 @@
+{
+  "videoKey": "erdmaennchen_platte_reifen",
+  "alias": "plattereifen",
+  "sourceFile": "qa/kino-alignment/erdmaennchen_platte_reifen/muse-lesson.json",
+  "reviewedFile": "qa/kino-alignment/erdmaennchen_platte_reifen/reviewed-lesson.json",
+  "summary": {
+    "museCueCount": 241,
+    "runtimeCueCount": 223,
+    "removedReviewNeededIds": [
+      3200030,
+      3200033,
+      3200039,
+      3200091,
+      3200116,
+      3200124,
+      3200134,
+      3200161,
+      3200186,
+      3200212,
+      3200214,
+      3200220,
+      3200227,
+      3200228,
+      3200237,
+      3200239,
+      3200240,
+      3200241
+    ],
+    "chapterCount": 7,
+    "pickCount": 36,
+    "picksPerChapter": [
+      6,
+      6,
+      5,
+      5,
+      5,
+      4,
+      5
+    ],
+    "flashcardCount": 22,
+    "shortsProposalCount": 3
+  },
+  "changes": [
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200030,
+      "before": {
+        "start": 116.99,
+        "end": 119.45,
+        "text": "Ich krieg doch schon so schnell ich kann in die Pedale.",
+        "vi": "Tớ đã đạp hết sức có thể vào bàn đạp rồi đây này.",
+        "speaker": "Jan & Henry",
+        "reviewNeeded": true
+      },
+      "after": null,
+      "reason": "reviewNeeded cue #1: Verb 'krieg' has low confidence across models (medium p=0.815, small p=0.512, base p=0.466; base drops 'schon') and is likely a misrecognition of 'tret(e)' ('in die Pedale treten'). Excluded from runtime without grammatical guessing."
+    },
+    {
+      "type": "speaker_fix",
+      "cueId": 3200032,
+      "before": {
+        "speaker": "Jan & Henry"
+      },
+      "after": {
+        "speaker": "Hamster"
+      },
+      "reason": "Video frame cue_3200032_122_5.jpg shows the hamsters rushing past Jan & Henry's bicycle shouting 'Platz da!'."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200033,
+      "before": {
+        "start": 122.85,
+        "end": 125.15,
+        "text": "Wir wollen zum Badesee.",
+        "vi": "Bọn tớ muốn ra hồ tắm.",
+        "speaker": "Jan & Henry",
+        "reviewNeeded": false
+      },
+      "after": null,
+      "reason": "Unverified ASR word: 'wollen' has p=0.008 in medium and p=0.016 in small while base transcribes 'Wir haben da alle!' over overlapping hamster voices rushing past in frame cue_3200033_124_0.jpg. Excluded from runtime."
+    },
+    {
+      "type": "speaker_fix",
+      "cueId": 3200037,
+      "before": {
+        "speaker": "Anderes Tier"
+      },
+      "after": {
+        "speaker": "Schnecke"
+      },
+      "reason": "Video frame cue_3200037_135_0.jpg and dialogue continuity after 3200036 ('So lange uns keine Schnecke überholt.') confirm the speaker overtaking Jan & Henry is a snail ('Schnecke')."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200039,
+      "before": {
+        "start": 142.67,
+        "end": 145.71,
+        "text": "Weil kann es nicht sein. Ich bin schon nass geworden.",
+        "vi": "Chắc không còn xa nữa đâu. Tớ đã bị ướt rồi.",
+        "speaker": "Jan & Henry",
+        "reviewNeeded": true
+      },
+      "after": null,
+      "reason": "reviewNeeded cue #2: Initial word 'Weil' has p=0.126 in medium and p=0.264 in small, while base outputs 'Weil kannst du dich sein!'. Excluded from runtime without guessing 'Weit'."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200091,
+      "before": {
+        "start": 305.28,
+        "end": 306.9,
+        "text": "Ich schreibe einen Straf.",
+        "vi": "Tôi đang viết một phiếu phạt.",
+        "speaker": "Kommissar",
+        "reviewNeeded": true
+      },
+      "after": null,
+      "reason": "reviewNeeded cue #3: Final noun is truncated/disagreed across all 3 models (medium: 'Straf.' p=0.847, small: 'Straftat.' p=0.830, base: 'Strafzett!' p=0.679). Excluded from runtime."
+    },
+    {
+      "type": "translation_fix",
+      "cueId": 3200092,
+      "before": {
+        "vi": "Chiếc xe này đang đỗ ở khu vực cấm đỗ."
+      },
+      "after": {
+        "vi": "Chiếc xe này đang dừng ở khu vực cấm dừng xe."
+      },
+      "reason": "Clarified 'Halteverbot' / 'hält im Halteverbot' as 'dừng ở khu vực cấm dừng xe' (not merely 'cấm đỗ'), matching the Absolutes Halteverbot sign in frame part3_halteverbot_309_0.jpg."
+    },
+    {
+      "type": "translation_fix",
+      "cueId": 3200093,
+      "before": {
+        "vi": "Mà đỗ ở khu vực cấm đỗ là bị cấm."
+      },
+      "after": {
+        "vi": "Mà dừng xe ở khu vực cấm dừng xe là bị cấm."
+      },
+      "reason": "Clarified 'im Halteverbot halten' as 'dừng xe ở khu vực cấm dừng xe'."
+    },
+    {
+      "type": "translation_fix",
+      "cueId": 3200106,
+      "before": {
+        "vi": "Sao ngài không lái xe ra khỏi khu vực cấm đỗ ạ?"
+      },
+      "after": {
+        "vi": "Sao ngài không lái xe ra khỏi khu vực cấm dừng xe ạ?"
+      },
+      "reason": "Clarified 'aus dem Halteverbot' as 'khỏi khu vực cấm dừng xe'."
+    },
+    {
+      "type": "translation_fix",
+      "cueId": 3200107,
+      "before": {
+        "vi": "Vì tôi đã đỗ ở khu vực cấm đỗ rồi. Chỉ sau khi phiếu phạt được gửi đi đúng quy cách, chiếc xe mới được đỗ sang chỗ khác."
+      },
+      "after": {
+        "vi": "Vì tôi đã dừng xe ở khu vực cấm dừng xe rồi. Chỉ sau khi phiếu phạt được gửi đi đúng quy cách, chiếc xe cơ giới mới được đỗ sang chỗ khác."
+      },
+      "reason": "Clarified 'im Halteverbot gehalten habe' as 'đã dừng xe ở khu vực cấm dừng xe rồi'."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200116,
+      "before": {
+        "start": 396.31,
+        "end": 398.53,
+        "text": "Die Reifen in Ihrem Auto sind auch platt.",
+        "vi": "Lốp ô tô của ngài cũng xẹp rồi ạ.",
+        "speaker": "Jan & Henry",
+        "reviewNeeded": false
+      },
+      "after": null,
+      "reason": "Flagged pick in Part 3 ('Die Reifen in Ihrem Auto sind auch platt.'): Initial 'Die' has p=0.248 in medium while small (p=0.122) and base (p=0.153) prefix 'Na, die', and all 3 models transcribe 'in Ihrem Auto' instead of standard 'an Ihrem Auto'. Excluded from runtime and Part 3 picks rather than grammatically rewriting."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200124,
+      "before": {
+        "start": 414.58,
+        "end": 416.2,
+        "text": "Für jeden Plattenreifen ein.",
+        "vi": "Mỗi lốp xẹp một phiếu.",
+        "speaker": "Kommissar",
+        "reviewNeeded": false
+      },
+      "after": null,
+      "reason": "Flagged cue ('Für jeden Plattenreifen ein.'): Colloquial reduction of 'Für jeden platten Reifen einen' with 'ein' at p=0.676 (medium), p=0.699 (small), p=0.540 (base). Excluded from runtime rather than grammatically rewriting."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200134,
+      "before": {
+        "start": 437.52,
+        "end": 441.16,
+        "text": "Der Igel hat so scharfe und spitze Stachel.",
+        "vi": "Con nhím có những cái gai sắc và nhọn.",
+        "speaker": "Jan & Henry",
+        "reviewNeeded": false
+      },
+      "after": null,
+      "reason": "Flagged pick in Part 4 ('Der Igel hat so scharfe und spitze Stachel.'): Medium omits 'doch' ('so' p=0.218) whereas both small (p=0.966) and base (p=0.922) transcribe 'hat doch so', and the plural noun is transcribed as singular 'Stachel.' (medium/small) or 'Stache.' (base) instead of 'Stacheln'. Excluded from runtime and Part 4 picks."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200161,
+      "before": {
+        "start": 504.25,
+        "end": 506.59,
+        "text": "Jetzt kann ich niemanden mehr piekeln.",
+        "vi": "Giờ tôi không thể chích ai được nữa.",
+        "speaker": "Igel",
+        "reviewNeeded": false
+      },
+      "after": null,
+      "reason": "Flagged cue ('Jetzt kann ich niemanden mehr piekeln.'): ASR models disagree between 'piekeln' (medium p=0.781, small p=0.599 with 'Jetzt' p=0.412) and 'pieken' (base p=0.663). Excluded from runtime."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200186,
+      "before": {
+        "start": 569.64,
+        "end": 570.84,
+        "text": "Ich zeig's Ihnen.",
+        "vi": "Để em chỉ cho các anh xem.",
+        "speaker": "Hamster",
+        "reviewNeeded": false
+      },
+      "after": null,
+      "reason": "Flagged pick in Part 5 ('Ich zeig\\'s Ihnen.'): Video frame cue_3200186_570_2.jpg shows the two hamsters turning to each other (not addressing Jan & Henry with formal Sie, as they use 'ihr' in 3200175 and 3200187), and all 3 ASR models disagree with low probability (medium: 'Ich zeig\\'s Ihnen.' with 'Ich' p=0.237; small: 'Zeig sie den.' with 'den.' p=0.237; base: 'Zeig sie dir!' with 'dir!' p=0.226). Excluded from runtime and Part 5 picks."
+    },
+    {
+      "type": "speaker_and_translation_fix",
+      "cueId": 3200200,
+      "before": {
+        "speaker": "Jan & Henry",
+        "vi": "Dĩ nhiên em có thể nhận lại nó ngay."
+      },
+      "after": {
+        "speaker": "Hamster",
+        "vi": "Dĩ nhiên anh có thể nhận lại nó ngay."
+      },
+      "reason": "Video frame cue_3200200_624_2.jpg and dialogue continuity (3200196-3200201) prove the Hamster is returning the inflatable boat ('Föhn'/'Schlauchboot') to the Igel ('Du kannst es natürlich sofort wiederhaben.'), not Jan & Henry."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200212,
+      "before": {
+        "start": 654.7,
+        "end": 656.96,
+        "text": "Damit geht ihr gleich baden.",
+        "vi": "Có nó là các em đi tắm ngay được rồi.",
+        "speaker": "Jan & Henry",
+        "reviewNeeded": false
+      },
+      "after": null,
+      "reason": "Flagged pick in Part 6 ('Damit geht ihr gleich baden.'): Video frame cue_3200212_655_8.jpg shows the Hamster speaking (about literally going bathing in the lake right away), not Jan & Henry, and all 3 ASR models disagree with very low probability (medium: 'geht' p=0.080; small: 'Damit ihr gleich badet!' with 'Damit' p=0.141; base: 'Da bin ich nicht gleich paddend!' with 'bin' p=0.159). Excluded from runtime and Part 6 picks."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200214,
+      "before": {
+        "start": 666.42,
+        "end": 669.42,
+        "text": "Kann mit der Luftpumpe lustige Blasen machen.",
+        "vi": "Có thể làm bong bóng vui nhộn bằng chiếc bơm hơi.",
+        "speaker": "Hamster",
+        "reviewNeeded": true
+      },
+      "after": null,
+      "reason": "reviewNeeded cue #4: Missing subject in medium ('Kann' p=0.602) while small transcribes 'ich kann' and base transcribes 'Ich kann mit der Luft voll lustigen Blasen machen!'. Excluded from runtime."
+    },
+    {
+      "type": "speaker_fix",
+      "cueId": 3200215,
+      "before": {
+        "speaker": "Jan & Henry"
+      },
+      "after": {
+        "speaker": "Hamster"
+      },
+      "reason": "Video frames cue_3200215_671_5.jpg through cue_3200215_673_4.jpg show the two hamsters in the lake making water bubbles without the air pump ('Das kann ich auch ohne.'), not Jan & Henry."
+    },
+    {
+      "type": "translation_fix",
+      "cueId": 3200216,
+      "before": {
+        "vi": "À, hôm nay thật là một ngày tuyệt vời bên hồ. Đúng vậy, mặc dù nó suýt nữa đã trở thành công cốc."
+      },
+      "after": {
+        "vi": "Ôi, hôm nay thật là một ngày tuyệt vời bên hồ. Đúng vậy, mặc dù suýt nữa là cả ngày đã bị đổ bể rồi."
+      },
+      "reason": "Clarified the German idiom 'ins Wasser fallen' (kế hoạch/buổi đi chơi bị đổ bể, hỏng bét, đồng thời chơi chữ với cơn mưa và hồ tắm)."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200220,
+      "before": {
+        "start": 694.5,
+        "end": 697.38,
+        "text": "Wir waren mit dem Igel und den Hamster am See.",
+        "vi": "Chúng cháu đã ở hồ cùng anh nhím và các em chuột hamster.",
+        "speaker": "Jan & Henry",
+        "reviewNeeded": false
+      },
+      "after": null,
+      "reason": "Unverified dative plural inflection ('Wir waren mit dem Igel und den Hamster am See.'): 'Hamster' has p=0.491 in medium and lacks the required dative plural '-n' ('den Hamstern'). Excluded from runtime rather than grammatically rewriting."
+    },
+    {
+      "type": "speaker_and_translation_fix",
+      "cueId": 3200226,
+      "before": {
+        "speaker": "Jan & Henry",
+        "vi": "Dĩ nhiên rồi, là anh nhím."
+      },
+      "after": {
+        "speaker": "Kommissar",
+        "vi": "Tất nhiên rồi, là con nhím."
+      },
+      "reason": "Video frames c226_706_3.jpg and c226_707_5.jpg prove the Kommissar himself guesses 'Natürlich, der Igel.' right after asking 'Wissen Sie, wer es war?'."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200227,
+      "before": {
+        "start": 708.82,
+        "end": 709.3,
+        "text": "Nein.",
+        "vi": "Không.",
+        "speaker": "Kommissar",
+        "reviewNeeded": false
+      },
+      "after": null,
+      "reason": "Low-confidence utterance ('Nein.' at 708.82-709.30): 'Nein.' has p=0.219 in medium and p=0.313 in small while base transcribes 'Äh, nein...' across 708.00-709.76. Excluded from runtime."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200228,
+      "before": {
+        "start": 709.82,
+        "end": 710.54,
+        "text": "Dann war es ihr.",
+        "vi": "Vậy thì là bọn họ.",
+        "speaker": "Kommissar",
+        "reviewNeeded": false
+      },
+      "after": null,
+      "reason": "6th uncertain item ('Dann war es ihr.' at 709.82-710.54): All 3 ASR models disagree with low confidence (medium: 'Dann war es ihr.' p=0.557; small: 'Dann wart ihr\\'s!' p=0.531/0.475; base: 'Dann war dir\\'s?' p=0.645/0.448). Frame cue_3200228_710_1.jpg shows the Kommissar pointing at Jan & Henry ('ihr' = các cậu), not 'bọn họ'. Excluded from runtime without guessing the German verb/pronoun."
+    },
+    {
+      "type": "speaker_fix",
+      "cueId": 3200232,
+      "before": {
+        "speaker": "Kommissar"
+      },
+      "after": {
+        "speaker": "Jan & Henry"
+      },
+      "reason": "Video frame c232_713_4.jpg proves Jan & Henry finish their answer 'Nein, die Hamster.' (3200231-3200232) while the Kommissar's mouth is closed."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200237,
+      "before": {
+        "start": 723.6,
+        "end": 729.12,
+        "text": "Ja, das würde ich auch gerne tun, aber mit den platten Reifen und der vollen Scheibe ist das etwas schwierig.",
+        "vi": "Vâng, tôi cũng rất muốn làm thế, nhưng với những chiếc lốp xẹp và kính xe đầy phiếu phạt thì hơi khó.",
+        "speaker": "Kommissar",
+        "reviewNeeded": true
+      },
+      "after": null,
+      "reason": "reviewNeeded cue #5: Models disagree on 'mit den platten Reifen' (medium p=0.577) vs 'mit dem Plattenreifen' (small p=0.509) vs 'mit dem Platten reifen' (base), with 'ist' at p=0.392 in medium and 'Das' at p=0.143 in base. Excluded from runtime."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200239,
+      "before": {
+        "start": 738.82,
+        "end": 740.1,
+        "text": "Ja, lustig.",
+        "vi": "Vâng, vui quá.",
+        "speaker": "Kommissar",
+        "reviewNeeded": false
+      },
+      "after": null,
+      "reason": "Closing-credits utterance over music (738.82-740.10): 'Ja,' has p=0.247 in medium while small and base reverse the word order ('lustig. Ja!'). Excluded from runtime."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200240,
+      "before": {
+        "start": 740.84,
+        "end": 743.38,
+        "text": "Ja, ja, schneller.",
+        "vi": "Nào, nào, nhanh lên.",
+        "speaker": "Kommissar",
+        "reviewNeeded": false
+      },
+      "after": null,
+      "reason": "Closing-credits utterance over music (740.84-743.38): 'ja,' has p=0.029 in small and 'schneller' has p=0.393 in medium / p=0.145 in base. Excluded from runtime."
+    },
+    {
+      "type": "exclude_unverified_cue",
+      "cueId": 3200241,
+      "before": {
+        "start": 746.38,
+        "end": 749.02,
+        "text": "Herr Kommissar, wir haben das andere Fahrrad vergessen.",
+        "vi": "Ngài ủy viên ơi, chúng cháu quên chiếc xe đạp còn lại rồi.",
+        "speaker": "Jan & Henry",
+        "reviewNeeded": false
+      },
+      "after": null,
+      "reason": "Closing-credits utterance over music (746.38-749.02): 'Herr' has p=0.053 and 'andere' has p=0.431 in medium, completely missed by small and garbled as 'Verkommelt\\'s ab, wir haben jetzt unsere Mehrheit vergesst!' by base. Excluded from runtime."
+    },
+    {
+      "type": "adjacent_boundary_separation",
+      "count": 15,
+      "details": [
+        {
+          "cueId": 3200002,
+          "nextCueId": 3200003,
+          "oldEnd": 33.45,
+          "newEnd": 33.44
+        },
+        {
+          "cueId": 3200023,
+          "nextCueId": 3200024,
+          "oldEnd": 89.23,
+          "newEnd": 89.22
+        },
+        {
+          "cueId": 3200042,
+          "nextCueId": 3200043,
+          "oldEnd": 154.09,
+          "newEnd": 154.08
+        },
+        {
+          "cueId": 3200068,
+          "nextCueId": 3200069,
+          "oldEnd": 239.9,
+          "newEnd": 239.89
+        },
+        {
+          "cueId": 3200078,
+          "nextCueId": 3200079,
+          "oldEnd": 270.78,
+          "newEnd": 270.77
+        },
+        {
+          "cueId": 3200086,
+          "nextCueId": 3200087,
+          "oldEnd": 299.06,
+          "newEnd": 299.05
+        },
+        {
+          "cueId": 3200111,
+          "nextCueId": 3200112,
+          "oldEnd": 388.87,
+          "newEnd": 388.86
+        },
+        {
+          "cueId": 3200128,
+          "nextCueId": 3200129,
+          "oldEnd": 428.6,
+          "newEnd": 428.59
+        },
+        {
+          "cueId": 3200139,
+          "nextCueId": 3200140,
+          "oldEnd": 455.86,
+          "newEnd": 455.85
+        },
+        {
+          "cueId": 3200153,
+          "nextCueId": 3200154,
+          "oldEnd": 484.17,
+          "newEnd": 484.16
+        },
+        {
+          "cueId": 3200163,
+          "nextCueId": 3200164,
+          "oldEnd": 512.53,
+          "newEnd": 512.52
+        },
+        {
+          "cueId": 3200173,
+          "nextCueId": 3200174,
+          "oldEnd": 540.52,
+          "newEnd": 540.51
+        },
+        {
+          "cueId": 3200194,
+          "nextCueId": 3200195,
+          "oldEnd": 607.86,
+          "newEnd": 607.85
+        },
+        {
+          "cueId": 3200203,
+          "nextCueId": 3200204,
+          "oldEnd": 634.78,
+          "newEnd": 634.77
+        },
+        {
+          "cueId": 3200222,
+          "nextCueId": 3200223,
+          "oldEnd": 701.0,
+          "newEnd": 700.99
+        }
+      ],
+      "reason": "Separated exact-touching cue boundaries (end == next.start) by 0.01s so no ASR boundary word bleeds across adjacent cues."
+    },
+    {
+      "type": "chapter_boundary_and_picks_update",
+      "part": 1,
+      "title": "Danh sách của Henry và dự báo thời tiết",
+      "before": {
+        "start": 26.89,
+        "end": 98.45
+      },
+      "after": {
+        "start": 0.0,
+        "end": 105.0,
+        "picks": [
+          3200004,
+          3200013,
+          3200019,
+          3200021,
+          3200024,
+          3200026
+        ]
+      },
+      "reason": "Continuous chapter boundaries covering 0.0-750.0 so every runtime cue belongs to strictly 1 chapter, with unverified picks removed."
+    },
+    {
+      "type": "chapter_boundary_and_picks_update",
+      "part": 2,
+      "title": "Đạp xe ra hồ, cơn mưa và chú nhím",
+      "before": {
+        "start": 109.73,
+        "end": 261.2
+      },
+      "after": {
+        "start": 105.0,
+        "end": 262.0,
+        "picks": [
+          3200044,
+          3200046,
+          3200052,
+          3200061,
+          3200067,
+          3200076
+        ]
+      },
+      "reason": "Continuous chapter boundaries covering 0.0-750.0 so every runtime cue belongs to strictly 1 chapter, with unverified picks removed."
+    },
+    {
+      "type": "chapter_boundary_and_picks_update",
+      "part": 3,
+      "title": "Vụ án mới và ngài ủy viên nghiêm túc",
+      "before": {
+        "start": 263.04,
+        "end": 425.88
+      },
+      "after": {
+        "start": 262.0,
+        "end": 426.5,
+        "picks": [
+          3200078,
+          3200093,
+          3200096,
+          3200105,
+          3200126
+        ]
+      },
+      "reason": "Continuous chapter boundaries covering 0.0-750.0 so every runtime cue belongs to strictly 1 chapter, with unverified picks removed."
+    },
+    {
+      "type": "chapter_boundary_and_picks_update",
+      "part": 4,
+      "title": "Nghi phạm nhím gai",
+      "before": {
+        "start": 427.4,
+        "end": 536.56
+      },
+      "after": {
+        "start": 426.5,
+        "end": 537.0,
+        "picks": [
+          3200141,
+          3200147,
+          3200155,
+          3200157,
+          3200165
+        ]
+      },
+      "reason": "Continuous chapter boundaries covering 0.0-750.0 so every runtime cue belongs to strictly 1 chapter, with unverified picks removed."
+    },
+    {
+      "type": "chapter_boundary_and_picks_update",
+      "part": 5,
+      "title": "Chiếc 'thuyền hơi' biết đi",
+      "before": {
+        "start": 537.72,
+        "end": 622.86
+      },
+      "after": {
+        "start": 537.0,
+        "end": 622.9,
+        "picks": [
+          3200177,
+          3200180,
+          3200192,
+          3200193,
+          3200198
+        ]
+      },
+      "reason": "Continuous chapter boundaries covering 0.0-750.0 so every runtime cue belongs to strictly 1 chapter, with unverified picks removed."
+    },
+    {
+      "type": "chapter_boundary_and_picks_update",
+      "part": 6,
+      "title": "Chiếc bơm hơi",
+      "before": {
+        "start": 622.94,
+        "end": 657.7
+      },
+      "after": {
+        "start": 622.9,
+        "end": 662.0,
+        "picks": [
+          3200200,
+          3200204,
+          3200207,
+          3200210
+        ]
+      },
+      "reason": "Continuous chapter boundaries covering 0.0-750.0 so every runtime cue belongs to strictly 1 chapter, with unverified picks removed."
+    },
+    {
+      "type": "chapter_boundary_and_picks_update",
+      "part": 7,
+      "title": "Một ngày tuyệt vời bên hồ",
+      "before": {
+        "start": 666.42,
+        "end": 749.02
+      },
+      "after": {
+        "start": 662.0,
+        "end": 750.0,
+        "picks": [
+          3200215,
+          3200216,
+          3200223,
+          3200233,
+          3200238
+        ]
+      },
+      "reason": "Continuous chapter boundaries covering 0.0-750.0 so every runtime cue belongs to strictly 1 chapter, with unverified picks removed."
+    },
+    {
+      "type": "flashcard_meaning_clarification",
+      "cueId": 3200093,
+      "before": {
+        "term": "das Halteverbot",
+        "meaning": "khu vực/cấm đỗ xe",
+        "example": "Und im Halteverbot halten ist verboten.",
+        "grammar": "Giống trung; từ ghép Halten + Verbot.",
+        "note": "Đỗ ở khu Halteverbot là bị cấm — câu nói nghiêm túc buồn cười.",
+        "cueId": 3200093
+      },
+      "after": {
+        "term": "das Halteverbot",
+        "meaning": "lệnh cấm dừng xe; khu vực cấm dừng xe",
+        "example": "Und im Halteverbot halten ist verboten.",
+        "grammar": "Giống trung; từ ghép Halten + Verbot.",
+        "note": "Dừng xe ở khu vực cấm dừng xe (Halteverbot) là bị cấm — câu nói nghiêm túc hài hước của ngài ủy viên.",
+        "cueId": 3200093
+      },
+      "reason": "Clarified 'das Halteverbot' as 'lệnh cấm dừng xe; khu vực cấm dừng xe' rather than only 'cấm đỗ xe'."
+    }
+  ]
+}
