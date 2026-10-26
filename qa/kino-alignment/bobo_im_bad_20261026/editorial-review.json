@@ -1,0 +1,145 @@
+{
+  "status": "selected editorial transcript; no native-human listening approval",
+  "sourceIsFullEpisode": true,
+  "sourceHasIntroOutroAndQuiz": true,
+  "selectedCues": 35,
+  "cards": 16,
+  "parts": [
+    {
+      "start": 0,
+      "end": 117,
+      "picks": 7
+    },
+    {
+      "start": 117,
+      "end": 236,
+      "picks": 6
+    },
+    {
+      "start": 236,
+      "end": 420.04,
+      "picks": 7
+    }
+  ],
+  "speechEvidence": "Full small plus medium on55–85,125–145,193–236,278–337s; high confidence medium resolves Schlafanzughose, seine Hände, Da staunst du, Bobo hat heute alles alleine gemacht.",
+  "omissions": [
+    {
+      "range": [
+        0,
+        40
+      ],
+      "reason": "Opening song/title omitted; source media remains whole."
+    },
+    {
+      "range": [
+        55,
+        58.2
+      ],
+      "reason": "Milchbart-like word recognized inconsistently; entire line excluded."
+    },
+    {
+      "range": [
+        61.7,
+        65.4
+      ],
+      "reason": "Only shared exact clause Dann kannst du ins Bad gehen selected at62.46–63.78; following bettfertig/fertig wording ambiguous."
+    },
+    {
+      "range": [
+        66.8,
+        68.2
+      ],
+      "reason": "Child Pferdchen/fertig request ambiguous; excluded."
+    },
+    {
+      "range": [
+        78.4,
+        81.4
+      ],
+      "reason": "Overlapping playful calls and adult office sentence; excluded."
+    },
+    {
+      "range": [
+        133,
+        140.6
+      ],
+      "reason": "Child fragment/laughter; medium false ZDF credit at144.86–144.94 excluded."
+    },
+    {
+      "range": [
+        194.7,
+        198.0
+      ],
+      "reason": "Sanduhr-like word misrecognized in small,medium and cropped base; excluded rather than inferred from visible hourglass."
+    },
+    {
+      "range": [
+        225,
+        232
+      ],
+      "reason": "Child fragments omitted."
+    },
+    {
+      "range": [
+        243,
+        258.5
+      ],
+      "reason": "Babble omitted."
+    },
+    {
+      "range": [
+        302.1,
+        305.5
+      ],
+      "reason": "Conditional Seife line and short child fragment omitted to keep selection simpler."
+    },
+    {
+      "range": [
+        348.6,
+        362.6
+      ],
+      "reason": "Quiz distractor answer list omitted; question and explicit correct answer retained."
+    },
+    {
+      "range": [
+        378.2,
+        387.9
+      ],
+      "reason": "Quiz distractor actions omitted; explicit correct toothbrushing answer retained."
+    },
+    {
+      "range": [
+        400,
+        420.04
+      ],
+      "reason": "End credits omitted."
+    }
+  ],
+  "speakerReview": {
+    "early-contact-sheet.jpg": "Mama red dress at57s Milchbart line and63s bath instruction; Papa white shirt replies to request72–73s; Mama goodbye81–83s.",
+    "late-contact-sheet.jpg": "Papa dressing Bobo306–316s, Mama entering318s, Papa presenting Bobo319–321s, Mama praise322–324s, Mama surprise329–331s.",
+    "contact-sheet.jpg": "Whole-source scene sequence and full end credits."
+  },
+  "normalization": [
+    "Punctuation/capitalization normalized.",
+    "Papa contracted habe variant rendered habe, supported by medium.",
+    "Selected clause Dann kannst du ins Bad gehen ends before the coordinated ambiguous following clause.",
+    "Medium-resolved words Schlafanzughose and seine Hände retained, with original raw outputs beside spec."
+  ],
+  "timingNotes": [
+    "Medium timings preferred on difficult ranges; short child Fertig cue uses small/medium outer bounds.",
+    "Narrator ausziehen cue uses small/medium outer bounds215.52–219.14.",
+    "Selected captions do not claim to transcribe every audible utterance."
+  ],
+  "rootBeginnerShortlistReview": {
+    "removed": [
+      1900124,
+      1900130
+    ],
+    "added": [
+      1900132,
+      1900134
+    ],
+    "reason": "Prefer short A1–A2 routine sentences to the invented Hosenexpress/long compound. Preserve all35selected captions."
+  }
+}

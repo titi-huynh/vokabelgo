@@ -1,0 +1,46 @@
+{
+  "key": "nicos_hallo",
+  "title": "Deutsch lernen (A1) | Nicos Weg | Folge 1: Hallo!",
+  "sourceUrl": "https://www.youtube.com/watch?v=dC6ZGLzdaTs",
+  "publisher": "Deutsch lernen mit der DW",
+  "channelId": "UCxUWIEL-USsiPak0Qy6_vVg",
+  "channelIsVerified": true,
+  "uploadDate": "20171018",
+  "retrievedDate": "2026-10-26",
+  "durationSeconds": 96.734331,
+  "bytes": 6111887,
+  "sha256": "d73c9c3e013d94a875b415eea1237bca986388969f959911e3d7f90fb3d57baa",
+  "isExcerpt": false,
+  "sourceScope": "Complete published A1 video lesson, not the full Nicos Weg movie.",
+  "germanAudioEvidence": {
+    "language": "de",
+    "method": "Publisher describes an A1 German lesson and supplies manually authored German captions (Kind: captions), not automatic captions. Local automatic language detection recorded separately.",
+    "automaticCheck": {
+      "method": "Local faster-whisper base automatic detection, no forced language; speech sample10–46s",
+      "language": "de",
+      "probability": 0.9989080429077148,
+      "sampleStart": 10,
+      "sampleEnd": 46
+    }
+  },
+  "subtitleEvidence": {
+    "file": "publisher.de.vtt",
+    "type": "publisher_manual",
+    "language": "de",
+    "cueCount": 19
+  },
+  "acquisition": "Ordinary public yt-dlp Node/EJS; H264 format135 plus AAC140 remuxed without re-encoding. No access-control bypass.",
+  "reviewedLesson": {
+    "cues": 18,
+    "chapters": 3,
+    "vocabulary": 10,
+    "file": "lesson-content.json"
+  },
+  "audioMeasurements": {
+    "method": "earshot local measure light",
+    "lufs": -23.5,
+    "truePeakDbtp": -6.0,
+    "clippedSamples": 0,
+    "note": "Meter values do not validate spelling or translation."
+  }
+}

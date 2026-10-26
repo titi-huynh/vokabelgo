@@ -1,0 +1,101 @@
+{
+  "key": "conni_garten",
+  "title": "Conni hilft Papa im Garten",
+  "publisher": "KiKA / ZDFtivi",
+  "sourceUrl": "https://www.kika.de/kikaninchen/meine-freundin-conni/videos/conni-hilft-papa-im-garten-104",
+  "srcUrl": "https://www.kika.de/kikaninchen/meine-freundin-conni/videos/conni-hilft-papa-im-garten-104",
+  "url": "https://www.kika.de/kikaninchen/meine-freundin-conni/videos/conni-hilft-papa-im-garten-104",
+  "retrievedAt": "2026-10-26",
+  "publishedDate": "20261010",
+  "durationSeconds": 689.92,
+  "bytes": 101405234,
+  "sha256": "c219bfd4c039c3fe87d36aa09afe21445d628d43d6829f22e96edd2b12082c62",
+  "localFile": "video/conni_garten.mp4",
+  "isExcerpt": false,
+  "episodeNote": "Full official11:29.92 episode, including opening and closing credits; learning captions are selected dialogue, not exhaustive subtitles.",
+  "media": [
+    {
+      "codec_type": "video",
+      "codec_name": "h264",
+      "width": 852,
+      "height": 480
+    },
+    {
+      "codec_type": "audio",
+      "codec_name": "aac",
+      "sample_rate": "44100",
+      "channels": 2
+    }
+  ],
+  "officialGermanSubtitles": {
+    "file": "publisher.de.vtt",
+    "cueCount": 191,
+    "sha256": "0f5a43aba7b2865f7aafab064c780c94e19bcf84782bddb7bb892610df05a8bb",
+    "publisherCredit": "Untertitel im Auftrag des ZDF,2025",
+    "url": "https://www.kika.de/ackley/v1/videos/conni-hilft-papa-im-garten-104/subtitle",
+    "mappingFile": "subtitle-map.json"
+  },
+  "germanAudioEvidence": {
+    "language": "de",
+    "method": "local cached faster-whisper small auto-detection, language not forced; subtitles from publisher are primary transcript",
+    "file": "language-evidence.json",
+    "checks": [
+      {
+        "start": 120,
+        "end": 145,
+        "language": "de",
+        "probability": 0.9995492100715637
+      },
+      {
+        "start": 260,
+        "end": 285,
+        "language": "de",
+        "probability": 0.9965611100196838
+      },
+      {
+        "start": 390,
+        "end": 415,
+        "language": "de",
+        "probability": 0.9976630210876465
+      },
+      {
+        "start": 630,
+        "end": 660,
+        "language": "de",
+        "probability": 0.9983811378479004
+      }
+    ]
+  },
+  "decodeVerification": {
+    "method": "FFmpeg whole-file decode to null",
+    "errors": 0
+  },
+  "audioMeasurements": {
+    "tool": "earshot measure light",
+    "lufs": -23.1,
+    "truePeakDbtp": -3.1,
+    "clippedSamples": 0,
+    "durationMeasured": 689.888
+  },
+  "acquisition": {
+    "tool": "yt-dlp Kika extractor",
+    "format": "hls-1116 (852×480 H264/AAC)",
+    "method": "Publisher-advertised public HLS,89segments, container remux only; no video or audio re-encoding, cuts, or transcript synthesis.",
+    "note": "Listed directMP4 variant returned403; the standard public HLS variant listed by the same metadata downloaded normally. No cookies, proxy, payment, access-control bypass, or DRM removal."
+  },
+  "editorialEvidence": [
+    "official-cues.json",
+    "subtitle-map.json",
+    "contact-sheet-1.jpg",
+    "contact-sheet-2.jpg",
+    "contact-sheet-3.jpg",
+    "editorial-review.json"
+  ],
+  "limitations": [
+    "Learning captions intentionally omit most unselected turns, music, sound descriptions, and subtitle blocks mixing two speakers.",
+    "Four sampled automatic recognitions independently verify German, not every word in the entire episode; official publisher WebVTT is primary text/timing evidence.",
+    "Speaker labels follow visible Conni/Papa conversation and source context; not acoustic diarization.",
+    "No claim of personal hearing or native-human full listening approval.",
+    "Full episode is not an excerpt. Builder must honor spec.isExcerpt:false; shared builder was not edited by this task."
+  ]
+}

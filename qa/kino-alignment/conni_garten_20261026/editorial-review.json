@@ -1,0 +1,73 @@
+{
+  "method": "Primary text and timing from official KiKA German WebVTT, 52 single-speaker turns selected; two consecutive same-speaker subtitle cues merged for2000106; bracketed laughter removed, no spoken words inferred. Full original HLS audiovisual streams retained, only remuxed to MP4 by yt-dlp. Four cached local faster-whisper small automatic-language checks and source frames independently confirm German speech/source timing and Conni/Papa speakers. Not a native-human full-listening approval.",
+  "selection": {
+    "selectedCues": 52,
+    "totalOfficialCues": 191,
+    "firstSelected": 45.4,
+    "lastSelected": 669.68,
+    "parts": [
+      0,
+      174,
+      354,
+      485,
+      689.92
+    ]
+  },
+  "textEdits": [
+    "HTML class tags removed and wrapped lines joined.",
+    "Subtitle58/79 parenthesized laughter removed; spoken interjections retained.",
+    "Publisher subtitles21+22 merged into one continuous Conni turn.",
+    "No ASR-only words substituted for official subtitle text; colloquial mäh/helf preserved."
+  ],
+  "omissions": [
+    "Opening song and ending subtitle credit.",
+    "Music, laughter, meowing, and isolated nonverbal filler blocks.",
+    "Publisher blocks combining multiple speakers; no inferred turn boundaries.",
+    "Longer technical explanations and repetitions, keeping everyday questions/instructions and concise garden vocabulary."
+  ],
+  "timing": "Exact official subtitle ranges; sampled word ASR at120–145,260–285,390–415,630–660 aligns with the same scene dialogue. No global offset inferred or applied.",
+  "speakers": "All selected turns are Conni or Papa, supported by45 timestamped frames and the familiar two-person garden exchange.",
+  "level": "A1–A2 suggestions; garden/tool nouns in unselected or non-highlight dialogue can be less familiar. Sixteen cards focus on useful everyday nouns and verbs.",
+  "rootBeginnerShortlistReview": {
+    "reason": "Prefer shorter daily requests/reactions over long subordinate clauses for A1–A2 practice; preserve all52selected captions and source timings.",
+    "changes": [
+      {
+        "removed": [
+          2000105
+        ],
+        "added": [
+          2000112
+        ]
+      },
+      {
+        "removed": [
+          2000117,
+          2000123
+        ],
+        "added": [
+          2000124,
+          2000126
+        ]
+      },
+      {
+        "removed": [
+          2000136
+        ],
+        "added": [
+          2000132
+        ]
+      },
+      {
+        "removed": [
+          2000148,
+          2000151
+        ],
+        "added": [
+          2000145,
+          2000152
+        ]
+      }
+    ],
+    "picks": 28
+  }
+}

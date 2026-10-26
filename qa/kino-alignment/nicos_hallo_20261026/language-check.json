@@ -1,0 +1,462 @@
+{
+  "method": "Local faster-whisper base automatic detection, no forced language; speech sample10–46s",
+  "language": "de",
+  "probability": 0.9989080429077148,
+  "sampleStart": 10,
+  "sampleEnd": 46,
+  "recognized": [
+    {
+      "start": 10.28,
+      "end": 12.58,
+      "text": " Guten Morgen, Herr Müller. Wie geht es Ihnen?",
+      "words": [
+        {
+          "start": 10.28,
+          "end": 10.88,
+          "word": " Guten",
+          "probability": 0.8937107920646667
+        },
+        {
+          "start": 10.88,
+          "end": 11.22,
+          "word": " Morgen,",
+          "probability": 0.9498469233512878
+        },
+        {
+          "start": 11.22,
+          "end": 11.48,
+          "word": " Herr",
+          "probability": 0.9886031150817871
+        },
+        {
+          "start": 11.48,
+          "end": 11.7,
+          "word": " Müller.",
+          "probability": 0.9902054071426392
+        },
+        {
+          "start": 12.02,
+          "end": 12.08,
+          "word": " Wie",
+          "probability": 0.4007173776626587
+        },
+        {
+          "start": 12.08,
+          "end": 12.24,
+          "word": " geht",
+          "probability": 0.9985597729682922
+        },
+        {
+          "start": 12.24,
+          "end": 12.44,
+          "word": " es",
+          "probability": 0.8549966216087341
+        },
+        {
+          "start": 12.44,
+          "end": 12.58,
+          "word": " Ihnen?",
+          "probability": 0.9171303510665894
+        }
+      ]
+    },
+    {
+      "start": 13.18,
+      "end": 16.92,
+      "text": " Guten Morgen, Frau Schneider. Danke, Gut und Ihnen?",
+      "words": [
+        {
+          "start": 13.18,
+          "end": 13.42,
+          "word": " Guten",
+          "probability": 0.8570154905319214
+        },
+        {
+          "start": 13.42,
+          "end": 13.7,
+          "word": " Morgen,",
+          "probability": 0.9800372123718262
+        },
+        {
+          "start": 14.04,
+          "end": 14.1,
+          "word": " Frau",
+          "probability": 0.7795241475105286
+        },
+        {
+          "start": 14.1,
+          "end": 14.62,
+          "word": " Schneider.",
+          "probability": 0.9876762628555298
+        },
+        {
+          "start": 15.04,
+          "end": 15.2,
+          "word": " Danke,",
+          "probability": 0.05893958732485771
+        },
+        {
+          "start": 15.4,
+          "end": 15.76,
+          "word": " Gut",
+          "probability": 0.09383503347635269
+        },
+        {
+          "start": 15.76,
+          "end": 16.3,
+          "word": " und",
+          "probability": 0.7321112751960754
+        },
+        {
+          "start": 16.3,
+          "end": 16.92,
+          "word": " Ihnen?",
+          "probability": 0.9263424277305603
+        }
+      ]
+    },
+    {
+      "start": 17.74,
+      "end": 19.98,
+      "text": " Guten Morgen, Herr Müller. Wie geht es Ihnen?",
+      "words": [
+        {
+          "start": 17.74,
+          "end": 18.2,
+          "word": " Guten",
+          "probability": 0.9573551416397095
+        },
+        {
+          "start": 18.2,
+          "end": 18.54,
+          "word": " Morgen,",
+          "probability": 0.9753379821777344
+        },
+        {
+          "start": 18.74,
+          "end": 18.8,
+          "word": " Herr",
+          "probability": 0.9977266192436218
+        },
+        {
+          "start": 18.8,
+          "end": 19.06,
+          "word": " Müller.",
+          "probability": 0.9993829727172852
+        },
+        {
+          "start": 19.44,
+          "end": 19.44,
+          "word": " Wie",
+          "probability": 0.41992267966270447
+        },
+        {
+          "start": 19.44,
+          "end": 19.6,
+          "word": " geht",
+          "probability": 0.9996848106384277
+        },
+        {
+          "start": 19.6,
+          "end": 19.8,
+          "word": " es",
+          "probability": 0.9890015125274658
+        },
+        {
+          "start": 19.8,
+          "end": 19.98,
+          "word": " Ihnen?",
+          "probability": 0.9902082085609436
+        }
+      ]
+    },
+    {
+      "start": 20.6,
+      "end": 24.3,
+      "text": " Guten Morgen, Frau Schneider. Danke, Gut und Ihnen?",
+      "words": [
+        {
+          "start": 20.6,
+          "end": 20.76,
+          "word": " Guten",
+          "probability": 0.9595668315887451
+        },
+        {
+          "start": 20.76,
+          "end": 21.1,
+          "word": " Morgen,",
+          "probability": 0.9624524116516113
+        },
+        {
+          "start": 21.46,
+          "end": 21.46,
+          "word": " Frau",
+          "probability": 0.994333028793335
+        },
+        {
+          "start": 21.46,
+          "end": 21.96,
+          "word": " Schneider.",
+          "probability": 0.9991820156574249
+        },
+        {
+          "start": 22.4,
+          "end": 22.54,
+          "word": " Danke,",
+          "probability": 0.853704571723938
+        },
+        {
+          "start": 22.92,
+          "end": 23.12,
+          "word": " Gut",
+          "probability": 0.9942044615745544
+        },
+        {
+          "start": 23.12,
+          "end": 23.66,
+          "word": " und",
+          "probability": 0.9897111058235168
+        },
+        {
+          "start": 23.66,
+          "end": 24.3,
+          "word": " Ihnen?",
+          "probability": 0.9971188306808472
+        }
+      ]
+    },
+    {
+      "start": 26.2,
+      "end": 29.6,
+      "text": " Guten Tag, Frau Kamm. Guten Tag. Wie geht es Ihnen?",
+      "words": [
+        {
+          "start": 26.2,
+          "end": 26.8,
+          "word": " Guten",
+          "probability": 0.980861485004425
+        },
+        {
+          "start": 26.8,
+          "end": 27.1,
+          "word": " Tag,",
+          "probability": 0.9983298182487488
+        },
+        {
+          "start": 27.2,
+          "end": 27.38,
+          "word": " Frau",
+          "probability": 0.9914202690124512
+        },
+        {
+          "start": 27.38,
+          "end": 27.62,
+          "word": " Kamm.",
+          "probability": 0.5592257678508759
+        },
+        {
+          "start": 27.96,
+          "end": 28.1,
+          "word": " Guten",
+          "probability": 0.9749248027801514
+        },
+        {
+          "start": 28.1,
+          "end": 28.44,
+          "word": " Tag.",
+          "probability": 0.9976159334182739
+        },
+        {
+          "start": 28.94,
+          "end": 29.02,
+          "word": " Wie",
+          "probability": 0.9722945094108582
+        },
+        {
+          "start": 29.02,
+          "end": 29.2,
+          "word": " geht",
+          "probability": 0.9997895359992981
+        },
+        {
+          "start": 29.2,
+          "end": 29.4,
+          "word": " es",
+          "probability": 0.994814932346344
+        },
+        {
+          "start": 29.4,
+          "end": 29.6,
+          "word": " Ihnen?",
+          "probability": 0.9958487749099731
+        }
+      ]
+    },
+    {
+      "start": 29.94,
+      "end": 31.86,
+      "text": " Sehr gut. Danke und Ihnen?",
+      "words": [
+        {
+          "start": 29.94,
+          "end": 30.2,
+          "word": " Sehr",
+          "probability": 0.9763660430908203
+        },
+        {
+          "start": 30.2,
+          "end": 30.52,
+          "word": " gut.",
+          "probability": 0.9935686588287354
+        },
+        {
+          "start": 30.82,
+          "end": 31.08,
+          "word": " Danke",
+          "probability": 0.9886263012886047
+        },
+        {
+          "start": 31.08,
+          "end": 31.56,
+          "word": " und",
+          "probability": 0.8630785942077637
+        },
+        {
+          "start": 31.56,
+          "end": 31.86,
+          "word": " Ihnen?",
+          "probability": 0.9856926202774048
+        }
+      ]
+    },
+    {
+      "start": 34.22,
+      "end": 37.42,
+      "text": " Hey, Lena. Na, wie geht's? Hallo, Opa.",
+      "words": [
+        {
+          "start": 34.22,
+          "end": 34.58,
+          "word": " Hey,",
+          "probability": 0.42317068576812744
+        },
+        {
+          "start": 34.72,
+          "end": 35.0,
+          "word": " Lena.",
+          "probability": 0.9373883605003357
+        },
+        {
+          "start": 35.48,
+          "end": 35.64,
+          "word": " Na,",
+          "probability": 0.9520710110664368
+        },
+        {
+          "start": 35.86,
+          "end": 35.98,
+          "word": " wie",
+          "probability": 0.9591215252876282
+        },
+        {
+          "start": 35.98,
+          "end": 36.52,
+          "word": " geht's?",
+          "probability": 0.8422200381755829
+        },
+        {
+          "start": 36.84,
+          "end": 37.06,
+          "word": " Hallo,",
+          "probability": 0.9517143368721008
+        },
+        {
+          "start": 37.14,
+          "end": 37.42,
+          "word": " Opa.",
+          "probability": 0.6581846475601196
+        }
+      ]
+    },
+    {
+      "start": 39.22,
+      "end": 41.28,
+      "text": " Hallo Sarah, wie geht's dir?",
+      "words": [
+        {
+          "start": 39.22,
+          "end": 39.86,
+          "word": " Hallo",
+          "probability": 0.8840219378471375
+        },
+        {
+          "start": 39.86,
+          "end": 40.2,
+          "word": " Sarah,",
+          "probability": 0.7730220556259155
+        },
+        {
+          "start": 40.58,
+          "end": 40.82,
+          "word": " wie",
+          "probability": 0.9686627984046936
+        },
+        {
+          "start": 40.82,
+          "end": 41.14,
+          "word": " geht's",
+          "probability": 0.9375666677951813
+        },
+        {
+          "start": 41.14,
+          "end": 41.28,
+          "word": " dir?",
+          "probability": 0.9940676689147949
+        }
+      ]
+    },
+    {
+      "start": 41.84,
+      "end": 44.54,
+      "text": " Hi Tom, super danke und dir?",
+      "words": [
+        {
+          "start": 41.84,
+          "end": 42.04,
+          "word": " Hi",
+          "probability": 0.17131105065345764
+        },
+        {
+          "start": 42.04,
+          "end": 42.34,
+          "word": " Tom,",
+          "probability": 0.8379589915275574
+        },
+        {
+          "start": 42.84,
+          "end": 43.08,
+          "word": " super",
+          "probability": 0.9262508153915405
+        },
+        {
+          "start": 43.08,
+          "end": 43.4,
+          "word": " danke",
+          "probability": 0.3971727192401886
+        },
+        {
+          "start": 43.4,
+          "end": 44.26,
+          "word": " und",
+          "probability": 0.6950937509536743
+        },
+        {
+          "start": 44.26,
+          "end": 44.54,
+          "word": " dir?",
+          "probability": 0.8789448142051697
+        }
+      ]
+    }
+  ]
+}

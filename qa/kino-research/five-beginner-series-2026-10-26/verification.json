@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-26",
+  "baseCommit": "da45a8f4bc60edd1a5fdc830c7353babb8aa9b14",
+  "added": { "series": 5, "episodesOrLessons": 5, "chapters": 15, "bilingualCues": 160, "flashcards": 69, "practicePicksWithUsage": 97 },
+  "sourceVideosComplete": true,
+  "selectedLearningDialogueOnly": true,
+  "newCueIdsUniqueAndWithoutExistingCollisions": true,
+  "unit": { "command": "npm run test:unit", "passedSuites": 21, "failedSuites": 0 },
+  "browser": {
+    "engine": "Chromium",
+    "baseUrl": "http://127.0.0.1:3107",
+    "newLessonsAndCatalog": { "passed": 18, "failed": 0 },
+    "previousCartoonClipsRegression": { "passed": 9, "failed": 0 },
+    "verified": [
+      "Every new film appears in the catalog with chapter posters and source-linked vocabulary",
+      "All five MP4 SHA-256 hashes match provenance and HTTP206 range responses",
+      "Full-video native playback, duration and seeking to75percent",
+      "Every chapter displays the selected German and Vietnamese captions with CC switching",
+      "Playback stops at each chapter boundary and watched progress covers all chapters",
+      "Dictation rejects wrong answers, saves correct answers and restores progress on reload",
+      "Peppa, We Bare Bears and Das Spukschloss progress remains unchanged",
+      "Flashcard backlinks return to the originating part",
+      "No page JavaScript errors or horizontal overflow at320,390,768px",
+      "Published lesson flags are isExcerpt=false; older clip regression tests still require isExcerpt=true"
+    ],
+    "environmentNote": "An initial run on the shared port stopped after4passing cases and subsequent navigation failures. A targeted Conni retry passed without code changes. The final18tests used a dedicated port3107 and passed;9existing clip checks passed there too. Private test-server config cwd was corrected before that final run."
+  },
+  "parallelWorkPreservation": {
+    "workspaceIncludesSeparateLuftgehenDraft": true,
+    "workspaceUnitData": { "films": 32, "chapters": 155, "practicePicks": 1022 },
+    "fiveLessonPatchPreparedSeparatelyFromHead": true,
+    "isolatedStagedDataValidation": { "films": 31, "chapters": 148, "practicePicks": 981, "passed": true },
+    "fiveStagedMetadataEntriesByteIdenticalToBrowserTestedEntries": true,
+    "unrelatedWorkspaceChangesIncludedInFiveLessonCommit": false
+  },
+  "media": { "repository": "titi-huynh/vokabelgo-media", "tag": "media-v1", "newAssets": 5, "replacedExistingAssets": 0, "digestAndRemoteRangeVerified": true },
+  "limitations": [
+    "One episode or published video lesson per series, not entire seasons",
+    "Local ASR and visual editorial review where publisher subtitles are unavailable; no native-human full listening approval",
+    "A1–A2 labels for cartoons are editorial recommendations for selected practice",
+    "Browser tests above ran locally; remote media assets were verified independently"
+  ]
+}

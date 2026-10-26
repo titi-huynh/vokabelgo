@@ -23,6 +23,8 @@ def build(source):
     assert re.fullmatch(r"[a-z0-9_]+", key) and re.fullmatch(r"[A-Z0-9_]+", symbol)
     assert re.fullmatch(r"[a-z0-9-]+", stem) and re.fullmatch(r"[a-z0-9-]+", alias)
     duration = spec["duration"]
+    is_excerpt = spec.get("isExcerpt", True)
+    assert isinstance(is_excerpt, bool), "isExcerpt must be a boolean"
     cues, chapters, vocabulary = (spec[k] for k in ("cues", "chapters", "vocabulary"))
     media = ROOT / spec["src"]
     assert media.is_file() and media.stat().st_size > 10000, f"Missing media: {media}"
@@ -59,10 +61,10 @@ def build(source):
              "src": spec["src"], "storageKey": f"kino_calibrated_{key}_v1",
              "syncKey": f"vokabelgo_kino_perfected_{key}_v1", "progressKey": f"vokabelgo_kino_progress_{key}",
              "fullDurationStr": f"{total_seconds // 60:02}:{total_seconds % 60:02}",
-             "flashcardDeck": deck, "isExcerpt": True, "sourceUrl": spec["sourceUrl"]}
+             "flashcardDeck": deck, "isExcerpt": is_excerpt, "sourceUrl": spec["sourceUrl"]}
     chapter_data = {"title": spec["episodeTitle"], "series": spec["series"].upper(),
                     "summary": spec["summary"], "levelLabel": spec["levelLabel"],
-                    "defaultMode": "all", "practiceModeVersion": 1, "contentVersion": 1, "isExcerpt": True,
+                    "defaultMode": "all", "practiceModeVersion": 1, "contentVersion": 1, "isExcerpt": is_excerpt,
                     "allLabel": "Các câu trong bài", "allDescription": "Lời thoại chọn lọc · Có thể chuyển sang các câu trọng tâm",
                     "storageKey": f"vokabelgo_kino_chapters_v1_{key}", "legacyKey": video["progressKey"],
                     "legacyCount": 0, "chapters": chapters, "vocabularyCount": len(cards)}
@@ -83,7 +85,7 @@ def build(source):
         digest = hashlib.file_digest(f, "sha256").hexdigest()
     result = {"key": key, "duration": duration, "practiceCues": len(cues), "captionCues": len(cues),
               "chapters": len(chapters), "vocabularyCount": len(cards), "videoSha256": digest,
-              "isSelectedDialogue": True, "reviewMethod": spec.get("reviewMethod", "ASR and visual editorial review; no human native-speaker approval")}
+               "isSelectedDialogue": True, "isExcerpt": is_excerpt, "reviewMethod": spec.get("reviewMethod", "ASR and visual editorial review; no human native-speaker approval")}
     (source.parent / "build-summary.json").write_text(dump(result) + "\n", encoding="utf-8")
     print(json.dumps(result, ensure_ascii=False))
 

@@ -1,0 +1,1512 @@
+{
+  "method": "local cached faster-whisper small auto-detection, language not forced; subtitles from publisher are primary transcript",
+  "checks": [
+    {
+      "start": 120,
+      "end": 145,
+      "language": "de",
+      "languageProbability": 0.9995492100715637,
+      "segments": [
+        {
+          "start": 120.0,
+          "end": 123.46,
+          "text": "Ist alles verrottet, wird daraus richtig gute Gartenerde.",
+          "words": [
+            {
+              "start": 120.0,
+              "end": 120.0,
+              "word": " Ist",
+              "probability": 0.05914950743317604
+            },
+            {
+              "start": 120.0,
+              "end": 120.18,
+              "word": " alles",
+              "probability": 0.9326477646827698
+            },
+            {
+              "start": 120.18,
+              "end": 120.86,
+              "word": " verrottet,",
+              "probability": 0.8928868174552917
+            },
+            {
+              "start": 121.32,
+              "end": 121.42,
+              "word": " wird",
+              "probability": 0.9650396108627319
+            },
+            {
+              "start": 121.42,
+              "end": 121.74,
+              "word": " daraus",
+              "probability": 0.9712328910827637
+            },
+            {
+              "start": 121.74,
+              "end": 122.04,
+              "word": " richtig",
+              "probability": 0.4986932575702667
+            },
+            {
+              "start": 122.04,
+              "end": 122.62,
+              "word": " gute",
+              "probability": 0.9547886848449707
+            },
+            {
+              "start": 122.62,
+              "end": 123.46,
+              "word": " Gartenerde.",
+              "probability": 0.9106864184141159
+            }
+          ]
+        },
+        {
+          "start": 124.28,
+          "end": 126.52,
+          "text": "Komm mit, Conny, holen wir die Gartengeräte.",
+          "words": [
+            {
+              "start": 124.28,
+              "end": 124.86,
+              "word": " Komm",
+              "probability": 0.8866326808929443
+            },
+            {
+              "start": 124.86,
+              "end": 125.06,
+              "word": " mit,",
+              "probability": 0.5909435749053955
+            },
+            {
+              "start": 125.2,
+              "end": 125.36,
+              "word": " Conny,",
+              "probability": 0.69597028195858
+            },
+            {
+              "start": 125.46,
+              "end": 125.62,
+              "word": " holen",
+              "probability": 0.9838742017745972
+            },
+            {
+              "start": 125.62,
+              "end": 125.68,
+              "word": " wir",
+              "probability": 0.9965723752975464
+            },
+            {
+              "start": 125.68,
+              "end": 125.8,
+              "word": " die",
+              "probability": 0.9774388670921326
+            },
+            {
+              "start": 125.8,
+              "end": 126.52,
+              "word": " Gartengeräte.",
+              "probability": 0.9588050246238708
+            }
+          ]
+        },
+        {
+          "start": 127.1,
+          "end": 127.56,
+          "text": "Toll!",
+          "words": [
+            {
+              "start": 127.1,
+              "end": 127.56,
+              "word": " Toll!",
+              "probability": 0.7373771071434021
+            }
+          ]
+        },
+        {
+          "start": 128.16,
+          "end": 129.36,
+          "text": "So, lass mal sehen.",
+          "words": [
+            {
+              "start": 128.16,
+              "end": 128.58,
+              "word": " So,",
+              "probability": 0.474693238735199
+            },
+            {
+              "start": 128.7,
+              "end": 128.78,
+              "word": " lass",
+              "probability": 0.8918800354003906
+            },
+            {
+              "start": 128.78,
+              "end": 128.98,
+              "word": " mal",
+              "probability": 0.9068374037742615
+            },
+            {
+              "start": 128.98,
+              "end": 129.36,
+              "word": " sehen.",
+              "probability": 0.9771585464477539
+            }
+          ]
+        },
+        {
+          "start": 130.5,
+          "end": 131.6,
+          "text": "Ah ja, da ist er.",
+          "words": [
+            {
+              "start": 130.5,
+              "end": 130.76,
+              "word": " Ah",
+              "probability": 0.4060510993003845
+            },
+            {
+              "start": 130.76,
+              "end": 130.98,
+              "word": " ja,",
+              "probability": 0.8512915372848511
+            },
+            {
+              "start": 131.12,
+              "end": 131.22,
+              "word": " da",
+              "probability": 0.9853675365447998
+            },
+            {
+              "start": 131.22,
+              "end": 131.42,
+              "word": " ist",
+              "probability": 0.9946210384368896
+            },
+            {
+              "start": 131.42,
+              "end": 131.6,
+              "word": " er.",
+              "probability": 0.6012338995933533
+            }
+          ]
+        },
+        {
+          "start": 132.22,
+          "end": 134.48,
+          "text": "Zum Pflanzen brauchen wir einen Spaten.",
+          "words": [
+            {
+              "start": 132.22,
+              "end": 132.7,
+              "word": " Zum",
+              "probability": 0.976889967918396
+            },
+            {
+              "start": 132.7,
+              "end": 133.32,
+              "word": " Pflanzen",
+              "probability": 0.9885344505310059
+            },
+            {
+              "start": 133.32,
+              "end": 133.66,
+              "word": " brauchen",
+              "probability": 0.9856280088424683
+            },
+            {
+              "start": 133.66,
+              "end": 133.86,
+              "word": " wir",
+              "probability": 0.9988089799880981
+            },
+            {
+              "start": 133.86,
+              "end": 134.04,
+              "word": " einen",
+              "probability": 0.9944795370101929
+            },
+            {
+              "start": 134.04,
+              "end": 134.48,
+              "word": " Spaten.",
+              "probability": 0.6974657773971558
+            }
+          ]
+        },
+        {
+          "start": 135.42,
+          "end": 137.24,
+          "text": "Puh, der ist aber richtig schwer.",
+          "words": [
+            {
+              "start": 135.42,
+              "end": 135.78,
+              "word": " Puh,",
+              "probability": 0.7835684418678284
+            },
+            {
+              "start": 135.98,
+              "end": 136.12,
+              "word": " der",
+              "probability": 0.9761486053466797
+            },
+            {
+              "start": 136.12,
+              "end": 136.3,
+              "word": " ist",
+              "probability": 0.9976237416267395
+            },
+            {
+              "start": 136.3,
+              "end": 136.52,
+              "word": " aber",
+              "probability": 0.7298056483268738
+            },
+            {
+              "start": 136.52,
+              "end": 136.76,
+              "word": " richtig",
+              "probability": 0.8940724730491638
+            },
+            {
+              "start": 136.76,
+              "end": 137.24,
+              "word": " schwer.",
+              "probability": 0.9978750944137573
+            }
+          ]
+        },
+        {
+          "start": 138.07999999999998,
+          "end": 139.16,
+          "text": "Ihr legt ihn hier rein.",
+          "words": [
+            {
+              "start": 138.07999999999998,
+              "end": 138.26,
+              "word": " Ihr",
+              "probability": 0.21681547164916992
+            },
+            {
+              "start": 138.26,
+              "end": 138.56,
+              "word": " legt",
+              "probability": 0.9239204227924347
+            },
+            {
+              "start": 138.56,
+              "end": 138.64,
+              "word": " ihn",
+              "probability": 0.4471275508403778
+            },
+            {
+              "start": 138.64,
+              "end": 138.84,
+              "word": " hier",
+              "probability": 0.8278735280036926
+            },
+            {
+              "start": 138.84,
+              "end": 139.16,
+              "word": " rein.",
+              "probability": 0.9817076921463013
+            }
+          ]
+        },
+        {
+          "start": 139.54,
+          "end": 141.98,
+          "text": "Ja, damit grabe ich die Erde um.",
+          "words": [
+            {
+              "start": 139.54,
+              "end": 139.78,
+              "word": " Ja,",
+              "probability": 0.519708514213562
+            },
+            {
+              "start": 140.36,
+              "end": 140.68,
+              "word": " damit",
+              "probability": 0.9972948431968689
+            },
+            {
+              "start": 140.68,
+              "end": 141.02,
+              "word": " grabe",
+              "probability": 0.38945114612579346
+            },
+            {
+              "start": 141.02,
+              "end": 141.22,
+              "word": " ich",
+              "probability": 0.9993491768836975
+            },
+            {
+              "start": 141.22,
+              "end": 141.42000000000002,
+              "word": " die",
+              "probability": 0.9968352913856506
+            },
+            {
+              "start": 141.42000000000002,
+              "end": 141.7,
+              "word": " Erde",
+              "probability": 0.994814395904541
+            },
+            {
+              "start": 141.7,
+              "end": 141.98,
+              "word": " um.",
+              "probability": 0.990903913974762
+            }
+          ]
+        },
+        {
+          "start": 142.52,
+          "end": 144.72,
+          "text": "Und der hier ist für dich...",
+          "words": [
+            {
+              "start": 142.52,
+              "end": 142.57999999999998,
+              "word": " Und",
+              "probability": 0.8677058815956116
+            },
+            {
+              "start": 142.57999999999998,
+              "end": 142.88,
+              "word": " der",
+              "probability": 0.9960860013961792
+            },
+            {
+              "start": 142.88,
+              "end": 143.28,
+              "word": " hier",
+              "probability": 0.9908919930458069
+            },
+            {
+              "start": 143.28,
+              "end": 144.04,
+              "word": " ist",
+              "probability": 0.8542180061340332
+            },
+            {
+              "start": 144.04,
+              "end": 144.3,
+              "word": " für",
+              "probability": 0.4746077358722687
+            },
+            {
+              "start": 144.3,
+              "end": 144.72,
+              "word": " dich...",
+              "probability": 0.6575675308704376
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start": 260,
+      "end": 285,
+      "language": "de",
+      "languageProbability": 0.9965611100196838,
+      "segments": [
+        {
+          "start": 260.0,
+          "end": 261.48,
+          "text": "Wer bist du denn?",
+          "words": [
+            {
+              "start": 260.0,
+              "end": 260.86,
+              "word": " Wer",
+              "probability": 0.368951678276062
+            },
+            {
+              "start": 260.86,
+              "end": 261.04,
+              "word": " bist",
+              "probability": 0.9981927275657654
+            },
+            {
+              "start": 261.04,
+              "end": 261.24,
+              "word": " du",
+              "probability": 0.9571630954742432
+            },
+            {
+              "start": 261.24,
+              "end": 261.48,
+              "word": " denn?",
+              "probability": 0.9278839230537415
+            }
+          ]
+        },
+        {
+          "start": 263.0,
+          "end": 265.02,
+          "text": "Na, habt ihr was Spannendes entdeckt?",
+          "words": [
+            {
+              "start": 263.0,
+              "end": 263.24,
+              "word": " Na,",
+              "probability": 0.54754239320755
+            },
+            {
+              "start": 263.68,
+              "end": 263.86,
+              "word": " habt",
+              "probability": 0.9547080397605896
+            },
+            {
+              "start": 263.86,
+              "end": 264.0,
+              "word": " ihr",
+              "probability": 0.9928882718086243
+            },
+            {
+              "start": 264.0,
+              "end": 264.14,
+              "word": " was",
+              "probability": 0.5194500684738159
+            },
+            {
+              "start": 264.14,
+              "end": 264.58,
+              "word": " Spannendes",
+              "probability": 0.888251543045044
+            },
+            {
+              "start": 264.58,
+              "end": 265.02,
+              "word": " entdeckt?",
+              "probability": 0.9976557493209839
+            }
+          ]
+        },
+        {
+          "start": 265.42,
+          "end": 268.98,
+          "text": "Ein Regenwurm, die sind sehr nützlich.",
+          "words": [
+            {
+              "start": 265.42,
+              "end": 265.8,
+              "word": " Ein",
+              "probability": 0.1661166250705719
+            },
+            {
+              "start": 265.8,
+              "end": 267.46,
+              "word": " Regenwurm,",
+              "probability": 0.9708226025104523
+            },
+            {
+              "start": 267.86,
+              "end": 268.0,
+              "word": " die",
+              "probability": 0.9853866100311279
+            },
+            {
+              "start": 268.0,
+              "end": 268.18,
+              "word": " sind",
+              "probability": 0.9871190786361694
+            },
+            {
+              "start": 268.18,
+              "end": 268.4,
+              "word": " sehr",
+              "probability": 0.7892665266990662
+            },
+            {
+              "start": 268.4,
+              "end": 268.98,
+              "word": " nützlich.",
+              "probability": 0.9912724494934082
+            }
+          ]
+        },
+        {
+          "start": 270.64,
+          "end": 272.52,
+          "text": "Der kribbelt in der Hand.",
+          "words": [
+            {
+              "start": 270.64,
+              "end": 271.4,
+              "word": " Der",
+              "probability": 0.9410081505775452
+            },
+            {
+              "start": 271.4,
+              "end": 271.8,
+              "word": " kribbelt",
+              "probability": 0.7922129034996033
+            },
+            {
+              "start": 271.8,
+              "end": 272.02,
+              "word": " in",
+              "probability": 0.9838511347770691
+            },
+            {
+              "start": 272.02,
+              "end": 272.18,
+              "word": " der",
+              "probability": 0.9911510348320007
+            },
+            {
+              "start": 272.18,
+              "end": 272.52,
+              "word": " Hand.",
+              "probability": 0.9970396161079407
+            }
+          ]
+        },
+        {
+          "start": 273.1,
+          "end": 275.14,
+          "text": "Ja, weil er sich so schlängelt.",
+          "words": [
+            {
+              "start": 273.1,
+              "end": 273.44,
+              "word": " Ja,",
+              "probability": 0.4790883958339691
+            },
+            {
+              "start": 273.92,
+              "end": 274.06,
+              "word": " weil",
+              "probability": 0.9902569055557251
+            },
+            {
+              "start": 274.06,
+              "end": 274.14,
+              "word": " er",
+              "probability": 0.9947407841682434
+            },
+            {
+              "start": 274.14,
+              "end": 274.28,
+              "word": " sich",
+              "probability": 0.9915512800216675
+            },
+            {
+              "start": 274.28,
+              "end": 274.48,
+              "word": " so",
+              "probability": 0.8618625998497009
+            },
+            {
+              "start": 274.48,
+              "end": 275.14,
+              "word": " schlängelt.",
+              "probability": 0.9483741819858551
+            }
+          ]
+        },
+        {
+          "start": 275.8,
+          "end": 280.02,
+          "text": "Genauso buddeln die sich durch die Beete und helfen die Erde umzugraben.",
+          "words": [
+            {
+              "start": 275.8,
+              "end": 276.4,
+              "word": " Genauso",
+              "probability": 0.7029609382152557
+            },
+            {
+              "start": 276.4,
+              "end": 276.9,
+              "word": " buddeln",
+              "probability": 0.9865013559659322
+            },
+            {
+              "start": 276.9,
+              "end": 277.08,
+              "word": " die",
+              "probability": 0.8121377825737
+            },
+            {
+              "start": 277.08,
+              "end": 277.26,
+              "word": " sich",
+              "probability": 0.9804854393005371
+            },
+            {
+              "start": 277.26,
+              "end": 277.54,
+              "word": " durch",
+              "probability": 0.49081864953041077
+            },
+            {
+              "start": 277.54,
+              "end": 277.74,
+              "word": " die",
+              "probability": 0.953722357749939
+            },
+            {
+              "start": 277.74,
+              "end": 278.12,
+              "word": " Beete",
+              "probability": 0.7718162536621094
+            },
+            {
+              "start": 278.12,
+              "end": 278.56,
+              "word": " und",
+              "probability": 0.7919589281082153
+            },
+            {
+              "start": 278.56,
+              "end": 278.82,
+              "word": " helfen",
+              "probability": 0.9669345617294312
+            },
+            {
+              "start": 278.82,
+              "end": 278.98,
+              "word": " die",
+              "probability": 0.7511393427848816
+            },
+            {
+              "start": 278.98,
+              "end": 279.28,
+              "word": " Erde",
+              "probability": 0.9977383613586426
+            },
+            {
+              "start": 279.28,
+              "end": 280.02,
+              "word": " umzugraben.",
+              "probability": 0.9507822096347809
+            }
+          ]
+        },
+        {
+          "start": 282.3,
+          "end": 283.2,
+          "text": "So ungefähr.",
+          "words": [
+            {
+              "start": 282.3,
+              "end": 282.8,
+              "word": " So",
+              "probability": 0.7911867499351501
+            },
+            {
+              "start": 282.8,
+              "end": 283.2,
+              "word": " ungefähr.",
+              "probability": 0.9371326565742493
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start": 390,
+      "end": 415,
+      "language": "de",
+      "languageProbability": 0.9976630210876465,
+      "segments": [
+        {
+          "start": 390.0,
+          "end": 390.96,
+          "text": "Die klemmt irgendwie.",
+          "words": [
+            {
+              "start": 390.0,
+              "end": 390.1,
+              "word": " Die",
+              "probability": 0.2900479733943939
+            },
+            {
+              "start": 390.1,
+              "end": 390.42,
+              "word": " klemmt",
+              "probability": 0.8231155673662821
+            },
+            {
+              "start": 390.42,
+              "end": 390.96,
+              "word": " irgendwie.",
+              "probability": 0.8212335705757141
+            }
+          ]
+        },
+        {
+          "start": 391.78,
+          "end": 394.36,
+          "text": "Die haben wahrscheinlich schon richtig kräftige Wurzeln.",
+          "words": [
+            {
+              "start": 391.78,
+              "end": 392.04,
+              "word": " Die",
+              "probability": 0.8770090937614441
+            },
+            {
+              "start": 392.04,
+              "end": 392.22,
+              "word": " haben",
+              "probability": 0.9927904605865479
+            },
+            {
+              "start": 392.22,
+              "end": 392.68,
+              "word": " wahrscheinlich",
+              "probability": 0.3910106420516968
+            },
+            {
+              "start": 392.68,
+              "end": 392.86,
+              "word": " schon",
+              "probability": 0.7736561894416809
+            },
+            {
+              "start": 392.86,
+              "end": 393.14,
+              "word": " richtig",
+              "probability": 0.8544901013374329
+            },
+            {
+              "start": 393.14,
+              "end": 393.76,
+              "word": " kräftige",
+              "probability": 0.9694281965494156
+            },
+            {
+              "start": 393.76,
+              "end": 394.36,
+              "word": " Wurzeln.",
+              "probability": 0.9755398333072662
+            }
+          ]
+        },
+        {
+          "start": 394.86,
+          "end": 398.3,
+          "text": "Am besten drückst du den Topf an allen Seiten ein bisschen ein.",
+          "words": [
+            {
+              "start": 394.86,
+              "end": 394.98,
+              "word": " Am",
+              "probability": 0.9605626463890076
+            },
+            {
+              "start": 394.98,
+              "end": 395.32,
+              "word": " besten",
+              "probability": 0.9702416062355042
+            },
+            {
+              "start": 395.32,
+              "end": 396.26,
+              "word": " drückst",
+              "probability": 0.7892546157042185
+            },
+            {
+              "start": 396.26,
+              "end": 396.28,
+              "word": " du",
+              "probability": 0.9911722540855408
+            },
+            {
+              "start": 396.28,
+              "end": 396.36,
+              "word": " den",
+              "probability": 0.9854635000228882
+            },
+            {
+              "start": 396.36,
+              "end": 396.72,
+              "word": " Topf",
+              "probability": 0.9921566545963287
+            },
+            {
+              "start": 396.72,
+              "end": 396.86,
+              "word": " an",
+              "probability": 0.5590245723724365
+            },
+            {
+              "start": 396.86,
+              "end": 397.1,
+              "word": " allen",
+              "probability": 0.9627066850662231
+            },
+            {
+              "start": 397.1,
+              "end": 397.52,
+              "word": " Seiten",
+              "probability": 0.977556049823761
+            },
+            {
+              "start": 397.52,
+              "end": 397.66,
+              "word": " ein",
+              "probability": 0.9932629466056824
+            },
+            {
+              "start": 397.66,
+              "end": 397.96,
+              "word": " bisschen",
+              "probability": 0.926288366317749
+            },
+            {
+              "start": 397.96,
+              "end": 398.3,
+              "word": " ein.",
+              "probability": 0.973340630531311
+            }
+          ]
+        },
+        {
+          "start": 398.6,
+          "end": 401.16,
+          "text": "Hm. Vielleicht so?",
+          "words": [
+            {
+              "start": 398.6,
+              "end": 398.9,
+              "word": " Hm.",
+              "probability": 0.19871750473976135
+            },
+            {
+              "start": 400.16,
+              "end": 400.58,
+              "word": " Vielleicht",
+              "probability": 0.633982241153717
+            },
+            {
+              "start": 400.58,
+              "end": 401.16,
+              "word": " so?",
+              "probability": 0.9974391460418701
+            }
+          ]
+        },
+        {
+          "start": 402.46,
+          "end": 402.8,
+          "text": "Aha!",
+          "words": [
+            {
+              "start": 402.46,
+              "end": 402.8,
+              "word": " Aha!",
+              "probability": 0.46249762177467346
+            }
+          ]
+        },
+        {
+          "start": 404.52,
+          "end": 405.16,
+          "text": "Ich hab sie!",
+          "words": [
+            {
+              "start": 404.3,
+              "end": 404.6,
+              "word": " Ich",
+              "probability": 0.9931861162185669
+            },
+            {
+              "start": 404.6,
+              "end": 404.82,
+              "word": " hab",
+              "probability": 0.8373733162879944
+            },
+            {
+              "start": 404.82,
+              "end": 405.16,
+              "word": " sie!",
+              "probability": 0.981061577796936
+            }
+          ]
+        },
+        {
+          "start": 407.02,
+          "end": 407.54,
+          "text": "Gut.",
+          "words": [
+            {
+              "start": 407.02,
+              "end": 407.54,
+              "word": " Gut.",
+              "probability": 0.986481785774231
+            }
+          ]
+        },
+        {
+          "start": 408.38,
+          "end": 410.82,
+          "text": "Du hast die Wurzel im Topf ein bisschen zusammengedrückt.",
+          "words": [
+            {
+              "start": 408.38,
+              "end": 408.48,
+              "word": " Du",
+              "probability": 0.9808815717697144
+            },
+            {
+              "start": 408.48,
+              "end": 408.62,
+              "word": " hast",
+              "probability": 0.9919859170913696
+            },
+            {
+              "start": 408.62,
+              "end": 408.8,
+              "word": " die",
+              "probability": 0.9865076541900635
+            },
+            {
+              "start": 408.8,
+              "end": 409.14,
+              "word": " Wurzel",
+              "probability": 0.8911387721697489
+            },
+            {
+              "start": 409.14,
+              "end": 409.3,
+              "word": " im",
+              "probability": 0.9086955189704895
+            },
+            {
+              "start": 409.3,
+              "end": 409.62,
+              "word": " Topf",
+              "probability": 0.9977966547012329
+            },
+            {
+              "start": 409.62,
+              "end": 409.7,
+              "word": " ein",
+              "probability": 0.5744213461875916
+            },
+            {
+              "start": 409.7,
+              "end": 409.9,
+              "word": " bisschen",
+              "probability": 0.9953426122665405
+            },
+            {
+              "start": 409.9,
+              "end": 410.82,
+              "word": " zusammengedrückt.",
+              "probability": 0.9333345095316569
+            }
+          ]
+        },
+        {
+          "start": 411.56,
+          "end": 413.24,
+          "text": "Jetzt musste sie noch ein wenig lockern,",
+          "words": [
+            {
+              "start": 411.56,
+              "end": 411.8,
+              "word": " Jetzt",
+              "probability": 0.9606305360794067
+            },
+            {
+              "start": 411.8,
+              "end": 412.08,
+              "word": " musste",
+              "probability": 0.9403706192970276
+            },
+            {
+              "start": 412.08,
+              "end": 412.3,
+              "word": " sie",
+              "probability": 0.9961517453193665
+            },
+            {
+              "start": 412.3,
+              "end": 412.44,
+              "word": " noch",
+              "probability": 0.8366159200668335
+            },
+            {
+              "start": 412.44,
+              "end": 412.58,
+              "word": " ein",
+              "probability": 0.8496676087379456
+            },
+            {
+              "start": 412.58,
+              "end": 412.74,
+              "word": " wenig",
+              "probability": 0.9933949112892151
+            },
+            {
+              "start": 412.74,
+              "end": 413.24,
+              "word": " lockern,",
+              "probability": 0.9889566898345947
+            }
+          ]
+        },
+        {
+          "start": 413.28,
+          "end": 414.78,
+          "text": "damit sie sich gut entwickeln kann.",
+          "words": [
+            {
+              "start": 413.28,
+              "end": 413.46,
+              "word": " damit",
+              "probability": 0.9902547001838684
+            },
+            {
+              "start": 413.46,
+              "end": 413.64,
+              "word": " sie",
+              "probability": 0.9886918067932129
+            },
+            {
+              "start": 413.64,
+              "end": 413.82,
+              "word": " sich",
+              "probability": 0.995033860206604
+            },
+            {
+              "start": 413.82,
+              "end": 414.0,
+              "word": " gut",
+              "probability": 0.9899975061416626
+            },
+            {
+              "start": 414.0,
+              "end": 414.54,
+              "word": " entwickeln",
+              "probability": 0.9950933754444122
+            },
+            {
+              "start": 414.54,
+              "end": 414.78,
+              "word": " kann.",
+              "probability": 0.997329831123352
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "start": 630,
+      "end": 660,
+      "language": "de",
+      "languageProbability": 0.9983811378479004,
+      "segments": [
+        {
+          "start": 630.0,
+          "end": 632.66,
+          "text": "So Schnecke, hier kannst du weiterkriechen.",
+          "words": [
+            {
+              "start": 630.0,
+              "end": 630.5,
+              "word": " So",
+              "probability": 0.31696879863739014
+            },
+            {
+              "start": 630.5,
+              "end": 630.94,
+              "word": " Schnecke,",
+              "probability": 0.6389450281858444
+            },
+            {
+              "start": 631.3,
+              "end": 631.44,
+              "word": " hier",
+              "probability": 0.6389648914337158
+            },
+            {
+              "start": 631.44,
+              "end": 631.66,
+              "word": " kannst",
+              "probability": 0.99357670545578
+            },
+            {
+              "start": 631.66,
+              "end": 631.86,
+              "word": " du",
+              "probability": 0.9410135746002197
+            },
+            {
+              "start": 631.86,
+              "end": 632.66,
+              "word": " weiterkriechen.",
+              "probability": 0.8633855134248734
+            }
+          ]
+        },
+        {
+          "start": 634.88,
+          "end": 636.74,
+          "text": "Papa, Papa, komm mal!",
+          "words": [
+            {
+              "start": 634.88,
+              "end": 635.52,
+              "word": " Papa,",
+              "probability": 0.8027779459953308
+            },
+            {
+              "start": 635.76,
+              "end": 635.98,
+              "word": " Papa,",
+              "probability": 0.7967566251754761
+            },
+            {
+              "start": 636.24,
+              "end": 636.42,
+              "word": " komm",
+              "probability": 0.9022793173789978
+            },
+            {
+              "start": 636.42,
+              "end": 636.74,
+              "word": " mal!",
+              "probability": 0.9072943925857544
+            }
+          ]
+        },
+        {
+          "start": 638.7,
+          "end": 643.12,
+          "text": "Hoja, da kannst du ja doch schon was ernten. Das sind wilde Erdbeeren.",
+          "words": [
+            {
+              "start": 638.7,
+              "end": 639.28,
+              "word": " Hoja,",
+              "probability": 0.16715171933174133
+            },
+            {
+              "start": 639.5,
+              "end": 639.58,
+              "word": " da",
+              "probability": 0.9300376772880554
+            },
+            {
+              "start": 639.58,
+              "end": 639.8,
+              "word": " kannst",
+              "probability": 0.9953151941299438
+            },
+            {
+              "start": 639.8,
+              "end": 639.98,
+              "word": " du",
+              "probability": 0.9827483296394348
+            },
+            {
+              "start": 639.98,
+              "end": 640.1,
+              "word": " ja",
+              "probability": 0.9055696725845337
+            },
+            {
+              "start": 640.1,
+              "end": 640.24,
+              "word": " doch",
+              "probability": 0.9089252352714539
+            },
+            {
+              "start": 640.24,
+              "end": 640.46,
+              "word": " schon",
+              "probability": 0.9098987579345703
+            },
+            {
+              "start": 640.46,
+              "end": 640.68,
+              "word": " was",
+              "probability": 0.868768036365509
+            },
+            {
+              "start": 640.68,
+              "end": 640.98,
+              "word": " ernten.",
+              "probability": 0.9799887835979462
+            },
+            {
+              "start": 641.68,
+              "end": 641.68,
+              "word": " Das",
+              "probability": 0.9509377479553223
+            },
+            {
+              "start": 641.68,
+              "end": 641.94,
+              "word": " sind",
+              "probability": 0.9981104135513306
+            },
+            {
+              "start": 641.94,
+              "end": 642.46,
+              "word": " wilde",
+              "probability": 0.9930434226989746
+            },
+            {
+              "start": 642.46,
+              "end": 643.12,
+              "word": " Erdbeeren.",
+              "probability": 0.9893901348114014
+            }
+          ]
+        },
+        {
+          "start": 644.42,
+          "end": 647.4,
+          "text": "Oh, lecker. Ganz süß.",
+          "words": [
+            {
+              "start": 644.42,
+              "end": 645.06,
+              "word": " Oh,",
+              "probability": 0.18806768953800201
+            },
+            {
+              "start": 645.24,
+              "end": 645.62,
+              "word": " lecker.",
+              "probability": 0.9634867310523987
+            },
+            {
+              "start": 646.42,
+              "end": 646.78,
+              "word": " Ganz",
+              "probability": 0.9660674333572388
+            },
+            {
+              "start": 646.78,
+              "end": 647.4,
+              "word": " süß.",
+              "probability": 0.9960972666740417
+            }
+          ]
+        },
+        {
+          "start": 648.18,
+          "end": 650.34,
+          "text": "Wieso wachsen die denn nicht beim Genüse?",
+          "words": [
+            {
+              "start": 648.18,
+              "end": 648.52,
+              "word": " Wieso",
+              "probability": 0.4101303182542324
+            },
+            {
+              "start": 648.52,
+              "end": 648.88,
+              "word": " wachsen",
+              "probability": 0.989670604467392
+            },
+            {
+              "start": 648.88,
+              "end": 649.16,
+              "word": " die",
+              "probability": 0.9851598739624023
+            },
+            {
+              "start": 649.16,
+              "end": 649.3,
+              "word": " denn",
+              "probability": 0.4168810546398163
+            },
+            {
+              "start": 649.3,
+              "end": 649.52,
+              "word": " nicht",
+              "probability": 0.9951032400131226
+            },
+            {
+              "start": 649.52,
+              "end": 649.78,
+              "word": " beim",
+              "probability": 0.9544743895530701
+            },
+            {
+              "start": 649.78,
+              "end": 650.34,
+              "word": " Genüse?",
+              "probability": 0.6264208455880483
+            }
+          ]
+        },
+        {
+          "start": 650.98,
+          "end": 654.26,
+          "text": "Tja, die sind wohl genau wie die Sonnenblumen hierhergekommen.",
+          "words": [
+            {
+              "start": 650.98,
+              "end": 651.38,
+              "word": " Tja,",
+              "probability": 0.5289901420474052
+            },
+            {
+              "start": 651.58,
+              "end": 651.72,
+              "word": " die",
+              "probability": 0.9735097289085388
+            },
+            {
+              "start": 651.72,
+              "end": 651.9,
+              "word": " sind",
+              "probability": 0.995092511177063
+            },
+            {
+              "start": 651.9,
+              "end": 652.08,
+              "word": " wohl",
+              "probability": 0.5824124813079834
+            },
+            {
+              "start": 652.08,
+              "end": 652.48,
+              "word": " genau",
+              "probability": 0.8352904915809631
+            },
+            {
+              "start": 652.48,
+              "end": 652.66,
+              "word": " wie",
+              "probability": 0.9434616565704346
+            },
+            {
+              "start": 652.66,
+              "end": 652.84,
+              "word": " die",
+              "probability": 0.9647096991539001
+            },
+            {
+              "start": 652.84,
+              "end": 653.38,
+              "word": " Sonnenblumen",
+              "probability": 0.9839807003736496
+            },
+            {
+              "start": 653.38,
+              "end": 654.26,
+              "word": " hierhergekommen.",
+              "probability": 0.7787436991930008
+            }
+          ]
+        },
+        {
+          "start": 654.76,
+          "end": 656.46,
+          "text": "Mit Zieren oder dem Wind?",
+          "words": [
+            {
+              "start": 654.76,
+              "end": 655.06,
+              "word": " Mit",
+              "probability": 0.980708658695221
+            },
+            {
+              "start": 655.06,
+              "end": 655.42,
+              "word": " Zieren",
+              "probability": 0.7251982688903809
+            },
+            {
+              "start": 655.42,
+              "end": 655.9,
+              "word": " oder",
+              "probability": 0.9475246071815491
+            },
+            {
+              "start": 655.9,
+              "end": 656.22,
+              "word": " dem",
+              "probability": 0.9535257816314697
+            },
+            {
+              "start": 656.22,
+              "end": 656.46,
+              "word": " Wind?",
+              "probability": 0.9769822359085083
+            }
+          ]
+        },
+        {
+          "start": 657.92,
+          "end": 659.86,
+          "text": "Gut, wenn man nicht immer alles so sauber hat.",
+          "words": [
+            {
+              "start": 657.92,
+              "end": 658.24,
+              "word": " Gut,",
+              "probability": 0.7393808364868164
+            },
+            {
+              "start": 658.38,
+              "end": 658.44,
+              "word": " wenn",
+              "probability": 0.9915430545806885
+            },
+            {
+              "start": 658.44,
+              "end": 658.56,
+              "word": " man",
+              "probability": 0.9488874077796936
+            },
+            {
+              "start": 658.56,
+              "end": 658.7,
+              "word": " nicht",
+              "probability": 0.9545343518257141
+            },
+            {
+              "start": 658.7,
+              "end": 658.9,
+              "word": " immer",
+              "probability": 0.85833740234375
+            },
+            {
+              "start": 658.9,
+              "end": 659.16,
+              "word": " alles",
+              "probability": 0.9831497073173523
+            },
+            {
+              "start": 659.16,
+              "end": 659.32,
+              "word": " so",
+              "probability": 0.8264944553375244
+            },
+            {
+              "start": 659.32,
+              "end": 659.64,
+              "word": " sauber",
+              "probability": 0.9960049986839294
+            },
+            {
+              "start": 659.64,
+              "end": 659.86,
+              "word": " hat.",
+              "probability": 0.6232488751411438
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

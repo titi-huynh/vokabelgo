@@ -1,0 +1,1336 @@
+[
+  {
+    "start": 55.0,
+    "end": 58.12,
+    "text": " Du hast ja einen lustigen Milch-Bad.",
+    "avg_logprob": -0.36194157737425003,
+    "words": [
+      {
+        "start": 55.0,
+        "end": 56.06,
+        "word": " Du",
+        "probability": 0.9524738788604736
+      },
+      {
+        "start": 56.06,
+        "end": 56.34,
+        "word": " hast",
+        "probability": 0.9757013320922852
+      },
+      {
+        "start": 56.34,
+        "end": 56.54,
+        "word": " ja",
+        "probability": 0.9093621969223022
+      },
+      {
+        "start": 56.54,
+        "end": 56.66,
+        "word": " einen",
+        "probability": 0.590896725654602
+      },
+      {
+        "start": 56.66,
+        "end": 57.16,
+        "word": " lustigen",
+        "probability": 0.9651592671871185
+      },
+      {
+        "start": 57.16,
+        "end": 57.64,
+        "word": " Milch",
+        "probability": 0.9956793189048767
+      },
+      {
+        "start": 57.64,
+        "end": 58.12,
+        "word": "-Bad.",
+        "probability": 0.5945854385693868
+      }
+    ]
+  },
+  {
+    "start": 60.4,
+    "end": 61.22,
+    "text": " Bobo, fertig.",
+    "avg_logprob": -0.36194157737425003,
+    "words": [
+      {
+        "start": 60.4,
+        "end": 60.7,
+        "word": " Bobo,",
+        "probability": 0.6981487423181534
+      },
+      {
+        "start": 61.22,
+        "end": 61.22,
+        "word": " fertig.",
+        "probability": 0.9871058464050293
+      }
+    ]
+  },
+  {
+    "start": 61.9,
+    "end": 65.32,
+    "text": " Prima, Bobo. Dann kannst du ins Bad gehen und dich fertig machen.",
+    "avg_logprob": -0.36194157737425003,
+    "words": [
+      {
+        "start": 61.9,
+        "end": 62.36,
+        "word": " Prima,",
+        "probability": 0.6865199357271194
+      },
+      {
+        "start": 62.56,
+        "end": 62.68,
+        "word": " Bobo.",
+        "probability": 0.9262144267559052
+      },
+      {
+        "start": 62.82,
+        "end": 62.84,
+        "word": " Dann",
+        "probability": 0.7189939618110657
+      },
+      {
+        "start": 62.84,
+        "end": 63.06,
+        "word": " kannst",
+        "probability": 0.7810669541358948
+      },
+      {
+        "start": 63.06,
+        "end": 63.22,
+        "word": " du",
+        "probability": 0.9854920506477356
+      },
+      {
+        "start": 63.22,
+        "end": 63.32,
+        "word": " ins",
+        "probability": 0.8379350304603577
+      },
+      {
+        "start": 63.32,
+        "end": 63.58,
+        "word": " Bad",
+        "probability": 0.9882340431213379
+      },
+      {
+        "start": 63.58,
+        "end": 63.86,
+        "word": " gehen",
+        "probability": 0.9117736220359802
+      },
+      {
+        "start": 63.86,
+        "end": 63.980000000000004,
+        "word": " und",
+        "probability": 0.743132472038269
+      },
+      {
+        "start": 63.980000000000004,
+        "end": 64.26,
+        "word": " dich",
+        "probability": 0.9657233357429504
+      },
+      {
+        "start": 64.26,
+        "end": 64.7,
+        "word": " fertig",
+        "probability": 0.24837525188922882
+      },
+      {
+        "start": 64.7,
+        "end": 65.32,
+        "word": " machen.",
+        "probability": 0.9832672476768494
+      }
+    ]
+  },
+  {
+    "start": 66.88,
+    "end": 68.03999999999999,
+    "text": " Papa, fertig?",
+    "avg_logprob": -0.36194157737425003,
+    "words": [
+      {
+        "start": 66.88,
+        "end": 67.44,
+        "word": " Papa,",
+        "probability": 0.3368195593357086
+      },
+      {
+        "start": 67.76,
+        "end": 68.03999999999999,
+        "word": " fertig?",
+        "probability": 0.725462019443512
+      }
+    ]
+  },
+  {
+    "start": 70.30000000000001,
+    "end": 71.42,
+    "text": " Bitte, Papa.",
+    "avg_logprob": -0.36194157737425003,
+    "words": [
+      {
+        "start": 70.30000000000001,
+        "end": 70.86,
+        "word": " Bitte,",
+        "probability": 0.6342948079109192
+      },
+      {
+        "start": 70.86,
+        "end": 71.42,
+        "word": " Papa.",
+        "probability": 0.9919593930244446
+      }
+    ]
+  },
+  {
+    "start": 72.34,
+    "end": 73.48,
+    "text": " Okay, na gut.",
+    "avg_logprob": -0.36194157737425003,
+    "words": [
+      {
+        "start": 72.34,
+        "end": 72.88,
+        "word": " Okay,",
+        "probability": 0.645966112613678
+      },
+      {
+        "start": 73.06,
+        "end": 73.26,
+        "word": " na",
+        "probability": 0.9564653038978577
+      },
+      {
+        "start": 73.26,
+        "end": 73.48,
+        "word": " gut.",
+        "probability": 0.9789044260978699
+      }
+    ]
+  },
+  {
+    "start": 73.98,
+    "end": 74.74,
+    "text": " Oh ja.",
+    "avg_logprob": -0.36194157737425003,
+    "words": [
+      {
+        "start": 73.98,
+        "end": 73.98,
+        "word": " Oh",
+        "probability": 0.011966602876782417
+      },
+      {
+        "start": 73.98,
+        "end": 74.74,
+        "word": " ja.",
+        "probability": 0.6730918288230896
+      }
+    ]
+  },
+  {
+    "start": 78.48,
+    "end": 81.42,
+    "text": " Hopp, hopp, hopp. Ich geh dann mal an meinen Schreibtisch.",
+    "avg_logprob": -0.36194157737425003,
+    "words": [
+      {
+        "start": 78.48,
+        "end": 79.03999999999999,
+        "word": " Hopp,",
+        "probability": 0.8637227118015289
+      },
+      {
+        "start": 79.03999999999999,
+        "end": 79.18,
+        "word": " hopp,",
+        "probability": 0.986108273267746
+      },
+      {
+        "start": 79.18,
+        "end": 79.64,
+        "word": " hopp.",
+        "probability": 0.9942046701908112
+      },
+      {
+        "start": 79.8,
+        "end": 79.86,
+        "word": " Ich",
+        "probability": 0.9770448207855225
+      },
+      {
+        "start": 79.86,
+        "end": 80.08,
+        "word": " geh",
+        "probability": 0.5619305968284607
+      },
+      {
+        "start": 80.08,
+        "end": 80.26,
+        "word": " dann",
+        "probability": 0.43158116936683655
+      },
+      {
+        "start": 80.26,
+        "end": 80.42,
+        "word": " mal",
+        "probability": 0.5065372586250305
+      },
+      {
+        "start": 80.42,
+        "end": 80.46000000000001,
+        "word": " an",
+        "probability": 0.9217210412025452
+      },
+      {
+        "start": 80.46000000000001,
+        "end": 80.72,
+        "word": " meinen",
+        "probability": 0.970961332321167
+      },
+      {
+        "start": 80.72,
+        "end": 81.42,
+        "word": " Schreibtisch.",
+        "probability": 0.9943260550498962
+      }
+    ]
+  },
+  {
+    "start": 81.42,
+    "end": 82.9,
+    "text": " Ich sag dir später gute Nacht.",
+    "avg_logprob": -0.4356142345227693,
+    "words": [
+      {
+        "start": 81.42,
+        "end": 81.7,
+        "word": " Ich",
+        "probability": 0.9195009469985962
+      },
+      {
+        "start": 81.7,
+        "end": 81.9,
+        "word": " sag",
+        "probability": 0.9539924263954163
+      },
+      {
+        "start": 81.9,
+        "end": 82.03999999999999,
+        "word": " dir",
+        "probability": 0.9172869920730591
+      },
+      {
+        "start": 82.03999999999999,
+        "end": 82.38,
+        "word": " später",
+        "probability": 0.9836302399635315
+      },
+      {
+        "start": 82.38,
+        "end": 82.62,
+        "word": " gute",
+        "probability": 0.8850856423377991
+      },
+      {
+        "start": 82.62,
+        "end": 82.9,
+        "word": " Nacht.",
+        "probability": 0.9886638522148132
+      }
+    ]
+  },
+  {
+    "start": 84.16,
+    "end": 84.98,
+    "text": " Papa, hopp hopp!",
+    "avg_logprob": -0.4356142345227693,
+    "words": [
+      {
+        "start": 84.16,
+        "end": 84.18,
+        "word": " Papa,",
+        "probability": 0.5736844539642334
+      },
+      {
+        "start": 84.64,
+        "end": 84.84,
+        "word": " hopp",
+        "probability": 0.8865535855293274
+      },
+      {
+        "start": 84.84,
+        "end": 84.98,
+        "word": " hopp!",
+        "probability": 0.8955910801887512
+      }
+    ]
+  },
+  {
+    "start": 129.1,
+    "end": 132.62,
+    "text": " Ui, das ist aber viel Zahncreme.",
+    "avg_logprob": -0.4352652153303457,
+    "words": [
+      {
+        "start": 129.1,
+        "end": 130.02,
+        "word": " Ui,",
+        "probability": 0.86744424700737
+      },
+      {
+        "start": 130.48,
+        "end": 130.62,
+        "word": " das",
+        "probability": 0.9190821647644043
+      },
+      {
+        "start": 130.62,
+        "end": 130.88,
+        "word": " ist",
+        "probability": 0.9955987930297852
+      },
+      {
+        "start": 130.88,
+        "end": 131.22,
+        "word": " aber",
+        "probability": 0.8526126742362976
+      },
+      {
+        "start": 131.22,
+        "end": 131.46,
+        "word": " viel",
+        "probability": 0.9851651191711426
+      },
+      {
+        "start": 131.46,
+        "end": 132.62,
+        "word": " Zahncreme.",
+        "probability": 0.9611058682203293
+      }
+    ]
+  },
+  {
+    "start": 134.38,
+    "end": 135.3,
+    "text": " Popowasser.",
+    "avg_logprob": -0.4352652153303457,
+    "words": [
+      {
+        "start": 134.38,
+        "end": 135.3,
+        "word": " Popowasser.",
+        "probability": 0.6203792989253998
+      }
+    ]
+  },
+  {
+    "start": 139.54,
+    "end": 140.46,
+    "text": " Hahahaha.",
+    "avg_logprob": -0.4352652153303457,
+    "words": [
+      {
+        "start": 139.54,
+        "end": 140.46,
+        "word": " Hahahaha.",
+        "probability": 0.5196234062314034
+      }
+    ]
+  },
+  {
+    "start": 141.7,
+    "end": 142.57999999999998,
+    "text": " Fertig, Papa.",
+    "avg_logprob": -0.4352652153303457,
+    "words": [
+      {
+        "start": 141.7,
+        "end": 142.16,
+        "word": " Fertig,",
+        "probability": 0.9423575599988302
+      },
+      {
+        "start": 142.3,
+        "end": 142.57999999999998,
+        "word": " Papa.",
+        "probability": 0.9827371835708618
+      }
+    ]
+  },
+  {
+    "start": 143.2,
+    "end": 144.86,
+    "text": " Na, los geht's.",
+    "avg_logprob": -0.4352652153303457,
+    "words": [
+      {
+        "start": 143.2,
+        "end": 143.6,
+        "word": " Na,",
+        "probability": 0.9313433766365051
+      },
+      {
+        "start": 144.1,
+        "end": 144.28,
+        "word": " los",
+        "probability": 0.9881873726844788
+      },
+      {
+        "start": 144.28,
+        "end": 144.86,
+        "word": " geht's.",
+        "probability": 0.9104538261890411
+      }
+    ]
+  },
+  {
+    "start": 144.86,
+    "end": 144.94,
+    "text": " Untertitel im Auftrag des ZDF für funk, 2017",
+    "avg_logprob": -0.5078821182250977,
+    "words": [
+      {
+        "start": 144.86,
+        "end": 144.88,
+        "word": " Untertitel",
+        "probability": 0.670986377944549
+      },
+      {
+        "start": 144.88,
+        "end": 144.9,
+        "word": " im",
+        "probability": 0.1984959989786148
+      },
+      {
+        "start": 144.9,
+        "end": 144.9,
+        "word": " Auftrag",
+        "probability": 0.9902715384960175
+      },
+      {
+        "start": 144.9,
+        "end": 144.9,
+        "word": " des",
+        "probability": 0.9733696579933167
+      },
+      {
+        "start": 144.9,
+        "end": 144.92000000000002,
+        "word": " ZDF",
+        "probability": 0.9883423447608948
+      },
+      {
+        "start": 144.92000000000002,
+        "end": 144.94,
+        "word": " für",
+        "probability": 0.634104311466217
+      },
+      {
+        "start": 144.94,
+        "end": 144.94,
+        "word": " funk,",
+        "probability": 0.9533565640449524
+      },
+      {
+        "start": 144.94,
+        "end": 144.94,
+        "word": " 2017",
+        "probability": 0.3762848973274231
+      }
+    ]
+  },
+  {
+    "start": 194.96,
+    "end": 197.94,
+    "text": " Schau, gleich ist die Sanktur abgelaufen.",
+    "avg_logprob": -0.5238616507628868,
+    "words": [
+      {
+        "start": 194.96,
+        "end": 196.12,
+        "word": " Schau,",
+        "probability": 0.694200187921524
+      },
+      {
+        "start": 196.12,
+        "end": 196.46,
+        "word": " gleich",
+        "probability": 0.7043379545211792
+      },
+      {
+        "start": 196.46,
+        "end": 196.6,
+        "word": " ist",
+        "probability": 0.9811688661575317
+      },
+      {
+        "start": 196.6,
+        "end": 196.8,
+        "word": " die",
+        "probability": 0.9252724647521973
+      },
+      {
+        "start": 196.8,
+        "end": 197.1,
+        "word": " Sanktur",
+        "probability": 0.5410491786897182
+      },
+      {
+        "start": 197.1,
+        "end": 197.94,
+        "word": " abgelaufen.",
+        "probability": 0.9931666453679403
+      }
+    ]
+  },
+  {
+    "start": 197.96,
+    "end": 198.52,
+    "text": " Oh.",
+    "avg_logprob": -0.5238616507628868,
+    "words": [
+      {
+        "start": 197.96,
+        "end": 198.52,
+        "word": " Oh.",
+        "probability": 0.17325520515441895
+      }
+    ]
+  },
+  {
+    "start": 202.38,
+    "end": 203.54,
+    "text": " 3.",
+    "avg_logprob": -0.5238616507628868,
+    "words": [
+      {
+        "start": 202.38,
+        "end": 203.54,
+        "word": " 3.",
+        "probability": 0.5067586898803711
+      }
+    ]
+  },
+  {
+    "start": 204.18,
+    "end": 204.88,
+    "text": " 2.",
+    "avg_logprob": -0.5238616507628868,
+    "words": [
+      {
+        "start": 204.18,
+        "end": 204.88,
+        "word": " 2.",
+        "probability": 0.8921517729759216
+      }
+    ]
+  },
+  {
+    "start": 206.18,
+    "end": 206.76,
+    "text": " 1.",
+    "avg_logprob": -0.5238616507628868,
+    "words": [
+      {
+        "start": 206.18,
+        "end": 206.76,
+        "word": " 1.",
+        "probability": 0.9547768235206604
+      }
+    ]
+  },
+  {
+    "start": 208.48,
+    "end": 208.6,
+    "text": " Fertig.",
+    "avg_logprob": -0.5238616507628868,
+    "words": [
+      {
+        "start": 208.02,
+        "end": 208.6,
+        "word": " Fertig.",
+        "probability": 0.9916877150535583
+      }
+    ]
+  },
+  {
+    "start": 210.04,
+    "end": 212.57999999999998,
+    "text": " Die strahlen toll.",
+    "avg_logprob": -0.5238616507628868,
+    "words": [
+      {
+        "start": 210.04,
+        "end": 211.2,
+        "word": " Die",
+        "probability": 0.029636023566126823
+      },
+      {
+        "start": 211.2,
+        "end": 212.0,
+        "word": " strahlen",
+        "probability": 0.9051117499669393
+      },
+      {
+        "start": 212.0,
+        "end": 212.57999999999998,
+        "word": " toll.",
+        "probability": 0.610191822052002
+      }
+    ]
+  },
+  {
+    "start": 216.56,
+    "end": 219.14,
+    "text": " Nun möchte Bobo sich alleine ausziehen.",
+    "avg_logprob": -0.5238616507628868,
+    "words": [
+      {
+        "start": 216.56,
+        "end": 216.82,
+        "word": " Nun",
+        "probability": 0.18427567183971405
+      },
+      {
+        "start": 216.82,
+        "end": 217.14,
+        "word": " möchte",
+        "probability": 0.9674426317214966
+      },
+      {
+        "start": 217.14,
+        "end": 217.52,
+        "word": " Bobo",
+        "probability": 0.9817925691604614
+      },
+      {
+        "start": 217.52,
+        "end": 217.88,
+        "word": " sich",
+        "probability": 0.987206220626831
+      },
+      {
+        "start": 217.88,
+        "end": 218.36,
+        "word": " alleine",
+        "probability": 0.8803513050079346
+      },
+      {
+        "start": 218.36,
+        "end": 219.14,
+        "word": " ausziehen.",
+        "probability": 0.9980887770652771
+      }
+    ]
+  },
+  {
+    "start": 227.94,
+    "end": 231.7,
+    "text": " Puppo muss mal. Puppo leine Papa.",
+    "avg_logprob": -0.5282914837201437,
+    "words": [
+      {
+        "start": 227.94,
+        "end": 228.86,
+        "word": " Puppo",
+        "probability": 0.5002869268258413
+      },
+      {
+        "start": 228.86,
+        "end": 229.3,
+        "word": " muss",
+        "probability": 0.9478787183761597
+      },
+      {
+        "start": 229.3,
+        "end": 229.84,
+        "word": " mal.",
+        "probability": 0.9711464047431946
+      },
+      {
+        "start": 230.3,
+        "end": 230.76,
+        "word": " Puppo",
+        "probability": 0.8175340096155802
+      },
+      {
+        "start": 230.76,
+        "end": 231.22,
+        "word": " leine",
+        "probability": 0.5998541340231895
+      },
+      {
+        "start": 231.22,
+        "end": 231.7,
+        "word": " Papa.",
+        "probability": 0.9084289073944092
+      }
+    ]
+  },
+  {
+    "start": 232.94,
+    "end": 235.46,
+    "text": " Okay, dann hole ich mal deinen Schlafanzug.",
+    "avg_logprob": -0.5282914837201437,
+    "words": [
+      {
+        "start": 232.94,
+        "end": 233.28,
+        "word": " Okay,",
+        "probability": 0.5316102504730225
+      },
+      {
+        "start": 233.82,
+        "end": 234.0,
+        "word": " dann",
+        "probability": 0.9958279728889465
+      },
+      {
+        "start": 234.0,
+        "end": 234.2,
+        "word": " hole",
+        "probability": 0.6910175681114197
+      },
+      {
+        "start": 234.2,
+        "end": 234.38,
+        "word": " ich",
+        "probability": 0.9972121119499207
+      },
+      {
+        "start": 234.38,
+        "end": 234.54,
+        "word": " mal",
+        "probability": 0.9855080246925354
+      },
+      {
+        "start": 234.54,
+        "end": 234.72,
+        "word": " deinen",
+        "probability": 0.9831562638282776
+      },
+      {
+        "start": 234.72,
+        "end": 235.46,
+        "word": " Schlafanzug.",
+        "probability": 0.9524000436067581
+      }
+    ]
+  },
+  {
+    "start": 278.92,
+    "end": 282.0,
+    "text": " Bobo möchte auch seine Hände alleine waschen.",
+    "avg_logprob": -0.3235063821077347,
+    "words": [
+      {
+        "start": 278.92,
+        "end": 279.64,
+        "word": " Bobo",
+        "probability": 0.6684903353452682
+      },
+      {
+        "start": 279.64,
+        "end": 279.98,
+        "word": " möchte",
+        "probability": 0.926030158996582
+      },
+      {
+        "start": 279.98,
+        "end": 280.24,
+        "word": " auch",
+        "probability": 0.6898645162582397
+      },
+      {
+        "start": 280.24,
+        "end": 280.44,
+        "word": " seine",
+        "probability": 0.9821557402610779
+      },
+      {
+        "start": 280.44,
+        "end": 280.88,
+        "word": " Hände",
+        "probability": 0.9985130429267883
+      },
+      {
+        "start": 280.88,
+        "end": 281.36,
+        "word": " alleine",
+        "probability": 0.45949363708496094
+      },
+      {
+        "start": 281.36,
+        "end": 282.0,
+        "word": " waschen.",
+        "probability": 0.9932894110679626
+      }
+    ]
+  },
+  {
+    "start": 297.84,
+    "end": 298.56,
+    "text": " Ups.",
+    "avg_logprob": -0.3235063821077347,
+    "words": [
+      {
+        "start": 297.84,
+        "end": 298.56,
+        "word": " Ups.",
+        "probability": 0.605225995182991
+      }
+    ]
+  },
+  {
+    "start": 300.58,
+    "end": 301.96,
+    "text": " Da habe ich ja Glück gehabt.",
+    "avg_logprob": -0.3235063821077347,
+    "words": [
+      {
+        "start": 300.58,
+        "end": 300.78,
+        "word": " Da",
+        "probability": 0.47899752855300903
+      },
+      {
+        "start": 300.78,
+        "end": 300.98,
+        "word": " habe",
+        "probability": 0.42919233441352844
+      },
+      {
+        "start": 300.98,
+        "end": 301.14,
+        "word": " ich",
+        "probability": 0.9982612729072571
+      },
+      {
+        "start": 301.14,
+        "end": 301.32,
+        "word": " ja",
+        "probability": 0.43252652883529663
+      },
+      {
+        "start": 301.32,
+        "end": 301.5,
+        "word": " Glück",
+        "probability": 0.9947146773338318
+      },
+      {
+        "start": 301.5,
+        "end": 301.96,
+        "word": " gehabt.",
+        "probability": 0.995053768157959
+      }
+    ]
+  },
+  {
+    "start": 302.14,
+    "end": 304.12,
+    "text": " Beinahe hätte mich die Seife getroffen.",
+    "avg_logprob": -0.3235063821077347,
+    "words": [
+      {
+        "start": 302.14,
+        "end": 302.72,
+        "word": " Beinahe",
+        "probability": 0.9116373956203461
+      },
+      {
+        "start": 302.72,
+        "end": 302.86,
+        "word": " hätte",
+        "probability": 0.993716299533844
+      },
+      {
+        "start": 302.86,
+        "end": 303.08,
+        "word": " mich",
+        "probability": 0.9534506797790527
+      },
+      {
+        "start": 303.08,
+        "end": 303.3,
+        "word": " die",
+        "probability": 0.9858793616294861
+      },
+      {
+        "start": 303.3,
+        "end": 303.56,
+        "word": " Seife",
+        "probability": 0.9980510771274567
+      },
+      {
+        "start": 303.56,
+        "end": 304.12,
+        "word": " getroffen.",
+        "probability": 0.9969493746757507
+      }
+    ]
+  },
+  {
+    "start": 304.54,
+    "end": 305.46,
+    "text": " Bobo sauber.",
+    "avg_logprob": -0.3235063821077347,
+    "words": [
+      {
+        "start": 304.54,
+        "end": 304.9,
+        "word": " Bobo",
+        "probability": 0.8072235584259033
+      },
+      {
+        "start": 304.9,
+        "end": 305.46,
+        "word": " sauber.",
+        "probability": 0.6784025728702545
+      }
+    ]
+  },
+  {
+    "start": 306.3,
+    "end": 310.46,
+    "text": " Gut, hier Bobo, steig in deine Schlafanzughose.",
+    "avg_logprob": -0.2799946918737057,
+    "words": [
+      {
+        "start": 306.3,
+        "end": 307.08,
+        "word": " Gut,",
+        "probability": 0.3730621933937073
+      },
+      {
+        "start": 307.7,
+        "end": 307.88,
+        "word": " hier",
+        "probability": 0.40811431407928467
+      },
+      {
+        "start": 307.88,
+        "end": 308.16,
+        "word": " Bobo,",
+        "probability": 0.6144653782248497
+      },
+      {
+        "start": 308.28,
+        "end": 308.46,
+        "word": " steig",
+        "probability": 0.9941146373748779
+      },
+      {
+        "start": 308.46,
+        "end": 308.64,
+        "word": " in",
+        "probability": 0.9787344932556152
+      },
+      {
+        "start": 308.64,
+        "end": 308.78,
+        "word": " deine",
+        "probability": 0.9692687392234802
+      },
+      {
+        "start": 308.78,
+        "end": 310.46,
+        "word": " Schlafanzughose.",
+        "probability": 0.9455612699190775
+      }
+    ]
+  },
+  {
+    "start": 312.04,
+    "end": 312.64,
+    "text": " Hui!",
+    "avg_logprob": -0.2799946918737057,
+    "words": [
+      {
+        "start": 312.04,
+        "end": 312.64,
+        "word": " Hui!",
+        "probability": 0.3389585018157959
+      }
+    ]
+  },
+  {
+    "start": 313.3,
+    "end": 316.62,
+    "text": " So, jetzt bringt dich der Hosenexpress ins Bettchen.",
+    "avg_logprob": -0.2799946918737057,
+    "words": [
+      {
+        "start": 313.3,
+        "end": 313.88,
+        "word": " So,",
+        "probability": 0.6085606217384338
+      },
+      {
+        "start": 314.06,
+        "end": 314.28,
+        "word": " jetzt",
+        "probability": 0.9601538777351379
+      },
+      {
+        "start": 314.28,
+        "end": 314.48,
+        "word": " bringt",
+        "probability": 0.9134019017219543
+      },
+      {
+        "start": 314.48,
+        "end": 314.68,
+        "word": " dich",
+        "probability": 0.9784854054450989
+      },
+      {
+        "start": 314.68,
+        "end": 314.98,
+        "word": " der",
+        "probability": 0.9863994121551514
+      },
+      {
+        "start": 314.98,
+        "end": 315.64,
+        "word": " Hosenexpress",
+        "probability": 0.9419189989566803
+      },
+      {
+        "start": 315.64,
+        "end": 316.04,
+        "word": " ins",
+        "probability": 0.991382896900177
+      },
+      {
+        "start": 316.04,
+        "end": 316.62,
+        "word": " Bettchen.",
+        "probability": 0.9754388332366943
+      }
+    ]
+  },
+  {
+    "start": 317.3,
+    "end": 317.72,
+    "text": " Hallo.",
+    "avg_logprob": -0.2799946918737057,
+    "words": [
+      {
+        "start": 317.3,
+        "end": 317.72,
+        "word": " Hallo.",
+        "probability": 0.8397052884101868
+      }
+    ]
+  },
+  {
+    "start": 317.88,
+    "end": 321.38,
+    "text": " Da staunst du. Bobo hat heute alles alleine gemacht.",
+    "avg_logprob": -0.2799946918737057,
+    "words": [
+      {
+        "start": 317.88,
+        "end": 318.26,
+        "word": " Da",
+        "probability": 0.7454841136932373
+      },
+      {
+        "start": 318.26,
+        "end": 318.74,
+        "word": " staunst",
+        "probability": 0.9957684278488159
+      },
+      {
+        "start": 318.74,
+        "end": 319.0,
+        "word": " du.",
+        "probability": 0.9873212575912476
+      },
+      {
+        "start": 319.24,
+        "end": 319.56,
+        "word": " Bobo",
+        "probability": 0.9929109513759613
+      },
+      {
+        "start": 319.56,
+        "end": 319.74,
+        "word": " hat",
+        "probability": 0.9971631169319153
+      },
+      {
+        "start": 319.74,
+        "end": 320.18,
+        "word": " heute",
+        "probability": 0.8345938324928284
+      },
+      {
+        "start": 320.18,
+        "end": 320.52,
+        "word": " alles",
+        "probability": 0.9881948232650757
+      },
+      {
+        "start": 320.52,
+        "end": 320.96,
+        "word": " alleine",
+        "probability": 0.9410731792449951
+      },
+      {
+        "start": 320.96,
+        "end": 321.38,
+        "word": " gemacht.",
+        "probability": 0.9989001750946045
+      }
+    ]
+  },
+  {
+    "start": 321.94,
+    "end": 324.34000000000003,
+    "text": " Ich bin richtig stolz auf dich, Bobo.",
+    "avg_logprob": -0.2799946918737057,
+    "words": [
+      {
+        "start": 321.94,
+        "end": 322.06,
+        "word": " Ich",
+        "probability": 0.9739456176757812
+      },
+      {
+        "start": 322.06,
+        "end": 322.32,
+        "word": " bin",
+        "probability": 0.9992087483406067
+      },
+      {
+        "start": 322.32,
+        "end": 322.76,
+        "word": " richtig",
+        "probability": 0.9587488174438477
+      },
+      {
+        "start": 322.76,
+        "end": 323.02,
+        "word": " stolz",
+        "probability": 0.9988335371017456
+      },
+      {
+        "start": 323.02,
+        "end": 323.18,
+        "word": " auf",
+        "probability": 0.9971758127212524
+      },
+      {
+        "start": 323.18,
+        "end": 323.44,
+        "word": " dich,",
+        "probability": 0.9958329796791077
+      },
+      {
+        "start": 323.58,
+        "end": 324.34000000000003,
+        "word": " Bobo.",
+        "probability": 0.9981041252613068
+      }
+    ]
+  },
+  {
+    "start": 325.36,
+    "end": 326.14,
+    "text": " Bobo?",
+    "avg_logprob": -0.2799946918737057,
+    "words": [
+      {
+        "start": 325.36,
+        "end": 326.14,
+        "word": " Bobo?",
+        "probability": 0.6271316707134247
+      }
+    ]
+  },
+  {
+    "start": 329.38,
+    "end": 331.12,
+    "text": " Na, so was.",
+    "avg_logprob": -0.2799946918737057,
+    "words": [
+      {
+        "start": 329.38,
+        "end": 330.15999999999997,
+        "word": " Na,",
+        "probability": 0.8102833032608032
+      },
+      {
+        "start": 330.15999999999997,
+        "end": 330.62,
+        "word": " so",
+        "probability": 0.7247985601425171
+      },
+      {
+        "start": 330.62,
+        "end": 331.12,
+        "word": " was.",
+        "probability": 0.9732743501663208
+      }
+    ]
+  },
+  {
+    "start": 331.12,
+    "end": 336.46,
+    "text": " Bobo ist doch tatsächlich im Hosenexpress eingeschlafen.",
+    "avg_logprob": -0.2293159638841947,
+    "words": [
+      {
+        "start": 331.12,
+        "end": 332.14,
+        "word": " Bobo",
+        "probability": 0.9255528151988983
+      },
+      {
+        "start": 332.14,
+        "end": 332.32,
+        "word": " ist",
+        "probability": 0.9964185953140259
+      },
+      {
+        "start": 332.32,
+        "end": 332.6,
+        "word": " doch",
+        "probability": 0.9318078756332397
+      },
+      {
+        "start": 332.6,
+        "end": 333.38,
+        "word": " tatsächlich",
+        "probability": 0.9914278388023376
+      },
+      {
+        "start": 333.38,
+        "end": 333.76,
+        "word": " im",
+        "probability": 0.9923305511474609
+      },
+      {
+        "start": 333.76,
+        "end": 335.18,
+        "word": " Hosenexpress",
+        "probability": 0.9752882868051529
+      },
+      {
+        "start": 335.18,
+        "end": 336.46,
+        "word": " eingeschlafen.",
+        "probability": 0.9931392967700958
+      }
+    ]
+  }
+]

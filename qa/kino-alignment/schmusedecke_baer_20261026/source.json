@@ -1,0 +1,101 @@
+{
+  "key": "schmusedecke_baer",
+  "title": "Meine Schmusedecke: Der Bär | Unser Sandmännchen",
+  "sourceUrl": "https://www.kika.de/kikaninchen/unser-sandmaennchen/videos/extras/schmusedecke/meine-schmusedecke-der-baer--unser-sandmaennchen-100",
+  "uploader": "KiKA / rbb",
+  "publisherRights": "RBB",
+  "publisherId": "meine-schmusedecke-der-baer--unser-sandmaennchen-100",
+  "publisherExternalId": "ard-Y3JpZDovL3JiYl83ZDA0YmEyMS1mOGRhLTRjNTktODBhYS00MDVlNmExODYzMzFfcHVibGljYXRpb24",
+  "publisherApi": "https://www.kika.de/ackley/v1/videos/meine-schmusedecke-der-baer--unser-sandmaennchen-100",
+  "assetsApi": "https://www.kika.de/ackley/v1/videos/meine-schmusedecke-der-baer--unser-sandmaennchen-100/assets",
+  "downloadUrl": "https://rbb-progressive.ard-mcdn.de/content/73/88/7388f1c6-5d27-4c28-8a7a-273a5fc4b02a/7388f1c6-5d27-4c28-8a7a-273a5fc4b02a_hd1080-avc540.mp4",
+  "localFile": "video/schmusedecke_baer.mp4",
+  "durationSeconds": 201.28,
+  "bytes": 34545639,
+  "sha256": "69cfe7b271fd9d925d2658071b6c4f241e33a517daa959f0399aab748cf4d3df",
+  "dimensions": {
+    "width": 960,
+    "height": 540
+  },
+  "isExcerpt": false,
+  "completenessNote": "Complete 3:21 Meine Schmusedecke Der Bär story as published by KiKA/rbb, not a complete multi-story Sandmännchen broadcast.",
+  "officialSubtitles": {
+    "hasSubtitle": false,
+    "responseBytes": 0,
+    "note": "Official subtitle endpoint returns an empty body; no official transcript used."
+  },
+  "germanAudioEvidence": {
+    "language": "de",
+    "publisherLanguage": "de",
+    "method": "Official KiKA language metadata and automatic local faster-whisper detection without forced language.",
+    "checks": [
+      {
+        "language": "de",
+        "probability": 0.9915134310722351,
+        "duration": 201.28,
+        "model": "small",
+        "clips": "0"
+      },
+      {
+        "language": "de",
+        "probability": 0.9957470297813416,
+        "duration": 201.28,
+        "model": "base",
+        "clips": "0"
+      },
+      {
+        "language": "de",
+        "probability": 0.9993440508842468,
+        "duration": 201.28,
+        "model": "medium",
+        "clips": "16,185"
+      }
+    ]
+  },
+  "audioMeasurements": {
+    "summary": "201.280 s, -23.0 LUFS integrated (short-term max -19.9), true peak -7.6 dBTP, LRA 8.0 LU, noise floor -68.9 dBFS, brightness 3.4 kHz, bandwidth 16.3 kHz, attack 151 ms, decay 171 ms.",
+    "duration": 201.28,
+    "peak_dbfs": -7.6,
+    "true_peak_dbtp": -7.6,
+    "rms_dbfs": -27.0,
+    "lufs": -23.0,
+    "short_term_max_lufs": -19.9,
+    "lra_lu": 8.0,
+    "clipped_samples": 0,
+    "dc": 1e-05,
+    "noise_floor_dbfs": -68.9,
+    "dynamic_range_db": 50.7,
+    "digital_silence_frac": 0.0007,
+    "side_to_mid_db": -22.0,
+    "correlation": 0.988,
+    "attack_at": 0.04,
+    "peak_at": 165.837,
+    "attack_ms": 151.0,
+    "decay_ms": 171.0,
+    "centroid_hz": 1028,
+    "rolloff95_hz": 4601,
+    "bands_db": {
+      "sub": -39.8,
+      "low": -8.0,
+      "lowmid": -1.9,
+      "mid": -8.9,
+      "presence": -12.4,
+      "air": -19.1,
+      "top": -76.4
+    },
+    "bandwidth_hz": 16254,
+    "flatness": 0.0003,
+    "brightness_hz": 3384,
+    "tonal_peak_ratio_db": 36.0
+  },
+  "reviewedLesson": {
+    "file": "lesson-content.json",
+    "reviewScope": "Selected narration only; local ASR and visual review, no native-human full listening approval.",
+    "cues": 22,
+    "chapters": 2,
+    "vocabulary": 12
+  },
+  "acquisition": "Ordinary public progressive asset exposed by official KiKA API and rbb ARD CDN; no authentication, geolocation workaround, DRM or paid API.",
+  "retrievedDate": "2026-10-26",
+  "decodeCheck": "Full FFmpeg decoding of both streams passed with no errors."
+}

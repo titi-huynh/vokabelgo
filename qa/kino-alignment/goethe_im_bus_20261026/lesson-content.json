@@ -1,0 +1,643 @@
+{
+  "key": "goethe_im_bus",
+  "alias": "goethe-bus",
+  "symbol": "GOETHE_IM_BUS",
+  "stem": "goethe-im-bus",
+  "duration": 460.336,
+  "src": "video/goethe_im_bus.mp4",
+  "sourceUrl": "https://www.youtube.com/watch?v=PMj9kUPrnBk",
+  "series": "Erste Wege in Deutschland",
+  "episodeTitle": "Im Bus",
+  "icon": "🚌",
+  "genre": "Giao tiếp",
+  "isExcerpt": false,
+  "summary": "Phim đầy đủ của Goethe-Institut: Nevin đi xe buýt đến Cơ quan Việc làm, học cách mua vé và tìm đúng điểm xuống. Lời thoại Đức–Việt chọn lọc từ phụ đề Đức chính thức; câu ngắn để luyện giao tiếp A1–A2.",
+  "levelLabel": "Gợi ý A1–A2",
+  "cues": [
+    {
+      "id": 2200101,
+      "start": 4.76,
+      "end": 6.201,
+      "speaker": "Nevin",
+      "text": "Ich heiße Nevin.",
+      "vi": "Tôi tên là Nevin.",
+      "sourceCaptionIndices": [
+        1
+      ]
+    },
+    {
+      "id": 2200102,
+      "start": 9.845,
+      "end": 10.765,
+      "speaker": "Người phụ nữ",
+      "text": "Kenne ich Sie?",
+      "vi": "Tôi có quen cô không?",
+      "sourceCaptionIndices": [
+        2
+      ]
+    },
+    {
+      "id": 2200103,
+      "start": 10.765,
+      "end": 13.714,
+      "speaker": "Nevin",
+      "text": "Nein. Ich bin neu hier.",
+      "vi": "Không ạ. Tôi mới đến đây.",
+      "sourceCaptionIndices": [
+        3
+      ]
+    },
+    {
+      "id": 2200104,
+      "start": 70.601,
+      "end": 75.681,
+      "speaker": "Nevin",
+      "text": "Entschuldigung, bin ich hier richtig?",
+      "vi": "Xin lỗi, tôi đứng đây có đúng không ạ?",
+      "sourceCaptionIndices": [
+        5
+      ]
+    },
+    {
+      "id": 2200105,
+      "start": 76.716,
+      "end": 78.516,
+      "speaker": "Người đàn ông",
+      "text": "Das kommt darauf an.",
+      "vi": "Còn tùy.",
+      "sourceCaptionIndices": [
+        6
+      ]
+    },
+    {
+      "id": 2200106,
+      "start": 83.782,
+      "end": 86.762,
+      "speaker": "Người đàn ông",
+      "text": "Wohin wollen Sie denn?",
+      "vi": "Vậy cô muốn đi đâu?",
+      "sourceCaptionIndices": [
+        8
+      ]
+    },
+    {
+      "id": 2200107,
+      "start": 92.747,
+      "end": 98.247,
+      "speaker": "Nevin",
+      "text": "Agentur für Arbeit.",
+      "vi": "Cơ quan Việc làm.",
+      "sourceCaptionIndices": [
+        10
+      ]
+    },
+    {
+      "id": 2200108,
+      "start": 98.247,
+      "end": 100.753,
+      "speaker": "Người đàn ông",
+      "text": "Ach, zum Arbeitsamt wollen Sie!",
+      "vi": "À, cô muốn đến cơ quan việc làm!",
+      "sourceCaptionIndices": [
+        11
+      ]
+    },
+    {
+      "id": 2200109,
+      "start": 100.753,
+      "end": 103.729,
+      "speaker": "Người đàn ông",
+      "text": "Ja, da sind Sie hier schon richtig.",
+      "vi": "Vâng, thế thì cô đứng đúng chỗ rồi.",
+      "sourceCaptionIndices": [
+        12
+      ]
+    },
+    {
+      "id": 2200110,
+      "start": 105.516,
+      "end": 108.516,
+      "speaker": "Người đàn ông",
+      "text": "Ah, da kommt er.",
+      "vi": "À, xe đến rồi.",
+      "sourceCaptionIndices": [
+        13
+      ]
+    },
+    {
+      "id": 2200111,
+      "start": 109.471,
+      "end": 111.161,
+      "speaker": "Nevin",
+      "text": "Ist das mein Bus?",
+      "vi": "Đó có phải xe buýt tôi cần đi không?",
+      "sourceCaptionIndices": [
+        14
+      ]
+    },
+    {
+      "id": 2200112,
+      "start": 125.493,
+      "end": 129.783,
+      "speaker": "Nevin",
+      "text": "Ich möchte zur Agentur für Arbeit.",
+      "vi": "Tôi muốn đến Cơ quan Việc làm.",
+      "sourceCaptionIndices": [
+        16
+      ]
+    },
+    {
+      "id": 2200113,
+      "start": 129.783,
+      "end": 132.001,
+      "speaker": "Tài xế",
+      "text": "Haben Sie eine Fahrkarte?",
+      "vi": "Cô có vé xe chưa?",
+      "sourceCaptionIndices": [
+        17
+      ]
+    },
+    {
+      "id": 2200114,
+      "start": 133.431,
+      "end": 137.767,
+      "speaker": "Nevin",
+      "text": "Nein. Noch nicht.",
+      "vi": "Không. Tôi vẫn chưa có.",
+      "sourceCaptionIndices": [
+        18,
+        19
+      ]
+    },
+    {
+      "id": 2200115,
+      "start": 137.917,
+      "end": 142.377,
+      "speaker": "Tài xế",
+      "text": "Das Ticket müssen Sie am Automaten kaufen.",
+      "vi": "Cô phải mua vé ở máy bán vé tự động.",
+      "sourceCaptionIndices": [
+        20
+      ]
+    },
+    {
+      "id": 2200116,
+      "start": 170.315,
+      "end": 172.573,
+      "speaker": "Tài xế",
+      "text": "Auf die Eins drücken!",
+      "vi": "Nhấn vào số một!",
+      "sourceCaptionIndices": [
+        21
+      ]
+    },
+    {
+      "id": 2200117,
+      "start": 179.781,
+      "end": 183.251,
+      "speaker": "Người phụ nữ trẻ",
+      "text": "Er meint die Eins beim Automaten.",
+      "vi": "Ý ông ấy là số một trên máy bán vé.",
+      "sourceCaptionIndices": [
+        23
+      ]
+    },
+    {
+      "id": 2200118,
+      "start": 184.501,
+      "end": 185.731,
+      "speaker": "Nevin",
+      "text": "Danke.",
+      "vi": "Cảm ơn cô.",
+      "sourceCaptionIndices": [
+        24
+      ]
+    },
+    {
+      "id": 2200119,
+      "start": 193.739,
+      "end": 198.049,
+      "speaker": "Người phụ nữ trẻ",
+      "text": "Warten Sie, Sie brauchen Kleingeld.",
+      "vi": "Khoan đã, cô cần tiền lẻ.",
+      "sourceCaptionIndices": [
+        25
+      ]
+    },
+    {
+      "id": 2200120,
+      "start": 206.494,
+      "end": 207.434,
+      "speaker": "Nevin",
+      "text": "Vielen Dank!",
+      "vi": "Cảm ơn cô rất nhiều!",
+      "sourceCaptionIndices": [
+        27
+      ]
+    },
+    {
+      "id": 2200121,
+      "start": 207.434,
+      "end": 208.492,
+      "speaker": "Người phụ nữ trẻ",
+      "text": "Gerne.",
+      "vi": "Không có gì.",
+      "sourceCaptionIndices": [
+        28
+      ]
+    },
+    {
+      "id": 2200122,
+      "start": 235.735,
+      "end": 238.171,
+      "speaker": "Người phụ nữ trẻ",
+      "text": "Einen schönen Tag noch, Wiedersehen!",
+      "vi": "Chúc cô một ngày tốt lành. Tạm biệt!",
+      "sourceCaptionIndices": [
+        29
+      ]
+    },
+    {
+      "id": 2200123,
+      "start": 238.171,
+      "end": 240.506,
+      "speaker": "Nevin",
+      "text": "Auf Wiedersehen!",
+      "vi": "Tạm biệt cô!",
+      "sourceCaptionIndices": [
+        30
+      ]
+    },
+    {
+      "id": 2200124,
+      "start": 246.753,
+      "end": 249.682,
+      "speaker": "Người phụ nữ lớn tuổi",
+      "text": "Kann ich mich bitte setzen?",
+      "vi": "Cho tôi ngồi được không?",
+      "sourceCaptionIndices": [
+        31
+      ]
+    },
+    {
+      "id": 2200125,
+      "start": 250.504,
+      "end": 254.5,
+      "speaker": "Người phụ nữ lớn tuổi",
+      "text": "Schauen Sie, der Platz ist für Alte und Kranke.",
+      "vi": "Cô nhìn xem, ghế này dành cho người cao tuổi và người bệnh.",
+      "sourceCaptionIndices": [
+        32,
+        33
+      ]
+    },
+    {
+      "id": 2200126,
+      "start": 384.487,
+      "end": 385.989,
+      "speaker": "Tài xế",
+      "text": "Junge Frau!",
+      "vi": "Cô gái ơi!",
+      "sourceCaptionIndices": [
+        35
+      ]
+    },
+    {
+      "id": 2200127,
+      "start": 389.229,
+      "end": 390.719,
+      "speaker": "Tài xế",
+      "text": "Sie müssen hier aussteigen.",
+      "vi": "Cô phải xuống ở đây.",
+      "sourceCaptionIndices": [
+        37
+      ]
+    },
+    {
+      "id": 2200128,
+      "start": 390.719,
+      "end": 392.406,
+      "speaker": "Tài xế",
+      "text": "Agentur für Arbeit!",
+      "vi": "Cơ quan Việc làm đây!",
+      "sourceCaptionIndices": [
+        38
+      ]
+    },
+    {
+      "id": 2200129,
+      "start": 395.752,
+      "end": 396.507,
+      "speaker": "Nevin",
+      "text": "Danke.",
+      "vi": "Cảm ơn ông.",
+      "sourceCaptionIndices": [
+        39
+      ]
+    },
+    {
+      "id": 2200130,
+      "start": 396.507,
+      "end": 397.131,
+      "speaker": "Tài xế",
+      "text": "Bitte.",
+      "vi": "Không có gì.",
+      "sourceCaptionIndices": [
+        40
+      ]
+    },
+    {
+      "id": 2200131,
+      "start": 397.131,
+      "end": 397.753,
+      "speaker": "Nevin",
+      "text": "Tschüss.",
+      "vi": "Chào ông nhé.",
+      "sourceCaptionIndices": [
+        41
+      ]
+    },
+    {
+      "id": 2200132,
+      "start": 397.753,
+      "end": 398.497,
+      "speaker": "Tài xế",
+      "text": "Ciao.",
+      "vi": "Tạm biệt cô.",
+      "sourceCaptionIndices": [
+        42
+      ]
+    },
+    {
+      "id": 2200133,
+      "start": 430.374,
+      "end": 432.653,
+      "speaker": "Nevin",
+      "text": "Vielen, vielen Dank.",
+      "vi": "Cảm ơn cô rất, rất nhiều.",
+      "sourceCaptionIndices": [
+        43
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Chọn đúng chuyến xe",
+      "icon": "🚏",
+      "start": 0,
+      "end": 120,
+      "picks": [
+        2200104,
+        2200105,
+        2200106,
+        2200107,
+        2200109,
+        2200110,
+        2200111
+      ],
+      "goal": "Hỏi đường, nói điểm đến và xác nhận đúng chuyến xe buýt.",
+      "practiceUsage": {
+        "2200104": "Bạn chưa chắc mình đang chờ đúng nơi; hãy hỏi người đứng gần đó một cách lịch sự.",
+        "2200105": "Trả lời rằng điều đó còn phụ thuộc vào hoàn cảnh.",
+        "2200106": "Hỏi một người đang hỏi đường xem họ muốn đi đến đâu.",
+        "2200107": "Nêu tên cơ quan bạn cần đến khi được hỏi điểm đến.",
+        "2200109": "Xác nhận rằng người hỏi đang đứng đúng nơi để đi đến chỗ họ muốn.",
+        "2200110": "Báo cho người cùng chờ rằng chiếc xe vừa đến.",
+        "2200111": "Hỏi xem chiếc xe đang đến có phải chuyến mình cần đi hay không."
+      }
+    },
+    {
+      "title": "Mua vé trên xe",
+      "icon": "🎫",
+      "start": 120,
+      "end": 235,
+      "picks": [
+        2200112,
+        2200113,
+        2200114,
+        2200115,
+        2200116,
+        2200117,
+        2200119
+      ],
+      "goal": "Hỏi về vé xe, nghe hướng dẫn dùng máy và chuẩn bị tiền lẻ.",
+      "practiceUsage": {
+        "2200112": "Nói với tài xế bạn muốn đi đến cơ quan việc làm.",
+        "2200113": "Kiểm tra xem hành khách đã có vé xe hay chưa.",
+        "2200114": "Trả lời rằng bạn hiện vẫn chưa có món đồ vừa được hỏi đến.",
+        "2200115": "Chỉ cho khách biết họ phải mua vé ở máy tự động.",
+        "2200116": "Hướng dẫn người đang dùng máy nhấn vào nút mang số một.",
+        "2200117": "Giải thích rằng người kia đang nói về con số trên máy, không phải số chuyến xe.",
+        "2200119": "Nhắc người bạn khoan làm tiếp vì họ cần tiền lẻ để thanh toán."
+      }
+    },
+    {
+      "title": "Chỗ ngồi và điểm xuống",
+      "icon": "🚌",
+      "start": 235,
+      "end": 460.336,
+      "picks": [
+        2200122,
+        2200123,
+        2200124,
+        2200125,
+        2200127,
+        2200131,
+        2200133
+      ],
+      "goal": "Xin chỗ ngồi, nghe lời nhắc xuống xe và cảm ơn người giúp đỡ.",
+      "practiceUsage": {
+        "2200122": "Chúc người vừa giúp mình một ngày vui vẻ và chào tạm biệt.",
+        "2200123": "Chào tạm biệt một người vừa rời đi, giữ cách nói lịch sự.",
+        "2200124": "Xin phép được ngồi xuống một cách lịch sự.",
+        "2200125": "Giải thích rằng chỗ ngồi này ưu tiên cho người cao tuổi và người bệnh.",
+        "2200127": "Nhắc hành khách rằng đây là nơi họ cần xuống xe.",
+        "2200131": "Chào tạm biệt người quen bằng cách nói thân mật, ngắn gọn.",
+        "2200133": "Bày tỏ lòng cảm ơn rất nhiều với người đã giúp mình."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "heissen",
+      "term": "heißen",
+      "meaning": "tên là",
+      "grammar": "Động từ: heißt, hieß, hat geheißen; ngôi ich: heiße.",
+      "cueId": 2200101,
+      "collocations": [
+        "Ich heiße …",
+        "Wie heißen Sie?"
+      ],
+      "note": "Sie viết hoa khi xưng hô lịch sự."
+    },
+    {
+      "id": "neu",
+      "term": "neu",
+      "meaning": "mới",
+      "grammar": "Tính từ; so sánh: neuer, am neuesten.",
+      "cueId": 2200103,
+      "collocations": [
+        "neu hier sein",
+        "Ich bin neu hier."
+      ],
+      "note": "Dùng khi vừa đến một nơi hoặc mới gia nhập một nhóm."
+    },
+    {
+      "id": "richtig",
+      "term": "richtig",
+      "meaning": "đúng; đúng chỗ",
+      "grammar": "Tính từ/trạng từ; ở đây hỏi mình có ở đúng nơi hay không.",
+      "cueId": 2200104,
+      "collocations": [
+        "Bin ich hier richtig?",
+        "hier richtig sein"
+      ],
+      "note": "Hữu ích khi hỏi ở quầy dịch vụ hoặc trạm chờ."
+    },
+    {
+      "id": "wohin",
+      "term": "wohin",
+      "meaning": "đi đâu; về hướng nào",
+      "grammar": "Từ để hỏi về hướng hoặc điểm đến; phân biệt wo hỏi vị trí.",
+      "cueId": 2200106,
+      "collocations": [
+        "Wohin wollen Sie?",
+        "Wohin fährt der Bus?"
+      ],
+      "note": "Wohin hỏi nơi muốn đi đến, không phải vị trí đang đứng."
+    },
+    {
+      "id": "agentur-arbeit",
+      "term": "die Agentur für Arbeit",
+      "meaning": "Cơ quan Việc làm của Đức",
+      "grammar": "Tên cơ quan; Agentur giống cái, số nhiều: die Agenturen; Arbeit giống cái.",
+      "cueId": 2200107,
+      "collocations": [
+        "zur Agentur für Arbeit",
+        "die Agentur für Arbeit"
+      ],
+      "note": "Trong phim người đàn ông cũng dùng từ Arbeitsamt để chỉ cơ quan này."
+    },
+    {
+      "id": "bus",
+      "term": "der Bus",
+      "meaning": "xe buýt",
+      "grammar": "Giống đực; số nhiều: die Busse.",
+      "cueId": 2200111,
+      "collocations": [
+        "mit dem Bus fahren",
+        "Ist das mein Bus?"
+      ],
+      "note": "mein Bus trong ngữ cảnh là chuyến xe mình cần đi."
+    },
+    {
+      "id": "fahrkarte",
+      "term": "die Fahrkarte",
+      "meaning": "vé xe; vé tàu",
+      "grammar": "Giống cái; số nhiều: die Fahrkarten.",
+      "cueId": 2200113,
+      "collocations": [
+        "eine Fahrkarte haben",
+        "eine Fahrkarte kaufen"
+      ],
+      "note": "Có thể dùng cho nhiều loại phương tiện công cộng."
+    },
+    {
+      "id": "ticket",
+      "term": "das Ticket",
+      "meaning": "vé",
+      "grammar": "Giống trung; số nhiều: die Tickets.",
+      "cueId": 2200115,
+      "collocations": [
+        "ein Ticket kaufen",
+        "das Ticket am Automaten kaufen"
+      ],
+      "note": "Ticket là từ mượn thông dụng; Fahrkarte cụ thể hơn về vé đi lại."
+    },
+    {
+      "id": "automat",
+      "term": "der Automat",
+      "meaning": "máy tự động",
+      "grammar": "Giống đực; số nhiều: die Automaten; danh từ yếu: den/dem Automaten.",
+      "cueId": 2200115,
+      "collocations": [
+        "am Automaten",
+        "ein Ticket am Automaten kaufen"
+      ],
+      "note": "am = an dem, vì vậy dùng Dativ Automaten."
+    },
+    {
+      "id": "druecken",
+      "term": "drücken",
+      "meaning": "nhấn; ấn",
+      "grammar": "Động từ: drückt, drückte, hat gedrückt; ở đây auf + Akkusativ.",
+      "cueId": 2200116,
+      "collocations": [
+        "auf die Eins drücken",
+        "auf einen Knopf drücken"
+      ],
+      "note": "Cách hướng dẫn rút gọn bằng động từ nguyên mẫu thường gặp trên máy móc."
+    },
+    {
+      "id": "kleingeld",
+      "term": "das Kleingeld",
+      "meaning": "tiền lẻ; tiền xu",
+      "grammar": "Giống trung; danh từ không đếm được trong nghĩa này, không dùng số nhiều.",
+      "cueId": 2200119,
+      "collocations": [
+        "Kleingeld brauchen",
+        "mit Kleingeld bezahlen"
+      ],
+      "note": "Không thêm ein khi nói chung về tiền lẻ."
+    },
+    {
+      "id": "brauchen",
+      "term": "brauchen",
+      "meaning": "cần",
+      "grammar": "Động từ: braucht, brauchte, hat gebraucht; tân ngữ Akkusativ.",
+      "cueId": 2200119,
+      "collocations": [
+        "Sie brauchen Kleingeld.",
+        "etwas brauchen"
+      ],
+      "note": "Sie brauchen dùng cùng dạng số nhiều khi nói lịch sự với một người."
+    },
+    {
+      "id": "sich-setzen",
+      "term": "sich setzen",
+      "meaning": "ngồi xuống",
+      "grammar": "Động từ phản thân: setzt sich, setzte sich, hat sich gesetzt; đại từ Akkusativ.",
+      "cueId": 2200124,
+      "collocations": [
+        "Kann ich mich setzen?",
+        "sich auf einen Stuhl setzen"
+      ],
+      "note": "setzen diễn tả hành động ngồi xuống; sitzen diễn tả trạng thái đang ngồi."
+    },
+    {
+      "id": "platz",
+      "term": "der Platz",
+      "meaning": "chỗ; chỗ ngồi",
+      "grammar": "Giống đực; số nhiều: die Plätze.",
+      "cueId": 2200125,
+      "collocations": [
+        "ein freier Platz",
+        "der Platz ist für …"
+      ],
+      "note": "Trong cảnh này Platz chỉ ghế ưu tiên trên xe."
+    },
+    {
+      "id": "aussteigen",
+      "term": "aussteigen",
+      "meaning": "xuống xe",
+      "grammar": "Động từ tách: steigt aus, stieg aus, ist ausgestiegen.",
+      "cueId": 2200127,
+      "collocations": [
+        "hier aussteigen",
+        "aus dem Bus aussteigen"
+      ],
+      "note": "Sau müssen, động từ nguyên mẫu aussteigen đứng cuối câu."
+    }
+  ],
+  "reviewMethod": "Publisher German captions with original timestamps; compared with two official Goethe PDF transcripts and source context frames. No full ASR or invented timings. Selected dialogue, no native-human listening signoff."
+}

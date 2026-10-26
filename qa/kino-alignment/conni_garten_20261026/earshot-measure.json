@@ -1,0 +1,14 @@
+{
+  "tool": "earshot measure",
+  "options": { "light": true, "full": true },
+  "source": "video/conni_garten.mp4",
+  "duration": 689.888,
+  "lufs": -23.1,
+  "short_term_max_lufs": -18.7,
+  "true_peak_dbtp": -3.1,
+  "lra_lu": 6.9,
+  "noise_floor_dbfs": -49.2,
+  "clipped_samples": 0,
+  "bandwidth_hz": 16254,
+  "note": "Audio meter result; language and spoken words are independently checked using local ASR and official German subtitles. Audio duration differs from MP4 format duration because of the shorter audio stream."
+}

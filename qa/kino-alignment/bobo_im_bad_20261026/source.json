@@ -1,0 +1,108 @@
+{
+  "key": "bobo_im_bad",
+  "sourceUrl": "https://www.kika.de/kikaninchen/bobo-siebenschlaefer/videos/bobo-im-bad-110",
+  "title": "Bobo im Bad",
+  "uploader": "KiKA / WDR",
+  "rights": "WDR",
+  "apiUrl": "https://www.kika.de/ackley/v1/videos/bobo-im-bad-110",
+  "episodeNumber": "52",
+  "season": "2",
+  "retrievedAt": "2026-10-26",
+  "publicationDate": "2026-07-02T09:10:00.000+02:00",
+  "availableUntil": "2027-04-02T09:10:00.000+02:00",
+  "isExcerpt": false,
+  "sourceType": "mainContent",
+  "localFile": "video/bobo_im_bad.mp4",
+  "durationSeconds": 420.04,
+  "bytes": 69116349,
+  "sha256": "38720652494ca484d7666ed192c3b81fbcd1063b62b108af309bf56045830b49",
+  "resolution": "1280x720",
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "sampleRate": "48000",
+  "channels": 2,
+  "subtitleEvidence": {
+    "publisherHasSubtitle": false,
+    "subtitlesEndpoint": "https://www.kika.de/ackley/v1/videos/bobo-im-bad-110/subtitle",
+    "status": 200,
+    "bodyIsEmpty": true,
+    "ytDlpSubtitleCount": 0
+  },
+  "germanAudioEvidence": {
+    "language": "de",
+    "languageProbability": 0.9997953772544861,
+    "method": "local small automatic recognition of original source45–75s",
+    "segments": [
+      {
+        "start": 45.0,
+        "end": 48.0,
+        "text": " Du mit Mama und Papa beim Abendessen."
+      },
+      {
+        "start": 55.0,
+        "end": 58.0,
+        "text": " Du hast ja einen lustigen Milchbad."
+      },
+      {
+        "start": 60.0,
+        "end": 61.0,
+        "text": " Bobo, fertig."
+      },
+      {
+        "start": 62.0,
+        "end": 65.0,
+        "text": " Prima, dann kannst du ins Bad gehen und dich bettfertig machen."
+      },
+      {
+        "start": 67.0,
+        "end": 68.0,
+        "text": " Papa, Pferdchen?"
+      },
+      {
+        "start": 70.0,
+        "end": 71.0,
+        "text": " Bitte, Papa."
+      },
+      {
+        "start": 72.0,
+        "end": 73.0,
+        "text": " Okay, na gut."
+      },
+      {
+        "start": 73.0,
+        "end": 74.0,
+        "text": " Na gut!"
+      },
+      {
+        "start": 74.0,
+        "end": 75.0,
+        "text": " Ja!"
+      }
+    ],
+    "isHumanListened": false
+  },
+  "downloadMethod": "Normal KiKA yt-dlp extractor,720p HLS; automatic lossless TS-to-MP4 container fixup. Entire source retained; no cut, audio editing, credentials, paidAPI, region bypass or DRM bypass.",
+  "limitations": [
+    "Publisher rights/provenance do not by themselves grant a licence for redistribution.",
+    "Lesson will contain selected German lexical dialogue, not a complete verbatim transcription.",
+    "No native-human listening approval."
+  ],
+  "decodeVerification": {
+    "method": "whole ffmpeg decode to null",
+    "errors": 0
+  },
+  "selectedDialogue": {
+    "cues": 35,
+    "chapters": 3,
+    "vocabulary": 16,
+    "content": "lesson-content.json"
+  },
+  "recognitionEvidenceFiles": [
+    "language-evidence.json",
+    "recognized-words.json",
+    "recognition-complete.json",
+    "medium-review-words.json",
+    "medium-review-complete.json",
+    "base-sand-check.json"
+  ]
+}

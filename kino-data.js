@@ -14,6 +14,11 @@ const KinoData = (() => {
     spongebob_blubberunterricht: 'spongebob-blubberunterricht-aligned.js',
     pinguine_quietschsauber: 'pinguine-quietschsauber-aligned.js',
     courage_fischverfolgungsjagd: 'courage-fischverfolgungsjagd-aligned.js',
+    bobo_im_bad: 'bobo-im-bad-aligned.js',
+    conni_garten: 'conni-garten-aligned.js',
+    schmusedecke_baer: 'schmusedecke-baer-aligned.js',
+    nicos_hallo: 'nicos-hallo-aligned.js',
+    goethe_im_bus: 'goethe-im-bus-aligned.js',
     we_bare_bears_mall: 'we-bare-bears-mall-aligned.js',
     frieren_s01e01: 'frieren-s01e01-aligned.js',
     sakura_s01e01: 'sakura-s01e01-aligned.js',
@@ -67,6 +72,11 @@ const KinoData = (() => {
       case 'spongebob_blubberunterricht': return SPONGEBOB_BLUBBERUNTERRICHT_CAPTION_CUES;
       case 'pinguine_quietschsauber': return PINGUINE_QUIETSCHSAUBER_CAPTION_CUES;
       case 'courage_fischverfolgungsjagd': return COURAGE_FISCHVERFOLGUNGSJAGD_CAPTION_CUES;
+      case 'bobo_im_bad': return BOBO_IM_BAD_CAPTION_CUES;
+      case 'conni_garten': return CONNI_GARTEN_CAPTION_CUES;
+      case 'schmusedecke_baer': return SCHMUSEDECKE_BAER_CAPTION_CUES;
+      case 'nicos_hallo': return NICOS_HALLO_CAPTION_CUES;
+      case 'goethe_im_bus': return GOETHE_IM_BUS_CAPTION_CUES;
       case 'we_bare_bears_mall': return WE_BARE_BEARS_MALL_CAPTION_CUES;
       case 'frieren_s01e01': return FRIEREN_S01E01_CAPTION_CUES;
       case 'sakura_s01e01': return SAKURA_S01E01_CAPTION_CUES;
@@ -94,6 +104,11 @@ const KinoData = (() => {
       case 'spongebob_blubberunterricht': return SPONGEBOB_BLUBBERUNTERRICHT_ALIGNED_UTTERANCES;
       case 'pinguine_quietschsauber': return PINGUINE_QUIETSCHSAUBER_ALIGNED_UTTERANCES;
       case 'courage_fischverfolgungsjagd': return COURAGE_FISCHVERFOLGUNGSJAGD_ALIGNED_UTTERANCES;
+      case 'bobo_im_bad': return BOBO_IM_BAD_ALIGNED_UTTERANCES;
+      case 'conni_garten': return CONNI_GARTEN_ALIGNED_UTTERANCES;
+      case 'schmusedecke_baer': return SCHMUSEDECKE_BAER_ALIGNED_UTTERANCES;
+      case 'nicos_hallo': return NICOS_HALLO_ALIGNED_UTTERANCES;
+      case 'goethe_im_bus': return GOETHE_IM_BUS_ALIGNED_UTTERANCES;
       case 'we_bare_bears_mall': return WE_BARE_BEARS_MALL_ALIGNED_UTTERANCES;
       case 'frieren_s01e01': return FRIEREN_S01E01_ALIGNED_UTTERANCES;
       case 'sakura_s01e01': return SAKURA_S01E01_ALIGNED_UTTERANCES;

@@ -2,6 +2,479 @@
  * Load after kino-chapter-data.js; this does not load any subtitle/media files.
  * Each usage note describes a situation, without revealing the German answer. */
 const KINO_PRACTICE_DATA = {
+  "goethe_im_bus": [
+  {
+    "part": 1,
+    "picks": [
+      {
+        "id": 2200104,
+        "usage": "Bạn chưa chắc mình đang chờ đúng nơi; hãy hỏi người đứng gần đó một cách lịch sự."
+      },
+      {
+        "id": 2200105,
+        "usage": "Trả lời rằng điều đó còn phụ thuộc vào hoàn cảnh."
+      },
+      {
+        "id": 2200106,
+        "usage": "Hỏi một người đang hỏi đường xem họ muốn đi đến đâu."
+      },
+      {
+        "id": 2200107,
+        "usage": "Nêu tên cơ quan bạn cần đến khi được hỏi điểm đến."
+      },
+      {
+        "id": 2200109,
+        "usage": "Xác nhận rằng người hỏi đang đứng đúng nơi để đi đến chỗ họ muốn."
+      },
+      {
+        "id": 2200110,
+        "usage": "Báo cho người cùng chờ rằng chiếc xe vừa đến."
+      },
+      {
+        "id": 2200111,
+        "usage": "Hỏi xem chiếc xe đang đến có phải chuyến mình cần đi hay không."
+      }
+    ]
+  },
+  {
+    "part": 2,
+    "picks": [
+      {
+        "id": 2200112,
+        "usage": "Nói với tài xế bạn muốn đi đến cơ quan việc làm."
+      },
+      {
+        "id": 2200113,
+        "usage": "Kiểm tra xem hành khách đã có vé xe hay chưa."
+      },
+      {
+        "id": 2200114,
+        "usage": "Trả lời rằng bạn hiện vẫn chưa có món đồ vừa được hỏi đến."
+      },
+      {
+        "id": 2200115,
+        "usage": "Chỉ cho khách biết họ phải mua vé ở máy tự động."
+      },
+      {
+        "id": 2200116,
+        "usage": "Hướng dẫn người đang dùng máy nhấn vào nút mang số một."
+      },
+      {
+        "id": 2200117,
+        "usage": "Giải thích rằng người kia đang nói về con số trên máy, không phải số chuyến xe."
+      },
+      {
+        "id": 2200119,
+        "usage": "Nhắc người bạn khoan làm tiếp vì họ cần tiền lẻ để thanh toán."
+      }
+    ]
+  },
+  {
+    "part": 3,
+    "picks": [
+      {
+        "id": 2200122,
+        "usage": "Chúc người vừa giúp mình một ngày vui vẻ và chào tạm biệt."
+      },
+      {
+        "id": 2200123,
+        "usage": "Chào tạm biệt một người vừa rời đi, giữ cách nói lịch sự."
+      },
+      {
+        "id": 2200124,
+        "usage": "Xin phép được ngồi xuống một cách lịch sự."
+      },
+      {
+        "id": 2200125,
+        "usage": "Giải thích rằng chỗ ngồi này ưu tiên cho người cao tuổi và người bệnh."
+      },
+      {
+        "id": 2200127,
+        "usage": "Nhắc hành khách rằng đây là nơi họ cần xuống xe."
+      },
+      {
+        "id": 2200131,
+        "usage": "Chào tạm biệt người quen bằng cách nói thân mật, ngắn gọn."
+      },
+      {
+        "id": 2200133,
+        "usage": "Bày tỏ lòng cảm ơn rất nhiều với người đã giúp mình."
+      }
+    ]
+  }
+],
+  "nicos_hallo": [
+  {
+    "part": 1,
+    "picks": [
+      {
+        "id": 2300101,
+        "usage": "Chào một người lớn vào buổi sáng và hỏi thăm sức khỏe của họ."
+      },
+      {
+        "id": 2300102,
+        "usage": "Đáp lại lời chào buổi sáng, cảm ơn và hỏi thăm người đối diện."
+      },
+      {
+        "id": 2300105,
+        "usage": "Chào một phụ nữ bằng họ của người ấy trong tình huống lịch sự."
+      },
+      {
+        "id": 2300106,
+        "usage": "Đáp lại lời chào và hỏi thăm người đối diện một cách lịch sự."
+      },
+      {
+        "id": 2300107,
+        "usage": "Cho biết mình rất khỏe rồi hỏi lại người vừa hỏi thăm."
+      }
+    ]
+  },
+  {
+    "part": 2,
+    "picks": [
+      {
+        "id": 2300108,
+        "usage": "Chào một người thân quen và hỏi xem họ dạo này thế nào."
+      },
+      {
+        "id": 2300109,
+        "usage": "Cháu chào ông khi hai ông cháu vừa gặp nhau."
+      },
+      {
+        "id": 2300110,
+        "usage": "Gọi tên người bạn vừa gặp rồi hỏi thăm sức khỏe."
+      },
+      {
+        "id": 2300111,
+        "usage": "Đáp lời hỏi thăm của bạn và cảm ơn bạn ấy."
+      },
+      {
+        "id": 2300112,
+        "usage": "Hỏi lại một người bạn sau khi mình đã trả lời câu hỏi của họ."
+      }
+    ]
+  },
+  {
+    "part": 3,
+    "picks": [
+      {
+        "id": 2300113,
+        "usage": "Bày tỏ sự thích thú khi nhìn thấy một đồ vật đẹp."
+      },
+      {
+        "id": 2300115,
+        "usage": "Khen chiếc túi của người vừa gặp."
+      },
+      {
+        "id": 2300116,
+        "usage": "Lịch sự hỏi lại từ mình vừa nghe nhưng chưa hiểu."
+      },
+      {
+        "id": 2300118,
+        "usage": "Gọi con đi cùng rồi xin lỗi người đang trò chuyện với con."
+      }
+    ]
+  }
+],
+  "schmusedecke_baer": [
+  {
+    "part": 1,
+    "picks": [
+      {
+        "id": 2100101,
+        "usage": "Hỏi người bạn đang buồn xem có chuyện gì xảy ra."
+      },
+      {
+        "id": 2100102,
+        "usage": "Nói rằng món đồ quen thuộc của bạn đã biến mất."
+      },
+      {
+        "id": 2100103,
+        "usage": "Chào người bạn vừa đến và bày tỏ vui mừng vì họ có mặt."
+      },
+      {
+        "id": 2100104,
+        "usage": "Nói rằng một người bạn không có món ăn họ yêu thích."
+      },
+      {
+        "id": 2100106,
+        "usage": "Rủ người bạn cùng đi tìm món đồ bị mất."
+      },
+      {
+        "id": 2100107,
+        "usage": "Bày tỏ vui mừng khi gặp lại một người bạn."
+      },
+      {
+        "id": 2100109,
+        "usage": "Hỏi ai đó có biết vị trí món đồ đang tìm hay không."
+      }
+    ]
+  },
+  {
+    "part": 2,
+    "picks": [
+      {
+        "id": 2100115,
+        "usage": "Xác nhận xem người kia có đang chỉ vị trí ở đằng xa không."
+      },
+      {
+        "id": 2100116,
+        "usage": "Trấn an cả nhóm rằng bây giờ chắc chắn sẽ tìm được món đồ."
+      },
+      {
+        "id": 2100117,
+        "usage": "Hỏi người bạn có phải đã ăn hết phần thức ăn của người khác không."
+      },
+      {
+        "id": 2100118,
+        "usage": "Hỏi xem một người bạn khác cũng vừa làm điều tương tự phải không."
+      },
+      {
+        "id": 2100121,
+        "usage": "Nói rằng chiếc hũ bây giờ không còn gì bên trong."
+      },
+      {
+        "id": 2100122,
+        "usage": "Nhắc người bạn chú ý nhìn vào điều mình sắp chỉ cho họ."
+      },
+      {
+        "id": 2100123,
+        "usage": "Khen người bạn tốt bụng vì vừa giúp mình."
+      }
+    ]
+  }
+],
+  "conni_garten": [
+  {
+    "part": 1,
+    "picks": [
+      {
+        "id": 2000101,
+        "usage": "Khi rủ thú cưng ra xem bố đang làm gì."
+      },
+      {
+        "id": 2000104,
+        "usage": "Khi hỏi người lớn tên của một vật mình chưa biết."
+      },
+      {
+        "id": 2000108,
+        "usage": "Khi tò mò muốn biết người khác định làm gì với một món đồ."
+      },
+      {
+        "id": 2000110,
+        "usage": "Khi xung phong nhận làm một việc."
+      },
+      {
+        "id": 2000111,
+        "usage": "Khi nói cần dụng cụ gì để trồng cây."
+      },
+      {
+        "id": 2000112,
+        "usage": "Bày tỏ rằng một vật mình vừa nhấc lên nặng hơn tưởng tượng."
+      },
+      {
+        "id": 2000113,
+        "usage": "Khi hỏi mục đích sử dụng của một dụng cụ."
+      }
+    ]
+  },
+  {
+    "part": 2,
+    "picks": [
+      {
+        "id": 2000115,
+        "usage": "Khi thấy bố đang suy nghĩ và muốn hỏi có chuyện gì."
+      },
+      {
+        "id": 2000118,
+        "usage": "Khi nói mình cũng muốn đứng ở chỗ có nắng."
+      },
+      {
+        "id": 2000119,
+        "usage": "Khi chưa hiểu cỏ dại là gì và muốn hỏi lại."
+      },
+      {
+        "id": 2000122,
+        "usage": "Khi bất ngờ gặp một con vật nhỏ và hỏi nó là ai."
+      },
+      {
+        "id": 2000124,
+        "usage": "Giải thích rằng những con vật nhỏ trong vườn có ích."
+      },
+      {
+        "id": 2000125,
+        "usage": "Khi kể cảm giác nhột trong tay vì một con vật đang bò."
+      },
+      {
+        "id": 2000126,
+        "usage": "Khen vẻ đẹp của những bông hoa khi muốn giữ lại cây."
+      }
+    ]
+  },
+  {
+    "part": 3,
+    "picks": [
+      {
+        "id": 2000127,
+        "usage": "Khi đề xuất một chỗ thích hợp để trồng cà chua."
+      },
+      {
+        "id": 2000128,
+        "usage": "Khi nói cà chua là món mình thích nhất."
+      },
+      {
+        "id": 2000129,
+        "usage": "Khi nhận ra cây đã có mùi giống quả cà chua."
+      },
+      {
+        "id": 2000132,
+        "usage": "Báo rằng vật mình đang kéo hoặc lấy ra hình như bị kẹt."
+      },
+      {
+        "id": 2000134,
+        "usage": "Khi hỏi lại xem mình làm như thế đã đúng chưa."
+      },
+      {
+        "id": 2000137,
+        "usage": "Khi nói cây sẽ lớn lên nếu được tưới tốt."
+      },
+      {
+        "id": 2000138,
+        "usage": "Khi chủ động đi lấy bình tưới cây."
+      }
+    ]
+  },
+  {
+    "part": 4,
+    "picks": [
+      {
+        "id": 2000139,
+        "usage": "Khi thấy một chuyện lạ và tự hỏi điều gì đang xảy ra."
+      },
+      {
+        "id": 2000141,
+        "usage": "Khi rủ người khác nếm thử món mình đang ăn."
+      },
+      {
+        "id": 2000143,
+        "usage": "Khi hỏi bao giờ hoa mới trở thành quả."
+      },
+      {
+        "id": 2000145,
+        "usage": "Gọi một con vật nhỏ lại gần để di chuyển nó đến nơi khác."
+      },
+      {
+        "id": 2000146,
+        "usage": "Khi chỉ cho bố thấy con ốc sên đang trốn."
+      },
+      {
+        "id": 2000149,
+        "usage": "Khi giới thiệu những quả dâu tây dại vừa tìm thấy."
+      },
+      {
+        "id": 2000152,
+        "usage": "Đồng ý với đề nghị của người thân và khen đó là một ý hay."
+      }
+    ]
+  }
+],
+  "bobo_im_bad": [
+  {
+    "part": 1,
+    "picks": [
+      {
+        "id": 1900101,
+        "usage": "Kể rằng một em bé đang dùng bữa tối cùng bố mẹ."
+      },
+      {
+        "id": 1900102,
+        "usage": "Nói với người thân rằng họ có thể chuyển sang phòng tắm."
+      },
+      {
+        "id": 1900103,
+        "usage": "Nài bố một cách lịch sự và thân mật."
+      },
+      {
+        "id": 1900105,
+        "usage": "Hẹn lát nữa sẽ chúc con ngủ ngon."
+      },
+      {
+        "id": 1900109,
+        "usage": "Nói vui rằng mình đã hết sức khi chơi cùng con."
+      },
+      {
+        "id": 1900110,
+        "usage": "Khen ai đó vừa làm rất tốt trong trò chơi."
+      },
+      {
+        "id": 1900112,
+        "usage": "Rủ con cùng bắt đầu vệ sinh răng miệng."
+      }
+    ]
+  },
+  {
+    "part": 2,
+    "picks": [
+      {
+        "id": 1900113,
+        "usage": "Nhận xét ngạc nhiên khi ai đó lấy quá nhiều kem đánh răng."
+      },
+      {
+        "id": 1900114,
+        "usage": "Báo với bố rằng mình đã chuẩn bị xong."
+      },
+      {
+        "id": 1900115,
+        "usage": "Rủ người khác bắt tay vào làm ngay."
+      },
+      {
+        "id": 1900117,
+        "usage": "Gọi bố chú ý và nhìn điều mình muốn cho xem."
+      },
+      {
+        "id": 1900119,
+        "usage": "Kể rằng em bé muốn tự cởi quần áo."
+      },
+      {
+        "id": 1900120,
+        "usage": "Nói rằng mình sẽ đi lấy đồ ngủ cho con."
+      }
+    ]
+  },
+  {
+    "part": 3,
+    "picks": [
+      {
+        "id": 1900121,
+        "usage": "Kể vui về cuộn giấy vệ sinh cứ tự chạy lung tung."
+      },
+      {
+        "id": 1900122,
+        "usage": "Kể rằng em bé cũng muốn tự rửa tay."
+      },
+      {
+        "id": 1900127,
+        "usage": "Kể lại bằng thì quá khứ rằng hôm nay em bé đã tự làm mọi việc."
+      },
+      {
+        "id": 1900128,
+        "usage": "Bày tỏ sự tự hào về con."
+      },
+      {
+        "id": 1900132,
+        "usage": "Trả lời câu đố về cách một bạn nhỏ vào phòng tắm cùng bố."
+      },
+      {
+        "id": 1900133,
+        "usage": "Hỏi hai nhân vật đang làm gì trong phòng tắm."
+      },
+      {
+        "id": 1900134,
+        "usage": "Nói xem hai người đang làm gì trong phòng tắm."
+      }
+    ]
+  }
+],
   "courage_fischverfolgungsjagd": [
   {
     "part": 1,

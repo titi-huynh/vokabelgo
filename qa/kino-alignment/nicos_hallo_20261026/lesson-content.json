@@ -1,0 +1,344 @@
+{
+  "key": "nicos_hallo",
+  "alias": "nicos-hallo",
+  "symbol": "NICOS_HALLO",
+  "stem": "nicos-hallo",
+  "isExcerpt": false,
+  "duration": 96.734331,
+  "src": "video/nicos_hallo.mp4",
+  "sourceUrl": "https://www.youtube.com/watch?v=dC6ZGLzdaTs",
+  "series": "Nicos Weg",
+  "episodeTitle": "Hallo! · Bài 1",
+  "icon": "👋",
+  "genre": "Giao tiếp",
+  "summary": "Bài video A1 chính thức của DW · Nico đến sân bay, nghe các cách chào hỏi rồi gặp Emma và Lisa. Video bài học đầy đủ; lời thoại chọn lọc Đức–Việt, không phải toàn bộ phim Nicos Weg.",
+  "levelLabel": "Gợi ý A1",
+  "chapters": [
+    {
+      "title": "Chào hỏi lịch sự",
+      "icon": "🤝",
+      "start": 0,
+      "end": 33,
+      "picks": [
+        2300101,
+        2300102,
+        2300105,
+        2300106,
+        2300107
+      ],
+      "goal": "Chào hỏi và hỏi thăm người lớn bằng cách xưng hô lịch sự.",
+      "practiceUsage": {
+        "2300101": "Chào một người lớn vào buổi sáng và hỏi thăm sức khỏe của họ.",
+        "2300102": "Đáp lại lời chào buổi sáng, cảm ơn và hỏi thăm người đối diện.",
+        "2300105": "Chào một phụ nữ bằng họ của người ấy trong tình huống lịch sự.",
+        "2300106": "Đáp lại lời chào và hỏi thăm người đối diện một cách lịch sự.",
+        "2300107": "Cho biết mình rất khỏe rồi hỏi lại người vừa hỏi thăm."
+      }
+    },
+    {
+      "title": "Hỏi thăm người quen",
+      "icon": "👋",
+      "start": 33,
+      "end": 46.5,
+      "picks": [
+        2300108,
+        2300109,
+        2300110,
+        2300111,
+        2300112
+      ],
+      "goal": "Phân biệt lời chào thân mật với cách xưng hô lịch sự.",
+      "practiceUsage": {
+        "2300108": "Chào một người thân quen và hỏi xem họ dạo này thế nào.",
+        "2300109": "Cháu chào ông khi hai ông cháu vừa gặp nhau.",
+        "2300110": "Gọi tên người bạn vừa gặp rồi hỏi thăm sức khỏe.",
+        "2300111": "Đáp lời hỏi thăm của bạn và cảm ơn bạn ấy.",
+        "2300112": "Hỏi lại một người bạn sau khi mình đã trả lời câu hỏi của họ."
+      }
+    },
+    {
+      "title": "Cuộc gặp ở sân bay",
+      "icon": "🧳",
+      "start": 46.5,
+      "end": 96.734331,
+      "picks": [
+        2300113,
+        2300115,
+        2300116,
+        2300118
+      ],
+      "goal": "Khen một đồ vật, hỏi lại khi chưa hiểu và gọi người thân đi cùng.",
+      "practiceUsage": {
+        "2300113": "Bày tỏ sự thích thú khi nhìn thấy một đồ vật đẹp.",
+        "2300115": "Khen chiếc túi của người vừa gặp.",
+        "2300116": "Lịch sự hỏi lại từ mình vừa nghe nhưng chưa hiểu.",
+        "2300118": "Gọi con đi cùng rồi xin lỗi người đang trò chuyện với con."
+      }
+    }
+  ],
+  "cues": [
+    {
+      "id": 2300101,
+      "start": 10.48,
+      "end": 13.04,
+      "speaker": "Giọng trong bài nghe của Nico",
+      "text": "Guten Morgen, Herr Müller, wie geht es Ihnen?",
+      "vi": "Chào buổi sáng, ông Müller. Ông có khỏe không?"
+    },
+    {
+      "id": 2300102,
+      "start": 13.12,
+      "end": 17.76,
+      "speaker": "Giọng trong bài nghe của Nico",
+      "text": "Guten Morgen, Frau Schneider. Danke, gut! Und Ihnen?",
+      "vi": "Chào buổi sáng, bà Schneider. Cảm ơn, tôi khỏe! Còn bà thì sao?"
+    },
+    {
+      "id": 2300103,
+      "start": 17.84,
+      "end": 20.48,
+      "speaker": "Giọng trong bài nghe của Nico",
+      "text": "Guten Morgen, Herr Müller, wie geht es Ihnen?",
+      "vi": "Chào buổi sáng, ông Müller. Ông có khỏe không?"
+    },
+    {
+      "id": 2300104,
+      "start": 20.56,
+      "end": 24.4,
+      "speaker": "Giọng trong bài nghe của Nico",
+      "text": "Guten Morgen, Frau Schneider. Danke, gut! Und Ihnen?",
+      "vi": "Chào buổi sáng, bà Schneider. Cảm ơn, tôi khỏe! Còn bà thì sao?"
+    },
+    {
+      "id": 2300105,
+      "start": 26.52,
+      "end": 27.76,
+      "speaker": "Hành khách",
+      "text": "Guten Tag, Frau Kamp.",
+      "vi": "Xin chào, bà Kamp."
+    },
+    {
+      "id": 2300106,
+      "start": 27.84,
+      "end": 29.84,
+      "speaker": "Hành khách",
+      "text": "Guten Tag! Wie geht es Ihnen?",
+      "vi": "Xin chào! Anh/chị có khỏe không?"
+    },
+    {
+      "id": 2300107,
+      "start": 29.88,
+      "end": 32.4,
+      "speaker": "Hành khách",
+      "text": "Sehr gut, danke. Und Ihnen?",
+      "vi": "Tôi rất khỏe, cảm ơn. Còn bà thì sao?"
+    },
+    {
+      "id": 2300108,
+      "start": 34.24,
+      "end": 36.68,
+      "speaker": "Hành khách",
+      "text": "Hey, Lena! Na, wie geht’s?",
+      "vi": "Chào Lena! Cháu thế nào rồi?"
+    },
+    {
+      "id": 2300109,
+      "start": 36.76,
+      "end": 37.96,
+      "speaker": "Hành khách",
+      "text": "Hallo, Opa!",
+      "vi": "Cháu chào ông!"
+    },
+    {
+      "id": 2300110,
+      "start": 39.52,
+      "end": 41.76,
+      "speaker": "Hành khách",
+      "text": "Hallo, Sarah. Wie geht’s dir?",
+      "vi": "Chào Sarah. Cậu khỏe không?"
+    },
+    {
+      "id": 2300111,
+      "start": 41.8,
+      "end": 43.96,
+      "speaker": "Hành khách",
+      "text": "Hi, Tom! Super, danke.",
+      "vi": "Chào Tom! Tớ rất khỏe, cảm ơn."
+    },
+    {
+      "id": 2300112,
+      "start": 44.04,
+      "end": 44.84,
+      "speaker": "Hành khách",
+      "text": "Und dir?",
+      "vi": "Còn cậu thì sao?"
+    },
+    {
+      "id": 2300113,
+      "start": 47.96,
+      "end": 49.48,
+      "speaker": "Emma",
+      "text": "Oh, schön!",
+      "vi": "Ồ, đẹp quá!"
+    },
+    {
+      "id": 2300115,
+      "start": 51.56,
+      "end": 52.96,
+      "speaker": "Emma",
+      "text": "Die Tasche ist schön!",
+      "vi": "Chiếc túi đẹp quá!"
+    },
+    {
+      "id": 2300116,
+      "start": 53.4,
+      "end": 55.96,
+      "speaker": "Nico",
+      "text": "Entschuldigung? Schön?",
+      "vi": "Xin lỗi? Đẹp à?"
+    },
+    {
+      "id": 2300117,
+      "start": 56.32,
+      "end": 57.56,
+      "speaker": "Emma",
+      "text": "Ja, die Tasche!",
+      "vi": "Ừ, chiếc túi ấy!"
+    },
+    {
+      "id": 2300118,
+      "start": 63.0,
+      "end": 65.84,
+      "speaker": "Lisa",
+      "text": "Emma, komm jetzt! Entschuldigung!",
+      "vi": "Emma, đi nào con! Xin lỗi nhé!"
+    },
+    {
+      "id": 2300119,
+      "start": 73.68,
+      "end": 76.68,
+      "speaker": "Nico",
+      "text": "Adalbert-Stifter-Straße …",
+      "vi": "Phố Adalbert-Stifter…"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "guten-morgen",
+      "term": "Guten Morgen!",
+      "meaning": "Chào buổi sáng!",
+      "grammar": "Lời chào dùng vào buổi sáng; với người lịch sự có thể thêm Herr/Frau + họ.",
+      "cueId": 2300101,
+      "collocations": [
+        "Guten Morgen, Herr Müller!"
+      ],
+      "note": "Luyện cách dùng trong tình huống chào hỏi và làm quen của bài Hallo!."
+    },
+    {
+      "id": "guten-tag",
+      "term": "Guten Tag!",
+      "meaning": "Xin chào! (ban ngày, lịch sự)",
+      "grammar": "Lời chào vào ban ngày. Tag: der Tag, die Tage.",
+      "cueId": 2300105,
+      "collocations": [
+        "Guten Tag, Frau Kamp!"
+      ],
+      "note": "Luyện cách dùng trong tình huống chào hỏi và làm quen của bài Hallo!."
+    },
+    {
+      "id": "hallo",
+      "term": "Hallo!",
+      "meaning": "Xin chào!",
+      "grammar": "Lời chào thân mật, không biến đổi.",
+      "cueId": 2300109,
+      "collocations": [
+        "Hallo, Opa!"
+      ],
+      "note": "Luyện cách dùng trong tình huống chào hỏi và làm quen của bài Hallo!."
+    },
+    {
+      "id": "ihnen",
+      "term": "Ihnen",
+      "meaning": "ông/bà/anh/chị (dạng lịch sự, Dativ)",
+      "grammar": "Đại từ Dativ của Sie lịch sự, luôn viết hoa: Wie geht es Ihnen?",
+      "cueId": 2300106,
+      "collocations": [
+        "Wie geht es Ihnen?",
+        "Und Ihnen?"
+      ],
+      "note": "Luyện cách dùng trong tình huống chào hỏi và làm quen của bài Hallo!."
+    },
+    {
+      "id": "dir",
+      "term": "dir",
+      "meaning": "bạn/cậu (Dativ của du)",
+      "grammar": "Đại từ Dativ ngôi du; đối chiếu cách nói lịch sự Ihnen.",
+      "cueId": 2300110,
+      "collocations": [
+        "Wie geht’s dir?",
+        "Und dir?"
+      ],
+      "note": "Luyện cách dùng trong tình huống chào hỏi và làm quen của bài Hallo!."
+    },
+    {
+      "id": "super",
+      "term": "super",
+      "meaning": "rất tốt; tuyệt vời",
+      "grammar": "Tính từ/trạng từ khẩu ngữ. Trong lời đáp có thể lược phần còn lại của câu.",
+      "cueId": 2300111,
+      "collocations": [
+        "Super, danke!"
+      ],
+      "note": "Luyện cách dùng trong tình huống chào hỏi và làm quen của bài Hallo!."
+    },
+    {
+      "id": "tasche",
+      "term": "die Tasche",
+      "meaning": "chiếc túi",
+      "grammar": "Danh từ giống cái; số nhiều die Taschen.",
+      "cueId": 2300115,
+      "collocations": [
+        "die Tasche ist schön",
+        "eine Tasche tragen"
+      ],
+      "note": "Luyện cách dùng trong tình huống chào hỏi và làm quen của bài Hallo!."
+    },
+    {
+      "id": "schoen",
+      "term": "schön",
+      "meaning": "đẹp; hay; dễ chịu",
+      "grammar": "Tính từ; làm vị ngữ sau sein thì không thêm đuôi.",
+      "cueId": 2300115,
+      "collocations": [
+        "Die Tasche ist schön.",
+        "Oh, schön!"
+      ],
+      "note": "Luyện cách dùng trong tình huống chào hỏi và làm quen của bài Hallo!."
+    },
+    {
+      "id": "entschuldigung",
+      "term": "die Entschuldigung",
+      "meaning": "lời xin lỗi; xin lỗi",
+      "grammar": "Danh từ giống cái, số nhiều die Entschuldigungen. Dùng riêng Entschuldigung! để xin lỗi hoặc hỏi lại.",
+      "cueId": 2300116,
+      "collocations": [
+        "Entschuldigung?",
+        "Entschuldigung!"
+      ],
+      "note": "Luyện cách dùng trong tình huống chào hỏi và làm quen của bài Hallo!."
+    },
+    {
+      "id": "kommen",
+      "term": "kommen",
+      "meaning": "đến; tới; đi cùng theo lời gọi",
+      "grammar": "Động từ: kommt, kam, ist gekommen; mệnh lệnh ngôi du: Komm!",
+      "cueId": 2300118,
+      "collocations": [
+        "Komm jetzt!",
+        "Komm mit!"
+      ],
+      "note": "Luyện cách dùng trong tình huống chào hỏi và làm quen của bài Hallo!."
+    }
+  ],
+  "reviewMethod": "Publisher manual German VTT retained; editorial Vietnamese translation and visual speaker review, with local base automatic German detection. No native-human audio approval."
+}

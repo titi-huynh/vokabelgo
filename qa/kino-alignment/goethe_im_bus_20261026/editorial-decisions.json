@@ -1,0 +1,21 @@
+{
+  "isExcerpt": false,
+  "isSelectedDialogue": true,
+  "method": "Use33 selected short cues from43 official German publisher caption entries, preserving text and timing. Two official Goethe PDF transcripts confirm scene dialogue and speaker roles; source frames confirm context. No full ASR, extra download, invented speech or guessed word timing.",
+  "officialSource": "https://www.youtube.com/watch?v=PMj9kUPrnBk",
+  "decisions": [
+    {"span": [4.76,13.714], "action": "keep intro dialogue", "reason": "Three simple publisher captions teach name, formal address and being new. Intro roles are Nevin and a generic woman; the PDF main-scene transcript begins later."},
+    {"sourceCaptionIndices": [4], "action": "omit repeated preview", "reason": "The early Junge Frau/aussteigen line is repeated in the main scene; the later official cue is retained."},
+    {"sourceCaptionIndices": [7], "action": "omit", "reason": "Longer indirect destination clause is unnecessary for this selected A1–A2 practice set."},
+    {"sourceCaptionIndices": [9,15], "action": "omit filler", "reason": "Ähm and Ja ja add little to the selected practice set."},
+    {"sourceCaptionIndices": [18,19], "action": "combine full short turn", "reason": "Official VTT divides Nein / Noch nicht; PDF gives the same speaker turn. Start of18 and end of19 retained; no word timing inferred."},
+    {"sourceCaptionIndices": [22], "action": "omit repetition", "reason": "Nummer eins repeats the immediately previous instruction; Auf die Eins drücken retained."},
+    {"sourceCaptionIndices": [26], "action": "omit counting fragment", "reason": "Avoid presenting isolated currency-counting numbers as a complete dialogue turn."},
+    {"sourceCaptionIndices": [29,30], "action": "preserve VTT variation", "reason": "PDF farewell includes auf in the first speaker turn and omits it in Nevin's reply; VTT has the reverse. Lesson follows exact VTT and its timing, without mixing versions."},
+    {"sourceCaptionIndices": [32,33], "action": "join subtitle line break", "reason": "Same older-woman sentence spans two consecutive publisher cues. Preserve first start and last end."},
+    {"span": [258.221,384.487], "action": "leave uncaptioned gap", "reason": "Both PDFs mark a scene break without new spoken transcript here; source frames show nonverbal/recollection sequence. Do not invent captions or timings."},
+    {"sourceCaptionIndices": [34,36], "action": "omit interjection and repeated call", "reason": "Ah and second Junge Frau are not needed for practice; first main-scene call retained."},
+    {"sourceCaptionIndices": [37,38,39,40,41,42,43], "action": "keep main-scene ending", "reason": "All have publisher timecodes and PDF agreement; final Vielen, vielen Dank is at7:10–7:12, after alighting."},
+    {"location": "Entire lesson", "action": "limit phrase length", "reason": "Selected German cues contain at most9 space-delimited words; each part has7 Vietnamese situational prompts and source-linked vocabulary."}
+  ]
+}

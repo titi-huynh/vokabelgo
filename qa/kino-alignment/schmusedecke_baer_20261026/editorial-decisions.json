@@ -1,0 +1,26 @@
+{
+  "sourceUnchanged": true,
+  "isExcerpt": false,
+  "isSelectedDialogue": true,
+  "reviewMethod": "Official KiKA metadata, full local small/base ASR, independent medium ASR of16–185seconds, word timing and visual contact sheet. No native-human full listening approval.",
+  "decisions": [
+    {"span": [0,16], "action": "omit", "reason": "Opening song, with substantial ASR disagreement."},
+    {"span": [16,18.3], "action": "omit", "reason": "Repeated opening-song callback question is less useful than the following spoken concern."},
+    {"span": [18.4,21.9], "action": "use medium wording", "reason": "Medium recognizes discourse particle denn; small/base normalize as dann. Frame shows narrator asking what is wrong with the bear."},
+    {"span": [27.1,31.3], "action": "keep", "reason": "Small and medium agree dein Honigtopf ist weg; normalize compound spelling Honigtopf."},
+    {"span": [40.4,46.34], "action": "normalize animal names", "reason": "Visual bee and bear, official story metadata and medium confirm Biene/Bär; small/base Bina/Berg are recognition spellings."},
+    {"span": [62.2,70.88], "action": "keep", "reason": "Small/medium agree greeting to Esel, possessive Honigtopf search and location question."},
+    {"span": [79.76,84.82], "action": "select clauses", "reason": "Keep location statement and thanks as individual cues; omit incidental Ah/Oh exclamations."},
+    {"cueId": 2100113, "span": [93.42,95.66], "action": "omit", "reason": "Three models disagree on wording of pot ownership; do not infer the phrase solely from plot."},
+    {"span": [104.32,106.92], "action": "spell ist", "reason": "Small/base recognize ist; medium writes homophone isst. Context is confirming the previously indicated location of the missing masculine Honigtopf."},
+    {"span": [120.38,124.64], "action": "keep; normalize Bären", "reason": "Small/medium agree whole eating question. Bären/Beeren are homophones; referent is visually the bear, also established in official synopsis."},
+    {"span": [126.66,133.08], "action": "normalize animal names", "reason": "Visual companions and small/base/medium phonetics support Biber and Esel."},
+    {"cueId": 2100120, "span": [133.32,137.38], "action": "omit", "reason": "Small geschleckt vs base/medium geschlägt; uncertain inflection/ownership wording is not taught."},
+    {"span": [145.64,148.56], "action": "omit", "reason": "allen/einem pronoun disagreement in apology sentence."},
+    {"span": [149.14,152.94], "action": "omit", "reason": "Models disagree on the spoken construction for obtaining honey."},
+    {"span": [162.48,164.04], "action": "keep shared clause only", "reason": "Small/medium agree Das ist lieb, Biene; omit preceding interjection."},
+    {"span": [164.26,168.72], "action": "omit", "reason": "Long explanation of collecting honey has major small/base/medium word disagreements."},
+    {"span": [178.6,181.4], "action": "keep shared main clause only", "reason": "All three models agree Das Leben ist so schön; following conditional clause and final tag question are omitted due disagreement."},
+    {"span": [189,201.28], "action": "omit", "reason": "Closing song and credits. Complete source video is retained."}
+  ]
+}
