@@ -69,6 +69,11 @@ body[data-hub="kino"]:has(.kino-chapters-active) :is(#boomboxMini, #catCompanion
 .kino-chapters-active[data-kino-activity="discover"] :is(.kino-v3-progress-card, .kino-practice-heading, .kino-v3-grid, .kino-v3-timeline-card, .peppa-options, .peppa-finished) { display: none; }
 .kino-chapters-active:not([data-kino-activity="write"]) :is(.kino-writing-card, .kino-sentence-passed, .kino-v3-progress-card) { display: none; }
 .kino-chapters-active:not([data-kino-activity="listen"]) .kino-listen-card { display: none; }
+/* Bản thử nghe mù: ở bước Nghe & hiểu, phụ đề trên video ẩn theo đúng trạng
+   thái hiện chữ/nghĩa của thẻ học (cờ do kino-chapters gắn lên #diktatMode). */
+.kino-chapters-active[data-kino-activity="listen"].kl-blind-de #kinoOverlayDe { display: none; }
+.kino-chapters-active[data-kino-activity="listen"].kl-blind-vi #kinoOverlayVi { display: none; }
+.kino-chapters-active[data-kino-activity="listen"].kl-blind-de.kl-blind-vi #kinoSubOverlay { display: none; }
 .kino-chapters-active:not([data-kino-activity="speak"]) .kino-v3-dub-card { display: none; }
 .kino-chapters-active[data-kino-activity="write"] #kinoActivityNext { display: none; }
 .kino-chapters-active .kino-v3-streak-badge { display: none; }

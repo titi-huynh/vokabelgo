@@ -566,6 +566,13 @@ const KinoChapters = (() => {
     if (revealDeBtn) revealDeBtn.hidden = listenRevealDe;
     const revealViBtn = document.getElementById('kinoRevealVi');
     if (revealViBtn) { revealViBtn.hidden = listenRevealVi; revealViBtn.disabled = !listenRevealDe; revealViBtn.style.opacity = listenRevealDe ? '' : '.45'; }
+    // Phụ đề trên video cũng phải "mù" theo cùng trạng thái, nếu không người học
+    // cứ đọc phụ đề là xong. CSS ở kino-discovery.css ẩn theo hai cờ này.
+    const modeRoot = document.getElementById('diktatMode');
+    if (modeRoot) {
+      modeRoot.classList.toggle('kl-blind-de', activity === 'listen' && !listenRevealDe);
+      modeRoot.classList.toggle('kl-blind-vi', activity === 'listen' && !listenRevealVi);
+    }
     KinoDiscovery.update({ key: videoKey, src: KINO_VIDEOS[videoKey].src, chapter, index: state.chapter,
       cues: config.captionCues || source, watched: state.watched.includes(state.chapter), activity });
     KinoCatalog.updateCount();
