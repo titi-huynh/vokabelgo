@@ -1,0 +1,3458 @@
+{
+  "videoKey": "frieren_s01e02",
+  "model": "faster-whisper medium int8 (local)",
+  "targetsCount": 57,
+  "verifiedCount": 53,
+  "elapsedSeconds": 403.3,
+  "rows": [
+    {
+      "cueId": 1300011,
+      "speaker": "Frieren",
+      "text": "Die meisten haben damit Schwierigkeiten.",
+      "chosenMethod": "contextual",
+      "oldStart": 132.88,
+      "oldEnd": 135.08,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 132.92,
+      "suggestedEnd": 135.02,
+      "alignmentProbability": 0.945,
+      "minWordProbability": 0.783,
+      "maxWordDuration": 0.74,
+      "flags": [],
+      "words": [
+        {
+          "word": " Die",
+          "start": 132.92,
+          "end": 133.66,
+          "probability": 0.783
+        },
+        {
+          "word": " meisten",
+          "start": 133.66,
+          "end": 133.9,
+          "probability": 0.969
+        },
+        {
+          "word": " haben",
+          "start": 133.9,
+          "end": 134.1,
+          "probability": 0.982
+        },
+        {
+          "word": " damit",
+          "start": 134.1,
+          "end": 134.34,
+          "probability": 0.994
+        },
+        {
+          "word": " Schwierigkeiten",
+          "start": 134.34,
+          "end": 135.02,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "cueId": 1300012,
+      "speaker": "Frieren",
+      "text": "Du musst dir also keine Sorgen machen.",
+      "chosenMethod": "contextual",
+      "oldStart": 135.22,
+      "oldEnd": 137.5,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 135.26,
+      "suggestedEnd": 137.44,
+      "alignmentProbability": 0.966,
+      "minWordProbability": 0.874,
+      "maxWordDuration": 0.78,
+      "flags": [],
+      "words": [
+        {
+          "word": " Du",
+          "start": 135.26,
+          "end": 136.04,
+          "probability": 0.934
+        },
+        {
+          "word": " musst",
+          "start": 136.04,
+          "end": 136.24,
+          "probability": 0.99
+        },
+        {
+          "word": " dir",
+          "start": 136.24,
+          "end": 136.38,
+          "probability": 0.874
+        },
+        {
+          "word": " also",
+          "start": 136.38,
+          "end": 136.66,
+          "probability": 0.98
+        },
+        {
+          "word": " keine",
+          "start": 136.66,
+          "end": 136.86,
+          "probability": 0.998
+        },
+        {
+          "word": " Sorgen",
+          "start": 136.86,
+          "end": 137.22,
+          "probability": 0.997
+        },
+        {
+          "word": " machen",
+          "start": 137.22,
+          "end": 137.44,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "cueId": 1300013,
+      "speaker": "Frieren",
+      "text": "Bei dir wird es nicht ganz so lange dauern.",
+      "chosenMethod": "contextual",
+      "oldStart": 138.04,
+      "oldEnd": 140.5,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 138.08,
+      "suggestedEnd": 140.44,
+      "alignmentProbability": 0.952,
+      "minWordProbability": 0.82,
+      "maxWordDuration": 0.86,
+      "flags": [],
+      "words": [
+        {
+          "word": " Bei",
+          "start": 138.08,
+          "end": 138.94,
+          "probability": 0.82
+        },
+        {
+          "word": " dir",
+          "start": 138.94,
+          "end": 139.08,
+          "probability": 0.981
+        },
+        {
+          "word": " wird",
+          "start": 139.08,
+          "end": 139.2,
+          "probability": 0.988
+        },
+        {
+          "word": " es",
+          "start": 139.2,
+          "end": 139.38,
+          "probability": 0.913
+        },
+        {
+          "word": " nicht",
+          "start": 139.38,
+          "end": 139.52,
+          "probability": 0.992
+        },
+        {
+          "word": " ganz",
+          "start": 139.52,
+          "end": 139.74,
+          "probability": 0.899
+        },
+        {
+          "word": " so",
+          "start": 139.74,
+          "end": 139.9,
+          "probability": 0.992
+        },
+        {
+          "word": " lange",
+          "start": 139.9,
+          "end": 140.12,
+          "probability": 0.985
+        },
+        {
+          "word": " dauern",
+          "start": 140.12,
+          "end": 140.44,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1300015,
+      "speaker": "Heiter",
+      "text": "Wie kommst du mit Ferns Ausbildung voran?",
+      "chosenMethod": "contextual",
+      "oldStart": 213.52,
+      "oldEnd": 216.72,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 213.56,
+      "suggestedEnd": 216.66,
+      "alignmentProbability": 0.885,
+      "minWordProbability": 0.562,
+      "maxWordDuration": 1.02,
+      "flags": [],
+      "words": [
+        {
+          "word": " Wie",
+          "start": 213.56,
+          "end": 214.58,
+          "probability": 0.83
+        },
+        {
+          "word": " kommst",
+          "start": 214.58,
+          "end": 214.96,
+          "probability": 0.994
+        },
+        {
+          "word": " du",
+          "start": 214.96,
+          "end": 215.06,
+          "probability": 0.873
+        },
+        {
+          "word": " mit",
+          "start": 215.06,
+          "end": 215.26,
+          "probability": 0.998
+        },
+        {
+          "word": " Ferns",
+          "start": 215.26,
+          "end": 215.66,
+          "probability": 0.562
+        },
+        {
+          "word": " Ausbildung",
+          "start": 215.66,
+          "end": 216.16,
+          "probability": 0.944
+        },
+        {
+          "word": " voran",
+          "start": 216.16,
+          "end": 216.66,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "cueId": 1300016,
+      "speaker": "Frieren",
+      "text": "Sie hat in vier Jahren so viele Fortschritte gemacht wie andere in zehn.",
+      "chosenMethod": "contextual",
+      "oldStart": 216.88,
+      "oldEnd": 220.7,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 216.92,
+      "suggestedEnd": 220.64,
+      "alignmentProbability": 0.906,
+      "minWordProbability": 0.676,
+      "maxWordDuration": 0.84,
+      "flags": [],
+      "words": [
+        {
+          "word": " Sie",
+          "start": 216.92,
+          "end": 217.76,
+          "probability": 0.818
+        },
+        {
+          "word": " hat",
+          "start": 217.76,
+          "end": 217.94,
+          "probability": 0.922
+        },
+        {
+          "word": " in",
+          "start": 217.94,
+          "end": 218.08,
+          "probability": 0.993
+        },
+        {
+          "word": " vier",
+          "start": 218.08,
+          "end": 218.26,
+          "probability": 0.819
+        },
+        {
+          "word": " Jahren",
+          "start": 218.26,
+          "end": 218.54,
+          "probability": 0.998
+        },
+        {
+          "word": " so",
+          "start": 218.54,
+          "end": 218.8,
+          "probability": 0.994
+        },
+        {
+          "word": " viele",
+          "start": 218.8,
+          "end": 218.98,
+          "probability": 0.985
+        },
+        {
+          "word": " Fortschritte",
+          "start": 218.98,
+          "end": 219.46,
+          "probability": 0.998
+        },
+        {
+          "word": " gemacht",
+          "start": 219.46,
+          "end": 219.74,
+          "probability": 0.994
+        },
+        {
+          "word": " wie",
+          "start": 219.74,
+          "end": 219.98,
+          "probability": 0.676
+        },
+        {
+          "word": " andere",
+          "start": 219.98,
+          "end": 220.26,
+          "probability": 0.956
+        },
+        {
+          "word": " in",
+          "start": 220.26,
+          "end": 220.52,
+          "probability": 0.909
+        },
+        {
+          "word": " zehn",
+          "start": 220.52,
+          "end": 220.64,
+          "probability": 0.71
+        }
+      ]
+    },
+    {
+      "cueId": 1300017,
+      "speaker": "Frieren",
+      "text": "Sie steigert sich da zu sehr rein.",
+      "chosenMethod": "contextual",
+      "oldStart": 221.24,
+      "oldEnd": 222.78,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 220.74,
+      "suggestedEnd": 222.84,
+      "alignmentProbability": 0.788,
+      "minWordProbability": 0.011,
+      "maxWordDuration": 0.74,
+      "flags": [
+        "weak_individual_word"
+      ],
+      "words": [
+        {
+          "word": " Sie",
+          "start": 220.74,
+          "end": 221.48,
+          "probability": 0.671
+        },
+        {
+          "word": " steigert",
+          "start": 221.48,
+          "end": 221.9,
+          "probability": 0.996
+        },
+        {
+          "word": " sich",
+          "start": 221.9,
+          "end": 222.06,
+          "probability": 0.998
+        },
+        {
+          "word": " da",
+          "start": 222.06,
+          "end": 222.26,
+          "probability": 0.011
+        },
+        {
+          "word": " zu",
+          "start": 222.26,
+          "end": 222.4,
+          "probability": 0.89
+        },
+        {
+          "word": " sehr",
+          "start": 222.4,
+          "end": 222.62,
+          "probability": 0.992
+        },
+        {
+          "word": " rein",
+          "start": 222.62,
+          "end": 222.84,
+          "probability": 0.956
+        }
+      ]
+    },
+    {
+      "cueId": 1300018,
+      "speaker": "Frieren",
+      "text": "Und das ist nicht immer gut.",
+      "chosenMethod": "contextual",
+      "oldStart": 222.78,
+      "oldEnd": 224.3,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 222.6,
+      "suggestedEnd": 224.24,
+      "alignmentProbability": 0.879,
+      "minWordProbability": 0.306,
+      "maxWordDuration": 0.58,
+      "flags": [],
+      "words": [
+        {
+          "word": " Und",
+          "start": 222.6,
+          "end": 223.18,
+          "probability": 0.306
+        },
+        {
+          "word": " das",
+          "start": 223.18,
+          "end": 223.4,
+          "probability": 0.976
+        },
+        {
+          "word": " ist",
+          "start": 223.4,
+          "end": 223.64,
+          "probability": 0.996
+        },
+        {
+          "word": " nicht",
+          "start": 223.64,
+          "end": 223.78,
+          "probability": 0.997
+        },
+        {
+          "word": " immer",
+          "start": 223.78,
+          "end": 223.98,
+          "probability": 0.999
+        },
+        {
+          "word": " gut",
+          "start": 223.98,
+          "end": 224.24,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1300026,
+      "speaker": "Heiter",
+      "text": "Ach komm, jetzt guck doch nicht so traurig.",
+      "chosenMethod": "contextual",
+      "oldStart": 257.96,
+      "oldEnd": 261.42,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 258.0,
+      "suggestedEnd": 261.36,
+      "alignmentProbability": 0.843,
+      "minWordProbability": 0.5,
+      "maxWordDuration": 1.28,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ach",
+          "start": 258.0,
+          "end": 259.28,
+          "probability": 0.765
+        },
+        {
+          "word": " komm",
+          "start": 259.28,
+          "end": 259.5,
+          "probability": 0.933
+        },
+        {
+          "word": " jetzt",
+          "start": 259.68,
+          "end": 259.82,
+          "probability": 0.97
+        },
+        {
+          "word": " guck",
+          "start": 259.82,
+          "end": 260.08,
+          "probability": 0.979
+        },
+        {
+          "word": " doch",
+          "start": 260.08,
+          "end": 260.26,
+          "probability": 0.8
+        },
+        {
+          "word": " nicht",
+          "start": 260.26,
+          "end": 260.48,
+          "probability": 0.98
+        },
+        {
+          "word": " so",
+          "start": 260.48,
+          "end": 260.68,
+          "probability": 0.816
+        },
+        {
+          "word": " traurig",
+          "start": 260.68,
+          "end": 261.36,
+          "probability": 0.5
+        }
+      ]
+    },
+    {
+      "cueId": 1300028,
+      "speaker": "Frieren",
+      "text": "Ich werde mich mit der Entschlüsselung beeilen.",
+      "chosenMethod": "contextual",
+      "oldStart": 269.44,
+      "oldEnd": 272.26,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 269.48,
+      "suggestedEnd": 272.2,
+      "alignmentProbability": 0.967,
+      "minWordProbability": 0.825,
+      "maxWordDuration": 1.12,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ich",
+          "start": 269.48,
+          "end": 270.6,
+          "probability": 0.825
+        },
+        {
+          "word": " werde",
+          "start": 270.6,
+          "end": 270.82,
+          "probability": 0.996
+        },
+        {
+          "word": " mich",
+          "start": 270.82,
+          "end": 271.0,
+          "probability": 0.994
+        },
+        {
+          "word": " mit",
+          "start": 271.0,
+          "end": 271.14,
+          "probability": 0.989
+        },
+        {
+          "word": " der",
+          "start": 271.14,
+          "end": 271.28,
+          "probability": 0.993
+        },
+        {
+          "word": " Entschlüsselung",
+          "start": 271.28,
+          "end": 271.78,
+          "probability": 0.981
+        },
+        {
+          "word": " beeilen",
+          "start": 271.78,
+          "end": 272.2,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "cueId": 1300029,
+      "speaker": "Heiter",
+      "text": "Danke, meine Liebe.",
+      "chosenMethod": "contextual",
+      "oldStart": 272.26,
+      "oldEnd": 274.02,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 272.16,
+      "suggestedEnd": 273.96,
+      "alignmentProbability": 0.929,
+      "minWordProbability": 0.89,
+      "maxWordDuration": 1.18,
+      "flags": [],
+      "words": [
+        {
+          "word": " Danke",
+          "start": 272.16,
+          "end": 273.34,
+          "probability": 0.89
+        },
+        {
+          "word": " meine",
+          "start": 273.42,
+          "end": 273.7,
+          "probability": 0.95
+        },
+        {
+          "word": " Liebe",
+          "start": 273.7,
+          "end": 273.96,
+          "probability": 0.948
+        }
+      ]
+    },
+    {
+      "cueId": 1300034,
+      "speaker": "Frieren",
+      "text": "Das wirst du garantiert irgendwann schaffen.",
+      "chosenMethod": "contextual",
+      "oldStart": 288.92,
+      "oldEnd": 291.78,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 288.96,
+      "suggestedEnd": 291.72,
+      "alignmentProbability": 0.925,
+      "minWordProbability": 0.783,
+      "maxWordDuration": 1.12,
+      "flags": [],
+      "words": [
+        {
+          "word": " Das",
+          "start": 288.96,
+          "end": 290.08,
+          "probability": 0.783
+        },
+        {
+          "word": " wirst",
+          "start": 290.08,
+          "end": 290.3,
+          "probability": 0.998
+        },
+        {
+          "word": " du",
+          "start": 290.3,
+          "end": 290.44,
+          "probability": 0.847
+        },
+        {
+          "word": " garantiert",
+          "start": 290.44,
+          "end": 291.04,
+          "probability": 0.937
+        },
+        {
+          "word": " irgendwann",
+          "start": 291.04,
+          "end": 291.38,
+          "probability": 0.991
+        },
+        {
+          "word": " schaffen",
+          "start": 291.38,
+          "end": 291.72,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "cueId": 1300054,
+      "speaker": "Fern",
+      "text": "Ich will nicht, dass er bereut, mich gerettet zu haben.",
+      "chosenMethod": "contextual",
+      "oldStart": 391.26,
+      "oldEnd": 394.02,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 391.3,
+      "suggestedEnd": 393.96,
+      "alignmentProbability": 0.983,
+      "minWordProbability": 0.895,
+      "maxWordDuration": 0.74,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ich",
+          "start": 391.3,
+          "end": 392.04,
+          "probability": 0.895
+        },
+        {
+          "word": " will",
+          "start": 392.04,
+          "end": 392.24,
+          "probability": 0.993
+        },
+        {
+          "word": " nicht",
+          "start": 392.24,
+          "end": 392.38,
+          "probability": 0.992
+        },
+        {
+          "word": " dass",
+          "start": 392.38,
+          "end": 392.54,
+          "probability": 0.991
+        },
+        {
+          "word": " er",
+          "start": 392.54,
+          "end": 392.68,
+          "probability": 0.988
+        },
+        {
+          "word": " bereut",
+          "start": 392.68,
+          "end": 392.96,
+          "probability": 0.996
+        },
+        {
+          "word": " mich",
+          "start": 393.02,
+          "end": 393.22,
+          "probability": 0.999
+        },
+        {
+          "word": " gerettet",
+          "start": 393.22,
+          "end": 393.58,
+          "probability": 0.984
+        },
+        {
+          "word": " zu",
+          "start": 393.58,
+          "end": 393.76,
+          "probability": 0.997
+        },
+        {
+          "word": " haben",
+          "start": 393.76,
+          "end": 393.96,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1300059,
+      "speaker": "Frieren",
+      "text": "Du weißt noch alles, was ich dir beigebracht habe, oder?",
+      "chosenMethod": "contextual",
+      "oldStart": 410.48,
+      "oldEnd": 413.66,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 410.52,
+      "suggestedEnd": 413.6,
+      "alignmentProbability": 0.966,
+      "minWordProbability": 0.867,
+      "maxWordDuration": 0.92,
+      "flags": [],
+      "words": [
+        {
+          "word": " Du",
+          "start": 410.52,
+          "end": 411.44,
+          "probability": 0.932
+        },
+        {
+          "word": " weißt",
+          "start": 411.44,
+          "end": 411.78,
+          "probability": 0.99
+        },
+        {
+          "word": " noch",
+          "start": 411.78,
+          "end": 411.96,
+          "probability": 0.949
+        },
+        {
+          "word": " alles",
+          "start": 411.96,
+          "end": 412.14,
+          "probability": 0.867
+        },
+        {
+          "word": " was",
+          "start": 412.16,
+          "end": 412.3,
+          "probability": 0.996
+        },
+        {
+          "word": " ich",
+          "start": 412.3,
+          "end": 412.46,
+          "probability": 0.997
+        },
+        {
+          "word": " dir",
+          "start": 412.46,
+          "end": 412.58,
+          "probability": 0.945
+        },
+        {
+          "word": " beigebracht",
+          "start": 412.58,
+          "end": 413.16,
+          "probability": 0.996
+        },
+        {
+          "word": " habe",
+          "start": 413.16,
+          "end": 413.36,
+          "probability": 0.992
+        },
+        {
+          "word": " oder",
+          "start": 413.48,
+          "end": 413.6,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1300061,
+      "speaker": "Frieren",
+      "text": "Dann tu, was du für richtig hältst.",
+      "chosenMethod": "contextual",
+      "oldStart": 415.6,
+      "oldEnd": 417.22,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 415.1,
+      "suggestedEnd": 417.32,
+      "alignmentProbability": 0.79,
+      "minWordProbability": 0.001,
+      "maxWordDuration": 0.86,
+      "flags": [
+        "weak_individual_word"
+      ],
+      "words": [
+        {
+          "word": " Dann",
+          "start": 415.1,
+          "end": 415.96,
+          "probability": 0.694
+        },
+        {
+          "word": " tu",
+          "start": 415.96,
+          "end": 416.16,
+          "probability": 0.001
+        },
+        {
+          "word": " was",
+          "start": 416.24,
+          "end": 416.32,
+          "probability": 0.98
+        },
+        {
+          "word": " du",
+          "start": 416.32,
+          "end": 416.5,
+          "probability": 0.978
+        },
+        {
+          "word": " für",
+          "start": 416.5,
+          "end": 416.6,
+          "probability": 0.979
+        },
+        {
+          "word": " richtig",
+          "start": 416.6,
+          "end": 416.88,
+          "probability": 0.974
+        },
+        {
+          "word": " hältst",
+          "start": 416.88,
+          "end": 417.32,
+          "probability": 0.922
+        }
+      ]
+    },
+    {
+      "cueId": 1300063,
+      "speaker": "Frieren",
+      "text": "Sie benötigt noch einen gewissen Feinschliff.",
+      "chosenMethod": "contextual",
+      "oldStart": 499.24,
+      "oldEnd": 501.96,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 499.28,
+      "suggestedEnd": 501.9,
+      "alignmentProbability": 0.97,
+      "minWordProbability": 0.88,
+      "maxWordDuration": 0.86,
+      "flags": [],
+      "words": [
+        {
+          "word": " Sie",
+          "start": 499.28,
+          "end": 500.14,
+          "probability": 0.88
+        },
+        {
+          "word": " benötigt",
+          "start": 500.14,
+          "end": 500.62,
+          "probability": 0.996
+        },
+        {
+          "word": " noch",
+          "start": 500.62,
+          "end": 500.84,
+          "probability": 0.984
+        },
+        {
+          "word": " einen",
+          "start": 500.84,
+          "end": 501.0,
+          "probability": 0.979
+        },
+        {
+          "word": " gewissen",
+          "start": 501.0,
+          "end": 501.3,
+          "probability": 0.998
+        },
+        {
+          "word": " Feinschliff",
+          "start": 501.3,
+          "end": 501.9,
+          "probability": 0.982
+        }
+      ]
+    },
+    {
+      "cueId": 1300068,
+      "speaker": "Heiter",
+      "text": "Würdest du sie bitte auf deinen Reisen mitnehmen?",
+      "chosenMethod": "contextual",
+      "oldStart": 516.42,
+      "oldEnd": 520.0,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 516.46,
+      "suggestedEnd": 519.94,
+      "alignmentProbability": 0.959,
+      "minWordProbability": 0.875,
+      "maxWordDuration": 1.16,
+      "flags": [],
+      "words": [
+        {
+          "word": " Würdest",
+          "start": 516.46,
+          "end": 517.62,
+          "probability": 0.875
+        },
+        {
+          "word": " du",
+          "start": 517.62,
+          "end": 517.74,
+          "probability": 0.937
+        },
+        {
+          "word": " sie",
+          "start": 517.74,
+          "end": 517.9,
+          "probability": 0.987
+        },
+        {
+          "word": " bitte",
+          "start": 517.9,
+          "end": 518.58,
+          "probability": 0.984
+        },
+        {
+          "word": " auf",
+          "start": 518.58,
+          "end": 518.82,
+          "probability": 0.978
+        },
+        {
+          "word": " deinen",
+          "start": 518.82,
+          "end": 519.04,
+          "probability": 0.917
+        },
+        {
+          "word": " Reisen",
+          "start": 519.04,
+          "end": 519.48,
+          "probability": 0.994
+        },
+        {
+          "word": " mitnehmen",
+          "start": 519.48,
+          "end": 519.94,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1300071,
+      "speaker": "Frieren",
+      "text": "Du hast mich reingelegt, Heiter.",
+      "chosenMethod": "contextual",
+      "oldStart": 525.92,
+      "oldEnd": 528.72,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 525.42,
+      "suggestedEnd": 528.66,
+      "alignmentProbability": 0.819,
+      "minWordProbability": 0.419,
+      "maxWordDuration": 1.8,
+      "flags": [],
+      "words": [
+        {
+          "word": " Du",
+          "start": 525.42,
+          "end": 527.22,
+          "probability": 0.419
+        },
+        {
+          "word": " hast",
+          "start": 527.22,
+          "end": 527.48,
+          "probability": 0.978
+        },
+        {
+          "word": " mich",
+          "start": 527.48,
+          "end": 527.72,
+          "probability": 0.993
+        },
+        {
+          "word": " reingelegt",
+          "start": 527.72,
+          "end": 528.26,
+          "probability": 0.976
+        },
+        {
+          "word": " Heiter",
+          "start": 528.42,
+          "end": 528.66,
+          "probability": 0.729
+        }
+      ]
+    },
+    {
+      "cueId": 1300074,
+      "speaker": "Frieren",
+      "text": "Was hast du vor?",
+      "chosenMethod": "contextual",
+      "oldStart": 538.62,
+      "oldEnd": 540.34,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 538.66,
+      "suggestedEnd": 540.28,
+      "alignmentProbability": 0.683,
+      "minWordProbability": 0.118,
+      "maxWordDuration": 1.12,
+      "flags": [],
+      "words": [
+        {
+          "word": " Was",
+          "start": 538.66,
+          "end": 539.78,
+          "probability": 0.118
+        },
+        {
+          "word": " hast",
+          "start": 539.78,
+          "end": 539.94,
+          "probability": 0.959
+        },
+        {
+          "word": " du",
+          "start": 539.94,
+          "end": 540.14,
+          "probability": 0.911
+        },
+        {
+          "word": " vor",
+          "start": 540.14,
+          "end": 540.28,
+          "probability": 0.744
+        }
+      ]
+    },
+    {
+      "cueId": 1300080,
+      "speaker": "Frieren",
+      "text": "Vor deinem Tod solltest du dich also anständig von ihr verabschieden.",
+      "chosenMethod": "contextual",
+      "oldStart": 569.43,
+      "oldEnd": 574.61,
+      "isChapterPick": true,
+      "isShortFocus": true,
+      "status": "verified",
+      "suggestedStart": 569.47,
+      "suggestedEnd": 574.55,
+      "alignmentProbability": 0.963,
+      "minWordProbability": 0.853,
+      "maxWordDuration": 1.36,
+      "flags": [],
+      "words": [
+        {
+          "word": " Vor",
+          "start": 569.47,
+          "end": 570.11,
+          "probability": 0.853
+        },
+        {
+          "word": " deinem",
+          "start": 570.11,
+          "end": 570.41,
+          "probability": 0.97
+        },
+        {
+          "word": " Tod",
+          "start": 570.41,
+          "end": 570.61,
+          "probability": 0.928
+        },
+        {
+          "word": " solltest",
+          "start": 570.61,
+          "end": 570.95,
+          "probability": 0.99
+        },
+        {
+          "word": " du",
+          "start": 570.95,
+          "end": 571.09,
+          "probability": 0.945
+        },
+        {
+          "word": " dich",
+          "start": 571.09,
+          "end": 571.27,
+          "probability": 0.996
+        },
+        {
+          "word": " also",
+          "start": 571.27,
+          "end": 572.63,
+          "probability": 0.988
+        },
+        {
+          "word": " anständig",
+          "start": 572.63,
+          "end": 573.37,
+          "probability": 0.94
+        },
+        {
+          "word": " von",
+          "start": 573.37,
+          "end": 573.51,
+          "probability": 0.989
+        },
+        {
+          "word": " ihr",
+          "start": 573.51,
+          "end": 573.79,
+          "probability": 0.998
+        },
+        {
+          "word": " verabschieden",
+          "start": 573.79,
+          "end": 574.55,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1300082,
+      "speaker": "Heiter",
+      "text": "Frieren, du hast wirklich ein gutes Herz.",
+      "chosenMethod": "contextual",
+      "oldStart": 582.19,
+      "oldEnd": 586.87,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 582.23,
+      "suggestedEnd": 586.81,
+      "alignmentProbability": 0.858,
+      "minWordProbability": 0.338,
+      "maxWordDuration": 0.6,
+      "flags": [],
+      "words": [
+        {
+          "word": " Frieren",
+          "start": 582.23,
+          "end": 582.73,
+          "probability": 0.338
+        },
+        {
+          "word": " du",
+          "start": 584.29,
+          "end": 584.63,
+          "probability": 0.691
+        },
+        {
+          "word": " hast",
+          "start": 584.63,
+          "end": 584.95,
+          "probability": 0.995
+        },
+        {
+          "word": " wirklich",
+          "start": 584.95,
+          "end": 585.55,
+          "probability": 0.99
+        },
+        {
+          "word": " ein",
+          "start": 585.55,
+          "end": 585.85,
+          "probability": 0.997
+        },
+        {
+          "word": " gutes",
+          "start": 585.85,
+          "end": 586.25,
+          "probability": 0.998
+        },
+        {
+          "word": " Herz",
+          "start": 586.25,
+          "end": 586.81,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1300087,
+      "speaker": "Fern",
+      "text": "Ich muss mich bei dir bedanken.",
+      "chosenMethod": "contextual",
+      "oldStart": 650.77,
+      "oldEnd": 653.09,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 650.81,
+      "suggestedEnd": 653.03,
+      "alignmentProbability": 0.968,
+      "minWordProbability": 0.843,
+      "maxWordDuration": 1.06,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ich",
+          "start": 650.81,
+          "end": 651.87,
+          "probability": 0.843
+        },
+        {
+          "word": " muss",
+          "start": 651.87,
+          "end": 652.05,
+          "probability": 0.997
+        },
+        {
+          "word": " mich",
+          "start": 652.05,
+          "end": 652.25,
+          "probability": 0.989
+        },
+        {
+          "word": " bei",
+          "start": 652.25,
+          "end": 652.37,
+          "probability": 0.998
+        },
+        {
+          "word": " dir",
+          "start": 652.37,
+          "end": 652.57,
+          "probability": 0.979
+        },
+        {
+          "word": " bedanken",
+          "start": 652.57,
+          "end": 653.03,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1300092,
+      "speaker": "Frieren",
+      "text": "Das reicht, Fern. Wir sind fertig.",
+      "chosenMethod": "contextual",
+      "oldStart": 694.07,
+      "oldEnd": 697.21,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 694.11,
+      "suggestedEnd": 697.15,
+      "alignmentProbability": 0.88,
+      "minWordProbability": 0.506,
+      "maxWordDuration": 0.94,
+      "flags": [],
+      "words": [
+        {
+          "word": " Das",
+          "start": 694.11,
+          "end": 695.05,
+          "probability": 0.506
+        },
+        {
+          "word": " reicht",
+          "start": 695.05,
+          "end": 695.31,
+          "probability": 0.995
+        },
+        {
+          "word": " Fern",
+          "start": 695.49,
+          "end": 695.59,
+          "probability": 0.788
+        },
+        {
+          "word": " Wir",
+          "start": 696.43,
+          "end": 696.57,
+          "probability": 0.995
+        },
+        {
+          "word": " sind",
+          "start": 696.57,
+          "end": 696.79,
+          "probability": 0.999
+        },
+        {
+          "word": " fertig",
+          "start": 696.79,
+          "end": 697.15,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1300093,
+      "speaker": "Dân làng",
+      "text": "Ihr habt mir wirklich sehr geholfen, und hier ist die versprochene Belohnung.",
+      "chosenMethod": "contextual",
+      "oldStart": 700.41,
+      "oldEnd": 705.67,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 700.45,
+      "suggestedEnd": 705.61,
+      "alignmentProbability": 0.988,
+      "minWordProbability": 0.954,
+      "maxWordDuration": 1.16,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ihr",
+          "start": 700.45,
+          "end": 701.61,
+          "probability": 0.954
+        },
+        {
+          "word": " habt",
+          "start": 701.61,
+          "end": 701.85,
+          "probability": 0.992
+        },
+        {
+          "word": " mir",
+          "start": 701.85,
+          "end": 702.05,
+          "probability": 0.981
+        },
+        {
+          "word": " wirklich",
+          "start": 702.05,
+          "end": 702.43,
+          "probability": 0.987
+        },
+        {
+          "word": " sehr",
+          "start": 702.43,
+          "end": 702.67,
+          "probability": 0.99
+        },
+        {
+          "word": " geholfen",
+          "start": 702.67,
+          "end": 703.31,
+          "probability": 1.0
+        },
+        {
+          "word": " und",
+          "start": 703.73,
+          "end": 703.87,
+          "probability": 0.988
+        },
+        {
+          "word": " hier",
+          "start": 703.87,
+          "end": 704.07,
+          "probability": 0.997
+        },
+        {
+          "word": " ist",
+          "start": 704.07,
+          "end": 704.29,
+          "probability": 0.992
+        },
+        {
+          "word": " die",
+          "start": 704.29,
+          "end": 704.51,
+          "probability": 0.998
+        },
+        {
+          "word": " versprochene",
+          "start": 704.51,
+          "end": 705.03,
+          "probability": 0.974
+        },
+        {
+          "word": " Belohnung",
+          "start": 705.03,
+          "end": 705.61,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "cueId": 1300096,
+      "speaker": "Fern",
+      "text": "Was war denn diesmal unsere Belohnung?",
+      "chosenMethod": "contextual",
+      "oldStart": 712.27,
+      "oldEnd": 714.89,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 712.31,
+      "suggestedEnd": 714.83,
+      "alignmentProbability": 0.922,
+      "minWordProbability": 0.634,
+      "maxWordDuration": 0.86,
+      "flags": [],
+      "words": [
+        {
+          "word": " Was",
+          "start": 712.31,
+          "end": 713.17,
+          "probability": 0.634
+        },
+        {
+          "word": " war",
+          "start": 713.17,
+          "end": 713.41,
+          "probability": 0.987
+        },
+        {
+          "word": " denn",
+          "start": 713.41,
+          "end": 713.59,
+          "probability": 0.968
+        },
+        {
+          "word": " diesmal",
+          "start": 713.59,
+          "end": 713.93,
+          "probability": 0.958
+        },
+        {
+          "word": " unsere",
+          "start": 713.93,
+          "end": 714.21,
+          "probability": 0.985
+        },
+        {
+          "word": " Belohnung",
+          "start": 714.21,
+          "end": 714.83,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1300098,
+      "speaker": "Frieren",
+      "text": "Probieren wir ihn später aus.",
+      "chosenMethod": "contextual",
+      "oldStart": 718.49,
+      "oldEnd": 720.21,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 718.53,
+      "suggestedEnd": 720.15,
+      "alignmentProbability": 0.955,
+      "minWordProbability": 0.864,
+      "maxWordDuration": 0.9,
+      "flags": [],
+      "words": [
+        {
+          "word": " Probieren",
+          "start": 718.53,
+          "end": 719.43,
+          "probability": 0.864
+        },
+        {
+          "word": " wir",
+          "start": 719.43,
+          "end": 719.49,
+          "probability": 0.951
+        },
+        {
+          "word": " ihn",
+          "start": 719.49,
+          "end": 719.59,
+          "probability": 0.978
+        },
+        {
+          "word": " später",
+          "start": 719.59,
+          "end": 719.87,
+          "probability": 0.998
+        },
+        {
+          "word": " aus",
+          "start": 719.87,
+          "end": 720.15,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "cueId": 1300102,
+      "speaker": "Frieren",
+      "text": "Sie zu sammeln ist eben ein Hobby.",
+      "chosenMethod": "contextual",
+      "oldStart": 733.39,
+      "oldEnd": 735.27,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 733.23,
+      "suggestedEnd": 735.21,
+      "alignmentProbability": 0.727,
+      "minWordProbability": 0.088,
+      "maxWordDuration": 0.78,
+      "flags": [],
+      "words": [
+        {
+          "word": " Sie",
+          "start": 733.23,
+          "end": 734.01,
+          "probability": 0.607
+        },
+        {
+          "word": " zu",
+          "start": 734.01,
+          "end": 734.19,
+          "probability": 0.646
+        },
+        {
+          "word": " sammeln",
+          "start": 734.19,
+          "end": 734.49,
+          "probability": 0.998
+        },
+        {
+          "word": " ist",
+          "start": 734.49,
+          "end": 734.67,
+          "probability": 0.783
+        },
+        {
+          "word": " eben",
+          "start": 734.67,
+          "end": 734.83,
+          "probability": 0.97
+        },
+        {
+          "word": " ein",
+          "start": 734.83,
+          "end": 735.01,
+          "probability": 0.088
+        },
+        {
+          "word": " Hobby",
+          "start": 735.01,
+          "end": 735.21,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1300105,
+      "speaker": "Frieren",
+      "text": "Manchmal mehr, manchmal weniger.",
+      "chosenMethod": "contextual",
+      "oldStart": 739.03,
+      "oldEnd": 740.87,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 739.07,
+      "suggestedEnd": 740.81,
+      "alignmentProbability": 0.937,
+      "minWordProbability": 0.758,
+      "maxWordDuration": 0.88,
+      "flags": [],
+      "words": [
+        {
+          "word": " Manchmal",
+          "start": 739.07,
+          "end": 739.95,
+          "probability": 0.758
+        },
+        {
+          "word": " mehr",
+          "start": 739.95,
+          "end": 740.13,
+          "probability": 0.994
+        },
+        {
+          "word": " manchmal",
+          "start": 740.23,
+          "end": 740.43,
+          "probability": 0.997
+        },
+        {
+          "word": " weniger",
+          "start": 740.43,
+          "end": 740.81,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1300110,
+      "speaker": "Bà lão thảo dược",
+      "text": "Um diese Sache darf ich euch bitten.",
+      "chosenMethod": "contextual",
+      "oldStart": 750.33,
+      "oldEnd": 752.75,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 750.37,
+      "suggestedEnd": 752.69,
+      "alignmentProbability": 0.86,
+      "minWordProbability": 0.265,
+      "maxWordDuration": 0.66,
+      "flags": [],
+      "words": [
+        {
+          "word": " Um",
+          "start": 750.37,
+          "end": 751.03,
+          "probability": 0.265
+        },
+        {
+          "word": " diese",
+          "start": 751.03,
+          "end": 751.45,
+          "probability": 0.925
+        },
+        {
+          "word": " Sache",
+          "start": 751.45,
+          "end": 751.75,
+          "probability": 0.927
+        },
+        {
+          "word": " darf",
+          "start": 751.75,
+          "end": 752.01,
+          "probability": 0.983
+        },
+        {
+          "word": " ich",
+          "start": 752.01,
+          "end": 752.19,
+          "probability": 0.997
+        },
+        {
+          "word": " euch",
+          "start": 752.19,
+          "end": 752.35,
+          "probability": 0.924
+        },
+        {
+          "word": " bitten",
+          "start": 752.35,
+          "end": 752.69,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1300117,
+      "speaker": "Fern",
+      "text": "Sie ist in einem fürchterlichen Zustand.",
+      "chosenMethod": "contextual",
+      "oldStart": 777.01,
+      "oldEnd": 779.99,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 777.05,
+      "suggestedEnd": 779.93,
+      "alignmentProbability": 0.948,
+      "minWordProbability": 0.74,
+      "maxWordDuration": 0.88,
+      "flags": [],
+      "words": [
+        {
+          "word": " Sie",
+          "start": 777.05,
+          "end": 777.93,
+          "probability": 0.74
+        },
+        {
+          "word": " ist",
+          "start": 777.93,
+          "end": 778.13,
+          "probability": 0.991
+        },
+        {
+          "word": " in",
+          "start": 778.13,
+          "end": 778.31,
+          "probability": 0.993
+        },
+        {
+          "word": " einem",
+          "start": 778.31,
+          "end": 778.51,
+          "probability": 0.996
+        },
+        {
+          "word": " fürchterlichen",
+          "start": 778.51,
+          "end": 779.23,
+          "probability": 0.986
+        },
+        {
+          "word": " Zustand",
+          "start": 779.23,
+          "end": 779.93,
+          "probability": 0.983
+        }
+      ]
+    },
+    {
+      "cueId": 1300127,
+      "speaker": "Frieren",
+      "text": "Daran ist er selbst schuld.",
+      "chosenMethod": "contextual",
+      "oldStart": 822.09,
+      "oldEnd": 824.15,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 822.13,
+      "suggestedEnd": 824.09,
+      "alignmentProbability": 0.927,
+      "minWordProbability": 0.831,
+      "maxWordDuration": 0.98,
+      "flags": [],
+      "words": [
+        {
+          "word": " Daran",
+          "start": 822.13,
+          "end": 823.11,
+          "probability": 0.887
+        },
+        {
+          "word": " ist",
+          "start": 823.11,
+          "end": 823.31,
+          "probability": 0.995
+        },
+        {
+          "word": " er",
+          "start": 823.31,
+          "end": 823.45,
+          "probability": 0.831
+        },
+        {
+          "word": " selbst",
+          "start": 823.45,
+          "end": 823.75,
+          "probability": 0.964
+        },
+        {
+          "word": " schuld",
+          "start": 823.75,
+          "end": 824.09,
+          "probability": 0.959
+        }
+      ]
+    },
+    {
+      "cueId": 1300128,
+      "speaker": "Frieren",
+      "text": "Er wollte doch immer im Rampenlicht stehen.",
+      "chosenMethod": "contextual",
+      "oldStart": 824.15,
+      "oldEnd": 826.79,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 824.11,
+      "suggestedEnd": 826.73,
+      "alignmentProbability": 0.966,
+      "minWordProbability": 0.811,
+      "maxWordDuration": 0.66,
+      "flags": [],
+      "words": [
+        {
+          "word": " Er",
+          "start": 824.11,
+          "end": 824.77,
+          "probability": 0.811
+        },
+        {
+          "word": " wollte",
+          "start": 824.77,
+          "end": 825.03,
+          "probability": 0.996
+        },
+        {
+          "word": " doch",
+          "start": 825.03,
+          "end": 825.25,
+          "probability": 0.989
+        },
+        {
+          "word": " immer",
+          "start": 825.25,
+          "end": 825.61,
+          "probability": 0.994
+        },
+        {
+          "word": " im",
+          "start": 825.61,
+          "end": 825.79,
+          "probability": 0.982
+        },
+        {
+          "word": " Rampenlicht",
+          "start": 825.79,
+          "end": 826.37,
+          "probability": 0.995
+        },
+        {
+          "word": " stehen",
+          "start": 826.37,
+          "end": 826.73,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "cueId": 1300130,
+      "speaker": "Himmel",
+      "text": "Ist das okay so? Sehe ich in der Pose nicht so gut aus?",
+      "chosenMethod": "contextual",
+      "oldStart": 833.03,
+      "oldEnd": 836.75,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 833.07,
+      "suggestedEnd": 836.69,
+      "alignmentProbability": 0.903,
+      "minWordProbability": 0.628,
+      "maxWordDuration": 1.04,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ist",
+          "start": 833.07,
+          "end": 834.11,
+          "probability": 0.663
+        },
+        {
+          "word": " das",
+          "start": 834.11,
+          "end": 834.31,
+          "probability": 0.992
+        },
+        {
+          "word": " okay",
+          "start": 834.31,
+          "end": 834.59,
+          "probability": 0.628
+        },
+        {
+          "word": " so",
+          "start": 834.59,
+          "end": 834.91,
+          "probability": 0.937
+        },
+        {
+          "word": " Sehe",
+          "start": 835.17,
+          "end": 835.37,
+          "probability": 0.873
+        },
+        {
+          "word": " ich",
+          "start": 835.37,
+          "end": 835.43,
+          "probability": 0.995
+        },
+        {
+          "word": " in",
+          "start": 835.43,
+          "end": 835.51,
+          "probability": 0.967
+        },
+        {
+          "word": " der",
+          "start": 835.51,
+          "end": 835.63,
+          "probability": 0.983
+        },
+        {
+          "word": " Pose",
+          "start": 835.63,
+          "end": 835.83,
+          "probability": 0.948
+        },
+        {
+          "word": " nicht",
+          "start": 835.83,
+          "end": 836.07,
+          "probability": 0.995
+        },
+        {
+          "word": " so",
+          "start": 836.07,
+          "end": 836.23,
+          "probability": 0.763
+        },
+        {
+          "word": " gut",
+          "start": 836.23,
+          "end": 836.43,
+          "probability": 0.998
+        },
+        {
+          "word": " aus",
+          "start": 836.43,
+          "end": 836.69,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1300131,
+      "speaker": "Frieren",
+      "text": "Er hat 18 Stunden lang über seine Pose gegrübelt und alle zur Weißglut gebracht.",
+      "chosenMethod": "contextual",
+      "oldStart": 836.75,
+      "oldEnd": 841.47,
+      "isChapterPick": false,
+      "isShortFocus": true,
+      "status": "verified",
+      "suggestedStart": 836.31,
+      "suggestedEnd": 841.41,
+      "alignmentProbability": 0.834,
+      "minWordProbability": 0.147,
+      "maxWordDuration": 0.88,
+      "flags": [],
+      "words": [
+        {
+          "word": " Er",
+          "start": 836.31,
+          "end": 837.19,
+          "probability": 0.147
+        },
+        {
+          "word": " hat",
+          "start": 837.19,
+          "end": 837.89,
+          "probability": 0.93
+        },
+        {
+          "word": " 18",
+          "start": 837.89,
+          "end": 838.29,
+          "probability": 0.845
+        },
+        {
+          "word": " Stunden",
+          "start": 838.29,
+          "end": 838.67,
+          "probability": 0.944
+        },
+        {
+          "word": " lang",
+          "start": 838.67,
+          "end": 838.87,
+          "probability": 0.963
+        },
+        {
+          "word": " über",
+          "start": 838.87,
+          "end": 839.05,
+          "probability": 0.984
+        },
+        {
+          "word": " seine",
+          "start": 839.05,
+          "end": 839.23,
+          "probability": 0.993
+        },
+        {
+          "word": " Pose",
+          "start": 839.23,
+          "end": 839.53,
+          "probability": 0.255
+        },
+        {
+          "word": " gegrübelt",
+          "start": 839.53,
+          "end": 840.05,
+          "probability": 0.761
+        },
+        {
+          "word": " und",
+          "start": 840.05,
+          "end": 840.23,
+          "probability": 0.937
+        },
+        {
+          "word": " alle",
+          "start": 840.23,
+          "end": 840.47,
+          "probability": 0.986
+        },
+        {
+          "word": " zur",
+          "start": 840.47,
+          "end": 840.67,
+          "probability": 0.974
+        },
+        {
+          "word": " Weißglut",
+          "start": 840.67,
+          "end": 841.09,
+          "probability": 0.955
+        },
+        {
+          "word": " gebracht",
+          "start": 841.09,
+          "end": 841.41,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "cueId": 1300135,
+      "speaker": "Frieren",
+      "text": "Dann wollen wir mal aufräumen.",
+      "chosenMethod": "contextual",
+      "oldStart": 856.05,
+      "oldEnd": 858.61,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 856.09,
+      "suggestedEnd": 858.55,
+      "alignmentProbability": 0.946,
+      "minWordProbability": 0.788,
+      "maxWordDuration": 1.18,
+      "flags": [],
+      "words": [
+        {
+          "word": " Dann",
+          "start": 856.09,
+          "end": 857.27,
+          "probability": 0.788
+        },
+        {
+          "word": " wollen",
+          "start": 857.27,
+          "end": 857.53,
+          "probability": 0.985
+        },
+        {
+          "word": " wir",
+          "start": 857.53,
+          "end": 857.71,
+          "probability": 0.996
+        },
+        {
+          "word": " mal",
+          "start": 857.71,
+          "end": 858.07,
+          "probability": 0.966
+        },
+        {
+          "word": " aufräumen",
+          "start": 858.07,
+          "end": 858.55,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "cueId": 1300136,
+      "speaker": "Bà lão thảo dược",
+      "text": "Sie waren eine so große Hilfe.",
+      "chosenMethod": "contextual",
+      "oldStart": 861.89,
+      "oldEnd": 864.63,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 861.93,
+      "suggestedEnd": 864.57,
+      "alignmentProbability": 0.958,
+      "minWordProbability": 0.785,
+      "maxWordDuration": 1.08,
+      "flags": [],
+      "words": [
+        {
+          "word": " Sie",
+          "start": 861.93,
+          "end": 863.01,
+          "probability": 0.785
+        },
+        {
+          "word": " waren",
+          "start": 863.01,
+          "end": 863.29,
+          "probability": 0.994
+        },
+        {
+          "word": " eine",
+          "start": 863.29,
+          "end": 863.63,
+          "probability": 0.992
+        },
+        {
+          "word": " so",
+          "start": 863.63,
+          "end": 863.85,
+          "probability": 0.99
+        },
+        {
+          "word": " große",
+          "start": 863.85,
+          "end": 864.19,
+          "probability": 0.998
+        },
+        {
+          "word": " Hilfe",
+          "start": 864.19,
+          "end": 864.57,
+          "probability": 0.988
+        }
+      ]
+    },
+    {
+      "cueId": 1300146,
+      "speaker": "Frieren",
+      "text": "Weiß ich nicht. Ich hab sie noch nie gesehen.",
+      "chosenMethod": "contextual",
+      "oldStart": 893.57,
+      "oldEnd": 896.09,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 893.59,
+      "suggestedEnd": 896.03,
+      "alignmentProbability": 0.946,
+      "minWordProbability": 0.807,
+      "maxWordDuration": 0.88,
+      "flags": [],
+      "words": [
+        {
+          "word": " Weiß",
+          "start": 893.59,
+          "end": 894.47,
+          "probability": 0.807
+        },
+        {
+          "word": " ich",
+          "start": 894.47,
+          "end": 894.61,
+          "probability": 0.953
+        },
+        {
+          "word": " nicht",
+          "start": 894.61,
+          "end": 894.81,
+          "probability": 0.988
+        },
+        {
+          "word": " Ich",
+          "start": 895.09,
+          "end": 895.25,
+          "probability": 0.993
+        },
+        {
+          "word": " hab",
+          "start": 895.25,
+          "end": 895.35,
+          "probability": 0.901
+        },
+        {
+          "word": " sie",
+          "start": 895.35,
+          "end": 895.47,
+          "probability": 0.891
+        },
+        {
+          "word": " noch",
+          "start": 895.47,
+          "end": 895.61,
+          "probability": 0.992
+        },
+        {
+          "word": " nie",
+          "start": 895.61,
+          "end": 895.77,
+          "probability": 0.995
+        },
+        {
+          "word": " gesehen",
+          "start": 895.77,
+          "end": 896.03,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "cueId": 1300158,
+      "speaker": "Frieren",
+      "text": "Du verheimlichst mir doch was.",
+      "chosenMethod": "contextual",
+      "oldStart": 949.35,
+      "oldEnd": 951.65,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 949.39,
+      "suggestedEnd": 951.59,
+      "alignmentProbability": 0.906,
+      "minWordProbability": 0.802,
+      "maxWordDuration": 1.16,
+      "flags": [],
+      "words": [
+        {
+          "word": " Du",
+          "start": 949.39,
+          "end": 950.55,
+          "probability": 0.933
+        },
+        {
+          "word": " verheimlichst",
+          "start": 950.55,
+          "end": 951.03,
+          "probability": 0.814
+        },
+        {
+          "word": " mir",
+          "start": 951.03,
+          "end": 951.19,
+          "probability": 0.987
+        },
+        {
+          "word": " doch",
+          "start": 951.19,
+          "end": 951.37,
+          "probability": 0.994
+        },
+        {
+          "word": " was",
+          "start": 951.37,
+          "end": 951.59,
+          "probability": 0.802
+        }
+      ]
+    },
+    {
+      "cueId": 1300159,
+      "speaker": "Frieren",
+      "text": "Zeig mal, ich werd auch nicht sauer.",
+      "chosenMethod": "contextual",
+      "oldStart": 952.23,
+      "oldEnd": 954.51,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 952.27,
+      "suggestedEnd": 954.45,
+      "alignmentProbability": 0.943,
+      "minWordProbability": 0.842,
+      "maxWordDuration": 1.0,
+      "flags": [],
+      "words": [
+        {
+          "word": " Zeig",
+          "start": 952.27,
+          "end": 953.27,
+          "probability": 0.921
+        },
+        {
+          "word": " mal",
+          "start": 953.27,
+          "end": 953.41,
+          "probability": 0.962
+        },
+        {
+          "word": " ich",
+          "start": 953.47,
+          "end": 953.59,
+          "probability": 0.997
+        },
+        {
+          "word": " werd",
+          "start": 953.59,
+          "end": 953.75,
+          "probability": 0.888
+        },
+        {
+          "word": " auch",
+          "start": 953.75,
+          "end": 953.95,
+          "probability": 0.842
+        },
+        {
+          "word": " nicht",
+          "start": 953.95,
+          "end": 954.07,
+          "probability": 0.993
+        },
+        {
+          "word": " sauer",
+          "start": 954.07,
+          "end": 954.45,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "cueId": 1300164,
+      "speaker": "Fern",
+      "text": "Meinst du das wirklich ernst?",
+      "chosenMethod": "contextual",
+      "oldStart": 971.93,
+      "oldEnd": 973.95,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 971.97,
+      "suggestedEnd": 973.89,
+      "alignmentProbability": 0.894,
+      "minWordProbability": 0.718,
+      "maxWordDuration": 0.98,
+      "flags": [],
+      "words": [
+        {
+          "word": " Meinst",
+          "start": 971.97,
+          "end": 972.95,
+          "probability": 0.718
+        },
+        {
+          "word": " du",
+          "start": 972.95,
+          "end": 973.07,
+          "probability": 0.926
+        },
+        {
+          "word": " das",
+          "start": 973.07,
+          "end": 973.29,
+          "probability": 0.979
+        },
+        {
+          "word": " wirklich",
+          "start": 973.29,
+          "end": 973.61,
+          "probability": 0.997
+        },
+        {
+          "word": " ernst",
+          "start": 973.61,
+          "end": 973.89,
+          "probability": 0.848
+        }
+      ]
+    },
+    {
+      "cueId": 1300168,
+      "speaker": "Frieren",
+      "text": "Aber es lohnt sich, danach zu suchen.",
+      "chosenMethod": "contextual",
+      "oldStart": 978.91,
+      "oldEnd": 981.21,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 978.95,
+      "suggestedEnd": 981.15,
+      "alignmentProbability": 0.963,
+      "minWordProbability": 0.818,
+      "maxWordDuration": 0.98,
+      "flags": [],
+      "words": [
+        {
+          "word": " Aber",
+          "start": 978.95,
+          "end": 979.93,
+          "probability": 0.818
+        },
+        {
+          "word": " es",
+          "start": 979.93,
+          "end": 980.11,
+          "probability": 0.996
+        },
+        {
+          "word": " lohnt",
+          "start": 980.11,
+          "end": 980.31,
+          "probability": 0.999
+        },
+        {
+          "word": " sich",
+          "start": 980.31,
+          "end": 980.49,
+          "probability": 0.98
+        },
+        {
+          "word": " danach",
+          "start": 980.51,
+          "end": 980.69,
+          "probability": 0.955
+        },
+        {
+          "word": " zu",
+          "start": 980.69,
+          "end": 980.93,
+          "probability": 0.995
+        },
+        {
+          "word": " suchen",
+          "start": 980.93,
+          "end": 981.15,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1300172,
+      "speaker": "Frieren",
+      "text": "Das mache ich eher für mich.",
+      "chosenMethod": "contextual",
+      "oldStart": 992.01,
+      "oldEnd": 994.51,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 992.05,
+      "suggestedEnd": 994.45,
+      "alignmentProbability": 0.895,
+      "minWordProbability": 0.579,
+      "maxWordDuration": 1.3,
+      "flags": [],
+      "words": [
+        {
+          "word": " Das",
+          "start": 992.05,
+          "end": 993.35,
+          "probability": 0.829
+        },
+        {
+          "word": " mache",
+          "start": 993.35,
+          "end": 993.61,
+          "probability": 0.579
+        },
+        {
+          "word": " ich",
+          "start": 993.61,
+          "end": 993.77,
+          "probability": 0.999
+        },
+        {
+          "word": " eher",
+          "start": 993.77,
+          "end": 993.93,
+          "probability": 0.964
+        },
+        {
+          "word": " für",
+          "start": 993.93,
+          "end": 994.19,
+          "probability": 0.999
+        },
+        {
+          "word": " mich",
+          "start": 994.19,
+          "end": 994.45,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1300176,
+      "speaker": "Frieren",
+      "text": "Wir sollten so langsam den Suchradius erweitern.",
+      "chosenMethod": "contextual",
+      "oldStart": 1054.65,
+      "oldEnd": 1057.51,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1054.69,
+      "suggestedEnd": 1057.45,
+      "alignmentProbability": 0.963,
+      "minWordProbability": 0.8,
+      "maxWordDuration": 0.66,
+      "flags": [],
+      "words": [
+        {
+          "word": " Wir",
+          "start": 1054.69,
+          "end": 1055.35,
+          "probability": 0.8
+        },
+        {
+          "word": " sollten",
+          "start": 1055.35,
+          "end": 1055.65,
+          "probability": 0.991
+        },
+        {
+          "word": " so",
+          "start": 1055.65,
+          "end": 1055.87,
+          "probability": 0.981
+        },
+        {
+          "word": " langsam",
+          "start": 1055.87,
+          "end": 1056.15,
+          "probability": 0.998
+        },
+        {
+          "word": " den",
+          "start": 1056.15,
+          "end": 1056.33,
+          "probability": 0.994
+        },
+        {
+          "word": " Suchradius",
+          "start": 1056.33,
+          "end": 1056.87,
+          "probability": 0.981
+        },
+        {
+          "word": " erweitern",
+          "start": 1056.87,
+          "end": 1057.45,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1300189,
+      "speaker": "Bà lão thảo dược",
+      "text": "Aber für Frieren sieht die Sache wahrscheinlich ganz anders aus.",
+      "chosenMethod": "contextual",
+      "oldStart": 1117.33,
+      "oldEnd": 1121.55,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1117.37,
+      "suggestedEnd": 1121.49,
+      "alignmentProbability": 0.899,
+      "minWordProbability": 0.526,
+      "maxWordDuration": 1.12,
+      "flags": [],
+      "words": [
+        {
+          "word": " Aber",
+          "start": 1117.37,
+          "end": 1118.49,
+          "probability": 0.873
+        },
+        {
+          "word": " für",
+          "start": 1118.49,
+          "end": 1119.05,
+          "probability": 0.526
+        },
+        {
+          "word": " Frieren",
+          "start": 1119.05,
+          "end": 1119.49,
+          "probability": 0.815
+        },
+        {
+          "word": " sieht",
+          "start": 1119.49,
+          "end": 1119.61,
+          "probability": 0.98
+        },
+        {
+          "word": " die",
+          "start": 1119.61,
+          "end": 1119.83,
+          "probability": 0.974
+        },
+        {
+          "word": " Sache",
+          "start": 1119.83,
+          "end": 1119.99,
+          "probability": 0.998
+        },
+        {
+          "word": " wahrscheinlich",
+          "start": 1119.99,
+          "end": 1120.49,
+          "probability": 0.848
+        },
+        {
+          "word": " ganz",
+          "start": 1120.49,
+          "end": 1120.85,
+          "probability": 0.975
+        },
+        {
+          "word": " anders",
+          "start": 1120.85,
+          "end": 1121.13,
+          "probability": 0.999
+        },
+        {
+          "word": " aus",
+          "start": 1121.13,
+          "end": 1121.49,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1300194,
+      "speaker": "Frieren",
+      "text": "Du machst dir viele Gedanken.",
+      "chosenMethod": "contextual",
+      "oldStart": 1161.43,
+      "oldEnd": 1163.53,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1161.47,
+      "suggestedEnd": 1163.47,
+      "alignmentProbability": 0.939,
+      "minWordProbability": 0.847,
+      "maxWordDuration": 1.02,
+      "flags": [],
+      "words": [
+        {
+          "word": " Du",
+          "start": 1161.47,
+          "end": 1162.49,
+          "probability": 0.871
+        },
+        {
+          "word": " machst",
+          "start": 1162.49,
+          "end": 1162.71,
+          "probability": 0.995
+        },
+        {
+          "word": " dir",
+          "start": 1162.71,
+          "end": 1162.85,
+          "probability": 0.847
+        },
+        {
+          "word": " viele",
+          "start": 1162.85,
+          "end": 1163.07,
+          "probability": 0.989
+        },
+        {
+          "word": " Gedanken",
+          "start": 1163.07,
+          "end": 1163.47,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "cueId": 1300195,
+      "speaker": "Frieren",
+      "text": "Ich kann mir vorstellen, worum es dir geht.",
+      "chosenMethod": "contextual",
+      "oldStart": 1163.83,
+      "oldEnd": 1166.19,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1163.87,
+      "suggestedEnd": 1166.13,
+      "alignmentProbability": 0.915,
+      "minWordProbability": 0.602,
+      "maxWordDuration": 0.92,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ich",
+          "start": 1163.87,
+          "end": 1164.79,
+          "probability": 0.798
+        },
+        {
+          "word": " kann",
+          "start": 1164.79,
+          "end": 1164.95,
+          "probability": 0.992
+        },
+        {
+          "word": " mir",
+          "start": 1164.95,
+          "end": 1165.09,
+          "probability": 0.966
+        },
+        {
+          "word": " vorstellen",
+          "start": 1165.09,
+          "end": 1165.47,
+          "probability": 0.996
+        },
+        {
+          "word": " worum",
+          "start": 1165.55,
+          "end": 1165.75,
+          "probability": 0.997
+        },
+        {
+          "word": " es",
+          "start": 1165.75,
+          "end": 1165.83,
+          "probability": 0.972
+        },
+        {
+          "word": " dir",
+          "start": 1165.83,
+          "end": 1165.91,
+          "probability": 0.602
+        },
+        {
+          "word": " geht",
+          "start": 1165.91,
+          "end": 1166.13,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "cueId": 1300198,
+      "speaker": "Frieren",
+      "text": "Ich möchte nur noch ein bisschen länger suchen.",
+      "chosenMethod": "contextual",
+      "oldStart": 1174.21,
+      "oldEnd": 1176.87,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1174.25,
+      "suggestedEnd": 1176.81,
+      "alignmentProbability": 0.969,
+      "minWordProbability": 0.819,
+      "maxWordDuration": 0.84,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ich",
+          "start": 1174.25,
+          "end": 1175.09,
+          "probability": 0.819
+        },
+        {
+          "word": " möchte",
+          "start": 1175.09,
+          "end": 1175.35,
+          "probability": 0.995
+        },
+        {
+          "word": " nur",
+          "start": 1175.35,
+          "end": 1175.55,
+          "probability": 0.985
+        },
+        {
+          "word": " noch",
+          "start": 1175.55,
+          "end": 1175.73,
+          "probability": 0.993
+        },
+        {
+          "word": " ein",
+          "start": 1175.73,
+          "end": 1175.89,
+          "probability": 0.985
+        },
+        {
+          "word": " bisschen",
+          "start": 1175.89,
+          "end": 1176.21,
+          "probability": 0.984
+        },
+        {
+          "word": " länger",
+          "start": 1176.21,
+          "end": 1176.51,
+          "probability": 0.997
+        },
+        {
+          "word": " suchen",
+          "start": 1176.51,
+          "end": 1176.81,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "cueId": 1300201,
+      "speaker": "Fern",
+      "text": "Hast du überhaupt vor, die Suche aufzugeben?",
+      "chosenMethod": "contextual",
+      "oldStart": 1183.99,
+      "oldEnd": 1187.41,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1184.03,
+      "suggestedEnd": 1187.35,
+      "alignmentProbability": 0.932,
+      "minWordProbability": 0.656,
+      "maxWordDuration": 0.94,
+      "flags": [],
+      "words": [
+        {
+          "word": " Hast",
+          "start": 1184.03,
+          "end": 1184.97,
+          "probability": 0.656
+        },
+        {
+          "word": " du",
+          "start": 1184.97,
+          "end": 1185.23,
+          "probability": 0.917
+        },
+        {
+          "word": " überhaupt",
+          "start": 1185.23,
+          "end": 1185.71,
+          "probability": 0.989
+        },
+        {
+          "word": " vor",
+          "start": 1185.71,
+          "end": 1185.99,
+          "probability": 0.988
+        },
+        {
+          "word": " die",
+          "start": 1186.23,
+          "end": 1186.37,
+          "probability": 0.989
+        },
+        {
+          "word": " Suche",
+          "start": 1186.37,
+          "end": 1186.67,
+          "probability": 0.993
+        },
+        {
+          "word": " aufzugeben",
+          "start": 1186.67,
+          "end": 1187.35,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "cueId": 1300203,
+      "speaker": "Frieren",
+      "text": "Los, wir werden ihrer Spur folgen.",
+      "chosenMethod": "contextual",
+      "oldStart": 1198.79,
+      "oldEnd": 1200.61,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 1198.29,
+      "suggestedEnd": 1200.71,
+      "alignmentProbability": 0.944,
+      "minWordProbability": 0.787,
+      "maxWordDuration": 1.1,
+      "flags": [
+        "collapsed_words"
+      ],
+      "words": [
+        {
+          "word": " Los",
+          "start": 1198.29,
+          "end": 1199.39,
+          "probability": 0.787
+        },
+        {
+          "word": " wir",
+          "start": 1199.57,
+          "end": 1199.57,
+          "probability": 0.996
+        },
+        {
+          "word": " werden",
+          "start": 1199.57,
+          "end": 1199.75,
+          "probability": 0.985
+        },
+        {
+          "word": " ihrer",
+          "start": 1199.75,
+          "end": 1199.97,
+          "probability": 0.903
+        },
+        {
+          "word": " Spur",
+          "start": 1199.97,
+          "end": 1200.29,
+          "probability": 0.993
+        },
+        {
+          "word": " folgen",
+          "start": 1200.29,
+          "end": 1200.71,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1300204,
+      "speaker": "Frieren",
+      "text": "Das ist nur ein Zeitvertreib.",
+      "chosenMethod": "contextual",
+      "oldStart": 1233.99,
+      "oldEnd": 1236.57,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1234.03,
+      "suggestedEnd": 1236.51,
+      "alignmentProbability": 0.777,
+      "minWordProbability": 0.2,
+      "maxWordDuration": 1.5,
+      "flags": [],
+      "words": [
+        {
+          "word": " Das",
+          "start": 1234.03,
+          "end": 1235.53,
+          "probability": 0.2
+        },
+        {
+          "word": " ist",
+          "start": 1235.53,
+          "end": 1235.71,
+          "probability": 0.885
+        },
+        {
+          "word": " nur",
+          "start": 1235.71,
+          "end": 1235.87,
+          "probability": 0.854
+        },
+        {
+          "word": " ein",
+          "start": 1235.87,
+          "end": 1236.01,
+          "probability": 0.963
+        },
+        {
+          "word": " Zeitvertreib",
+          "start": 1236.01,
+          "end": 1236.51,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "cueId": 1300205,
+      "speaker": "Fern",
+      "text": "So sieht das aber nicht aus.",
+      "chosenMethod": "contextual",
+      "oldStart": 1236.57,
+      "oldEnd": 1238.23,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1236.33,
+      "suggestedEnd": 1238.17,
+      "alignmentProbability": 0.935,
+      "minWordProbability": 0.734,
+      "maxWordDuration": 0.82,
+      "flags": [],
+      "words": [
+        {
+          "word": " So",
+          "start": 1236.33,
+          "end": 1237.15,
+          "probability": 0.734
+        },
+        {
+          "word": " sieht",
+          "start": 1237.15,
+          "end": 1237.33,
+          "probability": 0.994
+        },
+        {
+          "word": " das",
+          "start": 1237.33,
+          "end": 1237.53,
+          "probability": 0.938
+        },
+        {
+          "word": " aber",
+          "start": 1237.53,
+          "end": 1237.71,
+          "probability": 0.955
+        },
+        {
+          "word": " nicht",
+          "start": 1237.71,
+          "end": 1237.95,
+          "probability": 0.994
+        },
+        {
+          "word": " aus",
+          "start": 1237.95,
+          "end": 1238.17,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1300222,
+      "speaker": "Himmel",
+      "text": "Frieren, ich werde sie dir eines Tages zeigen.",
+      "chosenMethod": "contextual",
+      "oldStart": 1351.03,
+      "oldEnd": 1353.49,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 1350.53,
+      "suggestedEnd": 1353.57,
+      "alignmentProbability": 0.845,
+      "minWordProbability": 0.011,
+      "maxWordDuration": 1.06,
+      "flags": [
+        "weak_individual_word"
+      ],
+      "words": [
+        {
+          "word": " Frieren",
+          "start": 1350.53,
+          "end": 1350.57,
+          "probability": 0.011
+        },
+        {
+          "word": " ich",
+          "start": 1351.03,
+          "end": 1352.09,
+          "probability": 0.882
+        },
+        {
+          "word": " werde",
+          "start": 1352.09,
+          "end": 1352.31,
+          "probability": 0.974
+        },
+        {
+          "word": " sie",
+          "start": 1352.31,
+          "end": 1352.49,
+          "probability": 0.949
+        },
+        {
+          "word": " dir",
+          "start": 1352.49,
+          "end": 1352.59,
+          "probability": 0.965
+        },
+        {
+          "word": " eines",
+          "start": 1352.59,
+          "end": 1352.87,
+          "probability": 0.985
+        },
+        {
+          "word": " Tages",
+          "start": 1352.87,
+          "end": 1353.23,
+          "probability": 0.995
+        },
+        {
+          "word": " zeigen",
+          "start": 1353.23,
+          "end": 1353.57,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1300223,
+      "speaker": "Frieren",
+      "text": "Gut, wenn es sich ergibt.",
+      "chosenMethod": "contextual",
+      "oldStart": 1354.35,
+      "oldEnd": 1357.27,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1354.39,
+      "suggestedEnd": 1357.21,
+      "alignmentProbability": 0.889,
+      "minWordProbability": 0.73,
+      "maxWordDuration": 1.16,
+      "flags": [],
+      "words": [
+        {
+          "word": " Gut",
+          "start": 1354.39,
+          "end": 1355.55,
+          "probability": 0.73
+        },
+        {
+          "word": " wenn",
+          "start": 1356.45,
+          "end": 1356.51,
+          "probability": 0.994
+        },
+        {
+          "word": " es",
+          "start": 1356.51,
+          "end": 1356.63,
+          "probability": 0.995
+        },
+        {
+          "word": " sich",
+          "start": 1356.63,
+          "end": 1356.85,
+          "probability": 0.73
+        },
+        {
+          "word": " ergibt",
+          "start": 1356.85,
+          "end": 1357.21,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "cueId": 1300226,
+      "speaker": "Fern",
+      "text": "Wir haben es tatsächlich gefunden.",
+      "chosenMethod": "contextual",
+      "oldStart": 1381.81,
+      "oldEnd": 1384.65,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1381.85,
+      "suggestedEnd": 1384.59,
+      "alignmentProbability": 0.807,
+      "minWordProbability": 0.288,
+      "maxWordDuration": 1.14,
+      "flags": [],
+      "words": [
+        {
+          "word": " Wir",
+          "start": 1381.85,
+          "end": 1382.99,
+          "probability": 0.766
+        },
+        {
+          "word": " haben",
+          "start": 1382.99,
+          "end": 1383.23,
+          "probability": 0.994
+        },
+        {
+          "word": " es",
+          "start": 1383.23,
+          "end": 1383.43,
+          "probability": 0.994
+        },
+        {
+          "word": " tatsächlich",
+          "start": 1383.43,
+          "end": 1383.99,
+          "probability": 0.288
+        },
+        {
+          "word": " gefunden",
+          "start": 1383.99,
+          "end": 1384.59,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "cueId": 1300233,
+      "speaker": "Fern",
+      "text": "Es hätte nicht Magie sein müssen.",
+      "chosenMethod": "contextual",
+      "oldStart": 1408.91,
+      "oldEnd": 1411.11,
+      "isChapterPick": true,
+      "isShortFocus": true,
+      "status": "verified",
+      "suggestedStart": 1408.95,
+      "suggestedEnd": 1411.05,
+      "alignmentProbability": 0.952,
+      "minWordProbability": 0.779,
+      "maxWordDuration": 0.78,
+      "flags": [],
+      "words": [
+        {
+          "word": " Es",
+          "start": 1408.95,
+          "end": 1409.73,
+          "probability": 0.779
+        },
+        {
+          "word": " hätte",
+          "start": 1409.73,
+          "end": 1410.01,
+          "probability": 0.994
+        },
+        {
+          "word": " nicht",
+          "start": 1410.01,
+          "end": 1410.25,
+          "probability": 0.993
+        },
+        {
+          "word": " Magie",
+          "start": 1410.25,
+          "end": 1410.63,
+          "probability": 0.95
+        },
+        {
+          "word": " sein",
+          "start": 1410.63,
+          "end": 1410.79,
+          "probability": 1.0
+        },
+        {
+          "word": " müssen",
+          "start": 1410.79,
+          "end": 1411.05,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "cueId": 1300234,
+      "speaker": "Frieren",
+      "text": "Dennoch, du hast die Magie gewählt.",
+      "chosenMethod": "contextual",
+      "oldStart": 1411.53,
+      "oldEnd": 1415.37,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1411.57,
+      "suggestedEnd": 1415.31,
+      "alignmentProbability": 0.938,
+      "minWordProbability": 0.767,
+      "maxWordDuration": 1.72,
+      "flags": [],
+      "words": [
+        {
+          "word": " Dennoch",
+          "start": 1411.57,
+          "end": 1413.29,
+          "probability": 0.874
+        },
+        {
+          "word": " du",
+          "start": 1413.95,
+          "end": 1414.15,
+          "probability": 0.767
+        },
+        {
+          "word": " hast",
+          "start": 1414.15,
+          "end": 1414.37,
+          "probability": 0.998
+        },
+        {
+          "word": " die",
+          "start": 1414.37,
+          "end": 1414.59,
+          "probability": 0.995
+        },
+        {
+          "word": " Magie",
+          "start": 1414.59,
+          "end": 1414.87,
+          "probability": 0.997
+        },
+        {
+          "word": " gewählt",
+          "start": 1414.87,
+          "end": 1415.31,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "cueId": 1300237,
+      "speaker": "Bà lão thảo dược",
+      "text": "Das ist wirklich wunderschön.",
+      "chosenMethod": "contextual",
+      "oldStart": 1435.55,
+      "oldEnd": 1438.09,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1435.59,
+      "suggestedEnd": 1438.03,
+      "alignmentProbability": 0.948,
+      "minWordProbability": 0.815,
+      "maxWordDuration": 1.12,
+      "flags": [],
+      "words": [
+        {
+          "word": " Das",
+          "start": 1435.59,
+          "end": 1436.71,
+          "probability": 0.815
+        },
+        {
+          "word": " ist",
+          "start": 1436.71,
+          "end": 1436.89,
+          "probability": 0.998
+        },
+        {
+          "word": " wirklich",
+          "start": 1436.89,
+          "end": 1437.27,
+          "probability": 0.982
+        },
+        {
+          "word": " wunderschön",
+          "start": 1437.27,
+          "end": 1438.03,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1300243,
+      "speaker": "Frieren",
+      "text": "Wollen wir aufbrechen?",
+      "chosenMethod": "contextual",
+      "oldStart": 1454.89,
+      "oldEnd": 1457.13,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1454.93,
+      "suggestedEnd": 1457.07,
+      "alignmentProbability": 0.943,
+      "minWordProbability": 0.836,
+      "maxWordDuration": 1.36,
+      "flags": [],
+      "words": [
+        {
+          "word": " Wollen",
+          "start": 1454.93,
+          "end": 1456.29,
+          "probability": 0.836
+        },
+        {
+          "word": " wir",
+          "start": 1456.29,
+          "end": 1456.47,
+          "probability": 0.997
+        },
+        {
+          "word": " aufbrechen",
+          "start": 1456.47,
+          "end": 1457.07,
+          "probability": 0.996
+        }
+      ]
+    }
+  ]
+}

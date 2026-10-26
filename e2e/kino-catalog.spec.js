@@ -8,12 +8,12 @@ async function openCatalog(page) {
 }
 
 test('Kino starts with a grid of covers, titles and level meta; a film opens its own parts', async ({ page }) => {
-  test.setTimeout(120000); // vòng lặp mở đủ 21 phim, gồm K-On và Delicious in Dungeon
+  test.setTimeout(120000); // vòng lặp mở đủ 23 phim, gồm Frieren Tập 2 và Sakura Tập 2
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
   await page.setViewportSize({ width: 1440, height: 1000 });
   await openCatalog(page);
-  await expect(page.locator('.kino-film-card')).toHaveCount(21);
+  await expect(page.locator('.kino-film-card')).toHaveCount(23);
   await expect(page.locator('#kinoDiscovery')).toBeHidden();
   await expect(page.locator('#kinoPeppaChapters')).toBeHidden();
   for (const card of await page.locator('.kino-film-card').all()) {

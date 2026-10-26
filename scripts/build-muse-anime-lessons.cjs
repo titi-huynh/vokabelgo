@@ -3,8 +3,10 @@ const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const definitions = [
-  { key: 'k_on_s01e01', stem: 'k-on-s01e01', symbol: 'K_ON_S01E01', alias: 'kon', name: 'K-On!', icon: '🎸', level: 'Gợi ý A2–B1', duration: 1451.744 },
-  { key: 'delicious_in_dungeon_s01e01', stem: 'delicious-in-dungeon-s01e01', symbol: 'DELICIOUS_IN_DUNGEON_S01E01', alias: 'dungeon', name: 'Delicious in Dungeon', icon: '🍲', level: 'Gợi ý B1–B2', duration: 1607.488 },
+  { key: 'k_on_s01e01', stem: 'k-on-s01e01', symbol: 'K_ON_S01E01', alias: 'kon', name: 'K-On!', icon: '🎸', level: 'Gợi ý A2–B1', duration: 1451.744, episode: 1, sourceDir: 'qa/kino-alignment/muse-two-films' },
+  { key: 'delicious_in_dungeon_s01e01', stem: 'delicious-in-dungeon-s01e01', symbol: 'DELICIOUS_IN_DUNGEON_S01E01', alias: 'dungeon', name: 'Delicious in Dungeon', icon: '🍲', level: 'Gợi ý B1–B2', duration: 1607.488, episode: 1, sourceDir: 'qa/kino-alignment/muse-two-films' },
+  { key: 'frieren_s01e02', stem: 'frieren-s01e02', symbol: 'FRIEREN_S01E02', alias: 'frieren2', name: 'Frieren', icon: '🪄', level: 'Gợi ý B1–B2', duration: 1560.102313, episode: 2, sourceDir: 'qa/kino-alignment/season1-episode2' },
+  { key: 'sakura_s01e02', stem: 'sakura-s01e02', symbol: 'SAKURA_S01E02', alias: 'sakura2', name: 'Cardcaptor Sakura', icon: '🌸', level: 'Gợi ý A2–B1', duration: 1507.160816, episode: 2, sourceDir: 'qa/kino-alignment/season1-episode2' },
 ];
 function ensure(condition, message) { if (!condition) throw new Error(message); }
 function text(value, label) {
@@ -13,6 +15,8 @@ function text(value, label) {
 }
 function build(source, definition) {
   const { key, symbol, duration, name, alias, icon } = definition;
+  const ep = definition.episode || 1;
+  const sourceDir = (definition.sourceDir || 'qa/kino-alignment/muse-two-films').replace(/\\/g, '/').replace(/\/$/, '');
   ensure(source.videoKey === key, `Wrong movie key: ${source.videoKey}`);
   ensure(source.complete !== false && source.partial !== true && source.draft !== true, `${key}: partial/draft inputs cannot become a lesson`);
   ensure(['de', 'German', 'Deutsch'].includes(source.language), `${key}: verify German speech before import`);
@@ -31,7 +35,7 @@ function build(source, definition) {
     const excluded = cue.practiceExcluded || exclusions.some(range => range.start < cue.end && range.end > cue.start);
     return { id: cue.id, parentId: cue.id, start: cue.start, end: cue.end,
       speaker: cue.speaker?.trim() || 'Nhân vật', text: text(cue.text, 'German dialogue'), vi: text(cue.vi, 'Vietnamese dialogue'),
-      sourceEvidence: `qa/kino-alignment/muse-two-films/${key}.json`,
+      sourceEvidence: `${sourceDir}/${key}.json`,
       ...(reviewNeeded ? { reviewNeeded: true, practiceExcluded: true } : excluded ? { practiceExcluded: true } : {}),
     };
   });
@@ -59,7 +63,7 @@ function build(source, definition) {
   });
   for (const cue of units) ensure(chapters.filter(c => cue.start >= c.start && cue.end <= c.end).length === 1, `${key}/${cue.id}: dialogue must belong to exactly one chapter`);
   ensure(units[0].start < duration * .2 && units.at(-1).end > duration * .8, `${key}: dialogue must cover the episode`);
-  const deck = `🎬 Video: ${name} – Tập 1`;
+  const deck = `🎬 Video: ${name} – Tập ${ep}`;
   const slugs = new Set();
   ensure(source.flashcards?.length >= 12, `${key}: missing vocabulary selection`);
   const flashcards = source.flashcards.map((card, index) => {
@@ -76,11 +80,11 @@ function build(source, definition) {
   });
   const clock = seconds => `${Math.floor(Math.round(seconds) / 60)}:${String(Math.round(seconds) % 60).padStart(2, '0')}`;
   const lesson = {
-    video: { key, series: name, seriesIcon: icon, episodeTitle: `${name} · Tập 1`, icon, title: `${icon} ${name} · Tập 1`,
+    video: { key, series: name, seriesIcon: icon, episodeTitle: `${name} · Tập ${ep}`, icon, title: `${icon} ${name} · Tập ${ep}`,
       src: `video/${key}-web-v1.mp4`, storageKey: `kino_calibrated_${key}_v1`, syncKey: `vokabelgo_kino_perfected_${key}`,
       progressKey: `vokabelgo_kino_progress_${key}`, fullDurationStr: clock(duration), flashcardDeck: deck },
-    chapterData: { title: `${name} · Tập 1`, catalogTitle: `${name} · Tập 1`, series: `${name.toUpperCase()} · TẬP 1`,
-      summary: text(source.summary || `${name} tập 1 · Xem phim, nghe hội thoại Đức và luyện những câu dùng được trong từng tình huống.`, 'film summary')
+    chapterData: { title: `${name} · Tập ${ep}`, catalogTitle: `${name} · Tập ${ep}`, series: `${name.toUpperCase()} · TẬP ${ep}`,
+      summary: text(source.summary || `${name} tập ${ep} · Xem phim, nghe hội thoại Đức và luyện những câu dùng được trong từng tình huống.`, 'film summary')
         + (captions.some(cue => cue.reviewNeeded) ? ' Những đoạn chưa rõ lời thoại sẽ tạm để trống phụ đề.' : ''),
       levelLabel: definition.level, defaultMode: 'light', practiceModeVersion: 1, contentVersion: 1,
       storageKey: `vokabelgo_kino_chapters_v1_${key}`, legacyKey: `vokabelgo_kino_progress_${key}`, legacyCount: 0,
@@ -90,9 +94,17 @@ function build(source, definition) {
     picks: chapter.picks.map(id => ({ id, usage: chapter.practiceUsage[id] })) })) };
 }
 function main() {
-  const inputDir = path.resolve(root, process.argv[2] || 'qa/kino-alignment/muse-two-films');
-  // Validate both imports before touching any generated files.
-  const results = definitions.map(def => build(JSON.parse(fs.readFileSync(path.join(inputDir, `${def.key}.json`), 'utf8')), def));
+  const argDir = process.argv[2];
+  const selected = argDir
+    ? definitions.filter(def => fs.existsSync(path.join(path.resolve(root, argDir), `${def.key}.json`)))
+    : definitions;
+  ensure(selected.length > 0, `No matching lesson JSONs found for ${argDir || 'default definitions'}`);
+  // Validate imports before touching any generated files.
+  const results = selected.map(def => {
+    const dir = path.resolve(root, argDir || def.sourceDir || 'qa/kino-alignment/muse-two-films');
+    const relDir = path.relative(root, dir).replace(/\\/g, '/');
+    return build(JSON.parse(fs.readFileSync(path.join(dir, `${def.key}.json`), 'utf8')), { ...def, sourceDir: relDir });
+  });
   for (const { definition: def, captions, units, lesson } of results) {
     fs.writeFileSync(path.join(root, `${def.stem}-aligned.js`),
       `/* Reviewed owner-supplied dialogue; original video timestamps. */\nconst ${def.symbol}_CAPTION_CUES = ${JSON.stringify(captions, null, 2)};\nconst ${def.symbol}_ALIGNED_UTTERANCES = ${JSON.stringify(units, null, 2)};\n`);

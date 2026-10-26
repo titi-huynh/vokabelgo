@@ -1,0 +1,36 @@
+[
+  {
+    "key": "frieren_s01e02",
+    "originalContainer": "mov,mp4,m4a,3gp,3g2,mj2",
+    "original720p": "video/frieren_s01e02-web-v1.mp4",
+    "viewing480p": "video/kino-light/frieren_s01e02-480p-v1.mp4",
+    "duration": 1560.102313,
+    "width": 1280,
+    "height": 720,
+    "lightWidth": 854,
+    "lightHeight": 480,
+    "originalBytes": 252263102,
+    "viewingBytes": 136157599,
+    "decodedAudioUnchanged": true,
+    "decodedAudioSha256": "SHA256=d7a7a3ef4f96167972d161326d5d6305a7ee94295a683f447c77edf0895d08d1",
+    "webSha256": "36d2a73f8fd1d0bbdc42728ed2bf163281e1896cbb4f2288ef85683d60fe3280",
+    "viewingSha256": "976039158c9ce8c084dab8cb69169a2a4af67c75b5add4aa234dd7e7cc9207eb"
+  },
+  {
+    "key": "sakura_s01e02",
+    "originalContainer": "mov,mp4,m4a,3gp,3g2,mj2",
+    "original720p": "video/sakura_s01e02-web-v1.mp4",
+    "viewing480p": "video/kino-light/sakura_s01e02-480p-v1.mp4",
+    "duration": 1507.160816,
+    "width": 960,
+    "height": 720,
+    "lightWidth": 640,
+    "lightHeight": 480,
+    "originalBytes": 217249203,
+    "viewingBytes": 102664400,
+    "decodedAudioUnchanged": true,
+    "decodedAudioSha256": "SHA256=936d1a2a9782491f7bb5d6e9ad5fd561f27aa50060479ffcdc24a0e6439574b7",
+    "webSha256": "455ce0a2ba64e93db595040b4aeec9d25c30823ddb1ee58f2835ff9a8b6ec58c",
+    "viewingSha256": "f0c34a7a167943f785f9a1b78b3fd5370b90b310edabfaf26f07a1417423f6c0"
+  }
+]

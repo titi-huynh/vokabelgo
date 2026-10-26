@@ -1,4 +1,4 @@
-"""Extract chapter covers from reviewed dialogue, without changing either episode.
+"""Extract chapter covers from reviewed dialogue, without changing any episode.
 
 The first chapter's cover is also the catalog cover. Reviewed shortlist cues are
 preferred over chapter start times so openings, black leaders and music are not
@@ -12,7 +12,13 @@ import statistics
 import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
-KEYS = ('k_on_s01e01', 'delicious_in_dungeon_s01e01')
+KEYS = ('k_on_s01e01', 'delicious_in_dungeon_s01e01', 'frieren_s01e02', 'sakura_s01e02')
+DEFAULT_DIRS = {
+    'k_on_s01e01': ROOT / 'qa/kino-alignment/muse-two-films',
+    'delicious_in_dungeon_s01e01': ROOT / 'qa/kino-alignment/muse-two-films',
+    'frieren_s01e02': ROOT / 'qa/kino-alignment/season1-episode2',
+    'sakura_s01e02': ROOT / 'qa/kino-alignment/season1-episode2',
+}
 FILTER = ('scale=960:540:force_original_aspect_ratio=decrease:force_divisible_by=2,'
           'pad=960:540:(ow-iw)/2:(oh-ih)/2:color=0x19131c,setsar=1')
 
@@ -44,7 +50,8 @@ def needs_review(cue, uncertain):
 def prepare(key, input_dir):
     source = ROOT / 'video' / f'{key}-web-v1.mp4'
     ensure(source.is_file(), f'{key}: missing playback MP4 {source}')
-    data = json.loads((input_dir / f'{key}.json').read_text(encoding='utf-8-sig'))
+    json_path = (input_dir / f'{key}.json') if input_dir and (input_dir / f'{key}.json').is_file() else (DEFAULT_DIRS[key] / f'{key}.json')
+    data = json.loads(json_path.read_text(encoding='utf-8-sig'))
     ensure(data.get('videoKey') == key, f'{key}: JSON belongs to a different movie')
     ensure(data.get('complete') is not False and not data.get('partial'), f'{key}: use the completed reviewed lesson, not raw/partial ASR')
     probe = json.loads(run(['ffprobe', '-v', 'error', '-show_entries',
@@ -117,12 +124,16 @@ def choose_frame(job):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--input-dir', type=Path, default=ROOT / 'qa/kino-alignment/muse-two-films')
-    parser.add_argument('--movie', action='append', choices=KEYS, help='Render only this movie; repeat to select both')
+    parser.add_argument('--input-dir', type=Path, default=None)
+    parser.add_argument('--movie', action='append', choices=KEYS, help='Render only this movie; repeat to select multiple')
     args = parser.parse_args()
     try:
+        in_dir = args.input_dir.resolve() if args.input_dir else None
+        selected_keys = dict.fromkeys(args.movie or (
+            [k for k in KEYS if (in_dir / f'{k}.json').is_file()] if in_dir else KEYS
+        ))
         # Validate every selected movie before creating or replacing any poster.
-        jobs = [job for key in dict.fromkeys(args.movie or KEYS) for job in prepare(key, args.input_dir.resolve())]
+        jobs = [job for key in selected_keys for job in prepare(key, in_dir)]
         choices = [(job, *choose_frame(job)) for job in jobs]
         report = []
         for job, cue, time, metrics in choices:
@@ -142,7 +153,7 @@ def main():
                    'poster': destination.relative_to(ROOT).as_posix(), **metrics}
             report.append(row)
             print(json.dumps(row), flush=True)
-        report_path = ROOT / 'tmp/kino-muse-two-films/poster-selection.json'
+        report_path = ROOT / 'tmp/kino-ep2/poster-selection.json'
         report_path.parent.mkdir(parents=True, exist_ok=True)
         report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf8')
     except (ValueError, RuntimeError, OSError, KeyError, json.JSONDecodeError) as error:

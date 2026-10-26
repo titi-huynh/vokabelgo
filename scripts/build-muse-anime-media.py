@@ -10,7 +10,7 @@ from pathlib import Path
 import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
-KEYS = ('k_on_s01e01', 'delicious_in_dungeon_s01e01')
+KEYS = ('k_on_s01e01', 'delicious_in_dungeon_s01e01', 'frieren_s01e02', 'sakura_s01e02')
 
 
 def run(args):
@@ -29,14 +29,19 @@ def audio_hash(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source-dir', type=Path, default=ROOT / 'video')
+    parser.add_argument('--qa-dir', type=Path, default=ROOT / 'qa/kino-alignment/season1-episode2')
+    parser.add_argument('--movie', action='append', choices=KEYS)
     opts = parser.parse_args()
-    qa = ROOT / 'qa/kino-alignment/muse-two-films'
+    qa = opts.qa_dir.resolve()
     qa.mkdir(parents=True, exist_ok=True)
     (ROOT / 'video/kino-light').mkdir(parents=True, exist_ok=True)
+    selected = tuple(dict.fromkeys(opts.movie or [k for k in KEYS if (opts.source_dir / f'{k}.mp4').exists() or (ROOT / 'video' / f'{k}-web-v1.mp4').exists()]))
     rows = []
-    for key in KEYS:
+    for key in selected:
         source = opts.source_dir / f'{key}.mp4'
         web = ROOT / 'video' / f'{key}-web-v1.mp4'
+        if not source.exists() and web.exists():
+            source = web
         light = ROOT / 'video/kino-light' / f'{key}-480p-v1.mp4'
         if not web.exists():
             subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', str(source),
@@ -65,7 +70,7 @@ def main():
         print(json.dumps(rows[-1]), flush=True)
     manifest_path = ROOT / 'kino-media-manifest.js'
     manifest = json.loads(manifest_path.read_text(encoding='utf8').split('const KINO_MEDIA_MANIFEST = ', 1)[1].strip().removesuffix(';'))
-    for key in KEYS:
+    for key in selected:
         manifest[key] = {'src': f'video/kino-light/{key}-480p-v1.mp4', 'label': 'Tiết kiệm 480p'}
     manifest_path.write_text('/* Viewing copies; audio is copied without re-encoding. */\nconst KINO_MEDIA_MANIFEST = '
                              + json.dumps(manifest, ensure_ascii=False, indent=2) + ';\n', encoding='utf8')

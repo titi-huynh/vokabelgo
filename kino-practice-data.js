@@ -3554,6 +3554,534 @@ const KINO_PRACTICE_DATA = {
         }
       ]
     }
+  ],
+  "frieren_s01e02": [
+    {
+      "part": 1,
+      "picks": [
+        {
+          "id": 1300011,
+          "usage": "Khi trấn an người học rằng đa số mọi người đều gặp khó khăn ở bước này."
+        },
+        {
+          "id": 1300012,
+          "usage": "Khi khuyên đối phương cứ yên tâm và không cần phải lo lắng."
+        },
+        {
+          "id": 1300013,
+          "usage": "Khi khích lệ rằng với năng lực của đối phương thì việc học sẽ nhanh hơn."
+        },
+        {
+          "id": 1300015,
+          "usage": "Khi hỏi thăm tiến độ hướng dẫn hoặc đào tạo một học viên."
+        },
+        {
+          "id": 1300016,
+          "usage": "Khi khen ngợi ai đó tiến bộ vượt bậc trong thời gian ngắn."
+        },
+        {
+          "id": 1300017,
+          "usage": "Khi nhận xét một người đang quá lao tâm khổ tứ vào công việc."
+        },
+        {
+          "id": 1300018,
+          "usage": "Khi lưu ý rằng sự thái quá đôi khi lại mang đến hệ quả không tốt."
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "picks": [
+        {
+          "id": 1300026,
+          "usage": "Khi nhẹ nhàng an ủi người đối diện đừng giữ vẻ mặt buồn bã."
+        },
+        {
+          "id": 1300028,
+          "usage": "Khi hứa sẽ đẩy nhanh tiến độ giải quyết một công việc quan trọng."
+        },
+        {
+          "id": 1300029,
+          "usage": "Khi nói lời cảm ơn thân mật và trìu mến với một người bạn quý."
+        },
+        {
+          "id": 1300034,
+          "usage": "Khi khẳng định chắc chắn đối phương sẽ đạt được mục tiêu vào một ngày không xa."
+        },
+        {
+          "id": 1300054,
+          "usage": "Khi bày tỏ quyết tâm sống tốt để người cưu mang mình không bao giờ phải hối tiếc."
+        },
+        {
+          "id": 1300059,
+          "usage": "Khi kiểm tra lại xem học trò còn nhớ kỹ những kiến thức đã được dạy hay không."
+        },
+        {
+          "id": 1300061,
+          "usage": "Khi trao quyền tự quyết và ủng hộ đối phương làm điều họ tin là đúng."
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "picks": [
+        {
+          "id": 1300063,
+          "usage": "Khi nhận xét ai đó đã giỏi nhưng vẫn cần rèn giũa thêm đôi chút cho hoàn thiện."
+        },
+        {
+          "id": 1300068,
+          "usage": "Khi lịch sự nhờ một người đáng tin cậy đưa ai đó đồng hành cùng."
+        },
+        {
+          "id": 1300071,
+          "usage": "Khi nhận ra mình vừa bị bạn bè dùng mẹo gài vào thế đã rồi."
+        },
+        {
+          "id": 1300074,
+          "usage": "Khi hỏi thẳng đối phương đang có ý định hay kế hoạch gì."
+        },
+        {
+          "id": 1300080,
+          "usage": "Khi khuyên ai đó hãy nói lời chia tay đàng hoàng và trọn vẹn với người thân."
+        },
+        {
+          "id": 1300082,
+          "usage": "Khi chân thành khen ngợi sự tử tế và tấm lòng nhân hậu của một người bạn."
+        },
+        {
+          "id": 1300087,
+          "usage": "Khi mở lời bày tỏ sự biết ơn sâu sắc đối với người đã giúp đỡ mình."
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "picks": [
+        {
+          "id": 1300092,
+          "usage": "Khi báo hiệu công việc đã hoàn tất và mọi người có thể dừng tay."
+        },
+        {
+          "id": 1300093,
+          "usage": "Khi cảm ơn người đã giúp đỡ mình và trao phần thưởng như đã hẹn."
+        },
+        {
+          "id": 1300096,
+          "usage": "Khi hỏi đồng đội xem thù lao nhận được sau chuyến công việc lần này là gì."
+        },
+        {
+          "id": 1300098,
+          "usage": "Khi rủ bạn bè để lát nữa hãy đem một món đồ hay kỹ năng mới ra thử nghiệm."
+        },
+        {
+          "id": 1300102,
+          "usage": "Khi giải thích nhẹ nhàng rằng việc sưu tầm một thứ gì đó đơn giản là thú vui cá nhân."
+        },
+        {
+          "id": 1300105,
+          "usage": "Khi trả lời vừa phải, linh hoạt về mức độ yêu thích hoặc cảm xúc của mình."
+        },
+        {
+          "id": 1300110,
+          "usage": "Khi trang trọng mở lời nhờ người khác giúp mình một công việc."
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "picks": [
+        {
+          "id": 1300117,
+          "usage": "Khi nhận xét một công trình hay đồ vật đã bị hư hại, xuống cấp nặng nề."
+        },
+        {
+          "id": 1300127,
+          "usage": "Khi nói thẳng rằng kết quả hiện tại là do chính người đó tự chuốc lấy."
+        },
+        {
+          "id": 1300128,
+          "usage": "Khi nhắc lại tính cách thích làm tâm điểm chú ý của một người bạn."
+        },
+        {
+          "id": 1300130,
+          "usage": "Khi hào hứng hỏi bạn bè xem tư thế tạo dáng của mình trông đã đẹp chưa."
+        },
+        {
+          "id": 1300135,
+          "usage": "Khi xắn tay áo rủ mọi người cùng bắt đầu dọn dẹp sạch sẽ một khu vực."
+        },
+        {
+          "id": 1300136,
+          "usage": "Khi bày tỏ sự cảm kích vì đối phương đã giúp đỡ mình vô cùng đắc lực."
+        },
+        {
+          "id": 1300146,
+          "usage": "Khi thừa nhận mình không biết vì chưa từng tận mắt nhìn thấy thứ đó bao giờ."
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "picks": [
+        {
+          "id": 1300158,
+          "usage": "Khi tinh ý nhận ra người đối diện đang lén giấu mình một chuyện gì đó."
+        },
+        {
+          "id": 1300159,
+          "usage": "Khi trấn an đối phương cứ đưa ra cho mình xem vì mình sẽ không giận đâu."
+        },
+        {
+          "id": 1300164,
+          "usage": "Khi hỏi lại để xác nhận xem đề xuất táo bạo của đối phương có phải là thật không."
+        },
+        {
+          "id": 1300168,
+          "usage": "Khi khẳng định một mục tiêu rất xứng đáng để bỏ công sức tìm kiếm."
+        },
+        {
+          "id": 1300172,
+          "usage": "Khi thành thật chia sẻ rằng mình làm việc này vì tâm nguyện của chính bản thân."
+        },
+        {
+          "id": 1300176,
+          "usage": "Khi đề xuất mở rộng phạm vi tìm kiếm sau một thời gian chưa có kết quả."
+        },
+        {
+          "id": 1300189,
+          "usage": "Khi nhắc người nghe nhìn nhận sự việc từ góc độ và trải nghiệm của người khác."
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "picks": [
+        {
+          "id": 1300194,
+          "usage": "Khi nhận xét người đồng hành đang suy nghĩ và lo lắng rất chu toàn."
+        },
+        {
+          "id": 1300195,
+          "usage": "Khi bày tỏ sự đồng cảm rằng mình hiểu rõ điều đối phương đang bận tâm."
+        },
+        {
+          "id": 1300198,
+          "usage": "Khi xin phép được kiên trì nán lại tìm kiếm thêm một chút thời gian nữa."
+        },
+        {
+          "id": 1300201,
+          "usage": "Khi hỏi thẳng xem đối phương có thực sự định dừng cuộc tìm kiếm hay không."
+        },
+        {
+          "id": 1300203,
+          "usage": "Khi ra hiệu cho đồng đội lập tức bám theo dấu vết vừa phát hiện."
+        },
+        {
+          "id": 1300204,
+          "usage": "Khi nói khiêm tốn rằng công việc mình đang làm chỉ là thú vui giết thời gian."
+        },
+        {
+          "id": 1300205,
+          "usage": "Khi phản biện rằng hành động thực tế của đối phương nghiêm túc hơn lời họ nói nhiều."
+        }
+      ]
+    },
+    {
+      "part": 8,
+      "picks": [
+        {
+          "id": 1300222,
+          "usage": "Khi hứa hẹn một ngày nào đó sẽ đưa người bạn đồng hành đến ngắm một cảnh đẹp."
+        },
+        {
+          "id": 1300223,
+          "usage": "Khi nhẹ nhàng nhận lời hẹn ước với thái độ tùy duyên nếu có cơ hội."
+        },
+        {
+          "id": 1300226,
+          "usage": "Khi vỡ òa thông báo rằng cả nhóm đã thực sự tìm thấy thứ mình hằng kiếm tìm."
+        },
+        {
+          "id": 1300233,
+          "usage": "Khi bộc bạch rằng phương tiện ban đầu không quan trọng bằng mục đích tự lập."
+        },
+        {
+          "id": 1300234,
+          "usage": "Khi nhắc nhở ai đó trân trọng con đường mà chính họ đã gắn bó và lựa chọn."
+        },
+        {
+          "id": 1300237,
+          "usage": "Khi trầm trồ khen ngợi một khung cảnh thiên nhiên đẹp rực rỡ trước mắt."
+        },
+        {
+          "id": 1300243,
+          "usage": "Khi rủ người đồng hành tiếp tục lên đường sau khi đã hoàn thành tâm nguyện."
+        }
+      ]
+    }
+  ],
+  "sakura_s01e02": [
+    {
+      "part": 1,
+      "picks": [
+        {
+          "id": 1400004,
+          "usage": "Khi hỏi lý do vì sao người kia lại hẹn đồng hồ báo thức vào một giờ cụ thể."
+        },
+        {
+          "id": 1400005,
+          "usage": "Khi nhắc ai đó rằng theo dự định ban đầu thì họ muốn thức dậy sớm hơn."
+        },
+        {
+          "id": 1400006,
+          "usage": "Khi thắc mắc lúc bất ngờ nghe thấy một giọng nói lạ xung quanh mình."
+        },
+        {
+          "id": 1400011,
+          "usage": "Khi hỏi thăm trực tiếp xem đối phương đang gặp chuyện gì bất thường."
+        },
+        {
+          "id": 1400016,
+          "usage": "Khi nói với người vừa mới tỉnh táo lại sau cơn ngái ngủ."
+        },
+        {
+          "id": 1400026,
+          "usage": "Khi đưa ra bằng chứng cụ thể để khích lệ ai đó tin vào năng lực của bản thân."
+        },
+        {
+          "id": 1400029,
+          "usage": "Khi thừa nhận mình đã làm xong việc nhưng quá trình thực hiện không hề dễ dàng."
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "picks": [
+        {
+          "id": 1400041,
+          "usage": "Khi khen ngợi bữa ăn sáng hôm nay được chuẩn bị trông rất ngon mắt."
+        },
+        {
+          "id": 1400048,
+          "usage": "Khi giải thích lý do phải đi sớm vì hôm nay đến phiên mình trực nhật dọn vệ sinh."
+        },
+        {
+          "id": 1400052,
+          "usage": "Khi vui vẻ đưa cho bạn bè một món đồ ăn hoặc quà nhỏ mình mang về."
+        },
+        {
+          "id": 1400054,
+          "usage": "Khi tự nhắc bản thân hoặc báo với người khác rằng mình phải khẩn trương lên cho kịp giờ."
+        },
+        {
+          "id": 1400058,
+          "usage": "Khi dặn ai đó đợi mọi người ra khỏi nhà rồi mới được bật tivi xem."
+        },
+        {
+          "id": 1400072,
+          "usage": "Khi reo lên vui mừng vì thấy người mình tìm vẫn còn ở nhà chứ chưa đi."
+        },
+        {
+          "id": 1400083,
+          "usage": "Khi tạm biệt và dặn dò người đi xe hoặc trượt patin chú ý an toàn trên đường."
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "picks": [
+        {
+          "id": 1400091,
+          "usage": "Khi chào buổi sáng và nhận xét cả hai đều đến nơi sớm hơn thường lệ."
+        },
+        {
+          "id": 1400097,
+          "usage": "Khi kể lại cảm giác sững sờ như không tin vào mắt mình trước một cảnh tượng lạ."
+        },
+        {
+          "id": 1400110,
+          "usage": "Khi lịch sự ngỏ ý muốn được giới thiệu làm quen với người bạn mới của đối phương."
+        },
+        {
+          "id": 1400115,
+          "usage": "Khi nhắc nhở bạn bè đừng đặt những biệt danh ngớ ngẩn hay trêu chọc mình."
+        },
+        {
+          "id": 1400127,
+          "usage": "Khi thở phào nhẹ nhõm sau khi vừa thoát khỏi một tình huống suýt gặp rắc rối."
+        },
+        {
+          "id": 1400140,
+          "usage": "Khi trấn an bạn mình cứ yên tâm làm việc vì mình sẽ đứng canh chừng giúp."
+        },
+        {
+          "id": 1400159,
+          "usage": "Khi từ chối lời rủ đi chơi ngay sau giờ học vì phải về nhà trước."
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "picks": [
+        {
+          "id": 1400166,
+          "usage": "Khi chỉ cho người bên cạnh xem một cảnh tượng bừa bộn hoặc tồi tệ trước mắt."
+        },
+        {
+          "id": 1400184,
+          "usage": "Khi kể lại sự vất vả sau khi phải thu dọn một đống hỗn độn."
+        },
+        {
+          "id": 1400185,
+          "usage": "Khi tìm thấy mặt tích cực của sự cố là được nghỉ hai tiết học."
+        },
+        {
+          "id": 1400187,
+          "usage": "Khi thừa nhận hiện tại chưa rõ nguyên nhân nhưng khẳng định cả nhóm sẽ sớm điều tra ra."
+        },
+        {
+          "id": 1400194,
+          "usage": "Khi phản đối dứt khoát một kế hoạch mạo hiểm diễn ra ngay trong đêm."
+        },
+        {
+          "id": 1400195,
+          "usage": "Khi khẳng định chắc nịch rằng mình sẽ không bước chân vào một nơi vắng vẻ lúc ban đêm."
+        },
+        {
+          "id": 1400208,
+          "usage": "Khi giải thích đơn giản rằng mình thích làm một việc vì đó là sở thích cá nhân."
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "picks": [
+        {
+          "id": 1400217,
+          "usage": "Khi trấn an người vừa tới điểm hẹn rằng mình cũng mới đến chứ chưa phải đợi lâu."
+        },
+        {
+          "id": 1400219,
+          "usage": "Khi dặn người thân hoặc bạn bè cứ gọi ngay cho mình bất cứ lúc nào cần hỗ trợ."
+        },
+        {
+          "id": 1400220,
+          "usage": "Khi giải thích rằng chỉ cần mình gọi điện là người nhà hoặc xe sẽ đến đón."
+        },
+        {
+          "id": 1400226,
+          "usage": "Khi giục ai đó nhanh chóng đi thay bộ quần áo khác cho kịp việc."
+        },
+        {
+          "id": 1400229,
+          "usage": "Khi hỏi ý kiến xem đối phương có muốn tự tay chọn một món đồ ưng ý không."
+        },
+        {
+          "id": 1400245,
+          "usage": "Khi động viên một người đang ngại ngùng rằng họ trông rất tuyệt và không có gì phải xấu hổ."
+        },
+        {
+          "id": 1400246,
+          "usage": "Khi trao thêm một món quà hay phụ kiện phù hợp mà mình đã chuẩn bị riêng cho người kia."
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "picks": [
+        {
+          "id": 1400251,
+          "usage": "Khi giật mình hỏi người đi cùng xem họ có nghe thấy tiếng động lạ vừa phát ra không."
+        },
+        {
+          "id": 1400252,
+          "usage": "Khi trả lời rằng bản thân mình hoàn toàn không nghe thấy âm thanh gì bất thường."
+        },
+        {
+          "id": 1400254,
+          "usage": "Khi nhắc nhở bạn mình giữ bình tĩnh và đừng hoảng loạn trước tình huống bất ngờ."
+        },
+        {
+          "id": 1400256,
+          "usage": "Khi cảnh báo đồng đội về một hiện tượng kỳ lạ báo hiệu nguy hiểm sắp tới."
+        },
+        {
+          "id": 1400267,
+          "usage": "Khi phân công người đồng hành ở lại trông chừng và bảo vệ bạn mình."
+        },
+        {
+          "id": 1400268,
+          "usage": "Khi cổ vũ và bày tỏ sự tin tưởng tuyệt đối rằng bạn mình sẽ giải quyết tốt công việc."
+        },
+        {
+          "id": 1400283,
+          "usage": "Khi tán thành nhận định của bạn và nảy ra sáng kiến giải quyết ngay không cần chờ đến sáng."
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "picks": [
+        {
+          "id": 1400284,
+          "usage": "Khi than thở rằng thử thách trước mắt vượt quá khả năng chịu đựng của bản thân."
+        },
+        {
+          "id": 1400285,
+          "usage": "Khi tự hỏi trong lúc bế tắc xem mình có thể làm cách nào để xoay chuyển tình thế."
+        },
+        {
+          "id": 1400286,
+          "usage": "Khi hét lên yêu cầu đối phương buông tay hoặc thả mình ra ngay lập tức."
+        },
+        {
+          "id": 1400294,
+          "usage": "Khi hào hứng khen ngợi sáng kiến thông minh và kịp thời của người bạn đồng hành."
+        },
+        {
+          "id": 1400297,
+          "usage": "Khi tiếp thêm sự tự tin cho bạn bè ngay trước thời khắc quyết định."
+        },
+        {
+          "id": 1400303,
+          "usage": "Khi vui mừng thông báo rằng mình đã quay phim hoặc ghi lại được toàn bộ sự việc."
+        }
+      ]
+    },
+    {
+      "part": 8,
+      "picks": [
+        {
+          "id": 1400304,
+          "usage": "Khi hỏi thăm bạn cùng lớp xem họ có nhìn thấy người mình đang tìm ở đâu không."
+        },
+        {
+          "id": 1400308,
+          "usage": "Khi chân thành cảm ơn người bạn đã thức khuya vất vả giúp đỡ mình đêm qua."
+        },
+        {
+          "id": 1400309,
+          "usage": "Khi trao một món quà nhỏ mình mang theo để bày tỏ lòng biết ơn."
+        },
+        {
+          "id": 1400311,
+          "usage": "Khi tấm tắc khen chất lượng những bức ảnh hoặc thước phim vừa quay được."
+        },
+        {
+          "id": 1400319,
+          "usage": "Khi lịch sự từ chối vì ngại làm phiền người khác quá nhiều."
+        },
+        {
+          "id": 1400321,
+          "usage": "Khi nói đùa rằng mình phải đi theo để làm quân sư trang phục cho bạn."
+        },
+        {
+          "id": 1400328,
+          "usage": "Khi mở đầu buổi trò chuyện bằng lời rủ mọi người cùng xem qua vài hình ảnh thú vị."
+        }
+      ]
+    }
   ]
 };
 

@@ -1,0 +1,3466 @@
+{
+  "videoKey": "sakura_s01e02",
+  "model": "faster-whisper medium int8 (local)",
+  "targetsCount": 56,
+  "verifiedCount": 45,
+  "elapsedSeconds": 394.23,
+  "rows": [
+    {
+      "cueId": 1400004,
+      "speaker": "Kero",
+      "text": "Wieso hast du den Wecker auf sieben Uhr gestellt?",
+      "chosenMethod": "contextual",
+      "oldStart": 101.12,
+      "oldEnd": 103.64,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 100.94,
+      "suggestedEnd": 103.58,
+      "alignmentProbability": 0.928,
+      "minWordProbability": 0.681,
+      "maxWordDuration": 0.82,
+      "flags": [],
+      "words": [
+        {
+          "word": " Wieso",
+          "start": 100.94,
+          "end": 101.76,
+          "probability": 0.818
+        },
+        {
+          "word": " hast",
+          "start": 101.76,
+          "end": 101.98,
+          "probability": 0.992
+        },
+        {
+          "word": " du",
+          "start": 101.98,
+          "end": 102.12,
+          "probability": 0.928
+        },
+        {
+          "word": " den",
+          "start": 102.12,
+          "end": 102.22,
+          "probability": 0.991
+        },
+        {
+          "word": " Wecker",
+          "start": 102.22,
+          "end": 102.46,
+          "probability": 0.977
+        },
+        {
+          "word": " auf",
+          "start": 102.46,
+          "end": 102.62,
+          "probability": 0.99
+        },
+        {
+          "word": " sieben",
+          "start": 102.62,
+          "end": 102.9,
+          "probability": 0.681
+        },
+        {
+          "word": " Uhr",
+          "start": 102.9,
+          "end": 103.06,
+          "probability": 0.991
+        },
+        {
+          "word": " gestellt",
+          "start": 103.06,
+          "end": 103.58,
+          "probability": 0.983
+        }
+      ]
+    },
+    {
+      "cueId": 1400005,
+      "speaker": "Kero",
+      "text": "Eigentlich wolltest du noch früher aufstehen.",
+      "chosenMethod": "contextual",
+      "oldStart": 103.72,
+      "oldEnd": 106.4,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 103.76,
+      "suggestedEnd": 106.34,
+      "alignmentProbability": 0.948,
+      "minWordProbability": 0.838,
+      "maxWordDuration": 1.02,
+      "flags": [],
+      "words": [
+        {
+          "word": " Eigentlich",
+          "start": 103.76,
+          "end": 104.5,
+          "probability": 0.984
+        },
+        {
+          "word": " wolltest",
+          "start": 104.5,
+          "end": 104.78,
+          "probability": 0.981
+        },
+        {
+          "word": " du",
+          "start": 104.78,
+          "end": 104.92,
+          "probability": 0.908
+        },
+        {
+          "word": " noch",
+          "start": 104.92,
+          "end": 105.04,
+          "probability": 0.838
+        },
+        {
+          "word": " früher",
+          "start": 105.04,
+          "end": 105.32,
+          "probability": 0.979
+        },
+        {
+          "word": " aufstehen",
+          "start": 105.32,
+          "end": 106.34,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "cueId": 1400006,
+      "speaker": "Sakura",
+      "text": "Was ist das für eine Stimme?",
+      "chosenMethod": "contextual",
+      "oldStart": 106.44,
+      "oldEnd": 108.82,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 105.94,
+      "suggestedEnd": 108.9,
+      "alignmentProbability": 0.903,
+      "minWordProbability": 0.47,
+      "maxWordDuration": 1.86,
+      "flags": [
+        "word_stretched_over_pause"
+      ],
+      "words": [
+        {
+          "word": " Was",
+          "start": 105.94,
+          "end": 107.8,
+          "probability": 0.47
+        },
+        {
+          "word": " ist",
+          "start": 107.8,
+          "end": 108.04,
+          "probability": 0.984
+        },
+        {
+          "word": " das",
+          "start": 108.04,
+          "end": 108.18,
+          "probability": 0.989
+        },
+        {
+          "word": " für",
+          "start": 108.18,
+          "end": 108.32,
+          "probability": 0.989
+        },
+        {
+          "word": " eine",
+          "start": 108.32,
+          "end": 108.62,
+          "probability": 0.99
+        },
+        {
+          "word": " Stimme",
+          "start": 108.62,
+          "end": 108.9,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "cueId": 1400011,
+      "speaker": "Kero",
+      "text": "Was ist mit dir los?",
+      "chosenMethod": "contextual",
+      "oldStart": 127.6,
+      "oldEnd": 130.02,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 127.64,
+      "suggestedEnd": 129.96,
+      "alignmentProbability": 0.667,
+      "minWordProbability": 0.24,
+      "maxWordDuration": 1.36,
+      "flags": [],
+      "words": [
+        {
+          "word": " Was",
+          "start": 127.64,
+          "end": 129.0,
+          "probability": 0.24
+        },
+        {
+          "word": " ist",
+          "start": 129.0,
+          "end": 129.32,
+          "probability": 0.877
+        },
+        {
+          "word": " mit",
+          "start": 129.32,
+          "end": 129.46,
+          "probability": 0.29
+        },
+        {
+          "word": " dir",
+          "start": 129.46,
+          "end": 129.52,
+          "probability": 0.936
+        },
+        {
+          "word": " los",
+          "start": 129.52,
+          "end": 129.96,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "cueId": 1400016,
+      "speaker": "Kero",
+      "text": "Na endlich bist du wach.",
+      "chosenMethod": "contextual",
+      "oldStart": 143.38,
+      "oldEnd": 145.02,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 143.1,
+      "suggestedEnd": 144.96,
+      "alignmentProbability": 0.762,
+      "minWordProbability": 0.424,
+      "maxWordDuration": 0.66,
+      "flags": [],
+      "words": [
+        {
+          "word": " Na",
+          "start": 143.1,
+          "end": 143.76,
+          "probability": 0.424
+        },
+        {
+          "word": " endlich",
+          "start": 143.76,
+          "end": 144.22,
+          "probability": 0.488
+        },
+        {
+          "word": " bist",
+          "start": 144.22,
+          "end": 144.44,
+          "probability": 0.986
+        },
+        {
+          "word": " du",
+          "start": 144.44,
+          "end": 144.62,
+          "probability": 0.918
+        },
+        {
+          "word": " wach",
+          "start": 144.62,
+          "end": 144.96,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "cueId": 1400026,
+      "speaker": "Kero",
+      "text": "Das ist der Beweis, dass du es kannst.",
+      "chosenMethod": "contextual",
+      "oldStart": 177.2,
+      "oldEnd": 180.86,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 176.7,
+      "suggestedEnd": 180.98,
+      "alignmentProbability": 0.803,
+      "minWordProbability": 0.024,
+      "maxWordDuration": 1.48,
+      "flags": [
+        "weak_individual_word"
+      ],
+      "words": [
+        {
+          "word": " Das",
+          "start": 176.7,
+          "end": 178.04,
+          "probability": 0.024
+        },
+        {
+          "word": " ist",
+          "start": 178.04,
+          "end": 179.52,
+          "probability": 0.626
+        },
+        {
+          "word": " der",
+          "start": 179.52,
+          "end": 179.68,
+          "probability": 0.959
+        },
+        {
+          "word": " Beweis",
+          "start": 179.68,
+          "end": 180.1,
+          "probability": 0.998
+        },
+        {
+          "word": " dass",
+          "start": 180.2,
+          "end": 180.28,
+          "probability": 0.947
+        },
+        {
+          "word": " du",
+          "start": 180.28,
+          "end": 180.46,
+          "probability": 0.929
+        },
+        {
+          "word": " es",
+          "start": 180.46,
+          "end": 180.68,
+          "probability": 0.947
+        },
+        {
+          "word": " kannst",
+          "start": 180.68,
+          "end": 180.98,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1400029,
+      "speaker": "Sakura",
+      "text": "Ja, aber das war nicht gerade leicht.",
+      "chosenMethod": "contextual",
+      "oldStart": 184.78,
+      "oldEnd": 187.0,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 184.82,
+      "suggestedEnd": 186.94,
+      "alignmentProbability": 0.962,
+      "minWordProbability": 0.804,
+      "maxWordDuration": 0.64,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ja",
+          "start": 184.82,
+          "end": 185.46,
+          "probability": 0.804
+        },
+        {
+          "word": " aber",
+          "start": 185.48,
+          "end": 185.64,
+          "probability": 0.987
+        },
+        {
+          "word": " das",
+          "start": 185.64,
+          "end": 185.82,
+          "probability": 0.992
+        },
+        {
+          "word": " war",
+          "start": 185.82,
+          "end": 186.0,
+          "probability": 0.997
+        },
+        {
+          "word": " nicht",
+          "start": 186.0,
+          "end": 186.16,
+          "probability": 0.986
+        },
+        {
+          "word": " gerade",
+          "start": 186.16,
+          "end": 186.52,
+          "probability": 0.99
+        },
+        {
+          "word": " leicht",
+          "start": 186.52,
+          "end": 186.94,
+          "probability": 0.982
+        }
+      ]
+    },
+    {
+      "cueId": 1400041,
+      "speaker": "Fujitaka",
+      "text": "Das Frühstück sieht heute wieder gut aus.",
+      "chosenMethod": "contextual",
+      "oldStart": 222.88,
+      "oldEnd": 225.92,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 222.92,
+      "suggestedEnd": 225.86,
+      "alignmentProbability": 0.867,
+      "minWordProbability": 0.15,
+      "maxWordDuration": 1.16,
+      "flags": [],
+      "words": [
+        {
+          "word": " Das",
+          "start": 222.92,
+          "end": 224.08,
+          "probability": 0.15
+        },
+        {
+          "word": " Frühstück",
+          "start": 224.08,
+          "end": 224.58,
+          "probability": 0.985
+        },
+        {
+          "word": " sieht",
+          "start": 224.58,
+          "end": 224.78,
+          "probability": 0.991
+        },
+        {
+          "word": " heute",
+          "start": 224.78,
+          "end": 225.08,
+          "probability": 0.974
+        },
+        {
+          "word": " wieder",
+          "start": 225.08,
+          "end": 225.32,
+          "probability": 0.979
+        },
+        {
+          "word": " gut",
+          "start": 225.32,
+          "end": 225.62,
+          "probability": 0.995
+        },
+        {
+          "word": " aus",
+          "start": 225.62,
+          "end": 225.86,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "cueId": 1400048,
+      "speaker": "Sakura",
+      "text": "Ich habe heute Reinigungsdienst.",
+      "chosenMethod": "contextual",
+      "oldStart": 247.8,
+      "oldEnd": 250.0,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 247.84,
+      "suggestedEnd": 249.94,
+      "alignmentProbability": 0.939,
+      "minWordProbability": 0.877,
+      "maxWordDuration": 0.98,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ich",
+          "start": 247.84,
+          "end": 248.42,
+          "probability": 0.877
+        },
+        {
+          "word": " habe",
+          "start": 248.42,
+          "end": 248.66,
+          "probability": 0.924
+        },
+        {
+          "word": " heute",
+          "start": 248.66,
+          "end": 248.96,
+          "probability": 0.978
+        },
+        {
+          "word": " Reinigungsdienst",
+          "start": 248.96,
+          "end": 249.94,
+          "probability": 0.977
+        }
+      ]
+    },
+    {
+      "cueId": 1400052,
+      "speaker": "Sakura",
+      "text": "Ich hab dir was mitgebracht.",
+      "chosenMethod": "contextual",
+      "oldStart": 269.32,
+      "oldEnd": 270.74,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 268.82,
+      "suggestedEnd": 270.68,
+      "alignmentProbability": 0.698,
+      "minWordProbability": 0.05,
+      "maxWordDuration": 0.82,
+      "flags": [
+        "weak_individual_word"
+      ],
+      "words": [
+        {
+          "word": " Ich",
+          "start": 268.82,
+          "end": 269.64,
+          "probability": 0.05
+        },
+        {
+          "word": " hab",
+          "start": 269.64,
+          "end": 269.82,
+          "probability": 0.556
+        },
+        {
+          "word": " dir",
+          "start": 269.82,
+          "end": 269.92,
+          "probability": 0.955
+        },
+        {
+          "word": " was",
+          "start": 269.92,
+          "end": 270.08,
+          "probability": 0.943
+        },
+        {
+          "word": " mitgebracht",
+          "start": 270.08,
+          "end": 270.68,
+          "probability": 0.987
+        }
+      ]
+    },
+    {
+      "cueId": 1400054,
+      "speaker": "Sakura",
+      "text": "Ich muss mich beeilen.",
+      "chosenMethod": "contextual",
+      "oldStart": 276.34,
+      "oldEnd": 278.72,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 276.38,
+      "suggestedEnd": 278.66,
+      "alignmentProbability": 0.953,
+      "minWordProbability": 0.835,
+      "maxWordDuration": 1.44,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ich",
+          "start": 276.38,
+          "end": 277.82,
+          "probability": 0.835
+        },
+        {
+          "word": " muss",
+          "start": 277.82,
+          "end": 278.02,
+          "probability": 0.996
+        },
+        {
+          "word": " mich",
+          "start": 278.02,
+          "end": 278.2,
+          "probability": 0.999
+        },
+        {
+          "word": " beeilen",
+          "start": 278.2,
+          "end": 278.66,
+          "probability": 0.981
+        }
+      ]
+    },
+    {
+      "cueId": 1400058,
+      "speaker": "Sakura",
+      "text": "Wenn die beiden weg sind, kannst du den Fernseher anmachen.",
+      "chosenMethod": "contextual",
+      "oldStart": 286.06,
+      "oldEnd": 288.68,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 285.82,
+      "suggestedEnd": 288.62,
+      "alignmentProbability": 0.798,
+      "minWordProbability": 0.094,
+      "maxWordDuration": 0.52,
+      "flags": [],
+      "words": [
+        {
+          "word": " Wenn",
+          "start": 285.82,
+          "end": 286.34,
+          "probability": 0.139
+        },
+        {
+          "word": " die",
+          "start": 286.34,
+          "end": 286.56,
+          "probability": 0.946
+        },
+        {
+          "word": " beiden",
+          "start": 286.56,
+          "end": 286.72,
+          "probability": 0.963
+        },
+        {
+          "word": " weg",
+          "start": 286.72,
+          "end": 286.96,
+          "probability": 0.984
+        },
+        {
+          "word": " sind",
+          "start": 286.96,
+          "end": 287.08,
+          "probability": 0.991
+        },
+        {
+          "word": " kannst",
+          "start": 287.24,
+          "end": 287.26,
+          "probability": 0.987
+        },
+        {
+          "word": " du",
+          "start": 287.26,
+          "end": 287.42,
+          "probability": 0.956
+        },
+        {
+          "word": " den",
+          "start": 287.42,
+          "end": 287.82,
+          "probability": 0.094
+        },
+        {
+          "word": " Fernseher",
+          "start": 287.82,
+          "end": 288.3,
+          "probability": 0.994
+        },
+        {
+          "word": " anmachen",
+          "start": 288.3,
+          "end": 288.62,
+          "probability": 0.923
+        }
+      ]
+    },
+    {
+      "cueId": 1400072,
+      "speaker": "Sakura",
+      "text": "Ah, du bist ja doch noch zu Hause.",
+      "chosenMethod": "contextual",
+      "oldStart": 339.04,
+      "oldEnd": 341.94,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 339.08,
+      "suggestedEnd": 341.88,
+      "alignmentProbability": 0.808,
+      "minWordProbability": 0.176,
+      "maxWordDuration": 0.54,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ah",
+          "start": 339.08,
+          "end": 339.62,
+          "probability": 0.176
+        },
+        {
+          "word": " du",
+          "start": 340.32,
+          "end": 340.66,
+          "probability": 0.681
+        },
+        {
+          "word": " bist",
+          "start": 340.66,
+          "end": 340.92,
+          "probability": 0.993
+        },
+        {
+          "word": " ja",
+          "start": 340.92,
+          "end": 341.08,
+          "probability": 0.972
+        },
+        {
+          "word": " doch",
+          "start": 341.08,
+          "end": 341.2,
+          "probability": 0.985
+        },
+        {
+          "word": " noch",
+          "start": 341.2,
+          "end": 341.4,
+          "probability": 0.993
+        },
+        {
+          "word": " zu",
+          "start": 341.4,
+          "end": 341.62,
+          "probability": 0.984
+        },
+        {
+          "word": " Hause",
+          "start": 341.62,
+          "end": 341.88,
+          "probability": 0.677
+        }
+      ]
+    },
+    {
+      "cueId": 1400083,
+      "speaker": "Yukito",
+      "text": "Bis später, fahr vorsichtig.",
+      "chosenMethod": "contextual",
+      "oldStart": 367.26,
+      "oldEnd": 369.44,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 367.3,
+      "suggestedEnd": 369.38,
+      "alignmentProbability": 0.816,
+      "minWordProbability": 0.36,
+      "maxWordDuration": 0.66,
+      "flags": [],
+      "words": [
+        {
+          "word": " Bis",
+          "start": 367.3,
+          "end": 367.96,
+          "probability": 0.937
+        },
+        {
+          "word": " später",
+          "start": 367.96,
+          "end": 368.32,
+          "probability": 0.989
+        },
+        {
+          "word": " fahr",
+          "start": 368.54,
+          "end": 368.86,
+          "probability": 0.36
+        },
+        {
+          "word": " vorsichtig",
+          "start": 368.86,
+          "end": 369.38,
+          "probability": 0.977
+        }
+      ]
+    },
+    {
+      "cueId": 1400091,
+      "speaker": "Tomoyo",
+      "text": "Morgen, wir sind beide früh dran.",
+      "chosenMethod": "contextual",
+      "oldStart": 401.7,
+      "oldEnd": 403.46,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 401.42,
+      "suggestedEnd": 403.4,
+      "alignmentProbability": 0.932,
+      "minWordProbability": 0.671,
+      "maxWordDuration": 0.78,
+      "flags": [],
+      "words": [
+        {
+          "word": " Morgen",
+          "start": 401.42,
+          "end": 402.2,
+          "probability": 0.671
+        },
+        {
+          "word": " wir",
+          "start": 402.2,
+          "end": 402.4,
+          "probability": 0.974
+        },
+        {
+          "word": " sind",
+          "start": 402.4,
+          "end": 402.62,
+          "probability": 0.986
+        },
+        {
+          "word": " beide",
+          "start": 402.62,
+          "end": 402.94,
+          "probability": 0.972
+        },
+        {
+          "word": " früh",
+          "start": 402.94,
+          "end": 403.12,
+          "probability": 0.995
+        },
+        {
+          "word": " dran",
+          "start": 403.12,
+          "end": 403.4,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "cueId": 1400097,
+      "speaker": "Tomoyo",
+      "text": "Ich dachte, ich sehe nicht richtig.",
+      "chosenMethod": "contextual",
+      "oldStart": 418.12,
+      "oldEnd": 420.5,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 418.16,
+      "suggestedEnd": 420.44,
+      "alignmentProbability": 0.814,
+      "minWordProbability": 0.508,
+      "maxWordDuration": 0.94,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ich",
+          "start": 418.16,
+          "end": 419.1,
+          "probability": 0.858
+        },
+        {
+          "word": " dachte",
+          "start": 419.1,
+          "end": 419.36,
+          "probability": 0.985
+        },
+        {
+          "word": " ich",
+          "start": 419.48,
+          "end": 419.58,
+          "probability": 0.99
+        },
+        {
+          "word": " sehe",
+          "start": 419.58,
+          "end": 419.76,
+          "probability": 0.508
+        },
+        {
+          "word": " nicht",
+          "start": 419.76,
+          "end": 419.98,
+          "probability": 0.556
+        },
+        {
+          "word": " richtig",
+          "start": 419.98,
+          "end": 420.44,
+          "probability": 0.988
+        }
+      ]
+    },
+    {
+      "cueId": 1400110,
+      "speaker": "Tomoyo",
+      "text": "Hey, ich würde mich freuen, wenn du mir deinen neuen Freund vorstellst.",
+      "chosenMethod": "contextual",
+      "oldStart": 482.18,
+      "oldEnd": 485.94,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 482.22,
+      "suggestedEnd": 485.88,
+      "alignmentProbability": 0.931,
+      "minWordProbability": 0.554,
+      "maxWordDuration": 0.94,
+      "flags": [],
+      "words": [
+        {
+          "word": " Hey",
+          "start": 482.22,
+          "end": 483.16,
+          "probability": 0.767
+        },
+        {
+          "word": " ich",
+          "start": 483.34,
+          "end": 483.38,
+          "probability": 0.983
+        },
+        {
+          "word": " würde",
+          "start": 483.38,
+          "end": 483.56,
+          "probability": 0.554
+        },
+        {
+          "word": " mich",
+          "start": 483.56,
+          "end": 483.78,
+          "probability": 0.994
+        },
+        {
+          "word": " freuen",
+          "start": 483.78,
+          "end": 483.94,
+          "probability": 0.994
+        },
+        {
+          "word": " wenn",
+          "start": 484.12,
+          "end": 484.14,
+          "probability": 0.991
+        },
+        {
+          "word": " du",
+          "start": 484.14,
+          "end": 484.26,
+          "probability": 0.966
+        },
+        {
+          "word": " mir",
+          "start": 484.26,
+          "end": 484.38,
+          "probability": 0.997
+        },
+        {
+          "word": " deinen",
+          "start": 484.38,
+          "end": 484.52,
+          "probability": 0.984
+        },
+        {
+          "word": " neuen",
+          "start": 484.52,
+          "end": 484.84,
+          "probability": 0.993
+        },
+        {
+          "word": " Freund",
+          "start": 484.84,
+          "end": 485.02,
+          "probability": 0.982
+        },
+        {
+          "word": " vorstellst",
+          "start": 485.02,
+          "end": 485.88,
+          "probability": 0.973
+        }
+      ]
+    },
+    {
+      "cueId": 1400115,
+      "speaker": "Kero",
+      "text": "Gib mir bloß keine albernen Spitznamen.",
+      "chosenMethod": "contextual",
+      "oldStart": 494.86,
+      "oldEnd": 497.16,
+      "isChapterPick": true,
+      "isShortFocus": true,
+      "status": "verified",
+      "suggestedStart": 494.6,
+      "suggestedEnd": 497.14,
+      "alignmentProbability": 0.815,
+      "minWordProbability": 0.357,
+      "maxWordDuration": 0.7,
+      "flags": [],
+      "words": [
+        {
+          "word": " Gib",
+          "start": 494.6,
+          "end": 495.2,
+          "probability": 0.357
+        },
+        {
+          "word": " mir",
+          "start": 495.2,
+          "end": 495.46,
+          "probability": 0.903
+        },
+        {
+          "word": " bloß",
+          "start": 495.46,
+          "end": 495.84,
+          "probability": 0.997
+        },
+        {
+          "word": " keine",
+          "start": 495.84,
+          "end": 496.0,
+          "probability": 0.689
+        },
+        {
+          "word": " albernen",
+          "start": 496.0,
+          "end": 496.44,
+          "probability": 0.966
+        },
+        {
+          "word": " Spitznamen",
+          "start": 496.44,
+          "end": 497.14,
+          "probability": 0.977
+        }
+      ]
+    },
+    {
+      "cueId": 1400127,
+      "speaker": "Tomoyo",
+      "text": "Da haben wir ja noch mal Glück gehabt.",
+      "chosenMethod": "contextual",
+      "oldStart": 519.76,
+      "oldEnd": 522.06,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 519.8,
+      "suggestedEnd": 522.0,
+      "alignmentProbability": 0.836,
+      "minWordProbability": 0.237,
+      "maxWordDuration": 0.88,
+      "flags": [],
+      "words": [
+        {
+          "word": " Da",
+          "start": 519.8,
+          "end": 520.68,
+          "probability": 0.744
+        },
+        {
+          "word": " haben",
+          "start": 520.68,
+          "end": 520.86,
+          "probability": 0.929
+        },
+        {
+          "word": " wir",
+          "start": 520.86,
+          "end": 521.06,
+          "probability": 0.989
+        },
+        {
+          "word": " ja",
+          "start": 521.06,
+          "end": 521.2,
+          "probability": 0.94
+        },
+        {
+          "word": " noch",
+          "start": 521.2,
+          "end": 521.3,
+          "probability": 0.237
+        },
+        {
+          "word": " mal",
+          "start": 521.3,
+          "end": 521.46,
+          "probability": 0.952
+        },
+        {
+          "word": " Glück",
+          "start": 521.46,
+          "end": 521.7,
+          "probability": 0.9
+        },
+        {
+          "word": " gehabt",
+          "start": 521.7,
+          "end": 522.0,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1400140,
+      "speaker": "Kero",
+      "text": "Falls jemand kommt, werde ich dich warnen.",
+      "chosenMethod": "contextual",
+      "oldStart": 543.72,
+      "oldEnd": 545.5,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 543.22,
+      "suggestedEnd": 545.48,
+      "alignmentProbability": 0.798,
+      "minWordProbability": 0.04,
+      "maxWordDuration": 0.74,
+      "flags": [
+        "weak_individual_word"
+      ],
+      "words": [
+        {
+          "word": " Falls",
+          "start": 543.22,
+          "end": 543.96,
+          "probability": 0.04
+        },
+        {
+          "word": " jemand",
+          "start": 543.96,
+          "end": 544.24,
+          "probability": 0.792
+        },
+        {
+          "word": " kommt",
+          "start": 544.24,
+          "end": 544.52,
+          "probability": 0.958
+        },
+        {
+          "word": " werde",
+          "start": 544.72,
+          "end": 544.76,
+          "probability": 0.869
+        },
+        {
+          "word": " ich",
+          "start": 544.76,
+          "end": 544.92,
+          "probability": 0.999
+        },
+        {
+          "word": " dich",
+          "start": 544.92,
+          "end": 545.08,
+          "probability": 0.968
+        },
+        {
+          "word": " warnen",
+          "start": 545.08,
+          "end": 545.48,
+          "probability": 0.962
+        }
+      ]
+    },
+    {
+      "cueId": 1400159,
+      "speaker": "Tomoyo",
+      "text": "Ich muss nach der Schule erst mal nach Hause.",
+      "chosenMethod": "contextual",
+      "oldStart": 608.58,
+      "oldEnd": 610.62,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 608.3,
+      "suggestedEnd": 610.56,
+      "alignmentProbability": 0.884,
+      "minWordProbability": 0.546,
+      "maxWordDuration": 0.58,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ich",
+          "start": 608.3,
+          "end": 608.88,
+          "probability": 0.746
+        },
+        {
+          "word": " muss",
+          "start": 608.88,
+          "end": 609.12,
+          "probability": 0.985
+        },
+        {
+          "word": " nach",
+          "start": 609.12,
+          "end": 609.26,
+          "probability": 0.807
+        },
+        {
+          "word": " der",
+          "start": 609.26,
+          "end": 609.48,
+          "probability": 0.988
+        },
+        {
+          "word": " Schule",
+          "start": 609.48,
+          "end": 609.66,
+          "probability": 0.997
+        },
+        {
+          "word": " erst",
+          "start": 609.66,
+          "end": 609.94,
+          "probability": 0.546
+        },
+        {
+          "word": " mal",
+          "start": 609.94,
+          "end": 610.1,
+          "probability": 0.926
+        },
+        {
+          "word": " nach",
+          "start": 610.1,
+          "end": 610.24,
+          "probability": 0.99
+        },
+        {
+          "word": " Hause",
+          "start": 610.24,
+          "end": 610.56,
+          "probability": 0.973
+        }
+      ]
+    },
+    {
+      "cueId": 1400166,
+      "speaker": "Sakura",
+      "text": "Das ist echt schrecklich. Sieh es dir an.",
+      "chosenMethod": "contextual",
+      "oldStart": 645.8,
+      "oldEnd": 649.06,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 645.84,
+      "suggestedEnd": 649.0,
+      "alignmentProbability": 0.756,
+      "minWordProbability": 0.225,
+      "maxWordDuration": 0.84,
+      "flags": [],
+      "words": [
+        {
+          "word": " Das",
+          "start": 645.84,
+          "end": 646.68,
+          "probability": 0.442
+        },
+        {
+          "word": " ist",
+          "start": 646.68,
+          "end": 646.88,
+          "probability": 0.981
+        },
+        {
+          "word": " echt",
+          "start": 646.88,
+          "end": 647.16,
+          "probability": 0.985
+        },
+        {
+          "word": " schrecklich",
+          "start": 647.16,
+          "end": 647.98,
+          "probability": 0.99
+        },
+        {
+          "word": " Sieh",
+          "start": 648.26,
+          "end": 648.48,
+          "probability": 0.547
+        },
+        {
+          "word": " es",
+          "start": 648.48,
+          "end": 648.52,
+          "probability": 0.225
+        },
+        {
+          "word": " dir",
+          "start": 648.52,
+          "end": 648.64,
+          "probability": 0.884
+        },
+        {
+          "word": " an",
+          "start": 648.64,
+          "end": 649.0,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1400184,
+      "speaker": "Sakura",
+      "text": "Es war nicht leicht, das Chaos aufzuräumen.",
+      "chosenMethod": "contextual",
+      "oldStart": 703.4,
+      "oldEnd": 706.26,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 703.44,
+      "suggestedEnd": 706.2,
+      "alignmentProbability": 0.953,
+      "minWordProbability": 0.721,
+      "maxWordDuration": 0.98,
+      "flags": [],
+      "words": [
+        {
+          "word": " Es",
+          "start": 703.44,
+          "end": 704.42,
+          "probability": 0.721
+        },
+        {
+          "word": " war",
+          "start": 704.42,
+          "end": 704.68,
+          "probability": 0.994
+        },
+        {
+          "word": " nicht",
+          "start": 704.68,
+          "end": 704.88,
+          "probability": 0.993
+        },
+        {
+          "word": " leicht",
+          "start": 704.88,
+          "end": 705.06,
+          "probability": 0.993
+        },
+        {
+          "word": " das",
+          "start": 705.22,
+          "end": 705.34,
+          "probability": 0.985
+        },
+        {
+          "word": " Chaos",
+          "start": 705.34,
+          "end": 705.54,
+          "probability": 0.992
+        },
+        {
+          "word": " aufzuräumen",
+          "start": 705.54,
+          "end": 706.2,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "cueId": 1400185,
+      "speaker": "Sakura",
+      "text": "Es hatte den Vorteil, dass zwei Stunden ausgefallen sind.",
+      "chosenMethod": "contextual",
+      "oldStart": 706.26,
+      "oldEnd": 709.02,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 706.02,
+      "suggestedEnd": 709.0,
+      "alignmentProbability": 0.924,
+      "minWordProbability": 0.578,
+      "maxWordDuration": 0.68,
+      "flags": [],
+      "words": [
+        {
+          "word": " Es",
+          "start": 706.02,
+          "end": 706.7,
+          "probability": 0.578
+        },
+        {
+          "word": " hatte",
+          "start": 706.7,
+          "end": 706.9,
+          "probability": 0.914
+        },
+        {
+          "word": " den",
+          "start": 706.9,
+          "end": 707.1,
+          "probability": 0.992
+        },
+        {
+          "word": " Vorteil",
+          "start": 707.1,
+          "end": 707.38,
+          "probability": 0.993
+        },
+        {
+          "word": " dass",
+          "start": 707.5,
+          "end": 707.58,
+          "probability": 0.984
+        },
+        {
+          "word": " zwei",
+          "start": 707.58,
+          "end": 707.8,
+          "probability": 0.885
+        },
+        {
+          "word": " Stunden",
+          "start": 707.8,
+          "end": 708.18,
+          "probability": 0.993
+        },
+        {
+          "word": " ausgefallen",
+          "start": 708.18,
+          "end": 708.76,
+          "probability": 0.991
+        },
+        {
+          "word": " sind",
+          "start": 708.76,
+          "end": 709.0,
+          "probability": 0.986
+        }
+      ]
+    },
+    {
+      "cueId": 1400187,
+      "speaker": "Kero",
+      "text": "Ich weiß nicht, aber wir werden es herausfinden.",
+      "chosenMethod": "contextual",
+      "oldStart": 715.98,
+      "oldEnd": 720.48,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 715.48,
+      "suggestedEnd": 720.52,
+      "alignmentProbability": 0.81,
+      "minWordProbability": 0.257,
+      "maxWordDuration": 1.28,
+      "flags": [
+        "collapsed_words"
+      ],
+      "words": [
+        {
+          "word": " Ich",
+          "start": 715.48,
+          "end": 716.76,
+          "probability": 0.257
+        },
+        {
+          "word": " weiß",
+          "start": 716.76,
+          "end": 717.5,
+          "probability": 0.912
+        },
+        {
+          "word": " nicht",
+          "start": 717.5,
+          "end": 717.74,
+          "probability": 0.969
+        },
+        {
+          "word": " aber",
+          "start": 718.32,
+          "end": 718.32,
+          "probability": 0.987
+        },
+        {
+          "word": " wir",
+          "start": 718.32,
+          "end": 719.5,
+          "probability": 0.651
+        },
+        {
+          "word": " werden",
+          "start": 719.5,
+          "end": 719.76,
+          "probability": 0.987
+        },
+        {
+          "word": " es",
+          "start": 719.76,
+          "end": 719.94,
+          "probability": 0.737
+        },
+        {
+          "word": " herausfinden",
+          "start": 719.94,
+          "end": 720.52,
+          "probability": 0.981
+        }
+      ]
+    },
+    {
+      "cueId": 1400194,
+      "speaker": "Sakura",
+      "text": "Was? Heute Nacht? Kommt nicht infrage.",
+      "chosenMethod": "contextual",
+      "oldStart": 736.56,
+      "oldEnd": 739.48,
+      "isChapterPick": true,
+      "isShortFocus": true,
+      "status": "verified",
+      "suggestedStart": 736.3,
+      "suggestedEnd": 739.42,
+      "alignmentProbability": 0.86,
+      "minWordProbability": 0.659,
+      "maxWordDuration": 0.88,
+      "flags": [],
+      "words": [
+        {
+          "word": " Was",
+          "start": 736.3,
+          "end": 737.18,
+          "probability": 0.659
+        },
+        {
+          "word": " Heute",
+          "start": 737.54,
+          "end": 737.82,
+          "probability": 0.865
+        },
+        {
+          "word": " Nacht",
+          "start": 737.82,
+          "end": 738.26,
+          "probability": 0.978
+        },
+        {
+          "word": " Kommt",
+          "start": 738.54,
+          "end": 738.8,
+          "probability": 0.972
+        },
+        {
+          "word": " nicht",
+          "start": 738.8,
+          "end": 738.94,
+          "probability": 0.997
+        },
+        {
+          "word": " infrage",
+          "start": 738.94,
+          "end": 739.42,
+          "probability": 0.69
+        }
+      ]
+    },
+    {
+      "cueId": 1400195,
+      "speaker": "Sakura",
+      "text": "Nachts werde ich die Schule nicht betreten.",
+      "chosenMethod": "contextual",
+      "oldStart": 740.26,
+      "oldEnd": 742.7,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 740.3,
+      "suggestedEnd": 742.64,
+      "alignmentProbability": 0.926,
+      "minWordProbability": 0.728,
+      "maxWordDuration": 1.04,
+      "flags": [],
+      "words": [
+        {
+          "word": " Nachts",
+          "start": 740.3,
+          "end": 741.34,
+          "probability": 0.799
+        },
+        {
+          "word": " werde",
+          "start": 741.34,
+          "end": 741.44,
+          "probability": 0.728
+        },
+        {
+          "word": " ich",
+          "start": 741.44,
+          "end": 741.6,
+          "probability": 0.989
+        },
+        {
+          "word": " die",
+          "start": 741.6,
+          "end": 741.7,
+          "probability": 0.983
+        },
+        {
+          "word": " Schule",
+          "start": 741.7,
+          "end": 741.88,
+          "probability": 0.992
+        },
+        {
+          "word": " nicht",
+          "start": 741.88,
+          "end": 742.16,
+          "probability": 0.995
+        },
+        {
+          "word": " betreten",
+          "start": 742.16,
+          "end": 742.64,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1400208,
+      "speaker": "Tomoyo",
+      "text": "Weiß nicht, ich mach es aber gern, weil es mein Hobby ist.",
+      "chosenMethod": "contextual",
+      "oldStart": 770.38,
+      "oldEnd": 773.28,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 769.88,
+      "suggestedEnd": 773.22,
+      "alignmentProbability": 0.839,
+      "minWordProbability": 0.097,
+      "maxWordDuration": 1.0,
+      "flags": [],
+      "words": [
+        {
+          "word": " Weiß",
+          "start": 769.88,
+          "end": 770.88,
+          "probability": 0.459
+        },
+        {
+          "word": " nicht",
+          "start": 770.88,
+          "end": 770.98,
+          "probability": 0.967
+        },
+        {
+          "word": " ich",
+          "start": 771.16,
+          "end": 771.22,
+          "probability": 0.965
+        },
+        {
+          "word": " mach",
+          "start": 771.22,
+          "end": 771.38,
+          "probability": 0.097
+        },
+        {
+          "word": " es",
+          "start": 771.38,
+          "end": 771.6,
+          "probability": 0.835
+        },
+        {
+          "word": " aber",
+          "start": 771.6,
+          "end": 771.82,
+          "probability": 0.975
+        },
+        {
+          "word": " gern",
+          "start": 771.82,
+          "end": 772.02,
+          "probability": 0.828
+        },
+        {
+          "word": " weil",
+          "start": 772.08,
+          "end": 772.2,
+          "probability": 0.991
+        },
+        {
+          "word": " es",
+          "start": 772.2,
+          "end": 772.38,
+          "probability": 0.967
+        },
+        {
+          "word": " mein",
+          "start": 772.38,
+          "end": 772.56,
+          "probability": 0.993
+        },
+        {
+          "word": " Hobby",
+          "start": 772.56,
+          "end": 772.84,
+          "probability": 0.996
+        },
+        {
+          "word": " ist",
+          "start": 772.84,
+          "end": 773.22,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "cueId": 1400217,
+      "speaker": "Sakura",
+      "text": "Nein, wir sind auch gerade eben gekommen.",
+      "chosenMethod": "contextual",
+      "oldStart": 813.52,
+      "oldEnd": 815.58,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 813.02,
+      "suggestedEnd": 815.48,
+      "alignmentProbability": 0.91,
+      "minWordProbability": 0.795,
+      "maxWordDuration": 0.8,
+      "flags": [
+        "collapsed_words"
+      ],
+      "words": [
+        {
+          "word": " Nein",
+          "start": 813.02,
+          "end": 813.82,
+          "probability": 0.875
+        },
+        {
+          "word": " wir",
+          "start": 814.18,
+          "end": 814.18,
+          "probability": 0.993
+        },
+        {
+          "word": " sind",
+          "start": 814.18,
+          "end": 814.42,
+          "probability": 0.971
+        },
+        {
+          "word": " auch",
+          "start": 814.42,
+          "end": 814.7,
+          "probability": 0.799
+        },
+        {
+          "word": " gerade",
+          "start": 814.7,
+          "end": 814.9,
+          "probability": 0.795
+        },
+        {
+          "word": " eben",
+          "start": 814.9,
+          "end": 815.1,
+          "probability": 0.95
+        },
+        {
+          "word": " gekommen",
+          "start": 815.1,
+          "end": 815.48,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "cueId": 1400219,
+      "speaker": "Vệ sĩ",
+      "text": "Ruf uns, wenn du Hilfe brauchst.",
+      "chosenMethod": "contextual",
+      "oldStart": 835.98,
+      "oldEnd": 838.42,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 836.02,
+      "suggestedEnd": 838.38,
+      "alignmentProbability": 0.966,
+      "minWordProbability": 0.857,
+      "maxWordDuration": 1.06,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ruf",
+          "start": 836.02,
+          "end": 837.08,
+          "probability": 0.857
+        },
+        {
+          "word": " uns",
+          "start": 837.08,
+          "end": 837.22,
+          "probability": 0.982
+        },
+        {
+          "word": " wenn",
+          "start": 837.3,
+          "end": 837.38,
+          "probability": 0.998
+        },
+        {
+          "word": " du",
+          "start": 837.38,
+          "end": 837.52,
+          "probability": 0.968
+        },
+        {
+          "word": " Hilfe",
+          "start": 837.52,
+          "end": 837.78,
+          "probability": 0.997
+        },
+        {
+          "word": " brauchst",
+          "start": 837.78,
+          "end": 838.38,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "cueId": 1400220,
+      "speaker": "Tomoyo",
+      "text": "Ja klar, wenn ich anrufe, können sie mich abholen kommen.",
+      "chosenMethod": "contextual",
+      "oldStart": 838.42,
+      "oldEnd": 841.3,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 837.92,
+      "suggestedEnd": 841.24,
+      "alignmentProbability": 0.793,
+      "minWordProbability": 0.094,
+      "maxWordDuration": 0.78,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ja",
+          "start": 837.92,
+          "end": 838.7,
+          "probability": 0.533
+        },
+        {
+          "word": " klar",
+          "start": 838.7,
+          "end": 838.96,
+          "probability": 0.794
+        },
+        {
+          "word": " wenn",
+          "start": 839.12,
+          "end": 839.16,
+          "probability": 0.993
+        },
+        {
+          "word": " ich",
+          "start": 839.16,
+          "end": 839.38,
+          "probability": 0.997
+        },
+        {
+          "word": " anrufe",
+          "start": 839.38,
+          "end": 839.86,
+          "probability": 0.989
+        },
+        {
+          "word": " können",
+          "start": 840.08,
+          "end": 840.12,
+          "probability": 0.985
+        },
+        {
+          "word": " sie",
+          "start": 840.12,
+          "end": 840.3,
+          "probability": 0.562
+        },
+        {
+          "word": " mich",
+          "start": 840.3,
+          "end": 840.6,
+          "probability": 0.993
+        },
+        {
+          "word": " abholen",
+          "start": 840.6,
+          "end": 841.08,
+          "probability": 0.99
+        },
+        {
+          "word": " kommen",
+          "start": 841.08,
+          "end": 841.24,
+          "probability": 0.094
+        }
+      ]
+    },
+    {
+      "cueId": 1400226,
+      "speaker": "Tomoyo",
+      "text": "Los, komm, du musst dich umziehen.",
+      "chosenMethod": "contextual",
+      "oldStart": 856.72,
+      "oldEnd": 859.32,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 856.76,
+      "suggestedEnd": 859.26,
+      "alignmentProbability": 0.953,
+      "minWordProbability": 0.813,
+      "maxWordDuration": 0.84,
+      "flags": [],
+      "words": [
+        {
+          "word": " Los",
+          "start": 856.76,
+          "end": 857.6,
+          "probability": 0.813
+        },
+        {
+          "word": " komm",
+          "start": 857.82,
+          "end": 857.96,
+          "probability": 0.967
+        },
+        {
+          "word": " du",
+          "start": 858.1,
+          "end": 858.34,
+          "probability": 0.971
+        },
+        {
+          "word": " musst",
+          "start": 858.34,
+          "end": 858.56,
+          "probability": 0.989
+        },
+        {
+          "word": " dich",
+          "start": 858.56,
+          "end": 858.74,
+          "probability": 0.982
+        },
+        {
+          "word": " umziehen",
+          "start": 858.74,
+          "end": 859.26,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1400229,
+      "speaker": "Tomoyo",
+      "text": "Willst du dir selbst eins aussuchen?",
+      "chosenMethod": "contextual",
+      "oldStart": 873.86,
+      "oldEnd": 876.18,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 873.9,
+      "suggestedEnd": 876.12,
+      "alignmentProbability": 0.919,
+      "minWordProbability": 0.772,
+      "maxWordDuration": 1.04,
+      "flags": [],
+      "words": [
+        {
+          "word": " Willst",
+          "start": 873.9,
+          "end": 874.94,
+          "probability": 0.853
+        },
+        {
+          "word": " du",
+          "start": 874.94,
+          "end": 875.06,
+          "probability": 0.933
+        },
+        {
+          "word": " dir",
+          "start": 875.06,
+          "end": 875.18,
+          "probability": 0.988
+        },
+        {
+          "word": " selbst",
+          "start": 875.18,
+          "end": 875.52,
+          "probability": 0.997
+        },
+        {
+          "word": " eins",
+          "start": 875.52,
+          "end": 875.74,
+          "probability": 0.772
+        },
+        {
+          "word": " aussuchen",
+          "start": 875.74,
+          "end": 876.12,
+          "probability": 0.972
+        }
+      ]
+    },
+    {
+      "cueId": 1400245,
+      "speaker": "Kero",
+      "text": "Dir muss gar nichts peinlich sein.",
+      "chosenMethod": "contextual",
+      "oldStart": 924.08,
+      "oldEnd": 926.5,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 924.12,
+      "suggestedEnd": 926.44,
+      "alignmentProbability": 0.957,
+      "minWordProbability": 0.887,
+      "maxWordDuration": 0.62,
+      "flags": [],
+      "words": [
+        {
+          "word": " Dir",
+          "start": 924.12,
+          "end": 924.72,
+          "probability": 0.887
+        },
+        {
+          "word": " muss",
+          "start": 924.72,
+          "end": 924.98,
+          "probability": 0.974
+        },
+        {
+          "word": " gar",
+          "start": 924.98,
+          "end": 925.26,
+          "probability": 0.989
+        },
+        {
+          "word": " nichts",
+          "start": 925.26,
+          "end": 925.48,
+          "probability": 0.898
+        },
+        {
+          "word": " peinlich",
+          "start": 925.48,
+          "end": 926.1,
+          "probability": 0.995
+        },
+        {
+          "word": " sein",
+          "start": 926.1,
+          "end": 926.44,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1400246,
+      "speaker": "Tomoyo",
+      "text": "Für dich habe ich auch etwas Passendes mitgebracht.",
+      "chosenMethod": "contextual",
+      "oldStart": 927.72,
+      "oldEnd": 930.24,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 927.22,
+      "suggestedEnd": 930.34,
+      "alignmentProbability": 0.774,
+      "minWordProbability": 0.056,
+      "maxWordDuration": 0.98,
+      "flags": [
+        "weak_individual_word"
+      ],
+      "words": [
+        {
+          "word": " Für",
+          "start": 927.22,
+          "end": 928.2,
+          "probability": 0.056
+        },
+        {
+          "word": " dich",
+          "start": 928.2,
+          "end": 928.4,
+          "probability": 0.939
+        },
+        {
+          "word": " habe",
+          "start": 928.4,
+          "end": 928.56,
+          "probability": 0.766
+        },
+        {
+          "word": " ich",
+          "start": 928.56,
+          "end": 928.76,
+          "probability": 0.994
+        },
+        {
+          "word": " auch",
+          "start": 928.76,
+          "end": 928.98,
+          "probability": 0.98
+        },
+        {
+          "word": " etwas",
+          "start": 928.98,
+          "end": 929.12,
+          "probability": 0.903
+        },
+        {
+          "word": " Passendes",
+          "start": 929.12,
+          "end": 929.66,
+          "probability": 0.566
+        },
+        {
+          "word": " mitgebracht",
+          "start": 929.66,
+          "end": 930.34,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "cueId": 1400251,
+      "speaker": "Sakura",
+      "text": "Sag mal, was ist das eben für ein Geräusch gewesen?",
+      "chosenMethod": "contextual",
+      "oldStart": 950.02,
+      "oldEnd": 953.14,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 950.06,
+      "suggestedEnd": 953.14,
+      "alignmentProbability": 0.873,
+      "minWordProbability": 0.358,
+      "maxWordDuration": 1.06,
+      "flags": [],
+      "words": [
+        {
+          "word": " Sag",
+          "start": 950.06,
+          "end": 951.12,
+          "probability": 0.358
+        },
+        {
+          "word": " mal",
+          "start": 951.12,
+          "end": 951.44,
+          "probability": 0.957
+        },
+        {
+          "word": " was",
+          "start": 951.6,
+          "end": 951.7,
+          "probability": 0.991
+        },
+        {
+          "word": " ist",
+          "start": 951.7,
+          "end": 951.84,
+          "probability": 0.943
+        },
+        {
+          "word": " das",
+          "start": 951.84,
+          "end": 951.96,
+          "probability": 0.954
+        },
+        {
+          "word": " eben",
+          "start": 951.96,
+          "end": 952.18,
+          "probability": 0.938
+        },
+        {
+          "word": " für",
+          "start": 952.18,
+          "end": 952.32,
+          "probability": 0.617
+        },
+        {
+          "word": " ein",
+          "start": 952.32,
+          "end": 952.5,
+          "probability": 0.989
+        },
+        {
+          "word": " Geräusch",
+          "start": 952.5,
+          "end": 952.86,
+          "probability": 0.999
+        },
+        {
+          "word": " gewesen",
+          "start": 952.86,
+          "end": 953.14,
+          "probability": 0.988
+        }
+      ]
+    },
+    {
+      "cueId": 1400252,
+      "speaker": "Tomoyo",
+      "text": "Also, ich habe nichts gehört.",
+      "chosenMethod": "contextual",
+      "oldStart": 953.14,
+      "oldEnd": 954.54,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 952.64,
+      "suggestedEnd": 954.48,
+      "alignmentProbability": 0.721,
+      "minWordProbability": 0.094,
+      "maxWordDuration": 0.74,
+      "flags": [],
+      "words": [
+        {
+          "word": " Also",
+          "start": 952.64,
+          "end": 953.38,
+          "probability": 0.573
+        },
+        {
+          "word": " ich",
+          "start": 953.54,
+          "end": 953.6,
+          "probability": 0.986
+        },
+        {
+          "word": " habe",
+          "start": 953.6,
+          "end": 953.82,
+          "probability": 0.094
+        },
+        {
+          "word": " nichts",
+          "start": 953.82,
+          "end": 954.02,
+          "probability": 0.955
+        },
+        {
+          "word": " gehört",
+          "start": 954.02,
+          "end": 954.48,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "cueId": 1400254,
+      "speaker": "Kero",
+      "text": "Beruhige dich doch!",
+      "chosenMethod": "contextual",
+      "oldStart": 973.68,
+      "oldEnd": 975.72,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 973.72,
+      "suggestedEnd": 975.66,
+      "alignmentProbability": 0.862,
+      "minWordProbability": 0.7,
+      "maxWordDuration": 1.4,
+      "flags": [],
+      "words": [
+        {
+          "word": " Beruhige",
+          "start": 973.72,
+          "end": 975.12,
+          "probability": 0.7
+        },
+        {
+          "word": " dich",
+          "start": 975.12,
+          "end": 975.32,
+          "probability": 0.903
+        },
+        {
+          "word": " doch",
+          "start": 975.32,
+          "end": 975.66,
+          "probability": 0.983
+        }
+      ]
+    },
+    {
+      "cueId": 1400256,
+      "speaker": "Kero",
+      "text": "Sie schwebt von allein, das bedeutet nichts Gutes!",
+      "chosenMethod": "contextual",
+      "oldStart": 981.56,
+      "oldEnd": 984.4,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 981.06,
+      "suggestedEnd": 984.6,
+      "alignmentProbability": 0.965,
+      "minWordProbability": 0.888,
+      "maxWordDuration": 1.26,
+      "flags": [
+        "collapsed_words"
+      ],
+      "words": [
+        {
+          "word": " Sie",
+          "start": 981.06,
+          "end": 982.32,
+          "probability": 0.888
+        },
+        {
+          "word": " schwebt",
+          "start": 982.32,
+          "end": 982.68,
+          "probability": 0.995
+        },
+        {
+          "word": " von",
+          "start": 982.68,
+          "end": 982.98,
+          "probability": 0.982
+        },
+        {
+          "word": " allein",
+          "start": 982.98,
+          "end": 983.2,
+          "probability": 0.959
+        },
+        {
+          "word": " das",
+          "start": 983.42,
+          "end": 983.42,
+          "probability": 0.955
+        },
+        {
+          "word": " bedeutet",
+          "start": 983.42,
+          "end": 983.88,
+          "probability": 0.993
+        },
+        {
+          "word": " nichts",
+          "start": 983.88,
+          "end": 984.1,
+          "probability": 0.981
+        },
+        {
+          "word": " Gutes",
+          "start": 984.1,
+          "end": 984.6,
+          "probability": 0.967
+        }
+      ]
+    },
+    {
+      "cueId": 1400267,
+      "speaker": "Sakura",
+      "text": "Du bleibst bei Tomoyo und schützt sie.",
+      "chosenMethod": "contextual",
+      "oldStart": 1012.36,
+      "oldEnd": 1014.84,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 1011.86,
+      "suggestedEnd": 1014.84,
+      "alignmentProbability": 0.689,
+      "minWordProbability": 0.0,
+      "maxWordDuration": 0.86,
+      "flags": [
+        "weak_individual_word",
+        "collapsed_words"
+      ],
+      "words": [
+        {
+          "word": " Du",
+          "start": 1011.86,
+          "end": 1012.72,
+          "probability": 0.0
+        },
+        {
+          "word": " bleibst",
+          "start": 1012.72,
+          "end": 1013.22,
+          "probability": 0.625
+        },
+        {
+          "word": " bei",
+          "start": 1013.22,
+          "end": 1013.32,
+          "probability": 0.874
+        },
+        {
+          "word": " Tomoyo",
+          "start": 1013.32,
+          "end": 1013.82,
+          "probability": 0.868
+        },
+        {
+          "word": " und",
+          "start": 1013.82,
+          "end": 1014.18,
+          "probability": 0.753
+        },
+        {
+          "word": " schützt",
+          "start": 1014.18,
+          "end": 1014.84,
+          "probability": 0.744
+        },
+        {
+          "word": " sie",
+          "start": 1014.84,
+          "end": 1014.84,
+          "probability": 0.96
+        }
+      ]
+    },
+    {
+      "cueId": 1400268,
+      "speaker": "Kero",
+      "text": "Ja, du machst das schon!",
+      "chosenMethod": "contextual",
+      "oldStart": 1015.76,
+      "oldEnd": 1017.82,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1015.8,
+      "suggestedEnd": 1017.76,
+      "alignmentProbability": 0.784,
+      "minWordProbability": 0.459,
+      "maxWordDuration": 1.0,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ja",
+          "start": 1015.8,
+          "end": 1016.8,
+          "probability": 0.459
+        },
+        {
+          "word": " du",
+          "start": 1016.88,
+          "end": 1017.0,
+          "probability": 0.594
+        },
+        {
+          "word": " machst",
+          "start": 1017.0,
+          "end": 1017.2,
+          "probability": 0.887
+        },
+        {
+          "word": " das",
+          "start": 1017.2,
+          "end": 1017.46,
+          "probability": 0.983
+        },
+        {
+          "word": " schon",
+          "start": 1017.46,
+          "end": 1017.76,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "cueId": 1400283,
+      "speaker": "Tomoyo",
+      "text": "Ja, genau. Vielleicht müssen wir nicht bis zum Sonnenaufgang warten.",
+      "chosenMethod": "contextual",
+      "oldStart": 1103.56,
+      "oldEnd": 1107.22,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1103.6,
+      "suggestedEnd": 1107.16,
+      "alignmentProbability": 0.967,
+      "minWordProbability": 0.753,
+      "maxWordDuration": 0.68,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ja",
+          "start": 1103.6,
+          "end": 1104.28,
+          "probability": 0.753
+        },
+        {
+          "word": " genau",
+          "start": 1104.58,
+          "end": 1104.68,
+          "probability": 0.978
+        },
+        {
+          "word": " Vielleicht",
+          "start": 1104.76,
+          "end": 1105.08,
+          "probability": 0.993
+        },
+        {
+          "word": " müssen",
+          "start": 1105.08,
+          "end": 1105.34,
+          "probability": 0.995
+        },
+        {
+          "word": " wir",
+          "start": 1105.34,
+          "end": 1105.54,
+          "probability": 0.99
+        },
+        {
+          "word": " nicht",
+          "start": 1105.54,
+          "end": 1105.76,
+          "probability": 0.984
+        },
+        {
+          "word": " bis",
+          "start": 1105.76,
+          "end": 1105.96,
+          "probability": 0.996
+        },
+        {
+          "word": " zum",
+          "start": 1105.96,
+          "end": 1106.22,
+          "probability": 0.992
+        },
+        {
+          "word": " Sonnenaufgang",
+          "start": 1106.22,
+          "end": 1106.78,
+          "probability": 0.995
+        },
+        {
+          "word": " warten",
+          "start": 1106.78,
+          "end": 1107.16,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1400284,
+      "speaker": "Sakura",
+      "text": "Ich habe es gewusst. Das ist zu viel für mich.",
+      "chosenMethod": "contextual",
+      "oldStart": 1114.26,
+      "oldEnd": 1118.0,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1114.3,
+      "suggestedEnd": 1117.94,
+      "alignmentProbability": 0.91,
+      "minWordProbability": 0.595,
+      "maxWordDuration": 1.04,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ich",
+          "start": 1114.3,
+          "end": 1115.34,
+          "probability": 0.595
+        },
+        {
+          "word": " habe",
+          "start": 1115.34,
+          "end": 1115.56,
+          "probability": 0.636
+        },
+        {
+          "word": " es",
+          "start": 1115.56,
+          "end": 1115.72,
+          "probability": 0.963
+        },
+        {
+          "word": " gewusst",
+          "start": 1115.72,
+          "end": 1116.34,
+          "probability": 0.996
+        },
+        {
+          "word": " Das",
+          "start": 1116.74,
+          "end": 1116.82,
+          "probability": 0.972
+        },
+        {
+          "word": " ist",
+          "start": 1116.82,
+          "end": 1116.98,
+          "probability": 0.996
+        },
+        {
+          "word": " zu",
+          "start": 1116.98,
+          "end": 1117.24,
+          "probability": 0.994
+        },
+        {
+          "word": " viel",
+          "start": 1117.24,
+          "end": 1117.4,
+          "probability": 0.957
+        },
+        {
+          "word": " für",
+          "start": 1117.4,
+          "end": 1117.66,
+          "probability": 0.989
+        },
+        {
+          "word": " mich",
+          "start": 1117.66,
+          "end": 1117.94,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1400285,
+      "speaker": "Sakura",
+      "text": "Was kann ich nur dagegen tun?",
+      "chosenMethod": "contextual",
+      "oldStart": 1118.26,
+      "oldEnd": 1120.74,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1118.3,
+      "suggestedEnd": 1120.68,
+      "alignmentProbability": 0.849,
+      "minWordProbability": 0.333,
+      "maxWordDuration": 0.92,
+      "flags": [],
+      "words": [
+        {
+          "word": " Was",
+          "start": 1118.3,
+          "end": 1119.22,
+          "probability": 0.802
+        },
+        {
+          "word": " kann",
+          "start": 1119.22,
+          "end": 1119.44,
+          "probability": 0.996
+        },
+        {
+          "word": " ich",
+          "start": 1119.44,
+          "end": 1119.64,
+          "probability": 0.998
+        },
+        {
+          "word": " nur",
+          "start": 1119.64,
+          "end": 1119.82,
+          "probability": 0.965
+        },
+        {
+          "word": " dagegen",
+          "start": 1119.82,
+          "end": 1120.26,
+          "probability": 0.998
+        },
+        {
+          "word": " tun",
+          "start": 1120.26,
+          "end": 1120.68,
+          "probability": 0.333
+        }
+      ]
+    },
+    {
+      "cueId": 1400286,
+      "speaker": "Sakura",
+      "text": "Hey, lasst mich los!",
+      "chosenMethod": "contextual",
+      "oldStart": 1127.56,
+      "oldEnd": 1130.12,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1127.6,
+      "suggestedEnd": 1130.06,
+      "alignmentProbability": 0.803,
+      "minWordProbability": 0.597,
+      "maxWordDuration": 1.16,
+      "flags": [],
+      "words": [
+        {
+          "word": " Hey",
+          "start": 1127.6,
+          "end": 1128.76,
+          "probability": 0.597
+        },
+        {
+          "word": " lasst",
+          "start": 1129.1,
+          "end": 1129.32,
+          "probability": 0.637
+        },
+        {
+          "word": " mich",
+          "start": 1129.32,
+          "end": 1129.54,
+          "probability": 0.999
+        },
+        {
+          "word": " los",
+          "start": 1129.54,
+          "end": 1130.06,
+          "probability": 0.978
+        }
+      ]
+    },
+    {
+      "cueId": 1400294,
+      "speaker": "Sakura",
+      "text": "Das war eine super Idee, Tomoyo!",
+      "chosenMethod": "contextual",
+      "oldStart": 1176.24,
+      "oldEnd": 1179.04,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1176.28,
+      "suggestedEnd": 1178.98,
+      "alignmentProbability": 0.867,
+      "minWordProbability": 0.57,
+      "maxWordDuration": 1.06,
+      "flags": [],
+      "words": [
+        {
+          "word": " Das",
+          "start": 1176.28,
+          "end": 1177.34,
+          "probability": 0.764
+        },
+        {
+          "word": " war",
+          "start": 1177.34,
+          "end": 1177.58,
+          "probability": 0.988
+        },
+        {
+          "word": " eine",
+          "start": 1177.58,
+          "end": 1177.72,
+          "probability": 0.57
+        },
+        {
+          "word": " super",
+          "start": 1177.72,
+          "end": 1178.06,
+          "probability": 0.949
+        },
+        {
+          "word": " Idee",
+          "start": 1178.06,
+          "end": 1178.4,
+          "probability": 0.995
+        },
+        {
+          "word": " Tomoyo",
+          "start": 1178.62,
+          "end": 1178.98,
+          "probability": 0.932
+        }
+      ]
+    },
+    {
+      "cueId": 1400297,
+      "speaker": "Kero",
+      "text": "Hab Vertrauen, du schaffst es, Sakura!",
+      "chosenMethod": "contextual",
+      "oldStart": 1202,
+      "oldEnd": 1203.92,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 1201.5,
+      "suggestedEnd": 1204.06,
+      "alignmentProbability": 0.808,
+      "minWordProbability": 0.024,
+      "maxWordDuration": 0.74,
+      "flags": [
+        "weak_individual_word"
+      ],
+      "words": [
+        {
+          "word": " Hab",
+          "start": 1201.5,
+          "end": 1202.24,
+          "probability": 0.024
+        },
+        {
+          "word": " Vertrauen",
+          "start": 1202.24,
+          "end": 1202.7,
+          "probability": 0.932
+        },
+        {
+          "word": " du",
+          "start": 1202.88,
+          "end": 1202.94,
+          "probability": 0.936
+        },
+        {
+          "word": " schaffst",
+          "start": 1202.94,
+          "end": 1203.36,
+          "probability": 0.995
+        },
+        {
+          "word": " es",
+          "start": 1203.36,
+          "end": 1203.56,
+          "probability": 0.987
+        },
+        {
+          "word": " Sakura",
+          "start": 1203.68,
+          "end": 1204.06,
+          "probability": 0.977
+        }
+      ]
+    },
+    {
+      "cueId": 1400303,
+      "speaker": "Tomoyo",
+      "text": "Und ich konnte alles aufnehmen.",
+      "chosenMethod": "contextual",
+      "oldStart": 1259.58,
+      "oldEnd": 1261.66,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "timing_checked_with_flags",
+      "suggestedStart": 1259.08,
+      "suggestedEnd": 1261.76,
+      "alignmentProbability": 0.713,
+      "minWordProbability": 0.005,
+      "maxWordDuration": 1.1,
+      "flags": [
+        "weak_individual_word"
+      ],
+      "words": [
+        {
+          "word": " Und",
+          "start": 1259.08,
+          "end": 1260.18,
+          "probability": 0.582
+        },
+        {
+          "word": " ich",
+          "start": 1260.18,
+          "end": 1260.4,
+          "probability": 0.988
+        },
+        {
+          "word": " konnte",
+          "start": 1260.4,
+          "end": 1260.72,
+          "probability": 0.005
+        },
+        {
+          "word": " alles",
+          "start": 1260.72,
+          "end": 1261.1,
+          "probability": 0.995
+        },
+        {
+          "word": " aufnehmen",
+          "start": 1261.1,
+          "end": 1261.76,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "cueId": 1400304,
+      "speaker": "Sakura",
+      "text": "Chiharu, hast du Tomoyo irgendwo gesehen?",
+      "chosenMethod": "contextual",
+      "oldStart": 1268.14,
+      "oldEnd": 1271.42,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1268.18,
+      "suggestedEnd": 1271.36,
+      "alignmentProbability": 0.902,
+      "minWordProbability": 0.682,
+      "maxWordDuration": 1.3,
+      "flags": [],
+      "words": [
+        {
+          "word": " Chiharu",
+          "start": 1268.18,
+          "end": 1269.48,
+          "probability": 0.682
+        },
+        {
+          "word": " hast",
+          "start": 1269.78,
+          "end": 1269.96,
+          "probability": 0.998
+        },
+        {
+          "word": " du",
+          "start": 1269.96,
+          "end": 1270.12,
+          "probability": 0.965
+        },
+        {
+          "word": " Tomoyo",
+          "start": 1270.12,
+          "end": 1270.6,
+          "probability": 0.813
+        },
+        {
+          "word": " irgendwo",
+          "start": 1270.6,
+          "end": 1270.98,
+          "probability": 0.955
+        },
+        {
+          "word": " gesehen",
+          "start": 1270.98,
+          "end": 1271.36,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "cueId": 1400308,
+      "speaker": "Sakura",
+      "text": "Danke für deine nächtliche Hilfe.",
+      "chosenMethod": "contextual",
+      "oldStart": 1285.1,
+      "oldEnd": 1287,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1285.14,
+      "suggestedEnd": 1287.08,
+      "alignmentProbability": 0.94,
+      "minWordProbability": 0.828,
+      "maxWordDuration": 0.66,
+      "flags": [],
+      "words": [
+        {
+          "word": " Danke",
+          "start": 1285.14,
+          "end": 1285.8,
+          "probability": 0.828
+        },
+        {
+          "word": " für",
+          "start": 1285.8,
+          "end": 1285.98,
+          "probability": 0.964
+        },
+        {
+          "word": " deine",
+          "start": 1285.98,
+          "end": 1286.2,
+          "probability": 0.966
+        },
+        {
+          "word": " nächtliche",
+          "start": 1286.2,
+          "end": 1286.72,
+          "probability": 0.943
+        },
+        {
+          "word": " Hilfe",
+          "start": 1286.72,
+          "end": 1287.08,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "cueId": 1400309,
+      "speaker": "Sakura",
+      "text": "Ich habe dir ein Geschenk mitgebracht.",
+      "chosenMethod": "contextual",
+      "oldStart": 1287,
+      "oldEnd": 1289.16,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1286.5,
+      "suggestedEnd": 1289.1,
+      "alignmentProbability": 0.775,
+      "minWordProbability": 0.35,
+      "maxWordDuration": 0.98,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ich",
+          "start": 1286.5,
+          "end": 1286.64,
+          "probability": 0.375
+        },
+        {
+          "word": " habe",
+          "start": 1286.64,
+          "end": 1287.62,
+          "probability": 0.35
+        },
+        {
+          "word": " dir",
+          "start": 1287.62,
+          "end": 1287.82,
+          "probability": 0.956
+        },
+        {
+          "word": " ein",
+          "start": 1287.82,
+          "end": 1287.96,
+          "probability": 0.98
+        },
+        {
+          "word": " Geschenk",
+          "start": 1287.96,
+          "end": 1288.34,
+          "probability": 0.995
+        },
+        {
+          "word": " mitgebracht",
+          "start": 1288.34,
+          "end": 1289.1,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "cueId": 1400311,
+      "speaker": "Tomoyo",
+      "text": "Es sind echt fantastische Aufnahmen geworden.",
+      "chosenMethod": "contextual",
+      "oldStart": 1295.0,
+      "oldEnd": 1298.82,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1295.04,
+      "suggestedEnd": 1298.76,
+      "alignmentProbability": 0.946,
+      "minWordProbability": 0.788,
+      "maxWordDuration": 1.6,
+      "flags": [],
+      "words": [
+        {
+          "word": " Es",
+          "start": 1295.04,
+          "end": 1296.64,
+          "probability": 0.788
+        },
+        {
+          "word": " sind",
+          "start": 1296.64,
+          "end": 1296.84,
+          "probability": 0.991
+        },
+        {
+          "word": " echt",
+          "start": 1296.84,
+          "end": 1297.14,
+          "probability": 0.956
+        },
+        {
+          "word": " fantastische",
+          "start": 1297.14,
+          "end": 1297.86,
+          "probability": 0.967
+        },
+        {
+          "word": " Aufnahmen",
+          "start": 1297.86,
+          "end": 1298.32,
+          "probability": 0.99
+        },
+        {
+          "word": " geworden",
+          "start": 1298.32,
+          "end": 1298.76,
+          "probability": 0.982
+        }
+      ]
+    },
+    {
+      "cueId": 1400315,
+      "speaker": "Tomoyo",
+      "text": "Am besten komme ich jetzt immer mit, wenn du auf Kartenjagd gehst.",
+      "chosenMethod": "contextual",
+      "oldStart": 1309.0,
+      "oldEnd": 1312.86,
+      "isChapterPick": false,
+      "isShortFocus": true,
+      "status": "verified",
+      "suggestedStart": 1309.04,
+      "suggestedEnd": 1312.82,
+      "alignmentProbability": 0.926,
+      "minWordProbability": 0.613,
+      "maxWordDuration": 0.82,
+      "flags": [],
+      "words": [
+        {
+          "word": " Am",
+          "start": 1309.04,
+          "end": 1309.86,
+          "probability": 0.613
+        },
+        {
+          "word": " besten",
+          "start": 1309.86,
+          "end": 1310.18,
+          "probability": 0.951
+        },
+        {
+          "word": " komme",
+          "start": 1310.18,
+          "end": 1310.44,
+          "probability": 0.932
+        },
+        {
+          "word": " ich",
+          "start": 1310.44,
+          "end": 1310.72,
+          "probability": 0.997
+        },
+        {
+          "word": " jetzt",
+          "start": 1310.72,
+          "end": 1310.94,
+          "probability": 0.968
+        },
+        {
+          "word": " immer",
+          "start": 1310.94,
+          "end": 1311.16,
+          "probability": 0.995
+        },
+        {
+          "word": " mit",
+          "start": 1311.16,
+          "end": 1311.38,
+          "probability": 0.997
+        },
+        {
+          "word": " wenn",
+          "start": 1311.44,
+          "end": 1311.52,
+          "probability": 0.993
+        },
+        {
+          "word": " du",
+          "start": 1311.52,
+          "end": 1311.72,
+          "probability": 0.949
+        },
+        {
+          "word": " auf",
+          "start": 1311.72,
+          "end": 1311.9,
+          "probability": 0.997
+        },
+        {
+          "word": " Kartenjagd",
+          "start": 1311.9,
+          "end": 1312.46,
+          "probability": 0.751
+        },
+        {
+          "word": " gehst",
+          "start": 1312.46,
+          "end": 1312.82,
+          "probability": 0.971
+        }
+      ]
+    },
+    {
+      "cueId": 1400319,
+      "speaker": "Sakura",
+      "text": "Ach, das muss nicht sein.",
+      "chosenMethod": "contextual",
+      "oldStart": 1318.2,
+      "oldEnd": 1320.22,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1318.16,
+      "suggestedEnd": 1320.16,
+      "alignmentProbability": 0.844,
+      "minWordProbability": 0.243,
+      "maxWordDuration": 0.84,
+      "flags": [],
+      "words": [
+        {
+          "word": " Ach",
+          "start": 1318.16,
+          "end": 1319.0,
+          "probability": 0.243
+        },
+        {
+          "word": " das",
+          "start": 1319.28,
+          "end": 1319.36,
+          "probability": 0.99
+        },
+        {
+          "word": " muss",
+          "start": 1319.36,
+          "end": 1319.62,
+          "probability": 0.996
+        },
+        {
+          "word": " nicht",
+          "start": 1319.62,
+          "end": 1319.92,
+          "probability": 0.993
+        },
+        {
+          "word": " sein",
+          "start": 1319.92,
+          "end": 1320.16,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "cueId": 1400321,
+      "speaker": "Tomoyo",
+      "text": "Außerdem muss ich dich beraten, damit du das passende Kostüm anziehst.",
+      "chosenMethod": "contextual",
+      "oldStart": 1321.4,
+      "oldEnd": 1325.42,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1321.44,
+      "suggestedEnd": 1325.36,
+      "alignmentProbability": 0.93,
+      "minWordProbability": 0.729,
+      "maxWordDuration": 0.94,
+      "flags": [],
+      "words": [
+        {
+          "word": " Außerdem",
+          "start": 1321.44,
+          "end": 1322.38,
+          "probability": 0.812
+        },
+        {
+          "word": " muss",
+          "start": 1322.38,
+          "end": 1322.58,
+          "probability": 0.978
+        },
+        {
+          "word": " ich",
+          "start": 1322.58,
+          "end": 1322.74,
+          "probability": 0.994
+        },
+        {
+          "word": " dich",
+          "start": 1322.74,
+          "end": 1322.88,
+          "probability": 0.983
+        },
+        {
+          "word": " beraten",
+          "start": 1322.88,
+          "end": 1323.28,
+          "probability": 0.786
+        },
+        {
+          "word": " damit",
+          "start": 1323.46,
+          "end": 1323.5,
+          "probability": 0.993
+        },
+        {
+          "word": " du",
+          "start": 1323.5,
+          "end": 1323.7,
+          "probability": 0.987
+        },
+        {
+          "word": " das",
+          "start": 1323.7,
+          "end": 1323.88,
+          "probability": 0.992
+        },
+        {
+          "word": " passende",
+          "start": 1323.88,
+          "end": 1324.24,
+          "probability": 0.729
+        },
+        {
+          "word": " Kostüm",
+          "start": 1324.24,
+          "end": 1324.7,
+          "probability": 0.979
+        },
+        {
+          "word": " anziehst",
+          "start": 1324.7,
+          "end": 1325.36,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "cueId": 1400328,
+      "speaker": "Kero",
+      "text": "Heute sehen wir uns erst einmal ein paar spannende Bilder an.",
+      "chosenMethod": "contextual",
+      "oldStart": 1420.18,
+      "oldEnd": 1422.8,
+      "isChapterPick": true,
+      "isShortFocus": false,
+      "status": "verified",
+      "suggestedStart": 1419.82,
+      "suggestedEnd": 1422.74,
+      "alignmentProbability": 0.931,
+      "minWordProbability": 0.743,
+      "maxWordDuration": 0.78,
+      "flags": [],
+      "words": [
+        {
+          "word": " Heute",
+          "start": 1419.82,
+          "end": 1420.6,
+          "probability": 0.754
+        },
+        {
+          "word": " sehen",
+          "start": 1420.6,
+          "end": 1420.8,
+          "probability": 0.973
+        },
+        {
+          "word": " wir",
+          "start": 1420.8,
+          "end": 1420.96,
+          "probability": 0.996
+        },
+        {
+          "word": " uns",
+          "start": 1420.96,
+          "end": 1421.12,
+          "probability": 0.994
+        },
+        {
+          "word": " erst",
+          "start": 1421.12,
+          "end": 1421.26,
+          "probability": 0.743
+        },
+        {
+          "word": " einmal",
+          "start": 1421.26,
+          "end": 1421.48,
+          "probability": 0.917
+        },
+        {
+          "word": " ein",
+          "start": 1421.48,
+          "end": 1421.6,
+          "probability": 0.883
+        },
+        {
+          "word": " paar",
+          "start": 1421.6,
+          "end": 1421.78,
+          "probability": 0.997
+        },
+        {
+          "word": " spannende",
+          "start": 1421.78,
+          "end": 1422.14,
+          "probability": 0.997
+        },
+        {
+          "word": " Bilder",
+          "start": 1422.14,
+          "end": 1422.46,
+          "probability": 0.997
+        },
+        {
+          "word": " an",
+          "start": 1422.46,
+          "end": 1422.74,
+          "probability": 0.993
+        }
+      ]
+    }
+  ]
+}

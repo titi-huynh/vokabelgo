@@ -1,31 +1,41 @@
 const { test, expect } = require('@playwright/test');
 const { seedStorage, getStorageJson } = require('./helpers/storage');
 const path = require('node:path');
-test.use({ video: 'off' });
+test.use({ video: 'off', trace: 'off' });
 const films = [
-  { key: 'k_on_s01e01', alias: 'kon', title: 'K-On!' },
-  { key: 'delicious_in_dungeon_s01e01', alias: 'dungeon', title: 'Delicious in Dungeon' },
+  { key: 'k_on_s01e01', alias: 'kon', title: 'K-On!', dimensions: [1280, 720] },
+  { key: 'delicious_in_dungeon_s01e01', alias: 'dungeon', title: 'Delicious in Dungeon', dimensions: [1280, 720] },
+  { key: 'frieren_s01e02', alias: 'frieren2', title: 'Frieren · Tập 2', dimensions: [1280, 720] },
+  { key: 'sakura_s01e02', alias: 'sakura2', title: 'Cardcaptor Sakura · Tập 2', dimensions: [960, 720] },
 ];
 const oldKey = 'vokabelgo_kino_peppa_chapters_v1';
 const oldProgress = { chapter: 0, mode: 'light', completed: [100401], watched: [0], imported: true, alignmentVersion: 2 };
+const ep1FrierenKey = 'vokabelgo_kino_chapters_v1_frieren_s01e01';
+const ep1FrierenProgress = { chapter: 1, mode: 'light', completed: [700102], watched: [0], imported: true };
+const ep1SakuraKey = 'vokabelgo_kino_chapters_v1_sakura_s01e01';
+const ep1SakuraProgress = { chapter: 2, mode: 'light', completed: [800010], watched: [0], imported: true };
 async function open(page, film) {
-  await seedStorage(page, { vokabelgo_kino_reset_done_v2026: 'true', [oldKey]: oldProgress });
+  await seedStorage(page, {
+    vokabelgo_kino_reset_done_v2026: 'true',
+    [oldKey]: oldProgress,
+    [ep1FrierenKey]: ep1FrierenProgress,
+    [ep1SakuraKey]: ep1SakuraProgress,
+  });
   await page.goto(`/?kino=${film.alias}&part=1`);
   await expect(page.locator('#kinoDiscovery')).toBeVisible();
 }
 
-test('the two new films are discoverable without loading episode video or dialogue in the catalog', async ({ page, request }) => {
+test('the new anime films are discoverable without loading episode video or dialogue in the catalog', async ({ page, request }) => {
   await seedStorage(page, { vokabelgo_kino_reset_done_v2026: 'true' });
   const requested = [];
   page.on('request', req => requested.push(new URL(req.url()).pathname));
   await page.goto('/?hub=kino');
-  await expect(page.locator('.kino-film-card')).toHaveCount(21);
+  await expect(page.locator('.kino-film-card')).toHaveCount(23);
   for (const film of films) {
     await expect(page.locator(`.kino-film-card[data-movie="${film.key}"]`)).toContainText(film.title);
     expect((await request.get(`/assets/kino-posters/${film.key}-1.jpg`)).ok()).toBeTruthy();
   }
-  expect(requested.filter(p => /(?:k-on-s01e01|delicious-in-dungeon-s01e01)-aligned\.js$/.test(p) || /\/video\//.test(p))).toEqual([]);
-  await page.screenshot({ path: path.join(__dirname, '../review-assets/kino-two-new-films-desktop.png') });
+  expect(requested.filter(p => /(?:k-on-s01e01|delicious-in-dungeon-s01e01|frieren-s01e02|sakura-s01e02)-aligned\.js$/.test(p) || /\/video\//.test(p))).toEqual([]);
 });
 
 for (const film of films) {
@@ -71,6 +81,8 @@ for (const film of films) {
       .toEqual(data.cards.map(card => card.id).sort());
     expect(await getStorageJson(page, progressKey)).toEqual(before);
     expect(await getStorageJson(page, oldKey)).toEqual(oldProgress);
+    expect(await getStorageJson(page, ep1FrierenKey)).toEqual(ep1FrierenProgress);
+    expect(await getStorageJson(page, ep1SakuraKey)).toEqual(ep1SakuraProgress);
     expect(errors).toEqual([]);
   });
 
@@ -93,6 +105,8 @@ for (const film of films) {
     await expect(page.locator('#kinoFeedbackStatus')).toHaveClass(/correct/);
     expect((await getStorageJson(page, key)).completed).toContain(cueId);
     expect(await getStorageJson(page, oldKey)).toEqual(oldProgress);
+    expect(await getStorageJson(page, ep1FrierenKey)).toEqual(ep1FrierenProgress);
+    expect(await getStorageJson(page, ep1SakuraKey)).toEqual(ep1SakuraProgress);
     await page.reload();
     await page.locator('#kinoListenSentences').click();
     await expect(page.locator('#kinoListenDe')).toHaveText(original);
@@ -101,6 +115,8 @@ for (const film of films) {
     await expect(page.locator('#kinoUsageNote')).toBeVisible();
     expect((await getStorageJson(page, key)).completed).toContain(cueId);
     expect(await getStorageJson(page, oldKey)).toEqual(oldProgress);
+    expect(await getStorageJson(page, ep1FrierenKey)).toEqual(ep1FrierenProgress);
+    expect(await getStorageJson(page, ep1SakuraKey)).toEqual(ep1SakuraProgress);
     for (const width of [320, 390, 768]) {
       await page.setViewportSize({ width, height: 844 });
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
@@ -126,8 +142,10 @@ for (const film of films) {
     await page.getByRole('combobox', { name: 'Chất lượng phim', exact: true }).selectOption({ label: 'Bản gốc' });
     await expect(video).toHaveAttribute('src', `video/${film.key}-web-v1.mp4`);
     await expect.poll(() => video.evaluate(v => v.readyState)).toBeGreaterThanOrEqual(1);
-    expect(await video.evaluate(v => [v.videoWidth, v.videoHeight])).toEqual([1280, 720]);
+    expect(await video.evaluate(v => [v.videoWidth, v.videoHeight])).toEqual(film.dimensions);
     expect((await getStorageJson(page, `vokabelgo_kino_chapters_v1_${film.key}`)).completed).toEqual([]);
     expect(await getStorageJson(page, oldKey)).toEqual(oldProgress);
+    expect(await getStorageJson(page, ep1FrierenKey)).toEqual(ep1FrierenProgress);
+    expect(await getStorageJson(page, ep1SakuraKey)).toEqual(ep1SakuraProgress);
   });
 }
