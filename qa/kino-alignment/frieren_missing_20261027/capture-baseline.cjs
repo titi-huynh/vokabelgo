@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),crypto=require('node:crypto');
+const {execFileSync}=require('node:child_process');
+const root=path.resolve(__dirname,'../../..'),base='d1204a4b47d41096f4e5b5d71e667be0de338413';
+const original=file=>execFileSync('git',['show',`${base}:${file}`],{cwd:root,encoding:'utf8'});
+const symbol='FRIEREN_S01E02',stem='frieren-s01e02',sourceFile='qa/kino-alignment/season1-episode2/frieren_s01e02.json';
+const context=vm.createContext({});
+vm.runInContext(original(stem+'-aligned.js')+original(stem+'-lesson.js')+`;this.snapshot=JSON.stringify({captions:${symbol}_CAPTION_CUES,units:${symbol}_ALIGNED_UTTERANCES,lesson:${symbol}_LESSON});`,context);
+const snapshot=JSON.parse(context.snapshot),source=JSON.parse(original(sourceFile));
+console.log(JSON.stringify({captions:snapshot.captions.length,units:snapshot.units.length,sourceCues:source.cues.length,sourceMaxId:Math.max(...source.cues.map(c=>c.id)),captionMaxId:Math.max(...snapshot.captions.map(c=>c.id))}));
+if(snapshot.captions.length!==235||snapshot.units.length!==235||Math.max(...source.cues.map(c=>c.id))!==1300247)throw new Error('Unexpected baseline');
+fs.writeFileSync(path.join(__dirname,'baseline-cues-235.json'),JSON.stringify({baseRevision:base,...snapshot},null,2)+'\n');
+const hashes=Object.fromEntries(fs.readdirSync(root).filter(f=>f.endsWith('-aligned.js')).map(file=>[file,crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file))).digest('hex')]));
+fs.writeFileSync(path.join(__dirname,'baseline-aligned-sha256.json'),JSON.stringify(hashes,null,2)+'\n');
+console.log(JSON.stringify({base,captions:snapshot.captions.length,practice:snapshot.units.length,sourceDrafts:source.cues.length,sourceMaxId:1300247,newIdsStart:1300248,chapters:snapshot.lesson.chapterData.chapters.length,picks:snapshot.lesson.chapterData.chapters.reduce((sum,c)=>sum+c.picks.length,0),cards:snapshot.lesson.flashcards.length}));

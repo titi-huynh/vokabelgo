@@ -1,0 +1,448 @@
+{
+  "model": "small",
+  "source": "video/frieren_s01e02-web-v1.mp4",
+  "sourcePath": "C:\\Users\\huynh\\.codex\\worktrees\\kino-frieren-missing-lines\\flash\\video\\frieren_s01e02-web-v1.mp4",
+  "sourceNote": "Archive 720p release preserving original audio (raw owner input no longer on machine)",
+  "sourceVideoSha256": "36d2a73f8fd1d0bbdc42728ed2bf163281e1896cbb4f2288ef85683d60fe3280",
+  "decodedAudioF32le16kSha256": "fb531f50906958ea1c718b6474f2e4d67e8d7fed612c73812de0ec5822e28ee7",
+  "decodedPcmS16leSha256": "d7a7a3ef4f96167972d161326d5d6305a7ee94295a683f447c77edf0895d08d1",
+  "candidateSha256": "bcfc44f45ce16483d2809bb9b12e8c65765ad5d50e0b6e1cda75c2815ccec797",
+  "method": "Independent local bounded ASR, no prompt or candidate text supplied",
+  "asrOptions": {
+    "device": "cpu",
+    "compute_type": "int8",
+    "cpu_threads": 3,
+    "local_files_only": true,
+    "language": "de",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "condition_on_previous_text": false,
+    "vad_filter": false,
+    "initial_prompt": null,
+    "hotwords": null
+  },
+  "humanListened": false,
+  "completed": 2,
+  "total": 2,
+  "elapsedSeconds": 9.64,
+  "windows": [
+    {
+      "candidate": 7,
+      "start": 527.0,
+      "end": 545.5,
+      "crop": [
+        527.0,
+        545.5
+      ],
+      "segments": [
+        {
+          "start": 527.0,
+          "end": 528.6,
+          "text": "Du hast mich reingelegt, Heiter.",
+          "avg_logprob": -0.19309272668133043,
+          "no_speech_prob": 0.08569198846817017,
+          "words": [
+            {
+              "start": 527.0,
+              "end": 527.22,
+              "word": " Du",
+              "probability": 0.9537504315376282
+            },
+            {
+              "start": 527.22,
+              "end": 527.4,
+              "word": " hast",
+              "probability": 0.994419515132904
+            },
+            {
+              "start": 527.4,
+              "end": 527.58,
+              "word": " mich",
+              "probability": 0.9988318085670471
+            },
+            {
+              "start": 527.58,
+              "end": 528.2,
+              "word": " reingelegt,",
+              "probability": 0.9616620739301046
+            },
+            {
+              "start": 528.26,
+              "end": 528.6,
+              "word": " Heiter.",
+              "probability": 0.5119864195585251
+            }
+          ]
+        },
+        {
+          "start": 532.02,
+          "end": 534.92,
+          "text": "Dein Lohn für das Entziffern des Buches ist in der Schublade.",
+          "avg_logprob": -0.19309272668133043,
+          "no_speech_prob": 0.08569198846817017,
+          "words": [
+            {
+              "start": 532.02,
+              "end": 532.46,
+              "word": " Dein",
+              "probability": 0.8786103427410126
+            },
+            {
+              "start": 532.46,
+              "end": 532.66,
+              "word": " Lohn",
+              "probability": 0.9515932202339172
+            },
+            {
+              "start": 532.66,
+              "end": 532.86,
+              "word": " für",
+              "probability": 0.9917282462120056
+            },
+            {
+              "start": 532.86,
+              "end": 533.0,
+              "word": " das",
+              "probability": 0.9936770796775818
+            },
+            {
+              "start": 533.0,
+              "end": 533.5,
+              "word": " Entziffern",
+              "probability": 0.8828017264604568
+            },
+            {
+              "start": 533.5,
+              "end": 533.62,
+              "word": " des",
+              "probability": 0.9915282726287842
+            },
+            {
+              "start": 533.62,
+              "end": 534.02,
+              "word": " Buches",
+              "probability": 0.9931640923023224
+            },
+            {
+              "start": 534.02,
+              "end": 534.18,
+              "word": " ist",
+              "probability": 0.9774267673492432
+            },
+            {
+              "start": 534.18,
+              "end": 534.3,
+              "word": " in",
+              "probability": 0.9864975810050964
+            },
+            {
+              "start": 534.3,
+              "end": 534.42,
+              "word": " der",
+              "probability": 0.9987179040908813
+            },
+            {
+              "start": 534.42,
+              "end": 534.92,
+              "word": " Schublade.",
+              "probability": 0.9173420866330465
+            }
+          ]
+        },
+        {
+          "start": 536.04,
+          "end": 538.54,
+          "text": "Ich bitte euch, heute Abend von ihr wegzugehen.",
+          "avg_logprob": -0.19309272668133043,
+          "no_speech_prob": 0.08569198846817017,
+          "words": [
+            {
+              "start": 536.04,
+              "end": 536.48,
+              "word": " Ich",
+              "probability": 0.9913640022277832
+            },
+            {
+              "start": 536.48,
+              "end": 536.7,
+              "word": " bitte",
+              "probability": 0.9684619307518005
+            },
+            {
+              "start": 536.7,
+              "end": 536.92,
+              "word": " euch,",
+              "probability": 0.8135067820549011
+            },
+            {
+              "start": 537.02,
+              "end": 537.18,
+              "word": " heute",
+              "probability": 0.9862203598022461
+            },
+            {
+              "start": 537.18,
+              "end": 537.46,
+              "word": " Abend",
+              "probability": 0.9914342164993286
+            },
+            {
+              "start": 537.46,
+              "end": 537.68,
+              "word": " von",
+              "probability": 0.9899936318397522
+            },
+            {
+              "start": 537.68,
+              "end": 537.82,
+              "word": " ihr",
+              "probability": 0.8452609181404114
+            },
+            {
+              "start": 537.82,
+              "end": 538.54,
+              "word": " wegzugehen.",
+              "probability": 0.9390947818756104
+            }
+          ]
+        },
+        {
+          "start": 539.3,
+          "end": 540.2,
+          "text": "Was hast du vor?",
+          "avg_logprob": -0.19309272668133043,
+          "no_speech_prob": 0.08569198846817017,
+          "words": [
+            {
+              "start": 539.3,
+              "end": 539.68,
+              "word": " Was",
+              "probability": 0.9945834279060364
+            },
+            {
+              "start": 539.68,
+              "end": 539.82,
+              "word": " hast",
+              "probability": 0.9942382574081421
+            },
+            {
+              "start": 539.82,
+              "end": 539.98,
+              "word": " du",
+              "probability": 0.9819149971008301
+            },
+            {
+              "start": 539.98,
+              "end": 540.2,
+              "word": " vor?",
+              "probability": 0.9942266941070557
+            }
+          ]
+        },
+        {
+          "start": 541.74,
+          "end": 545.16,
+          "text": "Wie man sehen kann, habe ich nun nicht mehr sehr lang zu leben.",
+          "avg_logprob": -0.19309272668133043,
+          "no_speech_prob": 0.08569198846817017,
+          "words": [
+            {
+              "start": 541.74,
+              "end": 542.02,
+              "word": " Wie",
+              "probability": 0.9948875308036804
+            },
+            {
+              "start": 542.02,
+              "end": 542.22,
+              "word": " man",
+              "probability": 0.9959979057312012
+            },
+            {
+              "start": 542.22,
+              "end": 542.52,
+              "word": " sehen",
+              "probability": 0.9891518354415894
+            },
+            {
+              "start": 542.52,
+              "end": 542.92,
+              "word": " kann,",
+              "probability": 0.9992344379425049
+            },
+            {
+              "start": 543.16,
+              "end": 543.32,
+              "word": " habe",
+              "probability": 0.9309340715408325
+            },
+            {
+              "start": 543.32,
+              "end": 543.5,
+              "word": " ich",
+              "probability": 0.999188244342804
+            },
+            {
+              "start": 543.5,
+              "end": 543.66,
+              "word": " nun",
+              "probability": 0.8876810669898987
+            },
+            {
+              "start": 543.66,
+              "end": 543.9,
+              "word": " nicht",
+              "probability": 0.9952448010444641
+            },
+            {
+              "start": 543.9,
+              "end": 544.12,
+              "word": " mehr",
+              "probability": 0.9994624257087708
+            },
+            {
+              "start": 544.12,
+              "end": 544.36,
+              "word": " sehr",
+              "probability": 0.9916833639144897
+            },
+            {
+              "start": 544.36,
+              "end": 544.6,
+              "word": " lang",
+              "probability": 0.7257622480392456
+            },
+            {
+              "start": 544.6,
+              "end": 544.86,
+              "word": " zu",
+              "probability": 0.9933990240097046
+            },
+            {
+              "start": 544.86,
+              "end": 545.16,
+              "word": " leben.",
+              "probability": 0.9909261465072632
+            }
+          ]
+        }
+      ],
+      "label": "codex_full_exchange"
+    },
+    {
+      "candidate": 9,
+      "start": 958.0,
+      "end": 967.5,
+      "crop": [
+        958.0,
+        967.5
+      ],
+      "segments": [
+        {
+          "start": 958.0,
+          "end": 962.0,
+          "text": "Das sind Samenratten. Diese Monster fressen Samen.",
+          "avg_logprob": -0.28083806059190203,
+          "no_speech_prob": 0.3408619463443756,
+          "words": [
+            {
+              "start": 958.0,
+              "end": 959.02,
+              "word": " Das",
+              "probability": 0.8079894781112671
+            },
+            {
+              "start": 959.02,
+              "end": 959.22,
+              "word": " sind",
+              "probability": 0.9955756664276123
+            },
+            {
+              "start": 959.22,
+              "end": 959.98,
+              "word": " Samenratten.",
+              "probability": 0.8458066806197166
+            },
+            {
+              "start": 960.76,
+              "end": 960.84,
+              "word": " Diese",
+              "probability": 0.9524568915367126
+            },
+            {
+              "start": 960.84,
+              "end": 961.1,
+              "word": " Monster",
+              "probability": 0.907014787197113
+            },
+            {
+              "start": 961.1,
+              "end": 961.68,
+              "word": " fressen",
+              "probability": 0.9854170282681783
+            },
+            {
+              "start": 961.68,
+              "end": 962.0,
+              "word": " Samen.",
+              "probability": 0.9683979451656342
+            }
+          ]
+        },
+        {
+          "start": 962.52,
+          "end": 963.78,
+          "text": "Nicht bringen sie in den Wald zurück.",
+          "avg_logprob": -0.28083806059190203,
+          "no_speech_prob": 0.3408619463443756,
+          "words": [
+            {
+              "start": 962.52,
+              "end": 962.88,
+              "word": " Nicht",
+              "probability": 0.7540951371192932
+            },
+            {
+              "start": 962.88,
+              "end": 963.04,
+              "word": " bringen",
+              "probability": 0.9921312928199768
+            },
+            {
+              "start": 963.04,
+              "end": 963.2,
+              "word": " sie",
+              "probability": 0.8172414898872375
+            },
+            {
+              "start": 963.2,
+              "end": 963.28,
+              "word": " in",
+              "probability": 0.9649533629417419
+            },
+            {
+              "start": 963.28,
+              "end": 963.38,
+              "word": " den",
+              "probability": 0.997994065284729
+            },
+            {
+              "start": 963.38,
+              "end": 963.52,
+              "word": " Wald",
+              "probability": 0.9940349459648132
+            },
+            {
+              "start": 963.52,
+              "end": 963.78,
+              "word": " zurück.",
+              "probability": 0.997954249382019
+            }
+          ]
+        }
+      ],
+      "label": "codex_full_reply"
+    }
+  ]
+}

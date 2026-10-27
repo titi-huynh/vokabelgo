@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:30384) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › e2e\kino-new-anime.spec.js:42:3 › Frieren · Tập 2: vocabulary opens its own reviewed deck without changing course progress (5.1s)
+  ok 2 [chromium] › e2e\kino-new-anime.spec.js:89:3 › Frieren · Tập 2: writing, listening and speaking share the selected cue and preserve other films' progress (2.3s)
+  ok 3 [chromium] › e2e\kino-new-anime.spec.js:127:3 › Frieren · Tập 2: discovery plays the episode with bilingual captions and offers both viewing qualities (1.4s)
+
+  3 passed (12.0s)

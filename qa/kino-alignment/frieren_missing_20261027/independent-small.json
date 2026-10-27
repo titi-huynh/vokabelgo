@@ -1,0 +1,2350 @@
+{
+  "model": "small",
+  "source": "video/frieren_s01e02-web-v1.mp4",
+  "sourcePath": "C:\\Users\\huynh\\.codex\\worktrees\\kino-frieren-missing-lines\\flash\\video\\frieren_s01e02-web-v1.mp4",
+  "sourceNote": "Archive 720p release preserving original audio (raw owner input no longer on machine)",
+  "sourceVideoSha256": "36d2a73f8fd1d0bbdc42728ed2bf163281e1896cbb4f2288ef85683d60fe3280",
+  "decodedAudioF32le16kSha256": "fb531f50906958ea1c718b6474f2e4d67e8d7fed612c73812de0ec5822e28ee7",
+  "decodedPcmS16leSha256": "d7a7a3ef4f96167972d161326d5d6305a7ee94295a683f447c77edf0895d08d1",
+  "candidateSha256": "bcfc44f45ce16483d2809bb9b12e8c65765ad5d50e0b6e1cda75c2815ccec797",
+  "method": "Independent local bounded ASR, no prompt or candidate text supplied",
+  "asrOptions": {
+    "device": "cpu",
+    "compute_type": "int8",
+    "cpu_threads": 3,
+    "local_files_only": true,
+    "language": "de",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "condition_on_previous_text": false,
+    "vad_filter": false,
+    "initial_prompt": null,
+    "hotwords": null
+  },
+  "humanListened": false,
+  "completed": 12,
+  "total": 12,
+  "elapsedSeconds": 69.57,
+  "windows": [
+    {
+      "candidate": 1,
+      "start": 0.0,
+      "end": 18.54,
+      "crop": [
+        0.0,
+        18.54
+      ],
+      "segments": [
+        {
+          "start": 0.62,
+          "end": 18.22,
+          "text": "Das war der erste Mal, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin, dass ich in der Zeit bin,",
+          "avg_logprob": -0.19315344916449653,
+          "no_speech_prob": 0.7289450168609619,
+          "words": [
+            {
+              "start": 0.62,
+              "end": 1.1,
+              "word": " Das",
+              "probability": 0.04527987539768219
+            },
+            {
+              "start": 1.1,
+              "end": 1.1,
+              "word": " war",
+              "probability": 0.2190326750278473
+            },
+            {
+              "start": 1.1,
+              "end": 1.1,
+              "word": " der",
+              "probability": 0.08711127191781998
+            },
+            {
+              "start": 1.1,
+              "end": 1.1,
+              "word": " erste",
+              "probability": 0.08406049758195877
+            },
+            {
+              "start": 1.1,
+              "end": 1.1,
+              "word": " Mal,",
+              "probability": 0.08947447687387466
+            },
+            {
+              "start": 1.66,
+              "end": 4.08,
+              "word": " dass",
+              "probability": 0.2618494927883148
+            },
+            {
+              "start": 4.08,
+              "end": 4.24,
+              "word": " ich",
+              "probability": 0.6178281307220459
+            },
+            {
+              "start": 4.24,
+              "end": 4.46,
+              "word": " in",
+              "probability": 0.04494795948266983
+            },
+            {
+              "start": 4.46,
+              "end": 4.46,
+              "word": " der",
+              "probability": 0.2187446504831314
+            },
+            {
+              "start": 4.46,
+              "end": 4.46,
+              "word": " Zeit",
+              "probability": 0.0475769117474556
+            },
+            {
+              "start": 4.46,
+              "end": 4.46,
+              "word": " bin,",
+              "probability": 0.03783493861556053
+            },
+            {
+              "start": 4.46,
+              "end": 4.46,
+              "word": " dass",
+              "probability": 0.08388673514127731
+            },
+            {
+              "start": 4.46,
+              "end": 4.46,
+              "word": " ich",
+              "probability": 0.7429741621017456
+            },
+            {
+              "start": 4.46,
+              "end": 4.46,
+              "word": " in",
+              "probability": 0.06355983763933182
+            },
+            {
+              "start": 4.46,
+              "end": 4.46,
+              "word": " der",
+              "probability": 0.47782963514328003
+            },
+            {
+              "start": 4.46,
+              "end": 4.46,
+              "word": " Zeit",
+              "probability": 0.8959383368492126
+            },
+            {
+              "start": 4.46,
+              "end": 4.46,
+              "word": " bin,",
+              "probability": 0.29767176508903503
+            },
+            {
+              "start": 4.48,
+              "end": 5.08,
+              "word": " dass",
+              "probability": 0.6662858724594116
+            },
+            {
+              "start": 5.08,
+              "end": 5.32,
+              "word": " ich",
+              "probability": 0.9618973731994629
+            },
+            {
+              "start": 5.32,
+              "end": 6.2,
+              "word": " in",
+              "probability": 0.6426581144332886
+            },
+            {
+              "start": 6.2,
+              "end": 6.4,
+              "word": " der",
+              "probability": 0.9273889660835266
+            },
+            {
+              "start": 6.4,
+              "end": 6.92,
+              "word": " Zeit",
+              "probability": 0.9909347891807556
+            },
+            {
+              "start": 6.92,
+              "end": 6.92,
+              "word": " bin,",
+              "probability": 0.916222333908081
+            },
+            {
+              "start": 7.8,
+              "end": 7.8,
+              "word": " dass",
+              "probability": 0.8850541710853577
+            },
+            {
+              "start": 7.8,
+              "end": 7.8,
+              "word": " ich",
+              "probability": 0.9919781684875488
+            },
+            {
+              "start": 7.8,
+              "end": 7.8,
+              "word": " in",
+              "probability": 0.9015960097312927
+            },
+            {
+              "start": 7.8,
+              "end": 7.8,
+              "word": " der",
+              "probability": 0.9607051014900208
+            },
+            {
+              "start": 7.8,
+              "end": 7.8,
+              "word": " Zeit",
+              "probability": 0.9914928078651428
+            },
+            {
+              "start": 7.8,
+              "end": 8.52,
+              "word": " bin,",
+              "probability": 0.9264846444129944
+            },
+            {
+              "start": 8.52,
+              "end": 8.52,
+              "word": " dass",
+              "probability": 0.9042971730232239
+            },
+            {
+              "start": 8.52,
+              "end": 8.52,
+              "word": " ich",
+              "probability": 0.9927055239677429
+            },
+            {
+              "start": 8.52,
+              "end": 8.52,
+              "word": " in",
+              "probability": 0.9050479531288147
+            },
+            {
+              "start": 8.52,
+              "end": 8.52,
+              "word": " der",
+              "probability": 0.9688667058944702
+            },
+            {
+              "start": 8.52,
+              "end": 8.52,
+              "word": " Zeit",
+              "probability": 0.9911743402481079
+            },
+            {
+              "start": 8.52,
+              "end": 9.32,
+              "word": " bin,",
+              "probability": 0.945118248462677
+            },
+            {
+              "start": 9.32,
+              "end": 9.9,
+              "word": " dass",
+              "probability": 0.9257522821426392
+            },
+            {
+              "start": 9.9,
+              "end": 9.9,
+              "word": " ich",
+              "probability": 0.9942962527275085
+            },
+            {
+              "start": 9.9,
+              "end": 9.9,
+              "word": " in",
+              "probability": 0.9476496577262878
+            },
+            {
+              "start": 9.9,
+              "end": 9.9,
+              "word": " der",
+              "probability": 0.9702966213226318
+            },
+            {
+              "start": 9.9,
+              "end": 9.9,
+              "word": " Zeit",
+              "probability": 0.9898393154144287
+            },
+            {
+              "start": 9.9,
+              "end": 9.94,
+              "word": " bin,",
+              "probability": 0.9513919949531555
+            },
+            {
+              "start": 10.26,
+              "end": 10.26,
+              "word": " dass",
+              "probability": 0.9234838485717773
+            },
+            {
+              "start": 10.26,
+              "end": 10.34,
+              "word": " ich",
+              "probability": 0.9956100583076477
+            },
+            {
+              "start": 10.34,
+              "end": 10.84,
+              "word": " in",
+              "probability": 0.9363400936126709
+            },
+            {
+              "start": 10.84,
+              "end": 10.84,
+              "word": " der",
+              "probability": 0.9748741984367371
+            },
+            {
+              "start": 10.84,
+              "end": 11.0,
+              "word": " Zeit",
+              "probability": 0.989876925945282
+            },
+            {
+              "start": 11.0,
+              "end": 12.32,
+              "word": " bin,",
+              "probability": 0.9673053026199341
+            },
+            {
+              "start": 12.32,
+              "end": 13.14,
+              "word": " dass",
+              "probability": 0.923441469669342
+            },
+            {
+              "start": 13.14,
+              "end": 13.14,
+              "word": " ich",
+              "probability": 0.9959312081336975
+            },
+            {
+              "start": 13.14,
+              "end": 13.76,
+              "word": " in",
+              "probability": 0.9542255401611328
+            },
+            {
+              "start": 13.76,
+              "end": 13.76,
+              "word": " der",
+              "probability": 0.973034143447876
+            },
+            {
+              "start": 13.76,
+              "end": 13.76,
+              "word": " Zeit",
+              "probability": 0.9889963865280151
+            },
+            {
+              "start": 13.76,
+              "end": 13.76,
+              "word": " bin,",
+              "probability": 0.9716349244117737
+            },
+            {
+              "start": 13.76,
+              "end": 13.76,
+              "word": " dass",
+              "probability": 0.9285562634468079
+            },
+            {
+              "start": 13.76,
+              "end": 13.94,
+              "word": " ich",
+              "probability": 0.994087815284729
+            },
+            {
+              "start": 13.94,
+              "end": 13.94,
+              "word": " in",
+              "probability": 0.9472446441650391
+            },
+            {
+              "start": 13.94,
+              "end": 13.94,
+              "word": " der",
+              "probability": 0.9711063504219055
+            },
+            {
+              "start": 13.94,
+              "end": 14.24,
+              "word": " Zeit",
+              "probability": 0.9882009029388428
+            },
+            {
+              "start": 14.24,
+              "end": 14.24,
+              "word": " bin,",
+              "probability": 0.9821639060974121
+            },
+            {
+              "start": 14.24,
+              "end": 14.24,
+              "word": " dass",
+              "probability": 0.9192472100257874
+            },
+            {
+              "start": 14.24,
+              "end": 14.26,
+              "word": " ich",
+              "probability": 0.9948655962944031
+            },
+            {
+              "start": 14.26,
+              "end": 14.76,
+              "word": " in",
+              "probability": 0.9462278485298157
+            },
+            {
+              "start": 14.76,
+              "end": 14.9,
+              "word": " der",
+              "probability": 0.9758586883544922
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " Zeit",
+              "probability": 0.987551748752594
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " bin,",
+              "probability": 0.9772331118583679
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " dass",
+              "probability": 0.9350208640098572
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " ich",
+              "probability": 0.9941656589508057
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " in",
+              "probability": 0.921536922454834
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " der",
+              "probability": 0.9790204167366028
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " Zeit",
+              "probability": 0.9889699220657349
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " bin,",
+              "probability": 0.9866043925285339
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " dass",
+              "probability": 0.9414514303207397
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " ich",
+              "probability": 0.994785726070404
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " in",
+              "probability": 0.9230895042419434
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " der",
+              "probability": 0.9816203117370605
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " Zeit",
+              "probability": 0.9897716641426086
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " bin,",
+              "probability": 0.9574746489524841
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " dass",
+              "probability": 0.944194495677948
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " ich",
+              "probability": 0.9964501857757568
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " in",
+              "probability": 0.9027331471443176
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " der",
+              "probability": 0.9836457967758179
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " Zeit",
+              "probability": 0.9895260334014893
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " bin,",
+              "probability": 0.9863266944885254
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " dass",
+              "probability": 0.9473401308059692
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " ich",
+              "probability": 0.9956092238426208
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " in",
+              "probability": 0.9409124255180359
+            },
+            {
+              "start": 14.9,
+              "end": 14.9,
+              "word": " der",
+              "probability": 0.983994722366333
+            },
+            {
+              "start": 14.9,
+              "end": 14.94,
+              "word": " Zeit",
+              "probability": 0.9885857701301575
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " bin,",
+              "probability": 0.9851828217506409
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " dass",
+              "probability": 0.9586371183395386
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " ich",
+              "probability": 0.9955892562866211
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " in",
+              "probability": 0.9530072212219238
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " der",
+              "probability": 0.9847303032875061
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " Zeit",
+              "probability": 0.9895564913749695
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " bin,",
+              "probability": 0.9878420829772949
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " dass",
+              "probability": 0.963964581489563
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " ich",
+              "probability": 0.9964622855186462
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " in",
+              "probability": 0.951095461845398
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " der",
+              "probability": 0.9856287240982056
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " Zeit",
+              "probability": 0.9894548654556274
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " bin,",
+              "probability": 0.9909748435020447
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " dass",
+              "probability": 0.9683699011802673
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " ich",
+              "probability": 0.9970219731330872
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " in",
+              "probability": 0.9638180732727051
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " der",
+              "probability": 0.9861629605293274
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " Zeit",
+              "probability": 0.9911954402923584
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " bin,",
+              "probability": 0.9938936829566956
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " dass",
+              "probability": 0.9660494327545166
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " ich",
+              "probability": 0.9973748922348022
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " in",
+              "probability": 0.9614246487617493
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " der",
+              "probability": 0.9881816506385803
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " Zeit",
+              "probability": 0.9896882176399231
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " bin,",
+              "probability": 0.9947248101234436
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " dass",
+              "probability": 0.9693390727043152
+            },
+            {
+              "start": 14.94,
+              "end": 14.94,
+              "word": " ich",
+              "probability": 0.9970459342002869
+            },
+            {
+              "start": 14.94,
+              "end": 15.0,
+              "word": " in",
+              "probability": 0.9619500041007996
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " der",
+              "probability": 0.9866023063659668
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " Zeit",
+              "probability": 0.9896436929702759
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " bin,",
+              "probability": 0.989117443561554
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " dass",
+              "probability": 0.9649689197540283
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " ich",
+              "probability": 0.9973472356796265
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " in",
+              "probability": 0.9493263959884644
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " der",
+              "probability": 0.9845613241195679
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " Zeit",
+              "probability": 0.9894213676452637
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " bin,",
+              "probability": 0.9945051074028015
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " dass",
+              "probability": 0.971365213394165
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " ich",
+              "probability": 0.9973723888397217
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " in",
+              "probability": 0.9561935663223267
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " der",
+              "probability": 0.9856345057487488
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " Zeit",
+              "probability": 0.9898172616958618
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " bin,",
+              "probability": 0.9940853118896484
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " dass",
+              "probability": 0.9738068580627441
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " ich",
+              "probability": 0.9979296922683716
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " in",
+              "probability": 0.9773935079574585
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " der",
+              "probability": 0.9862886667251587
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " Zeit",
+              "probability": 0.9901610612869263
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " bin,",
+              "probability": 0.9924609065055847
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " dass",
+              "probability": 0.9653392434120178
+            },
+            {
+              "start": 15.0,
+              "end": 15.0,
+              "word": " ich",
+              "probability": 0.9980853796005249
+            },
+            {
+              "start": 15.0,
+              "end": 15.16,
+              "word": " in",
+              "probability": 0.9679621458053589
+            },
+            {
+              "start": 15.16,
+              "end": 15.18,
+              "word": " der",
+              "probability": 0.9864227175712585
+            },
+            {
+              "start": 15.18,
+              "end": 15.42,
+              "word": " Zeit",
+              "probability": 0.9897841811180115
+            },
+            {
+              "start": 15.42,
+              "end": 15.42,
+              "word": " bin,",
+              "probability": 0.9894118905067444
+            },
+            {
+              "start": 15.42,
+              "end": 15.42,
+              "word": " dass",
+              "probability": 0.9642653465270996
+            },
+            {
+              "start": 15.42,
+              "end": 15.46,
+              "word": " ich",
+              "probability": 0.9985132813453674
+            },
+            {
+              "start": 15.46,
+              "end": 15.66,
+              "word": " in",
+              "probability": 0.973316490650177
+            },
+            {
+              "start": 15.66,
+              "end": 15.66,
+              "word": " der",
+              "probability": 0.9841948747634888
+            },
+            {
+              "start": 15.66,
+              "end": 15.66,
+              "word": " Zeit",
+              "probability": 0.9874201416969299
+            },
+            {
+              "start": 15.66,
+              "end": 15.66,
+              "word": " bin,",
+              "probability": 0.9904480576515198
+            },
+            {
+              "start": 15.86,
+              "end": 16.1,
+              "word": " dass",
+              "probability": 0.9609848856925964
+            },
+            {
+              "start": 16.1,
+              "end": 16.1,
+              "word": " ich",
+              "probability": 0.9976994395256042
+            },
+            {
+              "start": 16.1,
+              "end": 16.1,
+              "word": " in",
+              "probability": 0.9721757173538208
+            },
+            {
+              "start": 16.1,
+              "end": 16.1,
+              "word": " der",
+              "probability": 0.9815676808357239
+            },
+            {
+              "start": 16.1,
+              "end": 16.1,
+              "word": " Zeit",
+              "probability": 0.9816626906394958
+            },
+            {
+              "start": 16.1,
+              "end": 16.1,
+              "word": " bin,",
+              "probability": 0.9885050654411316
+            },
+            {
+              "start": 16.1,
+              "end": 16.1,
+              "word": " dass",
+              "probability": 0.9629601836204529
+            },
+            {
+              "start": 16.1,
+              "end": 16.1,
+              "word": " ich",
+              "probability": 0.9982312321662903
+            },
+            {
+              "start": 16.1,
+              "end": 16.1,
+              "word": " in",
+              "probability": 0.9689354300498962
+            },
+            {
+              "start": 16.1,
+              "end": 16.1,
+              "word": " der",
+              "probability": 0.9817787408828735
+            },
+            {
+              "start": 16.1,
+              "end": 16.1,
+              "word": " Zeit",
+              "probability": 0.9879938364028931
+            },
+            {
+              "start": 16.1,
+              "end": 16.1,
+              "word": " bin,",
+              "probability": 0.9934825301170349
+            },
+            {
+              "start": 16.1,
+              "end": 16.12,
+              "word": " dass",
+              "probability": 0.9667960405349731
+            },
+            {
+              "start": 16.12,
+              "end": 16.12,
+              "word": " ich",
+              "probability": 0.9988699555397034
+            },
+            {
+              "start": 16.12,
+              "end": 16.12,
+              "word": " in",
+              "probability": 0.9763513803482056
+            },
+            {
+              "start": 16.12,
+              "end": 16.12,
+              "word": " der",
+              "probability": 0.977644145488739
+            },
+            {
+              "start": 16.12,
+              "end": 16.12,
+              "word": " Zeit",
+              "probability": 0.986623227596283
+            },
+            {
+              "start": 16.12,
+              "end": 16.12,
+              "word": " bin,",
+              "probability": 0.9936112761497498
+            },
+            {
+              "start": 16.12,
+              "end": 16.12,
+              "word": " dass",
+              "probability": 0.95721834897995
+            },
+            {
+              "start": 16.12,
+              "end": 16.12,
+              "word": " ich",
+              "probability": 0.9981546998023987
+            },
+            {
+              "start": 16.12,
+              "end": 16.12,
+              "word": " in",
+              "probability": 0.9748420119285583
+            },
+            {
+              "start": 16.12,
+              "end": 16.22,
+              "word": " der",
+              "probability": 0.9740960001945496
+            },
+            {
+              "start": 16.22,
+              "end": 16.22,
+              "word": " Zeit",
+              "probability": 0.9815147519111633
+            },
+            {
+              "start": 16.22,
+              "end": 16.22,
+              "word": " bin,",
+              "probability": 0.993125319480896
+            },
+            {
+              "start": 16.28,
+              "end": 16.28,
+              "word": " dass",
+              "probability": 0.9477543830871582
+            },
+            {
+              "start": 16.28,
+              "end": 16.28,
+              "word": " ich",
+              "probability": 0.9981592297554016
+            },
+            {
+              "start": 16.28,
+              "end": 16.5,
+              "word": " in",
+              "probability": 0.9588971734046936
+            },
+            {
+              "start": 16.5,
+              "end": 16.5,
+              "word": " der",
+              "probability": 0.9799143671989441
+            },
+            {
+              "start": 16.5,
+              "end": 16.5,
+              "word": " Zeit",
+              "probability": 0.9861096739768982
+            },
+            {
+              "start": 16.5,
+              "end": 16.9,
+              "word": " bin,",
+              "probability": 0.9951655864715576
+            },
+            {
+              "start": 17.58,
+              "end": 17.58,
+              "word": " dass",
+              "probability": 0.9409902095794678
+            },
+            {
+              "start": 17.58,
+              "end": 17.58,
+              "word": " ich",
+              "probability": 0.9982485771179199
+            },
+            {
+              "start": 17.58,
+              "end": 17.72,
+              "word": " in",
+              "probability": 0.9685667157173157
+            },
+            {
+              "start": 17.72,
+              "end": 17.72,
+              "word": " der",
+              "probability": 0.9664350748062134
+            },
+            {
+              "start": 17.72,
+              "end": 17.72,
+              "word": " Zeit",
+              "probability": 0.9814183115959167
+            },
+            {
+              "start": 17.72,
+              "end": 18.2,
+              "word": " bin,",
+              "probability": 0.9955446124076843
+            },
+            {
+              "start": 18.2,
+              "end": 18.2,
+              "word": " dass",
+              "probability": 0.9260128736495972
+            },
+            {
+              "start": 18.2,
+              "end": 18.2,
+              "word": " ich",
+              "probability": 0.9972410202026367
+            },
+            {
+              "start": 18.2,
+              "end": 18.2,
+              "word": " in",
+              "probability": 0.9652659296989441
+            },
+            {
+              "start": 18.2,
+              "end": 18.2,
+              "word": " der",
+              "probability": 0.9673448204994202
+            },
+            {
+              "start": 18.2,
+              "end": 18.2,
+              "word": " Zeit",
+              "probability": 0.9819213151931763
+            },
+            {
+              "start": 18.2,
+              "end": 18.22,
+              "word": " bin,",
+              "probability": 0.9956478476524353
+            }
+          ]
+        },
+        {
+          "start": 18.22,
+          "end": 18.44,
+          "text": "SWR 2020",
+          "avg_logprob": -0.8640855550765991,
+          "no_speech_prob": 0.9003345370292664,
+          "words": [
+            {
+              "start": 18.22,
+              "end": 18.4,
+              "word": " SWR",
+              "probability": 0.47246337682008743
+            },
+            {
+              "start": 18.4,
+              "end": 18.44,
+              "word": " 2020",
+              "probability": 0.3965635895729065
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 2,
+      "start": 234.04,
+      "end": 239.56,
+      "crop": [
+        234.04,
+        239.56
+      ],
+      "segments": [
+        {
+          "start": 234.96,
+          "end": 237.96,
+          "text": "Ich werde mit dem Entschlüsseln des Buchs früher fertig werden.",
+          "avg_logprob": -0.23002536987003527,
+          "no_speech_prob": 0.6478409767150879,
+          "words": [
+            {
+              "start": 234.96,
+              "end": 235.6,
+              "word": " Ich",
+              "probability": 0.48873624205589294
+            },
+            {
+              "start": 235.6,
+              "end": 235.78,
+              "word": " werde",
+              "probability": 0.9670705795288086
+            },
+            {
+              "start": 235.78,
+              "end": 235.94,
+              "word": " mit",
+              "probability": 0.9403030276298523
+            },
+            {
+              "start": 235.94,
+              "end": 236.06,
+              "word": " dem",
+              "probability": 0.7093071341514587
+            },
+            {
+              "start": 236.06,
+              "end": 236.6,
+              "word": " Entschlüsseln",
+              "probability": 0.9428986310958862
+            },
+            {
+              "start": 236.6,
+              "end": 236.7,
+              "word": " des",
+              "probability": 0.9120895266532898
+            },
+            {
+              "start": 236.7,
+              "end": 237.12,
+              "word": " Buchs",
+              "probability": 0.9250597357749939
+            },
+            {
+              "start": 237.12,
+              "end": 237.28,
+              "word": " früher",
+              "probability": 0.952987551689148
+            },
+            {
+              "start": 237.28,
+              "end": 237.64,
+              "word": " fertig",
+              "probability": 0.9940496683120728
+            },
+            {
+              "start": 237.64,
+              "end": 237.96,
+              "word": " werden.",
+              "probability": 0.9789984822273254
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 3,
+      "start": 291.22,
+      "end": 296.07,
+      "crop": [
+        291.22,
+        296.07
+      ],
+      "segments": [
+        {
+          "start": 292.12,
+          "end": 293.04,
+          "text": "Doch jetzt.",
+          "avg_logprob": -0.48105481091667623,
+          "no_speech_prob": 0.31345734000205994,
+          "words": [
+            {
+              "start": 292.12,
+              "end": 292.72,
+              "word": " Doch",
+              "probability": 0.16224004328250885
+            },
+            {
+              "start": 292.72,
+              "end": 293.04,
+              "word": " jetzt.",
+              "probability": 0.931399405002594
+            }
+          ]
+        },
+        {
+          "start": 293.26,
+          "end": 294.48,
+          "text": "Irgendwann reicht er aber nicht.",
+          "avg_logprob": -0.48105481091667623,
+          "no_speech_prob": 0.31345734000205994,
+          "words": [
+            {
+              "start": 293.26,
+              "end": 293.68,
+              "word": " Irgendwann",
+              "probability": 0.7960067056119442
+            },
+            {
+              "start": 293.68,
+              "end": 293.98,
+              "word": " reicht",
+              "probability": 0.9953246116638184
+            },
+            {
+              "start": 293.98,
+              "end": 294.14,
+              "word": " er",
+              "probability": 0.6318182349205017
+            },
+            {
+              "start": 294.14,
+              "end": 294.22,
+              "word": " aber",
+              "probability": 0.8598096966743469
+            },
+            {
+              "start": 294.22,
+              "end": 294.48,
+              "word": " nicht.",
+              "probability": 0.9978659749031067
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 4,
+      "start": 477.3,
+      "end": 497.77,
+      "crop": [
+        477.3,
+        497.77
+      ],
+      "segments": [
+        {
+          "start": 478.38,
+          "end": 481.66,
+          "text": "In dem Buch stand kein Wiederbelebungs- oder Unsterblichkeitszauber.",
+          "avg_logprob": -0.17105981205286605,
+          "no_speech_prob": 0.34949591755867004,
+          "words": [
+            {
+              "start": 478.38,
+              "end": 478.82,
+              "word": " In",
+              "probability": 0.15566547214984894
+            },
+            {
+              "start": 478.82,
+              "end": 478.96,
+              "word": " dem",
+              "probability": 0.9186633229255676
+            },
+            {
+              "start": 478.96,
+              "end": 479.14,
+              "word": " Buch",
+              "probability": 0.9980983138084412
+            },
+            {
+              "start": 479.14,
+              "end": 479.36,
+              "word": " stand",
+              "probability": 0.8320098519325256
+            },
+            {
+              "start": 479.36,
+              "end": 479.56,
+              "word": " kein",
+              "probability": 0.9868799448013306
+            },
+            {
+              "start": 479.56,
+              "end": 480.3,
+              "word": " Wiederbelebungs",
+              "probability": 0.9294549822807312
+            },
+            {
+              "start": 480.3,
+              "end": 480.36,
+              "word": "-",
+              "probability": 0.967589795589447
+            },
+            {
+              "start": 480.36,
+              "end": 480.44,
+              "word": " oder",
+              "probability": 0.9747703075408936
+            },
+            {
+              "start": 480.44,
+              "end": 481.66,
+              "word": " Unsterblichkeitszauber.",
+              "probability": 0.9329537418153551
+            }
+          ]
+        },
+        {
+          "start": 482.52,
+          "end": 483.16,
+          "text": "Ach, wirklich?",
+          "avg_logprob": -0.17105981205286605,
+          "no_speech_prob": 0.34949591755867004,
+          "words": [
+            {
+              "start": 482.52,
+              "end": 482.88,
+              "word": " Ach,",
+              "probability": 0.9283705949783325
+            },
+            {
+              "start": 483.0,
+              "end": 483.16,
+              "word": " wirklich?",
+              "probability": 0.9982095956802368
+            }
+          ]
+        },
+        {
+          "start": 484.2,
+          "end": 484.9,
+          "text": "Wusstest du das?",
+          "avg_logprob": -0.17105981205286605,
+          "no_speech_prob": 0.34949591755867004,
+          "words": [
+            {
+              "start": 484.2,
+              "end": 484.64,
+              "word": " Wusstest",
+              "probability": 0.9296126166979471
+            },
+            {
+              "start": 484.64,
+              "end": 484.76,
+              "word": " du",
+              "probability": 0.96690434217453
+            },
+            {
+              "start": 484.76,
+              "end": 484.9,
+              "word": " das?",
+              "probability": 0.993174135684967
+            }
+          ]
+        },
+        {
+          "start": 486.12,
+          "end": 488.86,
+          "text": "Die Angst vor dem Tod ist für uns unergründlich und tief.",
+          "avg_logprob": -0.17105981205286605,
+          "no_speech_prob": 0.34949591755867004,
+          "words": [
+            {
+              "start": 486.12,
+              "end": 486.44,
+              "word": " Die",
+              "probability": 0.9911342263221741
+            },
+            {
+              "start": 486.44,
+              "end": 486.66,
+              "word": " Angst",
+              "probability": 0.9980524778366089
+            },
+            {
+              "start": 486.66,
+              "end": 486.86,
+              "word": " vor",
+              "probability": 0.702635645866394
+            },
+            {
+              "start": 486.86,
+              "end": 486.96,
+              "word": " dem",
+              "probability": 0.9943339824676514
+            },
+            {
+              "start": 486.96,
+              "end": 487.2,
+              "word": " Tod",
+              "probability": 0.9691839814186096
+            },
+            {
+              "start": 487.2,
+              "end": 487.42,
+              "word": " ist",
+              "probability": 0.9875735640525818
+            },
+            {
+              "start": 487.42,
+              "end": 487.54,
+              "word": " für",
+              "probability": 0.5869489312171936
+            },
+            {
+              "start": 487.54,
+              "end": 487.7,
+              "word": " uns",
+              "probability": 0.9995793700218201
+            },
+            {
+              "start": 487.7,
+              "end": 488.46,
+              "word": " unergründlich",
+              "probability": 0.9283212900161744
+            },
+            {
+              "start": 488.46,
+              "end": 488.58,
+              "word": " und",
+              "probability": 0.9955263733863831
+            },
+            {
+              "start": 488.58,
+              "end": 488.86,
+              "word": " tief.",
+              "probability": 0.9986529350280762
+            }
+          ]
+        },
+        {
+          "start": 489.62,
+          "end": 493.48,
+          "text": "Wenn es solche Zauber gegeben hätte, hätte ewig diese selbst angewendet.",
+          "avg_logprob": -0.17105981205286605,
+          "no_speech_prob": 0.34949591755867004,
+          "words": [
+            {
+              "start": 489.62,
+              "end": 489.78,
+              "word": " Wenn",
+              "probability": 0.994561493396759
+            },
+            {
+              "start": 489.78,
+              "end": 489.96,
+              "word": " es",
+              "probability": 0.9951891899108887
+            },
+            {
+              "start": 489.96,
+              "end": 490.16,
+              "word": " solche",
+              "probability": 0.9942382574081421
+            },
+            {
+              "start": 490.16,
+              "end": 490.66,
+              "word": " Zauber",
+              "probability": 0.9902635812759399
+            },
+            {
+              "start": 490.66,
+              "end": 490.88,
+              "word": " gegeben",
+              "probability": 0.9955251812934875
+            },
+            {
+              "start": 490.88,
+              "end": 491.44,
+              "word": " hätte,",
+              "probability": 0.9972694516181946
+            },
+            {
+              "start": 491.56,
+              "end": 491.68,
+              "word": " hätte",
+              "probability": 0.9892203211784363
+            },
+            {
+              "start": 491.68,
+              "end": 492.08,
+              "word": " ewig",
+              "probability": 0.8564957976341248
+            },
+            {
+              "start": 492.08,
+              "end": 492.36,
+              "word": " diese",
+              "probability": 0.9869755506515503
+            },
+            {
+              "start": 492.36,
+              "end": 492.76,
+              "word": " selbst",
+              "probability": 0.9769819974899292
+            },
+            {
+              "start": 492.76,
+              "end": 493.48,
+              "word": " angewendet.",
+              "probability": 0.9987252751986185
+            }
+          ]
+        },
+        {
+          "start": 494.4,
+          "end": 495.3,
+          "text": "Also wieso das alles?",
+          "avg_logprob": -0.17105981205286605,
+          "no_speech_prob": 0.34949591755867004,
+          "words": [
+            {
+              "start": 494.4,
+              "end": 494.64,
+              "word": " Also",
+              "probability": 0.9531619548797607
+            },
+            {
+              "start": 494.64,
+              "end": 494.88,
+              "word": " wieso",
+              "probability": 0.8231832087039948
+            },
+            {
+              "start": 494.88,
+              "end": 495.1,
+              "word": " das",
+              "probability": 0.9769796133041382
+            },
+            {
+              "start": 495.1,
+              "end": 495.3,
+              "word": " alles?",
+              "probability": 0.9842766523361206
+            }
+          ]
+        },
+        {
+          "start": 497.0,
+          "end": 497.68,
+          "text": "Sag mir.",
+          "avg_logprob": -0.17105981205286605,
+          "no_speech_prob": 0.34949591755867004,
+          "words": [
+            {
+              "start": 497.0,
+              "end": 497.44,
+              "word": " Sag",
+              "probability": 0.7393587827682495
+            },
+            {
+              "start": 497.44,
+              "end": 497.68,
+              "word": " mir.",
+              "probability": 0.9786651730537415
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 5,
+      "start": 504.41,
+      "end": 507.82,
+      "crop": [
+        504.41,
+        507.82
+      ],
+      "segments": [
+        {
+          "start": 504.41,
+          "end": 505.15,
+          "text": "gegen Magierern.",
+          "avg_logprob": -0.9597503955547626,
+          "no_speech_prob": 0.22461114823818207,
+          "words": [
+            {
+              "start": 504.41,
+              "end": 504.53,
+              "word": " gegen",
+              "probability": 0.032159823924303055
+            },
+            {
+              "start": 504.53,
+              "end": 505.15,
+              "word": " Magierern.",
+              "probability": 0.5729211866855621
+            }
+          ]
+        },
+        {
+          "start": 506.25,
+          "end": 507.79,
+          "text": "Das ist...",
+          "avg_logprob": -0.9597503955547626,
+          "no_speech_prob": 0.22461114823818207,
+          "words": [
+            {
+              "start": 506.25,
+              "end": 507.49,
+              "word": " Das",
+              "probability": 0.3491758108139038
+            },
+            {
+              "start": 507.49,
+              "end": 507.79,
+              "word": " ist...",
+              "probability": 0.6369667053222656
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 6,
+      "start": 514.42,
+      "end": 517.87,
+      "crop": [
+        514.42,
+        517.87
+      ],
+      "segments": [
+        {
+          "start": 517.22,
+          "end": 517.84,
+          "text": "Würdest du sie...",
+          "avg_logprob": -0.9187812507152557,
+          "no_speech_prob": 0.7398006319999695,
+          "words": [
+            {
+              "start": 517.22,
+              "end": 517.54,
+              "word": " Würdest",
+              "probability": 0.5112311253324151
+            },
+            {
+              "start": 517.54,
+              "end": 517.7,
+              "word": " du",
+              "probability": 0.955827534198761
+            },
+            {
+              "start": 517.7,
+              "end": 517.84,
+              "word": " sie...",
+              "probability": 0.644137516617775
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 7,
+      "start": 534.9,
+      "end": 540.07,
+      "crop": [
+        534.9,
+        540.07
+      ],
+      "segments": [
+        {
+          "start": 536.0,
+          "end": 538.56,
+          "text": "Ich bitte euch heute Abend von ihr wegzugehen.",
+          "avg_logprob": -0.42681984454393385,
+          "no_speech_prob": 0.5371155142784119,
+          "words": [
+            {
+              "start": 536.0,
+              "end": 536.48,
+              "word": " Ich",
+              "probability": 0.4773204028606415
+            },
+            {
+              "start": 536.48,
+              "end": 536.7,
+              "word": " bitte",
+              "probability": 0.958014965057373
+            },
+            {
+              "start": 536.7,
+              "end": 536.92,
+              "word": " euch",
+              "probability": 0.8134925365447998
+            },
+            {
+              "start": 536.92,
+              "end": 537.18,
+              "word": " heute",
+              "probability": 0.7417129874229431
+            },
+            {
+              "start": 537.18,
+              "end": 537.48,
+              "word": " Abend",
+              "probability": 0.9614663124084473
+            },
+            {
+              "start": 537.48,
+              "end": 537.68,
+              "word": " von",
+              "probability": 0.7212544679641724
+            },
+            {
+              "start": 537.68,
+              "end": 537.82,
+              "word": " ihr",
+              "probability": 0.925906240940094
+            },
+            {
+              "start": 537.82,
+              "end": 538.56,
+              "word": " wegzugehen.",
+              "probability": 0.8149647812048594
+            }
+          ]
+        },
+        {
+          "start": 539.18,
+          "end": 540.04,
+          "text": "Was hast du...",
+          "avg_logprob": -0.42681984454393385,
+          "no_speech_prob": 0.5371155142784119,
+          "words": [
+            {
+              "start": 539.18,
+              "end": 539.66,
+              "word": " Was",
+              "probability": 0.8923234939575195
+            },
+            {
+              "start": 539.66,
+              "end": 539.82,
+              "word": " hast",
+              "probability": 0.9854544401168823
+            },
+            {
+              "start": 539.82,
+              "end": 540.04,
+              "word": " du...",
+              "probability": 0.5445998795330524
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 8,
+      "start": 580.76,
+      "end": 584.2,
+      "crop": [
+        580.76,
+        584.2
+      ],
+      "segments": [
+        {
+          "start": 580.76,
+          "end": 582.66,
+          "text": "Verirren?",
+          "avg_logprob": -0.6726859637669155,
+          "no_speech_prob": 0.17821352183818817,
+          "words": [
+            {
+              "start": 580.76,
+              "end": 582.66,
+              "word": " Verirren?",
+              "probability": 0.5064250032107035
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 9,
+      "start": 961.33,
+      "end": 965.39,
+      "crop": [
+        961.33,
+        965.39
+      ],
+      "segments": [
+        {
+          "start": 962.43,
+          "end": 963.77,
+          "text": "Ich bringe sie in den Wald zurück.",
+          "avg_logprob": -0.5685166468222936,
+          "no_speech_prob": 0.5091607570648193,
+          "words": [
+            {
+              "start": 962.43,
+              "end": 962.83,
+              "word": " Ich",
+              "probability": 0.2527006268501282
+            },
+            {
+              "start": 962.83,
+              "end": 963.13,
+              "word": " bringe",
+              "probability": 0.45764701068401337
+            },
+            {
+              "start": 963.13,
+              "end": 963.21,
+              "word": " sie",
+              "probability": 0.6575303077697754
+            },
+            {
+              "start": 963.21,
+              "end": 963.27,
+              "word": " in",
+              "probability": 0.9485654234886169
+            },
+            {
+              "start": 963.27,
+              "end": 963.37,
+              "word": " den",
+              "probability": 0.9894092082977295
+            },
+            {
+              "start": 963.37,
+              "end": 963.53,
+              "word": " Wald",
+              "probability": 0.9980940222740173
+            },
+            {
+              "start": 963.53,
+              "end": 963.77,
+              "word": " zurück.",
+              "probability": 0.9924582242965698
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 10,
+      "start": 1229.85,
+      "end": 1236.04,
+      "crop": [
+        1229.85,
+        1236.04
+      ],
+      "segments": [
+        {
+          "start": 1231.05,
+          "end": 1234.47,
+          "text": "Freren, sag mal, warum sammelst du eigentlich Zauber?",
+          "avg_logprob": -0.4217167313282306,
+          "no_speech_prob": 0.5984522104263306,
+          "words": [
+            {
+              "start": 1231.05,
+              "end": 1231.61,
+              "word": " Freren,",
+              "probability": 0.3680077940225601
+            },
+            {
+              "start": 1231.69,
+              "end": 1231.83,
+              "word": " sag",
+              "probability": 0.7473260760307312
+            },
+            {
+              "start": 1231.83,
+              "end": 1232.19,
+              "word": " mal,",
+              "probability": 0.9658963680267334
+            },
+            {
+              "start": 1232.63,
+              "end": 1232.91,
+              "word": " warum",
+              "probability": 0.9918436408042908
+            },
+            {
+              "start": 1232.91,
+              "end": 1233.47,
+              "word": " sammelst",
+              "probability": 0.9559729894002279
+            },
+            {
+              "start": 1233.47,
+              "end": 1233.57,
+              "word": " du",
+              "probability": 0.971950888633728
+            },
+            {
+              "start": 1233.57,
+              "end": 1233.79,
+              "word": " eigentlich",
+              "probability": 0.9923827052116394
+            },
+            {
+              "start": 1233.79,
+              "end": 1234.47,
+              "word": " Zauber?",
+              "probability": 0.9272249341011047
+            }
+          ]
+        },
+        {
+          "start": 1235.25,
+          "end": 1236.01,
+          "text": "Das ist nur ein...",
+          "avg_logprob": -0.4217167313282306,
+          "no_speech_prob": 0.5984522104263306,
+          "words": [
+            {
+              "start": 1235.25,
+              "end": 1235.53,
+              "word": " Das",
+              "probability": 0.9231053590774536
+            },
+            {
+              "start": 1235.53,
+              "end": 1235.67,
+              "word": " ist",
+              "probability": 0.9940696954727173
+            },
+            {
+              "start": 1235.67,
+              "end": 1235.81,
+              "word": " nur",
+              "probability": 0.9652495384216309
+            },
+            {
+              "start": 1235.81,
+              "end": 1236.01,
+              "word": " ein...",
+              "probability": 0.47492989897727966
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 11,
+      "start": 1265.05,
+      "end": 1274.03,
+      "crop": [
+        1265.05,
+        1274.03
+      ],
+      "segments": [
+        {
+          "start": 1271.03,
+          "end": 1272.23,
+          "text": "Da wird er mir schlecht.",
+          "avg_logprob": -0.6375120480855306,
+          "no_speech_prob": 0.1040518581867218,
+          "words": [
+            {
+              "start": 1271.03,
+              "end": 1271.53,
+              "word": " Da",
+              "probability": 0.6708698868751526
+            },
+            {
+              "start": 1271.53,
+              "end": 1271.69,
+              "word": " wird",
+              "probability": 0.8765621781349182
+            },
+            {
+              "start": 1271.69,
+              "end": 1271.79,
+              "word": " er",
+              "probability": 0.5814293622970581
+            },
+            {
+              "start": 1271.79,
+              "end": 1271.89,
+              "word": " mir",
+              "probability": 0.9690986275672913
+            },
+            {
+              "start": 1271.89,
+              "end": 1272.23,
+              "word": " schlecht.",
+              "probability": 0.948171079158783
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 12,
+      "start": 1549.69,
+      "end": 1560.1,
+      "crop": [
+        1549.69,
+        1560.1
+      ],
+      "segments": [
+        {
+          "start": 1549.69,
+          "end": 1551.91,
+          "text": "Ist dieser Zauber nicht viel zu spart?",
+          "avg_logprob": -0.44364015587040634,
+          "no_speech_prob": 0.4536285102367401,
+          "words": [
+            {
+              "start": 1549.69,
+              "end": 1550.63,
+              "word": " Ist",
+              "probability": 0.6229689717292786
+            },
+            {
+              "start": 1550.63,
+              "end": 1550.89,
+              "word": " dieser",
+              "probability": 0.9713936448097229
+            },
+            {
+              "start": 1550.89,
+              "end": 1551.27,
+              "word": " Zauber",
+              "probability": 0.9894043604532877
+            },
+            {
+              "start": 1551.27,
+              "end": 1551.41,
+              "word": " nicht",
+              "probability": 0.990256130695343
+            },
+            {
+              "start": 1551.41,
+              "end": 1551.63,
+              "word": " viel",
+              "probability": 0.9261855483055115
+            },
+            {
+              "start": 1551.63,
+              "end": 1551.85,
+              "word": " zu",
+              "probability": 0.9585486054420471
+            },
+            {
+              "start": 1551.85,
+              "end": 1551.91,
+              "word": " spart?",
+              "probability": 0.3458127826452255
+            }
+          ]
+        },
+        {
+          "start": 1551.91,
+          "end": 1553.19,
+          "text": "Ich bin der Reise der Verdammene.",
+          "avg_logprob": -0.44364015587040634,
+          "no_speech_prob": 0.4536285102367401,
+          "words": [
+            {
+              "start": 1551.91,
+              "end": 1551.91,
+              "word": " Ich",
+              "probability": 0.4973684847354889
+            },
+            {
+              "start": 1551.91,
+              "end": 1551.93,
+              "word": " bin",
+              "probability": 0.9863388538360596
+            },
+            {
+              "start": 1551.93,
+              "end": 1552.15,
+              "word": " der",
+              "probability": 0.9928905963897705
+            },
+            {
+              "start": 1552.15,
+              "end": 1552.47,
+              "word": " Reise",
+              "probability": 0.8676622211933136
+            },
+            {
+              "start": 1552.47,
+              "end": 1552.65,
+              "word": " der",
+              "probability": 0.8120591044425964
+            },
+            {
+              "start": 1552.65,
+              "end": 1553.19,
+              "word": " Verdammene.",
+              "probability": 0.3671417683362961
+            }
+          ]
+        },
+        {
+          "start": 1553.53,
+          "end": 1555.61,
+          "text": "Dann setzen wir das mal in die Pflanze auf.",
+          "avg_logprob": -0.44364015587040634,
+          "no_speech_prob": 0.4536285102367401,
+          "words": [
+            {
+              "start": 1553.53,
+              "end": 1554.05,
+              "word": " Dann",
+              "probability": 0.38845565915107727
+            },
+            {
+              "start": 1554.05,
+              "end": 1554.19,
+              "word": " setzen",
+              "probability": 0.45567265152931213
+            },
+            {
+              "start": 1554.19,
+              "end": 1554.45,
+              "word": " wir",
+              "probability": 0.9928668737411499
+            },
+            {
+              "start": 1554.45,
+              "end": 1554.59,
+              "word": " das",
+              "probability": 0.9592158198356628
+            },
+            {
+              "start": 1554.59,
+              "end": 1554.79,
+              "word": " mal",
+              "probability": 0.6952800750732422
+            },
+            {
+              "start": 1554.79,
+              "end": 1554.91,
+              "word": " in",
+              "probability": 0.9882259964942932
+            },
+            {
+              "start": 1554.91,
+              "end": 1555.01,
+              "word": " die",
+              "probability": 0.9967993497848511
+            },
+            {
+              "start": 1555.01,
+              "end": 1555.33,
+              "word": " Pflanze",
+              "probability": 0.5669300258159637
+            },
+            {
+              "start": 1555.33,
+              "end": 1555.61,
+              "word": " auf.",
+              "probability": 0.2584415078163147
+            }
+          ]
+        },
+        {
+          "start": 1555.85,
+          "end": 1557.93,
+          "text": "Theorie ist eine überhaupt irgendein Ziel.",
+          "avg_logprob": -0.44364015587040634,
+          "no_speech_prob": 0.4536285102367401,
+          "words": [
+            {
+              "start": 1555.85,
+              "end": 1556.21,
+              "word": " Theorie",
+              "probability": 0.4189224988222122
+            },
+            {
+              "start": 1556.21,
+              "end": 1556.49,
+              "word": " ist",
+              "probability": 0.9177762269973755
+            },
+            {
+              "start": 1556.49,
+              "end": 1556.65,
+              "word": " eine",
+              "probability": 0.19721317291259766
+            },
+            {
+              "start": 1556.65,
+              "end": 1556.95,
+              "word": " überhaupt",
+              "probability": 0.09146828204393387
+            },
+            {
+              "start": 1556.95,
+              "end": 1557.65,
+              "word": " irgendein",
+              "probability": 0.7983989417552948
+            },
+            {
+              "start": 1557.65,
+              "end": 1557.93,
+              "word": " Ziel.",
+              "probability": 0.97231525182724
+            }
+          ]
+        },
+        {
+          "start": 1559.01,
+          "end": 1559.53,
+          "text": "Tötungszauber.",
+          "avg_logprob": -0.44364015587040634,
+          "no_speech_prob": 0.4536285102367401,
+          "words": [
+            {
+              "start": 1559.01,
+              "end": 1559.53,
+              "word": " Tötungszauber.",
+              "probability": 0.8173671662807465
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

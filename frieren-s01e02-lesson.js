@@ -26,7 +26,7 @@ const FRIEREN_S01E02_LESSON = (() => {
     "storageKey": "vokabelgo_kino_chapters_v1_frieren_s01e02",
     "legacyKey": "vokabelgo_kino_progress_frieren_s01e02",
     "legacyCount": 0,
-    "cueCount": 235,
+    "cueCount": 243,
     "vocabularyCount": 18,
     "chapters": [
       {

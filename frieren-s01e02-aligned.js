@@ -211,6 +211,16 @@ const FRIEREN_S01E02_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json"
   },
   {
+    "id": 1300248,
+    "parentId": 1300248,
+    "start": 234.96,
+    "end": 238.14,
+    "speaker": "Frieren",
+    "text": "Ich werde mit dem Entschlüsseln des Buchs früher fertig werden.",
+    "vi": "Tôi sẽ hoàn tất việc giải mã cuốn sách sớm hơn.",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json"
+  },
+  {
     "id": 1300023,
     "parentId": 1300023,
     "start": 239.08,
@@ -328,6 +338,16 @@ const FRIEREN_S01E02_CAPTION_CUES = [
     "speaker": "Frieren",
     "text": "Das wirst du garantiert irgendwann schaffen.",
     "vi": "Chắc chắn một ngày nào đó em sẽ làm được điều đó thôi.",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json"
+  },
+  {
+    "id": 1300249,
+    "parentId": 1300249,
+    "start": 292.12,
+    "end": 293.04,
+    "speaker": "Frieren",
+    "text": "Doch jetzt...",
+    "vi": "Nhưng bây giờ...",
     "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json"
   },
   {
@@ -578,6 +598,66 @@ const FRIEREN_S01E02_CAPTION_CUES = [
     "speaker": "Frieren",
     "text": "Dann tu, was du für richtig hältst.",
     "vi": "Vậy thì hãy làm điều mà em cho là đúng đắn đi.",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json"
+  },
+  {
+    "id": 1300250,
+    "parentId": 1300250,
+    "start": 478.38,
+    "end": 481.86,
+    "speaker": "Frieren",
+    "text": "In dem Buch stand kein Wiederbelebungs- oder Unsterblichkeitszauber.",
+    "vi": "Trong cuốn sách không có phép hồi sinh hay phép bất tử nào cả.",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json"
+  },
+  {
+    "id": 1300251,
+    "parentId": 1300251,
+    "start": 482.52,
+    "end": 483.5,
+    "speaker": "Heiter",
+    "text": "Ach, wirklich?",
+    "vi": "Ồ, thật vậy sao?",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json"
+  },
+  {
+    "id": 1300252,
+    "parentId": 1300252,
+    "start": 484.2,
+    "end": 485.08,
+    "speaker": "Frieren",
+    "text": "Wusstest du das?",
+    "vi": "Cậu biết chuyện đó rồi sao?",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json"
+  },
+  {
+    "id": 1300253,
+    "parentId": 1300253,
+    "start": 486.12,
+    "end": 489.02,
+    "speaker": "Heiter",
+    "text": "Die Angst vor dem Tod ist für uns unergründlich und tief.",
+    "vi": "Nỗi sợ cái chết trong chúng ta vừa sâu thẳm vừa khó thấu hiểu.",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json"
+  },
+  {
+    "id": 1300254,
+    "parentId": 1300254,
+    "start": 489.62,
+    "end": 493.72,
+    "speaker": "Heiter",
+    "text": "Wenn es solche Zauber gegeben hätte, hätte Ewig diese selbst angewendet.",
+    "vi": "Nếu có những phép thuật như thế, hẳn Ewig đã tự dùng chúng cho mình rồi.",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json"
+  },
+  {
+    "id": 1300255,
+    "parentId": 1300255,
+    "start": 494.4,
+    "end": 495.46,
+    "speaker": "Frieren",
+    "text": "Also wieso das alles?",
+    "vi": "Vậy thì tất cả chuyện này là vì sao?",
     "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json"
   },
   {
@@ -2626,6 +2706,19 @@ const FRIEREN_S01E02_ALIGNED_UTTERANCES = [
     ]
   },
   {
+    "id": 1300248,
+    "parentId": 1300248,
+    "start": 234.96,
+    "end": 238.14,
+    "speaker": "Frieren",
+    "text": "Ich werde mit dem Entschlüsseln des Buchs früher fertig werden.",
+    "vi": "Tôi sẽ hoàn tất việc giải mã cuốn sách sớm hơn.",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+    "legacyIds": [
+      1300248
+    ]
+  },
+  {
     "id": 1300023,
     "parentId": 1300023,
     "start": 239.08,
@@ -2779,6 +2872,19 @@ const FRIEREN_S01E02_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
     "legacyIds": [
       1300034
+    ]
+  },
+  {
+    "id": 1300249,
+    "parentId": 1300249,
+    "start": 292.12,
+    "end": 293.04,
+    "speaker": "Frieren",
+    "text": "Doch jetzt...",
+    "vi": "Nhưng bây giờ...",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+    "legacyIds": [
+      1300249
     ]
   },
   {
@@ -3104,6 +3210,84 @@ const FRIEREN_S01E02_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
     "legacyIds": [
       1300061
+    ]
+  },
+  {
+    "id": 1300250,
+    "parentId": 1300250,
+    "start": 478.38,
+    "end": 481.86,
+    "speaker": "Frieren",
+    "text": "In dem Buch stand kein Wiederbelebungs- oder Unsterblichkeitszauber.",
+    "vi": "Trong cuốn sách không có phép hồi sinh hay phép bất tử nào cả.",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+    "legacyIds": [
+      1300250
+    ]
+  },
+  {
+    "id": 1300251,
+    "parentId": 1300251,
+    "start": 482.52,
+    "end": 483.5,
+    "speaker": "Heiter",
+    "text": "Ach, wirklich?",
+    "vi": "Ồ, thật vậy sao?",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+    "legacyIds": [
+      1300251
+    ]
+  },
+  {
+    "id": 1300252,
+    "parentId": 1300252,
+    "start": 484.2,
+    "end": 485.08,
+    "speaker": "Frieren",
+    "text": "Wusstest du das?",
+    "vi": "Cậu biết chuyện đó rồi sao?",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+    "legacyIds": [
+      1300252
+    ]
+  },
+  {
+    "id": 1300253,
+    "parentId": 1300253,
+    "start": 486.12,
+    "end": 489.02,
+    "speaker": "Heiter",
+    "text": "Die Angst vor dem Tod ist für uns unergründlich und tief.",
+    "vi": "Nỗi sợ cái chết trong chúng ta vừa sâu thẳm vừa khó thấu hiểu.",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+    "legacyIds": [
+      1300253
+    ]
+  },
+  {
+    "id": 1300254,
+    "parentId": 1300254,
+    "start": 489.62,
+    "end": 493.72,
+    "speaker": "Heiter",
+    "text": "Wenn es solche Zauber gegeben hätte, hätte Ewig diese selbst angewendet.",
+    "vi": "Nếu có những phép thuật như thế, hẳn Ewig đã tự dùng chúng cho mình rồi.",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+    "legacyIds": [
+      1300254
+    ]
+  },
+  {
+    "id": 1300255,
+    "parentId": 1300255,
+    "start": 494.4,
+    "end": 495.46,
+    "speaker": "Frieren",
+    "text": "Also wieso das alles?",
+    "vi": "Vậy thì tất cả chuyện này là vì sao?",
+    "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+    "legacyIds": [
+      1300255
     ]
   },
   {

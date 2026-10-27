@@ -1,0 +1,2151 @@
+{
+  "movieId": "frieren_s01e02",
+  "title": "Frieren · Tập 2: Không nhất thiết phải là phép thuật",
+  "date": "2026-10-27",
+  "role": "Antigravity independent ASR & proposal (proposed-review.json); final runtime decision belongs to Codex (review.json)",
+  "baseRevision": "d1204a4b47d41096f4e5b5d71e667be0de338413",
+  "sourceVideo": "video/frieren_s01e02-web-v1.mp4",
+  "sourceVideoSha256": "36d2a73f8fd1d0bbdc42728ed2bf163281e1896cbb4f2288ef85683d60fe3280",
+  "viewingVideo480p": "video/kino-light/frieren_s01e02-480p-v1.mp4",
+  "viewingVideo480pSha256": "976039158c9ce8c084dab8cb69169a2a4af67c75b5add4aa234dd7e7cc9207eb",
+  "sourceAudioPcmS16leSha256": "d7a7a3ef4f96167972d161326d5d6305a7ee94295a683f447c77edf0895d08d1",
+  "pcmIdenticalBetween720pAnd480p": true,
+  "duration": 1560.102313,
+  "method": {
+    "engine": "faster-whisper 1.2.1 (ctranslate2 4.7.1, torch 2.10.0+cpu)",
+    "python": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\tmp\\peppa-align-venv\\Scripts\\python.exe",
+    "models": [
+      "small",
+      "medium"
+    ],
+    "device": "cpu",
+    "computeType": "int8",
+    "cpuThreads": 3,
+    "language": "de",
+    "beamSize": 5,
+    "vadFilter": false,
+    "conditionOnPreviousText": false,
+    "wordTimestamps": true,
+    "initialPrompt": null,
+    "hotwords": null,
+    "humanListened": false,
+    "runs": {
+      "independent-small.json": {
+        "completed": 12,
+        "total": 12,
+        "resumed": false
+      },
+      "independent-medium.json": {
+        "completed": 12,
+        "total": 12,
+        "resumed": false
+      },
+      "independent-small-tight.json": {
+        "completed": 27,
+        "total": 27,
+        "resumed": false
+      },
+      "independent-medium-tight.json": {
+        "completed": 27,
+        "total": 27,
+        "resumed": true,
+        "preservedCompletedWindows": 2,
+        "newlyComputedWindows": 25
+      },
+      "independent-small-context.json": {
+        "completed": 10,
+        "total": 10,
+        "resumed": false
+      },
+      "independent-medium-context.json": {
+        "completed": 10,
+        "total": 10,
+        "resumed": false
+      }
+    },
+    "totalUniqueWindowRecognitions": 98
+  },
+  "idExplanation": {
+    "baselinePublishedCueCount": 235,
+    "baselinePublishedMaxId": 1300243,
+    "sourceTotalDraftCueCount": 247,
+    "sourceReservedMaxId": 1300247,
+    "existingReviewNeededDraftIds": [
+      1300022,
+      1300035,
+      1300036,
+      1300073,
+      1300121,
+      1300122,
+      1300162,
+      1300181,
+      1300244,
+      1300245,
+      1300246,
+      1300247
+    ],
+    "newAddedIdStart": 1300248,
+    "newAddedIdEnd": 1300256,
+    "supersededDraftIds": [
+      1300022,
+      1300035,
+      1300073
+    ],
+    "policy": "Do not reuse gap IDs or existing draft IDs (1300001..1300247); assign fresh sequential IDs starting at 1300248."
+  },
+  "chapterBoundaryNote": {
+    "chapter2Range": [
+      248,
+      496
+    ],
+    "chapter3Range": [
+      496,
+      680
+    ],
+    "candidate4LastAddedCueId": 1300255,
+    "candidate4LastAddedCueRange": [
+      494.4,
+      495.46
+    ],
+    "crossesChapterBoundaryAt496": false,
+    "chapterAdjustments": [],
+    "explanation": "In candidate #4 (477.3–497.77s), all 6 verified missing sentences (1300250–1300255) fall within 478.00–495.46s, strictly inside Chapter 2 (248–496s). The trailing utterance at 496.94–497.74s ('Sag mir.') is the onset of existing Chapter 3 cue 1300062 (497.26–499.14s: 'Sag mir, wie geht es mit Fern voran?'). Therefore, no added cue crosses the 496s boundary and no chapter boundary adjustment is needed."
+  },
+  "counts": {
+    "candidates": 12,
+    "candidateWindowsTotal": 12,
+    "candidateWindowsEvaluated": 12,
+    "asrWindowRecognitionsTotal": 98,
+    "previousCueCount": 235,
+    "baselinePublishedCues": 235,
+    "addedCues": 9,
+    "proposedAddedCues": 9,
+    "newCueCount": 244,
+    "proposedTotalPublishedCues": 244,
+    "adjustedExistingCues": 0,
+    "excludedParts": 10,
+    "reviewNeededParts": 4,
+    "windowsWithAddedCues": 4,
+    "windowsWithExcludedParts": 10,
+    "windowsWithReviewNeededParts": 4,
+    "note": "A single candidate window can contain added utterances, excluded neighbour overlaps, and reviewNeeded utterances; part counts do not sum to 12."
+  },
+  "added": [
+    {
+      "id": 1300248,
+      "parentId": 1300248,
+      "candidate": 2,
+      "start": 235.42,
+      "end": 238.14,
+      "rawStart": 235.42,
+      "rawEnd": 238.14,
+      "speaker": "Frieren",
+      "text": "Ich werde mit dem Entschlüsseln des Buchs früher fertig werden.",
+      "vi": "Tôi sẽ hoàn tất việc giải mã cuốn sách sớm hơn dự tính.",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "sourceDraftIds": [
+        1300022
+      ],
+      "smallText": "Ich werde mit dem Entschlüsseln des Buchs früher fertig werden.",
+      "mediumText": "Ich werde mit dem Entschlüsseln des Buchs früher fertig werden.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small-context.json",
+        "candidate": 2,
+        "crop": [
+          231.8,
+          240.2
+        ],
+        "segmentText": "Ich werde mit dem Entschlüsseln des Buchs früher fertig werden.",
+        "words": [
+          {
+            "start": 235.42,
+            "end": 235.62,
+            "word": " Ich",
+            "probability": 0.987793505191803
+          },
+          {
+            "start": 235.62,
+            "end": 235.78,
+            "word": " werde",
+            "probability": 0.9986767172813416
+          },
+          {
+            "start": 235.78,
+            "end": 235.96,
+            "word": " mit",
+            "probability": 0.9983487129211426
+          },
+          {
+            "start": 235.96,
+            "end": 236.06,
+            "word": " dem",
+            "probability": 0.81443190574646
+          },
+          {
+            "start": 236.06,
+            "end": 236.6,
+            "word": " Entschlüsseln",
+            "probability": 0.975300407409668
+          },
+          {
+            "start": 236.6,
+            "end": 236.7,
+            "word": " des",
+            "probability": 0.866346001625061
+          },
+          {
+            "start": 236.7,
+            "end": 237.1,
+            "word": " Buchs",
+            "probability": 0.9274426698684692
+          },
+          {
+            "start": 237.1,
+            "end": 237.26,
+            "word": " früher",
+            "probability": 0.9836509823799133
+          },
+          {
+            "start": 237.26,
+            "end": 237.64,
+            "word": " fertig",
+            "probability": 0.9968435764312744
+          },
+          {
+            "start": 237.64,
+            "end": 237.94,
+            "word": " werden.",
+            "probability": 0.9906871914863586
+          }
+        ],
+        "label": "cand2_with_neighbors"
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium-context.json",
+        "candidate": 2,
+        "crop": [
+          231.8,
+          240.2
+        ],
+        "segmentText": "Ich werde mit dem Entschlüsseln des Buchs früher fertig werden.",
+        "words": [
+          {
+            "start": 235.56,
+            "end": 235.66,
+            "word": " Ich",
+            "probability": 0.9943406581878662
+          },
+          {
+            "start": 235.66,
+            "end": 235.84,
+            "word": " werde",
+            "probability": 0.9948081374168396
+          },
+          {
+            "start": 235.84,
+            "end": 236.02,
+            "word": " mit",
+            "probability": 0.9935678839683533
+          },
+          {
+            "start": 236.02,
+            "end": 236.16,
+            "word": " dem",
+            "probability": 0.9889165163040161
+          },
+          {
+            "start": 236.16,
+            "end": 236.66,
+            "word": " Entschlüsseln",
+            "probability": 0.9160227537155151
+          },
+          {
+            "start": 236.66,
+            "end": 236.78,
+            "word": " des",
+            "probability": 0.9881324172019958
+          },
+          {
+            "start": 236.78,
+            "end": 237.22,
+            "word": " Buchs",
+            "probability": 0.8820828795433044
+          },
+          {
+            "start": 237.22,
+            "end": 237.38,
+            "word": " früher",
+            "probability": 0.9533118009567261
+          },
+          {
+            "start": 237.38,
+            "end": 237.76,
+            "word": " fertig",
+            "probability": 0.9975607395172119
+          },
+          {
+            "start": 237.76,
+            "end": 238.14,
+            "word": " werden.",
+            "probability": 0.995305061340332
+          }
+        ],
+        "label": "cand2_with_neighbors"
+      },
+      "timingEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small-context.json",
+        "candidate": 2,
+        "crop": [
+          231.8,
+          240.2
+        ],
+        "segmentText": "Ich werde mit dem Entschlüsseln des Buchs früher fertig werden.",
+        "words": [
+          {
+            "start": 235.42,
+            "end": 235.62,
+            "word": " Ich",
+            "probability": 0.987793505191803
+          },
+          {
+            "start": 235.62,
+            "end": 235.78,
+            "word": " werde",
+            "probability": 0.9986767172813416
+          },
+          {
+            "start": 235.78,
+            "end": 235.96,
+            "word": " mit",
+            "probability": 0.9983487129211426
+          },
+          {
+            "start": 235.96,
+            "end": 236.06,
+            "word": " dem",
+            "probability": 0.81443190574646
+          },
+          {
+            "start": 236.06,
+            "end": 236.6,
+            "word": " Entschlüsseln",
+            "probability": 0.975300407409668
+          },
+          {
+            "start": 236.6,
+            "end": 236.7,
+            "word": " des",
+            "probability": 0.866346001625061
+          },
+          {
+            "start": 236.7,
+            "end": 237.1,
+            "word": " Buchs",
+            "probability": 0.9274426698684692
+          },
+          {
+            "start": 237.1,
+            "end": 237.26,
+            "word": " früher",
+            "probability": 0.9836509823799133
+          },
+          {
+            "start": 237.26,
+            "end": 237.64,
+            "word": " fertig",
+            "probability": 0.9968435764312744
+          },
+          {
+            "start": 237.64,
+            "end": 237.94,
+            "word": " werden.",
+            "probability": 0.9906871914863586
+          }
+        ],
+        "label": "cand2_with_neighbors"
+      },
+      "normalization": "None (exact word-for-word and case/punctuation match between small and medium across all 4 crops: main, tight gap, tight core, and context; replaces uncertain draft 1300022 which had 'bald').",
+      "note": "Both models independently confirm 'früher fertig werden' rather than draft 1300022's 'bald fertig werden'."
+    },
+    {
+      "id": 1300249,
+      "parentId": 1300249,
+      "candidate": 3,
+      "start": 292.66,
+      "end": 293.34,
+      "rawStart": 292.66,
+      "rawEnd": 293.34,
+      "speaker": "Frieren",
+      "text": "Doch jetzt...",
+      "vi": "Nhưng ngay lúc này...",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "sourceDraftIds": [
+        1300035
+      ],
+      "smallText": "Doch jetzt...",
+      "mediumText": "Doch jetzt...",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small-context.json",
+        "candidate": 3,
+        "crop": [
+          288.8,
+          301.2
+        ],
+        "segmentText": "Doch jetzt...",
+        "words": [
+          {
+            "start": 292.66,
+            "end": 292.76,
+            "word": " Doch",
+            "probability": 0.9240407943725586
+          },
+          {
+            "start": 292.76,
+            "end": 293.26,
+            "word": " jetzt...",
+            "probability": 0.6227773427963257
+          }
+        ],
+        "label": "cand3_with_neighbors"
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium-context.json",
+        "candidate": 3,
+        "crop": [
+          288.8,
+          301.2
+        ],
+        "segmentText": "Doch jetzt...",
+        "words": [
+          {
+            "start": 292.72,
+            "end": 292.84,
+            "word": " Doch",
+            "probability": 0.9620828032493591
+          },
+          {
+            "start": 292.84,
+            "end": 293.34,
+            "word": " jetzt...",
+            "probability": 0.5899464190006256
+          }
+        ],
+        "label": "cand3_with_neighbors"
+      },
+      "timingEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small-context.json",
+        "candidate": 3,
+        "crop": [
+          288.8,
+          301.2
+        ],
+        "segmentText": "Doch jetzt...",
+        "words": [
+          {
+            "start": 292.66,
+            "end": 292.76,
+            "word": " Doch",
+            "probability": 0.9240407943725586
+          },
+          {
+            "start": 292.76,
+            "end": 293.26,
+            "word": " jetzt...",
+            "probability": 0.6227773427963257
+          }
+        ],
+        "label": "cand3_with_neighbors"
+      },
+      "normalization": "None (exact lexical match 'Doch jetzt...' in both models; supersedes uncertain draft 1300035).",
+      "note": "First utterance of candidate #3; the following utterance at 293.20-294.86s ('Irgendwann reicht [er/mir] aber nicht.') remains in reviewNeeded due to pronoun disagreement."
+    },
+    {
+      "id": 1300250,
+      "parentId": 1300250,
+      "candidate": 4,
+      "start": 478.0,
+      "end": 482.14,
+      "rawStart": 478.0,
+      "rawEnd": 482.14,
+      "speaker": "Frieren",
+      "text": "In dem Buch stand kein Wiederbelebungs- oder Unsterblichkeitszauber.",
+      "vi": "Trong cuốn sách đó không hề ghi chép phép thuật hồi sinh hay trường sinh bất tử nào cả.",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "sourceDraftIds": [],
+      "smallText": "In dem Buch stand kein Wiederbelebungs- oder Unsterblichkeitszauber.",
+      "mediumText": "In dem Buch stand kein Wiederbelebungs- oder Unsterblichkeitszauber.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small-tight.json",
+        "candidate": 4,
+        "crop": [
+          478.0,
+          485.95
+        ],
+        "segmentText": "In dem Buch stand kein Wiederbelebungs- oder Unsterblichkeitszauber.",
+        "words": [
+          {
+            "start": 478.0,
+            "end": 478.84,
+            "word": " In",
+            "probability": 0.2762244641780853
+          },
+          {
+            "start": 478.84,
+            "end": 478.96,
+            "word": " dem",
+            "probability": 0.9385517239570618
+          },
+          {
+            "start": 478.96,
+            "end": 479.14,
+            "word": " Buch",
+            "probability": 0.9989953637123108
+          },
+          {
+            "start": 479.14,
+            "end": 479.36,
+            "word": " stand",
+            "probability": 0.8719599843025208
+          },
+          {
+            "start": 479.36,
+            "end": 479.56,
+            "word": " kein",
+            "probability": 0.9862111210823059
+          },
+          {
+            "start": 479.56,
+            "end": 480.28,
+            "word": " Wiederbelebungs",
+            "probability": 0.929571732878685
+          },
+          {
+            "start": 480.28,
+            "end": 480.28,
+            "word": "-",
+            "probability": 0.9773169159889221
+          },
+          {
+            "start": 480.28,
+            "end": 480.46,
+            "word": " oder",
+            "probability": 0.9715988636016846
+          },
+          {
+            "start": 480.46,
+            "end": 481.68,
+            "word": " Unsterblichkeitszauber.",
+            "probability": 0.9224733908971151
+          }
+        ],
+        "label": "cand4_s1_to_s3"
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium-tight.json",
+        "candidate": 4,
+        "crop": [
+          478.0,
+          485.95
+        ],
+        "segmentText": "In dem Buch stand kein Wiederbelebungs- oder Unsterblichkeitszauber.",
+        "words": [
+          {
+            "start": 478.0,
+            "end": 478.92,
+            "word": " In",
+            "probability": 0.6996726989746094
+          },
+          {
+            "start": 478.92,
+            "end": 479.04,
+            "word": " dem",
+            "probability": 0.9929816722869873
+          },
+          {
+            "start": 479.04,
+            "end": 479.2,
+            "word": " Buch",
+            "probability": 0.9943049550056458
+          },
+          {
+            "start": 479.2,
+            "end": 479.5,
+            "word": " stand",
+            "probability": 0.9649409651756287
+          },
+          {
+            "start": 479.5,
+            "end": 479.64,
+            "word": " kein",
+            "probability": 0.9861059188842773
+          },
+          {
+            "start": 479.64,
+            "end": 480.36,
+            "word": " Wiederbelebungs",
+            "probability": 0.9598583877086639
+          },
+          {
+            "start": 480.36,
+            "end": 480.36,
+            "word": "-",
+            "probability": 0.9829989075660706
+          },
+          {
+            "start": 480.36,
+            "end": 480.52,
+            "word": " oder",
+            "probability": 0.9839861392974854
+          },
+          {
+            "start": 480.52,
+            "end": 482.14,
+            "word": " Unsterblichkeitszauber.",
+            "probability": 0.9510947929488288
+          }
+        ],
+        "label": "cand4_s1_to_s3"
+      },
+      "timingEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium-tight.json",
+        "candidate": 4,
+        "crop": [
+          478.0,
+          485.95
+        ],
+        "segmentText": "In dem Buch stand kein Wiederbelebungs- oder Unsterblichkeitszauber.",
+        "words": [
+          {
+            "start": 478.0,
+            "end": 478.92,
+            "word": " In",
+            "probability": 0.6996726989746094
+          },
+          {
+            "start": 478.92,
+            "end": 479.04,
+            "word": " dem",
+            "probability": 0.9929816722869873
+          },
+          {
+            "start": 479.04,
+            "end": 479.2,
+            "word": " Buch",
+            "probability": 0.9943049550056458
+          },
+          {
+            "start": 479.2,
+            "end": 479.5,
+            "word": " stand",
+            "probability": 0.9649409651756287
+          },
+          {
+            "start": 479.5,
+            "end": 479.64,
+            "word": " kein",
+            "probability": 0.9861059188842773
+          },
+          {
+            "start": 479.64,
+            "end": 480.36,
+            "word": " Wiederbelebungs",
+            "probability": 0.9598583877086639
+          },
+          {
+            "start": 480.36,
+            "end": 480.36,
+            "word": "-",
+            "probability": 0.9829989075660706
+          },
+          {
+            "start": 480.36,
+            "end": 480.52,
+            "word": " oder",
+            "probability": 0.9839861392974854
+          },
+          {
+            "start": 480.52,
+            "end": 482.14,
+            "word": " Unsterblichkeitszauber.",
+            "probability": 0.9510947929488288
+          }
+        ],
+        "label": "cand4_s1_to_s3"
+      },
+      "normalization": "None (exact word-for-word match in cand4_s1_buch and cand4_s1_to_s3 across both small and medium).",
+      "note": "Sentence 1 of 6 in the previously unaligned gap 477.7-496.0s (Chapter 2)."
+    },
+    {
+      "id": 1300251,
+      "parentId": 1300251,
+      "candidate": 4,
+      "start": 482.44,
+      "end": 483.46,
+      "rawStart": 482.44,
+      "rawEnd": 483.46,
+      "speaker": "Heiter",
+      "text": "Ach, wirklich?",
+      "vi": "Ồ, thật vậy sao?",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "sourceDraftIds": [],
+      "smallText": "Ach, wirklich?",
+      "mediumText": "Ach, wirklich?",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small-tight.json",
+        "candidate": 4,
+        "crop": [
+          478.0,
+          485.95
+        ],
+        "segmentText": "Ach, wirklich?",
+        "words": [
+          {
+            "start": 482.44,
+            "end": 482.88,
+            "word": " Ach,",
+            "probability": 0.953285276889801
+          },
+          {
+            "start": 483.0,
+            "end": 483.14,
+            "word": " wirklich?",
+            "probability": 0.9886379837989807
+          }
+        ],
+        "label": "cand4_s1_to_s3"
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium-tight.json",
+        "candidate": 4,
+        "crop": [
+          478.0,
+          485.95
+        ],
+        "segmentText": "Ach, wirklich?",
+        "words": [
+          {
+            "start": 482.8,
+            "end": 483.0,
+            "word": " Ach,",
+            "probability": 0.9615436792373657
+          },
+          {
+            "start": 483.06,
+            "end": 483.46,
+            "word": " wirklich?",
+            "probability": 0.985607385635376
+          }
+        ],
+        "label": "cand4_s1_to_s3"
+      },
+      "timingEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small-tight.json",
+        "candidate": 4,
+        "crop": [
+          478.0,
+          485.95
+        ],
+        "segmentText": "Ach, wirklich?",
+        "words": [
+          {
+            "start": 482.44,
+            "end": 482.88,
+            "word": " Ach,",
+            "probability": 0.953285276889801
+          },
+          {
+            "start": 483.0,
+            "end": 483.14,
+            "word": " wirklich?",
+            "probability": 0.9886379837989807
+          }
+        ],
+        "label": "cand4_s1_to_s3"
+      },
+      "normalization": "None (exact match 'Ach, wirklich?' in both models).",
+      "note": "Sentence 2 of 6 in candidate #4."
+    },
+    {
+      "id": 1300252,
+      "parentId": 1300252,
+      "candidate": 4,
+      "start": 484.22,
+      "end": 485.04,
+      "rawStart": 484.22,
+      "rawEnd": 485.04,
+      "speaker": "Frieren",
+      "text": "Wusstest du das?",
+      "vi": "Cậu đã biết trước chuyện này rồi à?",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "sourceDraftIds": [],
+      "smallText": "Wusstest du das?",
+      "mediumText": "Wusstest du das?",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small-tight.json",
+        "candidate": 4,
+        "crop": [
+          478.0,
+          485.95
+        ],
+        "segmentText": "Wusstest du das?",
+        "words": [
+          {
+            "start": 484.22,
+            "end": 484.66,
+            "word": " Wusstest",
+            "probability": 0.9440160989761353
+          },
+          {
+            "start": 484.66,
+            "end": 484.78,
+            "word": " du",
+            "probability": 0.9577599763870239
+          },
+          {
+            "start": 484.78,
+            "end": 484.9,
+            "word": " das?",
+            "probability": 0.9907088279724121
+          }
+        ],
+        "label": "cand4_s1_to_s3"
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium-tight.json",
+        "candidate": 4,
+        "crop": [
+          478.0,
+          485.95
+        ],
+        "segmentText": "Wusstest du das?",
+        "words": [
+          {
+            "start": 484.32,
+            "end": 484.7,
+            "word": " Wusstest",
+            "probability": 0.9875756700833639
+          },
+          {
+            "start": 484.7,
+            "end": 484.8,
+            "word": " du",
+            "probability": 0.8517552614212036
+          },
+          {
+            "start": 484.8,
+            "end": 485.04,
+            "word": " das?",
+            "probability": 0.995458722114563
+          }
+        ],
+        "label": "cand4_s1_to_s3"
+      },
+      "timingEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small-tight.json",
+        "candidate": 4,
+        "crop": [
+          478.0,
+          485.95
+        ],
+        "segmentText": "Wusstest du das?",
+        "words": [
+          {
+            "start": 484.22,
+            "end": 484.66,
+            "word": " Wusstest",
+            "probability": 0.9440160989761353
+          },
+          {
+            "start": 484.66,
+            "end": 484.78,
+            "word": " du",
+            "probability": 0.9577599763870239
+          },
+          {
+            "start": 484.78,
+            "end": 484.9,
+            "word": " das?",
+            "probability": 0.9907088279724121
+          }
+        ],
+        "label": "cand4_s1_to_s3"
+      },
+      "normalization": "None (exact match 'Wusstest du das?' across all 4 crops of both models).",
+      "note": "Sentence 3 of 6 in candidate #4."
+    },
+    {
+      "id": 1300253,
+      "parentId": 1300253,
+      "candidate": 4,
+      "start": 485.85,
+      "end": 488.99,
+      "rawStart": 485.85,
+      "rawEnd": 488.99,
+      "speaker": "Heiter",
+      "text": "Die Angst vor dem Tod ist für uns unergründlich und tief.",
+      "vi": "Nỗi sợ cái chết đối với con người chúng tớ vốn sâu thẳm và khôn lường.",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "sourceDraftIds": [],
+      "smallText": "Die Angst vor dem Tod ist für uns unergründlich und tief.",
+      "mediumText": "Die Angst vor dem Tod ist für uns unergründlich und tief.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small-tight.json",
+        "candidate": 4,
+        "crop": [
+          485.85,
+          489.4
+        ],
+        "segmentText": "Die Angst vor dem Tod ist für uns unergründlich und tief.",
+        "words": [
+          {
+            "start": 485.85,
+            "end": 486.45,
+            "word": " Die",
+            "probability": 0.8912739753723145
+          },
+          {
+            "start": 486.45,
+            "end": 486.63,
+            "word": " Angst",
+            "probability": 0.9870953559875488
+          },
+          {
+            "start": 486.63,
+            "end": 486.85,
+            "word": " vor",
+            "probability": 0.8893611431121826
+          },
+          {
+            "start": 486.85,
+            "end": 486.97,
+            "word": " dem",
+            "probability": 0.9930999279022217
+          },
+          {
+            "start": 486.97,
+            "end": 487.21,
+            "word": " Tod",
+            "probability": 0.984216034412384
+          },
+          {
+            "start": 487.21,
+            "end": 487.41,
+            "word": " ist",
+            "probability": 0.9937619566917419
+          },
+          {
+            "start": 487.41,
+            "end": 487.55,
+            "word": " für",
+            "probability": 0.5661791563034058
+          },
+          {
+            "start": 487.55,
+            "end": 487.69,
+            "word": " uns",
+            "probability": 0.9988580942153931
+          },
+          {
+            "start": 487.69,
+            "end": 488.45,
+            "word": " unergründlich",
+            "probability": 0.9622595906257629
+          },
+          {
+            "start": 488.45,
+            "end": 488.57,
+            "word": " und",
+            "probability": 0.9919320940971375
+          },
+          {
+            "start": 488.57,
+            "end": 488.85,
+            "word": " tief.",
+            "probability": 0.9981379508972168
+          }
+        ],
+        "label": "cand4_s4_angst"
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium-tight.json",
+        "candidate": 4,
+        "crop": [
+          485.85,
+          489.4
+        ],
+        "segmentText": "Die Angst vor dem Tod ist für uns unergründlich und tief.",
+        "words": [
+          {
+            "start": 485.85,
+            "end": 486.51,
+            "word": " Die",
+            "probability": 0.9165909886360168
+          },
+          {
+            "start": 486.51,
+            "end": 486.75,
+            "word": " Angst",
+            "probability": 0.9959321618080139
+          },
+          {
+            "start": 486.75,
+            "end": 486.93,
+            "word": " vor",
+            "probability": 0.9987844824790955
+          },
+          {
+            "start": 486.93,
+            "end": 487.07,
+            "word": " dem",
+            "probability": 0.9984606504440308
+          },
+          {
+            "start": 487.07,
+            "end": 487.33,
+            "word": " Tod",
+            "probability": 0.9875689148902893
+          },
+          {
+            "start": 487.33,
+            "end": 487.49,
+            "word": " ist",
+            "probability": 0.9928975105285645
+          },
+          {
+            "start": 487.49,
+            "end": 487.57,
+            "word": " für",
+            "probability": 0.5957226753234863
+          },
+          {
+            "start": 487.57,
+            "end": 487.79,
+            "word": " uns",
+            "probability": 0.9966637492179871
+          },
+          {
+            "start": 487.79,
+            "end": 488.53,
+            "word": " unergründlich",
+            "probability": 0.9775466084480285
+          },
+          {
+            "start": 488.53,
+            "end": 488.81,
+            "word": " und",
+            "probability": 0.9925276041030884
+          },
+          {
+            "start": 488.81,
+            "end": 488.99,
+            "word": " tief.",
+            "probability": 0.999553382396698
+          }
+        ],
+        "label": "cand4_s4_angst"
+      },
+      "timingEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium-tight.json",
+        "candidate": 4,
+        "crop": [
+          485.85,
+          489.4
+        ],
+        "segmentText": "Die Angst vor dem Tod ist für uns unergründlich und tief.",
+        "words": [
+          {
+            "start": 485.85,
+            "end": 486.51,
+            "word": " Die",
+            "probability": 0.9165909886360168
+          },
+          {
+            "start": 486.51,
+            "end": 486.75,
+            "word": " Angst",
+            "probability": 0.9959321618080139
+          },
+          {
+            "start": 486.75,
+            "end": 486.93,
+            "word": " vor",
+            "probability": 0.9987844824790955
+          },
+          {
+            "start": 486.93,
+            "end": 487.07,
+            "word": " dem",
+            "probability": 0.9984606504440308
+          },
+          {
+            "start": 487.07,
+            "end": 487.33,
+            "word": " Tod",
+            "probability": 0.9875689148902893
+          },
+          {
+            "start": 487.33,
+            "end": 487.49,
+            "word": " ist",
+            "probability": 0.9928975105285645
+          },
+          {
+            "start": 487.49,
+            "end": 487.57,
+            "word": " für",
+            "probability": 0.5957226753234863
+          },
+          {
+            "start": 487.57,
+            "end": 487.79,
+            "word": " uns",
+            "probability": 0.9966637492179871
+          },
+          {
+            "start": 487.79,
+            "end": 488.53,
+            "word": " unergründlich",
+            "probability": 0.9775466084480285
+          },
+          {
+            "start": 488.53,
+            "end": 488.81,
+            "word": " und",
+            "probability": 0.9925276041030884
+          },
+          {
+            "start": 488.81,
+            "end": 488.99,
+            "word": " tief.",
+            "probability": 0.999553382396698
+          }
+        ],
+        "label": "cand4_s4_angst"
+      },
+      "normalization": "None (exact match in cand4_s4_angst, cand4_s4_to_s6, and cand4_with_next across both models).",
+      "note": "Sentence 4 of 6 in candidate #4."
+    },
+    {
+      "id": 1300254,
+      "parentId": 1300254,
+      "candidate": 4,
+      "start": 489.62,
+      "end": 493.72,
+      "rawStart": 489.62,
+      "rawEnd": 493.72,
+      "speaker": "Heiter",
+      "text": "Wenn es solche Zauber gegeben hätte, hätte Ewig diese selbst angewendet.",
+      "vi": "Nếu thực sự từng tồn tại những phép thuật như vậy, hẳn Ewig đã tự dùng chúng cho chính mình rồi.",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "sourceDraftIds": [],
+      "smallText": "Wenn es solche Zauber gegeben hätte, hätte ewig diese selbst angewendet.",
+      "mediumText": "Wenn es solche Zauber gegeben hätte, hätte Ewig diese selbst angewendet.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small.json",
+        "candidate": 4,
+        "crop": [
+          477.3,
+          497.77
+        ],
+        "segmentText": "Wenn es solche Zauber gegeben hätte, hätte ewig diese selbst angewendet.",
+        "words": [
+          {
+            "start": 489.62,
+            "end": 489.78,
+            "word": " Wenn",
+            "probability": 0.994561493396759
+          },
+          {
+            "start": 489.78,
+            "end": 489.96,
+            "word": " es",
+            "probability": 0.9951891899108887
+          },
+          {
+            "start": 489.96,
+            "end": 490.16,
+            "word": " solche",
+            "probability": 0.9942382574081421
+          },
+          {
+            "start": 490.16,
+            "end": 490.66,
+            "word": " Zauber",
+            "probability": 0.9902635812759399
+          },
+          {
+            "start": 490.66,
+            "end": 490.88,
+            "word": " gegeben",
+            "probability": 0.9955251812934875
+          },
+          {
+            "start": 490.88,
+            "end": 491.44,
+            "word": " hätte,",
+            "probability": 0.9972694516181946
+          },
+          {
+            "start": 491.56,
+            "end": 491.68,
+            "word": " hätte",
+            "probability": 0.9892203211784363
+          },
+          {
+            "start": 491.68,
+            "end": 492.08,
+            "word": " ewig",
+            "probability": 0.8564957976341248
+          },
+          {
+            "start": 492.08,
+            "end": 492.36,
+            "word": " diese",
+            "probability": 0.9869755506515503
+          },
+          {
+            "start": 492.36,
+            "end": 492.76,
+            "word": " selbst",
+            "probability": 0.9769819974899292
+          },
+          {
+            "start": 492.76,
+            "end": 493.48,
+            "word": " angewendet.",
+            "probability": 0.9987252751986185
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium.json",
+        "candidate": 4,
+        "crop": [
+          477.3,
+          497.77
+        ],
+        "segmentText": "Wenn es solche Zauber gegeben hätte, hätte Ewig diese selbst angewendet.",
+        "words": [
+          {
+            "start": 489.68,
+            "end": 489.86,
+            "word": " Wenn",
+            "probability": 0.9910849928855896
+          },
+          {
+            "start": 489.86,
+            "end": 490.1,
+            "word": " es",
+            "probability": 0.997901439666748
+          },
+          {
+            "start": 490.1,
+            "end": 490.36,
+            "word": " solche",
+            "probability": 0.9866777658462524
+          },
+          {
+            "start": 490.36,
+            "end": 490.72,
+            "word": " Zauber",
+            "probability": 0.998843769232432
+          },
+          {
+            "start": 490.72,
+            "end": 491.16,
+            "word": " gegeben",
+            "probability": 0.9925916194915771
+          },
+          {
+            "start": 491.16,
+            "end": 491.5,
+            "word": " hätte,",
+            "probability": 0.9925347566604614
+          },
+          {
+            "start": 491.68,
+            "end": 491.84,
+            "word": " hätte",
+            "probability": 0.9911790490150452
+          },
+          {
+            "start": 491.84,
+            "end": 492.28,
+            "word": " Ewig",
+            "probability": 0.9154490828514099
+          },
+          {
+            "start": 492.28,
+            "end": 492.5,
+            "word": " diese",
+            "probability": 0.9973117113113403
+          },
+          {
+            "start": 492.5,
+            "end": 492.88,
+            "word": " selbst",
+            "probability": 0.9915961623191833
+          },
+          {
+            "start": 492.88,
+            "end": 493.72,
+            "word": " angewendet.",
+            "probability": 0.9986399014790853
+          }
+        ]
+      },
+      "timingEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium.json",
+        "candidate": 4,
+        "crop": [
+          477.3,
+          497.77
+        ],
+        "segmentText": "Wenn es solche Zauber gegeben hätte, hätte Ewig diese selbst angewendet.",
+        "words": [
+          {
+            "start": 489.68,
+            "end": 489.86,
+            "word": " Wenn",
+            "probability": 0.9910849928855896
+          },
+          {
+            "start": 489.86,
+            "end": 490.1,
+            "word": " es",
+            "probability": 0.997901439666748
+          },
+          {
+            "start": 490.1,
+            "end": 490.36,
+            "word": " solche",
+            "probability": 0.9866777658462524
+          },
+          {
+            "start": 490.36,
+            "end": 490.72,
+            "word": " Zauber",
+            "probability": 0.998843769232432
+          },
+          {
+            "start": 490.72,
+            "end": 491.16,
+            "word": " gegeben",
+            "probability": 0.9925916194915771
+          },
+          {
+            "start": 491.16,
+            "end": 491.5,
+            "word": " hätte,",
+            "probability": 0.9925347566604614
+          },
+          {
+            "start": 491.68,
+            "end": 491.84,
+            "word": " hätte",
+            "probability": 0.9911790490150452
+          },
+          {
+            "start": 491.84,
+            "end": 492.28,
+            "word": " Ewig",
+            "probability": 0.9154490828514099
+          },
+          {
+            "start": 492.28,
+            "end": 492.5,
+            "word": " diese",
+            "probability": 0.9973117113113403
+          },
+          {
+            "start": 492.5,
+            "end": 492.88,
+            "word": " selbst",
+            "probability": 0.9915961623191833
+          },
+          {
+            "start": 492.88,
+            "end": 493.72,
+            "word": " angewendet.",
+            "probability": 0.9986399014790853
+          }
+        ]
+      },
+      "normalization": "Case-only normalization on 'Ewig': medium outputs capitalized 'Ewig' across all 4 runs (prob 0.90-0.92); small outputs lowercase 'ewig' in main, cand4_s5_ewig, and cand4_with_next.",
+      "note": "Sentence 5 of 6 in candidate #4; 'Ewig' is confirmed by medium and matches the episode summary."
+    },
+    {
+      "id": 1300255,
+      "parentId": 1300255,
+      "candidate": 4,
+      "start": 494.4,
+      "end": 495.46,
+      "rawStart": 494.4,
+      "rawEnd": 495.46,
+      "speaker": "Frieren",
+      "text": "Also wieso das alles?",
+      "vi": "Vậy tại sao cậu lại bày ra tất cả chuyện này?",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "sourceDraftIds": [],
+      "smallText": "Also wieso das alles?",
+      "mediumText": "Also wieso das alles?",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small.json",
+        "candidate": 4,
+        "crop": [
+          477.3,
+          497.77
+        ],
+        "segmentText": "Also wieso das alles?",
+        "words": [
+          {
+            "start": 494.4,
+            "end": 494.64,
+            "word": " Also",
+            "probability": 0.9531619548797607
+          },
+          {
+            "start": 494.64,
+            "end": 494.88,
+            "word": " wieso",
+            "probability": 0.8231832087039948
+          },
+          {
+            "start": 494.88,
+            "end": 495.1,
+            "word": " das",
+            "probability": 0.9769796133041382
+          },
+          {
+            "start": 495.1,
+            "end": 495.3,
+            "word": " alles?",
+            "probability": 0.9842766523361206
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium.json",
+        "candidate": 4,
+        "crop": [
+          477.3,
+          497.77
+        ],
+        "segmentText": "Also wieso das alles?",
+        "words": [
+          {
+            "start": 494.54,
+            "end": 494.74,
+            "word": " Also",
+            "probability": 0.9768233299255371
+          },
+          {
+            "start": 494.74,
+            "end": 495.0,
+            "word": " wieso",
+            "probability": 0.9570067226886749
+          },
+          {
+            "start": 495.0,
+            "end": 495.24,
+            "word": " das",
+            "probability": 0.9825860261917114
+          },
+          {
+            "start": 495.24,
+            "end": 495.46,
+            "word": " alles?",
+            "probability": 0.9887194037437439
+          }
+        ]
+      },
+      "timingEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium.json",
+        "candidate": 4,
+        "crop": [
+          477.3,
+          497.77
+        ],
+        "segmentText": "Also wieso das alles?",
+        "words": [
+          {
+            "start": 494.54,
+            "end": 494.74,
+            "word": " Also",
+            "probability": 0.9768233299255371
+          },
+          {
+            "start": 494.74,
+            "end": 495.0,
+            "word": " wieso",
+            "probability": 0.9570067226886749
+          },
+          {
+            "start": 495.0,
+            "end": 495.24,
+            "word": " das",
+            "probability": 0.9825860261917114
+          },
+          {
+            "start": 495.24,
+            "end": 495.46,
+            "word": " alles?",
+            "probability": 0.9887194037437439
+          }
+        ]
+      },
+      "normalization": "None (exact match across all 4 crops; ends at 495.46s, strictly inside Chapter 2 before the 496.0s boundary).",
+      "note": "Sentence 6 of 6 in candidate #4. The trailing 'Sag mir.' at 496.94-497.74s is the onset of baseline cue 1300062 (497.26-499.14s 'Sag mir, wie geht es mit Fern voran?') and is excluded."
+    },
+    {
+      "id": 1300256,
+      "parentId": 1300256,
+      "candidate": 7,
+      "start": 536.04,
+      "end": 538.3,
+      "rawStart": 536.04,
+      "rawEnd": 538.3,
+      "speaker": "Heiter",
+      "text": "Ich bitte euch, heute Abend von ihr wegzugehen.",
+      "vi": "Tớ xin cậu tối nay hãy rời đi khỏi chỗ con bé.",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "sourceDraftIds": [
+        1300073
+      ],
+      "smallText": "Ich bitte euch, heute Abend von ihr wegzugehen.",
+      "mediumText": "Ich bitte euch heute Abend von ihr wegzugehen.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small-context.json",
+        "candidate": 7,
+        "crop": [
+          531.9,
+          540.5
+        ],
+        "segmentText": "Ich bitte euch, heute Abend von ihr wegzugehen.",
+        "words": [
+          {
+            "start": 536.04,
+            "end": 536.48,
+            "word": " Ich",
+            "probability": 0.9852386116981506
+          },
+          {
+            "start": 536.48,
+            "end": 536.7,
+            "word": " bitte",
+            "probability": 0.9633488655090332
+          },
+          {
+            "start": 536.7,
+            "end": 536.92,
+            "word": " euch,",
+            "probability": 0.8065974116325378
+          },
+          {
+            "start": 537.04,
+            "end": 537.18,
+            "word": " heute",
+            "probability": 0.9829131960868835
+          },
+          {
+            "start": 537.18,
+            "end": 537.46,
+            "word": " Abend",
+            "probability": 0.9807428121566772
+          },
+          {
+            "start": 537.46,
+            "end": 537.68,
+            "word": " von",
+            "probability": 0.9852295517921448
+          },
+          {
+            "start": 537.68,
+            "end": 537.84,
+            "word": " ihr",
+            "probability": 0.9525352120399475
+          },
+          {
+            "start": 537.84,
+            "end": 538.06,
+            "word": " wegzugehen.",
+            "probability": 0.8890910545984904
+          }
+        ],
+        "label": "cand7_with_neighbors"
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium-context.json",
+        "candidate": 7,
+        "crop": [
+          531.9,
+          540.5
+        ],
+        "segmentText": "Ich bitte euch heute Abend von ihr wegzugehen.",
+        "words": [
+          {
+            "start": 536.46,
+            "end": 536.56,
+            "word": " Ich",
+            "probability": 0.9909041523933411
+          },
+          {
+            "start": 536.56,
+            "end": 536.82,
+            "word": " bitte",
+            "probability": 0.9873829483985901
+          },
+          {
+            "start": 536.82,
+            "end": 537.02,
+            "word": " euch",
+            "probability": 0.8034149408340454
+          },
+          {
+            "start": 537.02,
+            "end": 537.3,
+            "word": " heute",
+            "probability": 0.67898029088974
+          },
+          {
+            "start": 537.3,
+            "end": 537.56,
+            "word": " Abend",
+            "probability": 0.928895890712738
+          },
+          {
+            "start": 537.56,
+            "end": 537.72,
+            "word": " von",
+            "probability": 0.7888763546943665
+          },
+          {
+            "start": 537.72,
+            "end": 537.9,
+            "word": " ihr",
+            "probability": 0.9534534215927124
+          },
+          {
+            "start": 537.9,
+            "end": 538.94,
+            "word": " wegzugehen.",
+            "probability": 0.885019063949585
+          }
+        ],
+        "label": "cand7_with_neighbors"
+      },
+      "timingEvidence": {
+        "file": "qa/kino-alignment/frieren_missing_20261027/independent-small-context.json",
+        "candidate": 7,
+        "crop": [
+          531.9,
+          540.5
+        ],
+        "segmentText": "Ich bitte euch, heute Abend von ihr wegzugehen.",
+        "words": [
+          {
+            "start": 536.04,
+            "end": 536.48,
+            "word": " Ich",
+            "probability": 0.9852386116981506
+          },
+          {
+            "start": 536.48,
+            "end": 536.7,
+            "word": " bitte",
+            "probability": 0.9633488655090332
+          },
+          {
+            "start": 536.7,
+            "end": 536.92,
+            "word": " euch,",
+            "probability": 0.8065974116325378
+          },
+          {
+            "start": 537.04,
+            "end": 537.18,
+            "word": " heute",
+            "probability": 0.9829131960868835
+          },
+          {
+            "start": 537.18,
+            "end": 537.46,
+            "word": " Abend",
+            "probability": 0.9807428121566772
+          },
+          {
+            "start": 537.46,
+            "end": 537.68,
+            "word": " von",
+            "probability": 0.9852295517921448
+          },
+          {
+            "start": 537.68,
+            "end": 537.84,
+            "word": " ihr",
+            "probability": 0.9525352120399475
+          },
+          {
+            "start": 537.84,
+            "end": 538.06,
+            "word": " wegzugehen.",
+            "probability": 0.8890910545984904
+          }
+        ],
+        "label": "cand7_with_neighbors"
+      },
+      "normalization": "None in context crop (both small and medium output single-word 'wegzugehen.' in cand7_with_neighbors; main/tight medium wrote 'weg zu gehen.' with spaces). Timing end capped at 538.30s (matching medium tight 538.30s and covering small timing 536.04-538.06s) so it does not touch baseline cue 1300074 at 538.62s.",
+      "note": "Supersedes uncertain draft 1300073 (536.1-538.6s). Both models confirm 'Ich bitte euch' instead of draft's 'Ich bitte dich'."
+    }
+  ],
+  "excluded": [
+    {
+      "candidate": 1,
+      "window": [
+        0.0,
+        18.54
+      ],
+      "museRange": [
+        0.58,
+        17.34
+      ],
+      "category": "opening_music_non_dialogue",
+      "reason": "Nhạc mở đầu (OP YOASOBI 'Yuusha', nằm trong vùng exclusions 0–90.5s). Earshot phân loại Music 0.775 / Speech 0.061 (earshot-opening.json); small và medium đều hallucinate câu vô nghĩa/outro ('Das war der erste Mal... SWR 2020' / 'Das war's für heute. Bis zum nächsten Mal. Tschüss.').",
+      "smallText": "Das war der erste Mal, dass ich in der Zeit bin, dass ich in der Zeit bin... | SWR 2020",
+      "mediumText": "Das war's für heute. | Bis zum nächsten Mal. | Tschüss."
+    },
+    {
+      "candidate": 3,
+      "window": [
+        291.22,
+        291.78
+      ],
+      "museRange": [
+        291.22,
+        291.78
+      ],
+      "category": "duplicate_neighbor_tail",
+      "existingCueIds": [
+        1300034
+      ],
+      "reason": "Đuôi từ 'schaffen.' ở đầu cửa sổ #3 (medium main 291.22–291.64s) thuộc câu baseline đã có 1300034 (288.92–291.78s: 'Das wirst du garantiert irgendwann schaffen.').",
+      "smallText": "",
+      "mediumText": "schaffen."
+    },
+    {
+      "candidate": 4,
+      "window": [
+        496.94,
+        497.77
+      ],
+      "museRange": [
+        496.94,
+        497.77
+      ],
+      "category": "duplicate_neighbor_onset",
+      "existingCueIds": [
+        1300062
+      ],
+      "reason": "Cụm 'Sag mir.' ở cuối cửa sổ #4 (496.94–497.74s) là phần mở đầu bị cắt ngang của câu baseline đã có 1300062 (497.26–499.14s: 'Sag mir, wie geht es mit Fern voran?'), được xác nhận bởi context crop cand4_with_next.",
+      "smallText": "Sag mir.",
+      "mediumText": "Sag mir."
+    },
+    {
+      "candidate": 5,
+      "window": [
+        504.41,
+        507.82
+      ],
+      "museRange": [
+        505.61,
+        506.62
+      ],
+      "category": "duplicate_neighbor_spillover",
+      "existingCueIds": [
+        1300064,
+        1300065
+      ],
+      "reason": "Tràn biên giữa hai câu baseline đã có 1300064 (502.42–505.12s: '...zu einer vollwertigen Magierin.') và 1300065 (506.70–508.04s: 'Das ist gut.'). Trên crop chỉ lấy khoảng trống cand5_gap_only (505.15–506.65s), small trả về rỗng còn medium hallucinate 'Vielen Dank für's Zuhören!' (prob 0.015); trên cand5_with_neighbors cả hai model chỉ nhận đúng hai câu 1300064 và 1300065.",
+      "smallText": "Magierin. | Das ist gut.",
+      "mediumText": "Magierin. | Das ist gut."
+    },
+    {
+      "candidate": 6,
+      "window": [
+        514.42,
+        517.87
+      ],
+      "museRange": [
+        515.62,
+        516.67
+      ],
+      "category": "existing_cue_and_breath",
+      "existingCueIds": [
+        1300068
+      ],
+      "reason": "Trùng phần đầu câu baseline đã có 1300068 (516.42–520.00s: 'Würdest du sie bitte auf deinen Reisen mitnehmen?'). Khoảng trống trước 516.42s (cand6_gap_only / cand6_core) chỉ có tiếng lấy hơi/ậm ừ phi từ vựng ('Mmh.' hoặc rỗng), và cand6_with_neighbors xác nhận không có câu thoại nào bị thiếu giữa 1300067 và 1300068.",
+      "smallText": "Würdest du sie...",
+      "mediumText": "Würdest du sie"
+    },
+    {
+      "candidate": 7,
+      "window": [
+        538.62,
+        540.07
+      ],
+      "museRange": [
+        538.62,
+        540.07
+      ],
+      "category": "duplicate_neighbor_onset",
+      "existingCueIds": [
+        1300074
+      ],
+      "reason": "Câu thứ hai trong cửa sổ #7 ('Was hast du vor?' ở 538.62–539.70s) trùng hoàn toàn với câu baseline đã có 1300074 (538.62–540.34s: 'Was hast du vor?').",
+      "smallText": "Was hast du vor?",
+      "mediumText": "Was hast du vor?"
+    },
+    {
+      "candidate": 8,
+      "window": [
+        580.76,
+        584.2
+      ],
+      "museRange": [
+        581.96,
+        583.0
+      ],
+      "category": "duplicate_neighbor_vocative_onset",
+      "existingCueIds": [
+        1300082
+      ],
+      "reason": "Chạm phần gọi tên 'Frieren,' ở đầu câu baseline đã có 1300082 (582.73–586.65s: 'Frieren, du hast wirklich ein gutes Herz.'). Khi cắt ngắn ở 580.76–584.20s, từ 'Frieren' bị cắt khỏi vế sau nên small đoán 'Verirren?' (prob 0.503) và medium đoán 'Feiern?' (prob 0.742); khi chạy cand8_with_1300082 (580.76–586.80s), medium nhận diện liền mạch 'Frieren, du hast wirklich ein gutes Herz.' từ 581.80s. Không thêm trùng.",
+      "smallText": "Verirren?",
+      "mediumText": "Feiern? (cand8_with_1300082: Frieren, du hast wirklich ein gutes Herz.)"
+    },
+    {
+      "candidate": 9,
+      "window": [
+        961.33,
+        962.27
+      ],
+      "museRange": [
+        961.33,
+        962.27
+      ],
+      "category": "duplicate_neighbor_tail",
+      "existingCueIds": [
+        1300161
+      ],
+      "reason": "Câu đầu trong cửa sổ #9 ('Diese Monster fressen Samen.' ở 961.33–962.27s) trùng với câu baseline đã có 1300161 (960.65–962.27s).",
+      "smallText": "Fressen Samen.",
+      "mediumText": "Diese Monster fressen Samen."
+    },
+    {
+      "candidate": 10,
+      "window": [
+        1234.42,
+        1236.04
+      ],
+      "museRange": [
+        1234.42,
+        1236.04
+      ],
+      "category": "duplicate_neighbor_onset",
+      "existingCueIds": [
+        1300204
+      ],
+      "reason": "Câu trả lời ở cuối cửa sổ #10 ('Das ist nur ein Zeitvertreib.' từ 1234.42s) trùng với câu baseline đã có 1300204 (1234.42–1236.57s).",
+      "smallText": "Das ist nur ein Zeitvertreib.",
+      "mediumText": "Das ist nur ein Zeitvertreib."
+    },
+    {
+      "candidate": 12,
+      "window": [
+        1549.69,
+        1560.1
+      ],
+      "museRange": [
+        1550.89,
+        1560.1
+      ],
+      "category": "next_episode_preview_excluded",
+      "sourceDraftIds": [
+        1300244,
+        1300245,
+        1300246,
+        1300247
+      ],
+      "reason": "Preview tập 3 (Vorschau) ở cuối video, ngoài phạm vi thoại học của tập 2. Khung hình scene-preview-1558.jpg hiển thị rõ thẻ tiêu đề 'Episode 3 / 第3話 / 人を殺す魔法 / Tötungszauber'. Ngoài ra, small và medium bất đồng nặng trên nền nhạc preview ('spart' vs 'stark', 'Reise der Verdammene' vs 'Weise der Verderbnis', 'Pflanze auf' vs 'Praxis her'). Giữ nguyên vùng exclusions preview và không đưa các draft 1300244–1300247 vào bài học.",
+      "smallText": "Fern, du bist ein spart geworden. | Dies ist die Reise der Verdammene. | Nächstes Mal, Tötungszauber. | Aus dieser Perspektive sieht es wie eine Pflanze auf.",
+      "mediumText": "Fern, du bist echt stark geworden. | Dies ist die Weise der Verderbnis. | Nächstes Mal, Tötungszauber. | Aus dieser Perspektive sieht es wie eine Praxis her."
+    }
+  ],
+  "reviewNeeded": [
+    {
+      "candidate": 3,
+      "window": [
+        293.2,
+        294.86
+      ],
+      "museRange": [
+        293.3,
+        294.87
+      ],
+      "sourceDraftIds": [
+        1300036
+      ],
+      "draftText": "Irgendwann reicht mir aber nicht.",
+      "speaker": "Frieren",
+      "smallVariants": {
+        "main": "Irgendwann reicht er aber nicht.",
+        "cand3_gap_only": "Irgendwann reicht er aber nicht.",
+        "cand3_part2_irgendwann": "Irgendwann reicht er aber nicht.",
+        "cand3_with_neighbors": "Irgendwann reicht er aber nicht."
+      },
+      "mediumVariants": {
+        "main": "Irgendwann reicht aber nicht.",
+        "cand3_gap_only": "Irgendwann reicht aber nicht.",
+        "cand3_part2_irgendwann": "Irgendwann reicht er aber nicht.",
+        "cand3_with_neighbors": "Irgendwann reicht aber nicht."
+      },
+      "reason": "Bất đồng từ/đại từ giữa các model và với bản nháp 1300036: small nhận 'Irgendwann reicht er aber nicht.' ở cả 4 crop, medium nhận 'Irgendwann reicht aber nicht.' (khuyết đại từ) ở 3/4 crop và 'Irgendwann reicht er aber nicht.' (prob 'er' 0.287) ở 1 crop, trong khi draft 1300036 ghi 'Irgendwann reicht mir aber nicht.'. Không tự chọn hoặc bỏ đại từ; giữ trong reviewNeeded."
+    },
+    {
+      "candidate": 9,
+      "window": [
+        962.3,
+        963.94
+      ],
+      "museRange": [
+        962.53,
+        964.19
+      ],
+      "sourceDraftIds": [
+        1300162
+      ],
+      "draftText": "Ich bringe sie in den Wald zurück.",
+      "speaker": "Frieren",
+      "smallVariants": {
+        "main": "Ich bringe sie in den Wald zurück.",
+        "cand9_gap_only": "Nicht bringen sie in den Wald zurück.",
+        "cand9_core": "Nicht bringen sie in den Wald zurück.",
+        "cand9_with_prev": "Nicht bringen sie in den Wald zurück."
+      },
+      "mediumVariants": {
+        "main": "Ich bring sie in den Wald zurück.",
+        "cand9_gap_only": "Ich bringe sie in den Wald zurück.",
+        "cand9_core": "Ich bringe sie in den Wald zurück.",
+        "cand9_with_prev": "Ich bringe sie in den Wald zurück."
+      },
+      "matchingSubsetEvidence": {
+        "smallMainEvidence": {
+          "file": "qa/kino-alignment/frieren_missing_20261027/independent-small.json",
+          "candidate": 9,
+          "crop": [
+            961.33,
+            965.39
+          ],
+          "segmentText": "Ich bringe sie in den Wald zurück.",
+          "words": [
+            {
+              "start": 963.13,
+              "end": 963.21,
+              "word": " sie",
+              "probability": 0.6575303077697754
+            },
+            {
+              "start": 963.21,
+              "end": 963.27,
+              "word": " in",
+              "probability": 0.9485654234886169
+            },
+            {
+              "start": 963.27,
+              "end": 963.37,
+              "word": " den",
+              "probability": 0.9894092082977295
+            },
+            {
+              "start": 963.37,
+              "end": 963.53,
+              "word": " Wald",
+              "probability": 0.9980940222740173
+            },
+            {
+              "start": 963.53,
+              "end": 963.77,
+              "word": " zurück.",
+              "probability": 0.9924582242965698
+            }
+          ]
+        },
+        "mediumTightEvidence": {
+          "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium-tight.json",
+          "candidate": 9,
+          "crop": [
+            962.3,
+            965.39
+          ],
+          "segmentText": "Ich bringe sie in den Wald zurück.",
+          "words": [
+            {
+              "start": 962.3,
+              "end": 962.92,
+              "word": " Ich",
+              "probability": 0.884755551815033
+            },
+            {
+              "start": 962.92,
+              "end": 963.18,
+              "word": " bringe",
+              "probability": 0.8335110247135162
+            },
+            {
+              "start": 963.18,
+              "end": 963.24,
+              "word": " sie",
+              "probability": 0.8546077013015747
+            },
+            {
+              "start": 963.24,
+              "end": 963.3,
+              "word": " in",
+              "probability": 0.9934966564178467
+            },
+            {
+              "start": 963.3,
+              "end": 963.44,
+              "word": " den",
+              "probability": 0.998250424861908
+            },
+            {
+              "start": 963.44,
+              "end": 963.58,
+              "word": " Wald",
+              "probability": 0.9864146113395691
+            },
+            {
+              "start": 963.58,
+              "end": 963.94,
+              "word": " zurück.",
+              "probability": 0.9956285953521729
+            }
+          ],
+          "label": "cand9_gap_only"
+        },
+        "mediumContextEvidence": {
+          "file": "qa/kino-alignment/frieren_missing_20261027/independent-medium-context.json",
+          "candidate": 9,
+          "crop": [
+            960.5,
+            965.5
+          ],
+          "segmentText": "Ich bringe sie in den Wald zurück.",
+          "words": [
+            {
+              "start": 962.82,
+              "end": 962.92,
+              "word": " Ich",
+              "probability": 0.9878287315368652
+            },
+            {
+              "start": 962.92,
+              "end": 963.16,
+              "word": " bringe",
+              "probability": 0.7682204842567444
+            },
+            {
+              "start": 963.16,
+              "end": 963.24,
+              "word": " sie",
+              "probability": 0.9404881596565247
+            },
+            {
+              "start": 963.24,
+              "end": 963.32,
+              "word": " in",
+              "probability": 0.9958904385566711
+            },
+            {
+              "start": 963.32,
+              "end": 963.48,
+              "word": " den",
+              "probability": 0.9991375207901001
+            },
+            {
+              "start": 963.48,
+              "end": 963.58,
+              "word": " Wald",
+              "probability": 0.9951186180114746
+            },
+            {
+              "start": 963.58,
+              "end": 963.9,
+              "word": " zurück.",
+              "probability": 0.9957504272460938
+            }
+          ],
+          "label": "cand9_with_prev"
+        }
+      },
+      "reason": "Bất đồng hình thái động từ / từ đầu câu giữa các crop (tương tự bài học Geht/Geh): dù small main (962.43–963.77s, prob 'Ich' 0.253, 'bringe' 0.458) và medium tight/context (962.30–963.94s) cùng ra 'Ich bringe sie in den Wald zurück.', nhưng 3/4 crop của small (gap_only, core, with_prev) lại đổi thành 'Nicht bringen sie in den Wald zurück.' và medium main ra 'Ich bring sie in den Wald zurück.' ('bring' vs 'bringe'). Theo quy tắc không chọn đa số để sửa ngữ pháp/từ khi model dao động giữa các crop, đề xuất giữ ở reviewNeeded (kèm đủ word evidence của small main + medium tight/context nếu Codex muốn xét thêm)."
+    },
+    {
+      "candidate": 10,
+      "window": [
+        1230.88,
+        1234.4
+      ],
+      "museRange": [
+        1231.05,
+        1234.4
+      ],
+      "sourceDraftIds": [
+        1300181
+      ],
+      "draftText": "Frieren, sag mal, warum sammelst du eigentlich Zauber?",
+      "speaker": "Heiter",
+      "smallVariants": {
+        "main": "Freren, sag mal, warum sammelst du eigentlich Zauber?",
+        "cand10_gap_only": "Freren, sagt mal, warum sammelst du eigentlich Zauber?",
+        "cand10_question": "Man sagt mal, warum sammelst du eigentlich Zauber?",
+        "cand10_with_next": "Freren, sagt mal, warum sammelst du eigentlich Zauber?"
+      },
+      "mediumVariants": {
+        "main": "Friren, sag mal, warum sammelst du eigentlich Zauber?",
+        "cand10_gap_only": "Frieren, sag mal, warum sammelst du eigentlich Zauber?",
+        "cand10_question": "Dann sag mal, warum sammelst du eigentlich Zauber?",
+        "cand10_with_next": "Frieren, sag mal, warum sammelst du eigentlich Zauber?"
+      },
+      "reason": "Bất đồng cả tên riêng lẫn hình thái động từ giữa hai model trên cùng crop: ở main crop cả hai đều biến dạng tên riêng ('Freren' vs 'Friren'); ở gap_only và with_next khi medium ra đúng 'Frieren, sag mal...' thì small lại ra 'Freren, sagt mal...' ('sagt' vs 'sag'); ở question crop cả hai mất tên riêng thành 'Man sagt mal' / 'Dann sag mal'. Không có cặp crop nào đồng thuận cả tên riêng 'Frieren' lẫn động từ 'sag'; giữ nguyên câu trong reviewNeeded."
+    },
+    {
+      "candidate": 11,
+      "window": [
+        1265.05,
+        1274.03
+      ],
+      "museRange": [
+        1266.25,
+        1272.83
+      ],
+      "sourceDraftIds": [],
+      "draftText": null,
+      "speaker": "Heiter",
+      "smallVariants": {
+        "main": "Da wird er mir schlecht.",
+        "cand11_core": "Ha, ha, ha, ha, ha, ha, ha, ha, ha...",
+        "cand11_tight": "Da wird er mir schlecht.",
+        "cand11_with_neighbors": "Da wird er mir schlecht."
+      },
+      "mediumVariants": {
+        "main": "Da wird einem ja schlecht.",
+        "cand11_core": "Da wird einem ja schlecht.",
+        "cand11_tight": "Da wird einem ja schlecht.",
+        "cand11_with_neighbors": "Da wird einem ja schlecht."
+      },
+      "reason": "Bất đồng từ vựng/ngữ pháp trực tiếp ở mọi crop между small ('Da wird er mir schlecht.') và medium ('Da wird einem ja schlecht.', kèm tiếng nôn/khạc của Heiter ở 1266–1270s mà small cand11_core hallucinate thành chuỗi 'Ha, ha...'). Giữ trong reviewNeeded."
+    }
+  ]
+}

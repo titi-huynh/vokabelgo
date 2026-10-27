@@ -1,0 +1,279 @@
+{
+  "source": "Unmodified Kino player at http://127.0.0.1:3109, archived source audio in 720p and 480p MP4",
+  "checked": 8,
+  "total": 8,
+  "errors": [],
+  "mobile": {
+    "width": 390,
+    "pass": true,
+    "checked": 1
+  },
+  "media": [
+    {
+      "src": "video/frieren_s01e02-web-v1.mp4",
+      "bytes": 252263102,
+      "width": 1280,
+      "height": 720,
+      "byteRange": true,
+      "seekAndPlay": true
+    },
+    {
+      "src": "video/kino-light/frieren_s01e02-480p-v1.mp4",
+      "bytes": 136157599,
+      "width": 854,
+      "height": 480,
+      "byteRange": true,
+      "seekAndPlay": true
+    }
+  ],
+  "results": [
+    {
+      "id": 1300248,
+      "parentId": 1300248,
+      "start": 234.96,
+      "end": 238.14,
+      "speaker": "Frieren",
+      "text": "Ich werde mit dem Entschlüsseln des Buchs früher fertig werden.",
+      "vi": "Tôi sẽ hoàn tất việc giải mã cuốn sách sớm hơn.",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 234.92000000000002,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 236.55,
+          "expectedId": 1300248,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 238.17999999999998,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": 1300249,
+      "parentId": 1300249,
+      "start": 292.12,
+      "end": 293.04,
+      "speaker": "Frieren",
+      "text": "Doch jetzt...",
+      "vi": "Nhưng bây giờ...",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 292.08,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 292.58000000000004,
+          "expectedId": 1300249,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 293.08000000000004,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": 1300250,
+      "parentId": 1300250,
+      "start": 478.38,
+      "end": 481.86,
+      "speaker": "Frieren",
+      "text": "In dem Buch stand kein Wiederbelebungs- oder Unsterblichkeitszauber.",
+      "vi": "Trong cuốn sách không có phép hồi sinh hay phép bất tử nào cả.",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 478.34,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 480.12,
+          "expectedId": 1300250,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 481.90000000000003,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": 1300251,
+      "parentId": 1300251,
+      "start": 482.52,
+      "end": 483.5,
+      "speaker": "Heiter",
+      "text": "Ach, wirklich?",
+      "vi": "Ồ, thật vậy sao?",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 482.47999999999996,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 483.01,
+          "expectedId": 1300251,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 483.54,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": 1300252,
+      "parentId": 1300252,
+      "start": 484.2,
+      "end": 485.08,
+      "speaker": "Frieren",
+      "text": "Wusstest du das?",
+      "vi": "Cậu biết chuyện đó rồi sao?",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 484.15999999999997,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 484.64,
+          "expectedId": 1300252,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 485.12,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": 1300253,
+      "parentId": 1300253,
+      "start": 486.12,
+      "end": 489.02,
+      "speaker": "Heiter",
+      "text": "Die Angst vor dem Tod ist für uns unergründlich und tief.",
+      "vi": "Nỗi sợ cái chết trong chúng ta vừa sâu thẳm vừa khó thấu hiểu.",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 486.08,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 487.57,
+          "expectedId": 1300253,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 489.06,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": 1300254,
+      "parentId": 1300254,
+      "start": 489.62,
+      "end": 493.72,
+      "speaker": "Heiter",
+      "text": "Wenn es solche Zauber gegeben hätte, hätte Ewig diese selbst angewendet.",
+      "vi": "Nếu có những phép thuật như thế, hẳn Ewig đã tự dùng chúng cho mình rồi.",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 489.58,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 491.67,
+          "expectedId": 1300254,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 493.76000000000005,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "id": 1300255,
+      "parentId": 1300255,
+      "start": 494.4,
+      "end": 495.46,
+      "speaker": "Frieren",
+      "text": "Also wieso das alles?",
+      "vi": "Vậy thì tất cả chuyện này là vì sao?",
+      "sourceEvidence": "qa/kino-alignment/season1-episode2/frieren_s01e02.json",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 494.35999999999996,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 494.92999999999995,
+          "expectedId": 1300255,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 495.5,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "pass": true
+    }
+  ]
+}
