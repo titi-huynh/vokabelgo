@@ -1,0 +1,595 @@
+{
+  "key": "spongebob_pizza",
+  "baseRevision": "20ce104c034033f47852a6e4c1c7c82f0cd6c85b",
+  "candidateWindows": 7,
+  "humanListened": false,
+  "method": "Local independent small/medium on original unchanged source; no prompts/hotwords, plus frames and broad sound classification. Instability retained, not corrected using context.",
+  "added": [
+    {
+      "id": 1200163,
+      "candidate": 1,
+      "speaker": "SpongeBob",
+      "text": "Hä?",
+      "vi": "Hả?",
+      "speakerEvidence": "frame-54.4.jpg",
+      "support": [
+        {
+          "file": "codex-small-main.json",
+          "model": "small",
+          "windowIndex": 0,
+          "candidate": 1,
+          "crop": [
+            51.57,
+            55.05
+          ],
+          "words": [
+            {
+              "word": " Hä?",
+              "start": 54.11,
+              "end": 54.47,
+              "probability": 0.43008652329444885
+            }
+          ],
+          "literalText": "Hä?"
+        },
+        {
+          "file": "codex-medium-main.json",
+          "model": "medium",
+          "windowIndex": 0,
+          "candidate": 1,
+          "crop": [
+            51.57,
+            55.05
+          ],
+          "words": [
+            {
+              "word": " Hä?",
+              "start": 54.33,
+              "end": 54.57,
+              "probability": 0.8285114765167236
+            }
+          ],
+          "literalText": "Hä?"
+        }
+      ],
+      "start": 54.11,
+      "end": 54.57,
+      "timingEvidence": [
+        {
+          "file": "codex-small-main.json",
+          "model": "small",
+          "windowIndex": 0,
+          "candidate": 1,
+          "crop": [
+            51.57,
+            55.05
+          ],
+          "words": [
+            {
+              "word": " Hä?",
+              "start": 54.11,
+              "end": 54.47,
+              "probability": 0.43008652329444885
+            }
+          ],
+          "literalText": "Hä?"
+        },
+        {
+          "file": "codex-medium-main.json",
+          "model": "medium",
+          "windowIndex": 0,
+          "candidate": 1,
+          "crop": [
+            51.57,
+            55.05
+          ],
+          "words": [
+            {
+              "word": " Hä?",
+              "start": 54.33,
+              "end": 54.57,
+              "probability": 0.8285114765167236
+            }
+          ],
+          "literalText": "Hä?"
+        }
+      ],
+      "decision": "add",
+      "note": "Only punctuation/capitalization normalized. Bounds cover every selected literal timing word. Local machine evidence, not human listening approval."
+    },
+    {
+      "id": 1200164,
+      "candidate": 3,
+      "speaker": "Thaddäus",
+      "text": "Schön.",
+      "vi": "Hay lắm.",
+      "speakerEvidence": "frame-75.8.jpg",
+      "support": [
+        {
+          "file": "codex-small-main.json",
+          "model": "small",
+          "windowIndex": 2,
+          "candidate": 3,
+          "crop": [
+            65.94,
+            78.92
+          ],
+          "words": [
+            {
+              "word": " Schön.",
+              "start": 75.54,
+              "end": 75.84,
+              "probability": 0.9176804423332214
+            }
+          ],
+          "literalText": "Schön."
+        },
+        {
+          "file": "codex-medium-main.json",
+          "model": "medium",
+          "windowIndex": 2,
+          "candidate": 3,
+          "crop": [
+            65.94,
+            78.92
+          ],
+          "words": [
+            {
+              "word": " Schön.",
+              "start": 75.8,
+              "end": 75.96,
+              "probability": 0.9510746598243713
+            }
+          ],
+          "literalText": "Schön."
+        }
+      ],
+      "start": 75.54,
+      "end": 75.96,
+      "timingEvidence": [
+        {
+          "file": "codex-small-main.json",
+          "model": "small",
+          "windowIndex": 2,
+          "candidate": 3,
+          "crop": [
+            65.94,
+            78.92
+          ],
+          "words": [
+            {
+              "word": " Schön.",
+              "start": 75.54,
+              "end": 75.84,
+              "probability": 0.9176804423332214
+            }
+          ],
+          "literalText": "Schön."
+        },
+        {
+          "file": "codex-medium-main.json",
+          "model": "medium",
+          "windowIndex": 2,
+          "candidate": 3,
+          "crop": [
+            65.94,
+            78.92
+          ],
+          "words": [
+            {
+              "word": " Schön.",
+              "start": 75.8,
+              "end": 75.96,
+              "probability": 0.9510746598243713
+            }
+          ],
+          "literalText": "Schön."
+        }
+      ],
+      "decision": "add",
+      "note": "Only punctuation/capitalization normalized. Bounds cover every selected literal timing word. Local machine evidence, not human listening approval."
+    },
+    {
+      "id": 1200165,
+      "candidate": 4,
+      "speaker": "SpongeBob",
+      "text": "Ich glaube fast, die Pizza wird kalt.",
+      "vi": "Tôi nghĩ bánh pizza sắp nguội mất rồi.",
+      "speakerEvidence": "frame-90.5.jpg",
+      "support": [
+        {
+          "file": "codex-small-recheck.json",
+          "model": "small",
+          "windowIndex": 7,
+          "candidate": 4,
+          "crop": [
+            87.5,
+            92.6
+          ],
+          "words": [
+            {
+              "word": " Ich",
+              "start": 90.28,
+              "end": 90.4,
+              "probability": 0.978066086769104
+            },
+            {
+              "word": " glaube,",
+              "start": 90.4,
+              "end": 90.58,
+              "probability": 0.9919472336769104
+            },
+            {
+              "word": " fast",
+              "start": 90.72,
+              "end": 90.94,
+              "probability": 0.986971914768219
+            },
+            {
+              "word": " die",
+              "start": 90.94,
+              "end": 91.12,
+              "probability": 0.9961399435997009
+            },
+            {
+              "word": " Pizza",
+              "start": 91.12,
+              "end": 91.36,
+              "probability": 0.9861876964569092
+            },
+            {
+              "word": " wird",
+              "start": 91.36,
+              "end": 91.62,
+              "probability": 0.9945946335792542
+            },
+            {
+              "word": " kalt.",
+              "start": 91.62,
+              "end": 91.96,
+              "probability": 0.5513735413551331
+            }
+          ],
+          "literalText": "Ich glaube, fast die Pizza wird kalt."
+        },
+        {
+          "file": "codex-medium-main.json",
+          "model": "medium",
+          "windowIndex": 3,
+          "candidate": 4,
+          "crop": [
+            86.84,
+            104.3
+          ],
+          "words": [
+            {
+              "word": " Ich",
+              "start": 90.36,
+              "end": 90.46,
+              "probability": 0.9882745742797852
+            },
+            {
+              "word": " glaube,",
+              "start": 90.46,
+              "end": 90.74,
+              "probability": 0.9857507944107056
+            },
+            {
+              "word": " fast",
+              "start": 90.88,
+              "end": 91.04,
+              "probability": 0.9828839898109436
+            },
+            {
+              "word": " die",
+              "start": 91.04,
+              "end": 91.26,
+              "probability": 0.9984299540519714
+            },
+            {
+              "word": " Pizza",
+              "start": 91.26,
+              "end": 91.48,
+              "probability": 0.9927464127540588
+            },
+            {
+              "word": " wird",
+              "start": 91.48,
+              "end": 91.76,
+              "probability": 0.9740908145904541
+            },
+            {
+              "word": " kalt.",
+              "start": 91.76,
+              "end": 92.09,
+              "probability": 0.7317250967025757
+            }
+          ],
+          "literalText": "Ich glaube, fast die Pizza wird kalt."
+        }
+      ],
+      "start": 90.28,
+      "end": 92.09,
+      "timingEvidence": [
+        {
+          "file": "codex-small-recheck.json",
+          "model": "small",
+          "windowIndex": 7,
+          "candidate": 4,
+          "crop": [
+            87.5,
+            92.6
+          ],
+          "words": [
+            {
+              "word": " Ich",
+              "start": 90.28,
+              "end": 90.4,
+              "probability": 0.978066086769104
+            },
+            {
+              "word": " glaube,",
+              "start": 90.4,
+              "end": 90.58,
+              "probability": 0.9919472336769104
+            },
+            {
+              "word": " fast",
+              "start": 90.72,
+              "end": 90.94,
+              "probability": 0.986971914768219
+            },
+            {
+              "word": " die",
+              "start": 90.94,
+              "end": 91.12,
+              "probability": 0.9961399435997009
+            },
+            {
+              "word": " Pizza",
+              "start": 91.12,
+              "end": 91.36,
+              "probability": 0.9861876964569092
+            },
+            {
+              "word": " wird",
+              "start": 91.36,
+              "end": 91.62,
+              "probability": 0.9945946335792542
+            },
+            {
+              "word": " kalt.",
+              "start": 91.62,
+              "end": 91.96,
+              "probability": 0.5513735413551331
+            }
+          ],
+          "literalText": "Ich glaube, fast die Pizza wird kalt."
+        },
+        {
+          "file": "codex-medium-main.json",
+          "model": "medium",
+          "windowIndex": 3,
+          "candidate": 4,
+          "crop": [
+            86.84,
+            104.3
+          ],
+          "words": [
+            {
+              "word": " Ich",
+              "start": 90.36,
+              "end": 90.46,
+              "probability": 0.9882745742797852
+            },
+            {
+              "word": " glaube,",
+              "start": 90.46,
+              "end": 90.74,
+              "probability": 0.9857507944107056
+            },
+            {
+              "word": " fast",
+              "start": 90.88,
+              "end": 91.04,
+              "probability": 0.9828839898109436
+            },
+            {
+              "word": " die",
+              "start": 91.04,
+              "end": 91.26,
+              "probability": 0.9984299540519714
+            },
+            {
+              "word": " Pizza",
+              "start": 91.26,
+              "end": 91.48,
+              "probability": 0.9927464127540588
+            },
+            {
+              "word": " wird",
+              "start": 91.48,
+              "end": 91.76,
+              "probability": 0.9740908145904541
+            },
+            {
+              "word": " kalt.",
+              "start": 91.76,
+              "end": 92.09,
+              "probability": 0.7317250967025757
+            }
+          ],
+          "literalText": "Ich glaube, fast die Pizza wird kalt."
+        }
+      ],
+      "decision": "add",
+      "note": "Only punctuation/capitalization normalized. Bounds cover every selected literal timing word. Local machine evidence, not human listening approval."
+    }
+  ],
+  "excluded": [
+    {
+      "candidate": 1,
+      "start": 51.57,
+      "end": 52.1,
+      "reason": "Tail of existing 1200115; do not duplicate or adjust old timestamps.",
+      "existingCueId": 1200115
+    },
+    {
+      "candidate": 3,
+      "start": 77.92,
+      "end": 79.18,
+      "reason": "Existing 1200117; contextual ASR phrase overlaps the published question.",
+      "existingCueId": 1200117
+    },
+    {
+      "candidate": 4,
+      "start": 87.78,
+      "end": 89.7,
+      "reason": "Existing 1200119; only the following independent sentence is newly accepted.",
+      "existingCueId": 1200119
+    },
+    {
+      "candidate": 4,
+      "start": 92.66,
+      "end": 104.3,
+      "reason": "Song following the accepted spoken sentence; excluded under the package song policy, regardless of ASR lyric variants.",
+      "category": "song"
+    },
+    {
+      "candidate": 5,
+      "start": 168.18,
+      "end": 197.83,
+      "reason": "Krosse Krabbe Pizza singing/beatboxing performance; outside selected spoken dialogue per Muse package. Earshot gives singing hint z3.38 (unvalidated), Speech0.417/Groan0.449/Music0.334; classification is mixed and does not verify lyrics.",
+      "category": "song"
+    },
+    {
+      "candidate": 6,
+      "start": 260.6,
+      "end": 261.22,
+      "reason": "Tail of existing 1200154 Ach, Schwamm drüber.; no duplicate cue or timing change.",
+      "existingCueId": 1200154
+    }
+  ],
+  "reviewNeeded": [
+    {
+      "candidate": 1,
+      "start": 52.1,
+      "end": 54.11,
+      "reason": "Auspacken/Ausparken remains crop/model dependent; do not choose the parking spelling from context.",
+      "variants": [
+        "Auspacken!",
+        "Ausparken!"
+      ]
+    },
+    {
+      "candidate": 1,
+      "start": 54.57,
+      "end": 56.58,
+      "reason": "Second short request in wider exchange before old cue 1200116; repeated Auspacken/Ausparken disagreement. Keep outside captions.",
+      "variants": [
+        "Auspacken.",
+        "Ausparken!"
+      ]
+    },
+    {
+      "candidate": 2,
+      "start": 60.92,
+      "end": 65.94,
+      "reason": "Pack/park and presence of Ich vary, with Perfekt hallucinations in wider small crop; no stable exact wording.",
+      "variants": [
+        "Pack aus!",
+        "Park aus!",
+        "Ich pack aus!",
+        "Ich park aus!",
+        "Mich pack aus!",
+        "Perfekt!"
+      ]
+    },
+    {
+      "candidate": 3,
+      "start": 65.94,
+      "end": 68.72,
+      "reason": "Shout differs between ans Steuer/ansteuern/ans Feuer; SpongeBob name distorted. Grammar/context is not sufficient to choose exact words.",
+      "variants": [
+        "Lass mich an, Stöberspund!",
+        "Lass mich ans Steuerspunk!",
+        "Lass mich ans Feuer!",
+        "Lass mich ansteuern, Spongebob!"
+      ]
+    },
+    {
+      "candidate": 3,
+      "start": 68.86,
+      "end": 70.26,
+      "reason": "Repeated Ich pack/park aus calls remain lexically unstable across full-context medium and small/targeted medium.",
+      "variants": [
+        "Ich pack' aus!",
+        "Ich park aus!"
+      ]
+    },
+    {
+      "candidate": 3,
+      "start": 73.7,
+      "end": 75.46,
+      "reason": "Resolution before Schön disagrees on ausgepackt/ausgeparkt; do not repair from the visual parking joke.",
+      "variants": [
+        "Ich hab' ausgepackt.",
+        "Ich hab ausgeparkt."
+      ]
+    },
+    {
+      "candidate": 3,
+      "start": 76.34,
+      "end": 77.72,
+      "reason": "Reply after Schön has ausgepackt/ausgeparkt disagreement; only the separately stable Schön is accepted.",
+      "variants": [
+        "Du hast ausgepackt.",
+        "Du hast ausgeparkt."
+      ]
+    },
+    {
+      "candidate": 6,
+      "start": 261.22,
+      "end": 269.29,
+      "reason": "Name/call varies (Spanisch/Sponge/Spongi/SpongeBob); some output includes the already-published Schwamm drüber tail. Earshot Speech 0.656/Music 0.677 does not verify exact German words.",
+      "variants": [
+        "Kommt rüber, Spanisch!",
+        "Komm drüber, Spongebob!",
+        "Spongi?",
+        "Sponge?"
+      ]
+    },
+    {
+      "candidate": 7,
+      "start": 270.9,
+      "end": 274.41,
+      "reason": "Main/tight/context ASR yields nonlexical Ha/Ah, prolonged HÄ or no stable words. Earshot Music 0.433/Speech 0.252 cannot settle whether it is a lexical call, sob or effect. Retain for human listening; do not declare absence of speech.",
+      "variants": [
+        "Ha ha ha...",
+        "HÄÄÄ...",
+        "Ah, ah..."
+      ]
+    }
+  ],
+  "counts": {
+    "candidateWindows": 7,
+    "originalCaptions": 60,
+    "originalPracticeCues": 60,
+    "added": 3,
+    "captions": 63,
+    "practice": 63,
+    "excludedParts": 6,
+    "reviewNeededParts": 9
+  },
+  "countingNote": "Parts are not windows: a window can have accepted, excluded and reviewNeeded portions.",
+  "idPolicy": {
+    "firstNewId": 1200163,
+    "maxPublishedAndSourceDraftId": 1200162,
+    "neverReuseGaps": [
+      1200120,
+      1200134
+    ]
+  },
+  "normalizationNote": "Only case/punctuation is normalized. New Ich glaube fast has comma after fast; the lexical words are exact.",
+  "scopeNote": "All 60 original captions and practice cue objects, chapters, picks, vocabulary and other films remain unchanged. No merge/deploy."
+}

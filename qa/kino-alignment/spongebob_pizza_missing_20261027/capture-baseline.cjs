@@ -1,0 +1,17 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+const {execFileSync}=require('node:child_process');
+const root=path.resolve(__dirname,'../../..'),base='20ce104c034033f47852a6e4c1c7c82f0cd6c85b';
+const original=f=>execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'});
+const context=vm.createContext({});
+vm.runInContext(original('spongebob-pizza-aligned.js')+original('spongebob-pizza-lesson.js')+';this.snapshot=JSON.stringify({captions:SPONGEBOB_PIZZA_CAPTION_CUES,units:SPONGEBOB_PIZZA_ALIGNED_UTTERANCES,lesson:SPONGEBOB_PIZZA_LESSON});',context);
+const snapshot=JSON.parse(context.snapshot); assert.equal(snapshot.captions.length,60); assert.equal(snapshot.units.length,60);
+const folder='qa/kino-alignment/spongebob_source_20261024';
+const files=execFileSync('git',['ls-tree','-r','--name-only',base,folder],{cwd:root,encoding:'utf8'}).trim().split('\n');
+const sourceIds=[]; const idScan=(obj,file)=>{if(!obj||typeof obj!=='object')return; for(const[k,v]of Object.entries(obj)){if(['id','parentId','cueId'].includes(k)&&Number.isInteger(v))sourceIds.push({file,key:k,id:v}); if(typeof v==='object')idScan(v,file);}};
+for(const file of files.filter(f=>f.endsWith('.json')))idScan(JSON.parse(original(file)),file);
+const maxId=Math.max(...snapshot.captions.map(c=>c.id),...sourceIds.map(c=>c.id));assert.equal(maxId,1200162);
+fs.writeFileSync(path.join(__dirname,'baseline-cues-60.json'),JSON.stringify({baseRevision:base,...snapshot},null,2)+'\n');
+fs.writeFileSync(path.join(__dirname,'source-id-audit.json'),JSON.stringify({maxId,nextId:maxId+1,reservedGaps:[1200120,1200134],sourceFiles:files,sourceIds},null,2)+'\n');
+const hashes=Object.fromEntries(fs.readdirSync(root).filter(f=>f.endsWith('-aligned.js')).map(f=>[f,crypto.createHash('sha256').update(original(f)).digest('hex')]));
+fs.writeFileSync(path.join(__dirname,'baseline-aligned-sha256.json'),JSON.stringify(hashes,null,2)+'\n');
+console.log(JSON.stringify({base,captions:60,practice:60,maxId,newIdsStart:1200163,chapters:snapshot.lesson.chapterData.chapters.length,picks:snapshot.lesson.chapterData.chapters.reduce((s,c)=>s+c.picks.length,0),cards:snapshot.lesson.flashcards.length}));

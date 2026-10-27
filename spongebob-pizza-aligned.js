@@ -136,6 +136,15 @@ const SPONGEBOB_PIZZA_CAPTION_CUES = [
     "parentId": 1200115
   },
   {
+    "id": 1200163,
+    "start": 54.11,
+    "end": 54.57,
+    "speaker": "SpongeBob",
+    "text": "Hä?",
+    "vi": "Hả?",
+    "parentId": 1200163
+  },
+  {
     "id": 1200116,
     "start": 56.58,
     "end": 58.86,
@@ -143,6 +152,15 @@ const SPONGEBOB_PIZZA_CAPTION_CUES = [
     "text": "Ach so, ausparken.",
     "vi": "À phải rồi, đánh xe ra khỏi chỗ đỗ.",
     "parentId": 1200116
+  },
+  {
+    "id": 1200164,
+    "start": 75.54,
+    "end": 75.96,
+    "speaker": "Thaddäus",
+    "text": "Schön.",
+    "vi": "Hay lắm.",
+    "parentId": 1200164
   },
   {
     "id": 1200117,
@@ -170,6 +188,15 @@ const SPONGEBOB_PIZZA_CAPTION_CUES = [
     "text": "Und weißt du, was sonst noch ist?",
     "vi": "Và cậu biết còn chuyện gì nữa không?",
     "parentId": 1200119
+  },
+  {
+    "id": 1200165,
+    "start": 90.28,
+    "end": 92.09,
+    "speaker": "SpongeBob",
+    "text": "Ich glaube fast, die Pizza wird kalt.",
+    "vi": "Tôi nghĩ bánh pizza sắp nguội mất rồi.",
+    "parentId": 1200165
   },
   {
     "id": 1200121,

@@ -1,0 +1,74 @@
+[
+  {
+    "candidate": 1,
+    "label": "exchange",
+    "start": 49.5,
+    "end": 59.8
+  },
+  {
+    "candidate": 1,
+    "label": "tight",
+    "start": 52.1,
+    "end": 55.3
+  },
+  {
+    "candidate": 2,
+    "label": "exchange",
+    "start": 59,
+    "end": 65.5
+  },
+  {
+    "candidate": 2,
+    "label": "tight",
+    "start": 61.5,
+    "end": 64.4
+  },
+  {
+    "candidate": 3,
+    "label": "exchange",
+    "start": 64.7,
+    "end": 79.4
+  },
+  {
+    "candidate": 3,
+    "label": "resolution",
+    "start": 70.8,
+    "end": 77.8
+  },
+  {
+    "candidate": 4,
+    "label": "speech-before-song",
+    "start": 84,
+    "end": 93.2
+  },
+  {
+    "candidate": 4,
+    "label": "tight-speech",
+    "start": 87.5,
+    "end": 92.6
+  },
+  {
+    "candidate": 6,
+    "label": "context",
+    "start": 257,
+    "end": 270.5
+  },
+  {
+    "candidate": 6,
+    "label": "tight",
+    "start": 261.3,
+    "end": 268.5
+  },
+  {
+    "candidate": 7,
+    "label": "context",
+    "start": 268.8,
+    "end": 277.9
+  },
+  {
+    "candidate": 7,
+    "label": "tight",
+    "start": 271.5,
+    "end": 274.0
+  }
+]

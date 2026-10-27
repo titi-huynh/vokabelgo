@@ -1,0 +1,198 @@
+{
+  "url": "http://127.0.0.1:3000/?kino=spongebob&part=1",
+  "method": "Real Chrome player via CUA native seek slider; read-only DOM for video/captions; no forced app state or media APIs",
+  "checks": [
+    {
+      "expected": {
+        "t": 54,
+        "de": "",
+        "vi": ""
+      },
+      "actual": {
+        "time": 54,
+        "de": "",
+        "vi": ""
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "t": 54.3,
+        "de": "Hä?",
+        "vi": "Hả?"
+      },
+      "actual": {
+        "time": 54.3,
+        "de": "Hä?",
+        "vi": "Hả?"
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "t": 54.7,
+        "de": "",
+        "vi": ""
+      },
+      "actual": {
+        "time": 54.7,
+        "de": "",
+        "vi": ""
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "t": 75.4,
+        "de": "",
+        "vi": ""
+      },
+      "actual": {
+        "time": 75.4,
+        "de": "",
+        "vi": ""
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "t": 75.8,
+        "de": "Schön.",
+        "vi": "Hay lắm."
+      },
+      "actual": {
+        "time": 75.8,
+        "de": "Schön.",
+        "vi": "Hay lắm."
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "t": 76.1,
+        "de": "",
+        "vi": ""
+      },
+      "actual": {
+        "time": 76.1,
+        "de": "",
+        "vi": ""
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "t": 90.1,
+        "de": "",
+        "vi": ""
+      },
+      "actual": {
+        "time": 90.1,
+        "de": "",
+        "vi": ""
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "t": 91,
+        "de": "Ich glaube fast, die Pizza wird kalt.",
+        "vi": "Tôi nghĩ bánh pizza sắp nguội mất rồi."
+      },
+      "actual": {
+        "time": 91,
+        "de": "Ich glaube fast, die Pizza wird kalt.",
+        "vi": "Tôi nghĩ bánh pizza sắp nguội mất rồi."
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "t": 92.2,
+        "de": "",
+        "vi": ""
+      },
+      "actual": {
+        "time": 92.2,
+        "de": "",
+        "vi": ""
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "t": 53.5,
+        "de": "",
+        "vi": ""
+      },
+      "actual": {
+        "time": 53.5,
+        "de": "",
+        "vi": ""
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "t": 63,
+        "de": "",
+        "vi": ""
+      },
+      "actual": {
+        "time": 63,
+        "de": "",
+        "vi": ""
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "t": 67,
+        "de": "",
+        "vi": ""
+      },
+      "actual": {
+        "time": 67,
+        "de": "",
+        "vi": ""
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "t": 74.5,
+        "de": "",
+        "vi": ""
+      },
+      "actual": {
+        "time": 74.5,
+        "de": "",
+        "vi": ""
+      },
+      "pass": true
+    },
+    {
+      "expected": {
+        "t": 76.6,
+        "de": "",
+        "vi": ""
+      },
+      "actual": {
+        "time": 76.6,
+        "de": "",
+        "vi": ""
+      },
+      "pass": true
+    }
+  ],
+  "video": {
+    "duration": 301.139592,
+    "error": null,
+    "height": 360,
+    "paused": true,
+    "readyState": 4,
+    "width": 640
+  },
+  "consoleErrors": [],
+  "mobileTested": false
+}

@@ -1,0 +1,47 @@
+{
+  "addedCueChecks": [
+    {
+      "id": 1200163,
+      "exactLiteralWordReferences": true,
+      "selectedTimingWordsNotCut": true,
+      "models": [
+        "medium",
+        "small"
+      ]
+    },
+    {
+      "id": 1200164,
+      "exactLiteralWordReferences": true,
+      "selectedTimingWordsNotCut": true,
+      "models": [
+        "medium",
+        "small"
+      ]
+    },
+    {
+      "id": 1200165,
+      "exactLiteralWordReferences": true,
+      "selectedTimingWordsNotCut": true,
+      "models": [
+        "medium",
+        "small"
+      ]
+    }
+  ],
+  "sourceCuesAndVocabularyPreserved": true,
+  "reviewNeededDoesNotOverlapAcceptedAdditions": true,
+  "asrCompletedCrops": {
+    "independent-small-full.json": 5,
+    "independent-medium-full.json": 5,
+    "codex-small-main.json": 7,
+    "codex-medium-main.json": 7,
+    "codex-small-recheck.json": 12,
+    "codex-medium-recheck.json": 12
+  },
+  "antiCrops": 10,
+  "codexCrops": 38,
+  "totalIndependentCrops": 48,
+  "humanListened": false,
+  "normalization": "Case/punctuation only",
+  "pass": true
+}

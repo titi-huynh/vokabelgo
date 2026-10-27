@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:41504) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › e2e\kino-familiar-animation.spec.js:40:3 › spongebob: catalog, source-linked vocabulary and seekable complete clip (14.4s)
+  ok 2 [chromium] › e2e\kino-familiar-animation.spec.js:108:3 › spongebob: every chapter has correct bilingual cues and stops at its own boundary (11.2s)
+  ok 3 [chromium] › e2e\kino-familiar-animation.spec.js:142:3 › spongebob: phone dictation saves independently and highlight counts match the selected chapter (7.4s)
+
+  3 passed (34.5s)
