@@ -71,6 +71,26 @@ const DELICIOUS_IN_DUNGEON_S01E01_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
   },
   {
+    "id": 1200385,
+    "parentId": 1200385,
+    "start": 71.17,
+    "end": 73.05,
+    "speaker": "Laios",
+    "text": "Wenn wir ihn besiegt haben, können wir verschnaufen!",
+    "vi": "Hạ xong nó rồi, chúng ta có thể nghỉ lấy hơi!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
+  },
+  {
+    "id": 1200386,
+    "parentId": 1200386,
+    "start": 73.71,
+    "end": 74.33,
+    "speaker": "Laios",
+    "text": "Na los!",
+    "vi": "Tiến lên nào!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
+  },
+  {
     "id": 1200008,
     "parentId": 1200008,
     "start": 75.2,
@@ -718,6 +738,16 @@ const DELICIOUS_IN_DUNGEON_S01E01_CAPTION_CUES = [
     "speaker": "Laios",
     "text": "Ihr wollt wirklich alle beide mit mir in den Dungeon kommen? Egal, was dort passieren mag?",
     "vi": "Cả hai người thực sự đều muốn cùng tôi xuống hầm ngục ư? Bất kể chuyện gì có thể xảy ra ở dưới đó sao?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
+  },
+  {
+    "id": 1200387,
+    "parentId": 1200387,
+    "start": 324.09,
+    "end": 324.43,
+    "speaker": "Nhóm thám hiểm",
+    "text": "Ja.",
+    "vi": "Ừ.",
     "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
   },
   {
@@ -2951,6 +2981,16 @@ const DELICIOUS_IN_DUNGEON_S01E01_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
   },
   {
+    "id": 1200388,
+    "parentId": 1200388,
+    "start": 1155.03,
+    "end": 1156.65,
+    "speaker": "Marcille",
+    "text": "Geht mal zur Seite!",
+    "vi": "Mọi người lùi sang một bên đi!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
+  },
+  {
     "id": 1200309,
     "parentId": 1200309,
     "start": 1157.66,
@@ -3401,6 +3441,26 @@ const DELICIOUS_IN_DUNGEON_S01E01_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
   },
   {
+    "id": 1200389,
+    "parentId": 1200389,
+    "start": 1336.25,
+    "end": 1338.29,
+    "speaker": "Chilchuck",
+    "text": "Die ist echt gut.",
+    "vi": "Món này ngon thật đấy.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
+  },
+  {
+    "id": 1200390,
+    "parentId": 1200390,
+    "start": 1340.34,
+    "end": 1341.18,
+    "speaker": "Chilchuck",
+    "text": "Könnte dir schmecken.",
+    "vi": "Biết đâu lại hợp khẩu vị của cô.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
+  },
+  {
     "id": 1200357,
     "parentId": 1200357,
     "start": 1342.38,
@@ -3761,6 +3821,32 @@ const DELICIOUS_IN_DUNGEON_S01E01_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
     "legacyIds": [
       1200007
+    ]
+  },
+  {
+    "id": 1200385,
+    "parentId": 1200385,
+    "start": 71.17,
+    "end": 73.05,
+    "speaker": "Laios",
+    "text": "Wenn wir ihn besiegt haben, können wir verschnaufen!",
+    "vi": "Hạ xong nó rồi, chúng ta có thể nghỉ lấy hơi!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+    "legacyIds": [
+      1200385
+    ]
+  },
+  {
+    "id": 1200386,
+    "parentId": 1200386,
+    "start": 73.71,
+    "end": 74.33,
+    "speaker": "Laios",
+    "text": "Na los!",
+    "vi": "Tiến lên nào!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+    "legacyIds": [
+      1200386
     ]
   },
   {
@@ -4606,6 +4692,19 @@ const DELICIOUS_IN_DUNGEON_S01E01_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
     "legacyIds": [
       1200078
+    ]
+  },
+  {
+    "id": 1200387,
+    "parentId": 1200387,
+    "start": 324.09,
+    "end": 324.43,
+    "speaker": "Nhóm thám hiểm",
+    "text": "Ja.",
+    "vi": "Ừ.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+    "legacyIds": [
+      1200387
     ]
   },
   {
@@ -7508,6 +7607,19 @@ const DELICIOUS_IN_DUNGEON_S01E01_ALIGNED_UTTERANCES = [
     ]
   },
   {
+    "id": 1200388,
+    "parentId": 1200388,
+    "start": 1155.03,
+    "end": 1156.65,
+    "speaker": "Marcille",
+    "text": "Geht mal zur Seite!",
+    "vi": "Mọi người lùi sang một bên đi!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+    "legacyIds": [
+      1200388
+    ]
+  },
+  {
     "id": 1200309,
     "parentId": 1200309,
     "start": 1157.66,
@@ -8090,6 +8202,32 @@ const DELICIOUS_IN_DUNGEON_S01E01_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
     "legacyIds": [
       1200355
+    ]
+  },
+  {
+    "id": 1200389,
+    "parentId": 1200389,
+    "start": 1336.25,
+    "end": 1338.29,
+    "speaker": "Chilchuck",
+    "text": "Die ist echt gut.",
+    "vi": "Món này ngon thật đấy.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+    "legacyIds": [
+      1200389
+    ]
+  },
+  {
+    "id": 1200390,
+    "parentId": 1200390,
+    "start": 1340.34,
+    "end": 1341.18,
+    "speaker": "Chilchuck",
+    "text": "Könnte dir schmecken.",
+    "vi": "Biết đâu lại hợp khẩu vị của cô.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+    "legacyIds": [
+      1200390
     ]
   },
   {

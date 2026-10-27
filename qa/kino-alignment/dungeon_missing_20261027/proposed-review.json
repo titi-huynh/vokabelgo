@@ -1,0 +1,1268 @@
+{
+  "movieId": "delicious_in_dungeon_s01e01",
+  "title": "Delicious in Dungeon — Tập 1 (S01E01)",
+  "date": "2026-10-27",
+  "status": "proposed_for_codex_integration",
+  "sourceVideo": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\video\\delicious_in_dungeon_s01e01.mp4",
+  "sourceVideoSha256": "26caef638d8ece51c536ab109adbd0bb5640e998644d58db77ba59846f08832f",
+  "alignedJs": "delicious-in-dungeon-s01e01-aligned.js",
+  "alignedJsSha256": "bcc48b8eb23b93c11b890ee4c58412af8580b6113945280bea5154febac3cdb2",
+  "lessonJs": "delicious-in-dungeon-s01e01-lesson.js",
+  "lessonJsSha256": "a7a9bc36dcacb67019823ad09fb3d19e7065b0988643e454b3edd8b611ed9279",
+  "candidateFile": "qa/kino-alignment/dungeon_missing_20261027/muse-candidates.json",
+  "candidateSha256": "d1965813373625b89d8805913ada6c3989e0125ad52a2f3002b41c33cdd60c2a",
+  "sourceDraftFile": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+  "sourceDraftSha256": "ab553dd09cdb31757f3ea055d3e3689635f83d730e7da57ce9c507bcca7356ff",
+  "baselineSnapshotFile": "qa/kino-alignment/dungeon_missing_20261027/baseline-cues-367.json",
+  "independentEvidence": [
+    "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-small-tight.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-medium-tight.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-small-context.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-medium-context.json",
+    "qa/kino-alignment/dungeon_missing_20261027/extra_tight_spec.json",
+    "qa/kino-alignment/dungeon_missing_20261027/extra_context_spec.json"
+  ],
+  "method": {
+    "humanListened": false,
+    "externalAudioUpload": false,
+    "asrModels": [
+      "faster-whisper small (int8, CPU)",
+      "faster-whisper medium (int8, CPU)"
+    ],
+    "asrOptions": {
+      "language": "de",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "word_timestamps": true,
+      "condition_on_previous_text": false,
+      "vad_filter": false,
+      "local_files_only": true,
+      "cpu_threads": 3,
+      "initial_prompt": null,
+      "hotwords": null
+    },
+    "idPolicy": "Giữ nguyên tuyệt đối 367 cue hiện tại (1200001..1200384) và 17 ID bản nháp đã bảo lưu trong muse-two-films/delicious_in_dungeon_s01e01.json (MAX source reservation = 1200384). ID đề xuất mới bắt đầu từ 1200385..1200392 (Codex sẽ cấp/duyệt khi tích hợp).",
+    "normalizationPolicy": "Không âm thầm sửa ngữ pháp sai của ASR (ví dụ: giữ 'Halte durch, Freunde' vs 'Haltet durch, Freunde!' ở reviewNeeded). Chỉ chuẩn hóa dấu câu, chữ hoa đầu câu và 2 tên riêng nhân vật có căn cứ trực tiếp trong 367 cue hiện hữu của tập phim ('Falin' từ ASR ngữ âm Falli/Vali/Fallen/Fali; 'Marcille' từ ASR ngữ âm Masse/Marcel), có ghi chú rõ ở từng mục.",
+    "countingMethod": "Xét đầy đủ cả 10 cửa sổ ứng viên (1..10). Các lượt thoại ngắn được tách thành từng câu độc lập. Một cửa sổ ứng viên có thể vừa chứa câu được đề xuất thêm (added), phần bị loại trừ (excluded - trùng cue kề, thần chú ngôn ngữ hư cấu, nhạc kết tập, tiếng hét phi từ vựng/ảo giác ASR) và phần cần người duyệt thêm (reviewNeeded)."
+  },
+  "counts": {
+    "candidates": 10,
+    "previousCueCount": 367,
+    "maxExistingCueId": 1200384,
+    "maxSourceReservationId": 1200384,
+    "proposedNewIdRange": [
+      1200385,
+      1200392
+    ],
+    "proposedAddedCues": 8,
+    "proposedAddedCuesWithinOriginalMuseWindow": 6,
+    "proposedAddedCuesFromExpandedCandidate9Gap": 2,
+    "adjustedExistingCues": 0,
+    "excludedParts": 10,
+    "reviewNeededParts": 5,
+    "windowsWithAddedCues": 5,
+    "windowsWithExcludedParts": 9,
+    "windowsWithReviewNeededParts": 5,
+    "allTenWindowsAccountedFor": true
+  },
+  "added": [
+    {
+      "id": 1200385,
+      "parentId": 1200385,
+      "candidate": 1,
+      "start": 71.17,
+      "end": 73.05,
+      "rawStart": 71.17,
+      "rawEnd": 73.05,
+      "speaker": "Laios",
+      "text": "Wenn wir ihn besiegt haben, können wir verschnaufen!",
+      "vi": "Hạ xong nó rồi, chúng ta có thể nghỉ lấy hơi!",
+      "sourceDraftIds": [],
+      "smallText": "Wenn wir ihn besiegt haben, können wir verschnaufen.",
+      "mediumText": "Wenn wir ihn besiegt haben, können wir verschnaufen!",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 71.17,
+            "end": 71.31,
+            "word": " Wenn",
+            "probability": 0.9910003542900085
+          },
+          {
+            "start": 71.31,
+            "end": 71.45,
+            "word": " wir",
+            "probability": 0.9959304928779602
+          },
+          {
+            "start": 71.45,
+            "end": 71.55,
+            "word": " ihn",
+            "probability": 0.9890241622924805
+          },
+          {
+            "start": 71.55,
+            "end": 71.95,
+            "word": " besiegt",
+            "probability": 0.9935764670372009
+          },
+          {
+            "start": 71.95,
+            "end": 72.13,
+            "word": " haben,",
+            "probability": 0.997258186340332
+          },
+          {
+            "start": 72.29,
+            "end": 72.33,
+            "word": " können",
+            "probability": 0.9906161427497864
+          },
+          {
+            "start": 72.33,
+            "end": 72.49,
+            "word": " wir",
+            "probability": 0.9992104768753052
+          },
+          {
+            "start": 72.49,
+            "end": 73.05,
+            "word": " verschnaufen!",
+            "probability": 0.949002186457316
+          }
+        ]
+      },
+      "smallEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 71.21,
+            "end": 71.25,
+            "word": " Wenn",
+            "probability": 0.965457022190094
+          },
+          {
+            "start": 71.25,
+            "end": 71.39,
+            "word": " wir",
+            "probability": 0.9954916834831238
+          },
+          {
+            "start": 71.39,
+            "end": 71.47,
+            "word": " ihn",
+            "probability": 0.9838645458221436
+          },
+          {
+            "start": 71.47,
+            "end": 71.83,
+            "word": " besiegt",
+            "probability": 0.9812846978505453
+          },
+          {
+            "start": 71.83,
+            "end": 72.05,
+            "word": " haben,",
+            "probability": 0.9983217120170593
+          },
+          {
+            "start": 72.19,
+            "end": 72.29,
+            "word": " können",
+            "probability": 0.9934399724006653
+          },
+          {
+            "start": 72.29,
+            "end": 72.41,
+            "word": " wir",
+            "probability": 0.9987418055534363
+          },
+          {
+            "start": 72.41,
+            "end": 72.93,
+            "word": " verschnaufen.",
+            "probability": 0.7941364248593649
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 71.17,
+            "end": 71.31,
+            "word": " Wenn",
+            "probability": 0.9910003542900085
+          },
+          {
+            "start": 71.31,
+            "end": 71.45,
+            "word": " wir",
+            "probability": 0.9959304928779602
+          },
+          {
+            "start": 71.45,
+            "end": 71.55,
+            "word": " ihn",
+            "probability": 0.9890241622924805
+          },
+          {
+            "start": 71.55,
+            "end": 71.95,
+            "word": " besiegt",
+            "probability": 0.9935764670372009
+          },
+          {
+            "start": 71.95,
+            "end": 72.13,
+            "word": " haben,",
+            "probability": 0.997258186340332
+          },
+          {
+            "start": 72.29,
+            "end": 72.33,
+            "word": " können",
+            "probability": 0.9906161427497864
+          },
+          {
+            "start": 72.33,
+            "end": 72.49,
+            "word": " wir",
+            "probability": 0.9992104768753052
+          },
+          {
+            "start": 72.49,
+            "end": 73.05,
+            "word": " verschnaufen!",
+            "probability": 0.949002186457316
+          }
+        ]
+      },
+      "normalization": "Chuẩn hóa dấu chấm than cuối câu khích lệ theo medium ('verschnaufen!'). Toàn bộ 8 từ khớp tuyệt đối giữa small và medium.",
+      "note": "Tách riêng câu khích lệ thứ hai trong cửa sổ #1 (câu đầu 69.79-70.89s bất đồng chia thức mệnh lệnh 'Halte' vs 'Haltet' nên giữ ở reviewNeeded). Nằm trọn trong khoảng trống 49.78-75.20s (Chapter 1: 0-148s)."
+    },
+    {
+      "id": 1200386,
+      "parentId": 1200386,
+      "candidate": 1,
+      "start": 73.91,
+      "end": 74.33,
+      "rawStart": 73.91,
+      "rawEnd": 74.33,
+      "speaker": "Laios",
+      "text": "Na los!",
+      "vi": "Tiến lên nào!",
+      "sourceDraftIds": [],
+      "smallText": "Na los!",
+      "mediumText": "Na los!",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 73.91,
+            "end": 74.03,
+            "word": " Na",
+            "probability": 0.8991466760635376
+          },
+          {
+            "start": 74.03,
+            "end": 74.33,
+            "word": " los!",
+            "probability": 0.9012694954872131
+          }
+        ]
+      },
+      "smallEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 73.71,
+            "end": 73.93,
+            "word": " Na",
+            "probability": 0.9652619361877441
+          },
+          {
+            "start": 73.93,
+            "end": 74.15,
+            "word": " los!",
+            "probability": 0.5377609133720398
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 73.91,
+            "end": 74.03,
+            "word": " Na",
+            "probability": 0.8991466760635376
+          },
+          {
+            "start": 74.03,
+            "end": 74.33,
+            "word": " los!",
+            "probability": 0.9012694954872131
+          }
+        ]
+      },
+      "normalization": "Không cần chuẩn hóa từ; cả small và medium đều chép chính xác 'Na los!'.",
+      "note": "Tách riêng câu hô ngắn cuối cửa sổ #1 trước cue 1200008 (75.20-77.20s). Nằm trọn trong khoảng trống 49.78-75.20s (Chapter 1: 0-148s)."
+    },
+    {
+      "id": 1200387,
+      "parentId": 1200387,
+      "candidate": 3,
+      "start": 112.49,
+      "end": 113.47,
+      "rawStart": 112.49,
+      "rawEnd": 113.47,
+      "speaker": "Laios",
+      "text": "Was ist los, Falin?",
+      "vi": "Có chuyện gì vậy, Falin?",
+      "sourceDraftIds": [
+        1200015
+      ],
+      "smallText": "Was ist los, Falli?",
+      "mediumText": "Was ist los, Vali?",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 3,
+        "words": [
+          {
+            "start": 112.49,
+            "end": 112.85,
+            "word": " Was",
+            "probability": 0.41297462582588196
+          },
+          {
+            "start": 112.85,
+            "end": 112.99,
+            "word": " ist",
+            "probability": 0.9919136762619019
+          },
+          {
+            "start": 112.99,
+            "end": 113.21,
+            "word": " los,",
+            "probability": 0.9947845339775085
+          },
+          {
+            "start": 113.35,
+            "end": 113.47,
+            "word": " Vali?",
+            "probability": 0.4172140434384346
+          }
+        ]
+      },
+      "smallEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+        "candidate": 3,
+        "words": [
+          {
+            "start": 112.47,
+            "end": 112.79,
+            "word": " Was",
+            "probability": 0.7837589383125305
+          },
+          {
+            "start": 112.79,
+            "end": 112.93,
+            "word": " ist",
+            "probability": 0.9950868487358093
+          },
+          {
+            "start": 112.93,
+            "end": 113.09,
+            "word": " los,",
+            "probability": 0.9938240051269531
+          },
+          {
+            "start": 113.21,
+            "end": 113.49,
+            "word": " Falli?",
+            "probability": 0.2980297803878784
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 3,
+        "words": [
+          {
+            "start": 112.49,
+            "end": 112.85,
+            "word": " Was",
+            "probability": 0.41297462582588196
+          },
+          {
+            "start": 112.85,
+            "end": 112.99,
+            "word": " ist",
+            "probability": 0.9919136762619019
+          },
+          {
+            "start": 112.99,
+            "end": 113.21,
+            "word": " los,",
+            "probability": 0.9947845339775085
+          },
+          {
+            "start": 113.35,
+            "end": 113.47,
+            "word": " Vali?",
+            "probability": 0.4172140434384346
+          }
+        ]
+      },
+      "normalization": "Chuẩn hóa tên riêng nhân vật có căn cứ: ASR phiên âm ngữ âm thành 'Falli?' (small main), 'Fallen?' (small tight), 'Vali?' (medium main), 'Fali?' (medium tight) -> chuẩn hóa thành 'Falin' theo đúng tên em gái của Laios trong các cue hiện hữu (1200024, 1200072, 1200075) và bản nháp 1200015.",
+      "note": "Khớp câu hỏi của Laios trước cue 1200016 (114.00-115.78s: 'Wurde sie mit einem Verwirrzauber belegt?'). Nằm trọn trong khoảng trống 110.56-114.00s (Chapter 1: 0-148s). Phần 113.93-114.99s là đầu cue 1200016 đã có sẵn nên đưa vào excluded."
+    },
+    {
+      "id": 1200388,
+      "parentId": 1200388,
+      "candidate": 6,
+      "start": 985.82,
+      "end": 987.02,
+      "rawStart": 985.82,
+      "rawEnd": 987.02,
+      "speaker": "Laios",
+      "text": "Alles in Ordnung, Marcille?",
+      "vi": "Cậu không sao chứ, Marcille?",
+      "sourceDraftIds": [
+        1200253
+      ],
+      "smallText": "Alles in Ordnung, Masse?",
+      "mediumText": "Alles in Ordnung, Marcel?",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 6,
+        "words": [
+          {
+            "start": 985.82,
+            "end": 986.26,
+            "word": " Alles",
+            "probability": 0.7252808809280396
+          },
+          {
+            "start": 986.26,
+            "end": 986.48,
+            "word": " in",
+            "probability": 0.9859574437141418
+          },
+          {
+            "start": 986.48,
+            "end": 986.74,
+            "word": " Ordnung,",
+            "probability": 0.994729608297348
+          },
+          {
+            "start": 986.88,
+            "end": 987.02,
+            "word": " Marcel?",
+            "probability": 0.8143729567527771
+          }
+        ]
+      },
+      "smallEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small-tight.json",
+        "candidate": 6,
+        "words": [
+          {
+            "start": 985.76,
+            "end": 986.2,
+            "word": " Alles",
+            "probability": 0.6864233016967773
+          },
+          {
+            "start": 986.2,
+            "end": 986.38,
+            "word": " in",
+            "probability": 0.21346086263656616
+          },
+          {
+            "start": 986.38,
+            "end": 986.7,
+            "word": " Ordnung,",
+            "probability": 0.9972452819347382
+          },
+          {
+            "start": 986.76,
+            "end": 987.02,
+            "word": " Masse?",
+            "probability": 0.5229930132627487
+          }
+        ],
+        "label": "cand6_tight"
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 6,
+        "words": [
+          {
+            "start": 985.82,
+            "end": 986.26,
+            "word": " Alles",
+            "probability": 0.7252808809280396
+          },
+          {
+            "start": 986.26,
+            "end": 986.48,
+            "word": " in",
+            "probability": 0.9859574437141418
+          },
+          {
+            "start": 986.48,
+            "end": 986.74,
+            "word": " Ordnung,",
+            "probability": 0.994729608297348
+          },
+          {
+            "start": 986.88,
+            "end": 987.02,
+            "word": " Marcel?",
+            "probability": 0.8143729567527771
+          }
+        ]
+      },
+      "normalization": "Chuẩn hóa tên riêng nhân vật có căn cứ: ASR phiên âm ngữ âm thành 'Masse?' (small tight/gap, medium tight/gap) và 'Marcel?' (medium main) -> chuẩn hóa thành 'Marcille' theo đúng tên pháp sư Marcille trong các cue hiện hữu (1200018, 1200083, 1200227) và bản nháp 1200253.",
+      "note": "Laios hỏi thăm sau khi Marcille vấp tấm ván, trước câu trả lời ở cue 1200254 (987.64-989.98s: 'Ich bin über ein loses Brett gestolpert.'). Nằm trọn trong khoảng trống 983.66-987.64s (Chapter 6: 958-1155s)."
+    },
+    {
+      "id": 1200389,
+      "parentId": 1200389,
+      "candidate": 7,
+      "start": 1155.03,
+      "end": 1156.33,
+      "rawStart": 1155.03,
+      "rawEnd": 1156.33,
+      "speaker": "Marcille",
+      "text": "Geht mal zur Seite!",
+      "vi": "Mọi người lùi sang một bên đi!",
+      "sourceDraftIds": [
+        1200308
+      ],
+      "smallText": "Geht mal zur Seite",
+      "mediumText": "Geht mal zur Seite!",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+        "candidate": 7,
+        "words": [
+          {
+            "start": 1155.03,
+            "end": 1155.71,
+            "word": " Geht",
+            "probability": 0.36092528235167265
+          },
+          {
+            "start": 1155.71,
+            "end": 1155.85,
+            "word": " mal",
+            "probability": 0.7539065480232239
+          },
+          {
+            "start": 1155.85,
+            "end": 1155.99,
+            "word": " zur",
+            "probability": 0.9977788329124451
+          },
+          {
+            "start": 1155.99,
+            "end": 1156.33,
+            "word": " Seite",
+            "probability": 0.8896182179450989
+          }
+        ]
+      },
+      "smallEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+        "candidate": 7,
+        "words": [
+          {
+            "start": 1155.03,
+            "end": 1155.71,
+            "word": " Geht",
+            "probability": 0.36092528235167265
+          },
+          {
+            "start": 1155.71,
+            "end": 1155.85,
+            "word": " mal",
+            "probability": 0.7539065480232239
+          },
+          {
+            "start": 1155.85,
+            "end": 1155.99,
+            "word": " zur",
+            "probability": 0.9977788329124451
+          },
+          {
+            "start": 1155.99,
+            "end": 1156.33,
+            "word": " Seite",
+            "probability": 0.8896182179450989
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-tight.json",
+        "candidate": 7,
+        "words": [
+          {
+            "start": 1155.0,
+            "end": 1155.8,
+            "word": " Geht",
+            "probability": 0.4428289383649826
+          },
+          {
+            "start": 1155.8,
+            "end": 1155.92,
+            "word": " mal",
+            "probability": 0.953317403793335
+          },
+          {
+            "start": 1155.92,
+            "end": 1156.14,
+            "word": " zur",
+            "probability": 0.9887554049491882
+          },
+          {
+            "start": 1156.14,
+            "end": 1156.46,
+            "word": " Seite!",
+            "probability": 0.9915894865989685
+          }
+        ],
+        "label": "cand7_gap_ch7"
+      },
+      "normalization": "Chuẩn hóa dấu câu cuối câu ('Geht mal zur Seite!' theo small-tight và medium-tight). Cả 4 từ khớp tuyệt đối giữa small và medium.",
+      "note": "Marcille bảo cả nhóm lùi ra trước khi đọc chú ở cue 1200309 (1157.66-1159.88s: 'Ich werde sie alle auf einmal erledigen.'). Word bounds từ small main (1155.03-1156.33s) nằm trọn sau ranh giới Chapter 7 (1155.00s) và sau cue 1200307 (1151.56-1154.24s)."
+    },
+    {
+      "id": 1200390,
+      "parentId": 1200390,
+      "candidate": 9,
+      "start": 1336.81,
+      "end": 1338.29,
+      "rawStart": 1336.81,
+      "rawEnd": 1338.29,
+      "speaker": "Chilchuck",
+      "text": "Die ist echt gut.",
+      "vi": "Món này ngon thật đấy.",
+      "sourceDraftIds": [
+        1200356
+      ],
+      "smallText": "Die ist echt gut.",
+      "mediumText": "Die ist echt gut.",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-context.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1336.81,
+            "end": 1337.31,
+            "word": " Die",
+            "probability": 0.7014943361282349
+          },
+          {
+            "start": 1337.31,
+            "end": 1337.49,
+            "word": " ist",
+            "probability": 0.9814276695251465
+          },
+          {
+            "start": 1337.49,
+            "end": 1337.77,
+            "word": " echt",
+            "probability": 0.9965257048606873
+          },
+          {
+            "start": 1337.77,
+            "end": 1338.29,
+            "word": " gut.",
+            "probability": 0.9916642904281616
+          }
+        ],
+        "label": "cand9_full_gap"
+      },
+      "smallEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small-context.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1336.25,
+            "end": 1337.27,
+            "word": " Die",
+            "probability": 0.24681814014911652
+          },
+          {
+            "start": 1337.27,
+            "end": 1337.41,
+            "word": " ist",
+            "probability": 0.9919633865356445
+          },
+          {
+            "start": 1337.41,
+            "end": 1337.61,
+            "word": " echt",
+            "probability": 0.9936908483505249
+          },
+          {
+            "start": 1337.61,
+            "end": 1337.93,
+            "word": " gut.",
+            "probability": 0.9873533248901367
+          }
+        ],
+        "label": "cand9_full_gap"
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-context.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1336.81,
+            "end": 1337.31,
+            "word": " Die",
+            "probability": 0.7014943361282349
+          },
+          {
+            "start": 1337.31,
+            "end": 1337.49,
+            "word": " ist",
+            "probability": 0.9814276695251465
+          },
+          {
+            "start": 1337.49,
+            "end": 1337.77,
+            "word": " echt",
+            "probability": 0.9965257048606873
+          },
+          {
+            "start": 1337.77,
+            "end": 1338.29,
+            "word": " gut.",
+            "probability": 0.9916642904281616
+          }
+        ],
+        "label": "cand9_full_gap"
+      },
+      "normalization": "Không cần chuẩn hóa từ; cả small và medium trên cửa sổ mở rộng toàn khoảng trống (cand9_full_gap: 1336.25-1342.30s) đều nhận dạng chính xác 'Die ist echt gut.'.",
+      "note": "Câu đầu trong lượt thoại của Chilchuck (bản nháp 1200356: 1337.28-1341.26s) nằm trong khoảng trống 1336.20-1342.38s giữa cue 1200355 và 1200357. Cửa sổ gốc của Muse (1339.06-1342.95s) bắt đầu từ 1339.06s nên cắt mất câu này; cửa sổ mở rộng cand9_full_gap khôi phục trọn vẹn."
+    },
+    {
+      "id": 1200391,
+      "parentId": 1200391,
+      "candidate": 9,
+      "start": 1338.49,
+      "end": 1339.61,
+      "rawStart": 1338.49,
+      "rawEnd": 1339.61,
+      "speaker": "Chilchuck",
+      "text": "Probier doch mal, Marcille.",
+      "vi": "Nếm thử một miếng đi, Marcille.",
+      "sourceDraftIds": [
+        1200356
+      ],
+      "smallText": "Probier doch mal Masse.",
+      "mediumText": "Probier doch mal Masse.",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small-context.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1338.49,
+            "end": 1338.97,
+            "word": " Probier",
+            "probability": 0.9471877813339233
+          },
+          {
+            "start": 1338.97,
+            "end": 1339.09,
+            "word": " doch",
+            "probability": 0.9839104413986206
+          },
+          {
+            "start": 1339.09,
+            "end": 1339.25,
+            "word": " mal",
+            "probability": 0.9656940698623657
+          },
+          {
+            "start": 1339.25,
+            "end": 1339.61,
+            "word": " Masse.",
+            "probability": 0.8467284440994263
+          }
+        ],
+        "label": "cand9_full_gap"
+      },
+      "smallEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small-context.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1338.49,
+            "end": 1338.97,
+            "word": " Probier",
+            "probability": 0.9471877813339233
+          },
+          {
+            "start": 1338.97,
+            "end": 1339.09,
+            "word": " doch",
+            "probability": 0.9839104413986206
+          },
+          {
+            "start": 1339.09,
+            "end": 1339.25,
+            "word": " mal",
+            "probability": 0.9656940698623657
+          },
+          {
+            "start": 1339.25,
+            "end": 1339.61,
+            "word": " Masse.",
+            "probability": 0.8467284440994263
+          }
+        ],
+        "label": "cand9_full_gap"
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-context.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1338.93,
+            "end": 1339.05,
+            "word": " Probier",
+            "probability": 0.9108095169067383
+          },
+          {
+            "start": 1339.05,
+            "end": 1339.15,
+            "word": " doch",
+            "probability": 0.7687556743621826
+          },
+          {
+            "start": 1339.15,
+            "end": 1339.33,
+            "word": " mal",
+            "probability": 0.9864067435264587
+          },
+          {
+            "start": 1339.33,
+            "end": 1340.37,
+            "word": " Masse.",
+            "probability": 0.8486617207527161
+          }
+        ],
+        "label": "cand9_full_gap"
+      },
+      "normalization": "Chuẩn hóa dấu phẩy trước tên gọi và tên riêng nhân vật có căn cứ: ASR phiên âm ngữ âm thành 'Masse.'/'Masse,' -> chuẩn hóa thành 'Marcille' theo đúng tên nhân vật trong các cue hiện hữu (1200018, 1200083, 1200227) và bản nháp 1200356.",
+      "note": "Câu thứ hai trong lượt thoại của Chilchuck (bản nháp 1200356). Cửa sổ gốc của Muse bắt đầu tại 1339.06s đúng giữa từ 'Probier' (1338.49-1338.97s) khiến main chỉ nhận được '...doch mal Masse'; khi mở rộng về đầu khoảng trống (cand9_full_gap và cand9_probier_schmecken), cả small và medium đều nhận đủ 4 từ 'Probier doch mal Masse.'."
+    },
+    {
+      "id": 1200392,
+      "parentId": 1200392,
+      "candidate": 9,
+      "start": 1340.42,
+      "end": 1341.18,
+      "rawStart": 1340.42,
+      "rawEnd": 1341.18,
+      "speaker": "Chilchuck",
+      "text": "Könnte dir schmecken.",
+      "vi": "Biết đâu lại hợp khẩu vị của cô.",
+      "sourceDraftIds": [
+        1200356
+      ],
+      "smallText": "Könnte dir schmecken?",
+      "mediumText": "könnte dir schmecken",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1340.42,
+            "end": 1340.7,
+            "word": " könnte",
+            "probability": 0.48904290795326233
+          },
+          {
+            "start": 1340.7,
+            "end": 1340.9,
+            "word": " dir",
+            "probability": 0.8795201182365417
+          },
+          {
+            "start": 1340.9,
+            "end": 1341.18,
+            "word": " schmecken",
+            "probability": 0.9932981133460999
+          }
+        ]
+      },
+      "smallEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1340.34,
+            "end": 1340.68,
+            "word": " Könnte",
+            "probability": 0.7576776444911957
+          },
+          {
+            "start": 1340.68,
+            "end": 1340.78,
+            "word": " dir",
+            "probability": 0.9211339950561523
+          },
+          {
+            "start": 1340.78,
+            "end": 1341.16,
+            "word": " schmecken?",
+            "probability": 0.9975650608539581
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1340.42,
+            "end": 1340.7,
+            "word": " könnte",
+            "probability": 0.48904290795326233
+          },
+          {
+            "start": 1340.7,
+            "end": 1340.9,
+            "word": " dir",
+            "probability": 0.8795201182365417
+          },
+          {
+            "start": 1340.9,
+            "end": 1341.18,
+            "word": " schmecken",
+            "probability": 0.9932981133460999
+          }
+        ]
+      },
+      "normalization": "Chuẩn hóa chữ hoa đầu câu và dấu chấm cuối câu ('Könnte dir schmecken.' khớp trực tiếp với medium-tight và medium-context). Lưu ý: trên cand9_full_gap, small đổi sang 'Könntet ihr schmecken?' do hiểu 'Masse' phía trước là danh từ số nhiều, nhưng trên cả main và tight độc lập, small và medium đều đồng thuận 'Könnte dir schmecken'.",
+      "note": "Câu thứ ba trong lượt thoại của Chilchuck (bản nháp 1200356), nằm trọn trong khoảng trống trước cue 1200357 (1342.38-1345.74s). Phần 1341.94-1342.72s ('Die f...') ở small main là đầu cue 1200357 nên đưa vào excluded."
+    }
+  ],
+  "excluded": [
+    {
+      "candidate": 2,
+      "window": [
+        79.09,
+        83.91
+      ],
+      "museRange": [
+        80.29,
+        82.71
+      ],
+      "smallText": "(no segments on main/gap/core/part1/with_neighbors/with_prev) | Ja (cand2_part2: 81.20-82.14s, prob=0.057, no_speech_prob=0.778)",
+      "mediumText": "Das war's für heute. | Bis zum nächsten Mal. (main, no_speech_prob=0.784) | Ahhhh... (cand2_gap: 82.63-84.03s, no_speech_prob=0.780) | HÄÄÄÄÄH! (cand2_core: 80.00-81.74s, no_speech_prob=0.735) | (no segments in 78.82-84.10s on cand2_part1, cand2_part2, cand2_with_neighbors, cand2_with_prev)",
+      "classification": "excluded_non_lexical_battle_vocalization_and_asr_hallucination",
+      "reason": "Đã kiểm tra kỹ bằng 7 cửa sổ hẹp và rộng (main, cand2_gap, cand2_core, cand2_part1, cand2_part2, cand2_with_neighbors, cand2_with_prev) giữa cue 1200009 (77.76-78.82s: 'Wir haben keine Schwächen.') và cue 1200010 (84.10-88.60s: 'Bis auf einen Riesenhunger.'). Khi neo ngữ cảnh với các câu thoại thật kề bên (cand2_with_neighbors, cand2_with_prev), cả small và medium đều xác nhận 0 từ thoại trong khoảng 78.82-84.10s. Trên các cửa sổ cắt rời, medium main sinh câu ảo giác kết video điển hình của Whisper ('Das war's für heute. Bis zum nächsten Mal.', no_speech_prob=0.784), còn medium tight chỉ ghi nhận tiếng hét/gồng chiến đấu phi từ vựng ('HÄÄÄÄÄH!', 'Ahhhh...', no_speech_prob=0.735-0.780). Không có câu thoại tiếng Đức để thêm.",
+      "sourceCandidateAsr": []
+    },
+    {
+      "candidate": 3,
+      "window": [
+        111.41,
+        115.02
+      ],
+      "museRange": [
+        113.93,
+        115.02
+      ],
+      "smallText": "Wurde sie mit einem Pevel... (113.93-114.99s)",
+      "mediumText": "Wurde sie mit einem Pfeffer? (114.03-114.97s)",
+      "classification": "excluded_duplicate_existing_cue",
+      "reason": "Phần cuối cửa sổ #3 (từ 113.93s) tràn vào nửa đầu của cue hiện hữu 1200016 (114.00-115.78s: 'Wurde sie mit einem Verwirrzauber belegt?'). Riêng câu hỏi trước đó (112.47-113.49s: 'Was ist los, Falin?') đã được tách và đề xuất thêm thành cue 1200387.",
+      "sourceCandidateAsr": [
+        "Was ist los, Vali?",
+        "Wurde sie mit einem verwirrten..."
+      ]
+    },
+    {
+      "candidate": 4,
+      "window": [
+        321.17,
+        325.93
+      ],
+      "museRange": [
+        321.17,
+        321.95
+      ],
+      "smallText": "Passieren mag? (321.17-321.79s)",
+      "mediumText": "Passieren mag? (321.17-321.95s)",
+      "classification": "excluded_duplicate_existing_cue",
+      "reason": "Phần đầu cửa sổ #4 (321.17-321.95s: 'Passieren mag?') trùng với đuôi của cue hiện hữu 1200078 (316.66-322.08s: 'Ihr wollt wirklich alle beide mit mir in den Dungeon kommen? Egal, was dort passieren mag?'). Phần ngập ngừng sau đó (322.12-324.74s) được phân loại vào reviewNeeded do vắt ngang ranh giới Chapter 2/3 tại 324.0s.",
+      "sourceCandidateAsr": [
+        "Passieren mag?",
+        "Äh...",
+        "Äh... ja."
+      ]
+    },
+    {
+      "candidate": 5,
+      "window": [
+        395.77,
+        399.24
+      ],
+      "museRange": [
+        395.77,
+        399.24
+      ],
+      "smallText": "(no segments on main; cand5_with_neighbors nhận câu 398.06-400.56s: 'Die sind noch nicht lange im Dungeon, oder?')",
+      "mediumText": "NOOOOOBS! (396.61-397.03s) ... Die sind noch- (398.69-399.21s)",
+      "classification": "excluded_duplicate_existing_cues",
+      "reason": "Hai đầu biên của cửa sổ #5 chồng lên cue hiện hữu 1200097 (395.98-396.86s: 'Rettet uns!') và đầu cue hiện hữu 1200098 (398.32-400.80s: 'Die sind noch nicht lange im Dungeon, oder?'). Riêng tiếng hô ngắn ở khe 396.88-398.30s ('Ja!' vs 'Hier!') được giữ trong reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Hier!",
+        "Die sind noch..."
+      ]
+    },
+    {
+      "candidate": 6,
+      "window": [
+        982.84,
+        988.59
+      ],
+      "museRange": [
+        982.84,
+        988.59
+      ],
+      "smallText": "dann schon erst (982.84-983.46s) ... ich bin über ein (987.80-988.56s)",
+      "mediumText": "Dungeon Nest. (982.84-983.72s) ... Ich bin über ein... (987.88-988.56s)",
+      "classification": "excluded_duplicate_existing_cues",
+      "reason": "Hai đầu biên của cửa sổ #6 trùng với đuôi cue hiện hữu 1200252 (981.40-983.66s: 'Vielleicht, weil das ein verfluchter Dungeon ist.') và đầu cue hiện hữu 1200254 (987.64-989.98s: 'Ich bin über ein loses Brett gestolpert.'). Câu hỏi ở giữa (985.76-987.06s: 'Alles in Ordnung, Marcille?') đã được tách và đề xuất thêm thành cue 1200388.",
+      "sourceCandidateAsr": [
+        "Dungeon Nest. Alles in Ordnung, Marcel? Ich bin über ein..."
+      ]
+    },
+    {
+      "candidate": 7,
+      "window": [
+        1152.79,
+        1158.47
+      ],
+      "museRange": [
+        1152.79,
+        1158.47
+      ],
+      "smallText": "kämpfen (1152.79-1153.39s)",
+      "mediumText": "kämpfen (1154.41-1155.19s) ... ich werde sie (1156.65-1158.37s)",
+      "classification": "excluded_duplicate_existing_cues",
+      "reason": "Biên đầu ('kämpfen') trùng với đuôi cue hiện hữu 1200307 (1151.56-1154.24s: 'Dann müssen wir eben kämpfen.') và biên cuối ('ich werde sie') trùng với đầu cue hiện hữu 1200309 (1157.66-1159.88s: 'Ich werde sie alle auf einmal erledigen.'). Câu mệnh lệnh nằm trọn giữa hai cue và sau mốc Chapter 7 (1155.03-1156.33s: 'Geht mal zur Seite!') đã được tách và đề xuất thêm thành cue 1200389.",
+      "sourceCandidateAsr": [
+        "Kämpfen.",
+        "Geht mal zur Seite.",
+        "Hm?",
+        "Ich werde sie..."
+      ]
+    },
+    {
+      "candidate": 8,
+      "window": [
+        1159.7,
+        1171.53
+      ],
+      "museRange": [
+        1159.7,
+        1168.64
+      ],
+      "smallText": "Spiele E. Jepton Lufens. | Alamando Aspojo. | Nexanto Aslas! (1159.70-1168.28s)",
+      "mediumText": "Späler e Jepton Lufelsk, Halaman Doas Fodju, Hextanto Aslas! (1160.82-1168.64s)",
+      "classification": "excluded_fictional_magic_incantation",
+      "reason": "Đoạn 1159.70-1168.64s là lời niệm thần chú phép thuật bằng ngôn ngữ giả tưởng của Marcille (đã được ghi nhận trong danh mục exclusions của hồ sơ gốc muse-two-films/delicious_in_dungeon_s01e01.json: 1159.88-1168.60s). Theo đúng yêu cầu, không cố sửa hay ép thành câu tiếng Đức.",
+      "sourceCandidateAsr": [
+        "Späler e Jepton Lufels.",
+        "Halaman Doas Hojo.",
+        "Hexan Tor Aslas!",
+        "Hör auf du Nergl!",
+        "Äh, wieso?"
+      ]
+    },
+    {
+      "candidate": 8,
+      "window": [
+        1159.7,
+        1171.53
+      ],
+      "museRange": [
+        1170.36,
+        1171.53
+      ],
+      "smallText": "Äh, wieso? (1170.36-1171.34s)",
+      "mediumText": "Äh, wieso? (1170.38-1171.44s)",
+      "classification": "excluded_duplicate_existing_cue",
+      "reason": "Phần cuối cửa sổ #8 (1170.36-1171.44s: 'Äh, wieso?') chồng trực tiếp lên cue hiện hữu 1200311 (1170.98-1171.88s: 'Wieso denn?'; thậm chí từ 'Äh,' ở medium kéo tới 1171.02s vượt qua mốc 1170.98s của cue 1200311). Giữ nguyên tuyệt đối cue 1200311 hiện hữu.",
+      "sourceCandidateAsr": [
+        "Späler e Jepton Lufels.",
+        "Halaman Doas Hojo.",
+        "Hexan Tor Aslas!",
+        "Hör auf du Nergl!",
+        "Äh, wieso?"
+      ]
+    },
+    {
+      "candidate": 9,
+      "window": [
+        1339.06,
+        1342.95
+      ],
+      "museRange": [
+        1341.94,
+        1342.95
+      ],
+      "smallText": "Die f... (1341.94-1342.72s)",
+      "mediumText": "(no segment after 1341.18s)",
+      "classification": "excluded_duplicate_existing_cue",
+      "reason": "Mảnh 'Die f...' (1341.94-1342.72s) ở cuối cửa sổ #9 là phần đầu bị cắt ngang của cue hiện hữu 1200357 (1342.38-1345.74s: 'Die Früchte sind doch nicht von der Pflanze, in der die Leiche war, oder?').",
+      "sourceCandidateAsr": [
+        "Mal Masse könnte dir schmecken"
+      ]
+    },
+    {
+      "candidate": 10,
+      "window": [
+        1454.26,
+        1502.76
+      ],
+      "museRange": [
+        1455.46,
+        1501.56
+      ],
+      "smallText": "Ja, ich glaube, das ist das, was wir hier haben. | Das ist das, was wir hier haben. (x8, 1484.26-1502.66s, no_speech_prob=0.779)",
+      "mediumText": "(no segments across entire 1454.26-1502.76s window)",
+      "classification": "excluded_ending_theme_song_and_asr_hallucination",
+      "reason": "Cửa sổ #10 (1454.26-1502.76s, sau câu kết tập 1200384 tại 1445.96-1449.52s) nằm trong phần bài hát kết thúc tiếng Nhật ('Sleep Walking Orchestra') và credit cuối tập (đã ghi nhận trong exclusions 1449.52-1607.488s của hồ sơ gốc). Mô hình medium độc lập trả về 0 segment trên toàn bộ 48.5 giây; mô hình small độc lập trống suốt 30 giây đầu và bị lặp ảo giác 9 lần câu 'Das ist das, was wir hier haben.' (no_speech_prob=0.779). Loại trừ hoàn toàn.",
+      "sourceCandidateAsr": [
+        "Die Lichter, die sich von der Tür aus aus der Wand ausklappen, sind die ersten Freunde, die sich die Klappen von den Händen von der Erde ausklappen.",
+        "Sie wurden dann in der Träume geführt.",
+        "Einige Verständnisse sind auf die Klappen gesiedelt.",
+        "Manchmal ist es so, dass der Maul sich im Boden befindet.",
+        "Die Regen sind so leise, dass man sich nicht mehr wachsend fühlt.",
+        "Das war's für heute.",
+        "Bis zum nächsten Mal.",
+        "Tschüss."
+      ]
+    }
+  ],
+  "reviewNeeded": [
+    {
+      "candidate": 1,
+      "window": [
+        68.85,
+        75.91
+      ],
+      "museRange": [
+        69.79,
+        70.89
+      ],
+      "smallText": "Halte durch, Freunde. (main: 69.79-70.79s) | Ah, der Deutschmann! (cand1_haltet: 69.82-70.72s) | Halte Durchfreunde! (cand1_full_gap: 69.90-70.86s)",
+      "mediumText": "Haltet durch, Freunde! (main: 69.91-70.89s; cand1_full_gap: 69.88-70.90s) | Halte durch, Freude! (cand1_haltet: 69.92-70.92s)",
+      "classification": "review_needed_asr_grammar_disagreement",
+      "reason": "Câu đầu của cửa sổ #1 (69.79-70.89s) bất đồng hình thái chia động từ mệnh lệnh giữa small ('Halte durch, Freunde.' / 'Halte Durchfreunde!' / 'Ah, der Deutschmann!') và medium ('Haltet durch, Freunde!' ở main/context, nhưng 'Halte durch, Freude!' ở tight). Theo quy tắc không âm thầm sửa ngữ pháp của ASR khi small không xác nhận hình thái số nhiều 'Haltet', giữ câu ngắn đầu này ở reviewNeeded (hai câu tiếp theo trong cùng cửa sổ là 'Wenn wir ihn besiegt haben, können wir verschnaufen!' và 'Na los!' đã được cả hai model xác nhận tuyệt đối và tách vào added).",
+      "sourceCandidateAsr": [
+        "Haltet durch, Freunde! Wenn wir ihn besiegt haben, können wir verschnaufen!",
+        "Na los!"
+      ]
+    },
+    {
+      "candidate": 4,
+      "window": [
+        321.17,
+        325.93
+      ],
+      "museRange": [
+        322.37,
+        324.73
+      ],
+      "smallText": "Äh... (322.65-323.45s) | Äh, ja. (323.45-324.31s; cand4_gap: 'Äh, äh, ja.' 322.12-324.30s)",
+      "mediumText": "Uhh... (323.17-323.61s) | Uh, ja. (323.61-324.43s; cand4_gap: 'Ah... | Ah, ja...' 322.12-324.74s)",
+      "classification": "review_needed_crosses_chapter_boundary_and_hesitation_disagreement",
+      "reason": "Lượt đáp ngập ngừng ở 322.12-324.74s vắt trực tiếp qua ranh giới giữa Chapter 2 (148.0-324.0s) và Chapter 3 (324.0-571.9s) trong delicious-in-dungeon-s01e01-lesson.js: các thán từ ngập ngừng ('Äh... Äh,' / 'Uhh... Uh,' / 'Ah... Ah,', prob thấp 0.17-0.38) nằm trước 323.94s (Chapter 2), còn từ 'ja' nằm tại 324.04-324.74s (Chapter 3). Theo quy tắc chỉ đề xuất câu có word bounds nằm trọn trong gap giữa cue cũ và chapter, tuyệt đối không cắt từ để ép vừa, giữ phần này ở reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Passieren mag?",
+        "Äh...",
+        "Äh... ja."
+      ]
+    },
+    {
+      "candidate": 5,
+      "window": [
+        395.77,
+        399.24
+      ],
+      "museRange": [
+        396.97,
+        398.04
+      ],
+      "smallText": "(no segments on main and cand5_with_neighbors) | Ja! (cand5_gap: 396.88-397.32s, prob=0.329, no_speech_prob=0.470)",
+      "mediumText": "Hier! (main: 397.21-397.43s, prob=0.104, no_speech_prob=0.833; cand5_gap: 396.88-397.42s, prob=0.120, no_speech_prob=0.644; cand5_with_neighbors: không ghi nhận)",
+      "classification": "review_needed_model_disagreement_and_low_confidence",
+      "reason": "Trong khe hẹp 1.46s giữa cue 1200097 (395.98-396.86s: 'Rettet uns!') và cue 1200098 (398.32-400.80s: 'Die sind noch nicht lange im Dungeon, oder?'), cả hai model đều không nhận được từ nào khi chạy kèm ngữ cảnh hai bên (cand5_with_neighbors), còn khi cắt hẹp thì bất đồng và độ tự tin rất thấp (small: trống ở main, 'Ja!' prob=0.329 ở tight; medium: 'Hier!' prob=0.104-0.120, no_speech_prob=0.644-0.833). Giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Hier!",
+        "Die sind noch..."
+      ]
+    },
+    {
+      "candidate": 6,
+      "window": [
+        982.84,
+        988.59
+      ],
+      "museRange": [
+        983.7,
+        985.02
+      ],
+      "smallText": "(no segments in 983.70-985.60s on main) | Nein! (cand6_gap: 983.70-984.06s, prob=0.172)",
+      "mediumText": "(no segments in 983.72-985.82s on main) | Ah! (983.70-984.20s, prob=0.153) | Hm? (984.80-985.02s, prob=0.184) on cand6_gap",
+      "classification": "review_needed_low_confidence_exclamation_disagreement",
+      "reason": "Tiếng kêu/giật mình lúc Marcille vấp tấm ván (983.70-985.02s, ngay trước câu hỏi 'Alles in Ordnung, Marcille?' tại 985.76-987.06s) không xuất hiện trên main của cả hai model, và khi cắt hẹp khoảng trống (cand6_gap) thì bất đồng với xác suất rất thấp (small: 'Nein!' prob=0.172; medium: 'Ah! | Hm?' prob=0.153-0.184). Đã tách riêng câu hỏi 'Alles in Ordnung, Marcille?' vào added (1200388) và giữ phần thán từ 983.70-985.02s ở reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Dungeon Nest. Alles in Ordnung, Marcel? Ich bin über ein..."
+      ]
+    },
+    {
+      "candidate": 8,
+      "window": [
+        1159.7,
+        1171.53
+      ],
+      "museRange": [
+        1168.68,
+        1170.16
+      ],
+      "smallText": "Rauf zu nägeln! (main: 1168.80-1169.98s) | Aufzunaggen! (cand8_post_spell: 1168.50-1170.00s)",
+      "mediumText": "Hör auf, du Nergel! (main: 1169.08-1170.06s) | Hör auf zu nageln! (cand8_post_spell: 1168.50-1170.16s)",
+      "classification": "review_needed_model_disagreement",
+      "reason": "Câu quát của Senshi cắt ngang thần chú của Marcille (1168.80-1170.16s, tương ứng bản nháp 1200310 'Hör auf, du Närrin!' từng gắn cờ uncertain trong muse-two-films) bất đồng mạnh giữa small ('Rauf zu nägeln!' / 'Aufzunaggen!') và medium ('Hör auf, du Nergel!' / 'Hör auf zu nageln!'), và không model nào nhận ra từ 'Närrin'. Không tự sửa bằng chứng máy, giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Späler e Jepton Lufels.",
+        "Halaman Doas Hojo.",
+        "Hexan Tor Aslas!",
+        "Hör auf du Nergl!",
+        "Äh, wieso?"
+      ]
+    }
+  ]
+}

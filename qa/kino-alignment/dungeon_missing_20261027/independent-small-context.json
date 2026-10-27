@@ -1,0 +1,490 @@
+{
+  "model": "small",
+  "source": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\video\\delicious_in_dungeon_s01e01.mp4",
+  "sourceVideoSha256": "26caef638d8ece51c536ab109adbd0bb5640e998644d58db77ba59846f08832f",
+  "candidateSha256": "d1965813373625b89d8805913ada6c3989e0125ad52a2f3002b41c33cdd60c2a",
+  "method": "Independent local bounded ASR, no prompt or candidate text supplied",
+  "humanListened": false,
+  "completed": 6,
+  "total": 6,
+  "elapsedSeconds": 25.11,
+  "windows": [
+    {
+      "candidate": 1,
+      "start": 68.5,
+      "end": 75.15,
+      "segments": [
+        {
+          "start": 69.9,
+          "end": 72.94,
+          "text": "Halte Durchfreunde! Wenn wir ihn besiegt haben, können wir verschnaufen!",
+          "avg_logprob": -0.3911733531526157,
+          "no_speech_prob": 0.250781387090683,
+          "words": [
+            {
+              "start": 69.9,
+              "end": 70.38,
+              "word": " Halte",
+              "probability": 0.59618329256773
+            },
+            {
+              "start": 70.38,
+              "end": 70.86,
+              "word": " Durchfreunde!",
+              "probability": 0.7158362070719401
+            },
+            {
+              "start": 71.14,
+              "end": 71.24,
+              "word": " Wenn",
+              "probability": 0.9708898663520813
+            },
+            {
+              "start": 71.24,
+              "end": 71.38,
+              "word": " wir",
+              "probability": 0.9920064806938171
+            },
+            {
+              "start": 71.38,
+              "end": 71.46,
+              "word": " ihn",
+              "probability": 0.9838101863861084
+            },
+            {
+              "start": 71.46,
+              "end": 71.84,
+              "word": " besiegt",
+              "probability": 0.9845700860023499
+            },
+            {
+              "start": 71.84,
+              "end": 72.04,
+              "word": " haben,",
+              "probability": 0.994669497013092
+            },
+            {
+              "start": 72.2,
+              "end": 72.28,
+              "word": " können",
+              "probability": 0.9891629219055176
+            },
+            {
+              "start": 72.28,
+              "end": 72.42,
+              "word": " wir",
+              "probability": 0.9983867406845093
+            },
+            {
+              "start": 72.42,
+              "end": 72.94,
+              "word": " verschnaufen!",
+              "probability": 0.7469915350278219
+            }
+          ]
+        },
+        {
+          "start": 73.68,
+          "end": 74.16,
+          "text": "Na los!",
+          "avg_logprob": -0.3911733531526157,
+          "no_speech_prob": 0.250781387090683,
+          "words": [
+            {
+              "start": 73.68,
+              "end": 73.92,
+              "word": " Na",
+              "probability": 0.8733531832695007
+            },
+            {
+              "start": 73.92,
+              "end": 74.16,
+              "word": " los!",
+              "probability": 0.7830663323402405
+            }
+          ]
+        }
+      ],
+      "label": "cand1_full_gap"
+    },
+    {
+      "candidate": 2,
+      "start": 77.6,
+      "end": 88.7,
+      "segments": [
+        {
+          "start": 77.6,
+          "end": 78.8,
+          "text": "Wir haben keine Schwächen.",
+          "avg_logprob": -0.49025827397902805,
+          "no_speech_prob": 0.10231053829193115,
+          "words": [
+            {
+              "start": 77.6,
+              "end": 77.84,
+              "word": " Wir",
+              "probability": 0.8484264016151428
+            },
+            {
+              "start": 77.84,
+              "end": 78.04,
+              "word": " haben",
+              "probability": 0.9967625141143799
+            },
+            {
+              "start": 78.04,
+              "end": 78.3,
+              "word": " keine",
+              "probability": 0.9926422238349915
+            },
+            {
+              "start": 78.3,
+              "end": 78.8,
+              "word": " Schwächen.",
+              "probability": 0.9868905544281006
+            }
+          ]
+        },
+        {
+          "start": 84.1,
+          "end": 85.34,
+          "text": "Bis auf.",
+          "avg_logprob": -0.49025827397902805,
+          "no_speech_prob": 0.10231053829193115,
+          "words": [
+            {
+              "start": 84.1,
+              "end": 84.96,
+              "word": " Bis",
+              "probability": 0.9643401503562927
+            },
+            {
+              "start": 84.96,
+              "end": 85.34,
+              "word": " auf.",
+              "probability": 0.9435449242591858
+            }
+          ]
+        },
+        {
+          "start": 87.6,
+          "end": 88.58,
+          "text": "Ein Riesen-Hunger.",
+          "avg_logprob": -0.49025827397902805,
+          "no_speech_prob": 0.10231053829193115,
+          "words": [
+            {
+              "start": 87.29,
+              "end": 87.72,
+              "word": " Ein",
+              "probability": 0.8999338150024414
+            },
+            {
+              "start": 87.72,
+              "end": 88.16,
+              "word": " Riesen",
+              "probability": 0.6001407206058502
+            },
+            {
+              "start": 88.16,
+              "end": 88.58,
+              "word": "-Hunger.",
+              "probability": 0.7472925931215286
+            }
+          ]
+        }
+      ],
+      "label": "cand2_with_neighbors"
+    },
+    {
+      "candidate": 2,
+      "start": 75.1,
+      "end": 84.05,
+      "segments": [
+        {
+          "start": 75.1,
+          "end": 78.74,
+          "text": "Wir sind gut vorbereitet. Wir haben keine Schwächen.",
+          "avg_logprob": -0.2921448985735575,
+          "no_speech_prob": 0.1453881859779358,
+          "words": [
+            {
+              "start": 75.1,
+              "end": 76.18,
+              "word": " Wir",
+              "probability": 0.8545507192611694
+            },
+            {
+              "start": 76.18,
+              "end": 76.32,
+              "word": " sind",
+              "probability": 0.9935261011123657
+            },
+            {
+              "start": 76.32,
+              "end": 76.56,
+              "word": " gut",
+              "probability": 0.9927852153778076
+            },
+            {
+              "start": 76.56,
+              "end": 77.2,
+              "word": " vorbereitet.",
+              "probability": 0.9984565377235413
+            },
+            {
+              "start": 77.76,
+              "end": 77.86,
+              "word": " Wir",
+              "probability": 0.9906553626060486
+            },
+            {
+              "start": 77.86,
+              "end": 78.04,
+              "word": " haben",
+              "probability": 0.9985640645027161
+            },
+            {
+              "start": 78.04,
+              "end": 78.32,
+              "word": " keine",
+              "probability": 0.9966435432434082
+            },
+            {
+              "start": 78.32,
+              "end": 78.74,
+              "word": " Schwächen.",
+              "probability": 0.9881039261817932
+            }
+          ]
+        }
+      ],
+      "label": "cand2_with_prev"
+    },
+    {
+      "candidate": 5,
+      "start": 395.8,
+      "end": 400.9,
+      "segments": [
+        {
+          "start": 398.06,
+          "end": 400.56,
+          "text": "Die sind noch nicht lange im Dungeon, oder?",
+          "avg_logprob": -0.5049814368997302,
+          "no_speech_prob": 0.17379003763198853,
+          "words": [
+            {
+              "start": 398.06,
+              "end": 398.52,
+              "word": " Die",
+              "probability": 0.7042005062103271
+            },
+            {
+              "start": 398.52,
+              "end": 398.98,
+              "word": " sind",
+              "probability": 0.9853257536888123
+            },
+            {
+              "start": 398.98,
+              "end": 399.2,
+              "word": " noch",
+              "probability": 0.9255464673042297
+            },
+            {
+              "start": 399.2,
+              "end": 399.38,
+              "word": " nicht",
+              "probability": 0.9945160746574402
+            },
+            {
+              "start": 399.38,
+              "end": 399.6,
+              "word": " lange",
+              "probability": 0.9884743094444275
+            },
+            {
+              "start": 399.6,
+              "end": 399.84,
+              "word": " im",
+              "probability": 0.990760326385498
+            },
+            {
+              "start": 399.84,
+              "end": 400.28,
+              "word": " Dungeon,",
+              "probability": 0.977793276309967
+            },
+            {
+              "start": 400.38,
+              "end": 400.56,
+              "word": " oder?",
+              "probability": 0.9979115128517151
+            }
+          ]
+        }
+      ],
+      "label": "cand5_with_neighbors"
+    },
+    {
+      "candidate": 9,
+      "start": 1336.25,
+      "end": 1342.3,
+      "segments": [
+        {
+          "start": 1336.25,
+          "end": 1337.93,
+          "text": "Die ist echt gut.",
+          "avg_logprob": -0.3653434320138051,
+          "no_speech_prob": 0.0190004613250494,
+          "words": [
+            {
+              "start": 1336.25,
+              "end": 1337.27,
+              "word": " Die",
+              "probability": 0.24681814014911652
+            },
+            {
+              "start": 1337.27,
+              "end": 1337.41,
+              "word": " ist",
+              "probability": 0.9919633865356445
+            },
+            {
+              "start": 1337.41,
+              "end": 1337.61,
+              "word": " echt",
+              "probability": 0.9936908483505249
+            },
+            {
+              "start": 1337.61,
+              "end": 1337.93,
+              "word": " gut.",
+              "probability": 0.9873533248901367
+            }
+          ]
+        },
+        {
+          "start": 1338.49,
+          "end": 1339.61,
+          "text": "Probier doch mal Masse.",
+          "avg_logprob": -0.3653434320138051,
+          "no_speech_prob": 0.0190004613250494,
+          "words": [
+            {
+              "start": 1338.49,
+              "end": 1338.97,
+              "word": " Probier",
+              "probability": 0.9471877813339233
+            },
+            {
+              "start": 1338.97,
+              "end": 1339.09,
+              "word": " doch",
+              "probability": 0.9839104413986206
+            },
+            {
+              "start": 1339.09,
+              "end": 1339.25,
+              "word": " mal",
+              "probability": 0.9656940698623657
+            },
+            {
+              "start": 1339.25,
+              "end": 1339.61,
+              "word": " Masse.",
+              "probability": 0.8467284440994263
+            }
+          ]
+        },
+        {
+          "start": 1340.37,
+          "end": 1341.15,
+          "text": "Könntet ihr schmecken?",
+          "avg_logprob": -0.3653434320138051,
+          "no_speech_prob": 0.0190004613250494,
+          "words": [
+            {
+              "start": 1340.37,
+              "end": 1340.71,
+              "word": " Könntet",
+              "probability": 0.6322970390319824
+            },
+            {
+              "start": 1340.71,
+              "end": 1340.79,
+              "word": " ihr",
+              "probability": 0.9852486252784729
+            },
+            {
+              "start": 1340.79,
+              "end": 1341.15,
+              "word": " schmecken?",
+              "probability": 0.9949906468391418
+            }
+          ]
+        }
+      ],
+      "label": "cand9_full_gap"
+    },
+    {
+      "candidate": 9,
+      "start": 1338.3,
+      "end": 1342.3,
+      "segments": [
+        {
+          "start": 1338.3,
+          "end": 1341.14,
+          "text": "Probier doch mal Masse. Könntet ihr schmecken?",
+          "avg_logprob": -0.35175881666295666,
+          "no_speech_prob": 0.015794595703482628,
+          "words": [
+            {
+              "start": 1338.3,
+              "end": 1338.96,
+              "word": " Probier",
+              "probability": 0.9208024144172668
+            },
+            {
+              "start": 1338.96,
+              "end": 1339.08,
+              "word": " doch",
+              "probability": 0.9896634221076965
+            },
+            {
+              "start": 1339.08,
+              "end": 1339.24,
+              "word": " mal",
+              "probability": 0.9410468935966492
+            },
+            {
+              "start": 1339.24,
+              "end": 1339.62,
+              "word": " Masse.",
+              "probability": 0.8817321360111237
+            },
+            {
+              "start": 1340.34,
+              "end": 1340.7,
+              "word": " Könntet",
+              "probability": 0.7708524068196615
+            },
+            {
+              "start": 1340.7,
+              "end": 1340.8,
+              "word": " ihr",
+              "probability": 0.9857692122459412
+            },
+            {
+              "start": 1340.8,
+              "end": 1341.14,
+              "word": " schmecken?",
+              "probability": 0.9952894449234009
+            }
+          ]
+        }
+      ],
+      "label": "cand9_probier_schmecken"
+    }
+  ]
+}
