@@ -1,0 +1,24 @@
+{
+  "audioUnchanged": true,
+  "method": "ffmpeg decode to pcm_s16le, SHA-256; player files match established media release hashes",
+  "files": [
+    {
+      "file": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\video\\delicious_in_dungeon_s01e01.mp4",
+      "bytes": 236823224,
+      "fileSha256": "26caef638d8ece51c536ab109adbd0bb5640e998644d58db77ba59846f08832f",
+      "decodedPcmS16leSha256": "2c200d31c6edee2f10a4d219afc8ba769395d79c8205d2dfb9ed2b6a8db1f30c"
+    },
+    {
+      "file": "C:\\Users\\huynh\\.codex\\worktrees\\kino-dungeon-missing-lines\\flash\\video\\delicious_in_dungeon_s01e01-web-v1.mp4",
+      "bytes": 230489559,
+      "fileSha256": "b9977423f0dfe3e3317602e1f9bbed4b6a8e240071c66b2d985553e0a61a9223",
+      "decodedPcmS16leSha256": "2c200d31c6edee2f10a4d219afc8ba769395d79c8205d2dfb9ed2b6a8db1f30c"
+    },
+    {
+      "file": "C:\\Users\\huynh\\.codex\\worktrees\\kino-dungeon-missing-lines\\flash\\video\\kino-light\\delicious_in_dungeon_s01e01-480p-v1.mp4",
+      "bytes": 126203834,
+      "fileSha256": "cfbabd02a758e841200f5bea47263deb7d7070d5042cc992fa1342cbe21c75ca",
+      "decodedPcmS16leSha256": "2c200d31c6edee2f10a4d219afc8ba769395d79c8205d2dfb9ed2b6a8db1f30c"
+    }
+  ]
+}

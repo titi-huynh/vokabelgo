@@ -1,0 +1,185 @@
+{
+  "model": "medium",
+  "source": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\video\\delicious_in_dungeon_s01e01.mp4",
+  "sourceVideoSha256": "26caef638d8ece51c536ab109adbd0bb5640e998644d58db77ba59846f08832f",
+  "candidateSha256": "d1965813373625b89d8805913ada6c3989e0125ad52a2f3002b41c33cdd60c2a",
+  "method": "Independent local bounded ASR, no prompt or candidate text supplied",
+  "humanListened": false,
+  "completed": 2,
+  "total": 2,
+  "elapsedSeconds": 32.51,
+  "windows": [
+    {
+      "candidate": 7,
+      "start": 1154.7,
+      "end": 1157.1,
+      "segments": [
+        {
+          "start": 1154.7,
+          "end": 1156.44,
+          "text": "Geh mal zur Seite!",
+          "avg_logprob": -0.6134463946024576,
+          "no_speech_prob": 0.6514695882797241,
+          "words": [
+            {
+              "start": 1154.7,
+              "end": 1155.8,
+              "word": " Geh",
+              "probability": 0.5960298180580139
+            },
+            {
+              "start": 1155.8,
+              "end": 1155.9,
+              "word": " mal",
+              "probability": 0.5161803960800171
+            },
+            {
+              "start": 1155.9,
+              "end": 1156.12,
+              "word": " zur",
+              "probability": 0.9890369772911072
+            },
+            {
+              "start": 1156.12,
+              "end": 1156.44,
+              "word": " Seite!",
+              "probability": 0.9929631352424622
+            }
+          ]
+        }
+      ],
+      "label": "cue1200388_isolated_recheck"
+    },
+    {
+      "candidate": 7,
+      "start": 1151.3,
+      "end": 1160.1,
+      "segments": [
+        {
+          "start": 1151.3,
+          "end": 1153.3,
+          "text": "Dann müssen wir eben kämpfen.",
+          "avg_logprob": -0.2937914659579595,
+          "no_speech_prob": 0.2682168781757355,
+          "words": [
+            {
+              "start": 1151.3,
+              "end": 1152.12,
+              "word": " Dann",
+              "probability": 0.8496363759040833
+            },
+            {
+              "start": 1152.12,
+              "end": 1152.38,
+              "word": " müssen",
+              "probability": 0.9926920533180237
+            },
+            {
+              "start": 1152.38,
+              "end": 1152.6,
+              "word": " wir",
+              "probability": 0.9991637468338013
+            },
+            {
+              "start": 1152.6,
+              "end": 1152.82,
+              "word": " eben",
+              "probability": 0.9887463450431824
+            },
+            {
+              "start": 1152.82,
+              "end": 1153.3,
+              "word": " kämpfen.",
+              "probability": 0.9922004044055939
+            }
+          ]
+        },
+        {
+          "start": 1155.64,
+          "end": 1156.46,
+          "text": "Geht mal zur Seite.",
+          "avg_logprob": -0.2937914659579595,
+          "no_speech_prob": 0.2682168781757355,
+          "words": [
+            {
+              "start": 1155.64,
+              "end": 1155.8,
+              "word": " Geht",
+              "probability": 0.7248343527317047
+            },
+            {
+              "start": 1155.8,
+              "end": 1155.9,
+              "word": " mal",
+              "probability": 0.8944549560546875
+            },
+            {
+              "start": 1155.9,
+              "end": 1156.14,
+              "word": " zur",
+              "probability": 0.9940353631973267
+            },
+            {
+              "start": 1156.14,
+              "end": 1156.46,
+              "word": " Seite.",
+              "probability": 0.9956770539283752
+            }
+          ]
+        },
+        {
+          "start": 1157.6,
+          "end": 1159.74,
+          "text": "Ich werde sie alle auf einmal erledigen.",
+          "avg_logprob": -0.2937914659579595,
+          "no_speech_prob": 0.2682168781757355,
+          "words": [
+            {
+              "start": 1157.6,
+              "end": 1157.86,
+              "word": " Ich",
+              "probability": 0.9045400619506836
+            },
+            {
+              "start": 1157.86,
+              "end": 1158.14,
+              "word": " werde",
+              "probability": 0.9935095906257629
+            },
+            {
+              "start": 1158.14,
+              "end": 1158.5,
+              "word": " sie",
+              "probability": 0.8340849280357361
+            },
+            {
+              "start": 1158.5,
+              "end": 1158.68,
+              "word": " alle",
+              "probability": 0.9933053851127625
+            },
+            {
+              "start": 1158.68,
+              "end": 1158.94,
+              "word": " auf",
+              "probability": 0.9922322034835815
+            },
+            {
+              "start": 1158.94,
+              "end": 1159.18,
+              "word": " einmal",
+              "probability": 0.9882106781005859
+            },
+            {
+              "start": 1159.18,
+              "end": 1159.74,
+              "word": " erledigen.",
+              "probability": 0.9986509482065836
+            }
+          ]
+        }
+      ],
+      "label": "cue1200388_with_neighbors_recheck"
+    }
+  ]
+}

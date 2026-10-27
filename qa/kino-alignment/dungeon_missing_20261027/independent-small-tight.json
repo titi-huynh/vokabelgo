@@ -1,0 +1,496 @@
+{
+  "model": "small",
+  "source": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\video\\delicious_in_dungeon_s01e01.mp4",
+  "sourceVideoSha256": "26caef638d8ece51c536ab109adbd0bb5640e998644d58db77ba59846f08832f",
+  "candidateSha256": "d1965813373625b89d8805913ada6c3989e0125ad52a2f3002b41c33cdd60c2a",
+  "method": "Independent local bounded ASR, no prompt or candidate text supplied",
+  "humanListened": false,
+  "completed": 15,
+  "total": 15,
+  "elapsedSeconds": 53.2,
+  "windows": [
+    {
+      "candidate": 1,
+      "start": 69.3,
+      "end": 71.1,
+      "segments": [
+        {
+          "start": 69.82,
+          "end": 70.72,
+          "text": "Ah, der Deutschmann!",
+          "avg_logprob": -1.3537362416585286,
+          "no_speech_prob": 0.1817689836025238,
+          "words": [
+            {
+              "start": 69.82,
+              "end": 70.14,
+              "word": " Ah,",
+              "probability": 0.03171304985880852
+            },
+            {
+              "start": 70.18,
+              "end": 70.26,
+              "word": " der",
+              "probability": 0.38121652603149414
+            },
+            {
+              "start": 70.26,
+              "end": 70.72,
+              "word": " Deutschmann!",
+              "probability": 0.1898139137774706
+            }
+          ]
+        }
+      ],
+      "label": "cand1_haltet"
+    },
+    {
+      "candidate": 1,
+      "start": 71.0,
+      "end": 73.4,
+      "segments": [
+        {
+          "start": 71.0,
+          "end": 72.94,
+          "text": "Wenn wir ihn besiegt haben, können wir verschnauben!",
+          "avg_logprob": -0.25110236336203184,
+          "no_speech_prob": 0.09803620725870132,
+          "words": [
+            {
+              "start": 71.0,
+              "end": 71.24,
+              "word": " Wenn",
+              "probability": 0.8270673751831055
+            },
+            {
+              "start": 71.24,
+              "end": 71.38,
+              "word": " wir",
+              "probability": 0.9883847236633301
+            },
+            {
+              "start": 71.38,
+              "end": 71.46,
+              "word": " ihn",
+              "probability": 0.9938182234764099
+            },
+            {
+              "start": 71.46,
+              "end": 71.84,
+              "word": " besiegt",
+              "probability": 0.9829910397529602
+            },
+            {
+              "start": 71.84,
+              "end": 72.04,
+              "word": " haben,",
+              "probability": 0.9985987544059753
+            },
+            {
+              "start": 72.18,
+              "end": 72.28,
+              "word": " können",
+              "probability": 0.9928314685821533
+            },
+            {
+              "start": 72.28,
+              "end": 72.4,
+              "word": " wir",
+              "probability": 0.998508870601654
+            },
+            {
+              "start": 72.4,
+              "end": 72.94,
+              "word": " verschnauben!",
+              "probability": 0.6555563310782114
+            }
+          ]
+        }
+      ],
+      "label": "cand1_wenn_verschnaufen"
+    },
+    {
+      "candidate": 1,
+      "start": 73.4,
+      "end": 75.0,
+      "segments": [
+        {
+          "start": 73.4,
+          "end": 74.16,
+          "text": "Ja los!",
+          "avg_logprob": -0.6388775507609049,
+          "no_speech_prob": 0.22949865460395813,
+          "words": [
+            {
+              "start": 73.4,
+              "end": 73.94,
+              "word": " Ja",
+              "probability": 0.25722023844718933
+            },
+            {
+              "start": 73.94,
+              "end": 74.16,
+              "word": " los!",
+              "probability": 0.7198381423950195
+            }
+          ]
+        }
+      ],
+      "label": "cand1_na_los"
+    },
+    {
+      "candidate": 2,
+      "start": 78.85,
+      "end": 84.05,
+      "segments": [],
+      "label": "cand2_gap"
+    },
+    {
+      "candidate": 2,
+      "start": 80.0,
+      "end": 83.0,
+      "segments": [],
+      "label": "cand2_core"
+    },
+    {
+      "candidate": 2,
+      "start": 78.85,
+      "end": 81.6,
+      "segments": [],
+      "label": "cand2_part1"
+    },
+    {
+      "candidate": 2,
+      "start": 81.2,
+      "end": 84.05,
+      "segments": [
+        {
+          "start": 81.2,
+          "end": 82.14,
+          "text": "Ja",
+          "avg_logprob": -0.9301173985004425,
+          "no_speech_prob": 0.7783894538879395,
+          "words": [
+            {
+              "start": 81.2,
+              "end": 82.14,
+              "word": " Ja",
+              "probability": 0.05666625127196312
+            }
+          ]
+        }
+      ],
+      "label": "cand2_part2"
+    },
+    {
+      "candidate": 3,
+      "start": 110.6,
+      "end": 113.95,
+      "segments": [
+        {
+          "start": 110.6,
+          "end": 111.34,
+          "text": "Una!",
+          "avg_logprob": -0.8836518617776724,
+          "no_speech_prob": 0.21946769952774048,
+          "words": [
+            {
+              "start": 110.6,
+              "end": 111.34,
+              "word": " Una!",
+              "probability": 0.014876888133585453
+            }
+          ]
+        },
+        {
+          "start": 112.5,
+          "end": 113.44,
+          "text": "Was ist los Fallen?",
+          "avg_logprob": -0.8836518617776724,
+          "no_speech_prob": 0.21946769952774048,
+          "words": [
+            {
+              "start": 112.5,
+              "end": 112.82,
+              "word": " Was",
+              "probability": 0.37355875968933105
+            },
+            {
+              "start": 112.82,
+              "end": 112.96,
+              "word": " ist",
+              "probability": 0.9397299289703369
+            },
+            {
+              "start": 112.96,
+              "end": 113.1,
+              "word": " los",
+              "probability": 0.830654501914978
+            },
+            {
+              "start": 113.1,
+              "end": 113.44,
+              "word": " Fallen?",
+              "probability": 0.27255629375576973
+            }
+          ]
+        }
+      ],
+      "label": "cand3_gap"
+    },
+    {
+      "candidate": 4,
+      "start": 322.12,
+      "end": 325.85,
+      "segments": [
+        {
+          "start": 322.12,
+          "end": 324.3,
+          "text": "Äh, äh, ja.",
+          "avg_logprob": -0.6423414837230336,
+          "no_speech_prob": 0.10185070335865021,
+          "words": [
+            {
+              "start": 322.12,
+              "end": 323.08,
+              "word": " Äh,",
+              "probability": 0.49539393186569214
+            },
+            {
+              "start": 323.44,
+              "end": 323.94,
+              "word": " äh,",
+              "probability": 0.824586033821106
+            },
+            {
+              "start": 324.04,
+              "end": 324.3,
+              "word": " ja.",
+              "probability": 0.9511311650276184
+            }
+          ]
+        }
+      ],
+      "label": "cand4_gap"
+    },
+    {
+      "candidate": 5,
+      "start": 396.88,
+      "end": 398.3,
+      "segments": [
+        {
+          "start": 396.88,
+          "end": 397.32,
+          "text": "Ja!",
+          "avg_logprob": -0.6923130989074707,
+          "no_speech_prob": 0.4704248905181885,
+          "words": [
+            {
+              "start": 396.88,
+              "end": 397.32,
+              "word": " Ja!",
+              "probability": 0.3290424346923828
+            }
+          ]
+        }
+      ],
+      "label": "cand5_gap"
+    },
+    {
+      "candidate": 6,
+      "start": 983.7,
+      "end": 987.6,
+      "segments": [
+        {
+          "start": 983.7,
+          "end": 984.06,
+          "text": "Nein!",
+          "avg_logprob": -0.7707142909367879,
+          "no_speech_prob": 0.031463224440813065,
+          "words": [
+            {
+              "start": 983.7,
+              "end": 984.06,
+              "word": " Nein!",
+              "probability": 0.1719892919063568
+            }
+          ]
+        },
+        {
+          "start": 985.6,
+          "end": 987.02,
+          "text": "Alles in Ordnung, Masse?",
+          "avg_logprob": -0.7707142909367879,
+          "no_speech_prob": 0.031463224440813065,
+          "words": [
+            {
+              "start": 985.6,
+              "end": 986.18,
+              "word": " Alles",
+              "probability": 0.1251191794872284
+            },
+            {
+              "start": 986.18,
+              "end": 986.38,
+              "word": " in",
+              "probability": 0.13156643509864807
+            },
+            {
+              "start": 986.38,
+              "end": 986.7,
+              "word": " Ordnung,",
+              "probability": 0.9944831430912018
+            },
+            {
+              "start": 986.76,
+              "end": 987.02,
+              "word": " Masse?",
+              "probability": 0.532839797437191
+            }
+          ]
+        }
+      ],
+      "label": "cand6_gap"
+    },
+    {
+      "candidate": 6,
+      "start": 985.2,
+      "end": 987.55,
+      "segments": [
+        {
+          "start": 985.76,
+          "end": 987.02,
+          "text": "Alles in Ordnung, Masse?",
+          "avg_logprob": -0.6115451184186068,
+          "no_speech_prob": 0.12165123224258423,
+          "words": [
+            {
+              "start": 985.76,
+              "end": 986.2,
+              "word": " Alles",
+              "probability": 0.6864233016967773
+            },
+            {
+              "start": 986.2,
+              "end": 986.38,
+              "word": " in",
+              "probability": 0.21346086263656616
+            },
+            {
+              "start": 986.38,
+              "end": 986.7,
+              "word": " Ordnung,",
+              "probability": 0.9972452819347382
+            },
+            {
+              "start": 986.76,
+              "end": 987.02,
+              "word": " Masse?",
+              "probability": 0.5229930132627487
+            }
+          ]
+        }
+      ],
+      "label": "cand6_tight"
+    },
+    {
+      "candidate": 7,
+      "start": 1155.0,
+      "end": 1157.6,
+      "segments": [
+        {
+          "start": 1155.0,
+          "end": 1156.3,
+          "text": "Geht mal zur Seite!",
+          "avg_logprob": -0.3032289081149631,
+          "no_speech_prob": 0.1740044504404068,
+          "words": [
+            {
+              "start": 1155.0,
+              "end": 1155.7,
+              "word": " Geht",
+              "probability": 0.9034314453601837
+            },
+            {
+              "start": 1155.7,
+              "end": 1155.84,
+              "word": " mal",
+              "probability": 0.9009977579116821
+            },
+            {
+              "start": 1155.84,
+              "end": 1155.98,
+              "word": " zur",
+              "probability": 0.997016191482544
+            },
+            {
+              "start": 1155.98,
+              "end": 1156.3,
+              "word": " Seite!",
+              "probability": 0.9976457953453064
+            }
+          ]
+        }
+      ],
+      "label": "cand7_gap_ch7"
+    },
+    {
+      "candidate": 8,
+      "start": 1168.5,
+      "end": 1170.95,
+      "segments": [
+        {
+          "start": 1168.5,
+          "end": 1170.0,
+          "text": "Aufzunaggen!",
+          "avg_logprob": -0.9343268076578776,
+          "no_speech_prob": 0.07804027944803238,
+          "words": [
+            {
+              "start": 1168.5,
+              "end": 1170.0,
+              "word": " Aufzunaggen!",
+              "probability": 0.4198506623506546
+            }
+          ]
+        }
+      ],
+      "label": "cand8_post_spell"
+    },
+    {
+      "candidate": 9,
+      "start": 1340.0,
+      "end": 1342.3,
+      "segments": [
+        {
+          "start": 1340.0,
+          "end": 1341.16,
+          "text": "Könnte dir schmecken?",
+          "avg_logprob": -0.3744180467393663,
+          "no_speech_prob": 0.012506193481385708,
+          "words": [
+            {
+              "start": 1340.0,
+              "end": 1340.68,
+              "word": " Könnte",
+              "probability": 0.7904691696166992
+            },
+            {
+              "start": 1340.68,
+              "end": 1340.78,
+              "word": " dir",
+              "probability": 0.8148049116134644
+            },
+            {
+              "start": 1340.78,
+              "end": 1341.16,
+              "word": " schmecken?",
+              "probability": 0.995881199836731
+            }
+          ]
+        }
+      ],
+      "label": "cand9_koennte_schmecken"
+    }
+  ]
+}

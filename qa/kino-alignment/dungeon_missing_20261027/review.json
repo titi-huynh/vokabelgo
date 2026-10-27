@@ -1,0 +1,1418 @@
+{
+  "movieId": "delicious_in_dungeon_s01e01",
+  "title": "Delicious in Dungeon — Tập 1 (S01E01)",
+  "date": "2026-10-27",
+  "status": "verified_for_branch_review_machine_evidence",
+  "sourceVideo": "C:\\Users\\huynh\\OneDrive\\Desktop\\flash\\video\\delicious_in_dungeon_s01e01.mp4",
+  "sourceVideoSha256": "26caef638d8ece51c536ab109adbd0bb5640e998644d58db77ba59846f08832f",
+  "alignedJs": "delicious-in-dungeon-s01e01-aligned.js",
+  "alignedJsSha256": "bcc48b8eb23b93c11b890ee4c58412af8580b6113945280bea5154febac3cdb2",
+  "lessonJs": "delicious-in-dungeon-s01e01-lesson.js",
+  "lessonJsSha256": "a7a9bc36dcacb67019823ad09fb3d19e7065b0988643e454b3edd8b611ed9279",
+  "candidateFile": "qa/kino-alignment/dungeon_missing_20261027/muse-candidates.json",
+  "candidateSha256": "d1965813373625b89d8805913ada6c3989e0125ad52a2f3002b41c33cdd60c2a",
+  "sourceDraftFile": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+  "sourceDraftSha256": "ab553dd09cdb31757f3ea055d3e3689635f83d730e7da57ce9c507bcca7356ff",
+  "baselineSnapshotFile": "qa/kino-alignment/dungeon_missing_20261027/baseline-cues-367.json",
+  "independentEvidence": [
+    "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-small-tight.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-medium-tight.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-small-context.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-medium-context.json",
+    "qa/kino-alignment/dungeon_missing_20261027/extra_tight_spec.json",
+    "qa/kino-alignment/dungeon_missing_20261027/extra_context_spec.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-small-cue1200388-recheck.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-medium-cue1200388-recheck.json",
+    "qa/kino-alignment/dungeon_missing_20261027/extra_cue1200388_spec.json"
+  ],
+  "method": {
+    "humanListened": false,
+    "externalAudioUpload": false,
+    "asrModels": [
+      "faster-whisper small (int8, CPU)",
+      "faster-whisper medium (int8, CPU)"
+    ],
+    "asrOptions": {
+      "language": "de",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "word_timestamps": true,
+      "condition_on_previous_text": false,
+      "vad_filter": false,
+      "local_files_only": true,
+      "cpu_threads": 3,
+      "initial_prompt": null,
+      "hotwords": null
+    },
+    "idPolicy": "Giữ nguyên 367 cue cũ và các ID dự thảo <=1200384. Giữ ID mới 1200385–1200387, 1200389–1200390; ID 1200388 dành riêng cho reviewNeeded, không tái sử dụng hay đánh lại ID các câu đã push.",
+    "normalizationPolicy": "Chỉ chuẩn hóa dấu câu và hoa/thường cho cue thêm. Không dùng tên chuẩn để sửa các âm tên riêng chưa chốt; ba đề xuất như vậy được chuyển sang reviewNeeded.",
+    "countingMethod": "Xét đầy đủ cả 10 cửa sổ ứng viên (1..10). Các lượt thoại ngắn được tách thành từng câu độc lập. Một cửa sổ ứng viên có thể vừa chứa câu được đề xuất thêm (added), phần bị loại trừ (excluded - trùng cue kề, thần chú ngôn ngữ hư cấu, nhạc kết tập, tiếng hét phi từ vựng/ảo giác ASR) và phần cần người duyệt thêm (reviewNeeded).",
+    "totalRecognitionWindows": 66
+  },
+  "counts": {
+    "candidates": 10,
+    "previousCueCount": 367,
+    "newCueCount": 372,
+    "addedCues": 5,
+    "adjustedExistingCues": 0,
+    "excludedParts": 9,
+    "reviewNeededParts": 10,
+    "windowsWithAddedCues": 3,
+    "windowsWithExcludedParts": 8,
+    "windowsWithReviewNeededParts": 9
+  },
+  "added": [
+    {
+      "id": 1200385,
+      "parentId": 1200385,
+      "candidate": 1,
+      "start": 71.17,
+      "end": 73.05,
+      "rawStart": 71.17,
+      "rawEnd": 73.05,
+      "speaker": "Laios",
+      "text": "Wenn wir ihn besiegt haben, können wir verschnaufen!",
+      "vi": "Hạ xong nó rồi, chúng ta có thể nghỉ lấy hơi!",
+      "sourceDraftIds": [],
+      "smallText": "Wenn wir ihn besiegt haben, können wir verschnaufen.",
+      "mediumText": "Wenn wir ihn besiegt haben, können wir verschnaufen!",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 71.17,
+            "end": 71.31,
+            "word": " Wenn",
+            "probability": 0.9910003542900085
+          },
+          {
+            "start": 71.31,
+            "end": 71.45,
+            "word": " wir",
+            "probability": 0.9959304928779602
+          },
+          {
+            "start": 71.45,
+            "end": 71.55,
+            "word": " ihn",
+            "probability": 0.9890241622924805
+          },
+          {
+            "start": 71.55,
+            "end": 71.95,
+            "word": " besiegt",
+            "probability": 0.9935764670372009
+          },
+          {
+            "start": 71.95,
+            "end": 72.13,
+            "word": " haben,",
+            "probability": 0.997258186340332
+          },
+          {
+            "start": 72.29,
+            "end": 72.33,
+            "word": " können",
+            "probability": 0.9906161427497864
+          },
+          {
+            "start": 72.33,
+            "end": 72.49,
+            "word": " wir",
+            "probability": 0.9992104768753052
+          },
+          {
+            "start": 72.49,
+            "end": 73.05,
+            "word": " verschnaufen!",
+            "probability": 0.949002186457316
+          }
+        ]
+      },
+      "smallEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 71.21,
+            "end": 71.25,
+            "word": " Wenn",
+            "probability": 0.965457022190094
+          },
+          {
+            "start": 71.25,
+            "end": 71.39,
+            "word": " wir",
+            "probability": 0.9954916834831238
+          },
+          {
+            "start": 71.39,
+            "end": 71.47,
+            "word": " ihn",
+            "probability": 0.9838645458221436
+          },
+          {
+            "start": 71.47,
+            "end": 71.83,
+            "word": " besiegt",
+            "probability": 0.9812846978505453
+          },
+          {
+            "start": 71.83,
+            "end": 72.05,
+            "word": " haben,",
+            "probability": 0.9983217120170593
+          },
+          {
+            "start": 72.19,
+            "end": 72.29,
+            "word": " können",
+            "probability": 0.9934399724006653
+          },
+          {
+            "start": 72.29,
+            "end": 72.41,
+            "word": " wir",
+            "probability": 0.9987418055534363
+          },
+          {
+            "start": 72.41,
+            "end": 72.93,
+            "word": " verschnaufen.",
+            "probability": 0.7941364248593649
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 71.17,
+            "end": 71.31,
+            "word": " Wenn",
+            "probability": 0.9910003542900085
+          },
+          {
+            "start": 71.31,
+            "end": 71.45,
+            "word": " wir",
+            "probability": 0.9959304928779602
+          },
+          {
+            "start": 71.45,
+            "end": 71.55,
+            "word": " ihn",
+            "probability": 0.9890241622924805
+          },
+          {
+            "start": 71.55,
+            "end": 71.95,
+            "word": " besiegt",
+            "probability": 0.9935764670372009
+          },
+          {
+            "start": 71.95,
+            "end": 72.13,
+            "word": " haben,",
+            "probability": 0.997258186340332
+          },
+          {
+            "start": 72.29,
+            "end": 72.33,
+            "word": " können",
+            "probability": 0.9906161427497864
+          },
+          {
+            "start": 72.33,
+            "end": 72.49,
+            "word": " wir",
+            "probability": 0.9992104768753052
+          },
+          {
+            "start": 72.49,
+            "end": 73.05,
+            "word": " verschnaufen!",
+            "probability": 0.949002186457316
+          }
+        ]
+      },
+      "normalization": "Chỉ chuẩn hóa hoa/thường và dấu câu; không đổi từ, tên riêng hoặc ngữ pháp.",
+      "note": "Mốc bao phủ các từ của hai lượt nhận dạng được dẫn nguồn, không thêm khoảng đệm hoặc cắt từ để vừa cue/chương.",
+      "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
+    },
+    {
+      "id": 1200386,
+      "parentId": 1200386,
+      "candidate": 1,
+      "start": 73.71,
+      "end": 74.33,
+      "rawStart": 73.71,
+      "rawEnd": 74.33,
+      "speaker": "Laios",
+      "text": "Na los!",
+      "vi": "Tiến lên nào!",
+      "sourceDraftIds": [],
+      "smallText": "Na los!",
+      "mediumText": "Na los!",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 73.91,
+            "end": 74.03,
+            "word": " Na",
+            "probability": 0.8991466760635376
+          },
+          {
+            "start": 74.03,
+            "end": 74.33,
+            "word": " los!",
+            "probability": 0.9012694954872131
+          }
+        ]
+      },
+      "smallEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 73.71,
+            "end": 73.93,
+            "word": " Na",
+            "probability": 0.9652619361877441
+          },
+          {
+            "start": 73.93,
+            "end": 74.15,
+            "word": " los!",
+            "probability": 0.5377609133720398
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 1,
+        "words": [
+          {
+            "start": 73.91,
+            "end": 74.03,
+            "word": " Na",
+            "probability": 0.8991466760635376
+          },
+          {
+            "start": 74.03,
+            "end": 74.33,
+            "word": " los!",
+            "probability": 0.9012694954872131
+          }
+        ]
+      },
+      "normalization": "Chỉ chuẩn hóa hoa/thường và dấu câu; không đổi từ, tên riêng hoặc ngữ pháp.",
+      "note": "Mốc bao phủ các từ của hai lượt nhận dạng được dẫn nguồn, không thêm khoảng đệm hoặc cắt từ để vừa cue/chương.",
+      "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
+    },
+    {
+      "candidate": 4,
+      "text": "Ja.",
+      "vi": "Ừ.",
+      "speaker": "Nhóm thám hiểm",
+      "rawStart": 324.09,
+      "rawEnd": 324.43,
+      "sourceDraftIds": [],
+      "smallEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+        "candidate": 4,
+        "words": [
+          {
+            "start": 324.11,
+            "end": 324.31,
+            "word": " ja.",
+            "probability": 0.9590084552764893
+          }
+        ]
+      },
+      "smallText": "ja.",
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 4,
+        "words": [
+          {
+            "start": 324.09,
+            "end": 324.43,
+            "word": " ja.",
+            "probability": 0.9802432656288147
+          }
+        ]
+      },
+      "mediumText": "ja.",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 4,
+        "words": [
+          {
+            "start": 324.09,
+            "end": 324.43,
+            "word": " ja.",
+            "probability": 0.9802432656288147
+          }
+        ]
+      },
+      "start": 324.09,
+      "end": 324.43,
+      "normalization": "Chỉ chuẩn hóa hoa/thường và dấu câu; không đổi từ, tên riêng hoặc ngữ pháp.",
+      "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+      "note": "Mốc bao phủ các từ của hai lượt nhận dạng được dẫn nguồn, không thêm khoảng đệm hoặc cắt từ để vừa cue/chương.",
+      "id": 1200387,
+      "parentId": 1200387
+    },
+    {
+      "id": 1200389,
+      "parentId": 1200389,
+      "candidate": 9,
+      "start": 1336.25,
+      "end": 1338.29,
+      "rawStart": 1336.25,
+      "rawEnd": 1338.29,
+      "speaker": "Chilchuck",
+      "text": "Die ist echt gut.",
+      "vi": "Món này ngon thật đấy.",
+      "sourceDraftIds": [
+        1200356
+      ],
+      "smallText": "Die ist echt gut.",
+      "mediumText": "Die ist echt gut.",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-context.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1336.81,
+            "end": 1337.31,
+            "word": " Die",
+            "probability": 0.7014943361282349
+          },
+          {
+            "start": 1337.31,
+            "end": 1337.49,
+            "word": " ist",
+            "probability": 0.9814276695251465
+          },
+          {
+            "start": 1337.49,
+            "end": 1337.77,
+            "word": " echt",
+            "probability": 0.9965257048606873
+          },
+          {
+            "start": 1337.77,
+            "end": 1338.29,
+            "word": " gut.",
+            "probability": 0.9916642904281616
+          }
+        ]
+      },
+      "smallEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small-context.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1336.25,
+            "end": 1337.27,
+            "word": " Die",
+            "probability": 0.24681814014911652
+          },
+          {
+            "start": 1337.27,
+            "end": 1337.41,
+            "word": " ist",
+            "probability": 0.9919633865356445
+          },
+          {
+            "start": 1337.41,
+            "end": 1337.61,
+            "word": " echt",
+            "probability": 0.9936908483505249
+          },
+          {
+            "start": 1337.61,
+            "end": 1337.93,
+            "word": " gut.",
+            "probability": 0.9873533248901367
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-context.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1336.81,
+            "end": 1337.31,
+            "word": " Die",
+            "probability": 0.7014943361282349
+          },
+          {
+            "start": 1337.31,
+            "end": 1337.49,
+            "word": " ist",
+            "probability": 0.9814276695251465
+          },
+          {
+            "start": 1337.49,
+            "end": 1337.77,
+            "word": " echt",
+            "probability": 0.9965257048606873
+          },
+          {
+            "start": 1337.77,
+            "end": 1338.29,
+            "word": " gut.",
+            "probability": 0.9916642904281616
+          }
+        ]
+      },
+      "normalization": "Chỉ chuẩn hóa hoa/thường và dấu câu; không đổi từ, tên riêng hoặc ngữ pháp.",
+      "note": "Mốc bao phủ các từ của hai lượt nhận dạng được dẫn nguồn, không thêm khoảng đệm hoặc cắt từ để vừa cue/chương.",
+      "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
+    },
+    {
+      "id": 1200390,
+      "parentId": 1200390,
+      "candidate": 9,
+      "start": 1340.34,
+      "end": 1341.18,
+      "rawStart": 1340.34,
+      "rawEnd": 1341.18,
+      "speaker": "Chilchuck",
+      "text": "Könnte dir schmecken.",
+      "vi": "Biết đâu lại hợp khẩu vị của cô.",
+      "sourceDraftIds": [
+        1200356
+      ],
+      "smallText": "Könnte dir schmecken?",
+      "mediumText": "könnte dir schmecken",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1340.42,
+            "end": 1340.7,
+            "word": " könnte",
+            "probability": 0.48904290795326233
+          },
+          {
+            "start": 1340.7,
+            "end": 1340.9,
+            "word": " dir",
+            "probability": 0.8795201182365417
+          },
+          {
+            "start": 1340.9,
+            "end": 1341.18,
+            "word": " schmecken",
+            "probability": 0.9932981133460999
+          }
+        ]
+      },
+      "smallEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1340.34,
+            "end": 1340.68,
+            "word": " Könnte",
+            "probability": 0.7576776444911957
+          },
+          {
+            "start": 1340.68,
+            "end": 1340.78,
+            "word": " dir",
+            "probability": 0.9211339950561523
+          },
+          {
+            "start": 1340.78,
+            "end": 1341.16,
+            "word": " schmecken?",
+            "probability": 0.9975650608539581
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 1340.42,
+            "end": 1340.7,
+            "word": " könnte",
+            "probability": 0.48904290795326233
+          },
+          {
+            "start": 1340.7,
+            "end": 1340.9,
+            "word": " dir",
+            "probability": 0.8795201182365417
+          },
+          {
+            "start": 1340.9,
+            "end": 1341.18,
+            "word": " schmecken",
+            "probability": 0.9932981133460999
+          }
+        ]
+      },
+      "normalization": "Chỉ chuẩn hóa hoa/thường và dấu câu; không đổi từ, tên riêng hoặc ngữ pháp.",
+      "note": "Mốc bao phủ các từ của hai lượt nhận dạng được dẫn nguồn, không thêm khoảng đệm hoặc cắt từ để vừa cue/chương.",
+      "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
+    }
+  ],
+  "excluded": [
+    {
+      "candidate": 3,
+      "window": [
+        111.41,
+        115.02
+      ],
+      "museRange": [
+        113.93,
+        115.02
+      ],
+      "smallText": "Wurde sie mit einem Pevel... (113.93-114.99s)",
+      "mediumText": "Wurde sie mit einem Pfeffer? (114.03-114.97s)",
+      "classification": "excluded_duplicate_existing_cue",
+      "reason": "Không thêm trùng đầu cue 1200016 (114.00–115.78s). Câu hỏi có tên Falin phía trước vẫn cần duyệt.",
+      "sourceCandidateAsr": [
+        "Was ist los, Vali?",
+        "Wurde sie mit einem verwirrten..."
+      ]
+    },
+    {
+      "candidate": 4,
+      "window": [
+        321.17,
+        325.93
+      ],
+      "museRange": [
+        321.17,
+        321.95
+      ],
+      "smallText": "Passieren mag? (321.17-321.79s)",
+      "mediumText": "Passieren mag? (321.17-321.95s)",
+      "classification": "excluded_duplicate_existing_cue",
+      "reason": "Không thêm trùng đuôi cue 1200078 (316.66–322.08s). Tiếng ngập ngừng và Ja. được xét riêng.",
+      "sourceCandidateAsr": [
+        "Passieren mag?",
+        "Äh...",
+        "Äh... ja."
+      ]
+    },
+    {
+      "candidate": 5,
+      "window": [
+        395.77,
+        399.24
+      ],
+      "museRange": [
+        395.77,
+        399.24
+      ],
+      "smallText": "(no segments on main; cand5_with_neighbors nhận câu 398.06-400.56s: 'Die sind noch nicht lange im Dungeon, oder?')",
+      "mediumText": "NOOOOOBS! (396.61-397.03s) ... Die sind noch- (398.69-399.21s)",
+      "classification": "excluded_duplicate_existing_cues",
+      "reason": "Không thêm trùng cue 1200097 (395.98–396.86s) và đầu cue 1200098 (398.32–400.80s). Tiếng hô ở khe còn reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Hier!",
+        "Die sind noch..."
+      ]
+    },
+    {
+      "candidate": 6,
+      "window": [
+        982.84,
+        988.59
+      ],
+      "museRange": [
+        982.84,
+        988.59
+      ],
+      "smallText": "dann schon erst (982.84-983.46s) ... ich bin über ein (987.80-988.56s)",
+      "mediumText": "Dungeon Nest. (982.84-983.72s) ... Ich bin über ein... (987.88-988.56s)",
+      "classification": "excluded_duplicate_existing_cues",
+      "reason": "Không thêm trùng đuôi cue 1200252 (981.40–983.66s) và đầu cue 1200254 (987.64–989.98s). Phản ứng và câu hỏi có tên ở giữa vẫn cần duyệt.",
+      "sourceCandidateAsr": [
+        "Dungeon Nest. Alles in Ordnung, Marcel? Ich bin über ein..."
+      ]
+    },
+    {
+      "candidate": 7,
+      "window": [
+        1152.79,
+        1158.47
+      ],
+      "museRange": [
+        1152.79,
+        1158.47
+      ],
+      "smallText": "kämpfen (1152.79-1153.39s)",
+      "mediumText": "kämpfen (1154.41-1155.19s) ... ich werde sie (1156.65-1158.37s)",
+      "classification": "excluded_duplicate_existing_cues",
+      "reason": "Không thêm trùng đuôi cue 1200307 (1151.56–1154.24s) và đầu cue 1200309 (1157.66–1159.88s). Phát ngôn ở giữa được giữ reviewNeeded vì Geht/Geh bất đồng khi đổi crop.",
+      "sourceCandidateAsr": [
+        "Kämpfen.",
+        "Geht mal zur Seite.",
+        "Hm?",
+        "Ich werde sie..."
+      ]
+    },
+    {
+      "candidate": 8,
+      "window": [
+        1159.7,
+        1171.53
+      ],
+      "museRange": [
+        1159.7,
+        1168.64
+      ],
+      "smallText": "Spiele E. Jepton Lufens. | Alamando Aspojo. | Nexanto Aslas! (1159.70-1168.28s)",
+      "mediumText": "Späler e Jepton Lufelsk, Halaman Doas Fodju, Hextanto Aslas! (1160.82-1168.64s)",
+      "classification": "excluded_fictional_magic_incantation",
+      "reason": "Giữ ngoài phụ đề học phần niệm chú 1159.88–1168.60s theo quy ước sẵn có của tập. Hai model cho các chuỗi âm khác nhau, không có lời Đức đáng tin cậy; không sửa thần chú thành tiếng Đức chuẩn. Câu quát sau đó xét reviewNeeded riêng.",
+      "sourceCandidateAsr": [
+        "Späler e Jepton Lufels.",
+        "Halaman Doas Hojo.",
+        "Hexan Tor Aslas!",
+        "Hör auf du Nergl!",
+        "Äh, wieso?"
+      ]
+    },
+    {
+      "candidate": 8,
+      "window": [
+        1159.7,
+        1171.53
+      ],
+      "museRange": [
+        1170.36,
+        1171.53
+      ],
+      "smallText": "Äh, wieso? (1170.36-1171.34s)",
+      "mediumText": "Äh, wieso? (1170.38-1171.44s)",
+      "classification": "excluded_duplicate_existing_cue",
+      "reason": "Không thêm trùng đầu cue 1200311 (1170.98–1171.88s); câu quát phía trước chưa chốt được từ cuối.",
+      "sourceCandidateAsr": [
+        "Späler e Jepton Lufels.",
+        "Halaman Doas Hojo.",
+        "Hexan Tor Aslas!",
+        "Hör auf du Nergl!",
+        "Äh, wieso?"
+      ]
+    },
+    {
+      "candidate": 9,
+      "window": [
+        1339.06,
+        1342.95
+      ],
+      "museRange": [
+        1341.94,
+        1342.95
+      ],
+      "smallText": "Die f... (1341.94-1342.72s)",
+      "mediumText": "(no segment after 1341.18s)",
+      "classification": "excluded_duplicate_existing_cue",
+      "reason": "Không thêm trùng đầu cue 1200357 (1342.38–1345.74s). Hai câu được khôi phục trong khoảng trống phía trước nằm ngoài cue này.",
+      "sourceCandidateAsr": [
+        "Mal Masse könnte dir schmecken"
+      ]
+    },
+    {
+      "candidate": 10,
+      "window": [
+        1454.26,
+        1502.76
+      ],
+      "museRange": [
+        1455.46,
+        1501.56
+      ],
+      "smallText": "Ja, ich glaube, das ist das, was wir hier haben. | Das ist das, was wir hier haben. (x8, 1484.26-1502.66s, no_speech_prob=0.779)",
+      "mediumText": "(no segments across entire 1454.26-1502.76s window)",
+      "classification": "excluded_ending_theme_song_and_asr_hallucination",
+      "reason": "Nhạc kết/credit: earshot-ending.json cho Music 0,73; medium không có segment, small sinh chuỗi lời không ổn định. Giữ ngoài phụ đề theo quy ước không thêm lời bài hát; không coi chuỗi ASR vô nghĩa là thoại Đức.",
+      "sourceCandidateAsr": [
+        "Die Lichter, die sich von der Tür aus aus der Wand ausklappen, sind die ersten Freunde, die sich die Klappen von den Händen von der Erde ausklappen.",
+        "Sie wurden dann in der Träume geführt.",
+        "Einige Verständnisse sind auf die Klappen gesiedelt.",
+        "Manchmal ist es so, dass der Maul sich im Boden befindet.",
+        "Die Regen sind so leise, dass man sich nicht mehr wachsend fühlt.",
+        "Das war's für heute.",
+        "Bis zum nächsten Mal.",
+        "Tschüss."
+      ]
+    }
+  ],
+  "reviewNeeded": [
+    {
+      "candidate": 1,
+      "window": [
+        68.85,
+        75.91
+      ],
+      "museRange": [
+        69.79,
+        70.89
+      ],
+      "smallText": "Halte durch, Freunde. (main: 69.79-70.79s) | Ah, der Deutschmann! (cand1_haltet: 69.82-70.72s) | Halte Durchfreunde! (cand1_full_gap: 69.90-70.86s)",
+      "mediumText": "Haltet durch, Freunde! (main: 69.91-70.89s; cand1_full_gap: 69.88-70.90s) | Halte durch, Freude! (cand1_haltet: 69.92-70.92s)",
+      "classification": "review_needed_asr_grammar_disagreement",
+      "reason": "Câu đầu của cửa sổ #1 (69.79-70.89s) bất đồng hình thái chia động từ mệnh lệnh giữa small ('Halte durch, Freunde.' / 'Halte Durchfreunde!' / 'Ah, der Deutschmann!') và medium ('Haltet durch, Freunde!' ở main/context, nhưng 'Halte durch, Freude!' ở tight). Theo quy tắc không âm thầm sửa ngữ pháp của ASR khi small không xác nhận hình thái số nhiều 'Haltet', giữ câu ngắn đầu này ở reviewNeeded (hai câu tiếp theo trong cùng cửa sổ là 'Wenn wir ihn besiegt haben, können wir verschnaufen!' và 'Na los!' đã được cả hai model xác nhận tuyệt đối và tách vào added).",
+      "sourceCandidateAsr": [
+        "Haltet durch, Freunde! Wenn wir ihn besiegt haben, können wir verschnaufen!",
+        "Na los!"
+      ]
+    },
+    {
+      "candidate": 2,
+      "window": [
+        79.09,
+        83.91
+      ],
+      "museRange": [
+        80.29,
+        82.71
+      ],
+      "classification": "review_needed_no_stable_lexical_recognition",
+      "reason": "Đã kiểm cả cửa sổ chính, bốn cửa sổ hẹp và hai cửa sổ rộng. Small không xác nhận được lời Đức ở khe; medium sinh câu kết video không phù hợp hoặc Ah/Hää kéo dài, hay không có segment. Earshot Music 0,48 / Speech 0,33 chỉ là phân loại âm thanh, chưa đủ kết luận đây hoàn toàn là tiếng hét phi từ vựng. Giữ reviewNeeded, không thêm cue."
+    },
+    {
+      "candidate": 3,
+      "window": [
+        111.41,
+        115.02
+      ],
+      "museRange": [
+        112.49,
+        113.47
+      ],
+      "suggestedText": "Was ist los, Falin?",
+      "smallText": "Was ist los, Falli?",
+      "mediumText": "Was ist los, Vali?",
+      "classification": "review_needed_uncertain_name_not_repaired",
+      "reason": "Các lượt độc lập chỉ cho biến thể tên trong “Was ist los, Falli?” / “Was ist los, Vali?”. Biết tên nhân vật trong cue cũ chưa đủ chứng minh âm cuối ở phát ngôn này. Không tự đổi thành Falin/Marcille để chấm chính tả; giữ toàn bộ câu này chờ người nghe duyệt."
+    },
+    {
+      "candidate": 4,
+      "window": [
+        321.17,
+        325.93
+      ],
+      "museRange": [
+        322.12,
+        323.94
+      ],
+      "smallText": "Äh... (322.65-323.45s) | Äh, ja. (323.45-324.31s; cand4_gap: 'Äh, äh, ja.' 322.12-324.30s)",
+      "mediumText": "Uhh... (323.17-323.61s) | Uh, ja. (323.61-324.43s; cand4_gap: 'Ah... | Ah, ja...' 322.12-324.74s)",
+      "classification": "review_needed_crosses_chapter_boundary_and_hesitation_disagreement",
+      "reason": "Giữ riêng các tiếng ngập ngừng 322.12–323.94s: small chép Äh/Äh, medium chép Uhh/Uh hoặc Ah, độ tin cậy thấp. Từ Ja. ở 324.09–324.43s đã khớp literal small và medium, được tách thành cue mới nằm trọn sau ranh giới chương 324.0s; không cắt bất kỳ từ nào.",
+      "sourceCandidateAsr": [
+        "Passieren mag?",
+        "Äh...",
+        "Äh... ja."
+      ]
+    },
+    {
+      "candidate": 5,
+      "window": [
+        395.77,
+        399.24
+      ],
+      "museRange": [
+        396.97,
+        398.04
+      ],
+      "smallText": "(no segments on main and cand5_with_neighbors) | Ja! (cand5_gap: 396.88-397.32s, prob=0.329, no_speech_prob=0.470)",
+      "mediumText": "Hier! (main: 397.21-397.43s, prob=0.104, no_speech_prob=0.833; cand5_gap: 396.88-397.42s, prob=0.120, no_speech_prob=0.644; cand5_with_neighbors: không ghi nhận)",
+      "classification": "review_needed_model_disagreement_and_low_confidence",
+      "reason": "Trong khe hẹp 1.46s giữa cue 1200097 (395.98-396.86s: 'Rettet uns!') và cue 1200098 (398.32-400.80s: 'Die sind noch nicht lange im Dungeon, oder?'), cả hai model đều không nhận được từ nào khi chạy kèm ngữ cảnh hai bên (cand5_with_neighbors), còn khi cắt hẹp thì bất đồng và độ tự tin rất thấp (small: trống ở main, 'Ja!' prob=0.329 ở tight; medium: 'Hier!' prob=0.104-0.120, no_speech_prob=0.644-0.833). Giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Hier!",
+        "Die sind noch..."
+      ]
+    },
+    {
+      "candidate": 6,
+      "window": [
+        982.84,
+        988.59
+      ],
+      "museRange": [
+        983.7,
+        985.02
+      ],
+      "smallText": "(no segments in 983.70-985.60s on main) | Nein! (cand6_gap: 983.70-984.06s, prob=0.172)",
+      "mediumText": "(no segments in 983.72-985.82s on main) | Ah! (983.70-984.20s, prob=0.153) | Hm? (984.80-985.02s, prob=0.184) on cand6_gap",
+      "classification": "review_needed_low_confidence_exclamation_disagreement",
+      "reason": "Phản ứng giật mình 983.70–985.02s không ra chữ ở các lượt chính; khi cắt hẹp small cho Nein!, medium cho Ah!/Hm? với độ tin cậy thấp. Giữ reviewNeeded; cả câu hỏi có tên nhân vật sau đó cũng được giữ riêng để duyệt.",
+      "sourceCandidateAsr": [
+        "Dungeon Nest. Alles in Ordnung, Marcel? Ich bin über ein..."
+      ]
+    },
+    {
+      "candidate": 6,
+      "window": [
+        982.84,
+        988.59
+      ],
+      "museRange": [
+        985.82,
+        987.02
+      ],
+      "suggestedText": "Alles in Ordnung, Marcille?",
+      "smallText": "Alles in Ordnung, Masse?",
+      "mediumText": "Alles in Ordnung, Marcel?",
+      "classification": "review_needed_uncertain_name_not_repaired",
+      "reason": "Phản ứng giật mình 983.70–985.02s không ra chữ ở các lượt chính; khi cắt hẹp small cho Nein!, medium cho Ah!/Hm? với độ tin cậy thấp. Giữ reviewNeeded; cả câu hỏi có tên nhân vật sau đó cũng được giữ riêng để duyệt."
+    },
+    {
+      "candidate": 7,
+      "window": [
+        1152.79,
+        1158.47
+      ],
+      "museRange": [
+        1155.03,
+        1156.65
+      ],
+      "reservedCueId": 1200388,
+      "suggestedAlternatives": [
+        "Geht mal zur Seite!",
+        "Geh mal zur Seite!"
+      ],
+      "classification": "review_needed_verb_inflection_disagrees_on_isolated_crop",
+      "reason": "Kiểm lại cue 1200388 sau phản biện của Muse: trên cùng crop hẹp 1154.70–1157.10s, small ghi “Geht mal zur Seite!”, medium ghi “Geh mal zur Seite!”. Crop có ngữ cảnh 1151.30–1160.10s cho “Geht” ở cả hai model. Như vậy dạng động từ đổi theo crop; ngữ cảnh nói với nhóm không chứng minh được âm /t/. Chưa có người nghe duyệt; không sửa Geht thành Geh hoặc chốt bằng đa số ASR. Rút toàn bộ cue khỏi captions/practice/picks/flashcards, giữ ID 1200388 để duyệt, không tái sử dụng hoặc đổi ID 1200389/1200390.",
+      "previousBranchCue": {
+        "id": 1200388,
+        "parentId": 1200388,
+        "candidate": 7,
+        "start": 1155.03,
+        "end": 1156.65,
+        "rawStart": 1155.03,
+        "rawEnd": 1156.65,
+        "speaker": "Marcille",
+        "text": "Geht mal zur Seite!",
+        "vi": "Mọi người lùi sang một bên đi!",
+        "sourceDraftIds": [
+          1200308
+        ],
+        "smallText": "Geht mal zur Seite",
+        "mediumText": "geht mal zur seite",
+        "timingEvidence": {
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+          "candidate": 7,
+          "words": [
+            {
+              "start": 1155.19,
+              "end": 1155.77,
+              "word": " geht",
+              "probability": 0.10575781762599945
+            },
+            {
+              "start": 1155.77,
+              "end": 1155.93,
+              "word": " mal",
+              "probability": 0.8571359515190125
+            },
+            {
+              "start": 1155.93,
+              "end": 1156.15,
+              "word": " zur",
+              "probability": 0.9965081810951233
+            },
+            {
+              "start": 1156.15,
+              "end": 1156.65,
+              "word": " seite",
+              "probability": 0.9750043749809265
+            }
+          ]
+        },
+        "smallEvidence": {
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+          "candidate": 7,
+          "words": [
+            {
+              "start": 1155.03,
+              "end": 1155.71,
+              "word": " Geht",
+              "probability": 0.36092528235167265
+            },
+            {
+              "start": 1155.71,
+              "end": 1155.85,
+              "word": " mal",
+              "probability": 0.7539065480232239
+            },
+            {
+              "start": 1155.85,
+              "end": 1155.99,
+              "word": " zur",
+              "probability": 0.9977788329124451
+            },
+            {
+              "start": 1155.99,
+              "end": 1156.33,
+              "word": " Seite",
+              "probability": 0.8896182179450989
+            }
+          ]
+        },
+        "mediumEvidence": {
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+          "candidate": 7,
+          "words": [
+            {
+              "start": 1155.19,
+              "end": 1155.77,
+              "word": " geht",
+              "probability": 0.10575781762599945
+            },
+            {
+              "start": 1155.77,
+              "end": 1155.93,
+              "word": " mal",
+              "probability": 0.8571359515190125
+            },
+            {
+              "start": 1155.93,
+              "end": 1156.15,
+              "word": " zur",
+              "probability": 0.9965081810951233
+            },
+            {
+              "start": 1156.15,
+              "end": 1156.65,
+              "word": " seite",
+              "probability": 0.9750043749809265
+            }
+          ]
+        },
+        "normalization": "Chỉ chuẩn hóa hoa/thường và dấu câu; không đổi từ, tên riêng hoặc ngữ pháp.",
+        "note": "Mốc bao phủ các từ của hai lượt nhận dạng được dẫn nguồn, không thêm khoảng đệm hoặc cắt từ để vừa cue/chương.",
+        "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
+      },
+      "recheckEvidence": [
+        {
+          "model": "small",
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small-cue1200388-recheck.json",
+          "label": "cue1200388_isolated_recheck",
+          "crop": [
+            1154.7,
+            1157.1
+          ],
+          "segment": {
+            "start": 1154.7,
+            "end": 1156.28,
+            "text": "Geht mal zur Seite!",
+            "avg_logprob": -0.3346026473575168,
+            "no_speech_prob": 0.151686891913414,
+            "words": [
+              {
+                "start": 1154.7,
+                "end": 1155.72,
+                "word": " Geht",
+                "probability": 0.8723093569278717
+              },
+              {
+                "start": 1155.72,
+                "end": 1155.84,
+                "word": " mal",
+                "probability": 0.8477068543434143
+              },
+              {
+                "start": 1155.84,
+                "end": 1155.98,
+                "word": " zur",
+                "probability": 0.9969987869262695
+              },
+              {
+                "start": 1155.98,
+                "end": 1156.28,
+                "word": " Seite!",
+                "probability": 0.9966981410980225
+              }
+            ]
+          }
+        },
+        {
+          "model": "small",
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small-cue1200388-recheck.json",
+          "label": "cue1200388_with_neighbors_recheck",
+          "crop": [
+            1151.3,
+            1160.1
+          ],
+          "segment": {
+            "start": 1155.1,
+            "end": 1156.32,
+            "text": "Geht mal zur Seite.",
+            "avg_logprob": -0.20602822800477347,
+            "no_speech_prob": 0.10486465692520142,
+            "words": [
+              {
+                "start": 1155.1,
+                "end": 1155.7,
+                "word": " Geht",
+                "probability": 0.850428432226181
+              },
+              {
+                "start": 1155.7,
+                "end": 1155.84,
+                "word": " mal",
+                "probability": 0.9715560078620911
+              },
+              {
+                "start": 1155.84,
+                "end": 1155.98,
+                "word": " zur",
+                "probability": 0.9993795156478882
+              },
+              {
+                "start": 1155.98,
+                "end": 1156.32,
+                "word": " Seite.",
+                "probability": 0.9984614849090576
+              }
+            ]
+          }
+        },
+        {
+          "model": "medium",
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-cue1200388-recheck.json",
+          "label": "cue1200388_isolated_recheck",
+          "crop": [
+            1154.7,
+            1157.1
+          ],
+          "segment": {
+            "start": 1154.7,
+            "end": 1156.44,
+            "text": "Geh mal zur Seite!",
+            "avg_logprob": -0.6134463946024576,
+            "no_speech_prob": 0.6514695882797241,
+            "words": [
+              {
+                "start": 1154.7,
+                "end": 1155.8,
+                "word": " Geh",
+                "probability": 0.5960298180580139
+              },
+              {
+                "start": 1155.8,
+                "end": 1155.9,
+                "word": " mal",
+                "probability": 0.5161803960800171
+              },
+              {
+                "start": 1155.9,
+                "end": 1156.12,
+                "word": " zur",
+                "probability": 0.9890369772911072
+              },
+              {
+                "start": 1156.12,
+                "end": 1156.44,
+                "word": " Seite!",
+                "probability": 0.9929631352424622
+              }
+            ]
+          }
+        },
+        {
+          "model": "medium",
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-cue1200388-recheck.json",
+          "label": "cue1200388_with_neighbors_recheck",
+          "crop": [
+            1151.3,
+            1160.1
+          ],
+          "segment": {
+            "start": 1155.64,
+            "end": 1156.46,
+            "text": "Geht mal zur Seite.",
+            "avg_logprob": -0.2937914659579595,
+            "no_speech_prob": 0.2682168781757355,
+            "words": [
+              {
+                "start": 1155.64,
+                "end": 1155.8,
+                "word": " Geht",
+                "probability": 0.7248343527317047
+              },
+              {
+                "start": 1155.8,
+                "end": 1155.9,
+                "word": " mal",
+                "probability": 0.8944549560546875
+              },
+              {
+                "start": 1155.9,
+                "end": 1156.14,
+                "word": " zur",
+                "probability": 0.9940353631973267
+              },
+              {
+                "start": 1156.14,
+                "end": 1156.46,
+                "word": " Seite.",
+                "probability": 0.9956770539283752
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "candidate": 8,
+      "window": [
+        1159.7,
+        1171.53
+      ],
+      "museRange": [
+        1168.68,
+        1170.16
+      ],
+      "smallText": "Rauf zu nägeln! (main: 1168.80-1169.98s) | Aufzunaggen! (cand8_post_spell: 1168.50-1170.00s)",
+      "mediumText": "Hör auf, du Nergel! (main: 1169.08-1170.06s) | Hör auf zu nageln! (cand8_post_spell: 1168.50-1170.16s)",
+      "classification": "review_needed_model_disagreement",
+      "reason": "Câu quát của Senshi cắt ngang thần chú của Marcille (1168.80-1170.16s, tương ứng bản nháp 1200310 'Hör auf, du Närrin!' từng gắn cờ uncertain trong muse-two-films) bất đồng mạnh giữa small ('Rauf zu nägeln!' / 'Aufzunaggen!') và medium ('Hör auf, du Nergel!' / 'Hör auf zu nageln!'), và không model nào nhận ra từ 'Närrin'. Không tự sửa bằng chứng máy, giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Späler e Jepton Lufels.",
+        "Halaman Doas Hojo.",
+        "Hexan Tor Aslas!",
+        "Hör auf du Nergl!",
+        "Äh, wieso?"
+      ]
+    },
+    {
+      "candidate": 9,
+      "window": [
+        1339.06,
+        1342.95
+      ],
+      "museRange": [
+        1338.49,
+        1339.61
+      ],
+      "suggestedText": "Probier doch mal, Marcille.",
+      "smallText": "Probier doch mal Masse.",
+      "mediumText": "Probier doch mal Masse.",
+      "classification": "review_needed_uncertain_name_not_repaired",
+      "reason": "Các lượt độc lập chỉ cho biến thể tên trong “Probier doch mal Masse.” / “Probier doch mal Masse.”. Biết tên nhân vật trong cue cũ chưa đủ chứng minh âm cuối ở phát ngôn này. Không tự đổi thành Falin/Marcille để chấm chính tả; giữ toàn bộ câu này chờ người nghe duyệt."
+    }
+  ],
+  "baseRevision": "eed6b2dee89d7abcdcdab2285e1abfcab6ce9a79",
+  "proposalDisposition": "Four proposed utterances retained; three proposed canonical-name repairs withheld; independently confirmed Ja. added; former cue 1200388 withheld after Geht/Geh recheck.",
+  "withdrawnCueIds": [
+    1200388
+  ],
+  "recheck": {
+    "date": "2026-10-27",
+    "previousRevision": "927ac53f740fff83501cffc8d1e0105e38668db6",
+    "cueId": 1200388,
+    "decision": "reviewNeeded",
+    "reason": "Kiểm lại cue 1200388 sau phản biện của Muse: trên cùng crop hẹp 1154.70–1157.10s, small ghi “Geht mal zur Seite!”, medium ghi “Geh mal zur Seite!”. Crop có ngữ cảnh 1151.30–1160.10s cho “Geht” ở cả hai model. Như vậy dạng động từ đổi theo crop; ngữ cảnh nói với nhóm không chứng minh được âm /t/. Chưa có người nghe duyệt; không sửa Geht thành Geh hoặc chốt bằng đa số ASR. Rút toàn bộ cue khỏi captions/practice/picks/flashcards, giữ ID 1200388 để duyệt, không tái sử dụng hoặc đổi ID 1200389/1200390.",
+    "humanListened": false,
+    "museFinding": {
+      "source": "https://muse.ai/thread/8c2d286e-9472-4a7f-8d8f-1f32fa68b43e",
+      "reportedAtLocal": "2026-10-27 17:21",
+      "asReported": "Muse reported Geh in its new ASR, versus Geht in its prior scan and Codex evidence; no human adjudication."
+    },
+    "earshotClassificationOnly": {
+      "crop": [
+        1154.7,
+        1157.1
+      ],
+      "speechProbability": 0.556,
+      "limitation": "Local describe classifies audio; it cannot transcribe German or adjudicate Geh versus Geht."
+    },
+    "recognitionWindows": [
+      {
+        "model": "small",
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small-cue1200388-recheck.json",
+        "label": "cue1200388_isolated_recheck",
+        "crop": [
+          1154.7,
+          1157.1
+        ],
+        "segment": {
+          "start": 1154.7,
+          "end": 1156.28,
+          "text": "Geht mal zur Seite!",
+          "avg_logprob": -0.3346026473575168,
+          "no_speech_prob": 0.151686891913414,
+          "words": [
+            {
+              "start": 1154.7,
+              "end": 1155.72,
+              "word": " Geht",
+              "probability": 0.8723093569278717
+            },
+            {
+              "start": 1155.72,
+              "end": 1155.84,
+              "word": " mal",
+              "probability": 0.8477068543434143
+            },
+            {
+              "start": 1155.84,
+              "end": 1155.98,
+              "word": " zur",
+              "probability": 0.9969987869262695
+            },
+            {
+              "start": 1155.98,
+              "end": 1156.28,
+              "word": " Seite!",
+              "probability": 0.9966981410980225
+            }
+          ]
+        }
+      },
+      {
+        "model": "small",
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small-cue1200388-recheck.json",
+        "label": "cue1200388_with_neighbors_recheck",
+        "crop": [
+          1151.3,
+          1160.1
+        ],
+        "segment": {
+          "start": 1155.1,
+          "end": 1156.32,
+          "text": "Geht mal zur Seite.",
+          "avg_logprob": -0.20602822800477347,
+          "no_speech_prob": 0.10486465692520142,
+          "words": [
+            {
+              "start": 1155.1,
+              "end": 1155.7,
+              "word": " Geht",
+              "probability": 0.850428432226181
+            },
+            {
+              "start": 1155.7,
+              "end": 1155.84,
+              "word": " mal",
+              "probability": 0.9715560078620911
+            },
+            {
+              "start": 1155.84,
+              "end": 1155.98,
+              "word": " zur",
+              "probability": 0.9993795156478882
+            },
+            {
+              "start": 1155.98,
+              "end": 1156.32,
+              "word": " Seite.",
+              "probability": 0.9984614849090576
+            }
+          ]
+        }
+      },
+      {
+        "model": "medium",
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-cue1200388-recheck.json",
+        "label": "cue1200388_isolated_recheck",
+        "crop": [
+          1154.7,
+          1157.1
+        ],
+        "segment": {
+          "start": 1154.7,
+          "end": 1156.44,
+          "text": "Geh mal zur Seite!",
+          "avg_logprob": -0.6134463946024576,
+          "no_speech_prob": 0.6514695882797241,
+          "words": [
+            {
+              "start": 1154.7,
+              "end": 1155.8,
+              "word": " Geh",
+              "probability": 0.5960298180580139
+            },
+            {
+              "start": 1155.8,
+              "end": 1155.9,
+              "word": " mal",
+              "probability": 0.5161803960800171
+            },
+            {
+              "start": 1155.9,
+              "end": 1156.12,
+              "word": " zur",
+              "probability": 0.9890369772911072
+            },
+            {
+              "start": 1156.12,
+              "end": 1156.44,
+              "word": " Seite!",
+              "probability": 0.9929631352424622
+            }
+          ]
+        }
+      },
+      {
+        "model": "medium",
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-cue1200388-recheck.json",
+        "label": "cue1200388_with_neighbors_recheck",
+        "crop": [
+          1151.3,
+          1160.1
+        ],
+        "segment": {
+          "start": 1155.64,
+          "end": 1156.46,
+          "text": "Geht mal zur Seite.",
+          "avg_logprob": -0.2937914659579595,
+          "no_speech_prob": 0.2682168781757355,
+          "words": [
+            {
+              "start": 1155.64,
+              "end": 1155.8,
+              "word": " Geht",
+              "probability": 0.7248343527317047
+            },
+            {
+              "start": 1155.8,
+              "end": 1155.9,
+              "word": " mal",
+              "probability": 0.8944549560546875
+            },
+            {
+              "start": 1155.9,
+              "end": 1156.14,
+              "word": " zur",
+              "probability": 0.9940353631973267
+            },
+            {
+              "start": 1156.14,
+              "end": 1156.46,
+              "word": " Seite.",
+              "probability": 0.9956770539283752
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "chapterAdjustments": []
+}

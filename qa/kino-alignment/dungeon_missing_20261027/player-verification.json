@@ -1,0 +1,215 @@
+{
+  "source": "Unmodified Kino player at http://127.0.0.1:3108, real original and Kino light MP4 files",
+  "checked": 5,
+  "total": 5,
+  "errors": [],
+  "mobile": {
+    "width": 390,
+    "pass": true
+  },
+  "withheldCueId": 1200388,
+  "withheldCueChecks": [
+    {
+      "time": 1155.03,
+      "expectedId": null,
+      "pass": true
+    },
+    {
+      "time": 1155.84,
+      "expectedId": null,
+      "pass": true
+    },
+    {
+      "time": 1156.65,
+      "expectedId": null,
+      "pass": true
+    }
+  ],
+  "results": [
+    {
+      "id": 1200385,
+      "parentId": 1200385,
+      "start": 71.17,
+      "end": 73.05,
+      "speaker": "Laios",
+      "text": "Wenn wir ihn besiegt haben, können wir verschnaufen!",
+      "vi": "Hạ xong nó rồi, chúng ta có thể nghỉ lấy hơi!",
+      "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 71.13,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 72.11,
+          "expectedId": 1200385,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 73.09,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 1607.488,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 1200386,
+      "parentId": 1200386,
+      "start": 73.71,
+      "end": 74.33,
+      "speaker": "Laios",
+      "text": "Na los!",
+      "vi": "Tiến lên nào!",
+      "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 73.66999999999999,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 74.02,
+          "expectedId": 1200386,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 74.37,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 1607.488,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 1200387,
+      "parentId": 1200387,
+      "start": 324.09,
+      "end": 324.43,
+      "speaker": "Nhóm thám hiểm",
+      "text": "Ja.",
+      "vi": "Ừ.",
+      "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 324.04999999999995,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 324.26,
+          "expectedId": 1200387,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 324.47,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 1607.488,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 1200389,
+      "parentId": 1200389,
+      "start": 1336.25,
+      "end": 1338.29,
+      "speaker": "Chilchuck",
+      "text": "Die ist echt gut.",
+      "vi": "Món này ngon thật đấy.",
+      "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 1336.21,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 1337.27,
+          "expectedId": 1200389,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 1338.33,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 1607.488,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 1200390,
+      "parentId": 1200390,
+      "start": 1340.34,
+      "end": 1341.18,
+      "speaker": "Chilchuck",
+      "text": "Könnte dir schmecken.",
+      "vi": "Biết đâu lại hợp khẩu vị của cô.",
+      "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 1340.3,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 1340.76,
+          "expectedId": 1200390,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 1341.22,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 1607.488,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+
+Running 4 tests using 1 worker
+
+(node:27256) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › e2e\kino-new-anime-media.spec.js:9:3 › delicious_in_dungeon_s01e01: web copies are real MP4s, support byte ranges and play after seeking (6.8s)
+(node:43612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [chromium] › e2e\kino-new-anime.spec.js:42:3 › Delicious in Dungeon: vocabulary opens its own reviewed deck without changing course progress (1.4s)
+  ok 3 [chromium] › e2e\kino-new-anime.spec.js:89:3 › Delicious in Dungeon: writing, listening and speaking share the selected cue and preserve other films' progress (2.3s)
+  ok 4 [chromium] › e2e\kino-new-anime.spec.js:127:3 › Delicious in Dungeon: discovery plays the episode with bilingual captions and offers both viewing qualities (1.3s)
+
+  4 passed (14.1s)

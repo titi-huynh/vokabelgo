@@ -1,0 +1,90 @@
+[2026-10-27 16:40:16] Hashing source video C:\Users\huynh\OneDrive\Desktop\flash\video\delicious_in_dungeon_s01e01.mp4...
+[2026-10-27 16:40:16] Decoding audio from C:\Users\huynh\OneDrive\Desktop\flash\video\delicious_in_dungeon_s01e01.mp4 at 16kHz...
+[2026-10-27 16:40:18] Audio decoded: 1607.488s, video_sha256=26caef638d8ece51c536ab109adbd0bb5640e998644d58db77ba59846f08832f, pcm_sha256=22df3809b9f1e72199ff632a2e91eed74d4e55cadf1db04e3d26596dc37f434e
+[2026-10-27 16:40:18] Loading model=small (device=cpu, compute_type=int8, cpu_threads=3, local_files_only=True)...
+[2026-10-27 16:40:24] model=small [1/10] candidate=1 (68.85-75.91s, 3.5s): Halte durch, Freunde. Wenn wir ihn besiegt haben, können wir verschnaufen. Na los!
+[2026-10-27 16:40:27] model=small [2/10] candidate=2 (79.09-83.91s, 2.5s): (no segments)
+[2026-10-27 16:40:30] model=small [3/10] candidate=3 (111.41-115.02s, 3.1s): Was ist los, Falli? | Wurde sie mit einem Pevel...
+[2026-10-27 16:40:33] model=small [4/10] candidate=4 (321.17-325.93s, 3.3s): Passieren mag? | Äh... | Äh, ja.
+[2026-10-27 16:40:36] model=small [5/10] candidate=5 (395.77-399.24s, 3.2s): (no segments)
+[2026-10-27 16:40:40] model=small [6/10] candidate=6 (982.84-988.59s, 3.7s): dann schon erst alles in Ordnung masse ich bin über ein
+[2026-10-27 16:40:44] model=small [7/10] candidate=7 (1152.79-1158.47s, 3.6s): kämpfen | Geht mal zur Seite
+[2026-10-27 16:40:48] model=small [8/10] candidate=8 (1159.70-1171.53s, 4.7s): Spiele E. Jepton Lufens. | Alamando Aspojo. | Nexanto Aslas! | Rauf zu nägeln! | Äh, wieso?
+[2026-10-27 16:40:52] model=small [9/10] candidate=9 (1339.06-1342.95s, 3.7s): Mach doch mal Masse. Könnte dir schmecken? | Die f...
+[2026-10-27 16:41:08] model=small [10/10] candidate=10 (1454.26-1502.76s, 15.8s): Ja, ich glaube, das ist das, was wir hier haben. | Das ist das, was wir hier haben. | Das ist das, was wir hier haben. | Das ist das, was wir hier haben. | Das ist das, was wir hier haben. | Das ist das, was wir hier haben. | Das ist das, was wir hier haben. | Das ist das, was wir hier haben. | Das ist das, was wir hier haben.
+[2026-10-27 16:41:08] Loading model=medium (device=cpu, compute_type=int8, cpu_threads=3, local_files_only=True)...
+[2026-10-27 16:41:26] model=medium [1/10] candidate=1 (68.85-75.91s, 10.9s): Haltet durch, Freunde! Wenn wir ihn besiegt haben, können wir verschnaufen! | Na los!
+[2026-10-27 16:41:35] model=medium [2/10] candidate=2 (79.09-83.91s, 9.2s): Das war's für heute. | Bis zum nächsten Mal.
+[2026-10-27 16:41:44] model=medium [3/10] candidate=3 (111.41-115.02s, 9.4s): Was ist los, Vali? | Wurde sie mit einem Pfeffer?
+[2026-10-27 16:41:53] model=medium [4/10] candidate=4 (321.17-325.93s, 9.1s): Passieren mag? | Uhh... | Uh, ja.
+[2026-10-27 16:42:03] model=medium [5/10] candidate=5 (395.77-399.24s, 9.4s): NOOOOOBS! | Hier! | Die sind noch-
+[2026-10-27 16:42:14] model=medium [6/10] candidate=6 (982.84-988.59s, 11.0s): Dungeon Nest. Alles in Ordnung, Marcel? Ich bin über ein...
+[2026-10-27 16:42:25] model=medium [7/10] candidate=7 (1152.79-1158.47s, 10.9s): kämpfen geht mal zur seite ich werde sie
+[2026-10-27 16:42:39] model=medium [8/10] candidate=8 (1159.70-1171.53s, 13.9s): Späler e Jepton Lufelsk, Halaman Doas Fodju, Hextanto Aslas! | Hör auf, du Nergel! | Äh, wieso?
+[2026-10-27 16:42:50] model=medium [9/10] candidate=9 (1339.06-1342.95s, 11.5s): Mal Masse könnte dir schmecken
+[2026-10-27 16:43:10] model=medium [10/10] candidate=10 (1454.26-1502.76s, 20.2s): (no segments)
+[2026-10-27 16:43:10] Completed main small + medium independent recognition across all 10 windows.
+[2026-10-27 16:46:18] Hashing source video C:\Users\huynh\OneDrive\Desktop\flash\video\delicious_in_dungeon_s01e01.mp4...
+[2026-10-27 16:46:18] Decoding audio from C:\Users\huynh\OneDrive\Desktop\flash\video\delicious_in_dungeon_s01e01.mp4 at 16kHz...
+[2026-10-27 16:46:20] Audio decoded: 1607.488s, video_sha256=26caef638d8ece51c536ab109adbd0bb5640e998644d58db77ba59846f08832f, pcm_sha256=22df3809b9f1e72199ff632a2e91eed74d4e55cadf1db04e3d26596dc37f434e
+[2026-10-27 16:46:20] Loading model=small (device=cpu, compute_type=int8, cpu_threads=3, local_files_only=True)...
+[2026-10-27 16:46:26] model=small [1/15] candidate=1 [cand1_haltet] (69.30-71.10s, 3.5s): Ah, der Deutschmann!
+[2026-10-27 16:46:29] model=small [2/15] candidate=1 [cand1_wenn_verschnaufen] (71.00-73.40s, 3.7s): Wenn wir ihn besiegt haben, können wir verschnauben!
+[2026-10-27 16:46:33] model=small [3/15] candidate=1 [cand1_na_los] (73.40-75.00s, 3.3s): Ja los!
+[2026-10-27 16:46:36] model=small [4/15] candidate=2 [cand2_gap] (78.85-84.05s, 3.2s): (no segments)
+[2026-10-27 16:46:39] model=small [5/15] candidate=2 [cand2_core] (80.00-83.00s, 3.1s): (no segments)
+[2026-10-27 16:46:42] model=small [6/15] candidate=2 [cand2_part1] (78.85-81.60s, 3.0s): (no segments)
+[2026-10-27 16:46:45] model=small [7/15] candidate=2 [cand2_part2] (81.20-84.05s, 3.3s): Ja
+[2026-10-27 16:46:49] model=small [8/15] candidate=3 [cand3_gap] (110.60-113.95s, 3.5s): Una! | Was ist los Fallen?
+[2026-10-27 16:46:52] model=small [9/15] candidate=4 [cand4_gap] (322.12-325.85s, 3.5s): Äh, äh, ja.
+[2026-10-27 16:46:56] model=small [10/15] candidate=5 [cand5_gap] (396.88-398.30s, 3.3s): Ja!
+[2026-10-27 16:46:59] model=small [11/15] candidate=6 [cand6_gap] (983.70-987.60s, 3.7s): Nein! | Alles in Ordnung, Masse?
+[2026-10-27 16:47:03] model=small [12/15] candidate=6 [cand6_tight] (985.20-987.55s, 3.6s): Alles in Ordnung, Masse?
+[2026-10-27 16:47:06] model=small [13/15] candidate=7 [cand7_gap_ch7] (1155.00-1157.60s, 3.2s): Geht mal zur Seite!
+[2026-10-27 16:47:10] model=small [14/15] candidate=8 [cand8_post_spell] (1168.50-1170.95s, 3.5s): Aufzunaggen!
+[2026-10-27 16:47:13] model=small [15/15] candidate=9 [cand9_koennte_schmecken] (1340.00-1342.30s, 3.4s): Könnte dir schmecken?
+[2026-10-27 16:47:13] Loading model=medium (device=cpu, compute_type=int8, cpu_threads=3, local_files_only=True)...
+[2026-10-27 16:47:31] model=medium [1/15] candidate=1 [cand1_haltet] (69.30-71.10s, 11.1s): Halte durch, Freude!
+[2026-10-27 16:47:43] model=medium [2/15] candidate=1 [cand1_wenn_verschnaufen] (71.00-73.40s, 11.7s): Wenn wir ihn besiegt haben, können wir verschnaufen!
+[2026-10-27 16:47:54] model=medium [3/15] candidate=1 [cand1_na_los] (73.40-75.00s, 10.7s): Ja los!
+[2026-10-27 16:48:46] model=medium [4/15] candidate=2 [cand2_gap] (78.85-84.05s, 52.3s): Ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+[2026-10-27 16:48:57] model=medium [5/15] candidate=2 [cand2_core] (80.00-83.00s, 11.4s): HÄÄÄÄÄH!
+[2026-10-27 16:49:08] model=medium [6/15] candidate=2 [cand2_part1] (78.85-81.60s, 10.2s): (no segments)
+[2026-10-27 16:49:17] model=medium [7/15] candidate=2 [cand2_part2] (81.20-84.05s, 9.8s): (no segments)
+[2026-10-27 16:49:29] model=medium [8/15] candidate=3 [cand3_gap] (110.60-113.95s, 11.9s): Mona! | Was ist los, Fali?
+[2026-10-27 16:49:41] model=medium [9/15] candidate=4 [cand4_gap] (322.12-325.85s, 11.3s): Ah... | Ah, ja...
+[2026-10-27 16:49:51] model=medium [10/15] candidate=5 [cand5_gap] (396.88-398.30s, 10.8s): Hier!
+[2026-10-27 16:50:03] model=medium [11/15] candidate=6 [cand6_gap] (983.70-987.60s, 11.6s): Ah! | Hm? | Alles in Ordnung, Masse?
+[2026-10-27 16:50:14] model=medium [12/15] candidate=6 [cand6_tight] (985.20-987.55s, 11.2s): Alles in Ordnung, Masse?
+[2026-10-27 16:50:25] model=medium [13/15] candidate=7 [cand7_gap_ch7] (1155.00-1157.60s, 11.0s): Geht mal zur Seite!
+[2026-10-27 16:50:36] model=medium [14/15] candidate=8 [cand8_post_spell] (1168.50-1170.95s, 11.2s): Hör auf zu nageln!
+[2026-10-27 16:50:47] model=medium [15/15] candidate=9 [cand9_koennte_schmecken] (1340.00-1342.30s, 11.1s): Könnte dir schmecken.
+[2026-10-27 16:50:47] Completed tight small + medium independent recognition.
+[2026-10-27 16:50:49] Hashing source video C:\Users\huynh\OneDrive\Desktop\flash\video\delicious_in_dungeon_s01e01.mp4...
+[2026-10-27 16:50:50] Decoding audio from C:\Users\huynh\OneDrive\Desktop\flash\video\delicious_in_dungeon_s01e01.mp4 at 16kHz...
+[2026-10-27 16:50:52] Audio decoded: 1607.488s, video_sha256=26caef638d8ece51c536ab109adbd0bb5640e998644d58db77ba59846f08832f, pcm_sha256=22df3809b9f1e72199ff632a2e91eed74d4e55cadf1db04e3d26596dc37f434e
+[2026-10-27 16:50:52] Loading model=small (device=cpu, compute_type=int8, cpu_threads=3, local_files_only=True)...
+[2026-10-27 16:50:58] model=small [1/6] candidate=1 [cand1_full_gap] (68.50-75.15s, 4.2s): Halte Durchfreunde! Wenn wir ihn besiegt haben, können wir verschnaufen! | Na los!
+[2026-10-27 16:51:02] model=small [2/6] candidate=2 [cand2_with_neighbors] (77.60-88.70s, 3.9s): Wir haben keine Schwächen. | Bis auf. | Ein Riesen-Hunger.
+[2026-10-27 16:51:06] model=small [3/6] candidate=2 [cand2_with_prev] (75.10-84.05s, 3.7s): Wir sind gut vorbereitet. Wir haben keine Schwächen.
+[2026-10-27 16:51:09] model=small [4/6] candidate=5 [cand5_with_neighbors] (395.80-400.90s, 3.6s): Die sind noch nicht lange im Dungeon, oder?
+[2026-10-27 16:51:13] model=small [5/6] candidate=9 [cand9_full_gap] (1336.25-1342.30s, 4.0s): Die ist echt gut. | Probier doch mal Masse. | Könntet ihr schmecken?
+[2026-10-27 16:51:17] model=small [6/6] candidate=9 [cand9_probier_schmecken] (1338.30-1342.30s, 3.7s): Probier doch mal Masse. Könntet ihr schmecken?
+[2026-10-27 16:51:17] Loading model=medium (device=cpu, compute_type=int8, cpu_threads=3, local_files_only=True)...
+[2026-10-27 16:51:35] model=medium [1/6] candidate=1 [cand1_full_gap] (68.50-75.15s, 12.7s): Haltet durch, Freunde! Wenn wir ihn besiegt haben, können wir verschnaufen! | Na los!
+[2026-10-27 16:51:48] model=medium [2/6] candidate=2 [cand2_with_neighbors] (77.60-88.70s, 12.3s): Wir haben keine Schwächen. | Bis auf... | ...einen Riesenhunger.
+[2026-10-27 16:51:59] model=medium [3/6] candidate=2 [cand2_with_prev] (75.10-84.05s, 11.4s): Wir sind gut vorbereitet. Wir haben keine Schwächen.
+[2026-10-27 16:52:10] model=medium [4/6] candidate=5 [cand5_with_neighbors] (395.80-400.90s, 11.2s): Die sind noch nicht lange im Dungeon, oder?
+[2026-10-27 16:52:23] model=medium [5/6] candidate=9 [cand9_full_gap] (1336.25-1342.30s, 12.3s): Die ist echt gut. Probier doch mal Masse. Könnte dir schmecken.
+[2026-10-27 16:52:35] model=medium [6/6] candidate=9 [cand9_probier_schmecken] (1338.30-1342.30s, 11.9s): Probier doch mal Masse, könnte dir schmecken.
+[2026-10-27 16:52:35] Completed context small + medium independent recognition.
+[2026-10-27 17:23:31] Hashing source video C:\Users\huynh\OneDrive\Desktop\flash\video\delicious_in_dungeon_s01e01.mp4...
+[2026-10-27 17:23:32] Decoding audio from C:\Users\huynh\OneDrive\Desktop\flash\video\delicious_in_dungeon_s01e01.mp4 at 16kHz...
+[2026-10-27 17:23:34] Audio decoded: 1607.488s, video_sha256=26caef638d8ece51c536ab109adbd0bb5640e998644d58db77ba59846f08832f, pcm_sha256=22df3809b9f1e72199ff632a2e91eed74d4e55cadf1db04e3d26596dc37f434e
+[2026-10-27 17:23:34] Loading model=small (device=cpu, compute_type=int8, cpu_threads=3, local_files_only=True)...
+[2026-10-27 17:23:40] model=small [1/2] candidate=7 [cue1200388_isolated_recheck] (1154.70-1157.10s, 3.7s): Geht mal zur Seite!
+[2026-10-27 17:23:44] model=small [2/2] candidate=7 [cue1200388_with_neighbors_recheck] (1151.30-1160.10s, 4.5s): Dann müssen wir eben kämpfen. | Geht mal zur Seite. | Ich werde sie alle auf einmal erledigen.
+[2026-10-27 17:23:44] Loading model=medium (device=cpu, compute_type=int8, cpu_threads=3, local_files_only=True)...
+[2026-10-27 17:24:03] model=medium [1/2] candidate=7 [cue1200388_isolated_recheck] (1154.70-1157.10s, 11.7s): Geh mal zur Seite!
+[2026-10-27 17:24:17] model=medium [2/2] candidate=7 [cue1200388_with_neighbors_recheck] (1151.30-1160.10s, 13.7s): Dann müssen wir eben kämpfen. | Geht mal zur Seite. | Ich werde sie alle auf einmal erledigen.
+[2026-10-27 17:24:17] Completed extra (cue1200388-recheck) small + medium recognition.

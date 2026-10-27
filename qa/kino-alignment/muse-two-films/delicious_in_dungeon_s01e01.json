@@ -63,6 +63,22 @@
       "vi": "Sau khi tuyên bố lời ấy, người đàn ông tan thành cát bụi rồi biến mất."
     },
     {
+      "id": 1200385,
+      "start": 71.17,
+      "end": 73.05,
+      "speaker": "Laios",
+      "text": "Wenn wir ihn besiegt haben, können wir verschnaufen!",
+      "vi": "Hạ xong nó rồi, chúng ta có thể nghỉ lấy hơi!"
+    },
+    {
+      "id": 1200386,
+      "start": 73.71,
+      "end": 74.33,
+      "speaker": "Laios",
+      "text": "Na los!",
+      "vi": "Tiến lên nào!"
+    },
+    {
       "id": 1200008,
       "start": 75.2,
       "end": 77.2,
@@ -635,6 +651,14 @@
       "speaker": "Laios",
       "text": "Ihr wollt wirklich alle beide mit mir in den Dungeon kommen? Egal, was dort passieren mag?",
       "vi": "Cả hai người thực sự đều muốn cùng tôi xuống hầm ngục ư? Bất kể chuyện gì có thể xảy ra ở dưới đó sao?"
+    },
+    {
+      "id": 1200387,
+      "start": 324.09,
+      "end": 324.43,
+      "speaker": "Nhóm thám hiểm",
+      "text": "Ja.",
+      "vi": "Ừ."
     },
     {
       "id": 1200079,
@@ -2862,13 +2886,20 @@
       "vi": "Vị của nó mặn mà đậm đà. Khác hẳn so với những gì tôi tưởng tượng."
     },
     {
-      "id": 1200356,
-      "start": 1337.28,
-      "end": 1341.26,
+      "id": 1200389,
+      "start": 1336.25,
+      "end": 1338.29,
       "speaker": "Chilchuck",
-      "text": "Die ist echt gut. Probier doch mal, Marcille. Könnte dir schmecken.",
-      "vi": "Món này ngon thật đấy. Nếm thử một miếng đi, Marcille. Biết đâu lại hợp khẩu vị của cô.",
-      "reviewNeeded": true
+      "text": "Die ist echt gut.",
+      "vi": "Món này ngon thật đấy."
+    },
+    {
+      "id": 1200390,
+      "start": 1340.34,
+      "end": 1341.18,
+      "speaker": "Chilchuck",
+      "text": "Könnte dir schmecken.",
+      "vi": "Biết đâu lại hợp khẩu vị của cô."
     },
     {
       "id": 1200357,
@@ -3507,8 +3538,18 @@
     },
     {
       "start": 49.78,
+      "end": 71.17,
+      "reason": "Phần chưa đưa vào cue học sau khi tách các câu đã xác nhận ngày 2026-10-27; những phát ngôn còn chưa rõ được lưu riêng ở dungeon_missing_20261027/review.json."
+    },
+    {
+      "start": 73.05,
+      "end": 73.71,
+      "reason": "Phần chưa đưa vào cue học sau khi tách các câu đã xác nhận ngày 2026-10-27; những phát ngôn còn chưa rõ được lưu riêng ở dungeon_missing_20261027/review.json."
+    },
+    {
+      "start": 74.33,
       "end": 75.1,
-      "reason": "Nhạc nền kịch tính và hiệu ứng âm thanh mở màn trận chiến với Rồng Đỏ, không có lời thoại."
+      "reason": "Phần chưa đưa vào cue học sau khi tách các câu đã xác nhận ngày 2026-10-27; những phát ngôn còn chưa rõ được lưu riêng ở dungeon_missing_20261027/review.json."
     },
     {
       "start": 133.16,
@@ -3555,5 +3596,54 @@
       "text": "Hör auf, du Närrin!",
       "reason": "Senshi quát lớn cắt ngang thần chú của Marcille (raw ASR nghe nhầm thành \"Nägel\"); đã gắn cờ reviewNeeded."
     }
-  ]
+  ],
+  "missingDialogueReview": {
+    "date": "2026-10-27",
+    "folder": "qa/kino-alignment/dungeon_missing_20261027",
+    "reviewJson": "qa/kino-alignment/dungeon_missing_20261027/review.json",
+    "candidateWindows": 10,
+    "addedCues": 5,
+    "addedIds": [
+      1200385,
+      1200386,
+      1200387,
+      1200389,
+      1200390
+    ],
+    "preservedPublishedCues": 367,
+    "supersededDrafts": [
+      {
+        "cue": {
+          "id": 1200356,
+          "start": 1337.28,
+          "end": 1341.26,
+          "speaker": "Chilchuck",
+          "text": "Die ist echt gut. Probier doch mal, Marcille. Könnte dir schmecken.",
+          "vi": "Món này ngon thật đấy. Nếm thử một miếng đi, Marcille. Biết đâu lại hợp khẩu vị của cô.",
+          "reviewNeeded": true
+        },
+        "partialReplacementIds": [
+          1200389,
+          1200390
+        ],
+        "note": "Only accepted portions become fresh cues; unresolved portions remain in review.json."
+      }
+    ],
+    "resolvedUncertain": [],
+    "counts": {
+      "candidates": 10,
+      "previousCueCount": 367,
+      "newCueCount": 372,
+      "addedCues": 5,
+      "adjustedExistingCues": 0,
+      "excludedParts": 9,
+      "reviewNeededParts": 10,
+      "windowsWithAddedCues": 3,
+      "windowsWithExcludedParts": 8,
+      "windowsWithReviewNeededParts": 9
+    },
+    "reservedReviewCueIds": [
+      1200388
+    ]
+  }
 }

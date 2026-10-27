@@ -1,0 +1,448 @@
+{
+ "key": "delicious_in_dungeon_s01e01",
+ "duration": 1607.5,
+ "cue_count": 367,
+ "speech_regions": 205,
+ "speech_seconds": 1196.0,
+ "candidates": [
+  {
+   "start": 70.05,
+   "end": 74.71,
+   "covered": 0.0,
+   "window": [
+    68.85,
+    75.91
+   ],
+   "asr": [
+    {
+     "start": 69.67,
+     "end": 72.95,
+     "text": "Haltet durch, Freunde! Wenn wir ihn besiegt haben, können wir verschnaufen!",
+     "avg_logprob": -0.38,
+     "no_speech_prob": 0.41
+    },
+    {
+     "start": 73.63,
+     "end": 74.43,
+     "text": "Na los!",
+     "avg_logprob": -0.38,
+     "no_speech_prob": 0.41
+    }
+   ],
+   "cue_before": {
+    "id": 1200007,
+    "start": 45.32,
+    "end": 49.78,
+    "text": "Nachdem er dies verkündet hatte, zerfiel der Mann zu Staub und verschwand.",
+    "vi": "Sau khi tuyên bố lời ấy, người đàn ông tan thành cát bụi rồi biến mất."
+   },
+   "cue_after": {
+    "id": 1200008,
+    "start": 75.2,
+    "end": 77.2,
+    "text": "Wir sind gut vorbereitet.",
+    "vi": "Chúng ta đã chuẩn bị rất kỹ càng."
+   }
+  },
+  {
+   "start": 80.29,
+   "end": 82.71,
+   "covered": 0.0,
+   "window": [
+    79.09,
+    83.91
+   ],
+   "asr": [],
+   "cue_before": {
+    "id": 1200009,
+    "start": 77.76,
+    "end": 78.82,
+    "text": "Wir haben keine Schwächen.",
+    "vi": "Chúng ta không có điểm yếu nào cả."
+   },
+   "cue_after": {
+    "id": 1200010,
+    "start": 84.1,
+    "end": 88.6,
+    "text": "Bis auf einen Riesenhunger.",
+    "vi": "Ngoại trừ một cơn đói cồn cào."
+   }
+  },
+  {
+   "start": 112.61,
+   "end": 113.82,
+   "covered": 0.0,
+   "window": [
+    111.41,
+    115.02
+   ],
+   "asr": [
+    {
+     "start": 112.48,
+     "end": 113.48,
+     "text": "Was ist los, Vali?",
+     "avg_logprob": -0.52,
+     "no_speech_prob": 0.78
+    },
+    {
+     "start": 113.48,
+     "end": 114.48,
+     "text": "Wurde sie mit einem verwirrten...",
+     "avg_logprob": -0.52,
+     "no_speech_prob": 0.78
+    }
+   ],
+   "cue_before": {
+    "id": 1200014,
+    "start": 106.46,
+    "end": 110.56,
+    "text": "Das ist zwar ärgerlich, aber sobald der Drache besiegt ist, kehren wir lieber um.",
+    "vi": "Chuyện đó tuy bực mình thật, nhưng ngay khi hạ xong con rồng thì tốt hơn là chúng ta nên quay về."
+   },
+   "cue_after": {
+    "id": 1200016,
+    "start": 114,
+    "end": 115.78,
+    "text": "Wurde sie mit einem Verwirrzauber belegt?",
+    "vi": "Em ấy bị trúng bùa mê loạn rồi sao?"
+   }
+  },
+  {
+   "start": 322.37,
+   "end": 324.73,
+   "covered": 0.0,
+   "window": [
+    321.17,
+    325.93
+   ],
+   "asr": [
+    {
+     "start": 321.17,
+     "end": 322.17,
+     "text": "Passieren mag?",
+     "avg_logprob": -0.79,
+     "no_speech_prob": 0.22
+    },
+    {
+     "start": 322.17,
+     "end": 323.17,
+     "text": "Äh...",
+     "avg_logprob": -0.79,
+     "no_speech_prob": 0.22
+    },
+    {
+     "start": 323.17,
+     "end": 324.17,
+     "text": "Äh... ja.",
+     "avg_logprob": -0.79,
+     "no_speech_prob": 0.22
+    }
+   ],
+   "cue_before": {
+    "id": 1200078,
+    "start": 316.66,
+    "end": 322.08,
+    "text": "Ihr wollt wirklich alle beide mit mir in den Dungeon kommen? Egal, was dort passieren mag?",
+    "vi": "Cả hai người thực sự đều muốn cùng tôi xuống hầm ngục ư? Bất kể chuyện gì có thể xảy ra ở dưới đó sao?"
+   },
+   "cue_after": {
+    "id": 1200079,
+    "start": 325.9,
+    "end": 329.2,
+    "text": "Was zu essen suchen wir uns dort unten im Dungeon.",
+    "vi": "Đồ ăn thì chúng ta sẽ tự tìm ở dưới hầm ngục."
+   }
+  },
+  {
+   "start": 396.97,
+   "end": 398.04,
+   "covered": 0.0,
+   "window": [
+    395.77,
+    399.24
+   ],
+   "asr": [
+    {
+     "start": 396.81,
+     "end": 397.81,
+     "text": "Hier!",
+     "avg_logprob": -0.82,
+     "no_speech_prob": 0.81
+    },
+    {
+     "start": 398.41,
+     "end": 399.41,
+     "text": "Die sind noch...",
+     "avg_logprob": -0.82,
+     "no_speech_prob": 0.81
+    }
+   ],
+   "cue_before": {
+    "id": 1200097,
+    "start": 395.98,
+    "end": 396.86,
+    "text": "Rettet uns!",
+    "vi": "Cứu chúng tôi với!"
+   },
+   "cue_after": {
+    "id": 1200098,
+    "start": 398.32,
+    "end": 400.8,
+    "text": "Die sind noch nicht lange im Dungeon, oder?",
+    "vi": "Mấy người đó mới xuống hầm ngục chưa lâu đúng không nhỉ?"
+   }
+  },
+  {
+   "start": 984.04,
+   "end": 987.39,
+   "covered": 0.0,
+   "window": [
+    982.84,
+    988.59
+   ],
+   "asr": [
+    {
+     "start": 982.84,
+     "end": 988.48,
+     "text": "Dungeon Nest. Alles in Ordnung, Marcel? Ich bin über ein...",
+     "avg_logprob": -0.46,
+     "no_speech_prob": 0.76
+    }
+   ],
+   "cue_before": {
+    "id": 1200252,
+    "start": 981.4,
+    "end": 983.66,
+    "text": "Vielleicht, weil das ein verfluchter Dungeon ist.",
+    "vi": "Có lẽ bởi vì đây là một hầm ngục bị nguyền rủa."
+   },
+   "cue_after": {
+    "id": 1200254,
+    "start": 987.64,
+    "end": 989.98,
+    "text": "Ich bin über ein loses Brett gestolpert.",
+    "vi": "Tớ vừa vấp phải một tấm ván bị lỏng."
+   }
+  },
+  {
+   "start": 1153.99,
+   "end": 1157.27,
+   "covered": 0.0,
+   "window": [
+    1152.79,
+    1158.47
+   ],
+   "asr": [
+    {
+     "start": 1152.79,
+     "end": 1153.79,
+     "text": "Kämpfen.",
+     "avg_logprob": -0.73,
+     "no_speech_prob": 0.68
+    },
+    {
+     "start": 1155.51,
+     "end": 1156.51,
+     "text": "Geht mal zur Seite.",
+     "avg_logprob": -0.73,
+     "no_speech_prob": 0.68
+    },
+    {
+     "start": 1156.51,
+     "end": 1157.51,
+     "text": "Hm?",
+     "avg_logprob": -0.73,
+     "no_speech_prob": 0.68
+    },
+    {
+     "start": 1157.51,
+     "end": 1158.51,
+     "text": "Ich werde sie...",
+     "avg_logprob": -0.73,
+     "no_speech_prob": 0.68
+    }
+   ],
+   "cue_before": {
+    "id": 1200306,
+    "start": 1148.8,
+    "end": 1150.72,
+    "text": "Könnte schwierig werden, sie heimlich zu pflücken.",
+    "vi": "Muốn lén hái trái mà không bị phát hiện e là hơi khó đấy."
+   },
+   "cue_after": {
+    "id": 1200309,
+    "start": 1157.66,
+    "end": 1159.88,
+    "text": "Ich werde sie alle auf einmal erledigen.",
+    "vi": "Tớ sẽ dọn sạch tất cả bọn chúng chỉ trong một đòn."
+   }
+  },
+  {
+   "start": 1160.9,
+   "end": 1170.33,
+   "covered": 0.0,
+   "window": [
+    1159.7,
+    1171.53
+   ],
+   "asr": [
+    {
+     "start": 1160.74,
+     "end": 1163.74,
+     "text": "Späler e Jepton Lufels.",
+     "avg_logprob": -0.69,
+     "no_speech_prob": 0.21
+    },
+    {
+     "start": 1164.24,
+     "end": 1166.24,
+     "text": "Halaman Doas Hojo.",
+     "avg_logprob": -0.69,
+     "no_speech_prob": 0.21
+    },
+    {
+     "start": 1166.74,
+     "end": 1168.74,
+     "text": "Hexan Tor Aslas!",
+     "avg_logprob": -0.69,
+     "no_speech_prob": 0.21
+    },
+    {
+     "start": 1168.74,
+     "end": 1170.24,
+     "text": "Hör auf du Nergl!",
+     "avg_logprob": -0.69,
+     "no_speech_prob": 0.21
+    },
+    {
+     "start": 1170.24,
+     "end": 1171.74,
+     "text": "Äh, wieso?",
+     "avg_logprob": -0.69,
+     "no_speech_prob": 0.21
+    }
+   ],
+   "cue_before": {
+    "id": 1200309,
+    "start": 1157.66,
+    "end": 1159.88,
+    "text": "Ich werde sie alle auf einmal erledigen.",
+    "vi": "Tớ sẽ dọn sạch tất cả bọn chúng chỉ trong một đòn."
+   },
+   "cue_after": {
+    "id": 1200311,
+    "start": 1170.98,
+    "end": 1171.88,
+    "text": "Wieso denn?",
+    "vi": "Tại sao chứ?"
+   }
+  },
+  {
+   "start": 1340.26,
+   "end": 1341.75,
+   "covered": 0.0,
+   "window": [
+    1339.06,
+    1342.95
+   ],
+   "asr": [
+    {
+     "start": 1339.06,
+     "end": 1341.06,
+     "text": "Mal Masse könnte dir schmecken",
+     "avg_logprob": -0.5,
+     "no_speech_prob": 0.61
+    }
+   ],
+   "cue_before": {
+    "id": 1200355,
+    "start": 1333.2,
+    "end": 1336.2,
+    "text": "Schmeckt salzig. Ganz anders, als ich gedacht hätte.",
+    "vi": "Vị của nó mặn mà đậm đà. Khác hẳn so với những gì tôi tưởng tượng."
+   },
+   "cue_after": {
+    "id": 1200357,
+    "start": 1342.38,
+    "end": 1345.74,
+    "text": "Die Früchte sind doch nicht von der Pflanze, in der die Leiche war, oder?",
+    "vi": "Mấy quả này đâu phải hái từ cái cây có xác chết bên trong đó chứ, phải không?"
+   }
+  },
+  {
+   "start": 1455.46,
+   "end": 1501.56,
+   "covered": 0.0,
+   "window": [
+    1454.26,
+    1502.76
+   ],
+   "asr": [
+    {
+     "start": 1455.3,
+     "end": 1467.3,
+     "text": "Die Lichter, die sich von der Tür aus aus der Wand ausklappen, sind die ersten Freunde, die sich die Klappen von den Händen von der Erde ausklappen.",
+     "avg_logprob": -1.33,
+     "no_speech_prob": 0.27
+    },
+    {
+     "start": 1467.3,
+     "end": 1470.3,
+     "text": "Sie wurden dann in der Träume geführt.",
+     "avg_logprob": -1.33,
+     "no_speech_prob": 0.27
+    },
+    {
+     "start": 1470.3,
+     "end": 1474.3,
+     "text": "Einige Verständnisse sind auf die Klappen gesiedelt.",
+     "avg_logprob": -1.33,
+     "no_speech_prob": 0.27
+    },
+    {
+     "start": 1474.3,
+     "end": 1478.3,
+     "text": "Manchmal ist es so, dass der Maul sich im Boden befindet.",
+     "avg_logprob": -1.33,
+     "no_speech_prob": 0.27
+    },
+    {
+     "start": 1478.3,
+     "end": 1484.3,
+     "text": "Die Regen sind so leise, dass man sich nicht mehr wachsend fühlt.",
+     "avg_logprob": -1.33,
+     "no_speech_prob": 0.27
+    },
+    {
+     "start": 1484.3,
+     "end": 1486.3,
+     "text": "Das war's für heute.",
+     "avg_logprob": -0.86,
+     "no_speech_prob": 0.86
+    },
+    {
+     "start": 1486.3,
+     "end": 1488.3,
+     "text": "Bis zum nächsten Mal.",
+     "avg_logprob": -0.86,
+     "no_speech_prob": 0.86
+    },
+    {
+     "start": 1488.3,
+     "end": 1492.41,
+     "text": "Tschüss.",
+     "avg_logprob": -0.86,
+     "no_speech_prob": 0.86
+    }
+   ],
+   "cue_before": {
+    "id": 1200384,
+    "start": 1445.96,
+    "end": 1449.52,
+    "text": "Das Essen im Dungeon. Essen im Dungeon.",
+    "vi": "Món ngon trong hầm ngục. Ẩm thực nơi hầm ngục."
+   },
+   "cue_after": null
+  }
+ ]
+}
