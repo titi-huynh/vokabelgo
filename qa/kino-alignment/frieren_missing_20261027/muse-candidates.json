@@ -1,0 +1,464 @@
+{
+ "key": "frieren_s01e02",
+ "duration": 1560.1,
+ "cue_count": 235,
+ "speech_regions": 238,
+ "speech_seconds": 704.7,
+ "candidates": [
+  {
+   "start": 0.58,
+   "end": 17.34,
+   "covered": 0.0,
+   "window": [
+    0.0,
+    18.54
+   ],
+   "asr": [
+    {
+     "start": 0.43,
+     "end": 5.43,
+     "text": "Das war's für heute. Ich bin schon wieder hier. Bis zum nächsten Mal.",
+     "avg_logprob": -1.35,
+     "no_speech_prob": 0.57
+    }
+   ],
+   "cue_before": null,
+   "cue_after": {
+    "id": 1300001,
+    "start": 91.1,
+    "end": 91.5,
+    "text": "Okay.",
+    "vi": "Được rồi."
+   }
+  },
+  {
+   "start": 235.24,
+   "end": 238.36,
+   "covered": 0.0,
+   "window": [
+    234.04,
+    239.56
+   ],
+   "asr": [
+    {
+     "start": 234.04,
+     "end": 237.96,
+     "text": "Ich werde mit dem entschlüsseln des buchs früher fertig werden",
+     "avg_logprob": -0.27,
+     "no_speech_prob": 0.92
+    }
+   ],
+   "cue_before": {
+    "id": 1300021,
+    "start": 231.88,
+    "end": 234.56,
+    "text": "Trotzdem dauert es noch, bis sie eine richtige Magierin wird.",
+    "vi": "Dù vậy vẫn còn cần thêm thời gian trước khi em ấy trở thành một pháp sư thực thụ."
+   },
+   "cue_after": {
+    "id": 1300023,
+    "start": 239.08,
+    "end": 240,
+    "text": "Ach, wirklich?",
+    "vi": "Ồ, thật vậy sao?"
+   }
+  },
+  {
+   "start": 292.42,
+   "end": 294.87,
+   "covered": 0.0,
+   "window": [
+    291.22,
+    296.07
+   ],
+   "asr": [
+    {
+     "start": 291.22,
+     "end": 296.46,
+     "text": "schaffen. Doch jetzt! Irgendwann reicht aber nicht!",
+     "avg_logprob": -0.57,
+     "no_speech_prob": 0.81
+    }
+   ],
+   "cue_before": {
+    "id": 1300034,
+    "start": 288.92,
+    "end": 291.78,
+    "text": "Das wirst du garantiert irgendwann schaffen.",
+    "vi": "Chắc chắn một ngày nào đó em sẽ làm được điều đó thôi."
+   },
+   "cue_after": {
+    "id": 1300037,
+    "start": 297.28,
+    "end": 301.1,
+    "text": "Denn bald wird die Zeit kommen, wo Heiter stirbt.",
+    "vi": "Bởi vì chẳng bao lâu nữa sẽ đến lúc ngài Heiter qua đời."
+   }
+  },
+  {
+   "start": 478.5,
+   "end": 496.57,
+   "covered": 0.0,
+   "window": [
+    477.3,
+    497.77
+   ],
+   "asr": [
+    {
+     "start": 478.34,
+     "end": 482.34,
+     "text": "In dem Buch stand kein Wiederbelebungs- oder Unsterblichkeitszauber.",
+     "avg_logprob": -0.22,
+     "no_speech_prob": 0.54
+    },
+    {
+     "start": 482.34,
+     "end": 483.94,
+     "text": "Ach wirklich?",
+     "avg_logprob": -0.22,
+     "no_speech_prob": 0.54
+    },
+    {
+     "start": 483.94,
+     "end": 485.94,
+     "text": "Wusstest du das?",
+     "avg_logprob": -0.22,
+     "no_speech_prob": 0.54
+    },
+    {
+     "start": 485.94,
+     "end": 489.34,
+     "text": "Die Angst vor dem Tod ist für uns unergründlich und tief.",
+     "avg_logprob": -0.22,
+     "no_speech_prob": 0.54
+    },
+    {
+     "start": 489.34,
+     "end": 494.14,
+     "text": "Wenn es solche Zauber gegeben hätte, hätte Ewig diese selbst angewendet.",
+     "avg_logprob": -0.22,
+     "no_speech_prob": 0.54
+    },
+    {
+     "start": 494.14,
+     "end": 496.74,
+     "text": "Also wieso das alles?",
+     "avg_logprob": -0.22,
+     "no_speech_prob": 0.54
+    },
+    {
+     "start": 496.74,
+     "end": 497.94,
+     "text": "Sag mir.",
+     "avg_logprob": -0.22,
+     "no_speech_prob": 0.54
+    }
+   ],
+   "cue_before": {
+    "id": 1300061,
+    "start": 415.6,
+    "end": 417.22,
+    "text": "Dann tu, was du für richtig hältst.",
+    "vi": "Vậy thì hãy làm điều mà em cho là đúng đắn đi."
+   },
+   "cue_after": {
+    "id": 1300062,
+    "start": 497.26,
+    "end": 499.14,
+    "text": "Sag mir, wie geht es mit Fern voran?",
+    "vi": "Nói cho tớ nghe xem, chuyện của Fern tiến triển sao rồi?"
+   }
+  },
+  {
+   "start": 505.61,
+   "end": 506.62,
+   "covered": 0.0,
+   "window": [
+    504.41,
+    507.82
+   ],
+   "asr": [
+    {
+     "start": 504.41,
+     "end": 507.88,
+     "text": "Magierin.",
+     "avg_logprob": -0.71,
+     "no_speech_prob": 0.76
+    }
+   ],
+   "cue_before": {
+    "id": 1300064,
+    "start": 502.42,
+    "end": 505.12,
+    "text": "Aber sie ist auf dem Niveau einer vollwertigen Magierin.",
+    "vi": "Nhưng thực lực của em ấy đã đạt đến trình độ của một pháp sư thực thụ rồi."
+   },
+   "cue_after": {
+    "id": 1300065,
+    "start": 506.7,
+    "end": 508.04,
+    "text": "Das ist gut.",
+    "vi": "Thế thì tốt quá."
+   }
+  },
+  {
+   "start": 515.62,
+   "end": 516.67,
+   "covered": 0.24,
+   "window": [
+    514.42,
+    517.87
+   ],
+   "asr": [],
+   "cue_before": {
+    "id": 1300067,
+    "start": 511.36,
+    "end": 514.66,
+    "text": "So wird sie dir bestimmt nicht mehr im Weg sein, oder, Frieren?",
+    "vi": "Như vậy chắc chắn con bé sẽ không còn làm vướng chân cậu nữa đâu, đúng không, Frieren?"
+   },
+   "cue_after": {
+    "id": 1300069,
+    "start": 520.76,
+    "end": 523.44,
+    "text": "Es tut mir leid, Heiter. Aber das kann ich nicht machen.",
+    "vi": "Xin lỗi cậu nhé, Heiter. Nhưng tôi không thể làm chuyện đó được."
+   }
+  },
+  {
+   "start": 536.1,
+   "end": 538.87,
+   "covered": 0.09,
+   "window": [
+    534.9,
+    540.07
+   ],
+   "asr": [
+    {
+     "start": 535.94,
+     "end": 538.7,
+     "text": "Ich bitte euch heute Abend von ihr weg zu gehen.",
+     "avg_logprob": -0.67,
+     "no_speech_prob": 0.2
+    },
+    {
+     "start": 538.7,
+     "end": 540.7,
+     "text": "Was hast du vor?",
+     "avg_logprob": -0.67,
+     "no_speech_prob": 0.2
+    }
+   ],
+   "cue_before": {
+    "id": 1300072,
+    "start": 531.96,
+    "end": 534.9,
+    "text": "Dein Lohn für das Entziffern des Buches ist in der Schublade.",
+    "vi": "Tiền công của cậu cho việc giải mã cuốn sách để ở trong ngăn kéo đấy."
+   },
+   "cue_after": {
+    "id": 1300075,
+    "start": 541.68,
+    "end": 545.18,
+    "text": "Wie man sehen kann, habe ich nun nicht mehr sehr lang zu leben.",
+    "vi": "Như cậu thấy đấy, tớ chẳng còn sống được bao lâu nữa."
+   }
+  },
+  {
+   "start": 581.96,
+   "end": 583.0,
+   "covered": 0.26,
+   "window": [
+    580.76,
+    584.2
+   ],
+   "asr": [
+    {
+     "start": 581.77,
+     "end": 583.77,
+     "text": "Feiern?",
+     "avg_logprob": -0.77,
+     "no_speech_prob": 0.12
+    }
+   ],
+   "cue_before": {
+    "id": 1300081,
+    "start": 575.37,
+    "end": 578.25,
+    "text": "Und noch möglichst viele Erinnerungen mit ihr schaffen.",
+    "vi": "Và hãy tạo thêm thật nhiều kỷ niệm với em ấy nhất có thể đi."
+   },
+   "cue_after": {
+    "id": 1300083,
+    "start": 596.47,
+    "end": 599.39,
+    "text": "Sag mal, warum hast du Fern gerettet?",
+    "vi": "Này, tại sao ngày đó cậu lại cứu Fern vậy?"
+   }
+  },
+  {
+   "start": 962.53,
+   "end": 964.19,
+   "covered": 0.0,
+   "window": [
+    961.33,
+    965.39
+   ],
+   "asr": [
+    {
+     "start": 961.33,
+     "end": 962.33,
+     "text": "Wir fressen Samen.",
+     "avg_logprob": -0.39,
+     "no_speech_prob": 0.84
+    },
+    {
+     "start": 962.33,
+     "end": 963.89,
+     "text": "Ich bringe sie in den Wald zurück.",
+     "avg_logprob": -0.39,
+     "no_speech_prob": 0.84
+    }
+   ],
+   "cue_before": {
+    "id": 1300161,
+    "start": 960.65,
+    "end": 962.27,
+    "text": "Diese Monster fressen Samen.",
+    "vi": "Loài quái vật này chuyên ăn các loại hạt giống."
+   },
+   "cue_after": {
+    "id": 1300163,
+    "start": 968.99,
+    "end": 971.91,
+    "text": "Okay, Fern, sollen wir Azur-Mondgras suchen gehen?",
+    "vi": "Được rồi, Fern, chúng ta đi tìm cỏ trăng xanh nhé?"
+   }
+  },
+  {
+   "start": 1231.05,
+   "end": 1234.84,
+   "covered": 0.11,
+   "window": [
+    1229.85,
+    1236.04
+   ],
+   "asr": [
+    {
+     "start": 1230.86,
+     "end": 1234.86,
+     "text": "Friren sag mal, warum sammelst du eigentlich Zauber?",
+     "avg_logprob": -0.36,
+     "no_speech_prob": 0.36
+    },
+    {
+     "start": 1234.86,
+     "end": 1236.86,
+     "text": "Das ist nur ein Zeichen.",
+     "avg_logprob": -0.36,
+     "no_speech_prob": 0.36
+    }
+   ],
+   "cue_before": {
+    "id": 1300203,
+    "start": 1198.79,
+    "end": 1200.61,
+    "text": "Los, wir werden ihrer Spur folgen.",
+    "vi": "Đi thôi, chúng ta sẽ lần theo dấu vết của bọn chúng."
+   },
+   "cue_after": {
+    "id": 1300205,
+    "start": 1236.58,
+    "end": 1238.23,
+    "text": "So sieht das aber nicht aus.",
+    "vi": "Nhưng nhìn cách cô làm thì chẳng giống tiêu khiển chút nào."
+   }
+  },
+  {
+   "start": 1266.25,
+   "end": 1272.83,
+   "covered": 0.0,
+   "window": [
+    1265.05,
+    1274.03
+   ],
+   "asr": [
+    {
+     "start": 1265.35,
+     "end": 1272.35,
+     "text": "Da wird einem ja schlecht.",
+     "avg_logprob": -0.54,
+     "no_speech_prob": 0.18
+    }
+   ],
+   "cue_before": {
+    "id": 1300207,
+    "start": 1242.07,
+    "end": 1245.31,
+    "text": "Ich war früher sehr faul und habe immer nur dieselbe Magie benutzt.",
+    "vi": "Ngày trước tôi vốn rất lười biếng và lúc nào cũng chỉ dùng đi dùng lại một vài phép thuật quen thuộc."
+   },
+   "cue_after": {
+    "id": 1300208,
+    "start": 1281.07,
+    "end": 1284.73,
+    "text": "Und es gab einen Trottel, der mich für all meine gesammelten Zauber gelobt hat.",
+    "vi": "Và từng có một chàng ngốc đã hết lời khen ngợi tôi vì tất cả những phép thuật mà tôi sưu tầm được."
+   }
+  },
+  {
+   "start": 1550.89,
+   "end": 1560.1,
+   "covered": 0.0,
+   "window": [
+    1549.69,
+    1560.1
+   ],
+   "asr": [
+    {
+     "start": 1550.15,
+     "end": 1552.15,
+     "text": "Ist dieser Zauber nicht viel zu stark?",
+     "avg_logprob": -0.28,
+     "no_speech_prob": 0.61
+    },
+    {
+     "start": 1552.15,
+     "end": 1554.15,
+     "text": "Ich bin der Weise der Verderrnis.",
+     "avg_logprob": -0.28,
+     "no_speech_prob": 0.61
+    },
+    {
+     "start": 1554.15,
+     "end": 1556.15,
+     "text": "Dann setzen wir das mal in die Praxis eben.",
+     "avg_logprob": -0.28,
+     "no_speech_prob": 0.61
+    },
+    {
+     "start": 1556.15,
+     "end": 1558.15,
+     "text": "Hat eine neue Eide überhaupt irgendein Ziel?",
+     "avg_logprob": -0.28,
+     "no_speech_prob": 0.61
+    },
+    {
+     "start": 1558.15,
+     "end": 1560.15,
+     "text": "Tötungszauber.",
+     "avg_logprob": -0.28,
+     "no_speech_prob": 0.61
+    }
+   ],
+   "cue_before": {
+    "id": 1300243,
+    "start": 1454.89,
+    "end": 1456.98,
+    "text": "Wollen wir aufbrechen?",
+    "vi": "Chúng ta lên đường chứ?"
+   },
+   "cue_after": null
+  }
+ ]
+}

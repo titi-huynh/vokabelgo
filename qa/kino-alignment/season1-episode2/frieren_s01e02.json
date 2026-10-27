@@ -175,13 +175,12 @@
       "vi": "Dù vậy vẫn còn cần thêm thời gian trước khi em ấy trở thành một pháp sư thực thụ."
     },
     {
-      "id": 1300022,
-      "start": 235.4,
-      "end": 237.96,
+      "id": 1300248,
+      "start": 234.96,
+      "end": 238.14,
       "speaker": "Frieren",
-      "text": "Ich werde mit dem Entschlüsseln des Buchs bald fertig werden.",
-      "vi": "Tôi sẽ sớm hoàn tất việc giải mã cuốn ma đạo thư này thôi.",
-      "reviewNeeded": true
+      "text": "Ich werde mit dem Entschlüsseln des Buchs früher fertig werden.",
+      "vi": "Tôi sẽ hoàn tất việc giải mã cuốn sách sớm hơn."
     },
     {
       "id": 1300023,
@@ -280,13 +279,12 @@
       "vi": "Chắc chắn một ngày nào đó em sẽ làm được điều đó thôi."
     },
     {
-      "id": 1300035,
-      "start": 292.62,
-      "end": 293.26,
+      "id": 1300249,
+      "start": 292.12,
+      "end": 293.04,
       "speaker": "Frieren",
       "text": "Doch jetzt...",
-      "vi": "Nhưng ngay lúc này...",
-      "reviewNeeded": true
+      "vi": "Nhưng bây giờ..."
     },
     {
       "id": 1300036,
@@ -498,6 +496,54 @@
       "vi": "Vậy thì hãy làm điều mà em cho là đúng đắn đi."
     },
     {
+      "id": 1300250,
+      "start": 478.38,
+      "end": 481.86,
+      "speaker": "Frieren",
+      "text": "In dem Buch stand kein Wiederbelebungs- oder Unsterblichkeitszauber.",
+      "vi": "Trong cuốn sách không có phép hồi sinh hay phép bất tử nào cả."
+    },
+    {
+      "id": 1300251,
+      "start": 482.52,
+      "end": 483.5,
+      "speaker": "Heiter",
+      "text": "Ach, wirklich?",
+      "vi": "Ồ, thật vậy sao?"
+    },
+    {
+      "id": 1300252,
+      "start": 484.2,
+      "end": 485.08,
+      "speaker": "Frieren",
+      "text": "Wusstest du das?",
+      "vi": "Cậu biết chuyện đó rồi sao?"
+    },
+    {
+      "id": 1300253,
+      "start": 486.12,
+      "end": 489.02,
+      "speaker": "Heiter",
+      "text": "Die Angst vor dem Tod ist für uns unergründlich und tief.",
+      "vi": "Nỗi sợ cái chết trong chúng ta vừa sâu thẳm vừa khó thấu hiểu."
+    },
+    {
+      "id": 1300254,
+      "start": 489.62,
+      "end": 493.72,
+      "speaker": "Heiter",
+      "text": "Wenn es solche Zauber gegeben hätte, hätte Ewig diese selbst angewendet.",
+      "vi": "Nếu có những phép thuật như thế, hẳn Ewig đã tự dùng chúng cho mình rồi."
+    },
+    {
+      "id": 1300255,
+      "start": 494.4,
+      "end": 495.46,
+      "speaker": "Frieren",
+      "text": "Also wieso das alles?",
+      "vi": "Vậy thì tất cả chuyện này là vì sao?"
+    },
+    {
       "id": 1300062,
       "start": 497.26,
       "end": 499.14,
@@ -548,7 +594,7 @@
     {
       "id": 1300068,
       "start": 516.42,
-      "end": 520.0,
+      "end": 520,
       "speaker": "Heiter",
       "text": "Würdest du sie bitte auf deinen Reisen mitnehmen?",
       "vi": "Cậu làm ơn đưa con bé đi cùng trong chuyến hành trình của cậu nhé?"
@@ -2490,8 +2536,38 @@
     },
     {
       "start": 417.3,
+      "end": 478.38,
+      "reason": "Phần chưa đưa vào cue học sau khi tách các câu đã xác nhận ngày 2026-10-27; những phát ngôn còn chưa rõ được lưu riêng ở frieren_missing_20261027/review.json."
+    },
+    {
+      "start": 481.86,
+      "end": 482.52,
+      "reason": "Phần chưa đưa vào cue học sau khi tách các câu đã xác nhận ngày 2026-10-27; những phát ngôn còn chưa rõ được lưu riêng ở frieren_missing_20261027/review.json."
+    },
+    {
+      "start": 483.5,
+      "end": 484.2,
+      "reason": "Phần chưa đưa vào cue học sau khi tách các câu đã xác nhận ngày 2026-10-27; những phát ngôn còn chưa rõ được lưu riêng ở frieren_missing_20261027/review.json."
+    },
+    {
+      "start": 485.08,
+      "end": 486.12,
+      "reason": "Phần chưa đưa vào cue học sau khi tách các câu đã xác nhận ngày 2026-10-27; những phát ngôn còn chưa rõ được lưu riêng ở frieren_missing_20261027/review.json."
+    },
+    {
+      "start": 489.02,
+      "end": 489.62,
+      "reason": "Phần chưa đưa vào cue học sau khi tách các câu đã xác nhận ngày 2026-10-27; những phát ngôn còn chưa rõ được lưu riêng ở frieren_missing_20261027/review.json."
+    },
+    {
+      "start": 493.72,
+      "end": 494.4,
+      "reason": "Phần chưa đưa vào cue học sau khi tách các câu đã xác nhận ngày 2026-10-27; những phát ngôn còn chưa rõ được lưu riêng ở frieren_missing_20261027/review.json."
+    },
+    {
+      "start": 495.46,
       "end": 497.2,
-      "reason": "Nhạc nền cao trào và hiệu ứng âm thanh khi Fern vận ma lực bắn xuyên tảng đá bên kia khe vực; đã loại bỏ 6 câu ảo giác lặp \"Das war es.\" của ASR."
+      "reason": "Phần chưa đưa vào cue học sau khi tách các câu đã xác nhận ngày 2026-10-27; những phát ngôn còn chưa rõ được lưu riêng ở frieren_missing_20261027/review.json."
     },
     {
       "start": 994.4,
@@ -2516,18 +2592,11 @@
   ],
   "uncertain": [
     {
-      "id": 1300022,
-      "start": 235.4,
-      "end": 237.96,
-      "text": "Ich werde mit dem Entschlüsseln des Buchs bald fertig werden.",
-      "reason": "Độ tự tin nhận dạng từ (word probability) của ASR thấp ở ranh giới âm thanh; đã gắn cờ reviewNeeded để đảm bảo an toàn."
-    },
-    {
       "id": 1300035,
-      "start": 292.62,
+      "start": 293.04,
       "end": 293.26,
       "text": "Doch jetzt...",
-      "reason": "Độ tự tin nhận dạng từ (word probability) của ASR thấp ở ranh giới âm thanh; đã gắn cờ reviewNeeded để đảm bảo an toàn."
+      "reason": "Phần chưa đưa vào cue học sau khi tách các câu đã xác nhận ngày 2026-10-27; những phát ngôn còn chưa rõ được lưu riêng ở frieren_missing_20261027/review.json."
     },
     {
       "id": 1300036,
@@ -2599,5 +2668,84 @@
       "text": "Tötungszauber.",
       "reason": "Lời giới thiệu tập tiếp theo (Preview Tập 3) chồng lên nhạc nền cuối phim với độ tự tin từ thấp; đã gắn cờ reviewNeeded."
     }
-  ]
+  ],
+  "missingDialogueReview": {
+    "date": "2026-10-27",
+    "folder": "qa/kino-alignment/frieren_missing_20261027",
+    "reviewJson": "qa/kino-alignment/frieren_missing_20261027/review.json",
+    "candidateWindows": 12,
+    "addedCues": 8,
+    "addedIds": [
+      1300248,
+      1300249,
+      1300250,
+      1300251,
+      1300252,
+      1300253,
+      1300254,
+      1300255
+    ],
+    "preservedPublishedCues": 235,
+    "supersededDrafts": [
+      {
+        "cue": {
+          "id": 1300022,
+          "start": 235.4,
+          "end": 237.96,
+          "speaker": "Frieren",
+          "text": "Ich werde mit dem Entschlüsseln des Buchs bald fertig werden.",
+          "vi": "Tôi sẽ sớm hoàn tất việc giải mã cuốn ma đạo thư này thôi.",
+          "reviewNeeded": true
+        },
+        "partialReplacementIds": [
+          1300248
+        ],
+        "note": "Only accepted portions become fresh cues; unresolved portions remain in review.json."
+      },
+      {
+        "cue": {
+          "id": 1300035,
+          "start": 292.62,
+          "end": 293.26,
+          "speaker": "Frieren",
+          "text": "Doch jetzt...",
+          "vi": "Nhưng ngay lúc này...",
+          "reviewNeeded": true
+        },
+        "partialReplacementIds": [
+          1300249
+        ],
+        "note": "Only accepted portions become fresh cues; unresolved portions remain in review.json."
+      }
+    ],
+    "resolvedUncertain": [
+      {
+        "id": 1300022,
+        "start": 235.4,
+        "end": 237.96,
+        "text": "Ich werde mit dem Entschlüsseln des Buchs bald fertig werden.",
+        "reason": "Độ tự tin nhận dạng từ (word probability) của ASR thấp ở ranh giới âm thanh; đã gắn cờ reviewNeeded để đảm bảo an toàn."
+      },
+      {
+        "id": 1300035,
+        "start": 292.62,
+        "end": 293.26,
+        "text": "Doch jetzt...",
+        "reason": "Độ tự tin nhận dạng từ (word probability) của ASR thấp ở ranh giới âm thanh; đã gắn cờ reviewNeeded để đảm bảo an toàn."
+      }
+    ],
+    "counts": {
+      "candidates": 12,
+      "previousCueCount": 235,
+      "newCueCount": 243,
+      "addedCues": 8,
+      "adjustedExistingCues": 0,
+      "excludedParts": 11,
+      "reviewNeededParts": 6,
+      "windowsWithAddedCues": 3,
+      "windowsWithExcludedParts": 11,
+      "windowsWithReviewNeededParts": 6
+    },
+    "reservedReviewCueIds": []
+  }
 }

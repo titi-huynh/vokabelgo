@@ -1,0 +1,32 @@
+{
+  "key": "frieren_s01e02",
+  "rawOwnerInputPresentOnMachine": false,
+  "sourceNote": "Máy không còn raw input Frieren tập 2; sử dụng bản lưu trữ phát hành 720p (video/frieren_s01e02-web-v1.mp4) và 480p (video/kino-light/frieren_s01e02-480p-v1.mp4) từ kho media dự án giữ nguyên luồng âm thanh gốc theo hồ sơ qa/kino-alignment/season1-episode2/media.json.",
+  "referenceMediaProfile": "qa/kino-alignment/season1-episode2/media.json",
+  "audioUnchanged": true,
+  "expectedDecodedPcmS16leSha256": "d7a7a3ef4f96167972d161326d5d6305a7ee94295a683f447c77edf0895d08d1",
+  "expectedDuration": 1560.102313,
+  "method": "ffmpeg -map 0:a:0 -c:a pcm_s16le -f hash -hash sha256 (no audio recoding); SHA-256, byte size, and ffprobe format duration matched against season1-episode2/media.json",
+  "files": [
+    {
+      "role": "archive720p_preserved_original_audio",
+      "file": "C:\\Users\\huynh\\.codex\\worktrees\\kino-frieren-missing-lines\\flash\\video\\frieren_s01e02-web-v1.mp4",
+      "relPath": "video/frieren_s01e02-web-v1.mp4",
+      "releaseUrl": "https://github.com/titi-huynh/vokabelgo-media/releases/download/media-v1/video--frieren_s01e02-web-v1.mp4",
+      "bytes": 252263102,
+      "fileSha256": "36d2a73f8fd1d0bbdc42728ed2bf163281e1896cbb4f2288ef85683d60fe3280",
+      "decodedPcmS16leSha256": "d7a7a3ef4f96167972d161326d5d6305a7ee94295a683f447c77edf0895d08d1",
+      "duration": 1560.102313
+    },
+    {
+      "role": "viewing480p_preserved_original_audio",
+      "file": "C:\\Users\\huynh\\.codex\\worktrees\\kino-frieren-missing-lines\\flash\\video\\kino-light\\frieren_s01e02-480p-v1.mp4",
+      "relPath": "video/kino-light/frieren_s01e02-480p-v1.mp4",
+      "releaseUrl": "https://github.com/titi-huynh/vokabelgo-media/releases/download/media-v1/video--kino-light--frieren_s01e02-480p-v1.mp4",
+      "bytes": 136157599,
+      "fileSha256": "976039158c9ce8c084dab8cb69169a2a4af67c75b5add4aa234dd7e7cc9207eb",
+      "decodedPcmS16leSha256": "d7a7a3ef4f96167972d161326d5d6305a7ee94295a683f447c77edf0895d08d1",
+      "duration": 1560.102313
+    }
+  ]
+}
