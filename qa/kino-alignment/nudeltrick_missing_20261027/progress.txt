@@ -1,0 +1,85 @@
+[2026-10-27 15:17:43] Decoding audio from video/erdmaennchen_nudeltrick.mp4 at 16kHz...
+[2026-10-27 15:17:47] Audio decoded: 746.923s, float32 PCM sha256=9a290d350394406db0b512c6258cacb6c9eec258edec9f691104cf0496c33e5c
+[2026-10-27 15:17:47] Loading model=small (cpu_threads=3, local_files_only=True)...
+[2026-10-27 15:18:06] model=small [1/12] candidate=1 (0.58-27.32s, 11.8s): Ein Erdmännchen als Direktiv, das gibt's nicht überall. | Mit diesen beiden geht nicht schief, sie lösen jeden Fall. | Schnell als die Polizei macht euch auf was gefasst. | Jan und Henry sind die zwei Verbrecher aufgefasst.
+[2026-10-27 15:18:16] model=small [2/12] candidate=2 (80.26-102.55s, 10.9s): Hab ich nicht gesagt, toll, jetzt tut er gleich ein auf die Bühne. Wahrscheinlich den da. | Für den kommenden Trick brauche ich jemand aus dem Publikum. Darf ich sie nach oben? | Verrat doch bitte nicht alle.
+[2026-10-27 15:18:25] model=small [3/12] candidate=3 (116.20-123.99s, 8.2s): Ich ... die hier ... | Ja! | Ha, ha, ha, ha!
+[2026-10-27 15:18:34] model=small [4/12] candidate=4 (131.46-138.43s, 9.3s): Wir haben eine Krawatte. Wie ist das? | Ja!
+[2026-10-27 15:18:44] model=small [5/12] candidate=5 (138.60-147.71s, 9.6s): Achtung, jetzt kommt es! Jetzt kommt es! | Wo bewahren Sie eigentlich Ihr Geld?
+[2026-10-27 15:18:52] model=small [6/12] candidate=6 (158.66-164.95s, 8.0s): Aber meine Tasche, das ... | Ja.
+[2026-10-27 15:18:59] model=small [7/12] candidate=7 (182.15-194.46s, 7.8s): Sehr lustiger Trick, nicht wahr, Jan? | Ja, ich glaube schon.
+[2026-10-27 15:19:07] model=small [8/12] candidate=8 (288.36-296.51s, 7.9s): auf. Kommst du mal bitte mit? Ja. Bitte. Ich glaube.
+[2026-10-27 15:19:15] model=small [9/12] candidate=9 (564.71-572.73s, 7.9s): So! Los geht's! | Geht's? | Kannst du was erken-
+[2026-10-27 15:19:36] model=small [10/12] candidate=10 (571.30-596.99s, 21.2s): Kannst du was erkennen? | Sie packt ihre Tüten aus. | Sie hat ein Käse gekauft. | Ah, ja. | Man riecht es. | Und ich habe schon gedacht, das wäre in deine Füße. | Und nun, schweb! | Du schweb schon! | Los! | Setz deine Löcher in Bewegung und schweb! | Was passiert nun? | Ich will nicht mehr.
+[2026-10-27 15:19:49] model=small [11/12] candidate=11 (693.73-717.08s, 12.9s): Und das Geheimnis ist, dass man das Publikum dabei abgelenkt, indem man dann groß mit dem Geldbeutel wedelt. | Das ist wirklich nett, dass du uns als Dankeschön die Nudeltrick verriehst. | Na, wenn ihr nicht gewesen wird, dann hätte ich wahrscheinlich nie wieder auftreten können. | Ach, das war doch ein ganz einfacher...
+[2026-10-27 15:19:58] model=small [12/12] candidate=12 (722.53-746.92s, 8.3s): Was? Wollen wir mal sehen? | Nicht so ganz. | Pizza! Pizza!
+[2026-10-27 15:19:58] Loading model=medium (cpu_threads=3, local_files_only=True)...
+[2026-10-27 15:21:16] model=medium [1/12] candidate=1 (0.58-27.32s, 38.4s): Ein Erdmännchen als Detektiv, das gibt's nicht überall. | Mit diesen beiden geht nicht schief, sie lösen jeden Fall. | Schneller als die Polizei, macht euch auf was gefasst. | Jan und Henry sind die zwei Verbrecher aufgepasst.
+[2026-10-27 15:22:21] model=medium [2/12] candidate=2 (80.26-102.55s, 64.7s): Hab ich nicht gesagt? Toll! Jetzt holt er gleich einen auf die Bühne. Wahrscheinlich den da. | Für den kommenden Trick brauche ich jemand aus dem Publikum. Darf ich Sie nach oben? | Oh, Micha! | Verrat doch bitte nicht alle!
+[2026-10-27 15:22:43] model=medium [3/12] candidate=3 (116.20-123.99s, 22.0s): Nicht die hier!
+[2026-10-27 15:23:05] model=medium [4/12] candidate=4 (131.46-138.43s, 22.5s): Eine Krawatte! Die ist doch hier!
+[2026-10-27 15:23:30] model=medium [5/12] candidate=5 (138.60-147.71s, 24.8s): Achtung! Jetzt kommt's! Jetzt kommt's! | Wo bewahren Sie eigentlich Ihr Geld?
+[2026-10-27 15:23:54] model=medium [6/12] candidate=6 (158.66-164.95s, 24.0s): Aber meine Tasche, das ...
+[2026-10-27 15:24:20] model=medium [7/12] candidate=7 (182.15-194.46s, 25.7s): Sehr lustiger Trick, nicht wahr, Jan? | Ja, ich glaube schon.
+[2026-10-27 15:24:43] model=medium [8/12] candidate=8 (288.36-296.51s, 23.7s): auf. Kommen Sie mal bitte mit. Tja. Bitte. Ich glaube ...
+[2026-10-27 15:25:08] model=medium [9/12] candidate=9 (564.71-572.73s, 24.3s): So, los geht's! | Käse! | Kannst du was erkä-
+[2026-10-27 15:25:50] model=medium [10/12] candidate=10 (571.30-596.99s, 42.1s): Kannst du was erkennen? | Sie packt ihre Tüten aus. | Sie hat einen Käse gekauft. | Ah, ja. | Man riecht's, hm? | Und ich hab schon gedacht, das wären deine Füße. | Und nun, schweb! | Nun, schweb schon! | Los! | Setz deine Löcher in Bewegung und schweb! | Was passiert nun?
+[2026-10-27 15:26:28] model=medium [11/12] candidate=11 (693.73-717.08s, 38.5s): Und das Geheimnis ist, dass man das Publikum dabei ablenkt, in dem man dann groß mit dem | Geldbeutel wedelt. | Ah, das ist wirklich nett, dass du uns als Dankeschön die Nudeltrick vergehtst. | Na, wenn ihr nicht gewesen wird, dann hätte ich wahrscheinlich nie wieder auftreten | können. | Ach, das war doch ein ganz einfacher F-
+[2026-10-27 15:26:52] model=medium [12/12] candidate=12 (722.53-746.92s, 23.3s): Wollen wir mal sehen. | Nicht so ganz.
+[2026-10-27 15:26:52] Completed main small + medium independent recognition across all 12 windows.
+[2026-10-27 15:28:54] Decoding audio from video/erdmaennchen_nudeltrick.mp4 at 16kHz...
+[2026-10-27 15:28:59] Audio decoded: 746.923s, float32 PCM sha256=9a290d350394406db0b512c6258cacb6c9eec258edec9f691104cf0496c33e5c
+[2026-10-27 15:28:59] Loading model=small (cpu_threads=3, local_files_only=True)...
+[2026-10-27 15:29:24] model=small [1/15] candidate=2 (84.80-88.80s, 11.0s): Hä? Jetzt holt der gleich ein auf die Bühne. Wahrscheinlich den da.
+[2026-10-27 15:29:33] model=small [2/15] candidate=2 (90.40-96.20s, 8.9s): für den kommenden Trick brauche ich jemand aus dem Publikum.
+[2026-10-27 15:29:42] model=small [3/15] candidate=2 (96.40-100.30s, 8.4s): Darf ich sie nach oben?
+[2026-10-27 15:29:48] model=small [4/15] candidate=3 (118.40-122.90s, 6.8s): (no segments)
+[2026-10-27 15:29:58] model=small [5/15] candidate=4 (131.00-136.50s, 10.0s): Meine Krawatte. | Wie ist das? | Ja!
+[2026-10-27 15:30:07] model=small [6/15] candidate=6 (160.20-164.00s, 8.2s): Aber meine Tasche, das ...
+[2026-10-27 15:30:14] model=small [7/15] candidate=8 (290.10-294.60s, 7.0s): Ja, bitte.
+[2026-10-27 15:30:21] model=small [8/15] candidate=9 (564.00-571.20s, 7.7s): Na, so, los gehts. | Gehts.
+[2026-10-27 15:30:29] model=small [9/15] candidate=10 (575.40-577.60s, 8.0s): Sie hat ein Käse gekauft.
+[2026-10-27 15:30:39] model=small [10/15] candidate=10 (577.50-583.00s, 9.5s): Ah, ja, man riecht, und ich hab schon gedacht, das wären deine Füße.
+[2026-10-27 15:30:50] model=small [11/15] candidate=10 (584.20-590.00s, 11.2s): Und nun schweb! | Nur schweb schon!
+[2026-10-27 15:30:59] model=small [12/15] candidate=11 (695.50-704.00s, 9.0s): Und das Geheimnis ist, dass man das Publikum dabei ablenkt, indem man dann groß mit dem Geldbeutel wedelt.
+[2026-10-27 15:31:08] model=small [13/15] candidate=11 (703.80-709.20s, 9.0s): Ah, das ist wirklich nett, dass du uns als Dankeschön die Nudeltrick veredst.
+[2026-10-27 15:31:17] model=small [14/15] candidate=11 (709.00-714.80s, 8.5s): Na, wenn ihr nicht gewesen wird, dann hätte ich wahrscheinlich nie wieder auftreten können.
+[2026-10-27 15:31:52] model=small [15/15] candidate=12 (727.50-737.00s, 35.2s): Äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, äh, ä
+[2026-10-27 15:31:52] Loading model=medium (cpu_threads=3, local_files_only=True)...
+[2026-10-27 15:32:45] model=medium [1/15] candidate=2 (84.80-88.80s, 27.8s): Jetzt holt er gleich einen auf die Bühne, wahrscheinlich den da.
+[2026-10-27 15:33:09] model=medium [2/15] candidate=2 (90.40-96.20s, 23.8s): Für den kommenden Trick brauche ich jemand aus dem Publikum.
+[2026-10-27 15:33:33] model=medium [3/15] candidate=2 (96.40-100.30s, 24.1s): Darf ich Sie nach oben nennen? | Oh, Micha.
+[2026-10-27 15:35:16] model=medium [4/15] candidate=3 (118.40-122.90s, 103.2s): Jaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaáááááááááááááááááááááááááááááááááááááááááááááá | Das war's für heute.
+[2026-10-27 15:35:42] model=medium [5/15] candidate=4 (131.00-136.50s, 25.6s): Ja, mal ne Krawatte. Die ist doch... | Ja!
+[2026-10-27 15:36:07] model=medium [6/15] candidate=6 (160.20-164.00s, 25.2s): Aber in meiner Tasche, das ...
+[2026-10-27 15:36:32] model=medium [7/15] candidate=8 (290.10-294.60s, 25.1s): Ja, bitte.
+[2026-10-27 15:36:57] model=medium [8/15] candidate=9 (564.00-571.20s, 25.7s): So, los geht's!
+[2026-10-27 15:37:23] model=medium [9/15] candidate=10 (575.40-577.60s, 25.8s): Sie hat einen Käse gekauft.
+[2026-10-27 15:37:53] model=medium [10/15] candidate=10 (577.50-583.00s, 29.5s): Ah, ja! Man riecht, hm? | Und ich hab schon gedacht, das wären deine Füße.
+[2026-10-27 15:38:20] model=medium [11/15] candidate=10 (584.20-590.00s, 27.1s): Und nun schweb! | Nun schweb schon!
+[2026-10-27 15:38:50] model=medium [12/15] candidate=11 (695.50-704.00s, 30.6s): Und das Geheimnis ist, dass man das Publikum dabei ablenkt, indem man dann groß mit dem Geldbeutel wägt.
+[2026-10-27 15:39:20] model=medium [13/15] candidate=11 (703.80-709.20s, 29.5s): Ah, das ist wirklich nett, dass du uns als Dankeschön die Nudeltrick verdienst.
+[2026-10-27 15:39:48] model=medium [14/15] candidate=11 (709.00-714.80s, 28.1s): Na, wenn ihr nicht gewesen wird, dann hätte ich wahrscheinlich nie wieder auftreten können.
+[2026-10-27 15:40:14] model=medium [15/15] candidate=12 (727.50-737.00s, 26.1s): Nicht so ganz. | Pizza!
+[2026-10-27 15:40:14] Completed extra (tight) small + medium recognition.
+[2026-10-27 15:40:26] Decoding audio from video/erdmaennchen_nudeltrick.mp4 at 16kHz...
+[2026-10-27 15:40:31] Audio decoded: 746.923s, float32 PCM sha256=9a290d350394406db0b512c6258cacb6c9eec258edec9f691104cf0496c33e5c
+[2026-10-27 15:40:31] Loading model=small (cpu_threads=3, local_files_only=True)...
+[2026-10-27 15:40:50] model=small [1/8] candidate=2 (77.00-100.70s, 12.2s): Boah! | Hab ich nicht gesagt, toll. | Jetzt fot da gleich ein auf die Bühne. | Wahrscheinlich den da. | Für den kommenden Trick brauche ich jemand aus dem Publikum. | Darf ich sie nach oben.
+[2026-10-27 15:41:01] model=small [2/8] candidate=4 (122.90-138.00s, 10.6s): Wo ich gerade auf die Uhr schaue, es wird höchste Zeit, dass sie wieder ihre Krawatte anziehen. | Meine Krawatte? Wie ist das?
+[2026-10-27 15:41:11] model=small [3/8] candidate=6 (150.60-168.00s, 9.9s): Schauen Sie lieber mal nach, denn Ihr Geld hab ich hier! | Ja! | Aber meine Tasche, das sind ja Nudeln.
+[2026-10-27 15:41:22] model=small [4/8] candidate=8 (285.50-299.60s, 11.3s): Ja, also ich würde sagen, wir schreiben jetzt erst mal von allen Namen und die Adresse auf, ne? | Kommst du mal bitte mit? | Ja. | Bitte. | Ich glaube, irgendwer möchte, dass man dich verdächtigt.
+[2026-10-27 15:41:30] model=small [5/8] candidate=9 (562.00-573.20s, 8.5s): So! Los geht's! | Geht's? | Kannst du was erkennen?
+[2026-10-27 15:41:42] model=small [6/8] candidate=10 (573.40-594.80s, 11.9s): Sie packt ihre Tüten aus. Sie hat einen Käse gekauft. | Ah, ja. Man riecht. | Ich hab schon gedacht, das wäre in deine Füße. | Und nun, schweb. | Nur schweb schon. | Los, setzt deine Löcher in Bewegung und schweb.
+[2026-10-27 15:41:55] model=small [7/8] candidate=11 (695.00-718.60s, 12.8s): Und das Geheimnis ist, dass man das Publikum dabei ablenkt, indem man dann groß mit dem Geldbeutel wedelt. | Ah, das ist wirklich nett, dass du uns als Dankeschön die Nudeltrick verriehst. | Na, wenn ihr nicht gewesen wird, dann hätte ich wahrscheinlich nie wieder auftreten können. | Ach, das war doch ein ganz einfacher Fall für die Erdmännchen.
+[2026-10-27 15:42:54] model=small [8/8] candidate=12 (724.10-746.92s, 58.6s): Ja. | Äh, äh, äh, äh. | Nicht so ganz. | Ah, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza, Pizza
+[2026-10-27 15:42:54] Loading model=medium (cpu_threads=3, local_files_only=True)...
+[2026-10-27 15:44:11] model=medium [1/8] candidate=2 (77.00-100.70s, 53.7s): Habe ich's nicht gesagt? Toll! Jetzt holt er gleich einen auf die Bühne. Wahrscheinlich | den da. Für den kommenden Trick brauche ich jemand aus dem Publikum. Darf ich Sie | Ich geh nach oben.
+[2026-10-27 15:44:26] model=medium [2/8] candidate=4 (122.90-138.00s, 14.9s): Wo ich gerade auf die Uhr schaue, es wird höchste Zeit, dass Sie wieder Ihre Krawatte anziehen. | Meine Krawatte? | Ja! | Die ist doch hier!
+[2026-10-27 15:44:40] model=medium [3/8] candidate=6 (150.60-168.00s, 13.4s): Schauen Sie lieber mal nach, denn Ihr Geld habe ich hier! | Aber in meiner Tasche, das sind ja Nudeln!
+[2026-10-27 15:44:56] model=medium [4/8] candidate=8 (285.50-299.60s, 16.2s): Ja, also ich würde sagen, wir schreiben jetzt erstmal von allen den Namen und die Adresse | auf. | Kommen Sie mal bitte mit. | Ja. | Ich glaube, irgendwer möchte, dass man dich verdächtigt.
+[2026-10-27 15:45:08] model=medium [5/8] candidate=9 (562.00-573.20s, 12.1s): So, los geht's! | Kannst du was erkennen?
+[2026-10-27 15:45:28] model=medium [6/8] candidate=10 (573.40-594.80s, 20.2s): Sie packt ihre Tüten aus. | Sie hat einen Käse gekauft. | Ah, ja. | Man riecht's. | Und ich hab schon gedacht, das wären deine Füße. | Und nun | schweb! | Nun schweb schon! | Los! | Setz deine Löcher in Bewegung und | schweb!
+[2026-10-27 15:45:49] model=medium [7/8] candidate=11 (695.00-718.60s, 21.0s): Und das Geheimnis ist, dass man das Publikum dabei ablenkt, indem man dann groß mit dem Geldbeutel wedelt. | Ah, das ist wirklich nett, dass du uns als Dankeschön die Nudeltrick verdienst. | Na, wenn ihr nicht gewesen wird, dann hätte ich wahrscheinlich nie wieder auftreten können. | Ach, das war doch ein ganz einfacher Fall für die Erdmännchen.
+[2026-10-27 15:46:02] model=medium [8/8] candidate=12 (724.10-746.92s, 12.4s): Ja. | Nicht so ganz. | Pizza!
+[2026-10-27 15:46:02] Completed extra (context) small + medium recognition.

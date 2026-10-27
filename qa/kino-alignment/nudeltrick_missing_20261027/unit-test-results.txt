@@ -1,0 +1,1597 @@
+
+> vokabelgo@1.0.0 test:unit
+> node test-all.js
+
+====================================================
+RUNNING ALL ACCEPTANCE TEST SUITES SEQUENTIALLY
+====================================================
+
+
+====================================================
+>>> EXECUTING: test-security-auth-acceptance.js
+====================================================
+--- TEST GROUP 1: SEC-02 - HTML Escaping & XSS Protection ---
+
+--- TEST GROUP 2: AUTH-01 & SEC-03 - Firebase / Supabase Integration ---
+
+--- TEST GROUP 3: SEC-01 - Supabase RLS & Schema Separation (Tập tin SQL) ---
+
+--- TEST GROUP 4: BEHAVIORAL TESTS - Chạy trực tiếp mã thật từ index.html ---
+
+--- TEST GROUP 5: CLIENT INTEGRATION, TRẠNG THÁI DB & BỘ CHẠY BẤT ĐỒNG BỘ ---
+📌 THÔNG BÁO VỀ TRẠNG THÁI CƠ SỞ DỮ LIỆU SUPABASE:
+   - Chưa kiểm chứng quyền trên cơ sở dữ liệu thật do không có môi trường PostgreSQL/Supabase thật.
+   - Đã loại bỏ hoàn toàn mã mô phỏng để không ngộ nhận về kết quả RLS.
+   - Cần kiểm chứng quyền RLS thực tế trên Supabase SQL Editor / Dashboard khi triển khai.
+
+=== RUNNING SECURITY, AUTH & BEHAVIORAL ACCEPTANCE TESTS ===
+
+  ✅ PASS: esc(s) mã hóa ký tự <, >, &, ", ' thành các HTML entities an toàn
+  ✅ PASS: esc(s) xử lý an toàn các giá trị null, undefined, số và chuỗi rỗng
+  ✅ PASS: renderManageList trong index.html đã mã hóa esc(t) cho các nhãn thẻ (tags)
+  ✅ PASS: deleteTrackById trong playlist modal không còn nối esc(t.title) vào chuỗi onclick
+  ✅ PASS: leaderboard-feed.js: escapeHtml mã hóa tên học viên độc hại
+  ✅ PASS: leaderboard-feed.js: renderLeaderboard bọc escapeHtml cho tất cả tên người học (top1, top2, top3, list)
+  ✅ PASS: index.html thiết lập tường minh window.VokabelCloudProvider = "supabase"
+  ✅ PASS: index.html không còn tải đồng thời 4 gói SDK Firebase compat gây lãng phí & xung đột
+  ✅ PASS: SEC-03: firebase-auth.js không còn chứa new Function hoặc eval
+  ✅ PASS: AUTH-01: firebase-auth.js gom toàn bộ phương thức vào namespace window.VokabelFirebase
+  ✅ PASS: AUTH-01: firebase-auth.js chỉ gắn đè window khi window.VokabelCloudProvider === "firebase"
+  ✅ PASS: AUTH-01: supabase-auth.js updateAuthUI liên kết đúng các phần tử header openAuthBtn, authStatusText, authSyncIcon
+  ✅ PASS: AUTH-01: supabase-auth.js expose window.getSupabaseCurrentUser và window.VokabelSupabase
+  ✅ PASS: AUTH-01: leaderboard-feed.js nhận diện đúng người dùng Supabase qua getSupabaseCurrentUser
+  ✅ PASS: supabase_schema.sql: Đã loại bỏ chính sách SELECT using (true) trên vokabelgo_users
+  ✅ PASS: supabase_schema.sql: Chính sách SELECT trên vokabelgo_users bảo vệ dữ liệu riêng tư bằng auth.uid() = id
+  ✅ PASS: supabase_schema.sql: Tạo view public.vokabelgo_leaderboard cách ly các cột công khai
+  ✅ PASS: supabase_security_patch.sql: Phương án hoàn tác (Rollback) KHÔNG khôi phục USING (true) và bỏ từ ngữ tuyệt đối
+  ✅ PASS: supabase-auth.js: loadLeaderboardFromSupabase ưu tiên đọc từ view vokabelgo_leaderboard và có fallback
+  ✅ PASS: Thao tác 1: clearForm() làm trống tất cả 9 trường nhập liệu qua hàm setVal() khôi phục (chạy trực tiếp mã index.html)
+  ✅ PASS: Thao tác 2: Thêm thẻ mới qua saveCard() -> Lưu vào userCards & localStorage, giao diện cập nhật, form làm trống (chạy trực tiếp mã index.html)
+  ✅ PASS: Thao tác 3: Sửa thẻ hiện có qua editCard() và saveCard() -> Dữ liệu cập nhật đúng, không bị nhân đôi (chạy trực tiếp mã index.html)
+  ✅ PASS: Thao tác 4: Nhân bản thẻ gốc qua editCard(baseId) -> Tạo thẻ user mới có hậu tố "· Bản chỉnh sửa", thẻ gốc không đổi (chạy trực tiếp mã index.html)
+  ✅ PASS: Thao tác 5: Tải lại trang (F5) -> Khởi tạo lại môi trường, thẻ tự tạo và thẻ nhân bản còn nguyên vẹn trong storage và hiển thị đúng (chạy trực tiếp mã index.html)
+  ✅ PASS: Client Integration: loadLeaderboardFromSupabase ưu tiên truy vấn view vokabelgo_leaderboard, phân biệt isMe, không lộ thông tin cá nhân
+  ✅ PASS: Client Integration: loadLeaderboardFromSupabase kích hoạt fallback khi view chưa sẵn sàng
+  ✅ PASS: Async Test Runner: Bộ chạy kiểm thử chờ Promise bất đồng bộ và trả mã thoát 1 khi bài bất đồng bộ thất bại
+
+========================================
+ACCEPTANCE TEST SUMMARY: 27 PASSED, 0 FAILED
+========================================
+
+
+✅ COMPLETED SUITE: test-security-auth-acceptance.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-pedagogical-ux-acceptance.js
+====================================================
+=== RUNNING PEDAGOGICAL LEARNING UX ACCEPTANCE TESTS ===
+
+--- TEST GROUP 1: 4 Main Navigation Hubs & Clean Header (Section B) ---
+  ✅ PASS: Header contains the 4 primary learner hubs: Hôm Nay, Học Từ, Kino, Thư Viện
+  ✅ PASS: Account, settings, and tour are tucked into Profile Dropdown menu and do NOT clutter top nav
+  ✅ PASS: Kino Studio is creator/admin functionality and not displayed as peer in learner navigation
+
+--- TEST GROUP 2: Trang Hôm Nay & Resume Flow (Section C, D) ---
+  ✅ PASS: Hôm Nay section exists with single primary CTA and session target
+  ✅ PASS: setMode and setPrimaryHub support seamless switching between all 4 hubs
+  ✅ PASS: setPrimaryHub(kino) explicitly hides #flashMode, #mcqMode, #typingMode, and #matchMode without resetting currentStudySubMode
+
+--- TEST GROUP 3: Active Recall & Progressive Disclosure (Section F, G) ---
+  ✅ PASS: Flashcard front has Active Recall reveal button (Attempt recall FIRST)
+  ✅ PASS: Flashcard ratings use pedagogical human labels: Chưa nhớ, Còn khó, Nhớ được
+  ✅ PASS: Progressive disclosure: deep details (collocations, grammar, example, note) are collapsed by default
+
+--- TEST GROUP 4: Cat Fishing Reward Modal & Student View (Section J, K, M, N) ---
+  ✅ PASS: Student reward modal removes clutter (No MÈO CÂU CÁ TRÚNG THƯỞNG title, no subtitle, minimal header)
+  ✅ PASS: Student reward UI has simple audio toggle (🔊 / 🔇) and close button
+  ✅ PASS: Dev controls are NOT rendered in static student DOM and only generated when dev flag enabled
+  ✅ PASS: Catch reveal displays German word, article, Vietnamese meaning, rarity badge, +1 vào Hồ cá, and Học tiếp CTA
+
+--- TEST GROUP 5: Hồ Cá / Persistent Fish Collection (Section L) ---
+  ✅ PASS: Caught fish is persisted to localStorage key vokabelgo_fish_collection_v1 on pending reward claim
+  ✅ PASS: Replaying video or clicking replay button does NOT re-award fish (Transaction independent of playback)
+  ✅ PASS: Library Hồ cá view renders collected fish from storage with German vocabulary and SVG art
+
+--- TEST GROUP 6: Accessibility, Responsiveness & Performance (Section R, S) ---
+  ✅ PASS: learning-ux.css includes prefers-reduced-motion media query
+  ✅ PASS: learning-ux.css includes mobile responsive breakpoints (<= 768px)
+
+--- TEST GROUP 7: Semantic Callout Classification & Styling (Round 2.1) ---
+  ✅ PASS: Deterministic note classification exists and is exported in index.html
+  ✅ PASS: Test A: Note with "≠" is classified as Dễ nhầm (callout-confusion, icon-easy-to-confuse)
+  ✅ PASS: Test B: Note with confusion markers (phân biệt, dễ nhầm, khác với, đừng nhầm, so với, vs.) is classified as Dễ nhầm
+  ✅ PASS: Test C: Note with "mở rộng" is classified as Mở rộng (callout-note, icon-memory-tip)
+  ✅ PASS: Test D: Standard notes are classified as neutral Ghi chú (callout-note, icon-memory-tip)
+  ✅ PASS: Test E: Collocations block is titled "Cụm thường dùng" and NOT "Mẹo nhớ"
+  ✅ PASS: Test F: learning-ux.css defines neutral soft paper style for .callout-note
+
+--- TEST GROUP 8: Fish Reward Cleanup 0.1 (Data & UI Semantics) ---
+  ✅ PASS: EXP is removed from all user-facing fish collection UI
+  ✅ PASS: Existing exp data field is retained in FISH_DATABASE for backward compatibility
+  ✅ PASS: b2_meisterfisch is renamed to Meisterfisch with neutral milestone quote and no B2 claims
+  ✅ PASS: Standardized rarity labels use exactly Phổ thông, Hiếm, Huyền thoại (No "Rất hiếm")
+  ✅ PASS: Cleaned up Vietnamese fish meanings represent German fish words neutrally
+  ✅ PASS: Backward compatibility: Existing stored fish entries (including old B2-Meisterfisch) render safely
+
+========================================
+PEDAGOGICAL ACCEPTANCE SUMMARY: 31 PASSED, 0 FAILED
+========================================
+
+
+✅ COMPLETED SUITE: test-pedagogical-ux-acceptance.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-phase1-acceptance.js
+====================================================
+=== RUNNING ACCEPTANCE TESTS 1 TO 10 ===
+
+--- TEST 1: Học cùng 1 thẻ 5 lần -> Daily goal đếm 1, chưa hoàn thành ---
+  ✅ PASS: Count is 1 (actual: 1)
+  ✅ PASS: Completed is false
+  ✅ PASS: Reviewed IDs has 1 entry
+
+--- TEST 2: Học 5 thẻ khác nhau trong cùng 1 ngày -> 5/5, completed === true, completedAt ISO, catchStatus pending ---
+  ✅ PASS: Not completed at 4 cards
+  ✅ PASS: Today count is 5
+  ✅ PASS: Completed is true
+  ✅ PASS: completedAt is valid ISO: 2026-10-27T09:13:06.974Z
+  ✅ PASS: catchStatus is 'pending'
+  ✅ PASS: vokabelgo:daily-goal-complete fired exactly 1 time
+
+--- TEST 3: Học thêm thẻ thứ 6, thứ 7 -> UI 5/5, completed vẫn true, event không bắn lại ---
+  ✅ PASS: UI displays 5/5 max (todayCount: 5)
+  ✅ PASS: Storage records 7 unique cards (rawCount: 7)
+  ✅ PASS: Completed remains true
+  ✅ PASS: vokabelgo:daily-goal-complete did NOT fire again (fired count: 1)
+
+--- TEST 4: F5 / Reload -> Dữ liệu giữ nguyên, catchStatus pending ---
+  ✅ PASS: After reload: UI todayCount is 5
+  ✅ PASS: After reload: rawCount is 7
+  ✅ PASS: After reload: completed is true
+  ✅ PASS: After reload: catchStatus is still 'pending'
+
+--- TEST 5: Streak calculation logic ---
+  ✅ PASS: Streak preserves yesterday streak of 2 when today is incomplete (actual: 2)
+  ✅ PASS: Streak increases to 3 when today completes (actual: 3)
+  ✅ PASS: Streak is 0 when yesterday was missed and today is incomplete (actual: 0)
+  ✅ PASS: Streak becomes 1 when today completes after missed yesterday (actual: 1)
+
+--- TEST 6: Timezone UTC+7 consistency (local date YYYY-MM-DD) ---
+  ✅ PASS: LocalDateKey produces local date 2026-10-01 (got: 2026-10-01)
+  ✅ PASS: LocalDateKey produces local date 2026-10-01 (got: 2026-10-01)
+
+--- TEST 7: Check-in / Calendar does NOT increase streak ---
+  ✅ PASS: Streak did not change after guestbook/checkin entry
+
+--- TEST 8: Custom events dispatched correctly ---
+  ✅ PASS: vokabelgo:daily-progress fired 4 times for 4 cards
+  ✅ PASS: vokabelgo:daily-goal-complete did not fire yet
+  ✅ PASS: vokabelgo:daily-progress fired 5th time
+  ✅ PASS: vokabelgo:daily-goal-complete fired on 5th card
+  ✅ PASS: vokabelgo:daily-progress fired 6th time
+  ✅ PASS: vokabelgo:daily-goal-complete did NOT fire again on 6th card
+
+--- TEST 9: Toast notification on 5/5 cards ---
+  ✅ PASS: A toast was triggered
+  ✅ PASS: Toast message is correct: "Đủ 5/5 từ! Bé mèo chuẩn bị đi câu cá rồi! 🎣🐱"
+
+--- TEST 10: Cloud sync serialization and restoration ---
+  ✅ PASS: exportData() returns valid payload
+  ✅ PASS: exported data contains today days record
+  ✅ PASS: Clean machine starts at count 0
+  ✅ PASS: After cloud import, todayCount restored to 5
+  ✅ PASS: After cloud import, isCompletedToday is true
+
+--- TEST A: Một lần rate card qua integration path chỉ gọi reviewCard một lần ---
+  ✅ PASS: reviewCard was called exactly 1 time (actual: 1)
+
+--- TEST B: Import local catchStatus = none, cloud catchStatus = pending -> Expected: pending ---
+  ✅ PASS: Initial local status is none
+  ✅ PASS: Expected pending after merging none + pending, got: "pending"
+
+--- TEST C: Import local claimed, cloud pending -> Expected: claimed ---
+  ✅ PASS: Initial local status is claimed
+  ✅ PASS: Expected claimed after merging claimed + pending, got: "claimed"
+
+--- TEST D: Firebase leaderboard: checkinHistory = 20 entries, dailyProgress has 3 days streak -> Expected streak = 3 ---
+  ✅ PASS: Expected leaderboard streak = 3, got: 3 (checkinHistory length 20 was ignored)
+
+========================================
+TEST SUMMARY: 43 PASSED, 0 FAILED
+========================================
+
+✅ COMPLETED SUITE: test-phase1-acceptance.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-core-learning-loop-acceptance.js
+====================================================
+====================================================
+RUNNING CORE LEARNING LOOP PHASE 1 ACCEPTANCE TESTS
+====================================================
+
+--- TEST 1: New words (Intro -> Recall -> Session complete) ---
+  ✅ PASS: Session created with 5 targets
+  ✅ PASS: Initial queue includes Intro interactions for all 5 new words
+  ✅ PASS: Initial queue includes Recall interactions for all 5 new words
+  ✅ PASS: Session successfully completed after answering all 5 recalls
+  ✅ PASS: All 5 targets marked completed
+  ✅ PASS: VokabelDaily recorded 5/5 targets
+  ✅ PASS: Daily goal marked complete
+
+--- TEST 2: Mixed session (3 review + 2 new selection & deficit filling) ---
+  ✅ PASS: Picked exactly 5 targets
+  ✅ PASS: Exactly 3 review targets picked
+  ✅ PASS: Exactly 2 new targets picked
+  ✅ PASS: Prioritized unknown cards in review pool
+  ✅ PASS: Deficit review filled: 5 targets selected
+  ✅ PASS: 1 review + 4 new cards cleanly selected to meet 5 targets quota
+  ✅ PASS: Deficit new filled: 5 review cards selected when no new cards exist
+
+--- TEST 3: Wrong answer re-queue (Intervening distance) ---
+  ✅ PASS: Initial queue starts with card c_a
+  ✅ PASS: c_a is NOT marked completed on failure
+  ✅ PASS: c_a records 1 failure
+  ✅ PASS: c_a does NOT appear on immediate next question (next is c_b)
+  ✅ PASS: c_a was re-queued later in the queue
+  ✅ PASS: c_a returns after intervening interactions (re-queued at offset +3)
+
+--- TEST 4: Daily Goal exploit guard ---
+  ✅ PASS: Daily goal count is 0 (actual: 0)
+  ✅ PASS: Daily goal is NOT completed after 5 unknown ratings
+  ✅ PASS: Catch status remains 'none' (actual: 'none')
+  ✅ PASS: Session completedTargets length is 0
+  ✅ PASS: Session is NOT marked completed
+
+--- TEST 5: Successful targets (Reward unlocks exactly once) ---
+  ✅ PASS: Session completed is true
+  ✅ PASS: 5 completed targets registered
+  ✅ PASS: Daily goal completed is true
+  ✅ PASS: Catch status became pending
+  ✅ PASS: Catch status is now claimed
+  ✅ PASS: Catch status remains claimed and is NOT re-awarded
+
+--- TEST 6: Refresh (Resume 2/5 and remaining queue) ---
+  ✅ PASS: 2 targets completed before refresh
+  ✅ PASS: Same sessionId restored after refresh
+  ✅ PASS: Exactly 2 completed targets restored
+  ✅ PASS: Exact queueIndex restored
+  ✅ PASS: Current interaction resumes right at card res_3 (expected res_3)
+
+--- TEST 7: Repeated failure (3 fails -> Guided Reinforcement) ---
+  ✅ PASS: hard_target has recorded 3 failures
+  ✅ PASS: Fail-safe activated: Queue contains reinforce interaction for hard_target
+  ✅ PASS: Target marked completed for current session so learner is not trapped
+  ✅ PASS: Learning state keeps needsReview = true for future review
+  ✅ PASS: Legacy progress is 'unknown' (NOT 'known')
+
+--- TEST 8: Backward compatibility (dmf_flash_progress_v2) ---
+  ✅ PASS: dmf_flash_progress_v2 is a valid JSON object
+  ✅ PASS: Existing card_1 remains intact
+  ✅ PASS: Updated card_2 is simple string known
+  ✅ PASS: Existing card_3 remains intact
+  ✅ PASS: dmf_flash_progress_v2 contains ONLY string values (known | hard | unknown), NO objects
+  ✅ PASS: New metadata stored in separate vokabelgo_learning_state_v1
+
+--- TEST 9: Existing study modes and free study ---
+  ✅ PASS: MCQ sub-mode button exists and calls setStudySubMode
+  ✅ PASS: Typing sub-mode button exists and calls setStudySubMode
+  ✅ PASS: Match sub-mode button exists and calls setStudySubMode
+  ✅ PASS: Flashcard sub-mode button exists
+  ✅ PASS: Free study switch exitSessionToFreeStudy exists
+  ✅ PASS: Standard free study render() function exists
+
+--- TEST 10: Supabase sync via app_data jsonb ---
+  ✅ PASS: getSyncPayload serializes learningState into app_data payload
+  ✅ PASS: getSyncPayload serializes learningSession into app_data payload
+  ✅ PASS: applyCloudDataToLocal restores vokabelgo_learning_state_v1
+  ✅ PASS: applyCloudDataToLocal restores vokabelgo_learning_session_v1
+  ✅ PASS: Supabase schema contains app_data jsonb column
+  ✅ PASS: No new table or SQL migration needed on Supabase schema
+
+====================================================
+RUNNING RUNTIME QC BUGFIX TESTS (TEST A -> TEST J)
+====================================================
+
+--- TEST A: Free study known -> 0/5 daily goal ---
+  ✅ PASS: Free study rate() strictly does NOT call onCardReviewedForFeed
+  ✅ PASS: Free study rate() strictly does NOT call VokabelDaily.reviewCard
+  ✅ PASS: Free study rate() strictly does NOT trigger reward modal
+  ✅ PASS: Clean daily goal count is 0
+  ✅ PASS: After 5 free study known ratings, daily goal count remains 0 (actual: 0)
+  ✅ PASS: Daily goal completed is false after free study ratings
+
+--- TEST B: Session 2/5 -> exit free study known 5 -> 2/5 on Today, no reward ---
+  ✅ PASS: Session has recorded exactly 2 completed targets
+  ✅ PASS: Daily goal count is 2/5
+  ✅ PASS: Daily goal count remains strictly 2 after free study (actual: 2)
+  ✅ PASS: Daily goal completed is strictly false
+  ✅ PASS: Reward catchStatus remains none
+  ✅ PASS: Today dashboard isCompleted is strictly false for 2/5 targets
+
+--- TEST C: Legacy #nextBtn blocked in session ---
+  ✅ PASS: next() contains guard against running during study session
+  ✅ PASS: nextBtn is hidden and disabled during active study session
+
+--- TEST D: Free study tools disabled in session ---
+  ✅ PASS: setStudySessionUiLock function implemented
+  ✅ PASS: deckSelect is disabled in session
+  ✅ PASS: search input is disabled in session
+  ✅ PASS: shuffleBtn is hidden in session
+  ✅ PASS: reverseBtn is hidden in session
+  ✅ PASS: study submode pills (MCQ/typing/match) are hidden in session
+  ✅ PASS: applyFilter() is guarded against active session
+  ✅ PASS: render() is guarded against active session
+  ✅ PASS: newQuestion() is guarded against active session
+  ✅ PASS: newTyping() is guarded against active session
+  ✅ PASS: startMatchGame() is guarded against active session
+  ✅ PASS: setStudySubMode() is guarded against switching away from flash during session
+
+--- TEST E: Session audio reads current interaction card ---
+  ✅ PASS: Unified getCurrentlyDisplayedLearningCard() implemented
+  ✅ PASS: speak() relies on getCurrentlyDisplayedLearningCard()
+  ✅ PASS: Free study audio resolves current free card: der Apfel
+
+--- TEST F: Key 3 before reveal does not rate ---
+  ✅ PASS: handleSessionRate guards against unrevealed card
+  ✅ PASS: Key 3 requires card to be flipped in handleSessionKeydown
+  ✅ PASS: Key 2 requires card to be flipped in handleSessionKeydown
+  ✅ PASS: Key 1 requires card to be flipped in handleSessionKeydown
+
+--- TEST G: Intro card click does not flip ---
+  ✅ PASS: card.onclick guards against flipping on intro and reinforce
+
+--- TEST H: Logout clears all 4 session/learning keys ---
+  ✅ PASS: handleAuthLogout removes vokabelgo_learning_state_v1
+  ✅ PASS: handleAuthLogout removes vokabelgo_learning_session_v1
+  ✅ PASS: handleAuthLogout removes vokabelgo_daily_progress_v1
+  ✅ PASS: handleAuthLogout removes vokabelgo_fish_collection_v1
+  ✅ PASS: vokabelgo_learning_state_v1 is null after cleanup
+  ✅ PASS: vokabelgo_learning_session_v1 is null after cleanup
+  ✅ PASS: vokabelgo_daily_progress_v1 is null after cleanup
+  ✅ PASS: vokabelgo_fish_collection_v1 is null after cleanup
+
+--- TEST I: Yesterday local session replaced by today cloud session ---
+  ✅ PASS: Cloud sync detects when local session is yesterday and cloud is today
+  ✅ PASS: Cloud sync compares timestamps when session dates are identical
+  ✅ PASS: Yesterday local session cleanly replaced by today cloud session
+  ✅ PASS: Cloud session targets count is 2
+
+--- TEST J: Reinforcement target completes session without becoming known/mastered ---
+  ✅ PASS: Queue contains reinforce interaction for failed card w1
+  ✅ PASS: Reinforced card is included in completedTargets
+  ✅ PASS: Reinforced card legacy progress is strictly NOT known (actual: unknown)
+  ✅ PASS: Learning state preserves needsReview === true
+  ✅ PASS: Learning state preserves status === "learning"
+  ✅ PASS: P1-3 Copy: Đã xem lại · Tiếp tục (Space) → exists
+  ✅ PASS: P1-3 Copy: Bạn đã hoàn thành phiên học hôm nay. exists
+  ✅ PASS: P1-3 Copy: Từ này sẽ được ưu tiên ôn lại ở phiên sau. exists
+  ✅ PASS: P1-4 Copy: Đang học · X/5 mục tiêu hint exists
+
+--- TEST K: Session complete ends active session mode ---
+  ✅ PASS: renderSessionInteraction unlocks UI and sets isStudySessionMode = false when interaction.completed
+  ✅ PASS: TEST K: Session completed === true after 5 targets
+  ✅ PASS: TEST K: getCurrentInteraction reports completed === true
+  ✅ PASS: TEST K: window.isStudySessionMode is false on session complete
+  ✅ PASS: TEST K: setStudySessionUiLock(false) was invoked, free study controls usable
+  ✅ PASS: TEST K: Session data preserved intact (not deleted)
+
+--- TEST L: Reward "Học tiếp" transitions to Free Study ---
+  ✅ PASS: collectFishAndContinue closes modal
+  ✅ PASS: collectFishAndContinue calls exitSessionToFreeStudy
+  ✅ PASS: collectFishAndContinue navigates to study hub
+  ✅ PASS: collectFishAndContinue sets sub-mode to flash
+  ✅ PASS: TEST L: Reward modal closed
+  ✅ PASS: TEST L: window.isStudySessionMode is false
+  ✅ PASS: TEST L: sessionCompleteBox is hidden
+  ✅ PASS: TEST L: Primary hub is study
+  ✅ PASS: TEST L: Study sub-mode is flash
+  ✅ PASS: TEST L: No second session created
+  ✅ PASS: TEST L: No extra fish awarded on continuing study
+
+--- TEST M: Today CTA After Claiming Reward -> Free Study ---
+  ✅ PASS: handleTodayPrimaryAction has explicit Case C for completed session
+  ✅ PASS: Case C calls exitSessionToFreeStudy()
+  ✅ PASS: Case C navigates to 'study'
+  ✅ PASS: Case C selects 'flash' mode
+  ✅ PASS: Today CTA text for completed session is 'Ôn thêm từ vựng'
+  ✅ PASS: TEST M: startOrResumeTodaySession() was NOT called in Case C
+  ✅ PASS: TEST M: Case C switched to study hub
+  ✅ PASS: TEST M: Case C switched to flash sub-mode
+  ✅ PASS: TEST M: UI is not locked into session mode
+  ✅ PASS: TEST M: sessionCompleteBox is hidden in free study
+
+--- TEST N: Return to Today from Session Complete ---
+  ✅ PASS: Button btnSessionReturnToday exists in index.html
+  ✅ PASS: handleSessionReturnToday function implemented
+  ✅ PASS: handleSessionReturnToday sets isStudySessionMode = false
+  ✅ PASS: handleSessionReturnToday calls setStudySessionUiLock(false)
+  ✅ PASS: handleSessionReturnToday hides sessionHeaderBar
+  ✅ PASS: handleSessionReturnToday hides sessionCompleteBox
+  ✅ PASS: handleSessionReturnToday navigates to today hub
+  ✅ PASS: TEST N: window.isStudySessionMode is false
+  ✅ PASS: TEST N: UI lock removed
+  ✅ PASS: TEST N: sessionCompleteBox is hidden
+  ✅ PASS: TEST N: sessionHeaderBar is hidden
+  ✅ PASS: TEST N: Switched to today hub
+  ✅ PASS: TEST N: Still in free study mode on re-entering study hub
+  ✅ PASS: TEST N: sessionCompleteBox does not block free study
+
+--- TEST O: Logout during active session cleanly resets UI ---
+  ✅ PASS: handleAuthLogout sets isStudySessionMode = false
+  ✅ PASS: handleAuthLogout calls setStudySessionUiLock(false)
+  ✅ PASS: handleAuthLogout cleans up session UI state
+  ✅ PASS: TEST O: window.isStudySessionMode is false after logout
+  ✅ PASS: TEST O: UI unlocked after logout
+  ✅ PASS: TEST O: sessionHeaderBar is hidden
+  ✅ PASS: TEST O: sessionCompleteBox is hidden
+  ✅ PASS: TEST O: Flashcard un-flipped
+
+====================================================
+ACCEPTANCE SUMMARY: 163 / 163 PASSED
+🎉 ALL TESTS (TEST 1-10 & TEST A-O) PASSED SUCCESSFULLY!
+====================================================
+
+
+✅ COMPLETED SUITE: test-core-learning-loop-acceptance.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-fsrs-srs-acceptance.js
+====================================================
+====================================================
+RUNNING PHASE 2 FSRS-6 ACCEPTANCE TESTS (TEST A -> O)
+====================================================
+
+--- TEST A: New card + Good -> SRS state + future dueAt ---
+  ✅ PASS: Record created successfully
+  ✅ PASS: Card promoted to Review state (state = 2)
+  ✅ PASS: reps count is 1
+  ✅ PASS: lastRating is Good (3)
+  ✅ PASS: dueAt is in the future
+  ✅ PASS: FSRS-6 initial Good schedules 3 days
+  ✅ PASS: Card is NOT due today
+  ✅ PASS: Card becomes due on day 4
+
+--- TEST B: Again scheduled earlier than Hard and Good ---
+  ✅ PASS: Again due date is earlier than Hard
+  ✅ PASS: Hard due date is earlier than Good
+  ✅ PASS: Again scheduled for 1 day
+  ✅ PASS: Hard scheduled for 2 days
+  ✅ PASS: Good scheduled for 3 days
+
+--- TEST C: Card requeue in session -> Exactly 1 SRS scheduling commit ---
+  ✅ PASS: No commit for c_retry on first unknown rating
+  ✅ PASS: No commit for c_retry on second hard rating
+  ✅ PASS: Exactly 1 SRS commit for c_retry across all retries (actual: 1)
+
+--- TEST D: Unknown then Known -> Final rating is Again (1) ---
+  ✅ PASS: SRS card record exists
+  ✅ PASS: Final FSRS rating is Again (1), got: 1
+  ✅ PASS: Scheduled for 1 day due to earlier unknown failure
+
+--- TEST E: Hard then Known -> Final rating is Hard (2) ---
+  ✅ PASS: SRS card record exists
+  ✅ PASS: Final FSRS rating is Hard (2), got: 2
+  ✅ PASS: Scheduled for 2 days due to earlier hard rating
+
+--- TEST F: Known first try -> Final rating is Good (3) ---
+  ✅ PASS: SRS card record exists
+  ✅ PASS: Final FSRS rating is Good (3), got: 3
+  ✅ PASS: Scheduled for 3 days on clean first-try success
+
+--- TEST G: Guided Reinforcement -> Again (1) + needsReview true ---
+  ✅ PASS: Guided Reinforcement interaction found for failed card
+  ✅ PASS: SRS card record created
+  ✅ PASS: Guided Reinforcement commits FSRS rating Again (1), got: 1
+  ✅ PASS: Reinforced card scheduled for 1 day
+  ✅ PASS: needsReview remains true in learning state
+
+--- TEST H: Future card (dueAt > now) excluded from normal review ---
+  ✅ PASS: card_future (due in +3 days) is NOT selected
+  ✅ PASS: card_due_1 is selected
+  ✅ PASS: card_due_2 is selected
+  ✅ PASS: card_due_3 is selected
+
+--- TEST I: Overdue priority (more overdue picked first) ---
+  ✅ PASS: All 3 due cards selected
+  ✅ PASS: Card overdue 15d (pos 0) comes before card overdue 5d (pos 1)
+  ✅ PASS: Card overdue 5d (pos 1) comes before card due today (pos 2)
+
+--- TEST J: Exact 3 due + 2 new mix ---
+  ✅ PASS: Selected exactly 5 targets
+  ✅ PASS: Selected exactly 3 due targets
+  ✅ PASS: Selected exactly 2 new targets
+
+--- TEST K: Deficit due review filled by new ---
+  ✅ PASS: Selected exactly 5 targets
+  ✅ PASS: Only due card is included
+  ✅ PASS: Deficit filled: exactly 4 new cards picked (got 4)
+  ✅ PASS: Selected exactly 5 targets when 0 new cards exist
+
+--- TEST L: Legacy progress survives migration cleanly ---
+  ✅ PASS: Bootstrap: legacy unknown prioritized
+  ✅ PASS: Bootstrap: legacy hard prioritized
+  ✅ PASS: Existing leg_1 preserved intact
+  ✅ PASS: Existing leg_2 preserved intact
+  ✅ PASS: Existing leg_3 preserved intact
+
+--- TEST M: Verification that Phase 1 acceptance tests still pass ---
+  ✅ PASS: createTodaySession API intact
+  ✅ PASS: handleIntroContinue API intact
+  ✅ PASS: handleRecallAnswer API intact
+  ✅ PASS: handleReinforceContinue API intact
+  ✅ PASS: VokabelDaily API intact
+
+--- TEST N: Cloud sync app_data integration ---
+  ✅ PASS: supabase-auth serializes srsState into app_data payload
+  ✅ PASS: supabase-auth merges cloud srsState down to local storage
+  ✅ PASS: supabase-auth cleans srsState on logout
+  ✅ PASS: c1 updated from newer cloud version
+  ✅ PASS: c2 merged cleanly into local srsState
+
+--- TEST O: F5 / logout / account switching isolation ---
+  ✅ PASS: F5 reload restores exact FSRS cards and parameters without corruption
+  ✅ PASS: Logout clears SRS state to clean guest state
+
+--- TEST P: Due calendar day check ---
+  ✅ PASS: isDueForDailySession returns true when dueAt was yesterday 22:30 and now is today 08:00
+  ✅ PASS: Card scheduled late yesterday is selected for today session
+  ✅ PASS: Due review card is prioritized at head of selected targets
+
+--- TEST Q: Future day check ---
+  ✅ PASS: isDueForDailySession returns false when dueAt is tomorrow
+  ✅ PASS: Future card scheduled for tomorrow is NOT selected when enough new cards exist
+
+--- TEST R: Failed scheduler handling ---
+  ✅ PASS: Reached recall step
+  ✅ PASS: Target is completed in session despite scheduler failure
+  ✅ PASS: srsCommitted is false when scheduler returned null
+  ✅ PASS: srsPending is true signaling commit retry needed
+
+--- TEST S: Pending retry & idempotency ---
+  ✅ PASS: flushPendingSrsCommits retried exactly 1 pending target
+  ✅ PASS: targetState.srsCommitted is true after successful flush
+  ✅ PASS: targetState.srsPending is false after successful flush
+  ✅ PASS: Session in localStorage updated with srsCommitted=true
+  ✅ PASS: Second flush returned 0 items flushed
+  ✅ PASS: Scheduler was NOT called on second flush (idempotent)
+
+--- TEST T: Overdue priority sort order ---
+  ✅ PASS: Both overdue cards are selected in review pool
+  ✅ PASS: Oldest overdue card (10 days ago, Good) appears BEFORE less overdue card (1 day ago, Again)
+
+--- TEST U: selectTargets count contract ---
+  ✅ PASS: selectTargets(uCards, 4) returned exactly 4 targets (got 4)
+  ✅ PASS: selectTargets(uCards, 3) returned exactly 3 targets (got 3)
+  ✅ PASS: selectTargets(uCards, 5) returned exactly 5 targets (got 5)
+  ✅ PASS: selectTargets(uCards, 0) returned 0 targets
+
+====================================================
+ACCEPTANCE SUMMARY: 82 / 82 PASSED
+🎉 ALL PHASE 2 TESTS (TEST A -> TEST U) PASSED SUCCESSFULLY!
+====================================================
+
+
+✅ COMPLETED SUITE: test-fsrs-srs-acceptance.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-phase3-typing-acceptance.js
+====================================================
+====================================================
+RUNNING PHASE 3 OBJECTIVE TYPING ACCEPTANCE TESTS
+====================================================
+
+--- TEST A: Eligibility rules ---
+  ✅ PASS: die Entscheidung is eligible for typing verification
+  ✅ PASS: die Geste, -n is eligible
+  ✅ PASS: Canonical derived: die Geste
+  ✅ PASS: Question card with ? is excluded
+  ✅ PASS: Grammatik tag card is excluded
+  ✅ PASS: Inhalt tag card is excluded
+  ✅ PASS: Placeholder ... card is excluded
+  ✅ PASS: Slash variant card is excluded
+
+--- TEST B: Correct answer grading ---
+  ✅ PASS: Exact match with case insensitivity is correct
+  ✅ PASS: Mapped rating for correct is known (Good / 3)
+
+--- TEST C: Missing article grading ---
+  ✅ PASS: Missing article returns almost
+  ✅ PASS: Mapped rating for missing article is hard (2)
+  ✅ PASS: Feedback mentions article
+
+--- TEST D: Wrong article grading ---
+  ✅ PASS: Wrong article (der vs die) returns almost
+  ✅ PASS: Mapped rating for wrong article is hard (2)
+  ✅ PASS: Feedback mentions correct article die
+
+--- TEST E: Minor typo grading ---
+  ✅ PASS: 1-char typo returns almost
+  ✅ PASS: Mapped rating for minor typo is hard (2)
+  ✅ PASS: 1-char typo with correct article returns almost
+
+--- TEST F: Clearly wrong grading ---
+  ✅ PASS: Completely different word returns wrong
+  ✅ PASS: Mapped rating for wrong is unknown (Again / 1)
+  ✅ PASS: Empty answer returns wrong
+
+--- TEST G: Requeue behavior on typing error ---
+  ✅ PASS: First interaction is typing for mature candidate
+  ✅ PASS: Target for typing is g_card_1
+  ✅ PASS: Result is wrong
+  ✅ PASS: Target is NOT completed
+  ✅ PASS: Next interaction is NOT g_card_1 (actual: g_card_2)
+  ✅ PASS: Card g_card_1 was re-queued in future position
+  ✅ PASS: Card g_card_1 was re-queued as a recall interaction
+
+--- TEST H: Typing Wrong then Recall Known -> final rating Again (1) ---
+  ✅ PASS: h_target starts with typing
+  ✅ PASS: No SRS commit on wrong typing attempt
+  ✅ PASS: Exactly ONE SRS commit for h_target across session (actual: 1)
+  ✅ PASS: Final FSRS rating is Again (1) due to earlier typing failure (actual: 1)
+
+--- TEST I: Typing Almost then Recall Known -> final rating Hard (2) ---
+  ✅ PASS: i_target starts with typing
+  ✅ PASS: i_target typing result is almost
+  ✅ PASS: No SRS commit on almost typing attempt
+  ✅ PASS: Exactly ONE SRS commit for i_target (actual: 1)
+  ✅ PASS: Final FSRS rating is Hard (2) due to earlier almost typing (actual: 2)
+
+--- TEST J: Typing Correct first try -> final rating Good (3) ---
+  ✅ PASS: j_target typed correctly on first try
+  ✅ PASS: j_target completed immediately
+  ✅ PASS: Exactly ONE SRS commit on correct first try
+  ✅ PASS: FSRS committed with rating Good (3)
+
+--- TEST K: No self-rating override in typing mode ---
+  ✅ PASS: Current interaction is typing
+  ✅ PASS: handleRecallAnswer returns null when current item is typing (cannot self-rate)
+  ✅ PASS: No target was completed via self-rating attempt
+
+--- TEST L: Audio leak prevention ---
+  ✅ PASS: typingSubmitted is initially false
+  ✅ PASS: Audio is strictly blocked before typing submit
+  ✅ PASS: typingSubmitted is true after submit
+  ✅ PASS: Audio is permitted after typing submit
+
+--- TEST M: F5 resume preserves typing interaction ---
+  ✅ PASS: Persisted session queueIndex points to typing interaction
+  ✅ PASS: Queue index preserved
+  ✅ PASS: Interaction type typing preserved
+  ✅ PASS: typingSubmitted state preserved
+
+--- TEST N: Idempotency check ---
+  ✅ PASS: Subsequent submit call detected as alreadySubmitted
+  ✅ PASS: No duplicate SRS commit on duplicate submit
+  ✅ PASS: Queue index advanced cleanly by 1
+
+--- TEST O: Typing frequency policy ---
+  ✅ PASS: 0 typing when no mature candidates exist (actual: 0)
+  ✅ PASS: Default 1 typing when 1 mature card exists (actual: 1)
+  ✅ PASS: Max 2 typing when multiple very mature cards exist (actual: 2)
+
+--- TEST P: Existing modes integrity ---
+  ✅ PASS: Free study newTyping function intact
+  ✅ PASS: Free study checkTyping function intact
+  ✅ PASS: Free study MCQ function intact
+  ✅ PASS: Free study Match function intact
+
+--- TEST Q: Phase 1 & Phase 2 API contracts ---
+  ✅ PASS: createTodaySession intact
+  ✅ PASS: selectTargets intact
+  ✅ PASS: handleIntroContinue intact
+  ✅ PASS: handleRecallAnswer intact
+  ✅ PASS: handleReinforceContinue intact
+  ✅ PASS: flushPendingSrsCommits intact
+  ✅ PASS: VokabelSRS.scheduleReview intact
+  ✅ PASS: isDueForDailySession intact
+
+--- TEST R: Enter key inside #sessionTypingInput ---
+  ✅ PASS: IME isComposing does not submit
+  ✅ PASS: Target not submitted during IME composition
+  ✅ PASS: Enter calls preventDefault
+  ✅ PASS: Enter calls stopPropagation
+  ✅ PASS: Answer submitted via Enter key in input
+  ✅ PASS: Target has exactly 1 attempt recorded
+  ✅ PASS: Enter does not double-submit while feedback is showing
+
+--- TEST S: Final typing target lifecycle ---
+  ✅ PASS: Session currently has 4/5 completed targets
+  ✅ PASS: Target 5 is s_5
+  ✅ PASS: Target 5 interaction is typing
+  ✅ PASS: Target 5 typing result is correct
+  ✅ PASS: Target 5 is completed
+  ✅ PASS: Session is NOT yet marked completed while in feedback stage
+  ✅ PASS: typingSubmitted is true for target 5
+  ✅ PASS: lastObjectiveResult is correct
+  ✅ PASS: Session is marked completed after handleTypingContinue()
+  ✅ PASS: justCompletedSession is true on final continue
+  ✅ PASS: Daily goal count is exactly 5/5
+  ✅ PASS: Daily goal completed is true
+  ✅ PASS: Cat fishing reward catchStatus is pending
+
+--- TEST T: Refresh final feedback (F5) ---
+  ✅ PASS: Target 5 SRS committed once on submit
+  ✅ PASS: F5 reload preserves uncompleted session in feedback stage
+  ✅ PASS: F5 reload preserves typingSubmitted state
+  ✅ PASS: F5 reload preserves feedback correct
+  ✅ PASS: Continue completes 5/5 session
+  ✅ PASS: SRS committed strictly ONCE across submit + F5 + continue (no duplicate commit)
+  ✅ PASS: Daily goal count is strictly 5 (no duplicate completion)
+
+--- TEST U: Grammar metadata excluded ---
+  ✅ PASS: jemandem guttun + Dat. is excluded from typing
+  ✅ PASS: Modalverb + Passiv is excluded from typing
+  ✅ PASS: außerhalb + Genitiv is excluded from typing
+  ✅ PASS: die Geste, -n is eligible for typing
+  ✅ PASS: die Geste, -n canonical is die Geste
+  ✅ PASS: der Gesichtsausdruck, die Gesichtsausdrücke is eligible for typing
+  ✅ PASS: der Gesichtsausdruck, die Gesichtsausdrücke canonical is der Gesichtsausdruck
+
+--- TEST W: Manual continue before timer does not skip next card ---
+  ✅ PASS: Initial item is Typing A
+  ✅ PASS: Second item is Typing B
+  ✅ PASS: Timer is scheduled after A submitted correct
+  ✅ PASS: Active timer was cancelled by manual continue
+  ✅ PASS: Queue advanced to Typing B
+  ✅ PASS: Current item is Typing B
+  ✅ PASS: Typing B has NOT been submitted
+
+--- TEST X: Double continue guard ---
+  ✅ PASS: w_B submitted wrong
+  ✅ PASS: First continue call returns session and advances
+  ✅ PASS: Queue index advanced to 2
+  ✅ PASS: Second rapid continue returns null
+  ✅ PASS: Queue index did NOT increment on second call
+
+--- TEST Y: Stale timer NO-OP ---
+  ✅ PASS: Advanced to y_B
+  ✅ PASS: Stale timer for y_A detected card mismatch (y_B) and NO-OPed
+  ✅ PASS: Queue index remained at 1 (y_B not skipped)
+  ✅ PASS: y_B was not marked submitted
+
+--- TEST Z: Single keydown listener in index.html ---
+  ✅ PASS: No inline onkeydown on #sessionTypingInput in HTML
+  ✅ PASS: addEventListener used for #sessionTypingInput
+  ✅ PASS: _sessionKeydownBound flag used to prevent multiple listeners
+
+====================================================
+ACCEPTANCE SUMMARY: 124 / 124 PASSED
+🎉 ALL PHASE 3 TESTS (TEST A -> TEST Z) PASSED SUCCESSFULLY!
+====================================================
+
+
+✅ COMPLETED SUITE: test-phase3-typing-acceptance.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-phase4a-schema-acceptance.js
+====================================================
+====================================================
+RUNNING PHASE 4A.1 VOCABULARY SCHEMA ACCEPTANCE TESTS
+====================================================
+
+--- TEST A: Noun shorthand plural (die Geste, -n) ---
+  ✅ PASS: canonicalAnswer is "die Geste"
+  ✅ PASS: article is "die"
+  ✅ PASS: headword is "Geste"
+  ✅ PASS: pluralNotation is "-n"
+  ✅ PASS: cardType is "noun"
+  ✅ PASS: objectiveTypingEligible is true
+
+--- TEST B: Noun full plural (der Gesichtsausdruck, die Gesichtsausdrücke) ---
+  ✅ PASS: canonicalAnswer is "der Gesichtsausdruck"
+  ✅ PASS: article is "der"
+  ✅ PASS: headword is "Gesichtsausdruck"
+  ✅ PASS: plural is "die Gesichtsausdrücke"
+  ✅ PASS: pluralNotation is "die Gesichtsausdrücke"
+  ✅ PASS: cardType is "noun"
+  ✅ PASS: objectiveTypingEligible is true
+
+--- TEST C: Grammar metadata separation (jemandem guttun + Dat.) ---
+  ✅ PASS: displayTerm intact
+  ✅ PASS: canonicalAnswer separated from grammarMeta
+  ✅ PASS: headword is "jemandem guttun"
+  ✅ PASS: grammarMeta correctly detected as "+ Dat."
+  ✅ PASS: objectiveTypingEligible is false due to grammar metadata
+
+--- TEST D: Grammar cards (Modalverb + Passiv) ---
+  ✅ PASS: cardType is "grammar"
+  ✅ PASS: grammarMeta is "+ Passiv"
+  ✅ PASS: canonicalAnswer cleaned
+  ✅ PASS: objectiveTypingEligible is false for grammar card
+  ✅ PASS: soll + Infinitiv Perfekt cardType is "grammar"
+  ✅ PASS: grammarMeta is "+ Infinitiv Perfekt"
+  ✅ PASS: typing false for soll + Infinitiv Perfekt
+  ✅ PASS: außerhalb + Genitiv cardType is "grammar"
+  ✅ PASS: grammarMeta is "+ Genitiv"
+  ✅ PASS: typing false for außerhalb + Genitiv
+
+--- TEST E: Question and Content cards ---
+  ✅ PASS: cardType is "question" when term contains ?
+  ✅ PASS: typing false for question
+  ✅ PASS: cardType is "content" for Inhalt tag
+  ✅ PASS: typing false for content card
+  ✅ PASS: meaning with ? classified as question
+  ✅ PASS: typing false when meaning has ?
+
+--- TEST F: Verb / lexical phrase (sich bewerben) ---
+  ✅ PASS: cardType is "verb"
+  ✅ PASS: canonicalAnswer intact for sich bewerben
+  ✅ PASS: headword is "sich bewerben"
+  ✅ PASS: article is null
+  ✅ PASS: objectiveTypingEligible is true for sich bewerben
+
+--- TEST G: Immutability of Source Card Object ---
+  ✅ PASS: normalizeCard succeeded on frozen object
+  ✅ PASS: Source card object was NOT mutated in any way
+  ✅ PASS: Caller mutation cannot corrupt cached profile
+
+--- TEST H: Materialized Card IDs & Invariants ---
+  ✅ PASS: BASE has at least 234 cards
+  ✅ PASS: VIDEO_FLASHCARDS has at least 60 cards
+  ✅ PASS: Total dataset equals base + video length
+  ✅ PASS: Every built-in card has an explicit id (missingIdCount === 0)
+  ✅ PASS: Zero duplicate IDs across all built-in cards (duplicateIdCount === 0)
+  ✅ PASS: BASE[0] is explicitly b_0 (die Körpersprache)
+  ✅ PASS: BASE[1] is explicitly b_1 (die Geste, -n)
+  ✅ PASS: BASE[233] is explicitly b_233
+  ✅ PASS: VIDEO[0] is explicitly vk_0 (der Pizzaladen)
+  ✅ PASS: VIDEO[59] is explicitly vk_59
+
+--- TEST H2: ID Stability Independent of Array Ordering ---
+  ✅ PASS: die Körpersprache retains id b_0 after array insertion
+  ✅ PASS: die Geste, -n retains id b_1 after array insertion
+  ✅ PASS: die Körpersprache retains id b_0 after array reversal
+  ✅ PASS: Built-in card without ID throws error in validation loop (fail loudly)
+
+--- TEST CACHE: Normalization Cache Hardening (P0-2) ---
+  ✅ PASS: Initial sich bewerben is verb & typing eligible
+  ✅ PASS: CACHE-A: Mutated tags to Grammatik recomputes profile (not stale)
+  ✅ PASS: Initial der Tonfall has null plural
+  ✅ PASS: CACHE-B: Mutated grammar recomputes plural in profile
+  ✅ PASS: Initial card in Alltag deck is typing eligible
+  ✅ PASS: CACHE-C: Mutated deck to Grammatik makes typing false
+  ✅ PASS: Initial card has slash reason
+  ✅ PASS: CACHE-D: Caller mutation of ambiguityReasons does NOT corrupt internal cache
+
+--- TEST I: Phase 3 Integration & Typing Verification Facade ---
+  ✅ PASS: Facade getCanonicalTypingAnswer matches schema canonicalAnswer
+  ✅ PASS: Facade isTypingEligible matches schema objectiveTypingEligible
+  ✅ PASS: TypingVerification excludes cardC (+ Dat.)
+  ✅ PASS: TypingVerification excludes cardD (Grammatik)
+  ✅ PASS: gradeTypingAnswer produces correct using schema canonical
+
+--- TEST J: Audit Script Execution & Dataset Invariants ---
+====================================================
+VOKABELGO VOCABULARY DATA MODEL AUDIT (PHASE 4A.1)
+====================================================
+
+--- 1. DATASET TOTALS & IDENTITY INTEGRITY ---
+  Total Cards:                    294
+    - BASE:                       234
+    - VIDEO_FLASHCARDS:           60
+  Missing ID Count:               0
+  Duplicate ID Count:             0
+
+--- 2. DISTRIBUTION BY CARD TYPE ---
+  • Noun:                         51
+  • Verb:                         37
+  • Phrase:                       121
+  • Expression:                   7
+  • Grammar:                      26
+  • Question:                     20
+  • Content:                      4
+  • [Question/Content combined]:  24
+  • Other:                        28
+
+--- 3. OBJECTIVE TYPING ELIGIBILITY ---
+  • Eligible for Typing:          177 (60.2%)
+  • Excluded from Typing:         117 (39.8%)
+
+--- 4. AMBIGUITY & SAFETY AUDIT ---
+  • Cards Needing Manual Review:  46 (15.6%)
+
+  Sample cards needing manual review:
+    [b_9] "schreien / jemanden anschreien" (has_slash_or_semicolon)
+    [b_17] "bilingual / zweisprachig" (has_slash_or_semicolon)
+    [b_18] "monolingual / einsprachig" (has_slash_or_semicolon)
+    [b_26] "ein Gespräch beginnen / führen / am Laufen halten" (has_slash_or_semicolon)
+    [b_33] "Kritik an jemandem/etwas üben" (has_slash_or_semicolon)
+    [b_34] "jemanden/etwas kritisieren" (has_slash_or_semicolon)
+    [b_55] "Sprachkenntnisse erwerben / verbessern" (has_slash_or_semicolon)
+    [b_62] "Langer Rede kurzer Sinn: …" (has_ellipsis)
+
+✅ Detailed JSON audit report written to: C:\Users\huynh\AppData\Local\Temp\vokabelgo-test-2Rta5w\audit-vocabulary-report.json
+
+  ✅ PASS: Audit script runs across entire dataset without throwing
+  ✅ PASS: Audit report totalCards equals loaded dataset length
+  ✅ PASS: Audit confirms 0 missing IDs
+  ✅ PASS: Audit confirms 0 duplicate IDs
+  ✅ PASS: Audit invariant: eligible + ineligible === totalCards
+  ✅ PASS: audit-vocabulary-report.json successfully written
+
+--- TEST K: Ambiguity Safety Policy ---
+  ✅ PASS: Slash card flagged for needsManualReview
+  ✅ PASS: Slash card excluded from objective typing
+  ✅ PASS: Ellipsis card flagged for needsManualReview
+  ✅ PASS: Ellipsis card excluded from objective typing
+  ✅ PASS: null input safely yields cardType other
+  ✅ PASS: null input safely yields objectiveTypingEligible false
+
+====================================================
+ACCEPTANCE SUMMARY: 81 / 81 PASSED
+🎉 ALL PHASE 4A.1 TESTS PASSED SUCCESSFULLY!
+
+✅ COMPLETED SUITE: test-phase4a-schema-acceptance.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-phase4b-progress-acceptance.js
+====================================================
+====================================================
+RUNNING PHASE 4B LEARNING PROGRESS TRUTH ACCEPTANCE TESTS
+====================================================
+
+--- TEST A: unseen (No SRS, no learningState, no legacy) ---
+  ✅ PASS: Status is "unseen"
+  ✅ PASS: Label is "Chưa học"
+  ✅ PASS: seen is false
+  ✅ PASS: dueNow is false
+  ✅ PASS: debug.source is "unseen"
+
+--- TEST B: intro seen (firstSeenAt present, no SRS -> learning) ---
+  ✅ PASS: Status is "learning"
+  ✅ PASS: Label is "Đang học"
+  ✅ PASS: seen is true
+  ✅ PASS: dueNow is false
+  ✅ PASS: debug.source is "learning_state"
+
+--- TEST C: legacy known (legacy = known, no SRS -> learning, NEVER stable) ---
+  ✅ PASS: Legacy known maps to "learning"
+  ✅ PASS: Legacy known is strictly NOT "stable"
+  ✅ PASS: Label is "Đang học"
+  ✅ PASS: seen is true
+  ✅ PASS: debug.source is "legacy"
+
+--- TEST D: legacy hard (legacy = hard, no SRS -> needs_review) ---
+  ✅ PASS: Legacy hard maps to "needs_review"
+  ✅ PASS: Label is "Cần ôn"
+  ✅ PASS: seen is true
+  ✅ PASS: dueNow is true
+
+--- TEST E: legacy unknown (legacy = unknown, no SRS -> needs_review) ---
+  ✅ PASS: Legacy unknown maps to "needs_review"
+  ✅ PASS: Label is "Cần ôn"
+  ✅ PASS: seen is true
+  ✅ PASS: dueNow is true
+
+--- TEST F: SRS due (dueAt <= local calendar date -> needs_review) ---
+  ✅ PASS: SRS due card is "needs_review" even with lastRating Good
+  ✅ PASS: Label is "Cần ôn"
+  ✅ PASS: seen is true
+  ✅ PASS: dueNow is true
+  ✅ PASS: debug.source is "srs"
+
+--- TEST G: stable (SRS Good, history >= 2, future due, !needsReview) ---
+  ✅ PASS: Status is "stable"
+  ✅ PASS: Label is "Nhớ ổn"
+  ✅ PASS: seen is true
+  ✅ PASS: dueNow is false
+  ✅ PASS: historyCount is 3
+  ✅ PASS: lastRating is 3
+
+--- TEST H: one Good insufficient (history = 1, Good -> learning) ---
+  ✅ PASS: Single Good review maps to "learning"
+  ✅ PASS: Single Good review is NOT "stable"
+  ✅ PASS: Label is "Đang học"
+
+--- TEST I: Hard (history >= 2, Hard -> learning) ---
+  ✅ PASS: Future due Hard rating maps to "learning"
+  ✅ PASS: Hard rating is NOT "stable"
+
+--- TEST J: Again (Again -> learning) ---
+  ✅ PASS: Future due Again rating maps to "learning"
+  ✅ PASS: Again rating is NOT "stable"
+
+--- TEST K: needsReview flag (future Good history >= 2, but needsReview true) ---
+  ✅ PASS: Flagged card with future SRS maps to "learning"
+  ✅ PASS: Flagged card is NOT "stable"
+  ✅ PASS: Flagged card when due maps to "needs_review"
+
+--- TEST L: legacy mastered (status = mastered, no SRS evidence) ---
+  ✅ PASS: Mastered without SRS maps to "learning"
+  ✅ PASS: Mastered without SRS is strictly NOT "stable"
+
+--- TEST M: Summary Invariants (2 unseen, 3 learning, 2 needs_review, 3 stable) ---
+  ✅ PASS: summary.total is 10 (got 10)
+  ✅ PASS: summary.unseen is 2 (got 2)
+  ✅ PASS: summary.learning is 3 (got 3)
+  ✅ PASS: summary.needsReview is 2 (got 2)
+  ✅ PASS: summary.stable is 3 (got 3)
+  ✅ PASS: summary.seen is 8 (got 8)
+  ✅ PASS: Invariant: unseen + learning + needsReview + stable === total
+  ✅ PASS: Invariant: seen === learning + needsReview + stable
+
+--- TEST N: Orphan State Exclusion ---
+  ✅ PASS: Orphan card not counted towards total
+  ✅ PASS: Orphan card not counted towards stable
+  ✅ PASS: Orphan card not counted towards seen
+
+--- TEST O: No Double Counting on Duplicate IDs ---
+  ✅ PASS: Duplicate IDs deduplicated: total is 10 (got 10)
+  ✅ PASS: Duplicate stable not counted twice: stable is 3 (got 3)
+  ✅ PASS: Duplicate unseen not counted twice: unseen is 2 (got 2)
+  ✅ PASS: Duplicate learning not counted twice: learning is 3 (got 3)
+
+--- TEST P: Home "Nhớ ổn" uses summary.stable, NOT legacy known ---
+  ✅ PASS: summary.stable reflects true SRS memory (5)
+  ✅ PASS: Remaining 35 legacy known are classified as learning, not stable
+  ✅ PASS: index.html does NOT calculate knownCount using Object.values(progress).filter
+  ✅ PASS: index.html assigns progressTruth.stable to #todayMetricStable
+
+--- TEST Q: Main Today metrics are learning-centric ---
+  ✅ PASS: Has #todayMetricNeedsReview
+  ✅ PASS: Has #todayMetricLearning
+  ✅ PASS: Has #todayMetricStable
+  ✅ PASS: Has label "Cần ôn"
+  ✅ PASS: Has label "Đang học"
+  ✅ PASS: Has label "Nhớ ổn"
+  ✅ PASS: 5-target goal is in Hero progress ratio
+  ✅ PASS: Found today-metrics-strip
+  ✅ PASS: Main metrics strip does not duplicate "Mục tiêu ngày"
+  ✅ PASS: Main metrics strip does not have Streak
+  ✅ PASS: Main metrics strip does not have Fish basket
+
+--- TEST R: Secondary row for Fish and Streak ---
+  ✅ PASS: Has #todaySecondaryMeta container
+  ✅ PASS: Has #todayMetaFishText
+  ✅ PASS: Has #todayMetaStreakText
+  ✅ PASS: learning-ux.css has .today-secondary-meta
+  ✅ PASS: learning-ux.css has .metric-needs-review
+  ✅ PASS: learning-ux.css has .metric-learning
+  ✅ PASS: learning-ux.css has .metric-stable
+  ✅ PASS: Zero streak renders neutral supportive message
+
+--- TEST S: needsReview = 0 supportive copy ---
+  ✅ PASS: Zero review copy has no "nợ"
+  ✅ PASS: Zero review copy has no "quá hạn"
+  ✅ PASS: Zero review copy has no "bỏ quên"
+  ✅ PASS: Zero review copy explains review prioritization calmly
+
+--- TEST T: needsReview = 25 supportive review copy ---
+  ✅ PASS: Backlog copy has no "nợ"
+  ✅ PASS: Backlog copy has no "quá hạn"
+  ✅ PASS: Backlog copy has no "bỏ quên"
+  ✅ PASS: Always focuses on a manageable 5-target daily session
+
+--- TEST TIMEZONE: Calendar date due classification ---
+  ✅ PASS: Late yesterday review is due this morning
+  ✅ PASS: Tomorrow morning review is NOT due today
+  ✅ PASS: Late yesterday review is classified as "needs_review" today
+  ✅ PASS: Tomorrow review with good history is classified as "stable" today
+
+====================================================
+ACCEPTANCE SUMMARY: 96 / 96 PASSED
+🎉 ALL PHASE 4B TESTS (TEST A -> TEST T + TIMEZONE) PASSED SUCCESSFULLY!
+====================================================
+
+
+✅ COMPLETED SUITE: test-phase4b-progress-acceptance.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-phase5-listening-acceptance.js
+====================================================
+====================================================
+RUNNING PHASE 5 LISTENING RECALL ACCEPTANCE TESTS
+====================================================
+
+--- TEST A: Eligible mature review => listening eligible ---
+  ✅ PASS: Mature review with historyCount >= 2 is listening eligible
+--- TEST B: New card => not listening ---
+  ✅ PASS: Card with null SRS is not listening eligible
+  ✅ PASS: Card with historyCount 0 is not listening eligible
+  ✅ PASS: Card with historyCount 1 is not listening eligible
+--- TEST C: Grammar/content/question => excluded ---
+  ✅ PASS: Grammar card is excluded
+  ✅ PASS: Content card is excluded
+  ✅ PASS: Question card is excluded
+  ✅ PASS: Card with slash is excluded
+  ✅ PASS: Card with ellipsis is excluded
+--- TEST D: Listening text (die Geste, -n => die Geste) ---
+  ✅ PASS: die Geste, -n spoken text is die Geste
+  ✅ PASS: der Gesichtsausdruck, die Gesichtsausdrücke spoken text is der Gesichtsausdruck
+  ✅ PASS: die Entscheidung spoken text is die Entscheidung
+--- TEST E: Correct (die Entscheidung -> Correct / Good) ---
+  ✅ PASS: Exact match with case variance grades as correct
+  ✅ PASS: Mapped rating is known (Good)
+  ✅ PASS: Canonical matches canonical text
+--- TEST F: Missing article (Entscheidung -> Almost / Hard) ---
+  ✅ PASS: Missing article grades as almost
+  ✅ PASS: Mapped rating is hard
+  ✅ PASS: Feedback mentions full canonical answer
+--- TEST G: Wrong (das Haus -> Wrong / Again) ---
+  ✅ PASS: Unrelated word grades as wrong
+  ✅ PASS: Mapped rating is unknown (Again)
+--- TEST H: Replay (3 replays => no failure, no rating change) ---
+  ✅ PASS: Listening interaction present in session queue
+  ✅ PASS: Replay count incremented to 3
+  ✅ PASS: targetState.listeningReplayCount is 3
+  ✅ PASS: No failures recorded upon replay
+  ✅ PASS: No false successes recorded upon replay
+--- TEST I: Wrong then Recall Known => final SRS Again, exactly ONE commit ---
+  ✅ PASS: Submitted wrong answer
+  ✅ PASS: Mapped to unknown
+  ✅ PASS: Continued after wrong feedback
+  ✅ PASS: Card was requeued as normal recall item
+  ✅ PASS: Target completed after recall known
+  ✅ PASS: Final FSRS rating aggregated to Again (1) due to listening wrong
+  ✅ PASS: SRS record committed with rating 1 (Again)
+  ✅ PASS: SRS history incremented by exactly ONE commit
+--- TEST J: Almost then Recall Known => final Hard ---
+  ✅ PASS: Missing article yields almost
+  ✅ PASS: Final FSRS rating aggregated to Hard (2) due to listening almost
+  ✅ PASS: SRS record committed with rating 2 (Hard)
+--- TEST K: Correct first try => Good ---
+  ✅ PASS: Correct answer submitted
+  ✅ PASS: Target completed immediately on first try
+  ✅ PASS: Final FSRS rating is Good (3)
+  ✅ PASS: SRS record committed with rating 3 (Good)
+--- TEST L: Unsupported speech => fallback Recall, no failure/attempt/SRS ---
+  ✅ PASS: Fallback returned true
+  ✅ PASS: Current item changed from listening to recall
+  ✅ PASS: No attempts counted upon fallback
+  ✅ PASS: No failures counted upon fallback
+  ✅ PASS: No SRS committed upon fallback
+--- TEST M: F5 feedback persistence ---
+  ✅ PASS: listeningSubmitted persists after reload
+  ✅ PASS: lastObjectiveResult wrong persists after reload
+  ✅ PASS: canonicalAnswer persists after reload
+  ✅ PASS: Attempts remains 1, no duplicate attempt
+--- TEST N: No self-rating override ---
+  ✅ PASS: Space did not flip card during listening
+  ✅ PASS: Rating key did not record self-rating
+--- TEST O: Audio transcript hidden pre-submit ---
+  ✅ PASS: Canonical answer is separated from display format
+--- TEST P: Orchestration: 5 targets, 3 mature review => 1 typing, 1 listening ---
+  ✅ PASS: Exactly 1 typing interaction in queue
+  ✅ PASS: Exactly 1 listening interaction in queue
+  ✅ PASS: Total objective verification <= 2
+--- TEST Q: Orchestration: Only 1 mature review => 1 typing, 0 listening ---
+  ✅ PASS: 1 mature review yields exactly 1 typing interaction
+  ✅ PASS: 1 mature review yields 0 listening interaction
+--- TEST R: Orchestration: Listening unavailable => 0 listening ---
+  ✅ PASS: When speech unavailable, 0 listening interactions assigned
+--- TEST S: Mutual exclusion: same card never typing + listening ---
+  ✅ PASS: Typing and listening card sets have zero overlap in same session
+--- TEST T: Assignment survives reload unchanged ---
+  ✅ PASS: Queue structure survives reload identical
+--- TEST AA: Partial API mocks => canUseSpeech false ---
+  ✅ PASS: Mock speechSynthesis = {} => canUseSpeech false
+  ✅ PASS: Mock missing cancel => canUseSpeech false
+  ✅ PASS: Mock missing speak => canUseSpeech false
+  ✅ PASS: Mock missing SpeechSynthesisUtterance => canUseSpeech false
+  ✅ PASS: Restored complete API => canUseSpeech true
+--- TEST AB: Synchronous speak failure triggers fallback ---
+  ✅ PASS: speakPrompt returned false when speak threw
+[VokabelListeningVerification] Speech error: Error: TTS hardware error
+    at mockWindow.speechSynthesis.speak (C:\Users\huynh\.codex\worktrees\kino-nudeltrick-missing-lines\flash\test-phase5-listening-acceptance.js:621:9)
+    at Object.speakPrompt (eval at <anonymous> (C:\Users\huynh\.codex\worktrees\kino-nudeltrick-missing-lines\flash\test-phase5-listening-acceptance.js:113:1), <anonymous>:242:32)
+    at Object.<anonymous> (C:\Users\huynh\.codex\worktrees\kino-nudeltrick-missing-lines\flash\test-phase5-listening-acceptance.js:645:21)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+  ✅ PASS: Listening converted to recall upon synchronous failure
+  ✅ PASS: Fallback has attempts 0
+  ✅ PASS: Fallback has failures 0
+  ✅ PASS: Fallback has no SRS commit
+--- TEST AC: Cancel on submit ---
+  ✅ PASS: speechSynthesis.cancel called upon handleSessionListeningSubmit
+--- TEST AD: Cancel on continue ---
+  ✅ PASS: speechSynthesis.cancel called upon handleSessionListeningContinue
+--- TEST AE: Cancel on exit ---
+  ✅ PASS: speechSynthesis.cancel called upon exitSessionToFreeStudy
+  ✅ PASS: speechSynthesis.cancel called upon handleSessionReturnToday
+--- TEST AF: Stale async error guard ---
+  ✅ PASS: Captured onErrorCallback from speakPrompt
+  ✅ PASS: Queue index was NOT reset or altered by stale error
+  ✅ PASS: Queue structure NOT mutated by stale error
+  ✅ PASS: Target state NOT mutated by stale error
+
+====================================================
+ACCEPTANCE SUMMARY: 78 / 78 PASSED
+🎉 ALL PHASE 5 LISTENING RECALL ACCEPTANCE TESTS PASSED!
+====================================================
+
+
+✅ COMPLETED SUITE: test-phase5-listening-acceptance.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-wortturm-evaluator.js
+====================================================
+====================================================
+RUNNING WORTTURM EVALUATOR & GEOMETRY UNIT TESTS
+====================================================
+
+--- TEST 1: German Nouns & Article Enforcement ---
+  ✅ PASS: der Bahnhof -> Exact match
+  ✅ PASS: der bahnhof -> Case-insensitive match accepted
+  ✅ PASS: Bahnhof -> Missing article is rejected with hint
+  ✅ PASS: die Bahnhof -> Wrong article is rejected with hint
+  ✅ PASS: Empty string is rejected
+  ✅ PASS: Whitespace only is rejected
+
+--- TEST 2: Umlaut Normalization (ä/ae, ö/oe, ü/ue, ß/ss) ---
+  ✅ PASS: die Küche -> exact match
+  ✅ PASS: die Kueche -> umlaut ue match accepted
+  ✅ PASS: schön vs schoen -> umlaut oe match accepted
+  ✅ PASS: Multiple whitespace normalized
+  ✅ PASS: Wrong word is rejected with feedback
+
+--- TEST 3: Overlap & Stack Mathematics ---
+  ✅ PASS: Perfect alignment (0px offset) -> Full overlap, isPerfect true
+  ✅ PASS: Near-perfect alignment (2px offset) -> within 4px tolerance, isPerfect true
+  ✅ PASS: Partial overlap (shifted right by 40px) -> overhang sliced
+  ✅ PASS: Partial overlap (shifted left by 40px) -> overhang sliced
+  ✅ PASS: Complete miss (dropped completely to the right) -> overlap <= 0
+  ✅ PASS: Complete miss (dropped completely to the left) -> overlap <= 0
+
+--- TEST 4: Vocabulary Pool Integrity ---
+  ✅ PASS: WORTTURM_VOCABULARY contains at least 15 words
+  ✅ PASS: All entries have non-empty vi and de properties
+
+====================================================
+ACCEPTANCE SUMMARY: 19 / 19 PASSED
+🎉 ALL WORTTURM EVALUATOR & GEOMETRY TESTS PASSED!
+====================================================
+
+
+✅ COMPLETED SUITE: test-wortturm-evaluator.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-wortcrush-evaluator.js
+====================================================
+====================================================
+RUNNING WORTCRUSH EVALUATOR & GEOMETRY UNIT TESTS
+====================================================
+
+--- TEST 1: German Nouns & Article Enforcement ---
+  ✅ PASS: der Bahnhof -> Exact match
+  ✅ PASS: Bahnhof -> Missing article is rejected with hint
+  ✅ PASS: die Bahnhof -> Wrong article is rejected with hint
+  ✅ PASS: die wohnung -> Lowercase noun is rejected with near feedback
+  ✅ PASS: Empty string is rejected
+  ✅ PASS: Whitespace only is rejected
+
+--- TEST 2: Umlaut Normalization & Non-Noun Words ---
+  ✅ PASS: die Küche -> exact match
+  ✅ PASS: die Kueche -> umlaut ue match accepted
+  ✅ PASS: schön vs schoen -> umlaut oe match accepted
+  ✅ PASS: Multiple whitespace normalized
+  ✅ PASS: Non-noun verb (fahren) case-insensitive match accepted
+  ✅ PASS: Unrelated wrong word is rejected with feedback
+
+--- TEST 3: Shard Geometry Validation ---
+  ✅ PASS: 16 interlocking polygon shards defined with valid points
+
+--- TEST 4: Vocabulary Pool Integrity ---
+  ✅ PASS: WORTCRUSH_VOCABULARY contains at least 25 words
+  ✅ PASS: All entries have valid vi and de properties
+  ✅ PASS: Vocabulary includes umlauts and long words
+
+====================================================
+ACCEPTANCE SUMMARY: 16 / 16 PASSED
+🎉 ALL WORTCRUSH EVALUATOR & GEOMETRY TESTS PASSED!
+====================================================
+
+
+✅ COMPLETED SUITE: test-wortcrush-evaluator.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-dau-tu-evaluator.js
+====================================================
+====================================================
+RUNNING "ĐẤU TỪ — VOKABELGO" PREVIEW EVALUATOR TESTS
+====================================================
+
+--- NHÓM A: Khởi tạo và toàn vẹn dữ liệu ---
+  ✅ PASS: A1: Mỗi bộ sinh đúng 60 lá vật lý với ID duy nhất, không trùng lặp
+  ✅ PASS: A2: Không trộn từ loại giữa hai bộ Adjektive và Verben
+  ✅ PASS: A3: Mọi cạnh nối nghĩa và antonym mapping đều trỏ tới entry/context tồn tại
+  ✅ PASS: A4: Khởi tạo ván đấu: chia 5/5, mở bằng lá từ, tổng 60 lá không rò rỉ lá ma
+
+--- NHÓM B: Luật chơi và quy tắc đánh thẻ ---
+  ✅ PASS: B1: Đánh cùng màu khác nghĩa hợp lệ và mở ngữ cảnh nền của từ mới
+  ✅ PASS: B2: Đánh khác màu nhưng ĐỒNG NGHĨA hợp lệ và giữ nguyên ngữ cảnh hiện hành
+  ✅ PASS: B3: Khác màu và SAI NGHĨA bị từ chối; Trùng từ khác màu được chấp nhận là "Cùng từ"
+  ✅ PASS: B4: Khi VỪA cùng màu VỪA đồng nghĩa: ghi nhận matchType là "both", không phóng đại
+  ✅ PASS: B5: Lá Aussetzen (Bỏ lượt) ở bàn 2 người: đối thủ mất lượt, người đánh tiếp tục
+  ✅ PASS: B6: Lá Zieh Zwei (+2): đối thủ rút 2 lá và mất lượt, không cộng dồn
+  ✅ PASS: B7: Lá Farbenwahl: chọn màu hợp lệ, hủy không mất bài, giữ màu cũ
+  ✅ PASS: B8: GEGENTEIL: giữ màu, đổi nghĩa đúng bảng, không chạy khi bàn là lá chức năng
+  ✅ PASS: B9: Sau khi rút bài: chỉ được đánh chính lá vừa rút hoặc chọn Giữ bài
+  ✅ PASS: B10: Đánh sai phạt rút 1 lá nếu chưa rút; không phạt kép nếu đã rút trước đó
+  ✅ PASS: B11: Hết bài thì thắng; lá cuối là +2 thì đối thủ vẫn rút 2 lá trước khi kết thúc
+
+--- NHÓM C: Ngôn ngữ học và Hệ thống gợi ý 2 bước ---
+  ✅ PASS: C1: Câu "schwer" diễn giải theo nghĩa khó, không dùng dữ liệu nghĩa nặng
+  ✅ PASS: C2: Động từ tách lưu đúng các đoạn token highlight riêng biệt
+  ✅ PASS: C3: Gợi ý Bước 1 không tiết lộ đáp án; Bước 2 chỉ đúng lá đồng nghĩa trên tay
+  ✅ PASS: C4: Sau GEGENTEIL, gợi ý cập nhật theo nghĩa của từ mới
+
+--- NHÓM D: Vận hành, Cách ly thông tin Bot và Mô phỏng ---
+  ✅ PASS: D1: Bot chỉ nhận observation công khai, không nhận tay người chơi hoặc draw pile
+  ✅ PASS: D2: Mô phỏng 20 ván chơi tự động với seed cố định: không crash, bảo toàn 60 lá
+
+====================================================
+ACCEPTANCE SUMMARY: 21 / 21 PASSED
+🎉 ALL "ĐẤU TỪ — VOKABELGO" EVALUATOR ACCEPTANCE TESTS PASSED!
+====================================================
+
+
+✅ COMPLETED SUITE: test-dau-tu-evaluator.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-dau-tu-v02.js
+====================================================
+PASS Chọn màu chưa hoàn tất: không rút lá khỏi tay, không mutate state
+PASS Màu không hợp lệ: không mutate
+PASS Phạt chỉ đúng lượt, đúng lá sai; không phạt một lá hợp lệ
+PASS Phát hiện trùng ID dù tổng vẫn đủ 60
+PASS Hai lần GEGENTEIL, mục tiêu ảo không thêm lá
+PASS Tái trộn dưới GEGENTEIL giữ nghĩa mới và không đổi màu
+PASS Gợi ý không chạy trong lượt máy hoặc ván kết thúc
+PASS Sau rút: gợi ý chỉ lá vừa rút; không lộ đáp án ở lá cũ
+PASS Gợi ý sau Bỏ lượt không đề nghị GEGENTEIL như nước hợp lệ
+PASS Lá cuối Đổi màu: hoàn tất màu rồi thắng; không có lượt thừa
+PASS Lá cuối GEGENTEIL: thắng với mục tiêu đúng
+PASS +2 cuối cùng với chồng rút thiếu: không tạo thêm lá
+PASS Seed được lưu, tạo cùng trạng thái ban đầu
+PASS Bế tắc tổng quát: trả hòa khi cả hai không có nước đi, không còn bài rút
+PASS 200 ván mô phỏng (100 mỗi bộ), kiểm toàn vẹn từng hành động
+{
+  "passed": 15,
+  "failed": 0,
+  "simulation": {
+    "games": 200,
+    "completed": 200,
+    "capped": 0,
+    "winners": {
+      "player": 88,
+      "bot": 112,
+      "draw": 0
+    },
+    "maxTurns": 62,
+    "moves": {
+      "word": 2568,
+      "meaning": 576,
+      "both": 166,
+      "color": 1510,
+      "same": 316,
+      "actions": 718
+    },
+    "medianTurns": 15
+  }
+}
+
+✅ COMPLETED SUITE: test-dau-tu-v02.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-dau-tu-v03.js
+====================================================
+PASS 4P-1: Khởi tạo bàn 4 người: 4 người x 5 lá = 20 lá, 1 mở bàn, 39 rút = 60 lá
+PASS 4P-2: Hướng lượt theo chiều kim đồng hồ: player -> bot_left -> bot_top -> bot_right -> player
+PASS 4P-3: Aussetzen ở bàn 4 người: Bỏ qua người kế tiếp, chuyển lượt cho người sau nữa
+PASS 4P-4: Zieh Zwei (+2) ở bàn 4 người: bot_left rút 2 lá và mất lượt, bot_top chơi tiếp
+PASS 4P-5: 100 ván mô phỏng 4 người (50 Adjektive, 50 Verben), kiểm tra toàn vẹn từng hành động
+
+====================================================
+4-PLAYER TABLE TESTS: 5 PASSED, 0 FAILED
+====================================================
+
+✅ COMPLETED SUITE: test-dau-tu-v03.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-dau-tu-v05.js
+====================================================
+PASS CASE 01: SCHWER RED -> SCHWIERIG BLUE (No Answer Hint) => Wort-Kette YES
+PASS CASE 02: SCHWER RED -> SCHWIERIG RED => NO Wort-Kette (same color)
+PASS CASE 03: SCHWER RED -> SCHWER BLUE => NO Wort-Kette (same word)
+PASS CASE 04: Hint Step 1 -> SCHWIERIG BLUE => Wort-Kette YES
+PASS CASE 05: Use Step 2 "Chỉ lá phù hợp" -> SCHWIERIG BLUE => NO Wort-Kette
+PASS CASE 06: Bonus card is another cross-color synonym => Legal, NO second chain
+PASS CASE 07: Wort-Kette -> Bonus +2 => +2 resolves, victim draws 2 and loses turn
+PASS CASE 08: Wort-Kette -> Aussetzen => skip correct
+PASS CASE 09: Wort-Kette -> Farbenwahl => Color selector, new color active
+PASS CASE 10: Wort-Kette -> GEGENTEIL => Antonym resolves, keeps color, next turn
+PASS CASE 11: No legal bonus card => cannot draw, pass ends bonus
+PASS CASE 12: Human chooses Kết thúc lượt => no penalty
+PASS CASE 13: Trigger card = last card => immediate win
+PASS CASE 14: 2 cards left. First triggers Wort-Kette. 1 remains => Noch eine, bonus can win
+PASS CASE 15: Bot Wort-Kette => bot follows identical rules
+PASS CASE 16: Restart during Wort-Kette => clean reset
+PASS CASE 17: State preservation during modal/rules opening
+PASS CASE 18: End game during bonus special effect => no ghost turn
+
+====================================================
+TEST RESULTS: 18 PASSED, 0 FAILED
+====================================================
+
+
+✅ COMPLETED SUITE: test-dau-tu-v05.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-lexicon-pipeline.js
+====================================================
+====================================================
+TEST SUITE: ĐẤU TỪ · LEXICAL PIPELINE v0.1
+====================================================
+
+--- 1. OpenThesaurus Adapter & Offline Cache ---
+  ✓ should find at least 70 pre-seeded authentic raw cache files
+  ✓ should retrieve candidate DTO from cache with CC-BY-SA 4.0 / GNU LGPL attribution
+
+--- 2. Morphology & Unicode Preservation ---
+  ✓ should preserve German umlauts (ä, ö, ü) and eszett (ß) without stripping or ss mutation
+  ✓ should detect separable prefix verbs correctly
+  ✓ should detect reflexive verbs correctly
+
+--- 3. Polysemy Separation ---
+  ✓ should separate "schwer" into distinct entries for difficult vs heavy
+  ✓ should separate "leicht" into easy vs light_weight
+
+--- 4. CandidateStore & Audit Trail ---
+  ✓ should transition statuses and record reviewer audit trail
+
+--- 5. Deck Builder & Graph Connectivity ---
+  ✓ should build a 60-card adjective deck with 0 isolated nodes and A+ viability
+  ✓ should build a 60-card verb deck with 0 isolated nodes
+
+--- 6. Runtime Exporter & Validation Gates ---
+  ✓ should pass validation gates and export runtime datasets
+
+--- 7. Game Engine Runtime Integration ---
+  ✓ should initialize a 4-player game using the Expanded Lexicon Deck
+  ✓ should recognize valid synonym and color moves with Expanded Lexicon cards
+
+====================================================
+🎉 ALL 13 TESTS IN test-lexicon-pipeline.js PASSED!
+====================================================
+
+
+✅ COMPLETED SUITE: test-lexicon-pipeline.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-vocabulary-rotation.js
+====================================================
+====================================================
+TEST SUITE: ĐẤU TỪ · VOCABULARY ROTATION & DIVERSITY
+====================================================
+
+--- 1. Semantic Clusters Pool ---
+  ✓ should define at least 8 curated clusters for Adjectives and 7 for Verbs
+  ✓ each cluster should contain exactly 4 cohesive entries (2 pairs of antonyms/synonyms)
+
+--- 2. Physical Card Multiplier & Integrity ---
+  ✓ should build 60-card match deck with 48 word cards (12 entries × 4 colors) + 12 special cards
+  ✓ every match deck should have 0 isolated nodes and A+ Wort-Kette viability
+
+--- 3. 10 Consecutive Matches Simulation (Adjektive) ---
+  ✓ should maintain 0% consecutive overlap (Match N vs N-1) across 10 Adjective matches
+
+--- 4. 10 Consecutive Matches Simulation (Verben) ---
+  ✓ should maintain 0% consecutive overlap across 10 Verb matches
+
+--- 5. Dynamic Engine Integration ---
+  ✓ DAU_TU_ENGINE.createInitialGameState should initialize game with dynamic rotation match deck
+
+--- 6. Vocabulary History & Reset ---
+  ✓ should track play counts and reset history cleanly
+
+====================================================
+🎉 ALL 8 TESTS IN test-vocabulary-rotation.js PASSED!
+====================================================
+
+
+✅ COMPLETED SUITE: test-vocabulary-rotation.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-dau-tu-v06.js
+====================================================
+====================================================
+TEST SUITE: ĐẤU TỪ v0.6 · SPECIAL CARD EFFECTS & GAME FEEL
+====================================================
+
+--- 1. Aussetzen (Bỏ lượt) Mechanics & Turn Progression ---
+  ✓ Aussetzen skips immediate next player and passes turn to player + 2
+  ✓ Aussetzen played by bot_left skips bot_top and gives turn to bot_right
+
+--- 2. Zieh Zwei (+2) Penalty & Card Conservation ---
+  ✓ +2 causes target to draw 2 cards and lose turn, advancing to next player
+  ✓ +2 handles depleted draw pile without crashing or generating phantom cards
+
+--- 3. Farbenwahl (Đổi màu) Visual & Logic Precision ---
+  ✓ Farbenwahl requires explicit color choice and transitions active color
+  ✓ Bot chooses Farbenwahl color via heuristic and updates active color
+
+--- 4. GEGENTEIL Signature Antonym Transition ---
+  ✓ GEGENTEIL transitions word to antonym, preserves active color and updates context
+  ✓ GEGENTEIL works for Verben (schließen -> öffnen)
+
+--- 5. WORT-KETTE Signature Learning & Bonus Resolution ---
+  ✓ Cross-color unassisted synonym triggers WORT-KETTE with +1 bonus play
+  ✓ WORT-KETTE bonus play does not trigger a second chain
+
+--- 6. Combined Effect: WORT-KETTE -> Bonus +2 ---
+  ✓ WORT-KETTE followed by bonus +2 resolves sequentially and penalizes victim
+
+--- 7. End State: Special Card as Final Card ---
+  ✓ Final card as Aussetzen wins game immediately without phantom turn
+  ✓ Final card as +2: victim draws 2 cards, player wins immediately
+  ✓ Final card as Farbenwahl: color chosen, player wins immediately
+
+====================================================
+🎉 ALL 14 TESTS IN test-dau-tu-v06.js PASSED!
+====================================================
+
+
+✅ COMPLETED SUITE: test-dau-tu-v06.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-srt-align.js
+====================================================
+  ✓ parseSrt: bỏ thẻ HTML, sắp theo thời gian
+  ✓ align: dung sai 1.6s ghép đúng, câu lệch xa để trống
+  ✓ buildSceneCues: id dãy 1..N, matched đếm đúng
+  ✓ windowCues: lọc theo cửa sổ và đánh số lại
+  ✓ draftChapters: picks tối đa 7 và nằm trong phần
+  ✓ PARITY: trùng kết quả căn với tools/kino-import trên cùng SRT
+  ✓ parseSubtitles: đọc được WebVTT (mốc MM:SS + cài đặt sau mốc)
+  ✓ buildSceneCues: nhận cả đầu vào VTT
+  ✓ resegment: câu dài 12s tách tại dấu câu, thời gian liên tục
+  ✓ resegment: mảnh <0,5s gộp vào câu trước
+  ✓ vocabCandidates: từ nội dung dài >=5, bỏ stopword, đếm tần suất
+test-srt-align: 11/11 PASS
+
+✅ COMPLETED SUITE: test-srt-align.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-kino-dictation.js
+====================================================
+Kino dictation alignment: all regression cases passed.
+
+✅ COMPLETED SUITE: test-kino-dictation.js (PASS)
+
+
+====================================================
+>>> EXECUTING: test-kino-practice-data.js
+====================================================
+Kino practice data: 33 films, 162 chapters, 1057 reviewed lines passed.
+
+✅ COMPLETED SUITE: test-kino-practice-data.js (PASS)
+
+====================================================
+ALL SUITES EXECUTION SUMMARY
+====================================================
+🎉 ALL 21 SUITES PASSED CLEANLY! ZERO REGRESSIONS.
+====================================================

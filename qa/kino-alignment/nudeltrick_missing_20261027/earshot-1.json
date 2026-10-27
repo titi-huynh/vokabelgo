@@ -1,0 +1,79 @@
+{
+  "tool": "earshot.describe",
+  "purpose": "Phân loại âm thanh/nhạc mở đầu cho cửa sổ ứng viên #1 (1.78s-26.12s). Không dùng earshot để xác nhận lời thoại.",
+  "input": {
+    "path": "C:/Users/huynh/.codex/worktrees/kino-nudeltrick-missing-lines/flash/video/erdmaennchen_nudeltrick.mp4",
+    "start": 1.78,
+    "end": 26.12
+  },
+  "output": {
+    "path": "C:/Users/huynh/.codex/worktrees/kino-nudeltrick-missing-lines/flash/video/erdmaennchen_nudeltrick.mp4",
+    "span": [
+      1.78,
+      26.12
+    ],
+    "summary": "24.3s, -19.2 LUFS, peak -2.7 dBFS, crest 16.4 dB; bright (centroid 2090 Hz, rolloff 4870 Hz); transient/percussive (onset rate 5.4/s); stereo (corr 0.45, width 0.52); AudioSet: Music (0.55), Drum (0.25), Percussion (0.14)",
+    "tags": [
+      {
+        "label": "Music",
+        "score": 0.554,
+        "index": 137
+      },
+      {
+        "label": "Drum",
+        "score": 0.253,
+        "index": 162
+      },
+      {
+        "label": "Percussion",
+        "score": 0.144,
+        "index": 161
+      },
+      {
+        "label": "Drum kit",
+        "score": 0.123,
+        "index": 166
+      },
+      {
+        "label": "Speech",
+        "score": 0.121,
+        "index": 0
+      },
+      {
+        "label": "Snare drum",
+        "score": 0.087,
+        "index": 163
+      },
+      {
+        "label": "Singing",
+        "score": 0.056,
+        "index": 27
+      },
+      {
+        "label": "Musical instrument",
+        "score": 0.056,
+        "index": 138
+      }
+    ],
+    "events": [
+      {
+        "start": 1.0,
+        "end": 24.3,
+        "labels": [
+          {
+            "label": "Music",
+            "score": 0.576
+          },
+          {
+            "label": "Drum",
+            "score": 0.264
+          },
+          {
+            "label": "Percussion",
+            "score": 0.15
+          }
+        ]
+      }
+    ]
+  }
+}

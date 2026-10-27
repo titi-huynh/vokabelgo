@@ -1,0 +1,12 @@
+
+Running 5 tests using 1 worker
+
+(node:50492) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › e2e\kino-erdmaennchen.spec.js:17:1 › Nudeltrick is discoverable with its own bilingual lessons, covers, vocabulary and seekable original video (3.7s)
+  ok 2 [chromium] › e2e\kino-erdmaennchen.spec.js:67:1 › every Nudeltrick part plays, displays matching DE/VI captions and stops at its own boundary (13.0s)
+  ok 3 [chromium] › e2e\kino-erdmaennchen.spec.js:99:1 › dictation, seven-cue selection and saved progress remain independent of Peppa (3.2s)
+  ok 4 [chromium] › e2e\kino-erdmaennchen.spec.js:121:1 › Nudeltrick vocabulary opens only its own 24 source-linked flashcards (1.5s)
+  ok 5 [chromium] › e2e\kino-erdmaennchen.spec.js:131:1 › Nudeltrick works on a phone and can record a speaking take before completing dictation (6.6s)
+
+  5 passed (29.5s)

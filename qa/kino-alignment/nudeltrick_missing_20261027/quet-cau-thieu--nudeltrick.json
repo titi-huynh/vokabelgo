@@ -1,0 +1,542 @@
+{
+ "key": "erdmaennchen_nudeltrick",
+ "duration": 746.9,
+ "cue_count": 118,
+ "speech_regions": 69,
+ "speech_seconds": 653.6,
+ "candidates": [
+  {
+   "start": 2.98,
+   "end": 24.92,
+   "covered": 0.0,
+   "window": [
+    1.78,
+    26.12
+   ],
+   "asr": [
+    {
+     "start": 2.92,
+     "end": 7.92,
+     "text": "Ein Erdmännchen als Detektiv, das gibt's nicht überall.",
+     "avg_logprob": -0.25,
+     "no_speech_prob": 0.68
+    },
+    {
+     "start": 7.92,
+     "end": 13.92,
+     "text": "Mit diesen beiden geht nicht schief, sie lösen jeden Fall.",
+     "avg_logprob": -0.25,
+     "no_speech_prob": 0.68
+    },
+    {
+     "start": 13.92,
+     "end": 19.92,
+     "text": "Schneller als die Polizei, macht euch auch was gefasst.",
+     "avg_logprob": -0.25,
+     "no_speech_prob": 0.68
+    },
+    {
+     "start": 19.92,
+     "end": 23.92,
+     "text": "Jan und Henry sind die zwei Verbrecher aufgewachsen.",
+     "avg_logprob": -0.25,
+     "no_speech_prob": 0.68
+    }
+   ],
+   "cue_before": null,
+   "cue_after": {
+    "id": 900101,
+    "start": 30.18,
+    "end": 33.76,
+    "text": "Henry, ich freue mich ja schon so auf die Zaubershow.",
+    "vi": "Henry, tớ háo hức được xem buổi ảo thuật quá rồi."
+   }
+  },
+  {
+   "start": 82.66,
+   "end": 100.15,
+   "covered": 0.0,
+   "window": [
+    81.46,
+    101.35
+   ],
+   "asr": [
+    {
+     "start": 82.53,
+     "end": 88.53,
+     "text": "Hab ich nicht gesagt? Toll! Jetzt holt er gleich einen auf die Bühne. Wahrscheinlich den da.",
+     "avg_logprob": -0.27,
+     "no_speech_prob": 0.03
+    },
+    {
+     "start": 90.53,
+     "end": 95.53,
+     "text": "Pssst! Für den kommenden Trick brauche ich jemand aus dem Publikum.",
+     "avg_logprob": -0.27,
+     "no_speech_prob": 0.03
+    },
+    {
+     "start": 96.53,
+     "end": 98.53,
+     "text": "Darf ich Sie nach oben?",
+     "avg_logprob": -0.27,
+     "no_speech_prob": 0.03
+    },
+    {
+     "start": 99.53,
+     "end": 100.53,
+     "text": "Oh, Micha!",
+     "avg_logprob": -0.27,
+     "no_speech_prob": 0.03
+    }
+   ],
+   "cue_before": {
+    "id": 900108,
+    "start": 70.56,
+    "end": 76.76,
+    "text": "Der Anfang ist schon so gut, wenn der Zauberer mit einem Knall plötzlich auf der Bühne steht.",
+    "vi": "Ngay đoạn mở đầu đã hay lắm, khi ảo thuật gia bỗng xuất hiện trên sân khấu cùng một tiếng nổ."
+   },
+   "cue_after": {
+    "id": 900109,
+    "start": 100.8,
+    "end": 103.04,
+    "text": "Verrat doch bitte nicht alles.",
+    "vi": "Làm ơn đừng tiết lộ hết mọi chuyện chứ."
+   }
+  },
+  {
+   "start": 118.6,
+   "end": 121.59,
+   "covered": 0.0,
+   "window": [
+    117.4,
+    122.79
+   ],
+   "asr": [
+    {
+     "start": 117.4,
+     "end": 119.4,
+     "text": "Die hier!",
+     "avg_logprob": -0.72,
+     "no_speech_prob": 0.05
+    }
+   ],
+   "cue_before": {
+    "id": 900113,
+    "start": 115.2,
+    "end": 118.48,
+    "text": "Ist es vielleicht die hier?",
+    "vi": "Có phải chiếc này không nhỉ?"
+   },
+   "cue_after": {
+    "id": 900114,
+    "start": 122.98,
+    "end": 131.08,
+    "text": "Wo ich gerade auf die Uhr schaue, es wird höchste Zeit, dass Sie wieder Ihre Krawatte anziehen.",
+    "vi": "Nhân tiện vừa nhìn đồng hồ, đã đến lúc anh đeo lại cà vạt rồi đấy."
+   }
+  },
+  {
+   "start": 133.86,
+   "end": 136.03,
+   "covered": 0.0,
+   "window": [
+    132.66,
+    137.23
+   ],
+   "asr": [
+    {
+     "start": 132.66,
+     "end": 133.66,
+     "text": "Wie ist das?",
+     "avg_logprob": -0.79,
+     "no_speech_prob": 0.53
+    }
+   ],
+   "cue_before": {
+    "id": 900114,
+    "start": 122.98,
+    "end": 131.08,
+    "text": "Wo ich gerade auf die Uhr schaue, es wird höchste Zeit, dass Sie wieder Ihre Krawatte anziehen.",
+    "vi": "Nhân tiện vừa nhìn đồng hồ, đã đến lúc anh đeo lại cà vạt rồi đấy."
+   },
+   "cue_after": {
+    "id": 900115,
+    "start": 144.42,
+    "end": 148.3,
+    "text": "Wo bewahren Sie eigentlich Ihr Geld auf?",
+    "vi": "Anh thường cất tiền ở đâu vậy?"
+   }
+  },
+  {
+   "start": 141.0,
+   "end": 145.31,
+   "covered": 0.21,
+   "window": [
+    139.8,
+    146.51
+   ],
+   "asr": [
+    {
+     "start": 140.84,
+     "end": 148.36,
+     "text": "Achtung jetzt kommt's jetzt kommt's. Wo? Bewahren!",
+     "avg_logprob": -0.61,
+     "no_speech_prob": 0.35
+    }
+   ],
+   "cue_before": {
+    "id": 900114,
+    "start": 122.98,
+    "end": 131.08,
+    "text": "Wo ich gerade auf die Uhr schaue, es wird höchste Zeit, dass Sie wieder Ihre Krawatte anziehen.",
+    "vi": "Nhân tiện vừa nhìn đồng hồ, đã đến lúc anh đeo lại cà vạt rồi đấy."
+   },
+   "cue_after": {
+    "id": 900117,
+    "start": 150.68,
+    "end": 155.38,
+    "text": "Schauen Sie lieber mal nach, denn Ihr Geld habe ich hier.",
+    "vi": "Anh nên kiểm tra lại đi, vì tiền của anh đang ở chỗ tôi đây."
+   }
+  },
+  {
+   "start": 161.06,
+   "end": 162.55,
+   "covered": 0.0,
+   "window": [
+    159.86,
+    163.75
+   ],
+   "asr": [
+    {
+     "start": 160.87,
+     "end": 162.87,
+     "text": "Aber in meiner Tasche, das ...",
+     "avg_logprob": -0.39,
+     "no_speech_prob": 0.26
+    }
+   ],
+   "cue_before": {
+    "id": 900117,
+    "start": 150.68,
+    "end": 155.38,
+    "text": "Schauen Sie lieber mal nach, denn Ihr Geld habe ich hier.",
+    "vi": "Anh nên kiểm tra lại đi, vì tiền của anh đang ở chỗ tôi đây."
+   },
+   "cue_after": {
+    "id": 900118,
+    "start": 166.12,
+    "end": 167.88,
+    "text": "Das sind ja Nudeln.",
+    "vi": "Đây toàn là mì mà."
+   }
+  },
+  {
+   "start": 184.55,
+   "end": 192.06,
+   "covered": 0.0,
+   "window": [
+    183.35,
+    193.26
+   ],
+   "asr": [
+    {
+     "start": 184.39,
+     "end": 188.07,
+     "text": "Hahaha, sehr lustiger Trick, nicht wahr, Jan?",
+     "avg_logprob": -0.53,
+     "no_speech_prob": 0.13
+    },
+    {
+     "start": 188.07,
+     "end": 191.07,
+     "text": "Ja, ich glaube schon.",
+     "avg_logprob": -0.53,
+     "no_speech_prob": 0.13
+    }
+   ],
+   "cue_before": {
+    "id": 900120,
+    "start": 174.98,
+    "end": 179.72,
+    "text": "Guten Appetit und einen großen Applaus für unseren Freiwilligen.",
+    "vi": "Chúc ngon miệng, và xin một tràng pháo tay thật lớn cho người tình nguyện của chúng ta."
+   },
+   "cue_after": {
+    "id": 900121,
+    "start": 195.46,
+    "end": 199.44,
+    "text": "Das war wirklich eine tolle Show.",
+    "vi": "Buổi diễn thật sự rất tuyệt."
+   }
+  },
+  {
+   "start": 290.76,
+   "end": 294.11,
+   "covered": 0.0,
+   "window": [
+    289.56,
+    295.31
+   ],
+   "asr": [
+    {
+     "start": 289.56,
+     "end": 290.56,
+     "text": "Bitte mit.",
+     "avg_logprob": -0.6,
+     "no_speech_prob": 0.37
+    },
+    {
+     "start": 290.56,
+     "end": 291.56,
+     "text": "Ja.",
+     "avg_logprob": -0.6,
+     "no_speech_prob": 0.37
+    },
+    {
+     "start": 291.56,
+     "end": 292.56,
+     "text": "Bitte.",
+     "avg_logprob": -0.6,
+     "no_speech_prob": 0.37
+    },
+    {
+     "start": 292.56,
+     "end": 293.56,
+     "text": "Hm.",
+     "avg_logprob": -0.6,
+     "no_speech_prob": 0.37
+    },
+    {
+     "start": 293.56,
+     "end": 293.58,
+     "text": "Hm.",
+     "avg_logprob": -0.6,
+     "no_speech_prob": 0.37
+    }
+   ],
+   "cue_before": {
+    "id": 900140,
+    "start": 289.12,
+    "end": 290.1,
+    "text": "Kommst du mal bitte mit?",
+    "vi": "Mời anh đi cùng tôi một chút nhé?"
+   },
+   "cue_after": {
+    "id": 900141,
+    "start": 294.68,
+    "end": 299.56,
+    "text": "Ich glaube, irgendwer möchte, dass man dich verdächtigt.",
+    "vi": "Tớ nghĩ có ai đó muốn mọi người nghi ngờ ông."
+   }
+  },
+  {
+   "start": 567.11,
+   "end": 570.33,
+   "covered": 0.0,
+   "window": [
+    565.91,
+    571.53
+   ],
+   "asr": [
+    {
+     "start": 566.12,
+     "end": 568.12,
+     "text": "Ah, los geht's!",
+     "avg_logprob": -0.76,
+     "no_speech_prob": 0.17
+    },
+    {
+     "start": 568.12,
+     "end": 570.12,
+     "text": "Hm, Käse!",
+     "avg_logprob": -0.76,
+     "no_speech_prob": 0.17
+    }
+   ],
+   "cue_before": {
+    "id": 900188,
+    "start": 557.44,
+    "end": 558.9,
+    "text": "Ja, nichts wie hinterher!",
+    "vi": "Ừ, mau đuổi theo thôi!"
+   },
+   "cue_after": {
+    "id": 900189,
+    "start": 571.3,
+    "end": 573.12,
+    "text": "Kannst du was erkennen?",
+    "vi": "Cậu có nhìn ra được gì không?"
+   }
+  },
+  {
+   "start": 573.7,
+   "end": 594.59,
+   "covered": 0.0,
+   "window": [
+    572.5,
+    595.79
+   ],
+   "asr": [
+    {
+     "start": 572.5,
+     "end": 577.5,
+     "text": "Sie packt ihre Tüten aus. Sie hat einen Käse gekauft.",
+     "avg_logprob": -0.25,
+     "no_speech_prob": 0.09
+    },
+    {
+     "start": 577.5,
+     "end": 582.5,
+     "text": "Ah, ja. Man riecht's. Und ich hab schon gedacht, das wären deine Füße.",
+     "avg_logprob": -0.25,
+     "no_speech_prob": 0.09
+    },
+    {
+     "start": 584.5,
+     "end": 586.5,
+     "text": "Und nun schweb.",
+     "avg_logprob": -0.25,
+     "no_speech_prob": 0.09
+    },
+    {
+     "start": 587.5,
+     "end": 588.5,
+     "text": "Nun schweb schon.",
+     "avg_logprob": -0.25,
+     "no_speech_prob": 0.09
+    },
+    {
+     "start": 590.5,
+     "end": 594.5,
+     "text": "Los, setz deine Löcher in Bewegung und schweb.",
+     "avg_logprob": -0.25,
+     "no_speech_prob": 0.09
+    }
+   ],
+   "cue_before": {
+    "id": 900189,
+    "start": 571.3,
+    "end": 573.12,
+    "text": "Kannst du was erkennen?",
+    "vi": "Cậu có nhìn ra được gì không?"
+   },
+   "cue_after": {
+    "id": 900190,
+    "start": 594.9,
+    "end": 596.7,
+    "text": "Was passiert nun?",
+    "vi": "Bây giờ có chuyện gì xảy ra?"
+   }
+  },
+  {
+   "start": 696.13,
+   "end": 714.68,
+   "covered": 0.0,
+   "window": [
+    694.93,
+    715.88
+   ],
+   "asr": [
+    {
+     "start": 695.91,
+     "end": 700.59,
+     "text": "Und das Geheimnis ist, dass man das Publikum dabei ablenkt,",
+     "avg_logprob": -0.31,
+     "no_speech_prob": 0.02
+    },
+    {
+     "start": 700.59,
+     "end": 703.43,
+     "text": "indem man dann groß mit dem Geldbeutel wedelt.",
+     "avg_logprob": -0.31,
+     "no_speech_prob": 0.02
+    },
+    {
+     "start": 703.43,
+     "end": 709.03,
+     "text": "Ah, das ist wirklich nett, dass du uns als Dankeschön die Nudeltrick verdezt.",
+     "avg_logprob": -0.31,
+     "no_speech_prob": 0.02
+    },
+    {
+     "start": 709.03,
+     "end": 714.79,
+     "text": "Na, wenn ihr nicht gewesen wird, dann hätte ich wahrscheinlich nie wieder auftreten können.",
+     "avg_logprob": -0.31,
+     "no_speech_prob": 0.02
+    },
+    {
+     "start": 714.79,
+     "end": 715.99,
+     "text": "Ach, das war doch ein...",
+     "avg_logprob": -0.31,
+     "no_speech_prob": 0.02
+    }
+   ],
+   "cue_before": {
+    "id": 900219,
+    "start": 684.28,
+    "end": 687.38,
+    "text": "Ich glaube, da musst du wohl noch ein bisschen üben, was?",
+    "vi": "Tôi nghĩ bà vẫn phải tập thêm một chút nữa đấy, nhỉ?"
+   },
+   "cue_after": {
+    "id": 900222,
+    "start": 715.3,
+    "end": 718.48,
+    "text": "Das war doch ein ganz einfacher Fall für die Erdmännchen.",
+    "vi": "Đó là một vụ án rất đơn giản đối với hai thám tử cầy meerkat mà."
+   }
+  },
+  {
+   "start": 724.93,
+   "end": 744.79,
+   "covered": 0.0,
+   "window": [
+    723.73,
+    745.99
+   ],
+   "asr": [
+    {
+     "start": 723.73,
+     "end": 725.73,
+     "text": "Mal sehen...",
+     "avg_logprob": -0.71,
+     "no_speech_prob": 0.27
+    },
+    {
+     "start": 729.73,
+     "end": 731.73,
+     "text": "Nicht so ganz...",
+     "avg_logprob": -0.71,
+     "no_speech_prob": 0.27
+    },
+    {
+     "start": 731.73,
+     "end": 733.73,
+     "text": "Pizza!",
+     "avg_logprob": -0.71,
+     "no_speech_prob": 0.27
+    },
+    {
+     "start": 733.73,
+     "end": 735.73,
+     "text": "Pizza!",
+     "avg_logprob": -0.71,
+     "no_speech_prob": 0.27
+    }
+   ],
+   "cue_before": {
+    "id": 900225,
+    "start": 723.06,
+    "end": 724.3,
+    "text": "Ja, wollen wir mal sehen.",
+    "vi": "Ừ, mình xem thử nào."
+   },
+   "cue_after": null
+  }
+ ]
+}

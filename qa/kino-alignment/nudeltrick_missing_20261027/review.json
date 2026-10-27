@@ -1,0 +1,2762 @@
+{
+  "movieId": "erdmaennchen_nudeltrick",
+  "title": "Ein Fall für die Erdmännchen — Der Nudeltrick",
+  "date": "2026-10-27",
+  "sourceVideo": "video/erdmaennchen_nudeltrick.mp4",
+  "sourceVideoSha256": "2a956e7509ea72730608ace97c91d94462a5337e30c0f01442450d86e99664f2",
+  "candidateFile": "qa/kino-alignment/nudeltrick_missing_20261027/muse-candidates.json",
+  "candidateSha256": "fc3a79efd6ac3ef60631e55faac2dd39540d484f80aa3d7eb0fcde979c73a2ad",
+  "independentEvidence": [
+    "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+    "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+    "qa/kino-alignment/nudeltrick_missing_20261027/independent-small-tight.json",
+    "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium-tight.json",
+    "qa/kino-alignment/nudeltrick_missing_20261027/independent-small-context.json",
+    "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium-context.json",
+    "qa/kino-alignment/nudeltrick_missing_20261027/earshot-1.json",
+    "qa/kino-alignment/nudeltrick_missing_20261027/earshot-12.json",
+    "qa/kino-alignment/nudeltrick_missing_20261027/earshot-opening.json",
+    "qa/kino-alignment/nudeltrick_missing_20261027/earshot-ending.json",
+    "qa/kino-alignment/nudeltrick_missing_20261027/media-verification.json"
+  ],
+  "method": {
+    "humanListened": false,
+    "externalAudioUpload": false,
+    "asrModels": [
+      "faster-whisper small",
+      "faster-whisper medium"
+    ],
+    "asrOptions": {
+      "language": "de",
+      "word_timestamps": true,
+      "condition_on_previous_text": false,
+      "local_files_only": true,
+      "cpu_threads": 3,
+      "initial_prompt": null,
+      "hotwords": null
+    },
+    "earshotPolicy": "Chỉ dùng earshot local để phân loại nhạc/tiếng cười ở cửa sổ #1 và cuối cửa sổ #12; tuyệt đối không dùng earshot để xác nhận chữ thoại.",
+    "idPolicy": "Giữ nguyên 118 cue cũ và các ID dự thảo đã bảo lưu; ID mới nối tiếp 900226–900245. Tách riêng Hab ich nicht gesagt? / Toll! và Achtung! / Jetzt kommt's! / Jetzt kommt's!.",
+    "countingMethod": "12 cửa sổ ứng viên của Muse được tách theo từng phát ngôn độc lập. Một cửa sổ ứng viên có thể đồng thời chứa câu được thêm (added), phần bị loại trừ (excluded - nhạc mở đầu/kết tập hoặc trùng cue kề) và phần cần kiểm tra thêm (reviewNeeded).",
+    "externalAsrServiceUsed": false
+  },
+  "counts": {
+    "candidates": 12,
+    "previousCueCount": 118,
+    "newCueCount": 138,
+    "addedCues": 20,
+    "adjustedExistingCues": 0,
+    "excludedParts": 9,
+    "reviewNeededParts": 12,
+    "windowsWithAddedCues": 8,
+    "windowsWithExcludedParts": 9,
+    "windowsWithReviewNeededParts": 9
+  },
+  "added": [
+    {
+      "id": 900226,
+      "parentId": 900226,
+      "candidate": 2,
+      "start": 82.1,
+      "end": 84.08,
+      "speaker": "Krokodella",
+      "text": "Hab ich nicht gesagt?",
+      "vi": "Tôi đã nói rồi mà?",
+      "smallText": "Hab ich nicht gesagt,",
+      "mediumText": "Hab ich nicht gesagt?",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 2,
+        "words": [
+          {
+            "start": 82.28,
+            "end": 82.94,
+            "word": " Hab",
+            "probability": 0.663695216178894
+          },
+          {
+            "start": 82.94,
+            "end": 83.14,
+            "word": " ich",
+            "probability": 0.9280443787574768
+          },
+          {
+            "start": 83.14,
+            "end": 83.36,
+            "word": " nicht",
+            "probability": 0.5319185853004456
+          },
+          {
+            "start": 83.36,
+            "end": 83.94,
+            "word": " gesagt?",
+            "probability": 0.9991076588630676
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 2,
+        "words": [
+          {
+            "start": 82.2,
+            "end": 82.86,
+            "word": " Hab",
+            "probability": 0.35639050602912903
+          },
+          {
+            "start": 82.86,
+            "end": 83.02,
+            "word": " ich",
+            "probability": 0.9531450867652893
+          },
+          {
+            "start": 83.02,
+            "end": 83.2,
+            "word": " nicht",
+            "probability": 0.8899945616722107
+          },
+          {
+            "start": 83.2,
+            "end": 83.7,
+            "word": " gesagt,",
+            "probability": 0.9954452514648438
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 2,
+        "words": [
+          {
+            "start": 82.28,
+            "end": 82.94,
+            "word": " Hab",
+            "probability": 0.663695216178894
+          },
+          {
+            "start": 82.94,
+            "end": 83.14,
+            "word": " ich",
+            "probability": 0.9280443787574768
+          },
+          {
+            "start": 83.14,
+            "end": 83.36,
+            "word": " nicht",
+            "probability": 0.5319185853004456
+          },
+          {
+            "start": 83.36,
+            "end": 83.94,
+            "word": " gesagt?",
+            "probability": 0.9991076588630676
+          }
+        ]
+      }
+    },
+    {
+      "id": 900227,
+      "parentId": 900227,
+      "candidate": 2,
+      "start": 84.08,
+      "end": 84.96,
+      "speaker": "Krokodella",
+      "text": "Toll!",
+      "vi": "Tuyệt thật!",
+      "smallText": "toll,",
+      "mediumText": "Toll!",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 2,
+        "words": [
+          {
+            "start": 84.26,
+            "end": 84.82,
+            "word": " Toll!",
+            "probability": 0.9624322652816772
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 2,
+        "words": [
+          {
+            "start": 84.12,
+            "end": 84.46,
+            "word": " toll,",
+            "probability": 0.9098783731460571
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 2,
+        "words": [
+          {
+            "start": 84.26,
+            "end": 84.82,
+            "word": " Toll!",
+            "probability": 0.9624322652816772
+          }
+        ]
+      }
+    },
+    {
+      "id": 900228,
+      "parentId": 900228,
+      "candidate": 2,
+      "start": 87.24,
+      "end": 88.78,
+      "speaker": "Krokodella",
+      "text": "Wahrscheinlich den da.",
+      "vi": "Chắc là người kia kìa.",
+      "smallText": "Wahrscheinlich den da.",
+      "mediumText": "Wahrscheinlich den da.",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 2,
+        "words": [
+          {
+            "start": 87.6,
+            "end": 87.92,
+            "word": " Wahrscheinlich",
+            "probability": 0.9881656467914581
+          },
+          {
+            "start": 87.92,
+            "end": 88.2,
+            "word": " den",
+            "probability": 0.9150630235671997
+          },
+          {
+            "start": 88.2,
+            "end": 88.64,
+            "word": " da.",
+            "probability": 0.9782658219337463
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 2,
+        "words": [
+          {
+            "start": 87.34,
+            "end": 87.8,
+            "word": " Wahrscheinlich",
+            "probability": 0.9906787574291229
+          },
+          {
+            "start": 87.8,
+            "end": 88.12,
+            "word": " den",
+            "probability": 0.9535380601882935
+          },
+          {
+            "start": 88.12,
+            "end": 88.4,
+            "word": " da.",
+            "probability": 0.9575140476226807
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 2,
+        "words": [
+          {
+            "start": 87.6,
+            "end": 87.92,
+            "word": " Wahrscheinlich",
+            "probability": 0.9881656467914581
+          },
+          {
+            "start": 87.92,
+            "end": 88.2,
+            "word": " den",
+            "probability": 0.9150630235671997
+          },
+          {
+            "start": 88.2,
+            "end": 88.64,
+            "word": " da.",
+            "probability": 0.9782658219337463
+          }
+        ]
+      }
+    },
+    {
+      "id": 900229,
+      "parentId": 900229,
+      "candidate": 2,
+      "start": 90.76,
+      "end": 96.8,
+      "speaker": "Aubergini",
+      "text": "Für den kommenden Trick brauche ich jemand aus dem Publikum.",
+      "vi": "Cho trò ảo thuật tiếp theo, tôi cần một người từ phía khán giả.",
+      "smallText": "Für den kommenden Trick brauche ich jemand aus dem Publikum.",
+      "mediumText": "Für den kommenden Trick brauche ich jemand aus dem Publikum.",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 2,
+        "words": [
+          {
+            "start": 91.42,
+            "end": 92.08,
+            "word": " Für",
+            "probability": 0.4582614004611969
+          },
+          {
+            "start": 92.08,
+            "end": 92.34,
+            "word": " den",
+            "probability": 0.996461808681488
+          },
+          {
+            "start": 92.34,
+            "end": 92.8,
+            "word": " kommenden",
+            "probability": 0.9960069060325623
+          },
+          {
+            "start": 92.8,
+            "end": 93.32,
+            "word": " Trick",
+            "probability": 0.9951123595237732
+          },
+          {
+            "start": 93.32,
+            "end": 94.22,
+            "word": " brauche",
+            "probability": 0.8031144738197327
+          },
+          {
+            "start": 94.22,
+            "end": 94.42,
+            "word": " ich",
+            "probability": 0.9988580942153931
+          },
+          {
+            "start": 94.42,
+            "end": 94.66,
+            "word": " jemand",
+            "probability": 0.9933876991271973
+          },
+          {
+            "start": 94.66,
+            "end": 94.94,
+            "word": " aus",
+            "probability": 0.9681755304336548
+          },
+          {
+            "start": 94.94,
+            "end": 95.16,
+            "word": " dem",
+            "probability": 0.9964072108268738
+          },
+          {
+            "start": 95.16,
+            "end": 96.66,
+            "word": " Publikum.",
+            "probability": 0.9992360870043436
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 2,
+        "words": [
+          {
+            "start": 90.86,
+            "end": 91.52,
+            "word": " Für",
+            "probability": 0.15879683196544647
+          },
+          {
+            "start": 91.52,
+            "end": 92.18,
+            "word": " den",
+            "probability": 0.9933843016624451
+          },
+          {
+            "start": 92.18,
+            "end": 92.7,
+            "word": " kommenden",
+            "probability": 0.9963941872119904
+          },
+          {
+            "start": 92.7,
+            "end": 93.04,
+            "word": " Trick",
+            "probability": 0.9918323755264282
+          },
+          {
+            "start": 93.04,
+            "end": 94.16,
+            "word": " brauche",
+            "probability": 0.8602692484855652
+          },
+          {
+            "start": 94.16,
+            "end": 94.34,
+            "word": " ich",
+            "probability": 0.9986808896064758
+          },
+          {
+            "start": 94.34,
+            "end": 94.54,
+            "word": " jemand",
+            "probability": 0.978175163269043
+          },
+          {
+            "start": 94.54,
+            "end": 94.82,
+            "word": " aus",
+            "probability": 0.9982531666755676
+          },
+          {
+            "start": 94.82,
+            "end": 94.98,
+            "word": " dem",
+            "probability": 0.991483747959137
+          },
+          {
+            "start": 94.98,
+            "end": 95.68,
+            "word": " Publikum.",
+            "probability": 0.9961036443710327
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 2,
+        "words": [
+          {
+            "start": 91.42,
+            "end": 92.08,
+            "word": " Für",
+            "probability": 0.4582614004611969
+          },
+          {
+            "start": 92.08,
+            "end": 92.34,
+            "word": " den",
+            "probability": 0.996461808681488
+          },
+          {
+            "start": 92.34,
+            "end": 92.8,
+            "word": " kommenden",
+            "probability": 0.9960069060325623
+          },
+          {
+            "start": 92.8,
+            "end": 93.32,
+            "word": " Trick",
+            "probability": 0.9951123595237732
+          },
+          {
+            "start": 93.32,
+            "end": 94.22,
+            "word": " brauche",
+            "probability": 0.8031144738197327
+          },
+          {
+            "start": 94.22,
+            "end": 94.42,
+            "word": " ich",
+            "probability": 0.9988580942153931
+          },
+          {
+            "start": 94.42,
+            "end": 94.66,
+            "word": " jemand",
+            "probability": 0.9933876991271973
+          },
+          {
+            "start": 94.66,
+            "end": 94.94,
+            "word": " aus",
+            "probability": 0.9681755304336548
+          },
+          {
+            "start": 94.94,
+            "end": 95.16,
+            "word": " dem",
+            "probability": 0.9964072108268738
+          },
+          {
+            "start": 95.16,
+            "end": 96.66,
+            "word": " Publikum.",
+            "probability": 0.9992360870043436
+          }
+        ]
+      }
+    },
+    {
+      "id": 900230,
+      "parentId": 900230,
+      "candidate": 4,
+      "start": 131.08,
+      "end": 132.1,
+      "speaker": "Cảnh sát",
+      "text": "Meine Krawatte?",
+      "vi": "Cà vạt của tôi á?",
+      "smallText": "Meine Krawatte?",
+      "mediumText": "Meine Krawatte?",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium-context.json",
+        "candidate": 4,
+        "words": [
+          {
+            "start": 131.36,
+            "end": 131.52,
+            "word": " Meine",
+            "probability": 0.7080620527267456
+          },
+          {
+            "start": 131.52,
+            "end": 131.96,
+            "word": " Krawatte?",
+            "probability": 0.9982888102531433
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small-context.json",
+        "candidate": 4,
+        "words": [
+          {
+            "start": 131.12,
+            "end": 131.44,
+            "word": " Meine",
+            "probability": 0.9539088606834412
+          },
+          {
+            "start": 131.44,
+            "end": 131.88,
+            "word": " Krawatte?",
+            "probability": 0.9880847732226054
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium-context.json",
+        "candidate": 4,
+        "words": [
+          {
+            "start": 131.36,
+            "end": 131.52,
+            "word": " Meine",
+            "probability": 0.7080620527267456
+          },
+          {
+            "start": 131.52,
+            "end": 131.96,
+            "word": " Krawatte?",
+            "probability": 0.9982888102531433
+          }
+        ]
+      }
+    },
+    {
+      "id": 900231,
+      "parentId": 900231,
+      "candidate": 5,
+      "start": 141.16,
+      "end": 142.08,
+      "speaker": "Krokodella",
+      "text": "Achtung!",
+      "vi": "Chú ý nhé!",
+      "smallText": "Achtung,",
+      "mediumText": "Achtung!",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 141.28,
+            "end": 141.94,
+            "word": " Achtung!",
+            "probability": 0.9229841430981954
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 141.26,
+            "end": 141.86,
+            "word": " Achtung,",
+            "probability": 0.7420233835776647
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 141.28,
+            "end": 141.94,
+            "word": " Achtung!",
+            "probability": 0.9229841430981954
+          }
+        ]
+      }
+    },
+    {
+      "id": 900232,
+      "parentId": 900232,
+      "candidate": 5,
+      "start": 142.08,
+      "end": 143.24,
+      "speaker": "Krokodella",
+      "text": "Jetzt kommt's!",
+      "vi": "Sắp đến rồi đây!",
+      "smallText": "jetzt kommt es!",
+      "mediumText": "Jetzt kommt's!",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 142.16,
+            "end": 142.4,
+            "word": " Jetzt",
+            "probability": 0.989986002445221
+          },
+          {
+            "start": 142.4,
+            "end": 143.1,
+            "word": " kommt's!",
+            "probability": 0.8731364905834198
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 142.0,
+            "end": 142.18,
+            "word": " jetzt",
+            "probability": 0.9676390290260315
+          },
+          {
+            "start": 142.18,
+            "end": 142.56,
+            "word": " kommt",
+            "probability": 0.9673854112625122
+          },
+          {
+            "start": 142.56,
+            "end": 143.12,
+            "word": " es!",
+            "probability": 0.4563297629356384
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 142.16,
+            "end": 142.4,
+            "word": " Jetzt",
+            "probability": 0.989986002445221
+          },
+          {
+            "start": 142.4,
+            "end": 143.1,
+            "word": " kommt's!",
+            "probability": 0.8731364905834198
+          }
+        ]
+      }
+    },
+    {
+      "id": 900233,
+      "parentId": 900233,
+      "candidate": 5,
+      "start": 143.24,
+      "end": 144.26,
+      "speaker": "Krokodella",
+      "text": "Jetzt kommt's!",
+      "vi": "Sắp đến rồi đây!",
+      "smallText": "Jetzt kommt es!",
+      "mediumText": "Jetzt kommt's!",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 143.26,
+            "end": 143.44,
+            "word": " Jetzt",
+            "probability": 0.7345936298370361
+          },
+          {
+            "start": 143.44,
+            "end": 144.12,
+            "word": " kommt's!",
+            "probability": 0.9895375669002533
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 143.12,
+            "end": 143.28,
+            "word": " Jetzt",
+            "probability": 0.6789056658744812
+          },
+          {
+            "start": 143.28,
+            "end": 143.6,
+            "word": " kommt",
+            "probability": 0.9921315312385559
+          },
+          {
+            "start": 143.6,
+            "end": 143.96,
+            "word": " es!",
+            "probability": 0.9750421047210693
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 5,
+        "words": [
+          {
+            "start": 143.26,
+            "end": 143.44,
+            "word": " Jetzt",
+            "probability": 0.7345936298370361
+          },
+          {
+            "start": 143.44,
+            "end": 144.12,
+            "word": " kommt's!",
+            "probability": 0.9895375669002533
+          }
+        ]
+      }
+    },
+    {
+      "id": 900234,
+      "parentId": 900234,
+      "candidate": 7,
+      "start": 185.25,
+      "end": 188.11,
+      "speaker": "Jan & Henry",
+      "text": "Sehr lustiger Trick, nicht wahr, Jan?",
+      "vi": "Trò ảo thuật vui nhộn thật, phải không Jan?",
+      "smallText": "Sehr lustiger Trick, nicht wahr, Jan?",
+      "mediumText": "Sehr lustiger Trick, nicht wahr, Jan?",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 7,
+        "words": [
+          {
+            "start": 185.47,
+            "end": 186.15,
+            "word": " Sehr",
+            "probability": 0.5767315626144409
+          },
+          {
+            "start": 186.15,
+            "end": 186.73,
+            "word": " lustiger",
+            "probability": 0.9814340770244598
+          },
+          {
+            "start": 186.73,
+            "end": 187.07,
+            "word": " Trick,",
+            "probability": 0.9974398612976074
+          },
+          {
+            "start": 187.27,
+            "end": 187.35,
+            "word": " nicht",
+            "probability": 0.9854987859725952
+          },
+          {
+            "start": 187.35,
+            "end": 187.67,
+            "word": " wahr,",
+            "probability": 0.9848419427871704
+          },
+          {
+            "start": 187.81,
+            "end": 187.97,
+            "word": " Jan?",
+            "probability": 0.9269518256187439
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 7,
+        "words": [
+          {
+            "start": 185.35,
+            "end": 185.99,
+            "word": " Sehr",
+            "probability": 0.7729061245918274
+          },
+          {
+            "start": 185.99,
+            "end": 186.59,
+            "word": " lustiger",
+            "probability": 0.8799448609352112
+          },
+          {
+            "start": 186.59,
+            "end": 186.91,
+            "word": " Trick,",
+            "probability": 0.9846857786178589
+          },
+          {
+            "start": 187.11,
+            "end": 187.21,
+            "word": " nicht",
+            "probability": 0.9919155240058899
+          },
+          {
+            "start": 187.21,
+            "end": 187.53,
+            "word": " wahr,",
+            "probability": 0.2636483311653137
+          },
+          {
+            "start": 187.69,
+            "end": 187.81,
+            "word": " Jan?",
+            "probability": 0.9582991600036621
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 7,
+        "words": [
+          {
+            "start": 185.47,
+            "end": 186.15,
+            "word": " Sehr",
+            "probability": 0.5767315626144409
+          },
+          {
+            "start": 186.15,
+            "end": 186.73,
+            "word": " lustiger",
+            "probability": 0.9814340770244598
+          },
+          {
+            "start": 186.73,
+            "end": 187.07,
+            "word": " Trick,",
+            "probability": 0.9974398612976074
+          },
+          {
+            "start": 187.27,
+            "end": 187.35,
+            "word": " nicht",
+            "probability": 0.9854987859725952
+          },
+          {
+            "start": 187.35,
+            "end": 187.67,
+            "word": " wahr,",
+            "probability": 0.9848419427871704
+          },
+          {
+            "start": 187.81,
+            "end": 187.97,
+            "word": " Jan?",
+            "probability": 0.9269518256187439
+          }
+        ]
+      }
+    },
+    {
+      "id": 900235,
+      "parentId": 900235,
+      "candidate": 7,
+      "start": 188.11,
+      "end": 191.15,
+      "speaker": "Jan & Henry",
+      "text": "Ja, ich glaube schon.",
+      "vi": "Ừ, tớ cũng nghĩ vậy.",
+      "smallText": "Ja, ich glaube schon.",
+      "mediumText": "Ja, ich glaube schon.",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 7,
+        "words": [
+          {
+            "start": 188.67,
+            "end": 189.03,
+            "word": " Ja,",
+            "probability": 0.5364709496498108
+          },
+          {
+            "start": 190.07,
+            "end": 190.17,
+            "word": " ich",
+            "probability": 0.9813977479934692
+          },
+          {
+            "start": 190.17,
+            "end": 190.45,
+            "word": " glaube",
+            "probability": 0.9814488291740417
+          },
+          {
+            "start": 190.45,
+            "end": 191.01,
+            "word": " schon.",
+            "probability": 0.9774370193481445
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 7,
+        "words": [
+          {
+            "start": 188.17,
+            "end": 188.79,
+            "word": " Ja,",
+            "probability": 0.7416077852249146
+          },
+          {
+            "start": 189.77,
+            "end": 189.99,
+            "word": " ich",
+            "probability": 0.9851354956626892
+          },
+          {
+            "start": 189.99,
+            "end": 190.31,
+            "word": " glaube",
+            "probability": 0.9467886686325073
+          },
+          {
+            "start": 190.31,
+            "end": 190.79,
+            "word": " schon.",
+            "probability": 0.9783563017845154
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 7,
+        "words": [
+          {
+            "start": 188.67,
+            "end": 189.03,
+            "word": " Ja,",
+            "probability": 0.5364709496498108
+          },
+          {
+            "start": 190.07,
+            "end": 190.17,
+            "word": " ich",
+            "probability": 0.9813977479934692
+          },
+          {
+            "start": 190.17,
+            "end": 190.45,
+            "word": " glaube",
+            "probability": 0.9814488291740417
+          },
+          {
+            "start": 190.45,
+            "end": 191.01,
+            "word": " schon.",
+            "probability": 0.9774370193481445
+          }
+        ]
+      }
+    },
+    {
+      "id": 900236,
+      "parentId": 900236,
+      "candidate": 9,
+      "start": 564.61,
+      "end": 568.85,
+      "speaker": "Krokodella",
+      "text": "So, los geht's!",
+      "vi": "Nào, bắt đầu thôi!",
+      "smallText": "So! Los geht's!",
+      "mediumText": "So, los geht's!",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 565.41,
+            "end": 566.05,
+            "word": " So,",
+            "probability": 0.39248812198638916
+          },
+          {
+            "start": 567.27,
+            "end": 567.53,
+            "word": " los",
+            "probability": 0.8169640898704529
+          },
+          {
+            "start": 567.53,
+            "end": 568.71,
+            "word": " geht's!",
+            "probability": 0.8677955269813538
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 564.71,
+            "end": 565.87,
+            "word": " So!",
+            "probability": 0.4089915156364441
+          },
+          {
+            "start": 566.41,
+            "end": 567.43,
+            "word": " Los",
+            "probability": 0.8944945931434631
+          },
+          {
+            "start": 567.43,
+            "end": 568.13,
+            "word": " geht's!",
+            "probability": 0.6726740449666977
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 9,
+        "words": [
+          {
+            "start": 565.41,
+            "end": 566.05,
+            "word": " So,",
+            "probability": 0.39248812198638916
+          },
+          {
+            "start": 567.27,
+            "end": 567.53,
+            "word": " los",
+            "probability": 0.8169640898704529
+          },
+          {
+            "start": 567.53,
+            "end": 568.71,
+            "word": " geht's!",
+            "probability": 0.8677955269813538
+          }
+        ]
+      }
+    },
+    {
+      "id": 900237,
+      "parentId": 900237,
+      "candidate": 10,
+      "start": 573.46,
+      "end": 575.64,
+      "speaker": "Jan & Henry",
+      "text": "Sie packt ihre Tüten aus.",
+      "vi": "Bà ấy đang mở mấy cái túi ra.",
+      "smallText": "Sie packt ihre Tüten aus.",
+      "mediumText": "Sie packt ihre Tüten aus.",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 573.76,
+            "end": 573.98,
+            "word": " Sie",
+            "probability": 0.921023964881897
+          },
+          {
+            "start": 573.98,
+            "end": 574.36,
+            "word": " packt",
+            "probability": 0.9903753399848938
+          },
+          {
+            "start": 574.36,
+            "end": 574.68,
+            "word": " ihre",
+            "probability": 0.978358805179596
+          },
+          {
+            "start": 574.68,
+            "end": 575.1,
+            "word": " Tüten",
+            "probability": 0.985502282778422
+          },
+          {
+            "start": 575.1,
+            "end": 575.5,
+            "word": " aus.",
+            "probability": 0.9900319576263428
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 573.56,
+            "end": 573.88,
+            "word": " Sie",
+            "probability": 0.9692944884300232
+          },
+          {
+            "start": 573.88,
+            "end": 574.26,
+            "word": " packt",
+            "probability": 0.9536342918872833
+          },
+          {
+            "start": 574.26,
+            "end": 574.4,
+            "word": " ihre",
+            "probability": 0.9428039789199829
+          },
+          {
+            "start": 574.4,
+            "end": 575.0,
+            "word": " Tüten",
+            "probability": 0.8355230887730917
+          },
+          {
+            "start": 575.0,
+            "end": 575.34,
+            "word": " aus.",
+            "probability": 0.998417854309082
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 573.76,
+            "end": 573.98,
+            "word": " Sie",
+            "probability": 0.921023964881897
+          },
+          {
+            "start": 573.98,
+            "end": 574.36,
+            "word": " packt",
+            "probability": 0.9903753399848938
+          },
+          {
+            "start": 574.36,
+            "end": 574.68,
+            "word": " ihre",
+            "probability": 0.978358805179596
+          },
+          {
+            "start": 574.68,
+            "end": 575.1,
+            "word": " Tüten",
+            "probability": 0.985502282778422
+          },
+          {
+            "start": 575.1,
+            "end": 575.5,
+            "word": " aus.",
+            "probability": 0.9900319576263428
+          }
+        ]
+      }
+    },
+    {
+      "id": 900238,
+      "parentId": 900238,
+      "candidate": 10,
+      "start": 575.64,
+      "end": 577.6,
+      "speaker": "Jan & Henry",
+      "text": "Sie hat einen Käse gekauft.",
+      "vi": "Bà ấy đã mua một miếng phô mai.",
+      "smallText": "Sie hat einen Käse gekauft.",
+      "mediumText": "Sie hat einen Käse gekauft.",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 575.74,
+            "end": 575.76,
+            "word": " Sie",
+            "probability": 0.9933462142944336
+          },
+          {
+            "start": 575.76,
+            "end": 575.96,
+            "word": " hat",
+            "probability": 0.997184693813324
+          },
+          {
+            "start": 575.96,
+            "end": 576.38,
+            "word": " einen",
+            "probability": 0.9163104891777039
+          },
+          {
+            "start": 576.38,
+            "end": 576.88,
+            "word": " Käse",
+            "probability": 0.9978055655956268
+          },
+          {
+            "start": 576.88,
+            "end": 577.52,
+            "word": " gekauft.",
+            "probability": 0.9988320469856262
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small-context.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 575.72,
+            "end": 575.72,
+            "word": " Sie",
+            "probability": 0.9869106411933899
+          },
+          {
+            "start": 575.72,
+            "end": 575.88,
+            "word": " hat",
+            "probability": 0.9962827563285828
+          },
+          {
+            "start": 575.88,
+            "end": 576.16,
+            "word": " einen",
+            "probability": 0.41924676299095154
+          },
+          {
+            "start": 576.16,
+            "end": 576.78,
+            "word": " Käse",
+            "probability": 0.9972841739654541
+          },
+          {
+            "start": 576.78,
+            "end": 577.38,
+            "word": " gekauft.",
+            "probability": 0.9987605214118958
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 575.74,
+            "end": 575.76,
+            "word": " Sie",
+            "probability": 0.9933462142944336
+          },
+          {
+            "start": 575.76,
+            "end": 575.96,
+            "word": " hat",
+            "probability": 0.997184693813324
+          },
+          {
+            "start": 575.96,
+            "end": 576.38,
+            "word": " einen",
+            "probability": 0.9163104891777039
+          },
+          {
+            "start": 576.38,
+            "end": 576.88,
+            "word": " Käse",
+            "probability": 0.9978055655956268
+          },
+          {
+            "start": 576.88,
+            "end": 577.52,
+            "word": " gekauft.",
+            "probability": 0.9988320469856262
+          }
+        ]
+      }
+    },
+    {
+      "id": 900239,
+      "parentId": 900239,
+      "candidate": 10,
+      "start": 577.6,
+      "end": 578.78,
+      "speaker": "Jan & Henry",
+      "text": "Ah, ja.",
+      "vi": "À, đúng rồi.",
+      "smallText": "Ah, ja.",
+      "mediumText": "Ah, ja.",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 577.92,
+            "end": 578.1,
+            "word": " Ah,",
+            "probability": 0.4861047863960266
+          },
+          {
+            "start": 578.32,
+            "end": 578.64,
+            "word": " ja.",
+            "probability": 0.9906949996948242
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 577.6,
+            "end": 577.86,
+            "word": " Ah,",
+            "probability": 0.3961392343044281
+          },
+          {
+            "start": 578.28,
+            "end": 578.36,
+            "word": " ja.",
+            "probability": 0.9766687750816345
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 577.92,
+            "end": 578.1,
+            "word": " Ah,",
+            "probability": 0.4861047863960266
+          },
+          {
+            "start": 578.32,
+            "end": 578.64,
+            "word": " ja.",
+            "probability": 0.9906949996948242
+          }
+        ]
+      }
+    },
+    {
+      "id": 900240,
+      "parentId": 900240,
+      "candidate": 10,
+      "start": 580.66,
+      "end": 582.96,
+      "speaker": "Jan & Henry",
+      "text": "Und ich hab schon gedacht, das wären deine Füße.",
+      "vi": "Thế mà tớ cứ tưởng đó là mùi chân của cậu chứ.",
+      "smallText": "und ich hab schon gedacht, das wären deine Füße.",
+      "mediumText": "Und ich hab schon gedacht, das wären deine Füße.",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 580.88,
+            "end": 581.1,
+            "word": " Und",
+            "probability": 0.5271192193031311
+          },
+          {
+            "start": 581.1,
+            "end": 581.1,
+            "word": " ich",
+            "probability": 0.9879750609397888
+          },
+          {
+            "start": 581.1,
+            "end": 581.26,
+            "word": " hab",
+            "probability": 0.8512760400772095
+          },
+          {
+            "start": 581.26,
+            "end": 581.48,
+            "word": " schon",
+            "probability": 0.8355991840362549
+          },
+          {
+            "start": 581.48,
+            "end": 581.64,
+            "word": " gedacht,",
+            "probability": 0.9955899715423584
+          },
+          {
+            "start": 581.8,
+            "end": 581.82,
+            "word": " das",
+            "probability": 0.9219870567321777
+          },
+          {
+            "start": 581.82,
+            "end": 582.04,
+            "word": " wären",
+            "probability": 0.9831035137176514
+          },
+          {
+            "start": 582.04,
+            "end": 582.4,
+            "word": " deine",
+            "probability": 0.9954246878623962
+          },
+          {
+            "start": 582.4,
+            "end": 582.78,
+            "word": " Füße.",
+            "probability": 0.9979081749916077
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small-tight.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 580.18,
+            "end": 580.4,
+            "word": " und",
+            "probability": 0.13334934413433075
+          },
+          {
+            "start": 580.4,
+            "end": 581.1,
+            "word": " ich",
+            "probability": 0.9922135472297668
+          },
+          {
+            "start": 581.1,
+            "end": 581.18,
+            "word": " hab",
+            "probability": 0.6528689861297607
+          },
+          {
+            "start": 581.18,
+            "end": 581.32,
+            "word": " schon",
+            "probability": 0.9712026119232178
+          },
+          {
+            "start": 581.32,
+            "end": 581.6,
+            "word": " gedacht,",
+            "probability": 0.9814836382865906
+          },
+          {
+            "start": 581.66,
+            "end": 581.74,
+            "word": " das",
+            "probability": 0.8236137628555298
+          },
+          {
+            "start": 581.74,
+            "end": 581.92,
+            "word": " wären",
+            "probability": 0.7430269718170166
+          },
+          {
+            "start": 581.92,
+            "end": 582.2,
+            "word": " deine",
+            "probability": 0.9875975251197815
+          },
+          {
+            "start": 582.2,
+            "end": 582.74,
+            "word": " Füße.",
+            "probability": 0.9884172479311625
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 580.88,
+            "end": 581.1,
+            "word": " Und",
+            "probability": 0.5271192193031311
+          },
+          {
+            "start": 581.1,
+            "end": 581.1,
+            "word": " ich",
+            "probability": 0.9879750609397888
+          },
+          {
+            "start": 581.1,
+            "end": 581.26,
+            "word": " hab",
+            "probability": 0.8512760400772095
+          },
+          {
+            "start": 581.26,
+            "end": 581.48,
+            "word": " schon",
+            "probability": 0.8355991840362549
+          },
+          {
+            "start": 581.48,
+            "end": 581.64,
+            "word": " gedacht,",
+            "probability": 0.9955899715423584
+          },
+          {
+            "start": 581.8,
+            "end": 581.82,
+            "word": " das",
+            "probability": 0.9219870567321777
+          },
+          {
+            "start": 581.82,
+            "end": 582.04,
+            "word": " wären",
+            "probability": 0.9831035137176514
+          },
+          {
+            "start": 582.04,
+            "end": 582.4,
+            "word": " deine",
+            "probability": 0.9954246878623962
+          },
+          {
+            "start": 582.4,
+            "end": 582.78,
+            "word": " Füße.",
+            "probability": 0.9979081749916077
+          }
+        ]
+      }
+    },
+    {
+      "id": 900241,
+      "parentId": 900241,
+      "candidate": 10,
+      "start": 584.24,
+      "end": 587.28,
+      "speaker": "Krokodella",
+      "text": "Und nun, schweb!",
+      "vi": "Và bây giờ, bay lên đi!",
+      "smallText": "Und nun, schweb!",
+      "mediumText": "Und nun, schweb!",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 584.76,
+            "end": 585.22,
+            "word": " Und",
+            "probability": 0.784380316734314
+          },
+          {
+            "start": 585.22,
+            "end": 586.0,
+            "word": " nun,",
+            "probability": 0.982001781463623
+          },
+          {
+            "start": 586.7,
+            "end": 587.14,
+            "word": " schweb!",
+            "probability": 0.9568761984507242
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 584.34,
+            "end": 585.06,
+            "word": " Und",
+            "probability": 0.8964595794677734
+          },
+          {
+            "start": 585.06,
+            "end": 585.62,
+            "word": " nun,",
+            "probability": 0.9925395846366882
+          },
+          {
+            "start": 586.34,
+            "end": 587.04,
+            "word": " schweb!",
+            "probability": 0.8971066276232401
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 584.76,
+            "end": 585.22,
+            "word": " Und",
+            "probability": 0.784380316734314
+          },
+          {
+            "start": 585.22,
+            "end": 586.0,
+            "word": " nun,",
+            "probability": 0.982001781463623
+          },
+          {
+            "start": 586.7,
+            "end": 587.14,
+            "word": " schweb!",
+            "probability": 0.9568761984507242
+          }
+        ]
+      }
+    },
+    {
+      "id": 900242,
+      "parentId": 900242,
+      "candidate": 10,
+      "start": 590.42,
+      "end": 591.36,
+      "speaker": "Krokodella",
+      "text": "Los!",
+      "vi": "Nào!",
+      "smallText": "Los!",
+      "mediumText": "Los!",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 590.76,
+            "end": 591.22,
+            "word": " Los!",
+            "probability": 0.952272891998291
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 590.52,
+            "end": 590.98,
+            "word": " Los!",
+            "probability": 0.8945246338844299
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 590.76,
+            "end": 591.22,
+            "word": " Los!",
+            "probability": 0.952272891998291
+          }
+        ]
+      }
+    },
+    {
+      "id": 900243,
+      "parentId": 900243,
+      "candidate": 10,
+      "start": 591.5,
+      "end": 594.62,
+      "speaker": "Krokodella",
+      "text": "Setz deine Löcher in Bewegung und schweb!",
+      "vi": "Hãy làm cho mấy cái lỗ của ngươi chuyển động và bay lên đi!",
+      "smallText": "Setz deine Löcher in Bewegung und schweb!",
+      "mediumText": "Setz deine Löcher in Bewegung und schweb!",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 591.74,
+            "end": 592.04,
+            "word": " Setz",
+            "probability": 0.9596526622772217
+          },
+          {
+            "start": 592.04,
+            "end": 592.24,
+            "word": " deine",
+            "probability": 0.9714430570602417
+          },
+          {
+            "start": 592.24,
+            "end": 592.62,
+            "word": " Löcher",
+            "probability": 0.9863048195838928
+          },
+          {
+            "start": 592.62,
+            "end": 592.76,
+            "word": " in",
+            "probability": 0.9959126114845276
+          },
+          {
+            "start": 592.76,
+            "end": 593.2,
+            "word": " Bewegung",
+            "probability": 0.9989563822746277
+          },
+          {
+            "start": 593.2,
+            "end": 593.52,
+            "word": " und",
+            "probability": 0.918707013130188
+          },
+          {
+            "start": 593.52,
+            "end": 594.48,
+            "word": " schweb!",
+            "probability": 0.9710155725479126
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 591.6,
+            "end": 591.96,
+            "word": " Setz",
+            "probability": 0.8444983065128326
+          },
+          {
+            "start": 591.96,
+            "end": 592.14,
+            "word": " deine",
+            "probability": 0.8925320506095886
+          },
+          {
+            "start": 592.14,
+            "end": 592.52,
+            "word": " Löcher",
+            "probability": 0.8526208102703094
+          },
+          {
+            "start": 592.52,
+            "end": 592.64,
+            "word": " in",
+            "probability": 0.7086369395256042
+          },
+          {
+            "start": 592.64,
+            "end": 593.12,
+            "word": " Bewegung",
+            "probability": 0.9918950200080872
+          },
+          {
+            "start": 593.12,
+            "end": 593.36,
+            "word": " und",
+            "probability": 0.8563159704208374
+          },
+          {
+            "start": 593.36,
+            "end": 594.36,
+            "word": " schweb!",
+            "probability": 0.9819307327270508
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 10,
+        "words": [
+          {
+            "start": 591.74,
+            "end": 592.04,
+            "word": " Setz",
+            "probability": 0.9596526622772217
+          },
+          {
+            "start": 592.04,
+            "end": 592.24,
+            "word": " deine",
+            "probability": 0.9714430570602417
+          },
+          {
+            "start": 592.24,
+            "end": 592.62,
+            "word": " Löcher",
+            "probability": 0.9863048195838928
+          },
+          {
+            "start": 592.62,
+            "end": 592.76,
+            "word": " in",
+            "probability": 0.9959126114845276
+          },
+          {
+            "start": 592.76,
+            "end": 593.2,
+            "word": " Bewegung",
+            "probability": 0.9989563822746277
+          },
+          {
+            "start": 593.2,
+            "end": 593.52,
+            "word": " und",
+            "probability": 0.918707013130188
+          },
+          {
+            "start": 593.52,
+            "end": 594.48,
+            "word": " schweb!",
+            "probability": 0.9710155725479126
+          }
+        ]
+      }
+    },
+    {
+      "id": 900244,
+      "parentId": 900244,
+      "candidate": 11,
+      "start": 695.7,
+      "end": 703.56,
+      "speaker": "Aubergini",
+      "text": "Und das Geheimnis ist, dass man das Publikum dabei ablenkt, indem man dann groß mit dem Geldbeutel wedelt.",
+      "vi": "Và bí quyết là làm khán giả mất tập trung trong lúc đó bằng cách vẫy chiếc ví thật mạnh.",
+      "smallText": "Und das Geheimnis ist, dass man das Publikum dabei ablenkt, indem man dann groß mit dem Geldbeutel wedelt.",
+      "mediumText": "Und das Geheimnis ist, dass man das Publikum dabei ablenkt, indem man dann groß mit dem Geldbeutel wedelt.",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium-context.json",
+        "candidate": 11,
+        "words": [
+          {
+            "start": 695.92,
+            "end": 696.46,
+            "word": " Und",
+            "probability": 0.6507056355476379
+          },
+          {
+            "start": 696.46,
+            "end": 696.68,
+            "word": " das",
+            "probability": 0.9967706203460693
+          },
+          {
+            "start": 696.68,
+            "end": 697.28,
+            "word": " Geheimnis",
+            "probability": 0.99362184604009
+          },
+          {
+            "start": 697.28,
+            "end": 697.56,
+            "word": " ist,",
+            "probability": 0.996455729007721
+          },
+          {
+            "start": 698.38,
+            "end": 698.56,
+            "word": " dass",
+            "probability": 0.9002185463905334
+          },
+          {
+            "start": 698.56,
+            "end": 698.78,
+            "word": " man",
+            "probability": 0.9963494539260864
+          },
+          {
+            "start": 698.78,
+            "end": 699.04,
+            "word": " das",
+            "probability": 0.9918990135192871
+          },
+          {
+            "start": 699.04,
+            "end": 699.62,
+            "word": " Publikum",
+            "probability": 0.9988630016644796
+          },
+          {
+            "start": 699.62,
+            "end": 699.94,
+            "word": " dabei",
+            "probability": 0.9232136011123657
+          },
+          {
+            "start": 699.94,
+            "end": 700.86,
+            "word": " ablenkt,",
+            "probability": 0.9751222133636475
+          },
+          {
+            "start": 701.18,
+            "end": 701.28,
+            "word": " indem",
+            "probability": 0.9196415543556213
+          },
+          {
+            "start": 701.28,
+            "end": 701.48,
+            "word": " man",
+            "probability": 0.9944537281990051
+          },
+          {
+            "start": 701.48,
+            "end": 701.74,
+            "word": " dann",
+            "probability": 0.7956619262695312
+          },
+          {
+            "start": 701.74,
+            "end": 702.0,
+            "word": " groß",
+            "probability": 0.6846532821655273
+          },
+          {
+            "start": 702.0,
+            "end": 702.16,
+            "word": " mit",
+            "probability": 0.9962598085403442
+          },
+          {
+            "start": 702.16,
+            "end": 702.32,
+            "word": " dem",
+            "probability": 0.9076138138771057
+          },
+          {
+            "start": 702.32,
+            "end": 702.94,
+            "word": " Geldbeutel",
+            "probability": 0.9990679621696472
+          },
+          {
+            "start": 702.94,
+            "end": 703.42,
+            "word": " wedelt.",
+            "probability": 0.5769955962896347
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small-context.json",
+        "candidate": 11,
+        "words": [
+          {
+            "start": 695.8,
+            "end": 696.36,
+            "word": " Und",
+            "probability": 0.7153103947639465
+          },
+          {
+            "start": 696.36,
+            "end": 696.54,
+            "word": " das",
+            "probability": 0.9944326281547546
+          },
+          {
+            "start": 696.54,
+            "end": 697.18,
+            "word": " Geheimnis",
+            "probability": 0.9848470290501913
+          },
+          {
+            "start": 697.18,
+            "end": 697.42,
+            "word": " ist,",
+            "probability": 0.9913133978843689
+          },
+          {
+            "start": 698.16,
+            "end": 698.48,
+            "word": " dass",
+            "probability": 0.9772279858589172
+          },
+          {
+            "start": 698.48,
+            "end": 698.66,
+            "word": " man",
+            "probability": 0.9556567668914795
+          },
+          {
+            "start": 698.66,
+            "end": 698.88,
+            "word": " das",
+            "probability": 0.9949841499328613
+          },
+          {
+            "start": 698.88,
+            "end": 699.56,
+            "word": " Publikum",
+            "probability": 0.9946667154630026
+          },
+          {
+            "start": 699.56,
+            "end": 699.72,
+            "word": " dabei",
+            "probability": 0.8303806781768799
+          },
+          {
+            "start": 699.72,
+            "end": 700.44,
+            "word": " ablenkt,",
+            "probability": 0.925433079401652
+          },
+          {
+            "start": 701.04,
+            "end": 701.22,
+            "word": " indem",
+            "probability": 0.8966215252876282
+          },
+          {
+            "start": 701.22,
+            "end": 701.38,
+            "word": " man",
+            "probability": 0.932646632194519
+          },
+          {
+            "start": 701.38,
+            "end": 701.5,
+            "word": " dann",
+            "probability": 0.8402242064476013
+          },
+          {
+            "start": 701.5,
+            "end": 701.86,
+            "word": " groß",
+            "probability": 0.9830483198165894
+          },
+          {
+            "start": 701.86,
+            "end": 702.12,
+            "word": " mit",
+            "probability": 0.9874258041381836
+          },
+          {
+            "start": 702.12,
+            "end": 702.22,
+            "word": " dem",
+            "probability": 0.9164350032806396
+          },
+          {
+            "start": 702.22,
+            "end": 702.8,
+            "word": " Geldbeutel",
+            "probability": 0.9928833097219467
+          },
+          {
+            "start": 702.8,
+            "end": 703.22,
+            "word": " wedelt.",
+            "probability": 0.8251595795154572
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium-context.json",
+        "candidate": 11,
+        "words": [
+          {
+            "start": 695.92,
+            "end": 696.46,
+            "word": " Und",
+            "probability": 0.6507056355476379
+          },
+          {
+            "start": 696.46,
+            "end": 696.68,
+            "word": " das",
+            "probability": 0.9967706203460693
+          },
+          {
+            "start": 696.68,
+            "end": 697.28,
+            "word": " Geheimnis",
+            "probability": 0.99362184604009
+          },
+          {
+            "start": 697.28,
+            "end": 697.56,
+            "word": " ist,",
+            "probability": 0.996455729007721
+          },
+          {
+            "start": 698.38,
+            "end": 698.56,
+            "word": " dass",
+            "probability": 0.9002185463905334
+          },
+          {
+            "start": 698.56,
+            "end": 698.78,
+            "word": " man",
+            "probability": 0.9963494539260864
+          },
+          {
+            "start": 698.78,
+            "end": 699.04,
+            "word": " das",
+            "probability": 0.9918990135192871
+          },
+          {
+            "start": 699.04,
+            "end": 699.62,
+            "word": " Publikum",
+            "probability": 0.9988630016644796
+          },
+          {
+            "start": 699.62,
+            "end": 699.94,
+            "word": " dabei",
+            "probability": 0.9232136011123657
+          },
+          {
+            "start": 699.94,
+            "end": 700.86,
+            "word": " ablenkt,",
+            "probability": 0.9751222133636475
+          },
+          {
+            "start": 701.18,
+            "end": 701.28,
+            "word": " indem",
+            "probability": 0.9196415543556213
+          },
+          {
+            "start": 701.28,
+            "end": 701.48,
+            "word": " man",
+            "probability": 0.9944537281990051
+          },
+          {
+            "start": 701.48,
+            "end": 701.74,
+            "word": " dann",
+            "probability": 0.7956619262695312
+          },
+          {
+            "start": 701.74,
+            "end": 702.0,
+            "word": " groß",
+            "probability": 0.6846532821655273
+          },
+          {
+            "start": 702.0,
+            "end": 702.16,
+            "word": " mit",
+            "probability": 0.9962598085403442
+          },
+          {
+            "start": 702.16,
+            "end": 702.32,
+            "word": " dem",
+            "probability": 0.9076138138771057
+          },
+          {
+            "start": 702.32,
+            "end": 702.94,
+            "word": " Geldbeutel",
+            "probability": 0.9990679621696472
+          },
+          {
+            "start": 702.94,
+            "end": 703.42,
+            "word": " wedelt.",
+            "probability": 0.5769955962896347
+          }
+        ]
+      }
+    },
+    {
+      "id": 900245,
+      "parentId": 900245,
+      "candidate": 12,
+      "start": 729.45,
+      "end": 730.87,
+      "speaker": "Jan & Henry",
+      "text": "Nicht so ganz.",
+      "vi": "Không hẳn vậy.",
+      "smallText": "Nicht so ganz.",
+      "mediumText": "Nicht so ganz.",
+      "timingEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 12,
+        "words": [
+          {
+            "start": 729.55,
+            "end": 730.15,
+            "word": " Nicht",
+            "probability": 0.6086140871047974
+          },
+          {
+            "start": 730.15,
+            "end": 730.45,
+            "word": " so",
+            "probability": 0.9610655903816223
+          },
+          {
+            "start": 730.45,
+            "end": 730.73,
+            "word": " ganz.",
+            "probability": 0.9969960451126099
+          }
+        ]
+      },
+      "note": "Có đối chiếu từ độc lập ở smallEvidence và mediumEvidence; start/end là mốc hiển thị cuối cùng sau khoảng đệm không chồng cue kề. timingEvidence giữ nguyên các từ/mốc gốc của model được chọn.",
+      "smallEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-small.json",
+        "candidate": 12,
+        "words": [
+          {
+            "start": 728.37,
+            "end": 729.33,
+            "word": " Nicht",
+            "probability": 0.6377781629562378
+          },
+          {
+            "start": 729.33,
+            "end": 730.29,
+            "word": " so",
+            "probability": 0.9641258120536804
+          },
+          {
+            "start": 730.29,
+            "end": 730.57,
+            "word": " ganz.",
+            "probability": 0.9946444034576416
+          }
+        ]
+      },
+      "mediumEvidence": {
+        "file": "qa/kino-alignment/nudeltrick_missing_20261027/independent-medium.json",
+        "candidate": 12,
+        "words": [
+          {
+            "start": 729.55,
+            "end": 730.15,
+            "word": " Nicht",
+            "probability": 0.6086140871047974
+          },
+          {
+            "start": 730.15,
+            "end": 730.45,
+            "word": " so",
+            "probability": 0.9610655903816223
+          },
+          {
+            "start": 730.45,
+            "end": 730.73,
+            "word": " ganz.",
+            "probability": 0.9969960451126099
+          }
+        ]
+      }
+    }
+  ],
+  "adjusted": [],
+  "excluded": [
+    {
+      "candidate": 1,
+      "window": [
+        1.78,
+        26.12
+      ],
+      "museRange": [
+        2.98,
+        24.92
+      ],
+      "smallText": "Ein Erdmännchen als Detektiv. Das gibt es doch nicht, wer glaubt denn sowas? Ein Erdmännchen als Detektiv. Jeder weiß, dass das doch Quatsch ist.",
+      "mediumText": "Ein Erdmännchen als Detektiv. Das gibt es doch nicht, wer glaubt denn sowas? Ein Erdmännchen als Detektiv. Jeder weiß, dass das doch Quatsch ist.",
+      "classification": "excluded_opening_song",
+      "reason": "Loại bài hát mở đầu theo chỉ dẫn của chị; không bổ sung lời hát. Earshot-opening.json cho Music 0,63, chỉ hỗ trợ phân loại nhạc, không xác nhận lời Đức.",
+      "sourceCandidateAsr": [
+        "Ein Erdmännchen als Detektiv, das gibt's nicht überall.",
+        "Mit diesen beiden geht nicht schief, sie lösen jeden Fall.",
+        "Schneller als die Polizei, macht euch auch was gefasst.",
+        "Jan und Henry sind die zwei Verbrecher aufgewachsen."
+      ]
+    },
+    {
+      "candidate": 2,
+      "window": [
+        81.46,
+        101.35
+      ],
+      "museRange": [
+        100.8,
+        102.52
+      ],
+      "smallText": "Verrat doch bitte nicht alles.",
+      "mediumText": "Verrat doch bitte nicht alles.",
+      "classification": "excluded_duplicate_existing_cue",
+      "reason": "Đã có sẵn trong cue hiện hữu 900109 (100.80-103.04s: 'Verrat doch bitte nicht alles.').",
+      "sourceCandidateAsr": [
+        "Hab ich nicht gesagt? Toll! Jetzt holt er gleich einen auf die Bühne. Wahrscheinlich den da.",
+        "Pssst! Für den kommenden Trick brauche ich jemand aus dem Publikum.",
+        "Darf ich Sie nach oben?",
+        "Oh, Micha!"
+      ]
+    },
+    {
+      "candidate": 3,
+      "window": [
+        117.4,
+        122.79
+      ],
+      "museRange": [
+        118.6,
+        121.59
+      ],
+      "smallText": "Ja! | Ha, ha, ha, ha! (tight 118.48-122.90s: không có segment)",
+      "mediumText": "die hier. (116.20-118.26s, đuôi cue 900113; khoảng 118.48-122.90s main không có thoại, tight hallucinate no_speech_prob=0.788)",
+      "classification": "excluded_non_lexical_laughter_and_adjacent_tail",
+      "reason": "Không thêm trùng phần đuôi câu Ist es vielleicht die hier? đã có cue 900113 (115.20–118.48s). Phần đáp 118.60–121.59s chưa rõ được lưu reviewNeeded riêng.",
+      "sourceCandidateAsr": [
+        "Die hier!"
+      ]
+    },
+    {
+      "candidate": 5,
+      "window": [
+        139.8,
+        146.51
+      ],
+      "museRange": [
+        144.54,
+        146.51
+      ],
+      "smallText": "Wo bewahren Sie eigentlich Ihr Geld?",
+      "mediumText": "Wo bewahren Sie eigentlich Ihr Geld?",
+      "classification": "excluded_duplicate_existing_cue",
+      "reason": "Phần nửa sau của cửa sổ #5 (từ 144.42s) đã có sẵn trong cue hiện hữu 900115 (144.42-148.30s: 'Wo bewahren Sie eigentlich Ihr Geld auf?'). Phần nửa đầu (141.18-144.26s) đã được tách và thêm thành cue 900231.",
+      "sourceCandidateAsr": [
+        "Achtung jetzt kommt's jetzt kommt's. Wo? Bewahren!"
+      ]
+    },
+    {
+      "candidate": 8,
+      "window": [
+        289.56,
+        295.31
+      ],
+      "museRange": [
+        289.56,
+        290.5
+      ],
+      "smallText": "Kommst du mal bitte mit? (288.36-290.02s) ... Ich glaube, irgendwer... (294.78s+)",
+      "mediumText": "Kommst du mal bitte mit. (289.28-290.50s) ... Ich glaube, irgendwer... (294.78s+)",
+      "classification": "excluded_duplicate_existing_cues",
+      "reason": "Hai đầu biên cửa sổ trùng với cue 900140 (289.12-290.10s: 'Kommst du mal bitte mit?') và đầu cue 900141 (294.68-299.56s: 'Ich glaube, irgendwer möchte, dass man dich verdächtigt.'). Riêng câu ngắn ở giữa (290.54-292.12s: 'Ja. Bitte.' vs 'Tja. Bitte.') được phân loại vào reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Bitte mit.",
+        "Ja.",
+        "Bitte.",
+        "Hm.",
+        "Hm."
+      ]
+    },
+    {
+      "candidate": 9,
+      "window": [
+        565.91,
+        571.53
+      ],
+      "museRange": [
+        571.3,
+        572.71
+      ],
+      "smallText": "Kannst du was erkennen?",
+      "mediumText": "Kannst du was erkennen?",
+      "classification": "excluded_duplicate_existing_cue",
+      "reason": "Đã có sẵn trong cue hiện hữu 900189 (571.30-573.12s: 'Kannst du was erkennen?').",
+      "sourceCandidateAsr": [
+        "Ah, los geht's!",
+        "Hm, Käse!"
+      ]
+    },
+    {
+      "candidate": 10,
+      "window": [
+        572.5,
+        595.79
+      ],
+      "museRange": [
+        572.5,
+        595.79
+      ],
+      "smallText": "Kannst du was erkennen? (571.30-572.96s) ... Was passiert nun? (594.94-596.38s)",
+      "mediumText": "Kannst du was erkennen? (571.52-572.92s) ... Was passiert nun? (595.20-596.54s)",
+      "classification": "excluded_duplicate_existing_cues",
+      "reason": "Biên đầu và biên cuối của cửa sổ #10 trùng với cue hiện hữu 900189 (571.30-573.12s) và cue 900190 (594.90-596.70s).",
+      "sourceCandidateAsr": [
+        "Sie packt ihre Tüten aus. Sie hat einen Käse gekauft.",
+        "Ah, ja. Man riecht's. Und ich hab schon gedacht, das wären deine Füße.",
+        "Und nun schweb.",
+        "Nun schweb schon.",
+        "Los, setz deine Löcher in Bewegung und schweb."
+      ]
+    },
+    {
+      "candidate": 11,
+      "window": [
+        694.93,
+        715.88
+      ],
+      "museRange": [
+        714.89,
+        715.88
+      ],
+      "smallText": "Ach, das war doch ein ganz einfacher Fall für die Erdmännchen.",
+      "mediumText": "Ach, das war doch ein ganz einfacher Fall für die Erdmännchen.",
+      "classification": "excluded_duplicate_existing_cue",
+      "reason": "Phần cuối cửa sổ #11 (từ 714.90s) đã có sẵn trong cue hiện hữu 900222 (715.30-718.48s: 'Das war doch ein ganz einfacher Fall für die Erdmännchen.').",
+      "sourceCandidateAsr": [
+        "Und das Geheimnis ist, dass man das Publikum dabei ablenkt,",
+        "indem man dann groß mit dem Geldbeutel wedelt.",
+        "Ah, das ist wirklich nett, dass du uns als Dankeschön die Nudeltrick verdezt.",
+        "Na, wenn ihr nicht gewesen wird, dann hätte ich wahrscheinlich nie wieder auftreten können.",
+        "Ach, das war doch ein..."
+      ]
+    },
+    {
+      "candidate": 12,
+      "window": [
+        723.73,
+        745.99
+      ],
+      "museRange": [
+        735.73,
+        745.99
+      ],
+      "smallText": "Was? Wollen wir mal sehen? (722.53-724.09s) ... (735.73-746.86s context hallucinate lặp từ trên nền nhạc kết)",
+      "mediumText": "Wollen wir mal sehen. (722.53-724.19s) ... (732.74-746.92s không có thoại)",
+      "classification": "excluded_duplicate_and_outro_music_laughter",
+      "reason": "Đầu cửa sổ trùng cue 900225 (Ja, wollen wir mal sehen.). Không thêm các vòng chữ lặp của ASR vào phần kết có nhạc/tiếng cười (earshot-ending.json: Speech 0,53; Music 0,50). Số lần reo Pizza chưa chốt được, giữ reviewNeeded riêng.",
+      "sourceCandidateAsr": [
+        "Mal sehen...",
+        "Nicht so ganz...",
+        "Pizza!",
+        "Pizza!"
+      ]
+    }
+  ],
+  "reviewNeeded": [
+    {
+      "candidate": 2,
+      "window": [
+        81.46,
+        101.35
+      ],
+      "museRange": [
+        85.2,
+        87.34
+      ],
+      "smallText": "jetzt tut er gleich ein auf die Bühne. (main) | Hä? Jetzt holt der gleich ein auf die Bühne. (tight) | Jetzt fot da gleich ein auf die Bühne. (context)",
+      "mediumText": "Jetzt holt er gleich einen auf die Bühne.",
+      "classification": "review_needed_model_disagreement",
+      "reason": "Giữa small và medium mâu thuẫn động từ, đại từ và quán từ ('tut er ... ein' / 'holt der ... ein' / 'fot da ... ein' ở small so với 'holt er ... einen' ở medium). Giữ reviewNeeded, không đưa vào bài chính tả.",
+      "sourceCandidateAsr": [
+        "Hab ich nicht gesagt? Toll! Jetzt holt er gleich einen auf die Bühne. Wahrscheinlich den da.",
+        "Pssst! Für den kommenden Trick brauche ich jemand aus dem Publikum.",
+        "Darf ich Sie nach oben?",
+        "Oh, Micha!"
+      ]
+    },
+    {
+      "candidate": 2,
+      "window": [
+        81.46,
+        101.35
+      ],
+      "museRange": [
+        96.7,
+        100.15
+      ],
+      "smallText": "Darf ich Sie nach oben? (96.70-98.54s; bỏ sót phần 98.96-99.88s; recognized-words.json: 'Auf mich.')",
+      "mediumText": "Darf ich Sie nach oben? Oh, Micha! (main) | Darf ich Sie nach oben nennen? Oh, Micha! (tight) | Darf ich Sie | Ich geh nach oben. | Oh, Micha! (context)",
+      "classification": "review_needed_incomplete_and_disagreed",
+      "reason": "Câu mời lên sân khấu bị bỏ lửng hoặc mâu thuẫn giữa các lần chạy ('nach oben?' vs 'nach oben nennen?' vs 'Ich geh nach oben.'), đồng thời tiếng đáp lại ('Auf mich.' vs 'Oh, Micha!') bị small độc lập bỏ sót. Giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Hab ich nicht gesagt? Toll! Jetzt holt er gleich einen auf die Bühne. Wahrscheinlich den da.",
+        "Pssst! Für den kommenden Trick brauche ich jemand aus dem Publikum.",
+        "Darf ich Sie nach oben?",
+        "Oh, Micha!"
+      ]
+    },
+    {
+      "candidate": 4,
+      "window": [
+        132.66,
+        137.23
+      ],
+      "museRange": [
+        132.04,
+        136.03
+      ],
+      "smallText": "Wie ist das? | Ja! (132.04-134.42s)",
+      "mediumText": "Die ist doch... | Ja! (main 132.08-134.48s) | Ja! | Die ist doch hier! (tight/context 132.08-134.48s)",
+      "classification": "review_needed_model_disagreement",
+      "reason": "Sau câu 'Meine Krawatte?' (đã tách thành cue 900230), phần phản ứng 132.04-134.48s mâu thuẫn trực tiếp giữa small ('Wie ist das? Ja!') và medium ('Die ist doch... Ja!' / 'Ja! Die ist doch hier!'). Giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Wie ist das?"
+      ]
+    },
+    {
+      "candidate": 6,
+      "window": [
+        159.86,
+        163.75
+      ],
+      "museRange": [
+        161.06,
+        162.55
+      ],
+      "smallText": "Aber meine Tasche, das ... (160.56-162.64s)",
+      "mediumText": "Aber meine Tasche, das ... (main 160.80-163.04s) | Aber in meiner Tasche, das ... (tight/context/orig-med 160.58-162.98s)",
+      "classification": "review_needed_incomplete_utterance",
+      "reason": "Câu nói ngập ngừng bị bỏ lửng giữa chừng ('das ...' vs 'ist...') và bất đồng giới từ/cách ('meine Tasche' vs 'in meiner Tasche', tương ứng draft ID 900116 đã loại trừ trong README). Giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Aber in meiner Tasche, das ..."
+      ]
+    },
+    {
+      "candidate": 8,
+      "window": [
+        289.56,
+        295.31
+      ],
+      "museRange": [
+        290.76,
+        294.11
+      ],
+      "smallText": "Ja. Bitte. (main/context 290.92-291.66s) | Ja, bitte. (tight 290.10-291.64s, prob từ 'Ja'=0.080)",
+      "mediumText": "Tja. Bitte. (main 290.54-292.12s) | Ja, bitte. (tight 290.10-291.90s, prob từ 'Ja'=0.135) | Ja. (context 290.96-291.26s, mất 'Bitte')",
+      "classification": "review_needed_low_confidence_short_reply",
+      "reason": "Câu đáp rất ngắn giữa cue 900140 và 900141 có độ tự tin thấp (prob 0.08-0.25) và dao động giữa 'Ja. Bitte.', 'Tja. Bitte.' và 'Ja.' (mất 'Bitte' ở medium-context). Giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Bitte mit.",
+        "Ja.",
+        "Bitte.",
+        "Hm.",
+        "Hm."
+      ]
+    },
+    {
+      "candidate": 9,
+      "window": [
+        565.91,
+        571.53
+      ],
+      "museRange": [
+        568.57,
+        570.45
+      ],
+      "smallText": "Geht's? (568.57-569.97s)",
+      "mediumText": "Käse! (main 569.81-570.45s; tight/context không ghi nhận)",
+      "classification": "review_needed_model_disagreement",
+      "reason": "Mâu thuẫn từ vựng trực tiếp giữa small ('Geht's?') và medium ('Käse!' ở main, trống ở tight/context). Giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Ah, los geht's!",
+        "Hm, Käse!"
+      ]
+    },
+    {
+      "candidate": 10,
+      "window": [
+        572.5,
+        595.79
+      ],
+      "museRange": [
+        579.2,
+        580.7
+      ],
+      "smallText": "Man riecht es. (main 579.20-580.18s) | Man riecht (tight/context 579.20-579.96s)",
+      "mediumText": "Man riecht's, hm? (main 579.26-580.70s) | Man riecht, hm? (tight 579.26-580.66s) | Man riecht's. (context 579.28-580.14s)",
+      "classification": "review_needed_unstable_ending",
+      "reason": "Câu ngắn 579.20-580.70s biến đổi đuôi liên tục giữa các lần chạy ('Man riecht', 'Man riecht's', 'Man riecht es', 'Man riecht's, hm?'), không đủ ổn định để chấm chính tả. Giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Sie packt ihre Tüten aus. Sie hat einen Käse gekauft.",
+        "Ah, ja. Man riecht's. Und ich hab schon gedacht, das wären deine Füße.",
+        "Und nun schweb.",
+        "Nun schweb schon.",
+        "Los, setz deine Löcher in Bewegung und schweb."
+      ]
+    },
+    {
+      "candidate": 10,
+      "window": [
+        572.5,
+        595.79
+      ],
+      "museRange": [
+        587.96,
+        589.12
+      ],
+      "smallText": "Du schweb schon! (main 587.96-589.10s) | Nur schweb schon! (tight/context 587.96-589.10s)",
+      "mediumText": "Nun schweb schon! (main/tight/context 588.06-589.12s)",
+      "classification": "review_needed_model_disagreement",
+      "reason": "Từ đầu câu (587.96-589.12s) mâu thuẫn giữa small ('Du' ở main, 'Nur' ở tight/context) và medium ('Nun'). Giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Sie packt ihre Tüten aus. Sie hat einen Käse gekauft.",
+        "Ah, ja. Man riecht's. Und ich hab schon gedacht, das wären deine Füße.",
+        "Und nun schweb.",
+        "Nun schweb schon.",
+        "Los, setz deine Löcher in Bewegung und schweb."
+      ]
+    },
+    {
+      "candidate": 11,
+      "window": [
+        694.93,
+        715.88
+      ],
+      "museRange": [
+        704.29,
+        709.09
+      ],
+      "smallText": "Das ist wirklich nett, dass du uns als Dankeschön die Nudeltrick verriehst. (main/context) | ... veredst. (tight)",
+      "mediumText": "Ah, das ist wirklich nett, dass du uns als Dankeschön die Nudeltrick vergehtst. (main) | ... verdienst. (tight/context)",
+      "classification": "review_needed_model_disagreement",
+      "reason": "Tương ứng draft ID 900221 đã loại trừ trong README: quán từ ('die Nudeltrick') và động từ cuối câu bất đồng trên mọi lần chạy ('verriehst' / 'veredst' / 'vergehtst' / 'verdienst' / 'verwehtst' / 'verdezt'). Giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Und das Geheimnis ist, dass man das Publikum dabei ablenkt,",
+        "indem man dann groß mit dem Geldbeutel wedelt.",
+        "Ah, das ist wirklich nett, dass du uns als Dankeschön die Nudeltrick verdezt.",
+        "Na, wenn ihr nicht gewesen wird, dann hätte ich wahrscheinlich nie wieder auftreten können.",
+        "Ach, das war doch ein..."
+      ]
+    },
+    {
+      "candidate": 11,
+      "window": [
+        694.93,
+        715.88
+      ],
+      "museRange": [
+        709.19,
+        714.65
+      ],
+      "smallText": "Na, wenn ihr nicht gewesen wird, dann hätte ich wahrscheinlich nie wieder auftreten können.",
+      "mediumText": "Na, wenn ihr nicht gewesen wird, dann hätte ich wahrscheinlich nie wieder auftreten können.",
+      "classification": "review_needed_asr_grammar_ambiguity",
+      "reason": "Cả hai model ASR đều chép âm cuối mệnh đề điều kiện Konjunktiv II theo chủ ngữ 'ihr' thành 'gewesen wird' (thay vì chuẩn ngữ pháp 'gewesen wärt'). Không tự ý sửa chữ ngoài bằng chứng máy và không đưa câu sai chia động từ vào bài tập chính tả. Giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Und das Geheimnis ist, dass man das Publikum dabei ablenkt,",
+        "indem man dann groß mit dem Geldbeutel wedelt.",
+        "Ah, das ist wirklich nett, dass du uns als Dankeschön die Nudeltrick verdezt.",
+        "Na, wenn ihr nicht gewesen wird, dann hätte ich wahrscheinlich nie wieder auftreten können.",
+        "Ach, das war doch ein..."
+      ]
+    },
+    {
+      "candidate": 12,
+      "window": [
+        723.73,
+        745.99
+      ],
+      "museRange": [
+        731.96,
+        735.73
+      ],
+      "smallText": "Pizza! Pizza! (main 732.17-733.63s; tight hallucinate 'Äh, äh...'; context hallucinate lặp 'Pizza' >100 lần)",
+      "mediumText": "(main không ghi nhận; tight và context ghi nhận 1 từ 'Pizza!' tại 731.96-732.74s)",
+      "classification": "review_needed_repetition_count_disagreement",
+      "reason": "Tiếng reo 'Pizza!' chồng lên tiếng cười cuối tập: medium main bỏ qua, medium tight/context chỉ nhận 1 lần ('Pizza!'), trong khi small main nhận 2 lần ('Pizza! Pizza!') và small context bị lặp hallucination. Không xác định chắc chắn số lần lặp bằng máy, giữ reviewNeeded.",
+      "sourceCandidateAsr": [
+        "Mal sehen...",
+        "Nicht so ganz...",
+        "Pizza!",
+        "Pizza!"
+      ]
+    },
+    {
+      "candidate": 3,
+      "window": [
+        117.4,
+        122.79
+      ],
+      "museRange": [
+        118.6,
+        121.59
+      ],
+      "smallText": "Ich ... die hier ... | Ja! | Ha, ha, ha, ha! (main); no segments (tight)",
+      "mediumText": "Nicht die hier! (main); prolonged Jaaaa... and Das war's für heute. (tight)",
+      "classification": "review_needed_unstable_short_response",
+      "reason": "Phần 118.60–121.59s có mảnh từ chưa thống nhất: small main nhận Ich… die hier…, medium main nhận Nicht die hier!, small tight không có segment và medium tight sinh chữ lặp. Không kết luận toàn bộ là âm thanh phi từ vựng; giữ phần đáp ngắn này để người nghe duyệt.",
+      "sourceCandidateAsr": [
+        "Die hier!"
+      ]
+    }
+  ]
+}

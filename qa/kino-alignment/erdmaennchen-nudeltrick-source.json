@@ -19,7 +19,41 @@
   "status": "included_as_selected_bilingual_kino_lesson",
   "lessonUrl": "http://localhost:3000/?kino=nudeltrick",
   "chapters": 7,
-  "selectedCues": 118,
+  "selectedCues": 138,
   "vocabularyCards": 24,
-  "reviewDetails": "erdmaennchen_nudeltrick/README.md"
+  "reviewDetails": "erdmaennchen_nudeltrick/README.md",
+  "videoSha256": "2a956e7509ea72730608ace97c91d94462a5337e30c0f01442450d86e99664f2",
+  "missingDialogueReview": {
+    "date": "2026-10-27",
+    "folder": "qa/kino-alignment/nudeltrick_missing_20261027",
+    "report": "qa/kino-alignment/nudeltrick_missing_20261027/BAO-CAO-KIEM-CHUNG-NUDELTRICK-2026-10-27.md",
+    "reviewJson": "qa/kino-alignment/nudeltrick_missing_20261027/review.json",
+    "candidateWindows": 12,
+    "addedCues": 20,
+    "addedIds": [
+      900226,
+      900227,
+      900228,
+      900229,
+      900230,
+      900231,
+      900232,
+      900233,
+      900234,
+      900235,
+      900236,
+      900237,
+      900238,
+      900239,
+      900240,
+      900241,
+      900242,
+      900243,
+      900244,
+      900245
+    ],
+    "adjustedCues": 0,
+    "excludedParts": 9,
+    "reviewNeededParts": 12
+  }
 }
