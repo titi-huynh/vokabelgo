@@ -1,0 +1,1470 @@
+{
+  "model": "medium",
+  "source": "video/spongebob_pizza.mp4",
+  "sourceVideoSha256": "241c5cf57f3e8fe37942d779591275629bd3674669d733d63b8348027e6b0b98",
+  "decodedAudioF32le16kSha256": "a98be2abb37b95caededb954cc7ab49fb0fccde3a133b79a03b12990c8b58c02",
+  "duration": 301.139625,
+  "asrOptions": {
+    "language": "de",
+    "beam_size": 5,
+    "temperature": 0,
+    "word_timestamps": true,
+    "condition_on_previous_text": false,
+    "vad_filter": false,
+    "initial_prompt": null,
+    "hotwords": null,
+    "device": "cpu",
+    "compute_type": "int8",
+    "cpu_threads": 3,
+    "local_files_only": true
+  },
+  "humanListened": false,
+  "method": "Local independent bounded ASR; only numeric crop supplied; no candidate text, prompt or hotwords",
+  "windows": [
+    {
+      "candidate": 1,
+      "start": 51.57,
+      "end": 55.05,
+      "crop": [
+        51.57,
+        55.05
+      ],
+      "segments": [
+        {
+          "start": 51.57,
+          "end": 52.33,
+          "text": " Was war das noch?",
+          "avg_logprob": -0.6257866190539466,
+          "no_speech_prob": 0.5078539848327637,
+          "words": [
+            {
+              "word": " Was",
+              "start": 51.57,
+              "end": 51.57,
+              "probability": 0.12754672765731812
+            },
+            {
+              "word": " war",
+              "start": 51.57,
+              "end": 51.71,
+              "probability": 0.4730880558490753
+            },
+            {
+              "word": " das",
+              "start": 51.71,
+              "end": 52.01,
+              "probability": 0.9766829609870911
+            },
+            {
+              "word": " noch?",
+              "start": 52.01,
+              "end": 52.33,
+              "probability": 0.7221429347991943
+            }
+          ]
+        },
+        {
+          "start": 53.45,
+          "end": 54.07,
+          "text": " Ausparken!",
+          "avg_logprob": -0.6257866190539466,
+          "no_speech_prob": 0.5078539848327637,
+          "words": [
+            {
+              "word": " Ausparken!",
+              "start": 53.45,
+              "end": 54.07,
+              "probability": 0.8073538343111674
+            }
+          ]
+        },
+        {
+          "start": 54.33,
+          "end": 54.57,
+          "text": " Hä?",
+          "avg_logprob": -0.6257866190539466,
+          "no_speech_prob": 0.5078539848327637,
+          "words": [
+            {
+              "word": " Hä?",
+              "start": 54.33,
+              "end": 54.57,
+              "probability": 0.8285114765167236
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 13.33
+    },
+    {
+      "candidate": 2,
+      "start": 60.92,
+      "end": 64.78,
+      "crop": [
+        60.92,
+        64.78
+      ],
+      "segments": [
+        {
+          "start": 61.66,
+          "end": 62.6,
+          "text": " Pack aus!",
+          "avg_logprob": -0.7427917122840881,
+          "no_speech_prob": 0.19828933477401733,
+          "words": [
+            {
+              "word": " Pack",
+              "start": 61.66,
+              "end": 62.3,
+              "probability": 0.7809938192367554
+            },
+            {
+              "word": " aus!",
+              "start": 62.3,
+              "end": 62.6,
+              "probability": 0.9204264283180237
+            }
+          ]
+        },
+        {
+          "start": 62.94,
+          "end": 64.24,
+          "text": " Mich pack aus!",
+          "avg_logprob": -0.7427917122840881,
+          "no_speech_prob": 0.19828933477401733,
+          "words": [
+            {
+              "word": " Mich",
+              "start": 62.94,
+              "end": 63.18,
+              "probability": 0.039610542356967926
+            },
+            {
+              "word": " pack",
+              "start": 63.18,
+              "end": 63.42,
+              "probability": 0.44201990962028503
+            },
+            {
+              "word": " aus!",
+              "start": 63.42,
+              "end": 64.24,
+              "probability": 0.6843688488006592
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 14.04
+    },
+    {
+      "candidate": 3,
+      "start": 65.94,
+      "end": 78.92,
+      "crop": [
+        65.94,
+        78.92
+      ],
+      "segments": [
+        {
+          "start": 65.94,
+          "end": 68.72,
+          "text": " Lass mich ansteuern, Spongebob! Lass mich ansteuern!",
+          "avg_logprob": -0.33636128234452217,
+          "no_speech_prob": 0.12759526073932648,
+          "words": [
+            {
+              "word": " Lass",
+              "start": 65.94,
+              "end": 66.44,
+              "probability": 0.6738721132278442
+            },
+            {
+              "word": " mich",
+              "start": 66.44,
+              "end": 66.66,
+              "probability": 0.9704619646072388
+            },
+            {
+              "word": " ansteuern,",
+              "start": 66.66,
+              "end": 67.2,
+              "probability": 0.8487687408924103
+            },
+            {
+              "word": " Spongebob!",
+              "start": 67.38,
+              "end": 67.7,
+              "probability": 0.8059088736772537
+            },
+            {
+              "word": " Lass",
+              "start": 67.86,
+              "end": 67.94,
+              "probability": 0.8922116756439209
+            },
+            {
+              "word": " mich",
+              "start": 67.94,
+              "end": 68.16,
+              "probability": 0.9971126317977905
+            },
+            {
+              "word": " ansteuern!",
+              "start": 68.16,
+              "end": 68.72,
+              "probability": 0.9892410784959793
+            }
+          ]
+        },
+        {
+          "start": 68.86,
+          "end": 70.26,
+          "text": " Ich pack aus! Ich pack aus!",
+          "avg_logprob": -0.33636128234452217,
+          "no_speech_prob": 0.12759526073932648,
+          "words": [
+            {
+              "word": " Ich",
+              "start": 68.86,
+              "end": 69.0,
+              "probability": 0.9603068828582764
+            },
+            {
+              "word": " pack",
+              "start": 69.0,
+              "end": 69.14,
+              "probability": 0.42150673270225525
+            },
+            {
+              "word": " aus!",
+              "start": 69.14,
+              "end": 69.42,
+              "probability": 0.8852611184120178
+            },
+            {
+              "word": " Ich",
+              "start": 69.7,
+              "end": 69.76,
+              "probability": 0.9831169843673706
+            },
+            {
+              "word": " pack",
+              "start": 69.76,
+              "end": 69.94,
+              "probability": 0.26325586438179016
+            },
+            {
+              "word": " aus!",
+              "start": 69.94,
+              "end": 70.26,
+              "probability": 0.997346043586731
+            }
+          ]
+        },
+        {
+          "start": 73.7,
+          "end": 75.46,
+          "text": " Ich hab ausgeparkt.",
+          "avg_logprob": -0.33636128234452217,
+          "no_speech_prob": 0.12759526073932648,
+          "words": [
+            {
+              "word": " Ich",
+              "start": 73.7,
+              "end": 74.18,
+              "probability": 0.7497478723526001
+            },
+            {
+              "word": " hab",
+              "start": 74.18,
+              "end": 74.5,
+              "probability": 0.9592470526695251
+            },
+            {
+              "word": " ausgeparkt.",
+              "start": 74.5,
+              "end": 75.46,
+              "probability": 0.7890529632568359
+            }
+          ]
+        },
+        {
+          "start": 75.8,
+          "end": 78.84,
+          "text": " Schön. Du hast ausgeparkt. Und weißt du was?",
+          "avg_logprob": -0.33636128234452217,
+          "no_speech_prob": 0.12759526073932648,
+          "words": [
+            {
+              "word": " Schön.",
+              "start": 75.8,
+              "end": 75.96,
+              "probability": 0.9510746598243713
+            },
+            {
+              "word": " Du",
+              "start": 76.4,
+              "end": 76.54,
+              "probability": 0.9972309470176697
+            },
+            {
+              "word": " hast",
+              "start": 76.54,
+              "end": 76.78,
+              "probability": 0.9968752861022949
+            },
+            {
+              "word": " ausgeparkt.",
+              "start": 76.78,
+              "end": 77.72,
+              "probability": 0.994441548983256
+            },
+            {
+              "word": " Und",
+              "start": 78.08,
+              "end": 78.32,
+              "probability": 0.9916002750396729
+            },
+            {
+              "word": " weißt",
+              "start": 78.32,
+              "end": 78.58,
+              "probability": 0.9747265875339508
+            },
+            {
+              "word": " du",
+              "start": 78.58,
+              "end": 78.72,
+              "probability": 0.9496440887451172
+            },
+            {
+              "word": " was?",
+              "start": 78.72,
+              "end": 78.84,
+              "probability": 0.8623979091644287
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 22.25
+    },
+    {
+      "candidate": 4,
+      "start": 86.84,
+      "end": 104.3,
+      "crop": [
+        86.84,
+        104.3
+      ],
+      "segments": [
+        {
+          "start": 87.78,
+          "end": 91.84,
+          "text": " Und weißt du, was sonst noch ist? Ich glaube, fast die Pizza wird kalt.",
+          "avg_logprob": -0.3064948173991421,
+          "no_speech_prob": 0.2361094057559967,
+          "words": [
+            {
+              "word": " Und",
+              "start": 87.78,
+              "end": 88.44,
+              "probability": 0.5733832716941833
+            },
+            {
+              "word": " weißt",
+              "start": 88.44,
+              "end": 88.74,
+              "probability": 0.9705073535442352
+            },
+            {
+              "word": " du,",
+              "start": 88.74,
+              "end": 88.88,
+              "probability": 0.8251562118530273
+            },
+            {
+              "word": " was",
+              "start": 88.88,
+              "end": 89.04,
+              "probability": 0.9941071271896362
+            },
+            {
+              "word": " sonst",
+              "start": 89.04,
+              "end": 89.28,
+              "probability": 0.979816198348999
+            },
+            {
+              "word": " noch",
+              "start": 89.28,
+              "end": 89.48,
+              "probability": 0.9829553961753845
+            },
+            {
+              "word": " ist?",
+              "start": 89.48,
+              "end": 89.82,
+              "probability": 0.9717400074005127
+            },
+            {
+              "word": " Ich",
+              "start": 90.36,
+              "end": 90.46,
+              "probability": 0.9882745742797852
+            },
+            {
+              "word": " glaube,",
+              "start": 90.46,
+              "end": 90.74,
+              "probability": 0.9857507944107056
+            },
+            {
+              "word": " fast",
+              "start": 90.88,
+              "end": 91.04,
+              "probability": 0.9828839898109436
+            },
+            {
+              "word": " die",
+              "start": 91.04,
+              "end": 91.26,
+              "probability": 0.9984299540519714
+            },
+            {
+              "word": " Pizza",
+              "start": 91.26,
+              "end": 91.48,
+              "probability": 0.9927464127540588
+            },
+            {
+              "word": " wird",
+              "start": 91.48,
+              "end": 91.76,
+              "probability": 0.9740908145904541
+            },
+            {
+              "word": " kalt.",
+              "start": 91.76,
+              "end": 92.09,
+              "probability": 0.7317250967025757
+            }
+          ]
+        },
+        {
+          "start": 92.94,
+          "end": 97.22,
+          "text": " Die große Krabbe Pizza ist die Pizza, vorallem natürlich.",
+          "avg_logprob": -0.3064948173991421,
+          "no_speech_prob": 0.2361094057559967,
+          "words": [
+            {
+              "word": " Die",
+              "start": 92.94,
+              "end": 93.16,
+              "probability": 0.8174028992652893
+            },
+            {
+              "word": " große",
+              "start": 93.16,
+              "end": 93.4,
+              "probability": 0.8164886832237244
+            },
+            {
+              "word": " Krabbe",
+              "start": 93.4,
+              "end": 93.84,
+              "probability": 0.6185278991858164
+            },
+            {
+              "word": " Pizza",
+              "start": 93.84,
+              "end": 94.18,
+              "probability": 0.7739912867546082
+            },
+            {
+              "word": " ist",
+              "start": 94.18,
+              "end": 94.82,
+              "probability": 0.6882262825965881
+            },
+            {
+              "word": " die",
+              "start": 94.82,
+              "end": 95.26,
+              "probability": 0.9963650703430176
+            },
+            {
+              "word": " Pizza,",
+              "start": 95.26,
+              "end": 95.74,
+              "probability": 0.9961639642715454
+            },
+            {
+              "word": " vorallem",
+              "start": 95.96,
+              "end": 96.42,
+              "probability": 0.42161351690689725
+            },
+            {
+              "word": " natürlich.",
+              "start": 96.42,
+              "end": 97.22,
+              "probability": 0.8831239342689514
+            }
+          ]
+        },
+        {
+          "start": 97.56,
+          "end": 101.84,
+          "text": " Die große Krabbe Pizza ist die Pizza, sie ist fantastisch.",
+          "avg_logprob": -0.3064948173991421,
+          "no_speech_prob": 0.2361094057559967,
+          "words": [
+            {
+              "word": " Die",
+              "start": 97.56,
+              "end": 97.68,
+              "probability": 0.986903190612793
+            },
+            {
+              "word": " große",
+              "start": 97.68,
+              "end": 98.0,
+              "probability": 0.9973589777946472
+            },
+            {
+              "word": " Krabbe",
+              "start": 98.0,
+              "end": 98.46,
+              "probability": 0.9975125392278036
+            },
+            {
+              "word": " Pizza",
+              "start": 98.46,
+              "end": 99.02,
+              "probability": 0.9966021776199341
+            },
+            {
+              "word": " ist",
+              "start": 99.02,
+              "end": 99.58,
+              "probability": 0.9378608465194702
+            },
+            {
+              "word": " die",
+              "start": 99.58,
+              "end": 99.92,
+              "probability": 0.9992547631263733
+            },
+            {
+              "word": " Pizza,",
+              "start": 99.92,
+              "end": 100.2,
+              "probability": 0.9967554211616516
+            },
+            {
+              "word": " sie",
+              "start": 100.24,
+              "end": 100.44,
+              "probability": 0.9820573329925537
+            },
+            {
+              "word": " ist",
+              "start": 100.44,
+              "end": 100.8,
+              "probability": 0.9949906468391418
+            },
+            {
+              "word": " fantastisch.",
+              "start": 100.8,
+              "end": 101.84,
+              "probability": 0.9739726781845093
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 20.7
+    },
+    {
+      "candidate": 5,
+      "start": 168.18,
+      "end": 197.83,
+      "crop": [
+        168.18,
+        197.83
+      ],
+      "segments": [
+        {
+          "start": 169.04,
+          "end": 174.1,
+          "text": " Die große Krabbe-Pizza ist die Pizza super knusperig.",
+          "avg_logprob": -0.09974918259514702,
+          "no_speech_prob": 0.051664404571056366,
+          "words": [
+            {
+              "word": " Die",
+              "start": 169.04,
+              "end": 169.9,
+              "probability": 0.6523393392562866
+            },
+            {
+              "word": " große",
+              "start": 169.9,
+              "end": 170.18,
+              "probability": 0.4056876003742218
+            },
+            {
+              "word": " Krabbe",
+              "start": 170.18,
+              "end": 170.6,
+              "probability": 0.8198103308677673
+            },
+            {
+              "word": "-Pizza",
+              "start": 170.6,
+              "end": 171.04,
+              "probability": 0.7377418329318365
+            },
+            {
+              "word": " ist",
+              "start": 171.04,
+              "end": 171.7,
+              "probability": 0.6334961652755737
+            },
+            {
+              "word": " die",
+              "start": 171.7,
+              "end": 172.06,
+              "probability": 0.9850757718086243
+            },
+            {
+              "word": " Pizza",
+              "start": 172.06,
+              "end": 172.38,
+              "probability": 0.9785913228988647
+            },
+            {
+              "word": " super",
+              "start": 172.38,
+              "end": 172.84,
+              "probability": 0.900736927986145
+            },
+            {
+              "word": " knusperig.",
+              "start": 172.84,
+              "end": 174.1,
+              "probability": 0.8747409284114838
+            }
+          ]
+        },
+        {
+          "start": 174.98,
+          "end": 197.68,
+          "text": " Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza! Pizza",
+          "avg_logprob": -0.05166724469926622,
+          "no_speech_prob": 0.33934929966926575,
+          "words": [
+            {
+              "word": " Pizza!",
+              "start": 174.98,
+              "end": 175.66,
+              "probability": 0.046093281358480453
+            },
+            {
+              "word": " Pizza!",
+              "start": 176.06,
+              "end": 176.56,
+              "probability": 0.4855824112892151
+            },
+            {
+              "word": " Pizza!",
+              "start": 178.16,
+              "end": 178.16,
+              "probability": 0.8954431414604187
+            },
+            {
+              "word": " Pizza!",
+              "start": 178.28,
+              "end": 178.42,
+              "probability": 0.665344774723053
+            },
+            {
+              "word": " Pizza!",
+              "start": 178.9,
+              "end": 179.1,
+              "probability": 0.474520742893219
+            },
+            {
+              "word": " Pizza!",
+              "start": 180.3,
+              "end": 180.5,
+              "probability": 0.40594181418418884
+            },
+            {
+              "word": " Pizza!",
+              "start": 182.16,
+              "end": 182.16,
+              "probability": 0.3782927393913269
+            },
+            {
+              "word": " Pizza!",
+              "start": 183.38,
+              "end": 183.76,
+              "probability": 0.31044554710388184
+            },
+            {
+              "word": " Pizza!",
+              "start": 183.76,
+              "end": 183.92,
+              "probability": 0.13055367767810822
+            },
+            {
+              "word": " Pizza!",
+              "start": 183.92,
+              "end": 184.38,
+              "probability": 0.09675039350986481
+            },
+            {
+              "word": " Pizza!",
+              "start": 184.62,
+              "end": 184.62,
+              "probability": 0.1341542750597
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.22150909900665283
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.39326924085617065
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.5471076369285583
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.6120128631591797
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.7087404131889343
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.7940331697463989
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.8033483624458313
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.8615167140960693
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.8652918934822083
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.8806275725364685
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.9072855710983276
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.907314121723175
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.9280534386634827
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.9453890323638916
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.9536937475204468
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.9665370583534241
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.9577972888946533
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.970580518245697
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.9704157114028931
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.9747732281684875
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.9705504179000854
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.64,
+              "end": 185.64,
+              "probability": 0.968746542930603
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.66,
+              "end": 185.66,
+              "probability": 0.9779700040817261
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.66,
+              "end": 185.66,
+              "probability": 0.9812538623809814
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.66,
+              "end": 185.66,
+              "probability": 0.9825789928436279
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.66,
+              "end": 185.66,
+              "probability": 0.9791139960289001
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.66,
+              "end": 185.66,
+              "probability": 0.9838032722473145
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.66,
+              "end": 185.66,
+              "probability": 0.9855536818504333
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.66,
+              "end": 185.66,
+              "probability": 0.983565628528595
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.66,
+              "end": 185.66,
+              "probability": 0.983121931552887
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.66,
+              "end": 185.66,
+              "probability": 0.9852779507637024
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.66,
+              "end": 185.66,
+              "probability": 0.9870278835296631
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.66,
+              "end": 185.66,
+              "probability": 0.987014651298523
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.66,
+              "end": 185.66,
+              "probability": 0.9879746437072754
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.68,
+              "end": 185.68,
+              "probability": 0.9891541600227356
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.68,
+              "end": 185.68,
+              "probability": 0.9883421063423157
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.68,
+              "end": 185.68,
+              "probability": 0.9896987080574036
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.68,
+              "end": 185.68,
+              "probability": 0.9898015856742859
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.68,
+              "end": 185.68,
+              "probability": 0.9918299317359924
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.68,
+              "end": 185.68,
+              "probability": 0.9905070066452026
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.68,
+              "end": 185.68,
+              "probability": 0.9904981255531311
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.68,
+              "end": 185.68,
+              "probability": 0.9899674654006958
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.68,
+              "end": 185.68,
+              "probability": 0.989794135093689
+            },
+            {
+              "word": " Pizza!",
+              "start": 185.68,
+              "end": 185.68,
+              "probability": 0.9883699417114258
+            },
+            {
+              "word": " Pizza!",
+              "start": 188.54,
+              "end": 188.54,
+              "probability": 0.9913020133972168
+            },
+            {
+              "word": " Pizza!",
+              "start": 188.68,
+              "end": 188.68,
+              "probability": 0.9898861646652222
+            },
+            {
+              "word": " Pizza!",
+              "start": 188.68,
+              "end": 188.76,
+              "probability": 0.9890269637107849
+            },
+            {
+              "word": " Pizza!",
+              "start": 188.76,
+              "end": 188.9,
+              "probability": 0.9909056425094604
+            },
+            {
+              "word": " Pizza!",
+              "start": 188.9,
+              "end": 188.9,
+              "probability": 0.989816427230835
+            },
+            {
+              "word": " Pizza!",
+              "start": 188.9,
+              "end": 188.9,
+              "probability": 0.9900422096252441
+            },
+            {
+              "word": " Pizza!",
+              "start": 188.9,
+              "end": 189.18,
+              "probability": 0.9883697032928467
+            },
+            {
+              "word": " Pizza!",
+              "start": 189.18,
+              "end": 189.18,
+              "probability": 0.9884436726570129
+            },
+            {
+              "word": " Pizza!",
+              "start": 189.84,
+              "end": 189.84,
+              "probability": 0.9902538657188416
+            },
+            {
+              "word": " Pizza!",
+              "start": 189.84,
+              "end": 189.84,
+              "probability": 0.9901556968688965
+            },
+            {
+              "word": " Pizza!",
+              "start": 189.84,
+              "end": 189.84,
+              "probability": 0.990748941898346
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.0,
+              "end": 190.0,
+              "probability": 0.9885680675506592
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.0,
+              "end": 190.0,
+              "probability": 0.9866551160812378
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.0,
+              "end": 190.0,
+              "probability": 0.9881942272186279
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.0,
+              "end": 190.0,
+              "probability": 0.9880605936050415
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.0,
+              "end": 190.0,
+              "probability": 0.9872724413871765
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.0,
+              "end": 190.0,
+              "probability": 0.9887786507606506
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.06,
+              "end": 190.06,
+              "probability": 0.9875952005386353
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.06,
+              "end": 190.06,
+              "probability": 0.9879105091094971
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.06,
+              "end": 190.06,
+              "probability": 0.985220193862915
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.06,
+              "end": 190.06,
+              "probability": 0.9859945774078369
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.06,
+              "end": 190.06,
+              "probability": 0.9887958765029907
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.06,
+              "end": 190.06,
+              "probability": 0.9851393103599548
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.06,
+              "end": 190.06,
+              "probability": 0.9878886342048645
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.06,
+              "end": 190.14,
+              "probability": 0.9859758019447327
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.14,
+              "end": 190.14,
+              "probability": 0.9849444031715393
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.14,
+              "end": 190.14,
+              "probability": 0.9847522377967834
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.14,
+              "end": 190.14,
+              "probability": 0.9865142703056335
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.14,
+              "end": 190.14,
+              "probability": 0.9844224452972412
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.14,
+              "end": 190.14,
+              "probability": 0.9848930835723877
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.14,
+              "end": 190.14,
+              "probability": 0.9841736555099487
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.14,
+              "end": 190.14,
+              "probability": 0.986644446849823
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.14,
+              "end": 190.14,
+              "probability": 0.9843285083770752
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.14,
+              "end": 190.14,
+              "probability": 0.9829599857330322
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.14,
+              "end": 190.14,
+              "probability": 0.9824920892715454
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.14,
+              "end": 190.5,
+              "probability": 0.9841214418411255
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.5,
+              "end": 190.5,
+              "probability": 0.9856370091438293
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.5,
+              "end": 190.5,
+              "probability": 0.9855641722679138
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.5,
+              "end": 190.5,
+              "probability": 0.9828400015830994
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.5,
+              "end": 190.5,
+              "probability": 0.9822906851768494
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.5,
+              "end": 190.5,
+              "probability": 0.9831169843673706
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.5,
+              "end": 190.5,
+              "probability": 0.9803916215896606
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.5,
+              "end": 190.74,
+              "probability": 0.9780896306037903
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.8,
+              "end": 190.8,
+              "probability": 0.9735087156295776
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.8,
+              "end": 190.8,
+              "probability": 0.9756084084510803
+            },
+            {
+              "word": " Pizza!",
+              "start": 190.8,
+              "end": 190.8,
+              "probability": 0.9775411486625671
+            },
+            {
+              "word": " Pizza!",
+              "start": 191.26,
+              "end": 191.94,
+              "probability": 0.9711224436759949
+            },
+            {
+              "word": " Pizza!",
+              "start": 192.34,
+              "end": 192.34,
+              "probability": 0.9771009683609009
+            },
+            {
+              "word": " Pizza!",
+              "start": 192.34,
+              "end": 192.34,
+              "probability": 0.9750087857246399
+            },
+            {
+              "word": " Pizza!",
+              "start": 192.8,
+              "end": 192.8,
+              "probability": 0.9714123606681824
+            },
+            {
+              "word": " Pizza!",
+              "start": 192.8,
+              "end": 192.8,
+              "probability": 0.9668330550193787
+            },
+            {
+              "word": " Pizza!",
+              "start": 193.14,
+              "end": 193.14,
+              "probability": 0.9664792418479919
+            },
+            {
+              "word": " Pizza!",
+              "start": 193.14,
+              "end": 193.14,
+              "probability": 0.9639056921005249
+            },
+            {
+              "word": " Pizza!",
+              "start": 193.14,
+              "end": 193.14,
+              "probability": 0.9655709266662598
+            },
+            {
+              "word": " Pizza!",
+              "start": 193.14,
+              "end": 193.14,
+              "probability": 0.9676333665847778
+            },
+            {
+              "word": " Pizza!",
+              "start": 193.84,
+              "end": 193.96,
+              "probability": 0.9555275440216064
+            },
+            {
+              "word": " Pizza",
+              "start": 197.46,
+              "end": 197.68,
+              "probability": 0.9668633341789246
+            }
+          ]
+        },
+        {
+          "start": 197.68,
+          "end": 197.78,
+          "text": " Das war's für heute, bis zum nächsten Mal!",
+          "avg_logprob": -0.9809440204075405,
+          "no_speech_prob": 0.8157698512077332,
+          "words": [
+            {
+              "word": " Das",
+              "start": 197.68,
+              "end": 197.7,
+              "probability": 0.010232100263237953
+            },
+            {
+              "word": " war's",
+              "start": 197.7,
+              "end": 197.72,
+              "probability": 0.40736767649650574
+            },
+            {
+              "word": " für",
+              "start": 197.72,
+              "end": 197.72,
+              "probability": 0.6447126269340515
+            },
+            {
+              "word": " heute,",
+              "start": 197.72,
+              "end": 197.72,
+              "probability": 0.916043221950531
+            },
+            {
+              "word": " bis",
+              "start": 197.72,
+              "end": 197.74,
+              "probability": 0.3736889660358429
+            },
+            {
+              "word": " zum",
+              "start": 197.74,
+              "end": 197.74,
+              "probability": 0.4388594627380371
+            },
+            {
+              "word": " nächsten",
+              "start": 197.74,
+              "end": 197.76,
+              "probability": 0.9820128083229065
+            },
+            {
+              "word": " Mal!",
+              "start": 197.76,
+              "end": 197.78,
+              "probability": 0.7910774946212769
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 114.45
+    },
+    {
+      "candidate": 6,
+      "start": 260.6,
+      "end": 269.29,
+      "crop": [
+        260.6,
+        269.29
+      ],
+      "segments": [
+        {
+          "start": 260.6,
+          "end": 262.6,
+          "text": " Komm drüber, Spongebob!",
+          "avg_logprob": -0.8152825186649958,
+          "no_speech_prob": 0.5604288578033447,
+          "words": [
+            {
+              "word": " Komm",
+              "start": 260.6,
+              "end": 260.86,
+              "probability": 0.12751154601573944
+            },
+            {
+              "word": " drüber,",
+              "start": 260.86,
+              "end": 261.92,
+              "probability": 0.9530571401119232
+            },
+            {
+              "word": " Spongebob!",
+              "start": 262.26,
+              "end": 262.6,
+              "probability": 0.6303888484835625
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 13.7
+    },
+    {
+      "candidate": 7,
+      "start": 270.9,
+      "end": 274.41,
+      "crop": [
+        270.9,
+        274.41
+      ],
+      "segments": [
+        {
+          "start": 272.98,
+          "end": 274.38,
+          "text": " HÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ",
+          "avg_logprob": -0.07469263076782226,
+          "no_speech_prob": 0.38753414154052734,
+          "words": [
+            {
+              "word": " HÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ",
+              "start": 272.98,
+              "end": 274.38,
+              "probability": 0.9426545787585958
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 66.16
+    }
+  ],
+  "completed": 7,
+  "total": 7
+}

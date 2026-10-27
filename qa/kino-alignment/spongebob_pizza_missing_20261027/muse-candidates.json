@@ -1,0 +1,344 @@
+{
+ "key": "spongebob_pizza",
+ "duration": 301.1,
+ "cue_count": 60,
+ "speech_regions": 29,
+ "speech_seconds": 254.3,
+ "candidates": [
+  {
+   "start": 52.77,
+   "end": 53.85,
+   "covered": 0.0,
+   "window": [
+    51.57,
+    55.05
+   ],
+   "asr": [
+    {
+     "start": 51.57,
+     "end": 52.57,
+     "text": "Ja, das noch.",
+     "avg_logprob": -0.62,
+     "no_speech_prob": 0.44
+    },
+    {
+     "start": 52.57,
+     "end": 53.57,
+     "text": "Auspacken!",
+     "avg_logprob": -0.62,
+     "no_speech_prob": 0.44
+    },
+    {
+     "start": 53.57,
+     "end": 54.57,
+     "text": "Hä?",
+     "avg_logprob": -0.62,
+     "no_speech_prob": 0.44
+    }
+   ],
+   "cue_before": {
+    "id": 1200115,
+    "start": 50.5,
+    "end": 52.1,
+    "text": "Moment, wie war das noch?",
+    "vi": "Khoan đã, làm thế nào ấy nhỉ?"
+   },
+   "cue_after": {
+    "id": 1200116,
+    "start": 56.58,
+    "end": 58.86,
+    "text": "Ach so, ausparken.",
+    "vi": "À phải rồi, đánh xe ra khỏi chỗ đỗ."
+   }
+  },
+  {
+   "start": 62.12,
+   "end": 63.58,
+   "covered": 0.0,
+   "window": [
+    60.92,
+    64.78
+   ],
+   "asr": [
+    {
+     "start": 60.92,
+     "end": 62.92,
+     "text": "Pack aus!",
+     "avg_logprob": -0.81,
+     "no_speech_prob": 0.21
+    },
+    {
+     "start": 62.92,
+     "end": 64.92,
+     "text": "Ich habs aus!",
+     "avg_logprob": -0.81,
+     "no_speech_prob": 0.21
+    }
+   ],
+   "cue_before": {
+    "id": 1200116,
+    "start": 56.58,
+    "end": 58.86,
+    "text": "Ach so, ausparken.",
+    "vi": "À phải rồi, đánh xe ra khỏi chỗ đỗ."
+   },
+   "cue_after": {
+    "id": 1200117,
+    "start": 77.92,
+    "end": 79.18,
+    "text": "Und weißt du was noch?",
+    "vi": "Và cậu biết còn gì nữa không?"
+   }
+  },
+  {
+   "start": 67.14,
+   "end": 77.72,
+   "covered": 0.0,
+   "window": [
+    65.94,
+    78.92
+   ],
+   "asr": [
+    {
+     "start": 66.72,
+     "end": 68.72,
+     "text": "Steuer, SpongeBob, lass mich ans Steuer!",
+     "avg_logprob": -0.35,
+     "no_speech_prob": 0.14
+    },
+    {
+     "start": 68.72,
+     "end": 70.72,
+     "text": "Ich pack aus! Ich pack aus!",
+     "avg_logprob": -0.35,
+     "no_speech_prob": 0.14
+    },
+    {
+     "start": 70.72,
+     "end": 75.06,
+     "text": "Ich hab ausgeparkt.",
+     "avg_logprob": -0.35,
+     "no_speech_prob": 0.14
+    },
+    {
+     "start": 75.06,
+     "end": 77.06,
+     "text": "Schön. Du hast ausgeparkt.",
+     "avg_logprob": -0.35,
+     "no_speech_prob": 0.14
+    },
+    {
+     "start": 77.06,
+     "end": 79.06,
+     "text": "Und weißt du was?",
+     "avg_logprob": -0.35,
+     "no_speech_prob": 0.14
+    }
+   ],
+   "cue_before": {
+    "id": 1200116,
+    "start": 56.58,
+    "end": 58.86,
+    "text": "Ach so, ausparken.",
+    "vi": "À phải rồi, đánh xe ra khỏi chỗ đỗ."
+   },
+   "cue_after": {
+    "id": 1200117,
+    "start": 77.92,
+    "end": 79.18,
+    "text": "Und weißt du was noch?",
+    "vi": "Và cậu biết còn gì nữa không?"
+   }
+  },
+  {
+   "start": 88.04,
+   "end": 103.1,
+   "covered": 0.11,
+   "window": [
+    86.84,
+    104.3
+   ],
+   "asr": [
+    {
+     "start": 87.88,
+     "end": 92.08,
+     "text": "Und weißt du was sonst noch ist? Ich glaube fast die Pizza wird kalten.",
+     "avg_logprob": -0.41,
+     "no_speech_prob": 0.07
+    },
+    {
+     "start": 92.08,
+     "end": 97.08,
+     "text": "Die große Krabbe Pizza ist die Pizza, vor allem natürlich.",
+     "avg_logprob": -0.41,
+     "no_speech_prob": 0.07
+    },
+    {
+     "start": 97.08,
+     "end": 102.08,
+     "text": "Die große Krabbe Pizza ist die Pizza, sie ist fantastisch.",
+     "avg_logprob": -0.41,
+     "no_speech_prob": 0.07
+    }
+   ],
+   "cue_before": {
+    "id": 1200118,
+    "start": 79.72,
+    "end": 81.54,
+    "text": "Du hast den Tank leer gefahren.",
+    "vi": "Cậu chạy cạn sạch bình xăng rồi."
+   },
+   "cue_after": {
+    "id": 1200121,
+    "start": 105.94,
+    "end": 109.64,
+    "text": "Jetzt lass doch endlich diese idiotische Pizza los.",
+    "vi": "Giờ thì buông cái bánh pizza ngớ ngẩn đó ra đi chứ."
+   }
+  },
+  {
+   "start": 169.38,
+   "end": 196.63,
+   "covered": 0.0,
+   "window": [
+    168.18,
+    197.83
+   ],
+   "asr": [
+    {
+     "start": 169.22,
+     "end": 173.98,
+     "text": "Die große Krabbe Pizza ist die Pizza super knusperig!",
+     "avg_logprob": -0.49,
+     "no_speech_prob": 0.06
+    },
+    {
+     "start": 174.06,
+     "end": 175.5,
+     "text": "P-P-P-P-Pizza!",
+     "avg_logprob": -0.49,
+     "no_speech_prob": 0.06
+    },
+    {
+     "start": 175.58,
+     "end": 177.58,
+     "text": "P-P-P-P-P-Pizza!",
+     "avg_logprob": -0.49,
+     "no_speech_prob": 0.06
+    },
+    {
+     "start": 177.66,
+     "end": 179.1,
+     "text": "P-P-P-P-P-Pizza!",
+     "avg_logprob": -0.49,
+     "no_speech_prob": 0.06
+    },
+    {
+     "start": 179.18,
+     "end": 180.78,
+     "text": "P-P-P-P-P-P-Pizza!",
+     "avg_logprob": -0.49,
+     "no_speech_prob": 0.06
+    },
+    {
+     "start": 180.86,
+     "end": 182.5,
+     "text": "P-P-P-P-P-Pizza!",
+     "avg_logprob": -0.49,
+     "no_speech_prob": 0.06
+    },
+    {
+     "start": 182.58,
+     "end": 183.86,
+     "text": "P-P-P-P-P-Pizza!",
+     "avg_logprob": -0.49,
+     "no_speech_prob": 0.06
+    },
+    {
+     "start": 183.94,
+     "end": 197.18,
+     "text": "Große Krabbe Pizza ist die Jähepizza für dich und mich!",
+     "avg_logprob": -0.49,
+     "no_speech_prob": 0.06
+    }
+   ],
+   "cue_before": {
+    "id": 1200137,
+    "start": 164.92,
+    "end": 166.76,
+    "text": "Vertrau mir, ich weiß, was ich tu.",
+    "vi": "Tin tôi đi, tôi biết mình đang làm gì mà."
+   },
+   "cue_after": {
+    "id": 1200138,
+    "start": 202.8,
+    "end": 204.12,
+    "text": "Wir sind gerettet!",
+    "vi": "Chúng ta được cứu rồi!"
+   }
+  },
+  {
+   "start": 261.8,
+   "end": 268.09,
+   "covered": 0.0,
+   "window": [
+    260.6,
+    269.29
+   ],
+   "asr": [
+    {
+     "start": 260.6,
+     "end": 261.6,
+     "text": "Komm drüber!",
+     "avg_logprob": -0.98,
+     "no_speech_prob": 0.62
+    },
+    {
+     "start": 261.6,
+     "end": 262.6,
+     "text": "Sponge!",
+     "avg_logprob": -0.98,
+     "no_speech_prob": 0.62
+    }
+   ],
+   "cue_before": {
+    "id": 1200154,
+    "start": 259.62,
+    "end": 261.22,
+    "text": "Ach, Schwamm drüber.",
+    "vi": "Thôi, bỏ qua chuyện đó đi."
+   },
+   "cue_after": {
+    "id": 1200155,
+    "start": 276.38,
+    "end": 277.74,
+    "text": "Schon wieder einer?",
+    "vi": "Lại thêm một kẻ nữa à?"
+   }
+  },
+  {
+   "start": 272.1,
+   "end": 273.21,
+   "covered": 0.0,
+   "window": [
+    270.9,
+    274.41
+   ],
+   "asr": [],
+   "cue_before": {
+    "id": 1200154,
+    "start": 259.62,
+    "end": 261.22,
+    "text": "Ach, Schwamm drüber.",
+    "vi": "Thôi, bỏ qua chuyện đó đi."
+   },
+   "cue_after": {
+    "id": 1200155,
+    "start": 276.38,
+    "end": 277.74,
+    "text": "Schon wieder einer?",
+    "vi": "Lại thêm một kẻ nữa à?"
+   }
+  }
+ ]
+}

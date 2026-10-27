@@ -1,0 +1,1644 @@
+{
+  "model": "small",
+  "source": "video/spongebob_pizza.mp4",
+  "sourceVideoSha256": "241c5cf57f3e8fe37942d779591275629bd3674669d733d63b8348027e6b0b98",
+  "decodedAudioF32le16kSha256": "a98be2abb37b95caededb954cc7ab49fb0fccde3a133b79a03b12990c8b58c02",
+  "duration": 301.139625,
+  "asrOptions": {
+    "language": "de",
+    "beam_size": 5,
+    "temperature": 0,
+    "word_timestamps": true,
+    "condition_on_previous_text": false,
+    "vad_filter": false,
+    "initial_prompt": null,
+    "hotwords": null,
+    "device": "cpu",
+    "compute_type": "int8",
+    "cpu_threads": 3,
+    "local_files_only": true
+  },
+  "humanListened": false,
+  "method": "Local independent bounded ASR; only numeric crop supplied; no candidate text, prompt or hotwords",
+  "windows": [
+    {
+      "candidate": 1,
+      "label": "exchange",
+      "start": 49.5,
+      "end": 59.8,
+      "crop": [
+        49.5,
+        59.8
+      ],
+      "segments": [
+        {
+          "start": 50.38,
+          "end": 52.14,
+          "text": " Moment, wie war das noch?",
+          "avg_logprob": -0.325824887411935,
+          "no_speech_prob": 0.07350779324769974,
+          "words": [
+            {
+              "word": " Moment,",
+              "start": 50.38,
+              "end": 50.98,
+              "probability": 0.9605482220649719
+            },
+            {
+              "word": " wie",
+              "start": 51.24,
+              "end": 51.4,
+              "probability": 0.9950880408287048
+            },
+            {
+              "word": " war",
+              "start": 51.4,
+              "end": 51.64,
+              "probability": 0.9890670776367188
+            },
+            {
+              "word": " das",
+              "start": 51.64,
+              "end": 51.88,
+              "probability": 0.992591142654419
+            },
+            {
+              "word": " noch?",
+              "start": 51.88,
+              "end": 52.14,
+              "probability": 0.9567294716835022
+            }
+          ]
+        },
+        {
+          "start": 52.98,
+          "end": 53.54,
+          "text": " Auspacken.",
+          "avg_logprob": -0.325824887411935,
+          "no_speech_prob": 0.07350779324769974,
+          "words": [
+            {
+              "word": " Auspacken.",
+              "start": 52.98,
+              "end": 53.54,
+              "probability": 0.8239059845606486
+            }
+          ]
+        },
+        {
+          "start": 54.24,
+          "end": 54.46,
+          "text": " Hä?",
+          "avg_logprob": -0.325824887411935,
+          "no_speech_prob": 0.07350779324769974,
+          "words": [
+            {
+              "word": " Hä?",
+              "start": 54.24,
+              "end": 54.46,
+              "probability": 0.4134082496166229
+            }
+          ]
+        },
+        {
+          "start": 56.0,
+          "end": 56.6,
+          "text": " Auspacken.",
+          "avg_logprob": -0.325824887411935,
+          "no_speech_prob": 0.07350779324769974,
+          "words": [
+            {
+              "word": " Auspacken.",
+              "start": 56.0,
+              "end": 56.6,
+              "probability": 0.9577221075693766
+            }
+          ]
+        },
+        {
+          "start": 56.92,
+          "end": 58.92,
+          "text": " Ach so, auspacken.",
+          "avg_logprob": -0.325824887411935,
+          "no_speech_prob": 0.07350779324769974,
+          "words": [
+            {
+              "word": " Ach",
+              "start": 56.92,
+              "end": 57.18,
+              "probability": 0.9925946593284607
+            },
+            {
+              "word": " so,",
+              "start": 57.18,
+              "end": 57.6,
+              "probability": 0.7241725325584412
+            },
+            {
+              "word": " auspacken.",
+              "start": 57.88,
+              "end": 58.92,
+              "probability": 0.9688648581504822
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 5.95
+    },
+    {
+      "candidate": 1,
+      "label": "tight",
+      "start": 52.1,
+      "end": 55.3,
+      "crop": [
+        52.1,
+        55.3
+      ],
+      "segments": [
+        {
+          "start": 52.1,
+          "end": 53.56,
+          "text": " Auspacken!",
+          "avg_logprob": -0.7093135459082467,
+          "no_speech_prob": 0.14275521039962769,
+          "words": [
+            {
+              "word": " Auspacken!",
+              "start": 52.1,
+              "end": 53.56,
+              "probability": 0.7494024336338043
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 4.52
+    },
+    {
+      "candidate": 2,
+      "label": "exchange",
+      "start": 59,
+      "end": 65.5,
+      "crop": [
+        59,
+        65.5
+      ],
+      "segments": [
+        {
+          "start": 61.56,
+          "end": 62.58,
+          "text": " Perfekt!",
+          "avg_logprob": -0.5929730415344239,
+          "no_speech_prob": 0.2147476077079773,
+          "words": [
+            {
+              "word": " Perfekt!",
+              "start": 61.56,
+              "end": 62.58,
+              "probability": 0.3871196160713832
+            }
+          ]
+        },
+        {
+          "start": 63.16,
+          "end": 64.18,
+          "text": " Perfekt!",
+          "avg_logprob": -0.5929730415344239,
+          "no_speech_prob": 0.2147476077079773,
+          "words": [
+            {
+              "word": " Perfekt!",
+              "start": 63.16,
+              "end": 64.18,
+              "probability": 0.9156711101531982
+            }
+          ]
+        },
+        {
+          "start": 64.24,
+          "end": 64.86,
+          "text": " Perfekt!",
+          "avg_logprob": -0.5929730415344239,
+          "no_speech_prob": 0.2147476077079773,
+          "words": [
+            {
+              "word": " Perfekt!",
+              "start": 64.24,
+              "end": 64.86,
+              "probability": 0.9379313786824545
+            }
+          ]
+        },
+        {
+          "start": 64.86,
+          "end": 65.08,
+          "text": " Perfekt!",
+          "avg_logprob": -0.5929730415344239,
+          "no_speech_prob": 0.2147476077079773,
+          "words": [
+            {
+              "word": " Perfekt!",
+              "start": 64.86,
+              "end": 65.08,
+              "probability": 0.947584847609202
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 5.33
+    },
+    {
+      "candidate": 2,
+      "label": "tight",
+      "start": 61.5,
+      "end": 64.4,
+      "crop": [
+        61.5,
+        64.4
+      ],
+      "segments": [
+        {
+          "start": 61.5,
+          "end": 62.46,
+          "text": " Pack aus!",
+          "avg_logprob": -0.7663322985172272,
+          "no_speech_prob": 0.17539721727371216,
+          "words": [
+            {
+              "word": " Pack",
+              "start": 61.5,
+              "end": 62.18,
+              "probability": 0.5810511708259583
+            },
+            {
+              "word": " aus!",
+              "start": 62.18,
+              "end": 62.46,
+              "probability": 0.7768217921257019
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 4.63
+    },
+    {
+      "candidate": 3,
+      "label": "exchange",
+      "start": 64.7,
+      "end": 79.4,
+      "crop": [
+        64.7,
+        79.4
+      ],
+      "segments": [
+        {
+          "start": 64.7,
+          "end": 65.94,
+          "text": " Ich pack' aus!",
+          "avg_logprob": -0.45341765310834437,
+          "no_speech_prob": 0.016312604770064354,
+          "words": [
+            {
+              "word": " Ich",
+              "start": 64.7,
+              "end": 65.06,
+              "probability": 0.7826509475708008
+            },
+            {
+              "word": " pack'",
+              "start": 65.06,
+              "end": 65.3,
+              "probability": 0.35037651658058167
+            },
+            {
+              "word": " aus!",
+              "start": 65.54,
+              "end": 65.94,
+              "probability": 0.9282976388931274
+            }
+          ]
+        },
+        {
+          "start": 66.12,
+          "end": 68.52,
+          "text": " Lass mich ans Steuerspunk! Lass mich ans Feuer!",
+          "avg_logprob": -0.45341765310834437,
+          "no_speech_prob": 0.016312604770064354,
+          "words": [
+            {
+              "word": " Lass",
+              "start": 66.12,
+              "end": 66.38,
+              "probability": 0.6234603673219681
+            },
+            {
+              "word": " mich",
+              "start": 66.38,
+              "end": 66.56,
+              "probability": 0.9817075133323669
+            },
+            {
+              "word": " ans",
+              "start": 66.56,
+              "end": 66.78,
+              "probability": 0.15484951436519623
+            },
+            {
+              "word": " Steuerspunk!",
+              "start": 66.78,
+              "end": 67.4,
+              "probability": 0.6409438043832779
+            },
+            {
+              "word": " Lass",
+              "start": 67.66,
+              "end": 67.86,
+              "probability": 0.9269793331623077
+            },
+            {
+              "word": " mich",
+              "start": 67.86,
+              "end": 68.04,
+              "probability": 0.996325671672821
+            },
+            {
+              "word": " ans",
+              "start": 68.04,
+              "end": 68.22,
+              "probability": 0.9346946477890015
+            },
+            {
+              "word": " Feuer!",
+              "start": 68.22,
+              "end": 68.52,
+              "probability": 0.8860874176025391
+            }
+          ]
+        },
+        {
+          "start": 68.78,
+          "end": 70.2,
+          "text": " Ich pack' aus! Ich pack' aus!",
+          "avg_logprob": -0.45341765310834437,
+          "no_speech_prob": 0.016312604770064354,
+          "words": [
+            {
+              "word": " Ich",
+              "start": 68.78,
+              "end": 68.94,
+              "probability": 0.9611086249351501
+            },
+            {
+              "word": " pack'",
+              "start": 68.94,
+              "end": 69.06,
+              "probability": 0.9884538054466248
+            },
+            {
+              "word": " aus!",
+              "start": 69.08,
+              "end": 69.36,
+              "probability": 0.9928780198097229
+            },
+            {
+              "word": " Ich",
+              "start": 69.64,
+              "end": 69.72,
+              "probability": 0.9658416509628296
+            },
+            {
+              "word": " pack'",
+              "start": 69.72,
+              "end": 69.88,
+              "probability": 0.9635096788406372
+            },
+            {
+              "word": " aus!",
+              "start": 69.94,
+              "end": 70.2,
+              "probability": 0.996522068977356
+            }
+          ]
+        },
+        {
+          "start": 73.66,
+          "end": 75.3,
+          "text": " Ich hab' ausgepackt.",
+          "avg_logprob": -0.45341765310834437,
+          "no_speech_prob": 0.016312604770064354,
+          "words": [
+            {
+              "word": " Ich",
+              "start": 73.66,
+              "end": 74.14,
+              "probability": 0.6996934413909912
+            },
+            {
+              "word": " hab'",
+              "start": 74.14,
+              "end": 74.4,
+              "probability": 0.9342982172966003
+            },
+            {
+              "word": " ausgepackt.",
+              "start": 74.48,
+              "end": 75.3,
+              "probability": 0.9140195697546005
+            }
+          ]
+        },
+        {
+          "start": 75.54,
+          "end": 77.48,
+          "text": " Schön. Du hast ausgepackt.",
+          "avg_logprob": -0.45341765310834437,
+          "no_speech_prob": 0.016312604770064354,
+          "words": [
+            {
+              "word": " Schön.",
+              "start": 75.54,
+              "end": 75.84,
+              "probability": 0.9120439291000366
+            },
+            {
+              "word": " Du",
+              "start": 76.36,
+              "end": 76.5,
+              "probability": 0.9918984174728394
+            },
+            {
+              "word": " hast",
+              "start": 76.5,
+              "end": 76.68,
+              "probability": 0.9816442131996155
+            },
+            {
+              "word": " ausgepackt.",
+              "start": 76.68,
+              "end": 77.48,
+              "probability": 0.9599803686141968
+            }
+          ]
+        },
+        {
+          "start": 77.8,
+          "end": 79.16,
+          "text": " Und weißt du was noch?",
+          "avg_logprob": -0.45341765310834437,
+          "no_speech_prob": 0.016312604770064354,
+          "words": [
+            {
+              "word": " Und",
+              "start": 77.8,
+              "end": 78.16,
+              "probability": 0.9917490482330322
+            },
+            {
+              "word": " weißt",
+              "start": 78.16,
+              "end": 78.5,
+              "probability": 0.9787716567516327
+            },
+            {
+              "word": " du",
+              "start": 78.5,
+              "end": 78.64,
+              "probability": 0.8003926277160645
+            },
+            {
+              "word": " was",
+              "start": 78.64,
+              "end": 78.8,
+              "probability": 0.7741397619247437
+            },
+            {
+              "word": " noch?",
+              "start": 78.8,
+              "end": 79.16,
+              "probability": 0.8631061315536499
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 8.88
+    },
+    {
+      "candidate": 3,
+      "label": "resolution",
+      "start": 70.8,
+      "end": 77.8,
+      "crop": [
+        70.8,
+        77.8
+      ],
+      "segments": [
+        {
+          "start": 73.44,
+          "end": 75.48,
+          "text": " Ich hab ausgepackt.",
+          "avg_logprob": -0.41367675687955774,
+          "no_speech_prob": 0.012848623096942902,
+          "words": [
+            {
+              "word": " Ich",
+              "start": 73.44,
+              "end": 74.16,
+              "probability": 0.885242760181427
+            },
+            {
+              "word": " hab",
+              "start": 74.16,
+              "end": 74.38,
+              "probability": 0.6558377742767334
+            },
+            {
+              "word": " ausgepackt.",
+              "start": 74.38,
+              "end": 75.48,
+              "probability": 0.7716392800211906
+            }
+          ]
+        },
+        {
+          "start": 75.48,
+          "end": 75.84,
+          "text": " Schön.",
+          "avg_logprob": -0.41367675687955774,
+          "no_speech_prob": 0.012848623096942902,
+          "words": [
+            {
+              "word": " Schön.",
+              "start": 75.48,
+              "end": 75.84,
+              "probability": 0.8933811783790588
+            }
+          ]
+        },
+        {
+          "start": 76.4,
+          "end": 77.46,
+          "text": " Du hast ausgepackt.",
+          "avg_logprob": -0.41367675687955774,
+          "no_speech_prob": 0.012848623096942902,
+          "words": [
+            {
+              "word": " Du",
+              "start": 76.4,
+              "end": 76.5,
+              "probability": 0.9864553213119507
+            },
+            {
+              "word": " hast",
+              "start": 76.5,
+              "end": 76.68,
+              "probability": 0.9962781071662903
+            },
+            {
+              "word": " ausgepackt.",
+              "start": 76.68,
+              "end": 77.46,
+              "probability": 0.9788397997617722
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 6.16
+    },
+    {
+      "candidate": 4,
+      "label": "speech-before-song",
+      "start": 84,
+      "end": 93.2,
+      "crop": [
+        84,
+        93.2
+      ],
+      "segments": [
+        {
+          "start": 84.0,
+          "end": 86.86,
+          "text": " Sind wir mitten in der Einwürde?",
+          "avg_logprob": -0.3053194187782906,
+          "no_speech_prob": 0.03726065903902054,
+          "words": [
+            {
+              "word": " Sind",
+              "start": 84.0,
+              "end": 84.58,
+              "probability": 0.6181190609931946
+            },
+            {
+              "word": " wir",
+              "start": 84.58,
+              "end": 84.84,
+              "probability": 0.9917484521865845
+            },
+            {
+              "word": " mitten",
+              "start": 84.84,
+              "end": 85.32,
+              "probability": 0.9891899526119232
+            },
+            {
+              "word": " in",
+              "start": 85.32,
+              "end": 85.6,
+              "probability": 0.9948123693466187
+            },
+            {
+              "word": " der",
+              "start": 85.6,
+              "end": 85.8,
+              "probability": 0.9974086880683899
+            },
+            {
+              "word": " Einwürde?",
+              "start": 85.8,
+              "end": 86.86,
+              "probability": 0.6329989358782768
+            }
+          ]
+        },
+        {
+          "start": 87.86,
+          "end": 89.72,
+          "text": " Und weißt du, was sonst noch ist?",
+          "avg_logprob": -0.3053194187782906,
+          "no_speech_prob": 0.03726065903902054,
+          "words": [
+            {
+              "word": " Und",
+              "start": 87.86,
+              "end": 88.38,
+              "probability": 0.9633850455284119
+            },
+            {
+              "word": " weißt",
+              "start": 88.38,
+              "end": 88.68,
+              "probability": 0.9712852537631989
+            },
+            {
+              "word": " du,",
+              "start": 88.68,
+              "end": 88.8,
+              "probability": 0.9590653777122498
+            },
+            {
+              "word": " was",
+              "start": 88.84,
+              "end": 88.92,
+              "probability": 0.9776321649551392
+            },
+            {
+              "word": " sonst",
+              "start": 88.92,
+              "end": 89.14,
+              "probability": 0.9397391676902771
+            },
+            {
+              "word": " noch",
+              "start": 89.14,
+              "end": 89.4,
+              "probability": 0.8370660543441772
+            },
+            {
+              "word": " ist?",
+              "start": 89.4,
+              "end": 89.72,
+              "probability": 0.988439679145813
+            }
+          ]
+        },
+        {
+          "start": 90.26,
+          "end": 92.46,
+          "text": " Ich glaube, fast die Pizza wird kal-",
+          "avg_logprob": -0.3053194187782906,
+          "no_speech_prob": 0.03726065903902054,
+          "words": [
+            {
+              "word": " Ich",
+              "start": 90.26,
+              "end": 90.4,
+              "probability": 0.9849117994308472
+            },
+            {
+              "word": " glaube,",
+              "start": 90.4,
+              "end": 90.58,
+              "probability": 0.9913642406463623
+            },
+            {
+              "word": " fast",
+              "start": 90.72,
+              "end": 90.92,
+              "probability": 0.9752519130706787
+            },
+            {
+              "word": " die",
+              "start": 90.92,
+              "end": 91.12,
+              "probability": 0.9956919550895691
+            },
+            {
+              "word": " Pizza",
+              "start": 91.12,
+              "end": 91.38,
+              "probability": 0.9796836376190186
+            },
+            {
+              "word": " wird",
+              "start": 91.38,
+              "end": 91.62,
+              "probability": 0.9850082397460938
+            },
+            {
+              "word": " kal",
+              "start": 91.62,
+              "end": 91.88,
+              "probability": 0.34511324763298035
+            },
+            {
+              "word": "-",
+              "start": 91.88,
+              "end": 92.46,
+              "probability": 0.33024683594703674
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 6.04
+    },
+    {
+      "candidate": 4,
+      "label": "tight-speech",
+      "start": 87.5,
+      "end": 92.6,
+      "crop": [
+        87.5,
+        92.6
+      ],
+      "segments": [
+        {
+          "start": 87.5,
+          "end": 89.7,
+          "text": " Und weißt du, was sonst noch ist?",
+          "avg_logprob": -0.34557907104492186,
+          "no_speech_prob": 0.0980159118771553,
+          "words": [
+            {
+              "word": " Und",
+              "start": 87.5,
+              "end": 88.38,
+              "probability": 0.8408042192459106
+            },
+            {
+              "word": " weißt",
+              "start": 88.38,
+              "end": 88.68,
+              "probability": 0.9768143892288208
+            },
+            {
+              "word": " du,",
+              "start": 88.68,
+              "end": 88.8,
+              "probability": 0.9236662983894348
+            },
+            {
+              "word": " was",
+              "start": 88.84,
+              "end": 88.92,
+              "probability": 0.9714189767837524
+            },
+            {
+              "word": " sonst",
+              "start": 88.92,
+              "end": 89.14,
+              "probability": 0.8844553828239441
+            },
+            {
+              "word": " noch",
+              "start": 89.14,
+              "end": 89.4,
+              "probability": 0.507895290851593
+            },
+            {
+              "word": " ist?",
+              "start": 89.4,
+              "end": 89.7,
+              "probability": 0.9845227003097534
+            }
+          ]
+        },
+        {
+          "start": 90.28,
+          "end": 91.96,
+          "text": " Ich glaube, fast die Pizza wird kalt.",
+          "avg_logprob": -0.34557907104492186,
+          "no_speech_prob": 0.0980159118771553,
+          "words": [
+            {
+              "word": " Ich",
+              "start": 90.28,
+              "end": 90.4,
+              "probability": 0.978066086769104
+            },
+            {
+              "word": " glaube,",
+              "start": 90.4,
+              "end": 90.58,
+              "probability": 0.9919472336769104
+            },
+            {
+              "word": " fast",
+              "start": 90.72,
+              "end": 90.94,
+              "probability": 0.986971914768219
+            },
+            {
+              "word": " die",
+              "start": 90.94,
+              "end": 91.12,
+              "probability": 0.9961399435997009
+            },
+            {
+              "word": " Pizza",
+              "start": 91.12,
+              "end": 91.36,
+              "probability": 0.9861876964569092
+            },
+            {
+              "word": " wird",
+              "start": 91.36,
+              "end": 91.62,
+              "probability": 0.9945946335792542
+            },
+            {
+              "word": " kalt.",
+              "start": 91.62,
+              "end": 91.96,
+              "probability": 0.5513735413551331
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 4.84
+    },
+    {
+      "candidate": 6,
+      "label": "context",
+      "start": 257,
+      "end": 270.5,
+      "crop": [
+        257,
+        270.5
+      ],
+      "segments": [
+        {
+          "start": 258.1,
+          "end": 259.14,
+          "text": " Spongi?",
+          "avg_logprob": -0.5305875891988928,
+          "no_speech_prob": 0.014495454728603363,
+          "words": [
+            {
+              "word": " Spongi?",
+              "start": 258.1,
+              "end": 259.14,
+              "probability": 0.5569251974423727
+            }
+          ]
+        },
+        {
+          "start": 259.66,
+          "end": 261.28,
+          "text": " Ach, schwamm drüber.",
+          "avg_logprob": -0.5305875891988928,
+          "no_speech_prob": 0.014495454728603363,
+          "words": [
+            {
+              "word": " Ach,",
+              "start": 259.66,
+              "end": 259.96,
+              "probability": 0.19708742201328278
+            },
+            {
+              "word": " schwamm",
+              "start": 260.3,
+              "end": 260.66,
+              "probability": 0.5640615150332451
+            },
+            {
+              "word": " drüber.",
+              "start": 260.66,
+              "end": 261.28,
+              "probability": 0.9514426589012146
+            }
+          ]
+        },
+        {
+          "start": 261.92,
+          "end": 262.96,
+          "text": " Spongi?",
+          "avg_logprob": -0.5305875891988928,
+          "no_speech_prob": 0.014495454728603363,
+          "words": [
+            {
+              "word": " Spongi?",
+              "start": 261.92,
+              "end": 262.96,
+              "probability": 0.7885320583979288
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 4.67
+    },
+    {
+      "candidate": 6,
+      "label": "tight",
+      "start": 261.3,
+      "end": 268.5,
+      "crop": [
+        261.3,
+        268.5
+      ],
+      "segments": [
+        {
+          "start": 261.3,
+          "end": 262.94,
+          "text": " Sponge?",
+          "avg_logprob": -0.8448416335242135,
+          "no_speech_prob": 0.07073084264993668,
+          "words": [
+            {
+              "word": " Sponge?",
+              "start": 261.3,
+              "end": 262.94,
+              "probability": 0.43843380361795425
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 4.03
+    },
+    {
+      "candidate": 7,
+      "label": "context",
+      "start": 268.8,
+      "end": 277.9,
+      "crop": [
+        268.8,
+        277.9
+      ],
+      "segments": [
+        {
+          "start": 268.8,
+          "end": 277.88,
+          "text": " Ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah, ah,",
+          "avg_logprob": -0.1514048177485514,
+          "no_speech_prob": 0.03876643255352974,
+          "words": [
+            {
+              "word": " Ah,",
+              "start": 268.8,
+              "end": 269.12,
+              "probability": 0.0022096585016697645
+            },
+            {
+              "word": " ah,",
+              "start": 269.72,
+              "end": 272.12,
+              "probability": 0.3789379298686981
+            },
+            {
+              "word": " ah,",
+              "start": 272.68,
+              "end": 273.7,
+              "probability": 0.9638686776161194
+            },
+            {
+              "word": " ah,",
+              "start": 273.7,
+              "end": 274.24,
+              "probability": 0.9229773283004761
+            },
+            {
+              "word": " ah,",
+              "start": 274.24,
+              "end": 274.44,
+              "probability": 0.9231728911399841
+            },
+            {
+              "word": " ah,",
+              "start": 274.44,
+              "end": 274.72,
+              "probability": 0.9104707837104797
+            },
+            {
+              "word": " ah,",
+              "start": 274.72,
+              "end": 274.78,
+              "probability": 0.9153944849967957
+            },
+            {
+              "word": " ah,",
+              "start": 274.78,
+              "end": 274.78,
+              "probability": 0.9126663208007812
+            },
+            {
+              "word": " ah,",
+              "start": 274.78,
+              "end": 275.0,
+              "probability": 0.9181715250015259
+            },
+            {
+              "word": " ah,",
+              "start": 275.0,
+              "end": 275.1,
+              "probability": 0.9223877191543579
+            },
+            {
+              "word": " ah,",
+              "start": 275.1,
+              "end": 275.1,
+              "probability": 0.9376304149627686
+            },
+            {
+              "word": " ah,",
+              "start": 275.1,
+              "end": 275.1,
+              "probability": 0.9464908242225647
+            },
+            {
+              "word": " ah,",
+              "start": 275.1,
+              "end": 275.1,
+              "probability": 0.9507601261138916
+            },
+            {
+              "word": " ah,",
+              "start": 275.1,
+              "end": 275.34,
+              "probability": 0.9610167145729065
+            },
+            {
+              "word": " ah,",
+              "start": 275.34,
+              "end": 275.34,
+              "probability": 0.9569061994552612
+            },
+            {
+              "word": " ah,",
+              "start": 275.34,
+              "end": 275.44,
+              "probability": 0.9538264274597168
+            },
+            {
+              "word": " ah,",
+              "start": 275.44,
+              "end": 275.62,
+              "probability": 0.9622765183448792
+            },
+            {
+              "word": " ah,",
+              "start": 275.62,
+              "end": 275.72,
+              "probability": 0.9694057106971741
+            },
+            {
+              "word": " ah,",
+              "start": 275.72,
+              "end": 275.72,
+              "probability": 0.9705603122711182
+            },
+            {
+              "word": " ah,",
+              "start": 275.72,
+              "end": 276.28,
+              "probability": 0.9699025750160217
+            },
+            {
+              "word": " ah,",
+              "start": 276.28,
+              "end": 276.28,
+              "probability": 0.9698293805122375
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9744347929954529
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9758920669555664
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9781684279441833
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9771643280982971
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9792014360427856
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.982399582862854
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9838334918022156
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9827945828437805
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9805667996406555
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9840995073318481
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9857008457183838
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9873892068862915
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.988206684589386
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9842786192893982
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9839071035385132
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9865725040435791
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9861425757408142
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9882838726043701
+            },
+            {
+              "word": " ah,",
+              "start": 276.66,
+              "end": 276.66,
+              "probability": 0.9856486320495605
+            },
+            {
+              "word": " ah,",
+              "start": 276.86,
+              "end": 276.86,
+              "probability": 0.9848746657371521
+            },
+            {
+              "word": " ah,",
+              "start": 276.92,
+              "end": 276.92,
+              "probability": 0.9867678284645081
+            },
+            {
+              "word": " ah,",
+              "start": 276.92,
+              "end": 276.92,
+              "probability": 0.9889330863952637
+            },
+            {
+              "word": " ah,",
+              "start": 276.92,
+              "end": 276.92,
+              "probability": 0.9894450306892395
+            },
+            {
+              "word": " ah,",
+              "start": 276.92,
+              "end": 276.92,
+              "probability": 0.9908237457275391
+            },
+            {
+              "word": " ah,",
+              "start": 276.92,
+              "end": 276.92,
+              "probability": 0.9921531081199646
+            },
+            {
+              "word": " ah,",
+              "start": 276.92,
+              "end": 276.92,
+              "probability": 0.991736114025116
+            },
+            {
+              "word": " ah,",
+              "start": 276.92,
+              "end": 276.92,
+              "probability": 0.990760087966919
+            },
+            {
+              "word": " ah,",
+              "start": 276.96,
+              "end": 276.96,
+              "probability": 0.9910928606987
+            },
+            {
+              "word": " ah,",
+              "start": 276.96,
+              "end": 276.96,
+              "probability": 0.9918566942214966
+            },
+            {
+              "word": " ah,",
+              "start": 276.96,
+              "end": 276.96,
+              "probability": 0.9919066429138184
+            },
+            {
+              "word": " ah,",
+              "start": 277.0,
+              "end": 277.0,
+              "probability": 0.9925520420074463
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9949474334716797
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.994881272315979
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9942488670349121
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9945376515388489
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9942966103553772
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9941403269767761
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9946690201759338
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9946039319038391
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.99327552318573
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9947025179862976
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9938240051269531
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9940954446792603
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9938389658927917
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9943447113037109
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9934379458427429
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9938463568687439
+            },
+            {
+              "word": " ah,",
+              "start": 277.02,
+              "end": 277.02,
+              "probability": 0.9945207834243774
+            },
+            {
+              "word": " ah,",
+              "start": 277.3,
+              "end": 277.3,
+              "probability": 0.9945106506347656
+            },
+            {
+              "word": " ah,",
+              "start": 277.3,
+              "end": 277.3,
+              "probability": 0.9944082498550415
+            },
+            {
+              "word": " ah,",
+              "start": 277.3,
+              "end": 277.3,
+              "probability": 0.9945198893547058
+            },
+            {
+              "word": " ah,",
+              "start": 277.3,
+              "end": 277.3,
+              "probability": 0.9943689703941345
+            },
+            {
+              "word": " ah,",
+              "start": 277.3,
+              "end": 277.3,
+              "probability": 0.9939123392105103
+            },
+            {
+              "word": " ah,",
+              "start": 277.3,
+              "end": 277.3,
+              "probability": 0.9928871989250183
+            },
+            {
+              "word": " ah,",
+              "start": 277.3,
+              "end": 277.3,
+              "probability": 0.9939792156219482
+            },
+            {
+              "word": " ah,",
+              "start": 277.3,
+              "end": 277.3,
+              "probability": 0.9942041039466858
+            },
+            {
+              "word": " ah,",
+              "start": 277.38,
+              "end": 277.38,
+              "probability": 0.9933483004570007
+            },
+            {
+              "word": " ah,",
+              "start": 277.38,
+              "end": 277.38,
+              "probability": 0.9940717816352844
+            },
+            {
+              "word": " ah,",
+              "start": 277.38,
+              "end": 277.7,
+              "probability": 0.9932705760002136
+            },
+            {
+              "word": " ah,",
+              "start": 277.72,
+              "end": 277.72,
+              "probability": 0.9927645325660706
+            },
+            {
+              "word": " ah,",
+              "start": 277.72,
+              "end": 277.72,
+              "probability": 0.992412269115448
+            },
+            {
+              "word": " ah,",
+              "start": 277.72,
+              "end": 277.86,
+              "probability": 0.9932599663734436
+            },
+            {
+              "word": " ah,",
+              "start": 277.86,
+              "end": 277.86,
+              "probability": 0.9922744631767273
+            },
+            {
+              "word": " ah,",
+              "start": 277.86,
+              "end": 277.86,
+              "probability": 0.9928044676780701
+            },
+            {
+              "word": " ah,",
+              "start": 277.86,
+              "end": 277.86,
+              "probability": 0.9930760860443115
+            },
+            {
+              "word": " ah,",
+              "start": 277.86,
+              "end": 277.86,
+              "probability": 0.9940001964569092
+            },
+            {
+              "word": " ah,",
+              "start": 277.86,
+              "end": 277.86,
+              "probability": 0.993826687335968
+            },
+            {
+              "word": " ah,",
+              "start": 277.86,
+              "end": 277.86,
+              "probability": 0.9940066337585449
+            },
+            {
+              "word": " ah,",
+              "start": 277.86,
+              "end": 277.86,
+              "probability": 0.9937247633934021
+            },
+            {
+              "word": " ah,",
+              "start": 277.86,
+              "end": 277.86,
+              "probability": 0.9934319853782654
+            },
+            {
+              "word": " ah,",
+              "start": 277.86,
+              "end": 277.86,
+              "probability": 0.9930496215820312
+            },
+            {
+              "word": " ah,",
+              "start": 277.86,
+              "end": 277.86,
+              "probability": 0.9944730401039124
+            },
+            {
+              "word": " ah,",
+              "start": 277.86,
+              "end": 277.88,
+              "probability": 0.9945631623268127
+            },
+            {
+              "word": " ah,",
+              "start": 277.88,
+              "end": 277.88,
+              "probability": 0.9946028590202332
+            },
+            {
+              "word": " ah,",
+              "start": 277.88,
+              "end": 277.88,
+              "probability": 0.9950183629989624
+            },
+            {
+              "word": " ah,",
+              "start": 277.88,
+              "end": 277.88,
+              "probability": 0.9949175119400024
+            },
+            {
+              "word": " ah,",
+              "start": 277.88,
+              "end": 277.88,
+              "probability": 0.9949272871017456
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 22.51
+    },
+    {
+      "candidate": 7,
+      "label": "tight",
+      "start": 271.5,
+      "end": 274.0,
+      "crop": [
+        271.5,
+        274.0
+      ],
+      "segments": [
+        {
+          "start": 271.5,
+          "end": 273.54,
+          "text": " Ha, ha, ha, ha!",
+          "avg_logprob": -0.7668154348026622,
+          "no_speech_prob": 0.5730466246604919,
+          "words": [
+            {
+              "word": " Ha,",
+              "start": 271.5,
+              "end": 272.18,
+              "probability": 0.051727212965488434
+            },
+            {
+              "word": " ha,",
+              "start": 272.54,
+              "end": 272.68,
+              "probability": 0.7814731597900391
+            },
+            {
+              "word": " ha,",
+              "start": 272.68,
+              "end": 273.1,
+              "probability": 0.9901736974716187
+            },
+            {
+              "word": " ha!",
+              "start": 273.1,
+              "end": 273.54,
+              "probability": 0.9817110300064087
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 4.2
+    }
+  ],
+  "completed": 12,
+  "total": 12
+}

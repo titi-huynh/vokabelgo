@@ -133,12 +133,28 @@
       "vi": "Khoan đã, làm thế nào ấy nhỉ?"
     },
     {
+      "id": 1200163,
+      "start": 54.11,
+      "end": 54.57,
+      "speaker": "SpongeBob",
+      "text": "Hä?",
+      "vi": "Hả?"
+    },
+    {
       "id": 1200116,
       "start": 56.58,
       "end": 58.86,
       "speaker": "SpongeBob",
       "text": "Ach so, ausparken.",
       "vi": "À phải rồi, đánh xe ra khỏi chỗ đỗ."
+    },
+    {
+      "id": 1200164,
+      "start": 75.54,
+      "end": 75.96,
+      "speaker": "Thaddäus",
+      "text": "Schön.",
+      "vi": "Hay lắm."
     },
     {
       "id": 1200117,
@@ -163,6 +179,14 @@
       "speaker": "Thaddäus",
       "text": "Und weißt du, was sonst noch ist?",
       "vi": "Và cậu biết còn chuyện gì nữa không?"
+    },
+    {
+      "id": 1200165,
+      "start": 90.28,
+      "end": 92.09,
+      "speaker": "SpongeBob",
+      "text": "Ich glaube fast, die Pizza wird kalt.",
+      "vi": "Tôi nghĩ bánh pizza sắp nguội mất rồi."
     },
     {
       "id": 1200121,
@@ -767,5 +791,28 @@
       "note": "gerade noch rechtzeitig nhấn mạnh việc vừa vặn kịp giờ vào phút chót."
     }
   ],
-  "reviewMethod": "Local small and independent base ASR plus speaker frame sheets; songs/noisy shouts omitted, two additional uncertain lines omitted by Codex; no native-human full listening approval."
+  "reviewMethod": "Preserved all 60 original published cues; new dialogue supported by independent local small/medium ASR and source frames. Uncertain words and songs excluded from learning data. No human listening approval.",
+  "missingDialogueReview": {
+    "baseRevision": "20ce104c034033f47852a6e4c1c7c82f0cd6c85b",
+    "reviewJson": "qa/kino-alignment/spongebob_pizza_missing_20261027/review.json",
+    "candidateWindows": 7,
+    "preservedPublishedCues": 60,
+    "addedIds": [
+      1200163,
+      1200164,
+      1200165
+    ],
+    "humanListened": false,
+    "sourceVideoSha256": "241c5cf57f3e8fe37942d779591275629bd3674669d733d63b8348027e6b0b98",
+    "counts": {
+      "candidateWindows": 7,
+      "originalCaptions": 60,
+      "originalPracticeCues": 60,
+      "added": 3,
+      "captions": 63,
+      "practice": 63,
+      "excludedParts": 6,
+      "reviewNeededParts": 9
+    }
+  }
 }

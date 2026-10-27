@@ -1,11 +1,12 @@
 {
   "key": "spongebob_pizza",
   "duration": 301.14,
-  "practiceCues": 60,
-  "captionCues": 60,
+  "practiceCues": 63,
+  "captionCues": 63,
   "chapters": 3,
   "vocabularyCount": 18,
   "videoSha256": "241c5cf57f3e8fe37942d779591275629bd3674669d733d63b8348027e6b0b98",
   "isSelectedDialogue": true,
-  "reviewMethod": "Local small and independent base ASR plus speaker frame sheets; songs/noisy shouts omitted, two additional uncertain lines omitted by Codex; no native-human full listening approval."
+  "isExcerpt": true,
+  "reviewMethod": "Preserved all 60 original published cues; new dialogue supported by independent local small/medium ASR and source frames. Uncertain words and songs excluded from learning data. No human listening approval."
 }
