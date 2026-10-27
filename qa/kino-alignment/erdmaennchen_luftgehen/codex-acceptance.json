@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-26",
+  "status": "accepted",
+  "lessonUrl": "http://localhost:3000/?kino=luftgehen",
+  "authors": {
+    "content": "Muse",
+    "integrationAndIndependentAsr": "Antigravity",
+    "finalReview": "Codex"
+  },
+  "counts": {
+    "cues": 179,
+    "chapters": 7,
+    "focusPicks": 40,
+    "flashcards": 21
+  },
+  "finalExcludedIds": [
+    3100055,
+    3100182,
+    3100067
+  ],
+  "verified": {
+    "sourceSha256": "5e037e81b804487f054052b88d3c8adad9af8b92aa3ea0aaf3e036bc80d28278",
+    "sourceBytes": 269446928,
+    "sourceDuration": 692.44,
+    "allRuntimeCuesWithinExactlyOneChapter": true,
+    "strictNonOverlappingCues": true,
+    "reviewNeededExcludedFromAllRuntimeModes": true,
+    "unitSuitesPassed": 21,
+    "selectedBrowserTestsPassed": 8,
+    "existingFilmPracticeDataSemanticallyPreserved": true,
+    "protectedFilesUnchanged": {
+      "trudes-fahrstuhl-aligned.js": true,
+      "trudes-fahrstuhl-lesson.js": true,
+      "erdmaennchen-nudeltrick-aligned.js": true,
+      "erdmaennchen-nudeltrick-lesson.js": true,
+      "erdmaennchen-schmucklose-aligned.js": true,
+      "erdmaennchen-schmucklose-lesson.js": true
+    },
+    "desktopMobileScreenshotsInspected": true
+  },
+  "evidence": [
+    "validator-output.json",
+    "codex-unit.log",
+    "codex-browser.log",
+    "independent-picks-audit.json",
+    "codex-protected-files.json",
+    "screenshots/desktop-1440-overview.png",
+    "screenshots/mobile-390-part7-caption.png"
+  ],
+  "limits": [
+    "Selected dialogue, not a complete verbatim transcript.",
+    "ASR cross-checking is machine evidence; no native-speaker full audio review claimed.",
+    "Microphone UI tested with simulated capture.",
+    "Known pre-existing legacy Erdmännchen E2E assumptions described in README; full project E2E success not claimed.",
+    "Local integration only; no commit/push/deploy."
+  ]
+}

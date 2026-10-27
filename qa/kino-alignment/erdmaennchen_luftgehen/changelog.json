@@ -1,0 +1,330 @@
+{
+  "videoKey": "erdmaennchen_luftgehen",
+  "alias": "luftgehen",
+  "sourceFile": "qa/kino-alignment/erdmaennchen_luftgehen/muse-lesson.json",
+  "reviewedFile": "qa/kino-alignment/erdmaennchen_luftgehen/reviewed-lesson.json",
+  "summary": {
+    "museCueCount": 182,
+    "runtimeCueCount": 179,
+    "removedReviewNeededIds": [
+      3100055,
+      3100182,
+      3100067
+    ],
+    "chapterCount": 7,
+    "pickCount": 40,
+    "flashcardCount": 21,
+    "shortsProposalCount": 3
+  },
+  "changes": [
+    {
+      "type": "exclude_review_needed_cue",
+      "cueId": 3100055,
+      "before": {
+        "start": 196.6,
+        "end": 200.16,
+        "text": "Und Taterchen hat mir diese wunderschönen Ballons geschenkt.",
+        "vi": "Và Taterchen đã tặng em những quả bóng bay tuyệt đẹp này.",
+        "reviewNeeded": true
+      },
+      "after": null,
+      "reason": "Proper name 'Taterchen' has low ASR confidence and disagrees across all 3 models: medium='Taterchen' (p=0.639), small='Carterchen' (p=0.484), base='Katarchen' (p=0.560)."
+    },
+    {
+      "type": "timestamp_refinement",
+      "cueId": 3100062,
+      "before": {
+        "start": 227.12,
+        "end": 233.67
+      },
+      "after": {
+        "start": 228.6,
+        "end": 233.67
+      },
+      "reason": "Medium had a zero-duration p=0.01 artifact 'Als' at 227.12 right at the end of cue 3100061; independent small (p=0.965 at 228.66) and base (p=0.901 at 228.68) show 'als ich dann...' begins at 228.66."
+    },
+    {
+      "type": "timestamp_refinement",
+      "cueId": 3100067,
+      "before": {
+        "start": 241.29,
+        "end": 243.91
+      },
+      "after": {
+        "start": 242.15,
+        "end": 243.91
+      },
+      "reason": "Excluded preceding unaligned 'Ja genau.' at 241.01-241.81 so cue 3100067 starts right at the onset of 'Behaltet' (242.15)."
+    },
+    {
+      "type": "translation_fix",
+      "cueId": 3100078,
+      "before": {
+        "vi": "Thật ngớ ngẩn khi không biết bay, như bọn chị đây này."
+      },
+      "after": {
+        "vi": "Thật tệ khi không thể bay được như bọn chị đây này."
+      },
+      "reason": "Clarified Vietnamese translation so Vogeldame clearly boasts that she and her companion can fly and mocks those who cannot fly like them."
+    },
+    {
+      "type": "timestamp_refinement",
+      "cueId": 3100120,
+      "before": {
+        "start": 478.12,
+        "end": 479.4
+      },
+      "after": {
+        "start": 478.06,
+        "end": 479.4
+      },
+      "reason": "Included full lead-in for initial word 'Hast' (478.06-478.48), verified by independent base (p=0.525 at 478.06) and small (p=0.984 at 478.26) ASR models."
+    },
+    {
+      "type": "speaker_and_translation_fix",
+      "cueId": 3100171,
+      "before": {
+        "speaker": "Jan & Henry",
+        "vi": "Họ thật sự muốn mua tất cả bóng bay."
+      },
+      "after": {
+        "speaker": "Ballonverkäufer",
+        "vi": "Các cô thực sự muốn mua hết bóng bay sao?"
+      },
+      "reason": "Video frames 623.5s-626.8s and continuity with cue 3100172 ('Sogar die, die ich jetzt neu aufgepustet habe?') plus small ASR question punctuation prove the Ballonverkäufer is directly addressing the two Vogeldamen with formal 'Sie'."
+    },
+    {
+      "type": "speaker_fix",
+      "cueId": 3100173,
+      "before": {
+        "speaker": "Jan & Henry"
+      },
+      "after": {
+        "speaker": "Vogeldame"
+      },
+      "reason": "Video frame 630.2s and dialogue context ('Unbedingt, sie sind alle für ihn.') confirm Vogeldame is answering the Ballonverkäufer and pointing to the penguin."
+    },
+    {
+      "type": "exclude_review_needed_cue",
+      "cueId": 3100182,
+      "before": {
+        "start": 680.65,
+        "end": 681.79,
+        "text": "Alles so klein.",
+        "vi": "Mọi thứ nhỏ bé quá.",
+        "reviewNeeded": true
+      },
+      "after": null,
+      "reason": "Closing-music utterance at 677.68-681.79 has first word 'Alles' at 677.68-679.50 with p=0.022 in medium and p=0.105 in base; cue span 680.65-681.79 only covers 'so klein.'."
+    },
+    {
+      "type": "adjacent_boundary_separation",
+      "count": 13,
+      "details": [
+        {
+          "cueId": 3100002,
+          "nextCueId": 3100003,
+          "oldEnd": 31.09,
+          "newEnd": 31.08
+        },
+        {
+          "cueId": 3100011,
+          "nextCueId": 3100012,
+          "oldEnd": 62.01,
+          "newEnd": 62.0
+        },
+        {
+          "cueId": 3100029,
+          "nextCueId": 3100030,
+          "oldEnd": 122.11,
+          "newEnd": 122.1
+        },
+        {
+          "cueId": 3100040,
+          "nextCueId": 3100041,
+          "oldEnd": 151.84,
+          "newEnd": 151.83
+        },
+        {
+          "cueId": 3100051,
+          "nextCueId": 3100052,
+          "oldEnd": 189.24,
+          "newEnd": 189.23
+        },
+        {
+          "cueId": 3100098,
+          "nextCueId": 3100099,
+          "oldEnd": 361.08,
+          "newEnd": 361.07
+        },
+        {
+          "cueId": 3100107,
+          "nextCueId": 3100108,
+          "oldEnd": 390.4,
+          "newEnd": 390.39
+        },
+        {
+          "cueId": 3100117,
+          "nextCueId": 3100118,
+          "oldEnd": 428.08,
+          "newEnd": 428.07
+        },
+        {
+          "cueId": 3100129,
+          "nextCueId": 3100130,
+          "oldEnd": 507.26,
+          "newEnd": 507.25
+        },
+        {
+          "cueId": 3100140,
+          "nextCueId": 3100141,
+          "oldEnd": 535.98,
+          "newEnd": 535.97
+        },
+        {
+          "cueId": 3100152,
+          "nextCueId": 3100153,
+          "oldEnd": 564.56,
+          "newEnd": 564.55
+        },
+        {
+          "cueId": 3100161,
+          "nextCueId": 3100162,
+          "oldEnd": 594.36,
+          "newEnd": 594.35
+        },
+        {
+          "cueId": 3100171,
+          "nextCueId": 3100172,
+          "oldEnd": 625.34,
+          "newEnd": 625.33
+        }
+      ],
+      "reason": "Separated 13 exact-touching cue boundaries (end == next.start) by 0.01s to eliminate inclusive-window edgeWord bleed while preserving full word audio."
+    },
+    {
+      "type": "chapter_boundary_update",
+      "part": 1,
+      "title": "Vụ án bóng bay ngày sinh nhật",
+      "before": {
+        "start": 27.23,
+        "end": 165.15
+      },
+      "after": {
+        "start": 0.0,
+        "end": 176.18
+      },
+      "reason": "Continuous chapter boundaries 0/176.18/263.36/325.87/414.92/543.64/622.98/692.44 so every runtime cue (including 3100143 at 542.96-543.24 in Part 5) belongs to strictly 1 chapter without cutting any sentence."
+    },
+    {
+      "type": "chapter_boundary_update",
+      "part": 2,
+      "title": "Bóng bay trái tim ở công viên giải trí",
+      "before": {
+        "start": 176.18,
+        "end": 247.98
+      },
+      "after": {
+        "start": 176.18,
+        "end": 263.36
+      },
+      "reason": "Continuous chapter boundaries 0/176.18/263.36/325.87/414.92/543.64/622.98/692.44 so every runtime cue (including 3100143 at 542.96-543.24 in Part 5) belongs to strictly 1 chapter without cutting any sentence."
+    },
+    {
+      "type": "chapter_boundary_update",
+      "part": 3,
+      "title": "Hai cô chim kiêu ngạo",
+      "before": {
+        "start": 263.36,
+        "end": 317.88
+      },
+      "after": {
+        "start": 263.36,
+        "end": 325.87
+      },
+      "reason": "Continuous chapter boundaries 0/176.18/263.36/325.87/414.92/543.64/622.98/692.44 so every runtime cue (including 3100143 at 542.96-543.24 in Part 5) belongs to strictly 1 chapter without cutting any sentence."
+    },
+    {
+      "type": "chapter_boundary_update",
+      "part": 4,
+      "title": "Bắt nhầm người bán bóng",
+      "before": {
+        "start": 325.87,
+        "end": 407.2
+      },
+      "after": {
+        "start": 325.87,
+        "end": 414.92
+      },
+      "reason": "Continuous chapter boundaries 0/176.18/263.36/325.87/414.92/543.64/622.98/692.44 so every runtime cue (including 3100143 at 542.96-543.24 in Part 5) belongs to strictly 1 chapter without cutting any sentence."
+    },
+    {
+      "type": "chapter_boundary_update",
+      "part": 5,
+      "title": "Tàu lượn và kẻ trộm thật",
+      "before": {
+        "start": 414.92,
+        "end": 542.74
+      },
+      "after": {
+        "start": 414.92,
+        "end": 543.64
+      },
+      "reason": "Continuous chapter boundaries 0/176.18/263.36/325.87/414.92/543.64/622.98/692.44 so every runtime cue (including 3100143 at 542.96-543.24 in Part 5) belongs to strictly 1 chapter without cutting any sentence."
+    },
+    {
+      "type": "chapter_boundary_update",
+      "part": 6,
+      "title": "Vòng cổ rơi xuống hồ",
+      "before": {
+        "start": 543.64,
+        "end": 618.5
+      },
+      "after": {
+        "start": 543.64,
+        "end": 622.98
+      },
+      "reason": "Continuous chapter boundaries 0/176.18/263.36/325.87/414.92/543.64/622.98/692.44 so every runtime cue (including 3100143 at 542.96-543.24 in Part 5) belongs to strictly 1 chapter without cutting any sentence."
+    },
+    {
+      "type": "chapter_boundary_update",
+      "part": 7,
+      "title": "Chim cánh cụt bay lên",
+      "before": {
+        "start": 622.98,
+        "end": 681.79
+      },
+      "after": {
+        "start": 622.98,
+        "end": 692.44
+      },
+      "reason": "Continuous chapter boundaries 0/176.18/263.36/325.87/414.92/543.64/622.98/692.44 so every runtime cue (including 3100143 at 542.96-543.24 in Part 5) belongs to strictly 1 chapter without cutting any sentence."
+    },
+    {
+      "type": "flashcard_fix",
+      "cueId": 3100102,
+      "before": {
+        "term": "der Ballonverkäufer",
+        "meaning": "người bán bóng bay",
+        "example": "Ja, ich verkaufe diese wunderschönen Ballons.",
+        "grammar": "Danh từ ghép chỉ nghề: Ballon + Verkäufer",
+        "note": "Người bị bắt nhầm trong tập.",
+        "cueId": 3100102
+      },
+      "after": {
+        "term": "verkaufen",
+        "meaning": "bán",
+        "example": "Ja, ich verkaufe diese wunderschönen Ballons.",
+        "grammar": "Động từ yếu: verkauft; verkaufte; hat verkauft",
+        "note": "Lời người bán bóng bay giới thiệu những chùm bóng trong công viên.",
+        "cueId": 3100102
+      },
+      "reason": "Cue 3100102 ('Ja, ich verkaufe diese wunderschönen Ballons.') contains the conjugated verb 'verkaufe', not the noun 'Ballonverkäufer'; updated flashcard target to 'verkaufen' while keeping example verbatim."
+    },
+    {
+      "type": "codex_final_editorial_exclusion",
+      "cueId": 3100067,
+      "reason": "All three ASR models disagree on a low-confidence word between 'ihr' and 'hier' (zwar/zwei). Omitting that word for grammatical convenience does not establish the exact spoken answer. Exclude the cue, its focus pick and its vocabulary card."
+    }
+  ]
+}

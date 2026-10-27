@@ -8,6 +8,8 @@ const KinoData = (() => {
     trudes_fahrstuhl: 'trudes-fahrstuhl-aligned.js',
     erdmaennchen_nudeltrick: 'erdmaennchen-nudeltrick-aligned.js',
     erdmaennchen_schmucklose: 'erdmaennchen-schmucklose-aligned.js',
+    erdmaennchen_luftgehen: 'erdmaennchen-luftgehen-aligned.js',
+    erdmaennchen_platte_reifen: 'erdmaennchen-platte-reifen-aligned.js',
     pinguine_popcorn_panik: 'pinguine-popcorn-panik-aligned.js',
     courage_diamantraub: 'courage-diamantraub-aligned.js',
     spongebob_pizza: 'spongebob-pizza-aligned.js',
@@ -66,6 +68,8 @@ const KinoData = (() => {
       case 'trudes_fahrstuhl': return TRUDES_FAHRSTUHL_CAPTION_CUES;
       case 'erdmaennchen_nudeltrick': return ERDMAENNCHEN_NUDELTRICK_CAPTION_CUES;
       case 'erdmaennchen_schmucklose': return ERDMAENNCHEN_SCHMUCKLOSE_CAPTION_CUES;
+      case 'erdmaennchen_luftgehen': return ERDMAENNCHEN_LUFTGEHEN_CAPTION_CUES;
+      case 'erdmaennchen_platte_reifen': return ERDMAENNCHEN_PLATTE_REIFEN_CAPTION_CUES;
       case 'pinguine_popcorn_panik': return PINGUINE_POPCORN_PANIK_CAPTION_CUES;
       case 'courage_diamantraub': return COURAGE_DIAMANTRAUB_CAPTION_CUES;
       case 'spongebob_pizza': return SPONGEBOB_PIZZA_CAPTION_CUES;
@@ -98,6 +102,8 @@ const KinoData = (() => {
       case 'trudes_fahrstuhl': return TRUDES_FAHRSTUHL_ALIGNED_UTTERANCES;
       case 'erdmaennchen_nudeltrick': return ERDMAENNCHEN_NUDELTRICK_ALIGNED_UTTERANCES;
       case 'erdmaennchen_schmucklose': return ERDMAENNCHEN_SCHMUCKLOSE_ALIGNED_UTTERANCES;
+      case 'erdmaennchen_luftgehen': return ERDMAENNCHEN_LUFTGEHEN_ALIGNED_UTTERANCES;
+      case 'erdmaennchen_platte_reifen': return ERDMAENNCHEN_PLATTE_REIFEN_ALIGNED_UTTERANCES;
       case 'pinguine_popcorn_panik': return PINGUINE_POPCORN_PANIK_ALIGNED_UTTERANCES;
       case 'courage_diamantraub': return COURAGE_DIAMANTRAUB_ALIGNED_UTTERANCES;
       case 'spongebob_pizza': return SPONGEBOB_PIZZA_ALIGNED_UTTERANCES;

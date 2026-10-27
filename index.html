@@ -8282,6 +8282,24 @@ input.search:focus {
                   <span class="kino-dd-item-badge" id="kinoBadge_erdmaennchen_schmucklose">7 phần</span>
                   <span class="kino-dd-item-check">✓</span>
                 </button>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_erdmaennchen_luftgehen" data-key="erdmaennchen_luftgehen" onclick="selectKinoMovie('erdmaennchen_luftgehen')">
+                  <span class="kino-dd-item-icon">🎈</span>
+                  <div class="kino-dd-item-info">
+                    <span class="kino-dd-item-name">Zum in die Luft gehen</span>
+                    <span class="kino-dd-item-sub">7 phần · Những chùm bóng bay biến mất</span>
+                  </div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_erdmaennchen_luftgehen">7 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
+                <button type="button" class="kino-dropdown-item" id="kinoDD_erdmaennchen_platte_reifen" data-key="erdmaennchen_platte_reifen" onclick="selectKinoMovie('erdmaennchen_platte_reifen')">
+                  <span class="kino-dd-item-icon">🚲</span>
+                  <div class="kino-dd-item-info">
+                    <span class="kino-dd-item-name">Platte Reifen</span>
+                    <span class="kino-dd-item-sub">7 phần · Lốp xe xẹp lép sau cơn mưa</span>
+                  </div>
+                  <span class="kino-dd-item-badge" id="kinoBadge_erdmaennchen_platte_reifen">7 phần</span>
+                  <span class="kino-dd-item-check">✓</span>
+                </button>
                 <div class="kino-dd-group-divider"></div>
                 <div class="kino-dd-group-divider"></div>
                 <div class="kino-dd-group-header">🐧 Die Pinguine aus Madagascar</div>
@@ -14463,6 +14481,8 @@ VIDEO_FLASHCARDS.push(...HANS_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...TRUDES_FAHRSTUHL_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...ERDMAENNCHEN_NUDELTRICK_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...ERDMAENNCHEN_SCHMUCKLOSE_LESSON.flashcards);
+VIDEO_FLASHCARDS.push(...ERDMAENNCHEN_LUFTGEHEN_LESSON.flashcards);
+VIDEO_FLASHCARDS.push(...ERDMAENNCHEN_PLATTE_REIFEN_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...PINGUINE_POPCORN_PANIK_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...COURAGE_DIAMANTRAUB_LESSON.flashcards);
 VIDEO_FLASHCARDS.push(...SPONGEBOB_PIZZA_LESSON.flashcards);
@@ -19132,6 +19152,8 @@ const KINO_VIDEOS = {
   trudes_fahrstuhl: { ...TRUDES_FAHRSTUHL_LESSON.video, get defaultSegs() { return TRUDES_FAHRSTUHL_ALIGNED_UTTERANCES; } },
   erdmaennchen_nudeltrick: { ...ERDMAENNCHEN_NUDELTRICK_LESSON.video, get defaultSegs() { return ERDMAENNCHEN_NUDELTRICK_ALIGNED_UTTERANCES; } },
   erdmaennchen_schmucklose: { ...ERDMAENNCHEN_SCHMUCKLOSE_LESSON.video, get defaultSegs() { return ERDMAENNCHEN_SCHMUCKLOSE_ALIGNED_UTTERANCES; } },
+  erdmaennchen_luftgehen: { ...ERDMAENNCHEN_LUFTGEHEN_LESSON.video, get defaultSegs() { return ERDMAENNCHEN_LUFTGEHEN_ALIGNED_UTTERANCES; } },
+  erdmaennchen_platte_reifen: { ...ERDMAENNCHEN_PLATTE_REIFEN_LESSON.video, get defaultSegs() { return ERDMAENNCHEN_PLATTE_REIFEN_ALIGNED_UTTERANCES; } },
   pinguine_popcorn_panik: { ...PINGUINE_POPCORN_PANIK_LESSON.video, get defaultSegs() { return PINGUINE_POPCORN_PANIK_ALIGNED_UTTERANCES; } },
   courage_diamantraub: { ...COURAGE_DIAMANTRAUB_LESSON.video, get defaultSegs() { return COURAGE_DIAMANTRAUB_ALIGNED_UTTERANCES; } },
   spongebob_pizza: { ...SPONGEBOB_PIZZA_LESSON.video, get defaultSegs() { return SPONGEBOB_PIZZA_ALIGNED_UTTERANCES; } },

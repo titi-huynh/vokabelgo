@@ -8,6 +8,8 @@ const films = [
   ['trudes-fahrstuhl', 'TRUDES_FAHRSTUHL', 'trudes_fahrstuhl'],
   ['erdmaennchen-nudeltrick', 'ERDMAENNCHEN_NUDELTRICK', 'erdmaennchen_nudeltrick'],
   ['erdmaennchen-schmucklose', 'ERDMAENNCHEN_SCHMUCKLOSE', 'erdmaennchen_schmucklose'],
+  ['erdmaennchen-luftgehen', 'ERDMAENNCHEN_LUFTGEHEN', 'erdmaennchen_luftgehen'],
+  ['erdmaennchen-platte-reifen', 'ERDMAENNCHEN_PLATTE_REIFEN', 'erdmaennchen_platte_reifen'],
   ['pinguine-popcorn-panik', 'PINGUINE_POPCORN_PANIK', 'pinguine_popcorn_panik'],
   ['courage-diamantraub', 'COURAGE_DIAMANTRAUB', 'courage_diamantraub'],
   ['spongebob-pizza', 'SPONGEBOB_PIZZA', 'spongebob_pizza'],

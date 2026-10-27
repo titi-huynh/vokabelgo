@@ -1,0 +1,201 @@
+{
+  "baseMain": "ab589604ed8348ee626fe8758c32272ed7664364",
+  "episodes": [
+    {
+      "key": "erdmaennchen_platte_reifen",
+      "sourceCount": 241,
+      "publishedCount": 223,
+      "parts": 7,
+      "picks": 36,
+      "flashcards": 22,
+      "removed": [
+        {
+          "id": 3200030,
+          "start": 116.99,
+          "end": 119.45,
+          "text": "Ich krieg doch schon so schnell ich kann in die Pedale.",
+          "reason": "reviewNeeded cue #1: Verb 'krieg' has low confidence across models (medium p=0.815, small p=0.512, base p=0.466; base drops 'schon') and is likely a misrecognition of 'tret(e)' ('in die Pedale treten'). Excluded from runtime without grammatical guessing.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200033,
+          "start": 122.85,
+          "end": 125.15,
+          "text": "Wir wollen zum Badesee.",
+          "reason": "Unverified ASR word: 'wollen' has p=0.008 in medium and p=0.016 in small while base transcribes 'Wir haben da alle!' over overlapping hamster voices rushing past in frame cue_3200033_124_0.jpg. Excluded from runtime.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200039,
+          "start": 142.67,
+          "end": 145.71,
+          "text": "Weil kann es nicht sein. Ich bin schon nass geworden.",
+          "reason": "reviewNeeded cue #2: Initial word 'Weil' has p=0.126 in medium and p=0.264 in small, while base outputs 'Weil kannst du dich sein!'. Excluded from runtime without guessing 'Weit'.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200091,
+          "start": 305.28,
+          "end": 306.9,
+          "text": "Ich schreibe einen Straf.",
+          "reason": "reviewNeeded cue #3: Final noun is truncated/disagreed across all 3 models (medium: 'Straf.' p=0.847, small: 'Straftat.' p=0.830, base: 'Strafzett!' p=0.679). Excluded from runtime.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200116,
+          "start": 396.31,
+          "end": 398.53,
+          "text": "Die Reifen in Ihrem Auto sind auch platt.",
+          "reason": "Flagged pick in Part 3 ('Die Reifen in Ihrem Auto sind auch platt.'): Initial 'Die' has p=0.248 in medium while small (p=0.122) and base (p=0.153) prefix 'Na, die', and all 3 models transcribe 'in Ihrem Auto' instead of standard 'an Ihrem Auto'. Excluded from runtime and Part 3 picks rather than grammatically rewriting.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200124,
+          "start": 414.58,
+          "end": 416.2,
+          "text": "Für jeden Plattenreifen ein.",
+          "reason": "Flagged cue ('Für jeden Plattenreifen ein.'): Colloquial reduction of 'Für jeden platten Reifen einen' with 'ein' at p=0.676 (medium), p=0.699 (small), p=0.540 (base). Excluded from runtime rather than grammatically rewriting.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200134,
+          "start": 437.52,
+          "end": 441.16,
+          "text": "Der Igel hat so scharfe und spitze Stachel.",
+          "reason": "Flagged pick in Part 4 ('Der Igel hat so scharfe und spitze Stachel.'): Medium omits 'doch' ('so' p=0.218) whereas both small (p=0.966) and base (p=0.922) transcribe 'hat doch so', and the plural noun is transcribed as singular 'Stachel.' (medium/small) or 'Stache.' (base) instead of 'Stacheln'. Excluded from runtime and Part 4 picks.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200161,
+          "start": 504.25,
+          "end": 506.59,
+          "text": "Jetzt kann ich niemanden mehr piekeln.",
+          "reason": "Flagged cue ('Jetzt kann ich niemanden mehr piekeln.'): ASR models disagree between 'piekeln' (medium p=0.781, small p=0.599 with 'Jetzt' p=0.412) and 'pieken' (base p=0.663). Excluded from runtime.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200186,
+          "start": 569.64,
+          "end": 570.84,
+          "text": "Ich zeig's Ihnen.",
+          "reason": "Flagged pick in Part 5 ('Ich zeig\\'s Ihnen.'): Video frame cue_3200186_570_2.jpg shows the two hamsters turning to each other (not addressing Jan & Henry with formal Sie, as they use 'ihr' in 3200175 and 3200187), and all 3 ASR models disagree with low probability (medium: 'Ich zeig\\'s Ihnen.' with 'Ich' p=0.237; small: 'Zeig sie den.' with 'den.' p=0.237; base: 'Zeig sie dir!' with 'dir!' p=0.226). Excluded from runtime and Part 5 picks.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200212,
+          "start": 654.7,
+          "end": 656.96,
+          "text": "Damit geht ihr gleich baden.",
+          "reason": "Flagged pick in Part 6 ('Damit geht ihr gleich baden.'): Video frame cue_3200212_655_8.jpg shows the Hamster speaking (about literally going bathing in the lake right away), not Jan & Henry, and all 3 ASR models disagree with very low probability (medium: 'geht' p=0.080; small: 'Damit ihr gleich badet!' with 'Damit' p=0.141; base: 'Da bin ich nicht gleich paddend!' with 'bin' p=0.159). Excluded from runtime and Part 6 picks.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200214,
+          "start": 666.42,
+          "end": 669.42,
+          "text": "Kann mit der Luftpumpe lustige Blasen machen.",
+          "reason": "reviewNeeded cue #4: Missing subject in medium ('Kann' p=0.602) while small transcribes 'ich kann' and base transcribes 'Ich kann mit der Luft voll lustigen Blasen machen!'. Excluded from runtime.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200220,
+          "start": 694.5,
+          "end": 697.38,
+          "text": "Wir waren mit dem Igel und den Hamster am See.",
+          "reason": "Unverified dative plural inflection ('Wir waren mit dem Igel und den Hamster am See.'): 'Hamster' has p=0.491 in medium and lacks the required dative plural '-n' ('den Hamstern'). Excluded from runtime rather than grammatically rewriting.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200227,
+          "start": 708.82,
+          "end": 709.3,
+          "text": "Nein.",
+          "reason": "Low-confidence utterance ('Nein.' at 708.82-709.30): 'Nein.' has p=0.219 in medium and p=0.313 in small while base transcribes 'Äh, nein...' across 708.00-709.76. Excluded from runtime.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200228,
+          "start": 709.82,
+          "end": 710.54,
+          "text": "Dann war es ihr.",
+          "reason": "6th uncertain item ('Dann war es ihr.' at 709.82-710.54): All 3 ASR models disagree with low confidence (medium: 'Dann war es ihr.' p=0.557; small: 'Dann wart ihr\\'s!' p=0.531/0.475; base: 'Dann war dir\\'s?' p=0.645/0.448). Frame cue_3200228_710_1.jpg shows the Kommissar pointing at Jan & Henry ('ihr' = các cậu), not 'bọn họ'. Excluded from runtime without guessing the German verb/pronoun.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200237,
+          "start": 723.6,
+          "end": 729.12,
+          "text": "Ja, das würde ich auch gerne tun, aber mit den platten Reifen und der vollen Scheibe ist das etwas schwierig.",
+          "reason": "reviewNeeded cue #5: Models disagree on 'mit den platten Reifen' (medium p=0.577) vs 'mit dem Plattenreifen' (small p=0.509) vs 'mit dem Platten reifen' (base), with 'ist' at p=0.392 in medium and 'Das' at p=0.143 in base. Excluded from runtime.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200239,
+          "start": 738.82,
+          "end": 740.1,
+          "text": "Ja, lustig.",
+          "reason": "Closing-credits utterance over music (738.82-740.10): 'Ja,' has p=0.247 in medium while small and base reverse the word order ('lustig. Ja!'). Excluded from runtime.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200240,
+          "start": 740.84,
+          "end": 743.38,
+          "text": "Ja, ja, schneller.",
+          "reason": "Closing-credits utterance over music (740.84-743.38): 'ja,' has p=0.029 in small and 'schneller' has p=0.393 in medium / p=0.145 in base. Excluded from runtime.",
+          "decisionType": "exclude_unverified_cue"
+        },
+        {
+          "id": 3200241,
+          "start": 746.38,
+          "end": 749.02,
+          "text": "Herr Kommissar, wir haben das andere Fahrrad vergessen.",
+          "reason": "Closing-credits utterance over music (746.38-749.02): 'Herr' has p=0.053 and 'andere' has p=0.431 in medium, completely missed by small and garbled as 'Verkommelt\\'s ab, wir haben jetzt unsere Mehrheit vergesst!' by base. Excluded from runtime.",
+          "decisionType": "exclude_unverified_cue"
+        }
+      ],
+      "merged": [],
+      "split": [],
+      "newCueIds": [],
+      "evidence": "qa/kino-alignment/erdmaennchen_platte_reifen/changelog.json"
+    },
+    {
+      "key": "erdmaennchen_luftgehen",
+      "sourceCount": 182,
+      "publishedCount": 179,
+      "parts": 7,
+      "picks": 40,
+      "flashcards": 21,
+      "removed": [
+        {
+          "id": 3100055,
+          "start": 196.6,
+          "end": 200.16,
+          "text": "Und Taterchen hat mir diese wunderschönen Ballons geschenkt.",
+          "reason": "Proper name 'Taterchen' has low ASR confidence and disagrees across all 3 models: medium='Taterchen' (p=0.639), small='Carterchen' (p=0.484), base='Katarchen' (p=0.560).",
+          "decisionType": "exclude_review_needed_cue"
+        },
+        {
+          "id": 3100067,
+          "start": 241.29,
+          "end": 243.91,
+          "text": "Behaltet ihr hier mal alles im Auge.",
+          "reason": "All three ASR models disagree on a low-confidence word between 'ihr' and 'hier' (zwar/zwei). Omitting that word for grammatical convenience does not establish the exact spoken answer. Exclude the cue, its focus pick and its vocabulary card.",
+          "decisionType": "codex_final_editorial_exclusion"
+        },
+        {
+          "id": 3100182,
+          "start": 680.65,
+          "end": 681.79,
+          "text": "Alles so klein.",
+          "reason": "Closing-music utterance at 677.68-681.79 has first word 'Alles' at 677.68-679.50 with p=0.022 in medium and p=0.105 in base; cue span 680.65-681.79 only covers 'so klein.'.",
+          "decisionType": "exclude_review_needed_cue"
+        }
+      ],
+      "merged": [],
+      "split": [],
+      "newCueIds": [],
+      "evidence": "qa/kino-alignment/erdmaennchen_luftgehen/changelog.json"
+    }
+  ]
+}

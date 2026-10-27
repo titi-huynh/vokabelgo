@@ -1,0 +1,143 @@
+{
+  "status": "accepted",
+  "videoKey": "erdmaennchen_luftgehen",
+  "alias": "luftgehen",
+  "localUrl": "http://localhost:3000/?kino=luftgehen",
+  "completedAt": "2026-10-26T08:16:00Z",
+  "sourcehash": {
+    "file": "video/erdmaennchen_luftgehen.mp4",
+    "sizeBytes": 269446928,
+    "sha256": "5E037E81B804487F054052B88D3C8ADAD9AF8B92AA3EA0AAF3E036BC80D28278",
+    "durationSeconds": 692.44,
+    "videoCodec": "h264 (High, 1280x720, 50fps)",
+    "audioCodec": "aac (LC, 48000 Hz, stereo)",
+    "earshotMeasure": {
+      "integratedLufs": -16.1,
+      "truePeakDbtp": -0.9,
+      "lraLu": 7.8,
+      "noiseFloorDbfs": -35.8,
+      "clippedSamples": 0
+    }
+  },
+  "counts": {
+    "museCues": 182,
+    "runtimeCues": 179,
+    "removedReviewNeeded": 3,
+    "removedReviewNeededIds": [
+      3100055,
+      3100182,
+      3100067
+    ],
+    "chapters": 7,
+    "picks": 40,
+    "picksPerChapter": [
+      6,
+      5,
+      5,
+      6,
+      7,
+      6,
+      5
+    ],
+    "flashcards": 21,
+    "posters": 7,
+    "shortsProposalRetainedInQa": 3
+  },
+  "filesChanged": [
+    "video/erdmaennchen_luftgehen.mp4",
+    "erdmaennchen-luftgehen-aligned.js",
+    "erdmaennchen-luftgehen-lesson.js",
+    "kino-data.js",
+    "kino-chapter-data.js",
+    "kino-practice-data.js",
+    "index.html",
+    "scripts/build-kino-metadata.cjs",
+    "kino-metadata.js",
+    "scripts/build-kino-posters.cjs",
+    "assets/kino-posters/erdmaennchen_luftgehen-1.jpg",
+    "assets/kino-posters/erdmaennchen_luftgehen-2.jpg",
+    "assets/kino-posters/erdmaennchen_luftgehen-3.jpg",
+    "assets/kino-posters/erdmaennchen_luftgehen-4.jpg",
+    "assets/kino-posters/erdmaennchen_luftgehen-5.jpg",
+    "assets/kino-posters/erdmaennchen_luftgehen-6.jpg",
+    "assets/kino-posters/erdmaennchen_luftgehen-7.jpg",
+    "e2e/kino-erdmaennchen-luftgehen.spec.js",
+    "e2e/kino-catalog.spec.js",
+    "qa/kino-alignment/erdmaennchen_luftgehen/reviewed-lesson.json",
+    "qa/kino-alignment/erdmaennchen_luftgehen/changelog.json",
+    "qa/kino-alignment/erdmaennchen_luftgehen/independent-picks-audit.json",
+    "qa/kino-alignment/erdmaennchen_luftgehen/anti-asr-small-windows.json",
+    "qa/kino-alignment/erdmaennchen_luftgehen/anti-asr-base-windows.json",
+    "qa/kino-alignment/erdmaennchen_luftgehen/ffprobe-source.json",
+    "qa/kino-alignment/erdmaennchen_luftgehen/earshot-measure.json",
+    "qa/kino-alignment/erdmaennchen_luftgehen/validator-output.json",
+    "qa/kino-alignment/erdmaennchen_luftgehen/anti-integration-report.md",
+    "qa/kino-alignment/erdmaennchen_luftgehen/integration-status.json"
+  ],
+  "checks": {
+    "museOriginalUntouched": true,
+    "reviewNeededExcludedFromRuntime": true,
+    "cueIdsPreservedWithoutRenumbering": true,
+    "continuousChapterBoundaries": [
+      0,
+      176.18,
+      263.36,
+      325.87,
+      414.92,
+      543.64,
+      622.98,
+      692.44
+    ],
+    "cue3100143AssignedToPart5": true,
+    "cue3100078ViFixed": "Thật tệ khi không thể bay được như bọn chị đây này.",
+    "cue3100171SpeakerAndViFixed": {
+      "speaker": "Ballonverkäufer",
+      "vi": "Các cô thực sự muốn mua hết bóng bay sao?"
+    },
+    "flashcard3100102UpdatedToVerkaufen": true,
+    "independentAsrAuditCompleted": {
+      "models": [
+        "small",
+        "base"
+      ],
+      "windows": 32,
+      "picksAudited": 41
+    },
+    "validatorScript": {
+      "command": "node qa/kino-alignment/erdmaennchen_luftgehen/validate_integration.js",
+      "passed": true
+    },
+    "unitTests": {
+      "command": "npm run test:unit",
+      "suitesPassed": 21,
+      "suitesTotal": 21,
+      "passed": true,
+      "log": "codex-unit.log"
+    },
+    "e2eTests": {
+      "command": "npx playwright test e2e/kino-erdmaennchen-luftgehen.spec.js e2e/kino-catalog.spec.js --output=qa/kino-alignment/erdmaennchen_luftgehen/playwright-out --reporter=list",
+      "passed": true,
+      "testsPassed": 8,
+      "testsTotal": 8,
+      "screenshots": [
+        "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/desktop-1440-overview.png",
+        "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/desktop-1440-part3-captions.png",
+        "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/desktop-1440-dictation-practice.png",
+        "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/desktop-1440-flashcards.png",
+        "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/mobile-390-part7-caption.png",
+        "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/mobile-390-speaking-recorded.png",
+        "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/viewport-320-part7.png",
+        "qa/kino-alignment/erdmaennchen_luftgehen/screenshots/viewport-768-part7.png"
+      ],
+      "log": "codex-browser.log"
+    }
+  },
+  "limitations": [
+    "No human-ear listening is claimed; all verification relies on 3 ASR models (medium, small, base), earshot.measure audio telemetry, and extracted video frames.",
+    "Token support between ASR models is reported as cross-model consistency evidence, never as human-verified accuracy rate.",
+    "Microphone recording in Playwright uses Chromium's simulated audio capture (--use-fake-device-for-media-stream), which verifies the MediaRecorder/UI pipeline and blob URL creation but does not prove physical microphone capture.",
+    "The 3 proposed shorts from muse-lesson.json are preserved in reviewed-lesson.json and QA documentation without modifying the live shorts feed structure."
+  ],
+  "finalEditorialExclusion": 3100067,
+  "codexAcceptanceFile": "qa/kino-alignment/erdmaennchen_luftgehen/codex-acceptance.json"
+}
