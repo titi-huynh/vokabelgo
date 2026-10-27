@@ -121,6 +121,26 @@ const K_ON_S01E01_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
+    "id": 1100298,
+    "parentId": 1100298,
+    "start": 271.49,
+    "end": 274.91,
+    "speaker": "Yui",
+    "text": "Ich hab schon das Gefühl, dass ich endlich irgendwas tun müsste.",
+    "vi": "Tớ cũng thấy mình phải làm gì đó rồi.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100299,
+    "parentId": 1100299,
+    "start": 276.67,
+    "end": 278.09,
+    "speaker": "Yui",
+    "text": "Wenn ich nur wüsste, was.",
+    "vi": "Giá mà tớ biết phải làm gì.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
     "id": 1100014,
     "parentId": 1100014,
     "start": 278.52,
@@ -291,20 +311,50 @@ const K_ON_S01E01_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
+    "id": 1100300,
+    "parentId": 1100300,
+    "start": 353.77,
+    "end": 355.73,
+    "speaker": "Sawako",
+    "text": "Verteil doch bitte schon mal die Kopien, ja?",
+    "vi": "Em phát giúp cô mấy bản photo trước nhé?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
     "id": 1100033,
     "parentId": 1100033,
-    "start": 355.37,
-    "end": 361.18,
+    "start": 359.88,
+    "end": 360.68,
     "speaker": "Nhân vật",
     "text": "Die Kopien?",
     "vi": "Các bản photo ạ?",
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
+    "id": 1100301,
+    "parentId": 1100301,
+    "start": 361.42,
+    "end": 364.3,
+    "speaker": "Yui",
+    "text": "Ich war mit den Gedanken woanders. Entschuldigung.",
+    "vi": "Em mải nghĩ chuyện khác mất. Em xin lỗi cô ạ.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100302,
+    "parentId": 1100302,
+    "start": 370.87,
+    "end": 372.01,
+    "speaker": "Nhân vật",
+    "text": "Was für 'ne Schnecke!",
+    "vi": "Chậm như rùa ấy!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
     "id": 1100036,
     "parentId": 1100036,
-    "start": 371.8,
-    "end": 373.02,
+    "start": 372.63,
+    "end": 372.99,
     "speaker": "Nhân vật",
     "text": "Oh nein!",
     "vi": "Ôi không!",
@@ -501,6 +551,56 @@ const K_ON_S01E01_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
+    "id": 1100303,
+    "parentId": 1100303,
+    "start": 449.93,
+    "end": 451.37,
+    "speaker": "Tsumugi",
+    "text": "Nein, ich dachte, hier ist der Chor.",
+    "vi": "Không, tớ tưởng đây là câu lạc bộ hợp xướng.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100304,
+    "parentId": 1100304,
+    "start": 451.57,
+    "end": 453.23,
+    "speaker": "Ritsu",
+    "text": "Wolltest du Mitglied im Musikclub werden?",
+    "vi": "Cậu định gia nhập câu lạc bộ âm nhạc à?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100305,
+    "parentId": 1100305,
+    "start": 453.79,
+    "end": 455.17,
+    "speaker": "Tsumugi",
+    "text": "Ich wollte eigentlich in den Chor.",
+    "vi": "Thật ra tớ muốn vào câu lạc bộ hợp xướng.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100306,
+    "parentId": 1100306,
+    "start": 455.17,
+    "end": 456.69,
+    "speaker": "Ritsu",
+    "text": "Wir haben zu wenige Mitglieder.",
+    "vi": "Bọn tớ đang thiếu thành viên.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100307,
+    "parentId": 1100307,
+    "start": 460.05,
+    "end": 463.01,
+    "speaker": "Mio",
+    "text": "Du vertreibst sie nur mit deiner Bettelei und rabiaten Art.",
+    "vi": "Cậu cứ năn nỉ rồi lôi kéo như thế thì cậu ấy sợ chạy mất thôi.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
     "id": 1100062,
     "parentId": 1100062,
     "start": 463.15,
@@ -508,6 +608,16 @@ const K_ON_S01E01_CAPTION_CUES = [
     "speaker": "Tsumugi",
     "text": "Also ich mach mich auf den Weg.",
     "vi": "Vậy tớ về đây nhé.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100308,
+    "parentId": 1100308,
+    "start": 490.48,
+    "end": 493.62,
+    "speaker": "Ritsu",
+    "text": "An dem Tag, als wir zusammen auf dem Live-Konzert waren.",
+    "vi": "Cái hôm bọn mình cùng đi xem hòa nhạc ấy.",
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
@@ -778,6 +888,26 @@ const K_ON_S01E01_CAPTION_CUES = [
     "speaker": "Ritsu",
     "text": "Jetzt fehlt uns nur noch eine Gitarristin.",
     "vi": "Giờ chỉ còn thiếu một tay guitar nữa thôi.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100309,
+    "parentId": 1100309,
+    "start": 559.92,
+    "end": 560.44,
+    "speaker": "Nodoka",
+    "text": "Yui!",
+    "vi": "Yui!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100310,
+    "parentId": 1100310,
+    "start": 561.02,
+    "end": 564.84,
+    "speaker": "Yui",
+    "text": "Nodoka, ich glaube, jetzt, wo ich Oberschülerin bin, sollte ich endlich was tun.",
+    "vi": "Nodoka này, giờ đã lên cấp ba rồi, tớ nghĩ mình phải làm gì đó mới được.",
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
@@ -1113,11 +1243,61 @@ const K_ON_S01E01_CAPTION_CUES = [
   {
     "id": 1100128,
     "parentId": 1100128,
-    "start": 669.5,
-    "end": 672.5,
+    "start": 677.02,
+    "end": 679.62,
     "speaker": "Yui",
     "text": "Der Musikclub sucht noch Mitglieder.",
     "vi": "'Câu lạc bộ âm nhạc đang tuyển thêm thành viên.'",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100311,
+    "parentId": 1100311,
+    "start": 686.48,
+    "end": 688.72,
+    "speaker": "Nhân vật",
+    "text": "Das machst du sehr gut, Yui-chan.",
+    "vi": "Giỏi lắm, Yui!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100312,
+    "parentId": 1100312,
+    "start": 701.49,
+    "end": 704.97,
+    "speaker": "Yui",
+    "text": "Ich habe beschlossen, Mitglied im Musikclub zu werden.",
+    "vi": "Tớ quyết định vào câu lạc bộ âm nhạc rồi.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100313,
+    "parentId": 1100313,
+    "start": 705.57,
+    "end": 708.19,
+    "speaker": "Nodoka",
+    "text": "Ach ja? Und was genau musst du da so machen, Yui?",
+    "vi": "Thế à? Vậy cụ thể ở đó cậu phải làm gì, Yui?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100314,
+    "parentId": 1100314,
+    "start": 708.77,
+    "end": 709.79,
+    "speaker": "Yui",
+    "text": "Keine Ahnung.",
+    "vi": "Tớ cũng chẳng biết nữa.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100315,
+    "parentId": 1100315,
+    "start": 711.41,
+    "end": 715.71,
+    "speaker": "Yui",
+    "text": "Die Musiklehrerin hat irgendwas von leichter Musik erzählt, also wird es nichts Schweres sein.",
+    "vi": "Cô dạy nhạc có nói gì đó về nhạc nhẹ, nên chắc cũng chẳng khó gì đâu.",
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
@@ -1151,6 +1331,56 @@ const K_ON_S01E01_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
+    "id": 1100316,
+    "parentId": 1100316,
+    "start": 724.85,
+    "end": 727.71,
+    "speaker": "Yui",
+    "text": "Was? Aber ich kann doch gar nicht Gitarre spielen.",
+    "vi": "Hả? Nhưng tớ có biết chơi guitar đâu.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100317,
+    "parentId": 1100317,
+    "start": 728.29,
+    "end": 729.79,
+    "speaker": "Nodoka",
+    "text": "Was kannst du denn dann spielen?",
+    "vi": "Thế cậu biết chơi nhạc cụ nào?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100318,
+    "parentId": 1100318,
+    "start": 731.11,
+    "end": 735.19,
+    "speaker": "Yui",
+    "text": "Ich kann ganz gut mit Kastagnetten umgehen.",
+    "vi": "Tớ chơi phách castanet khá giỏi đấy.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100319,
+    "parentId": 1100319,
+    "start": 740.22,
+    "end": 741.96,
+    "speaker": "Nodoka",
+    "text": "Ja, das passt zu dir.",
+    "vi": "Ừ, đúng là hợp với cậu.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100320,
+    "parentId": 1100320,
+    "start": 745.06,
+    "end": 745.66,
+    "speaker": "Sawako",
+    "text": "Guten Tag!",
+    "vi": "Chào các em!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
     "id": 1100144,
     "parentId": 1100144,
     "start": 748.4,
@@ -1158,6 +1388,46 @@ const K_ON_S01E01_CAPTION_CUES = [
     "speaker": "Sawako",
     "text": "Es gibt eine weitere Interessentin.",
     "vi": "Có thêm một bạn nữa quan tâm đến câu lạc bộ đấy.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100321,
+    "parentId": 1100321,
+    "start": 752.36,
+    "end": 753.08,
+    "speaker": "Sawako",
+    "text": "Ich freu mich für euch.",
+    "vi": "Cô mừng cho các em.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100322,
+    "parentId": 1100322,
+    "start": 753.96,
+    "end": 758.1,
+    "speaker": "Sawako",
+    "text": "Hört mal, das Teeservice ist sehr hübsch, aber räumt es weg, bevor ihr hier rausgeht, ja?",
+    "vi": "Này, bộ ấm chén đẹp đấy, nhưng nhớ cất đi trước khi ra khỏi phòng nhé?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100323,
+    "parentId": 1100323,
+    "start": 759.46,
+    "end": 759.94,
+    "speaker": "Nhân vật",
+    "text": "Klar!",
+    "vi": "Vâng ạ!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100324,
+    "parentId": 1100324,
+    "start": 763.32,
+    "end": 765.16,
+    "speaker": "Ritsu",
+    "text": "Na bitte, der Club wird nicht aufgelöst!",
+    "vi": "Thấy chưa, câu lạc bộ không bị giải thể nữa rồi!",
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
@@ -1211,6 +1481,16 @@ const K_ON_S01E01_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
+    "id": 1100325,
+    "parentId": 1100325,
+    "start": 781.56,
+    "end": 783.56,
+    "speaker": "Yui",
+    "text": "Musikclub, Musikclub!",
+    "vi": "Câu lạc bộ âm nhạc, câu lạc bộ âm nhạc!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
     "id": 1100158,
     "parentId": 1100158,
     "start": 794.38,
@@ -1231,9 +1511,19 @@ const K_ON_S01E01_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
+    "id": 1100326,
+    "parentId": 1100326,
+    "start": 818.18,
+    "end": 821.82,
+    "speaker": "Yui",
+    "text": "Es fällt mir schwer, denen zu beichten, dass ich doch nicht Mitglied werden will.",
+    "vi": "Mình ngại thú thật với các cậu ấy là mình không muốn gia nhập nữa.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
     "id": 1100161,
     "parentId": 1100161,
-    "start": 821.76,
+    "start": 822.55,
     "end": 825.92,
     "speaker": "Yui",
     "text": "Aber ich würde schon gerne wissen, wer so in dem Club ist.",
@@ -1608,6 +1898,26 @@ const K_ON_S01E01_CAPTION_CUES = [
     "speaker": "Yui",
     "text": "Es wird immer schwieriger für mich, aber ich muss es Ihnen sagen.",
     "vi": "Càng lúc càng khó nói, nhưng mình phải nói cho các cậu ấy biết thôi.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100327,
+    "parentId": 1100327,
+    "start": 984.04,
+    "end": 989.78,
+    "speaker": "Yui",
+    "text": "Es tut mir leid, aber ich bin in Wirklichkeit nur hierher gekommen, um euch zu sagen, dass ich doch nicht mitmachen will.",
+    "vi": "Tớ xin lỗi, nhưng thật ra tớ đến đây chỉ để nói là tớ không muốn tham gia nữa.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100328,
+    "parentId": 1100328,
+    "start": 991.12,
+    "end": 993.2,
+    "speaker": "Yui",
+    "text": "Ich kann gar nicht Gitarre spielen!",
+    "vi": "Tớ có biết chơi guitar đâu!",
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
@@ -2011,10 +2321,40 @@ const K_ON_S01E01_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
+    "id": 1100329,
+    "parentId": 1100329,
+    "start": 1106.01,
+    "end": 1108.51,
+    "speaker": "Yui",
+    "text": "Ich hab eure Hoffnung zerstört!",
+    "vi": "Tớ làm các cậu thất vọng hết rồi!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100330,
+    "parentId": 1100330,
+    "start": 1109.27,
+    "end": 1111.75,
+    "speaker": "Yui",
+    "text": "Ich bin so blöd, es tut mir so leid!",
+    "vi": "Tớ ngốc quá, tớ xin lỗi các cậu nhiều lắm!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100331,
+    "parentId": 1100331,
+    "start": 1114.64,
+    "end": 1117.02,
+    "speaker": "Mio",
+    "text": "Nicht doch, wir müssen uns bei dir entschuldigen.",
+    "vi": "Đừng nói thế, bọn tớ mới phải xin lỗi cậu.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
     "id": 1100250,
     "parentId": 1100250,
-    "start": 1118.02,
-    "end": 1120.24,
+    "start": 1117.02,
+    "end": 1119.14,
     "speaker": "Mio",
     "text": "Entschuldige, dass wir dich umstimmen wollten.",
     "vi": "Xin lỗi vì bọn tớ cứ cố làm cậu đổi ý.",
@@ -2038,6 +2378,36 @@ const K_ON_S01E01_CAPTION_CUES = [
     "speaker": "Ritsu",
     "text": "Hör uns wenigstens einmal beim Spielen zu, bevor du gehst, ja?",
     "vi": "Trước khi về, cậu nghe bọn tớ chơi một lần thôi nhé?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100332,
+    "parentId": 1100332,
+    "start": 1124.67,
+    "end": 1126.03,
+    "speaker": "Yui",
+    "text": "Ihr wollt für mich spielen?",
+    "vi": "Các cậu muốn chơi nhạc cho tớ nghe à?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100333,
+    "parentId": 1100333,
+    "start": 1126.79,
+    "end": 1127.55,
+    "speaker": "Ritsu",
+    "text": "Sie beißt an.",
+    "vi": "Cậu ấy cắn câu rồi.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100334,
+    "parentId": 1100334,
+    "start": 1200.28,
+    "end": 1201.08,
+    "speaker": "Ritsu",
+    "text": "Hat's dir gefallen?",
+    "vi": "Cậu thấy thích không?",
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
@@ -2071,6 +2441,16 @@ const K_ON_S01E01_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
+    "id": 1100335,
+    "parentId": 1100335,
+    "start": 1207.62,
+    "end": 1209.54,
+    "speaker": "Yui",
+    "text": "Ihr seid gar nicht mal so gut, wie ich dachte!",
+    "vi": "Các cậu chơi không giỏi như tớ tưởng!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
     "id": 1100258,
     "parentId": 1100258,
     "start": 1209.94,
@@ -2098,6 +2478,16 @@ const K_ON_S01E01_CAPTION_CUES = [
     "speaker": "Yui",
     "text": "Ich hab's mir überlegt. Ich will doch Clubmitglied werden.",
     "vi": "Tớ nghĩ lại rồi. Tớ muốn vào câu lạc bộ.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100336,
+    "parentId": 1100336,
+    "start": 1229.59,
+    "end": 1231.49,
+    "speaker": "Ritsu",
+    "text": "Das erste Foto unseres Musikclubs.",
+    "vi": "Bức ảnh đầu tiên của câu lạc bộ âm nhạc chúng mình.",
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
@@ -2281,6 +2671,16 @@ const K_ON_S01E01_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
+    "id": 1100337,
+    "parentId": 1100337,
+    "start": 1283.19,
+    "end": 1285.61,
+    "speaker": "Yui",
+    "text": "Ich bin als richtiges Mitglied da eingetreten.",
+    "vi": "Tớ gia nhập với tư cách thành viên chính thức đấy.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
     "id": 1100284,
     "parentId": 1100284,
     "start": 1286.22,
@@ -2308,6 +2708,16 @@ const K_ON_S01E01_CAPTION_CUES = [
     "speaker": "Nodoka",
     "text": "Dann musst du dir eine Gitarre kaufen.",
     "vi": "Vậy thì cậu phải mua một cây guitar rồi.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100338,
+    "parentId": 1100338,
+    "start": 1295.33,
+    "end": 1297.27,
+    "speaker": "Yui",
+    "text": "Vielleicht leihen die mir ja auch eine.",
+    "vi": "Biết đâu các cậu ấy sẽ cho tớ mượn một cây.",
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   },
   {
@@ -2388,6 +2798,16 @@ const K_ON_S01E01_CAPTION_CUES = [
     "speaker": "Nhân vật",
     "text": "Leute!",
     "vi": "Mọi người ơi!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
+  },
+  {
+    "id": 1100339,
+    "parentId": 1100339,
+    "start": 1443.95,
+    "end": 1449.59,
+    "speaker": "Yui",
+    "text": "Aber jetzt als Oberschülerin bin ich zum ersten Mal in einem Club aktiv.",
+    "vi": "Nhưng giờ lên cấp ba, lần đầu tiên mình tham gia hoạt động trong một câu lạc bộ.",
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json"
   }
 ];
@@ -2546,6 +2966,32 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
     "legacyIds": [
       1100012
+    ]
+  },
+  {
+    "id": 1100298,
+    "parentId": 1100298,
+    "start": 271.49,
+    "end": 274.91,
+    "speaker": "Yui",
+    "text": "Ich hab schon das Gefühl, dass ich endlich irgendwas tun müsste.",
+    "vi": "Tớ cũng thấy mình phải làm gì đó rồi.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100298
+    ]
+  },
+  {
+    "id": 1100299,
+    "parentId": 1100299,
+    "start": 276.67,
+    "end": 278.09,
+    "speaker": "Yui",
+    "text": "Wenn ich nur wüsste, was.",
+    "vi": "Giá mà tớ biết phải làm gì.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100299
     ]
   },
   {
@@ -2770,10 +3216,23 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     ]
   },
   {
+    "id": 1100300,
+    "parentId": 1100300,
+    "start": 353.77,
+    "end": 355.73,
+    "speaker": "Sawako",
+    "text": "Verteil doch bitte schon mal die Kopien, ja?",
+    "vi": "Em phát giúp cô mấy bản photo trước nhé?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100300
+    ]
+  },
+  {
     "id": 1100033,
     "parentId": 1100033,
-    "start": 355.37,
-    "end": 361.18,
+    "start": 359.88,
+    "end": 360.68,
     "speaker": "Nhân vật",
     "text": "Die Kopien?",
     "vi": "Các bản photo ạ?",
@@ -2783,10 +3242,36 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     ]
   },
   {
+    "id": 1100301,
+    "parentId": 1100301,
+    "start": 361.42,
+    "end": 364.3,
+    "speaker": "Yui",
+    "text": "Ich war mit den Gedanken woanders. Entschuldigung.",
+    "vi": "Em mải nghĩ chuyện khác mất. Em xin lỗi cô ạ.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100301
+    ]
+  },
+  {
+    "id": 1100302,
+    "parentId": 1100302,
+    "start": 370.87,
+    "end": 372.01,
+    "speaker": "Nhân vật",
+    "text": "Was für 'ne Schnecke!",
+    "vi": "Chậm như rùa ấy!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100302
+    ]
+  },
+  {
     "id": 1100036,
     "parentId": 1100036,
-    "start": 371.8,
-    "end": 373.02,
+    "start": 372.63,
+    "end": 372.99,
     "speaker": "Nhân vật",
     "text": "Oh nein!",
     "vi": "Ôi không!",
@@ -3043,6 +3528,71 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     ]
   },
   {
+    "id": 1100303,
+    "parentId": 1100303,
+    "start": 449.93,
+    "end": 451.37,
+    "speaker": "Tsumugi",
+    "text": "Nein, ich dachte, hier ist der Chor.",
+    "vi": "Không, tớ tưởng đây là câu lạc bộ hợp xướng.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100303
+    ]
+  },
+  {
+    "id": 1100304,
+    "parentId": 1100304,
+    "start": 451.57,
+    "end": 453.23,
+    "speaker": "Ritsu",
+    "text": "Wolltest du Mitglied im Musikclub werden?",
+    "vi": "Cậu định gia nhập câu lạc bộ âm nhạc à?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100304
+    ]
+  },
+  {
+    "id": 1100305,
+    "parentId": 1100305,
+    "start": 453.79,
+    "end": 455.17,
+    "speaker": "Tsumugi",
+    "text": "Ich wollte eigentlich in den Chor.",
+    "vi": "Thật ra tớ muốn vào câu lạc bộ hợp xướng.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100305
+    ]
+  },
+  {
+    "id": 1100306,
+    "parentId": 1100306,
+    "start": 455.17,
+    "end": 456.69,
+    "speaker": "Ritsu",
+    "text": "Wir haben zu wenige Mitglieder.",
+    "vi": "Bọn tớ đang thiếu thành viên.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100306
+    ]
+  },
+  {
+    "id": 1100307,
+    "parentId": 1100307,
+    "start": 460.05,
+    "end": 463.01,
+    "speaker": "Mio",
+    "text": "Du vertreibst sie nur mit deiner Bettelei und rabiaten Art.",
+    "vi": "Cậu cứ năn nỉ rồi lôi kéo như thế thì cậu ấy sợ chạy mất thôi.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100307
+    ]
+  },
+  {
     "id": 1100062,
     "parentId": 1100062,
     "start": 463.15,
@@ -3053,6 +3603,19 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
     "legacyIds": [
       1100062
+    ]
+  },
+  {
+    "id": 1100308,
+    "parentId": 1100308,
+    "start": 490.48,
+    "end": 493.62,
+    "speaker": "Ritsu",
+    "text": "An dem Tag, als wir zusammen auf dem Live-Konzert waren.",
+    "vi": "Cái hôm bọn mình cùng đi xem hòa nhạc ấy.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100308
     ]
   },
   {
@@ -3404,6 +3967,32 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
     "legacyIds": [
       1100091
+    ]
+  },
+  {
+    "id": 1100309,
+    "parentId": 1100309,
+    "start": 559.92,
+    "end": 560.44,
+    "speaker": "Nodoka",
+    "text": "Yui!",
+    "vi": "Yui!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100309
+    ]
+  },
+  {
+    "id": 1100310,
+    "parentId": 1100310,
+    "start": 561.02,
+    "end": 564.84,
+    "speaker": "Yui",
+    "text": "Nodoka, ich glaube, jetzt, wo ich Oberschülerin bin, sollte ich endlich was tun.",
+    "vi": "Nodoka này, giờ đã lên cấp ba rồi, tớ nghĩ mình phải làm gì đó mới được.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100310
     ]
   },
   {
@@ -3838,14 +4427,79 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
   {
     "id": 1100128,
     "parentId": 1100128,
-    "start": 669.5,
-    "end": 672.5,
+    "start": 677.02,
+    "end": 679.62,
     "speaker": "Yui",
     "text": "Der Musikclub sucht noch Mitglieder.",
     "vi": "'Câu lạc bộ âm nhạc đang tuyển thêm thành viên.'",
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
     "legacyIds": [
       1100128
+    ]
+  },
+  {
+    "id": 1100311,
+    "parentId": 1100311,
+    "start": 686.48,
+    "end": 688.72,
+    "speaker": "Nhân vật",
+    "text": "Das machst du sehr gut, Yui-chan.",
+    "vi": "Giỏi lắm, Yui!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100311
+    ]
+  },
+  {
+    "id": 1100312,
+    "parentId": 1100312,
+    "start": 701.49,
+    "end": 704.97,
+    "speaker": "Yui",
+    "text": "Ich habe beschlossen, Mitglied im Musikclub zu werden.",
+    "vi": "Tớ quyết định vào câu lạc bộ âm nhạc rồi.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100312
+    ]
+  },
+  {
+    "id": 1100313,
+    "parentId": 1100313,
+    "start": 705.57,
+    "end": 708.19,
+    "speaker": "Nodoka",
+    "text": "Ach ja? Und was genau musst du da so machen, Yui?",
+    "vi": "Thế à? Vậy cụ thể ở đó cậu phải làm gì, Yui?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100313
+    ]
+  },
+  {
+    "id": 1100314,
+    "parentId": 1100314,
+    "start": 708.77,
+    "end": 709.79,
+    "speaker": "Yui",
+    "text": "Keine Ahnung.",
+    "vi": "Tớ cũng chẳng biết nữa.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100314
+    ]
+  },
+  {
+    "id": 1100315,
+    "parentId": 1100315,
+    "start": 711.41,
+    "end": 715.71,
+    "speaker": "Yui",
+    "text": "Die Musiklehrerin hat irgendwas von leichter Musik erzählt, also wird es nichts Schweres sein.",
+    "vi": "Cô dạy nhạc có nói gì đó về nhạc nhẹ, nên chắc cũng chẳng khó gì đâu.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100315
     ]
   },
   {
@@ -3888,6 +4542,71 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     ]
   },
   {
+    "id": 1100316,
+    "parentId": 1100316,
+    "start": 724.85,
+    "end": 727.71,
+    "speaker": "Yui",
+    "text": "Was? Aber ich kann doch gar nicht Gitarre spielen.",
+    "vi": "Hả? Nhưng tớ có biết chơi guitar đâu.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100316
+    ]
+  },
+  {
+    "id": 1100317,
+    "parentId": 1100317,
+    "start": 728.29,
+    "end": 729.79,
+    "speaker": "Nodoka",
+    "text": "Was kannst du denn dann spielen?",
+    "vi": "Thế cậu biết chơi nhạc cụ nào?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100317
+    ]
+  },
+  {
+    "id": 1100318,
+    "parentId": 1100318,
+    "start": 731.11,
+    "end": 735.19,
+    "speaker": "Yui",
+    "text": "Ich kann ganz gut mit Kastagnetten umgehen.",
+    "vi": "Tớ chơi phách castanet khá giỏi đấy.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100318
+    ]
+  },
+  {
+    "id": 1100319,
+    "parentId": 1100319,
+    "start": 740.22,
+    "end": 741.96,
+    "speaker": "Nodoka",
+    "text": "Ja, das passt zu dir.",
+    "vi": "Ừ, đúng là hợp với cậu.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100319
+    ]
+  },
+  {
+    "id": 1100320,
+    "parentId": 1100320,
+    "start": 745.06,
+    "end": 745.66,
+    "speaker": "Sawako",
+    "text": "Guten Tag!",
+    "vi": "Chào các em!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100320
+    ]
+  },
+  {
     "id": 1100144,
     "parentId": 1100144,
     "start": 748.4,
@@ -3898,6 +4617,58 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
     "legacyIds": [
       1100144
+    ]
+  },
+  {
+    "id": 1100321,
+    "parentId": 1100321,
+    "start": 752.36,
+    "end": 753.08,
+    "speaker": "Sawako",
+    "text": "Ich freu mich für euch.",
+    "vi": "Cô mừng cho các em.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100321
+    ]
+  },
+  {
+    "id": 1100322,
+    "parentId": 1100322,
+    "start": 753.96,
+    "end": 758.1,
+    "speaker": "Sawako",
+    "text": "Hört mal, das Teeservice ist sehr hübsch, aber räumt es weg, bevor ihr hier rausgeht, ja?",
+    "vi": "Này, bộ ấm chén đẹp đấy, nhưng nhớ cất đi trước khi ra khỏi phòng nhé?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100322
+    ]
+  },
+  {
+    "id": 1100323,
+    "parentId": 1100323,
+    "start": 759.46,
+    "end": 759.94,
+    "speaker": "Nhân vật",
+    "text": "Klar!",
+    "vi": "Vâng ạ!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100323
+    ]
+  },
+  {
+    "id": 1100324,
+    "parentId": 1100324,
+    "start": 763.32,
+    "end": 765.16,
+    "speaker": "Ritsu",
+    "text": "Na bitte, der Club wird nicht aufgelöst!",
+    "vi": "Thấy chưa, câu lạc bộ không bị giải thể nữa rồi!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100324
     ]
   },
   {
@@ -3966,6 +4737,19 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     ]
   },
   {
+    "id": 1100325,
+    "parentId": 1100325,
+    "start": 781.56,
+    "end": 783.56,
+    "speaker": "Yui",
+    "text": "Musikclub, Musikclub!",
+    "vi": "Câu lạc bộ âm nhạc, câu lạc bộ âm nhạc!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100325
+    ]
+  },
+  {
     "id": 1100158,
     "parentId": 1100158,
     "start": 794.38,
@@ -3992,9 +4776,22 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     ]
   },
   {
+    "id": 1100326,
+    "parentId": 1100326,
+    "start": 818.18,
+    "end": 821.82,
+    "speaker": "Yui",
+    "text": "Es fällt mir schwer, denen zu beichten, dass ich doch nicht Mitglied werden will.",
+    "vi": "Mình ngại thú thật với các cậu ấy là mình không muốn gia nhập nữa.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100326
+    ]
+  },
+  {
     "id": 1100161,
     "parentId": 1100161,
-    "start": 821.76,
+    "start": 822.55,
     "end": 825.92,
     "speaker": "Yui",
     "text": "Aber ich würde schon gerne wissen, wer so in dem Club ist.",
@@ -4483,6 +5280,32 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
     "legacyIds": [
       1100203
+    ]
+  },
+  {
+    "id": 1100327,
+    "parentId": 1100327,
+    "start": 984.04,
+    "end": 989.78,
+    "speaker": "Yui",
+    "text": "Es tut mir leid, aber ich bin in Wirklichkeit nur hierher gekommen, um euch zu sagen, dass ich doch nicht mitmachen will.",
+    "vi": "Tớ xin lỗi, nhưng thật ra tớ đến đây chỉ để nói là tớ không muốn tham gia nữa.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100327
+    ]
+  },
+  {
+    "id": 1100328,
+    "parentId": 1100328,
+    "start": 991.12,
+    "end": 993.2,
+    "speaker": "Yui",
+    "text": "Ich kann gar nicht Gitarre spielen!",
+    "vi": "Tớ có biết chơi guitar đâu!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100328
     ]
   },
   {
@@ -5006,10 +5829,49 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     ]
   },
   {
+    "id": 1100329,
+    "parentId": 1100329,
+    "start": 1106.01,
+    "end": 1108.51,
+    "speaker": "Yui",
+    "text": "Ich hab eure Hoffnung zerstört!",
+    "vi": "Tớ làm các cậu thất vọng hết rồi!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100329
+    ]
+  },
+  {
+    "id": 1100330,
+    "parentId": 1100330,
+    "start": 1109.27,
+    "end": 1111.75,
+    "speaker": "Yui",
+    "text": "Ich bin so blöd, es tut mir so leid!",
+    "vi": "Tớ ngốc quá, tớ xin lỗi các cậu nhiều lắm!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100330
+    ]
+  },
+  {
+    "id": 1100331,
+    "parentId": 1100331,
+    "start": 1114.64,
+    "end": 1117.02,
+    "speaker": "Mio",
+    "text": "Nicht doch, wir müssen uns bei dir entschuldigen.",
+    "vi": "Đừng nói thế, bọn tớ mới phải xin lỗi cậu.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100331
+    ]
+  },
+  {
     "id": 1100250,
     "parentId": 1100250,
-    "start": 1118.02,
-    "end": 1120.24,
+    "start": 1117.02,
+    "end": 1119.14,
     "speaker": "Mio",
     "text": "Entschuldige, dass wir dich umstimmen wollten.",
     "vi": "Xin lỗi vì bọn tớ cứ cố làm cậu đổi ý.",
@@ -5042,6 +5904,45 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
     "legacyIds": [
       1100252
+    ]
+  },
+  {
+    "id": 1100332,
+    "parentId": 1100332,
+    "start": 1124.67,
+    "end": 1126.03,
+    "speaker": "Yui",
+    "text": "Ihr wollt für mich spielen?",
+    "vi": "Các cậu muốn chơi nhạc cho tớ nghe à?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100332
+    ]
+  },
+  {
+    "id": 1100333,
+    "parentId": 1100333,
+    "start": 1126.79,
+    "end": 1127.55,
+    "speaker": "Ritsu",
+    "text": "Sie beißt an.",
+    "vi": "Cậu ấy cắn câu rồi.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100333
+    ]
+  },
+  {
+    "id": 1100334,
+    "parentId": 1100334,
+    "start": 1200.28,
+    "end": 1201.08,
+    "speaker": "Ritsu",
+    "text": "Hat's dir gefallen?",
+    "vi": "Cậu thấy thích không?",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100334
     ]
   },
   {
@@ -5084,6 +5985,19 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     ]
   },
   {
+    "id": 1100335,
+    "parentId": 1100335,
+    "start": 1207.62,
+    "end": 1209.54,
+    "speaker": "Yui",
+    "text": "Ihr seid gar nicht mal so gut, wie ich dachte!",
+    "vi": "Các cậu chơi không giỏi như tớ tưởng!",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100335
+    ]
+  },
+  {
     "id": 1100258,
     "parentId": 1100258,
     "start": 1209.94,
@@ -5120,6 +6034,19 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
     "legacyIds": [
       1100260
+    ]
+  },
+  {
+    "id": 1100336,
+    "parentId": 1100336,
+    "start": 1229.59,
+    "end": 1231.49,
+    "speaker": "Ritsu",
+    "text": "Das erste Foto unseres Musikclubs.",
+    "vi": "Bức ảnh đầu tiên của câu lạc bộ âm nhạc chúng mình.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100336
     ]
   },
   {
@@ -5357,6 +6284,19 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     ]
   },
   {
+    "id": 1100337,
+    "parentId": 1100337,
+    "start": 1283.19,
+    "end": 1285.61,
+    "speaker": "Yui",
+    "text": "Ich bin als richtiges Mitglied da eingetreten.",
+    "vi": "Tớ gia nhập với tư cách thành viên chính thức đấy.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100337
+    ]
+  },
+  {
     "id": 1100284,
     "parentId": 1100284,
     "start": 1286.22,
@@ -5393,6 +6333,19 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
     "legacyIds": [
       1100286
+    ]
+  },
+  {
+    "id": 1100338,
+    "parentId": 1100338,
+    "start": 1295.33,
+    "end": 1297.27,
+    "speaker": "Yui",
+    "text": "Vielleicht leihen die mir ja auch eine.",
+    "vi": "Biết đâu các cậu ấy sẽ cho tớ mượn một cây.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100338
     ]
   },
   {
@@ -5497,6 +6450,19 @@ const K_ON_S01E01_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
     "legacyIds": [
       1100295
+    ]
+  },
+  {
+    "id": 1100339,
+    "parentId": 1100339,
+    "start": 1443.95,
+    "end": 1449.59,
+    "speaker": "Yui",
+    "text": "Aber jetzt als Oberschülerin bin ich zum ersten Mal in einem Club aktiv.",
+    "vi": "Nhưng giờ lên cấp ba, lần đầu tiên mình tham gia hoạt động trong một câu lạc bộ.",
+    "sourceEvidence": "qa/kino-alignment/muse-two-films/k_on_s01e01.json",
+    "legacyIds": [
+      1100339
     ]
   }
 ];

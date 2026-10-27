@@ -1,0 +1,191 @@
+{
+  "model": "small",
+  "source": "video/k_on_s01e01.mp4",
+  "candidateSha256": "a8497e31e7cf72907b46845ad95c972d95e591b5de00edb66a9bd0250d9dafaf",
+  "method": "Independent local bounded ASR, no prompt or candidate text supplied",
+  "humanListened": false,
+  "completed": 2,
+  "total": 2,
+  "elapsedSeconds": 8.53,
+  "windows": [
+    {
+      "candidate": 10,
+      "start": 668,
+      "end": 680.5,
+      "segments": [
+        {
+          "start": 668.0,
+          "end": 668.54,
+          "text": "Aber nicht!",
+          "avg_logprob": -0.35348157321705537,
+          "no_speech_prob": 0.05278948321938515,
+          "words": [
+            {
+              "start": 668.0,
+              "end": 668.1,
+              "word": " Aber",
+              "probability": 0.6578708291053772
+            },
+            {
+              "start": 668.1,
+              "end": 668.54,
+              "word": " nicht!",
+              "probability": 0.9855027198791504
+            }
+          ]
+        },
+        {
+          "start": 676.1,
+          "end": 679.14,
+          "text": "Der Musikclub sucht noch Mitglieder.",
+          "avg_logprob": -0.35348157321705537,
+          "no_speech_prob": 0.05278948321938515,
+          "words": [
+            {
+              "start": 676.1,
+              "end": 676.98,
+              "word": " Der",
+              "probability": 0.6879331469535828
+            },
+            {
+              "start": 676.98,
+              "end": 677.86,
+              "word": " Musikclub",
+              "probability": 0.8826267421245575
+            },
+            {
+              "start": 677.86,
+              "end": 678.28,
+              "word": " sucht",
+              "probability": 0.9954322874546051
+            },
+            {
+              "start": 678.28,
+              "end": 678.38,
+              "word": " noch",
+              "probability": 0.9832338690757751
+            },
+            {
+              "start": 678.38,
+              "end": 679.14,
+              "word": " Mitglieder.",
+              "probability": 0.9840698838233948
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 16,
+      "start": 775.5,
+      "end": 795,
+      "segments": [
+        {
+          "start": 775.5,
+          "end": 776.96,
+          "text": "Neues Mitglied!",
+          "avg_logprob": -0.5663136581579844,
+          "no_speech_prob": 0.3388160467147827,
+          "words": [
+            {
+              "start": 775.5,
+              "end": 775.78,
+              "word": " Neues",
+              "probability": 0.38033564761281013
+            },
+            {
+              "start": 775.78,
+              "end": 776.96,
+              "word": " Mitglied!",
+              "probability": 0.66245137155056
+            }
+          ]
+        },
+        {
+          "start": 781.56,
+          "end": 783.56,
+          "text": "Musikclub, Musikclub!",
+          "avg_logprob": -0.5663136581579844,
+          "no_speech_prob": 0.3388160467147827,
+          "words": [
+            {
+              "start": 781.56,
+              "end": 782.56,
+              "word": " Musikclub,",
+              "probability": 0.5727516710758209
+            },
+            {
+              "start": 782.56,
+              "end": 783.56,
+              "word": " Musikclub!",
+              "probability": 0.9924696087837219
+            }
+          ]
+        },
+        {
+          "start": 790.76,
+          "end": 794.98,
+          "text": "Ich muss da durchgehen wenn ich zum Musikclub will.",
+          "avg_logprob": -0.5663136581579844,
+          "no_speech_prob": 0.3388160467147827,
+          "words": [
+            {
+              "start": 790.76,
+              "end": 791.76,
+              "word": " Ich",
+              "probability": 0.803977370262146
+            },
+            {
+              "start": 791.76,
+              "end": 792.76,
+              "word": " muss",
+              "probability": 0.9880670309066772
+            },
+            {
+              "start": 792.76,
+              "end": 792.98,
+              "word": " da",
+              "probability": 0.8967646360397339
+            },
+            {
+              "start": 792.98,
+              "end": 793.58,
+              "word": " durchgehen",
+              "probability": 0.9488379955291748
+            },
+            {
+              "start": 793.58,
+              "end": 793.76,
+              "word": " wenn",
+              "probability": 0.14032508432865143
+            },
+            {
+              "start": 793.76,
+              "end": 793.9,
+              "word": " ich",
+              "probability": 0.9928654432296753
+            },
+            {
+              "start": 793.9,
+              "end": 794.14,
+              "word": " zum",
+              "probability": 0.5546333193778992
+            },
+            {
+              "start": 794.14,
+              "end": 794.72,
+              "word": " Musikclub",
+              "probability": 0.9358689486980438
+            },
+            {
+              "start": 794.72,
+              "end": 794.98,
+              "word": " will.",
+              "probability": 0.7231068015098572
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
