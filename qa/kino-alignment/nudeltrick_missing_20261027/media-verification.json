@@ -1,0 +1,22 @@
+{
+  "method": "SHA-256 of concatenated nonempty compressed audio packet bytes, independently demuxed using PyAV; no re-encoding",
+  "audioBitstreamIdentical": true,
+  "files": [
+    {
+      "file": "video/erdmaennchen_nudeltrick.mp4",
+      "fileSha256": "2a956e7509ea72730608ace97c91d94462a5337e30c0f01442450d86e99664f2",
+      "durationSeconds": 746.92,
+      "audioStartSeconds": 0.0,
+      "audioPackets": 35012,
+      "audioPacketBytesSha256": "c5d8a82cce0d50110f3375e07fc1448568d0892c2185710232b7c755c1faf830"
+    },
+    {
+      "file": "video/kino-light/erdmaennchen_nudeltrick-480p-v2.mp4",
+      "fileSha256": "d6d16b0bf0c6f218cbe3634e81d90c47bbe286dbef2d369ae5ff088455b3c876",
+      "durationSeconds": 746.922667,
+      "audioStartSeconds": 0.0,
+      "audioPackets": 35012,
+      "audioPacketBytesSha256": "c5d8a82cce0d50110f3375e07fc1448568d0892c2185710232b7c755c1faf830"
+    }
+  ]
+}

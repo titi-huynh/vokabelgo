@@ -1,0 +1,732 @@
+{
+  "source": "Unmodified Kino player at http://127.0.0.1:3107, real original and Kino light MP4 files",
+  "checked": 20,
+  "total": 20,
+  "errors": [],
+  "mobile": {
+    "width": 390,
+    "pass": true
+  },
+  "results": [
+    {
+      "id": 900226,
+      "parentId": 900226,
+      "start": 82.1,
+      "end": 84.08,
+      "speaker": "Krokodella",
+      "text": "Hab ich nicht gesagt?",
+      "vi": "Tôi đã nói rồi mà?",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 82.05999999999999,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 83.09,
+          "expectedId": 900226,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 84.12,
+          "expectedId": 900227,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900227,
+      "parentId": 900227,
+      "start": 84.08,
+      "end": 84.96,
+      "speaker": "Krokodella",
+      "text": "Toll!",
+      "vi": "Tuyệt thật!",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 84.03999999999999,
+          "expectedId": 900226,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 84.52,
+          "expectedId": 900227,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 85,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900228,
+      "parentId": 900228,
+      "start": 87.24,
+      "end": 88.78,
+      "speaker": "Krokodella",
+      "text": "Wahrscheinlich den da.",
+      "vi": "Chắc là người kia kìa.",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 87.19999999999999,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 88.00999999999999,
+          "expectedId": 900228,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 88.82000000000001,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900229,
+      "parentId": 900229,
+      "start": 90.76,
+      "end": 96.8,
+      "speaker": "Aubergini",
+      "text": "Für den kommenden Trick brauche ich jemand aus dem Publikum.",
+      "vi": "Cho trò ảo thuật tiếp theo, tôi cần một người từ phía khán giả.",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 90.72,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 93.78,
+          "expectedId": 900229,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 96.84,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900230,
+      "parentId": 900230,
+      "start": 131.08,
+      "end": 132.1,
+      "speaker": "Cảnh sát",
+      "text": "Meine Krawatte?",
+      "vi": "Cà vạt của tôi á?",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 131.04000000000002,
+          "expectedId": 900114,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 131.59,
+          "expectedId": 900230,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 132.14,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900231,
+      "parentId": 900231,
+      "start": 141.16,
+      "end": 142.08,
+      "speaker": "Krokodella",
+      "text": "Achtung!",
+      "vi": "Chú ý nhé!",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 141.12,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 141.62,
+          "expectedId": 900231,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 142.12,
+          "expectedId": 900232,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900232,
+      "parentId": 900232,
+      "start": 142.08,
+      "end": 143.24,
+      "speaker": "Krokodella",
+      "text": "Jetzt kommt's!",
+      "vi": "Sắp đến rồi đây!",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 142.04000000000002,
+          "expectedId": 900231,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 142.66000000000003,
+          "expectedId": 900232,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 143.28,
+          "expectedId": 900233,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900233,
+      "parentId": 900233,
+      "start": 143.24,
+      "end": 144.26,
+      "speaker": "Krokodella",
+      "text": "Jetzt kommt's!",
+      "vi": "Sắp đến rồi đây!",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 143.20000000000002,
+          "expectedId": 900232,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 143.75,
+          "expectedId": 900233,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 144.29999999999998,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900234,
+      "parentId": 900234,
+      "start": 185.25,
+      "end": 188.11,
+      "speaker": "Jan & Henry",
+      "text": "Sehr lustiger Trick, nicht wahr, Jan?",
+      "vi": "Trò ảo thuật vui nhộn thật, phải không Jan?",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 185.21,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 186.68,
+          "expectedId": 900234,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 188.15,
+          "expectedId": 900235,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900235,
+      "parentId": 900235,
+      "start": 188.11,
+      "end": 191.15,
+      "speaker": "Jan & Henry",
+      "text": "Ja, ich glaube schon.",
+      "vi": "Ừ, tớ cũng nghĩ vậy.",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 188.07000000000002,
+          "expectedId": 900234,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 189.63,
+          "expectedId": 900235,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 191.19,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900236,
+      "parentId": 900236,
+      "start": 564.61,
+      "end": 568.85,
+      "speaker": "Krokodella",
+      "text": "So, los geht's!",
+      "vi": "Nào, bắt đầu thôi!",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 564.57,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 566.73,
+          "expectedId": 900236,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 568.89,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900237,
+      "parentId": 900237,
+      "start": 573.46,
+      "end": 575.64,
+      "speaker": "Jan & Henry",
+      "text": "Sie packt ihre Tüten aus.",
+      "vi": "Bà ấy đang mở mấy cái túi ra.",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 573.4200000000001,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 574.55,
+          "expectedId": 900237,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 575.68,
+          "expectedId": 900238,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900238,
+      "parentId": 900238,
+      "start": 575.64,
+      "end": 577.6,
+      "speaker": "Jan & Henry",
+      "text": "Sie hat einen Käse gekauft.",
+      "vi": "Bà ấy đã mua một miếng phô mai.",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 575.6,
+          "expectedId": 900237,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 576.62,
+          "expectedId": 900238,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 577.64,
+          "expectedId": 900239,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900239,
+      "parentId": 900239,
+      "start": 577.6,
+      "end": 578.78,
+      "speaker": "Jan & Henry",
+      "text": "Ah, ja.",
+      "vi": "À, đúng rồi.",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 577.5600000000001,
+          "expectedId": 900238,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 578.19,
+          "expectedId": 900239,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 578.8199999999999,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900240,
+      "parentId": 900240,
+      "start": 580.66,
+      "end": 582.96,
+      "speaker": "Jan & Henry",
+      "text": "Und ich hab schon gedacht, das wären deine Füße.",
+      "vi": "Thế mà tớ cứ tưởng đó là mùi chân của cậu chứ.",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 580.62,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 581.81,
+          "expectedId": 900240,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 583,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900241,
+      "parentId": 900241,
+      "start": 584.24,
+      "end": 587.28,
+      "speaker": "Krokodella",
+      "text": "Und nun, schweb!",
+      "vi": "Và bây giờ, bay lên đi!",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 584.2,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 585.76,
+          "expectedId": 900241,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 587.3199999999999,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900242,
+      "parentId": 900242,
+      "start": 590.42,
+      "end": 591.36,
+      "speaker": "Krokodella",
+      "text": "Los!",
+      "vi": "Nào!",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 590.38,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 590.89,
+          "expectedId": 900242,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 591.4,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900243,
+      "parentId": 900243,
+      "start": 591.5,
+      "end": 594.62,
+      "speaker": "Krokodella",
+      "text": "Setz deine Löcher in Bewegung und schweb!",
+      "vi": "Hãy làm cho mấy cái lỗ của ngươi chuyển động và bay lên đi!",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 591.46,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 593.06,
+          "expectedId": 900243,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 594.66,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900244,
+      "parentId": 900244,
+      "start": 695.7,
+      "end": 703.56,
+      "speaker": "Aubergini",
+      "text": "Und das Geheimnis ist, dass man das Publikum dabei ablenkt, indem man dann groß mit dem Geldbeutel wedelt.",
+      "vi": "Và bí quyết là làm khán giả mất tập trung trong lúc đó bằng cách vẫy chiếc ví thật mạnh.",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 695.6600000000001,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 699.63,
+          "expectedId": 900244,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 703.5999999999999,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    },
+    {
+      "id": 900245,
+      "parentId": 900245,
+      "start": 729.45,
+      "end": 730.87,
+      "speaker": "Jan & Henry",
+      "text": "Nicht so ganz.",
+      "vi": "Không hẳn vậy.",
+      "boundaries": [
+        {
+          "label": "before",
+          "time": 729.4100000000001,
+          "expectedId": null,
+          "pass": true
+        },
+        {
+          "label": "middle",
+          "time": 730.1600000000001,
+          "expectedId": 900245,
+          "pass": true
+        },
+        {
+          "label": "after",
+          "time": 730.91,
+          "expectedId": null,
+          "pass": true
+        }
+      ],
+      "video": {
+        "duration": 746.922667,
+        "readyState": 4,
+        "width": 854,
+        "height": 480
+      },
+      "pass": true
+    }
+  ]
+}

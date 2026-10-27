@@ -1,0 +1,50 @@
+[
+  {
+    "candidate": 2,
+    "start": 77.0,
+    "end": 100.7,
+    "label": "cand2_wide"
+  },
+  {
+    "candidate": 4,
+    "start": 122.9,
+    "end": 138.0,
+    "label": "cand4_with_cue114"
+  },
+  {
+    "candidate": 6,
+    "start": 150.6,
+    "end": 168.0,
+    "label": "cand6_with_neighbors"
+  },
+  {
+    "candidate": 8,
+    "start": 285.5,
+    "end": 299.6,
+    "label": "cand8_with_neighbors"
+  },
+  {
+    "candidate": 9,
+    "start": 562.0,
+    "end": 573.2,
+    "label": "cand9_wide"
+  },
+  {
+    "candidate": 10,
+    "start": 573.4,
+    "end": 594.8,
+    "label": "cand10_only_gap"
+  },
+  {
+    "candidate": 11,
+    "start": 695.0,
+    "end": 718.6,
+    "label": "cand11_wide"
+  },
+  {
+    "candidate": 12,
+    "start": 724.1,
+    "end": 746.92,
+    "label": "cand12_after_cue225"
+  }
+]

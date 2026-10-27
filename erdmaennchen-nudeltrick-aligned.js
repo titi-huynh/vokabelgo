@@ -73,6 +73,42 @@ const ERDMAENNCHEN_NUDELTRICK_CAPTION_CUES = [
     "vi": "Ngay đoạn mở đầu đã hay lắm, khi ảo thuật gia bỗng xuất hiện trên sân khấu cùng một tiếng nổ."
   },
   {
+    "id": 900226,
+    "parentId": 900226,
+    "start": 82.1,
+    "end": 84.08,
+    "speaker": "Krokodella",
+    "text": "Hab ich nicht gesagt?",
+    "vi": "Tôi đã nói rồi mà?"
+  },
+  {
+    "id": 900227,
+    "parentId": 900227,
+    "start": 84.08,
+    "end": 84.96,
+    "speaker": "Krokodella",
+    "text": "Toll!",
+    "vi": "Tuyệt thật!"
+  },
+  {
+    "id": 900228,
+    "parentId": 900228,
+    "start": 87.24,
+    "end": 88.78,
+    "speaker": "Krokodella",
+    "text": "Wahrscheinlich den da.",
+    "vi": "Chắc là người kia kìa."
+  },
+  {
+    "id": 900229,
+    "parentId": 900229,
+    "start": 90.76,
+    "end": 96.8,
+    "speaker": "Aubergini",
+    "text": "Für den kommenden Trick brauche ich jemand aus dem Publikum.",
+    "vi": "Cho trò ảo thuật tiếp theo, tôi cần một người từ phía khán giả."
+  },
+  {
     "id": 900109,
     "parentId": 900109,
     "start": 100.8,
@@ -127,6 +163,42 @@ const ERDMAENNCHEN_NUDELTRICK_CAPTION_CUES = [
     "vi": "Nhân tiện vừa nhìn đồng hồ, đã đến lúc anh đeo lại cà vạt rồi đấy."
   },
   {
+    "id": 900230,
+    "parentId": 900230,
+    "start": 131.08,
+    "end": 132.1,
+    "speaker": "Cảnh sát",
+    "text": "Meine Krawatte?",
+    "vi": "Cà vạt của tôi á?"
+  },
+  {
+    "id": 900231,
+    "parentId": 900231,
+    "start": 141.16,
+    "end": 142.08,
+    "speaker": "Krokodella",
+    "text": "Achtung!",
+    "vi": "Chú ý nhé!"
+  },
+  {
+    "id": 900232,
+    "parentId": 900232,
+    "start": 142.08,
+    "end": 143.24,
+    "speaker": "Krokodella",
+    "text": "Jetzt kommt's!",
+    "vi": "Sắp đến rồi đây!"
+  },
+  {
+    "id": 900233,
+    "parentId": 900233,
+    "start": 143.24,
+    "end": 144.26,
+    "speaker": "Krokodella",
+    "text": "Jetzt kommt's!",
+    "vi": "Sắp đến rồi đây!"
+  },
+  {
     "id": 900115,
     "parentId": 900115,
     "start": 144.42,
@@ -170,6 +242,24 @@ const ERDMAENNCHEN_NUDELTRICK_CAPTION_CUES = [
     "speaker": "Aubergini",
     "text": "Guten Appetit und einen großen Applaus für unseren Freiwilligen.",
     "vi": "Chúc ngon miệng, và xin một tràng pháo tay thật lớn cho người tình nguyện của chúng ta."
+  },
+  {
+    "id": 900234,
+    "parentId": 900234,
+    "start": 185.25,
+    "end": 188.11,
+    "speaker": "Jan & Henry",
+    "text": "Sehr lustiger Trick, nicht wahr, Jan?",
+    "vi": "Trò ảo thuật vui nhộn thật, phải không Jan?"
+  },
+  {
+    "id": 900235,
+    "parentId": 900235,
+    "start": 188.11,
+    "end": 191.15,
+    "speaker": "Jan & Henry",
+    "text": "Ja, ich glaube schon.",
+    "vi": "Ừ, tớ cũng nghĩ vậy."
   },
   {
     "id": 900121,
@@ -757,6 +847,15 @@ const ERDMAENNCHEN_NUDELTRICK_CAPTION_CUES = [
     "vi": "Ừ, mau đuổi theo thôi!"
   },
   {
+    "id": 900236,
+    "parentId": 900236,
+    "start": 564.61,
+    "end": 568.85,
+    "speaker": "Krokodella",
+    "text": "So, los geht's!",
+    "vi": "Nào, bắt đầu thôi!"
+  },
+  {
     "id": 900189,
     "parentId": 900189,
     "start": 571.3,
@@ -764,6 +863,69 @@ const ERDMAENNCHEN_NUDELTRICK_CAPTION_CUES = [
     "speaker": "Jan & Henry",
     "text": "Kannst du was erkennen?",
     "vi": "Cậu có nhìn ra được gì không?"
+  },
+  {
+    "id": 900237,
+    "parentId": 900237,
+    "start": 573.46,
+    "end": 575.64,
+    "speaker": "Jan & Henry",
+    "text": "Sie packt ihre Tüten aus.",
+    "vi": "Bà ấy đang mở mấy cái túi ra."
+  },
+  {
+    "id": 900238,
+    "parentId": 900238,
+    "start": 575.64,
+    "end": 577.6,
+    "speaker": "Jan & Henry",
+    "text": "Sie hat einen Käse gekauft.",
+    "vi": "Bà ấy đã mua một miếng phô mai."
+  },
+  {
+    "id": 900239,
+    "parentId": 900239,
+    "start": 577.6,
+    "end": 578.78,
+    "speaker": "Jan & Henry",
+    "text": "Ah, ja.",
+    "vi": "À, đúng rồi."
+  },
+  {
+    "id": 900240,
+    "parentId": 900240,
+    "start": 580.66,
+    "end": 582.96,
+    "speaker": "Jan & Henry",
+    "text": "Und ich hab schon gedacht, das wären deine Füße.",
+    "vi": "Thế mà tớ cứ tưởng đó là mùi chân của cậu chứ."
+  },
+  {
+    "id": 900241,
+    "parentId": 900241,
+    "start": 584.24,
+    "end": 587.28,
+    "speaker": "Krokodella",
+    "text": "Und nun, schweb!",
+    "vi": "Và bây giờ, bay lên đi!"
+  },
+  {
+    "id": 900242,
+    "parentId": 900242,
+    "start": 590.42,
+    "end": 591.36,
+    "speaker": "Krokodella",
+    "text": "Los!",
+    "vi": "Nào!"
+  },
+  {
+    "id": 900243,
+    "parentId": 900243,
+    "start": 591.5,
+    "end": 594.62,
+    "speaker": "Krokodella",
+    "text": "Setz deine Löcher in Bewegung und schweb!",
+    "vi": "Hãy làm cho mấy cái lỗ của ngươi chuyển động và bay lên đi!"
   },
   {
     "id": 900190,
@@ -1027,6 +1189,15 @@ const ERDMAENNCHEN_NUDELTRICK_CAPTION_CUES = [
     "vi": "Tôi nghĩ bà vẫn phải tập thêm một chút nữa đấy, nhỉ?"
   },
   {
+    "id": 900244,
+    "parentId": 900244,
+    "start": 695.7,
+    "end": 703.56,
+    "speaker": "Aubergini",
+    "text": "Und das Geheimnis ist, dass man das Publikum dabei ablenkt, indem man dann groß mit dem Geldbeutel wedelt.",
+    "vi": "Và bí quyết là làm khán giả mất tập trung trong lúc đó bằng cách vẫy chiếc ví thật mạnh."
+  },
+  {
     "id": 900222,
     "parentId": 900222,
     "start": 715.3,
@@ -1061,6 +1232,15 @@ const ERDMAENNCHEN_NUDELTRICK_CAPTION_CUES = [
     "speaker": "Jan & Henry",
     "text": "Ja, wollen wir mal sehen.",
     "vi": "Ừ, mình xem thử nào."
+  },
+  {
+    "id": 900245,
+    "parentId": 900245,
+    "start": 729.45,
+    "end": 730.87,
+    "speaker": "Jan & Henry",
+    "text": "Nicht so ganz.",
+    "vi": "Không hẳn vậy."
   }
 ];
 const ERDMAENNCHEN_NUDELTRICK_ALIGNED_UTTERANCES = ERDMAENNCHEN_NUDELTRICK_CAPTION_CUES.map(cue => ({ ...cue }));

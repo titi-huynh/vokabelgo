@@ -44,7 +44,7 @@ The repeated `der` in 900175 and the particle `denn` in 900223 follow medium/bas
 - Runtime: `erdmaennchen-nudeltrick-aligned.js` and `erdmaennchen-nudeltrick-lesson.js`.
 - Alias: `?kino=nudeltrick`.
 - Seven contiguous film parts, covering the original source from 0 to 746.92 seconds.
-- 118 selected bilingual caption/practice cues, 49 highlighted cues (7 per part).
+- 138 selected bilingual caption/practice cues, 49 highlighted cues (7 per part).
 - 24 vocabulary cards with grammar notes, examples copied from their actual source cue and links back to the relevant part.
 - Independent progress: `vokabelgo_kino_chapters_v1_erdmaennchen_nudeltrick`.
 - `reviewed-lines.tsv` is the reviewed input. The builder emits the DE/VI VTT files, cue JSON, alignment audit and source hash.
@@ -62,3 +62,11 @@ Earshot reviewed the entire 746.92-second video locally. Its summary is saved in
 - Checks cover all seven parts playing and stopping at their own bounds, matching DE/VI caption rendering and CC toggle, full-video playback, HTTP byte ranges, covers, source-linked vocabulary, dictation grading, seven-cue mode, independent persistent progress, browser navigation and mobile widths 320/390/768.
 - Speaking was tested with Chromium's fake microphone and real MediaRecorder blobs; this checks the recording flow, not the user's microphone or pronunciation.
 - Desktop/mobile screenshots: `review-assets/kino-erdmaennchen-overview-desktop.png` and `review-assets/kino-erdmaennchen-lesson-mobile.png`.
+
+## Missing-line review — 2026-10-27
+
+All 12 candidate windows were independently checked with small and medium, followed by tight/context rechecks. Added 20 cues (900226–900245), for 138 total; all 118 previous cues, chapter picks and 24 flashcards are unchanged. Short magic-show utterances are separate cues.
+
+The original excluded-ID table above records the initial review. The later independent evidence resolves draft 900220 under fresh ID 900244; 900220 remains reserved. The other uncertain parts remain outside runtime data.
+
+Final wording, word evidence, exclusions, unresolved parts and checks: [Vietnamese report](../nudeltrick_missing_20261027/BAO-CAO-KIEM-CHUNG-NUDELTRICK-2026-10-27.md) and [review.json](../nudeltrick_missing_20261027/review.json). This is machine recognition evidence, not human listening approval.

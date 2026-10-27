@@ -37,12 +37,12 @@ test('Nudeltrick is discoverable with its own bilingual lessons, covers, vocabul
       lastText: cues[cues.length - 1].text
     };
   });
-  expect(audit.count).toBe(118);
+  expect(audit.count).toBe(138);
   expect(audit.unique).toBe(audit.count);
   expect(audit.invalid).toEqual([]);
   expect(audit.uncovered).toEqual([]);
   expect(audit.examples).toBeTruthy();
-  expect(audit.lastText).toContain('sehen');
+  expect(audit.lastText).toContain('ganz');
   for (const picks of audit.picks) { expect(picks).toHaveLength(7); expect(picks.every(Boolean)).toBeTruthy(); }
   for (let i = 1; i <= 7; i++) {
     const response = await request.get(`/assets/kino-posters/erdmaennchen_nudeltrick-${i}.jpg`);
@@ -92,7 +92,7 @@ test('every Nudeltrick part plays, displays matching DE/VI captions and stops at
     await expect(page.locator('#kinoTimelineList > button')).toHaveCount(data.count);
     total += data.count;
   }
-  expect(total).toBe(118);
+  expect(total).toBe(138);
   expect((await getStorageJson(page, stateKey)).watched).toEqual([0, 1, 2, 3, 4, 5, 6]);
 });
 
@@ -101,13 +101,16 @@ test('dictation, seven-cue selection and saved progress remain independent of Pe
   await page.locator('#peppaPractice').click();
   await page.locator('#peppaLight').click();
   await expect(page.locator('#kinoTimelineList > button')).toHaveCount(7);
+  await page.locator('#kinoTimelineCollapseBtn').click();
+  await page.locator('#kinoTimelineList > button').first().click();
   const first = await page.locator('#kinoOverlayDe').textContent();
+  const firstId = await page.evaluate(() => PIZZASCHWESTER_72_SEGMENTS[kinoCurrentIndex].id);
   await page.locator('#kinoDiktatInput').fill('Banane');
   await page.locator('#kinoCheckBtn').click();
   expect((await getStorageJson(page, stateKey)).completed).toEqual([]);
   await page.locator('#kinoDiktatInput').fill(first);
   await page.locator('#kinoCheckBtn').click();
-  expect((await getStorageJson(page, stateKey)).completed).toEqual([900115]);
+  expect((await getStorageJson(page, stateKey)).completed).toEqual([firstId]);
   await page.reload();
   await page.locator('#peppaPractice').click();
   await expect(page.locator('#kinoPracticePosition')).toContainText('Câu 2 / 7');
@@ -139,12 +142,21 @@ test('Nudeltrick works on a phone and can record a speaking take before completi
   }
   await page.setViewportSize({ width: 390, height: 844 });
   await page.locator('#kinoSpeakChoice').click();
+  const sentenceIndex = await page.evaluate(id => PIZZASCHWESTER_72_SEGMENTS.findIndex(c => c.id === id), cue.id);
+  expect(sentenceIndex).toBeGreaterThanOrEqual(0);
+  await page.locator('#kinoTimelineCollapseBtn').click();
+  await page.locator('#kinoTimelineList > button').nth(sentenceIndex).click();
+  await expect(page.locator('#kinoOverlayDe')).toHaveText(cue.text);
+  const recordingIndex = await page.evaluate(() => kinoCurrentIndex);
   await page.locator('#kinoDubRecordBtn').click();
   await expect(page.locator('#kinoRecordingHud')).toBeVisible({ timeout: 6000 });
   await page.waitForTimeout(350); // Real MediaRecorder data from the simulated microphone.
   await page.locator('#kinoDubRecordBtn').click();
   await expect(page.locator('#kinoDubReplayRow')).toBeVisible();
-  expect(await page.evaluate(async () => (await (await fetch(kinoDubbingBlobUrls[kinoCurrentIndex])).blob()).size)).toBeGreaterThan(100);
+  await expect.poll(() => page.evaluate(index => Boolean(kinoDubbingBlobUrls[index]), recordingIndex)).toBeTruthy();
+  // CSP allows blob media playback; connect-src intentionally does not allow fetch(blob:).
+  expect(await page.evaluate(() => kinoDubbingAudioChunks.reduce((bytes, chunk) => bytes + chunk.size, 0))).toBeGreaterThan(100);
+  await expect.poll(() => page.evaluate(() => Boolean(kinoDubbingReplayAudio && kinoDubbingReplayAudio.readyState >= 2 && kinoDubbingReplayAudio.duration > 0))).toBeTruthy();
   expect((await getStorageJson(page, stateKey)).completed).toEqual([]);
   await openOverview(page);
   await openPart(page, 6);

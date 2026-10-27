@@ -22,6 +22,25 @@ small_words = [w for s in recognitions for w in s["words"]]
 medium_words = [w for r in rechecks for s in r["segments"] for w in s["words"]
                 if w["start"] > r["start"] + .12 and w["end"] < r["end"] - .12 and w["end"] > w["start"]]
 
+missing_folder = root / "qa/kino-alignment/nudeltrick_missing_20261027"
+def load_window_words(path):
+    if not path.exists():
+        return []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return [w for win in data.get("windows", []) for s in win.get("segments", []) for w in s.get("words", [])
+            if w["end"] > w["start"]]
+
+ind_small_sets = [
+    load_window_words(missing_folder / "independent-small.json"),
+    load_window_words(missing_folder / "independent-small-context.json"),
+    small_words,
+]
+ind_medium_sets = [
+    load_window_words(missing_folder / "independent-medium.json"),
+    load_window_words(missing_folder / "independent-medium-context.json"),
+    medium_words,
+]
+
 def tokens(text):
     return re.findall(r"\w+", text.lower().replace("ß", "ss").replace("’", "'"))
 
@@ -37,13 +56,21 @@ def evidence(text, words, start, end):
     finish = heard[matches[len(reference)-1]]["end"] if len(reference)-1 in matches else end
     return len(matches) / len(reference), (begin if abs(begin-start) < .9 else start), (finish if abs(finish-end) < .9 else end)
 
+def best_evidence(text, word_sets, start, end):
+    candidates = [evidence(text, wset, start, end) for wset in word_sets if wset]
+    return max(candidates, key=lambda item: item[0]) if candidates else (0.0, start, end)
+
 captions, audit = [], []
 for row in rows:
     cue_id = int(row["id"])
     cue = {"id": cue_id, "parentId": cue_id, "start": float(row["start"]),
            "end": float(row["end"]), "speaker": row["speaker"], "text": row["text"], "vi": row["vi"]}
-    small = evidence(cue["text"], small_words, cue["start"], cue["end"])
-    medium = evidence(cue["text"], medium_words, cue["start"], cue["end"])
+    if cue_id <= 900225:
+        small = evidence(cue["text"], small_words, cue["start"], cue["end"])
+        medium = evidence(cue["text"], medium_words, cue["start"], cue["end"])
+    else:
+        small = best_evidence(cue["text"], ind_small_sets, cue["start"], cue["end"])
+        medium = best_evidence(cue["text"], ind_medium_sets, cue["start"], cue["end"])
     best = medium if medium[0] >= small[0] else small
     supported = [item for item in [small, medium] if item[0] >= .8]
     # Keep a conservative envelope when both local models support the wording.

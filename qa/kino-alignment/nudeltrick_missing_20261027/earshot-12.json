@@ -1,0 +1,97 @@
+{
+  "tool": "earshot.describe",
+  "purpose": "Phân loại âm thanh/nhạc kết tập và tiếng cười cho phần cuối cửa sổ ứng viên #12 (731.0s-746.92s). Không dùng earshot để xác nhận lời thoại.",
+  "input": {
+    "path": "C:/Users/huynh/.codex/worktrees/kino-nudeltrick-missing-lines/flash/video/erdmaennchen_nudeltrick.mp4",
+    "start": 731.0,
+    "end": 746.92
+  },
+  "output": {
+    "path": "C:/Users/huynh/.codex/worktrees/kino-nudeltrick-missing-lines/flash/video/erdmaennchen_nudeltrick.mp4",
+    "span": [
+      731.0,
+      746.92
+    ],
+    "summary": "15.9s, -19.8 LUFS, peak -2.0 dBFS, crest 17.8 dB; bright (centroid 1690 Hz, rolloff 3870 Hz); transient/percussive (onset rate 4.2/s); stereo (corr 0.45, width 0.52); AudioSet: Speech (0.53), Music (0.50), Snicker (0.15)",
+    "tags": [
+      {
+        "label": "Speech",
+        "score": 0.528,
+        "index": 0
+      },
+      {
+        "label": "Music",
+        "score": 0.495,
+        "index": 137
+      },
+      {
+        "label": "Snicker",
+        "score": 0.145,
+        "index": 19
+      },
+      {
+        "label": "Laughter",
+        "score": 0.114,
+        "index": 16
+      },
+      {
+        "label": "Chuckle, chortle",
+        "score": 0.088,
+        "index": 20
+      },
+      {
+        "label": "Giggle",
+        "score": 0.049,
+        "index": 18
+      },
+      {
+        "label": "Male speech, man speaking",
+        "score": 0.045,
+        "index": 1
+      },
+      {
+        "label": "Inside, small room",
+        "score": 0.044,
+        "index": 506
+      }
+    ],
+    "events": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "labels": [
+          {
+            "label": "Speech",
+            "score": 0.873
+          },
+          {
+            "label": "Snicker",
+            "score": 0.275
+          },
+          {
+            "label": "Laughter",
+            "score": 0.213
+          }
+        ]
+      },
+      {
+        "start": 6.0,
+        "end": 15.9,
+        "labels": [
+          {
+            "label": "Music",
+            "score": 0.692
+          },
+          {
+            "label": "Speech",
+            "score": 0.271
+          },
+          {
+            "label": "Laughter",
+            "score": 0.043
+          }
+        ]
+      }
+    ]
+  }
+}

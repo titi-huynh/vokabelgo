@@ -1,0 +1,1083 @@
+{
+  "model": "medium",
+  "source": "video/erdmaennchen_nudeltrick.mp4",
+  "candidateSha256": "fc3a79efd6ac3ef60631e55faac2dd39540d484f80aa3d7eb0fcde979c73a2ad",
+  "method": "Independent local bounded ASR, no prompt or candidate text supplied",
+  "humanListened": false,
+  "completed": 15,
+  "total": 15,
+  "elapsedSeconds": 502.25,
+  "windows": [
+    {
+      "candidate": 2,
+      "start": 84.8,
+      "end": 88.8,
+      "segments": [
+        {
+          "start": 84.8,
+          "end": 88.5,
+          "text": "Jetzt holt er gleich einen auf die Bühne, wahrscheinlich den da.",
+          "avg_logprob": -0.31081940625843246,
+          "no_speech_prob": 0.09890447556972504,
+          "words": [
+            {
+              "start": 84.8,
+              "end": 85.44,
+              "word": " Jetzt",
+              "probability": 0.7760587334632874
+            },
+            {
+              "start": 85.44,
+              "end": 85.76,
+              "word": " holt",
+              "probability": 0.9535840451717377
+            },
+            {
+              "start": 85.76,
+              "end": 85.8,
+              "word": " er",
+              "probability": 0.9200502634048462
+            },
+            {
+              "start": 85.8,
+              "end": 86.06,
+              "word": " gleich",
+              "probability": 0.9881294965744019
+            },
+            {
+              "start": 86.06,
+              "end": 86.3,
+              "word": " einen",
+              "probability": 0.9033822417259216
+            },
+            {
+              "start": 86.3,
+              "end": 86.56,
+              "word": " auf",
+              "probability": 0.9811632037162781
+            },
+            {
+              "start": 86.56,
+              "end": 86.84,
+              "word": " die",
+              "probability": 0.9852521419525146
+            },
+            {
+              "start": 86.84,
+              "end": 87.38,
+              "word": " Bühne,",
+              "probability": 0.9984797437985738
+            },
+            {
+              "start": 87.72,
+              "end": 87.92,
+              "word": " wahrscheinlich",
+              "probability": 0.9675623774528503
+            },
+            {
+              "start": 87.92,
+              "end": 88.2,
+              "word": " den",
+              "probability": 0.8897086977958679
+            },
+            {
+              "start": 88.2,
+              "end": 88.5,
+              "word": " da.",
+              "probability": 0.9752569198608398
+            }
+          ]
+        }
+      ],
+      "label": "cand2_holt_tut"
+    },
+    {
+      "candidate": 2,
+      "start": 90.4,
+      "end": 96.2,
+      "segments": [
+        {
+          "start": 90.4,
+          "end": 95.76,
+          "text": "Für den kommenden Trick brauche ich jemand aus dem Publikum.",
+          "avg_logprob": -0.32521283957693314,
+          "no_speech_prob": 0.1960691511631012,
+          "words": [
+            {
+              "start": 90.4,
+              "end": 92.06,
+              "word": " Für",
+              "probability": 0.27873608469963074
+            },
+            {
+              "start": 92.06,
+              "end": 92.34,
+              "word": " den",
+              "probability": 0.9911801218986511
+            },
+            {
+              "start": 92.34,
+              "end": 92.8,
+              "word": " kommenden",
+              "probability": 0.9949350953102112
+            },
+            {
+              "start": 92.8,
+              "end": 93.38,
+              "word": " Trick",
+              "probability": 0.9954684972763062
+            },
+            {
+              "start": 93.38,
+              "end": 94.26,
+              "word": " brauche",
+              "probability": 0.7869386076927185
+            },
+            {
+              "start": 94.26,
+              "end": 94.44,
+              "word": " ich",
+              "probability": 0.9988983869552612
+            },
+            {
+              "start": 94.44,
+              "end": 94.66,
+              "word": " jemand",
+              "probability": 0.9896625280380249
+            },
+            {
+              "start": 94.66,
+              "end": 94.94,
+              "word": " aus",
+              "probability": 0.9852197170257568
+            },
+            {
+              "start": 94.94,
+              "end": 95.14,
+              "word": " dem",
+              "probability": 0.9941155910491943
+            },
+            {
+              "start": 95.14,
+              "end": 95.76,
+              "word": " Publikum.",
+              "probability": 0.9990952412287394
+            }
+          ]
+        }
+      ],
+      "label": "cand2_psst_publikum"
+    },
+    {
+      "candidate": 2,
+      "start": 96.4,
+      "end": 100.3,
+      "segments": [
+        {
+          "start": 96.4,
+          "end": 99.16,
+          "text": "Darf ich Sie nach oben nennen?",
+          "avg_logprob": -0.7692153553167979,
+          "no_speech_prob": 0.20115086436271667,
+          "words": [
+            {
+              "start": 96.4,
+              "end": 97.44,
+              "word": " Darf",
+              "probability": 0.5923287868499756
+            },
+            {
+              "start": 97.44,
+              "end": 98.1,
+              "word": " ich",
+              "probability": 0.9941231608390808
+            },
+            {
+              "start": 98.1,
+              "end": 98.46,
+              "word": " Sie",
+              "probability": 0.6217533946037292
+            },
+            {
+              "start": 98.46,
+              "end": 98.74,
+              "word": " nach",
+              "probability": 0.9884765148162842
+            },
+            {
+              "start": 98.74,
+              "end": 98.98,
+              "word": " oben",
+              "probability": 0.9902025461196899
+            },
+            {
+              "start": 98.98,
+              "end": 99.16,
+              "word": " nennen?",
+              "probability": 0.3002997189760208
+            }
+          ]
+        },
+        {
+          "start": 99.38,
+          "end": 99.78,
+          "text": "Oh, Micha.",
+          "avg_logprob": -0.7692153553167979,
+          "no_speech_prob": 0.20115086436271667,
+          "words": [
+            {
+              "start": 99.38,
+              "end": 99.64,
+              "word": " Oh,",
+              "probability": 0.3472076654434204
+            },
+            {
+              "start": 99.68,
+              "end": 99.78,
+              "word": " Micha.",
+              "probability": 0.7341530323028564
+            }
+          ]
+        }
+      ],
+      "label": "cand2_oben_micha"
+    },
+    {
+      "candidate": 3,
+      "start": 118.4,
+      "end": 122.9,
+      "segments": [
+        {
+          "start": 121.38,
+          "end": 122.78,
+          "text": "Jaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaáááááááááááááááááááááááááááááááááááááááááááááá",
+          "avg_logprob": -0.13540041393703883,
+          "no_speech_prob": 0.5668662786483765,
+          "words": [
+            {
+              "start": 121.38,
+              "end": 122.78,
+              "word": " Jaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaáááááááááááááááááááááááááááááááááááááááááááááá",
+              "probability": 0.9025729183283021
+            }
+          ]
+        },
+        {
+          "start": 122.78,
+          "end": 122.88,
+          "text": "Das war's für heute.",
+          "avg_logprob": -0.7915915761675153,
+          "no_speech_prob": 0.8728408217430115,
+          "words": [
+            {
+              "start": 122.78,
+              "end": 122.88,
+              "word": " Das",
+              "probability": 0.013442550785839558
+            },
+            {
+              "start": 122.88,
+              "end": 122.88,
+              "word": " war's",
+              "probability": 0.40863826870918274
+            },
+            {
+              "start": 122.88,
+              "end": 122.88,
+              "word": " für",
+              "probability": 0.687717080116272
+            },
+            {
+              "start": 122.88,
+              "end": 122.88,
+              "word": " heute.",
+              "probability": 0.9204086661338806
+            }
+          ]
+        }
+      ],
+      "label": "cand3_between_113_114"
+    },
+    {
+      "candidate": 4,
+      "start": 131.0,
+      "end": 136.5,
+      "segments": [
+        {
+          "start": 131.0,
+          "end": 133.0,
+          "text": "Ja, mal ne Krawatte. Die ist doch...",
+          "avg_logprob": -0.6388780757000572,
+          "no_speech_prob": 0.026018323376774788,
+          "words": [
+            {
+              "start": 131.0,
+              "end": 131.0,
+              "word": " Ja,",
+              "probability": 0.13635733723640442
+            },
+            {
+              "start": 131.28,
+              "end": 131.46,
+              "word": " mal",
+              "probability": 0.37087172269821167
+            },
+            {
+              "start": 131.46,
+              "end": 131.6,
+              "word": " ne",
+              "probability": 0.5700902342796326
+            },
+            {
+              "start": 131.6,
+              "end": 131.94,
+              "word": " Krawatte.",
+              "probability": 0.9719299077987671
+            },
+            {
+              "start": 132.68,
+              "end": 132.72,
+              "word": " Die",
+              "probability": 0.4436931014060974
+            },
+            {
+              "start": 132.72,
+              "end": 132.94,
+              "word": " ist",
+              "probability": 0.9567687511444092
+            },
+            {
+              "start": 132.94,
+              "end": 133.23,
+              "word": " doch...",
+              "probability": 0.6451350450515747
+            }
+          ]
+        },
+        {
+          "start": 134.18,
+          "end": 134.48,
+          "text": "Ja!",
+          "avg_logprob": -0.6388780757000572,
+          "no_speech_prob": 0.026018323376774788,
+          "words": [
+            {
+              "start": 134.18,
+              "end": 134.48,
+              "word": " Ja!",
+              "probability": 0.5552334785461426
+            }
+          ]
+        }
+      ],
+      "label": "cand4_krawatte"
+    },
+    {
+      "candidate": 6,
+      "start": 160.2,
+      "end": 164.0,
+      "segments": [
+        {
+          "start": 160.2,
+          "end": 162.78,
+          "text": "Aber in meiner Tasche, das ...",
+          "avg_logprob": -0.5349137566306374,
+          "no_speech_prob": 0.5774192214012146,
+          "words": [
+            {
+              "start": 160.2,
+              "end": 161.44,
+              "word": " Aber",
+              "probability": 0.68215411901474
+            },
+            {
+              "start": 161.44,
+              "end": 161.52,
+              "word": " in",
+              "probability": 0.5597802996635437
+            },
+            {
+              "start": 161.52,
+              "end": 161.66,
+              "word": " meiner",
+              "probability": 0.6973541378974915
+            },
+            {
+              "start": 161.66,
+              "end": 162.04,
+              "word": " Tasche,",
+              "probability": 0.9984699189662933
+            },
+            {
+              "start": 162.28,
+              "end": 162.28,
+              "word": " das",
+              "probability": 0.9774681329727173
+            },
+            {
+              "start": 162.28,
+              "end": 162.78,
+              "word": " ...",
+              "probability": 0.4565591514110565
+            }
+          ]
+        }
+      ],
+      "label": "cand6_tasche"
+    },
+    {
+      "candidate": 8,
+      "start": 290.1,
+      "end": 294.6,
+      "segments": [
+        {
+          "start": 290.1,
+          "end": 291.9,
+          "text": "Ja, bitte.",
+          "avg_logprob": -0.9353688444410052,
+          "no_speech_prob": 0.43434974551200867,
+          "words": [
+            {
+              "start": 290.1,
+              "end": 291.26,
+              "word": " Ja,",
+              "probability": 0.13507919013500214
+            },
+            {
+              "start": 291.9,
+              "end": 291.9,
+              "word": " bitte.",
+              "probability": 0.9660050272941589
+            }
+          ]
+        }
+      ],
+      "label": "cand8_ja_bitte"
+    },
+    {
+      "candidate": 9,
+      "start": 564.0,
+      "end": 571.2,
+      "segments": [
+        {
+          "start": 564.0,
+          "end": 568.0,
+          "text": "So, los geht's!",
+          "avg_logprob": -0.7838310665554471,
+          "no_speech_prob": 0.29633742570877075,
+          "words": [
+            {
+              "start": 564.0,
+              "end": 566.0,
+              "word": " So,",
+              "probability": 0.368156760931015
+            },
+            {
+              "start": 567.22,
+              "end": 567.54,
+              "word": " los",
+              "probability": 0.8343446850776672
+            },
+            {
+              "start": 567.54,
+              "end": 568.24,
+              "word": " geht's!",
+              "probability": 0.8299630880355835
+            }
+          ]
+        }
+      ],
+      "label": "cand9_so_los_kaese"
+    },
+    {
+      "candidate": 10,
+      "start": 575.4,
+      "end": 577.6,
+      "segments": [
+        {
+          "start": 575.4,
+          "end": 577.48,
+          "text": "Sie hat einen Käse gekauft.",
+          "avg_logprob": -0.27945244854146783,
+          "no_speech_prob": 0.13144844770431519,
+          "words": [
+            {
+              "start": 575.4,
+              "end": 575.76,
+              "word": " Sie",
+              "probability": 0.782681941986084
+            },
+            {
+              "start": 575.76,
+              "end": 575.96,
+              "word": " hat",
+              "probability": 0.998202919960022
+            },
+            {
+              "start": 575.96,
+              "end": 576.38,
+              "word": " einen",
+              "probability": 0.8266004920005798
+            },
+            {
+              "start": 576.38,
+              "end": 576.88,
+              "word": " Käse",
+              "probability": 0.995968222618103
+            },
+            {
+              "start": 576.88,
+              "end": 577.48,
+              "word": " gekauft.",
+              "probability": 0.9980452358722687
+            }
+          ]
+        }
+      ],
+      "label": "cand10_einen_kaese"
+    },
+    {
+      "candidate": 10,
+      "start": 577.5,
+      "end": 583.0,
+      "segments": [
+        {
+          "start": 577.5,
+          "end": 580.48,
+          "text": "Ah, ja! Man riecht, hm?",
+          "avg_logprob": -0.3891274148020251,
+          "no_speech_prob": 0.16242359578609467,
+          "words": [
+            {
+              "start": 577.5,
+              "end": 578.1,
+              "word": " Ah,",
+              "probability": 0.5554620027542114
+            },
+            {
+              "start": 578.36,
+              "end": 578.64,
+              "word": " ja!",
+              "probability": 0.9799108505249023
+            },
+            {
+              "start": 579.52,
+              "end": 579.66,
+              "word": " Man",
+              "probability": 0.9368314743041992
+            },
+            {
+              "start": 579.66,
+              "end": 580.16,
+              "word": " riecht,",
+              "probability": 0.9624756773312887
+            },
+            {
+              "start": 580.32,
+              "end": 580.48,
+              "word": " hm?",
+              "probability": 0.7447475790977478
+            }
+          ]
+        },
+        {
+          "start": 580.88,
+          "end": 582.78,
+          "text": "Und ich hab schon gedacht, das wären deine Füße.",
+          "avg_logprob": -0.3891274148020251,
+          "no_speech_prob": 0.16242359578609467,
+          "words": [
+            {
+              "start": 580.88,
+              "end": 581.08,
+              "word": " Und",
+              "probability": 0.8099185824394226
+            },
+            {
+              "start": 581.08,
+              "end": 581.12,
+              "word": " ich",
+              "probability": 0.9882645606994629
+            },
+            {
+              "start": 581.12,
+              "end": 581.24,
+              "word": " hab",
+              "probability": 0.8373236656188965
+            },
+            {
+              "start": 581.24,
+              "end": 581.46,
+              "word": " schon",
+              "probability": 0.8382594585418701
+            },
+            {
+              "start": 581.46,
+              "end": 581.64,
+              "word": " gedacht,",
+              "probability": 0.9933432340621948
+            },
+            {
+              "start": 581.8,
+              "end": 581.84,
+              "word": " das",
+              "probability": 0.9141407608985901
+            },
+            {
+              "start": 581.84,
+              "end": 582.04,
+              "word": " wären",
+              "probability": 0.9688711762428284
+            },
+            {
+              "start": 582.04,
+              "end": 582.38,
+              "word": " deine",
+              "probability": 0.9923425316810608
+            },
+            {
+              "start": 582.38,
+              "end": 582.78,
+              "word": " Füße.",
+              "probability": 0.9957173665364584
+            }
+          ]
+        }
+      ],
+      "label": "cand10_riechts_fuesse"
+    },
+    {
+      "candidate": 10,
+      "start": 584.2,
+      "end": 590.0,
+      "segments": [
+        {
+          "start": 584.2,
+          "end": 587.36,
+          "text": "Und nun schweb!",
+          "avg_logprob": -0.4624279807595646,
+          "no_speech_prob": 0.016919802874326706,
+          "words": [
+            {
+              "start": 584.2,
+              "end": 585.26,
+              "word": " Und",
+              "probability": 0.6889280676841736
+            },
+            {
+              "start": 585.26,
+              "end": 586.04,
+              "word": " nun",
+              "probability": 0.985431969165802
+            },
+            {
+              "start": 586.04,
+              "end": 587.36,
+              "word": " schweb!",
+              "probability": 0.7719427744547526
+            }
+          ]
+        },
+        {
+          "start": 588.14,
+          "end": 589.08,
+          "text": "Nun schweb schon!",
+          "avg_logprob": -0.4624279807595646,
+          "no_speech_prob": 0.016919802874326706,
+          "words": [
+            {
+              "start": 588.14,
+              "end": 588.38,
+              "word": " Nun",
+              "probability": 0.7483242154121399
+            },
+            {
+              "start": 588.38,
+              "end": 588.76,
+              "word": " schweb",
+              "probability": 0.8923999468485514
+            },
+            {
+              "start": 588.76,
+              "end": 589.08,
+              "word": " schon!",
+              "probability": 0.8844091296195984
+            }
+          ]
+        }
+      ],
+      "label": "cand10_nun_schweb_schon"
+    },
+    {
+      "candidate": 11,
+      "start": 695.5,
+      "end": 704.0,
+      "segments": [
+        {
+          "start": 695.5,
+          "end": 703.22,
+          "text": "Und das Geheimnis ist, dass man das Publikum dabei ablenkt, indem man dann groß mit dem Geldbeutel wägt.",
+          "avg_logprob": -0.23835539051464627,
+          "no_speech_prob": 0.0474495105445385,
+          "words": [
+            {
+              "start": 695.5,
+              "end": 696.48,
+              "word": " Und",
+              "probability": 0.6722103953361511
+            },
+            {
+              "start": 696.48,
+              "end": 696.7,
+              "word": " das",
+              "probability": 0.996542751789093
+            },
+            {
+              "start": 696.7,
+              "end": 697.28,
+              "word": " Geheimnis",
+              "probability": 0.9902370770772299
+            },
+            {
+              "start": 697.28,
+              "end": 697.6,
+              "word": " ist,",
+              "probability": 0.9963598847389221
+            },
+            {
+              "start": 698.16,
+              "end": 698.54,
+              "word": " dass",
+              "probability": 0.9034134149551392
+            },
+            {
+              "start": 698.54,
+              "end": 698.8,
+              "word": " man",
+              "probability": 0.9944992065429688
+            },
+            {
+              "start": 698.8,
+              "end": 699.04,
+              "word": " das",
+              "probability": 0.9902955293655396
+            },
+            {
+              "start": 699.04,
+              "end": 699.62,
+              "word": " Publikum",
+              "probability": 0.9986522992451986
+            },
+            {
+              "start": 699.62,
+              "end": 699.94,
+              "word": " dabei",
+              "probability": 0.914300262928009
+            },
+            {
+              "start": 699.94,
+              "end": 700.86,
+              "word": " ablenkt,",
+              "probability": 0.9571515321731567
+            },
+            {
+              "start": 701.22,
+              "end": 701.28,
+              "word": " indem",
+              "probability": 0.9582282304763794
+            },
+            {
+              "start": 701.28,
+              "end": 701.48,
+              "word": " man",
+              "probability": 0.9951321482658386
+            },
+            {
+              "start": 701.48,
+              "end": 701.78,
+              "word": " dann",
+              "probability": 0.7699854969978333
+            },
+            {
+              "start": 701.78,
+              "end": 702.02,
+              "word": " groß",
+              "probability": 0.7189016342163086
+            },
+            {
+              "start": 702.02,
+              "end": 702.18,
+              "word": " mit",
+              "probability": 0.9942806959152222
+            },
+            {
+              "start": 702.18,
+              "end": 702.3,
+              "word": " dem",
+              "probability": 0.944570004940033
+            },
+            {
+              "start": 702.3,
+              "end": 702.94,
+              "word": " Geldbeutel",
+              "probability": 0.9990459680557251
+            },
+            {
+              "start": 702.94,
+              "end": 703.22,
+              "word": " wägt.",
+              "probability": 0.4711877206961314
+            }
+          ]
+        }
+      ],
+      "label": "cand11_geheimnis_wedelt"
+    },
+    {
+      "candidate": 11,
+      "start": 703.8,
+      "end": 709.2,
+      "segments": [
+        {
+          "start": 703.8,
+          "end": 708.92,
+          "text": "Ah, das ist wirklich nett, dass du uns als Dankeschön die Nudeltrick verdienst.",
+          "avg_logprob": -0.3278122329711914,
+          "no_speech_prob": 0.13628575205802917,
+          "words": [
+            {
+              "start": 703.8,
+              "end": 704.76,
+              "word": " Ah,",
+              "probability": 0.4800053536891937
+            },
+            {
+              "start": 705.28,
+              "end": 705.58,
+              "word": " das",
+              "probability": 0.9482308030128479
+            },
+            {
+              "start": 705.58,
+              "end": 705.8,
+              "word": " ist",
+              "probability": 0.993075966835022
+            },
+            {
+              "start": 705.8,
+              "end": 706.16,
+              "word": " wirklich",
+              "probability": 0.9883649349212646
+            },
+            {
+              "start": 706.16,
+              "end": 706.42,
+              "word": " nett,",
+              "probability": 0.9954557418823242
+            },
+            {
+              "start": 706.56,
+              "end": 706.66,
+              "word": " dass",
+              "probability": 0.9645744562149048
+            },
+            {
+              "start": 706.66,
+              "end": 706.8,
+              "word": " du",
+              "probability": 0.837769091129303
+            },
+            {
+              "start": 706.8,
+              "end": 706.98,
+              "word": " uns",
+              "probability": 0.9986425042152405
+            },
+            {
+              "start": 706.98,
+              "end": 707.14,
+              "word": " als",
+              "probability": 0.9935014843940735
+            },
+            {
+              "start": 707.14,
+              "end": 707.64,
+              "word": " Dankeschön",
+              "probability": 0.9834360480308533
+            },
+            {
+              "start": 707.64,
+              "end": 707.82,
+              "word": " die",
+              "probability": 0.7505903244018555
+            },
+            {
+              "start": 707.82,
+              "end": 708.4,
+              "word": " Nudeltrick",
+              "probability": 0.9622602313756943
+            },
+            {
+              "start": 708.4,
+              "end": 708.92,
+              "word": " verdienst.",
+              "probability": 0.38772664219141006
+            }
+          ]
+        }
+      ],
+      "label": "cand11_dankeschoen"
+    },
+    {
+      "candidate": 11,
+      "start": 709.0,
+      "end": 714.8,
+      "segments": [
+        {
+          "start": 709.0,
+          "end": 714.58,
+          "text": "Na, wenn ihr nicht gewesen wird, dann hätte ich wahrscheinlich nie wieder auftreten können.",
+          "avg_logprob": -0.22396252846175974,
+          "no_speech_prob": 0.06944748759269714,
+          "words": [
+            {
+              "start": 709.0,
+              "end": 709.42,
+              "word": " Na,",
+              "probability": 0.2973405718803406
+            },
+            {
+              "start": 709.9,
+              "end": 710.12,
+              "word": " wenn",
+              "probability": 0.9958305954933167
+            },
+            {
+              "start": 710.12,
+              "end": 710.36,
+              "word": " ihr",
+              "probability": 0.8578606843948364
+            },
+            {
+              "start": 710.36,
+              "end": 710.62,
+              "word": " nicht",
+              "probability": 0.9965217113494873
+            },
+            {
+              "start": 710.62,
+              "end": 710.92,
+              "word": " gewesen",
+              "probability": 0.9946320056915283
+            },
+            {
+              "start": 710.92,
+              "end": 711.44,
+              "word": " wird,",
+              "probability": 0.7042849063873291
+            },
+            {
+              "start": 712.06,
+              "end": 712.16,
+              "word": " dann",
+              "probability": 0.9812746644020081
+            },
+            {
+              "start": 712.16,
+              "end": 712.28,
+              "word": " hätte",
+              "probability": 0.9751532673835754
+            },
+            {
+              "start": 712.28,
+              "end": 712.54,
+              "word": " ich",
+              "probability": 0.9982467889785767
+            },
+            {
+              "start": 712.54,
+              "end": 713.12,
+              "word": " wahrscheinlich",
+              "probability": 0.9823134541511536
+            },
+            {
+              "start": 713.12,
+              "end": 713.5,
+              "word": " nie",
+              "probability": 0.9770481586456299
+            },
+            {
+              "start": 713.5,
+              "end": 713.86,
+              "word": " wieder",
+              "probability": 0.9902970194816589
+            },
+            {
+              "start": 713.86,
+              "end": 714.34,
+              "word": " auftreten",
+              "probability": 0.9963212211926779
+            },
+            {
+              "start": 714.34,
+              "end": 714.58,
+              "word": " können.",
+              "probability": 0.9973490238189697
+            }
+          ]
+        }
+      ],
+      "label": "cand11_aufgetreten"
+    },
+    {
+      "candidate": 12,
+      "start": 727.5,
+      "end": 737.0,
+      "segments": [
+        {
+          "start": 727.5,
+          "end": 730.72,
+          "text": "Nicht so ganz.",
+          "avg_logprob": -0.7822308757088401,
+          "no_speech_prob": 0.1498645395040512,
+          "words": [
+            {
+              "start": 727.5,
+              "end": 730.18,
+              "word": " Nicht",
+              "probability": 0.5420382022857666
+            },
+            {
+              "start": 730.18,
+              "end": 730.44,
+              "word": " so",
+              "probability": 0.9776790142059326
+            },
+            {
+              "start": 730.44,
+              "end": 730.72,
+              "word": " ganz.",
+              "probability": 0.9955804944038391
+            }
+          ]
+        },
+        {
+          "start": 731.96,
+          "end": 732.74,
+          "text": "Pizza!",
+          "avg_logprob": -0.7822308757088401,
+          "no_speech_prob": 0.1498645395040512,
+          "words": [
+            {
+              "start": 731.96,
+              "end": 732.74,
+              "word": " Pizza!",
+              "probability": 0.5571098923683167
+            }
+          ]
+        }
+      ],
+      "label": "cand12_nicht_so_ganz_pizza"
+    }
+  ]
+}
