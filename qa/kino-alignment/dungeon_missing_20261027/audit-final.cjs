@@ -20,7 +20,16 @@ assert.deepEqual(after.lesson.flashcards,before.lesson.flashcards);
 assert.deepEqual(after.lesson.chapterData.chapters.map(c=>c.picks),before.lesson.chapterData.chapters.map(c=>c.picks));
 assert.equal(after.lesson.chapterData.cueCount,after.captions.length);
 for(const cue of after.captions)assert.equal(after.lesson.chapterData.chapters.filter(c=>cue.start>=c.start&&cue.end<=c.end).length,1,`Chapter coverage ${cue.id}`);
-assert.deepEqual(review.added.map(c=>c.id),Array.from({length:review.added.length},(_,i)=>1200385+i));
+assert.deepEqual([...review.added.map(c=>c.id),...review.withdrawnCueIds].sort((a,b)=>a-b),Array.from({length:review.added.length+review.withdrawnCueIds.length},(_,i)=>1200385+i));
+const prior=snapshot(execFileSync('git',['show','927ac53:'+stem+'-aligned.js'],{cwd:root,encoding:'utf8'}),execFileSync('git',['show','927ac53:'+stem+'-lesson.js'],{cwd:root,encoding:'utf8'}));
+const priorMetadata=execFileSync('git',['show','927ac53:kino-metadata.js'],{cwd:root,encoding:'utf8'}).replace(/\r\n/g,'\n');
+const expectedMetadata=priorMetadata.split('\n').map(line=>line.startsWith('const DELICIOUS_IN_DUNGEON_S01E01_LESSON =')?line.replace('"cueCount":373','"cueCount":372'):line).join('\n');
+assert.equal(read('kino-metadata.js').replace(/\r\n/g,'\n'),expectedMetadata,'Unrelated metadata changed');
+for(const kind of ['captions','units']){
+  assert.deepEqual(after[kind],prior[kind].filter(c=>c.id!==1200388),'Only the withheld cue may change');
+  assert(!after[kind].some(c=>c.id===1200388||/^(geht|geh[’']?) mal zur seite[.!]?$/i.test(c.text)),'Withheld cue leaked into runtime');
+}
+assert(review.reviewNeeded.some(c=>c.reservedCueId===1200388));
 for(const cue of review.added)for(const field of ['id','start','end','speaker','text','vi'])assert.equal(after.captions.find(c=>c.id===cue.id)[field],cue[field],`${cue.id}/${field}`);
 assert.equal(read('kino-practice-data.js').replace(/\r\n/g,'\n'),fromBase('kino-practice-data.js').replace(/\r\n/g,'\n'),'Curated picks changed');
 assert.equal(read('kino-anime-flashcards.js').replace(/\r\n/g,'\n'),fromBase('kino-anime-flashcards.js').replace(/\r\n/g,'\n'),'Curated flashcards changed');
@@ -33,5 +42,5 @@ const regenerated=build(source,definitions.find(d=>d.key==='delicious_in_dungeon
 assert.deepEqual(regenerated.captions,after.captions);assert.deepEqual(regenerated.units,after.units);
 const config=JSON.parse(read('vercel.json'));
 assert.equal(config.git.deploymentEnabled['codex/kino-dungeon-missing-lines'],false);
-const report={baseRevision:base,baseline:367,added:review.added.length,total:after.captions.length,existingCaptionsAndPracticeCuesUnchanged:true,nonoverlapping:true,uniqueSequentialNewIds:true,allCuesInsideOneChapter:true,shortlistAndFlashcardsUnchanged:true,otherAlignedFilesUnchanged:other,sourceBuilderReproducesRuntime:true,branchAutoDeployDisabled:true};
+const report={baseRevision:base,baseline:367,added:review.added.length,total:after.captions.length,existingCaptionsAndPracticeCuesUnchanged:true,nonoverlapping:true,uniqueStableNewIds:true,reservedReviewCueIds:review.withdrawnCueIds,onlyWithdrawnCueRemovedSince927ac53:true,withheldCueAbsentFromRuntime:true,allCuesInsideOneChapter:true,shortlistAndFlashcardsUnchanged:true,otherAlignedFilesUnchanged:other,sourceBuilderReproducesRuntime:true,branchAutoDeployDisabled:true};
 fs.writeFileSync(path.join(__dirname,'final-data-verification.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));

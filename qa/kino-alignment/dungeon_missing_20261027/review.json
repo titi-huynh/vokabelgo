@@ -22,7 +22,10 @@
     "qa/kino-alignment/dungeon_missing_20261027/independent-small-context.json",
     "qa/kino-alignment/dungeon_missing_20261027/independent-medium-context.json",
     "qa/kino-alignment/dungeon_missing_20261027/extra_tight_spec.json",
-    "qa/kino-alignment/dungeon_missing_20261027/extra_context_spec.json"
+    "qa/kino-alignment/dungeon_missing_20261027/extra_context_spec.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-small-cue1200388-recheck.json",
+    "qa/kino-alignment/dungeon_missing_20261027/independent-medium-cue1200388-recheck.json",
+    "qa/kino-alignment/dungeon_missing_20261027/extra_cue1200388_spec.json"
   ],
   "method": {
     "humanListened": false,
@@ -43,22 +46,22 @@
       "initial_prompt": null,
       "hotwords": null
     },
-    "idPolicy": "Giữ nguyên toàn bộ 367 cue cũ và các ID dự thảo <=1200384. ID mới liên tục 1200385–1200390.",
+    "idPolicy": "Giữ nguyên 367 cue cũ và các ID dự thảo <=1200384. Giữ ID mới 1200385–1200387, 1200389–1200390; ID 1200388 dành riêng cho reviewNeeded, không tái sử dụng hay đánh lại ID các câu đã push.",
     "normalizationPolicy": "Chỉ chuẩn hóa dấu câu và hoa/thường cho cue thêm. Không dùng tên chuẩn để sửa các âm tên riêng chưa chốt; ba đề xuất như vậy được chuyển sang reviewNeeded.",
     "countingMethod": "Xét đầy đủ cả 10 cửa sổ ứng viên (1..10). Các lượt thoại ngắn được tách thành từng câu độc lập. Một cửa sổ ứng viên có thể vừa chứa câu được đề xuất thêm (added), phần bị loại trừ (excluded - trùng cue kề, thần chú ngôn ngữ hư cấu, nhạc kết tập, tiếng hét phi từ vựng/ảo giác ASR) và phần cần người duyệt thêm (reviewNeeded).",
-    "totalRecognitionWindows": 62
+    "totalRecognitionWindows": 66
   },
   "counts": {
     "candidates": 10,
     "previousCueCount": 367,
-    "newCueCount": 373,
-    "addedCues": 6,
+    "newCueCount": 372,
+    "addedCues": 5,
     "adjustedExistingCues": 0,
     "excludedParts": 9,
-    "reviewNeededParts": 9,
-    "windowsWithAddedCues": 4,
+    "reviewNeededParts": 10,
+    "windowsWithAddedCues": 3,
     "windowsWithExcludedParts": 8,
-    "windowsWithReviewNeededParts": 8
+    "windowsWithReviewNeededParts": 9
   },
   "added": [
     {
@@ -368,116 +371,6 @@
       "parentId": 1200387
     },
     {
-      "id": 1200388,
-      "parentId": 1200388,
-      "candidate": 7,
-      "start": 1155.03,
-      "end": 1156.65,
-      "rawStart": 1155.03,
-      "rawEnd": 1156.65,
-      "speaker": "Marcille",
-      "text": "Geht mal zur Seite!",
-      "vi": "Mọi người lùi sang một bên đi!",
-      "sourceDraftIds": [
-        1200308
-      ],
-      "smallText": "Geht mal zur Seite",
-      "mediumText": "geht mal zur seite",
-      "timingEvidence": {
-        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
-        "candidate": 7,
-        "words": [
-          {
-            "start": 1155.19,
-            "end": 1155.77,
-            "word": " geht",
-            "probability": 0.10575781762599945
-          },
-          {
-            "start": 1155.77,
-            "end": 1155.93,
-            "word": " mal",
-            "probability": 0.8571359515190125
-          },
-          {
-            "start": 1155.93,
-            "end": 1156.15,
-            "word": " zur",
-            "probability": 0.9965081810951233
-          },
-          {
-            "start": 1156.15,
-            "end": 1156.65,
-            "word": " seite",
-            "probability": 0.9750043749809265
-          }
-        ]
-      },
-      "smallEvidence": {
-        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
-        "candidate": 7,
-        "words": [
-          {
-            "start": 1155.03,
-            "end": 1155.71,
-            "word": " Geht",
-            "probability": 0.36092528235167265
-          },
-          {
-            "start": 1155.71,
-            "end": 1155.85,
-            "word": " mal",
-            "probability": 0.7539065480232239
-          },
-          {
-            "start": 1155.85,
-            "end": 1155.99,
-            "word": " zur",
-            "probability": 0.9977788329124451
-          },
-          {
-            "start": 1155.99,
-            "end": 1156.33,
-            "word": " Seite",
-            "probability": 0.8896182179450989
-          }
-        ]
-      },
-      "mediumEvidence": {
-        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
-        "candidate": 7,
-        "words": [
-          {
-            "start": 1155.19,
-            "end": 1155.77,
-            "word": " geht",
-            "probability": 0.10575781762599945
-          },
-          {
-            "start": 1155.77,
-            "end": 1155.93,
-            "word": " mal",
-            "probability": 0.8571359515190125
-          },
-          {
-            "start": 1155.93,
-            "end": 1156.15,
-            "word": " zur",
-            "probability": 0.9965081810951233
-          },
-          {
-            "start": 1156.15,
-            "end": 1156.65,
-            "word": " seite",
-            "probability": 0.9750043749809265
-          }
-        ]
-      },
-      "normalization": "Chỉ chuẩn hóa hoa/thường và dấu câu; không đổi từ, tên riêng hoặc ngữ pháp.",
-      "note": "Mốc bao phủ các từ của hai lượt nhận dạng được dẫn nguồn, không thêm khoảng đệm hoặc cắt từ để vừa cue/chương.",
-      "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
-    },
-    {
       "id": 1200389,
       "parentId": 1200389,
       "candidate": 9,
@@ -770,7 +663,7 @@
       "smallText": "kämpfen (1152.79-1153.39s)",
       "mediumText": "kämpfen (1154.41-1155.19s) ... ich werde sie (1156.65-1158.37s)",
       "classification": "excluded_duplicate_existing_cues",
-      "reason": "Không thêm trùng đuôi cue 1200307 (1151.56–1154.24s) và đầu cue 1200309 (1157.66–1159.88s). Geht mal zur Seite! được thêm riêng theo từ nhận dạng.",
+      "reason": "Không thêm trùng đuôi cue 1200307 (1151.56–1154.24s) và đầu cue 1200309 (1157.66–1159.88s). Phát ngôn ở giữa được giữ reviewNeeded vì Geht/Geh bất đồng khi đổi crop.",
       "sourceCandidateAsr": [
         "Kämpfen.",
         "Geht mal zur Seite.",
@@ -989,6 +882,304 @@
       "reason": "Phản ứng giật mình 983.70–985.02s không ra chữ ở các lượt chính; khi cắt hẹp small cho Nein!, medium cho Ah!/Hm? với độ tin cậy thấp. Giữ reviewNeeded; cả câu hỏi có tên nhân vật sau đó cũng được giữ riêng để duyệt."
     },
     {
+      "candidate": 7,
+      "window": [
+        1152.79,
+        1158.47
+      ],
+      "museRange": [
+        1155.03,
+        1156.65
+      ],
+      "reservedCueId": 1200388,
+      "suggestedAlternatives": [
+        "Geht mal zur Seite!",
+        "Geh mal zur Seite!"
+      ],
+      "classification": "review_needed_verb_inflection_disagrees_on_isolated_crop",
+      "reason": "Kiểm lại cue 1200388 sau phản biện của Muse: trên cùng crop hẹp 1154.70–1157.10s, small ghi “Geht mal zur Seite!”, medium ghi “Geh mal zur Seite!”. Crop có ngữ cảnh 1151.30–1160.10s cho “Geht” ở cả hai model. Như vậy dạng động từ đổi theo crop; ngữ cảnh nói với nhóm không chứng minh được âm /t/. Chưa có người nghe duyệt; không sửa Geht thành Geh hoặc chốt bằng đa số ASR. Rút toàn bộ cue khỏi captions/practice/picks/flashcards, giữ ID 1200388 để duyệt, không tái sử dụng hoặc đổi ID 1200389/1200390.",
+      "previousBranchCue": {
+        "id": 1200388,
+        "parentId": 1200388,
+        "candidate": 7,
+        "start": 1155.03,
+        "end": 1156.65,
+        "rawStart": 1155.03,
+        "rawEnd": 1156.65,
+        "speaker": "Marcille",
+        "text": "Geht mal zur Seite!",
+        "vi": "Mọi người lùi sang một bên đi!",
+        "sourceDraftIds": [
+          1200308
+        ],
+        "smallText": "Geht mal zur Seite",
+        "mediumText": "geht mal zur seite",
+        "timingEvidence": {
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+          "candidate": 7,
+          "words": [
+            {
+              "start": 1155.19,
+              "end": 1155.77,
+              "word": " geht",
+              "probability": 0.10575781762599945
+            },
+            {
+              "start": 1155.77,
+              "end": 1155.93,
+              "word": " mal",
+              "probability": 0.8571359515190125
+            },
+            {
+              "start": 1155.93,
+              "end": 1156.15,
+              "word": " zur",
+              "probability": 0.9965081810951233
+            },
+            {
+              "start": 1156.15,
+              "end": 1156.65,
+              "word": " seite",
+              "probability": 0.9750043749809265
+            }
+          ]
+        },
+        "smallEvidence": {
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small.json",
+          "candidate": 7,
+          "words": [
+            {
+              "start": 1155.03,
+              "end": 1155.71,
+              "word": " Geht",
+              "probability": 0.36092528235167265
+            },
+            {
+              "start": 1155.71,
+              "end": 1155.85,
+              "word": " mal",
+              "probability": 0.7539065480232239
+            },
+            {
+              "start": 1155.85,
+              "end": 1155.99,
+              "word": " zur",
+              "probability": 0.9977788329124451
+            },
+            {
+              "start": 1155.99,
+              "end": 1156.33,
+              "word": " Seite",
+              "probability": 0.8896182179450989
+            }
+          ]
+        },
+        "mediumEvidence": {
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium.json",
+          "candidate": 7,
+          "words": [
+            {
+              "start": 1155.19,
+              "end": 1155.77,
+              "word": " geht",
+              "probability": 0.10575781762599945
+            },
+            {
+              "start": 1155.77,
+              "end": 1155.93,
+              "word": " mal",
+              "probability": 0.8571359515190125
+            },
+            {
+              "start": 1155.93,
+              "end": 1156.15,
+              "word": " zur",
+              "probability": 0.9965081810951233
+            },
+            {
+              "start": 1156.15,
+              "end": 1156.65,
+              "word": " seite",
+              "probability": 0.9750043749809265
+            }
+          ]
+        },
+        "normalization": "Chỉ chuẩn hóa hoa/thường và dấu câu; không đổi từ, tên riêng hoặc ngữ pháp.",
+        "note": "Mốc bao phủ các từ của hai lượt nhận dạng được dẫn nguồn, không thêm khoảng đệm hoặc cắt từ để vừa cue/chương.",
+        "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
+      },
+      "recheckEvidence": [
+        {
+          "model": "small",
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small-cue1200388-recheck.json",
+          "label": "cue1200388_isolated_recheck",
+          "crop": [
+            1154.7,
+            1157.1
+          ],
+          "segment": {
+            "start": 1154.7,
+            "end": 1156.28,
+            "text": "Geht mal zur Seite!",
+            "avg_logprob": -0.3346026473575168,
+            "no_speech_prob": 0.151686891913414,
+            "words": [
+              {
+                "start": 1154.7,
+                "end": 1155.72,
+                "word": " Geht",
+                "probability": 0.8723093569278717
+              },
+              {
+                "start": 1155.72,
+                "end": 1155.84,
+                "word": " mal",
+                "probability": 0.8477068543434143
+              },
+              {
+                "start": 1155.84,
+                "end": 1155.98,
+                "word": " zur",
+                "probability": 0.9969987869262695
+              },
+              {
+                "start": 1155.98,
+                "end": 1156.28,
+                "word": " Seite!",
+                "probability": 0.9966981410980225
+              }
+            ]
+          }
+        },
+        {
+          "model": "small",
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small-cue1200388-recheck.json",
+          "label": "cue1200388_with_neighbors_recheck",
+          "crop": [
+            1151.3,
+            1160.1
+          ],
+          "segment": {
+            "start": 1155.1,
+            "end": 1156.32,
+            "text": "Geht mal zur Seite.",
+            "avg_logprob": -0.20602822800477347,
+            "no_speech_prob": 0.10486465692520142,
+            "words": [
+              {
+                "start": 1155.1,
+                "end": 1155.7,
+                "word": " Geht",
+                "probability": 0.850428432226181
+              },
+              {
+                "start": 1155.7,
+                "end": 1155.84,
+                "word": " mal",
+                "probability": 0.9715560078620911
+              },
+              {
+                "start": 1155.84,
+                "end": 1155.98,
+                "word": " zur",
+                "probability": 0.9993795156478882
+              },
+              {
+                "start": 1155.98,
+                "end": 1156.32,
+                "word": " Seite.",
+                "probability": 0.9984614849090576
+              }
+            ]
+          }
+        },
+        {
+          "model": "medium",
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-cue1200388-recheck.json",
+          "label": "cue1200388_isolated_recheck",
+          "crop": [
+            1154.7,
+            1157.1
+          ],
+          "segment": {
+            "start": 1154.7,
+            "end": 1156.44,
+            "text": "Geh mal zur Seite!",
+            "avg_logprob": -0.6134463946024576,
+            "no_speech_prob": 0.6514695882797241,
+            "words": [
+              {
+                "start": 1154.7,
+                "end": 1155.8,
+                "word": " Geh",
+                "probability": 0.5960298180580139
+              },
+              {
+                "start": 1155.8,
+                "end": 1155.9,
+                "word": " mal",
+                "probability": 0.5161803960800171
+              },
+              {
+                "start": 1155.9,
+                "end": 1156.12,
+                "word": " zur",
+                "probability": 0.9890369772911072
+              },
+              {
+                "start": 1156.12,
+                "end": 1156.44,
+                "word": " Seite!",
+                "probability": 0.9929631352424622
+              }
+            ]
+          }
+        },
+        {
+          "model": "medium",
+          "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-cue1200388-recheck.json",
+          "label": "cue1200388_with_neighbors_recheck",
+          "crop": [
+            1151.3,
+            1160.1
+          ],
+          "segment": {
+            "start": 1155.64,
+            "end": 1156.46,
+            "text": "Geht mal zur Seite.",
+            "avg_logprob": -0.2937914659579595,
+            "no_speech_prob": 0.2682168781757355,
+            "words": [
+              {
+                "start": 1155.64,
+                "end": 1155.8,
+                "word": " Geht",
+                "probability": 0.7248343527317047
+              },
+              {
+                "start": 1155.8,
+                "end": 1155.9,
+                "word": " mal",
+                "probability": 0.8944549560546875
+              },
+              {
+                "start": 1155.9,
+                "end": 1156.14,
+                "word": " zur",
+                "probability": 0.9940353631973267
+              },
+              {
+                "start": 1156.14,
+                "end": 1156.46,
+                "word": " Seite.",
+                "probability": 0.9956770539283752
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
       "candidate": 8,
       "window": [
         1159.7,
@@ -1028,6 +1219,200 @@
     }
   ],
   "baseRevision": "eed6b2dee89d7abcdcdab2285e1abfcab6ce9a79",
-  "proposalDisposition": "Five proposed utterances retained; three proposed canonical-name repairs withheld; independently confirmed Ja. added separately from its unresolved preceding hesitations.",
+  "proposalDisposition": "Four proposed utterances retained; three proposed canonical-name repairs withheld; independently confirmed Ja. added; former cue 1200388 withheld after Geht/Geh recheck.",
+  "withdrawnCueIds": [
+    1200388
+  ],
+  "recheck": {
+    "date": "2026-10-27",
+    "previousRevision": "927ac53f740fff83501cffc8d1e0105e38668db6",
+    "cueId": 1200388,
+    "decision": "reviewNeeded",
+    "reason": "Kiểm lại cue 1200388 sau phản biện của Muse: trên cùng crop hẹp 1154.70–1157.10s, small ghi “Geht mal zur Seite!”, medium ghi “Geh mal zur Seite!”. Crop có ngữ cảnh 1151.30–1160.10s cho “Geht” ở cả hai model. Như vậy dạng động từ đổi theo crop; ngữ cảnh nói với nhóm không chứng minh được âm /t/. Chưa có người nghe duyệt; không sửa Geht thành Geh hoặc chốt bằng đa số ASR. Rút toàn bộ cue khỏi captions/practice/picks/flashcards, giữ ID 1200388 để duyệt, không tái sử dụng hoặc đổi ID 1200389/1200390.",
+    "humanListened": false,
+    "museFinding": {
+      "source": "https://muse.ai/thread/8c2d286e-9472-4a7f-8d8f-1f32fa68b43e",
+      "reportedAtLocal": "2026-10-27 17:21",
+      "asReported": "Muse reported Geh in its new ASR, versus Geht in its prior scan and Codex evidence; no human adjudication."
+    },
+    "earshotClassificationOnly": {
+      "crop": [
+        1154.7,
+        1157.1
+      ],
+      "speechProbability": 0.556,
+      "limitation": "Local describe classifies audio; it cannot transcribe German or adjudicate Geh versus Geht."
+    },
+    "recognitionWindows": [
+      {
+        "model": "small",
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small-cue1200388-recheck.json",
+        "label": "cue1200388_isolated_recheck",
+        "crop": [
+          1154.7,
+          1157.1
+        ],
+        "segment": {
+          "start": 1154.7,
+          "end": 1156.28,
+          "text": "Geht mal zur Seite!",
+          "avg_logprob": -0.3346026473575168,
+          "no_speech_prob": 0.151686891913414,
+          "words": [
+            {
+              "start": 1154.7,
+              "end": 1155.72,
+              "word": " Geht",
+              "probability": 0.8723093569278717
+            },
+            {
+              "start": 1155.72,
+              "end": 1155.84,
+              "word": " mal",
+              "probability": 0.8477068543434143
+            },
+            {
+              "start": 1155.84,
+              "end": 1155.98,
+              "word": " zur",
+              "probability": 0.9969987869262695
+            },
+            {
+              "start": 1155.98,
+              "end": 1156.28,
+              "word": " Seite!",
+              "probability": 0.9966981410980225
+            }
+          ]
+        }
+      },
+      {
+        "model": "small",
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-small-cue1200388-recheck.json",
+        "label": "cue1200388_with_neighbors_recheck",
+        "crop": [
+          1151.3,
+          1160.1
+        ],
+        "segment": {
+          "start": 1155.1,
+          "end": 1156.32,
+          "text": "Geht mal zur Seite.",
+          "avg_logprob": -0.20602822800477347,
+          "no_speech_prob": 0.10486465692520142,
+          "words": [
+            {
+              "start": 1155.1,
+              "end": 1155.7,
+              "word": " Geht",
+              "probability": 0.850428432226181
+            },
+            {
+              "start": 1155.7,
+              "end": 1155.84,
+              "word": " mal",
+              "probability": 0.9715560078620911
+            },
+            {
+              "start": 1155.84,
+              "end": 1155.98,
+              "word": " zur",
+              "probability": 0.9993795156478882
+            },
+            {
+              "start": 1155.98,
+              "end": 1156.32,
+              "word": " Seite.",
+              "probability": 0.9984614849090576
+            }
+          ]
+        }
+      },
+      {
+        "model": "medium",
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-cue1200388-recheck.json",
+        "label": "cue1200388_isolated_recheck",
+        "crop": [
+          1154.7,
+          1157.1
+        ],
+        "segment": {
+          "start": 1154.7,
+          "end": 1156.44,
+          "text": "Geh mal zur Seite!",
+          "avg_logprob": -0.6134463946024576,
+          "no_speech_prob": 0.6514695882797241,
+          "words": [
+            {
+              "start": 1154.7,
+              "end": 1155.8,
+              "word": " Geh",
+              "probability": 0.5960298180580139
+            },
+            {
+              "start": 1155.8,
+              "end": 1155.9,
+              "word": " mal",
+              "probability": 0.5161803960800171
+            },
+            {
+              "start": 1155.9,
+              "end": 1156.12,
+              "word": " zur",
+              "probability": 0.9890369772911072
+            },
+            {
+              "start": 1156.12,
+              "end": 1156.44,
+              "word": " Seite!",
+              "probability": 0.9929631352424622
+            }
+          ]
+        }
+      },
+      {
+        "model": "medium",
+        "file": "qa/kino-alignment/dungeon_missing_20261027/independent-medium-cue1200388-recheck.json",
+        "label": "cue1200388_with_neighbors_recheck",
+        "crop": [
+          1151.3,
+          1160.1
+        ],
+        "segment": {
+          "start": 1155.64,
+          "end": 1156.46,
+          "text": "Geht mal zur Seite.",
+          "avg_logprob": -0.2937914659579595,
+          "no_speech_prob": 0.2682168781757355,
+          "words": [
+            {
+              "start": 1155.64,
+              "end": 1155.8,
+              "word": " Geht",
+              "probability": 0.7248343527317047
+            },
+            {
+              "start": 1155.8,
+              "end": 1155.9,
+              "word": " mal",
+              "probability": 0.8944549560546875
+            },
+            {
+              "start": 1155.9,
+              "end": 1156.14,
+              "word": " zur",
+              "probability": 0.9940353631973267
+            },
+            {
+              "start": 1156.14,
+              "end": 1156.46,
+              "word": " Seite.",
+              "probability": 0.9956770539283752
+            }
+          ]
+        }
+      }
+    ]
+  },
   "chapterAdjustments": []
 }

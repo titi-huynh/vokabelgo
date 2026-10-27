@@ -10,7 +10,7 @@ proposal = json.loads((qa / 'proposed-review.json').read_text(encoding='utf-8'))
 review = copy.deepcopy(proposal)
 review['status'] = 'verified_for_branch_review_machine_evidence'
 review['baseRevision'] = 'eed6b2dee89d7abcdcdab2285e1abfcab6ce9a79'
-review['proposalDisposition'] = 'Five proposed utterances retained; three proposed canonical-name repairs withheld; independently confirmed Ja. added separately from its unresolved preceding hesitations.'
+review['proposalDisposition'] = 'Four proposed utterances retained; three proposed canonical-name repairs withheld; independently confirmed Ja. added; former cue 1200388 withheld after Geht/Geh recheck.'
 accepted = [copy.deepcopy(e) for e in proposal['added'] if e['id'] not in [1200387, 1200388, 1200391]]
 accepted.append({'candidate':4,'text':'Ja.','vi':'Ừ.','speaker':'Nhóm thám hiểm','rawStart':324.09,'rawEnd':324.43,'sourceDraftIds':[]})
 
@@ -52,6 +52,36 @@ for entry in accepted:
     entry['note'] = 'Mốc bao phủ các từ của hai lượt nhận dạng được dẫn nguồn, không thêm khoảng đệm hoặc cắt từ để vừa cue/chương.'
 accepted.sort(key=lambda e:e['start'])
 for i,entry in enumerate(accepted,1200385): entry['id']=entry['parentId']=i
+# Retain IDs already pushed at 927ac53; do not renumber later cues after withholding one.
+withdrawn = next(e for e in accepted if e['id'] == 1200388)
+recheck = []
+for model in ['small', 'medium']:
+    filename = f'independent-{model}-cue1200388-recheck.json'
+    payload = json.loads((qa / filename).read_text(encoding='utf-8'))
+    assert payload['humanListened'] is False and payload['completed'] == payload['total'] == 2
+    for window in payload['windows']:
+        segment = next(s for s in window['segments'] if tokens(s['text']) in [tokens('Geht mal zur Seite!'), tokens('Geh mal zur Seite!')])
+        recheck.append({'model': model, 'file': f'qa/kino-alignment/dungeon_missing_20261027/{filename}',
+            'label': window['label'], 'crop': [window['start'], window['end']], 'segment': segment})
+assert {tokens(item['segment']['text'])[0] for item in recheck} == {'geh', 'geht'}
+reason = ('Kiểm lại cue 1200388 sau phản biện của Muse: trên cùng crop hẹp 1154.70–1157.10s, small ghi “Geht mal zur Seite!”, medium ghi “Geh mal zur Seite!”. '
+    'Crop có ngữ cảnh 1151.30–1160.10s cho “Geht” ở cả hai model. Như vậy dạng động từ đổi theo crop; ngữ cảnh nói với nhóm không chứng minh được âm /t/. '
+    'Chưa có người nghe duyệt; không sửa Geht thành Geh hoặc chốt bằng đa số ASR. Rút toàn bộ cue khỏi captions/practice/picks/flashcards, giữ ID 1200388 để duyệt, không tái sử dụng hoặc đổi ID 1200389/1200390.')
+review['reviewNeeded'].append({'candidate': 7, 'window': json.loads((qa / 'muse-candidates.json').read_text(encoding='utf-8'))['candidates'][6]['window'], 'museRange': [withdrawn['start'],withdrawn['end']],
+    'reservedCueId': 1200388, 'suggestedAlternatives': ['Geht mal zur Seite!', 'Geh mal zur Seite!'],
+    'classification': 'review_needed_verb_inflection_disagrees_on_isolated_crop', 'reason': reason,
+    'previousBranchCue': copy.deepcopy(withdrawn), 'recheckEvidence': recheck})
+accepted = [e for e in accepted if e['id'] != 1200388]
+review['withdrawnCueIds'] = [1200388]
+review['recheck'] = {'date': '2026-10-27', 'previousRevision': '927ac53f740fff83501cffc8d1e0105e38668db6',
+    'cueId': 1200388, 'decision': 'reviewNeeded', 'reason': reason, 'humanListened': False,
+    'museFinding': {'source': 'https://muse.ai/thread/8c2d286e-9472-4a7f-8d8f-1f32fa68b43e',
+        'reportedAtLocal': '2026-10-27 17:21', 'asReported': 'Muse reported Geh in its new ASR, versus Geht in its prior scan and Codex evidence; no human adjudication.'},
+    'earshotClassificationOnly': {'crop': [1154.7,1157.1], 'speechProbability': 0.556,
+        'limitation': 'Local describe classifies audio; it cannot transcribe German or adjudicate Geh versus Geht.'},
+    'recognitionWindows': recheck}
+for name in ['independent-small-cue1200388-recheck.json','independent-medium-cue1200388-recheck.json','extra_cue1200388_spec.json']:
+    review['independentEvidence'].append(f'qa/kino-alignment/dungeon_missing_20261027/{name}')
 review['added'] = accepted
 
 # Keep all uncertain name-bearing utterances outside runtime rather than reconstructing their names.
@@ -75,6 +105,7 @@ review['reviewNeeded'].append({'candidate':2,'window':[79.09,83.91],'museRange':
 duplicate_reasons={3:'Không thêm trùng đầu cue 1200016 (114.00–115.78s). Câu hỏi có tên Falin phía trước vẫn cần duyệt.',4:'Không thêm trùng đuôi cue 1200078 (316.66–322.08s). Tiếng ngập ngừng và Ja. được xét riêng.',5:'Không thêm trùng cue 1200097 (395.98–396.86s) và đầu cue 1200098 (398.32–400.80s). Tiếng hô ở khe còn reviewNeeded.',6:'Không thêm trùng đuôi cue 1200252 (981.40–983.66s) và đầu cue 1200254 (987.64–989.98s). Phản ứng và câu hỏi có tên ở giữa vẫn cần duyệt.',7:'Không thêm trùng đuôi cue 1200307 (1151.56–1154.24s) và đầu cue 1200309 (1157.66–1159.88s). Geht mal zur Seite! được thêm riêng theo từ nhận dạng.',9:'Không thêm trùng đầu cue 1200357 (1342.38–1345.74s). Hai câu được khôi phục trong khoảng trống phía trước nằm ngoài cue này.'}
 for entry in review['excluded']:
     if entry['candidate'] in duplicate_reasons: entry['reason']=duplicate_reasons[entry['candidate']]
+    if entry['candidate']==7: entry['reason']='Không thêm trùng đuôi cue 1200307 (1151.56–1154.24s) và đầu cue 1200309 (1157.66–1159.88s). Phát ngôn ở giữa được giữ reviewNeeded vì Geht/Geh bất đồng khi đổi crop.'
     if entry['candidate']==8:
         entry['reason'] = ('Giữ ngoài phụ đề học phần niệm chú 1159.88–1168.60s theo quy ước sẵn có của tập. Hai model cho các chuỗi âm khác nhau, không có lời Đức đáng tin cậy; không sửa thần chú thành tiếng Đức chuẩn. Câu quát sau đó xét reviewNeeded riêng.' if 'incantation' in entry['classification'] else 'Không thêm trùng đầu cue 1200311 (1170.98–1171.88s); câu quát phía trước chưa chốt được từ cuối.')
     if entry['candidate']==10: entry['reason']='Nhạc kết/credit: earshot-ending.json cho Music 0,73; medium không có segment, small sinh chuỗi lời không ổn định. Giữ ngoài phụ đề theo quy ước không thêm lời bài hát; không coi chuỗi ASR vô nghĩa là thoại Đức.'
@@ -84,7 +115,7 @@ review['counts']={'candidates':10,'previousCueCount':367,'newCueCount':367+len(a
     'excludedParts':len(review['excluded']),'reviewNeededParts':len(review['reviewNeeded']),
     'windowsWithAddedCues':len({e['candidate'] for e in accepted}),'windowsWithExcludedParts':len({e['candidate'] for e in review['excluded']}),
     'windowsWithReviewNeededParts':len({e['candidate'] for e in review['reviewNeeded']})}
-review['method']['idPolicy']='Giữ nguyên toàn bộ 367 cue cũ và các ID dự thảo <=1200384. ID mới liên tục 1200385–1200390.'
+review['method']['idPolicy']='Giữ nguyên 367 cue cũ và các ID dự thảo <=1200384. Giữ ID mới 1200385–1200387, 1200389–1200390; ID 1200388 dành riêng cho reviewNeeded, không tái sử dụng hay đánh lại ID các câu đã push.'
 review['method']['normalizationPolicy']='Chỉ chuẩn hóa dấu câu và hoa/thường cho cue thêm. Không dùng tên chuẩn để sửa các âm tên riêng chưa chốt; ba đề xuất như vậy được chuyển sang reviewNeeded.'
 review['method']['totalRecognitionWindows']=sum(len(json.loads(f.read_text(encoding='utf-8'))['windows']) for f in qa.glob('independent-*.json'))
 review['chapterAdjustments']=[]

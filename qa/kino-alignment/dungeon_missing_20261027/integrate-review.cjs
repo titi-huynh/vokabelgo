@@ -16,7 +16,9 @@ assert.equal(baseline.captions.length, 367);
 const published = new Set(baseline.captions.map(c=>c.id));
 const nextId = Math.max(...source.cues.map(c=>c.id)) + 1;
 const added = review.added.slice().sort((a,b)=>a.start-b.start);
-assert.deepEqual(added.map(c=>c.id), added.map((_,i)=>nextId+i));
+const reservedIds = review.withdrawnCueIds || [];
+assert.deepEqual([...added.map(c=>c.id),...reservedIds].sort((a,b)=>a-b),Array.from({length:added.length+reservedIds.length},(_,i)=>nextId+i));
+assert(!added.some(c=>reservedIds.includes(c.id)), 'Reserved review ID reused');
 const supersededDrafts = [];
 source.cues = source.cues.filter(cue => {
   const replacements = added.filter(c=>c.start < cue.end && c.end > cue.start);
@@ -48,6 +50,7 @@ for (const change of review.chapterAdjustments || []) {
 }
 source.missingDialogueReview = {date:'2026-10-27',folder:'qa/kino-alignment/dungeon_missing_20261027',reviewJson:'qa/kino-alignment/dungeon_missing_20261027/review.json',candidateWindows:10,addedCues:added.length,addedIds:added.map(c=>c.id),preservedPublishedCues:367,supersededDrafts,resolvedUncertain,counts:review.counts};
 const {build,definitions} = require(path.join(root,'scripts/build-muse-anime-lessons.cjs'));
+source.missingDialogueReview.reservedReviewCueIds = reservedIds;
 const definition = definitions.find(d=>d.key===key);
 const result = build(source,definition);
 assert.equal(result.captions.length,367+added.length);

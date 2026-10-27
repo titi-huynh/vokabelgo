@@ -78,3 +78,13 @@
 [2026-10-27 16:52:23] model=medium [5/6] candidate=9 [cand9_full_gap] (1336.25-1342.30s, 12.3s): Die ist echt gut. Probier doch mal Masse. Könnte dir schmecken.
 [2026-10-27 16:52:35] model=medium [6/6] candidate=9 [cand9_probier_schmecken] (1338.30-1342.30s, 11.9s): Probier doch mal Masse, könnte dir schmecken.
 [2026-10-27 16:52:35] Completed context small + medium independent recognition.
+[2026-10-27 17:23:31] Hashing source video C:\Users\huynh\OneDrive\Desktop\flash\video\delicious_in_dungeon_s01e01.mp4...
+[2026-10-27 17:23:32] Decoding audio from C:\Users\huynh\OneDrive\Desktop\flash\video\delicious_in_dungeon_s01e01.mp4 at 16kHz...
+[2026-10-27 17:23:34] Audio decoded: 1607.488s, video_sha256=26caef638d8ece51c536ab109adbd0bb5640e998644d58db77ba59846f08832f, pcm_sha256=22df3809b9f1e72199ff632a2e91eed74d4e55cadf1db04e3d26596dc37f434e
+[2026-10-27 17:23:34] Loading model=small (device=cpu, compute_type=int8, cpu_threads=3, local_files_only=True)...
+[2026-10-27 17:23:40] model=small [1/2] candidate=7 [cue1200388_isolated_recheck] (1154.70-1157.10s, 3.7s): Geht mal zur Seite!
+[2026-10-27 17:23:44] model=small [2/2] candidate=7 [cue1200388_with_neighbors_recheck] (1151.30-1160.10s, 4.5s): Dann müssen wir eben kämpfen. | Geht mal zur Seite. | Ich werde sie alle auf einmal erledigen.
+[2026-10-27 17:23:44] Loading model=medium (device=cpu, compute_type=int8, cpu_threads=3, local_files_only=True)...
+[2026-10-27 17:24:03] model=medium [1/2] candidate=7 [cue1200388_isolated_recheck] (1154.70-1157.10s, 11.7s): Geh mal zur Seite!
+[2026-10-27 17:24:17] model=medium [2/2] candidate=7 [cue1200388_with_neighbors_recheck] (1151.30-1160.10s, 13.7s): Dann müssen wir eben kämpfen. | Geht mal zur Seite. | Ich werde sie alle auf einmal erledigen.
+[2026-10-27 17:24:17] Completed extra (cue1200388-recheck) small + medium recognition.

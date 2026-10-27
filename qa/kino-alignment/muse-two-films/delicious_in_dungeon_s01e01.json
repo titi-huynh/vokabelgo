@@ -2499,12 +2499,13 @@
       "vi": "Vậy thì chúng ta đành phải chiến đấu thôi."
     },
     {
-      "id": 1200388,
-      "start": 1155.03,
-      "end": 1156.65,
+      "id": 1200308,
+      "start": 1155.68,
+      "end": 1156.46,
       "speaker": "Marcille",
-      "text": "Geht mal zur Seite!",
-      "vi": "Mọi người lùi sang một bên đi!"
+      "text": "Geht mal zur Seite.",
+      "vi": "Mọi người lùi sang một bên đi.",
+      "reviewNeeded": true
     },
     {
       "id": 1200309,
@@ -3601,32 +3602,16 @@
     "folder": "qa/kino-alignment/dungeon_missing_20261027",
     "reviewJson": "qa/kino-alignment/dungeon_missing_20261027/review.json",
     "candidateWindows": 10,
-    "addedCues": 6,
+    "addedCues": 5,
     "addedIds": [
       1200385,
       1200386,
       1200387,
-      1200388,
       1200389,
       1200390
     ],
     "preservedPublishedCues": 367,
     "supersededDrafts": [
-      {
-        "cue": {
-          "id": 1200308,
-          "start": 1155.68,
-          "end": 1156.46,
-          "speaker": "Marcille",
-          "text": "Geht mal zur Seite.",
-          "vi": "Mọi người lùi sang một bên đi.",
-          "reviewNeeded": true
-        },
-        "partialReplacementIds": [
-          1200388
-        ],
-        "note": "Only accepted portions become fresh cues; unresolved portions remain in review.json."
-      },
       {
         "cue": {
           "id": 1200356,
@@ -3648,14 +3633,17 @@
     "counts": {
       "candidates": 10,
       "previousCueCount": 367,
-      "newCueCount": 373,
-      "addedCues": 6,
+      "newCueCount": 372,
+      "addedCues": 5,
       "adjustedExistingCues": 0,
       "excludedParts": 9,
-      "reviewNeededParts": 9,
-      "windowsWithAddedCues": 4,
+      "reviewNeededParts": 10,
+      "windowsWithAddedCues": 3,
       "windowsWithExcludedParts": 8,
-      "windowsWithReviewNeededParts": 8
-    }
+      "windowsWithReviewNeededParts": 9
+    },
+    "reservedReviewCueIds": [
+      1200388
+    ]
   }
 }

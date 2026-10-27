@@ -1,5 +1,5 @@
 {
-  "checked": 6,
+  "checked": 5,
   "normalization": "Case, punctuation, hab/habe and kommt's/kommt es or geht's/geht es; no content-word or grammatical repair",
   "checks": [
     {
@@ -16,12 +16,6 @@
     },
     {
       "id": 1200387,
-      "rawWordsMatch": true,
-      "bothModelsSupportNormalizedText": true,
-      "chosenTimingWordsNotCut": true
-    },
-    {
-      "id": 1200388,
       "rawWordsMatch": true,
       "bothModelsSupportNormalizedText": true,
       "chosenTimingWordsNotCut": true

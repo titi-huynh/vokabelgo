@@ -1,12 +1,30 @@
 {
   "source": "Unmodified Kino player at http://127.0.0.1:3108, real original and Kino light MP4 files",
-  "checked": 6,
-  "total": 6,
+  "checked": 5,
+  "total": 5,
   "errors": [],
   "mobile": {
     "width": 390,
     "pass": true
   },
+  "withheldCueId": 1200388,
+  "withheldCueChecks": [
+    {
+      "time": 1155.03,
+      "expectedId": null,
+      "pass": true
+    },
+    {
+      "time": 1155.84,
+      "expectedId": null,
+      "pass": true
+    },
+    {
+      "time": 1156.65,
+      "expectedId": null,
+      "pass": true
+    }
+  ],
   "results": [
     {
       "id": 1200385,
@@ -107,43 +125,6 @@
         {
           "label": "after",
           "time": 324.47,
-          "expectedId": null,
-          "pass": true
-        }
-      ],
-      "video": {
-        "duration": 1607.488,
-        "readyState": 4,
-        "width": 854,
-        "height": 480
-      },
-      "pass": true
-    },
-    {
-      "id": 1200388,
-      "parentId": 1200388,
-      "start": 1155.03,
-      "end": 1156.65,
-      "speaker": "Marcille",
-      "text": "Geht mal zur Seite!",
-      "vi": "Mọi người lùi sang một bên đi!",
-      "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
-      "boundaries": [
-        {
-          "label": "before",
-          "time": 1155.001,
-          "expectedId": null,
-          "pass": true
-        },
-        {
-          "label": "middle",
-          "time": 1155.8400000000001,
-          "expectedId": 1200388,
-          "pass": true
-        },
-        {
-          "label": "after",
-          "time": 1156.69,
           "expectedId": null,
           "pass": true
         }

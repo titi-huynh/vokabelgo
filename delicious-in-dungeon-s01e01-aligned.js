@@ -2981,16 +2981,6 @@ const DELICIOUS_IN_DUNGEON_S01E01_CAPTION_CUES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
   },
   {
-    "id": 1200388,
-    "parentId": 1200388,
-    "start": 1155.03,
-    "end": 1156.65,
-    "speaker": "Marcille",
-    "text": "Geht mal zur Seite!",
-    "vi": "Mọi người lùi sang một bên đi!",
-    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json"
-  },
-  {
     "id": 1200309,
     "parentId": 1200309,
     "start": 1157.66,
@@ -7604,19 +7594,6 @@ const DELICIOUS_IN_DUNGEON_S01E01_ALIGNED_UTTERANCES = [
     "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
     "legacyIds": [
       1200307
-    ]
-  },
-  {
-    "id": 1200388,
-    "parentId": 1200388,
-    "start": 1155.03,
-    "end": 1156.65,
-    "speaker": "Marcille",
-    "text": "Geht mal zur Seite!",
-    "vi": "Mọi người lùi sang một bên đi!",
-    "sourceEvidence": "qa/kino-alignment/muse-two-films/delicious_in_dungeon_s01e01.json",
-    "legacyIds": [
-      1200388
     ]
   },
   {

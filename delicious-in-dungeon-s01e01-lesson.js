@@ -26,7 +26,7 @@ const DELICIOUS_IN_DUNGEON_S01E01_LESSON = (() => {
     "storageKey": "vokabelgo_kino_chapters_v1_delicious_in_dungeon_s01e01",
     "legacyKey": "vokabelgo_kino_progress_delicious_in_dungeon_s01e01",
     "legacyCount": 0,
-    "cueCount": 373,
+    "cueCount": 372,
     "vocabularyCount": 16,
     "chapters": [
       {

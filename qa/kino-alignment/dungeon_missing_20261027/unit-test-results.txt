@@ -136,7 +136,7 @@ PEDAGOGICAL ACCEPTANCE SUMMARY: 31 PASSED, 0 FAILED
   ✅ PASS: Not completed at 4 cards
   ✅ PASS: Today count is 5
   ✅ PASS: Completed is true
-  ✅ PASS: completedAt is valid ISO: 2026-10-27T10:06:08.249Z
+  ✅ PASS: completedAt is valid ISO: 2026-10-27T10:27:05.421Z
   ✅ PASS: catchStatus is 'pending'
   ✅ PASS: vokabelgo:daily-goal-complete fired exactly 1 time
 
@@ -906,7 +906,7 @@ VOKABELGO VOCABULARY DATA MODEL AUDIT (PHASE 4A.1)
     [b_55] "Sprachkenntnisse erwerben / verbessern" (has_slash_or_semicolon)
     [b_62] "Langer Rede kurzer Sinn: …" (has_ellipsis)
 
-✅ Detailed JSON audit report written to: C:\Users\huynh\AppData\Local\Temp\vokabelgo-test-E9QZPO\audit-vocabulary-report.json
+✅ Detailed JSON audit report written to: C:\Users\huynh\AppData\Local\Temp\vokabelgo-test-7KwhhX\audit-vocabulary-report.json
 
   ✅ PASS: Audit script runs across entire dataset without throwing
   ✅ PASS: Audit report totalCards equals loaded dataset length
