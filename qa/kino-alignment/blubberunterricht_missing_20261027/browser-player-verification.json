@@ -1,0 +1,188 @@
+{
+  "checks": [
+    {
+      "requested": 39.2,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 39.2,
+      "vi": ""
+    },
+    {
+      "requested": 40.8,
+      "expected": "Du hast nicht die richtige Technik.",
+      "de": "Du hast nicht die richtige Technik.",
+      "paused": true,
+      "time": 40.8,
+      "vi": "Cậu chưa dùng đúng kỹ thuật."
+    },
+    {
+      "requested": 43.3,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 43.3,
+      "vi": ""
+    },
+    {
+      "requested": 51.2,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 51.2,
+      "vi": ""
+    },
+    {
+      "requested": 51.8,
+      "expected": "Dreimal nach rechts gucken.",
+      "de": "Dreimal nach rechts gucken.",
+      "paused": true,
+      "time": 51.8,
+      "vi": "Nhìn sang phải ba lần."
+    },
+    {
+      "requested": 52.8,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 52.8,
+      "vi": ""
+    },
+    {
+      "requested": 53.1,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 53.1,
+      "vi": ""
+    },
+    {
+      "requested": 54.2,
+      "expected": "Und jetzt geht's los, der Beckenstoß.",
+      "de": "Und jetzt geht's los, der Beckenstoß.",
+      "paused": true,
+      "time": 54.2,
+      "vi": "Và giờ bắt đầu nào, đẩy hông!"
+    },
+    {
+      "requested": 55.6,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 55.6,
+      "vi": ""
+    },
+    {
+      "requested": 65.1,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 65.099999,
+      "vi": ""
+    },
+    {
+      "requested": 66.4,
+      "expected": "Und dies und dies und dies und das und das und das.",
+      "de": "Und dies und dies und dies und das und das und das.",
+      "paused": true,
+      "time": 66.4,
+      "vi": "Rồi thế này, thế này, thế này, và thế kia, thế kia, thế kia."
+    },
+    {
+      "requested": 68.1,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 68.1,
+      "vi": ""
+    },
+    {
+      "requested": 15.5,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 15.5,
+      "vi": ""
+    },
+    {
+      "requested": 49.2,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 49.2,
+      "vi": ""
+    },
+    {
+      "requested": 62.8,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 62.8,
+      "vi": ""
+    },
+    {
+      "requested": 116.9,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 116.9,
+      "vi": ""
+    },
+    {
+      "requested": 117.8,
+      "expected": "Danke, danke, danke!",
+      "de": "Danke, danke, danke!",
+      "paused": true,
+      "time": 117.8,
+      "vi": "Cảm ơn, cảm ơn, cảm ơn!"
+    },
+    {
+      "requested": 118.6,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 118.6,
+      "vi": ""
+    },
+    {
+      "requested": 114.5,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 114.5,
+      "vi": ""
+    },
+    {
+      "requested": 135.8,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 135.8,
+      "vi": ""
+    },
+    {
+      "requested": 176.1,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 176.1,
+      "vi": ""
+    },
+    {
+      "requested": 181.7,
+      "expected": "",
+      "de": "",
+      "paused": true,
+      "time": 181.7,
+      "vi": ""
+    }
+  ],
+  "ccTogglePassed": true,
+  "video": {
+    "duration": 222.841905,
+    "width": 640,
+    "height": 360
+  },
+  "humanListened": false,
+  "method": "Actual local player controls, native seek slider, read-only rendered DOM observations; every new cue before/mid/after, representative held regions blank."
+}
