@@ -1,0 +1,1844 @@
+{
+  "baseRevision": "215992fdb9663e7410b6e58ea8a7c2ee29c7ef9d",
+  "lessonScope": "druck_s07e01",
+  "filesSearched": [
+    "hans-aligned.json",
+    "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+    "qa/kino-alignment/hans/practice-groups.json",
+    "qa/kino-context-shorts-2026-10-25/muse-candidates.json",
+    "qa/kino-context-shorts-2026-10-25/selection.json"
+  ],
+  "sourceReferences": [
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500111
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "parentId",
+      "id": 500111
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500136
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "parentId",
+      "id": 500136
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500153
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "parentId",
+      "id": 500153
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500157
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "parentId",
+      "id": 500157
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500184
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "parentId",
+      "id": 500184
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500188
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "parentId",
+      "id": 500188
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500213
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "parentId",
+      "id": 500213
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500218
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "parentId",
+      "id": 500218
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500229
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "parentId",
+      "id": 500229
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500231
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "parentId",
+      "id": 500231
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500237
+    },
+    {
+      "file": "hans-aligned.json",
+      "lessonScope": null,
+      "field": "parentId",
+      "id": 500237
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500011
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500014
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500018
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500020
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500025
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500037
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500044
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500051
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500056
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500057
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500062
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500063
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500068
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500070
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500071
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500087
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500091
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500110
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500112
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500116
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500119
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500122
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500133
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500134
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500139
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500158
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500171
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500173
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500175
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500186
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500188
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500190
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500204
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500205
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500206
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500213
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500218
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500221
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500234
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500236
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500249
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500257
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500261
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500262
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "druck_s07e01",
+      "field": "id",
+      "id": 500267
+    },
+    {
+      "file": "qa/kino-alignment/hans/practice-groups.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500111
+    },
+    {
+      "file": "qa/kino-alignment/hans/practice-groups.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500136
+    },
+    {
+      "file": "qa/kino-alignment/hans/practice-groups.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500153
+    },
+    {
+      "file": "qa/kino-alignment/hans/practice-groups.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500157
+    },
+    {
+      "file": "qa/kino-alignment/hans/practice-groups.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500184
+    },
+    {
+      "file": "qa/kino-alignment/hans/practice-groups.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500188
+    },
+    {
+      "file": "qa/kino-alignment/hans/practice-groups.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500213
+    },
+    {
+      "file": "qa/kino-alignment/hans/practice-groups.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500218
+    },
+    {
+      "file": "qa/kino-alignment/hans/practice-groups.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500229
+    },
+    {
+      "file": "qa/kino-alignment/hans/practice-groups.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500231
+    },
+    {
+      "file": "qa/kino-alignment/hans/practice-groups.json",
+      "lessonScope": null,
+      "field": "id",
+      "id": 500237
+    }
+  ],
+  "excludedOtherLessonReferences": [
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500001
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500003
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500010
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500013
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500016
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500017
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500021
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500030
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500035
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500037
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500040
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500045
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500048
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "trudes_bagger",
+      "field": "id",
+      "id": 500049
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500001
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500005
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500013
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500016
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500024
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500025
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500028
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500042
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500059
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500066
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500067
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500070
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500072
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500078
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500097
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500102
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500115
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500117
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500136
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500138
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500145
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500150
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500153
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500162
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500168
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500169
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500180
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500183
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500187
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500190
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500191
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500192
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500197
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500198
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "erdmaennchen_spukschloss",
+      "field": "id",
+      "id": 500200
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500001
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500013
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500018
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500031
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500049
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500052
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500081
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500085
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500089
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500091
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500097
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500121
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500133
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500141
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500159
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500162
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500163
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500165
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500170
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500185
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500200
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500206
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500207
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500208
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500213
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500214
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500244
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500260
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500282
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500283
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500291
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500293
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500296
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500299
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500304
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500315
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500322
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500325
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500332
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500337
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500341
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500348
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500378
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500438
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500388
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500392
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500398
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500400
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500401
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500402
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500404
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500405
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500406
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500408
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500442
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500420
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500006
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500008
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500013
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500014
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500022
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500027
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500034
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500045
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500046
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500069
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500070
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500071
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500078
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500080
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500088
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500092
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500095
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500099
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500111
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500114
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500117
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500120
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500124
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500134
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500137
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500139
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500140
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500146
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500154
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500155
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500156
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500157
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500181
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500184
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500185
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500187
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500188
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500210
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500218
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500225
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500230
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500234
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500241
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500253
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500261
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500262
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500263
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500266
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500268
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500286
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500300
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500304
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500308
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500310
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500312
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500313
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500005
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500019
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500020
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500041
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500044
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500053
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500078
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500080
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500085
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500086
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500087
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500090
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500092
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500101
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500143
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500166
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500169
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500183
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500193
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500206
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500217
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500228
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500229
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500238
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500241
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500244
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500245
+    },
+    {
+      "file": "qa/kino-alignment/erdmaennchen_platte_reifen/baseline-practice-data.json",
+      "lessonScope": "simplicissimus_leberwurst",
+      "field": "id",
+      "id": 500258
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/muse-candidates.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "cueId",
+      "id": 500059
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/muse-candidates.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "cueId",
+      "id": 500133
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/muse-candidates.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "cueId",
+      "id": 500057
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "cueId",
+      "id": 500059
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500058
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500059
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500060
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500061
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500062
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500063
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500064
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500065
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500066
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500067
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500068
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500069
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500070
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500071
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "cueId",
+      "id": 500133
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500126
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500127
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500128
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500129
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500130
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500131
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500132
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500133
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "spy_family_s01e01",
+      "field": "id",
+      "id": 500134
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "cueId",
+      "id": 500057
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500055
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500056
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500057
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500058
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500059
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500060
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500061
+    },
+    {
+      "file": "qa/kino-context-shorts-2026-10-25/selection.json",
+      "lessonScope": "demon_slayer_s01e01",
+      "field": "id",
+      "id": 500062
+    }
+  ],
+  "maxPublishedOrDraftId": 500268,
+  "nextUnusedId": 500269,
+  "nextUnusedParentId": 269,
+  "allocatedNewIds": [],
+  "note": "Mixed-film archival practice snapshots also contain historical Spy Family500xxx IDs; keep lesson scope instead of treating those as Druck draft IDs."
+}

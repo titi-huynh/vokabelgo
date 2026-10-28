@@ -1,0 +1,27 @@
+[2026-10-28T05:51:48.210114+00:00] BLIND_ASR_RUN_START runner=run-independent-asr.py
+[2026-10-28T05:51:48.211706+00:00] SPEC_LOADED count=8 path=qa\kino-alignment\druck_s07e01_missing_20261028\anti-context-spec.json
+[2026-10-28T05:51:48.332101+00:00] VIDEO_VERIFIED path=video\druck-s07e01.mp4 bytes=92708650 sha256=c2433e3cc318bfe477b85392446bb56c8568a2faa4f39eea15c98d0361aa1774
+[2026-10-28T05:51:50.986738+00:00] AUDIO_DECODED samples=20447232 duration=1277.9520s decoded16kFloat32Sha256=3c5233fe4caecf54d8a00cc80c40c2af9606b8e11f942d1e4eae8fb0498c240c elapsed=2.65s
+[2026-10-28T05:51:50.988362+00:00] MODEL_START model=small
+[2026-10-28T05:51:53.390842+00:00] MODEL_LOADED model=small elapsed=2.40s
+[2026-10-28T05:52:13.204621+00:00] CROP_DONE model=small candidate=1 (1/8) range=9.61-48.19s segments=15 words=79 elapsed=19.81s
+[2026-10-28T05:52:19.823204+00:00] CROP_DONE model=small candidate=2 (2/8) range=136.68-163.51s segments=6 words=18 elapsed=6.62s
+[2026-10-28T05:52:24.650403+00:00] CROP_DONE model=small candidate=3 (3/8) range=210.60-226.07s segments=1 words=4 elapsed=4.82s
+[2026-10-28T05:52:30.710295+00:00] CROP_DONE model=small candidate=4 (4/8) range=398.44-427.55s segments=3 words=22 elapsed=6.06s
+[2026-10-28T05:52:42.636380+00:00] CROP_DONE model=small candidate=5 (5/8) range=476.58-496.67s segments=8 words=50 elapsed=11.84s
+[2026-10-28T05:52:59.589991+00:00] CROP_DONE model=small candidate=6 (6/8) range=758.37-775.07s segments=8 words=66 elapsed=16.95s
+[2026-10-28T05:53:05.635790+00:00] CROP_DONE model=small candidate=7 (7/8) range=859.40-875.07s segments=5 words=26 elapsed=6.04s
+[2026-10-28T05:53:10.256658+00:00] CROP_DONE model=small candidate=8 (8/8) range=1126.53-1142.33s segments=2 words=8 elapsed=4.62s
+[2026-10-28T05:53:10.267148+00:00] MODEL_COMPLETE model=small output=independent-small-context.json windows=8/8 totalSegments=48 totalWords=273 elapsed=79.27s
+[2026-10-28T05:53:10.314378+00:00] MODEL_START model=medium
+[2026-10-28T05:53:19.064372+00:00] MODEL_LOADED model=medium elapsed=8.75s
+[2026-10-28T05:54:19.398612+00:00] CROP_DONE model=medium candidate=1 (1/8) range=9.61-48.19s segments=14 words=81 elapsed=60.33s
+[2026-10-28T05:54:43.032131+00:00] CROP_DONE model=medium candidate=2 (2/8) range=136.68-163.51s segments=7 words=22 elapsed=23.63s
+[2026-10-28T05:54:57.282088+00:00] CROP_DONE model=medium candidate=3 (3/8) range=210.60-226.07s segments=1 words=4 elapsed=14.21s
+[2026-10-28T05:55:30.742175+00:00] CROP_DONE model=medium candidate=4 (4/8) range=398.44-427.55s segments=13 words=74 elapsed=33.46s
+[2026-10-28T05:55:51.161585+00:00] CROP_DONE model=medium candidate=5 (5/8) range=476.58-496.67s segments=8 words=49 elapsed=20.42s
+[2026-10-28T05:56:01.895913+00:00] CROP_DONE model=medium candidate=6 (6/8) range=758.37-775.07s segments=0 words=0 elapsed=10.73s
+[2026-10-28T05:56:15.693066+00:00] CROP_DONE model=medium candidate=7 (7/8) range=859.40-875.07s segments=3 words=18 elapsed=13.80s
+[2026-10-28T05:56:29.476690+00:00] CROP_DONE model=medium candidate=8 (8/8) range=1126.53-1142.33s segments=2 words=9 elapsed=13.78s
+[2026-10-28T05:56:29.485935+00:00] MODEL_COMPLETE model=medium output=independent-medium-context.json windows=8/8 totalSegments=48 totalWords=257 elapsed=199.16s
+[2026-10-28T05:56:29.560306+00:00] BLIND_ASR_RUN_COMPLETE status=SUCCESS

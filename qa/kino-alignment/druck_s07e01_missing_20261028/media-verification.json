@@ -1,0 +1,25 @@
+{
+  "source": "video/druck-s07e01.mp4",
+  "releaseUrl": "https://github.com/titi-huynh/vokabelgo-media/releases/download/media-v1/video--druck-s07e01.mp4",
+  "bytes": 92708650,
+  "sha256": "c2433e3cc318bfe477b85392446bb56c8568a2faa4f39eea15c98d0361aa1774",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 854,
+        "height": 480
+      },
+      {
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1278.080000"
+    }
+  },
+  "downloadedOriginalWithoutRecode": true,
+  "humanListened": false
+}

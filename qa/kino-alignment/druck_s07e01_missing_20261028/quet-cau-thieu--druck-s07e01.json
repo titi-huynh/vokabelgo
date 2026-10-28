@@ -1,0 +1,355 @@
+{
+ "key": "druck_s07e01",
+ "duration": 1278.0,
+ "cue_count": 268,
+ "speech_regions": 156,
+ "speech_seconds": 593.8,
+ "candidates": [
+  {
+   "start": 16.81,
+   "end": 40.99,
+   "covered": 0.0,
+   "window": [
+    15.61,
+    42.19
+   ],
+   "asr": [
+    {
+     "start": 16.39,
+     "end": 20.07,
+     "text": "Deine Augenflugzeugfenster, brauchst paar schnelle Nächte",
+     "avg_logprob": -0.37,
+     "no_speech_prob": 0.2
+    },
+    {
+     "start": 20.07,
+     "end": 22.83,
+     "text": "Muss was aus'm Kopf kriegen",
+     "avg_logprob": -0.37,
+     "no_speech_prob": 0.2
+    },
+    {
+     "start": 22.83,
+     "end": 26.35,
+     "text": "Inception, ruf mich an, ich bin in 5 Minuten ready",
+     "avg_logprob": -0.37,
+     "no_speech_prob": 0.2
+    },
+    {
+     "start": 26.35,
+     "end": 28.63,
+     "text": "Steig in Schatte, geb für dich mein Bestes",
+     "avg_logprob": -0.37,
+     "no_speech_prob": 0.2
+    },
+    {
+     "start": 28.63,
+     "end": 32.43,
+     "text": "Bring noch n Sixer-Bags mit Wolken bauen, Aporolpalester",
+     "avg_logprob": -0.37,
+     "no_speech_prob": 0.2
+    },
+    {
+     "start": 32.43,
+     "end": 34.35,
+     "text": "Himmelglütlich, da flackern",
+     "avg_logprob": -0.37,
+     "no_speech_prob": 0.2
+    },
+    {
+     "start": 34.35,
+     "end": 38.83,
+     "text": "Mein Gefühl, es wird heftig, alle 10 Sekunden eine Message",
+     "avg_logprob": -0.37,
+     "no_speech_prob": 0.2
+    },
+    {
+     "start": 38.83,
+     "end": 41.07,
+     "text": "Hey, bist du schon zurück, KBB?",
+     "avg_logprob": -0.37,
+     "no_speech_prob": 0.2
+    },
+    {
+     "start": 41.07,
+     "end": 42.07,
+     "text": "Ich hoffe, du hattest ne gute Zeit",
+     "avg_logprob": -0.37,
+     "no_speech_prob": 0.2
+    }
+   ],
+   "cue_before": {
+    "id": 500001,
+    "start": 0.04,
+    "end": 3.68,
+    "text": "# Ich hab, was du brauchst.",
+    "vi": "# Tớ có thứ cậu cần."
+   },
+   "cue_after": {
+    "id": 500004,
+    "start": 44.16,
+    "end": 46.56,
+    "text": "\"Auch wenn ich nicht dabei war.\"",
+    "vi": "\"Dù tớ không được đi cùng.\""
+   }
+  },
+  {
+   "start": 143.88,
+   "end": 156.31,
+   "covered": 0.19,
+   "window": [
+    142.68,
+    157.51
+   ],
+   "asr": [
+    {
+     "start": 143.69,
+     "end": 145.69,
+     "text": "Oh, Digger!",
+     "avg_logprob": -0.75,
+     "no_speech_prob": 0.44
+    },
+    {
+     "start": 145.69,
+     "end": 147.69,
+     "text": "Wuuuh!",
+     "avg_logprob": -0.75,
+     "no_speech_prob": 0.44
+    },
+    {
+     "start": 147.69,
+     "end": 149.69,
+     "text": "Geil, okay.",
+     "avg_logprob": -0.75,
+     "no_speech_prob": 0.44
+    },
+    {
+     "start": 155.69,
+     "end": 157.69,
+     "text": "Leute? Wollt ihr noch Lächer?",
+     "avg_logprob": -0.75,
+     "no_speech_prob": 0.44
+    }
+   ],
+   "cue_before": {
+    "id": 500037,
+    "start": 136.64,
+    "end": 138.16,
+    "text": "Leute, wie wär's hiermit?",
+    "vi": "Mọi người, hay là thế này nhé?"
+   },
+   "cue_after": {
+    "id": 500039,
+    "start": 156.44,
+    "end": 159.28,
+    "text": "Leute, wollt ihr noch ein letztes Familienfoto machen?",
+    "vi": "Mọi người muốn chụp một tấm ảnh gia đình cuối không?"
+   }
+  },
+  {
+   "start": 217.8,
+   "end": 218.87,
+   "covered": 0.0,
+   "window": [
+    216.6,
+    220.07
+   ],
+   "asr": [],
+   "cue_before": {
+    "id": 500061,
+    "start": 214.64,
+    "end": 215.8,
+    "text": "Cheeseeee!",
+    "vi": "Cheeseeee!"
+   },
+   "cue_after": {
+    "id": 500062,
+    "start": 288.24,
+    "end": 289.68,
+    "text": "Ey ... Pass mal auf.",
+    "vi": "Ê... Cẩn thận đấy."
+   }
+  },
+  {
+   "start": 405.64,
+   "end": 420.35,
+   "covered": 0.0,
+   "window": [
+    404.44,
+    421.55
+   ],
+   "asr": [
+    {
+     "start": 406.12,
+     "end": 409.12,
+     "text": "SWR 2020",
+     "avg_logprob": -0.76,
+     "no_speech_prob": 0.82
+    }
+   ],
+   "cue_before": {
+    "id": 500089,
+    "start": 400,
+    "end": 403.48,
+    "text": "ihr habt das Referat über die Aufklärung vorbereitet.",
+    "vi": "hai em đã chuẩn bị bài thuyết trình về thời kỳ Khai sáng."
+   },
+   "cue_after": {
+    "id": 500090,
+    "start": 423.8,
+    "end": 426.72,
+    "text": "Und die müssen alle rein? - Na ja, die erfrieren sonst.",
+    "vi": "Và tất cả đều phải mang vào trong à? - Ừ, không thì chúng chết cóng mất."
+   }
+  },
+  {
+   "start": 483.78,
+   "end": 489.47,
+   "covered": 0.24,
+   "window": [
+    482.58,
+    490.67
+   ],
+   "asr": [
+    {
+     "start": 482.58,
+     "end": 483.58,
+     "text": "What?",
+     "avg_logprob": -0.95,
+     "no_speech_prob": 0.22
+    },
+    {
+     "start": 483.86,
+     "end": 485.38,
+     "text": "Seyfani Style.",
+     "avg_logprob": -0.95,
+     "no_speech_prob": 0.22
+    },
+    {
+     "start": 485.94,
+     "end": 488.34,
+     "text": "Jo, de, de, de, de.",
+     "avg_logprob": -0.95,
+     "no_speech_prob": 0.22
+    },
+    {
+     "start": 489.98,
+     "end": 490.98,
+     "text": "Komm doch auch mal.",
+     "avg_logprob": -0.95,
+     "no_speech_prob": 0.22
+    }
+   ],
+   "cue_before": {
+    "id": 500107,
+    "start": 476.96,
+    "end": 480.6,
+    "text": "Ey, dieser letzte Tune da in deiner Playlist, der kam richtig gut an.",
+    "vi": "Ê, bài cuối trong playlist của cậu được đón nhận nồng nhiệt lắm đấy."
+   },
+   "cue_after": {
+    "id": 500110,
+    "start": 489.92,
+    "end": 491.2,
+    "text": "Komm doch auch mal mit.",
+    "vi": "Cậu cũng đi cùng một lần đi."
+   }
+  },
+  {
+   "start": 765.57,
+   "end": 767.87,
+   "covered": 0.0,
+   "window": [
+    764.37,
+    769.07
+   ],
+   "asr": [
+    {
+     "start": 764.58,
+     "end": 766.58,
+     "text": "Copyright WDR 2021",
+     "avg_logprob": -0.57,
+     "no_speech_prob": 0.77
+    }
+   ],
+   "cue_before": {
+    "id": 500166,
+    "start": 753.64,
+    "end": 756.44,
+    "text": "Ist das eigentlich dein Bruder oder deine Schwester?",
+    "vi": "Đó là anh trai hay chị gái của cậu vậy?"
+   },
+   "cue_after": {
+    "id": 500167,
+    "start": 793.96,
+    "end": 797.6,
+    "text": "Du hast dich doch schon mal für den Oberstufenraum eingesetzt. - Mhm.",
+    "vi": "Cậu từng vận động cho phòng khối trên còn gì. - Mhm."
+   }
+  },
+  {
+   "start": 866.6,
+   "end": 867.87,
+   "covered": 0.0,
+   "window": [
+    865.4,
+    869.07
+   ],
+   "asr": [
+    {
+     "start": 865.4,
+     "end": 867.4,
+     "text": "Das war's für heute.",
+     "avg_logprob": -1.1,
+     "no_speech_prob": 0.54
+    }
+   ],
+   "cue_before": {
+    "id": 500187,
+    "start": 863.4,
+    "end": 866.4,
+    "text": "Wenn aus dem Abi nichts wird, könnt ihr Hexen werden.",
+    "vi": "Nếu tốt nghiệp không thành, các cậu có thể đi làm phù thủy."
+   },
+   "cue_after": {
+    "id": 500188,
+    "start": 868.6,
+    "end": 870.32,
+    "text": "Müssen wir schon los? - Ja.",
+    "vi": "Tụi mình phải đi chưa? - Ừ."
+   }
+  },
+  {
+   "start": 1133.73,
+   "end": 1135.13,
+   "covered": 0.04,
+   "window": [
+    1132.53,
+    1136.33
+   ],
+   "asr": [
+    {
+     "start": 1132.53,
+     "end": 1136.33,
+     "text": "Uuuuuh!",
+     "avg_logprob": -1.47,
+     "no_speech_prob": 0.57
+    }
+   ],
+   "cue_before": {
+    "id": 500259,
+    "start": 1131.88,
+    "end": 1132.96,
+    "text": "Buh!",
+    "vi": "Buh!"
+   },
+   "cue_after": {
+    "id": 500261,
+    "start": 1139.2,
+    "end": 1140.48,
+    "text": "Come on, jetzt du!",
+    "vi": "Nào, giờ đến lượt cậu!"
+   }
+  }
+ ]
+}

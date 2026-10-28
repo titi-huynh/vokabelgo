@@ -1,0 +1,25 @@
+{
+  "sourceVideoSha256": "c2433e3cc318bfe477b85392446bb56c8568a2faa4f39eea15c98d0361aa1774",
+  "decodedAudioF32le16kSha256": "3c5233fe4caecf54d8a00cc80c40c2af9606b8e11f942d1e4eae8fb0498c240c",
+  "asrCompletedCrops": {
+    "codex-small-main.json": 8,
+    "codex-small-recheck.json": 7,
+    "codex-small-recheck2.json": 2,
+    "independent-small-context.json": 8,
+    "codex-medium-main.json": 8,
+    "codex-medium-recheck.json": 7,
+    "codex-medium-recheck2.json": 2,
+    "independent-medium-context.json": 8
+  },
+  "codexCrops": 34,
+  "antiCrops": 16,
+  "totalCrops": 50,
+  "earshotWindows": 8,
+  "allRunsUnpromptedAndLocal": true,
+  "allRawFilesComplete": true,
+  "newCues": 0,
+  "heldPartsOutsideLearning": true,
+  "oldIdAndParentIdPolicyPreserved": true,
+  "humanListened": false,
+  "pass": true
+}

@@ -1,0 +1,260 @@
+{
+  "model": "small",
+  "source": "video/druck-s07e01.mp4",
+  "sourceVideoSha256": "c2433e3cc318bfe477b85392446bb56c8568a2faa4f39eea15c98d0361aa1774",
+  "decodedAudioF32le16kSha256": "3c5233fe4caecf54d8a00cc80c40c2af9606b8e11f942d1e4eae8fb0498c240c",
+  "duration": 1277.952,
+  "asrOptions": {
+    "language": "de",
+    "beam_size": 5,
+    "temperature": 0,
+    "word_timestamps": true,
+    "condition_on_previous_text": false,
+    "vad_filter": false,
+    "initial_prompt": null,
+    "hotwords": null,
+    "device": "cpu",
+    "compute_type": "int8",
+    "cpu_threads": 3,
+    "local_files_only": true
+  },
+  "humanListened": false,
+  "method": "Local independent bounded ASR; only numeric crop supplied; no candidate text, prompt or hotwords",
+  "windows": [
+    {
+      "candidate": 4,
+      "label": "teacher-gap",
+      "start": 403.48,
+      "end": 405.84,
+      "crop": [
+        403.48,
+        405.84
+      ],
+      "segments": [
+        {
+          "start": 403.48,
+          "end": 405.58,
+          "text": " Copyright WDR 2021",
+          "avg_logprob": -0.5904180631041527,
+          "no_speech_prob": 0.834561824798584,
+          "words": [
+            {
+              "word": " Copyright",
+              "start": 403.48,
+              "end": 405.58,
+              "probability": 0.5097879730165005
+            },
+            {
+              "word": " WDR",
+              "start": 405.58,
+              "end": 405.58,
+              "probability": 0.951433002948761
+            },
+            {
+              "word": " 2021",
+              "start": 405.58,
+              "end": 405.58,
+              "probability": 0.3798663318157196
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 8.21
+    },
+    {
+      "candidate": 4,
+      "label": "teacher-context",
+      "start": 399,
+      "end": 408,
+      "crop": [
+        399,
+        408
+      ],
+      "segments": [
+        {
+          "start": 399.0,
+          "end": 402.96,
+          "text": " Mein Lennon Fatou, ihr habt das Referat über die Auflärmung vorbereitet.",
+          "avg_logprob": -0.1596019321017795,
+          "no_speech_prob": 0.17617182433605194,
+          "words": [
+            {
+              "word": " Mein",
+              "start": 399.0,
+              "end": 399.24,
+              "probability": 0.27053794264793396
+            },
+            {
+              "word": " Lennon",
+              "start": 399.24,
+              "end": 399.52,
+              "probability": 0.4765605131785075
+            },
+            {
+              "word": " Fatou,",
+              "start": 399.52,
+              "end": 400.02,
+              "probability": 0.6190025955438614
+            },
+            {
+              "word": " ihr",
+              "start": 400.18,
+              "end": 400.4,
+              "probability": 0.12095259130001068
+            },
+            {
+              "word": " habt",
+              "start": 400.4,
+              "end": 400.6,
+              "probability": 0.19269336760044098
+            },
+            {
+              "word": " das",
+              "start": 400.6,
+              "end": 400.74,
+              "probability": 0.7844823002815247
+            },
+            {
+              "word": " Referat",
+              "start": 400.74,
+              "end": 401.28,
+              "probability": 0.9856931567192078
+            },
+            {
+              "word": " über",
+              "start": 401.28,
+              "end": 401.46,
+              "probability": 0.9835575819015503
+            },
+            {
+              "word": " die",
+              "start": 401.46,
+              "end": 401.7,
+              "probability": 0.9756431579589844
+            },
+            {
+              "word": " Auflärmung",
+              "start": 401.7,
+              "end": 402.38,
+              "probability": 0.7762671083211898
+            },
+            {
+              "word": " vorbereitet.",
+              "start": 402.38,
+              "end": 402.96,
+              "probability": 0.998725026845932
+            }
+          ]
+        },
+        {
+          "start": 402.96,
+          "end": 404.14,
+          "text": " Ja, ja, ja",
+          "avg_logprob": -0.799288330078125,
+          "no_speech_prob": 0.6058692336082458,
+          "words": [
+            {
+              "word": " Ja,",
+              "start": 402.96,
+              "end": 403.56,
+              "probability": 0.07715282589197159
+            },
+            {
+              "word": " ja,",
+              "start": 403.98,
+              "end": 403.98,
+              "probability": 0.22214668989181519
+            },
+            {
+              "word": " ja",
+              "start": 403.98,
+              "end": 404.14,
+              "probability": 0.8830111622810364
+            }
+          ]
+        },
+        {
+          "start": 404.14,
+          "end": 405.36,
+          "text": " Ja, das war's",
+          "avg_logprob": -0.799288330078125,
+          "no_speech_prob": 0.6058692336082458,
+          "words": [
+            {
+              "word": " Ja,",
+              "start": 404.14,
+              "end": 404.58,
+              "probability": 0.009485924616456032
+            },
+            {
+              "word": " das",
+              "start": 404.76,
+              "end": 404.86,
+              "probability": 0.058849260210990906
+            },
+            {
+              "word": " war's",
+              "start": 404.86,
+              "end": 405.36,
+              "probability": 0.22840051352977753
+            }
+          ]
+        },
+        {
+          "start": 405.36,
+          "end": 407.88,
+          "text": " Your eyes on me, eyes on me",
+          "avg_logprob": -0.799288330078125,
+          "no_speech_prob": 0.6058692336082458,
+          "words": [
+            {
+              "word": " Your",
+              "start": 405.36,
+              "end": 405.86,
+              "probability": 0.01088467612862587
+            },
+            {
+              "word": " eyes",
+              "start": 405.86,
+              "end": 406.24,
+              "probability": 0.9667200446128845
+            },
+            {
+              "word": " on",
+              "start": 406.24,
+              "end": 406.44,
+              "probability": 0.9645434021949768
+            },
+            {
+              "word": " me,",
+              "start": 406.44,
+              "end": 406.76,
+              "probability": 0.9976575374603271
+            },
+            {
+              "word": " eyes",
+              "start": 406.82,
+              "end": 407.42,
+              "probability": 0.9858428835868835
+            },
+            {
+              "word": " on",
+              "start": 407.42,
+              "end": 407.64,
+              "probability": 0.9989416003227234
+            },
+            {
+              "word": " me",
+              "start": 407.64,
+              "end": 407.88,
+              "probability": 0.9933419823646545
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 33.12
+    }
+  ],
+  "completed": 2,
+  "total": 2
+}

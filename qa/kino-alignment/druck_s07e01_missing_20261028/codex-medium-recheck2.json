@@ -1,0 +1,230 @@
+{
+  "model": "medium",
+  "source": "video/druck-s07e01.mp4",
+  "sourceVideoSha256": "c2433e3cc318bfe477b85392446bb56c8568a2faa4f39eea15c98d0361aa1774",
+  "decodedAudioF32le16kSha256": "3c5233fe4caecf54d8a00cc80c40c2af9606b8e11f942d1e4eae8fb0498c240c",
+  "duration": 1277.952,
+  "asrOptions": {
+    "language": "de",
+    "beam_size": 5,
+    "temperature": 0,
+    "word_timestamps": true,
+    "condition_on_previous_text": false,
+    "vad_filter": false,
+    "initial_prompt": null,
+    "hotwords": null,
+    "device": "cpu",
+    "compute_type": "int8",
+    "cpu_threads": 3,
+    "local_files_only": true
+  },
+  "humanListened": false,
+  "method": "Local independent bounded ASR; only numeric crop supplied; no candidate text, prompt or hotwords",
+  "windows": [
+    {
+      "candidate": 4,
+      "label": "teacher-gap",
+      "start": 403.48,
+      "end": 405.84,
+      "crop": [
+        403.48,
+        405.84
+      ],
+      "segments": [
+        {
+          "start": 403.48,
+          "end": 405.8,
+          "text": " Untertitel im Auftrag des ZDF für funk, 2018",
+          "avg_logprob": -0.564540750840131,
+          "no_speech_prob": 0.8569281101226807,
+          "words": [
+            {
+              "word": " Untertitel",
+              "start": 403.48,
+              "end": 404.64,
+              "probability": 0.6655943855488052
+            },
+            {
+              "word": " im",
+              "start": 404.64,
+              "end": 404.66,
+              "probability": 0.15413908660411835
+            },
+            {
+              "word": " Auftrag",
+              "start": 404.66,
+              "end": 405.18,
+              "probability": 0.9927695989608765
+            },
+            {
+              "word": " des",
+              "start": 405.18,
+              "end": 405.18,
+              "probability": 0.9675642848014832
+            },
+            {
+              "word": " ZDF",
+              "start": 405.18,
+              "end": 405.78,
+              "probability": 0.9898690183957418
+            },
+            {
+              "word": " für",
+              "start": 405.78,
+              "end": 405.8,
+              "probability": 0.7163041234016418
+            },
+            {
+              "word": " funk,",
+              "start": 405.8,
+              "end": 405.8,
+              "probability": 0.9466699361801147
+            },
+            {
+              "word": " 2018",
+              "start": 405.8,
+              "end": 405.8,
+              "probability": 0.387857049703598
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 11.72
+    },
+    {
+      "candidate": 4,
+      "label": "teacher-context",
+      "start": 399,
+      "end": 408,
+      "crop": [
+        399,
+        408
+      ],
+      "segments": [
+        {
+          "start": 399.0,
+          "end": 403.22,
+          "text": " Meilen und Fatou, ihr habt das Referat über die Aufklärung vorbereitet.",
+          "avg_logprob": -0.6145073361694813,
+          "no_speech_prob": 0.1519525647163391,
+          "words": [
+            {
+              "word": " Meilen",
+              "start": 399.0,
+              "end": 399.5,
+              "probability": 0.4351142942905426
+            },
+            {
+              "word": " und",
+              "start": 399.5,
+              "end": 399.68,
+              "probability": 0.7445685863494873
+            },
+            {
+              "word": " Fatou,",
+              "start": 399.68,
+              "end": 400.26,
+              "probability": 0.9275894165039062
+            },
+            {
+              "word": " ihr",
+              "start": 400.44,
+              "end": 400.54,
+              "probability": 0.7080544829368591
+            },
+            {
+              "word": " habt",
+              "start": 400.54,
+              "end": 400.66,
+              "probability": 0.969940721988678
+            },
+            {
+              "word": " das",
+              "start": 400.66,
+              "end": 400.84,
+              "probability": 0.9398996233940125
+            },
+            {
+              "word": " Referat",
+              "start": 400.84,
+              "end": 401.34,
+              "probability": 0.9928916990756989
+            },
+            {
+              "word": " über",
+              "start": 401.34,
+              "end": 401.66,
+              "probability": 0.9804480671882629
+            },
+            {
+              "word": " die",
+              "start": 401.66,
+              "end": 401.94,
+              "probability": 0.9925456643104553
+            },
+            {
+              "word": " Aufklärung",
+              "start": 401.94,
+              "end": 402.5,
+              "probability": 0.902267575263977
+            },
+            {
+              "word": " vorbereitet.",
+              "start": 402.5,
+              "end": 403.22,
+              "probability": 0.9920835196971893
+            }
+          ]
+        },
+        {
+          "start": 404.22,
+          "end": 405.34,
+          "text": " Dann kommen wir in den Empfang.",
+          "avg_logprob": -0.6145073361694813,
+          "no_speech_prob": 0.1519525647163391,
+          "words": [
+            {
+              "word": " Dann",
+              "start": 404.22,
+              "end": 404.4,
+              "probability": 0.27202826738357544
+            },
+            {
+              "word": " kommen",
+              "start": 404.4,
+              "end": 404.58,
+              "probability": 0.27834004163742065
+            },
+            {
+              "word": " wir",
+              "start": 404.58,
+              "end": 404.94,
+              "probability": 0.6120351552963257
+            },
+            {
+              "word": " in",
+              "start": 404.94,
+              "end": 404.96,
+              "probability": 0.171193465590477
+            },
+            {
+              "word": " den",
+              "start": 404.96,
+              "end": 405.1,
+              "probability": 0.4864322543144226
+            },
+            {
+              "word": " Empfang.",
+              "start": 405.1,
+              "end": 405.34,
+              "probability": 0.48571132868528366
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 10.28
+    }
+  ],
+  "completed": 2,
+  "total": 2
+}

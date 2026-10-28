@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict'),crypto=require('node:crypto'),{execFileSync}=require('node:child_process');
+const root=path.resolve(__dirname,'../../..'),base='215992fdb9663e7410b6e58ea8a7c2ee29c7ef9d';
+const original=f=>execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8'});
+const context=vm.createContext({KinoData:{captions:()=>[]}});
+vm.runInContext(original('kino-metadata.js')+original('druck_s07e01-aligned.js')+original('kino-chapter-data.js')+original('kino-practice-data.js')+';this.out=JSON.stringify({units:DRUCK_S07E01_ALIGNED_UTTERANCES,chapterData:KINO_CHAPTER_DATA.druck_s07e01,practice:KINO_PRACTICE_DATA.druck_s07e01,alias:KINO_ALIASES.druck_s07e01});',context);
+const data=JSON.parse(context.out);assert.equal(data.units.length,268);assert.equal(data.chapterData.chapters.length,7);assert.equal(data.chapterData.chapters.reduce((n,c)=>n+c.picks.length,0),45);assert.deepEqual(data.units.map(c=>c.id),Array.from({length:268},(_,i)=>500001+i));assert.deepEqual(data.units.map(c=>c.parentId),Array.from({length:268},(_,i)=>1+i));assert(data.units.every(c=>!('speaker'in c)));
+fs.writeFileSync(path.join(__dirname,'baseline-cues-268.json'),JSON.stringify({baseRevision:base,...data},null,2)+'\n');
+const files=fs.readdirSync(root).filter(f=>f.endsWith('-aligned.js')||['kino-metadata.js','kino-chapter-data.js','kino-practice-data.js'].includes(f));
+const hashes=Object.fromEntries(files.map(f=>[f,crypto.createHash('sha256').update(original(f)).digest('hex')]));fs.writeFileSync(path.join(__dirname,'baseline-source-sha256.json'),JSON.stringify(hashes,null,2)+'\n');
+console.log(JSON.stringify({base,units:data.units.length,chapters:data.chapterData.chapters.length,picks:45,alias:data.alias,maxPublishedId:500268,maxPublishedParentId:268}));

@@ -1,0 +1,3019 @@
+{
+  "schema": "antigravity-independent-blind-asr-v1",
+  "generatedAt": "2026-10-28T05:56:29.477918+00:00",
+  "humanListened": false,
+  "blindPhase": true,
+  "promptedByCandidateText": false,
+  "inferredWordsAdded": false,
+  "model": {
+    "name": "medium",
+    "device": "cpu",
+    "compute_type": "int8",
+    "cpu_threads": 3,
+    "local_files_only": true
+  },
+  "transcribeOptions": {
+    "language": "de",
+    "beam_size": 5,
+    "temperature": 0,
+    "word_timestamps": true,
+    "condition_on_previous_text": false,
+    "vad_filter": false,
+    "initial_prompt": null,
+    "hotwords": null
+  },
+  "source": {
+    "videoPath": "video/druck-s07e01.mp4",
+    "videoBytes": 92708650,
+    "videoSha256": "c2433e3cc318bfe477b85392446bb56c8568a2faa4f39eea15c98d0361aa1774",
+    "sampleRate": 16000,
+    "decodedSampleCount": 20447232,
+    "decodedDurationSeconds": 1277.952,
+    "decoded16kFloat32Sha256": "3c5233fe4caecf54d8a00cc80c40c2af9606b8e11f942d1e4eae8fb0498c240c"
+  },
+  "summary": {
+    "expectedWindowCount": 8,
+    "completedWindowCount": 8,
+    "complete": true,
+    "totalSegments": 48,
+    "totalWords": 257,
+    "elapsedSeconds": 199.162
+  },
+  "windows": [
+    {
+      "candidate": 1,
+      "windowIndex": 1,
+      "crop": {
+        "start": 9.61,
+        "end": 48.19,
+        "duration": 38.58,
+        "startSample": 153760,
+        "endSample": 771040,
+        "sampleCount": 617280,
+        "sampleRate": 16000,
+        "cropDecoded16kFloat32Sha256": "600ee3641e88c3b9b812c3d1eff726f41c1c1e9bff04c0f62fd32c781c31fab2"
+      },
+      "transcriptionInfo": {
+        "language": "de",
+        "languageProbability": 1.0,
+        "duration": 38.58
+      },
+      "segmentCount": 14,
+      "wordCount": 81,
+      "elapsedSeconds": 60.329,
+      "humanListened": false,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "relativeStart": 0.0,
+          "relativeEnd": 2.0,
+          "start": 9.61,
+          "end": 11.61,
+          "text": " Einfach nur wandern, wohin?",
+          "avgLogprob": -0.24867540411651134,
+          "noSpeechProb": 0.7268574833869934,
+          "compressionRatio": 1.344569288389513,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Einfach",
+              "probability": 0.5344320945441723,
+              "relativeStart": 0.0,
+              "relativeEnd": 0.5,
+              "start": 9.61,
+              "end": 10.11
+            },
+            {
+              "word": " nur",
+              "probability": 0.9682047367095947,
+              "relativeStart": 0.5,
+              "relativeEnd": 0.92,
+              "start": 10.11,
+              "end": 10.53
+            },
+            {
+              "word": " wandern,",
+              "probability": 0.5643345266580582,
+              "relativeStart": 0.92,
+              "relativeEnd": 1.46,
+              "start": 10.53,
+              "end": 11.07
+            },
+            {
+              "word": " wohin?",
+              "probability": 0.9383479058742523,
+              "relativeStart": 1.58,
+              "relativeEnd": 2.0,
+              "start": 11.19,
+              "end": 11.61
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "relativeStart": 7.12,
+          "relativeEnd": 8.86,
+          "start": 16.73,
+          "end": 18.47,
+          "text": " Deine Augen, Flugzeug, Fenster",
+          "avgLogprob": -0.24867540411651134,
+          "noSpeechProb": 0.7268574833869934,
+          "compressionRatio": 1.344569288389513,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Deine",
+              "probability": 0.9392653107643127,
+              "relativeStart": 7.12,
+              "relativeEnd": 7.32,
+              "start": 16.73,
+              "end": 16.93
+            },
+            {
+              "word": " Augen,",
+              "probability": 0.9731948971748352,
+              "relativeStart": 7.32,
+              "relativeEnd": 7.56,
+              "start": 16.93,
+              "end": 17.17
+            },
+            {
+              "word": " Flugzeug,",
+              "probability": 0.9956181645393372,
+              "relativeStart": 7.58,
+              "relativeEnd": 8.08,
+              "start": 17.19,
+              "end": 17.69
+            },
+            {
+              "word": " Fenster",
+              "probability": 0.9982515871524811,
+              "relativeStart": 8.1,
+              "relativeEnd": 8.86,
+              "start": 17.71,
+              "end": 18.47
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "relativeStart": 8.86,
+          "relativeEnd": 10.72,
+          "start": 18.47,
+          "end": 20.33,
+          "text": " Brauchst paar schnelle Nächte",
+          "avgLogprob": -0.24867540411651134,
+          "noSpeechProb": 0.7268574833869934,
+          "compressionRatio": 1.344569288389513,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Brauchst",
+              "probability": 0.7342082758744558,
+              "relativeStart": 8.86,
+              "relativeEnd": 9.3,
+              "start": 18.47,
+              "end": 18.91
+            },
+            {
+              "word": " paar",
+              "probability": 0.7942559719085693,
+              "relativeStart": 9.3,
+              "relativeEnd": 9.4,
+              "start": 18.91,
+              "end": 19.01
+            },
+            {
+              "word": " schnelle",
+              "probability": 0.9848421216011047,
+              "relativeStart": 9.4,
+              "relativeEnd": 9.9,
+              "start": 19.01,
+              "end": 19.51
+            },
+            {
+              "word": " Nächte",
+              "probability": 0.997488260269165,
+              "relativeStart": 9.9,
+              "relativeEnd": 10.72,
+              "start": 19.51,
+              "end": 20.33
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "seek": 0,
+          "relativeStart": 10.72,
+          "relativeEnd": 12.76,
+          "start": 20.33,
+          "end": 22.37,
+          "text": " Musst was aus'm Kopf kriegen",
+          "avgLogprob": -0.24867540411651134,
+          "noSpeechProb": 0.7268574833869934,
+          "compressionRatio": 1.344569288389513,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Musst",
+              "probability": 0.525049477815628,
+              "relativeStart": 10.72,
+              "relativeEnd": 11.16,
+              "start": 20.33,
+              "end": 20.77
+            },
+            {
+              "word": " was",
+              "probability": 0.8772116303443909,
+              "relativeStart": 11.16,
+              "relativeEnd": 11.36,
+              "start": 20.77,
+              "end": 20.97
+            },
+            {
+              "word": " aus'm",
+              "probability": 0.7390803396701813,
+              "relativeStart": 11.36,
+              "relativeEnd": 11.8,
+              "start": 20.97,
+              "end": 21.41
+            },
+            {
+              "word": " Kopf",
+              "probability": 0.990433931350708,
+              "relativeStart": 11.8,
+              "relativeEnd": 11.98,
+              "start": 21.41,
+              "end": 21.59
+            },
+            {
+              "word": " kriegen",
+              "probability": 0.9175698757171631,
+              "relativeStart": 11.98,
+              "relativeEnd": 12.76,
+              "start": 21.59,
+              "end": 22.37
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "seek": 0,
+          "relativeStart": 12.76,
+          "relativeEnd": 14.12,
+          "start": 22.37,
+          "end": 23.73,
+          "text": " Inception",
+          "avgLogprob": -0.24867540411651134,
+          "noSpeechProb": 0.7268574833869934,
+          "compressionRatio": 1.344569288389513,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Inception",
+              "probability": 0.9516083300113678,
+              "relativeStart": 12.76,
+              "relativeEnd": 14.12,
+              "start": 22.37,
+              "end": 23.73
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "seek": 0,
+          "relativeStart": 14.12,
+          "relativeEnd": 16.84,
+          "start": 23.73,
+          "end": 26.45,
+          "text": " Ruf mich an, ich bin in 5 Minuten ready",
+          "avgLogprob": -0.24867540411651134,
+          "noSpeechProb": 0.7268574833869934,
+          "compressionRatio": 1.344569288389513,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Ruf",
+              "probability": 0.6507356762886047,
+              "relativeStart": 14.12,
+              "relativeEnd": 14.88,
+              "start": 23.73,
+              "end": 24.49
+            },
+            {
+              "word": " mich",
+              "probability": 0.9616461992263794,
+              "relativeStart": 14.88,
+              "relativeEnd": 15.1,
+              "start": 24.49,
+              "end": 24.71
+            },
+            {
+              "word": " an,",
+              "probability": 0.9925827980041504,
+              "relativeStart": 15.1,
+              "relativeEnd": 15.32,
+              "start": 24.71,
+              "end": 24.93
+            },
+            {
+              "word": " ich",
+              "probability": 0.9849907755851746,
+              "relativeStart": 15.32,
+              "relativeEnd": 15.5,
+              "start": 24.93,
+              "end": 25.11
+            },
+            {
+              "word": " bin",
+              "probability": 0.9972220659255981,
+              "relativeStart": 15.5,
+              "relativeEnd": 15.68,
+              "start": 25.11,
+              "end": 25.29
+            },
+            {
+              "word": " in",
+              "probability": 0.9882317185401917,
+              "relativeStart": 15.68,
+              "relativeEnd": 15.84,
+              "start": 25.29,
+              "end": 25.45
+            },
+            {
+              "word": " 5",
+              "probability": 0.6051291823387146,
+              "relativeStart": 15.84,
+              "relativeEnd": 16.1,
+              "start": 25.45,
+              "end": 25.71
+            },
+            {
+              "word": " Minuten",
+              "probability": 0.7781873345375061,
+              "relativeStart": 16.1,
+              "relativeEnd": 16.48,
+              "start": 25.71,
+              "end": 26.09
+            },
+            {
+              "word": " ready",
+              "probability": 0.9756150245666504,
+              "relativeStart": 16.48,
+              "relativeEnd": 16.84,
+              "start": 26.09,
+              "end": 26.45
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "seek": 0,
+          "relativeStart": 16.84,
+          "relativeEnd": 19.14,
+          "start": 26.45,
+          "end": 28.75,
+          "text": " Steig in Schatte, geb für dich mein Bestes",
+          "avgLogprob": -0.24867540411651134,
+          "noSpeechProb": 0.7268574833869934,
+          "compressionRatio": 1.344569288389513,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Steig",
+              "probability": 0.9893811941146851,
+              "relativeStart": 16.84,
+              "relativeEnd": 17.22,
+              "start": 26.45,
+              "end": 26.83
+            },
+            {
+              "word": " in",
+              "probability": 0.7085962295532227,
+              "relativeStart": 17.22,
+              "relativeEnd": 17.36,
+              "start": 26.83,
+              "end": 26.97
+            },
+            {
+              "word": " Schatte,",
+              "probability": 0.9241592586040497,
+              "relativeStart": 17.36,
+              "relativeEnd": 17.66,
+              "start": 26.97,
+              "end": 27.27
+            },
+            {
+              "word": " geb",
+              "probability": 0.6520122289657593,
+              "relativeStart": 17.7,
+              "relativeEnd": 17.88,
+              "start": 27.31,
+              "end": 27.49
+            },
+            {
+              "word": " für",
+              "probability": 0.8482164740562439,
+              "relativeStart": 17.88,
+              "relativeEnd": 18.04,
+              "start": 27.49,
+              "end": 27.65
+            },
+            {
+              "word": " dich",
+              "probability": 0.9876441359519958,
+              "relativeStart": 18.04,
+              "relativeEnd": 18.28,
+              "start": 27.65,
+              "end": 27.89
+            },
+            {
+              "word": " mein",
+              "probability": 0.9900425672531128,
+              "relativeStart": 18.28,
+              "relativeEnd": 18.44,
+              "start": 27.89,
+              "end": 28.05
+            },
+            {
+              "word": " Bestes",
+              "probability": 0.9545758068561554,
+              "relativeStart": 18.44,
+              "relativeEnd": 19.14,
+              "start": 28.05,
+              "end": 28.75
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "seek": 0,
+          "relativeStart": 19.14,
+          "relativeEnd": 21.16,
+          "start": 28.75,
+          "end": 30.77,
+          "text": " Bring noch ein Sixer-Bags mit Wolken",
+          "avgLogprob": -0.24867540411651134,
+          "noSpeechProb": 0.7268574833869934,
+          "compressionRatio": 1.344569288389513,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Bring",
+              "probability": 0.949182391166687,
+              "relativeStart": 19.14,
+              "relativeEnd": 19.54,
+              "start": 28.75,
+              "end": 29.15
+            },
+            {
+              "word": " noch",
+              "probability": 0.9722656607627869,
+              "relativeStart": 19.54,
+              "relativeEnd": 19.78,
+              "start": 29.15,
+              "end": 29.39
+            },
+            {
+              "word": " ein",
+              "probability": 0.10222630947828293,
+              "relativeStart": 19.78,
+              "relativeEnd": 19.94,
+              "start": 29.39,
+              "end": 29.55
+            },
+            {
+              "word": " Sixer",
+              "probability": 0.8992133736610413,
+              "relativeStart": 19.94,
+              "relativeEnd": 20.4,
+              "start": 29.55,
+              "end": 30.01
+            },
+            {
+              "word": "-Bags",
+              "probability": 0.6105289061864217,
+              "relativeStart": 20.4,
+              "relativeEnd": 20.56,
+              "start": 30.01,
+              "end": 30.17
+            },
+            {
+              "word": " mit",
+              "probability": 0.653448760509491,
+              "relativeStart": 20.56,
+              "relativeEnd": 20.78,
+              "start": 30.17,
+              "end": 30.39
+            },
+            {
+              "word": " Wolken",
+              "probability": 0.9896302223205566,
+              "relativeStart": 20.78,
+              "relativeEnd": 21.16,
+              "start": 30.39,
+              "end": 30.77
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "seek": 0,
+          "relativeStart": 21.16,
+          "relativeEnd": 22.98,
+          "start": 30.77,
+          "end": 32.59,
+          "text": " Bau'n Aporool-Paläste",
+          "avgLogprob": -0.24867540411651134,
+          "noSpeechProb": 0.7268574833869934,
+          "compressionRatio": 1.344569288389513,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Bau",
+              "probability": 0.002966161584481597,
+              "relativeStart": 21.16,
+              "relativeEnd": 21.36,
+              "start": 30.77,
+              "end": 30.97
+            },
+            {
+              "word": "'n",
+              "probability": 0.7850886285305023,
+              "relativeStart": 21.36,
+              "relativeEnd": 21.54,
+              "start": 30.97,
+              "end": 31.15
+            },
+            {
+              "word": " Aporool",
+              "probability": 0.3857387403647105,
+              "relativeStart": 21.54,
+              "relativeEnd": 22.08,
+              "start": 31.15,
+              "end": 31.69
+            },
+            {
+              "word": "-Paläste",
+              "probability": 0.7214986383914948,
+              "relativeStart": 22.08,
+              "relativeEnd": 22.98,
+              "start": 31.69,
+              "end": 32.59
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "seek": 0,
+          "relativeStart": 22.98,
+          "relativeEnd": 24.86,
+          "start": 32.59,
+          "end": 34.47,
+          "text": " Himmelglütlichter flackern",
+          "avgLogprob": -0.24867540411651134,
+          "noSpeechProb": 0.7268574833869934,
+          "compressionRatio": 1.344569288389513,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Himmelglütlichter",
+              "probability": 0.7998148848613104,
+              "relativeStart": 22.98,
+              "relativeEnd": 24.22,
+              "start": 32.59,
+              "end": 33.83
+            },
+            {
+              "word": " flackern",
+              "probability": 0.967393139998118,
+              "relativeStart": 24.22,
+              "relativeEnd": 24.86,
+              "start": 33.83,
+              "end": 34.47
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "seek": 0,
+          "relativeStart": 24.86,
+          "relativeEnd": 26.42,
+          "start": 34.47,
+          "end": 36.03,
+          "text": " Mein Gefühl, es wird heftig",
+          "avgLogprob": -0.24867540411651134,
+          "noSpeechProb": 0.7268574833869934,
+          "compressionRatio": 1.344569288389513,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Mein",
+              "probability": 0.941798210144043,
+              "relativeStart": 24.86,
+              "relativeEnd": 25.22,
+              "start": 34.47,
+              "end": 34.83
+            },
+            {
+              "word": " Gefühl,",
+              "probability": 0.9887612462043762,
+              "relativeStart": 25.22,
+              "relativeEnd": 25.66,
+              "start": 34.83,
+              "end": 35.27
+            },
+            {
+              "word": " es",
+              "probability": 0.9910693168640137,
+              "relativeStart": 25.66,
+              "relativeEnd": 25.82,
+              "start": 35.27,
+              "end": 35.43
+            },
+            {
+              "word": " wird",
+              "probability": 0.9908294677734375,
+              "relativeStart": 25.82,
+              "relativeEnd": 26.0,
+              "start": 35.43,
+              "end": 35.61
+            },
+            {
+              "word": " heftig",
+              "probability": 0.9895783960819244,
+              "relativeStart": 26.0,
+              "relativeEnd": 26.42,
+              "start": 35.61,
+              "end": 36.03
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "seek": 0,
+          "relativeStart": 26.42,
+          "relativeEnd": 28.28,
+          "start": 36.03,
+          "end": 37.89,
+          "text": " Alle 10 Sekunden eine Message",
+          "avgLogprob": -0.24867540411651134,
+          "noSpeechProb": 0.7268574833869934,
+          "compressionRatio": 1.344569288389513,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Alle",
+              "probability": 0.7504013180732727,
+              "relativeStart": 26.42,
+              "relativeEnd": 26.78,
+              "start": 36.03,
+              "end": 36.39
+            },
+            {
+              "word": " 10",
+              "probability": 0.9286192655563354,
+              "relativeStart": 26.78,
+              "relativeEnd": 27.04,
+              "start": 36.39,
+              "end": 36.65
+            },
+            {
+              "word": " Sekunden",
+              "probability": 0.9674682915210724,
+              "relativeStart": 27.04,
+              "relativeEnd": 27.56,
+              "start": 36.65,
+              "end": 37.17
+            },
+            {
+              "word": " eine",
+              "probability": 0.7896372079849243,
+              "relativeStart": 27.56,
+              "relativeEnd": 27.78,
+              "start": 37.17,
+              "end": 37.39
+            },
+            {
+              "word": " Message",
+              "probability": 0.9744752049446106,
+              "relativeStart": 27.78,
+              "relativeEnd": 28.28,
+              "start": 37.39,
+              "end": 37.89
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "seek": 2828,
+          "relativeStart": 29.5,
+          "relativeEnd": 33.86,
+          "start": 39.11,
+          "end": 43.47,
+          "text": " Hey, bist du schon zurück, KBB? Ich hoffe, du hattest eine gute Zeit mit deinen Fancy Friends.",
+          "avgLogprob": -0.3696705534269935,
+          "noSpeechProb": 0.32452020049095154,
+          "compressionRatio": 1.0956521739130434,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Hey,",
+              "probability": 0.6216664910316467,
+              "relativeStart": 29.5,
+              "relativeEnd": 29.82,
+              "start": 39.11,
+              "end": 39.43
+            },
+            {
+              "word": " bist",
+              "probability": 0.9908788800239563,
+              "relativeStart": 30.02,
+              "relativeEnd": 30.12,
+              "start": 39.63,
+              "end": 39.73
+            },
+            {
+              "word": " du",
+              "probability": 0.9344581961631775,
+              "relativeStart": 30.12,
+              "relativeEnd": 30.2,
+              "start": 39.73,
+              "end": 39.81
+            },
+            {
+              "word": " schon",
+              "probability": 0.9980181455612183,
+              "relativeStart": 30.2,
+              "relativeEnd": 30.36,
+              "start": 39.81,
+              "end": 39.97
+            },
+            {
+              "word": " zurück,",
+              "probability": 0.9953843951225281,
+              "relativeStart": 30.36,
+              "relativeEnd": 30.58,
+              "start": 39.97,
+              "end": 40.19
+            },
+            {
+              "word": " KBB?",
+              "probability": 0.4207833558320999,
+              "relativeStart": 30.68,
+              "relativeEnd": 30.94,
+              "start": 40.29,
+              "end": 40.55
+            },
+            {
+              "word": " Ich",
+              "probability": 0.9858596920967102,
+              "relativeStart": 31.78,
+              "relativeEnd": 31.86,
+              "start": 41.39,
+              "end": 41.47
+            },
+            {
+              "word": " hoffe,",
+              "probability": 0.9582000970840454,
+              "relativeStart": 31.86,
+              "relativeEnd": 31.96,
+              "start": 41.47,
+              "end": 41.57
+            },
+            {
+              "word": " du",
+              "probability": 0.968441367149353,
+              "relativeStart": 32.06,
+              "relativeEnd": 32.08,
+              "start": 41.67,
+              "end": 41.69
+            },
+            {
+              "word": " hattest",
+              "probability": 0.8470494349797567,
+              "relativeStart": 32.08,
+              "relativeEnd": 32.2,
+              "start": 41.69,
+              "end": 41.81
+            },
+            {
+              "word": " eine",
+              "probability": 0.6855192184448242,
+              "relativeStart": 32.2,
+              "relativeEnd": 32.32,
+              "start": 41.81,
+              "end": 41.93
+            },
+            {
+              "word": " gute",
+              "probability": 0.9933740496635437,
+              "relativeStart": 32.32,
+              "relativeEnd": 32.46,
+              "start": 41.93,
+              "end": 42.07
+            },
+            {
+              "word": " Zeit",
+              "probability": 0.9962031245231628,
+              "relativeStart": 32.46,
+              "relativeEnd": 32.68,
+              "start": 42.07,
+              "end": 42.29
+            },
+            {
+              "word": " mit",
+              "probability": 0.9876031279563904,
+              "relativeStart": 32.68,
+              "relativeEnd": 32.86,
+              "start": 42.29,
+              "end": 42.47
+            },
+            {
+              "word": " deinen",
+              "probability": 0.9960762858390808,
+              "relativeStart": 32.86,
+              "relativeEnd": 33.0,
+              "start": 42.47,
+              "end": 42.61
+            },
+            {
+              "word": " Fancy",
+              "probability": 0.8903528451919556,
+              "relativeStart": 33.0,
+              "relativeEnd": 33.36,
+              "start": 42.61,
+              "end": 42.97
+            },
+            {
+              "word": " Friends.",
+              "probability": 0.7361893057823181,
+              "relativeStart": 33.36,
+              "relativeEnd": 33.86,
+              "start": 42.97,
+              "end": 43.47
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "seek": 2828,
+          "relativeStart": 34.68,
+          "relativeEnd": 35.8,
+          "start": 44.29,
+          "end": 45.41,
+          "text": " Auch wenn ich nicht dabei war.",
+          "avgLogprob": -0.3696705534269935,
+          "noSpeechProb": 0.32452020049095154,
+          "compressionRatio": 1.0956521739130434,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Auch",
+              "probability": 0.689720869064331,
+              "relativeStart": 34.68,
+              "relativeEnd": 34.82,
+              "start": 44.29,
+              "end": 44.43
+            },
+            {
+              "word": " wenn",
+              "probability": 0.9317038655281067,
+              "relativeStart": 34.82,
+              "relativeEnd": 34.9,
+              "start": 44.43,
+              "end": 44.51
+            },
+            {
+              "word": " ich",
+              "probability": 0.9307388663291931,
+              "relativeStart": 34.9,
+              "relativeEnd": 35.08,
+              "start": 44.51,
+              "end": 44.69
+            },
+            {
+              "word": " nicht",
+              "probability": 0.9311876893043518,
+              "relativeStart": 35.08,
+              "relativeEnd": 35.24,
+              "start": 44.69,
+              "end": 44.85
+            },
+            {
+              "word": " dabei",
+              "probability": 0.9907181859016418,
+              "relativeStart": 35.24,
+              "relativeEnd": 35.44,
+              "start": 44.85,
+              "end": 45.05
+            },
+            {
+              "word": " war.",
+              "probability": 0.9987485408782959,
+              "relativeStart": 35.44,
+              "relativeEnd": 35.8,
+              "start": 45.05,
+              "end": 45.41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 2,
+      "windowIndex": 2,
+      "crop": {
+        "start": 136.68,
+        "end": 163.51,
+        "duration": 26.83,
+        "startSample": 2186880,
+        "endSample": 2616160,
+        "sampleCount": 429280,
+        "sampleRate": 16000,
+        "cropDecoded16kFloat32Sha256": "3be41ca1c8edb601336dd790d9f88c99efe8966876f618545679ebefeabc9759"
+      },
+      "transcriptionInfo": {
+        "language": "de",
+        "languageProbability": 1.0,
+        "duration": 26.83
+      },
+      "segmentCount": 7,
+      "wordCount": 22,
+      "elapsedSeconds": 23.626,
+      "humanListened": false,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "relativeStart": 0.0,
+          "relativeEnd": 1.04,
+          "start": 136.68,
+          "end": 137.72,
+          "text": " Weißte, wie wär's hier mit?",
+          "avgLogprob": -0.48385415160865114,
+          "noSpeechProb": 0.010145093314349651,
+          "compressionRatio": 1.0819672131147542,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Weißte,",
+              "probability": 0.45750519757469493,
+              "relativeStart": 0.0,
+              "relativeEnd": 0.06,
+              "start": 136.68,
+              "end": 136.74
+            },
+            {
+              "word": " wie",
+              "probability": 0.9403427839279175,
+              "relativeStart": 0.08,
+              "relativeEnd": 0.2,
+              "start": 136.76,
+              "end": 136.88
+            },
+            {
+              "word": " wär's",
+              "probability": 0.6365419328212738,
+              "relativeStart": 0.2,
+              "relativeEnd": 0.34,
+              "start": 136.88,
+              "end": 137.02
+            },
+            {
+              "word": " hier",
+              "probability": 0.9419161081314087,
+              "relativeStart": 0.34,
+              "relativeEnd": 0.46,
+              "start": 137.02,
+              "end": 137.14
+            },
+            {
+              "word": " mit?",
+              "probability": 0.8812740445137024,
+              "relativeStart": 0.46,
+              "relativeEnd": 1.04,
+              "start": 137.14,
+              "end": 137.72
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "relativeStart": 8.98,
+          "relativeEnd": 10.06,
+          "start": 145.66,
+          "end": 146.74,
+          "text": " Oh, Digga!",
+          "avgLogprob": -0.48385415160865114,
+          "noSpeechProb": 0.010145093314349651,
+          "compressionRatio": 1.0819672131147542,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Oh,",
+              "probability": 0.3468583822250366,
+              "relativeStart": 8.98,
+              "relativeEnd": 9.3,
+              "start": 145.66,
+              "end": 145.98
+            },
+            {
+              "word": " Digga!",
+              "probability": 0.8216793537139893,
+              "relativeStart": 9.36,
+              "relativeEnd": 10.06,
+              "start": 146.04,
+              "end": 146.74
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "relativeStart": 11.7,
+          "relativeEnd": 12.98,
+          "start": 148.38,
+          "end": 149.66,
+          "text": " Geil, okay.",
+          "avgLogprob": -0.48385415160865114,
+          "noSpeechProb": 0.010145093314349651,
+          "compressionRatio": 1.0819672131147542,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Geil,",
+              "probability": 0.6258843094110489,
+              "relativeStart": 11.7,
+              "relativeEnd": 12.34,
+              "start": 148.38,
+              "end": 149.02
+            },
+            {
+              "word": " okay.",
+              "probability": 0.7146857380867004,
+              "relativeStart": 12.34,
+              "relativeEnd": 12.98,
+              "start": 149.02,
+              "end": 149.66
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "seek": 0,
+          "relativeStart": 18.52,
+          "relativeEnd": 21.82,
+          "start": 155.2,
+          "end": 158.5,
+          "text": " Leute, wollt ihr noch ein letztes Familienfoto machen?",
+          "avgLogprob": -0.48385415160865114,
+          "noSpeechProb": 0.010145093314349651,
+          "compressionRatio": 1.0819672131147542,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Leute,",
+              "probability": 0.8638678789138794,
+              "relativeStart": 18.52,
+              "relativeEnd": 19.16,
+              "start": 155.2,
+              "end": 155.84
+            },
+            {
+              "word": " wollt",
+              "probability": 0.9909754395484924,
+              "relativeStart": 20.5,
+              "relativeEnd": 20.54,
+              "start": 157.18,
+              "end": 157.22
+            },
+            {
+              "word": " ihr",
+              "probability": 0.9852994680404663,
+              "relativeStart": 20.54,
+              "relativeEnd": 20.64,
+              "start": 157.22,
+              "end": 157.32
+            },
+            {
+              "word": " noch",
+              "probability": 0.9329773187637329,
+              "relativeStart": 20.64,
+              "relativeEnd": 20.78,
+              "start": 157.32,
+              "end": 157.46
+            },
+            {
+              "word": " ein",
+              "probability": 0.8237670660018921,
+              "relativeStart": 20.78,
+              "relativeEnd": 20.78,
+              "start": 157.46,
+              "end": 157.46
+            },
+            {
+              "word": " letztes",
+              "probability": 0.991746574640274,
+              "relativeStart": 20.78,
+              "relativeEnd": 21.06,
+              "start": 157.46,
+              "end": 157.74
+            },
+            {
+              "word": " Familienfoto",
+              "probability": 0.9771984616915385,
+              "relativeStart": 21.06,
+              "relativeEnd": 21.52,
+              "start": 157.74,
+              "end": 158.2
+            },
+            {
+              "word": " machen?",
+              "probability": 0.9978500604629517,
+              "relativeStart": 21.52,
+              "relativeEnd": 21.82,
+              "start": 158.2,
+              "end": 158.5
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "seek": 0,
+          "relativeStart": 22.48,
+          "relativeEnd": 22.8,
+          "start": 159.16,
+          "end": 159.48,
+          "text": " Ja.",
+          "avgLogprob": -0.48385415160865114,
+          "noSpeechProb": 0.010145093314349651,
+          "compressionRatio": 1.0819672131147542,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Ja.",
+              "probability": 0.4752006232738495,
+              "relativeStart": 22.48,
+              "relativeEnd": 22.8,
+              "start": 159.16,
+              "end": 159.48
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "seek": 0,
+          "relativeStart": 23.6,
+          "relativeEnd": 24.1,
+          "start": 160.28,
+          "end": 160.78,
+          "text": " Na dann, komm.",
+          "avgLogprob": -0.48385415160865114,
+          "noSpeechProb": 0.010145093314349651,
+          "compressionRatio": 1.0819672131147542,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Na",
+              "probability": 0.23505929112434387,
+              "relativeStart": 23.6,
+              "relativeEnd": 23.72,
+              "start": 160.28,
+              "end": 160.4
+            },
+            {
+              "word": " dann,",
+              "probability": 0.2685032784938812,
+              "relativeStart": 23.72,
+              "relativeEnd": 23.9,
+              "start": 160.4,
+              "end": 160.58
+            },
+            {
+              "word": " komm.",
+              "probability": 0.9361118674278259,
+              "relativeStart": 24.0,
+              "relativeEnd": 24.1,
+              "start": 160.68,
+              "end": 160.78
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "seek": 0,
+          "relativeStart": 26.0,
+          "relativeEnd": 26.08,
+          "start": 162.68,
+          "end": 162.76,
+          "text": " Okay.",
+          "avgLogprob": -0.48385415160865114,
+          "noSpeechProb": 0.010145093314349651,
+          "compressionRatio": 1.0819672131147542,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Okay.",
+              "probability": 0.7516036629676819,
+              "relativeStart": 25.76,
+              "relativeEnd": 26.08,
+              "start": 162.44,
+              "end": 162.76
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 3,
+      "windowIndex": 3,
+      "crop": {
+        "start": 210.6,
+        "end": 226.07,
+        "duration": 15.47,
+        "startSample": 3369600,
+        "endSample": 3617120,
+        "sampleCount": 247520,
+        "sampleRate": 16000,
+        "cropDecoded16kFloat32Sha256": "fc2535dbfbd7e2e9ceddf7112805ade08f80da1332e63b7439c9983f2ed9a829"
+      },
+      "transcriptionInfo": {
+        "language": "de",
+        "languageProbability": 1.0,
+        "duration": 15.47
+      },
+      "segmentCount": 1,
+      "wordCount": 4,
+      "elapsedSeconds": 14.209,
+      "humanListened": false,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "relativeStart": 0.0,
+          "relativeEnd": 5.34,
+          "start": 210.6,
+          "end": 215.94,
+          "text": " Eins, zwei, drei, Schiess!",
+          "avgLogprob": -0.6784138496105487,
+          "noSpeechProb": 0.43115898966789246,
+          "compressionRatio": 0.8387096774193549,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Eins,",
+              "probability": 0.5068842172622681,
+              "relativeStart": 0.0,
+              "relativeEnd": 1.78,
+              "start": 210.6,
+              "end": 212.38
+            },
+            {
+              "word": " zwei,",
+              "probability": 0.8637723326683044,
+              "relativeStart": 2.56,
+              "relativeEnd": 3.06,
+              "start": 213.16,
+              "end": 213.66
+            },
+            {
+              "word": " drei,",
+              "probability": 0.9883460402488708,
+              "relativeStart": 3.64,
+              "relativeEnd": 4.18,
+              "start": 214.24,
+              "end": 214.78
+            },
+            {
+              "word": " Schiess!",
+              "probability": 0.34808143973350525,
+              "relativeStart": 4.78,
+              "relativeEnd": 5.34,
+              "start": 215.38,
+              "end": 215.94
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 4,
+      "windowIndex": 4,
+      "crop": {
+        "start": 398.44,
+        "end": 427.55,
+        "duration": 29.11,
+        "startSample": 6375040,
+        "endSample": 6840800,
+        "sampleCount": 465760,
+        "sampleRate": 16000,
+        "cropDecoded16kFloat32Sha256": "03673b45d4d1232ebd17d4d82bafc494ac2aa43fa4f82871ea9280645410cb19"
+      },
+      "transcriptionInfo": {
+        "language": "de",
+        "languageProbability": 1.0,
+        "duration": 29.11
+      },
+      "segmentCount": 13,
+      "wordCount": 74,
+      "elapsedSeconds": 33.457,
+      "humanListened": false,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "relativeStart": 0.0,
+          "relativeEnd": 4.7,
+          "start": 398.44,
+          "end": 403.14,
+          "text": " Meilen und Fatou, ihr habt das Referat über die Aufklärung vorbereitet.",
+          "avgLogprob": -0.4831641024085367,
+          "noSpeechProb": 0.018031029030680656,
+          "compressionRatio": 1.653225806451613,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Meilen",
+              "probability": 0.45261929742991924,
+              "relativeStart": 0.0,
+              "relativeEnd": 1.02,
+              "start": 398.44,
+              "end": 399.46
+            },
+            {
+              "word": " und",
+              "probability": 0.9078510403633118,
+              "relativeStart": 1.02,
+              "relativeEnd": 1.26,
+              "start": 399.46,
+              "end": 399.7
+            },
+            {
+              "word": " Fatou,",
+              "probability": 0.8813688158988953,
+              "relativeStart": 1.26,
+              "relativeEnd": 1.74,
+              "start": 399.7,
+              "end": 400.18
+            },
+            {
+              "word": " ihr",
+              "probability": 0.7986146211624146,
+              "relativeStart": 1.96,
+              "relativeEnd": 2.1,
+              "start": 400.4,
+              "end": 400.54
+            },
+            {
+              "word": " habt",
+              "probability": 0.9115228652954102,
+              "relativeStart": 2.1,
+              "relativeEnd": 2.22,
+              "start": 400.54,
+              "end": 400.66
+            },
+            {
+              "word": " das",
+              "probability": 0.8278281092643738,
+              "relativeStart": 2.22,
+              "relativeEnd": 2.4,
+              "start": 400.66,
+              "end": 400.84
+            },
+            {
+              "word": " Referat",
+              "probability": 0.9868541359901428,
+              "relativeStart": 2.4,
+              "relativeEnd": 2.88,
+              "start": 400.84,
+              "end": 401.32
+            },
+            {
+              "word": " über",
+              "probability": 0.9754906296730042,
+              "relativeStart": 2.88,
+              "relativeEnd": 3.22,
+              "start": 401.32,
+              "end": 401.66
+            },
+            {
+              "word": " die",
+              "probability": 0.9939711689949036,
+              "relativeStart": 3.22,
+              "relativeEnd": 3.5,
+              "start": 401.66,
+              "end": 401.94
+            },
+            {
+              "word": " Aufklärung",
+              "probability": 0.8931765158971151,
+              "relativeStart": 3.5,
+              "relativeEnd": 4.02,
+              "start": 401.94,
+              "end": 402.46
+            },
+            {
+              "word": " vorbereitet.",
+              "probability": 0.9943968653678894,
+              "relativeStart": 4.02,
+              "relativeEnd": 4.7,
+              "start": 402.46,
+              "end": 403.14
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "relativeStart": 5.1,
+          "relativeEnd": 5.94,
+          "start": 403.54,
+          "end": 404.38,
+          "text": " Ja, ja, ja.",
+          "avgLogprob": -0.4831641024085367,
+          "noSpeechProb": 0.018031029030680656,
+          "compressionRatio": 1.653225806451613,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Ja,",
+              "probability": 0.013249433599412441,
+              "relativeStart": 5.1,
+              "relativeEnd": 5.1,
+              "start": 403.54,
+              "end": 403.54
+            },
+            {
+              "word": " ja,",
+              "probability": 0.46150821447372437,
+              "relativeStart": 5.1,
+              "relativeEnd": 5.1,
+              "start": 403.54,
+              "end": 403.54
+            },
+            {
+              "word": " ja.",
+              "probability": 0.9203320741653442,
+              "relativeStart": 5.5,
+              "relativeEnd": 5.94,
+              "start": 403.94,
+              "end": 404.38
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "relativeStart": 6.22,
+          "relativeEnd": 6.82,
+          "start": 404.66,
+          "end": 405.26,
+          "text": " Kommt mit nach vorn.",
+          "avgLogprob": -0.4831641024085367,
+          "noSpeechProb": 0.018031029030680656,
+          "compressionRatio": 1.653225806451613,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Kommt",
+              "probability": 0.45700159668922424,
+              "relativeStart": 6.22,
+              "relativeEnd": 6.3,
+              "start": 404.66,
+              "end": 404.74
+            },
+            {
+              "word": " mit",
+              "probability": 0.24302838742733002,
+              "relativeStart": 6.3,
+              "relativeEnd": 6.38,
+              "start": 404.74,
+              "end": 404.82
+            },
+            {
+              "word": " nach",
+              "probability": 0.6666269302368164,
+              "relativeStart": 6.38,
+              "relativeEnd": 6.6,
+              "start": 404.82,
+              "end": 405.04
+            },
+            {
+              "word": " vorn.",
+              "probability": 0.5992332473397255,
+              "relativeStart": 6.6,
+              "relativeEnd": 6.82,
+              "start": 405.04,
+              "end": 405.26
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "seek": 0,
+          "relativeStart": 7.4,
+          "relativeEnd": 10.14,
+          "start": 405.84,
+          "end": 408.58,
+          "text": " You eyes on me, eyes on me, apply that.",
+          "avgLogprob": -0.4831641024085367,
+          "noSpeechProb": 0.018031029030680656,
+          "compressionRatio": 1.653225806451613,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " You",
+              "probability": 0.00039869375177659094,
+              "relativeStart": 7.4,
+              "relativeEnd": 7.4,
+              "start": 405.84,
+              "end": 405.84
+            },
+            {
+              "word": " eyes",
+              "probability": 0.26309236884117126,
+              "relativeStart": 7.4,
+              "relativeEnd": 7.84,
+              "start": 405.84,
+              "end": 406.28
+            },
+            {
+              "word": " on",
+              "probability": 0.992440938949585,
+              "relativeStart": 7.84,
+              "relativeEnd": 8.08,
+              "start": 406.28,
+              "end": 406.52
+            },
+            {
+              "word": " me,",
+              "probability": 0.9956361651420593,
+              "relativeStart": 8.08,
+              "relativeEnd": 8.56,
+              "start": 406.52,
+              "end": 407.0
+            },
+            {
+              "word": " eyes",
+              "probability": 0.9216333627700806,
+              "relativeStart": 8.9,
+              "relativeEnd": 9.16,
+              "start": 407.34,
+              "end": 407.6
+            },
+            {
+              "word": " on",
+              "probability": 0.9977923631668091,
+              "relativeStart": 9.16,
+              "relativeEnd": 9.38,
+              "start": 407.6,
+              "end": 407.82
+            },
+            {
+              "word": " me,",
+              "probability": 0.988819420337677,
+              "relativeStart": 9.38,
+              "relativeEnd": 9.64,
+              "start": 407.82,
+              "end": 408.08
+            },
+            {
+              "word": " apply",
+              "probability": 0.6134698987007141,
+              "relativeStart": 9.64,
+              "relativeEnd": 9.96,
+              "start": 408.08,
+              "end": 408.4
+            },
+            {
+              "word": " that.",
+              "probability": 0.9584958553314209,
+              "relativeStart": 9.96,
+              "relativeEnd": 10.14,
+              "start": 408.4,
+              "end": 408.58
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "seek": 0,
+          "relativeStart": 10.86,
+          "relativeEnd": 14.06,
+          "start": 409.3,
+          "end": 412.5,
+          "text": " Get it, don't be timid when you ain't applied it.",
+          "avgLogprob": -0.4831641024085367,
+          "noSpeechProb": 0.018031029030680656,
+          "compressionRatio": 1.653225806451613,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Get",
+              "probability": 0.3494153916835785,
+              "relativeStart": 10.86,
+              "relativeEnd": 11.22,
+              "start": 409.3,
+              "end": 409.66
+            },
+            {
+              "word": " it,",
+              "probability": 0.9888383150100708,
+              "relativeStart": 11.22,
+              "relativeEnd": 11.34,
+              "start": 409.66,
+              "end": 409.78
+            },
+            {
+              "word": " don't",
+              "probability": 0.9919838309288025,
+              "relativeStart": 11.34,
+              "relativeEnd": 11.66,
+              "start": 409.78,
+              "end": 410.1
+            },
+            {
+              "word": " be",
+              "probability": 0.8861105442047119,
+              "relativeStart": 11.66,
+              "relativeEnd": 11.88,
+              "start": 410.1,
+              "end": 410.32
+            },
+            {
+              "word": " timid",
+              "probability": 0.8895150423049927,
+              "relativeStart": 11.88,
+              "relativeEnd": 12.16,
+              "start": 410.32,
+              "end": 410.6
+            },
+            {
+              "word": " when",
+              "probability": 0.5937188267707825,
+              "relativeStart": 12.16,
+              "relativeEnd": 12.5,
+              "start": 410.6,
+              "end": 410.94
+            },
+            {
+              "word": " you",
+              "probability": 0.9732710123062134,
+              "relativeStart": 12.5,
+              "relativeEnd": 12.72,
+              "start": 410.94,
+              "end": 411.16
+            },
+            {
+              "word": " ain't",
+              "probability": 0.9102992117404938,
+              "relativeStart": 12.72,
+              "relativeEnd": 12.94,
+              "start": 411.16,
+              "end": 411.38
+            },
+            {
+              "word": " applied",
+              "probability": 0.12713313102722168,
+              "relativeStart": 12.94,
+              "relativeEnd": 13.26,
+              "start": 411.38,
+              "end": 411.7
+            },
+            {
+              "word": " it.",
+              "probability": 0.9048351049423218,
+              "relativeStart": 13.26,
+              "relativeEnd": 14.06,
+              "start": 411.7,
+              "end": 412.5
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "seek": 0,
+          "relativeStart": 14.28,
+          "relativeEnd": 16.82,
+          "start": 412.72,
+          "end": 415.26,
+          "text": " Love upon it, live alone, need it.",
+          "avgLogprob": -0.4831641024085367,
+          "noSpeechProb": 0.018031029030680656,
+          "compressionRatio": 1.653225806451613,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Love",
+              "probability": 0.5328176617622375,
+              "relativeStart": 14.28,
+              "relativeEnd": 14.56,
+              "start": 412.72,
+              "end": 413.0
+            },
+            {
+              "word": " upon",
+              "probability": 0.3358721137046814,
+              "relativeStart": 14.56,
+              "relativeEnd": 14.96,
+              "start": 413.0,
+              "end": 413.4
+            },
+            {
+              "word": " it,",
+              "probability": 0.8964142799377441,
+              "relativeStart": 14.96,
+              "relativeEnd": 15.46,
+              "start": 413.4,
+              "end": 413.9
+            },
+            {
+              "word": " live",
+              "probability": 0.33867737650871277,
+              "relativeStart": 15.7,
+              "relativeEnd": 15.82,
+              "start": 414.14,
+              "end": 414.26
+            },
+            {
+              "word": " alone,",
+              "probability": 0.7503936886787415,
+              "relativeStart": 15.82,
+              "relativeEnd": 16.24,
+              "start": 414.26,
+              "end": 414.68
+            },
+            {
+              "word": " need",
+              "probability": 0.6786248087882996,
+              "relativeStart": 16.56,
+              "relativeEnd": 16.58,
+              "start": 415.0,
+              "end": 415.02
+            },
+            {
+              "word": " it.",
+              "probability": 0.996670663356781,
+              "relativeStart": 16.58,
+              "relativeEnd": 16.82,
+              "start": 415.02,
+              "end": 415.26
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "seek": 0,
+          "relativeStart": 17.04,
+          "relativeEnd": 17.48,
+          "start": 415.48,
+          "end": 415.92,
+          "text": " That's it.",
+          "avgLogprob": -0.4831641024085367,
+          "noSpeechProb": 0.018031029030680656,
+          "compressionRatio": 1.653225806451613,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " That's",
+              "probability": 0.5611767470836639,
+              "relativeStart": 17.04,
+              "relativeEnd": 17.14,
+              "start": 415.48,
+              "end": 415.58
+            },
+            {
+              "word": " it.",
+              "probability": 0.9975741505622864,
+              "relativeStart": 17.14,
+              "relativeEnd": 17.48,
+              "start": 415.58,
+              "end": 415.92
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "seek": 0,
+          "relativeStart": 17.7,
+          "relativeEnd": 20.64,
+          "start": 416.14,
+          "end": 419.08,
+          "text": " I don't wanna feel bad, it's bad like you said it.",
+          "avgLogprob": -0.4831641024085367,
+          "noSpeechProb": 0.018031029030680656,
+          "compressionRatio": 1.653225806451613,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " I",
+              "probability": 0.9671725034713745,
+              "relativeStart": 17.7,
+              "relativeEnd": 17.92,
+              "start": 416.14,
+              "end": 416.36
+            },
+            {
+              "word": " don't",
+              "probability": 0.9794189631938934,
+              "relativeStart": 17.92,
+              "relativeEnd": 18.14,
+              "start": 416.36,
+              "end": 416.58
+            },
+            {
+              "word": " wanna",
+              "probability": 0.7264255285263062,
+              "relativeStart": 18.14,
+              "relativeEnd": 18.44,
+              "start": 416.58,
+              "end": 416.88
+            },
+            {
+              "word": " feel",
+              "probability": 0.6553252935409546,
+              "relativeStart": 18.44,
+              "relativeEnd": 18.8,
+              "start": 416.88,
+              "end": 417.24
+            },
+            {
+              "word": " bad,",
+              "probability": 0.2368020862340927,
+              "relativeStart": 18.8,
+              "relativeEnd": 19.16,
+              "start": 417.24,
+              "end": 417.6
+            },
+            {
+              "word": " it's",
+              "probability": 0.6806887686252594,
+              "relativeStart": 19.36,
+              "relativeEnd": 19.46,
+              "start": 417.8,
+              "end": 417.9
+            },
+            {
+              "word": " bad",
+              "probability": 0.935725748538971,
+              "relativeStart": 19.46,
+              "relativeEnd": 19.68,
+              "start": 417.9,
+              "end": 418.12
+            },
+            {
+              "word": " like",
+              "probability": 0.7711982727050781,
+              "relativeStart": 19.68,
+              "relativeEnd": 19.98,
+              "start": 418.12,
+              "end": 418.42
+            },
+            {
+              "word": " you",
+              "probability": 0.4169161915779114,
+              "relativeStart": 19.98,
+              "relativeEnd": 20.44,
+              "start": 418.42,
+              "end": 418.88
+            },
+            {
+              "word": " said",
+              "probability": 0.9860614538192749,
+              "relativeStart": 20.44,
+              "relativeEnd": 20.44,
+              "start": 418.88,
+              "end": 418.88
+            },
+            {
+              "word": " it.",
+              "probability": 0.5767552256584167,
+              "relativeStart": 20.44,
+              "relativeEnd": 20.64,
+              "start": 418.88,
+              "end": 419.08
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "seek": 0,
+          "relativeStart": 21.42,
+          "relativeEnd": 22.3,
+          "start": 419.86,
+          "end": 420.74,
+          "text": " That's it.",
+          "avgLogprob": -0.4831641024085367,
+          "noSpeechProb": 0.018031029030680656,
+          "compressionRatio": 1.653225806451613,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " That's",
+              "probability": 0.8047245144844055,
+              "relativeStart": 21.42,
+              "relativeEnd": 21.78,
+              "start": 419.86,
+              "end": 420.22
+            },
+            {
+              "word": " it.",
+              "probability": 0.9683510065078735,
+              "relativeStart": 21.78,
+              "relativeEnd": 22.3,
+              "start": 420.22,
+              "end": 420.74
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "seek": 0,
+          "relativeStart": 22.78,
+          "relativeEnd": 23.62,
+          "start": 421.22,
+          "end": 422.06,
+          "text": " That's it.",
+          "avgLogprob": -0.4831641024085367,
+          "noSpeechProb": 0.018031029030680656,
+          "compressionRatio": 1.653225806451613,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " That's",
+              "probability": 0.8293836116790771,
+              "relativeStart": 22.78,
+              "relativeEnd": 23.34,
+              "start": 421.22,
+              "end": 421.78
+            },
+            {
+              "word": " it.",
+              "probability": 0.9774150252342224,
+              "relativeStart": 23.34,
+              "relativeEnd": 23.62,
+              "start": 421.78,
+              "end": 422.06
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "seek": 0,
+          "relativeStart": 23.62,
+          "relativeEnd": 23.96,
+          "start": 422.06,
+          "end": 422.4,
+          "text": " That's it.",
+          "avgLogprob": -0.4831641024085367,
+          "noSpeechProb": 0.018031029030680656,
+          "compressionRatio": 1.653225806451613,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " That's",
+              "probability": 0.7318384200334549,
+              "relativeStart": 23.62,
+              "relativeEnd": 23.76,
+              "start": 422.06,
+              "end": 422.2
+            },
+            {
+              "word": " it.",
+              "probability": 0.9817736744880676,
+              "relativeStart": 23.76,
+              "relativeEnd": 23.96,
+              "start": 422.2,
+              "end": 422.4
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "seek": 0,
+          "relativeStart": 25.44,
+          "relativeEnd": 26.62,
+          "start": 423.88,
+          "end": 425.06,
+          "text": " Und die müssen jetzt alle rein?",
+          "avgLogprob": -0.4831641024085367,
+          "noSpeechProb": 0.018031029030680656,
+          "compressionRatio": 1.653225806451613,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Und",
+              "probability": 0.1834755390882492,
+              "relativeStart": 25.44,
+              "relativeEnd": 25.8,
+              "start": 423.88,
+              "end": 424.24
+            },
+            {
+              "word": " die",
+              "probability": 0.9749163389205933,
+              "relativeStart": 25.8,
+              "relativeEnd": 25.94,
+              "start": 424.24,
+              "end": 424.38
+            },
+            {
+              "word": " müssen",
+              "probability": 0.9909668564796448,
+              "relativeStart": 25.94,
+              "relativeEnd": 26.1,
+              "start": 424.38,
+              "end": 424.54
+            },
+            {
+              "word": " jetzt",
+              "probability": 0.9919208288192749,
+              "relativeStart": 26.1,
+              "relativeEnd": 26.24,
+              "start": 424.54,
+              "end": 424.68
+            },
+            {
+              "word": " alle",
+              "probability": 0.992792010307312,
+              "relativeStart": 26.24,
+              "relativeEnd": 26.42,
+              "start": 424.68,
+              "end": 424.86
+            },
+            {
+              "word": " rein?",
+              "probability": 0.9980046153068542,
+              "relativeStart": 26.42,
+              "relativeEnd": 26.62,
+              "start": 424.86,
+              "end": 425.06
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "seek": 0,
+          "relativeStart": 27.08,
+          "relativeEnd": 28.42,
+          "start": 425.52,
+          "end": 426.86,
+          "text": " Na ja, die erfrieren sonst.",
+          "avgLogprob": -0.4831641024085367,
+          "noSpeechProb": 0.018031029030680656,
+          "compressionRatio": 1.653225806451613,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Na",
+              "probability": 0.803281307220459,
+              "relativeStart": 27.08,
+              "relativeEnd": 27.3,
+              "start": 425.52,
+              "end": 425.74
+            },
+            {
+              "word": " ja,",
+              "probability": 0.9039235711097717,
+              "relativeStart": 27.3,
+              "relativeEnd": 27.38,
+              "start": 425.74,
+              "end": 425.82
+            },
+            {
+              "word": " die",
+              "probability": 0.9967792630195618,
+              "relativeStart": 27.42,
+              "relativeEnd": 27.6,
+              "start": 425.86,
+              "end": 426.04
+            },
+            {
+              "word": " erfrieren",
+              "probability": 0.9550107717514038,
+              "relativeStart": 27.6,
+              "relativeEnd": 27.96,
+              "start": 426.04,
+              "end": 426.4
+            },
+            {
+              "word": " sonst.",
+              "probability": 0.9942837357521057,
+              "relativeStart": 27.96,
+              "relativeEnd": 28.42,
+              "start": 426.4,
+              "end": 426.86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 5,
+      "windowIndex": 5,
+      "crop": {
+        "start": 476.58,
+        "end": 496.67,
+        "duration": 20.09,
+        "startSample": 7625280,
+        "endSample": 7946720,
+        "sampleCount": 321440,
+        "sampleRate": 16000,
+        "cropDecoded16kFloat32Sha256": "c36c0eda05796687ab22c8b36cd586ac04a76bf57bf248804778418fc9792510"
+      },
+      "transcriptionInfo": {
+        "language": "de",
+        "languageProbability": 1.0,
+        "duration": 20.09
+      },
+      "segmentCount": 8,
+      "wordCount": 49,
+      "elapsedSeconds": 20.417,
+      "humanListened": false,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "relativeStart": 0.0,
+          "relativeEnd": 4.24,
+          "start": 476.58,
+          "end": 480.82,
+          "text": " Ey, dieser letzte Tune in der Appendis, der kam mir richtig gut an, der Gang.",
+          "avgLogprob": -0.4772032155938771,
+          "noSpeechProb": 0.0885125994682312,
+          "compressionRatio": 1.3945945945945946,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Ey,",
+              "probability": 0.502483069896698,
+              "relativeStart": 0.0,
+              "relativeEnd": 0.58,
+              "start": 476.58,
+              "end": 477.16
+            },
+            {
+              "word": " dieser",
+              "probability": 0.9195324778556824,
+              "relativeStart": 0.7,
+              "relativeEnd": 0.82,
+              "start": 477.28,
+              "end": 477.4
+            },
+            {
+              "word": " letzte",
+              "probability": 0.9959970712661743,
+              "relativeStart": 0.82,
+              "relativeEnd": 1.16,
+              "start": 477.4,
+              "end": 477.74
+            },
+            {
+              "word": " Tune",
+              "probability": 0.8764478266239166,
+              "relativeStart": 1.16,
+              "relativeEnd": 1.54,
+              "start": 477.74,
+              "end": 478.12
+            },
+            {
+              "word": " in",
+              "probability": 0.9020609855651855,
+              "relativeStart": 1.54,
+              "relativeEnd": 1.7,
+              "start": 478.12,
+              "end": 478.28
+            },
+            {
+              "word": " der",
+              "probability": 0.7343457937240601,
+              "relativeStart": 1.7,
+              "relativeEnd": 1.8,
+              "start": 478.28,
+              "end": 478.38
+            },
+            {
+              "word": " Appendis,",
+              "probability": 0.4559907615184784,
+              "relativeStart": 1.8,
+              "relativeEnd": 2.34,
+              "start": 478.38,
+              "end": 478.92
+            },
+            {
+              "word": " der",
+              "probability": 0.9481133222579956,
+              "relativeStart": 2.34,
+              "relativeEnd": 2.48,
+              "start": 478.92,
+              "end": 479.06
+            },
+            {
+              "word": " kam",
+              "probability": 0.9969159364700317,
+              "relativeStart": 2.48,
+              "relativeEnd": 2.64,
+              "start": 479.06,
+              "end": 479.22
+            },
+            {
+              "word": " mir",
+              "probability": 0.46501344442367554,
+              "relativeStart": 2.64,
+              "relativeEnd": 2.8,
+              "start": 479.22,
+              "end": 479.38
+            },
+            {
+              "word": " richtig",
+              "probability": 0.9687809348106384,
+              "relativeStart": 2.8,
+              "relativeEnd": 3.14,
+              "start": 479.38,
+              "end": 479.72
+            },
+            {
+              "word": " gut",
+              "probability": 0.995797872543335,
+              "relativeStart": 3.14,
+              "relativeEnd": 3.38,
+              "start": 479.72,
+              "end": 479.96
+            },
+            {
+              "word": " an,",
+              "probability": 0.998862624168396,
+              "relativeStart": 3.38,
+              "relativeEnd": 3.66,
+              "start": 479.96,
+              "end": 480.24
+            },
+            {
+              "word": " der",
+              "probability": 0.7892014980316162,
+              "relativeStart": 3.82,
+              "relativeEnd": 3.92,
+              "start": 480.4,
+              "end": 480.5
+            },
+            {
+              "word": " Gang.",
+              "probability": 0.9170652031898499,
+              "relativeStart": 3.92,
+              "relativeEnd": 4.24,
+              "start": 480.5,
+              "end": 480.82
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "relativeStart": 4.6,
+          "relativeEnd": 5.64,
+          "start": 481.18,
+          "end": 482.22,
+          "text": " Was ist dir da so für ein Stil her?",
+          "avgLogprob": -0.4772032155938771,
+          "noSpeechProb": 0.0885125994682312,
+          "compressionRatio": 1.3945945945945946,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Was",
+              "probability": 0.7877181768417358,
+              "relativeStart": 4.6,
+              "relativeEnd": 4.7,
+              "start": 481.18,
+              "end": 481.28
+            },
+            {
+              "word": " ist",
+              "probability": 0.1942625492811203,
+              "relativeStart": 4.7,
+              "relativeEnd": 4.76,
+              "start": 481.28,
+              "end": 481.34
+            },
+            {
+              "word": " dir",
+              "probability": 0.18732811510562897,
+              "relativeStart": 4.76,
+              "relativeEnd": 4.84,
+              "start": 481.34,
+              "end": 481.42
+            },
+            {
+              "word": " da",
+              "probability": 0.5685913562774658,
+              "relativeStart": 4.84,
+              "relativeEnd": 4.94,
+              "start": 481.42,
+              "end": 481.52
+            },
+            {
+              "word": " so",
+              "probability": 0.9438923001289368,
+              "relativeStart": 4.94,
+              "relativeEnd": 5.1,
+              "start": 481.52,
+              "end": 481.68
+            },
+            {
+              "word": " für",
+              "probability": 0.4983741044998169,
+              "relativeStart": 5.1,
+              "relativeEnd": 5.24,
+              "start": 481.68,
+              "end": 481.82
+            },
+            {
+              "word": " ein",
+              "probability": 0.3027680218219757,
+              "relativeStart": 5.24,
+              "relativeEnd": 5.3,
+              "start": 481.82,
+              "end": 481.88
+            },
+            {
+              "word": " Stil",
+              "probability": 0.934086799621582,
+              "relativeStart": 5.3,
+              "relativeEnd": 5.5,
+              "start": 481.88,
+              "end": 482.08
+            },
+            {
+              "word": " her?",
+              "probability": 0.694179117679596,
+              "relativeStart": 5.5,
+              "relativeEnd": 5.64,
+              "start": 482.08,
+              "end": 482.22
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "relativeStart": 6.24,
+          "relativeEnd": 6.74,
+          "start": 482.82,
+          "end": 483.32,
+          "text": " What?",
+          "avgLogprob": -0.4772032155938771,
+          "noSpeechProb": 0.0885125994682312,
+          "compressionRatio": 1.3945945945945946,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " What?",
+              "probability": 0.8864145278930664,
+              "relativeStart": 6.24,
+              "relativeEnd": 6.74,
+              "start": 482.82,
+              "end": 483.32
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "seek": 0,
+          "relativeStart": 7.56,
+          "relativeEnd": 8.66,
+          "start": 484.14,
+          "end": 485.24,
+          "text": " Safe Family Style.",
+          "avgLogprob": -0.4772032155938771,
+          "noSpeechProb": 0.0885125994682312,
+          "compressionRatio": 1.3945945945945946,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Safe",
+              "probability": 0.4973120391368866,
+              "relativeStart": 7.56,
+              "relativeEnd": 7.84,
+              "start": 484.14,
+              "end": 484.42
+            },
+            {
+              "word": " Family",
+              "probability": 0.13796091079711914,
+              "relativeStart": 7.84,
+              "relativeEnd": 8.12,
+              "start": 484.42,
+              "end": 484.7
+            },
+            {
+              "word": " Style.",
+              "probability": 0.8324068784713745,
+              "relativeStart": 8.12,
+              "relativeEnd": 8.66,
+              "start": 484.7,
+              "end": 485.24
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "seek": 0,
+          "relativeStart": 9.6,
+          "relativeEnd": 12.16,
+          "start": 486.18,
+          "end": 488.74,
+          "text": " Jo, ey, ey, ey.",
+          "avgLogprob": -0.4772032155938771,
+          "noSpeechProb": 0.0885125994682312,
+          "compressionRatio": 1.3945945945945946,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Jo,",
+              "probability": 0.5903337001800537,
+              "relativeStart": 9.6,
+              "relativeEnd": 10.12,
+              "start": 486.18,
+              "end": 486.7
+            },
+            {
+              "word": " ey,",
+              "probability": 0.09785034507513046,
+              "relativeStart": 10.6,
+              "relativeEnd": 10.98,
+              "start": 487.18,
+              "end": 487.56
+            },
+            {
+              "word": " ey,",
+              "probability": 0.9260463118553162,
+              "relativeStart": 11.04,
+              "relativeEnd": 11.3,
+              "start": 487.62,
+              "end": 487.88
+            },
+            {
+              "word": " ey.",
+              "probability": 0.9689092636108398,
+              "relativeStart": 11.3,
+              "relativeEnd": 12.16,
+              "start": 487.88,
+              "end": 488.74
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "seek": 0,
+          "relativeStart": 13.68,
+          "relativeEnd": 14.46,
+          "start": 490.26,
+          "end": 491.04,
+          "text": " Komm doch auch mal mit.",
+          "avgLogprob": -0.4772032155938771,
+          "noSpeechProb": 0.0885125994682312,
+          "compressionRatio": 1.3945945945945946,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Komm",
+              "probability": 0.9654819369316101,
+              "relativeStart": 13.68,
+              "relativeEnd": 13.84,
+              "start": 490.26,
+              "end": 490.42
+            },
+            {
+              "word": " doch",
+              "probability": 0.9581459164619446,
+              "relativeStart": 13.84,
+              "relativeEnd": 13.96,
+              "start": 490.42,
+              "end": 490.54
+            },
+            {
+              "word": " auch",
+              "probability": 0.9662943482398987,
+              "relativeStart": 13.96,
+              "relativeEnd": 14.08,
+              "start": 490.54,
+              "end": 490.66
+            },
+            {
+              "word": " mal",
+              "probability": 0.965609073638916,
+              "relativeStart": 14.08,
+              "relativeEnd": 14.2,
+              "start": 490.66,
+              "end": 490.78
+            },
+            {
+              "word": " mit.",
+              "probability": 0.997525155544281,
+              "relativeStart": 14.2,
+              "relativeEnd": 14.46,
+              "start": 490.78,
+              "end": 491.04
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "seek": 0,
+          "relativeStart": 15.46,
+          "relativeEnd": 18.66,
+          "start": 492.04,
+          "end": 495.24,
+          "text": " Es ist Halloween und wir verkleinern uns richtig schick.",
+          "avgLogprob": -0.4772032155938771,
+          "noSpeechProb": 0.0885125994682312,
+          "compressionRatio": 1.3945945945945946,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Es",
+              "probability": 0.9793151617050171,
+              "relativeStart": 15.46,
+              "relativeEnd": 15.62,
+              "start": 492.04,
+              "end": 492.2
+            },
+            {
+              "word": " ist",
+              "probability": 0.9960789084434509,
+              "relativeStart": 15.62,
+              "relativeEnd": 15.86,
+              "start": 492.2,
+              "end": 492.44
+            },
+            {
+              "word": " Halloween",
+              "probability": 0.928055465221405,
+              "relativeStart": 15.86,
+              "relativeEnd": 16.36,
+              "start": 492.44,
+              "end": 492.94
+            },
+            {
+              "word": " und",
+              "probability": 0.7587937712669373,
+              "relativeStart": 16.36,
+              "relativeEnd": 17.1,
+              "start": 492.94,
+              "end": 493.68
+            },
+            {
+              "word": " wir",
+              "probability": 0.9723755717277527,
+              "relativeStart": 17.1,
+              "relativeEnd": 17.44,
+              "start": 493.68,
+              "end": 494.02
+            },
+            {
+              "word": " verkleinern",
+              "probability": 0.799103133380413,
+              "relativeStart": 17.44,
+              "relativeEnd": 17.92,
+              "start": 494.02,
+              "end": 494.5
+            },
+            {
+              "word": " uns",
+              "probability": 0.9917857050895691,
+              "relativeStart": 17.92,
+              "relativeEnd": 17.98,
+              "start": 494.5,
+              "end": 494.56
+            },
+            {
+              "word": " richtig",
+              "probability": 0.9920319318771362,
+              "relativeStart": 17.98,
+              "relativeEnd": 18.36,
+              "start": 494.56,
+              "end": 494.94
+            },
+            {
+              "word": " schick.",
+              "probability": 0.9922946989536285,
+              "relativeStart": 18.36,
+              "relativeEnd": 18.66,
+              "start": 494.94,
+              "end": 495.24
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "seek": 0,
+          "relativeStart": 18.94,
+          "relativeEnd": 19.96,
+          "start": 495.52,
+          "end": 496.54,
+          "text": " Lass mal verkleinern.",
+          "avgLogprob": -0.4772032155938771,
+          "noSpeechProb": 0.0885125994682312,
+          "compressionRatio": 1.3945945945945946,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Lass",
+              "probability": 0.6153329610824585,
+              "relativeStart": 18.94,
+              "relativeEnd": 19.26,
+              "start": 495.52,
+              "end": 495.84
+            },
+            {
+              "word": " mal",
+              "probability": 0.8392927050590515,
+              "relativeStart": 19.26,
+              "relativeEnd": 19.46,
+              "start": 495.84,
+              "end": 496.04
+            },
+            {
+              "word": " verkleinern.",
+              "probability": 0.9317396581172943,
+              "relativeStart": 19.46,
+              "relativeEnd": 19.96,
+              "start": 496.04,
+              "end": 496.54
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 6,
+      "windowIndex": 6,
+      "crop": {
+        "start": 758.37,
+        "end": 775.07,
+        "duration": 16.7,
+        "startSample": 12133920,
+        "endSample": 12401120,
+        "sampleCount": 267200,
+        "sampleRate": 16000,
+        "cropDecoded16kFloat32Sha256": "a3eac499d9a016d16bf48c11b7cdd1eabc9279d32f2c2b7fe885fb145394c94f"
+      },
+      "transcriptionInfo": {
+        "language": "de",
+        "languageProbability": 1.0,
+        "duration": 16.7
+      },
+      "segmentCount": 0,
+      "wordCount": 0,
+      "elapsedSeconds": 10.732,
+      "humanListened": false,
+      "segments": []
+    },
+    {
+      "candidate": 7,
+      "windowIndex": 7,
+      "crop": {
+        "start": 859.4,
+        "end": 875.07,
+        "duration": 15.67,
+        "startSample": 13750400,
+        "endSample": 14001120,
+        "sampleCount": 250720,
+        "sampleRate": 16000,
+        "cropDecoded16kFloat32Sha256": "c6da127002c947c7be5b331d5fcc341169f0b2a2d4232c8b9b038b860adcc20c"
+      },
+      "transcriptionInfo": {
+        "language": "de",
+        "languageProbability": 1.0,
+        "duration": 15.67
+      },
+      "segmentCount": 3,
+      "wordCount": 18,
+      "elapsedSeconds": 13.796,
+      "humanListened": false,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "relativeStart": 2.4,
+          "relativeEnd": 5.28,
+          "start": 861.8,
+          "end": 864.68,
+          "text": " Wenn aus dem Abi nichts wird, dann könnt ihr immer noch Hexen werden.",
+          "avgLogprob": -0.515111181885004,
+          "noSpeechProb": 0.08625438809394836,
+          "compressionRatio": 1.032258064516129,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Wenn",
+              "probability": 0.04524073377251625,
+              "relativeStart": 2.4,
+              "relativeEnd": 2.78,
+              "start": 861.8,
+              "end": 862.18
+            },
+            {
+              "word": " aus",
+              "probability": 0.8787220120429993,
+              "relativeStart": 2.78,
+              "relativeEnd": 3.12,
+              "start": 862.18,
+              "end": 862.52
+            },
+            {
+              "word": " dem",
+              "probability": 0.9870858788490295,
+              "relativeStart": 3.12,
+              "relativeEnd": 3.3,
+              "start": 862.52,
+              "end": 862.7
+            },
+            {
+              "word": " Abi",
+              "probability": 0.9568789005279541,
+              "relativeStart": 3.3,
+              "relativeEnd": 3.42,
+              "start": 862.7,
+              "end": 862.82
+            },
+            {
+              "word": " nichts",
+              "probability": 0.9566431641578674,
+              "relativeStart": 3.42,
+              "relativeEnd": 3.68,
+              "start": 862.82,
+              "end": 863.08
+            },
+            {
+              "word": " wird,",
+              "probability": 0.9713801741600037,
+              "relativeStart": 3.68,
+              "relativeEnd": 3.86,
+              "start": 863.08,
+              "end": 863.26
+            },
+            {
+              "word": " dann",
+              "probability": 0.31777191162109375,
+              "relativeStart": 4.0,
+              "relativeEnd": 4.08,
+              "start": 863.4,
+              "end": 863.48
+            },
+            {
+              "word": " könnt",
+              "probability": 0.9905349612236023,
+              "relativeStart": 4.08,
+              "relativeEnd": 4.14,
+              "start": 863.48,
+              "end": 863.54
+            },
+            {
+              "word": " ihr",
+              "probability": 0.9797838926315308,
+              "relativeStart": 4.14,
+              "relativeEnd": 4.28,
+              "start": 863.54,
+              "end": 863.68
+            },
+            {
+              "word": " immer",
+              "probability": 0.3768957555294037,
+              "relativeStart": 4.28,
+              "relativeEnd": 4.4,
+              "start": 863.68,
+              "end": 863.8
+            },
+            {
+              "word": " noch",
+              "probability": 0.9767462015151978,
+              "relativeStart": 4.4,
+              "relativeEnd": 4.58,
+              "start": 863.8,
+              "end": 863.98
+            },
+            {
+              "word": " Hexen",
+              "probability": 0.9903127153714498,
+              "relativeStart": 4.58,
+              "relativeEnd": 4.92,
+              "start": 863.98,
+              "end": 864.32
+            },
+            {
+              "word": " werden.",
+              "probability": 0.9974049925804138,
+              "relativeStart": 4.92,
+              "relativeEnd": 5.28,
+              "start": 864.32,
+              "end": 864.68
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "relativeStart": 9.42,
+          "relativeEnd": 10.14,
+          "start": 868.82,
+          "end": 869.54,
+          "text": " Wollen wir schon los?",
+          "avgLogprob": -0.515111181885004,
+          "noSpeechProb": 0.08625438809394836,
+          "compressionRatio": 1.032258064516129,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Wollen",
+              "probability": 0.5050591230392456,
+              "relativeStart": 9.42,
+              "relativeEnd": 9.52,
+              "start": 868.82,
+              "end": 868.92
+            },
+            {
+              "word": " wir",
+              "probability": 0.9845784902572632,
+              "relativeStart": 9.52,
+              "relativeEnd": 9.66,
+              "start": 868.92,
+              "end": 869.06
+            },
+            {
+              "word": " schon",
+              "probability": 0.9897827506065369,
+              "relativeStart": 9.66,
+              "relativeEnd": 9.86,
+              "start": 869.06,
+              "end": 869.26
+            },
+            {
+              "word": " los?",
+              "probability": 0.9981277585029602,
+              "relativeStart": 9.86,
+              "relativeEnd": 10.14,
+              "start": 869.26,
+              "end": 869.54
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "relativeStart": 10.34,
+          "relativeEnd": 10.62,
+          "start": 869.74,
+          "end": 870.02,
+          "text": " Ja.",
+          "avgLogprob": -0.515111181885004,
+          "noSpeechProb": 0.08625438809394836,
+          "compressionRatio": 1.032258064516129,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Ja.",
+              "probability": 0.18907809257507324,
+              "relativeStart": 10.34,
+              "relativeEnd": 10.62,
+              "start": 869.74,
+              "end": 870.02
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": 8,
+      "windowIndex": 8,
+      "crop": {
+        "start": 1126.53,
+        "end": 1142.33,
+        "duration": 15.8,
+        "startSample": 18024480,
+        "endSample": 18277280,
+        "sampleCount": 252800,
+        "sampleRate": 16000,
+        "cropDecoded16kFloat32Sha256": "cb7b36f966ee38d38b8ac58d4271ecabf97babf8464f194f69ad7df742617130"
+      },
+      "transcriptionInfo": {
+        "language": "de",
+        "languageProbability": 1.0,
+        "duration": 15.8
+      },
+      "segmentCount": 2,
+      "wordCount": 9,
+      "elapsedSeconds": 13.781,
+      "humanListened": false,
+      "segments": [
+        {
+          "id": 1,
+          "seek": 0,
+          "relativeStart": 0.0,
+          "relativeEnd": 2.0,
+          "start": 1126.53,
+          "end": 1128.53,
+          "text": " Hm, sie ist einfach flüssig.",
+          "avgLogprob": -0.662200167065575,
+          "noSpeechProb": 0.1749160885810852,
+          "compressionRatio": 0.8571428571428571,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Hm,",
+              "probability": 0.07867938280105591,
+              "relativeStart": 0.0,
+              "relativeEnd": 0.86,
+              "start": 1126.53,
+              "end": 1127.39
+            },
+            {
+              "word": " sie",
+              "probability": 0.3018295466899872,
+              "relativeStart": 1.44,
+              "relativeEnd": 1.6,
+              "start": 1127.97,
+              "end": 1128.13
+            },
+            {
+              "word": " ist",
+              "probability": 0.8837757706642151,
+              "relativeStart": 1.6,
+              "relativeEnd": 1.72,
+              "start": 1128.13,
+              "end": 1128.25
+            },
+            {
+              "word": " einfach",
+              "probability": 0.7994987368583679,
+              "relativeStart": 1.72,
+              "relativeEnd": 1.84,
+              "start": 1128.25,
+              "end": 1128.37
+            },
+            {
+              "word": " flüssig.",
+              "probability": 0.9291314085324606,
+              "relativeStart": 1.84,
+              "relativeEnd": 2.22,
+              "start": 1128.37,
+              "end": 1128.75
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "relativeStart": 11.76,
+          "relativeEnd": 13.9,
+          "start": 1138.29,
+          "end": 1140.43,
+          "text": " Komm'on, jetzt du!",
+          "avgLogprob": -0.662200167065575,
+          "noSpeechProb": 0.1749160885810852,
+          "compressionRatio": 0.8571428571428571,
+          "temperature": 0.0,
+          "words": [
+            {
+              "word": " Komm",
+              "probability": 0.03795945271849632,
+              "relativeStart": 11.76,
+              "relativeEnd": 12.52,
+              "start": 1138.29,
+              "end": 1139.05
+            },
+            {
+              "word": "'on,",
+              "probability": 0.37611328810453415,
+              "relativeStart": 12.52,
+              "relativeEnd": 13.28,
+              "start": 1139.05,
+              "end": 1139.81
+            },
+            {
+              "word": " jetzt",
+              "probability": 0.9927603006362915,
+              "relativeStart": 13.38,
+              "relativeEnd": 13.52,
+              "start": 1139.91,
+              "end": 1140.05
+            },
+            {
+              "word": " du!",
+              "probability": 0.9292084574699402,
+              "relativeStart": 13.52,
+              "relativeEnd": 13.9,
+              "start": 1140.05,
+              "end": 1140.43
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
