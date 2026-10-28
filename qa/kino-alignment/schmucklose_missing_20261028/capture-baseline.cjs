@@ -1,0 +1,11 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict'),crypto=require('node:crypto'),{execFileSync}=require('node:child_process');
+const root=path.resolve(__dirname,'../../..'),base='215992fdb9663e7410b6e58ea8a7c2ee29c7ef9d';
+const original=f=>execFileSync('git',['show',`${base}:${f}`],{cwd:root,encoding:'utf8',maxBuffer:30e6});
+const ctx=vm.createContext({KinoData:{captions:()=>[]}});
+vm.runInContext(original('erdmaennchen-schmucklose-aligned.js')+original('erdmaennchen-schmucklose-lesson.js')+';this.out=JSON.stringify({captions:ERDMAENNCHEN_SCHMUCKLOSE_CAPTION_CUES,practice:ERDMAENNCHEN_SCHMUCKLOSE_ALIGNED_UTTERANCES,lesson:ERDMAENNCHEN_SCHMUCKLOSE_LESSON});',ctx);
+const data=JSON.parse(ctx.out);assert.equal(data.captions.length,166);assert.equal(data.lesson.chapterData.chapters.length,7);assert.equal(data.lesson.flashcards.length,24);assert.equal(data.lesson.chapterData.chapters.reduce((n,c)=>n+c.picks.length,0),49);assert.deepEqual(data.captions.map(c=>c.id),Array.from({length:166},(_,i)=>1000101+i));
+fs.writeFileSync(path.join(__dirname,'baseline-cues-166.json'),JSON.stringify({baseRevision:base,...data},null,2)+'\n');
+const files=execFileSync('git',['ls-tree','-r','--name-only',base],{cwd:root,encoding:'utf8'}).trim().split('\n');
+const relevant=files.filter(f=>f.endsWith('-aligned.js')||['kino-metadata.js','kino-chapter-data.js','kino-practice-data.js','kino-data.js','erdmaennchen-schmucklose-lesson.js','scripts/build-erdmaennchen-schmucklose.py'].includes(f)||f.startsWith('qa/kino-alignment/erdmaennchen_schmucklose/'));
+fs.writeFileSync(path.join(__dirname,'baseline-source-sha256.json'),JSON.stringify(Object.fromEntries(relevant.map(f=>[f,crypto.createHash('sha256').update(original(f)).digest('hex')])),null,2)+'\n');
+console.log(JSON.stringify({base,captions:166,practice:166,chapters:7,picks:49,cards:24,maxPublishedId:1000266}));

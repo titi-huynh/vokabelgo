@@ -61,6 +61,28 @@ for i, cue in enumerate(captions):
     assert cue["text"] and cue["vi"] and cue["speaker"], cue
 assert len({c["id"] for c in captions}) == len(captions)
 
+# Independently verified additions keep exact word envelopes. The original rows
+# continue through the unchanged alignment above; no new row can retime them.
+supplement_file = folder / "missing-dialogue-20261028.json"
+if supplement_file.exists():
+    supplement = json.loads(supplement_file.read_text(encoding="utf-8"))
+    frozen = json.loads((root / supplement["baselineFile"]).read_text(encoding="utf-8"))
+    assert captions == frozen["captions"], "Published Schmucklose cues changed"
+    published_ids = {c["id"] for c in captions}
+    for item in supplement["added"]:
+        assert item["id"] >= 1000280 and item["id"] not in published_ids
+        cue = {key: item[key] for key in ["id", "parentId", "start", "end", "speaker", "text", "vi"]}
+        assert 0 <= cue["start"] < cue["end"] <= duration
+        captions.append(cue)
+        audit.append({**cue, "verification": "independent-small-medium-literal",
+                      "timingEvidence": item["timingEvidence"],
+                      "smallWordCoverage": 1.0, "mediumWordCoverage": 1.0})
+        published_ids.add(cue["id"])
+    captions.sort(key=lambda c: c["start"])
+    audit.sort(key=lambda c: c["start"])
+    for before, after in zip(captions, captions[1:]):
+        assert before["end"] <= after["start"], (before["id"], after["id"])
+
 for name in ["caption-cues", "practice-cues"]:
     (folder / f"{name}.json").write_text(json.dumps(captions, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
 (folder / "aligned-utterances-audit.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")

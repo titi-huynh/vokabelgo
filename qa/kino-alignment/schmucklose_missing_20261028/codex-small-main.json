@@ -1,0 +1,804 @@
+{
+  "model": "small",
+  "source": "video/erdmaennchen_schmucklose.mp4",
+  "sourceVideoSha256": "037acc3d885e731b24cc18649599191f55c1a184ba1627fb85562e8fd52b944a",
+  "decodedAudioF32le16kSha256": "007f9066021b6efb2554026087699969c5caff004549b11bce5db37b9b096572",
+  "duration": 722.496,
+  "asrOptions": {
+    "language": "de",
+    "beam_size": 5,
+    "temperature": 0,
+    "word_timestamps": true,
+    "condition_on_previous_text": false,
+    "vad_filter": false,
+    "initial_prompt": null,
+    "hotwords": null,
+    "device": "cpu",
+    "compute_type": "int8",
+    "cpu_threads": 3,
+    "local_files_only": true
+  },
+  "humanListened": false,
+  "method": "Local independent bounded ASR; only numeric crop supplied; no candidate text, prompt or hotwords",
+  "windows": [
+    {
+      "candidate": 1,
+      "start": 1.78,
+      "end": 26.12,
+      "crop": [
+        1.78,
+        26.12
+      ],
+      "segments": [
+        {
+          "start": 1.78,
+          "end": 7.68,
+          "text": " Ein Erdmännchen als Direktiv, das gibt's nicht überall",
+          "avg_logprob": -0.3159558382190642,
+          "no_speech_prob": 0.1794160157442093,
+          "words": [
+            {
+              "word": " Ein",
+              "start": 1.78,
+              "end": 3.34,
+              "probability": 0.9169263243675232
+            },
+            {
+              "word": " Erdmännchen",
+              "start": 3.34,
+              "end": 4.16,
+              "probability": 0.7571166574954986
+            },
+            {
+              "word": " als",
+              "start": 4.16,
+              "end": 4.58,
+              "probability": 0.6333311796188354
+            },
+            {
+              "word": " Direktiv,",
+              "start": 4.58,
+              "end": 5.8,
+              "probability": 0.6966707507769266
+            },
+            {
+              "word": " das",
+              "start": 5.92,
+              "end": 6.08,
+              "probability": 0.9699224233627319
+            },
+            {
+              "word": " gibt's",
+              "start": 6.08,
+              "end": 6.48,
+              "probability": 0.6984325051307678
+            },
+            {
+              "word": " nicht",
+              "start": 6.48,
+              "end": 6.66,
+              "probability": 0.9890097975730896
+            },
+            {
+              "word": " überall",
+              "start": 6.66,
+              "end": 7.68,
+              "probability": 0.9958827495574951
+            }
+          ]
+        },
+        {
+          "start": 7.68,
+          "end": 13.44,
+          "text": " Mit diesen beiden geht nicht schief, sie lösen jeden Fall",
+          "avg_logprob": -0.3159558382190642,
+          "no_speech_prob": 0.1794160157442093,
+          "words": [
+            {
+              "word": " Mit",
+              "start": 7.68,
+              "end": 8.94,
+              "probability": 0.1904936581850052
+            },
+            {
+              "word": " diesen",
+              "start": 8.94,
+              "end": 9.42,
+              "probability": 0.949001133441925
+            },
+            {
+              "word": " beiden",
+              "start": 9.42,
+              "end": 10.06,
+              "probability": 0.9756237268447876
+            },
+            {
+              "word": " geht",
+              "start": 10.06,
+              "end": 10.54,
+              "probability": 0.931856632232666
+            },
+            {
+              "word": " nicht",
+              "start": 10.54,
+              "end": 10.78,
+              "probability": 0.959031343460083
+            },
+            {
+              "word": " schief,",
+              "start": 10.78,
+              "end": 11.36,
+              "probability": 0.9871291816234589
+            },
+            {
+              "word": " sie",
+              "start": 11.64,
+              "end": 11.74,
+              "probability": 0.9568623304367065
+            },
+            {
+              "word": " lösen",
+              "start": 11.74,
+              "end": 12.24,
+              "probability": 0.9691186249256134
+            },
+            {
+              "word": " jeden",
+              "start": 12.24,
+              "end": 12.78,
+              "probability": 0.9920118451118469
+            },
+            {
+              "word": " Fall",
+              "start": 12.78,
+              "end": 13.44,
+              "probability": 0.9469267129898071
+            }
+          ]
+        },
+        {
+          "start": 13.44,
+          "end": 19.22,
+          "text": " Schnell als die Polizei macht euch auf was gefasst",
+          "avg_logprob": -0.3159558382190642,
+          "no_speech_prob": 0.1794160157442093,
+          "words": [
+            {
+              "word": " Schnell",
+              "start": 13.44,
+              "end": 15.1,
+              "probability": 0.41730257868766785
+            },
+            {
+              "word": " als",
+              "start": 15.1,
+              "end": 15.58,
+              "probability": 0.5098429918289185
+            },
+            {
+              "word": " die",
+              "start": 15.58,
+              "end": 15.88,
+              "probability": 0.9979446530342102
+            },
+            {
+              "word": " Polizei",
+              "start": 15.88,
+              "end": 16.72,
+              "probability": 0.9935442209243774
+            },
+            {
+              "word": " macht",
+              "start": 16.72,
+              "end": 17.4,
+              "probability": 0.49000242352485657
+            },
+            {
+              "word": " euch",
+              "start": 17.4,
+              "end": 17.64,
+              "probability": 0.9243255257606506
+            },
+            {
+              "word": " auf",
+              "start": 17.64,
+              "end": 18.08,
+              "probability": 0.8100954294204712
+            },
+            {
+              "word": " was",
+              "start": 18.08,
+              "end": 18.38,
+              "probability": 0.39437416195869446
+            },
+            {
+              "word": " gefasst",
+              "start": 18.38,
+              "end": 19.22,
+              "probability": 0.9800122380256653
+            }
+          ]
+        },
+        {
+          "start": 19.78,
+          "end": 24.82,
+          "text": " Jan und Henry sind die zwei Verbrecher aufgefasst",
+          "avg_logprob": -0.3159558382190642,
+          "no_speech_prob": 0.1794160157442093,
+          "words": [
+            {
+              "word": " Jan",
+              "start": 19.78,
+              "end": 20.7,
+              "probability": 0.6115368604660034
+            },
+            {
+              "word": " und",
+              "start": 20.7,
+              "end": 21.0,
+              "probability": 0.9690518379211426
+            },
+            {
+              "word": " Henry",
+              "start": 21.0,
+              "end": 21.42,
+              "probability": 0.8646752238273621
+            },
+            {
+              "word": " sind",
+              "start": 21.42,
+              "end": 21.86,
+              "probability": 0.8481444120407104
+            },
+            {
+              "word": " die",
+              "start": 21.86,
+              "end": 22.12,
+              "probability": 0.9263800978660583
+            },
+            {
+              "word": " zwei",
+              "start": 22.12,
+              "end": 22.58,
+              "probability": 0.8545576333999634
+            },
+            {
+              "word": " Verbrecher",
+              "start": 22.58,
+              "end": 23.38,
+              "probability": 0.8080379366874695
+            },
+            {
+              "word": " aufgefasst",
+              "start": 23.38,
+              "end": 24.82,
+              "probability": 0.7240469753742218
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 10.01
+    },
+    {
+      "candidate": 2,
+      "start": 90.9,
+      "end": 99.69,
+      "crop": [
+        90.9,
+        99.69
+      ],
+      "segments": [
+        {
+          "start": 90.9,
+          "end": 91.6,
+          "text": " Wie können Sie das beweisen?",
+          "avg_logprob": -0.5762963946908712,
+          "no_speech_prob": 0.06282925605773926,
+          "words": [
+            {
+              "word": " Wie",
+              "start": 90.9,
+              "end": 90.9,
+              "probability": 0.05238337069749832
+            },
+            {
+              "word": " können",
+              "start": 90.9,
+              "end": 90.96,
+              "probability": 0.3855379819869995
+            },
+            {
+              "word": " Sie",
+              "start": 90.96,
+              "end": 91.06,
+              "probability": 0.8523927330970764
+            },
+            {
+              "word": " das",
+              "start": 91.06,
+              "end": 91.22,
+              "probability": 0.9863671660423279
+            },
+            {
+              "word": " beweisen?",
+              "start": 91.22,
+              "end": 91.6,
+              "probability": 0.9717465341091156
+            }
+          ]
+        },
+        {
+          "start": 92.3,
+          "end": 92.92,
+          "text": " Ja, natürlich.",
+          "avg_logprob": -0.5762963946908712,
+          "no_speech_prob": 0.06282925605773926,
+          "words": [
+            {
+              "word": " Ja,",
+              "start": 92.3,
+              "end": 92.42,
+              "probability": 0.20842039585113525
+            },
+            {
+              "word": " natürlich.",
+              "start": 92.44,
+              "end": 92.92,
+              "probability": 0.9489029049873352
+            }
+          ]
+        },
+        {
+          "start": 94.18,
+          "end": 94.44,
+          "text": " Hier.",
+          "avg_logprob": -0.5762963946908712,
+          "no_speech_prob": 0.06282925605773926,
+          "words": [
+            {
+              "word": " Hier.",
+              "start": 94.18,
+              "end": 94.44,
+              "probability": 0.8874845504760742
+            }
+          ]
+        },
+        {
+          "start": 95.3,
+          "end": 96.92,
+          "text": " 6,38 m.",
+          "avg_logprob": -0.5762963946908712,
+          "no_speech_prob": 0.06282925605773926,
+          "words": [
+            {
+              "word": " 6",
+              "start": 95.3,
+              "end": 95.78,
+              "probability": 0.7810239195823669
+            },
+            {
+              "word": ",38",
+              "start": 95.78,
+              "end": 96.88,
+              "probability": 0.8714042603969574
+            },
+            {
+              "word": " m.",
+              "start": 96.88,
+              "end": 96.92,
+              "probability": 0.2799242436885834
+            }
+          ]
+        },
+        {
+          "start": 98.64,
+          "end": 99.4,
+          "text": " Feins!",
+          "avg_logprob": -0.5762963946908712,
+          "no_speech_prob": 0.06282925605773926,
+          "words": [
+            {
+              "word": " Feins!",
+              "start": 98.64,
+              "end": 99.4,
+              "probability": 0.4945793002843857
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 5.32
+    },
+    {
+      "candidate": 3,
+      "start": 201.72,
+      "end": 208.68,
+      "crop": [
+        201.72,
+        208.68
+      ],
+      "segments": [
+        {
+          "start": 202.58,
+          "end": 207.22,
+          "text": " Das ist Papalapap, das ist Papalapap, das ist Papalapap, das ist Papalapap.",
+          "avg_logprob": -0.4070733247264739,
+          "no_speech_prob": 0.6313391327857971,
+          "words": [
+            {
+              "word": " Das",
+              "start": 202.58,
+              "end": 203.14,
+              "probability": 0.3725206255912781
+            },
+            {
+              "word": " ist",
+              "start": 203.14,
+              "end": 203.28,
+              "probability": 0.9261135458946228
+            },
+            {
+              "word": " Papalapap,",
+              "start": 203.28,
+              "end": 203.82,
+              "probability": 0.6731562241911888
+            },
+            {
+              "word": " das",
+              "start": 204.12,
+              "end": 204.34,
+              "probability": 0.9163283705711365
+            },
+            {
+              "word": " ist",
+              "start": 204.34,
+              "end": 204.62,
+              "probability": 0.9735103249549866
+            },
+            {
+              "word": " Papalapap,",
+              "start": 204.62,
+              "end": 206.22,
+              "probability": 0.9444358050823212
+            },
+            {
+              "word": " das",
+              "start": 206.28,
+              "end": 206.36,
+              "probability": 0.9174893498420715
+            },
+            {
+              "word": " ist",
+              "start": 206.36,
+              "end": 206.52,
+              "probability": 0.9878528118133545
+            },
+            {
+              "word": " Papalapap,",
+              "start": 206.52,
+              "end": 207.18,
+              "probability": 0.9882342219352722
+            },
+            {
+              "word": " das",
+              "start": 207.18,
+              "end": 207.18,
+              "probability": 0.7308401465415955
+            },
+            {
+              "word": " ist",
+              "start": 207.18,
+              "end": 207.18,
+              "probability": 0.9874629378318787
+            },
+            {
+              "word": " Papalapap.",
+              "start": 207.18,
+              "end": 207.22,
+              "probability": 0.9895388931035995
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 5.99
+    },
+    {
+      "candidate": 4,
+      "start": 255.89,
+      "end": 259.85,
+      "crop": [
+        255.89,
+        259.85
+      ],
+      "segments": [
+        {
+          "start": 256.65,
+          "end": 257.89,
+          "text": " Und wie kann man nur so le...",
+          "avg_logprob": -0.9093772281299938,
+          "no_speech_prob": 0.20520004630088806,
+          "words": [
+            {
+              "word": " Und",
+              "start": 256.65,
+              "end": 256.69,
+              "probability": 0.12450457364320755
+            },
+            {
+              "word": " wie",
+              "start": 256.69,
+              "end": 256.69,
+              "probability": 0.6652247905731201
+            },
+            {
+              "word": " kann",
+              "start": 256.69,
+              "end": 256.71,
+              "probability": 0.6993603706359863
+            },
+            {
+              "word": " man",
+              "start": 256.71,
+              "end": 256.73,
+              "probability": 0.9926060438156128
+            },
+            {
+              "word": " nur",
+              "start": 256.73,
+              "end": 256.75,
+              "probability": 0.6687213182449341
+            },
+            {
+              "word": " so",
+              "start": 256.75,
+              "end": 256.75,
+              "probability": 0.7034636735916138
+            },
+            {
+              "word": " le...",
+              "start": 256.75,
+              "end": 257.89,
+              "probability": 0.2753761410713196
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 4.54
+    },
+    {
+      "candidate": 5,
+      "start": 391.16,
+      "end": 398.19,
+      "crop": [
+        391.16,
+        398.19
+      ],
+      "segments": [
+        {
+          "start": 391.16,
+          "end": 391.42,
+          "text": " Ja!",
+          "avg_logprob": -0.38001648017338346,
+          "no_speech_prob": 0.11115217953920364,
+          "words": [
+            {
+              "word": " Ja!",
+              "start": 391.16,
+              "end": 391.42,
+              "probability": 0.5892813205718994
+            }
+          ]
+        },
+        {
+          "start": 393.16,
+          "end": 396.14,
+          "text": " Da wird mein Flauschehäschen aber Augen wachen!",
+          "avg_logprob": -0.38001648017338346,
+          "no_speech_prob": 0.11115217953920364,
+          "words": [
+            {
+              "word": " Da",
+              "start": 393.09,
+              "end": 393.54,
+              "probability": 0.8566348552703857
+            },
+            {
+              "word": " wird",
+              "start": 393.54,
+              "end": 393.72,
+              "probability": 0.9814722537994385
+            },
+            {
+              "word": " mein",
+              "start": 393.72,
+              "end": 393.9,
+              "probability": 0.9885440468788147
+            },
+            {
+              "word": " Flauschehäschen",
+              "start": 393.9,
+              "end": 394.8,
+              "probability": 0.819780558347702
+            },
+            {
+              "word": " aber",
+              "start": 394.8,
+              "end": 395.06,
+              "probability": 0.9541113376617432
+            },
+            {
+              "word": " Augen",
+              "start": 395.06,
+              "end": 395.66,
+              "probability": 0.9866930842399597
+            },
+            {
+              "word": " wachen!",
+              "start": 395.66,
+              "end": 396.14,
+              "probability": 0.7608905732631683
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 4.51
+    },
+    {
+      "candidate": 6,
+      "start": 531.51,
+      "end": 537.42,
+      "crop": [
+        531.51,
+        537.42
+      ],
+      "segments": [
+        {
+          "start": 531.51,
+          "end": 531.95,
+          "text": " Mein Schmuck?",
+          "avg_logprob": -0.3820689916610718,
+          "no_speech_prob": 0.2895742952823639,
+          "words": [
+            {
+              "word": " Mein",
+              "start": 531.51,
+              "end": 531.59,
+              "probability": 0.19948498904705048
+            },
+            {
+              "word": " Schmuck?",
+              "start": 531.59,
+              "end": 531.95,
+              "probability": 0.9695212841033936
+            }
+          ]
+        },
+        {
+          "start": 532.61,
+          "end": 533.93,
+          "text": " Ihr Schmuck?",
+          "avg_logprob": -0.3820689916610718,
+          "no_speech_prob": 0.2895742952823639,
+          "words": [
+            {
+              "word": " Ihr",
+              "start": 532.61,
+              "end": 533.31,
+              "probability": 0.6446845531463623
+            },
+            {
+              "word": " Schmuck?",
+              "start": 533.31,
+              "end": 533.93,
+              "probability": 0.9889873266220093
+            }
+          ]
+        },
+        {
+          "start": 534.19,
+          "end": 536.43,
+          "text": " Ja, mein Schmuck.",
+          "avg_logprob": -0.3820689916610718,
+          "no_speech_prob": 0.2895742952823639,
+          "words": [
+            {
+              "word": " Ja,",
+              "start": 534.19,
+              "end": 534.37,
+              "probability": 0.9729860424995422
+            },
+            {
+              "word": " mein",
+              "start": 535.07,
+              "end": 535.37,
+              "probability": 0.841048002243042
+            },
+            {
+              "word": " Schmuck.",
+              "start": 535.37,
+              "end": 536.43,
+              "probability": 0.9985459049542745
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 4.52
+    },
+    {
+      "candidate": 7,
+      "start": 659.13,
+      "end": 663.88,
+      "crop": [
+        659.13,
+        663.88
+      ],
+      "segments": [
+        {
+          "start": 659.13,
+          "end": 659.53,
+          "text": " Dick!",
+          "avg_logprob": -0.7813021114894322,
+          "no_speech_prob": 0.26570555567741394,
+          "words": [
+            {
+              "word": " Dick!",
+              "start": 659.13,
+              "end": 659.53,
+              "probability": 0.2853579521179199
+            }
+          ]
+        },
+        {
+          "start": 659.99,
+          "end": 662.99,
+          "text": " Oh, äh, oh, äh...",
+          "avg_logprob": -0.7813021114894322,
+          "no_speech_prob": 0.26570555567741394,
+          "words": [
+            {
+              "word": " Oh,",
+              "start": 659.99,
+              "end": 660.73,
+              "probability": 0.26565301418304443
+            },
+            {
+              "word": " äh,",
+              "start": 661.25,
+              "end": 661.59,
+              "probability": 0.6675687879323959
+            },
+            {
+              "word": " oh,",
+              "start": 661.89,
+              "end": 661.93,
+              "probability": 0.8726539015769958
+            },
+            {
+              "word": " äh...",
+              "start": 662.17,
+              "end": 662.99,
+              "probability": 0.74747301141421
+            }
+          ]
+        },
+        {
+          "start": 662.99,
+          "end": 663.81,
+          "text": " Hier...",
+          "avg_logprob": -0.7813021114894322,
+          "no_speech_prob": 0.26570555567741394,
+          "words": [
+            {
+              "word": " Hier...",
+              "start": 662.99,
+              "end": 663.81,
+              "probability": 0.37761882692575455
+            }
+          ]
+        }
+      ],
+      "elapsedSeconds": 4.85
+    }
+  ],
+  "completed": 7,
+  "total": 7
+}

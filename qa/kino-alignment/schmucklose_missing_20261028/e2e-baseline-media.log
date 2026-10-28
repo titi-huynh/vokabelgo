@@ -1,0 +1,39 @@
+
+Running 1 test using 1 worker
+
+(node:28224) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:128:1 › Schmucklose works on a phone and can record a speaking take before completing dictation (7.9s)
+
+
+  1) [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:128:1 › Schmucklose works on a phone and can record a speaking take before completing dictation
+
+    Error: page.evaluate: TypeError: Failed to fetch
+        at eval (eval at evaluate (:311:30), <anonymous>:1:27)
+        at UtilityScript.evaluate (<anonymous>:313:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at eval (eval at evaluate (:311:30), <anonymous>:1:27)
+        at UtilityScript.evaluate (<anonymous>:313:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at C:\Users\huynh\.codex\worktrees\kino-schmucklose-missing-lines\flash\e2e\kino-erdmaennchen-schmucklose.spec.js:147:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\schmucklose-baseline-20261028\kino-erdmaennchen-schmuckl-874bd-before-completing-dictation-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\schmucklose-baseline-20261028\kino-erdmaennchen-schmuckl-874bd-before-completing-dictation-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\schmucklose-baseline-20261028\kino-erdmaennchen-schmuckl-874bd-before-completing-dictation-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\schmucklose-baseline-20261028\kino-erdmaennchen-schmuckl-874bd-before-completing-dictation-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\schmucklose-baseline-20261028\kino-erdmaennchen-schmuckl-874bd-before-completing-dictation-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:128:1 › Schmucklose works on a phone and can record a speaking take before completing dictation

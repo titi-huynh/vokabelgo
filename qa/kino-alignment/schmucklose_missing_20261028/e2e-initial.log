@@ -1,0 +1,86 @@
+
+Running 5 tests using 1 worker
+
+(node:39924) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:17:1 › Die schmucklose Gräfin is discoverable with its own bilingual lessons, covers, vocabulary and seekable original video (4.4s)
+  ok 2 [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:67:1 › every Schmucklose part plays, displays matching DE/VI captions and stops at its own boundary (16.0s)
+  x  3 [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:99:1 › dictation, seven-cue selection and saved progress remain independent of Peppa (2.7s)
+(node:44924) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 4 [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:118:1 › Schmucklose vocabulary opens only its own 24 source-linked flashcards (1.8s)
+  x  5 [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:128:1 › Schmucklose works on a phone and can record a speaking take before completing dictation (7.3s)
+
+
+  1) [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:99:1 › dictation, seven-cue selection and saved progress remain independent of Peppa
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+    -   1000130,
+    +   1000131,
+      ]
+
+      108 |   await page.locator('#kinoDiktatInput').fill(first);
+      109 |   await page.locator('#kinoCheckBtn').click();
+    > 110 |   expect((await getStorageJson(page, stateKey)).completed).toEqual([1000130]);
+          |                                                            ^
+      111 |   await page.reload();
+      112 |   await page.locator('#peppaPractice').click();
+      113 |   await expect(page.locator('#kinoPracticePosition')).toContainText('Câu 2 / 7');
+        at C:\Users\huynh\.codex\worktrees\kino-schmucklose-missing-lines\flash\e2e\kino-erdmaennchen-schmucklose.spec.js:110:60
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\schmucklose-20261028\kino-erdmaennchen-schmuckl-cbe32-remain-independent-of-Peppa-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\schmucklose-20261028\kino-erdmaennchen-schmuckl-cbe32-remain-independent-of-Peppa-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\schmucklose-20261028\kino-erdmaennchen-schmuckl-cbe32-remain-independent-of-Peppa-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\schmucklose-20261028\kino-erdmaennchen-schmuckl-cbe32-remain-independent-of-Peppa-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\schmucklose-20261028\kino-erdmaennchen-schmuckl-cbe32-remain-independent-of-Peppa-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:128:1 › Schmucklose works on a phone and can record a speaking take before completing dictation
+
+    Error: page.evaluate: TypeError: Failed to fetch
+        at eval (eval at evaluate (:311:30), <anonymous>:1:27)
+        at UtilityScript.evaluate (<anonymous>:313:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at eval (eval at evaluate (:311:30), <anonymous>:1:27)
+        at UtilityScript.evaluate (<anonymous>:313:16)
+        at UtilityScript.<anonymous> (<anonymous>:1:44)
+        at C:\Users\huynh\.codex\worktrees\kino-schmucklose-missing-lines\flash\e2e\kino-erdmaennchen-schmucklose.spec.js:147:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\schmucklose-20261028\kino-erdmaennchen-schmuckl-874bd-before-completing-dictation-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\schmucklose-20261028\kino-erdmaennchen-schmuckl-874bd-before-completing-dictation-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\schmucklose-20261028\kino-erdmaennchen-schmuckl-874bd-before-completing-dictation-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\schmucklose-20261028\kino-erdmaennchen-schmuckl-874bd-before-completing-dictation-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\schmucklose-20261028\kino-erdmaennchen-schmuckl-874bd-before-completing-dictation-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:99:1 › dictation, seven-cue selection and saved progress remain independent of Peppa
+    [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:128:1 › Schmucklose works on a phone and can record a speaking take before completing dictation
+  3 passed (35.9s)

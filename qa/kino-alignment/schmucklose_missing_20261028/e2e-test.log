@@ -1,0 +1,12 @@
+
+Running 5 tests using 1 worker
+
+(node:32248) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:17:1 › Die schmucklose Gräfin is discoverable with its own bilingual lessons, covers, vocabulary and seekable original video (3.4s)
+  ok 2 [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:67:1 › every Schmucklose part plays, displays matching DE/VI captions and stops at its own boundary (15.1s)
+  ok 3 [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:99:1 › dictation, seven-cue selection and saved progress remain independent of Peppa (3.6s)
+  ok 4 [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:118:1 › Schmucklose vocabulary opens only its own 24 source-linked flashcards (2.0s)
+  ok 5 [chromium] › e2e\kino-erdmaennchen-schmucklose.spec.js:128:1 › Schmucklose works on a phone and can record a speaking take before completing dictation (6.9s)
+
+  5 passed (32.4s)

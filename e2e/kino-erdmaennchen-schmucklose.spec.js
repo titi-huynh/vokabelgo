@@ -37,7 +37,7 @@ test('Die schmucklose Gräfin is discoverable with its own bilingual lessons, co
       lastText: cues[cues.length - 1].text
     };
   });
-  expect(audit.count).toBe(166);
+  expect(audit.count).toBe(171);
   expect(audit.unique).toBe(audit.count);
   expect(audit.invalid).toEqual([]);
   expect(audit.uncovered).toEqual([]);
@@ -92,7 +92,7 @@ test('every Schmucklose part plays, displays matching DE/VI captions and stops a
     await expect(page.locator('#kinoTimelineList > button')).toHaveCount(data.count);
     total += data.count;
   }
-  expect(total).toBe(166);
+  expect(total).toBe(171);
   expect((await getStorageJson(page, stateKey)).watched).toEqual([0, 1, 2, 3, 4, 5, 6]);
 });
 
@@ -107,7 +107,7 @@ test('dictation, seven-cue selection and saved progress remain independent of Pe
   expect((await getStorageJson(page, stateKey)).completed).toEqual([]);
   await page.locator('#kinoDiktatInput').fill(first);
   await page.locator('#kinoCheckBtn').click();
-  expect((await getStorageJson(page, stateKey)).completed).toEqual([1000130]);
+  expect((await getStorageJson(page, stateKey)).completed).toEqual([1000131]);
   await page.reload();
   await page.locator('#peppaPractice').click();
   await expect(page.locator('#kinoPracticePosition')).toContainText('Câu 2 / 7');
@@ -144,7 +144,14 @@ test('Schmucklose works on a phone and can record a speaking take before complet
   await page.waitForTimeout(350); // Real MediaRecorder data from the simulated microphone.
   await page.locator('#kinoDubRecordBtn').click();
   await expect(page.locator('#kinoDubReplayRow')).toBeVisible();
-  expect(await page.evaluate(async () => (await (await fetch(kinoDubbingBlobUrls[kinoCurrentIndex])).blob()).size)).toBeGreaterThan(100);
+  // Playback is permitted by media-src; fetching a blob URL is blocked by connect-src.
+  await expect.poll(() => page.evaluate(() => ({
+    src: kinoDubbingReplayAudio?.src || '',
+    ready: kinoDubbingReplayAudio?.readyState || 0,
+    duration: kinoDubbingReplayAudio?.duration || 0
+  }))).toMatchObject({ src: expect.stringMatching(/^blob:/), ready: expect.any(Number) });
+  await expect.poll(() => page.evaluate(() => kinoDubbingReplayAudio?.readyState || 0)).toBeGreaterThanOrEqual(2);
+  expect(await page.evaluate(() => kinoDubbingReplayAudio.duration)).toBeGreaterThan(0);
   expect((await getStorageJson(page, stateKey)).completed).toEqual([]);
   await openOverview(page);
   await openPart(page, 6);

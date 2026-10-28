@@ -220,6 +220,252 @@
     "mediumWordCoverage": 1.0
   },
   {
+    "id": 1000280,
+    "parentId": 1000280,
+    "start": 92.3,
+    "end": 93.24,
+    "speaker": "Gräfin",
+    "text": "Ja, natürlich.",
+    "vi": "Vâng, tất nhiên rồi.",
+    "verification": "independent-small-medium-literal",
+    "timingEvidence": [
+      {
+        "file": "codex-small-main.json",
+        "windowIndex": 1,
+        "candidate": 2,
+        "crop": [
+          90.9,
+          99.69
+        ],
+        "segmentIndex": 1,
+        "wordRange": [
+          0,
+          2
+        ],
+        "model": "small",
+        "text": "Ja, natürlich.",
+        "words": [
+          {
+            "word": " Ja,",
+            "start": 92.3,
+            "end": 92.42,
+            "probability": 0.20842039585113525
+          },
+          {
+            "word": " natürlich.",
+            "start": 92.44,
+            "end": 92.92,
+            "probability": 0.9489029049873352
+          }
+        ]
+      },
+      {
+        "file": "codex-medium-main.json",
+        "windowIndex": 1,
+        "candidate": 2,
+        "crop": [
+          90.9,
+          99.69
+        ],
+        "segmentIndex": 1,
+        "wordRange": [
+          0,
+          2
+        ],
+        "model": "medium",
+        "text": "Ja natürlich!",
+        "words": [
+          {
+            "word": " Ja",
+            "start": 92.4,
+            "end": 92.48,
+            "probability": 0.2802659273147583
+          },
+          {
+            "word": " natürlich!",
+            "start": 92.48,
+            "end": 93.24,
+            "probability": 0.6957536935806274
+          }
+        ]
+      }
+    ],
+    "smallWordCoverage": 1.0,
+    "mediumWordCoverage": 1.0
+  },
+  {
+    "id": 1000281,
+    "parentId": 1000281,
+    "start": 94.18,
+    "end": 94.76,
+    "speaker": "Gräfin",
+    "text": "Hier.",
+    "vi": "Đây này.",
+    "verification": "independent-small-medium-literal",
+    "timingEvidence": [
+      {
+        "file": "codex-small-main.json",
+        "windowIndex": 1,
+        "candidate": 2,
+        "crop": [
+          90.9,
+          99.69
+        ],
+        "segmentIndex": 2,
+        "wordRange": [
+          0,
+          1
+        ],
+        "model": "small",
+        "text": "Hier.",
+        "words": [
+          {
+            "word": " Hier.",
+            "start": 94.18,
+            "end": 94.44,
+            "probability": 0.8874845504760742
+          }
+        ]
+      },
+      {
+        "file": "codex-medium-main.json",
+        "windowIndex": 1,
+        "candidate": 2,
+        "crop": [
+          90.9,
+          99.69
+        ],
+        "segmentIndex": 2,
+        "wordRange": [
+          0,
+          1
+        ],
+        "model": "medium",
+        "text": "Hier!",
+        "words": [
+          {
+            "word": " Hier!",
+            "start": 94.4,
+            "end": 94.66,
+            "probability": 0.9439294934272766
+          }
+        ]
+      },
+      {
+        "file": "codex-medium-recheck.json",
+        "windowIndex": 1,
+        "candidate": 2,
+        "crop": [
+          87,
+          105
+        ],
+        "segmentIndex": 4,
+        "wordRange": [
+          0,
+          1
+        ],
+        "model": "medium",
+        "text": "Hier!",
+        "words": [
+          {
+            "word": " Hier!",
+            "start": 94.42,
+            "end": 94.76,
+            "probability": 0.9694727063179016
+          }
+        ]
+      }
+    ],
+    "smallWordCoverage": 1.0,
+    "mediumWordCoverage": 1.0
+  },
+  {
+    "id": 1000282,
+    "parentId": 1000282,
+    "start": 95.52,
+    "end": 97.3,
+    "speaker": "Gräfin",
+    "text": "6,38 Meter.",
+    "vi": "6,38 mét.",
+    "verification": "independent-small-medium-literal",
+    "timingEvidence": [
+      {
+        "file": "independent-small-context.json",
+        "windowIndex": 1,
+        "candidate": 2,
+        "crop": [
+          85.9,
+          104.69
+        ],
+        "segmentIndex": 5,
+        "wordRange": [
+          0,
+          3
+        ],
+        "model": "small",
+        "text": "6,38 Meter.",
+        "words": [
+          {
+            "word": " 6",
+            "start": 95.52,
+            "end": 96.2,
+            "probability": 0.7828977704048157
+          },
+          {
+            "word": ",38",
+            "start": 96.2,
+            "end": 96.88,
+            "probability": 0.9597386121749878
+          },
+          {
+            "word": " Meter.",
+            "start": 96.88,
+            "end": 96.92,
+            "probability": 0.6489110589027405
+          }
+        ]
+      },
+      {
+        "file": "codex-medium-main.json",
+        "windowIndex": 1,
+        "candidate": 2,
+        "crop": [
+          90.9,
+          99.69
+        ],
+        "segmentIndex": 3,
+        "wordRange": [
+          0,
+          3
+        ],
+        "model": "medium",
+        "text": "6,38 Meter!",
+        "words": [
+          {
+            "word": " 6",
+            "start": 95.54,
+            "end": 96.06,
+            "probability": 0.8345775008201599
+          },
+          {
+            "word": ",38",
+            "start": 96.06,
+            "end": 97.3,
+            "probability": 0.7972102761268616
+          },
+          {
+            "word": " Meter!",
+            "start": 97.3,
+            "end": 97.3,
+            "probability": 0.5945525765419006
+          }
+        ]
+      }
+    ],
+    "smallWordCoverage": 1.0,
+    "mediumWordCoverage": 1.0
+  },
+  {
     "id": 1000121,
     "parentId": 1000121,
     "start": 99.02,
@@ -1327,6 +1573,196 @@
     "speaker": "Gräfin",
     "text": "Das ist ja mein Schmuck!",
     "vi": "Đó là đồ trang sức của tôi mà!",
+    "smallWordCoverage": 1.0,
+    "mediumWordCoverage": 1.0
+  },
+  {
+    "id": 1000283,
+    "parentId": 1000283,
+    "start": 532.61,
+    "end": 533.99,
+    "speaker": "Hannelore Elster",
+    "text": "Ihr Schmuck?",
+    "vi": "Đồ trang sức của bà sao?",
+    "verification": "independent-small-medium-literal",
+    "timingEvidence": [
+      {
+        "file": "codex-small-main.json",
+        "windowIndex": 5,
+        "candidate": 6,
+        "crop": [
+          531.51,
+          537.42
+        ],
+        "segmentIndex": 1,
+        "wordRange": [
+          0,
+          2
+        ],
+        "model": "small",
+        "text": "Ihr Schmuck?",
+        "words": [
+          {
+            "word": " Ihr",
+            "start": 532.61,
+            "end": 533.31,
+            "probability": 0.6446845531463623
+          },
+          {
+            "word": " Schmuck?",
+            "start": 533.31,
+            "end": 533.93,
+            "probability": 0.9889873266220093
+          }
+        ]
+      },
+      {
+        "file": "codex-medium-main.json",
+        "windowIndex": 5,
+        "candidate": 6,
+        "crop": [
+          531.51,
+          537.42
+        ],
+        "segmentIndex": 0,
+        "wordRange": [
+          1,
+          3
+        ],
+        "model": "medium",
+        "text": "Ihr Schmuck?",
+        "words": [
+          {
+            "word": " Ihr",
+            "start": 533.11,
+            "end": 533.47,
+            "probability": 0.6920692324638367
+          },
+          {
+            "word": " Schmuck?",
+            "start": 533.47,
+            "end": 533.99,
+            "probability": 0.9964356819788615
+          }
+        ]
+      },
+      {
+        "file": "independent-medium-context.json",
+        "windowIndex": 5,
+        "candidate": 6,
+        "crop": [
+          526.51,
+          542.42
+        ],
+        "segmentIndex": 2,
+        "wordRange": [
+          0,
+          2
+        ],
+        "model": "medium",
+        "text": "Ihr Schmuck?",
+        "words": [
+          {
+            "word": " Ihr",
+            "start": 533.21,
+            "end": 533.47,
+            "probability": 0.9281232357025146
+          },
+          {
+            "word": " Schmuck?",
+            "start": 533.47,
+            "end": 533.97,
+            "probability": 0.9991090893745422
+          }
+        ]
+      }
+    ],
+    "smallWordCoverage": 1.0,
+    "mediumWordCoverage": 1.0
+  },
+  {
+    "id": 1000284,
+    "parentId": 1000284,
+    "start": 534.19,
+    "end": 536.43,
+    "speaker": "Gräfin",
+    "text": "Ja, mein Schmuck.",
+    "vi": "Vâng, đồ trang sức của tôi.",
+    "verification": "independent-small-medium-literal",
+    "timingEvidence": [
+      {
+        "file": "codex-small-main.json",
+        "windowIndex": 5,
+        "candidate": 6,
+        "crop": [
+          531.51,
+          537.42
+        ],
+        "segmentIndex": 2,
+        "wordRange": [
+          0,
+          3
+        ],
+        "model": "small",
+        "text": "Ja, mein Schmuck.",
+        "words": [
+          {
+            "word": " Ja,",
+            "start": 534.19,
+            "end": 534.37,
+            "probability": 0.9729860424995422
+          },
+          {
+            "word": " mein",
+            "start": 535.07,
+            "end": 535.37,
+            "probability": 0.841048002243042
+          },
+          {
+            "word": " Schmuck.",
+            "start": 535.37,
+            "end": 536.43,
+            "probability": 0.9985459049542745
+          }
+        ]
+      },
+      {
+        "file": "independent-medium-context.json",
+        "windowIndex": 5,
+        "candidate": 6,
+        "crop": [
+          526.51,
+          542.42
+        ],
+        "segmentIndex": 3,
+        "wordRange": [
+          0,
+          3
+        ],
+        "model": "medium",
+        "text": "Ja, mein Schmuck.",
+        "words": [
+          {
+            "word": " Ja,",
+            "start": 534.25,
+            "end": 534.65,
+            "probability": 0.920555830001831
+          },
+          {
+            "word": " mein",
+            "start": 535.29,
+            "end": 535.51,
+            "probability": 0.9246646761894226
+          },
+          {
+            "word": " Schmuck.",
+            "start": 535.51,
+            "end": 536.23,
+            "probability": 0.9996477961540222
+          }
+        ]
+      }
+    ],
     "smallWordCoverage": 1.0,
     "mediumWordCoverage": 1.0
   },

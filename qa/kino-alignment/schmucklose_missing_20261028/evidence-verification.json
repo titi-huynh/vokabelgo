@@ -1,0 +1,172 @@
+{
+  "completeCrops": 48,
+  "videoAndPcmHashesMatchAcrossAllRuns": true,
+  "selectedLiteralWordsMatchBothModels": true,
+  "wordTimingEnvelopesUnclipped": true,
+  "humanListened": false,
+  "earshotIsNotASR": true,
+  "earshot": [
+    {
+      "candidate": 1,
+      "start": 1.78,
+      "end": 26.12,
+      "audioset": [
+        {
+          "label": "Music",
+          "p": 0.58
+        },
+        {
+          "label": "Drum",
+          "p": 0.29
+        },
+        {
+          "label": "Drum kit",
+          "p": 0.216
+        },
+        {
+          "label": "Percussion",
+          "p": 0.191
+        },
+        {
+          "label": "Snare drum",
+          "p": 0.162
+        }
+      ]
+    },
+    {
+      "candidate": 2,
+      "start": 91.82,
+      "end": 98.92,
+      "audioset": [
+        {
+          "label": "Speech",
+          "p": 0.831
+        },
+        {
+          "label": "Music",
+          "p": 0.503
+        },
+        {
+          "label": "Inside, small room",
+          "p": 0.065
+        },
+        {
+          "label": "Gasp",
+          "p": 0.058
+        },
+        {
+          "label": "Snort",
+          "p": 0.053
+        }
+      ]
+    },
+    {
+      "candidate": 3,
+      "start": 202.28,
+      "end": 207.82,
+      "audioset": [
+        {
+          "label": "Music",
+          "p": 0.89
+        },
+        {
+          "label": "Speech",
+          "p": 0.852
+        },
+        {
+          "label": "Female speech, woman speaking",
+          "p": 0.285
+        },
+        {
+          "label": "Conversation",
+          "p": 0.095
+        }
+      ]
+    },
+    {
+      "candidate": 4,
+      "start": 257.04,
+      "end": 258.98,
+      "audioset": [
+        {
+          "label": "Speech",
+          "p": 0.472
+        },
+        {
+          "label": "Music",
+          "p": 0.154
+        },
+        {
+          "label": "Male speech, man speaking",
+          "p": 0.121
+        },
+        {
+          "label": "Mantra",
+          "p": 0.053
+        },
+        {
+          "label": "Clapping",
+          "p": 0.052
+        }
+      ]
+    },
+    {
+      "candidate": 5,
+      "start": 391.22,
+      "end": 399.54,
+      "audioset": [
+        {
+          "label": "Speech",
+          "p": 0.626
+        },
+        {
+          "label": "Music",
+          "p": 0.599
+        },
+        {
+          "label": "Child speech, kid speaking",
+          "p": 0.099
+        }
+      ]
+    },
+    {
+      "candidate": 6,
+      "start": 532.22,
+      "end": 536.46,
+      "audioset": [
+        {
+          "label": "Music",
+          "p": 0.853
+        },
+        {
+          "label": "Speech",
+          "p": 0.85
+        }
+      ]
+    },
+    {
+      "candidate": 7,
+      "start": 659.8,
+      "end": 663.88,
+      "audioset": [
+        {
+          "label": "Speech",
+          "p": 0.568
+        },
+        {
+          "label": "Inside, small room",
+          "p": 0.082
+        },
+        {
+          "label": "Crunch",
+          "p": 0.059
+        },
+        {
+          "label": "Walk, footsteps",
+          "p": 0.058
+        }
+      ]
+    }
+  ],
+  "pass": true
+}
