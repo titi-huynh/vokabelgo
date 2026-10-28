@@ -1,0 +1,65 @@
+{
+  "addedCueChecks": [
+    {
+      "id": 1600120,
+      "exactLiteralWordReferences": true,
+      "selectedTimingWordsNotCut": true,
+      "models": [
+        "medium",
+        "small"
+      ]
+    },
+    {
+      "id": 1600121,
+      "exactLiteralWordReferences": true,
+      "selectedTimingWordsNotCut": true,
+      "models": [
+        "medium",
+        "small"
+      ]
+    },
+    {
+      "id": 1600122,
+      "exactLiteralWordReferences": true,
+      "selectedTimingWordsNotCut": true,
+      "models": [
+        "medium",
+        "small"
+      ]
+    },
+    {
+      "id": 1600123,
+      "exactLiteralWordReferences": true,
+      "selectedTimingWordsNotCut": true,
+      "models": [
+        "medium",
+        "small"
+      ]
+    },
+    {
+      "id": 1600124,
+      "exactLiteralWordReferences": true,
+      "selectedTimingWordsNotCut": true,
+      "models": [
+        "medium",
+        "small"
+      ]
+    }
+  ],
+  "sourceCuesAndVocabularyPreserved": true,
+  "reviewNeededDoesNotOverlapAcceptedAdditions": true,
+  "asrCompletedCrops": {
+    "independent-small-full.json": 4,
+    "independent-medium-full.json": 4,
+    "codex-small-main.json": 6,
+    "codex-medium-main.json": 6,
+    "codex-small-recheck.json": 16,
+    "codex-medium-recheck.json": 16
+  },
+  "antiCrops": 8,
+  "codexCrops": 44,
+  "totalIndependentCrops": 52,
+  "humanListened": false,
+  "normalization": "Case/punctuation only",
+  "pass": true
+}

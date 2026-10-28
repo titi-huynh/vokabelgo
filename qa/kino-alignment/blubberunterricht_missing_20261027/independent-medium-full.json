@@ -1,0 +1,3108 @@
+{
+  "model": "medium",
+  "source": "video/spongebob_blubberunterricht.mp4",
+  "sourcePath": "C:\\Users\\huynh\\.codex\\worktrees\\kino-blubberunterricht-missing-lines\\flash\\video\\spongebob_blubberunterricht.mp4",
+  "sourceNote": "Official Nickelodeon short excerpt (local owner file in workspace)",
+  "sourceVideoBytes": 12325458,
+  "sourceVideoSha256": "0e1ec80278f70b49d352a6ec31d760f610f72be2e204984a9aa0f8e39b32a42e",
+  "ffprobeDurationSeconds": 222.841905,
+  "decodedAudioDurationSeconds": 222.841938,
+  "decodedAudioSamples16k": 3565471,
+  "decodedAudioF32le16kSha256": "c842f52ca8cb78bcea89f2d898b88cf5764b690401912f12e9ea984476b481a4",
+  "decodedPcmS16le16kSha256": "d2301dc06a50ece23c99363aa2398adbc58d69ecd11dfefbf6b0e3a96e48af7a",
+  "specSha256": "f37fc3687972826fe2fd6305c0f67de6799cf61566b8d50b11cc684e93334ba7",
+  "method": "Independent local blind ASR on neutral overlapping chunks, no prompt, hotwords, existing captions, or candidate text supplied",
+  "asrOptions": {
+    "device": "cpu",
+    "compute_type": "int8",
+    "cpu_threads": 3,
+    "local_files_only": true,
+    "language": "de",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "word_timestamps": true,
+    "condition_on_previous_text": false,
+    "vad_filter": false,
+    "initial_prompt": null,
+    "hotwords": null
+  },
+  "humanListened": false,
+  "completed": 4,
+  "total": 4,
+  "elapsedSeconds": 452.68,
+  "windows": [
+    {
+      "chunk": 1,
+      "start": 0.0,
+      "end": 65.0,
+      "crop": [
+        0.0,
+        65.0
+      ],
+      "sampleRange16k": [
+        0,
+        1040000
+      ],
+      "segmentCount": 26,
+      "segments": [
+        {
+          "start": 7.18,
+          "end": 9.94,
+          "relStart": 7.18,
+          "relEnd": 9.94,
+          "text": "Und nicht vergessen, alles eine Frage der Technik.",
+          "rawText": " Und nicht vergessen, alles eine Frage der Technik.",
+          "avg_logprob": -0.45498492500998755,
+          "no_speech_prob": 0.22867800295352936,
+          "compression_ratio": 1.567251461988304,
+          "words": [
+            {
+              "start": 7.18,
+              "end": 7.7,
+              "relStart": 7.18,
+              "relEnd": 7.7,
+              "word": " Und",
+              "probability": 0.14850497245788574
+            },
+            {
+              "start": 7.7,
+              "end": 7.94,
+              "relStart": 7.7,
+              "relEnd": 7.94,
+              "word": " nicht",
+              "probability": 0.837393045425415
+            },
+            {
+              "start": 7.94,
+              "end": 8.4,
+              "relStart": 7.94,
+              "relEnd": 8.4,
+              "word": " vergessen,",
+              "probability": 0.9947031140327454
+            },
+            {
+              "start": 8.64,
+              "end": 8.78,
+              "relStart": 8.64,
+              "relEnd": 8.78,
+              "word": " alles",
+              "probability": 0.9195160865783691
+            },
+            {
+              "start": 8.78,
+              "end": 8.96,
+              "relStart": 8.78,
+              "relEnd": 8.96,
+              "word": " eine",
+              "probability": 0.39807939529418945
+            },
+            {
+              "start": 8.96,
+              "end": 9.2,
+              "relStart": 8.96,
+              "relEnd": 9.2,
+              "word": " Frage",
+              "probability": 0.9826801419258118
+            },
+            {
+              "start": 9.2,
+              "end": 9.44,
+              "relStart": 9.2,
+              "relEnd": 9.44,
+              "word": " der",
+              "probability": 0.9885405898094177
+            },
+            {
+              "start": 9.44,
+              "end": 9.94,
+              "relStart": 9.44,
+              "relEnd": 9.94,
+              "word": " Technik.",
+              "probability": 0.996594101190567
+            }
+          ]
+        },
+        {
+          "start": 10.64,
+          "end": 14.0,
+          "relStart": 10.64,
+          "relEnd": 14.0,
+          "text": "Mach dies und das und dann dies und das.",
+          "rawText": " Mach dies und das und dann dies und das.",
+          "avg_logprob": -0.45498492500998755,
+          "no_speech_prob": 0.22867800295352936,
+          "compression_ratio": 1.567251461988304,
+          "words": [
+            {
+              "start": 10.64,
+              "end": 10.78,
+              "relStart": 10.64,
+              "relEnd": 10.78,
+              "word": " Mach",
+              "probability": 0.32548221945762634
+            },
+            {
+              "start": 10.78,
+              "end": 11.1,
+              "relStart": 10.78,
+              "relEnd": 11.1,
+              "word": " dies",
+              "probability": 0.9282036423683167
+            },
+            {
+              "start": 11.1,
+              "end": 11.4,
+              "relStart": 11.1,
+              "relEnd": 11.4,
+              "word": " und",
+              "probability": 0.9141271710395813
+            },
+            {
+              "start": 11.4,
+              "end": 11.46,
+              "relStart": 11.4,
+              "relEnd": 11.46,
+              "word": " das",
+              "probability": 0.9580491185188293
+            },
+            {
+              "start": 11.46,
+              "end": 12.34,
+              "relStart": 11.46,
+              "relEnd": 12.34,
+              "word": " und",
+              "probability": 0.2761792838573456
+            },
+            {
+              "start": 12.34,
+              "end": 12.48,
+              "relStart": 12.34,
+              "relEnd": 12.48,
+              "word": " dann",
+              "probability": 0.8034414649009705
+            },
+            {
+              "start": 12.48,
+              "end": 12.9,
+              "relStart": 12.48,
+              "relEnd": 12.9,
+              "word": " dies",
+              "probability": 0.9915269017219543
+            },
+            {
+              "start": 12.9,
+              "end": 13.16,
+              "relStart": 12.9,
+              "relEnd": 13.16,
+              "word": " und",
+              "probability": 0.9644705653190613
+            },
+            {
+              "start": 13.16,
+              "end": 14.0,
+              "relStart": 13.16,
+              "relEnd": 14.0,
+              "word": " das.",
+              "probability": 0.9855940937995911
+            }
+          ]
+        },
+        {
+          "start": 14.6,
+          "end": 15.86,
+          "relStart": 14.6,
+          "relEnd": 15.86,
+          "text": "Die Technik, Tadeus!",
+          "rawText": " Die Technik, Tadeus!",
+          "avg_logprob": -0.45498492500998755,
+          "no_speech_prob": 0.22867800295352936,
+          "compression_ratio": 1.567251461988304,
+          "words": [
+            {
+              "start": 14.6,
+              "end": 14.92,
+              "relStart": 14.6,
+              "relEnd": 14.92,
+              "word": " Die",
+              "probability": 0.7143463492393494
+            },
+            {
+              "start": 14.92,
+              "end": 15.66,
+              "relStart": 14.92,
+              "relEnd": 15.66,
+              "word": " Technik,",
+              "probability": 0.9898479580879211
+            },
+            {
+              "start": 15.84,
+              "end": 15.86,
+              "relStart": 15.84,
+              "relEnd": 15.86,
+              "word": " Tadeus!",
+              "probability": 0.7026206354300181
+            }
+          ]
+        },
+        {
+          "start": 15.88,
+          "end": 17.6,
+          "relStart": 15.88,
+          "relEnd": 17.6,
+          "text": "Jetzt, du siehst du.",
+          "rawText": " Jetzt, du siehst du.",
+          "avg_logprob": -0.45498492500998755,
+          "no_speech_prob": 0.22867800295352936,
+          "compression_ratio": 1.567251461988304,
+          "words": [
+            {
+              "start": 15.88,
+              "end": 16.4,
+              "relStart": 15.88,
+              "relEnd": 16.4,
+              "word": " Jetzt,",
+              "probability": 0.3638240098953247
+            },
+            {
+              "start": 16.56,
+              "end": 16.72,
+              "relStart": 16.56,
+              "relEnd": 16.72,
+              "word": " du",
+              "probability": 0.07911067456007004
+            },
+            {
+              "start": 16.72,
+              "end": 17.16,
+              "relStart": 16.72,
+              "relEnd": 17.16,
+              "word": " siehst",
+              "probability": 0.8361334502696991
+            },
+            {
+              "start": 17.16,
+              "end": 17.6,
+              "relStart": 17.16,
+              "relEnd": 17.6,
+              "word": " du.",
+              "probability": 0.9326903820037842
+            }
+          ]
+        },
+        {
+          "start": 18.34,
+          "end": 18.98,
+          "relStart": 18.34,
+          "relEnd": 18.98,
+          "text": "Sieh mal her.",
+          "rawText": " Sieh mal her.",
+          "avg_logprob": -0.45498492500998755,
+          "no_speech_prob": 0.22867800295352936,
+          "compression_ratio": 1.567251461988304,
+          "words": [
+            {
+              "start": 18.34,
+              "end": 18.58,
+              "relStart": 18.34,
+              "relEnd": 18.58,
+              "word": " Sieh",
+              "probability": 0.9222165942192078
+            },
+            {
+              "start": 18.58,
+              "end": 18.72,
+              "relStart": 18.58,
+              "relEnd": 18.72,
+              "word": " mal",
+              "probability": 0.9086801409721375
+            },
+            {
+              "start": 18.72,
+              "end": 18.98,
+              "relStart": 18.72,
+              "relEnd": 18.98,
+              "word": " her.",
+              "probability": 0.9824026823043823
+            }
+          ]
+        },
+        {
+          "start": 19.12,
+          "end": 21.68,
+          "relStart": 19.12,
+          "relEnd": 21.68,
+          "text": "Eins, zwei und drei.",
+          "rawText": " Eins, zwei und drei.",
+          "avg_logprob": -0.45498492500998755,
+          "no_speech_prob": 0.22867800295352936,
+          "compression_ratio": 1.567251461988304,
+          "words": [
+            {
+              "start": 19.12,
+              "end": 19.64,
+              "relStart": 19.12,
+              "relEnd": 19.64,
+              "word": " Eins,",
+              "probability": 0.7678802609443665
+            },
+            {
+              "start": 19.86,
+              "end": 20.46,
+              "relStart": 19.86,
+              "relEnd": 20.46,
+              "word": " zwei",
+              "probability": 0.9713160395622253
+            },
+            {
+              "start": 20.46,
+              "end": 21.42,
+              "relStart": 20.46,
+              "relEnd": 21.42,
+              "word": " und",
+              "probability": 0.6723337769508362
+            },
+            {
+              "start": 21.42,
+              "end": 21.68,
+              "relStart": 21.42,
+              "relEnd": 21.68,
+              "word": " drei.",
+              "probability": 0.9559743404388428
+            }
+          ]
+        },
+        {
+          "start": 21.78,
+          "end": 23.82,
+          "relStart": 21.78,
+          "relEnd": 23.82,
+          "text": "Tadeus, der Beckenstoß.",
+          "rawText": " Tadeus, der Beckenstoß.",
+          "avg_logprob": -0.45498492500998755,
+          "no_speech_prob": 0.22867800295352936,
+          "compression_ratio": 1.567251461988304,
+          "words": [
+            {
+              "start": 21.78,
+              "end": 22.22,
+              "relStart": 21.78,
+              "relEnd": 22.22,
+              "word": " Tadeus,",
+              "probability": 0.7262514978647232
+            },
+            {
+              "start": 22.4,
+              "end": 22.46,
+              "relStart": 22.4,
+              "relEnd": 22.46,
+              "word": " der",
+              "probability": 0.9878815412521362
+            },
+            {
+              "start": 22.46,
+              "end": 23.82,
+              "relStart": 22.46,
+              "relEnd": 23.82,
+              "word": " Beckenstoß.",
+              "probability": 0.9308347254991531
+            }
+          ]
+        },
+        {
+          "start": 23.92,
+          "end": 25.56,
+          "relStart": 23.92,
+          "relEnd": 25.56,
+          "text": "Immer an die Technik denken.",
+          "rawText": " Immer an die Technik denken.",
+          "avg_logprob": -0.45498492500998755,
+          "no_speech_prob": 0.22867800295352936,
+          "compression_ratio": 1.567251461988304,
+          "words": [
+            {
+              "start": 23.92,
+              "end": 24.42,
+              "relStart": 23.92,
+              "relEnd": 24.42,
+              "word": " Immer",
+              "probability": 0.8076623678207397
+            },
+            {
+              "start": 24.42,
+              "end": 24.64,
+              "relStart": 24.42,
+              "relEnd": 24.64,
+              "word": " an",
+              "probability": 0.6705545783042908
+            },
+            {
+              "start": 24.64,
+              "end": 24.86,
+              "relStart": 24.64,
+              "relEnd": 24.86,
+              "word": " die",
+              "probability": 0.9944484233856201
+            },
+            {
+              "start": 24.86,
+              "end": 25.2,
+              "relStart": 24.86,
+              "relEnd": 25.2,
+              "word": " Technik",
+              "probability": 0.9967756271362305
+            },
+            {
+              "start": 25.2,
+              "end": 25.56,
+              "relStart": 25.2,
+              "relEnd": 25.56,
+              "word": " denken.",
+              "probability": 0.9954476952552795
+            }
+          ]
+        },
+        {
+          "start": 25.92,
+          "end": 27.72,
+          "relStart": 25.92,
+          "relEnd": 27.72,
+          "text": "Und nicht vergessen, der...",
+          "rawText": " Und nicht vergessen, der...",
+          "avg_logprob": -0.45498492500998755,
+          "no_speech_prob": 0.22867800295352936,
+          "compression_ratio": 1.567251461988304,
+          "words": [
+            {
+              "start": 25.92,
+              "end": 26.1,
+              "relStart": 25.92,
+              "relEnd": 26.1,
+              "word": " Und",
+              "probability": 0.873379111289978
+            },
+            {
+              "start": 26.1,
+              "end": 26.6,
+              "relStart": 26.1,
+              "relEnd": 26.6,
+              "word": " nicht",
+              "probability": 0.9871429800987244
+            },
+            {
+              "start": 26.6,
+              "end": 27.06,
+              "relStart": 26.6,
+              "relEnd": 27.06,
+              "word": " vergessen,",
+              "probability": 0.9551730751991272
+            },
+            {
+              "start": 27.24,
+              "end": 27.72,
+              "relStart": 27.24,
+              "relEnd": 27.72,
+              "word": " der...",
+              "probability": 0.5454699695110321
+            }
+          ]
+        },
+        {
+          "start": 29.24,
+          "end": 29.98,
+          "relStart": 29.24,
+          "relEnd": 29.98,
+          "text": "Tadeus, pass auf.",
+          "rawText": " Tadeus, pass auf.",
+          "avg_logprob": -0.45498492500998755,
+          "no_speech_prob": 0.22867800295352936,
+          "compression_ratio": 1.567251461988304,
+          "words": [
+            {
+              "start": 29.24,
+              "end": 29.76,
+              "relStart": 29.24,
+              "relEnd": 29.76,
+              "word": " Tadeus,",
+              "probability": 0.8612963159879049
+            },
+            {
+              "start": 29.88,
+              "end": 29.98,
+              "relStart": 29.88,
+              "relEnd": 29.98,
+              "word": " pass",
+              "probability": 0.3507850170135498
+            },
+            {
+              "start": 29.98,
+              "end": 29.98,
+              "relStart": 29.98,
+              "relEnd": 29.98,
+              "word": " auf.",
+              "probability": 0.8604122400283813
+            }
+          ]
+        },
+        {
+          "start": 29.98,
+          "end": 31.44,
+          "relStart": 29.98,
+          "relEnd": 31.44,
+          "text": "Pass auf! Die Technik!",
+          "rawText": " Pass auf! Die Technik!",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 29.98,
+              "end": 30.06,
+              "relStart": 29.98,
+              "relEnd": 30.06,
+              "word": " Pass",
+              "probability": 0.053215187042951584
+            },
+            {
+              "start": 30.06,
+              "end": 30.42,
+              "relStart": 30.06,
+              "relEnd": 30.42,
+              "word": " auf!",
+              "probability": 0.9936309456825256
+            },
+            {
+              "start": 30.64,
+              "end": 30.8,
+              "relStart": 30.64,
+              "relEnd": 30.8,
+              "word": " Die",
+              "probability": 0.9689749479293823
+            },
+            {
+              "start": 30.8,
+              "end": 31.44,
+              "relStart": 30.8,
+              "relEnd": 31.44,
+              "word": " Technik!",
+              "probability": 0.9985346794128418
+            }
+          ]
+        },
+        {
+          "start": 31.76,
+          "end": 33.34,
+          "relStart": 31.76,
+          "relEnd": 33.34,
+          "text": "Hey, Tadeus! Hör auf, sponge!",
+          "rawText": " Hey, Tadeus! Hör auf, sponge!",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 31.76,
+              "end": 32.14,
+              "relStart": 31.76,
+              "relEnd": 32.14,
+              "word": " Hey,",
+              "probability": 0.1286979466676712
+            },
+            {
+              "start": 32.18,
+              "end": 32.54,
+              "relStart": 32.18,
+              "relEnd": 32.54,
+              "word": " Tadeus!",
+              "probability": 0.7736344734827677
+            },
+            {
+              "start": 32.72,
+              "end": 32.76,
+              "relStart": 32.72,
+              "relEnd": 32.76,
+              "word": " Hör",
+              "probability": 0.9377247393131256
+            },
+            {
+              "start": 32.76,
+              "end": 32.88,
+              "relStart": 32.76,
+              "relEnd": 32.88,
+              "word": " auf,",
+              "probability": 0.9815203547477722
+            },
+            {
+              "start": 33.18,
+              "end": 33.34,
+              "relStart": 33.18,
+              "relEnd": 33.34,
+              "word": " sponge!",
+              "probability": 0.40127450227737427
+            }
+          ]
+        },
+        {
+          "start": 33.5,
+          "end": 36.38,
+          "relStart": 33.5,
+          "relEnd": 36.38,
+          "text": "Die Technik! Die Technik! Die Technik!",
+          "rawText": " Die Technik! Die Technik! Die Technik!",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 33.5,
+              "end": 34.04,
+              "relStart": 33.5,
+              "relEnd": 34.04,
+              "word": " Die",
+              "probability": 0.643744170665741
+            },
+            {
+              "start": 34.04,
+              "end": 34.54,
+              "relStart": 34.04,
+              "relEnd": 34.54,
+              "word": " Technik!",
+              "probability": 0.9988331198692322
+            },
+            {
+              "start": 34.68,
+              "end": 34.68,
+              "relStart": 34.68,
+              "relEnd": 34.68,
+              "word": " Die",
+              "probability": 0.8145239353179932
+            },
+            {
+              "start": 34.68,
+              "end": 35.5,
+              "relStart": 34.68,
+              "relEnd": 35.5,
+              "word": " Technik!",
+              "probability": 0.997736930847168
+            },
+            {
+              "start": 35.58,
+              "end": 35.78,
+              "relStart": 35.58,
+              "relEnd": 35.78,
+              "word": " Die",
+              "probability": 0.8235542178153992
+            },
+            {
+              "start": 35.78,
+              "end": 36.38,
+              "relStart": 35.78,
+              "relEnd": 36.38,
+              "word": " Technik!",
+              "probability": 0.9917263388633728
+            }
+          ]
+        },
+        {
+          "start": 36.56,
+          "end": 39.62,
+          "relStart": 36.56,
+          "relEnd": 39.62,
+          "text": "Die Technik! Die Technik! Die Technik! Die Technik!",
+          "rawText": " Die Technik! Die Technik! Die Technik! Die Technik!",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 36.56,
+              "end": 36.9,
+              "relStart": 36.56,
+              "relEnd": 36.9,
+              "word": " Die",
+              "probability": 0.5851243138313293
+            },
+            {
+              "start": 36.9,
+              "end": 37.04,
+              "relStart": 36.9,
+              "relEnd": 37.04,
+              "word": " Technik!",
+              "probability": 0.992385596036911
+            },
+            {
+              "start": 37.04,
+              "end": 37.18,
+              "relStart": 37.04,
+              "relEnd": 37.18,
+              "word": " Die",
+              "probability": 0.5613148212432861
+            },
+            {
+              "start": 37.18,
+              "end": 37.84,
+              "relStart": 37.18,
+              "relEnd": 37.84,
+              "word": " Technik!",
+              "probability": 0.9863146245479584
+            },
+            {
+              "start": 37.84,
+              "end": 38.04,
+              "relStart": 37.84,
+              "relEnd": 38.04,
+              "word": " Die",
+              "probability": 0.6390222907066345
+            },
+            {
+              "start": 38.04,
+              "end": 38.64,
+              "relStart": 38.04,
+              "relEnd": 38.64,
+              "word": " Technik!",
+              "probability": 0.9818288087844849
+            },
+            {
+              "start": 38.64,
+              "end": 38.9,
+              "relStart": 38.64,
+              "relEnd": 38.9,
+              "word": " Die",
+              "probability": 0.6342483758926392
+            },
+            {
+              "start": 38.9,
+              "end": 39.62,
+              "relStart": 38.9,
+              "relEnd": 39.62,
+              "word": " Technik!",
+              "probability": 0.9742690622806549
+            }
+          ]
+        },
+        {
+          "start": 39.62,
+          "end": 40.06,
+          "relStart": 39.62,
+          "relEnd": 40.06,
+          "text": "Die Technik! Die Technik! Die Technik!",
+          "rawText": " Die Technik! Die Technik! Die Technik!",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 39.62,
+              "end": 40.06,
+              "relStart": 39.62,
+              "relEnd": 40.06,
+              "word": " Die",
+              "probability": 0.586251974105835
+            },
+            {
+              "start": 40.06,
+              "end": 40.06,
+              "relStart": 40.06,
+              "relEnd": 40.06,
+              "word": " Technik!",
+              "probability": 0.9841532707214355
+            },
+            {
+              "start": 40.06,
+              "end": 40.06,
+              "relStart": 40.06,
+              "relEnd": 40.06,
+              "word": " Die",
+              "probability": 0.6254229545593262
+            },
+            {
+              "start": 40.06,
+              "end": 40.06,
+              "relStart": 40.06,
+              "relEnd": 40.06,
+              "word": " Technik!",
+              "probability": 0.9838932454586029
+            },
+            {
+              "start": 40.06,
+              "end": 40.06,
+              "relStart": 40.06,
+              "relEnd": 40.06,
+              "word": " Die",
+              "probability": 0.6302692294120789
+            },
+            {
+              "start": 40.06,
+              "end": 40.06,
+              "relStart": 40.06,
+              "relEnd": 40.06,
+              "word": " Technik!",
+              "probability": 0.9906565248966217
+            }
+          ]
+        },
+        {
+          "start": 40.06,
+          "end": 41.98,
+          "relStart": 40.06,
+          "relEnd": 41.98,
+          "text": "Du hast nicht die richtige...",
+          "rawText": " Du hast nicht die richtige...",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 40.06,
+              "end": 40.06,
+              "relStart": 40.06,
+              "relEnd": 40.06,
+              "word": " Du",
+              "probability": 0.14099328219890594
+            },
+            {
+              "start": 40.06,
+              "end": 40.82,
+              "relStart": 40.06,
+              "relEnd": 40.82,
+              "word": " hast",
+              "probability": 0.9394967555999756
+            },
+            {
+              "start": 40.82,
+              "end": 41.2,
+              "relStart": 40.82,
+              "relEnd": 41.2,
+              "word": " nicht",
+              "probability": 0.836122989654541
+            },
+            {
+              "start": 41.2,
+              "end": 41.22,
+              "relStart": 41.2,
+              "relEnd": 41.22,
+              "word": " die",
+              "probability": 0.944005012512207
+            },
+            {
+              "start": 41.22,
+              "end": 41.98,
+              "relStart": 41.22,
+              "relEnd": 41.98,
+              "word": " richtige...",
+              "probability": 0.5534461215138435
+            }
+          ]
+        },
+        {
+          "start": 42.64,
+          "end": 43.08,
+          "relStart": 42.64,
+          "relEnd": 43.08,
+          "text": "Technik.",
+          "rawText": " Technik.",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 42.64,
+              "end": 43.08,
+              "relStart": 42.64,
+              "relEnd": 43.08,
+              "word": " Technik.",
+              "probability": 0.8064986169338226
+            }
+          ]
+        },
+        {
+          "start": 43.54,
+          "end": 45.32,
+          "relStart": 43.54,
+          "relEnd": 45.32,
+          "text": "Die Technik! Die Technik!",
+          "rawText": " Die Technik! Die Technik!",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 43.54,
+              "end": 43.88,
+              "relStart": 43.54,
+              "relEnd": 43.88,
+              "word": " Die",
+              "probability": 0.8286629319190979
+            },
+            {
+              "start": 43.88,
+              "end": 44.46,
+              "relStart": 43.88,
+              "relEnd": 44.46,
+              "word": " Technik!",
+              "probability": 0.999142974615097
+            },
+            {
+              "start": 44.58,
+              "end": 44.72,
+              "relStart": 44.58,
+              "relEnd": 44.72,
+              "word": " Die",
+              "probability": 0.9872626662254333
+            },
+            {
+              "start": 44.72,
+              "end": 45.32,
+              "relStart": 44.72,
+              "relEnd": 45.32,
+              "word": " Technik!",
+              "probability": 0.9994973242282867
+            }
+          ]
+        },
+        {
+          "start": 45.64,
+          "end": 48.52,
+          "relStart": 45.64,
+          "relEnd": 48.52,
+          "text": "Technik! Technik! Technik! Technik! Technik! Technik!",
+          "rawText": " Technik! Technik! Technik! Technik! Technik! Technik!",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 45.64,
+              "end": 46.16,
+              "relStart": 45.64,
+              "relEnd": 46.16,
+              "word": " Technik!",
+              "probability": 0.9760018289089203
+            },
+            {
+              "start": 46.34,
+              "end": 46.52,
+              "relStart": 46.34,
+              "relEnd": 46.52,
+              "word": " Technik!",
+              "probability": 0.9980100393295288
+            },
+            {
+              "start": 46.72,
+              "end": 47.3,
+              "relStart": 46.72,
+              "relEnd": 47.3,
+              "word": " Technik!",
+              "probability": 0.9987505078315735
+            },
+            {
+              "start": 47.3,
+              "end": 47.76,
+              "relStart": 47.3,
+              "relEnd": 47.76,
+              "word": " Technik!",
+              "probability": 0.9972210228443146
+            },
+            {
+              "start": 47.96,
+              "end": 48.08,
+              "relStart": 47.96,
+              "relEnd": 48.08,
+              "word": " Technik!",
+              "probability": 0.9846155345439911
+            },
+            {
+              "start": 48.34,
+              "end": 48.52,
+              "relStart": 48.34,
+              "relEnd": 48.52,
+              "word": " Technik!",
+              "probability": 0.9248102605342865
+            }
+          ]
+        },
+        {
+          "start": 48.52,
+          "end": 49.96,
+          "relStart": 48.52,
+          "relEnd": 49.96,
+          "text": "Erst mache ich das.",
+          "rawText": " Erst mache ich das.",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 48.52,
+              "end": 48.82,
+              "relStart": 48.52,
+              "relEnd": 48.82,
+              "word": " Erst",
+              "probability": 0.007474317215383053
+            },
+            {
+              "start": 48.82,
+              "end": 49.1,
+              "relStart": 48.82,
+              "relEnd": 49.1,
+              "word": " mache",
+              "probability": 0.5230066776275635
+            },
+            {
+              "start": 49.1,
+              "end": 49.32,
+              "relStart": 49.1,
+              "relEnd": 49.32,
+              "word": " ich",
+              "probability": 0.9979896545410156
+            },
+            {
+              "start": 49.32,
+              "end": 49.96,
+              "relStart": 49.32,
+              "relEnd": 49.96,
+              "word": " das.",
+              "probability": 0.9955043196678162
+            }
+          ]
+        },
+        {
+          "start": 50.4,
+          "end": 51.28,
+          "relStart": 50.4,
+          "relEnd": 51.28,
+          "text": "Sprehen und stopp.",
+          "rawText": " Sprehen und stopp.",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 50.4,
+              "end": 50.68,
+              "relStart": 50.4,
+              "relEnd": 50.68,
+              "word": " Sprehen",
+              "probability": 0.5291813313961029
+            },
+            {
+              "start": 50.68,
+              "end": 50.96,
+              "relStart": 50.68,
+              "relEnd": 50.96,
+              "word": " und",
+              "probability": 0.9634191393852234
+            },
+            {
+              "start": 50.96,
+              "end": 51.28,
+              "relStart": 50.96,
+              "relEnd": 51.28,
+              "word": " stopp.",
+              "probability": 0.7529004216194153
+            }
+          ]
+        },
+        {
+          "start": 51.34,
+          "end": 52.58,
+          "relStart": 51.34,
+          "relEnd": 52.58,
+          "text": "Dreimal nach rechts gucken.",
+          "rawText": " Dreimal nach rechts gucken.",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 51.34,
+              "end": 51.66,
+              "relStart": 51.34,
+              "relEnd": 51.66,
+              "word": " Dreimal",
+              "probability": 0.814176470041275
+            },
+            {
+              "start": 51.66,
+              "end": 51.84,
+              "relStart": 51.66,
+              "relEnd": 51.84,
+              "word": " nach",
+              "probability": 0.962033748626709
+            },
+            {
+              "start": 51.84,
+              "end": 52.16,
+              "relStart": 51.84,
+              "relEnd": 52.16,
+              "word": " rechts",
+              "probability": 0.9981516003608704
+            },
+            {
+              "start": 52.16,
+              "end": 52.58,
+              "relStart": 52.16,
+              "relEnd": 52.58,
+              "word": " gucken.",
+              "probability": 0.3791874647140503
+            }
+          ]
+        },
+        {
+          "start": 53.22,
+          "end": 55.5,
+          "relStart": 53.22,
+          "relEnd": 55.5,
+          "text": "Und jetzt geht's los, der Beckenstoß.",
+          "rawText": " Und jetzt geht's los, der Beckenstoß.",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 53.22,
+              "end": 53.48,
+              "relStart": 53.22,
+              "relEnd": 53.48,
+              "word": " Und",
+              "probability": 0.9627833366394043
+            },
+            {
+              "start": 53.48,
+              "end": 53.76,
+              "relStart": 53.48,
+              "relEnd": 53.76,
+              "word": " jetzt",
+              "probability": 0.994696855545044
+            },
+            {
+              "start": 53.76,
+              "end": 54.04,
+              "relStart": 53.76,
+              "relEnd": 54.04,
+              "word": " geht's",
+              "probability": 0.8409327864646912
+            },
+            {
+              "start": 54.04,
+              "end": 54.3,
+              "relStart": 54.04,
+              "relEnd": 54.3,
+              "word": " los,",
+              "probability": 0.9984799027442932
+            },
+            {
+              "start": 54.4,
+              "end": 54.7,
+              "relStart": 54.4,
+              "relEnd": 54.7,
+              "word": " der",
+              "probability": 0.9933496117591858
+            },
+            {
+              "start": 54.7,
+              "end": 55.5,
+              "relStart": 54.7,
+              "relEnd": 55.5,
+              "word": " Beckenstoß.",
+              "probability": 0.9811783283948898
+            }
+          ]
+        },
+        {
+          "start": 56.36,
+          "end": 56.94,
+          "relStart": 56.36,
+          "relEnd": 56.94,
+          "text": "Wuuuh!",
+          "rawText": " Wuuuh!",
+          "avg_logprob": -0.254275074488,
+          "no_speech_prob": 0.16904789209365845,
+          "compression_ratio": 2.398843930635838,
+          "words": [
+            {
+              "start": 56.36,
+              "end": 56.94,
+              "relStart": 56.36,
+              "relEnd": 56.94,
+              "word": " Wuuuh!",
+              "probability": 0.31066181510686874
+            }
+          ]
+        },
+        {
+          "start": 57.44,
+          "end": 61.26,
+          "relStart": 57.44,
+          "relEnd": 61.26,
+          "text": "Huuuh, und immer schön auf dem rechten Fuß landen, ich hab's nicht vergessen.",
+          "rawText": " Huuuh, und immer schön auf dem rechten Fuß landen, ich hab's nicht vergessen.",
+          "avg_logprob": -0.3987701085149025,
+          "no_speech_prob": 0.0956125482916832,
+          "compression_ratio": 1.248062015503876,
+          "words": [
+            {
+              "start": 57.44,
+              "end": 57.84,
+              "relStart": 57.44,
+              "relEnd": 57.84,
+              "word": " Huuuh,",
+              "probability": 0.533093606432279
+            },
+            {
+              "start": 57.94,
+              "end": 58.16,
+              "relStart": 57.94,
+              "relEnd": 58.16,
+              "word": " und",
+              "probability": 0.9526855945587158
+            },
+            {
+              "start": 58.16,
+              "end": 58.34,
+              "relStart": 58.16,
+              "relEnd": 58.34,
+              "word": " immer",
+              "probability": 0.9962700605392456
+            },
+            {
+              "start": 58.34,
+              "end": 58.72,
+              "relStart": 58.34,
+              "relEnd": 58.72,
+              "word": " schön",
+              "probability": 0.9939748644828796
+            },
+            {
+              "start": 58.72,
+              "end": 58.9,
+              "relStart": 58.72,
+              "relEnd": 58.9,
+              "word": " auf",
+              "probability": 0.9900283217430115
+            },
+            {
+              "start": 58.9,
+              "end": 59.04,
+              "relStart": 58.9,
+              "relEnd": 59.04,
+              "word": " dem",
+              "probability": 0.9590111970901489
+            },
+            {
+              "start": 59.04,
+              "end": 59.36,
+              "relStart": 59.04,
+              "relEnd": 59.36,
+              "word": " rechten",
+              "probability": 0.9573792219161987
+            },
+            {
+              "start": 59.36,
+              "end": 59.64,
+              "relStart": 59.36,
+              "relEnd": 59.64,
+              "word": " Fuß",
+              "probability": 0.9912781119346619
+            },
+            {
+              "start": 59.64,
+              "end": 60.02,
+              "relStart": 59.64,
+              "relEnd": 60.02,
+              "word": " landen,",
+              "probability": 0.9961742162704468
+            },
+            {
+              "start": 60.16,
+              "end": 60.26,
+              "relStart": 60.16,
+              "relEnd": 60.26,
+              "word": " ich",
+              "probability": 0.976560652256012
+            },
+            {
+              "start": 60.26,
+              "end": 60.5,
+              "relStart": 60.26,
+              "relEnd": 60.5,
+              "word": " hab's",
+              "probability": 0.8364746570587158
+            },
+            {
+              "start": 60.5,
+              "end": 60.7,
+              "relStart": 60.5,
+              "relEnd": 60.7,
+              "word": " nicht",
+              "probability": 0.9931268692016602
+            },
+            {
+              "start": 60.7,
+              "end": 61.26,
+              "relStart": 60.7,
+              "relEnd": 61.26,
+              "word": " vergessen.",
+              "probability": 0.9844957590103149
+            }
+          ]
+        },
+        {
+          "start": 61.56,
+          "end": 64.98,
+          "relStart": 61.56,
+          "relEnd": 64.98,
+          "text": "Naja, und dann kommt der Hüftzwung und ein bisschen hiervon und ein bisschen da.",
+          "rawText": " Naja, und dann kommt der Hüftzwung und ein bisschen hiervon und ein bisschen da.",
+          "avg_logprob": -0.3987701085149025,
+          "no_speech_prob": 0.0956125482916832,
+          "compression_ratio": 1.248062015503876,
+          "words": [
+            {
+              "start": 61.56,
+              "end": 61.8,
+              "relStart": 61.56,
+              "relEnd": 61.8,
+              "word": " Naja,",
+              "probability": 0.30144286155700684
+            },
+            {
+              "start": 62.1,
+              "end": 62.26,
+              "relStart": 62.1,
+              "relEnd": 62.26,
+              "word": " und",
+              "probability": 0.9833751320838928
+            },
+            {
+              "start": 62.26,
+              "end": 62.44,
+              "relStart": 62.26,
+              "relEnd": 62.44,
+              "word": " dann",
+              "probability": 0.9960380792617798
+            },
+            {
+              "start": 62.44,
+              "end": 62.56,
+              "relStart": 62.44,
+              "relEnd": 62.56,
+              "word": " kommt",
+              "probability": 0.992369532585144
+            },
+            {
+              "start": 62.56,
+              "end": 62.72,
+              "relStart": 62.56,
+              "relEnd": 62.72,
+              "word": " der",
+              "probability": 0.988872230052948
+            },
+            {
+              "start": 62.72,
+              "end": 63.32,
+              "relStart": 62.72,
+              "relEnd": 63.32,
+              "word": " Hüftzwung",
+              "probability": 0.7935866475105285
+            },
+            {
+              "start": 63.32,
+              "end": 63.56,
+              "relStart": 63.32,
+              "relEnd": 63.56,
+              "word": " und",
+              "probability": 0.7193226218223572
+            },
+            {
+              "start": 63.56,
+              "end": 63.64,
+              "relStart": 63.56,
+              "relEnd": 63.64,
+              "word": " ein",
+              "probability": 0.8185783624649048
+            },
+            {
+              "start": 63.64,
+              "end": 63.86,
+              "relStart": 63.64,
+              "relEnd": 63.86,
+              "word": " bisschen",
+              "probability": 0.979790449142456
+            },
+            {
+              "start": 63.86,
+              "end": 64.38,
+              "relStart": 63.86,
+              "relEnd": 64.38,
+              "word": " hiervon",
+              "probability": 0.7915780246257782
+            },
+            {
+              "start": 64.38,
+              "end": 64.54,
+              "relStart": 64.38,
+              "relEnd": 64.54,
+              "word": " und",
+              "probability": 0.9437865614891052
+            },
+            {
+              "start": 64.54,
+              "end": 64.66,
+              "relStart": 64.54,
+              "relEnd": 64.66,
+              "word": " ein",
+              "probability": 0.823607325553894
+            },
+            {
+              "start": 64.66,
+              "end": 64.84,
+              "relStart": 64.66,
+              "relEnd": 64.84,
+              "word": " bisschen",
+              "probability": 0.9936635494232178
+            },
+            {
+              "start": 64.84,
+              "end": 64.98,
+              "relStart": 64.84,
+              "relEnd": 64.98,
+              "word": " da.",
+              "probability": 0.9100571870803833
+            }
+          ]
+        }
+      ],
+      "label": "chunk_000_065"
+    },
+    {
+      "chunk": 2,
+      "start": 63.0,
+      "end": 125.0,
+      "crop": [
+        63.0,
+        125.0
+      ],
+      "sampleRange16k": [
+        1008000,
+        2000000
+      ],
+      "segmentCount": 11,
+      "segments": [
+        {
+          "start": 63.0,
+          "end": 92.76,
+          "relStart": 0.0,
+          "relEnd": 29.76,
+          "text": "und ein bisschen hiervon und ein bisschen davon und dies und dies und dies und das und das und das und",
+          "rawText": " und ein bisschen hiervon und ein bisschen davon und dies und dies und dies und das und das und das und",
+          "avg_logprob": -0.17013523949517145,
+          "no_speech_prob": 0.1590069979429245,
+          "compression_ratio": 13.208955223880597,
+          "words": [
+            {
+              "start": 63.0,
+              "end": 63.44,
+              "relStart": 0.0,
+              "relEnd": 0.44,
+              "word": " und",
+              "probability": 0.049880120903253555
+            },
+            {
+              "start": 63.44,
+              "end": 63.6,
+              "relStart": 0.44,
+              "relEnd": 0.6,
+              "word": " ein",
+              "probability": 0.5250498652458191
+            },
+            {
+              "start": 63.6,
+              "end": 63.88,
+              "relStart": 0.6,
+              "relEnd": 0.88,
+              "word": " bisschen",
+              "probability": 0.9859673380851746
+            },
+            {
+              "start": 63.88,
+              "end": 64.4,
+              "relStart": 0.88,
+              "relEnd": 1.4,
+              "word": " hiervon",
+              "probability": 0.6549471318721771
+            },
+            {
+              "start": 64.4,
+              "end": 64.54,
+              "relStart": 1.4,
+              "relEnd": 1.54,
+              "word": " und",
+              "probability": 0.8497386574745178
+            },
+            {
+              "start": 64.54,
+              "end": 64.64,
+              "relStart": 1.54,
+              "relEnd": 1.64,
+              "word": " ein",
+              "probability": 0.6710665225982666
+            },
+            {
+              "start": 64.64,
+              "end": 64.86,
+              "relStart": 1.64,
+              "relEnd": 1.86,
+              "word": " bisschen",
+              "probability": 0.9945348501205444
+            },
+            {
+              "start": 64.86,
+              "end": 65.4,
+              "relStart": 1.86,
+              "relEnd": 2.4,
+              "word": " davon",
+              "probability": 0.7385709285736084
+            },
+            {
+              "start": 65.4,
+              "end": 65.58,
+              "relStart": 2.4,
+              "relEnd": 2.58,
+              "word": " und",
+              "probability": 0.8332617878913879
+            },
+            {
+              "start": 65.58,
+              "end": 65.84,
+              "relStart": 2.58,
+              "relEnd": 2.84,
+              "word": " dies",
+              "probability": 0.9352360367774963
+            },
+            {
+              "start": 65.84,
+              "end": 66.02,
+              "relStart": 2.84,
+              "relEnd": 3.02,
+              "word": " und",
+              "probability": 0.9748159646987915
+            },
+            {
+              "start": 66.02,
+              "end": 67.02,
+              "relStart": 3.02,
+              "relEnd": 4.02,
+              "word": " dies",
+              "probability": 0.9895126223564148
+            },
+            {
+              "start": 67.02,
+              "end": 80.52,
+              "relStart": 4.02,
+              "relEnd": 17.52,
+              "word": " und",
+              "probability": 0.9246737360954285
+            },
+            {
+              "start": 80.52,
+              "end": 80.52,
+              "relStart": 17.52,
+              "relEnd": 17.52,
+              "word": " dies",
+              "probability": 0.970858633518219
+            },
+            {
+              "start": 80.52,
+              "end": 81.98,
+              "relStart": 17.52,
+              "relEnd": 18.98,
+              "word": " und",
+              "probability": 0.5851404666900635
+            },
+            {
+              "start": 81.98,
+              "end": 81.98,
+              "relStart": 18.98,
+              "relEnd": 18.98,
+              "word": " das",
+              "probability": 0.9074403047561646
+            },
+            {
+              "start": 81.98,
+              "end": 82.12,
+              "relStart": 18.98,
+              "relEnd": 19.12,
+              "word": " und",
+              "probability": 0.8311055898666382
+            },
+            {
+              "start": 82.12,
+              "end": 82.12,
+              "relStart": 19.12,
+              "relEnd": 19.12,
+              "word": " das",
+              "probability": 0.9596072435379028
+            },
+            {
+              "start": 82.12,
+              "end": 92.04,
+              "relStart": 19.12,
+              "relEnd": 29.04,
+              "word": " und",
+              "probability": 0.81269371509552
+            },
+            {
+              "start": 92.04,
+              "end": 92.32,
+              "relStart": 29.04,
+              "relEnd": 29.32,
+              "word": " das",
+              "probability": 0.8928033709526062
+            },
+            {
+              "start": 92.32,
+              "end": 92.76,
+              "relStart": 29.32,
+              "relEnd": 29.76,
+              "word": " und",
+              "probability": 0.6723476648330688
+            }
+          ]
+        },
+        {
+          "start": 92.76,
+          "end": 94.86,
+          "relStart": 29.76,
+          "relEnd": 31.86,
+          "text": "Das ist doch meine Seifenblase.",
+          "rawText": " Das ist doch meine Seifenblase.",
+          "avg_logprob": -0.234844648811434,
+          "no_speech_prob": 0.03949776664376259,
+          "compression_ratio": 1.6363636363636365,
+          "words": [
+            {
+              "start": 92.76,
+              "end": 93.1,
+              "relStart": 29.76,
+              "relEnd": 30.1,
+              "word": " Das",
+              "probability": 0.7123775482177734
+            },
+            {
+              "start": 93.1,
+              "end": 93.52,
+              "relStart": 30.1,
+              "relEnd": 30.52,
+              "word": " ist",
+              "probability": 0.9764136672019958
+            },
+            {
+              "start": 93.52,
+              "end": 93.68,
+              "relStart": 30.52,
+              "relEnd": 30.68,
+              "word": " doch",
+              "probability": 0.8863572478294373
+            },
+            {
+              "start": 93.68,
+              "end": 93.96,
+              "relStart": 30.68,
+              "relEnd": 30.96,
+              "word": " meine",
+              "probability": 0.5185086131095886
+            },
+            {
+              "start": 93.96,
+              "end": 94.86,
+              "relStart": 30.96,
+              "relEnd": 31.86,
+              "word": " Seifenblase.",
+              "probability": 0.9775464832782745
+            }
+          ]
+        },
+        {
+          "start": 95.1,
+          "end": 98.26,
+          "relStart": 32.1,
+          "relEnd": 35.26,
+          "text": "Ich hab's dir doch gesagt, es ist eben alles eine Frage der Technik.",
+          "rawText": " Ich hab's dir doch gesagt, es ist eben alles eine Frage der Technik.",
+          "avg_logprob": -0.234844648811434,
+          "no_speech_prob": 0.03949776664376259,
+          "compression_ratio": 1.6363636363636365,
+          "words": [
+            {
+              "start": 95.1,
+              "end": 95.12,
+              "relStart": 32.1,
+              "relEnd": 32.12,
+              "word": " Ich",
+              "probability": 0.7784026265144348
+            },
+            {
+              "start": 95.12,
+              "end": 95.48,
+              "relStart": 32.12,
+              "relEnd": 32.48,
+              "word": " hab's",
+              "probability": 0.8404498994350433
+            },
+            {
+              "start": 95.48,
+              "end": 95.62,
+              "relStart": 32.48,
+              "relEnd": 32.62,
+              "word": " dir",
+              "probability": 0.9586457014083862
+            },
+            {
+              "start": 95.62,
+              "end": 95.82,
+              "relStart": 32.62,
+              "relEnd": 32.82,
+              "word": " doch",
+              "probability": 0.974643886089325
+            },
+            {
+              "start": 95.82,
+              "end": 96.24,
+              "relStart": 32.82,
+              "relEnd": 33.24,
+              "word": " gesagt,",
+              "probability": 0.9978184700012207
+            },
+            {
+              "start": 96.38,
+              "end": 96.56,
+              "relStart": 33.38,
+              "relEnd": 33.56,
+              "word": " es",
+              "probability": 0.9447519183158875
+            },
+            {
+              "start": 96.56,
+              "end": 96.86,
+              "relStart": 33.56,
+              "relEnd": 33.86,
+              "word": " ist",
+              "probability": 0.995110809803009
+            },
+            {
+              "start": 96.86,
+              "end": 97.02,
+              "relStart": 33.86,
+              "relEnd": 34.02,
+              "word": " eben",
+              "probability": 0.8574459552764893
+            },
+            {
+              "start": 97.02,
+              "end": 97.4,
+              "relStart": 34.02,
+              "relEnd": 34.4,
+              "word": " alles",
+              "probability": 0.9839577674865723
+            },
+            {
+              "start": 97.4,
+              "end": 97.66,
+              "relStart": 34.4,
+              "relEnd": 34.66,
+              "word": " eine",
+              "probability": 0.9884631037712097
+            },
+            {
+              "start": 97.66,
+              "end": 97.9,
+              "relStart": 34.66,
+              "relEnd": 34.9,
+              "word": " Frage",
+              "probability": 0.9974837303161621
+            },
+            {
+              "start": 97.9,
+              "end": 98.2,
+              "relStart": 34.9,
+              "relEnd": 35.2,
+              "word": " der",
+              "probability": 0.9953137636184692
+            },
+            {
+              "start": 98.2,
+              "end": 98.26,
+              "relStart": 35.2,
+              "relEnd": 35.26,
+              "word": " Technik.",
+              "probability": 0.9988119006156921
+            }
+          ]
+        },
+        {
+          "start": 98.46,
+          "end": 99.62,
+          "relStart": 35.46,
+          "relEnd": 36.62,
+          "text": "Genau, die Technik.",
+          "rawText": " Genau, die Technik.",
+          "avg_logprob": -0.234844648811434,
+          "no_speech_prob": 0.03949776664376259,
+          "compression_ratio": 1.6363636363636365,
+          "words": [
+            {
+              "start": 98.46,
+              "end": 98.74,
+              "relStart": 35.46,
+              "relEnd": 35.74,
+              "word": " Genau,",
+              "probability": 0.9773787260055542
+            },
+            {
+              "start": 98.84,
+              "end": 99.0,
+              "relStart": 35.84,
+              "relEnd": 36.0,
+              "word": " die",
+              "probability": 0.9971416592597961
+            },
+            {
+              "start": 99.0,
+              "end": 99.62,
+              "relStart": 36.0,
+              "relEnd": 36.62,
+              "word": " Technik.",
+              "probability": 0.9987474083900452
+            }
+          ]
+        },
+        {
+          "start": 99.98,
+          "end": 100.98,
+          "relStart": 36.98,
+          "relEnd": 37.98,
+          "text": "Die Technik?",
+          "rawText": " Die Technik?",
+          "avg_logprob": -0.234844648811434,
+          "no_speech_prob": 0.03949776664376259,
+          "compression_ratio": 1.6363636363636365,
+          "words": [
+            {
+              "start": 99.98,
+              "end": 100.36,
+              "relStart": 36.98,
+              "relEnd": 37.36,
+              "word": " Die",
+              "probability": 0.9813069105148315
+            },
+            {
+              "start": 100.36,
+              "end": 100.98,
+              "relStart": 37.36,
+              "relEnd": 37.98,
+              "word": " Technik?",
+              "probability": 0.9991435408592224
+            }
+          ]
+        },
+        {
+          "start": 102.54,
+          "end": 105.9,
+          "relStart": 39.54,
+          "relEnd": 42.9,
+          "text": "SpongeBob, du glaubst doch nicht etwa, dass ich dieses...",
+          "rawText": " SpongeBob, du glaubst doch nicht etwa, dass ich dieses...",
+          "avg_logprob": -0.234844648811434,
+          "no_speech_prob": 0.03949776664376259,
+          "compression_ratio": 1.6363636363636365,
+          "words": [
+            {
+              "start": 102.54,
+              "end": 103.14,
+              "relStart": 39.54,
+              "relEnd": 40.14,
+              "word": " SpongeBob,",
+              "probability": 0.5433383099734783
+            },
+            {
+              "start": 103.34,
+              "end": 103.44,
+              "relStart": 40.34,
+              "relEnd": 40.44,
+              "word": " du",
+              "probability": 0.9646068811416626
+            },
+            {
+              "start": 103.44,
+              "end": 103.78,
+              "relStart": 40.44,
+              "relEnd": 40.78,
+              "word": " glaubst",
+              "probability": 0.9936909377574921
+            },
+            {
+              "start": 103.78,
+              "end": 103.9,
+              "relStart": 40.78,
+              "relEnd": 40.9,
+              "word": " doch",
+              "probability": 0.9802489876747131
+            },
+            {
+              "start": 103.9,
+              "end": 104.1,
+              "relStart": 40.9,
+              "relEnd": 41.1,
+              "word": " nicht",
+              "probability": 0.9943379759788513
+            },
+            {
+              "start": 104.1,
+              "end": 104.38,
+              "relStart": 41.1,
+              "relEnd": 41.38,
+              "word": " etwa,",
+              "probability": 0.992591142654419
+            },
+            {
+              "start": 104.56,
+              "end": 104.62,
+              "relStart": 41.56,
+              "relEnd": 41.62,
+              "word": " dass",
+              "probability": 0.9924290776252747
+            },
+            {
+              "start": 104.62,
+              "end": 105.76,
+              "relStart": 41.62,
+              "relEnd": 42.76,
+              "word": " ich",
+              "probability": 0.9976117610931396
+            },
+            {
+              "start": 105.76,
+              "end": 105.9,
+              "relStart": 42.76,
+              "relEnd": 42.9,
+              "word": " dieses...",
+              "probability": 0.5602714940905571
+            }
+          ]
+        },
+        {
+          "start": 105.9,
+          "end": 109.14,
+          "relStart": 42.9,
+          "relEnd": 46.14,
+          "text": "...wunderbare Kunstwerk mit deiner Hilfe erschaffen habe.",
+          "rawText": " ...wunderbare Kunstwerk mit deiner Hilfe erschaffen habe.",
+          "avg_logprob": -0.234844648811434,
+          "no_speech_prob": 0.03949776664376259,
+          "compression_ratio": 1.6363636363636365,
+          "words": [
+            {
+              "start": 105.9,
+              "end": 107.06,
+              "relStart": 42.9,
+              "relEnd": 44.06,
+              "word": " ...wunderbare",
+              "probability": 0.723634883761406
+            },
+            {
+              "start": 107.06,
+              "end": 107.6,
+              "relStart": 44.06,
+              "relEnd": 44.6,
+              "word": " Kunstwerk",
+              "probability": 0.9984856843948364
+            },
+            {
+              "start": 107.6,
+              "end": 107.84,
+              "relStart": 44.6,
+              "relEnd": 44.84,
+              "word": " mit",
+              "probability": 0.9943639039993286
+            },
+            {
+              "start": 107.84,
+              "end": 108.04,
+              "relStart": 44.84,
+              "relEnd": 45.04,
+              "word": " deiner",
+              "probability": 0.9751676023006439
+            },
+            {
+              "start": 108.04,
+              "end": 108.36,
+              "relStart": 45.04,
+              "relEnd": 45.36,
+              "word": " Hilfe",
+              "probability": 0.9280946850776672
+            },
+            {
+              "start": 108.36,
+              "end": 108.8,
+              "relStart": 45.36,
+              "relEnd": 45.8,
+              "word": " erschaffen",
+              "probability": 0.9874985218048096
+            },
+            {
+              "start": 108.8,
+              "end": 109.14,
+              "relStart": 45.8,
+              "relEnd": 46.14,
+              "word": " habe.",
+              "probability": 0.9932199120521545
+            }
+          ]
+        },
+        {
+          "start": 110.24,
+          "end": 112.78,
+          "relStart": 47.24,
+          "relEnd": 49.78,
+          "text": "Also bitte, das hab ich in den Genen.",
+          "rawText": " Also bitte, das hab ich in den Genen.",
+          "avg_logprob": -0.234844648811434,
+          "no_speech_prob": 0.03949776664376259,
+          "compression_ratio": 1.6363636363636365,
+          "words": [
+            {
+              "start": 110.24,
+              "end": 110.84,
+              "relStart": 47.24,
+              "relEnd": 47.84,
+              "word": " Also",
+              "probability": 0.6384537220001221
+            },
+            {
+              "start": 110.84,
+              "end": 111.16,
+              "relStart": 47.84,
+              "relEnd": 48.16,
+              "word": " bitte,",
+              "probability": 0.9552592039108276
+            },
+            {
+              "start": 111.16,
+              "end": 111.36,
+              "relStart": 48.16,
+              "relEnd": 48.36,
+              "word": " das",
+              "probability": 0.9823420643806458
+            },
+            {
+              "start": 111.36,
+              "end": 111.58,
+              "relStart": 48.36,
+              "relEnd": 48.58,
+              "word": " hab",
+              "probability": 0.8001272082328796
+            },
+            {
+              "start": 111.58,
+              "end": 111.76,
+              "relStart": 48.58,
+              "relEnd": 48.76,
+              "word": " ich",
+              "probability": 0.7934122681617737
+            },
+            {
+              "start": 111.76,
+              "end": 111.92,
+              "relStart": 48.76,
+              "relEnd": 48.92,
+              "word": " in",
+              "probability": 0.9977401494979858
+            },
+            {
+              "start": 111.92,
+              "end": 112.2,
+              "relStart": 48.92,
+              "relEnd": 49.2,
+              "word": " den",
+              "probability": 0.9936625957489014
+            },
+            {
+              "start": 112.2,
+              "end": 112.78,
+              "relStart": 49.2,
+              "relEnd": 49.78,
+              "word": " Genen.",
+              "probability": 0.9709898829460144
+            }
+          ]
+        },
+        {
+          "start": 113.8,
+          "end": 116.86,
+          "relStart": 50.8,
+          "relEnd": 53.86,
+          "text": "Tadeus hat Gene! Tadeus hat Gene!",
+          "rawText": " Tadeus hat Gene! Tadeus hat Gene!",
+          "avg_logprob": -0.234844648811434,
+          "no_speech_prob": 0.03949776664376259,
+          "compression_ratio": 1.6363636363636365,
+          "words": [
+            {
+              "start": 113.8,
+              "end": 114.4,
+              "relStart": 50.8,
+              "relEnd": 51.4,
+              "word": " Tadeus",
+              "probability": 0.7096173365910848
+            },
+            {
+              "start": 114.4,
+              "end": 114.7,
+              "relStart": 51.4,
+              "relEnd": 51.7,
+              "word": " hat",
+              "probability": 0.991787850856781
+            },
+            {
+              "start": 114.7,
+              "end": 115.16,
+              "relStart": 51.7,
+              "relEnd": 52.16,
+              "word": " Gene!",
+              "probability": 0.9602950811386108
+            },
+            {
+              "start": 115.52,
+              "end": 116.12,
+              "relStart": 52.52,
+              "relEnd": 53.12,
+              "word": " Tadeus",
+              "probability": 0.7790630956490835
+            },
+            {
+              "start": 116.12,
+              "end": 116.32,
+              "relStart": 53.12,
+              "relEnd": 53.32,
+              "word": " hat",
+              "probability": 0.9938965439796448
+            },
+            {
+              "start": 116.32,
+              "end": 116.86,
+              "relStart": 53.32,
+              "relEnd": 53.86,
+              "word": " Gene!",
+              "probability": 0.9951624274253845
+            }
+          ]
+        },
+        {
+          "start": 117.1,
+          "end": 118.5,
+          "relStart": 54.1,
+          "relEnd": 55.5,
+          "text": "Danke, danke, danke.",
+          "rawText": " Danke, danke, danke.",
+          "avg_logprob": -0.234844648811434,
+          "no_speech_prob": 0.03949776664376259,
+          "compression_ratio": 1.6363636363636365,
+          "words": [
+            {
+              "start": 117.1,
+              "end": 117.7,
+              "relStart": 54.1,
+              "relEnd": 54.7,
+              "word": " Danke,",
+              "probability": 0.8824256062507629
+            },
+            {
+              "start": 117.7,
+              "end": 118.16,
+              "relStart": 54.7,
+              "relEnd": 55.16,
+              "word": " danke,",
+              "probability": 0.9695806503295898
+            },
+            {
+              "start": 118.16,
+              "end": 118.5,
+              "relStart": 55.16,
+              "relEnd": 55.5,
+              "word": " danke.",
+              "probability": 0.9930307269096375
+            }
+          ]
+        },
+        {
+          "start": 122.76,
+          "end": 124.0,
+          "relStart": 59.76,
+          "relEnd": 61.0,
+          "text": "Das war's für heute, bis zum nächsten Mal!",
+          "rawText": " Das war's für heute, bis zum nächsten Mal!",
+          "avg_logprob": -0.9575277396610805,
+          "no_speech_prob": 0.8936432003974915,
+          "compression_ratio": 0.8461538461538461,
+          "words": [
+            {
+              "start": 122.76,
+              "end": 122.76,
+              "relStart": 59.76,
+              "relEnd": 59.76,
+              "word": " Das",
+              "probability": 0.011617964133620262
+            },
+            {
+              "start": 122.76,
+              "end": 122.76,
+              "relStart": 59.76,
+              "relEnd": 59.76,
+              "word": " war's",
+              "probability": 0.4270947128534317
+            },
+            {
+              "start": 122.76,
+              "end": 122.8,
+              "relStart": 59.76,
+              "relEnd": 59.8,
+              "word": " für",
+              "probability": 0.682818591594696
+            },
+            {
+              "start": 122.8,
+              "end": 122.8,
+              "relStart": 59.8,
+              "relEnd": 59.8,
+              "word": " heute,",
+              "probability": 0.9167507886886597
+            },
+            {
+              "start": 122.88,
+              "end": 122.88,
+              "relStart": 59.88,
+              "relEnd": 59.88,
+              "word": " bis",
+              "probability": 0.4353249967098236
+            },
+            {
+              "start": 122.88,
+              "end": 123.28,
+              "relStart": 59.88,
+              "relEnd": 60.28,
+              "word": " zum",
+              "probability": 0.5651529431343079
+            },
+            {
+              "start": 123.28,
+              "end": 123.76,
+              "relStart": 60.28,
+              "relEnd": 60.76,
+              "word": " nächsten",
+              "probability": 0.9857732653617859
+            },
+            {
+              "start": 123.76,
+              "end": 124.0,
+              "relStart": 60.76,
+              "relEnd": 61.0,
+              "word": " Mal!",
+              "probability": 0.8347541689872742
+            }
+          ]
+        }
+      ],
+      "label": "chunk_063_125"
+    },
+    {
+      "chunk": 3,
+      "start": 123.0,
+      "end": 185.0,
+      "crop": [
+        123.0,
+        185.0
+      ],
+      "sampleRange16k": [
+        1968000,
+        2960000
+      ],
+      "segmentCount": 2,
+      "segments": [
+        {
+          "start": 127.26,
+          "end": 152.44,
+          "relStart": 4.26,
+          "relEnd": 29.44,
+          "text": "Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus,",
+          "rawText": " Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus,",
+          "avg_logprob": -0.23796095279976726,
+          "no_speech_prob": 0.021761614829301834,
+          "compression_ratio": 9.631578947368421,
+          "words": [
+            {
+              "start": 127.26,
+              "end": 128.46,
+              "relStart": 4.26,
+              "relEnd": 5.46,
+              "word": " Tadeus,",
+              "probability": 0.5580766002337137
+            },
+            {
+              "start": 128.46,
+              "end": 129.32,
+              "relStart": 5.46,
+              "relEnd": 6.32,
+              "word": " Tadeus,",
+              "probability": 0.9802101254463196
+            },
+            {
+              "start": 129.32,
+              "end": 130.16,
+              "relStart": 6.32,
+              "relEnd": 7.16,
+              "word": " Tadeus,",
+              "probability": 0.988629957040151
+            },
+            {
+              "start": 130.16,
+              "end": 131.0,
+              "relStart": 7.16,
+              "relEnd": 8.0,
+              "word": " Tadeus,",
+              "probability": 0.9652133385340372
+            },
+            {
+              "start": 131.04,
+              "end": 131.34,
+              "relStart": 8.04,
+              "relEnd": 8.34,
+              "word": " Tadeus,",
+              "probability": 0.9443085988362631
+            },
+            {
+              "start": 131.34,
+              "end": 131.9,
+              "relStart": 8.34,
+              "relEnd": 8.9,
+              "word": " Tadeus,",
+              "probability": 0.9475274284680685
+            },
+            {
+              "start": 131.94,
+              "end": 132.84,
+              "relStart": 8.94,
+              "relEnd": 9.84,
+              "word": " Tadeus,",
+              "probability": 0.9691210389137268
+            },
+            {
+              "start": 132.84,
+              "end": 133.12,
+              "relStart": 9.84,
+              "relEnd": 10.12,
+              "word": " Tadeus,",
+              "probability": 0.9758303960164388
+            },
+            {
+              "start": 133.12,
+              "end": 133.76,
+              "relStart": 10.12,
+              "relEnd": 10.76,
+              "word": " Tadeus,",
+              "probability": 0.9786465764045715
+            },
+            {
+              "start": 133.76,
+              "end": 133.76,
+              "relStart": 10.76,
+              "relEnd": 10.76,
+              "word": " Tadeus,",
+              "probability": 0.9838703870773315
+            },
+            {
+              "start": 133.78,
+              "end": 134.9,
+              "relStart": 10.78,
+              "relEnd": 11.9,
+              "word": " Tadeus,",
+              "probability": 0.9815719127655029
+            },
+            {
+              "start": 135.26,
+              "end": 135.5,
+              "relStart": 12.26,
+              "relEnd": 12.5,
+              "word": " Tadeus,",
+              "probability": 0.9865254759788513
+            },
+            {
+              "start": 135.5,
+              "end": 135.5,
+              "relStart": 12.5,
+              "relEnd": 12.5,
+              "word": " Tadeus,",
+              "probability": 0.9869737029075623
+            },
+            {
+              "start": 135.54,
+              "end": 135.54,
+              "relStart": 12.54,
+              "relEnd": 12.54,
+              "word": " Tadeus,",
+              "probability": 0.9912208318710327
+            },
+            {
+              "start": 135.84,
+              "end": 136.72,
+              "relStart": 12.84,
+              "relEnd": 13.72,
+              "word": " Tadeus,",
+              "probability": 0.9928431510925293
+            },
+            {
+              "start": 136.72,
+              "end": 137.88,
+              "relStart": 13.72,
+              "relEnd": 14.88,
+              "word": " Tadeus,",
+              "probability": 0.9948224425315857
+            },
+            {
+              "start": 137.88,
+              "end": 138.88,
+              "relStart": 14.88,
+              "relEnd": 15.88,
+              "word": " Tadeus,",
+              "probability": 0.9953578313191732
+            },
+            {
+              "start": 138.9,
+              "end": 139.66,
+              "relStart": 15.9,
+              "relEnd": 16.66,
+              "word": " Tadeus,",
+              "probability": 0.9953769246737162
+            },
+            {
+              "start": 139.76,
+              "end": 140.74,
+              "relStart": 16.76,
+              "relEnd": 17.74,
+              "word": " Tadeus,",
+              "probability": 0.9964331984519958
+            },
+            {
+              "start": 140.78,
+              "end": 141.62,
+              "relStart": 17.78,
+              "relEnd": 18.62,
+              "word": " Tadeus,",
+              "probability": 0.9965344270070394
+            },
+            {
+              "start": 141.68,
+              "end": 142.48,
+              "relStart": 18.68,
+              "relEnd": 19.48,
+              "word": " Tadeus,",
+              "probability": 0.9957943558692932
+            },
+            {
+              "start": 142.54,
+              "end": 145.08,
+              "relStart": 19.54,
+              "relEnd": 22.08,
+              "word": " Tadeus,",
+              "probability": 0.9965087175369263
+            },
+            {
+              "start": 145.08,
+              "end": 152.44,
+              "relStart": 22.08,
+              "relEnd": 29.44,
+              "word": " Tadeus,",
+              "probability": 0.9966563582420349
+            }
+          ]
+        },
+        {
+          "start": 154.02,
+          "end": 182.22,
+          "relStart": 31.02,
+          "relEnd": 59.22,
+          "text": "Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus",
+          "rawText": " Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus, Tadeus",
+          "avg_logprob": -0.08969705369737413,
+          "no_speech_prob": 0.016927219927310944,
+          "compression_ratio": 21.238095238095237,
+          "words": [
+            {
+              "start": 154.02,
+              "end": 154.78,
+              "relStart": 31.02,
+              "relEnd": 31.78,
+              "word": " Tadeus,",
+              "probability": 0.6883170406023661
+            },
+            {
+              "start": 154.78,
+              "end": 155.54,
+              "relStart": 31.78,
+              "relEnd": 32.54,
+              "word": " Tadeus,",
+              "probability": 0.9139418999354044
+            },
+            {
+              "start": 155.54,
+              "end": 155.6,
+              "relStart": 32.54,
+              "relEnd": 32.6,
+              "word": " Tadeus,",
+              "probability": 0.9724047581354777
+            },
+            {
+              "start": 155.6,
+              "end": 157.1,
+              "relStart": 32.6,
+              "relEnd": 34.1,
+              "word": " Tadeus,",
+              "probability": 0.95895783106486
+            },
+            {
+              "start": 157.1,
+              "end": 157.98,
+              "relStart": 34.1,
+              "relEnd": 34.98,
+              "word": " Tadeus,",
+              "probability": 0.9765029152234396
+            },
+            {
+              "start": 158.28,
+              "end": 159.06,
+              "relStart": 35.28,
+              "relEnd": 36.06,
+              "word": " Tadeus,",
+              "probability": 0.9858969449996948
+            },
+            {
+              "start": 159.06,
+              "end": 159.98,
+              "relStart": 36.06,
+              "relEnd": 36.98,
+              "word": " Tadeus,",
+              "probability": 0.9882249434789022
+            },
+            {
+              "start": 159.98,
+              "end": 161.74,
+              "relStart": 36.98,
+              "relEnd": 38.74,
+              "word": " Tadeus,",
+              "probability": 0.9921449224154154
+            },
+            {
+              "start": 161.86,
+              "end": 162.62,
+              "relStart": 38.86,
+              "relEnd": 39.62,
+              "word": " Tadeus,",
+              "probability": 0.9911956985791525
+            },
+            {
+              "start": 162.62,
+              "end": 163.48,
+              "relStart": 39.62,
+              "relEnd": 40.48,
+              "word": " Tadeus,",
+              "probability": 0.9929867386817932
+            },
+            {
+              "start": 163.48,
+              "end": 163.86,
+              "relStart": 40.48,
+              "relEnd": 40.86,
+              "word": " Tadeus,",
+              "probability": 0.9931667447090149
+            },
+            {
+              "start": 163.86,
+              "end": 164.4,
+              "relStart": 40.86,
+              "relEnd": 41.4,
+              "word": " Tadeus,",
+              "probability": 0.9909844398498535
+            },
+            {
+              "start": 164.5,
+              "end": 164.5,
+              "relStart": 41.5,
+              "relEnd": 41.5,
+              "word": " Tadeus,",
+              "probability": 0.9908725221951803
+            },
+            {
+              "start": 165.8,
+              "end": 165.8,
+              "relStart": 42.8,
+              "relEnd": 42.8,
+              "word": " Tadeus,",
+              "probability": 0.989872932434082
+            },
+            {
+              "start": 165.8,
+              "end": 165.8,
+              "relStart": 42.8,
+              "relEnd": 42.8,
+              "word": " Tadeus,",
+              "probability": 0.9912049770355225
+            },
+            {
+              "start": 165.8,
+              "end": 165.82,
+              "relStart": 42.8,
+              "relEnd": 42.82,
+              "word": " Tadeus,",
+              "probability": 0.9930160442988077
+            },
+            {
+              "start": 165.82,
+              "end": 165.82,
+              "relStart": 42.82,
+              "relEnd": 42.82,
+              "word": " Tadeus,",
+              "probability": 0.9936808546384176
+            },
+            {
+              "start": 165.82,
+              "end": 165.82,
+              "relStart": 42.82,
+              "relEnd": 42.82,
+              "word": " Tadeus,",
+              "probability": 0.9938933849334717
+            },
+            {
+              "start": 165.82,
+              "end": 165.82,
+              "relStart": 42.82,
+              "relEnd": 42.82,
+              "word": " Tadeus,",
+              "probability": 0.9937466780344645
+            },
+            {
+              "start": 165.82,
+              "end": 165.82,
+              "relStart": 42.82,
+              "relEnd": 42.82,
+              "word": " Tadeus,",
+              "probability": 0.9932432373364767
+            },
+            {
+              "start": 165.82,
+              "end": 165.86,
+              "relStart": 42.82,
+              "relEnd": 42.86,
+              "word": " Tadeus,",
+              "probability": 0.9942975838979086
+            },
+            {
+              "start": 165.86,
+              "end": 166.36,
+              "relStart": 42.86,
+              "relEnd": 43.36,
+              "word": " Tadeus,",
+              "probability": 0.9942040046056112
+            },
+            {
+              "start": 166.36,
+              "end": 166.8,
+              "relStart": 43.36,
+              "relEnd": 43.8,
+              "word": " Tadeus,",
+              "probability": 0.9944695631663004
+            },
+            {
+              "start": 167.06,
+              "end": 168.24,
+              "relStart": 44.06,
+              "relEnd": 45.24,
+              "word": " Tadeus,",
+              "probability": 0.9941565791765848
+            },
+            {
+              "start": 168.24,
+              "end": 169.26,
+              "relStart": 45.24,
+              "relEnd": 46.26,
+              "word": " Tadeus,",
+              "probability": 0.9948333700497946
+            },
+            {
+              "start": 169.26,
+              "end": 170.48,
+              "relStart": 46.26,
+              "relEnd": 47.48,
+              "word": " Tadeus,",
+              "probability": 0.9932752251625061
+            },
+            {
+              "start": 170.48,
+              "end": 170.48,
+              "relStart": 47.48,
+              "relEnd": 47.48,
+              "word": " Tadeus,",
+              "probability": 0.9935224453608195
+            },
+            {
+              "start": 170.48,
+              "end": 170.48,
+              "relStart": 47.48,
+              "relEnd": 47.48,
+              "word": " Tadeus,",
+              "probability": 0.9945290287335714
+            },
+            {
+              "start": 170.48,
+              "end": 170.48,
+              "relStart": 47.48,
+              "relEnd": 47.48,
+              "word": " Tadeus,",
+              "probability": 0.9958506226539612
+            },
+            {
+              "start": 170.48,
+              "end": 170.62,
+              "relStart": 47.48,
+              "relEnd": 47.62,
+              "word": " Tadeus,",
+              "probability": 0.9953068296114603
+            },
+            {
+              "start": 171.08,
+              "end": 171.32,
+              "relStart": 48.08,
+              "relEnd": 48.32,
+              "word": " Tadeus,",
+              "probability": 0.9927827914555868
+            },
+            {
+              "start": 171.34,
+              "end": 171.34,
+              "relStart": 48.34,
+              "relEnd": 48.34,
+              "word": " Tadeus,",
+              "probability": 0.9950166742006937
+            },
+            {
+              "start": 171.38,
+              "end": 171.38,
+              "relStart": 48.38,
+              "relEnd": 48.38,
+              "word": " Tadeus,",
+              "probability": 0.9933171272277832
+            },
+            {
+              "start": 171.38,
+              "end": 171.38,
+              "relStart": 48.38,
+              "relEnd": 48.38,
+              "word": " Tadeus,",
+              "probability": 0.9953238368034363
+            },
+            {
+              "start": 171.38,
+              "end": 172.58,
+              "relStart": 48.38,
+              "relEnd": 49.58,
+              "word": " Tadeus,",
+              "probability": 0.9961716532707214
+            },
+            {
+              "start": 172.58,
+              "end": 172.58,
+              "relStart": 49.58,
+              "relEnd": 49.58,
+              "word": " Tadeus,",
+              "probability": 0.9968324502309164
+            },
+            {
+              "start": 172.58,
+              "end": 172.58,
+              "relStart": 49.58,
+              "relEnd": 49.58,
+              "word": " Tadeus,",
+              "probability": 0.9966225226720175
+            },
+            {
+              "start": 172.58,
+              "end": 172.94,
+              "relStart": 49.58,
+              "relEnd": 49.94,
+              "word": " Tadeus,",
+              "probability": 0.9944963653882345
+            },
+            {
+              "start": 173.12,
+              "end": 173.46,
+              "relStart": 50.12,
+              "relEnd": 50.46,
+              "word": " Tadeus,",
+              "probability": 0.9926872054735819
+            },
+            {
+              "start": 173.46,
+              "end": 173.46,
+              "relStart": 50.46,
+              "relEnd": 50.46,
+              "word": " Tadeus,",
+              "probability": 0.9914664626121521
+            },
+            {
+              "start": 174.36,
+              "end": 174.72,
+              "relStart": 51.36,
+              "relEnd": 51.72,
+              "word": " Tadeus,",
+              "probability": 0.9899964133898417
+            },
+            {
+              "start": 174.72,
+              "end": 175.0,
+              "relStart": 51.72,
+              "relEnd": 52.0,
+              "word": " Tadeus,",
+              "probability": 0.9938348333040873
+            },
+            {
+              "start": 175.0,
+              "end": 175.0,
+              "relStart": 52.0,
+              "relEnd": 52.0,
+              "word": " Tadeus,",
+              "probability": 0.9957148830095927
+            },
+            {
+              "start": 175.66,
+              "end": 175.66,
+              "relStart": 52.66,
+              "relEnd": 52.66,
+              "word": " Tadeus,",
+              "probability": 0.9966348807017008
+            },
+            {
+              "start": 175.66,
+              "end": 175.92,
+              "relStart": 52.66,
+              "relEnd": 52.92,
+              "word": " Tadeus,",
+              "probability": 0.9968679944674174
+            },
+            {
+              "start": 176.1,
+              "end": 176.22,
+              "relStart": 53.1,
+              "relEnd": 53.22,
+              "word": " Tadeus,",
+              "probability": 0.9969284733136495
+            },
+            {
+              "start": 176.3,
+              "end": 176.3,
+              "relStart": 53.3,
+              "relEnd": 53.3,
+              "word": " Tadeus,",
+              "probability": 0.9968087474505106
+            },
+            {
+              "start": 176.3,
+              "end": 177.08,
+              "relStart": 53.3,
+              "relEnd": 54.08,
+              "word": " Tadeus,",
+              "probability": 0.9962577422459921
+            },
+            {
+              "start": 177.08,
+              "end": 177.08,
+              "relStart": 54.08,
+              "relEnd": 54.08,
+              "word": " Tadeus,",
+              "probability": 0.9964327017466227
+            },
+            {
+              "start": 177.08,
+              "end": 177.08,
+              "relStart": 54.08,
+              "relEnd": 54.08,
+              "word": " Tadeus,",
+              "probability": 0.995483915011088
+            },
+            {
+              "start": 177.08,
+              "end": 177.08,
+              "relStart": 54.08,
+              "relEnd": 54.08,
+              "word": " Tadeus,",
+              "probability": 0.9937647779782613
+            },
+            {
+              "start": 177.08,
+              "end": 177.16,
+              "relStart": 54.08,
+              "relEnd": 54.16,
+              "word": " Tadeus,",
+              "probability": 0.993687093257904
+            },
+            {
+              "start": 177.16,
+              "end": 178.72,
+              "relStart": 54.16,
+              "relEnd": 55.72,
+              "word": " Tadeus,",
+              "probability": 0.9940316081047058
+            },
+            {
+              "start": 178.72,
+              "end": 178.94,
+              "relStart": 55.72,
+              "relEnd": 55.94,
+              "word": " Tadeus,",
+              "probability": 0.9933987259864807
+            },
+            {
+              "start": 179.1,
+              "end": 181.12,
+              "relStart": 56.1,
+              "relEnd": 58.12,
+              "word": " Tadeus,",
+              "probability": 0.9945454398790995
+            },
+            {
+              "start": 182.22,
+              "end": 182.22,
+              "relStart": 59.22,
+              "relEnd": 59.22,
+              "word": " Tadeus",
+              "probability": 0.9937690893809
+            }
+          ]
+        }
+      ],
+      "label": "chunk_123_185"
+    },
+    {
+      "chunk": 4,
+      "start": 183.0,
+      "end": 222.841938,
+      "crop": [
+        183.0,
+        222.841938
+      ],
+      "sampleRange16k": [
+        2928000,
+        3565471
+      ],
+      "segmentCount": 2,
+      "segments": [
+        {
+          "start": 211.58,
+          "end": 212.98,
+          "relStart": 28.58,
+          "relEnd": 29.98,
+          "text": "Brrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",
+          "rawText": " Brrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",
+          "avg_logprob": -0.10842763370937772,
+          "no_speech_prob": 0.28561341762542725,
+          "compression_ratio": 31.857142857142858,
+          "words": [
+            {
+              "start": 211.58,
+              "end": 212.98,
+              "relStart": 28.58,
+              "relEnd": 29.98,
+              "word": " Brrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",
+              "probability": 0.9158137807530673
+            }
+          ]
+        },
+        {
+          "start": 212.98,
+          "end": 221.44,
+          "relStart": 29.98,
+          "relEnd": 38.44,
+          "text": "Das war's für heute, bis zum nächsten Mal.",
+          "rawText": " Das war's für heute, bis zum nächsten Mal.",
+          "avg_logprob": -0.9346510938235691,
+          "no_speech_prob": 0.7990776300430298,
+          "compression_ratio": 0.8461538461538461,
+          "words": [
+            {
+              "start": 212.98,
+              "end": 213.52,
+              "relStart": 29.98,
+              "relEnd": 30.52,
+              "word": " Das",
+              "probability": 0.010698700323700905
+            },
+            {
+              "start": 213.52,
+              "end": 217.58,
+              "relStart": 30.52,
+              "relEnd": 34.58,
+              "word": " war's",
+              "probability": 0.5200007408857346
+            },
+            {
+              "start": 217.58,
+              "end": 217.64,
+              "relStart": 34.58,
+              "relEnd": 34.64,
+              "word": " für",
+              "probability": 0.7116075158119202
+            },
+            {
+              "start": 217.64,
+              "end": 217.64,
+              "relStart": 34.64,
+              "relEnd": 34.64,
+              "word": " heute,",
+              "probability": 0.9192527532577515
+            },
+            {
+              "start": 217.64,
+              "end": 217.66,
+              "relStart": 34.64,
+              "relEnd": 34.66,
+              "word": " bis",
+              "probability": 0.35813868045806885
+            },
+            {
+              "start": 217.66,
+              "end": 221.44,
+              "relStart": 34.66,
+              "relEnd": 38.44,
+              "word": " zum",
+              "probability": 0.5328925251960754
+            },
+            {
+              "start": 221.44,
+              "end": 221.44,
+              "relStart": 38.44,
+              "relEnd": 38.44,
+              "word": " nächsten",
+              "probability": 0.985539436340332
+            },
+            {
+              "start": 221.44,
+              "end": 221.44,
+              "relStart": 38.44,
+              "relEnd": 38.44,
+              "word": " Mal.",
+              "probability": 0.8304508328437805
+            }
+          ]
+        }
+      ],
+      "label": "chunk_183_end"
+    }
+  ]
+}

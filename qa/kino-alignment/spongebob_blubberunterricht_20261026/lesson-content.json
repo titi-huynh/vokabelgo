@@ -61,6 +61,30 @@
       "vi": "Thaddäus, chú ý này! Kỹ thuật ấy!"
     },
     {
+      "id": 1600120,
+      "start": 39.29,
+      "end": 43.15,
+      "speaker": "SpongeBob",
+      "text": "Du hast nicht die richtige Technik.",
+      "vi": "Cậu chưa dùng đúng kỹ thuật."
+    },
+    {
+      "id": 1600121,
+      "start": 51.3,
+      "end": 52.62,
+      "speaker": "Thaddäus",
+      "text": "Dreimal nach rechts gucken.",
+      "vi": "Nhìn sang phải ba lần."
+    },
+    {
+      "id": 1600122,
+      "start": 53.18,
+      "end": 55.5,
+      "speaker": "Thaddäus",
+      "text": "Und jetzt geht's los, der Beckenstoß.",
+      "vi": "Và giờ bắt đầu nào, đẩy hông!"
+    },
+    {
       "id": 1600107,
       "start": 58.04,
       "end": 60.0,
@@ -75,6 +99,14 @@
       "speaker": "Thaddäus",
       "text": "Ich hab's nicht vergessen.",
       "vi": "Tôi đâu có quên."
+    },
+    {
+      "id": 1600123,
+      "start": 65.19,
+      "end": 67.91,
+      "speaker": "Thaddäus",
+      "text": "Und dies und dies und dies und das und das und das.",
+      "vi": "Rồi thế này, thế này, thế này, và thế kia, thế kia, thế kia."
     },
     {
       "id": 1600109,
@@ -155,6 +187,14 @@
       "speaker": "Thaddäus",
       "text": "Also bitte, das habe ich in den Genen.",
       "vi": "Thôi nào, tài này vốn có trong gen của tôi rồi."
+    },
+    {
+      "id": 1600124,
+      "start": 117.02,
+      "end": 118.5,
+      "speaker": "Thaddäus",
+      "text": "Danke, danke, danke!",
+      "vi": "Cảm ơn, cảm ơn, cảm ơn!"
     },
     {
       "id": 1600119,
@@ -363,5 +403,30 @@
       "note": "Cách nói đùa về khả năng bẩm sinh, không phải khẳng định khoa học trong bài."
     }
   ],
-  "reviewMethod": "Local independent small/base ASR, targeted medium ASR and visual contact sheets; ambiguous turns, shouts and publisher outro omitted. No native-human full listening approval."
+  "reviewMethod": "Preserved all 19 original published cues; new dialogue supported by independent local small/medium ASR and source frames. Uncertain words and songs excluded from learning data. No human listening approval.",
+  "missingDialogueReview": {
+    "baseRevision": "09f3b78c619b47961024396b02564c3005542012",
+    "reviewJson": "qa/kino-alignment/blubberunterricht_missing_20261027/review.json",
+    "candidateWindows": 6,
+    "preservedPublishedCues": 19,
+    "addedIds": [
+      1600120,
+      1600121,
+      1600122,
+      1600123,
+      1600124
+    ],
+    "humanListened": false,
+    "sourceVideoSha256": "0e1ec80278f70b49d352a6ec31d760f610f72be2e204984a9aa0f8e39b32a42e",
+    "counts": {
+      "candidateWindows": 6,
+      "originalCaptions": 19,
+      "originalPracticeCues": 19,
+      "added": 5,
+      "captions": 24,
+      "practice": 24,
+      "excludedParts": 13,
+      "reviewNeededParts": 9
+    }
+  }
 }

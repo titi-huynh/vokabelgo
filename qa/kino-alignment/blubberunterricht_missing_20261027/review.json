@@ -1,0 +1,820 @@
+{
+  "key": "spongebob_blubberunterricht",
+  "baseRevision": "09f3b78c619b47961024396b02564c3005542012",
+  "candidateWindows": 6,
+  "humanListened": false,
+  "method": "Independent original-source local small/medium, no text prompts/hotwords; literal raw word references plus source frames. Full Anti chunks and bounded Codex retakes use distinct crops. Earshot broad classification only, not word/speaker identification.",
+  "added": [
+    {
+      "id": 1600120,
+      "candidate": 2,
+      "speaker": "SpongeBob",
+      "text": "Du hast nicht die richtige Technik.",
+      "vi": "Cậu chưa dùng đúng kỹ thuật.",
+      "start": 39.29,
+      "end": 43.15,
+      "support": [
+        {
+          "file": "codex-small-main.json",
+          "model": "small",
+          "windowIndex": 1,
+          "candidate": 2,
+          "crop": [
+            27.57,
+            75.34
+          ],
+          "words": [
+            {
+              "word": " Du",
+              "start": 39.61,
+              "end": 39.91,
+              "probability": 0.22684653103351593
+            },
+            {
+              "word": " hast",
+              "start": 39.91,
+              "end": 40.49,
+              "probability": 0.9934931397438049
+            },
+            {
+              "word": " nicht",
+              "start": 40.49,
+              "end": 41.05,
+              "probability": 0.9337716698646545
+            },
+            {
+              "word": " die",
+              "start": 41.05,
+              "end": 41.19,
+              "probability": 0.9526549577713013
+            },
+            {
+              "word": " richtige",
+              "start": 41.19,
+              "end": 41.47,
+              "probability": 0.9321511387825012
+            },
+            {
+              "word": " Technik.",
+              "start": 41.47,
+              "end": 42.89,
+              "probability": 0.977356344461441
+            }
+          ],
+          "literalText": "Du hast nicht die richtige Technik."
+        },
+        {
+          "file": "codex-medium-main.json",
+          "model": "medium",
+          "windowIndex": 1,
+          "candidate": 2,
+          "crop": [
+            27.57,
+            75.34
+          ],
+          "words": [
+            {
+              "word": " Du",
+              "start": 39.29,
+              "end": 40.01,
+              "probability": 0.45731762051582336
+            },
+            {
+              "word": " hast",
+              "start": 40.01,
+              "end": 40.87,
+              "probability": 0.9487360119819641
+            },
+            {
+              "word": " nicht",
+              "start": 40.87,
+              "end": 41.21,
+              "probability": 0.8290435075759888
+            },
+            {
+              "word": " die",
+              "start": 41.21,
+              "end": 41.21,
+              "probability": 0.8969853520393372
+            },
+            {
+              "word": " richtige",
+              "start": 41.21,
+              "end": 42.15,
+              "probability": 0.9448522329330444
+            },
+            {
+              "word": " Technik.",
+              "start": 42.15,
+              "end": 43.15,
+              "probability": 0.8932302892208099
+            }
+          ],
+          "literalText": "Du hast nicht die richtige Technik."
+        }
+      ],
+      "speakerEvidence": "Source frames40.4/42: SpongeBob mouth visibly changes during the sentence, Patrick closed at42; see frame-40.4.jpg and frame-42.jpg. Corrects the provisional Anti handoff attribution.",
+      "decision": "add",
+      "note": "Only case/punctuation normalized. Bounds include every selected literal timing word. Machine evidence and source frames; humanListened=false."
+    },
+    {
+      "id": 1600121,
+      "candidate": 2,
+      "speaker": "Thaddäus",
+      "text": "Dreimal nach rechts gucken.",
+      "vi": "Nhìn sang phải ba lần.",
+      "start": 51.3,
+      "end": 52.62,
+      "support": [
+        {
+          "file": "codex-small-recheck.json",
+          "model": "small",
+          "windowIndex": 4,
+          "candidate": 2,
+          "crop": [
+            47.9,
+            55.7
+          ],
+          "words": [
+            {
+              "word": " dreimal",
+              "start": 51.3,
+              "end": 51.62,
+              "probability": 0.7347765564918518
+            },
+            {
+              "word": " nach",
+              "start": 51.62,
+              "end": 51.74,
+              "probability": 0.9334415793418884
+            },
+            {
+              "word": " rechts",
+              "start": 51.74,
+              "end": 52.04,
+              "probability": 0.9883564114570618
+            },
+            {
+              "word": " gucken",
+              "start": 52.04,
+              "end": 52.38,
+              "probability": 0.8185663223266602
+            }
+          ],
+          "literalText": "dreimal nach rechts gucken"
+        },
+        {
+          "file": "codex-medium-recheck.json",
+          "model": "medium",
+          "windowIndex": 4,
+          "candidate": 2,
+          "crop": [
+            47.9,
+            55.7
+          ],
+          "words": [
+            {
+              "word": " dreimal",
+              "start": 51.46,
+              "end": 51.66,
+              "probability": 0.9177149534225464
+            },
+            {
+              "word": " nach",
+              "start": 51.66,
+              "end": 51.84,
+              "probability": 0.9669199585914612
+            },
+            {
+              "word": " rechts",
+              "start": 51.84,
+              "end": 52.14,
+              "probability": 0.9970591068267822
+            },
+            {
+              "word": " gucken",
+              "start": 52.14,
+              "end": 52.62,
+              "probability": 0.8677685856819153
+            }
+          ],
+          "literalText": "dreimal nach rechts gucken"
+        }
+      ],
+      "speakerEvidence": "Source frames51.4/51.9/52.3: Thaddäus changes mouth shape while looking right; speaker-followup-contact-sheet.jpg. Visual/context attribution, not voice identification. Anti favors Thaddäus but leaves an offscreen-SpongeBob alternative; Muse should specifically check this label.",
+      "decision": "add",
+      "note": "Only case/punctuation normalized. Bounds include every selected literal timing word. Machine evidence and source frames; humanListened=false."
+    },
+    {
+      "id": 1600122,
+      "candidate": 2,
+      "speaker": "Thaddäus",
+      "text": "Und jetzt geht's los, der Beckenstoß.",
+      "vi": "Và giờ bắt đầu nào, đẩy hông!",
+      "start": 53.18,
+      "end": 55.5,
+      "support": [
+        {
+          "file": "codex-small-recheck.json",
+          "model": "small",
+          "windowIndex": 5,
+          "candidate": 2,
+          "crop": [
+            46.5,
+            61.1
+          ],
+          "words": [
+            {
+              "word": " Und",
+              "start": 53.18,
+              "end": 53.38,
+              "probability": 0.9430742859840393
+            },
+            {
+              "word": " jetzt",
+              "start": 53.38,
+              "end": 53.64,
+              "probability": 0.9917826652526855
+            },
+            {
+              "word": " geht's",
+              "start": 53.64,
+              "end": 54.0,
+              "probability": 0.8557975590229034
+            },
+            {
+              "word": " los,",
+              "start": 54.0,
+              "end": 54.08,
+              "probability": 0.9970217347145081
+            },
+            {
+              "word": " der",
+              "start": 54.34,
+              "end": 54.48,
+              "probability": 0.9774635434150696
+            },
+            {
+              "word": " Beckenstoß.",
+              "start": 54.48,
+              "end": 55.4,
+              "probability": 0.9383671432733536
+            }
+          ],
+          "literalText": "Und jetzt geht's los, der Beckenstoß."
+        },
+        {
+          "file": "codex-medium-recheck.json",
+          "model": "medium",
+          "windowIndex": 5,
+          "candidate": 2,
+          "crop": [
+            46.5,
+            61.1
+          ],
+          "words": [
+            {
+              "word": " Und",
+              "start": 53.28,
+              "end": 53.52,
+              "probability": 0.9242112636566162
+            },
+            {
+              "word": " jetzt",
+              "start": 53.52,
+              "end": 53.76,
+              "probability": 0.9927491545677185
+            },
+            {
+              "word": " geht's",
+              "start": 53.76,
+              "end": 54.06,
+              "probability": 0.8575703203678131
+            },
+            {
+              "word": " los,",
+              "start": 54.06,
+              "end": 54.3,
+              "probability": 0.9985846281051636
+            },
+            {
+              "word": " der",
+              "start": 54.56,
+              "end": 54.7,
+              "probability": 0.9951314926147461
+            },
+            {
+              "word": " Beckenstoß.",
+              "start": 54.7,
+              "end": 55.5,
+              "probability": 0.9827815890312195
+            }
+          ],
+          "literalText": "Und jetzt geht's los, der Beckenstoß."
+        }
+      ],
+      "speakerEvidence": "Source frames53.3/54.3/55.2: Thaddäus changes mouth shape before making the hip thrust; speaker-followup-contact-sheet.jpg. Original1600107 is the later separate SpongeBob reminder. Visual/context attribution; Anti favors Thaddäus with an offscreen-SpongeBob alternative, specifically flagged for Muse review.",
+      "decision": "add",
+      "note": "Only case/punctuation normalized. Bounds include every selected literal timing word. Machine evidence and source frames; humanListened=false."
+    },
+    {
+      "id": 1600123,
+      "candidate": 2,
+      "speaker": "Thaddäus",
+      "text": "Und dies und dies und dies und das und das und das.",
+      "vi": "Rồi thế này, thế này, thế này, và thế kia, thế kia, thế kia.",
+      "start": 65.19,
+      "end": 67.91,
+      "support": [
+        {
+          "file": "codex-small-main.json",
+          "model": "small",
+          "windowIndex": 1,
+          "candidate": 2,
+          "crop": [
+            27.57,
+            75.34
+          ],
+          "words": [
+            {
+              "word": " Und",
+              "start": 65.19,
+              "end": 65.51,
+              "probability": 0.4428907632827759
+            },
+            {
+              "word": " dies,",
+              "start": 65.51,
+              "end": 65.71,
+              "probability": 0.7942897081375122
+            },
+            {
+              "word": " und",
+              "start": 65.87,
+              "end": 65.91,
+              "probability": 0.9363017082214355
+            },
+            {
+              "word": " dies,",
+              "start": 65.91,
+              "end": 66.05,
+              "probability": 0.9913511276245117
+            },
+            {
+              "word": " und",
+              "start": 66.15,
+              "end": 66.25,
+              "probability": 0.9935038685798645
+            },
+            {
+              "word": " dies,",
+              "start": 66.25,
+              "end": 66.53,
+              "probability": 0.9917532205581665
+            },
+            {
+              "word": " und",
+              "start": 66.75,
+              "end": 66.83,
+              "probability": 0.9699980616569519
+            },
+            {
+              "word": " das,",
+              "start": 66.83,
+              "end": 66.99,
+              "probability": 0.9586246609687805
+            },
+            {
+              "word": " und",
+              "start": 67.13,
+              "end": 67.17,
+              "probability": 0.9587039947509766
+            },
+            {
+              "word": " das,",
+              "start": 67.17,
+              "end": 67.35,
+              "probability": 0.985405445098877
+            },
+            {
+              "word": " und",
+              "start": 67.37,
+              "end": 67.53,
+              "probability": 0.9868578910827637
+            },
+            {
+              "word": " das,",
+              "start": 67.53,
+              "end": 67.73,
+              "probability": 0.9884799122810364
+            }
+          ],
+          "literalText": "Und dies, und dies, und dies, und das, und das, und das,"
+        },
+        {
+          "file": "codex-medium-main.json",
+          "model": "medium",
+          "windowIndex": 1,
+          "candidate": 2,
+          "crop": [
+            27.57,
+            75.34
+          ],
+          "words": [
+            {
+              "word": " und",
+              "start": 65.31,
+              "end": 65.65,
+              "probability": 0.6037115454673767
+            },
+            {
+              "word": " dies",
+              "start": 65.65,
+              "end": 65.81,
+              "probability": 0.9733312726020813
+            },
+            {
+              "word": " und",
+              "start": 65.81,
+              "end": 66.01,
+              "probability": 0.9698705077171326
+            },
+            {
+              "word": " dies",
+              "start": 66.01,
+              "end": 66.21,
+              "probability": 0.9975428581237793
+            },
+            {
+              "word": " und",
+              "start": 66.21,
+              "end": 66.39,
+              "probability": 0.961037278175354
+            },
+            {
+              "word": " dies",
+              "start": 66.39,
+              "end": 66.71,
+              "probability": 0.9958756566047668
+            },
+            {
+              "word": " und",
+              "start": 66.71,
+              "end": 66.89,
+              "probability": 0.713388979434967
+            },
+            {
+              "word": " das",
+              "start": 66.89,
+              "end": 67.09,
+              "probability": 0.9774760007858276
+            },
+            {
+              "word": " und",
+              "start": 67.09,
+              "end": 67.23,
+              "probability": 0.964691698551178
+            },
+            {
+              "word": " das",
+              "start": 67.23,
+              "end": 67.41,
+              "probability": 0.9899510741233826
+            },
+            {
+              "word": " und",
+              "start": 67.41,
+              "end": 67.67,
+              "probability": 0.8935855627059937
+            },
+            {
+              "word": " das",
+              "start": 67.67,
+              "end": 67.91,
+              "probability": 0.9634286761283875
+            }
+          ],
+          "literalText": "und dies und dies und dies und das und das und das"
+        }
+      ],
+      "speakerEvidence": "Continuous Thaddäus demonstration with changing mouth positions at65.6/66.2/67; speaker-followup-contact-sheet.jpg. One complete twelve-word instruction, not separate one-word chant cues.",
+      "decision": "add",
+      "note": "Only case/punctuation normalized. Bounds include every selected literal timing word. Machine evidence and source frames; humanListened=false."
+    },
+    {
+      "id": 1600124,
+      "candidate": 3,
+      "speaker": "Thaddäus",
+      "text": "Danke, danke, danke!",
+      "vi": "Cảm ơn, cảm ơn, cảm ơn!",
+      "start": 117.02,
+      "end": 118.5,
+      "support": [
+        {
+          "file": "independent-small-full.json",
+          "model": "small",
+          "windowIndex": 1,
+          "candidate": null,
+          "crop": [
+            63.0,
+            125.0
+          ],
+          "words": [
+            {
+              "start": 117.02,
+              "end": 117.46,
+              "relStart": 54.02,
+              "relEnd": 54.46,
+              "word": " Danke,",
+              "probability": 0.6264160871505737
+            },
+            {
+              "start": 117.5,
+              "end": 117.98,
+              "relStart": 54.5,
+              "relEnd": 54.98,
+              "word": " danke,",
+              "probability": 0.9141486287117004
+            },
+            {
+              "start": 118.14,
+              "end": 118.3,
+              "relStart": 55.14,
+              "relEnd": 55.3,
+              "word": " danke!",
+              "probability": 0.9650389552116394
+            }
+          ],
+          "literalText": "Danke, danke, danke!"
+        },
+        {
+          "file": "independent-medium-full.json",
+          "model": "medium",
+          "windowIndex": 1,
+          "candidate": null,
+          "crop": [
+            63.0,
+            125.0
+          ],
+          "words": [
+            {
+              "start": 117.1,
+              "end": 117.7,
+              "relStart": 54.1,
+              "relEnd": 54.7,
+              "word": " Danke,",
+              "probability": 0.8824256062507629
+            },
+            {
+              "start": 117.7,
+              "end": 118.16,
+              "relStart": 54.7,
+              "relEnd": 55.16,
+              "word": " danke,",
+              "probability": 0.9695806503295898
+            },
+            {
+              "start": 118.16,
+              "end": 118.5,
+              "relStart": 55.16,
+              "relEnd": 55.5,
+              "word": " danke.",
+              "probability": 0.9930307269096375
+            }
+          ],
+          "literalText": "Danke, danke, danke."
+        }
+      ],
+      "speakerEvidence": "Thaddäus acknowledging the crowd at his doorway at117.4; frame-117.4.jpg and independent Anti handoff. Both full models have exactly three Danke tokens; tight medium corroborates three, tight small adds a fourth token aligned into the preceding chant.",
+      "decision": "add",
+      "note": "Only case/punctuation normalized. Bounds include every selected literal timing word. Machine evidence and source frames; humanListened=false."
+    }
+  ],
+  "excluded": [
+    {
+      "candidate": 1,
+      "start": 13.24,
+      "end": 13.68,
+      "reason": "Tail of original1600103; preserve without duplication.",
+      "existingCueId": 1600103
+    },
+    {
+      "candidate": 1,
+      "start": 18.08,
+      "end": 18.92,
+      "reason": "Head of original1600104; preserve without duplication.",
+      "existingCueId": 1600104
+    },
+    {
+      "candidate": 2,
+      "start": 28.96,
+      "end": 31.4,
+      "reason": "Original1600106 inside the package window; package covered=0 is incorrect.",
+      "existingCueId": 1600106
+    },
+    {
+      "candidate": 2,
+      "start": 58.04,
+      "end": 60,
+      "reason": "Original1600107 inside the package window; no new copy.",
+      "existingCueId": 1600107
+    },
+    {
+      "candidate": 2,
+      "start": 60,
+      "end": 61.06,
+      "reason": "Original1600108 inside the package window; no new copy.",
+      "existingCueId": 1600108
+    },
+    {
+      "candidate": 2,
+      "start": 33.5,
+      "end": 39.29,
+      "reason": "Repeated Die Technik/Technik chant excluded by episode editorial policy; no one-word cue wall.",
+      "category": "chant"
+    },
+    {
+      "candidate": 2,
+      "start": 43.15,
+      "end": 48.17,
+      "reason": "Repeated Die Technik/Technik chant after the accepted complete sentence; policy exclusion.",
+      "category": "chant"
+    },
+    {
+      "candidate": 2,
+      "start": 55.5,
+      "end": 58.04,
+      "reason": "Uuh/Wuhu performance vocalization before original1600107; no stable independent lexical dialogue.",
+      "category": "vocalization"
+    },
+    {
+      "candidate": 2,
+      "start": 69.94,
+      "end": 75.34,
+      "reason": "Bubble-blowing prolonged scream/vocalization, not selected spoken dialogue.",
+      "category": "vocalization"
+    },
+    {
+      "candidate": 3,
+      "start": 112.28,
+      "end": 112.56,
+      "reason": "Tail of original1600118; do not duplicate.",
+      "existingCueId": 1600118
+    },
+    {
+      "candidate": 4,
+      "start": 126.2,
+      "end": 133,
+      "reason": "Repeated name chanting; excluded under package policy.",
+      "category": "chant"
+    },
+    {
+      "candidate": 4,
+      "start": 138.5,
+      "end": 171.95,
+      "reason": "Repeated name chanting; possible short shout is separately retained for review.",
+      "category": "chant"
+    },
+    {
+      "candidate": 5,
+      "start": 173.18,
+      "end": 174.78,
+      "reason": "Original1600119 Hallo, meine Freunde! already covers the greeting.",
+      "existingCueId": 1600119
+    }
+  ],
+  "reviewNeeded": [
+    {
+      "candidate": 1,
+      "start": 13.68,
+      "end": 18.08,
+      "reason": "Technique/name tail and following instruction vary across full and bounded crops; do not select the phrase from the package or correct names using context.",
+      "variants": [
+        "Die Technik, Tadeus!",
+        "Die Technik hatte ich!",
+        "Die Technik hat ihn auch!",
+        "Jetzt drehen Sie es durch.",
+        "Jetzt rein, siehst du!"
+      ]
+    },
+    {
+      "candidate": 2,
+      "start": 31.4,
+      "end": 33.5,
+      "reason": "Warning/name ending remains unstable across independent crops. Keep the whole short exchange outside captions.",
+      "variants": [
+        "Hey, Tadeus, hör aufs Wunsch!",
+        "Hör auf, sponge!",
+        "Hör auf! Spanns!"
+      ]
+    },
+    {
+      "candidate": 2,
+      "start": 48.17,
+      "end": 51.3,
+      "reason": "First instruction alternates Erst/Schwer/Schweres and the next verb Sprehen/Prähen/Drehen. Two tight crops agree on Drehen but broader neutral outputs differ; do not resolve solely from the displayed turn. Ends at the first selected word of the separately confirmed Dreimal sentence.",
+      "variants": [
+        "Erst mache ich das.",
+        "Schwer ist, mach ich das.",
+        "Schweres mache ich das",
+        "Sprehen und stopp.",
+        "Prähen und Stopp",
+        "Drehen und Stopp."
+      ]
+    },
+    {
+      "candidate": 2,
+      "start": 61.06,
+      "end": 65.19,
+      "reason": "Hip instruction and following deictic clause remain crop dependent, despite Hüftschwung agreeing in both main crops. Do not repair using the displayed action.",
+      "variants": [
+        "Hüftschwung",
+        "Hüftzwung",
+        "Hüpfgefroh",
+        "Hüftgefond",
+        "Hüft vor",
+        "hier vorn",
+        "hiervon",
+        "hier fahren"
+      ]
+    },
+    {
+      "candidate": 2,
+      "start": 67.91,
+      "end": 69.94,
+      "reason": "After the separately confirmed twelve-word dies/das instruction, outputs vary between repeated da, bababam and an unfinished und dann. No further lexical cue selected.",
+      "variants": [
+        "und da, da, da",
+        "und bababam bababam und dann"
+      ]
+    },
+    {
+      "candidate": 3,
+      "start": 112.56,
+      "end": 117.02,
+      "reason": "Name-and-Gene chant differs across models/crops; do not change Gene to Genie to fit the later joke. Separate confirmed thanks starts at117.02.",
+      "variants": [
+        "Tobias hat Gene!",
+        "Tadeus hat Gene!",
+        "Taddeus hat Gene!",
+        "Adios, Adkene!"
+      ]
+    },
+    {
+      "candidate": 4,
+      "start": 133,
+      "end": 138.5,
+      "reason": "Possible Das ruft! now matches both tight models and medium context, but is absent from broader medium/name-chant output and is embedded in strongly repetitive low-confidence audio. Retain for human review rather than treating tight agreement as definitive.",
+      "variants": [
+        "Das ruft!",
+        "Tadeus!"
+      ],
+      "evidenceNote": "Includes completed codex-medium-recheck windows10/11; not a small-only hypothesis. Earshot mixed Music/Speech classifications cannot verify the German phrase."
+    },
+    {
+      "candidate": 5,
+      "start": 174.78,
+      "end": 179.99,
+      "reason": "Greeting1600119 already exists. Remaining introduction has predominantly Vor but tight small Für and an unresolved final name/call. Keep the whole incomplete introduction for review rather than publishing an isolated fragment or guessing the name.",
+      "variants": [
+        "Vor euch steht in der Tat...",
+        "Für euch steht in der Tat...",
+        "Adeo!",
+        "Adieu!",
+        "Adéus!",
+        "Adéu!"
+      ]
+    },
+    {
+      "candidate": 6,
+      "start": 179.99,
+      "end": 183.47,
+      "reason": "Short call is distinct in time from old1600119, but small/medium and context disagree on the actual words; not a verified new Ein Genie cue.",
+      "variants": [
+        "Ein Genie!",
+        "Angenie!",
+        "Anzune!",
+        "Ingenie!",
+        "...einschen nicht."
+      ]
+    }
+  ],
+  "counts": {
+    "candidateWindows": 6,
+    "originalCaptions": 19,
+    "originalPracticeCues": 19,
+    "added": 5,
+    "captions": 24,
+    "practice": 24,
+    "excludedParts": 13,
+    "reviewNeededParts": 9
+  },
+  "countingNote": "Parts are not windows; each window may contain accepted, excluded and reviewNeeded portions.",
+  "idPolicy": {
+    "firstNewId": 1600120,
+    "maxPublishedAndSourceDraftId": 1600119,
+    "neverReuseGaps": []
+  },
+  "normalizationNote": "Case/punctuation only, including goes-to-text apostrophe in gehts/geht's; no lexical spelling substitution. Three Danke words selected from both full models, not silently deleting the fourth tight-small token.",
+  "scopeNote": "All19 original caption/practice objects and all2 chapters/14 picks/12 cards remain unchanged. Selected spoken dialogue only. No merge or deploy."
+}

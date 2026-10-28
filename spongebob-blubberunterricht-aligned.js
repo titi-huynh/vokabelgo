@@ -55,6 +55,33 @@ const SPONGEBOB_BLUBBERUNTERRICHT_CAPTION_CUES = [
     "parentId": 1600106
   },
   {
+    "id": 1600120,
+    "start": 39.29,
+    "end": 43.15,
+    "speaker": "SpongeBob",
+    "text": "Du hast nicht die richtige Technik.",
+    "vi": "Cậu chưa dùng đúng kỹ thuật.",
+    "parentId": 1600120
+  },
+  {
+    "id": 1600121,
+    "start": 51.3,
+    "end": 52.62,
+    "speaker": "Thaddäus",
+    "text": "Dreimal nach rechts gucken.",
+    "vi": "Nhìn sang phải ba lần.",
+    "parentId": 1600121
+  },
+  {
+    "id": 1600122,
+    "start": 53.18,
+    "end": 55.5,
+    "speaker": "Thaddäus",
+    "text": "Und jetzt geht's los, der Beckenstoß.",
+    "vi": "Và giờ bắt đầu nào, đẩy hông!",
+    "parentId": 1600122
+  },
+  {
     "id": 1600107,
     "start": 58.04,
     "end": 60.0,
@@ -71,6 +98,15 @@ const SPONGEBOB_BLUBBERUNTERRICHT_CAPTION_CUES = [
     "text": "Ich hab's nicht vergessen.",
     "vi": "Tôi đâu có quên.",
     "parentId": 1600108
+  },
+  {
+    "id": 1600123,
+    "start": 65.19,
+    "end": 67.91,
+    "speaker": "Thaddäus",
+    "text": "Und dies und dies und dies und das und das und das.",
+    "vi": "Rồi thế này, thế này, thế này, và thế kia, thế kia, thế kia.",
+    "parentId": 1600123
   },
   {
     "id": 1600109,
@@ -161,6 +197,15 @@ const SPONGEBOB_BLUBBERUNTERRICHT_CAPTION_CUES = [
     "text": "Also bitte, das habe ich in den Genen.",
     "vi": "Thôi nào, tài này vốn có trong gen của tôi rồi.",
     "parentId": 1600118
+  },
+  {
+    "id": 1600124,
+    "start": 117.02,
+    "end": 118.5,
+    "speaker": "Thaddäus",
+    "text": "Danke, danke, danke!",
+    "vi": "Cảm ơn, cảm ơn, cảm ơn!",
+    "parentId": 1600124
   },
   {
     "id": 1600119,

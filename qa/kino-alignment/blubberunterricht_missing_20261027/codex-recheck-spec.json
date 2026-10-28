@@ -1,0 +1,98 @@
+[
+  {
+    "candidate": 1,
+    "label": "gap-tight",
+    "start": 13.68,
+    "end": 18.08
+  },
+  {
+    "candidate": 1,
+    "label": "exchange",
+    "start": 10.1,
+    "end": 22.5
+  },
+  {
+    "candidate": 2,
+    "label": "warning",
+    "start": 31.4,
+    "end": 34
+  },
+  {
+    "candidate": 2,
+    "label": "correct-technique",
+    "start": 38.3,
+    "end": 43.1
+  },
+  {
+    "candidate": 2,
+    "label": "steps-tight",
+    "start": 47.9,
+    "end": 55.7
+  },
+  {
+    "candidate": 2,
+    "label": "steps-context",
+    "start": 46.5,
+    "end": 61.1
+  },
+  {
+    "candidate": 2,
+    "label": "choreography",
+    "start": 61.06,
+    "end": 70.2
+  },
+  {
+    "candidate": 2,
+    "label": "hip-movement",
+    "start": 61.3,
+    "end": 64
+  },
+  {
+    "candidate": 3,
+    "label": "name-phrase",
+    "start": 112.56,
+    "end": 116.1
+  },
+  {
+    "candidate": 3,
+    "label": "thanks",
+    "start": 115.5,
+    "end": 120.7
+  },
+  {
+    "candidate": 4,
+    "label": "shout-tight",
+    "start": 133,
+    "end": 138.5
+  },
+  {
+    "candidate": 4,
+    "label": "shout-context",
+    "start": 129,
+    "end": 141
+  },
+  {
+    "candidate": 5,
+    "label": "full-exchange",
+    "start": 171,
+    "end": 184.5
+  },
+  {
+    "candidate": 5,
+    "label": "after-greeting",
+    "start": 174.78,
+    "end": 179.99
+  },
+  {
+    "candidate": 6,
+    "label": "short-call",
+    "start": 180.8,
+    "end": 183.4
+  },
+  {
+    "candidate": 6,
+    "label": "call-context",
+    "start": 177.9,
+    "end": 185.6
+  }
+]
